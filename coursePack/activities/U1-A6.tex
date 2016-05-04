@@ -159,10 +159,11 @@ free another rat trapped in the inner cage.
   \begin{enumerate}
   \item Shuffle your cards and draw one at random. Record the outcome
     for this pair.\\
-  \item Replace the card into the deck.  This is a simple but powerful
+  \item Replace the card into the deck, shuffle and draw a new card.
+    This is a simple but powerful
     idea.  By sampling {\bf with replacement} we have the same
     conditions for every draw, and the probability of each outcome
-    stays the same.  Shuffle, draw a card, and record the outcome.
+    stays the same.  Record your second outcome.\\
   \item Repeat until you have 30 outcomes chosen at random.  What
     proportion of your rats were freed? \vspace{1cm}
   \end{enumerate}
@@ -170,7 +171,7 @@ free another rat trapped in the inner cage.
   The process you just used is called {\bf bootstrapping} (which means
   to make something out of little or nothing), and the 30 outcomes are called a
   bootstrap {\bf resample}.  It's not a sample -- we only get one of
-  those -- and we can repeat the resampling process many times.
+  those -- whereas we can repeat the resampling process many times.
 
   After collecting many resampled statistics, we'll use the
   {\bf percentile method} to compute a confidence interval.
@@ -207,7 +208,9 @@ free another rat trapped in the inner cage.
   \includegraphics[width=.5\linewidth]{../plots/freeRats-101resamples.png}
 \end{key} 
 
-   Where is the distribution centered?
+   Where is the distribution centered? (We are looking at the
+   distribution of resampled $\phat$'s. The values in the corner of
+   the plot are the mean and standard deviation of all blue dot values.) 
 \begin{students}
   \vspace{.6cm}
 \end{students}
@@ -237,23 +240,23 @@ free another rat trapped in the inner cage.
 \end{key}
 
 
- \item You should have several thousand blue dots and it should have
+ \item You should have several thousand blue dots and the plot should have
    stabilized so that adding another 1000 doesn't change the shape much.
    Below the plot we have options for confidence limits for our
    interval estimate.
    \begin{enumerate}
-   \item Click \fbox{80} and count:  How many red points would you
-     guess are in the left tail?
+   \item Click \fbox{80} and count:   What proportion are red points
+     in the left tail? 
 \begin{key}
 {\it  $N/10$}
 \end{key}
      \\
-     How many reds in the right tail?
+      What proportion are red points in the right tail?
 \begin{key}
 {\it  $N/10$}
 \end{key}
      \\
-     How many blue points in the middle?  \hfill Write the interval:
+      What proportion are red points in the  middle?  \hfill Write the interval:
 \begin{key}
 {\it  80\}
 \end{key}
@@ -311,14 +314,15 @@ free another rat trapped in the inner cage.
 blue or vice versa.}
 \end{key}
 
-  \item Predict: what will happen to the numbers in each tail for,
-    say, a 90 \% interval, if we go from 5000 to 10000 resamples?
+  \item Predict: what will happen to the interval endpoints of
+    a 90 \% interval, if we go from 5000 to 10000 resamples?
 \begin{students}
   \vspace{.8cm}
 \end{students}
 
 \begin{key}
-{\it  Counts should double, percentages stay the same.}
+{\it  Tail counts should double, percentages stay the same; only
+  slight change in interval endpoints.}
 \end{key}
 
   \item Try it and see: were you right?
@@ -332,7 +336,7 @@ blue or vice versa.}
    how one dot in the plot was created.  (I suggest going back to how
    you did it manually in \ref{cards}.)
 \begin{students}
-  \vspace{3cm}
+  \vspace{6cm}
 \end{students}
 
 \begin{key}
