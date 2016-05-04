@@ -1,8 +1,8 @@
 \def\theTopic{Reading 3}
 
-\begin{center}
-{\bf {\large Ethical Instincts of Babies?}}
-\end{center}
+
+\section{ Ethical Instincts of Babies?}
+
 
 Researchers at Yale University were interested in how soon in human
 development children become aware of (and start to favor) activities
@@ -57,25 +57,28 @@ measures; and (4) positions of helper and hinderer.
       the null model -- when the observed result is likely under the null
       model. To explain to others  how likely or unlikely the
       observed result is under the null model, we  report the
-      ``strength of evidence'' -- also called the {\bf p-value}. 
+      ``strength of evidence'' -- also called  the p-value.
 
-      The strength of evidence is quantified by answering the
-      question: ``If $H_0$ is true, what proportion of the simulated
-      results are as unusual as (or even more unusual than) the
-      observed result?'' 
-      For example, consider the results from ``Martian Alphabet''  in
-      Figure 1. A group of 12 humans had 9 correct matches and 3
-      incorrect. The simulation assumed $H_0: p = 0.5$, and counted
-      the number of heads in 12 flips of a fair coin. (Head
-      $\leftrightarrow$ Correct). 
-      The whole process was simulated 1000 times and the number of
-      outcomes at 9 or above on the plot are those as extreme or more
-      extreme as the group's score. The chance is 74/1000 =
-      0.074 of getting a result this extreme when $H_0$ is
-      true.  We can think of 0.074 as the strength of evidence against
-      $H_0$  for 9 correct matches. It is
-      the probability of obtaining results as extreme or more extreme
-      when $H_0$ true.
+       {\bf Definition:} The p-value is the probability of observing a
+       results at least as the result we have observed if the null
+       hypothesis is true. 
+ 
+       We quantify the strength of evidence by answering the question:
+       ``If $H_0$ is true, what proportion of the simulated results
+       are as unusual as (or even more unusual than) the observed
+       result?''  For example, consider the results from ``Martian
+       Alphabet'' in Figure 1. A group of 12 humans had 9 correct
+       matches and 3 incorrect. The simulation assumed $H_0: p = 0.5$,
+       and counted the number of heads in 12 flips of a fair
+       coin. (Head $\leftrightarrow$ Correct).  The whole process was
+       simulated 1000 times and the number of outcomes at 9 or above
+       on the plot are those as extreme or more extreme as the group's
+       score. The chance is 74/1000 = 0.074 of getting a result this
+       extreme when $H_0$ is true.  The p-value of 0.074 is the
+       strength of evidence against $H_0$ for 9 correct matches. It is
+       the probability of obtaining results as extreme or more extreme
+       when $H_0$ true. 
+
  \begin{figure}[h]
    \centering
   \includegraphics[width=.5\linewidth]{../plots/StrOfEvidence-12Guesses.png}
@@ -87,8 +90,9 @@ measures; and (4) positions of helper and hinderer.
    \label{fig:SOE-12}
  \end{figure}
   For this group of 12, we would say that there is some evidence that
-  they can read Martian, but it is not super strong because a p-value
-  of 0.07 is not really small. It's more of a ``cautionary'' yellow
+  they can read Martian, but while an  event which can happen  7\% of
+  the time is   fairly rare, it may not be totally convincing.  
+  A p-value  of 0.07 is not really tiny, but is  a ``cautionary'' yellow
   light. 
 
  \begin{center}

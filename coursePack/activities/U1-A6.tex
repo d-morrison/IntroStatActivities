@@ -2,10 +2,7 @@
 \def\theTopic{Interval Estimate }
 \def\dayNum{6}
 
-\begin{center}
-\vspace*{-.2in}
-{\bf {\large Interval Estimate for a Proportion}}\\
-\end{center}
+\section{ Interval Estimate for a Proportion}
 
 
 If we call someone a ``rat'', we don't mean that they are nice to be
@@ -175,21 +172,24 @@ free another rat trapped in the inner cage.
   bootstrap {\bf resample}.  It's not a sample -- we only get one of
   those -- and we can repeat the resampling process many times.
 
+  After collecting many resampled statistics, we'll use the
+  {\bf percentile method} to compute a confidence interval.
 
   \item Reshuffling is slow, so we want to speed up the
     process by using the computer.  Our goal is to see what other
     outcomes we might have gotten for different samples of 30 rat
-    pairs. We will again use the \fbox{One Categ.} web app at
-    \url{https://jimrc.shinyapps.io/Sp-IntRoStats}
-    Select  ``Enter / Describe Data'' to enter
-    the rat data to look like:\\
+    pairs. We will again use  \fbox{Test or Estimate} under the
+    \fbox{One Categ.} header in the  web app at
+    \webAppURLFrst .
+    Enter    the rat data to look like:\\
     \begin{tabular}{lr}
       \fbox{Freed}& \fbox{\  23\  }\\
-      \fbox{Not} & \fbox{\  ?? \  }
+      \fbox{Not} & \fbox{\  7 \  }
     \end{tabular}
 
-    Then choose \fbox{Estimate} from the \fbox{One Categ} menu.
-    What proportion of the rats were freed in your one resample?
+    Then choose  \fbox{Estimate}. 
+    What proportion of the rats were freed in your first resample?
+    (Click the blue dot to see the resample.)
 \begin{students}
   \vspace{1cm}
 \end{students}
@@ -198,7 +198,7 @@ free another rat trapped in the inner cage.
 {\it  AWV}
 \end{key}
 
- \item Now resample 100 times and copy the picture you get here.
+ \item Now resample several 1000 times and copy the picture you get here.
 \begin{students}
   \vspace{4cm}
 \end{students}
@@ -237,54 +237,53 @@ free another rat trapped in the inner cage.
 \end{key}
 
 
- \item You should have 101 resampled values in your plot. If you have
-   more than that, go  back to \fbox{Enter/Describe Data} and click
-   \fbox{Use Data} box again. Then come back to \fbox{Estimate} and
-   click \fbox{100} just once.\\
+ \item You should have several thousand blue dots and it should have
+   stabilized so that adding another 1000 doesn't change the shape much.
    Below the plot we have options for confidence limits for our
    interval estimate.
    \begin{enumerate}
-   \item Click \fbox{80} and count:  How many red points in the left tail?
+   \item Click \fbox{80} and count:  How many red points would you
+     guess are in the left tail?
 \begin{key}
-{\it  10}
+{\it  $N/10$}
 \end{key}
      \\
      How many reds in the right tail?
 \begin{key}
-{\it  10}
+{\it  $N/10$}
 \end{key}
      \\
      How many blue points in the middle?  \hfill Write the interval:
 \begin{key}
-{\it  81}
+{\it  80\}
 \end{key}
      \\
-   \item Click \fbox{90} and count:  How many red points in the left tail?
+   \item Click \fbox{90} and estimate: What proportion are red points in the left tail?
 \begin{key}
-{\it  5}
+{\it  5\%}
 \end{key}
      \\
-     How many reds in the right tail?
+      What proportion are reds in the right tail?
 \begin{key}
-{\it  5}
+{\it  5\%}
 \end{key}
      \\
-     How many blue points in the middle? \hfill Write the interval:
+      What proportion are blue points in the middle? \hfill Write the interval:
 \begin{key}
 {\it  91}
 \end{key}
      \\
-  \item Click \fbox{95} and count:  How many red points in the left tail?
+  \item Click \fbox{95} and count:   What proportion are red points in the left tail?
 \begin{key}
 {\it  3}
 \end{key}
      \\
-     How many reds in the right tail?
+      What proportion are reds in the right tail?
 \begin{key}
 {\it  3}
 \end{key}
      \\
-     How many blue points in the middle? \hfill Write the interval:
+      What proportion are blue points in the middle? \hfill Write the interval:
 \begin{key}
 {\it  95}
 \end{key}
@@ -296,7 +295,7 @@ free another rat trapped in the inner cage.
 \end{students}
 
 \begin{key}
-{\it  With 101 points, the percentage coverage matches the number of
+{\it  With $N$ points, the percentage coverage matches the proportion of
   points left as blue in the middle.}
 \end{key}
 
@@ -313,7 +312,7 @@ blue or vice versa.}
 \end{key}
 
   \item Predict: what will happen to the numbers in each tail for,
-    say, a 90 \% interval, if we double the number of resamples?
+    say, a 90 \% interval, if we go from 5000 to 10000 resamples?
 \begin{students}
   \vspace{.8cm}
 \end{students}
@@ -322,7 +321,7 @@ blue or vice versa.}
 {\it  Counts should double, percentages stay the same.}
 \end{key}
 
-  \item Click \fbox{100} again and explain: were you right?
+  \item Try it and see: were you right?
 \begin{students}
   \vspace{.4cm}
 \end{students}
@@ -333,7 +332,7 @@ blue or vice versa.}
    how one dot in the plot was created.  (I suggest going back to how
    you did it manually in \ref{cards}.)
 \begin{students}
-  \vspace{1cm}
+  \vspace{3cm}
 \end{students}
 
 \begin{key}
@@ -386,14 +385,14 @@ Several very BIG ideas:\vspace{-.8cm}
 \noindent
 {\bf Assignment}\vspace{-.5cm}
 \begin{itemize}
-\item   D2Quiz 3 due Feb 1.
-\item {\bf D2Box 3} is due Feb 4th. Turn in as a pdf file to the D2L drop box.
-  We strongly encourage you to get help in the Math Learning Center.
+%\item   D2Quiz 3 due Feb 1.
+%\item {\bf D2Box 3} is due Feb 4th. Turn in as a pdf file to the D2L drop box.
+%  We strongly encourage you to get help in the Math Learning Center.
  \item Watch videos  \# 7 and 8  before the next class.
 \item Fill in the simulation confidence interval box in column 1 of
   the Review Table.
 
-\item Read  pages 51--52.
+\item Read  the  next reading.
 \end{itemize}
 
 

@@ -44,6 +44,9 @@
 \newcommand{\xbar}{\overline{x}}
 \newcommand{\phat}{\widehat{p}}
 
+\DeclareRobustCommand{\webAppURLFrst}{\url{http://shiny.math.montana.edu/jimrc/IntroStatShinyApps}}
+\DeclareRobustCommand{\webAppURLScnd}{\url{https://jimrc.shinyapps.io/Sp-IntRoStats}}
+
 %\fancyhead[RE]{\textit{ \nouppercase{\leftmark}} }
 %\fancyhead[LO]{\textit{ \nouppercase{\rightmark}} }
 
@@ -92,7 +95,7 @@
 \newpage
 
 %\newpage
-\thispagestyle{empty}
+%\thispagestyle{empty}
 %\include{./TR-SpCalendar}
 
 %\include{./MWF-SpCalendar}
@@ -102,6 +105,7 @@
 \def\theTopic{Syllabus }
 \def\dayNum{1}
 \def\unitNum{1}
+\setcounter{page}{1}
 
 \headheight = .75 in
 \headsep = 0.2 in
@@ -124,15 +128,15 @@
 }
 
 
-  \include{./readings/U1-R1}  %% buff  p 11 -- 14
-                              %% Descriptive Stats p 10 - 14  
+  \include{./readings/U1-R1}  %% buff  p 11 -- 16
   \newpage
+\include{./NotesBlankPage}
 
 \fancyhead[LE,RO]{
    {\it \theTopic }\\
    {\it Unit \unitNum\  Activity \dayNum \ Page \thepage }
 }
- \include{./activities/U1-A2} %% Descriptives - pgs 15 - 19
+ \include{./activities/U1-A2} %% Descriptives - pgs 17 - 26
  \newpage
 
 \include{./NotesBlankPage}
@@ -141,16 +145,17 @@
    {\it \theTopic }\\
    {\it Unit \unitNum\   \ Page \thepage }
 }
-  \include{./readings/U1-R2}   %% p 20- 22
-                               %%  buff: 21 - 22
+  \include{./readings/U1-R2}   
+                               %%  buff: 23 - 26
   \newpage
+\include{./NotesBlankPage}
 
 \fancyhead[LE,RO]{
    {\it \theTopic }\\
    {\it Unit \unitNum\  Activity \dayNum \ Page \thepage }
 }
- \include{./activities/U1-A3}  %% sampling exercise  pgs 23 - 29
-                               %% blank: p 30
+ \include{./activities/U1-A3}  %% sampling exercise  pgs 27 - 32
+                               %% 
  \newpage
 
 % \ \ \ \thispagestyle{empty}
@@ -161,14 +166,15 @@
    {\it \theTopic }\\
    {\it Unit \unitNum\   \ Page \thepage }
 }
-  \include{./readings/U1-R3}  %% p 31- 32 buff
+  \include{./readings/U1-R3}  %% p 33- 35 buff
   \newpage
+\include{./NotesBlankPage}
 
 \fancyhead[LE,RO]{
    {\it \theTopic }\\
    {\it Unit \unitNum\  Activity \dayNum \ Page \thepage }
 }
- \include{./activities/U1-A4}  %% helper-hinderer  pgs 33 - 36 
+ \include{./activities/U1-A4}  %% helper-hinderer  pgs 37 - 40 
  \newpage
 
 \include{./NotesBlankPage}
@@ -177,14 +183,16 @@
    {\it \theTopic }\\
    {\it Unit \unitNum\   \ Page \thepage } 
 }
-  \include{./readings/U1-R4} %% p 37- 38 buff
+  \include{./readings/U1-R4} %% p 41- 44 buff
   \newpage
+
+\include{./NotesBlankPage}
 
 \fancyhead[LE,RO]{
    {\it \theTopic }\\ 
    {\it Unit \unitNum\  Activity \dayNum \ Page \thepage }
 }
- \include{./activities/U1-A5}  %% ESP   pgs 39 - 42
+ \include{./activities/U1-A5}  %% ESP   pgs 45 - 48
  \newpage
 \include{./NotesBlankPage}
 
@@ -192,31 +200,31 @@
    {\it \theTopic }\\
    {\it Unit \unitNum\   \ Page \thepage }
 }
-  \include{./readings/U1-R5} %% p 43- 44 Buff
+  \include{./readings/U1-R5} %% p 49- 50 Buff
   \newpage
 
 \fancyhead[LE,RO]{
    {\it \theTopic }\\
    {\it Unit \unitNum\  Activity \dayNum \ Page \thepage } 
 }
- \include{./activities/U1-A6}  %% Rats - CI   pgs 45 - 49
+ \include{./activities/U1-A6}  %% Rats - CI   pgs 51 - 56
  \newpage
-    %%\ \ \ \thispagestyle{empty}
+
 \include{./NotesBlankPage}
-    %% \phantom{Blank Page}                 %% 50
+    
 
 \fancyhead[LE,RO]{
    {\it \theTopic }\\
    {\it Unit \unitNum\   \ Page \thepage }
 }
-  \include{./readings/U1-R6} %% p 51- 52 Buff
+  \include{./readings/U1-R6} %% p 57- 58 Buff
   \newpage
   
 \fancyhead[LE,RO]{ 
    {\it \theTopic }\\
    {\it Unit \unitNum\  Activity \dayNum \ Page \thepage }
 }
- \include{./activities/U1-A7}  %%  CI - meaning   pgs 53- 55
+ \include{./activities/U1-A7}  %%  CI - meaning   pgs 59- 62
  \newpage
 
 \include{./NotesBlankPage}
@@ -225,25 +233,25 @@
    {\it \theTopic }\\
    {\it Unit \unitNum\   \ Page \thepage }
 }
-  \include{./readings/U1-R7}  %% p 57-58  buff
+  \include{./readings/U1-R7}  %% p 63-64  buff
   \newpage
 
 \fancyhead[LE,RO]{
    {\it \theTopic }\\
    {\it Unit \unitNum\  Activity \dayNum \ Page \thepage }
 }
- \include{./activities/U1-A8}  %% Male idiot  pgs  59 -- 61
+ \include{./activities/U1-A8}  %% Male idiot  pgs  65 -- 67
   \newpage
 
- \include{./activities/U1-A9}  %% Review  pgs 62 - 66
+ \include{./activities/U1-A9}  %% Review  pgs 68 - 73
 
 \newpage
-
- \def\unitNum{2} 
+\end{document}
+\def\unitNum{2} 
  \thispagestyle{empty}
  \vspace*{\fill}
  \begin{center}
-   {\huge Unit 2}   %% p 67 - 8 blue
+   {\huge Unit 2}   %% p 73? - 74 blue
  \end{center}
  \vspace*{\fill}
  \newpage
