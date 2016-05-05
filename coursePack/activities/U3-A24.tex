@@ -2,9 +2,8 @@
 \def\dayNum{24 }
 
 
-\begin{center}
- {\large \textbf{t-Distributions - Inference for One Mean}}
-\end{center}
+\section{t-Distributions - Inference for One Mean}
+
 
 
 In a previous semester, we asked STAT216 students to estimate how much they were
@@ -70,15 +69,18 @@ close to $SE(\xb) = 202.93/\sqrt{319} = 11.36$.
   errors we  are using.  Note how the SE just plugs an estimated value
   in to the SD formula.\\
   \begin{center}
-  \begin{tabular}{|c|c|c|}\hline
-    Statistic: & Standard Deviation & Standard Error\\ \hline
-    $\phat$ & $\sqrt{\frac{p(1-p)}{n}}$ & $\sqrt{\frac{\phat(1-\phat)}{n}}$\\
+  \begin{tabular}{|c|c|c|c|}\hline
+    Statistic: & Standard Deviation & Test Std Error& CI Std Error\\ \hline
+    $\phat$ & $\sqrt{\frac{p(1-p)}{n}}$ & $\sqrt{\frac{\phat(1-\phat)}{n}}$& $\sqrt{\frac{\phat(1-\phat)}{n}}$\\
     \hline
     $\phat_1 - \phat_2$&  $\sqrt{\frac{p_1(1-p_1)}{n_1}
-      +\frac{p_2(1-p_2)}{n_2} }$ & $\sqrt{\frac{\phat_1(1-\phat_1)}{n_1}
-      +\frac{\phat_2(1-\phat_2)}{n_2} }$\\ \hline
-     $\xb$ & $\frac{\sigma}{\sqrt{n}}$ & $\frac{s}{\sqrt{n}}$ \\\hline
+      +\frac{p_2(1-p_2)}{n_2} }$ &
+       $\sqrt{\frac{\phat_T(1-\phat_T)}(\frac{1}{n_1} + \frac{1}{n_2} )}$
+       & $\sqrt{\frac{\phat_1(1-\phat_1)}{n_1}
+          +\frac{\phat_2(1-\phat_2)}{n_2} }$ \\ \hline
+     $\xb$ & $\frac{\sigma}{\sqrt{n}}$ & $\frac{s}{\sqrt{n}}$& $\frac{s}{\sqrt{n}}$ \\\hline
      $\xb_1 - \xb_2$ & $\sqrt{\frac{\sigma_1^2}{n_1} +\frac{\sigma_2^2}{n_2}} $
+      & $\sqrt{\frac{s_1^2}{n_1} +\frac{s_2^2}{n_2}} $  
       & $\sqrt{\frac{s_1^2}{n_1} +\frac{s_2^2}{n_2}} $  \\ \hline
   \end{tabular}\vspace{.1in}    
   \end{center}
@@ -95,9 +97,9 @@ close to $SE(\xb) = 202.93/\sqrt{319} = 11.36$.
   sizes provide more information, less variation, and we can close in
   on the true parameter values. Here are two big ideas in statistics:
 
-  \begin{center}
-    {\large \bf  Law of Large Numbers}\vspace{.2cm}
-\\
+\subsection{  Law of Large Numbers}
+
+\begin{center}
  \begin{fmpage}{.9\linewidth}
   In the long run, the sample mean $\xb$ will get closer and closer to the
    population mean, $\mu$, and the sample proportion $\phat$ will get
@@ -105,17 +107,18 @@ close to $SE(\xb) = 202.93/\sqrt{319} = 11.36$.
    ``close'' as you wish -- the more precision needed, the greater the
    sample size.
  \end{fmpage}
-  \end{center}
- 
+\end{center}
+
   The {\bf LLN} addresses the width, or spread of the sampling
   distribution. The second important idea addresses the {\bf shape} of
   the sampling distribution, and was more of a surprise when it was
   discovered about 200 years ago (and proven, in general only 100
   years ago).
 
-  \begin{center}
-    {\large \bf  Central Limit Theorem} \vspace{.2cm}
-\\
+
+\subsection{  Central Limit Theorem} 
+
+\begin{center}
 \begin{fmpage}{.9\linewidth}
   As the sample size gets big, the shape
   of the sampling distribution of sample mean, $\xb$ gets closer and
@@ -134,9 +137,8 @@ applies to proportions because if we record success as 1 and failure as
 %% Galton's Board here?
 
 
-\begin{center}
-  {\large\bf Assumptions for t-Procedures}
-\end{center}
+\subsection{ Assumptions for t-Procedures}
+
 
   Just as with proportions, all means methods require 
   \begin{itemize}
@@ -260,7 +262,7 @@ people is lower than $98.6^o$.
 
 
 \begin{enumerate}
-\setcounter{enumi}{5}
+\setcounter{enumi}{10}
 \item  What are the null and alternative hypotheses?  
 \begin{students}
 \\$H_0$:  \vspace{1cm}\\
@@ -408,8 +410,8 @@ temp
 
 \begin{itemize}
 \item Fill in the bottom 3 boxes in column 2 of the Review Table. 
-\item D2Quiz 11 is due April 18.  Take it on D2L.
+%\item D2Quiz 11 is due April 18.  Take it on D2L.
  %%  We strongly encourage you to get help in the Math Learning Center.
 \item Watch the videos 14 \& 15 under Unit 3 Examples.
-\item Read the next three pages before your next class.
+\item Read the next four pages before your next class.
 \end{itemize}
