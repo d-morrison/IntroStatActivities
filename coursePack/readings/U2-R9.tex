@@ -57,9 +57,9 @@ increases, spread gets smaller. \vspace{1in}
  holders created (not real data) under two different assumed values
  for spread, either $\sigma = 5.5$ or $\sigma = 8$.
 
-\includegraphics[width =.48\linewidth]{plots/twoSampDensities4xbar.png}
+\includegraphics[width =.48\linewidth]{plots/twoSampDensities4x.png}
 \hfill
-\includegraphics[width =.48\linewidth]{plots/twoSampDensities4x.png}\\
+\includegraphics[width =.48\linewidth]{plots/twoSampDensities4xbar.png}\\
 
  The right hand pair of plots  shows the distributions of {\bf MEAN ages of 100
    season pass holders.} 
@@ -100,8 +100,8 @@ increases, spread gets smaller. \vspace{1in}
 %  sampMeanFrame <- data.frame(age = c(sample1, sample2), sample = gl(2,
 %  10000, labels = c("sigma = 5.5", "sigma = 8")))
 %  qplot( x = age,  facets =  ~ sample, data = sampMeanFrame, geom = "density") + theme_bw()
-% dev.copy(png,file = "plots/twoSampDensities4xbar.png",height = 300,
-% width = 660);dev.off()
+% dev.copy(png,file = "plots/twoSampDensities4xbar.png",height = 200,
+% width = 440);dev.off()
 
 %  sample1 <- rpois(10000,30.25)
 %  sample2 <- rpois(10000,64.25)-34
@@ -109,4 +109,4 @@ increases, spread gets smaller. \vspace{1in}
 %   10000, labels = c("sigma = 5.5", "sigma = 8")))
 %   qplot( x = age,  facets =  ~ sample, data = sampXFrame, geom =
 %   "density", adjust = 1)  + theme_bw()
-%  dev.copy(png,file = "plots/twoSampDensities4x.png",height = 300, width = 660);dev.off()
+%  dev.copy(png,file = "plots/twoSampDensities4x.png",height = 200, width = 440);dev.off()
