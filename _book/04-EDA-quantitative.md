@@ -27,6 +27,8 @@ In today's activity we will review summary measures and plots for quantitative v
 
 To review these concepts see Section 2.3 in the textbook.  
 
+\newpage
+
 ## Movies Released in 2016
 
 A data set was collected on Movies released since 1916 to 2016.  Here is a list of some of the variables collected on these movies.

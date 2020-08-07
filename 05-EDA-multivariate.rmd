@@ -1,4 +1,4 @@
-# Exploratory Data Analysis: Multivariate Thinking
+# Exploratory Data Analysis: Regression and Multivariate Thinking
 
 ```{r echo=F, fig.height=4}
 par(mfrow=c(1,2))
@@ -29,26 +29,6 @@ moviesa <- na.omit(movies) #removes mising values
 
 * Understand what the coefficient of determination is
 
-## Movies Released in 2016
-
-We will revisit the data set used last week collected on Movies released since 1916 to 2016.  Here is a reminder of the variables collected on these movies.
-
-* Year: Year the movie was released
-
-* Budget: The amount of money (in US $ millions) budgeted for the production of the movie
-
-* Revenue: The amount of money (in US $ millions) the movie made after release
-
-* Duration: The length of the movie (in minutes)
-
-* Content Rating: Rating of the movie (G, PG, PG-13, R, Not Rated)
-
-* IMDb Score: User rating score from 1 to 10
-
-* Genre: Category the movie falls into
-
-* Movie Facebook Likes: Number of likes a movie receives on Facebook
-
 ## Terminology Review
 
 In today's activity we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are
@@ -74,6 +54,26 @@ To review these concepts see Chapter 3 in the textbook.
 2.  What summary statistics are used to describe the relationship between two quantitative variables?
 
 \vspace{0.5in}
+
+## Movies Released in 2016
+
+We will revisit the data set used last week collected on Movies released since 1916 to 2016.  Here is a reminder of the variables collected on these movies.
+
+* Year: Year the movie was released
+
+* Budget: The amount of money (in US $ millions) budgeted for the production of the movie
+
+* Revenue: The amount of money (in US $ millions) the movie made after release
+
+* Duration: The length of the movie (in minutes)
+
+* Content Rating: Rating of the movie (G, PG, PG-13, R, Not Rated)
+
+* IMDb Score: User rating score from 1 to 10
+
+* Genre: Category the movie falls into
+
+* Movie Facebook Likes: Number of likes a movie receives on Facebook
 
 We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. This shows a scatterplot of 'Budget' as a predictor of 'Revenue' (note: both variables are measures in "millions of dollars".  
 
@@ -104,7 +104,7 @@ ggplot(data = moviesa,   #This is the data set
 
 \vspace{1in}
 
-## Correlation 
+### Correlation 
 
 Correlation measures the strength and the direction between two quantitative variables.  The closer the value of correlation to + or - 1 the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  
 
@@ -134,7 +134,7 @@ round(cor(moviesb,use="pairwise.complete.obs"),4)
 
 \vspace{1in}
 
-## Slope
+### Slope
 
 The slope measures the change in y for each increase in x by 1.  In other words, as the x variable increases by 1 unit, the y variable changes (increase/decreases) by the value of slope.
 
@@ -157,7 +157,7 @@ summary(revenueLM)$coefficients
 
 \vspace{1in}
 
-## Residuals:
+### Residuals
 
 The model we are using assumes the relationship between the two variables follows a straight line. The residuals are the errors, or the part that hasn't been modeled by the line.
 
@@ -177,7 +177,7 @@ $e_i=y_i-\hat{y}_i$
 
 \vspace{1in}
 
-## Coefficient of Determination
+### Coefficient of Determination
 
 The coefficient of determination, $R^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $R^2$ describes the amount of variation in the response that is explained by the least squares line with the explanatory variable.  
 
@@ -189,7 +189,7 @@ The coefficient of determination, $R^2$, can also be used to describe the streng
 
 \vspace{1in}
 
-## Multivariate Plot
+### Multivariate Plots
 In the next plot we are graphing three variables. 
 
 ```{r echo=TRUE, fig.height=5,fig.width=12, message = FALSE}

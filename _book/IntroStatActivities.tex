@@ -162,15 +162,15 @@ This coursepack accompanies the textbook for STAT 216: Introduction to Statistic
   Identify observational units, variables, and variable types in a statistical study
 \end{itemize}
 
-\hypertarget{activity}{%
-\section{Activity}\label{activity}}
+\hypertarget{can-we-read-martian}{%
+\section{Can we read ``Martian''?}\label{can-we-read-martian}}
 
 How well can humans distinguish one ``Martian'' letter from another? In today's activity, we'll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or the right.
 
 \vspace{0.5in}
 
-\hypertarget{steps-of-statistical-investigation}{%
-\subsection{Steps of Statistical Investigation}\label{steps-of-statistical-investigation}}
+\hypertarget{steps-of-the-statistical-investigation-process}{%
+\subsection{Steps of the Statistical Investigation Process}\label{steps-of-the-statistical-investigation-process}}
 
 The first step of any statistical investigation is to ask a research question. In this study the research question is: can we as a class read Martian? (we will refine this later on!). To answer any research question, we must design a study and collect data. (This will normally be provided for you in class.) For our question, the study consists of each student being presented with two Martian letters and asking which was Bumba. Your responses will become our observed data that we will explore. To answer the research question we will simulate what \emph{could} have happened in our class given random chance, repeat that many times to understand the expected variability between different ``randomly guessing'' classes, then comparing our class's observed data to the simulation. This gives us an estimate of how often (or the probability of) our class's result would occur if we were all merely guessing, allowing us to determine if we as a class can in fact read Martian.
 
@@ -471,8 +471,8 @@ To review these concepts see Section 1.3 to 1.6 in the textbook.
 
 \newpage
 
-\hypertarget{types-of-bias}{%
-\section{Types of Bias}\label{types-of-bias}}
+\hypertarget{types-of-sampling-bias}{%
+\section{Types of Sampling Bias}\label{types-of-sampling-bias}}
 
 There are two parts to study design: how the sample was selected and how the study was conducted. First we will look at sampling and types of bias.
 
@@ -625,7 +625,7 @@ For the next exercises, identify the explanatory variable, the response variable
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
 \hypertarget{exploratory-data-analysis-categorical-variables}{%
-\chapter{Exploratory Data Analysis: Categorical Variables}\label{exploratory-data-analysis-categorical-variables}}
+\chapter{\texorpdfstring{Exploratory Data Analysis: \newline Categorical Variables}{Exploratory Data Analysis: Categorical Variables}}\label{exploratory-data-analysis-categorical-variables}}
 
 \hypertarget{learning-outcomes}{%
 \section{Learning Outcomes}\label{learning-outcomes}}
@@ -669,8 +669,8 @@ To review these concepts see Section 2.1 in the textbook.
 
 \newpage
 
-\hypertarget{activity}{%
-\section{Activity}\label{activity}}
+\hypertarget{current-population-survey}{%
+\section{Current Population Survey}\label{current-population-survey}}
 
 The data set we will use for this activity is from the Current Population Survey in 1985. The CPS is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population. The following table summarizes the data:
 
@@ -961,6 +961,8 @@ In today's activity we will review summary measures and plots for quantitative v
 
 To review these concepts see Section 2.3 in the textbook.
 
+\newpage
+
 \hypertarget{movies-released-in-2016}{%
 \section{Movies Released in 2016}\label{movies-released-in-2016}}
 
@@ -1157,8 +1159,8 @@ The boxplot of `Budget' in millions by `Content rating' is plotted using the cod
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
-\hypertarget{exploratory-data-analysis-multivariate-thinking}{%
-\chapter{Exploratory Data Analysis: Multivariate Thinking}\label{exploratory-data-analysis-multivariate-thinking}}
+\hypertarget{exploratory-data-analysis-regression-and-multivariate-thinking}{%
+\chapter{Exploratory Data Analysis: Regression and Multivariate Thinking}\label{exploratory-data-analysis-regression-and-multivariate-thinking}}
 
 \hypertarget{learning-objectives}{%
 \section{Learning Objectives}\label{learning-objectives}}
@@ -1177,30 +1179,6 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Understand what the slope coefficient represents
 \item
   Understand what the coefficient of determination is
-\end{itemize}
-
-\hypertarget{movies-released-in-2016}{%
-\section{Movies Released in 2016}\label{movies-released-in-2016}}
-
-We will revisit the data set used last week collected on Movies released since 1916 to 2016. Here is a reminder of the variables collected on these movies.
-
-\begin{itemize}
-\item
-  Year: Year the movie was released
-\item
-  Budget: The amount of money (in US \$ millions) budgeted for the production of the movie
-\item
-  Revenue: The amount of money (in US \$ millions) the movie made after release
-\item
-  Duration: The length of the movie (in minutes)
-\item
-  Content Rating: Rating of the movie (G, PG, PG-13, R, Not Rated)
-\item
-  IMDb Score: User rating score from 1 to 10
-\item
-  Genre: Category the movie falls into
-\item
-  Movie Facebook Likes: Number of likes a movie receives on Facebook
 \end{itemize}
 
 \hypertarget{terminology-review}{%
@@ -1244,6 +1222,30 @@ To review these concepts see Chapter 3 in the textbook.
 \end{enumerate}
 
 \vspace{0.5in}
+
+\hypertarget{movies-released-in-2016}{%
+\section{Movies Released in 2016}\label{movies-released-in-2016}}
+
+We will revisit the data set used last week collected on Movies released since 1916 to 2016. Here is a reminder of the variables collected on these movies.
+
+\begin{itemize}
+\item
+  Year: Year the movie was released
+\item
+  Budget: The amount of money (in US \$ millions) budgeted for the production of the movie
+\item
+  Revenue: The amount of money (in US \$ millions) the movie made after release
+\item
+  Duration: The length of the movie (in minutes)
+\item
+  Content Rating: Rating of the movie (G, PG, PG-13, R, Not Rated)
+\item
+  IMDb Score: User rating score from 1 to 10
+\item
+  Genre: Category the movie falls into
+\item
+  Movie Facebook Likes: Number of likes a movie receives on Facebook
+\end{itemize}
 
 We will look at the relationship between `Budget' and `Revenue' for movies released in 2016. This shows a scatterplot of `Budget' as a predictor of `Revenue' (note: both variables are measures in ``millions of dollars''.
 
@@ -1306,7 +1308,7 @@ We will look at the relationship between `Budget' and `Revenue' for movies relea
 \vspace{1in}
 
 \hypertarget{correlation}{%
-\section{Correlation}\label{correlation}}
+\subsection{Correlation}\label{correlation}}
 
 Correlation measures the strength and the direction between two quantitative variables. The closer the value of correlation to + or - 1 the stronger the linear relationship. Values close to zero indicate a very weak linear relationship between the two variables. The following output shows a correlation matrix between several pairs of quantitative variables.
 
@@ -1376,7 +1378,7 @@ Correlation measures the strength and the direction between two quantitative var
 \vspace{1in}
 
 \hypertarget{slope}{%
-\section{Slope}\label{slope}}
+\subsection{Slope}\label{slope}}
 
 The slope measures the change in y for each increase in x by 1. In other words, as the x variable increases by 1 unit, the y variable changes (increase/decreases) by the value of slope.
 
@@ -1419,7 +1421,7 @@ The linear model function in R gives us the summary for the least squares regres
 \vspace{1in}
 
 \hypertarget{residuals}{%
-\section{Residuals:}\label{residuals}}
+\subsection{Residuals}\label{residuals}}
 
 The model we are using assumes the relationship between the two variables follows a straight line. The residuals are the errors, or the part that hasn't been modeled by the line.
 
@@ -1452,7 +1454,7 @@ $e_i=y_i-\hat{y}_i$
 \vspace{1in}
 
 \hypertarget{coefficient-of-determination}{%
-\section{Coefficient of Determination}\label{coefficient-of-determination}}
+\subsection{Coefficient of Determination}\label{coefficient-of-determination}}
 
 The coefficient of determination, \(R^2\), can also be used to describe the strength of the linear relationship between two quantitative variables. \(R^2\) describes the amount of variation in the response that is explained by the least squares line with the explanatory variable.
 
@@ -1476,8 +1478,8 @@ The coefficient of determination, \(R^2\), can also be used to describe the stre
 
 \vspace{1in}
 
-\hypertarget{multivariate-plot}{%
-\section{Multivariate Plot}\label{multivariate-plot}}
+\hypertarget{multivariate-plots}{%
+\subsection{Multivariate Plots}\label{multivariate-plots}}
 
 In the next plot we are graphing three variables.
 

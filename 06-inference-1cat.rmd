@@ -33,7 +33,7 @@ These are a few of the terms we will cover in today's activity.
 
 To review these concepts see Chapter 5 in your textbook
 
-## Steps of Statisical Investigation
+### Steps of the Statistical Investigation Process
 
 We will work through a six step process to complete a hypothesis test for a single proportion.
 
@@ -60,7 +60,7 @@ set.seed(12980)
 handedness_sub <- handedness[sample(nrow(handedness), 500), ]
 ```
 
-## Summary Statistics Review
+### Summary Statistics Review
 
 1.  What are the observational units?
 
@@ -78,13 +78,13 @@ handedness_sub <- handedness[sample(nrow(handedness), 500), ]
 
 \vspace{0.5in}
 
-## Ask a Research Question.
+### Ask a research question
 
 5. Identify the research question for this study.
 
 \vspace{1in}
 
-## Design a Study and Collect Data
+### Design a study and collect data
 
 6. What is the target population for this study?
 
@@ -94,7 +94,7 @@ handedness_sub <- handedness[sample(nrow(handedness), 500), ]
 
 \vspace{1in}
 
-## Summarize and Visualize the Data
+### Summarize and visualize the data
 
 ```{r}
 # Counts for Handedness
@@ -105,7 +105,7 @@ tally(~Stance, data=handedness_sub, margins=T)
 
 \vspace{0.5in}
 
-## Use statistical analysis methods to draw inferences from the data
+### Use statistical analysis methods to draw inferences from the data
 
 When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, the true value of interest.  
 
@@ -461,7 +461,7 @@ one_proportion_bootstrap_CI(sample_size = 500, #Sample size
 
 \vspace{1in}
 
-## Communicate the results and answer the research question
+### Communicate the results and answer the research question
 
 When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.
 
@@ -479,7 +479,7 @@ When we write a conclusion we answer the research question by stating how much e
 
 \vspace{3in}
 
-## Revisit and look forward
+### Revisit and look forward
 
 29. Suggest a new research question that you might investigate, building on what you learned in this study.
 

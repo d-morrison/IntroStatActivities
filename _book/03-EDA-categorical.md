@@ -1,4 +1,4 @@
-# Exploratory Data Analysis: Categorical Variables
+# Exploratory Data Analysis: \newline Categorical Variables
 
 ## Learning Outcomes
 
@@ -33,7 +33,7 @@ In today's activity we will review summary measures and plots for categorical va
 To review these concepts see Section 2.1 in the textbook.  
 
 \newpage
-## Activity
+## Current Population Survey
 The data set we will use for this activity is from the Current Population Survey in 1985.  The CPS is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population.  The following table summarizes the data:
 
 

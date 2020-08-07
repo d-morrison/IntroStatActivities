@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.29)  7 AUG 2020 14:03
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.29)  7 AUG 2020 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -457,9 +457,6 @@ LaTeX Warning: Label `learning-outcomes' multiply defined.
 LaTeX Warning: Label `terminology-review' multiply defined.
 
 
-LaTeX Warning: Label `activity' multiply defined.
-
-
 LaTeX Warning: Label `additional-notes' multiply defined.
 
 
@@ -475,13 +472,13 @@ LaTeX Warning: Label `additional-notes' multiply defined.
 LaTeX Warning: Label `learning-objectives' multiply defined.
 
 
-LaTeX Warning: Label `movies-released-in-2016' multiply defined.
-
-
 LaTeX Warning: Label `terminology-review' multiply defined.
 
 
 LaTeX Warning: Label `vocabulary-review' multiply defined.
+
+
+LaTeX Warning: Label `movies-released-in-2016' multiply defined.
 
 
 LaTeX Warning: Label `additional-notes' multiply defined.
@@ -1038,7 +1035,7 @@ File: 04-EDA-quantitative_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file
 
 ]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1252.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1254.
 File: 05-EDA-multivariate_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file
  (type pdf)
 <use 05-EDA-multivariate_files/figure-latex/unnamed-chunk-2-1.pdf>
@@ -1090,7 +1087,7 @@ File: 10-regression_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type
  pdf)
 <use 10-regression_files/figure-latex/unnamed-chunk-3-1.pdf>
 [62] [63] [64] [65]
-Overfull \hbox (211.33987pt too wide) in paragraph at lines 3376--3376
+Overfull \hbox (211.33987pt too wide) in paragraph at lines 3378--3378
 []\TU/lmtt/m/n/10 #> Warning in scatterplot.default(X[, 2], X[, 1], groups = X[
 , 3], xlab = xlab, : number of groups exceeds number of available colors[] 
  []
@@ -1098,21 +1095,21 @@ Overfull \hbox (211.33987pt too wide) in paragraph at lines 3376--3376
 File: 10-regression_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type
  pdf)
 <use 10-regression_files/figure-latex/unnamed-chunk-6-1.pdf>
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3385.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3387.
 [66]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3385.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3387.
 (./IntroStatActivities.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3385.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3385.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3387.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3387.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19693 strings out of 479712
- 352517 string characters out of 5889204
- 791104 words of memory out of 5000000
- 36599 multiletter control sequences out of 15000+600000
+ 19694 strings out of 479712
+ 352592 string characters out of 5889204
+ 791258 words of memory out of 5000000
+ 36600 multiletter control sequences out of 15000+600000
  541555 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,6n,118p,1068b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
