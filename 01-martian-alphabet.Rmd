@@ -3,7 +3,7 @@ output:
   pdf_document: default
   html_document: default
 ---
-# Martian Alphabet: An Introduction to Statistics
+# Martian Alphabet
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -64,24 +64,25 @@ We will now collect the data from the entire class.
 \begin{center}
 $\mbox{proportion} = \frac{\mbox{number of students who correctly identified bumba}}{\mbox{total number of students}}$
 \end{center}
-\vspace{0.5in}
+\vspace{1in}
 
 Looking at the data set and the summary statistics is only one way to display the data.  We will also want to create a visualization or picture of the data. A **frequency bar plot** is used to display categorical data as a count or frequency. Since our variable has two levels, correct or incorrect, we will create two bars one for each level.
 
 7. Plot the observed class data using a frequency bar plot. 
 
 ![](images/barplot_martian.png)
-\newpage 
 
 We can also visualize the data as a proportion in a **relative frequency bar plot**.  Relative frequency is the proportion calculated for each level of the categorical variable. 
+
 
 8. Plot the observed class data using a relative frequency bar plot.
 
 ![](images/relative_barplot_martian.png)
 
+\newpage
 9.	The next step is to analyze the data.  If humans really don’t know Martian and are just guessing which is bumba, what are the chances of getting it right? 
 \vspace{0.5in}
-
+    
     How could we use a coin to simulate each student “just guessing” which martian letter is bumba? 
 \vspace{1in}
 
@@ -145,8 +146,5 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 2.	Blind guessing between two outcomes will be correct only about half the time. We can create data (via computer simulation) to fit the assumption of blind guessing.
 
 3.	Unusual observed results will make us doubt the assumptions used to create the simulated distribution. A large number of correct “guesses” is evidence that a person was not just blindly guessing.
-
-
-
 
 

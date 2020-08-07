@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.8.7)  7 AUG 2020 11:51
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.8.7)  7 AUG 2020 12:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -944,58 +944,66 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 204.
 File: images/barplot_martian.png Graphic file (type bmp)
 <images/barplot_martian.png>
-[5]
 File: images/relative_barplot_martian.png Graphic file (type bmp)
 <images/relative_barplot_martian.png>
-
-Overfull \hbox (68.74538pt too wide) in paragraph at lines 244--244
+[5] [6]
+Overfull \hbox (68.74538pt too wide) in paragraph at lines 245--245
 []\TU/lmtt/m/n/10 How could we use a coin to simulate each student “just guessi
 ng” which martian letter is bumba?[] 
  []
 
 
-Overfull \hbox (84.49538pt too wide) in paragraph at lines 250--250
+Overfull \hbox (84.49538pt too wide) in paragraph at lines 251--251
 []\TU/lmtt/m/n/10 How could we use coins to simulate the entire class “just gue
 ssing” which martian letter is bumba?[] 
  []
 
 
-Overfull \hbox (163.24538pt too wide) in paragraph at lines 256--256
+Overfull \hbox (163.24538pt too wide) in paragraph at lines 257--257
 []\TU/lmtt/m/n/10 How many people in your class would you expect to choose bumb
 a correctly just by chance?  Explain your reasoning.[] 
  []
 
-[6]
-Overfull \hbox (184.24538pt too wide) in paragraph at lines 270--270
+
+Overfull \hbox (184.24538pt too wide) in paragraph at lines 271--271
 []\TU/lmtt/m/n/10 What was the result from your class’s simulation?  What propo
 rtion of students “guessed” correctly in the simulation?[] 
  []
 
-[7] [8] [9] [10
+[7] [8] [9] [10] [11
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 441.
-[11
+] [12] [13]
+File: 07-inference-2cat_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (
+type pdf)
+<use 07-inference-2cat_files/figure-latex/unnamed-chunk-2-1.pdf>
+[14] [15] [16] [17] [18] [19]
+File: 08-paired_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type pdf
+)
+<use 08-paired_files/figure-latex/unnamed-chunk-1-1.pdf>
+[20
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 441.
+] [21] [22] [23] [24]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1088.
+[25]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1088.
 (./IntroStatActivities.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 441.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 441.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1088.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1088.
+
 Package rerunfilecheck Info: File `IntroStatActivities.out' has not changed.
-(rerunfilecheck)             Checksum: 51DE1FA44271C5BBDC363AD20CDF9A28;979.
+(rerunfilecheck)             Checksum: F4F62E4147881F9595A6A39D95E05256;812.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 441.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1088.
  ) 
 Here is how much of TeX's memory you used:
- 17426 strings out of 481704
- 309214 string characters out of 5931955
+ 17451 strings out of 481704
+ 310171 string characters out of 5931955
  724226 words of memory out of 5000000
- 34282 multiletter control sequences out of 15000+600000
- 541515 words of font info for 79 fonts, out of 8000000 for 9000
+ 34299 multiletter control sequences out of 15000+600000
+ 541531 words of font info for 81 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,5n,118p,1018b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,5n,118p,1018b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on IntroStatActivities.pdf (12 pages).
+Output written on IntroStatActivities.pdf (26 pages).
