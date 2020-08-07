@@ -49,7 +49,7 @@ To review these concepts see Section 1.3 to 1.6 in the textbook.
 
 \newpage
 
-## Types of Bias
+## Types of Sampling Bias
 
 There are two parts to study design: how the sample was selected and how the study was conducted.  First we will look at sampling and types of bias.
 
