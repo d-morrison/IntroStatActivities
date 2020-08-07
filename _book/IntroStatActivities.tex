@@ -89,7 +89,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx}
+\usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -118,9 +118,6 @@
 \addtolength{\oddsidemargin}{-1cm}
 \addtolength{\textheight}{1.8cm}
 \addtolength{\textwidth}{2cm}
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{plainnat}
 
@@ -415,8 +412,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{study-design}{%
 \chapter{Study Design}\label{study-design}}
 
-\hypertarget{learning-outcomes}{%
-\section{Learning Outcomes}\label{learning-outcomes}}
+\hypertarget{learning-outcomes-1}{%
+\section{Learning Outcomes}\label{learning-outcomes-1}}
 
 \begin{itemize}
 \item
@@ -619,16 +616,16 @@ For the next exercises, identify the explanatory variable, the response variable
   \vspace{1in}
 \end{enumerate}
 
-\hypertarget{additional-notes}{%
-\section{Additional Notes}\label{additional-notes}}
+\hypertarget{additional-notes-1}{%
+\section{Additional Notes}\label{additional-notes-1}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
 \hypertarget{exploratory-data-analysis-categorical-variables}{%
 \chapter{Exploratory Data Analysis: Categorical Variables}\label{exploratory-data-analysis-categorical-variables}}
 
-\hypertarget{learning-outcomes}{%
-\section{Learning Outcomes}\label{learning-outcomes}}
+\hypertarget{learning-outcomes-2}{%
+\section{Learning Outcomes}\label{learning-outcomes-2}}
 
 \begin{itemize}
 \item
@@ -645,8 +642,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Construct two-way tables to evaluate conditional probabilities
 \end{itemize}
 
-\hypertarget{terminology-review}{%
-\section{Terminology Review}\label{terminology-review}}
+\hypertarget{terminology-review-1}{%
+\section{Terminology Review}\label{terminology-review-1}}
 
 In today's activity we will review summary measures and plots for categorical variables. Some terms covered in this activity are\ldots{}
 
@@ -669,8 +666,8 @@ To review these concepts see Section 2.1 in the textbook.
 
 \newpage
 
-\hypertarget{activity}{%
-\section{Activity}\label{activity}}
+\hypertarget{activity-1}{%
+\section{Activity}\label{activity-1}}
 
 The data set we will use for this activity is from the Current Population Survey in 1985. The CPS is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population. The following table summarizes the data:
 
@@ -903,8 +900,8 @@ Total & & & 100,000\tabularnewline
   \vspace{1in}
 \end{enumerate}
 
-\hypertarget{additional-notes}{%
-\section{Additional Notes}\label{additional-notes}}
+\hypertarget{additional-notes-2}{%
+\section{Additional Notes}\label{additional-notes-2}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
@@ -928,8 +925,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   (center, variability, shape, outliers)
 \end{itemize}
 
-\hypertarget{terminology-review}{%
-\section{Terminology Review}\label{terminology-review}}
+\hypertarget{terminology-review-2}{%
+\section{Terminology Review}\label{terminology-review-2}}
 
 In today's activity we will review summary measures and plots for quantitative variables. Some terms covered in this activity are
 
@@ -985,8 +982,8 @@ A data set was collected on Movies released since 1916 to 2016. Here is a list o
   Movie Facebook Likes: Number of likes a movie receives on Facebook
 \end{itemize}
 
-\hypertarget{vocabulary-review}{%
-\section{Vocabulary Review}\label{vocabulary-review}}
+\hypertarget{vocabulary-review-1}{%
+\section{Vocabulary Review}\label{vocabulary-review-1}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1152,16 +1149,16 @@ The boxplot of `Budget' in millions by `Content rating' is plotted using the cod
   \vspace{1in}
 \end{enumerate}
 
-\hypertarget{additional-notes}{%
-\section{Additional Notes}\label{additional-notes}}
+\hypertarget{additional-notes-3}{%
+\section{Additional Notes}\label{additional-notes-3}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
 \hypertarget{exploratory-data-analysis-multivariate-thinking}{%
 \chapter{Exploratory Data Analysis: Multivariate Thinking}\label{exploratory-data-analysis-multivariate-thinking}}
 
-\hypertarget{learning-objectives}{%
-\section{Learning Objectives}\label{learning-objectives}}
+\hypertarget{learning-objectives-1}{%
+\section{Learning Objectives}\label{learning-objectives-1}}
 
 \begin{itemize}
 \item
@@ -1179,8 +1176,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Understand what the coefficient of determination is
 \end{itemize}
 
-\hypertarget{movies-released-in-2016}{%
-\section{Movies Released in 2016}\label{movies-released-in-2016}}
+\hypertarget{movies-released-in-2016-1}{%
+\section{Movies Released in 2016}\label{movies-released-in-2016-1}}
 
 We will revisit the data set used last week collected on Movies released since 1916 to 2016. Here is a reminder of the variables collected on these movies.
 
@@ -1203,8 +1200,8 @@ We will revisit the data set used last week collected on Movies released since 1
   Movie Facebook Likes: Number of likes a movie receives on Facebook
 \end{itemize}
 
-\hypertarget{terminology-review}{%
-\section{Terminology Review}\label{terminology-review}}
+\hypertarget{terminology-review-3}{%
+\section{Terminology Review}\label{terminology-review-3}}
 
 In today's activity we will review summary measures and plots for two quantitative variables. Some terms covered in this activity are
 
@@ -1223,8 +1220,8 @@ In today's activity we will review summary measures and plots for two quantitati
 
 To review these concepts see Chapter 3 in the textbook.
 
-\hypertarget{vocabulary-review}{%
-\section{Vocabulary Review}\label{vocabulary-review}}
+\hypertarget{vocabulary-review-2}{%
+\section{Vocabulary Review}\label{vocabulary-review-2}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1249,13 +1246,13 @@ We will look at the relationship between `Budget' and `Revenue' for movies relea
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ moviesa,   }\CommentTok{\#This is the data set}
-       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget\_mil, }\DataTypeTok{y =}\NormalTok{ revenue\_mil))}\OperatorTok{+}\StringTok{  }\CommentTok{\#Specify variables}
-\StringTok{  }\KeywordTok{geom\_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{\#Add scatterplot of points}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{\#Label x{-}axis}
-       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{\#Label y{-}axis}
-       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\#Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom\_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{\#Add regression line}
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ moviesa,   }\CommentTok{#This is the data set}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget_mil, }\DataTypeTok{y =}\NormalTok{ revenue_mil))}\OperatorTok{+}\StringTok{  }\CommentTok{#Specify variables}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{#Add scatterplot of points}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{#Label x-axis}
+       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{#Label y-axis}
+       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{#Be sure to tile your plots}
+\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{#Add regression line}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1483,14 +1480,14 @@ In the next plot we are graphing three variables.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ moviesa,   }\CommentTok{\#This is the data set}
-       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget\_mil, }\DataTypeTok{y =}\NormalTok{ revenue\_mil, }\DataTypeTok{color =}\NormalTok{ content\_rating))}\OperatorTok{+}\StringTok{  }\CommentTok{\#Specify variables}
-\StringTok{  }\KeywordTok{geom\_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{\#Add scatterplot of points}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{\#Label x{-}axis}
-       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{\#Label y{-}axis}
-       \DataTypeTok{color =} \StringTok{"Content Rating"}\NormalTok{,  }\CommentTok{\#Label legend}
-       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\#Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom\_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{\#Add regression line}
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ moviesa,   }\CommentTok{#This is the data set}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget_mil, }\DataTypeTok{y =}\NormalTok{ revenue_mil, }\DataTypeTok{color =}\NormalTok{ content_rating))}\OperatorTok{+}\StringTok{  }\CommentTok{#Specify variables}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{#Add scatterplot of points}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{#Label x-axis}
+       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{#Label y-axis}
+       \DataTypeTok{color =} \StringTok{"Content Rating"}\NormalTok{,  }\CommentTok{#Label legend}
+       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{#Be sure to tile your plots}
+\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{#Add regression line}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1516,16 +1513,16 @@ In the next plot we are graphing three variables.
 
 \vspace{1in}
 
-\hypertarget{additional-notes}{%
-\section{Additional Notes}\label{additional-notes}}
+\hypertarget{additional-notes-4}{%
+\section{Additional Notes}\label{additional-notes-4}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
 \hypertarget{introduction-to-inference-one-categorical-variable}{%
 \chapter{Introduction to Inference: One Categorical Variable}\label{introduction-to-inference-one-categorical-variable}}
 
-\hypertarget{learning-objectives}{%
-\section{Learning Objectives}\label{learning-objectives}}
+\hypertarget{learning-objectives-2}{%
+\section{Learning Objectives}\label{learning-objectives-2}}
 
 \begin{itemize}
 \item
@@ -1975,8 +1972,8 @@ When we write a conclusion we answer the research question by stating how much e
 
 \vspace{1in}
 
-\hypertarget{additional-notes}{%
-\section{Additional Notes}\label{additional-notes}}
+\hypertarget{additional-notes-5}{%
+\section{Additional Notes}\label{additional-notes-5}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
@@ -1999,8 +1996,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Create and interpret a confidence interval for the difference in proportions
 \end{itemize}
 
-\hypertarget{terminology}{%
-\section{Terminology}\label{terminology}}
+\hypertarget{terminology-1}{%
+\section{Terminology}\label{terminology-1}}
 
 Here are a few terms we will use in today's activity.
 
@@ -2039,8 +2036,8 @@ Total & 576 & 2986 & 3562\tabularnewline
 
 Is there evidence that safety helmet use reduces the risk of head injury for skiers and snowboarders?
 
-\hypertarget{vocabulary-review}{%
-\section{Vocabulary Review}\label{vocabulary-review}}
+\hypertarget{vocabulary-review-3}{%
+\section{Vocabulary Review}\label{vocabulary-review-3}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2171,8 +2168,8 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 \(H_A: \pi_1 -\pi_2\) \_\_\_\_\_\_\_\_\_\_ 0
 
-\hypertarget{summarize-and-visualize-the-data}{%
-\section{Summarize and Visualize the data}\label{summarize-and-visualize-the-data}}
+\hypertarget{summarize-and-visualize-the-data-1}{%
+\section{Summarize and Visualize the data}\label{summarize-and-visualize-the-data-1}}
 
 \begin{center}\includegraphics[width=0.7\linewidth]{07-inference-2cat_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
@@ -2216,8 +2213,8 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 \vspace{0.5in}
 
-\hypertarget{use-statistical-analysis-methods-to-draw-inferences-from-the-data}{%
-\section{Use statistical analysis methods to draw inferences from the data}\label{use-statistical-analysis-methods-to-draw-inferences-from-the-data}}
+\hypertarget{use-statistical-analysis-methods-to-draw-inferences-from-the-data-1}{%
+\section{Use statistical analysis methods to draw inferences from the data}\label{use-statistical-analysis-methods-to-draw-inferences-from-the-data-1}}
 
 To test the null hypothesis we could use simulation methods as we did with a single categorical variable. In this activity we will focus on theory-based methods. Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
@@ -2419,16 +2416,16 @@ A Type 1 Error is rejecting the null hypothesis when \(H_0\)is actually true. A 
 
 \vspace{1in}
 
-\hypertarget{additional-notes}{%
-\section{Additional Notes}\label{additional-notes}}
+\hypertarget{additional-notes-6}{%
+\section{Additional Notes}\label{additional-notes-6}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
 \hypertarget{statistical-investigations-for-paired-data}{%
 \chapter{Statistical Investigations for Paired Data}\label{statistical-investigations-for-paired-data}}
 
-\hypertarget{learning-outcomes}{%
-\section{Learning Outcomes}\label{learning-outcomes}}
+\hypertarget{learning-outcomes-3}{%
+\section{Learning Outcomes}\label{learning-outcomes-3}}
 
 \begin{itemize}
 \item
@@ -2444,8 +2441,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Use a confidence interval to determine the conclusion of a hypothesis test
 \end{itemize}
 
-\hypertarget{terminology}{%
-\section{Terminology}\label{terminology}}
+\hypertarget{terminology-2}{%
+\section{Terminology}\label{terminology-2}}
 
 The following terms will be covered in this activity.
 
@@ -2471,8 +2468,8 @@ The social distancing efforts and stay-at-home directives to help combat the spr
 
 Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015 - 2019). Note that higher AQI scores indicate worse air quality.
 
-\hypertarget{vocabulary-review}{%
-\section{Vocabulary Review}\label{vocabulary-review}}
+\hypertarget{vocabulary-review-4}{%
+\section{Vocabulary Review}\label{vocabulary-review-4}}
 
 \begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
@@ -2526,8 +2523,8 @@ Differences & \(\bar{x}_d\) = -4.152 & \(s_d\) = 17.096 & \(n_d\) = 33\tabularne
 
 \vspace{0.5in}
 
-\hypertarget{ask-a-research-question}{%
-\section{Ask a Research Question}\label{ask-a-research-question}}
+\hypertarget{ask-a-research-question-1}{%
+\section{Ask a Research Question}\label{ask-a-research-question-1}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2569,8 +2566,8 @@ Differences & \(\bar{x}_d\) = -4.152 & \(s_d\) = 17.096 & \(n_d\) = 33\tabularne
 
 \vspace{1in}
 
-\hypertarget{summarize-and-visualize-the-data}{%
-\section{Summarize and Visualize the Data}\label{summarize-and-visualize-the-data}}
+\hypertarget{summarize-and-visualize-the-data-2}{%
+\section{Summarize and Visualize the Data}\label{summarize-and-visualize-the-data-2}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2607,7 +2604,9 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 
 \vspace{1in}
 
-\textbf{Add simulation here}
+The image below gives the null distribution from one possible set of 1000 bootstrap samples:
+
+\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2678,10 +2677,12 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 \setcounter{enumi}{17}
 \tightlist
 \item
-  Interpret the 95\% confidence interval in context of the problem.
+  Interpret the 95\% confidence interval in the following figure in the context of the problem.
 \end{enumerate}
 
 \vspace{1in}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-5-1} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2708,19 +2709,19 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 
 \vspace{3in}
 
-\hypertarget{revisit-and-look-forward}{%
-\section{Revisit and Look Forward}\label{revisit-and-look-forward}}
+\hypertarget{revisit-and-look-forward-1}{%
+\section{Revisit and Look Forward}\label{revisit-and-look-forward-1}}
 
-\hypertarget{additional-notes}{%
-\section{Additional Notes}\label{additional-notes}}
+\hypertarget{additional-notes-7}{%
+\section{Additional Notes}\label{additional-notes-7}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
 \hypertarget{statistical-investigations-for-a-difference-in-means}{%
 \chapter{Statistical Investigations for a Difference in Means}\label{statistical-investigations-for-a-difference-in-means}}
 
-\hypertarget{learning-objectives.}{%
-\section{Learning Objectives.}\label{learning-objectives.}}
+\hypertarget{learning-objectives.-1}{%
+\section{Learning Objectives.}\label{learning-objectives.-1}}
 
 \begin{itemize}
 \item
@@ -2735,23 +2736,23 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Use a confidence interval to determine the conclusion of a hypothesis test
 \end{itemize}
 
-\hypertarget{background}{%
-\section{Background}\label{background}}
+\hypertarget{background-1}{%
+\section{Background}\label{background-1}}
 
 In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the collapse of two flat-roofed buildings on the MSU campus. A writer for the Washington Post predicted the heavy snowfall for 2018-2019 due to the El Nino weather pattern that occurred in that season. A meteorologist in Montana wanted to see if the weather pattern really was associated with total snowfall. She obtained historical data from 44 years on the weather pattern (El Nino or La Nina) and snowfall (in inches) at the Billings Weather Station.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{favstats}\NormalTok{(Snowfall}\OperatorTok{\textasciitilde{}}\NormalTok{WeatherPattern, }\DataTypeTok{data=}\NormalTok{Snow)}
-\CommentTok{\#\textgreater{}   WeatherPattern  min   Q1 median   Q3   max     mean       sd  n missing}
-\CommentTok{\#\textgreater{} 1        El\_Nino 31.9 46.4   57.7 64.3  87.9 56.23043 13.00823 23       0}
-\CommentTok{\#\textgreater{} 2        La\_Nina 44.5 51.4   60.9 70.3 107.2 63.13333 15.48626 21       0}
+\KeywordTok{favstats}\NormalTok{(Snowfall}\OperatorTok{~}\NormalTok{WeatherPattern, }\DataTypeTok{data=}\NormalTok{Snow)}
+\CommentTok{#>   WeatherPattern  min   Q1 median   Q3   max     mean       sd  n missing}
+\CommentTok{#> 1        El_Nino 31.9 46.4   57.7 64.3  87.9 56.23043 13.00823 23       0}
+\CommentTok{#> 2        La_Nina 44.5 51.4   60.9 70.3 107.2 63.13333 15.48626 21       0}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{boxplot}\NormalTok{(Snowfall}\OperatorTok{\textasciitilde{}}\NormalTok{WeatherPattern, }\DataTypeTok{data=}\NormalTok{Snow)}
+\KeywordTok{boxplot}\NormalTok{(Snowfall}\OperatorTok{~}\NormalTok{WeatherPattern, }\DataTypeTok{data=}\NormalTok{Snow)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2809,8 +2810,8 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 
 \vspace{1in}
 
-\hypertarget{ask-a-research-question.}{%
-\section{Ask a research question.}\label{ask-a-research-question.}}
+\hypertarget{ask-a-research-question.-1}{%
+\section{Ask a research question.}\label{ask-a-research-question.-1}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2855,8 +2856,8 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 
 \vspace{0.5in}
 
-\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data}{%
-\section{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data}}
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}{%
+\section{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}}
 
 Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, we asssume there is no association between variables. This means that a snowfall value could be in either an El Nino year or a La Nina year.
 
@@ -2954,8 +2955,8 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \vspace{1in}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question.}{%
-\section{Communicate the results and answer the research question.}\label{communicate-the-results-and-answer-the-research-question.}}
+\hypertarget{communicate-the-results-and-answer-the-research-question.-1}{%
+\section{Communicate the results and answer the research question.}\label{communicate-the-results-and-answer-the-research-question.-1}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2982,8 +2983,8 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \vspace{3in}
 
-\hypertarget{revisit-and-look-forward}{%
-\section{Revisit and Look Forward}\label{revisit-and-look-forward}}
+\hypertarget{revisit-and-look-forward-2}{%
+\section{Revisit and Look Forward}\label{revisit-and-look-forward-2}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3005,16 +3006,16 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \vspace{1in}
 
-\hypertarget{additional-notes}{%
-\section{Additional Notes}\label{additional-notes}}
+\hypertarget{additional-notes-8}{%
+\section{Additional Notes}\label{additional-notes-8}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
 \hypertarget{statistical-investigations-for-two-quantitative-variables-regression}{%
 \chapter{Statistical Investigations for Two Quantitative Variables: Regression}\label{statistical-investigations-for-two-quantitative-variables-regression}}
 
-\hypertarget{learning-outcomes}{%
-\section{Learning Outcomes}\label{learning-outcomes}}
+\hypertarget{learning-outcomes-4}{%
+\section{Learning Outcomes}\label{learning-outcomes-4}}
 
 \begin{itemize}
 \item
@@ -3030,8 +3031,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Use a confidence interval to determine the conclusion of a hypothesis test
 \end{itemize}
 
-\hypertarget{terminology}{%
-\section{Terminology}\label{terminology}}
+\hypertarget{terminology-3}{%
+\section{Terminology}\label{terminology-3}}
 
 The following terms will be covered in this activity.
 
@@ -3072,8 +3073,8 @@ The variables in this dataset consist of the following:
 
 \emph{Data source: Hand Dexterity in Children: Administration and Normative Values of the Functional Dexterity Test (FDT), Gogola, G., et al., 2013}
 
-\hypertarget{vocabulary-review}{%
-\section{Vocabulary Review}\label{vocabulary-review}}
+\hypertarget{vocabulary-review-5}{%
+\section{Vocabulary Review}\label{vocabulary-review-5}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3170,8 +3171,8 @@ The scatterplot and the residual plot will be used to assess the conditions for 
 
 \vspace{0.5in}
 
-\hypertarget{summarize-and-visualize-the-data}{%
-\section{Summarize and Visualize the data}\label{summarize-and-visualize-the-data}}
+\hypertarget{summarize-and-visualize-the-data-3}{%
+\section{Summarize and Visualize the data}\label{summarize-and-visualize-the-data-3}}
 
 Enter the variable names into the linear model function to get the linear model output.
 
@@ -3221,8 +3222,8 @@ Enter the variable names into the linear model function to get the linear model 
 
 \vspace{1in}
 
-\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data}{%
-\section{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data}}
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-2}{%
+\section{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-2}}
 
 To find the value of the test statistic to test the slope we will use,
 
@@ -3313,8 +3314,8 @@ The \(t^*\) multiplier comes from the t-distribution with \(n-2\) df.
 
 \vspace{1in}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question.}{%
-\section{Communicate the results and answer the research question.}\label{communicate-the-results-and-answer-the-research-question.}}
+\hypertarget{communicate-the-results-and-answer-the-research-question.-2}{%
+\section{Communicate the results and answer the research question.}\label{communicate-the-results-and-answer-the-research-question.-2}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3359,8 +3360,8 @@ The \(t^*\) multiplier comes from the t-distribution with \(n-2\) df.
   Scope of inference
 \end{itemize}
 
-\hypertarget{revisit-and-look-forward}{%
-\section{Revisit and Look Forward}\label{revisit-and-look-forward}}
+\hypertarget{revisit-and-look-forward-3}{%
+\section{Revisit and Look Forward}\label{revisit-and-look-forward-3}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3377,8 +3378,8 @@ The \(t^*\) multiplier comes from the t-distribution with \(n-2\) df.
 
 \begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-6-1} \end{center}
 
-\hypertarget{additional-notes}{%
-\section{Additional Notes}\label{additional-notes}}
+\hypertarget{additional-notes-9}{%
+\section{Additional Notes}\label{additional-notes-9}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 

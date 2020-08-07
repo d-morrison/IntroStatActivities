@@ -15,6 +15,7 @@
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
 ## Terminology
+
 The following terms will be covered in this activity.
 
 * Mean difference
@@ -103,7 +104,11 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 \vspace{1in}
 
 
-**Add simulation here**
+
+The image below gives the null distribution from one possible set of 1000 bootstrap samples:
+
+
+\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
 
 12. Explain why the null distribution is centered at zero. 
@@ -133,10 +138,12 @@ Report the confidence interval in interval notation.
 
 ## Communicate the results and answer the research question.
 
-18. Interpret the 95% confidence interval in context of the problem.
+18. Interpret the 95% confidence interval in the following figure in the context of the problem.
 
 \vspace{1in}
 
+
+\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-5-1} \end{center}
 
 19.  Write a paragraph summarizes the results of this study.  Be sure to include:
 
