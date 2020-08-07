@@ -36,8 +36,7 @@ Quantitative variables are numerical measurements that can be discrete (whole, n
 
 Categorical variables are data that are in groups or categories such as eye color, state of residency, or whether or not a student is considered in-state. Categorical variables with a natural ordering are considered ordinal variables while those without a natural ordering are considered a nominal variable.  All variables will be treated as nominal for analysis.
 
-![](variables.png)
-
+![](images/variables.png)
 
 3. Identify the variable we are collecting on each observational unit in this study.  What are we measuring on each student?
 
@@ -65,17 +64,19 @@ $\mbox{proportion} = \frac{\mbox{number of students who correctly identified bum
 Looking at the data set and the summary statistics is only one way to display the data.  We will also want to create a visualization or picture of the data. A **frequency bar plot** is used to display categorical data as a count or frequency. Since our variable has two levels, correct or incorrect, we will create two bars one for each level.
 
 \newpage
-
 7. Plot the observed class data using a frequency bar plot. 
 
-![](../images/barplot_martian.png)
+![](images/barplot_martian.png)
 
 We can also visualize the data as a proportion in a **relative frequency bar plot**.  Relative frequency is the proportion calculated for each level of the categorical variable. 
 
+\vspace{1in}
+
 8. Plot the observed class data using a relative frequency bar plot.
 
-![](../images/relative_barplot_martian.png)
+![](images/relative_barplot_martian.png)
 
+\newpage
 9.	The next step is to analyze the data.  If humans really don’t know Martian and are just guessing which is bumba, what are the chances of getting it right? 
 \vspace{0.5in}
     
@@ -88,10 +89,10 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
     How many people in your class would you expect to choose bumba correctly just by chance?  Explain your reasoning.
 \vspace{1in}
 
-10.	Each of you will flip a coin one time to simulate your “guess”.  Let Heads = correct, Tails = incorrect.  What was the result of your simulation? \vspace{0.5in}
+10.	Each of you will flip a coin one time to simulate your “guess”.  Let Heads = correct, Tails = incorrect.  What was the result of your simulation? \vspace{1in}
 
     What was the result from your class’s simulation?  What proportion of students “guessed” correctly in the simulation?
-\vspace{0.5in}
+\vspace{1in}
 
 11. If students really don’t know Martian and are just guessing which is bumba, which seems more unusual: the result from your class’s **simulation** or the observed proportion of students in your class that were correct (this is your data from question 6)?  Explain your reasoning.
 
@@ -101,7 +102,8 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 \vspace{1in}
 
-13.	We still unfortunately only have a couple of simulations to compare our class data to.  It would be much better to be able to see how our class compared to hundreds or thousands of “just-guessing” classes.  Since we don’t want to flip coins all class period, your instructor will use a web app to get several 1000 trials. Fill in the following blanks to describe how we would create a simulation of random guessing with 1000 trials.
+
+13.	We still unfortunately only have a couple of simulations to compare our class data to.  It would be much better to be able to see how our class compared to hundreds or thousands of “just-guessing” classes.  Since we don’t want to flip coins all class period, your instructor will use a computer simulation to get 1000 trials. Fill in the following blanks to describe how we would create a simulation of random guessing with 1000 trials.
 \vspace{0.1in}
 
     Probability of correct guesses: _____
@@ -115,7 +117,7 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 14.  Sketch the distribution displayed by your instructor here, being sure to label each axis appropriately. 
 
-\vspace{1.5in}
+\vspace{2in}
 
 15. Is your class particularly good or bad at Martian?  How can you use the plot in question 14 to tell? 
 
@@ -141,5 +143,8 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 2.	Blind guessing between two outcomes will be correct only about half the time. We can create data (via computer simulation) to fit the assumption of blind guessing.
 
 3.	Unusual observed results will make us doubt the assumptions used to create the simulated distribution. A large number of correct “guesses” is evidence that a person was not just blindly guessing.
+
+
+
 
 
