@@ -1487,7 +1487,7 @@ In the next plot we are graphing three variables.
        \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{#Label y-axis}
        \DataTypeTok{color =} \StringTok{"Content Rating"}\NormalTok{,  }\CommentTok{#Label legend}
        \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{#Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{#Add regression line}
+\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{#Add regression lines}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2663,8 +2663,7 @@ The image below gives the null distribution from one possible set of 1000 bootst
 \setcounter{enumi}{16}
 \tightlist
 \item
-  Use bootstrapping to find a 99\% confidence interval for the parameter of interest. Fill in the \ldots.
-  Report the confidence interval in interval notation.
+  Use bootstrapping to find a 99\% confidence interval for the parameter of interest. Fill in the data, number of bootstrap samples, and confidence level. Report the confidence interval in interval notation.
 \end{enumerate}
 
 \vspace{1in}
@@ -3370,11 +3369,6 @@ The \(t^*\) multiplier comes from the t-distribution with \(n-2\) df.
 \item
   Is there an effect due to gender on this linear relationship? Explain your answer using the scatterplot.
 \end{enumerate}
-
-\begin{verbatim}
-#> Warning in scatterplot.default(X[, 2], X[, 1], groups = X[, 3], xlab = xlab, : number of groups exceeds number of available colors
-#>   colors are recycled
-\end{verbatim}
 
 \begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-6-1} \end{center}
 

@@ -206,7 +206,7 @@ ggplot(data = moviesa,   #This is the data set
        y = "Revenue in Millions ($)",  #Label y-axis
        color = "Content Rating",  #Label legend
        title = "Revenue vs. Budget") + #Be sure to tile your plots
-  geom_smooth(method = "lm", se = FALSE)  #Add regression line
+  geom_smooth(method = "lm", se = FALSE)  #Add regression lines
 ```
 
 

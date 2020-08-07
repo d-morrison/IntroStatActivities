@@ -204,13 +204,6 @@ The $t^*$ multiplier comes from the t-distribution with $n-2$ df.
 23. Is there an effect due to gender on this linear relationship?  Explain your answer using the scatterplot.
 
 
-```
-#> Warning in scatterplot.default(X[, 2], X[, 1], groups = X[, 3], xlab = xlab, : number of groups exceeds number of available colors
-#>   colors are recycled
-```
-
-
-
 \begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-6-1} \end{center}
 
 

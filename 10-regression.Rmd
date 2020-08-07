@@ -71,8 +71,13 @@ hands$handUsed <- factor(hands$handUsed)
 ```
 
 ```{r}
-scatterplot(speed~age, data = hands, smooth=F, col=1, pch=19,
-            main = "Scatterplot of Age vs. Speed")
+ggplot(data = hands,   #This is the data set
+       aes(x = age, y = speed))+  #Specify variables
+  geom_point() +  #Add scatterplot of points
+  labs(x = "Age (yrs)",  #Label x-axis
+       y = "Speed (sec/peg)",  #Label y-axis
+       title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
+  geom_smooth(method = "lm", se = FALSE)  #Add regression line
 ```
 
 
@@ -217,8 +222,14 @@ qt(0.95+0.025, 172) #95% t* multiplier
 23. Is there an effect due to gender on this linear relationship?  Explain your answer using the scatterplot.
 
 ```{r}
-scatterplot(speed~age+dominant, data = hands, smooth=F, col=1, 
-            main = "Scatterplot of Age vs. Speed by Gender")
+ggplot(data = hands,   #This is the data set
+       aes(x = age, y = speed, color = dominant))+  #Specify variables
+  geom_point(aes(pch = dominant)) +  #Add scatterplot of points
+  labs(x = "Age (yrs)",  #Label x-axis
+       y = "Speed (sec/peg)",  #Label y-axis
+       legend = "Dominant hand",  #Label your legend
+       title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
+  geom_smooth(method = "lm", se = FALSE)  #Add regression line
 ```
 
 

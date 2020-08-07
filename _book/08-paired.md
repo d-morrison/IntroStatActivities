@@ -131,8 +131,7 @@ The image below gives the null distribution from one possible set of 1000 bootst
 
 \vspace{1in}
 
-17.  Use bootstrapping to find a 99% confidence interval for the parameter of interest.  Fill in the ....
-Report the confidence interval in interval notation.
+17.  Use bootstrapping to find a 99% confidence interval for the parameter of interest.  Fill in the data, number of bootstrap samples, and confidence level.  Report the confidence interval in interval notation.
 
 \vspace{1in}
 
