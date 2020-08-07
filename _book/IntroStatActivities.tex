@@ -1482,7 +1482,7 @@ In the next plot we are graphing three variables.
 \begin{Highlighting}[]
 \KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ moviesa,   }\CommentTok{#This is the data set}
        \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget_mil, }\DataTypeTok{y =}\NormalTok{ revenue_mil, }\DataTypeTok{color =}\NormalTok{ content_rating))}\OperatorTok{+}\StringTok{  }\CommentTok{#Specify variables}
-\StringTok{  }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{#Add scatterplot of points}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{pch =}\NormalTok{ content_rating)) }\OperatorTok{+}\StringTok{  }\CommentTok{#Add scatterplot of points}
 \StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{#Label x-axis}
        \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{#Label y-axis}
        \DataTypeTok{color =} \StringTok{"Content Rating"}\NormalTok{,  }\CommentTok{#Label legend}
@@ -2751,7 +2751,11 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{boxplot}\NormalTok{(Snowfall}\OperatorTok{~}\NormalTok{WeatherPattern, }\DataTypeTok{data=}\NormalTok{Snow)}
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Snow,}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ WeatherPattern, }\DataTypeTok{y =}\NormalTok{ Snowfall)) }\OperatorTok{+}
+\StringTok{    }\KeywordTok{geom_boxplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Snowfall by weather pattern"}\NormalTok{,}
+         \DataTypeTok{x =} \StringTok{"Weather pattern"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 

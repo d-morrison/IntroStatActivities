@@ -32,7 +32,11 @@ favstats(Snowfall~WeatherPattern, data=Snow)
 
 
 ```r
-boxplot(Snowfall~WeatherPattern, data=Snow)
+ggplot(data = Snow,
+       aes(x = WeatherPattern, y = Snowfall)) +
+    geom_boxplot() + 
+    labs(title = "Snowfall by weather pattern",
+         x = "Weather pattern")
 ```
 
 

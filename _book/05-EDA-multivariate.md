@@ -201,7 +201,7 @@ In the next plot we are graphing three variables.
 ```r
 ggplot(data = moviesa,   #This is the data set
        aes(x = budget_mil, y = revenue_mil, color = content_rating))+  #Specify variables
-  geom_point() +  #Add scatterplot of points
+  geom_point(aes(pch = content_rating)) +  #Add scatterplot of points
   labs(x = "Budget in Millions ($)",  #Label x-axis
        y = "Revenue in Millions ($)",  #Label y-axis
        color = "Content Rating",  #Label legend
