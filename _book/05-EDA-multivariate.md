@@ -1,19 +1,7 @@
 # Exploratory Data Analysis: Multivariate Thinking
 
 
-```{r echo=F, fig.height=4}
-par(mfrow=c(1,2))
-movies <- read.csv("data/Movies.csv") #reads in data
-movies$content_rating <- factor(movies$content_rating) 
-rating <- c("PG", "PG-13", "R") #chooses levels of a variable
-movies <- movies[movies$content_rating %in% rating,]
-movies$content_rating <- factor(movies$content_rating)
-movies$title_year <- factor(movies$title_year)
-year <- c("2016") #chooses a single year
-movies <- movies[movies$title_year %in% year,]
-movies$title_year <- factor(movies$title_year)
-moviesa <- na.omit(movies) #removes mising values
-```
+
 
 ## Learning Objectives
 
@@ -79,7 +67,8 @@ To review these concepts see Chapter 3 in the textbook.
 
 We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. This shows a scatterplot of 'Budget' as a predictor of 'Revenue' (note: both variables are measures in "millions of dollars".  
 
-```{r echo=t, fig.height=5,fig.width=12, message = FALSE}
+
+```r
 ggplot(data = moviesa,   #This is the data set
        aes(x = budget_mil, y = revenue_mil))+  #Specify variables
   geom_point() +  #Add scatterplot of points
@@ -88,6 +77,10 @@ ggplot(data = moviesa,   #This is the data set
        title = "Revenue vs. Budget") + #Be sure to tile your plots
   geom_smooth(method = "lm", se = FALSE)  #Add regression line
 ```
+
+
+
+\begin{center}\includegraphics[width=0.7\linewidth]{05-EDA-multivariate_files/figure-latex/unnamed-chunk-2-1} \end{center}
 3. Assess the four features of the scatterplot that describe this relationship.
 
     * Form (linear, non-linear)
@@ -110,10 +103,20 @@ ggplot(data = moviesa,   #This is the data set
 
 Correlation measures the strength and the direction between two quantitative variables.  The closer the value of correlation to + or - 1 the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  
 
-```{r}
-moviesb <- moviesa[,c("budget_mil", "revenue_mil", "duration", 
-                      "imdb_score", "movie_facebook_likes")]
-round(cor(moviesb,use="pairwise.complete.obs"),4)
+
+```
+#>                      budget_mil revenue_mil duration imdb_score
+#> budget_mil               1.0000      0.6466   0.5274     0.3081
+#> revenue_mil              0.6466      1.0000   0.2516     0.4876
+#> duration                 0.5274      0.2516   1.0000     0.2362
+#> imdb_score               0.3081      0.4876   0.2362     1.0000
+#> movie_facebook_likes     0.6481      0.6710   0.5619     0.3462
+#>                      movie_facebook_likes
+#> budget_mil                         0.6481
+#> revenue_mil                        0.6710
+#> duration                           0.5619
+#> imdb_score                         0.3462
+#> movie_facebook_likes               1.0000
 ```
 
 5.  Using the output above, which two variables have the strongest correlation?
@@ -142,9 +145,11 @@ The slope measures the change in y for each increase in x by 1.  In other words,
 
 The linear model function in R gives us the summary for the least squares regression line.  The estimate for (Intercept) is the y-intercept for the line of least squares and the estimate for budget is the value of $b_1$, the slope.
 
-```{r}
-revenueLM <- lm(revenue_mil~budget_mil,data=moviesa)
-summary(revenueLM)$coefficients
+
+```
+#>               Estimate Std. Error  t value     Pr(>|t|)
+#> (Intercept) 20.0362329 14.3458255 1.396659 1.677479e-01
+#> budget_mil   0.9236972  0.1418579 6.511426 1.806269e-08
 ```
 
 10.  Write out the least squares line using the summary statistics provided.
@@ -194,7 +199,8 @@ The coefficient of determination, $R^2$, can also be used to describe the streng
 ## Multivariate Plot
 In the next plot we are graphing three variables. 
 
-```{r echo=TRUE, fig.height=5,fig.width=12, message = FALSE}
+
+```r
 ggplot(data = moviesa,   #This is the data set
        aes(x = budget_mil, y = revenue_mil, color = content_rating))+  #Specify variables
   geom_point() +  #Add scatterplot of points
@@ -204,6 +210,10 @@ ggplot(data = moviesa,   #This is the data set
        title = "Revenue vs. Budget") + #Be sure to tile your plots
   geom_smooth(method = "lm", se = FALSE)  #Add regression line
 ```
+
+
+
+\begin{center}\includegraphics[width=0.7\linewidth]{05-EDA-multivariate_files/figure-latex/unnamed-chunk-5-1} \end{center}
 
 25.  Identify the three varables plotted in this graph.
 

@@ -61,26 +61,16 @@ A data set was collected on Movies released since 1916 to 2016.  Here is a list 
 
 \vspace{1in}
 
-```{r echo=F, fig.height=4}
-par(mfrow=c(1,2))
-movies <- read.csv("data/Movies.csv") #reads in data
-movies$content_rating <- factor(movies$content_rating)
-rating <- c("PG", "PG-13", "R")
-movies <- movies[movies$content_rating %in% rating,]
-movies$content_rating <- factor(movies$content_rating)
-movies$title_year <- factor(movies$title_year)
-year <- c("2016")
-movies <- movies[movies$title_year %in% year,]
-movies$title_year <- factor(movies$title_year)
-moviesa <- na.omit(movies)
-```
+
 
 ## Summarizing a single quantitative variable
 
 The favstats function gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable 'IMDb'.
 
-```{r}
-favstats(moviesa$imdb_score)
+
+```
+#>  min  Q1 median  Q3 max     mean        sd  n missing
+#>  3.4 5.9    6.6 7.1 8.2 6.459016 0.9218418 61       0
 ```
 
 
@@ -103,11 +93,8 @@ favstats(moviesa$imdb_score)
 
 A histogram of the variable 'IMBd Score' is shown below.  Notice that the bin width is 0.5.  For example the first bin consists of the number of movies in the data set with an IMBd score of 3 to 3.5.  It is important to note that a movie with a IMBd score of 5 will fall into the bin for 5 - 5.5.  Visually this shows us the range of IMBd scores for Movies released in 2016.
 
-```{r}
-hist(moviesa$imdb_score, #dataset name and variable
-     main = "Histogram of IMDb Score of Movies in 2016", #title for plot 
-     xlab = "IMDb Score") #label for x axis
-```
+
+\begin{center}\includegraphics[width=0.7\linewidth]{04-EDA-quantitative_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
 
 8. Which range of IMBb scores have the highest frequency?
@@ -138,11 +125,8 @@ The boxplot is created using the five number summary:
 
 The boxplot of 'Budget' in millions by 'Content rating' is plotted using the code below.  This plot helps to compare the budget for different levels of content rating.
 
-```{r}
-boxplot(budget_mil~content_rating #response~explanatory 
-        , data=moviesa, main = "Side by side Boxplot of Budget by Content Rating", 
-        xlab = "Content Rating", ylab = "Budget (in Millions)")
-```
+
+\begin{center}\includegraphics[width=0.7\linewidth]{04-EDA-quantitative_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
 11. Answer the following questions about the boxplots above.
 

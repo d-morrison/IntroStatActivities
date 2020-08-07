@@ -36,9 +36,8 @@ To review these concepts see Section 2.1 in the textbook.
 ## Activity
 The data set we will use for this activity is from the Current Population Survey in 1985.  The CPS is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population.  The following table summarizes the data:
 
-```{r, fig.align="center"}
-include_graphics("images/cps.png")
-```
+
+\begin{center}\includegraphics[width=0.7\linewidth]{images/cps} \end{center}
 
 ### Vocabulary Review
 
@@ -60,36 +59,18 @@ An important part of understanding data is to create visual pictures of what the
 
 If we wanted to know how many people in our data set were in each sector, we would create a bar plot of the variable sector.
 
-```{r}
-cps <- read.csv("data/cps.csv") #This will read in the dataset
-cps$sector <- factor(cps$sector) #When a variable is categorical, need to make it a factor
-cps$sex <- factor(cps$sex)
-```
 
 
-```{r}
-ggplot(data = cps,   #This specifies the dataset
-       aes(y = sector)) +   #This specifies the variable
-  geom_bar(stat = "count") +  #Tell it to make a bar plot
-  labs(title = "Frequency Bar Plot of Sector",  #Give your plot a title
-       x = "Sector",   #Label the x axis
-       y = "Frequency")  + #Label the y axis
-  coord_flip()  #Turn the bars so they are vertical
-```
+
+
+\begin{center}\includegraphics[width=0.7\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-3-1} \end{center}
 4.  Which Sector has the largest number of people in it?
 
 \vspace{0.5in}
 
 We could also choose to display the data as a proportion in a relative frequency bar plot. To find the relative frequency divide the count in each sector by the sample size.  These are sample proportions. 
-```{r}
-ggplot(data = cps,   #This specifies the dataset
-       aes(x = sector)) +   #This specifies the variable
-  geom_bar(aes(y = ..prop.., group = 1)) +  #Tell it to make a bar plot with proportions
-  labs(title = "Relative Frequency Bar Plot of Sector",  #Give your plot a title
-       x = "Sector",   #Label the x axis
-       y = "Relative Frequency")  #Label the y axis
 
-```
+\begin{center}\includegraphics[width=0.7\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
 5.  What features in this plot are same as the frequency bar plot?  Which are different?
 
@@ -99,14 +80,8 @@ ggplot(data = cps,   #This specifies the dataset
 
 To see the differences in proportion of each sector between males and females we would create a segmented bar plot of sector segmented by sex.  
 
-```{r}
-ggplot(data = cps,   #This specifies the dataset
-       aes(x = sector, fill = sex)) +   #This specifies the variables
-  geom_bar(stat = "count", position = "fill") +  #Tell it to make a stacked bar plot
-  labs(title = "Segmented Bar Plot of Sector by Sex",  #Make sure to title your plot 
-       x = "Sector",   #Label the x axis
-       y = "")  #Remove y axis label
-```
+
+\begin{center}\includegraphics[width=0.7\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-5-1} \end{center}
 
 6.  Using the segmented bar plot, which sector has about the same proportion of males and females?
 

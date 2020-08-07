@@ -160,4 +160,4 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 ## Additional Notes
 
-Use this space to take additional notes on today's activity, and to write down the names and contact information of your team mates.
+Use this space to summarize your thoughts and take additional notes on today's activity, and to write down the names and contact information of your team mates.

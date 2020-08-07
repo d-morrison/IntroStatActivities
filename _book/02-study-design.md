@@ -137,9 +137,8 @@ In these next questions, identify the target population, the sample, the variabl
 ## Study Design
 The two main study designs we will cover are observational studies and experiments.  Both the sampling method and the study design will help to determine the **scope of inference** for a study.  Remember that only in a randomized experiment can we conclude a **causal** (cause and effect) relationship between the explanatory and response variable.
 
-```{r, fig.align = "center", out.width="75%"}
-include_graphics("images/ScopeOfInference.png")
-```
+
+\begin{center}\includegraphics[width=0.75\linewidth]{images/ScopeOfInference} \end{center}
 
 For the next exercises, identify the explanatory variable, the response variable, a potential confounding variable, and the study design.
 
