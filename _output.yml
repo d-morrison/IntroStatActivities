@@ -9,6 +9,5 @@ bookdown::pdf_book:
   toc_depth: 1
   number_sections: false
   split_by: chapter
-  geometry: left=0cm, right=0cm, top=0.5cm, bottom=0.5cm
 
 
