@@ -2,7 +2,7 @@
 
 
 
-## Learning Objectives.
+## Learning objectives
 
 * Write out the null and alternative hypothesis for one categorical and one quantitative Variable
 
@@ -14,7 +14,7 @@
 
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
-## Background
+## Record snowfall
 
 In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the collapse of two flat-roofed buildings on the MSU campus.  A writer for the Washington Post predicted the heavy snowfall for 2018-2019 due to the El Nino weather pattern that occurred in that season. A meteorologist in Montana wanted to see if the weather pattern really was associated with total snowfall. She obtained historical data from 44 years on the weather pattern (El Nino or La Nina) and snowfall (in inches) at the Billings Weather Station.  
 
@@ -39,7 +39,7 @@ boxplot(Snowfall~WeatherPattern, data=Snow)
 
 \begin{center}\includegraphics[width=0.7\linewidth]{09-inference-2quant_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
-## Quantitative Variables Review
+### Quantitative variables review
 
 1. The two variables assessed in this study are the type of weather pattern and snowfall.  Identify the role for each variable (explanatory, response).
 
@@ -61,7 +61,7 @@ boxplot(Snowfall~WeatherPattern, data=Snow)
 
 \vspace{1in}
 
-## Ask a research question.
+### Ask a research question
 
 6.  Write out the parameter of interest in context of the study.  Use proper notation and be sure to define your subscripts.  Use El Nino minus La Nina as the order of subtraction.
 
@@ -75,13 +75,13 @@ boxplot(Snowfall~WeatherPattern, data=Snow)
 
 \vspace{1in}
 
-## Summarize and Visualize the data.
+### Summarize and visualize the data
 
 9. Calculate the summary statistic.  Use El Nino minus La Nina as the order of subtraction. What is the appropriate notation for the statistic?
 
 \vspace{0.5in}
 
-## Use statistical inferential methods to draw inferences from the data
+### Use statistical inferential methods to draw inferences from the data
 
 Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, we asssume there is no association between variables.  This means that a snowfall value could be in either an El Nino year or a La Nina year.
 
@@ -126,7 +126,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \vspace{1in}
 
-## Communicate the results and answer the research question.
+### Communicate the results and answer the research question
 
 19.  Write a paragraph summarizing the results of the study.  Be sure to include:
 
@@ -144,7 +144,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \vspace{3in}
 
-## Revisit and Look Forward
+### Revisit and look forward
 
 20.  Would the results from the theory-based test match the results we saw with the simulation?  Explain why or why not.
 
@@ -157,7 +157,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 
 
-## Additional Notes
+## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 

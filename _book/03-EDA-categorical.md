@@ -1,6 +1,6 @@
 # Exploratory Data Analysis: \newline Categorical Variables
 
-## Learning Outcomes
+## Learning outcomes
 
 * Identify and create appropriate summary statistics and plots
   given a data set or research question
@@ -14,7 +14,7 @@
 
 * Construct two-way tables to evaluate conditional probabilities
 
-## Terminology Review
+## Terminology review
 
 In today's activity we will review summary measures and plots for categorical variables.  Some terms covered in this activity are...
 
@@ -39,7 +39,7 @@ The data set we will use for this activity is from the Current Population Survey
 
 \begin{center}\includegraphics[width=0.7\linewidth]{images/cps} \end{center}
 
-### Vocabulary Review
+### Vocabulary review
 
 1. What are the observational units?
 
@@ -166,7 +166,7 @@ e. Find the probability that a selected non-gambler is a non-boy. What is the no
 \vspace{1in}
 
 
-## Additional Notes
+## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 

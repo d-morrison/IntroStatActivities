@@ -1,6 +1,6 @@
 # Statistical Investigations for Two Categorical Variables
 
-## Learning Objectives.
+## Learning objectives.
 
 * Write out the null and alternative hypothesis for two categorical variables
 
@@ -12,7 +12,7 @@
 
 * Create and interpret a confidence interval for the difference in proportions
 
-## Terminology
+## Terminology review
 Here are a few terms we will use in today's activity.
 
 * Conditional proportion
@@ -29,7 +29,8 @@ Here are a few terms we will use in today's activity.
 
 Review Chapter 5 in your textbook for more information on these topics.
 
-## Background
+## Helmet Use and Head Injuries
+
 In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the Journal of the American Medical Association, Vol. 295, No. 8, we can see the results from a random sample 3562 skiers and snowboarders involved in accidents. 
 
 |                            |     Head Injury    |     No Head Injury    |     Total    |
@@ -40,7 +41,7 @@ In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by S
 
 Is there evidence that safety helmet use reduces the risk of head injury for skiers and snowboarders? 
 
-## Vocabulary Review
+### Vocabulary review
 
 1.  What is the explanatory variable?
 
@@ -74,7 +75,7 @@ Is there evidence that safety helmet use reduces the risk of head injury for ski
 
 
  
-## Ask a Research Question
+### Ask a research question
 
 In this study we are looking at the relationship between two groups or two parameters ($\pi_1$ and $\pi_2$).  Remember we define the parameter as the true proportion of observational units that represent the variable of interest.  
 
@@ -105,7 +106,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
    $H_A: \pi_1 -\pi_2$ __________ 0
 
-## Summarize and Visualize the data
+### Summarize and visualize the data
 
 
 \begin{center}\includegraphics[width=0.7\linewidth]{07-inference-2cat_files/figure-latex/unnamed-chunk-2-1} \end{center}
@@ -127,7 +128,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 
 \vspace{0.5in}
-## Use statistical analysis methods to draw inferences from the data
+### Use statistical analysis methods to draw inferences from the data
 
 To test the null hypothesis we could use simulation methods as we did with a single categorical variable. In this activity we will focus on theory-based methods.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
@@ -226,7 +227,7 @@ Note that the formula changes when calculating the variability around the statis
 \vspace{3in}
 
 
-## Types of Errors
+### Types of errors
 
 Hypothesis tests are not flawless. In a hypothesis test, there are two competing hypotheses: the null and alternative. We make a decision about which might be true, but we may choose incorrectly.  
 
@@ -251,6 +252,6 @@ A Type 1 Error is rejecting the null hypothesis when $H_0$is actually true. A Ty
 
 
 
-## Additional Notes
+## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.

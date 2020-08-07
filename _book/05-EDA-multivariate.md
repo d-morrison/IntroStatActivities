@@ -2,7 +2,7 @@
 
 
 
-## Learning Objectives
+## Learning objectives
 
 * Identify and create appropriate summary statistics and plots
   given a data set with two quantitative variables
@@ -17,7 +17,7 @@
 
 * Understand what the coefficient of determination is
 
-## Terminology Review
+## Terminology review
 
 In today's activity we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are
 
@@ -33,7 +33,7 @@ In today's activity we will review summary measures and plots for two quantitati
 
 To review these concepts see Chapter 3 in the textbook.  
 
-## Vocabulary Review
+## Vocabulary review
 
 1.  What type of plot is used to display two quantitative variables?
 
@@ -43,7 +43,7 @@ To review these concepts see Chapter 3 in the textbook.
 
 \vspace{0.5in}
 
-## Movies Released in 2016
+## Movies released in 2016
 
 We will revisit the data set used last week collected on Movies released since 1916 to 2016.  Here is a reminder of the variables collected on these movies.
 
@@ -182,7 +182,7 @@ $e_i=y_i-\hat{y}_i$
 
 \vspace{1in}
 
-### Coefficient of Determination
+### Coefficient of determination ($R^2$)
 
 The coefficient of determination, $R^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $R^2$ describes the amount of variation in the response that is explained by the least squares line with the explanatory variable.  
 
@@ -194,7 +194,7 @@ The coefficient of determination, $R^2$, can also be used to describe the streng
 
 \vspace{1in}
 
-### Multivariate Plots
+### Multivariate plots
 In the next plot we are graphing three variables. 
 
 
@@ -222,7 +222,7 @@ ggplot(data = moviesa,   #This is the data set
 \vspace{1in}
 
 
-## Additional Notes
+## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 

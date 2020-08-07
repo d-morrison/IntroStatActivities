@@ -1,6 +1,6 @@
 # Exploratory Data Analysis: Quantitative Variables
 
-## Learning Objectives
+## Learning objectives
 
 * Identify and create appropriate summary statistics and plots
   given a data set or research question for quantitative data
@@ -13,7 +13,7 @@
   of a single quantitative variable
   (center, variability, shape, outliers)
   
-## Terminology Review
+## Terminology review
 
 In today's activity we will review summary measures and plots for quantitative variables.  Some terms covered in this activity are
 
@@ -29,7 +29,7 @@ To review these concepts see Section 2.3 in the textbook.
 
 \newpage
 
-## Movies Released in 2016
+## Movies released in 2016
 
 A data set was collected on Movies released since 1916 to 2016.  Here is a list of some of the variables collected on these movies.
 
@@ -49,7 +49,7 @@ A data set was collected on Movies released since 1916 to 2016.  Here is a list 
 
 * Movie Facebook Likes: Number of likes a movie receives on Facebook
 
-## Vocabulary Review
+### Vocabulary review
 
 1. What are the observational units in this data set?
 
@@ -65,7 +65,7 @@ A data set was collected on Movies released since 1916 to 2016.  Here is a list 
 
 
 
-## Summarizing a single quantitative variable
+### Summarizing a single quantitative variable
 
 The favstats function gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable 'IMDb'.
 
@@ -87,7 +87,7 @@ The favstats function gives the summary statistics for a quantitative variable. 
 6. Report the value of the standard deviation and interpret this value in context of the problem.
 \vspace{1in}
 
-## Displaying a single quantitative variable
+### Displaying a single quantitative variable
 
 7. What are the three types of plots used to plot a single quantitative variable?
 
@@ -123,7 +123,7 @@ The boxplot is created using the five number summary:
 
 \vspace{2in}
 
-## Displaying a Single Categorical and Single Quantitative Variable
+### Displaying a single categorical and single quantitative variable
 
 The boxplot of 'Budget' in millions by 'Content rating' is plotted using the code below.  This plot helps to compare the budget for different levels of content rating.
 
@@ -149,6 +149,6 @@ The boxplot of 'Budget' in millions by 'Content rating' is plotted using the cod
 
 
 
-## Additional Notes
+## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.

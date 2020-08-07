@@ -1,5 +1,6 @@
 # Statistical Investigations for Two Quantitative Variables: Regression
-## Learning Outcomes
+
+## Learning outcomes
 * Given a research question, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols
   
@@ -11,7 +12,7 @@
 
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
-## Terminology
+## Terminology review
 The following terms will be covered in this activity.
 
 * Correlation
@@ -22,7 +23,7 @@ The following terms will be covered in this activity.
 
 For further explanation of these topics review Chapter 3 and 7 in the textbook.
 
-## Hand Dexterity
+## Hand dexterity
 
 Physical therapists often evaluate manual (hand) dexterity by having patients complete simple tasks, such as moving pegs on a board or threading objects through holes. Researchers want to examine the manual dexterity of children as part of a follow-up study of a test originally designed for adults to see how manual dexterity changes with age. In this test, 174 participants were given a board with 16 pegs, each in their own hole, arranged in a 4x4 grid. Participants were instructed to pick up the peg with one hand, flip it over by rotating their wrist, then reinsert it in the same hole. Using this test, researchers want to know if as people age the speed at which they can flip all 16 pegs increases.
 
@@ -70,7 +71,7 @@ The variables in this dataset consist of the following:
 
 If you indicated there are potential outliers, which points are they?
 
-## Conditions for the least squares line
+### Conditions for the least squares line
 
 When performing inference on a least squares line, the follow conditions are generally required
 
@@ -89,7 +90,7 @@ The scatterplot and the residual plot will be used to assess the conditions for 
 \vspace{1in}
 
 
-## Ask a Reseach Question
+### Ask a reseach question
 
 6. Write out the null hypothesis in words.
 
@@ -99,7 +100,7 @@ The scatterplot and the residual plot will be used to assess the conditions for 
 
 \vspace{0.5in}
 
-## Summarize and Visualize the data
+### Summarize and visualize the data
 
 Enter the variable names into the linear model function to get the linear model output.
 
@@ -125,7 +126,7 @@ Enter the variable names into the linear model function to get the linear model 
 
 \vspace{1in}
 
-## Use statistical inferential methods to draw inferences from the data
+### Use statistical inferential methods to draw inferences from the data
 
 To find the value of the test statistic to test the slope we will use, 
 
@@ -175,7 +176,7 @@ The $t^*$ multiplier comes from the t-distribution with $n-2$ df.
 
 \vspace{1in}
 
-## Communicate the results and answer the research question.
+### Communicate the results and answer the research question
 
 20. Based on the p-value, write a conclusion in context of the problem.
 
@@ -199,7 +200,7 @@ The $t^*$ multiplier comes from the t-distribution with $n-2$ df.
 
 * Scope of inference
 
-## Revisit and Look Forward
+### Revisit and look forward
 
 23. Is there an effect due to gender on this linear relationship?  Explain your answer using the scatterplot.
 
@@ -215,6 +216,6 @@ The $t^*$ multiplier comes from the t-distribution with $n-2$ df.
 
 
 
-## Additional Notes
+## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
