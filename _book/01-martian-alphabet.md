@@ -5,10 +5,7 @@ output:
 ---
 # Martian Alphabet: An Introduction to Statistics
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-options(show.signif.stars = FALSE)
-```
+
 
 ## Learning Outcomes
 
