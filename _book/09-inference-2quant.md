@@ -1,13 +1,6 @@
 # Statistical Investigations for a Difference in Means
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, 
-                      message = FALSE,
-                      warnings = FALSE, 
-                      eval = T)
-options(show.signif.stars = FALSE)
-library(mosaic)
-```
+
 
 ## Learning Objectives.
 
@@ -26,22 +19,25 @@ library(mosaic)
 In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the collapse of two flat-roofed buildings on the MSU campus.  A writer for the Washington Post predicted the heavy snowfall for 2018-2019 due to the El Nino weather pattern that occurred in that season. A meteorologist in Montana wanted to see if the weather pattern really was associated with total snowfall. She obtained historical data from 44 years on the weather pattern (El Nino or La Nina) and snowfall (in inches) at the Billings Weather Station.  
 
 
-``````{r, include=FALSE}
-# Set-up
-library(readr)
-library(car)
-Snow <- read.csv("data/SnowfallbyWeatherPattern.csv")
-Snow$WeatherPattern <- factor(Snow$WeatherPattern)
-```
 
 
-```{r}
+
+
+```r
 favstats(Snowfall~WeatherPattern, data=Snow)
+#>   WeatherPattern  min   Q1 median   Q3   max     mean       sd  n missing
+#> 1        El_Nino 31.9 46.4   57.7 64.3  87.9 56.23043 13.00823 23       0
+#> 2        La_Nina 44.5 51.4   60.9 70.3 107.2 63.13333 15.48626 21       0
 ```
 
-```{r}
+
+```r
 boxplot(Snowfall~WeatherPattern, data=Snow)
 ```
+
+
+
+\begin{center}\includegraphics[width=0.7\linewidth]{09-inference-2quant_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
 ## Quantitative Variables Review
 

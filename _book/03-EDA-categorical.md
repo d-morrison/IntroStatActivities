@@ -168,6 +168,6 @@ e. Find the probability that a selected non-gambler is a non-boy. What is the no
 
 ## Additional Notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity
+Use this space to summarize your thoughts and take additional notes on today's activity.
 
 

@@ -374,7 +374,7 @@ This is the p-value.  The smaller the p-value the more evidence we have against 
 
 23. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis?
 
-![](../images/soe_gradient.png)
+![](images/soe_gradient.png)
 \vspace{0.5in}
 
 A point estimate provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible range of values for the parameter. This plausible range of values for the population parameter is called a confidence interval. 
@@ -485,4 +485,9 @@ When we write a conclusion we answer the research question by stating how much e
 
 \vspace{1in}
 
+
+
+## Additional Notes
+
+Use this space to summarize your thoughts and take additional notes on today's activity.
 

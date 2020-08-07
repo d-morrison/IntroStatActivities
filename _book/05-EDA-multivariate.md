@@ -2,7 +2,6 @@
 
 
 
-
 ## Learning Objectives
 
 * Identify and create appropriate summary statistics and plots
@@ -63,7 +62,6 @@ To review these concepts see Chapter 3 in the textbook.
 2.  What summary statistics are used to describe the relationship between two quantitative variables?
 
 \vspace{0.5in}
-
 
 We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. This shows a scatterplot of 'Budget' as a predictor of 'Revenue' (note: both variables are measures in "millions of dollars".  
 
@@ -224,9 +222,8 @@ ggplot(data = moviesa,   #This is the data set
 \vspace{1in}
 
 
-
 ## Additional Notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity
+Use this space to summarize your thoughts and take additional notes on today's activity.
 
 

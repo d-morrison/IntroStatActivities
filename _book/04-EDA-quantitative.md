@@ -91,7 +91,7 @@ The favstats function gives the summary statistics for a quantitative variable. 
 
 \vspace{0.5in}
 
-A histogram of the variable 'IMBd Score' is shown below.  Notice that the bin width is 0.5.  For example the first bin consists of the number of movies in the data set with an IMBd score of 3 to 3.5.  It is important to note that a movie with a IMBd score of 5 will fall into the bin for 5 - 5.5.  Visually this shows us the range of IMBd scores for Movies released in 2016.
+A histogram of the variable 'IMBd Score' is shown below.  Notice that the bin width is 0.5.  For example the first bin consists of the number of movies in the data set with an IMBd score of 3.25 to 3.75.  It is important to note that a movie with a IMBd score of 4.75 will fall into the bin for 4.75 - 5.25.  Visually this shows us the range of IMBd scores for Movies released in 2016.
 
 
 \begin{center}\includegraphics[width=0.7\linewidth]{04-EDA-quantitative_files/figure-latex/unnamed-chunk-3-1} \end{center}
@@ -146,6 +146,7 @@ The boxplot of 'Budget' in millions by 'Content rating' is plotted using the cod
 \vspace{1in}
 
 
+
 ## Additional Notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity
+Use this space to summarize your thoughts and take additional notes on today's activity.

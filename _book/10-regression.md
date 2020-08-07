@@ -58,22 +58,10 @@ The variables in this dataset consist of the following:
 
 3. Create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant. Provide this plot. Based on your plot, does it appear that there is a relationship between ``age`` and ``speed``? Note: ``age`` should be on the x-axis.
  
-```{r, include = FALSE, fig.width=7,fig.height=6}
-hands <- read.csv("data/hands.csv")
 
-## rename variables (odd original coding)
-colnames(hands) <- c("time","speed","age","dominant","gender",
-                     "HD","handUsed") 
-hands$dominant <- factor(hands$dominant)
-hands$gender <- factor(hands$gender)
-hands$HD <- factor(hands$HD)
-hands$handUsed <- factor(hands$handUsed)
-```
 
-```{r}
-scatterplot(speed~age, data = hands, smooth=F, col=1, pch=19,
-            main = "Scatterplot of Age vs. Speed")
-```
+
+\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 
 4. Describe the features of the plot you created in Question 3.
@@ -93,11 +81,8 @@ When performing inference on a least squares line, the follow conditions are gen
 
 The scatterplot and the residual plot will be used to assess the conditions for approximating the data with the T-distribution
 
-```{r}
-lm.hand <- lm(speed~age, data = hands)
-par(mfrow=c(2,2))
-plot(lm.hand)
-```
+
+\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
 5. Are the conditions met 
 
@@ -118,10 +103,11 @@ plot(lm.hand)
 
 Enter the variable names into the linear model function to get the linear model output.
 
-```{r}
-## replace each xxx with the appropriate information
-lm.hand <- lm(speed~age, data=hands)
-summary(lm.hand)$coefficients
+
+```
+#>              Estimate  Std. Error  t value     Pr(>|t|)
+#> (Intercept) 1.1070563 0.093326769 11.86215 4.237698e-24
+#> age         0.1404378 0.008796699 15.96483 8.777516e-36
 ```
 8.  Using the output above, write the equation of the regression line.
 
@@ -173,8 +159,9 @@ Recall that a confidence interval is calculated by adding and subtracting the ma
  
 The $t^*$ multiplier comes from the t-distribution with $n-2$ df.
 
-```{r}
-qt(0.95+0.025, 172) #95% t* multiplier 
+
+```
+#> [1] 1.973852
 ```
 
 17. Calculate the 95% confidence interval for the true slope.
@@ -216,10 +203,15 @@ qt(0.95+0.025, 172) #95% t* multiplier
 
 23. Is there an effect due to gender on this linear relationship?  Explain your answer using the scatterplot.
 
-```{r}
-scatterplot(speed~age+dominant, data = hands, smooth=F, col=1, 
-            main = "Scatterplot of Age vs. Speed by Gender")
+
 ```
+#> Warning in scatterplot.default(X[, 2], X[, 1], groups = X[, 3], xlab = xlab, : number of groups exceeds number of available colors
+#>   colors are recycled
+```
+
+
+
+\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-6-1} \end{center}
 
 
 
