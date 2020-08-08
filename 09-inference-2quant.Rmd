@@ -35,16 +35,18 @@ Snow$WeatherPattern <- factor(Snow$WeatherPattern)
 ```
 
 
-```{r}
-favstats(Snowfall~WeatherPattern, data=Snow)
-```
-
-```{r}
+```{r, echo = TRUE, out.width = "60%"}
 ggplot(data = Snow,
        aes(x = WeatherPattern, y = Snowfall)) +
     geom_boxplot() + 
     labs(title = "Snowfall by weather pattern",
-         x = "Weather pattern")
+         x = "Weather pattern") +
+    coord_flip()
+```
+
+
+```{r, echo=TRUE, collapse=FALSE}
+favstats(Snowfall~WeatherPattern, data=Snow)
 ```
 
 ### Quantitative variables review
@@ -142,7 +144,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 * P-value
 
-* Conclusion in context
+* Conclusion (written to answer the research question)
 
 * Confidence interval
 

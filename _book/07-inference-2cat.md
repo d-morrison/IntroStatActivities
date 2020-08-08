@@ -52,7 +52,7 @@ Is there evidence that safety helmet use reduces the risk of head injury for ski
 
 3. Is this an experiment or observational study?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 4.  Put an X in the box that represents the appropriate scope of inference for this study.
 
@@ -65,11 +65,11 @@ Is there evidence that safety helmet use reduces the risk of head injury for ski
 
 5. What is the conditional proportion of skiers/snowboarders with a head injury that wore a helmet?
 
-\vspace{1in}
+\vspace{.6in}
 
 6. What is the conditional proportion of skiers/snowboarders with a head injury that did not wear a helmet?
 
-\vspace{1in}
+\vspace{.6in}
 
 
 
@@ -90,7 +90,8 @@ In this study we are looking at the relationship between two groups or two param
    $\pi_2$ - 
 \vspace{0.5in}
 
-When comparing two groups, we assume the two parameters are equal in the null hypothesis.  There is no association between the variables.
+\newpage
+When comparing two groups, we assume the two parameters are equal in the null hypothesis---there is no association between the variables.
 
 9.  Write the null hypothesis out in words using your answers to question 8.
 
@@ -103,7 +104,9 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 11. Based on the research question fill in the appropriate sign for the alternative hypothesis:
 \vspace{0.25in}
 
-   $H_A: \pi_1 -\pi_2$ __________ 0
+|           $H_A: \pi_1 -\pi_2$ __________ 0
+
+
 
 ### Summarize and visualize the data
 
@@ -146,7 +149,7 @@ Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$
 17. Is the success-failure condition met for each group?  Explain your answer.
 
 \vspace{1in}
-
+\newpage
 To calculate the test statistic we use: 
 
 \begin{center}
@@ -173,15 +176,21 @@ where the standard error is calculated using the pooled proportion of successes.
 We will use the pnorm function in R to find the p-value.  
 
 
+```r
+pnorm(-2.86 #enter value of test statistic
+      , m=0, s=1 #using the standard normal mean = 0, sd = 1
+      , lower.tail=TRUE) # gives a p-value less than the test statistic
+```
+
 ```
 #> [1] 0.002118205
 ```
 20.  Report the p-value.
-\vspace{0.5in}
+\vspace{0.2in}
 
 21.  How much evidence does the p-value provide against the null hypothesis?
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 To find a confidence interval for the difference in proportions we will add and subtract the margin of error from the point estimate to find the two endpoints.
 
@@ -189,8 +198,14 @@ To find a confidence interval for the difference in proportions we will add and 
  
  $$SE(\hat{p}_1-\hat{p}_2) = \sqrt{\left(\frac{\hat{p}_1 (1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2 (1-\hat{p}_2)}{n_2}\right)}$$
  
-Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval!  Here use the sample proportions for each group to calculate the standard error for the difference in proportions. The $z^*$ multiplier is found under the normal distribution. We find the values that encompass the middle 95% of the data.
+Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval!  Here, use the sample proportions for each group to calculate the standard error for the difference in proportions.
 
+The $z^*$ multiplier is found under the normal distribution. We find the values that encompass the middle 95% of the data.
+
+
+```r
+qnorm(0.95 + 0.025) #multiplier for 95% confidence interval
+```
 
 ```
 #> [1] 1.959964

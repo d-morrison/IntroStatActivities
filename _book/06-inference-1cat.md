@@ -35,13 +35,13 @@ To review these concepts see Chapter 5 in your textbook
 
 ## Steps of the statistical investigation process
 
-We will work through a six step process to complete a hypothesis test for a single proportion.
+We will work through a six-step process to complete a hypothesis test for a single proportion.
 
 * **Ask a research question** that can be addressed by collecting data. What are the researchers trying to show.
 
 * **Design a study and collect data**. This step involves selecting the people or objects to be studied and how to gather relevant data on them.
 
-* **Summarize and Visualize the data**. Calculate summary statistics and create graphical plots that best represent the research question.
+* **Summarize and visualize the data**. Calculate summary statistics and create graphical plots that best represent the research question.
 
 * **Use statistical analysis methods to draw inferences from the data**. Choose an analysis technique appropriate for the data and identify the p-value. In this study, we will focus on using randomization.
 
@@ -92,6 +92,12 @@ Left-handedness is a trait that is found in about 10% of the population. The fig
 ### Summarize and visualize the data
 
 
+```r
+# Counts for Handedness
+#Tally creates a table with a count for each level of the variable
+tally(~Stance, data=handedness_sub, margins=T) 
+```
+
 ```
 #> Stance
 #>  left-handed right-handed        Total 
@@ -113,13 +119,14 @@ When testing data we must first identify the null hypothesis.  The null hypothes
 
 \vspace{1in}
 
-The notation used for a true proportion is $\pi$.  Since this summarizes a population, it is a parameter. When writing the null hypothesis in notation we set the parameter equal to the null value, $H_0: \pi = \pi_0$
+\newpage
+The notation used for a true proportion is $\pi$.  Since this summarizes a population, it is a parameter. When writing the **null hypothesis** in notation we set the parameter equal to the null value, $H_0: \pi = \pi_0$
 
 11. Write the null hypothesis in notation using the null value of 0.1.
 
 \vspace{0.5in}
 
-The alternative hypothesis is the claim to be tested and the direction is based on the research question.  
+The **alternative hypothesis** is the claim to be tested and the direction is based on the research question.  
 
 12.  Based on the research question from question 5, are we testing that the parameter is greater than 0.1, less than 0.1 or different than 0.1? 
 
@@ -162,22 +169,22 @@ To use the computer simulation, we will need to enter the "probability of succes
 
 18.  What values should be entered into the simulation?
 
-\vspace{0.25in}
-    Probability of success:
-    
-\vspace{0.25in}
-    Sample size:
+\vspace{.2in}
+* Probability of success:
 
-\vspace{0.25in}
-    Number of repetitions:
+\vspace{.2in}
+* Sample size:
     
-\vspace{0.25in}
-    As extreme as:
+\vspace{.2in}
+* Number of repetitions:
     
-\vspace{0.25in}
-    Direction:
+\vspace{.2in}
+* As extreme as:
     
-\vspace{0.25in}
+\vspace{.2in}
+* Direction:
+
+\vspace{.2in}
 
 
 
@@ -199,19 +206,17 @@ To use the computer simulation, we will need to enter the "probability of succes
 22.  Using the simulation, what is the proportion of samples at this summary statistic or greater, if the true proportion of male boxers is 0.1? *Hint: Look under the simulation.*
 
 \vspace{1in}
+|         This is the **p-value**.  The smaller the p-value the more evidence we have against the null hypothesis.
 
-This is the p-value.  The smaller the p-value the more evidence we have against the null hypothesis.
-
-23. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis?
+23. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one.)
 
 ![](images/soe_gradient.png)
-\vspace{0.5in}
 
-A point estimate provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible range of values for the parameter. This plausible range of values for the population parameter is called a confidence interval. 
+A **point estimate** provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible range of values for the parameter. This plausible range of values for the population parameter is called a confidence interval. 
 
 We will use bootstrapping to find the 95% confidence interval. 
 
-24.  What is bootstrapping?
+24.  In your own words, explain the bootstrapping process.
 \vspace{1in}
 
 
@@ -229,6 +234,7 @@ We will use bootstrapping to find the 95% confidence interval.
 
 \vspace{1in}
 
+\newpage
 ### Communicate the results and answer the research question
 
 When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.
@@ -239,11 +245,13 @@ When we write a conclusion we answer the research question by stating how much e
 
 * P-value
 
-* Conclusion in context
+* Conclusion (written to answer the research question)
 
-* Confidence Interval
+* Confidence interval
 
-* Interpretation of the Confidence Interval
+* Interpretation of the confidence interval
+
+* Scope of inference
 
 \vspace{3in}
 

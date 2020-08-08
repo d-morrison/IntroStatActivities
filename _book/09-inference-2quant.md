@@ -24,24 +24,29 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 
 
 ```r
-favstats(Snowfall~WeatherPattern, data=Snow)
-#>   WeatherPattern  min   Q1 median   Q3   max     mean       sd  n missing
-#> 1        El_Nino 31.9 46.4   57.7 64.3  87.9 56.23043 13.00823 23       0
-#> 2        La_Nina 44.5 51.4   60.9 70.3 107.2 63.13333 15.48626 21       0
-```
-
-
-```r
 ggplot(data = Snow,
        aes(x = WeatherPattern, y = Snowfall)) +
     geom_boxplot() + 
     labs(title = "Snowfall by weather pattern",
-         x = "Weather pattern")
+         x = "Weather pattern") +
+    coord_flip()
 ```
 
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{09-inference-2quant_files/figure-latex/unnamed-chunk-3-1} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{09-inference-2quant_files/figure-latex/unnamed-chunk-2-1} \end{center}
+
+
+
+```r
+favstats(Snowfall~WeatherPattern, data=Snow)
+```
+
+```
+#>   WeatherPattern  min   Q1 median   Q3   max     mean       sd  n missing
+#> 1        El_Nino 31.9 46.4   57.7 64.3  87.9 56.23043 13.00823 23       0
+#> 2        La_Nina 44.5 51.4   60.9 70.3 107.2 63.13333 15.48626 21       0
+```
 
 ### Quantitative variables review
 
@@ -138,7 +143,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 * P-value
 
-* Conclusion in context
+* Conclusion (written to answer the research question)
 
 * Confidence interval
 

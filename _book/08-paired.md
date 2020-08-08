@@ -23,7 +23,7 @@ The following terms will be covered in this activity.
 
 * Independent groups
 
-* Shifted Null Distribution
+* Shifted null distribution
 
 For further explanation of these topics see Section 6.2 in the textbook.
 
@@ -31,22 +31,31 @@ For further explanation of these topics see Section 6.2 in the textbook.
 
 The social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 have appeared to help 'flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured below which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants. 
 
-![](images/air_pollution.png)
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/air_pollution} 
+
+}
+
+\caption{THESE FIGURES NEED A CAPTION - JADE WHERE IS THIS...?}(\#fig:unnamed-chunk-1)
+\end{figure}
 
 Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015 - 2019). Note that higher AQI scores indicate worse air quality.
 
-### Vocabulary review
 
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-2-1} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{08-paired_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
 
-|               |         Mean         | Standard deviation | Sample Size |
+|               |         Mean         | Standard deviation | Sample size |
 |:-------------:|:--------------------:|--------------------|-------------|
 | Current       | $\bar{x}_1$ = 47.394 | $s_1$ = 14.107     | $n_1$ = 33  |
 | 5 Year Median | $\bar{x}_2$ = 51.545 | $s_2$ = 17.447     | $n_2$ = 33  |
 | Differences   | $\bar{x}_d$ = -4.152 | $s_d$ = 17.096     | $n_d$ = 33  |
+
+\newpage
+### Vocabulary review
 
 1. What is the sample size? 
 
@@ -54,7 +63,7 @@ Have high population-density U.S. cities seen the same improved air quality cond
 
 2.  Identify the variables in this study.  What role do each have?
 
-\vspace{1in}
+\vspace{.8in}
 
 3. Why is this treated as a paired study design and not two independent samples?
 
@@ -62,7 +71,7 @@ Have high population-density U.S. cities seen the same improved air quality cond
 
 4. Is this an experiment or observational study?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 ### Ask a research question
 
@@ -82,16 +91,16 @@ Have high population-density U.S. cities seen the same improved air quality cond
 
 \vspace{1in}
 
-
+\newpage
 ### Summarize and visualize the data 
 
 9. Report the summary statistic for the data.  
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 10. What notation is used for the value in question 9? 
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 
 ### Use statistical inferential methods to draw inferences from the data
@@ -100,23 +109,23 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 
 11. Calculate the difference $\mu_0 - \bar{x}$.  Will we need to shift the data up or down?
 
-\vspace{1in}
+\vspace{.7in}
 
 
 
-The image below gives the null distribution from one possible set of 1000 bootstrap samples:
+The image below gives the null distribution from one possible set of 1000 shifted bootstrap samples:
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-4-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-5-1} \end{center}
 
 
 12. Explain why the null distribution is centered at zero. 
 
-\vspace{1in}
+\vspace{.5in}
 
 13. What proportion of samples are beyond the sample mean difference in AQI Scores for current scores minus 5 year median scores?
 
-\vspace{1in}
+\newpage
 
 14. Interpret the p-value in the context of the problem.
 
@@ -124,25 +133,25 @@ The image below gives the null distribution from one possible set of 1000 bootst
 
 15. How much evidence does this provide for improved air quality in US cities?
 
-\vspace{1in}
+\vspace{.5in}
 
 16. Write out the parameter of interest in context of the study.
 
 \vspace{1in}
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-5-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-6-1} \end{center}
 
-17.  Use bootstrapping to find a 99% confidence interval for the parameter of interest.  Fill in the data, number of bootstrap samples, and confidence level.  Report the confidence interval in interval notation.
+17.  Use the bootstrapped distribution above to find a 99% confidence interval for the parameter of interest.  Report the confidence interval in interval notation.
 
-\vspace{1in}
+\vspace{.3in}
+
 
 ### Communicate the results and answer the research question.
 
-18. Interpret the 99% confidence interval in the following figure in the context of the problem.
+18. Interpret the 99% confidence interval in the context of the problem.
 
-\vspace{1in}
-
+\newpage
 
 19.  Write a paragraph summarizes the results of this study.  Be sure to include:
 
@@ -150,19 +159,20 @@ The image below gives the null distribution from one possible set of 1000 bootst
 
 * P-value
 
-* Interpretation of the p-value
+* Conclusion (written to answer the research question)
 
-* Confidence Interval
+* Confidence interval
 
 * Interpretation of the confidence interval
 
-* Conclusion in context
+* Scope of inference
 
 \vspace{3in}
 
 ### Revisit and look forward
 
-
+20. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
+\vspace{1in}
 
 
 ## Additional notes

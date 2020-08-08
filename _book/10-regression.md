@@ -196,13 +196,29 @@ The $t^*$ multiplier comes from the t-distribution with $n-2$ df.
 
 * Confidence interval and interpretation
 
-* Conclusion in context
+* Conclusion (written to answer the research question)
 
 * Scope of inference
 
+* Summary statistic
+
+\vspace{2in}
 ### Revisit and look forward
 
-23. Is there an effect due to gender on this linear relationship?  Explain your answer using the scatterplot.
+23. Is there an effect due to gender on the linear relationship between age and speed?  Explain your answer using the scatterplot below.
+
+
+```r
+ggplot(data = hands,   #This is the data set
+       aes(x = age, y = speed, color = dominant))+  #Specify variables
+  geom_point(aes(pch = dominant)) +  #Add scatterplot of points
+  labs(x = "Age (yrs)",  #Label x-axis
+       y = "Speed (sec/peg)",  #Label y-axis
+       legend = "Dominant hand",  #Label your legend
+       title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
+  geom_smooth(method = "lm", se = FALSE)  #Add regression line
+```
+
 
 
 \begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-6-1} \end{center}

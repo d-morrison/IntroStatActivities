@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.29)  7 AUG 2020 23:07
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.29)  7 AUG 2020 23:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -456,10 +456,65 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count303
 ) (./IntroStatActivities.aux
 
+LaTeX Warning: Label `learning-outcomes' multiply defined.
+
+
+LaTeX Warning: Label `additional-notes' multiply defined.
+
+
+LaTeX Warning: Label `learning-outcomes' multiply defined.
+
+
+LaTeX Warning: Label `terminology-review' multiply defined.
+
+
+LaTeX Warning: Label `additional-notes' multiply defined.
+
+
+LaTeX Warning: Label `terminology-review' multiply defined.
+
+
+LaTeX Warning: Label `vocabulary-review' multiply defined.
+
+
+LaTeX Warning: Label `additional-notes' multiply defined.
+
+
+LaTeX Warning: Label `learning-objectives' multiply defined.
+
+
+LaTeX Warning: Label `movies-released-in-2016' multiply defined.
+
+
+LaTeX Warning: Label `terminology-review' multiply defined.
+
+
+LaTeX Warning: Label `vocabulary-review' multiply defined.
+
+
+LaTeX Warning: Label `additional-notes' multiply defined.
+
+
 LaTeX Warning: Label `learning-objectives' multiply defined.
 
 
 LaTeX Warning: Label `terminology-review' multiply defined.
+
+
+LaTeX Warning: Label `steps-of-the-statistical-investigation-process' multiply 
+defined.
+
+
+LaTeX Warning: Label `additional-notes' multiply defined.
+
+
+LaTeX Warning: Label `learning-objectives' multiply defined.
+
+
+LaTeX Warning: Label `terminology-review' multiply defined.
+
+
+LaTeX Warning: Label `vocabulary-review' multiply defined.
 
 
 LaTeX Warning: Label `ask-a-research-question' multiply defined.
@@ -475,7 +530,13 @@ the-data' multiply defined.
 LaTeX Warning: Label `additional-notes' multiply defined.
 
 
+LaTeX Warning: Label `learning-outcomes' multiply defined.
+
+
 LaTeX Warning: Label `terminology-review' multiply defined.
+
+
+LaTeX Warning: Label `fig:unnamed-chunk-1' multiply defined.
 
 
 LaTeX Warning: Label `vocabulary-review' multiply defined.
@@ -935,105 +996,169 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ] [2
 
 ]
-Activity 1.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 192.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 192.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 192.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 192.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 192.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 192.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 192.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 192.
 [3
 
 ] [4]
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 360.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 360.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 360.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 360.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 360.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 360.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 360.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 360.
-[5] [6]
-File: 06-inference-1cat_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
-type pdf)
-<use 06-inference-1cat_files/figure-latex/unnamed-chunk-4-1.pdf>
-[7]
-File: images/soe_gradient.png Graphic file (type bmp)
-<images/soe_gradient.png>
-[8]
-File: 06-inference-1cat_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (
-type pdf)
-<use 06-inference-1cat_files/figure-latex/unnamed-chunk-6-1.pdf>
-[9] [10]
+Activity 1.
+[5
+
+]
+File: images/variables.png Graphic file (type bmp)
+<images/variables.png>
+[6]
+File: images/barplot_martian.png Graphic file (type bmp)
+<images/barplot_martian.png>
+File: images/relative_barplot_martian.png Graphic file (type bmp)
+<images/relative_barplot_martian.png>
+[7] [8] [9] [10]
 Activity 2.
 [11
 
-] [12]
+] [12] [13]
+File: images/ScopeOfInference.png Graphic file (type bmp)
+<images/ScopeOfInference.png>
+[14] [15]
+Activity 3.
+[16
+
+]
+File: images/cps.png Graphic file (type bmp)
+<images/cps.png>
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 797.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 806.
+[17]
+File: 03-EDA-categorical_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file 
+(type pdf)
+<use 03-EDA-categorical_files/figure-latex/unnamed-chunk-3-1.pdf>
+File: 03-EDA-categorical_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file 
+(type pdf)
+<use 03-EDA-categorical_files/figure-latex/unnamed-chunk-4-1.pdf>
+[18]
+File: 03-EDA-categorical_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file 
+(type pdf)
+<use 03-EDA-categorical_files/figure-latex/unnamed-chunk-5-1.pdf>
+[19] [20] [21]
+Activity 4.
+[22
+
+] [23]
+File: 04-EDA-quantitative_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file
+ (type pdf)
+<use 04-EDA-quantitative_files/figure-latex/unnamed-chunk-3-1.pdf>
+[24]
+File: 04-EDA-quantitative_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file
+ (type pdf)
+<use 04-EDA-quantitative_files/figure-latex/unnamed-chunk-4-1.pdf>
+[25]
+Activity 5.
+[26
+
+]
+File: 05-EDA-multivariate_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file
+ (type pdf)
+<use 05-EDA-multivariate_files/figure-latex/unnamed-chunk-2-1.pdf>
+[27] [28] [29] [30]
+File: 05-EDA-multivariate_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file
+ (type pdf)
+<use 05-EDA-multivariate_files/figure-latex/unnamed-chunk-5-1.pdf>
+[31]
+Activity 6.
+[32
+
+] [33] [34] [35]
+File: 06-inference-1cat_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
+type pdf)
+<use 06-inference-1cat_files/figure-latex/unnamed-chunk-4-1.pdf>
+[36]
+File: images/soe_gradient.png Graphic file (type bmp)
+<images/soe_gradient.png>
+[37]
+File: 06-inference-1cat_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (
+type pdf)
+<use 06-inference-1cat_files/figure-latex/unnamed-chunk-6-1.pdf>
+[38] [39]
+Activity 7.
+[40
+
+] [41]
 File: 07-inference-2cat_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (
 type pdf)
 <use 07-inference-2cat_files/figure-latex/unnamed-chunk-2-1.pdf>
-[13] [14] [15] [16] [17]
-Activity 3.
+[42] [43] [44] [45] [46]
+Activity 8.
 File: images/air_pollution.png Graphic file (type bmp)
 <images/air_pollution.png>
-[18
+File: 08-paired_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf
+)
+<use 08-paired_files/figure-latex/unnamed-chunk-3-1.pdf>
+[47
 
-]
-File: 08-paired_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf
-)
-<use 08-paired_files/figure-latex/unnamed-chunk-2-1.pdf>
-[19] [20] [21]
-File: 08-paired_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf
-)
-<use 08-paired_files/figure-latex/unnamed-chunk-4-1.pdf>
-[22]
+] [48] [49]
 File: 08-paired_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf
 )
 <use 08-paired_files/figure-latex/unnamed-chunk-5-1.pdf>
-[23] [24]
-Activity 4.
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1393.
-File: 09-inference-2quant_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file
+[50]
+File: 08-paired_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf
+)
+<use 08-paired_files/figure-latex/unnamed-chunk-6-1.pdf>
+[51] [52]
+Activity 9.
+File: 09-inference-2quant_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file
  (type pdf)
-<use 09-inference-2quant_files/figure-latex/unnamed-chunk-3-1.pdf>
-[25
+<use 09-inference-2quant_files/figure-latex/unnamed-chunk-2-1.pdf>
+[53
 
-] [26] [27] [28] [29] [30]
-Activity 5.
-[31
+] [54] [55] [56] [57] [58]
+Activity 10.
+[59
 
 ]
 File: 10-regression_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type
  pdf)
 <use 10-regression_files/figure-latex/unnamed-chunk-2-1.pdf>
-[32]
+[60]
 File: 10-regression_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type
  pdf)
 <use 10-regression_files/figure-latex/unnamed-chunk-3-1.pdf>
-[33] [34] [35]
+[61] [62] [63] [64]
 File: 10-regression_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type
  pdf)
 <use 10-regression_files/figure-latex/unnamed-chunk-6-1.pdf>
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2032.
-[36] [37]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2032.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3654.
+[65]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3654.
 (./IntroStatActivities.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2032.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2032.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3654.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3654.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19844 strings out of 479712
- 351603 string characters out of 5889204
- 798792 words of memory out of 5000000
- 36758 multiletter control sequences out of 15000+600000
- 541547 words of font info for 83 fonts, out of 8000000 for 9000
+ 19991 strings out of 479712
+ 356670 string characters out of 5889204
+ 826418 words of memory out of 5000000
+ 36893 multiletter control sequences out of 15000+600000
+ 541555 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 58i,6n,118p,1208b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,8n,118p,1208b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on IntroStatActivities.pdf (38 pages).
+Output written on IntroStatActivities.pdf (66 pages).

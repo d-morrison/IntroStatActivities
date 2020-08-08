@@ -214,15 +214,18 @@ qt(0.95+0.025, 172) #95% t* multiplier
 
 * Confidence interval and interpretation
 
-* Conclusion in context
+* Conclusion (written to answer the research question)
 
 * Scope of inference
 
+* Summary statistic
+
+\vspace{2in}
 ### Revisit and look forward
 
-23. Is there an effect due to gender on this linear relationship?  Explain your answer using the scatterplot.
+23. Is there an effect due to gender on the linear relationship between age and speed?  Explain your answer using the scatterplot below.
 
-```{r}
+```{r, echo=TRUE}
 ggplot(data = hands,   #This is the data set
        aes(x = age, y = speed, color = dominant))+  #Specify variables
   geom_point(aes(pch = dominant)) +  #Add scatterplot of points
