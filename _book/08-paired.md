@@ -131,18 +131,19 @@ The image below gives the null distribution from one possible set of 1000 bootst
 
 \vspace{1in}
 
+
+\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-5-1} \end{center}
+
 17.  Use bootstrapping to find a 99% confidence interval for the parameter of interest.  Fill in the data, number of bootstrap samples, and confidence level.  Report the confidence interval in interval notation.
 
 \vspace{1in}
 
 ## Communicate the results and answer the research question.
 
-18. Interpret the 95% confidence interval in the following figure in the context of the problem.
+18. Interpret the 99% confidence interval in the following figure in the context of the problem.
 
 \vspace{1in}
 
-
-\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-5-1} \end{center}
 
 19.  Write a paragraph summarizes the results of this study.  Be sure to include:
 

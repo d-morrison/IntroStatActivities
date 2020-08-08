@@ -7,7 +7,7 @@ bookdown::pdf_book:
   highlight: tango
   toc: true
   toc_depth: 1
-  number_sections: false
+  number_sections: true
   split_by: chapter
 
 
