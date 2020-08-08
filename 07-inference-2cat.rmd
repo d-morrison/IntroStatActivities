@@ -40,6 +40,8 @@ In this activity we will use theory-based methods to analyze two categorical var
 
 Review Chapter 5 in your textbook for more information on these topics.
 
+\newpage
+
 ## Helmet Use and Head Injuries
 In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the Journal of the American Medical Association, Vol. 295, No. 8, we can see the results from a random sample 3562 skiers and snowboarders involved in accidents. 
 
@@ -106,7 +108,6 @@ In this study we are looking at the relationship between two groups or two param
    $\pi_2$ - 
 \vspace{0.5in}
 
-\newpage
 When comparing two groups, we assume the two parameters are equal in the null hypothesis---there is no association between the variables.
 
 9.  Write the null hypothesis out in words using your answers to question 8.
@@ -175,7 +176,7 @@ Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$
 17. Is the success-failure condition met for each group?  Explain your answer.
 
 \vspace{1in}
-\newpage
+
 To calculate the test statistic we use: 
 
 \begin{center}
@@ -199,7 +200,7 @@ where the standard error is calculated using the pooled proportion of successes.
 
 \vspace{1in}
 
-We will use the pnorm function in R to find the p-value. You will need to enter the value of the test statistic at xxx.
+We will use the pnorm function in R to find the p-value. Use the provided R markdown file and enter the value of the test statistic at xxx.
 
     {r, echo=TRUE, collapse=FALSE}
     pnorm(xxx #enter value of test statistic
