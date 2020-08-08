@@ -1,6 +1,6 @@
-# Exploratory Data Analysis: Categorical Variables
+# Current Population Survey
 
-## Learning Outcomes
+## Learning outcomes
 
 * Identify and create appropriate summary statistics and plots
   given a data set or research question
@@ -14,7 +14,7 @@
 
 * Construct two-way tables to evaluate conditional probabilities
 
-## Terminology Review
+## Terminology review
 
 In today's activity we will review summary measures and plots for categorical variables.  Some terms covered in this activity are...
 
@@ -33,13 +33,13 @@ In today's activity we will review summary measures and plots for categorical va
 To review these concepts see Section 2.1 in the textbook.  
 
 \newpage
-## Activity
+## "Current" Population Survey: 1985
 The data set we will use for this activity is from the Current Population Survey in 1985.  The CPS is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population.  The following table summarizes the data:
 
 
 \begin{center}\includegraphics[width=0.7\linewidth]{images/cps} \end{center}
 
-### Vocabulary Review
+### Vocabulary review
 
 1. What are the observational units?
 
@@ -55,7 +55,7 @@ The data set we will use for this activity is from the Current Population Survey
 
 An important part of understanding data is to create visual pictures of what the data represents.  In this activity we will create graphical representations of categorical data.
 
-### Displaying a single categorical variable.
+### Displaying a single categorical variable
 
 If we wanted to know how many people in our data set were in each sector, we would create a bar plot of the variable sector.
 
@@ -166,7 +166,7 @@ e. Find the probability that a selected non-gambler is a non-boy. What is the no
 \vspace{1in}
 
 
-## Additional Notes
+## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 

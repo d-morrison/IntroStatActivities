@@ -7,19 +7,19 @@ output:
 
 
 
-## Learning Outcomes
+## Learning outcomes
 
 * Describe the statistical investigation process
 
 * Identify observational units, variables, and variable types in a statistical study
 
-## Activity
+## Can you read "Martian"?
 
 How well can humans distinguish one “Martian” letter from another? In today’s activity, we’ll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or the right.
 
 \vspace{0.5in}
 
-### Steps of Statistical Investigation
+### Steps of the statistical investigation process
 
 The first step of any statistical investigation is to ask a research question.  In this study the research question is: can we as a class read Martian? (we will refine this later on!).  To answer any research question, we must design a study and collect data. (This will normally be provided for you in class.)  For our question, the study consists of each student being presented with two Martian letters and asking which was Bumba.  Your responses will become our observed data that we will explore.  To answer the research question we will simulate what *could* have happened in our class given random chance, repeat that many times to understand the expected variability between different "randomly guessing" classes, then comparing our class's observed data to the simulation.  This gives us an estimate of how often (or the probability of) our class's result would occur if we were all merely guessing, allowing us to determine if we as a class can in fact read Martian.
 
@@ -150,7 +150,7 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 \vspace{1in}
 
-## Take Home Messages
+## Take home messages
 
 1.	In this course we will learn how to evaluate a claim by comparing observed results (classes’ “guesses”) to a distribution of many simulated results under an assumption like “blind guessing.”
 
@@ -158,6 +158,6 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 3.	Unusual observed results will make us doubt the assumptions used to create the simulated distribution. A large number of correct “guesses” is evidence that a person was not just blindly guessing.
 
-## Additional Notes
+## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity, and to write down the names and contact information of your team mates.

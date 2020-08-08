@@ -1,7 +1,7 @@
 # Study Design
 
 
-## Learning Outcomes
+## Learning outcomes
 
 * Explain the purpose of random sampling and its effect on scope of inference
 
@@ -13,7 +13,7 @@
 
 * Identify the types of bias present in a study
 
-## Terminology Review
+## Terminology review
 
 Statistics is the study of how best to collect, analyze, and draw conclusions from data.  Statistical inference will allow us to make a statement about a population parameter based on a sample statistic.
 
@@ -49,7 +49,7 @@ To review these concepts see Section 1.3 to 1.6 in the textbook.
 
 \newpage
 
-## Types of Bias
+## Types of sampling bias
 
 There are two parts to study design: how the sample was selected and how the study was conducted.  First we will look at sampling and types of bias.
 
@@ -134,7 +134,7 @@ In these next questions, identify the target population, the sample, the variabl
 
 \newpage
 
-## Study Design
+## Study design
 The two main study designs we will cover are observational studies and experiments.  Both the sampling method and the study design will help to determine the **scope of inference** for a study.  Remember that only in a randomized experiment can we conclude a **causal** (cause and effect) relationship between the explanatory and response variable.
 
 ```{r, fig.align = "center", out.width="75%"}
@@ -182,6 +182,6 @@ For the next exercises, identify the explanatory variable, the response variable
 8. What is a potential confounding variable for the study in question 7?  Explain how this meets the definition of a confounding variable.
 \vspace{1in}
 
-## Additional Notes
+## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.

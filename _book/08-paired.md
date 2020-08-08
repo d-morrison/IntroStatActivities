@@ -1,7 +1,6 @@
-# Statistical Investigations for Paired Data
+# COVID-19 and Air Pollution
 
-
-## Learning Outcomes
+## Learning outcomes
 
 * Given a research question, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols
@@ -14,7 +13,7 @@
 
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
-## Terminology
+## Terminology review
 
 The following terms will be covered in this activity.
 
@@ -28,7 +27,7 @@ The following terms will be covered in this activity.
 
 For further explanation of these topics see Section 6.2 in the textbook.
 
-## COVID-19 and Air Pollution
+## COVID-19 and air pollution
 
 The social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 have appeared to help 'flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured below which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants. 
 
@@ -36,7 +35,7 @@ The social distancing efforts and stay-at-home directives to help combat the spr
 
 Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015 - 2019). Note that higher AQI scores indicate worse air quality.
 
-## Vocabulary Review
+### Vocabulary review
 
 
 
@@ -65,7 +64,7 @@ Have high population-density U.S. cities seen the same improved air quality cond
 
 \vspace{0.5in}
 
-## Ask a Research Question
+### Ask a research question
 
 5. What are the two competing possibilities to run a hypothesis test?
 
@@ -84,7 +83,7 @@ Have high population-density U.S. cities seen the same improved air quality cond
 \vspace{1in}
 
 
-## Summarize and Visualize the Data 
+### Summarize and visualize the data 
 
 9. Report the summary statistic for the data.  
 
@@ -95,7 +94,7 @@ Have high population-density U.S. cities seen the same improved air quality cond
 \vspace{0.5in}
 
 
-## Use statistical inferential methods to draw inferences from the data
+### Use statistical inferential methods to draw inferences from the data
 
 To simulate the null distribution we will use a bootstrapping method - sampling with replacement from the data set.  Before bootstrapping we will need to shift the each data point by the difference $\mu_0 - \bar{x}$.  This will ensure that the simulated null distribution will be centered at the null value.  
 
@@ -138,7 +137,7 @@ The image below gives the null distribution from one possible set of 1000 bootst
 
 \vspace{1in}
 
-## Communicate the results and answer the research question.
+### Communicate the results and answer the research question.
 
 18. Interpret the 99% confidence interval in the following figure in the context of the problem.
 
@@ -161,11 +160,11 @@ The image below gives the null distribution from one possible set of 1000 bootst
 
 \vspace{3in}
 
-## Revisit and Look Forward
+### Revisit and look forward
 
 
 
 
-## Additional Notes
+## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.

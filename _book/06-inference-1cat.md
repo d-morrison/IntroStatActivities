@@ -1,6 +1,6 @@
-# Introduction to Inference: One Categorical Variable
+# Handedness of Male Boxers
 
-## Learning Objectives
+## Learning objectives
 
 * Identify the two possible explanations (one assuming the null hypothesis, and one assuming the alternative hypothesis) for a relationship seen in sample data
 
@@ -13,7 +13,7 @@
 
 * Use bootstrapping to find a confidence interval for a single proportion
 
-## Terminology
+## Terminology review
 
 These are a few of the terms we will cover in today's activity.
 
@@ -33,7 +33,7 @@ These are a few of the terms we will cover in today's activity.
 
 To review these concepts see Chapter 5 in your textbook
 
-## Steps of Statisical Investigation
+## Steps of the statistical investigation process
 
 We will work through a six step process to complete a hypothesis test for a single proportion.
 
@@ -49,13 +49,13 @@ We will work through a six step process to complete a hypothesis test for a sing
 
 * **Revisit and look forward** to point out limitations of the study and suggest new studies that could be performed to build on the findings of the study 
 
-## Handedness of Male Boxers
+## Handedness of male boxers
 
 Left-handedness is a trait that is found in about 10% of the population. The fighting claim states that left-handed men have an advantage in competition.  Past studies have shown that left-handed men are over-represented among professional fighters. In this random sample of 500 male boxers we will see if there is an over-prevalence of left-handed fighters.
 
 
 
-## Summary Statistics Review
+### Summary statistics review
 
 1.  What are the observational units?
 
@@ -73,13 +73,13 @@ Left-handedness is a trait that is found in about 10% of the population. The fig
 
 \vspace{0.5in}
 
-## Ask a Research Question.
+### Ask a research question
 
 5. Identify the research question for this study.
 
 \vspace{1in}
 
-## Design a Study and Collect Data
+### Design a study and collect data
 
 6. What is the target population for this study?
 
@@ -89,7 +89,7 @@ Left-handedness is a trait that is found in about 10% of the population. The fig
 
 \vspace{1in}
 
-## Summarize and Visualize the Data
+### Summarize and visualize the data
 
 
 ```
@@ -101,7 +101,7 @@ Left-handedness is a trait that is found in about 10% of the population. The fig
 
 \vspace{0.5in}
 
-## Use statistical analysis methods to draw inferences from the data
+### Use statistical analysis methods to draw inferences from the data
 
 When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, the true value of interest.  
 
@@ -229,7 +229,7 @@ We will use bootstrapping to find the 95% confidence interval.
 
 \vspace{1in}
 
-## Communicate the results and answer the research question
+### Communicate the results and answer the research question
 
 When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.
 
@@ -247,7 +247,7 @@ When we write a conclusion we answer the research question by stating how much e
 
 \vspace{3in}
 
-## Revisit and look forward
+### Revisit and look forward
 
 29. Suggest a new research question that you might investigate, building on what you learned in this study.
 
@@ -255,7 +255,7 @@ When we write a conclusion we answer the research question by stating how much e
 
 
 
-## Additional Notes
+## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 

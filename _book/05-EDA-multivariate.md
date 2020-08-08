@@ -1,8 +1,8 @@
-# Exploratory Data Analysis: Multivariate Thinking
+# IMDb Movie Reviews: Part II
 
 
 
-## Learning Objectives
+## Learning objectives
 
 * Identify and create appropriate summary statistics and plots
   given a data set with two quantitative variables
@@ -17,7 +17,7 @@
 
 * Understand what the coefficient of determination is
 
-## Movies Released in 2016
+## Movies released in 2016
 
 We will revisit the data set used last week collected on Movies released since 1916 to 2016.  Here is a reminder of the variables collected on these movies.
 
@@ -37,7 +37,7 @@ We will revisit the data set used last week collected on Movies released since 1
 
 * Movie Facebook Likes: Number of likes a movie receives on Facebook
 
-## Terminology Review
+### Terminology review
 
 In today's activity we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are
 
@@ -53,7 +53,7 @@ In today's activity we will review summary measures and plots for two quantitati
 
 To review these concepts see Chapter 3 in the textbook.  
 
-## Vocabulary Review
+### Vocabulary review
 
 1.  What type of plot is used to display two quantitative variables?
 
@@ -97,7 +97,7 @@ ggplot(data = moviesa,   #This is the data set
 
 \vspace{1in}
 
-## Correlation 
+### Correlation 
 
 Correlation measures the strength and the direction between two quantitative variables.  The closer the value of correlation to + or - 1 the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  
 
@@ -137,7 +137,7 @@ Correlation measures the strength and the direction between two quantitative var
 
 \vspace{1in}
 
-## Slope
+### Slope
 
 The slope measures the change in y for each increase in x by 1.  In other words, as the x variable increases by 1 unit, the y variable changes (increase/decreases) by the value of slope.
 
@@ -162,7 +162,7 @@ The linear model function in R gives us the summary for the least squares regres
 
 \vspace{1in}
 
-## Residuals:
+### Residuals
 
 The model we are using assumes the relationship between the two variables follows a straight line. The residuals are the errors, or the part that hasn't been modeled by the line.
 
@@ -182,7 +182,7 @@ $e_i=y_i-\hat{y}_i$
 
 \vspace{1in}
 
-## Coefficient of Determination
+### Coefficient of determination (R-squared)
 
 The coefficient of determination, $R^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $R^2$ describes the amount of variation in the response that is explained by the least squares line with the explanatory variable.  
 
@@ -194,7 +194,7 @@ The coefficient of determination, $R^2$, can also be used to describe the streng
 
 \vspace{1in}
 
-## Multivariate Plot
+### Multivariate plots
 In the next plot we are graphing three variables. 
 
 
@@ -222,7 +222,7 @@ ggplot(data = moviesa,   #This is the data set
 \vspace{1in}
 
 
-## Additional Notes
+## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
