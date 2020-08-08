@@ -4,28 +4,24 @@
 
 * Identify and create appropriate summary statistics and plots
   given a data set or research question for quantitative data
-  
+
 * Interpret the following summary statistics in context:
   median, lower quartile, upper quartile,
   standard deviation, inter-quartile range
-  
+
 * Given a plot or set of plots, describe and compare the distribution(s)
   of a single quantitative variable
   (center, variability, shape, outliers)
-  
+
 ## Terminology review
 
 In today's activity we will review summary measures and plots for quantitative variables.  Some terms covered in this activity are
 
-* Two measures of center
-    * Mean
-    * Median
-* Two measures of spread (variability)
-    * Standard deviation
-    * IQR
-* Boxplots, dotplots, histograms
+* Two measures of center: mean, median
+* Two measures of spread (variability): standard deviation, inter-quartile range (IQR)
+* Boxplots, dot plots, histograms
 
-To review these concepts see Section 2.3 in the textbook.  
+To review these concepts see Section 2.3 in the textbook.
 
 ## Movies released in 2016
 
@@ -47,19 +43,21 @@ A data set was collected on Movies released since 1916 to 2016.  Here is a list 
 
 * Movie Facebook Likes: Number of likes a movie receives on Facebook
 
+\newpage
+
 ## Vocabulary review
 
 1. What are the observational units in this data set?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 2. Which of the above listed variables are categorical?
 
-\vspace{1in}
+\vspace{.5in}
 
 3. Which of the above listed variables are quantitative?
 
-\vspace{1in}
+\vspace{.5in}
 
 ```{r echo=F, fig.height=4}
 par(mfrow=c(1,2))
@@ -72,19 +70,19 @@ movies$title_year <- factor(movies$title_year)
 year <- c("2016")
 movies <- movies[movies$title_year %in% year,]
 movies$title_year <- factor(movies$title_year)
-moviesa <- na.omit(movies)
+movies <- na.omit(movies)
 ```
 
 ## Summarizing a single quantitative variable
 
-The favstats function gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable 'IMDb'.
+The `favstats` function gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable 'IMDb'.
 
-```{r}
-favstats(moviesa$imdb_score)
+```{r, echo=TRUE}
+favstats(movies$imdb_score)  # [data set name]$[variable name]
 ```
 
 
-4. Give the values for the two measures of center. 
+4. Give the values for the two measures of center.
 
 \vspace{0.5in}
 
@@ -99,16 +97,17 @@ favstats(moviesa$imdb_score)
 
 7. What are the three types of plots used to plot a single quantitative variable?
 
-\vspace{0.5in}
+\newpage
 
 A histogram of the variable 'IMBd Score' is shown below.  Notice that the bin width is 0.5.  For example the first bin consists of the number of movies in the data set with an IMBd score of 3.25 to 3.75.  It is important to note that a movie with a IMBd score of 4.75 will fall into the bin for 4.75 - 5.25.  Visually this shows us the range of IMBd scores for Movies released in 2016.
 
-```{r}
-ggplot(data = moviesa,   #Name data set
+```{r, out.width="60%", echo=TRUE}
+ggplot(data = movies,   #Name data set
        aes(x = imdb_score)) +   #Name variable to plot
   geom_histogram(binwidth = 0.5) +  #Create histogram with specified binwidth
-  labs(title = "Histogram of IMDb Score of Movies in 2016", #title for plot 
-       x = "IMDb Score") #Label for x axis
+  labs(title = "Histogram of IMDb Score of Movies in 2016", #title for plot
+       x = "IMDb Score", #Label for x axis
+       y = "Frequency") #Label for y axis
 ```
 
 
@@ -124,24 +123,24 @@ The boxplot is created using the five number summary:
 
 * Minimum value
 
-* Quartile 1 (Q1) - the value at the 25th percentile
+* First quartile (Q1) - the 25th percentile
 
-* Median - the value at the 50th percentile
+* Median - the 50th percentile
 
-* Quartile 3 (Q3) - the value at the 75th percentile
+* Third quartile (Q3) - the 75th percentile
 
-* Maximum value 
+* Maximum value
 
 10.  The three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.5, 8.7, and 9.1.  Using the summary statistics above, sketch a boxplot of IMDb Score.  Be sure to label the axes.
 
-\vspace{2in}
+\newpage
 
 ## Displaying a single categorical and single quantitative variable
 
 The boxplot of 'Budget' in millions by 'Content rating' is plotted using the code below.  This plot helps to compare the budget for different levels of content rating.
 
-```{r}
-ggplot(data = moviesa,  #Data set
+```{r, out.width="60%", echo=TRUE}
+ggplot(data = movies,  #Data set
        aes(y = budget_mil, x = content_rating))+  #Identify variables
   geom_boxplot()+  #Tell it to make a boxplot
   labs(title = "Side by side Boxplot of Budget by Content Rating",  #Title
@@ -152,19 +151,19 @@ ggplot(data = moviesa,  #Data set
 11. Answer the following questions about the boxplots above.
 
    a. Which content rating has the highest center?
-\vspace{0.5in}
+\vspace{0.2in}
 
    b. Which content rating has the largest spread?
-\vspace{0.5in}
+\vspace{0.2in}
 
-   c. Which content rating is the most symmetric?
-\vspace{0.5in}
-    
+   c. Which content rating is the most symmetric distribution?
+\vspace{0.2in}
+
    d. Fifty percent of movies in 2016 with a PG-13 content rating fall below what value?
-\vspace{0.5in}
+\vspace{0.2in}
 
-   e.  What is the value for Q3 for the PG-13 rating?  Interpret this value in context.
-\vspace{1in}
+   e.  What is the value for the third quartile (Q3) for the PG-13 rating?  Interpret this value in context.
+\vspace{.5in}
 
 
 

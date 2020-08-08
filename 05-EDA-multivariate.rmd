@@ -1,7 +1,6 @@
 # IMDb Movie Reviews: Part II
 
 ```{r echo=F, fig.height=4}
-par(mfrow=c(1,2))
 movies <- read.csv("data/Movies.csv") #reads in data
 movies$content_rating <- factor(movies$content_rating) 
 rating <- c("PG", "PG-13", "R") #chooses levels of a variable
@@ -11,7 +10,7 @@ movies$title_year <- factor(movies$title_year)
 year <- c("2016") #chooses a single year
 movies <- movies[movies$title_year %in% year,]
 movies$title_year <- factor(movies$title_year)
-moviesa <- na.omit(movies) #removes mising values
+movies <- na.omit(movies) #removes mising values
 ```
 
 ## Learning objectives
@@ -23,15 +22,15 @@ moviesa <- na.omit(movies) #removes mising values
 
 * Find the correlation coefficient 
 
-* Find the estimated line of regression using summary statistics and R Linear Model Output
+* Find the estimated line of regression using summary statistics and `R` linear model (`lm`) output
 
-* Understand what the slope coefficient represents
+* Interpret the slope coefficient in context of the problem
 
-* Understand what the coefficient of determination is
+* Interpret the coefficient of determination in context of the problem
 
 ## Movies released in 2016
 
-We will revisit the data set used last week collected on Movies released since 1916 to 2016.  Here is a reminder of the variables collected on these movies.
+We will revisit the data set used last week collected on Movies released since 1916 to 2016. Here is a reminder of the variables collected on these movies.
 
 * Year: Year the movie was released
 
@@ -59,9 +58,9 @@ In today's activity we will review summary measures and plots for two quantitati
 
 * Slope
 
-* Line of Regression
+* Least-squares line of regression
 
-* Coefficient of determination
+* Coefficient of determination (R-squared)
 
 To review these concepts see Chapter 3 in the textbook.  
 
@@ -69,16 +68,16 @@ To review these concepts see Chapter 3 in the textbook.
 
 1.  What type of plot is used to display two quantitative variables?
 
-\vspace{0.5in}
+\vspace{0.2in}
 
 2.  What summary statistics are used to describe the relationship between two quantitative variables?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. This shows a scatterplot of 'Budget' as a predictor of 'Revenue' (note: both variables are measures in "millions of dollars".  
 
 ```{r echo=t, fig.height=5,fig.width=12, message = FALSE}
-ggplot(data = moviesa,   #This is the data set
+ggplot(data = movies,   #This is the data set
        aes(x = budget_mil, y = revenue_mil))+  #Specify variables
   geom_point() +  #Add scatterplot of points
   labs(x = "Budget in Millions ($)",  #Label x-axis
@@ -86,19 +85,23 @@ ggplot(data = moviesa,   #This is the data set
        title = "Revenue vs. Budget") + #Be sure to tile your plots
   geom_smooth(method = "lm", se = FALSE)  #Add regression line
 ```
-3. Assess the four features of the scatterplot that describe this relationship.
+3. Assess the four features of the scatterplot that describe this relationship. Describe each feature using a complete sentence!
 
-    * Form (linear, non-linear)
-\vspace{1in}
-    * Direction (positive, negative)
-    
-\vspace{1in}
-    * Strength
-    
-\vspace{1in}
-    * Unusual Observations or Outliers
+* Form (linear, non-linear)
 
-\vspace{1in}
+\vspace{.5in}
+
+* Direction (positive, negative)
+
+\vspace{.5in}
+
+* Strength
+
+\vspace{.5in}
+
+* Unusual observations or outliers
+
+\vspace{.5in}
 
 4. Does there appear to be an association between 'Budget' and 'Revenue'? Explain.
 
@@ -108,10 +111,14 @@ ggplot(data = moviesa,   #This is the data set
 
 Correlation measures the strength and the direction between two quantitative variables.  The closer the value of correlation to + or - 1 the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  
 
-```{r}
-moviesb <- moviesa[,c("budget_mil", "revenue_mil", "duration", 
-                      "imdb_score", "movie_facebook_likes")]
-round(cor(moviesb,use="pairwise.complete.obs"),4)
+```{r, echo=TRUE, collapse = FALSE}
+# Take subset of variables
+movies %>%
+  select(c("budget_mil", "revenue_mil",  # Take subset of variables
+           "duration", "imdb_score", 
+           "movie_facebook_likes")) %>%
+  cor(use="pairwise.complete.obs") %>% # Calculate correlation matrix
+  round(3)  # Round to 3 decimals
 ```
 
 5.  Using the output above, which two variables have the strongest correlation?
@@ -120,17 +127,17 @@ round(cor(moviesb,use="pairwise.complete.obs"),4)
 
 6.  What is the value of correlation between 'Budget' and 'Revenue'?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 7.  Based on the value of correlation what would the sign of the slope be? Positive or negative?  Explain.
 
 \vspace{1in}
 
-8.  Does your answer to question 13 match the direction you choose in question 3?
+8.  Does your answer to question 7 match the direction you choose in question 3?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
-9.  Explain why the correlation values on the diagonal are equal to 1.0.
+9.  Explain why the correlation values on the diagonal are equal to 1.
 
 \vspace{1in}
 
@@ -140,9 +147,10 @@ The slope measures the change in y for each increase in x by 1.  In other words,
 
 The linear model function in R gives us the summary for the least squares regression line.  The estimate for (Intercept) is the y-intercept for the line of least squares and the estimate for budget is the value of $b_1$, the slope.
 
-```{r}
-revenueLM <- lm(revenue_mil~budget_mil,data=moviesa)
-summary(revenueLM)$coefficients
+```{r, echo=TRUE, collapse = FALSE}
+# Fit linear model: y ~ x
+revenueLM <- lm(revenue_mil ~ budget_mil, data=movies)
+summary(revenueLM)$coefficients # Display coefficient summary
 ```
 
 10.  Write out the least squares line using the summary statistics provided.
@@ -189,12 +197,13 @@ The coefficient of determination, $R^2$, can also be used to describe the streng
 
 \vspace{1in}
 
+\newpage
 ### Multivariate plots
 In the next plot we are graphing three variables. 
 
 ```{r echo=TRUE, fig.height=5,fig.width=12, message = FALSE}
-ggplot(data = moviesa,   #This is the data set
-       aes(x = budget_mil, y = revenue_mil, color = content_rating))+  #Specify variables
+ggplot(data = movies,   #This is the data set
+       aes(x = budget_mil, y = revenue_mil, color = content_rating)) +  #Specify variables
   geom_point(aes(pch = content_rating)) +  #Add scatterplot of points
   labs(x = "Budget in Millions ($)",  #Label x-axis
        y = "Revenue in Millions ($)",  #Label y-axis

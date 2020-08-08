@@ -20,7 +20,7 @@ options(show.signif.stars = FALSE)
 
 How well can humans distinguish one “Martian” letter from another? In today’s activity, we’ll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or the right.
 
-\vspace{0.5in}
+\vspace{0.2in}
 
 ### Steps of the statistical investigation process
 
@@ -34,8 +34,6 @@ Let’s explore the data.
 \vspace{0.5in}
 
 2.  How many students are in class today? This is the sample size.
-
-\vspace{0.5in}
 
 
 \newpage
