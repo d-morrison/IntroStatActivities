@@ -65,11 +65,11 @@ Left-handedness is a trait that is found in about 10% of the population. The fig
 
 2.  What variable are we testing?  Is it categorical or quantitative?
 
-\vspace{1in}
+\vspace{0.5in}
 
 3. What type of plot would be appropriate to visually display the data?
 
-\vspace{1in}
+\vspace{0.5in}
 
 4. Write out in context the statistic will we calculate to summarize the data.
 
@@ -245,7 +245,7 @@ one_proportion_bootstrap_CI(sample_size = 500, #Sample size
 
 \begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-6-1} \end{center}
 
-25. Explain why the blue lines are at the 2.5th percentile and the 97.5th percentile.
+25. Explain why the two vertical lines (they are blue in the simulation) are at the 2.5th percentile and the 97.5th percentile.
 
 \vspace{1in}
 
@@ -256,7 +256,6 @@ one_proportion_bootstrap_CI(sample_size = 500, #Sample size
 
 \vspace{1in}
 
-\newpage
 ### Communicate the results and answer the research question
 
 When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.

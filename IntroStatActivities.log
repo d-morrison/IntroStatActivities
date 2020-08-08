@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7440 64-bit) (preloaded format=xelatex 2020.8.8)  8 AUG 2020 16:41
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7440 64-bit) (preloaded format=xelatex 2020.8.8)  8 AUG 2020 17:13
 entering extended mode
 **./IntroStatActivities.tex
 (IntroStatActivities.tex
@@ -706,6 +706,9 @@ LaTeX Warning: Label `terminology-review' multiply defined.
 LaTeX Warning: Label `vocabulary-review' multiply defined.
 
 
+LaTeX Warning: Label `ask-a-research-question' multiply defined.
+
+
 LaTeX Warning: Label `summarize-and-visualize-the-data' multiply defined.
 
 
@@ -1245,7 +1248,7 @@ File: 08-paired_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf
 [49
 
 ] [50] [51]
-Overfull \hbox (27.58987pt too wide) in paragraph at lines 2898--2898
+Overfull \hbox (27.58987pt too wide) in paragraph at lines 2896--2896
 []\TU/lmtt/m/n/10 paired_test(data = Air$Difference,   #Vector of differences o
 r data set with column for each group[] 
  []
@@ -1273,23 +1276,23 @@ File: 10-regression_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type
 File: 10-regression_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type
  pdf)
 <use 10-regression_files/figure-latex/unnamed-chunk-4-1.pdf>
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3695.
-[66]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3695.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3697.
+[66] [67]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3697.
 (IntroStatActivities.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3695.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3695.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3697.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3697.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19937 strings out of 414083
- 349918 string characters out of 2894203
- 823168 words of memory out of 3000000
- 37293 multiletter control sequences out of 15000+200000
+ 19936 strings out of 414083
+ 349894 string characters out of 2894203
+ 823111 words of memory out of 3000000
+ 37292 multiletter control sequences out of 15000+200000
  538805 words of font info for 79 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,8n,118p,1210b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on IntroStatActivities.pdf (67 pages).
+Output written on IntroStatActivities.pdf (68 pages).

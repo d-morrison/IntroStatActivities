@@ -1801,7 +1801,7 @@ Left-handedness is a trait that is found in about 10\% of the population. The fi
   What variable are we testing? Is it categorical or quantitative?
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.5in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1811,7 +1811,7 @@ Left-handedness is a trait that is found in about 10\% of the population. The fi
   What type of plot would be appropriate to visually display the data?
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.5in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2149,7 +2149,7 @@ We will use bootstrapping to find the 95\% confidence interval.
 \setcounter{enumi}{24}
 \tightlist
 \item
-  Explain why the blue lines are at the 2.5th percentile and the 97.5th percentile.
+  Explain why the two vertical lines (they are blue in the simulation) are at the 2.5th percentile and the 97.5th percentile.
 \end{enumerate}
 
 \vspace{1in}
@@ -2173,8 +2173,6 @@ We will use bootstrapping to find the 95\% confidence interval.
 \end{enumerate}
 
 \vspace{1in}
-
-\newpage
 
 \hypertarget{communicate-the-results-and-answer-the-research-question}{%
 \subsection{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question}}
@@ -3434,6 +3432,7 @@ The variables in this dataset consist of the following:
   y = ``Speed (sec/peg)'', \#Label y-axis
   title = ``Scatterplot of Age vs.~Speed'') + \#Be sure to tile your plots
   geom\_smooth(method = ``lm'', se = FALSE) \#Add regression line
+  \vspace{2in}
 \item
   Describe the features of the plot you created in Question 3.
 \end{enumerate}
@@ -3468,13 +3467,13 @@ The scatterplot and the residual plot will be used to assess the conditions for 
 \setcounter{enumi}{4}
 \tightlist
 \item
-  Are the conditions met
+  Are the conditions met to approximate the T-distribution?
 \end{enumerate}
 
 \vspace{1in}
 
-\hypertarget{ask-a-reseach-question}{%
-\subsection{Ask a reseach question}\label{ask-a-reseach-question}}
+\hypertarget{ask-a-research-question}{%
+\subsection{Ask a research question}\label{ask-a-research-question}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3499,17 +3498,20 @@ The scatterplot and the residual plot will be used to assess the conditions for 
 \hypertarget{summarize-and-visualize-the-data}{%
 \subsection{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
 
+Using the provided R markdown file, enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
+
+\begin{verbatim}
+{r}
+lm.hand <- lm(xxx~xxxx, data=hands) #lm(response~explanatory)
+summary(lm.hand)$coefficients
+\end{verbatim}
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{7}
+\tightlist
 \item
-  Using the provided R markdown file, enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
-
-  \{r\}
-  lm.hand \textless- lm(xxx\textasciitilde xxxx, data=hands) \#lm(response\textasciitilde explanatory)
-  summary(lm.hand)\$coefficients
-\item
-  Using the output above, write the equation of the regression line.
+  Using the found using the R code, write the equation of the regression line.
 \end{enumerate}
 
 \vspace{1in}

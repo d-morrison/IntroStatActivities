@@ -48,6 +48,7 @@ The variables in this dataset consist of the following:
 *Data source: Hand Dexterity in Children: Administration and Normative Values of the Functional Dexterity Test (FDT), Gogola, G., et al., 2013*
 
 
+
 ### Vocabulary review
 
 1. Explain why regression methods are appropriate to use to address the researchers' question. Make sure you clearly define the variables of interest in your explanation and their roles.
@@ -61,8 +62,6 @@ The variables in this dataset consist of the following:
 
 3. Use the provided $R$ markdown file to create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names ('speed' and 'age') for xxx and xxxx. Provide this plot. Based on your plot, does it appear that there is a relationship between ``age`` and ``speed``? Note: ``age`` should be on the x-axis.
  
-
-
     {r, echo=true}
     ggplot(data = hands,   #This is the data set
        aes(x = xxx, y = xxxx))+  #Specify variables
@@ -71,7 +70,7 @@ The variables in this dataset consist of the following:
        y = "Speed (sec/peg)",  #Label y-axis
        title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
     geom_smooth(method = "lm", se = FALSE)  #Add regression line
-
+\vspace{2in}
 
 4. Describe the features of the plot you created in Question 3.
 
@@ -93,12 +92,12 @@ The scatterplot and the residual plot will be used to assess the conditions for 
 
 \begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
-5. Are the conditions met 
+5. Are the conditions met to approximate the T-distribution?
 
 \vspace{1in}
 
 
-### Ask a reseach question
+### Ask a research question
 
 6. Write out the null hypothesis in words.
 
@@ -110,13 +109,13 @@ The scatterplot and the residual plot will be used to assess the conditions for 
 
 ### Summarize and visualize the data
 
-8. Using the provided R markdown file, enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
+Using the provided R markdown file, enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
 
     {r}
     lm.hand <- lm(xxx~xxxx, data=hands) #lm(response~explanatory)
     summary(lm.hand)$coefficients
 
-8.  Using the output above, write the equation of the regression line.
+8.  Using the found using the R code, write the equation of the regression line.
 
 \vspace{1in}
 
