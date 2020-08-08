@@ -184,7 +184,7 @@ To use the computer simulation, we will need to enter the "probability of succes
 \vspace{.2in}
 * Direction:
 
-\vspace{.2in}
+\newpage
 
 ```{r, echo = FALSE}
 #Note will need to update to loading catstats when package is ready
@@ -347,6 +347,8 @@ one_proportion_test <- function(probability_success = 0.5,
   
 }
 ```
+
+The following R code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 18 match the code inputs. 
 
 ```{r, echo=TRUE}
 one_proportion_test(probability_success = 0.1, #Null hypothesis value
