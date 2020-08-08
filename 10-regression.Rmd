@@ -73,7 +73,7 @@ hands$HD <- factor(hands$HD)
 hands$handUsed <- factor(hands$handUsed)
 ```
 
-```{r, echo=true}
+{r, echo=true}
 ggplot(data = hands,   #This is the data set
        aes(x = xxx, y = xxxx))+  #Specify variables
   geom_point() +  #Add scatterplot of points
@@ -126,7 +126,7 @@ plot(lm.hand)
 
 8. Enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
 
-```{r}
+{r}
 lm.hand <- lm(xxx~xxxx, data=hands) #lm(response~explanatory)
 summary(lm.hand)$coefficients
 ```
