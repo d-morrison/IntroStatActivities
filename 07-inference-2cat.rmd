@@ -4,16 +4,16 @@
 
 * Write out the null and alternative hypothesis for two categorical variables
 
-* Assess the conditions to use the standard normal distributions
+* Assess the conditions to use the standard normal distribution for a difference in proportions
 
-* Calculate the Z test statistic for a difference in proportions
+* Calculate the Z test statistic for the difference in proportions
 
 * Find the p-value and assess the strength of evidence
 
 * Create and interpret a confidence interval for the difference in proportions
 
 ## Terminology review
-Here are a few terms we will use in today's activity.
+In this activity we will use theory-based methods to analyze two categorical variables. Here are a few terms we will use in today's activity.
 
 * Conditional proportion
 
@@ -26,6 +26,12 @@ Here are a few terms we will use in today's activity.
 * Alternative Hypothesis
 
 * Test statistic
+
+* Standard Normal Distribution
+
+* Type 1 and Type 2 Errors
+
+* Decisions
 
 Review Chapter 5 in your textbook for more information on these topics.
 
@@ -119,7 +125,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 ggplot(data = injury,   #This specifies the dataset
        aes(x = Helmet, fill = Injury)) +   #This specifies the variables
   geom_bar(stat = "count", position = "fill") +  #Tell it to make a stacked bar plot
-  labs(title = "Segmented Bar Plot of Injury by Helmet Use",  #Make sure to title your plot 
+  labs(title = "Segmented Bar Plot of Helmet Use by Injury",  #Make sure to title your plot 
        x = "___________________",   #Label the x axis
        y = "",  #Remove y axis label
        fill = "_____________") + #Change legend label
@@ -128,7 +134,7 @@ ggplot(data = injury,   #This specifies the dataset
 
 ```
 
-12.  Fill in the blanks on the graph with the appropriate variables and values to plot a segmented bar plot of injury by helmet use.
+12.  Fill in the blanks on the graph with the appropriate variables and values to plot a segmented bar plot of helmet use segmented by injury.
 
 \vspace{1in}
 
@@ -233,13 +239,13 @@ qnorm(0.95 + 0.025) #multiplier for 95% confidence interval
 
 * Summary statistic
 
-* P-value
+* Test statistic and interpretation
+
+* P-value and interpretation
 
 * Conclusion (written to answer the research question)
 
-* Confidence interval
-
-* Interpretation of the confidence interval
+* Confidence interval and interpretation
 
 * Scope of inference
 
@@ -255,7 +261,7 @@ Hypothesis tests are not flawless. In a hypothesis test, there are two competing
 | Truth | $H_0$ true |  good decision  |  Type 1 Error  |
 |       | $H_A$ true |  Type 2 Error   |  good decision |
 
-A Type 1 Error is rejecting the null hypothesis when $H_0$is actually true. A Type 2 Error is failing to reject the null hypothesis when the alternative is actually true.
+A Type 1 Error is rejecting the null hypothesis when $H_0$ is actually true. A Type 2 Error is failing to reject the null hypothesis when the alternative is actually true.
 
 26.  Using a significance level of 0.05, what decision do you make in regards to the null hypothesis?
 
