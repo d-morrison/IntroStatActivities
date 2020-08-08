@@ -348,7 +348,7 @@ one_proportion_test <- function(probability_success = 0.5,
 }
 ```
 
-```{r}
+```{r, echo=TRUE}
 one_proportion_test(probability_success = 0.1, #Null hypothesis value
                     sample_size = 500, #Enter sample size
                     number_repetitions = 1000, #Enter number of simulations
@@ -444,7 +444,7 @@ one_proportion_bootstrap_CI <- function(sample_size, number_successes,
 
 ```
 
-```{r}
+```{r, echo=TRUE}
 one_proportion_bootstrap_CI(sample_size = 500, #Sample size
                     number_successes = 81, #Observed number of successes
                     number_repetitions = 1000, #Number of bootstrap samples to use
