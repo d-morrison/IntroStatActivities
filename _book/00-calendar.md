@@ -37,21 +37,21 @@
 7& 6& H& 10/1& Handedness of Male Boxers \\*
 7& 6& F& 10/2& Handedness of Male Boxers \\ \hline
 8& 6& M& 10/5& Handedness of Male Boxers \\*
-8& 7& T& 10/6& Helmet Use and Head Injuries \\*
-8& 7& W& 10/7& Helmet Use and Head Injuries \\*	
-8& 7& H& 10/8& Helmet Use and Head Injuries \\*
-8& 7& F& 10/9& Helmet Use and Head Injuries \\ \hline
+8& 7& T& 10/6& Winter Sports Helmet Use and Head Injuries \\*
+8& 7& W& 10/7& Winter Sports Helmet Use and Head Injuries \\*	
+8& 7& H& 10/8& Winter Sports Helmet Use and Head Injuries \\*
+8& 7& F& 10/9& Winter Sports Helmet Use and Head Injuries \\ \hline
 9& 7& M& 10/12& Helmet Use and Head Injuries \\*
 9& 8& T& 10/13& COVID-19 and Air Pollution \\*
 9& 8& W& 10/14& COVID-19 and Air Pollution \\*	
 9& 8& H& 10/15& COVID-19 and Air Pollution \\*
 9& 8& F& 10/16& COVID-19 and Air Pollution \\ \hline
 10& 8& M& 10/19& COVID-19 and Air Pollution \\*
-10& 9& T& 10/20& Record Snowfall \\*
-10& 9& W& 10/21& Record Snowfall \\*	
-10& 9& H& 10/22& Record Snowfall \\*
-10& 9& F& 10/23& Record Snowfall \\ \hline
-11& 9& M& 10/26& Record Snowfall \\*
+10& 9& T& 10/20& Weather Patterns and Record Snowfall \\*
+10& 9& W& 10/21& Weather Patterns and Record Snowfall \\*	
+10& 9& H& 10/22& Weather Patterns and Record Snowfall \\*
+10& 9& F& 10/23& Weather Patterns and Record Snowfall \\ \hline
+11& 9& M& 10/26& Weather Patterns and Record Snowfall \\*
 11& 10& T& 10/27& Hand Dexterity \\*
 11& 10& W& 10/28& Hand Dexterity \\*	
 11& 10& H& 10/29& Hand Dexterity \\*

@@ -19,7 +19,7 @@ In today's activity we will review summary measures and plots for quantitative v
 
 * Two measures of center: mean, median
 * Two measures of spread (variability): standard deviation, inter-quartile range (IQR)
-* Boxplots, dot plots, histograms
+* Types of graphs: boxplots, dot plots, histograms
 
 To review these concepts see Section 2.3 in the textbook.
 
@@ -90,7 +90,7 @@ favstats(movies$imdb_score)  # [data set name]$[variable name]
 
 \newpage
 
-A histogram of the variable 'IMBd Score' is shown below.  Notice that the bin width is 0.5.  For example the first bin consists of the number of movies in the data set with an IMBd score of 3.25 to 3.75.  It is important to note that a movie with a IMBd score of 4.75 will fall into the bin for 4.75 - 5.25.  Visually this shows us the range of IMBd scores for Movies released in 2016.
+A histogram of the variable 'IMDb Score' is shown below.  Notice that the bin width is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score of 4.75 will fall into the bin for 4.75 - 5.25.  Visually this shows us the range of IMDb scores for Movies released in 2016.
 
 
 ```r
@@ -107,7 +107,7 @@ ggplot(data = movies,   #Name data set
 \begin{center}\includegraphics[width=0.6\linewidth]{04-EDA-quantitative_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
 
-8. Which range of IMBb scores have the highest frequency?
+8. Which range of IMDb scores have the highest frequency?
 
 \vspace{0.5in}
 

@@ -89,7 +89,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx}
+\usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -134,9 +134,6 @@
 [\vspace{1.5ex}%
 \titlerule]
 \titlespacing*{\chapter}{0pt}{-40pt}{20pt}
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{plainnat}
 
@@ -207,21 +204,21 @@ This coursepack accompanies the textbook for STAT 216: Introduction to Statistic
 7& 6& H& 10/1& Handedness of Male Boxers \\*
 7& 6& F& 10/2& Handedness of Male Boxers \\ \hline
 8& 6& M& 10/5& Handedness of Male Boxers \\*
-8& 7& T& 10/6& Helmet Use and Head Injuries \\*
-8& 7& W& 10/7& Helmet Use and Head Injuries \\*	
-8& 7& H& 10/8& Helmet Use and Head Injuries \\*
-8& 7& F& 10/9& Helmet Use and Head Injuries \\ \hline
+8& 7& T& 10/6& Winter Sports Helmet Use and Head Injuries \\*
+8& 7& W& 10/7& Winter Sports Helmet Use and Head Injuries \\*	
+8& 7& H& 10/8& Winter Sports Helmet Use and Head Injuries \\*
+8& 7& F& 10/9& Winter Sports Helmet Use and Head Injuries \\ \hline
 9& 7& M& 10/12& Helmet Use and Head Injuries \\*
 9& 8& T& 10/13& COVID-19 and Air Pollution \\*
 9& 8& W& 10/14& COVID-19 and Air Pollution \\*	
 9& 8& H& 10/15& COVID-19 and Air Pollution \\*
 9& 8& F& 10/16& COVID-19 and Air Pollution \\ \hline
 10& 8& M& 10/19& COVID-19 and Air Pollution \\*
-10& 9& T& 10/20& Record Snowfall \\*
-10& 9& W& 10/21& Record Snowfall \\*	
-10& 9& H& 10/22& Record Snowfall \\*
-10& 9& F& 10/23& Record Snowfall \\ \hline
-11& 9& M& 10/26& Record Snowfall \\*
+10& 9& T& 10/20& Weather Patterns and Record Snowfall \\*
+10& 9& W& 10/21& Weather Patterns and Record Snowfall \\*	
+10& 9& H& 10/22& Weather Patterns and Record Snowfall \\*
+10& 9& F& 10/23& Weather Patterns and Record Snowfall \\ \hline
+11& 9& M& 10/26& Weather Patterns and Record Snowfall \\*
 11& 10& T& 10/27& Hand Dexterity \\*
 11& 10& W& 10/28& Hand Dexterity \\*	
 11& 10& H& 10/29& Hand Dexterity \\*
@@ -246,6 +243,26 @@ This coursepack accompanies the textbook for STAT 216: Introduction to Statistic
 \item
   Identify observational units, variables, and variable types in a statistical study
 \end{itemize}
+
+\hypertarget{terminology-review}{%
+\section{Terminology review}\label{terminology-review}}
+
+Today in class you will be introduced to the following terms:
+
+\begin{itemize}
+\item
+  Observational units or cases
+\item
+  Variables: categorical or quantitative
+\item
+  Proportions
+\item
+  Graphs: frequency bar plot and relative frequency bar plot
+\item
+  Distribution
+\end{itemize}
+
+For more on these concepts, read Section 1.2 in the textbook.
 
 \hypertarget{can-you-read-martian}{%
 \section{Can you read ``Martian''?}\label{can-you-read-martian}}
@@ -748,7 +765,7 @@ In today's activity we will review summary measures and plots for categorical va
   Two-way tables
 \end{itemize}
 
-To review these concepts see Section 2.1 in the textbook.
+To review these concepts see Section 2.1 and 2.2 in the textbook.
 
 \newpage
 
@@ -799,13 +816,13 @@ An important part of understanding data is to create visual pictures of what the
 Throughout these activities, we will often include the \texttt{R} code
 you would use in order to produce output or plots. These
 ``code chunks'' appear in gray. In the code chunk below, we
-demonstrate how to read in the data set into \texttt{R} using the \texttt{read.csv()} function, and tell \texttt{R} to treat the the \texttt{sector} and \texttt{sex} variables as categorical variables (``factors'').
+demonstrate how to read the data set into \texttt{R} using the \texttt{read.csv()} function, and tell \texttt{R} to treat the \texttt{sector} and \texttt{sex} variables as categorical variables (``factors'').
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{cps \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/cps.csv"}\NormalTok{) }\CommentTok{\#This will read in the dataset}
-\NormalTok{cps}\OperatorTok{$}\NormalTok{sector \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(cps}\OperatorTok{$}\NormalTok{sector) }\CommentTok{\#When a variable is categorical, need to make it a factor}
-\NormalTok{cps}\OperatorTok{$}\NormalTok{sex \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(cps}\OperatorTok{$}\NormalTok{sex)}
+\NormalTok{cps <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/cps.csv"}\NormalTok{) }\CommentTok{#This will read in the dataset}
+\NormalTok{cps}\OperatorTok{$}\NormalTok{sector <-}\StringTok{ }\KeywordTok{factor}\NormalTok{(cps}\OperatorTok{$}\NormalTok{sector) }\CommentTok{#When a variable is categorical, need to make it a factor}
+\NormalTok{cps}\OperatorTok{$}\NormalTok{sex <-}\StringTok{ }\KeywordTok{factor}\NormalTok{(cps}\OperatorTok{$}\NormalTok{sex)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -818,13 +835,13 @@ If we wanted to know how many people in our data set were in each sector, we wou
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ cps,   }\CommentTok{\#This specifies the dataset}
-       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ sector)) }\OperatorTok{+}\StringTok{   }\CommentTok{\#This specifies the variable}
-\StringTok{  }\KeywordTok{geom\_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Tell it to make a bar plot}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Frequency Bar Plot of Sector"}\NormalTok{,  }\CommentTok{\#Give your plot a title}
-       \DataTypeTok{x =} \StringTok{"Frequency"}\NormalTok{,   }\CommentTok{\#Label the x axis}
-       \DataTypeTok{y =} \StringTok{"Sector"}\NormalTok{)  }\OperatorTok{+}\StringTok{ }\CommentTok{\#Label the y axis}
-\StringTok{  }\KeywordTok{coord\_flip}\NormalTok{()  }\CommentTok{\#Turn the bars so they are vertical}
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ cps,   }\CommentTok{#This specifies the dataset}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ sector)) }\OperatorTok{+}\StringTok{   }\CommentTok{#This specifies the variable}
+\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{#Tell it to make a bar plot}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Frequency Bar Plot of Sector"}\NormalTok{,  }\CommentTok{#Give your plot a title}
+       \DataTypeTok{x =} \StringTok{"Frequency"}\NormalTok{,   }\CommentTok{#Label the x axis}
+       \DataTypeTok{y =} \StringTok{"Sector"}\NormalTok{)  }\OperatorTok{+}\StringTok{ }\CommentTok{#Label the y axis}
+\StringTok{  }\KeywordTok{coord_flip}\NormalTok{()  }\CommentTok{#Turn the bars so they are vertical}
 \end{Highlighting}
 \end{Shaded}
 
@@ -844,12 +861,12 @@ We could also choose to display the data as a proportion in a relative frequency
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ cps,   }\CommentTok{\#This specifies the dataset}
-       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ sector)) }\OperatorTok{+}\StringTok{   }\CommentTok{\#This specifies the variable}
-\StringTok{  }\KeywordTok{geom\_bar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ ..prop.., }\DataTypeTok{group =} \DecValTok{1}\NormalTok{)) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Tell it to make a bar plot with proportions}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Relative Frequency Bar Plot of Sector"}\NormalTok{,  }\CommentTok{\#Give your plot a title}
-       \DataTypeTok{x =} \StringTok{"Sector"}\NormalTok{,   }\CommentTok{\#Label the x axis}
-       \DataTypeTok{y =} \StringTok{"Relative Frequency"}\NormalTok{)  }\CommentTok{\#Label the y axis}
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ cps,   }\CommentTok{#This specifies the dataset}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ sector)) }\OperatorTok{+}\StringTok{   }\CommentTok{#This specifies the variable}
+\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ ..prop.., }\DataTypeTok{group =} \DecValTok{1}\NormalTok{)) }\OperatorTok{+}\StringTok{  }\CommentTok{#Tell it to make a bar plot with proportions}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Relative Frequency Bar Plot of Sector"}\NormalTok{,  }\CommentTok{#Give your plot a title}
+       \DataTypeTok{x =} \StringTok{"Sector"}\NormalTok{,   }\CommentTok{#Label the x axis}
+       \DataTypeTok{y =} \StringTok{"Relative Frequency"}\NormalTok{)  }\CommentTok{#Label the y axis}
 \end{Highlighting}
 \end{Shaded}
 
@@ -860,7 +877,7 @@ We could also choose to display the data as a proportion in a relative frequency
 \setcounter{enumi}{4}
 \tightlist
 \item
-  What features in the relative frequency bar plot are same as the frequency bar plot? Which are different?
+  Which features in the relative frequency bar plot are the same as the frequency bar plot? Which are different?
 \end{enumerate}
 
 \vspace{1in}
@@ -872,12 +889,12 @@ To see the differences in proportion of each sector between males and females we
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ cps,   }\CommentTok{\#This specifies the dataset}
-       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ sector, }\DataTypeTok{fill =}\NormalTok{ sex)) }\OperatorTok{+}\StringTok{   }\CommentTok{\#This specifies the variables}
-\StringTok{  }\KeywordTok{geom\_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{, }\DataTypeTok{position =} \StringTok{"fill"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Tell it to make a stacked bar plot}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Segmented Bar Plot of Sector by Sex"}\NormalTok{,  }\CommentTok{\#Make sure to title your plot }
-       \DataTypeTok{x =} \StringTok{"Sector"}\NormalTok{,   }\CommentTok{\#Label the x axis}
-       \DataTypeTok{y =} \StringTok{""}\NormalTok{)  }\CommentTok{\#Remove y axis label}
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ cps,   }\CommentTok{#This specifies the dataset}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ sector, }\DataTypeTok{fill =}\NormalTok{ sex)) }\OperatorTok{+}\StringTok{   }\CommentTok{#This specifies the variables}
+\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{, }\DataTypeTok{position =} \StringTok{"fill"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{#Tell it to make a stacked bar plot}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Segmented Bar Plot of Sector by Sex"}\NormalTok{,  }\CommentTok{#Make sure to title your plot }
+       \DataTypeTok{x =} \StringTok{"Sector"}\NormalTok{,   }\CommentTok{#Label the x axis}
+       \DataTypeTok{y =} \StringTok{""}\NormalTok{)  }\CommentTok{#Remove y axis label}
 \end{Highlighting}
 \end{Shaded}
 
@@ -972,7 +989,7 @@ Total & & & 100,000\tabularnewline
   Find \(P(\mbox{B and C})\). What does this probability represent in the context of the problem?
   \vspace{1in}
 \item
-  Find the probability that a selected non-gambler is a non-boy. What is the notation this probability?
+  Find the probability that a selected non-gambler is a non-boy. What is the notation used for this probability?
 \end{enumerate}
 
 \newpage
@@ -1075,7 +1092,7 @@ In today's activity we will review summary measures and plots for quantitative v
 \item
   Two measures of spread (variability): standard deviation, inter-quartile range (IQR)
 \item
-  Boxplots, dot plots, histograms
+  Types of graphs: boxplots, dot plots, histograms
 \end{itemize}
 
 To review these concepts see Section 2.3 in the textbook.
@@ -1145,9 +1162,9 @@ The \texttt{favstats} function gives the summary statistics for a quantitative v
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{favstats}\NormalTok{(movies}\OperatorTok{$}\NormalTok{imdb\_score)  }\CommentTok{\# [data set name]$[variable name]}
-\CommentTok{\#\textgreater{}  min  Q1 median  Q3 max     mean        sd  n missing}
-\CommentTok{\#\textgreater{}  3.4 5.9    6.6 7.1 8.2 6.459016 0.9218418 61       0}
+\KeywordTok{favstats}\NormalTok{(movies}\OperatorTok{$}\NormalTok{imdb_score)  }\CommentTok{# [data set name]$[variable name]}
+\CommentTok{#>  min  Q1 median  Q3 max     mean        sd  n missing}
+\CommentTok{#>  3.4 5.9    6.6 7.1 8.2 6.459016 0.9218418 61       0}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1193,16 +1210,16 @@ The \texttt{favstats} function gives the summary statistics for a quantitative v
 
 \newpage
 
-A histogram of the variable `IMBd Score' is shown below. Notice that the bin width is 0.5. For example the first bin consists of the number of movies in the data set with an IMBd score of 3.25 to 3.75. It is important to note that a movie with a IMBd score of 4.75 will fall into the bin for 4.75 - 5.25. Visually this shows us the range of IMBd scores for Movies released in 2016.
+A histogram of the variable `IMDb Score' is shown below. Notice that the bin width is 0.5. For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75. It is important to note that a movie with a IMDb score of 4.75 will fall into the bin for 4.75 - 5.25. Visually this shows us the range of IMDb scores for Movies released in 2016.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ movies,   }\CommentTok{\#Name data set}
-       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ imdb\_score)) }\OperatorTok{+}\StringTok{   }\CommentTok{\#Name variable to plot}
-\StringTok{  }\KeywordTok{geom\_histogram}\NormalTok{(}\DataTypeTok{binwidth =} \FloatTok{0.5}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Create histogram with specified binwidth}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Histogram of IMDb Score of Movies in 2016"}\NormalTok{, }\CommentTok{\#title for plot}
-       \DataTypeTok{x =} \StringTok{"IMDb Score"}\NormalTok{, }\CommentTok{\#Label for x axis}
-       \DataTypeTok{y =} \StringTok{"Frequency"}\NormalTok{) }\CommentTok{\#Label for y axis}
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ movies,   }\CommentTok{#Name data set}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ imdb_score)) }\OperatorTok{+}\StringTok{   }\CommentTok{#Name variable to plot}
+\StringTok{  }\KeywordTok{geom_histogram}\NormalTok{(}\DataTypeTok{binwidth =} \FloatTok{0.5}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{#Create histogram with specified binwidth}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Histogram of IMDb Score of Movies in 2016"}\NormalTok{, }\CommentTok{#title for plot}
+       \DataTypeTok{x =} \StringTok{"IMDb Score"}\NormalTok{, }\CommentTok{#Label for x axis}
+       \DataTypeTok{y =} \StringTok{"Frequency"}\NormalTok{) }\CommentTok{#Label for y axis}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1213,7 +1230,7 @@ A histogram of the variable `IMBd Score' is shown below. Notice that the bin wid
 \setcounter{enumi}{7}
 \tightlist
 \item
-  Which range of IMBb scores have the highest frequency?
+  Which range of IMDb scores have the highest frequency?
 \end{enumerate}
 
 \vspace{0.5in}
@@ -1260,12 +1277,12 @@ The boxplot of `Budget' in millions by `Content rating' is plotted using the cod
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ movies,  }\CommentTok{\#Data set}
-       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ budget\_mil, }\DataTypeTok{x =}\NormalTok{ content\_rating))}\OperatorTok{+}\StringTok{  }\CommentTok{\#Identify variables}
-\StringTok{  }\KeywordTok{geom\_boxplot}\NormalTok{()}\OperatorTok{+}\StringTok{  }\CommentTok{\#Tell it to make a boxplot}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Side by side Boxplot of Budget by Content Rating"}\NormalTok{,  }\CommentTok{\#Title}
-        \DataTypeTok{x =} \StringTok{"Content Rating"}\NormalTok{,    }\CommentTok{\#x{-}axis label}
-       \DataTypeTok{y =} \StringTok{"Budget (in Millions)"}\NormalTok{)  }\CommentTok{\#y{-}axis label}
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ movies,  }\CommentTok{#Data set}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ budget_mil, }\DataTypeTok{x =}\NormalTok{ content_rating))}\OperatorTok{+}\StringTok{  }\CommentTok{#Identify variables}
+\StringTok{  }\KeywordTok{geom_boxplot}\NormalTok{()}\OperatorTok{+}\StringTok{  }\CommentTok{#Tell it to make a boxplot}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Side by side Boxplot of Budget by Content Rating"}\NormalTok{,  }\CommentTok{#Title}
+        \DataTypeTok{x =} \StringTok{"Content Rating"}\NormalTok{,    }\CommentTok{#x-axis label}
+       \DataTypeTok{y =} \StringTok{"Budget (in Millions)"}\NormalTok{)  }\CommentTok{#y-axis label}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1325,6 +1342,26 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Interpret the coefficient of determination in context of the problem
 \end{itemize}
 
+\hypertarget{terminology-review}{%
+\section{Terminology review}\label{terminology-review}}
+
+In today's activity we will review summary measures and plots for two quantitative variables. Some terms covered in this activity are
+
+\begin{itemize}
+\item
+  Scatterplot
+\item
+  Correlation
+\item
+  Slope
+\item
+  Least-squares line of regression
+\item
+  Coefficient of determination (R-squared)
+\end{itemize}
+
+To review these concepts see Chapter 3 in the textbook.
+
 \hypertarget{movies-released-in-2016}{%
 \section{Movies released in 2016}\label{movies-released-in-2016}}
 
@@ -1348,26 +1385,6 @@ We will revisit the data set used last week collected on Movies released since 1
 \item
   Movie Facebook Likes: Number of likes a movie receives on Facebook
 \end{itemize}
-
-\hypertarget{terminology-review}{%
-\subsection{Terminology review}\label{terminology-review}}
-
-In today's activity we will review summary measures and plots for two quantitative variables. Some terms covered in this activity are
-
-\begin{itemize}
-\item
-  Scatterplot
-\item
-  Correlation
-\item
-  Slope
-\item
-  Least-squares line of regression
-\item
-  Coefficient of determination (R-squared)
-\end{itemize}
-
-To review these concepts see Chapter 3 in the textbook.
 
 \hypertarget{vocabulary-review}{%
 \subsection{Vocabulary review}\label{vocabulary-review}}
@@ -1395,13 +1412,13 @@ We will look at the relationship between `Budget' and `Revenue' for movies relea
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ movies,   }\CommentTok{\#This is the data set}
-       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget\_mil, }\DataTypeTok{y =}\NormalTok{ revenue\_mil))}\OperatorTok{+}\StringTok{  }\CommentTok{\#Specify variables}
-\StringTok{  }\KeywordTok{geom\_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{\#Add scatterplot of points}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{\#Label x{-}axis}
-       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{\#Label y{-}axis}
-       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\#Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom\_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{\#Add regression line}
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ movies,   }\CommentTok{#This is the data set}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget_mil, }\DataTypeTok{y =}\NormalTok{ revenue_mil))}\OperatorTok{+}\StringTok{  }\CommentTok{#Specify variables}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{#Add scatterplot of points}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{#Label x-axis}
+       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{#Label y-axis}
+       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{#Be sure to tile your plots}
+\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{#Add regression line}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1464,13 +1481,13 @@ Correlation measures the strength and the direction between two quantitative var
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# Take subset of variables}
-\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}
-\StringTok{  }\KeywordTok{select}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"budget\_mil"}\NormalTok{, }\StringTok{"revenue\_mil"}\NormalTok{,  }\CommentTok{\# Take subset of variables}
-           \StringTok{"duration"}\NormalTok{, }\StringTok{"imdb\_score"}\NormalTok{, }
-           \StringTok{"movie\_facebook\_likes"}\NormalTok{)) }\OperatorTok{\%\textgreater{}\%}
-\StringTok{  }\KeywordTok{cor}\NormalTok{(}\DataTypeTok{use=}\StringTok{"pairwise.complete.obs"}\NormalTok{) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Calculate correlation matrix}
-\StringTok{  }\KeywordTok{round}\NormalTok{(}\DecValTok{3}\NormalTok{)  }\CommentTok{\# Round to 3 decimals}
+\CommentTok{# Take subset of variables}
+\NormalTok{movies }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"budget_mil"}\NormalTok{, }\StringTok{"revenue_mil"}\NormalTok{,  }\CommentTok{# Take subset of variables}
+           \StringTok{"duration"}\NormalTok{, }\StringTok{"imdb_score"}\NormalTok{, }
+           \StringTok{"movie_facebook_likes"}\NormalTok{)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{cor}\NormalTok{(}\DataTypeTok{use=}\StringTok{"pairwise.complete.obs"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Calculate correlation matrix}
+\StringTok{  }\KeywordTok{round}\NormalTok{(}\DecValTok{3}\NormalTok{)  }\CommentTok{# Round to 3 decimals}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1542,15 +1559,15 @@ Correlation measures the strength and the direction between two quantitative var
 \hypertarget{slope}{%
 \subsection{Slope}\label{slope}}
 
-The slope measures the change in y for each increase in x by 1. In other words, as the x variable increases by 1 unit, the y variable changes (increase/decreases) by the value of slope.
+The slope measures the change in y for each increase in x by 1. In other words, as the x variable increases by 1 unit, the y variable changes (increases/decreases) by the value of slope.
 
-The linear model function in R gives us the summary for the least squares regression line. The estimate for (Intercept) is the y-intercept for the line of least squares and the estimate for budget is the value of \(b_1\), the slope.
+The linear model function in R gives us the summary for the least squares regression line. The estimate for (Intercept) is the y-intercept for the line of least squares and the estimate for budget\_mil is the value of \(b_1\), the slope.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# Fit linear model: y \textasciitilde{} x}
-\NormalTok{revenueLM \textless{}{-}}\StringTok{ }\KeywordTok{lm}\NormalTok{(revenue\_mil }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{budget\_mil, }\DataTypeTok{data=}\NormalTok{movies)}
-\KeywordTok{summary}\NormalTok{(revenueLM)}\OperatorTok{$}\NormalTok{coefficients }\CommentTok{\# Display coefficient summary}
+\CommentTok{# Fit linear model: y ~ x}
+\NormalTok{revenueLM <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(revenue_mil }\OperatorTok{~}\StringTok{ }\NormalTok{budget_mil, }\DataTypeTok{data=}\NormalTok{movies)}
+\KeywordTok{summary}\NormalTok{(revenueLM)}\OperatorTok{$}\NormalTok{coefficients }\CommentTok{# Display coefficient summary}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1657,14 +1674,14 @@ In the next plot we are graphing three variables.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ movies,   }\CommentTok{\#This is the data set}
-       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget\_mil, }\DataTypeTok{y =}\NormalTok{ revenue\_mil, }\DataTypeTok{color =}\NormalTok{ content\_rating)) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Specify variables}
-\StringTok{  }\KeywordTok{geom\_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{pch =}\NormalTok{ content\_rating)) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Add scatterplot of points}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{\#Label x{-}axis}
-       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{\#Label y{-}axis}
-       \DataTypeTok{color =} \StringTok{"Content Rating"}\NormalTok{,  }\CommentTok{\#Label legend}
-       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\#Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom\_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{\#Add regression lines}
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ movies,   }\CommentTok{#This is the data set}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget_mil, }\DataTypeTok{y =}\NormalTok{ revenue_mil, }\DataTypeTok{color =}\NormalTok{ content_rating)) }\OperatorTok{+}\StringTok{  }\CommentTok{#Specify variables}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{pch =}\NormalTok{ content_rating)) }\OperatorTok{+}\StringTok{  }\CommentTok{#Add scatterplot of points}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{#Label x-axis}
+       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{#Label y-axis}
+       \DataTypeTok{color =} \StringTok{"Content Rating"}\NormalTok{,  }\CommentTok{#Label legend}
+       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{#Be sure to tile your plots}
+\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{#Add regression lines}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1718,26 +1735,28 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{terminology-review}{%
 \section{Terminology review}\label{terminology-review}}
 
-These are a few of the terms we will cover in today's activity.
+In this activity we will introduction simulation hypothesis testing and confidence intervals for a single categorical variable. These are a few of the terms we will cover in today's activity:
 
 \begin{itemize}
 \item
-  Parameter of Interest
+  Parameter of interest
 \item
-  Null Hypothesis
+  Null hypothesis
 \item
-  Alternative Hypothesis
+  Alternative hypothesis
 \item
-  Null distribuiton
+  Simulation
+\item
+  Null distribution
 \item
   p-value
 \item
   Bootstrapping
 \item
-  Confidence Interval
+  Confidence interval
 \end{itemize}
 
-To review these concepts see Chapter 5 in your textbook
+To review these concepts see Chapter 5 in your textbook, focusing on Sections 5.1 to 5.3.
 
 \hypertarget{steps-of-the-statistical-investigation-process}{%
 \section{Steps of the statistical investigation process}\label{steps-of-the-statistical-investigation-process}}
@@ -1746,7 +1765,7 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 \begin{itemize}
 \item
-  \textbf{Ask a research question} that can be addressed by collecting data. What are the researchers trying to show.
+  \textbf{Ask a research question} that can be addressed by collecting data. What are the researchers trying to show?
 \item
   \textbf{Design a study and collect data}. This step involves selecting the people or objects to be studied and how to gather relevant data on them.
 \item
@@ -1847,9 +1866,9 @@ Left-handedness is a trait that is found in about 10\% of the population. The fi
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# Counts for Handedness}
-\CommentTok{\#Tally creates a table with a count for each level of the variable}
-\KeywordTok{tally}\NormalTok{(}\OperatorTok{\textasciitilde{}}\NormalTok{Stance, }\DataTypeTok{data=}\NormalTok{handedness\_sub, }\DataTypeTok{margins=}\NormalTok{T) }
+\CommentTok{# Counts for Handedness}
+\CommentTok{#Tally creates a table with a count for each level of the variable}
+\KeywordTok{tally}\NormalTok{(}\OperatorTok{~}\NormalTok{Stance, }\DataTypeTok{data=}\NormalTok{handedness_sub, }\DataTypeTok{margins=}\NormalTok{T) }
 \end{Highlighting}
 \end{Shaded}
 
@@ -1879,7 +1898,7 @@ When testing data we must first identify the null hypothesis. The null hypothesi
 \setcounter{enumi}{8}
 \tightlist
 \item
-  Write out the parameter of interest. (Hint: the true proportion of\ldots.)
+  Write out the parameter of interest for this study. (Hint: the true proportion of\ldots.)
 \end{enumerate}
 
 \vspace{1in}
@@ -1980,11 +1999,11 @@ Let's think about how to use cards to create one simulation of 500 boxers under 
 \setcounter{enumi}{16}
 \tightlist
 \item
-  What would we plot on the null distribution?
+  Once we have one simulated sample, what would we calculate and plot on the null distribution?
   \vspace{1in}
 \end{enumerate}
 
-We will use the computer to simulate 1000 simulated proportions of male boxers who are left handed for a sample size of 500 based on the assumption that the true proportion of male boxers who are left handed is 0.1. This is called the null distribution because it is created based on the assumption that the null hypothesis is true.
+We will use the computer to simulate 1000 different samples of 500 male boxers, plotting the proportion who are left handed in each sample, based on the assumption that the true proportion of male boxers who are left handed is 0.1. This is called the null distribution because it is created based on the assumption that the null hypothesis is true.
 
 To use the computer simulation, we will need to enter the ``probability of success,'' ``sample size,'' ``number of repetitions,'' ``as extreme as,'' and the ``direction'' (matches the direction of the alternative hypothesis).
 
@@ -2037,6 +2056,17 @@ To use the computer simulation, we will need to enter the ``probability of succe
 \end{itemize}
 
 \vspace{.2in}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{one_proportion_test}\NormalTok{(}\DataTypeTok{probability_success =} \FloatTok{0.1}\NormalTok{, }\CommentTok{#Null hypothesis value}
+                    \DataTypeTok{sample_size =} \DecValTok{500}\NormalTok{, }\CommentTok{#Enter sample size}
+                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{#Enter number of simulations}
+                    \DataTypeTok{as_extreme_as =} \DecValTok{81}\OperatorTok{/}\DecValTok{500}\NormalTok{, }\CommentTok{#observed statistic}
+                    \DataTypeTok{direction =} \StringTok{"greater"}\NormalTok{, }\CommentTok{#specify direction of alternative hypothesis}
+                    \DataTypeTok{report_value =} \StringTok{"proportion"}\NormalTok{) }\CommentTok{#Reporting proportion or number of successes?}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
@@ -2105,6 +2135,15 @@ We will use bootstrapping to find the 95\% confidence interval.
   \vspace{1in}
 \end{enumerate}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{one_proportion_bootstrap_CI}\NormalTok{(}\DataTypeTok{sample_size =} \DecValTok{500}\NormalTok{, }\CommentTok{#Sample size}
+                    \DataTypeTok{number_successes =} \DecValTok{81}\NormalTok{, }\CommentTok{#Observed number of successes}
+                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{#Number of bootstrap samples to use}
+                    \DataTypeTok{confidence_level =} \FloatTok{0.95}\NormalTok{) }\CommentTok{#Confidence level as a decimal}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-6-1} \end{center}
 
 \begin{enumerate}
@@ -2156,15 +2195,13 @@ When we write a conclusion we answer the research question by stating how much e
 \item
   Summary statistic
 \item
-  P-value
+  P-value and interpretation
 \item
   Conclusion (written to answer the research question)
 \item
-  Confidence interval
+  Confidence interval and interpretation
 \item
-  Interpretation of the confidence interval
-\item
-  Scope of inference
+  Generalization - to what group do the results apply?
 \end{itemize}
 
 \vspace{3in}
@@ -2187,8 +2224,8 @@ When we write a conclusion we answer the research question by stating how much e
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
-\hypertarget{helmet-use-and-head-injuries}{%
-\chapter{Helmet Use and Head Injuries}\label{helmet-use-and-head-injuries}}
+\hypertarget{winter-sports-helmet-use-and-head-injuries}{%
+\chapter{Winter Sports Helmet Use and Head Injuries}\label{winter-sports-helmet-use-and-head-injuries}}
 
 \hypertarget{learning-objectives}{%
 \section{Learning objectives}\label{learning-objectives}}
@@ -2197,9 +2234,9 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \item
   Write out the null and alternative hypothesis for two categorical variables
 \item
-  Assess the conditions to use the standard normal distributions
+  Assess the conditions to use the standard normal distribution for a difference in proportions
 \item
-  Calculate the Z test statistic for a difference in proportions
+  Calculate the Z test statistic for the difference in proportions
 \item
   Find the p-value and assess the strength of evidence
 \item
@@ -2209,7 +2246,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{terminology-review}{%
 \section{Terminology review}\label{terminology-review}}
 
-Here are a few terms we will use in today's activity.
+In this activity we will use theory-based methods to analyze two categorical variables. Here are a few terms we will use in today's activity.
 
 \begin{itemize}
 \item
@@ -2224,23 +2261,29 @@ Here are a few terms we will use in today's activity.
   Alternative Hypothesis
 \item
   Test statistic
+\item
+  Standard Normal Distribution
+\item
+  Type 1 and Type 2 Errors
+\item
+  Decisions
 \end{itemize}
 
 Review Chapter 5 in your textbook for more information on these topics.
 
-\hypertarget{helmet-use-and-head-injuries-1}{%
-\section{Helmet Use and Head Injuries}\label{helmet-use-and-head-injuries-1}}
+\hypertarget{helmet-use-and-head-injuries}{%
+\section{Helmet Use and Head Injuries}\label{helmet-use-and-head-injuries}}
 
 In ``Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders'' by Sullheim et. al., in the Journal of the American Medical Association, Vol. 295, No.~8, we can see the results from a random sample 3562 skiers and snowboarders involved in accidents.
 
-\begin{longtable}[]{@{}llll@{}}
+\begin{longtable}[]{@{}cccc@{}}
 \toprule
-& Head Injury & No Head Injury & Total\tabularnewline
+& Helmet Use & No Helmet Use & Total\tabularnewline
 \midrule
 \endhead
-Wore Helmet & 96 & 656 & 752\tabularnewline
-Did Not Wear Helmet & 480 & 2330 & 2810\tabularnewline
-Total & 576 & 2986 & 3562\tabularnewline
+Head Injury & 96 & 480 & 576\tabularnewline
+No Head Injury & 656 & 2330 & 2986\tabularnewline
+Total & 752 & 2810 & 3562\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -2390,7 +2433,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 \setcounter{enumi}{11}
 \tightlist
 \item
-  Fill in the blanks on the graph with the appropriate variables and values to plot a segmented bar plot of injury by helmet use.
+  Fill in the blanks on the graph with the appropriate variables and values to plot a segmented bar plot of helmet use segmented by injury.
 \end{enumerate}
 
 \vspace{1in}
@@ -2497,18 +2540,13 @@ where the standard error is calculated using the pooled proportion of successes.
 
 \vspace{1in}
 
-We will use the pnorm function in R to find the p-value.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{pnorm}\NormalTok{(}\OperatorTok{{-}}\FloatTok{2.86} \CommentTok{\#enter value of test statistic}
-\NormalTok{      , }\DataTypeTok{m=}\DecValTok{0}\NormalTok{, }\DataTypeTok{s=}\DecValTok{1} \CommentTok{\#using the standard normal mean = 0, sd = 1}
-\NormalTok{      , }\DataTypeTok{lower.tail=}\OtherTok{TRUE}\NormalTok{) }\CommentTok{\# gives a p{-}value less than the test statistic}
-\end{Highlighting}
-\end{Shaded}
+We will use the pnorm function in R to find the p-value. You will need to enter the value of the test statistic at xxx.
 
 \begin{verbatim}
-#> [1] 0.002118205
+{r, echo=TRUE, collapse=FALSE}
+pnorm(xxx #enter value of test statistic
+  , m=0, s=1 #using the standard normal mean = 0, sd = 1
+  , lower.tail=TRUE) # gives a p-value less than the test statistic
 \end{verbatim}
 
 \begin{enumerate}
@@ -2535,7 +2573,7 @@ The \(z^*\) multiplier is found under the normal distribution. We find the value
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.95} \OperatorTok{+}\StringTok{ }\FloatTok{0.025}\NormalTok{) }\CommentTok{\#multiplier for 95\% confidence interval}
+\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.95} \OperatorTok{+}\StringTok{ }\FloatTok{0.025}\NormalTok{) }\CommentTok{#multiplier for 95% confidence interval}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2585,13 +2623,13 @@ The \(z^*\) multiplier is found under the normal distribution. We find the value
 \item
   Summary statistic
 \item
-  P-value
+  Test statistic and interpretation
+\item
+  P-value and interpretation
 \item
   Conclusion (written to answer the research question)
 \item
-  Confidence interval
-\item
-  Interpretation of the confidence interval
+  Confidence interval and interpretation
 \item
   Scope of inference
 \end{itemize}
@@ -2613,7 +2651,7 @@ Truth & \(H_0\) true & good decision & Type 1 Error\tabularnewline
 \bottomrule
 \end{longtable}
 
-A Type 1 Error is rejecting the null hypothesis when \(H_0\)is actually true. A Type 2 Error is failing to reject the null hypothesis when the alternative is actually true.
+A Type 1 Error is rejecting the null hypothesis when \(H_0\) is actually true. A Type 2 Error is failing to reject the null hypothesis when the alternative is actually true.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2661,7 +2699,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Given a research question, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols
 \item
-  Describe and perform simulation-based hypothesis for paired quantitative data
+  Describe and perform a simulation-based hypothesis test for paired quantitative data
 \item
   Interpret and evaluate a p-value
 \item
@@ -2673,7 +2711,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{terminology-review}{%
 \section{Terminology review}\label{terminology-review}}
 
-The following terms will be covered in this activity.
+In this study we will analyze paired quantitative data using simulation-based methods. The following terms will be covered in this activity.
 
 \begin{itemize}
 \item
@@ -2699,7 +2737,7 @@ The social distancing efforts and stay-at-home directives to help combat the spr
 
 }
 
-\caption{THESE FIGURES NEED A CAPTION - JADE WHERE IS THIS...?}\label{fig:unnamed-chunk-1}
+\caption{The India Gate in New Delhi, India}\label{fig:unnamed-chunk-1}
 \end{figure}
 
 Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015 - 2019). Note that higher AQI scores indicate worse air quality.
@@ -2769,7 +2807,7 @@ Differences & \(\bar{x}_d\) = -4.152 & \(s_d\) = 17.096 & \(n_d\) = 33\tabularne
 \setcounter{enumi}{4}
 \tightlist
 \item
-  What are the two competing possibilities to run a hypothesis test?
+  What are the two competing possibilities to run a hypothesis test for this study?
 \end{enumerate}
 
 \vspace{1in}
@@ -2832,7 +2870,7 @@ Differences & \(\bar{x}_d\) = -4.152 & \(s_d\) = 17.096 & \(n_d\) = 33\tabularne
 \hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data}{%
 \subsection{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data}}
 
-To simulate the null distribution we will use a bootstrapping method - sampling with replacement from the data set. Before bootstrapping we will need to shift the each data point by the difference \(\mu_0 - \bar{x}\). This will ensure that the simulated null distribution will be centered at the null value.
+To simulate the null distribution we will use a bootstrapping method - sampling with replacement from the data set. Before bootstrapping we will need to shift each data point by the difference \(\mu_0 - \bar{x}\). This will ensure that the simulated null distribution will be centered at the null value.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2844,13 +2882,35 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 
 \vspace{.7in}
 
-The image below gives the null distribution from one possible set of 1000 shifted bootstrap samples:
-
-\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-5-1} \end{center}
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{11}
+\tightlist
+\item
+  Enter the calculated value from question 11 for xxx to simulate the null distribution and enter the summary statistic from question 9 for xxxx to find the p-value.
+\end{enumerate}
+
+\{r, warning = FALSE\}
+paired\_test(data = Air\$Difference, \#Vector of differences or dataset with column for each group
+shift = xxx, \#Shift needed for bootstrap hypothesis test
+direction = ``less'', \#Direction of alternative
+as\_extreme\_as = xxxx, \#Observed statistic
+number\_repetitions = 1000, \#Number of draws for null distribution
+which\_first = 1) \#Not needed when using calculated differences
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\tightlist
+\item
+  Sketch the null distribution created in Question 12 here.
+\end{enumerate}
+
+\vspace{2in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{13}
 \tightlist
 \item
   Explain why the null distribution is centered at zero.
@@ -2860,7 +2920,7 @@ The image below gives the null distribution from one possible set of 1000 shifte
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
+\setcounter{enumi}{14}
 \tightlist
 \item
   What proportion of samples are beyond the sample mean difference in AQI Scores for current scores minus 5 year median scores?
@@ -2870,7 +2930,7 @@ The image below gives the null distribution from one possible set of 1000 shifte
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{13}
+\setcounter{enumi}{15}
 \tightlist
 \item
   Interpret the p-value in the context of the problem.
@@ -2880,7 +2940,7 @@ The image below gives the null distribution from one possible set of 1000 shifte
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{14}
+\setcounter{enumi}{16}
 \tightlist
 \item
   How much evidence does this provide for improved air quality in US cities?
@@ -2890,7 +2950,7 @@ The image below gives the null distribution from one possible set of 1000 shifte
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{15}
+\setcounter{enumi}{17}
 \tightlist
 \item
   Write out the parameter of interest in context of the study.
@@ -2898,11 +2958,11 @@ The image below gives the null distribution from one possible set of 1000 shifte
 
 \vspace{1in}
 
-\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-6-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-5-1} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{16}
+\setcounter{enumi}{18}
 \tightlist
 \item
   Use the bootstrapped distribution above to find a 99\% confidence interval for the parameter of interest. Report the confidence interval in interval notation.
@@ -2915,7 +2975,7 @@ The image below gives the null distribution from one possible set of 1000 shifte
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{17}
+\setcounter{enumi}{19}
 \tightlist
 \item
   Interpret the 99\% confidence interval in the context of the problem.
@@ -2925,7 +2985,7 @@ The image below gives the null distribution from one possible set of 1000 shifte
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{18}
+\setcounter{enumi}{20}
 \tightlist
 \item
   Write a paragraph summarizes the results of this study. Be sure to include:
@@ -2935,13 +2995,11 @@ The image below gives the null distribution from one possible set of 1000 shifte
 \item
   Summary statistic
 \item
-  P-value
+  P-value and interpretation
 \item
   Conclusion (written to answer the research question)
 \item
-  Confidence interval
-\item
-  Interpretation of the confidence interval
+  Confidence interval and interpretation
 \item
   Scope of inference
 \end{itemize}
@@ -2953,7 +3011,7 @@ The image below gives the null distribution from one possible set of 1000 shifte
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{19}
+\setcounter{enumi}{21}
 \tightlist
 \item
   Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain.
@@ -2965,8 +3023,8 @@ The image below gives the null distribution from one possible set of 1000 shifte
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
-\hypertarget{record-snowfall}{%
-\chapter{Record Snowfall}\label{record-snowfall}}
+\hypertarget{weather-patterns-and-record-snowfall}{%
+\chapter{Weather Patterns and Record Snowfall}\label{weather-patterns-and-record-snowfall}}
 
 \hypertarget{learning-objectives}{%
 \section{Learning objectives}\label{learning-objectives}}
@@ -2979,13 +3037,25 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \item
   Interpret and evaluate a p-value
 \item
-  Find a bootstap confidence interval for the difference in means
+  Find a bootstap confidence interval for a difference in means
 \item
   Use a confidence interval to determine the conclusion of a hypothesis test
 \end{itemize}
 
-\hypertarget{record-snowfall-1}{%
-\section{Record snowfall}\label{record-snowfall-1}}
+\hypertarget{terminology}{%
+\section{Terminology}\label{terminology}}
+
+In this study we will use simulation based methods to analyze two independent quantitative variables. The following terms will be covered in this activity.
+
+\begin{itemize}
+\item
+  Independent groups
+\item
+  Difference in means
+\end{itemize}
+
+\hypertarget{weather-patterns-and-record-snowfall-1}{%
+\section{Weather Patterns and Record snowfall}\label{weather-patterns-and-record-snowfall-1}}
 
 In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the collapse of two flat-roofed buildings on the MSU campus. A writer for the Washington Post predicted the heavy snowfall for 2018-2019 due to the El Nino weather pattern that occurred in that season. A meteorologist in Montana wanted to see if the weather pattern really was associated with total snowfall. She obtained historical data from 44 years on the weather pattern (El Nino or La Nina) and snowfall (in inches) at the Billings Weather Station.
 
@@ -2993,10 +3063,10 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 \begin{Highlighting}[]
 \KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Snow,}
        \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ WeatherPattern, }\DataTypeTok{y =}\NormalTok{ Snowfall)) }\OperatorTok{+}
-\StringTok{    }\KeywordTok{geom\_boxplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{geom_boxplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
 \StringTok{    }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Snowfall by weather pattern"}\NormalTok{,}
          \DataTypeTok{x =} \StringTok{"Weather pattern"}\NormalTok{) }\OperatorTok{+}
-\StringTok{    }\KeywordTok{coord\_flip}\NormalTok{()}
+\StringTok{    }\KeywordTok{coord_flip}\NormalTok{()}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3004,7 +3074,7 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{favstats}\NormalTok{(Snowfall}\OperatorTok{\textasciitilde{}}\NormalTok{WeatherPattern, }\DataTypeTok{data=}\NormalTok{Snow)}
+\KeywordTok{favstats}\NormalTok{(Snowfall}\OperatorTok{~}\NormalTok{WeatherPattern, }\DataTypeTok{data=}\NormalTok{Snow)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3031,7 +3101,7 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 \setcounter{enumi}{1}
 \tightlist
 \item
-  Which group (El Nino or La Nina) has the highest center? Explain what measure you are using?
+  Which group (El Nino or La Nina) has the highest center? Explain which measure you are using.
 \end{enumerate}
 
 \vspace{1in}
@@ -3061,7 +3131,7 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 \setcounter{enumi}{4}
 \tightlist
 \item
-  Is this a paired data set or independent groups? Explain your answer.
+  Is this a paired data set or two independent groups? Explain your answer.
 \end{enumerate}
 
 \vspace{1in}
@@ -3094,7 +3164,7 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 \setcounter{enumi}{7}
 \tightlist
 \item
-  Identify which is the null hypothesis and which is the alternative hypothesis.
+  Identify which of your answers in question 7 is the null hypothesis and which is the alternative hypothesis.
 \end{enumerate}
 
 \vspace{1in}
@@ -3164,7 +3234,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 \setcounter{enumi}{13}
 \tightlist
 \item
-  Once we create a null distribution of 1000 simulations, at what value do you expect the distribution to be centered at? Explain your answer.
+  Once we create a null distribution of 1000 simulations, at what value do you expect the distribution to be centered? Explain your answer.
 \end{enumerate}
 
 \vspace{1in}
@@ -3226,13 +3296,11 @@ To demonstrate this your instructor will use cards to represent the sample.
 \item
   Summary statistic
 \item
-  P-value
+  P-value and interpretation
 \item
   Conclusion (written to answer the research question)
 \item
-  Confidence interval
-\item
-  Interpretation of the confidence interval
+  Confidence interval and interpretation
 \item
   Scope of inference
 \end{itemize}
@@ -3290,7 +3358,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{terminology-review}{%
 \section{Terminology review}\label{terminology-review}}
 
-The following terms will be covered in this activity.
+In today's activity we will use theory-based tests of inference for regression slope. The following terms will be covered in this activity.
 
 \begin{itemize}
 \item
@@ -3299,6 +3367,8 @@ The following terms will be covered in this activity.
   Slope
 \item
   Coeffiecient of determination
+\item
+  Regression line
 \end{itemize}
 
 For further explanation of these topics review Chapter 3 and 7 in the textbook.
@@ -3356,86 +3426,63 @@ The variables in this dataset consist of the following:
 \setcounter{enumi}{2}
 \tightlist
 \item
-  Create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant. Provide this plot. Based on your plot, does it appear that there is a relationship between \texttt{age} and \texttt{speed}? Note: \texttt{age} should be on the x-axis.
+  Create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names (`speed' and `age') for xxx and xxxx. Provide this plot. Based on your plot, does it appear that there is a relationship between \texttt{age} and \texttt{speed}? Note: \texttt{age} should be on the x-axis.
 \end{enumerate}
 
-\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-2-1} \end{center}
+\{r, echo=true\}
+ggplot(data = hands, \#This is the data set
+aes(x = xxx, y = xxxx))+ \#Specify variables
+geom\_point() + \#Add scatterplot of points
+labs(x = ``Age (yrs)'', \#Label x-axis
+y = ``Speed (sec/peg)'', \#Label y-axis
+title = ``Scatterplot of Age vs.~Speed'') + \#Be sure to tile your plots
+geom\_smooth(method = ``lm'', se = FALSE) \#Add regression line
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  Describe the features of the plot you created in Question 3.
-\end{enumerate}
+\begin{verbatim}
+
+
+4. Describe the features of the plot you created in Question 3.
 
 \vspace{1in}
 
 If you indicated there are potential outliers, which points are they?
 
-\hypertarget{conditions-for-the-least-squares-line}{%
-\subsection{Conditions for the least squares line}\label{conditions-for-the-least-squares-line}}
+### Conditions for the least squares line
 
 When performing inference on a least squares line, the follow conditions are generally required
 
-\begin{itemize}
-\tightlist
-\item
-  Linearity: the data should follow a linear trend
-\item
-  Nearly normal residuals: residuals must be nearly normal
-\item
-  Constant variability: the variability of points around the least squares line remains roughly constant
-\item
-  Independent observations: individual data points must be independent
-\end{itemize}
+- Linearity: the data should follow a linear trend
+- Nearly normal residuals: residuals must be nearly normal
+- Constant variability: the variability of points around the least squares line remains roughly constant
+- Independent observations: individual data points must be independent 
 
 The scatterplot and the residual plot will be used to assess the conditions for approximating the data with the T-distribution
 
-\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
-\tightlist
-\item
-  Are the conditions met
-\end{enumerate}
+\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-2-1} \end{center}
+
+5. Are the conditions met 
 
 \vspace{1in}
 
-\hypertarget{ask-a-reseach-question}{%
-\subsection{Ask a reseach question}\label{ask-a-reseach-question}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
-\tightlist
-\item
-  Write out the null hypothesis in words.
-\end{enumerate}
+### Ask a reseach question
+
+6. Write out the null hypothesis in words.
 
 \vspace{1in}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
-\tightlist
-\item
-  Using the research question, write the alternative hypothesis in notation.
-\end{enumerate}
+7. Using the research question, write the alternative hypothesis in notation.
 
 \vspace{0.5in}
 
-\hypertarget{summarize-and-visualize-the-data}{%
-\subsection{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
+### Summarize and visualize the data
 
-Enter the variable names into the linear model function to get the linear model output.
+8. Enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
 
-\begin{verbatim}
-#>              Estimate  Std. Error  t value     Pr(>|t|)
-#> (Intercept) 1.1070563 0.093326769 11.86215 4.237698e-24
-#> age         0.1404378 0.008796699 15.96483 8.777516e-36
+{r}
+lm.hand <- lm(xxx~xxxx, data=hands) #lm(response~explanatory)
+summary(lm.hand)$coefficients
 \end{verbatim}
 
 \begin{enumerate}
@@ -3483,7 +3530,7 @@ Enter the variable names into the linear model function to get the linear model 
 
 To find the value of the test statistic to test the slope we will use,
 
-\(T = \frac{\mbox{slope estimate}}{SE} = T = \frac{b_1}{SE(b_1)}\)
+\(T = \frac{\mbox{slope estimate}}{SE} = \frac{b_1}{SE(b_1)}\)
 
 We will use the linear model output above to get the estimate for slope and standard error.
 
@@ -3492,7 +3539,7 @@ We will use the linear model output above to get the estimate for slope and stan
 \setcounter{enumi}{11}
 \tightlist
 \item
-  Calculate the test statistic for slope.
+  Calculate the test statistic for slope. Circle this calculated value in the linear model output.
 \end{enumerate}
 
 \vspace{1in}
@@ -3502,16 +3549,6 @@ We will use the linear model output above to get the estimate for slope and stan
 \setcounter{enumi}{12}
 \tightlist
 \item
-  What value does the value calculated in question 12 match in the linear model output?
-\end{enumerate}
-
-\vspace{0.5in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{13}
-\tightlist
-\item
   Interpret the test statistic in context of the problem.
 \end{enumerate}
 
@@ -3519,7 +3556,7 @@ We will use the linear model output above to get the estimate for slope and stan
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{14}
+\setcounter{enumi}{13}
 \tightlist
 \item
   Using the linear model output, report the p-value for the test of significance.
@@ -3529,7 +3566,7 @@ We will use the linear model output above to get the estimate for slope and stan
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{15}
+\setcounter{enumi}{14}
 \tightlist
 \item
   Based on the p-value, how much evidence is there against the null hypothesis?
@@ -3550,32 +3587,19 @@ The \(t^*\) multiplier comes from the t-distribution with \(n-2\) df.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{16}
+\setcounter{enumi}{15}
+\tightlist
 \item
   Calculate the 95\% confidence interval for the true slope.
   \vspace{1in}
-\item
-  Calculate the coefficient of determination for a linear model that describes the relationship between \texttt{age} and \texttt{speed}. Use proper notation.
 \end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{18}
-\tightlist
-\item
-  Interpret this value in the context of the study.
-\end{enumerate}
-
-\vspace{1in}
 
 \hypertarget{communicate-the-results-and-answer-the-research-question}{%
 \subsection{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{19}
+\setcounter{enumi}{16}
 \tightlist
 \item
   Based on the p-value, write a conclusion in context of the problem.
@@ -3585,7 +3609,7 @@ The \(t^*\) multiplier comes from the t-distribution with \(n-2\) df.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{20}
+\setcounter{enumi}{17}
 \tightlist
 \item
   Interpret the 95\% confidence interval in context of the problem.
@@ -3595,7 +3619,7 @@ The \(t^*\) multiplier comes from the t-distribution with \(n-2\) df.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{21}
+\setcounter{enumi}{18}
 \tightlist
 \item
   Summarize the results of the study in a written paragraph. Be sure to include.
@@ -3614,8 +3638,6 @@ The \(t^*\) multiplier comes from the t-distribution with \(n-2\) df.
   Conclusion (written to answer the research question)
 \item
   Scope of inference
-\item
-  Summary statistic
 \end{itemize}
 
 \vspace{2in}
@@ -3625,7 +3647,7 @@ The \(t^*\) multiplier comes from the t-distribution with \(n-2\) df.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{22}
+\setcounter{enumi}{19}
 \tightlist
 \item
   Is there an effect due to gender on the linear relationship between age and speed? Explain your answer using the scatterplot below.
@@ -3633,18 +3655,18 @@ The \(t^*\) multiplier comes from the t-distribution with \(n-2\) df.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ hands,   }\CommentTok{\#This is the data set}
-       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ age, }\DataTypeTok{y =}\NormalTok{ speed, }\DataTypeTok{color =}\NormalTok{ dominant))}\OperatorTok{+}\StringTok{  }\CommentTok{\#Specify variables}
-\StringTok{  }\KeywordTok{geom\_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{pch =}\NormalTok{ dominant)) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Add scatterplot of points}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Age (yrs)"}\NormalTok{,  }\CommentTok{\#Label x{-}axis}
-       \DataTypeTok{y =} \StringTok{"Speed (sec/peg)"}\NormalTok{,  }\CommentTok{\#Label y{-}axis}
-       \DataTypeTok{legend =} \StringTok{"Dominant hand"}\NormalTok{,  }\CommentTok{\#Label your legend}
-       \DataTypeTok{title =} \StringTok{"Scatterplot of Age vs. Speed"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\#Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom\_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{\#Add regression line}
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ hands,   }\CommentTok{#This is the data set}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ age, }\DataTypeTok{y =}\NormalTok{ speed, }\DataTypeTok{color =}\NormalTok{ dominant))}\OperatorTok{+}\StringTok{  }\CommentTok{#Specify variables}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{pch =}\NormalTok{ dominant)) }\OperatorTok{+}\StringTok{  }\CommentTok{#Add scatterplot of points}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Age (yrs)"}\NormalTok{,  }\CommentTok{#Label x-axis}
+       \DataTypeTok{y =} \StringTok{"Speed (sec/peg)"}\NormalTok{,  }\CommentTok{#Label y-axis}
+       \DataTypeTok{legend =} \StringTok{"Dominant hand"}\NormalTok{,  }\CommentTok{#Label your legend}
+       \DataTypeTok{title =} \StringTok{"Scatterplot of Age vs. Speed"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{#Be sure to tile your plots}
+\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{#Add regression line}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-6-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
 \hypertarget{additional-notes}{%
 \section{Additional notes}\label{additional-notes}}

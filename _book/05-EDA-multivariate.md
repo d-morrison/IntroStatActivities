@@ -17,6 +17,22 @@
 
 * Interpret the coefficient of determination in context of the problem
 
+## Terminology review
+
+In today's activity we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are
+
+* Scatterplot
+
+* Correlation
+
+* Slope
+
+* Least-squares line of regression
+
+* Coefficient of determination (R-squared)
+
+To review these concepts see Chapter 3 in the textbook.  
+
 ## Movies released in 2016
 
 We will revisit the data set used last week collected on Movies released since 1916 to 2016. Here is a reminder of the variables collected on these movies.
@@ -37,21 +53,6 @@ We will revisit the data set used last week collected on Movies released since 1
 
 * Movie Facebook Likes: Number of likes a movie receives on Facebook
 
-### Terminology review
-
-In today's activity we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are
-
-* Scatterplot
-
-* Correlation
-
-* Slope
-
-* Least-squares line of regression
-
-* Coefficient of determination (R-squared)
-
-To review these concepts see Chapter 3 in the textbook.  
 
 ### Vocabulary review
 
@@ -153,9 +154,9 @@ movies %>%
 
 ### Slope
 
-The slope measures the change in y for each increase in x by 1.  In other words, as the x variable increases by 1 unit, the y variable changes (increase/decreases) by the value of slope.
+The slope measures the change in y for each increase in x by 1.  In other words, as the x variable increases by 1 unit, the y variable changes (increases/decreases) by the value of slope.
 
-The linear model function in R gives us the summary for the least squares regression line.  The estimate for (Intercept) is the y-intercept for the line of least squares and the estimate for budget is the value of $b_1$, the slope.
+The linear model function in R gives us the summary for the least squares regression line.  The estimate for (Intercept) is the y-intercept for the line of least squares and the estimate for budget_mil is the value of $b_1$, the slope.
 
 
 ```r

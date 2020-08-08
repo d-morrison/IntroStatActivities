@@ -13,6 +13,21 @@ output:
 
 * Identify observational units, variables, and variable types in a statistical study
 
+## Terminology review
+Today in class you will be introduced to the following terms:
+
+* Observational units or cases
+
+* Variables: categorical or quantitative 
+
+* Proportions
+
+* Graphs: frequency bar plot and relative frequency bar plot
+
+* Distribution
+
+For more on these concepts, read Section 1.2 in the textbook.
+
 ## Can you read "Martian"?
 
 How well can humans distinguish one “Martian” letter from another? In today’s activity, we’ll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or the right.

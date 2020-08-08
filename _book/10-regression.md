@@ -13,13 +13,15 @@
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
 ## Terminology review
-The following terms will be covered in this activity.
+In today's activity we will use theory-based tests of inference for regression slope. The following terms will be covered in this activity.
 
 * Correlation
 
 * Slope 
 
 * Coeffiecient of determination
+
+* Regression line
 
 For further explanation of these topics review Chapter 3 and 7 in the textbook.
 
@@ -57,12 +59,19 @@ The variables in this dataset consist of the following:
 \vspace{1in}
 
 
-3. Create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant. Provide this plot. Based on your plot, does it appear that there is a relationship between ``age`` and ``speed``? Note: ``age`` should be on the x-axis.
+3. Create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names ('speed' and 'age') for xxx and xxxx. Provide this plot. Based on your plot, does it appear that there is a relationship between ``age`` and ``speed``? Note: ``age`` should be on the x-axis.
  
 
 
-
-\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-2-1} \end{center}
+{r, echo=true}
+ggplot(data = hands,   #This is the data set
+       aes(x = xxx, y = xxxx))+  #Specify variables
+  geom_point() +  #Add scatterplot of points
+  labs(x = "Age (yrs)",  #Label x-axis
+       y = "Speed (sec/peg)",  #Label y-axis
+       title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
+  geom_smooth(method = "lm", se = FALSE)  #Add regression line
+```
 
 
 4. Describe the features of the plot you created in Question 3.
@@ -83,7 +92,7 @@ When performing inference on a least squares line, the follow conditions are gen
 The scatterplot and the residual plot will be used to assess the conditions for approximating the data with the T-distribution
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-3-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 5. Are the conditions met 
 
@@ -102,13 +111,11 @@ The scatterplot and the residual plot will be used to assess the conditions for 
 
 ### Summarize and visualize the data
 
-Enter the variable names into the linear model function to get the linear model output.
+8. Enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
 
-
-```
-#>              Estimate  Std. Error  t value     Pr(>|t|)
-#> (Intercept) 1.1070563 0.093326769 11.86215 4.237698e-24
-#> age         0.1404378 0.008796699 15.96483 8.777516e-36
+{r}
+lm.hand <- lm(xxx~xxxx, data=hands) #lm(response~explanatory)
+summary(lm.hand)$coefficients
 ```
 8.  Using the output above, write the equation of the regression line.
 
@@ -130,26 +137,22 @@ Enter the variable names into the linear model function to get the linear model 
 
 To find the value of the test statistic to test the slope we will use, 
 
- $T = \frac{\mbox{slope estimate}}{SE} = T = \frac{b_1}{SE(b_1)}$
+ $T = \frac{\mbox{slope estimate}}{SE} = \frac{b_1}{SE(b_1)}$
  
 We will use the linear model output above to get the estimate for slope and standard error.
 
-12.  Calculate the test statistic for slope.
+12.  Calculate the test statistic for slope.  Circle this calculated value in the linear model output.
 
 \vspace{1in}
 
-13.  What value does the value calculated in question 12 match in the linear model output?
-
-\vspace{0.5in}
-
-14.  Interpret the test statistic in context of the problem.
+13.  Interpret the test statistic in context of the problem.
 
 \vspace{1in}
 
-15.  Using the linear model output, report the p-value for the test of significance.
+14.  Using the linear model output, report the p-value for the test of significance.
 
 \vspace{0.5in}
-16. Based on the p-value, how much evidence is there against the null hypothesis?
+15. Based on the p-value, how much evidence is there against the null hypothesis?
 
 \vspace{0.5in}
 
@@ -165,28 +168,20 @@ The $t^*$ multiplier comes from the t-distribution with $n-2$ df.
 #> [1] 1.973852
 ```
 
-17. Calculate the 95% confidence interval for the true slope.
-\vspace{1in}
-
-18. Calculate the coefficient of determination for a linear model that describes the relationship between ``age`` and ``speed``. Use proper notation.
-
-\vspace{1in}
-
-19. Interpret this value in the context of the study.
-
+16. Calculate the 95% confidence interval for the true slope.
 \vspace{1in}
 
 ### Communicate the results and answer the research question
 
-20. Based on the p-value, write a conclusion in context of the problem.
+17. Based on the p-value, write a conclusion in context of the problem.
 
 \vspace{1in}
 
-21. Interpret the 95% confidence interval in context of the problem.
+18. Interpret the 95% confidence interval in context of the problem.
 
 \vspace{1in}
 
-22.  Summarize the results of the study in a written paragraph.  Be sure to include.
+19.  Summarize the results of the study in a written paragraph.  Be sure to include.
 
 * Summary statistic
 
@@ -200,12 +195,10 @@ The $t^*$ multiplier comes from the t-distribution with $n-2$ df.
 
 * Scope of inference
 
-* Summary statistic
-
 \vspace{2in}
 ### Revisit and look forward
 
-23. Is there an effect due to gender on the linear relationship between age and speed?  Explain your answer using the scatterplot below.
+20. Is there an effect due to gender on the linear relationship between age and speed?  Explain your answer using the scatterplot below.
 
 
 ```r
@@ -221,7 +214,7 @@ ggplot(data = hands,   #This is the data set
 
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-6-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
 
 

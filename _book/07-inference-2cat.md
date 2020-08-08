@@ -1,19 +1,24 @@
-# Helmet Use and Head Injuries
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+# Winter Sports Helmet Use and Head Injuries
 
 ## Learning objectives
 
 * Write out the null and alternative hypothesis for two categorical variables
 
-* Assess the conditions to use the standard normal distributions
+* Assess the conditions to use the standard normal distribution for a difference in proportions
 
-* Calculate the Z test statistic for a difference in proportions
+* Calculate the Z test statistic for the difference in proportions
 
 * Find the p-value and assess the strength of evidence
 
 * Create and interpret a confidence interval for the difference in proportions
 
 ## Terminology review
-Here are a few terms we will use in today's activity.
+In this activity we will use theory-based methods to analyze two categorical variables. Here are a few terms we will use in today's activity.
 
 * Conditional proportion
 
@@ -27,16 +32,23 @@ Here are a few terms we will use in today's activity.
 
 * Test statistic
 
+* Standard Normal Distribution
+
+* Type 1 and Type 2 Errors
+
+* Decisions
+
 Review Chapter 5 in your textbook for more information on these topics.
 
 ## Helmet Use and Head Injuries
 In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the Journal of the American Medical Association, Vol. 295, No. 8, we can see the results from a random sample 3562 skiers and snowboarders involved in accidents. 
 
-|                            |     Head Injury    |     No Head Injury    |     Total    |
-|----------------------------|--------------------|-----------------------|--------------|
-|     Wore Helmet            |     96             |     656               |     752      |
-|     Did Not Wear Helmet    |     480            |     2330              |     2810     |
-|     Total                  |     576            |     2986              |     3562     |
+|                | Helmet Use | No Helmet Use | Total |
+|:--------------:|:----------:|:-------------:|:-----:|
+| Head Injury    |     96     |      480      |  576  |
+| No Head Injury |     656    |      2330     |  2986 |
+| Total          |     752    |      2810     |  3562 |
+
 
 Is there evidence that safety helmet use reduces the risk of head injury for skiers and snowboarders? 
 
@@ -113,7 +125,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 \begin{center}\includegraphics[width=0.7\linewidth]{07-inference-2cat_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
-12.  Fill in the blanks on the graph with the appropriate variables and values to plot a segmented bar plot of injury by helmet use.
+12.  Fill in the blanks on the graph with the appropriate variables and values to plot a segmented bar plot of helmet use segmented by injury.
 
 \vspace{1in}
 
@@ -173,18 +185,13 @@ where the standard error is calculated using the pooled proportion of successes.
 
 \vspace{1in}
 
-We will use the pnorm function in R to find the p-value.  
+We will use the pnorm function in R to find the p-value. You will need to enter the value of the test statistic at xxx.
 
-
-```r
-pnorm(-2.86 #enter value of test statistic
+    {r, echo=TRUE, collapse=FALSE}
+    pnorm(xxx #enter value of test statistic
       , m=0, s=1 #using the standard normal mean = 0, sd = 1
       , lower.tail=TRUE) # gives a p-value less than the test statistic
-```
 
-```
-#> [1] 0.002118205
-```
 20.  Report the p-value.
 \vspace{0.2in}
 
@@ -228,13 +235,13 @@ qnorm(0.95 + 0.025) #multiplier for 95% confidence interval
 
 * Summary statistic
 
-* P-value
+* Test statistic and interpretation
+
+* P-value and interpretation
 
 * Conclusion (written to answer the research question)
 
-* Confidence interval
-
-* Interpretation of the confidence interval
+* Confidence interval and interpretation
 
 * Scope of inference
 
@@ -250,7 +257,7 @@ Hypothesis tests are not flawless. In a hypothesis test, there are two competing
 | Truth | $H_0$ true |  good decision  |  Type 1 Error  |
 |       | $H_A$ true |  Type 2 Error   |  good decision |
 
-A Type 1 Error is rejecting the null hypothesis when $H_0$is actually true. A Type 2 Error is failing to reject the null hypothesis when the alternative is actually true.
+A Type 1 Error is rejecting the null hypothesis when $H_0$ is actually true. A Type 2 Error is failing to reject the null hypothesis when the alternative is actually true.
 
 26.  Using a significance level of 0.05, what decision do you make in regards to the null hypothesis?
 

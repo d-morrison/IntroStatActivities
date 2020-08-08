@@ -5,7 +5,7 @@
 * Given a research question, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols
   
-* Describe and perform simulation-based hypothesis for paired quantitative data
+* Describe and perform a simulation-based hypothesis test for paired quantitative data
 
 * Interpret and evaluate a p-value
 
@@ -15,7 +15,7 @@
 
 ## Terminology review
 
-The following terms will be covered in this activity.
+In this study we will analyze paired quantitative data using simulation-based methods. The following terms will be covered in this activity.
 
 * Mean difference
 
@@ -37,7 +37,7 @@ The social distancing efforts and stay-at-home directives to help combat the spr
 
 }
 
-\caption{THESE FIGURES NEED A CAPTION - JADE WHERE IS THIS...?}(\#fig:unnamed-chunk-1)
+\caption{The India Gate in New Delhi, India}(\#fig:unnamed-chunk-1)
 \end{figure}
 
 Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015 - 2019). Note that higher AQI scores indicate worse air quality.
@@ -75,7 +75,7 @@ Have high population-density U.S. cities seen the same improved air quality cond
 
 ### Ask a research question
 
-5. What are the two competing possibilities to run a hypothesis test?
+5. What are the two competing possibilities to run a hypothesis test for this study?
 
 \vspace{1in}
 
@@ -105,7 +105,7 @@ Have high population-density U.S. cities seen the same improved air quality cond
 
 ### Use statistical inferential methods to draw inferences from the data
 
-To simulate the null distribution we will use a bootstrapping method - sampling with replacement from the data set.  Before bootstrapping we will need to shift the each data point by the difference $\mu_0 - \bar{x}$.  This will ensure that the simulated null distribution will be centered at the null value.  
+To simulate the null distribution we will use a bootstrapping method - sampling with replacement from the data set.  Before bootstrapping we will need to shift each data point by the difference $\mu_0 - \bar{x}$.  This will ensure that the simulated null distribution will be centered at the null value.  
 
 11. Calculate the difference $\mu_0 - \bar{x}$.  Will we need to shift the data up or down?
 
@@ -113,57 +113,65 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 
 
 
-The image below gives the null distribution from one possible set of 1000 shifted bootstrap samples:
+12.  Enter the calculated value from question 11 for xxx to simulate the null distribution and enter the summary statistic from question 9 for xxxx to find the p-value.
+
+   {r, warning = FALSE}
+paired_test(data = Air$Difference,   #Vector of differences or dataset with column for each group
+            shift = xxx,   #Shift needed for bootstrap hypothesis test
+            direction = "less",  #Direction of alternative
+            as_extreme_as = xxxx,  #Observed statistic
+            number_repetitions = 1000,  #Number of draws for null distribution
+            which_first = 1)  #Not needed when using calculated differences
+
+
+13. Sketch the null distribution created in Question 12 here.
+
+\vspace{2in}
+
+14. Explain why the null distribution is centered at zero. 
+
+\vspace{.5in}
+
+
+15. What proportion of samples are beyond the sample mean difference in AQI Scores for current scores minus 5 year median scores?
+
+\newpage
+
+16. Interpret the p-value in the context of the problem.
+
+\vspace{1in}
+
+17. How much evidence does this provide for improved air quality in US cities?
+
+\vspace{.5in}
+
+18. Write out the parameter of interest in context of the study.
+
+\vspace{1in}
 
 
 \begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-5-1} \end{center}
 
-
-12. Explain why the null distribution is centered at zero. 
-
-\vspace{.5in}
-
-13. What proportion of samples are beyond the sample mean difference in AQI Scores for current scores minus 5 year median scores?
-
-\newpage
-
-14. Interpret the p-value in the context of the problem.
-
-\vspace{1in}
-
-15. How much evidence does this provide for improved air quality in US cities?
-
-\vspace{.5in}
-
-16. Write out the parameter of interest in context of the study.
-
-\vspace{1in}
-
-
-\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-6-1} \end{center}
-
-17.  Use the bootstrapped distribution above to find a 99% confidence interval for the parameter of interest.  Report the confidence interval in interval notation.
+19.  Use the bootstrapped distribution above to find a 99% confidence interval for the parameter of interest.  Report the confidence interval in interval notation.
 
 \vspace{.3in}
 
 
 ### Communicate the results and answer the research question.
 
-18. Interpret the 99% confidence interval in the context of the problem.
+20. Interpret the 99% confidence interval in the context of the problem.
 
 \newpage
 
-19.  Write a paragraph summarizes the results of this study.  Be sure to include:
+21.  Write a paragraph summarizes the results of this study.  Be sure to include:
 
 * Summary statistic
 
-* P-value
+* P-value and interpretation
 
 * Conclusion (written to answer the research question)
 
-* Confidence interval
-
-* Interpretation of the confidence interval
+* Confidence interval and interpretation
 
 * Scope of inference
 
@@ -171,7 +179,7 @@ The image below gives the null distribution from one possible set of 1000 shifte
 
 ### Revisit and look forward
 
-20. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
+22. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
 \vspace{1in}
 
 

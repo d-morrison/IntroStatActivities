@@ -30,7 +30,7 @@ In today's activity we will review summary measures and plots for categorical va
 
 * Two-way tables
 
-To review these concepts see Section 2.1 in the textbook.  
+To review these concepts see Section 2.1 and 2.2 in the textbook.  
 
 \newpage
 ## "Current" Population Survey: 1985
@@ -61,7 +61,7 @@ An important part of understanding data is to create visual pictures of what the
 Throughout these activities, we will often include the `R` code
 you would use in order to produce output or plots. These
 "code chunks" appear in gray. In the code chunk below, we
-demonstrate how to read in the data set into `R` using the `read.csv()` function, and tell `R` to treat the the `sector` and `sex` variables as categorical variables ("factors").
+demonstrate how to read the data set into `R` using the `read.csv()` function, and tell `R` to treat the `sector` and `sex` variables as categorical variables ("factors").
 
 ```r
 cps <- read.csv("data/cps.csv") #This will read in the dataset
@@ -109,7 +109,7 @@ ggplot(data = cps,   #This specifies the dataset
 
 \begin{center}\includegraphics[width=0.5\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
-5.  What features in the relative frequency bar plot are same as the frequency bar plot?  Which are different?
+5.  Which features in the relative frequency bar plot are the same as the frequency bar plot?  Which are different?
 
 \vspace{1in}
 
@@ -176,7 +176,7 @@ c. Create a two-way hypothetical table to represent the situation.
 d. Find $P(\mbox{B and C})$. What does this probability represent in the context of the problem?
 \vspace{1in}
 
-e. Find the probability that a selected non-gambler is a non-boy. What is the notation this probability?
+e. Find the probability that a selected non-gambler is a non-boy. What is the notation used for this probability?
 
 \newpage
 

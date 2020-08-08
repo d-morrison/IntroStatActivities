@@ -15,29 +15,31 @@
 
 ## Terminology review
 
-These are a few of the terms we will cover in today's activity.
+In this activity we will introduction simulation hypothesis testing and confidence intervals for a single categorical variable. These are a few of the terms we will cover in today's activity:
 
-* Parameter of Interest
+* Parameter of interest
 
-* Null Hypothesis
+* Null hypothesis
 
-* Alternative Hypothesis
+* Alternative hypothesis
 
-* Null distribuiton
+* Simulation
+
+* Null distribution
 
 * p-value
 
 * Bootstrapping
 
-* Confidence Interval
+* Confidence interval
 
-To review these concepts see Chapter 5 in your textbook
+To review these concepts see Chapter 5 in your textbook, focusing on Sections 5.1 to 5.3.
 
 ## Steps of the statistical investigation process
 
 We will work through a six-step process to complete a hypothesis test for a single proportion.
 
-* **Ask a research question** that can be addressed by collecting data. What are the researchers trying to show.
+* **Ask a research question** that can be addressed by collecting data. What are the researchers trying to show?
 
 * **Design a study and collect data**. This step involves selecting the people or objects to be studied and how to gather relevant data on them.
 
@@ -111,7 +113,7 @@ tally(~Stance, data=handedness_sub, margins=T)
 
 When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, the true value of interest.  
 
-9.  Write out the parameter of interest. (Hint: the true proportion of....)
+9.  Write out the parameter of interest for this study. (Hint: the true proportion of....)
 
 \vspace{1in}
 
@@ -160,10 +162,10 @@ Let's think about how to use cards to create one simulation of 500 boxers under 
 
 \vspace{0.5in}
 
-17.  What would we plot on the null distribution?
+17.  Once we have one simulated sample, what would we calculate and plot on the null distribution?
 \vspace{1in}
 
-We will use the computer to simulate 1000 simulated proportions of male boxers who are left handed for a sample size of 500 based on the assumption that the true proportion of male boxers who are left handed is 0.1.  This is called the null distribution because it is created based on the assumption that the null hypothesis is true.
+We will use the computer to simulate 1000 different samples of 500 male boxers, plotting the proportion who are left handed in each sample, based on the assumption that the true proportion of male boxers who are left handed is 0.1.  This is called the null distribution because it is created based on the assumption that the null hypothesis is true.
 
 To use the computer simulation, we will need to enter the "probability of success," "sample size," "number of repetitions," "as extreme as," and the "direction" (matches the direction of the alternative hypothesis).
 
@@ -186,6 +188,17 @@ To use the computer simulation, we will need to enter the "probability of succes
 
 \vspace{.2in}
 
+
+
+
+```r
+one_proportion_test(probability_success = 0.1, #Null hypothesis value
+                    sample_size = 500, #Enter sample size
+                    number_repetitions = 1000, #Enter number of simulations
+                    as_extreme_as = 81/500, #observed statistic
+                    direction = "greater", #specify direction of alternative hypothesis
+                    report_value = "proportion") #Reporting proportion or number of successes?
+```
 
 
 
@@ -221,6 +234,15 @@ We will use bootstrapping to find the 95% confidence interval.
 
 
 
+```r
+one_proportion_bootstrap_CI(sample_size = 500, #Sample size
+                    number_successes = 81, #Observed number of successes
+                    number_repetitions = 1000, #Number of bootstrap samples to use
+                    confidence_level = 0.95) #Confidence level as a decimal
+```
+
+
+
 \begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-6-1} \end{center}
 
 25. Explain why the blue lines are at the 2.5th percentile and the 97.5th percentile.
@@ -243,15 +265,13 @@ When we write a conclusion we answer the research question by stating how much e
 
 * Summary statistic
 
-* P-value
+* P-value and interpretation
 
 * Conclusion (written to answer the research question)
 
-* Confidence interval
+* Confidence interval and interpretation
 
-* Interpretation of the confidence interval
-
-* Scope of inference
+* Generalization - to what group do the results apply?
 
 \vspace{3in}
 
