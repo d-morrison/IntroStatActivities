@@ -59,7 +59,7 @@ The variables in this dataset consist of the following:
 \vspace{1in}
 
 
-3. Create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant. Provide this plot. Based on your plot, does it appear that there is a relationship between ``age`` and ``speed``? Note: ``age`` should be on the x-axis.
+3. Create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names ('speed' and 'age') for xxx and xxxx. Provide this plot. Based on your plot, does it appear that there is a relationship between ``age`` and ``speed``? Note: ``age`` should be on the x-axis.
  
 ```{r, include = FALSE, fig.width=7,fig.height=6}
 hands <- read.csv("data/hands.csv")
@@ -73,9 +73,9 @@ hands$HD <- factor(hands$HD)
 hands$handUsed <- factor(hands$handUsed)
 ```
 
-```{r}
+```{r, echo=true}
 ggplot(data = hands,   #This is the data set
-       aes(x = age, y = speed))+  #Specify variables
+       aes(x = xxx, y = xxxx))+  #Specify variables
   geom_point() +  #Add scatterplot of points
   labs(x = "Age (yrs)",  #Label x-axis
        y = "Speed (sec/peg)",  #Label y-axis
@@ -124,11 +124,10 @@ plot(lm.hand)
 
 ### Summarize and visualize the data
 
-Enter the variable names into the linear model function to get the linear model output.
+8. Enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
 
 ```{r}
-## replace each xxx with the appropriate information
-lm.hand <- lm(speed~age, data=hands)
+lm.hand <- lm(xxx~xxxx, data=hands) #lm(response~explanatory)
 summary(lm.hand)$coefficients
 ```
 8.  Using the output above, write the equation of the regression line.
