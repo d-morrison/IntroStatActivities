@@ -5,7 +5,7 @@
 * Given a research question, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols
   
-* Describe and perform simulation-based hypothesis for paired quantitative data
+* Describe and perform a simulation-based hypothesis test for paired quantitative data
 
 * Interpret and evaluate a p-value
 
@@ -15,7 +15,7 @@
 
 ## Terminology review
 
-The following terms will be covered in this activity.
+In this study we will analyze paired quantitative data using simulation-based methods. The following terms will be covered in this activity.
 
 * Mean difference
 
@@ -31,7 +31,7 @@ For further explanation of these topics see Section 6.2 in the textbook.
 
 The social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 have appeared to help 'flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured below which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants. 
 
-```{r, fig.cap="THESE FIGURES NEED A CAPTION - JADE WHERE IS THIS...?", out.width="60%"}
+```{r, fig.cap="The India Gate in New Delhi, India", out.width="60%"}
 include_graphics("images/air_pollution.png")
 ```
 
@@ -79,7 +79,7 @@ ggplot(data = Air,  #Dataset containing variables
 
 ### Ask a research question
 
-5. What are the two competing possibilities to run a hypothesis test?
+5. What are the two competing possibilities to run a hypothesis test for this study?
 
 \vspace{1in}
 
@@ -109,7 +109,7 @@ ggplot(data = Air,  #Dataset containing variables
 
 ### Use statistical inferential methods to draw inferences from the data
 
-To simulate the null distribution we will use a bootstrapping method - sampling with replacement from the data set.  Before bootstrapping we will need to shift the each data point by the difference $\mu_0 - \bar{x}$.  This will ensure that the simulated null distribution will be centered at the null value.  
+To simulate the null distribution we will use a bootstrapping method - sampling with replacement from the data set.  Before bootstrapping we will need to shift each data point by the difference $\mu_0 - \bar{x}$.  This will ensure that the simulated null distribution will be centered at the null value.  
 
 11. Calculate the difference $\mu_0 - \bar{x}$.  Will we need to shift the data up or down?
 
@@ -294,13 +294,11 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 
 * Summary statistic
 
-* P-value
+* P-value and interpretation
 
 * Conclusion (written to answer the research question)
 
-* Confidence interval
-
-* Interpretation of the confidence interval
+* Confidence interval and interpretation
 
 * Scope of inference
 
