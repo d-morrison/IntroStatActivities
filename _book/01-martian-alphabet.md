@@ -48,7 +48,6 @@ Let’s explore the data.
 2.  How many students are in class today? This is the sample size.
 
 
-\newpage
 A **variable** is information collected or measured on each observational unit or case. We will look at two types of variables: **quantitative** and **categorical**.  Each column in a data set will represent a different variable. 
 
 Quantitative variables are numerical measurements that can be discrete (whole, non-negative numbers) or continuous (any value within an interval).  The number of students in a class would be a discrete variable as you can not have a partial student.  GPA would be a continuous variable ranging from 0 to 4.0. 

@@ -59,19 +59,18 @@ The variables in this dataset consist of the following:
 \vspace{1in}
 
 
-3. Create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names ('speed' and 'age') for xxx and xxxx. Provide this plot. Based on your plot, does it appear that there is a relationship between ``age`` and ``speed``? Note: ``age`` should be on the x-axis.
+3. Use the provided $R$ markdown file to create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names ('speed' and 'age') for xxx and xxxx. Provide this plot. Based on your plot, does it appear that there is a relationship between ``age`` and ``speed``? Note: ``age`` should be on the x-axis.
  
 
 
-{r, echo=true}
-ggplot(data = hands,   #This is the data set
+    {r, echo=true}
+    ggplot(data = hands,   #This is the data set
        aes(x = xxx, y = xxxx))+  #Specify variables
-  geom_point() +  #Add scatterplot of points
-  labs(x = "Age (yrs)",  #Label x-axis
+    geom_point() +  #Add scatterplot of points
+    labs(x = "Age (yrs)",  #Label x-axis
        y = "Speed (sec/peg)",  #Label y-axis
        title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
-  geom_smooth(method = "lm", se = FALSE)  #Add regression line
-```
+    geom_smooth(method = "lm", se = FALSE)  #Add regression line
 
 
 4. Describe the features of the plot you created in Question 3.
@@ -111,12 +110,12 @@ The scatterplot and the residual plot will be used to assess the conditions for 
 
 ### Summarize and visualize the data
 
-8. Enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
+8. Using the provided R markdown file, enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
 
-{r}
-lm.hand <- lm(xxx~xxxx, data=hands) #lm(response~explanatory)
-summary(lm.hand)$coefficients
-```
+    {r}
+    lm.hand <- lm(xxx~xxxx, data=hands) #lm(response~explanatory)
+    summary(lm.hand)$coefficients
+
 8.  Using the output above, write the equation of the regression line.
 
 \vspace{1in}

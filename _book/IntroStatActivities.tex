@@ -296,8 +296,6 @@ Let's explore the data.
   How many students are in class today? This is the sample size.
 \end{enumerate}
 
-\newpage
-
 A \textbf{variable} is information collected or measured on each observational unit or case. We will look at two types of variables: \textbf{quantitative} and \textbf{categorical}. Each column in a data set will represent a different variable.
 
 Quantitative variables are numerical measurements that can be discrete (whole, non-negative numbers) or continuous (any value within an interval). The number of students in a class would be a discrete variable as you can not have a partial student. GPA would be a continuous variable ranging from 0 to 4.0.
@@ -946,7 +944,7 @@ To see the differences in proportion of each sector between males and females we
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \item
-  Draw a segmented bar plot of gambling segmented by sex.
+  Draw a segmented bar plot of sex segmented by gambling.
   \vspace{2in}
 \item
   Identify what each numerical value represents in probability notation.
@@ -2271,6 +2269,8 @@ In this activity we will use theory-based methods to analyze two categorical var
 
 Review Chapter 5 in your textbook for more information on these topics.
 
+\newpage
+
 \hypertarget{helmet-use-and-head-injuries}{%
 \section{Helmet Use and Head Injuries}\label{helmet-use-and-head-injuries}}
 
@@ -2388,8 +2388,6 @@ In this study we are looking at the relationship between two groups or two param
   \vspace{0.5in}
 \end{enumerate}
 
-\newpage
-
 When comparing two groups, we assume the two parameters are equal in the null hypothesis---there is no association between the variables.
 
 \begin{enumerate}
@@ -2503,7 +2501,6 @@ Conditions for the sample distribution of \(\hat{p}_1-\hat{p}_2\)
 \end{enumerate}
 
 \vspace{1in}
-\newpage
 
 To calculate the test statistic we use:
 
@@ -2540,7 +2537,7 @@ where the standard error is calculated using the pooled proportion of successes.
 
 \vspace{1in}
 
-We will use the pnorm function in R to find the p-value. You will need to enter the value of the test statistic at xxx.
+We will use the pnorm function in R to find the p-value. Use the provided R markdown file and enter the value of the test statistic at xxx.
 
 \begin{verbatim}
 {r, echo=TRUE, collapse=FALSE}
@@ -2887,16 +2884,18 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 \setcounter{enumi}{11}
 \tightlist
 \item
-  Enter the calculated value from question 11 for xxx to simulate the null distribution and enter the summary statistic from question 9 for xxxx to find the p-value.
+  Use the provided R markdown file and enter the calculated value from question 11 for xxx to simulate the null distribution and enter the summary statistic from question 9 for xxxx to find the p-value.
 \end{enumerate}
 
-\{r, warning = FALSE\}
-paired\_test(data = Air\$Difference, \#Vector of differences or dataset with column for each group
-shift = xxx, \#Shift needed for bootstrap hypothesis test
-direction = ``less'', \#Direction of alternative
-as\_extreme\_as = xxxx, \#Observed statistic
-number\_repetitions = 1000, \#Number of draws for null distribution
-which\_first = 1) \#Not needed when using calculated differences
+\begin{verbatim}
+{r, warning = FALSE}
+paired_test(data = Air$Difference,   #Vector of differences or data set with column for each group
+        shift = xxx,   #Shift needed for bootstrap hypothesis test
+        direction = "less",  #Direction of alternative
+        as_extreme_as = xxxx,  #Observed statistic
+        number_repetitions = 1000,  #Number of draws for null distribution
+        which_first = 1)  #Not needed when using calculated differences
+\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3424,71 +3423,91 @@ The variables in this dataset consist of the following:
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
-\tightlist
 \item
-  Create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names (`speed' and `age') for xxx and xxxx. Provide this plot. Based on your plot, does it appear that there is a relationship between \texttt{age} and \texttt{speed}? Note: \texttt{age} should be on the x-axis.
+  Use the provided \(R\) markdown file to create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names (`speed' and `age') for xxx and xxxx. Provide this plot. Based on your plot, does it appear that there is a relationship between \texttt{age} and \texttt{speed}? Note: \texttt{age} should be on the x-axis.
+
+  \{r, echo=true\}
+  ggplot(data = hands, \#This is the data set
+  aes(x = xxx, y = xxxx))+ \#Specify variables
+  geom\_point() + \#Add scatterplot of points
+  labs(x = ``Age (yrs)'', \#Label x-axis
+  y = ``Speed (sec/peg)'', \#Label y-axis
+  title = ``Scatterplot of Age vs.~Speed'') + \#Be sure to tile your plots
+  geom\_smooth(method = ``lm'', se = FALSE) \#Add regression line
+\item
+  Describe the features of the plot you created in Question 3.
 \end{enumerate}
-
-\{r, echo=true\}
-ggplot(data = hands, \#This is the data set
-aes(x = xxx, y = xxxx))+ \#Specify variables
-geom\_point() + \#Add scatterplot of points
-labs(x = ``Age (yrs)'', \#Label x-axis
-y = ``Speed (sec/peg)'', \#Label y-axis
-title = ``Scatterplot of Age vs.~Speed'') + \#Be sure to tile your plots
-geom\_smooth(method = ``lm'', se = FALSE) \#Add regression line
-
-\begin{verbatim}
-
-
-4. Describe the features of the plot you created in Question 3.
 
 \vspace{1in}
 
 If you indicated there are potential outliers, which points are they?
 
-### Conditions for the least squares line
+\hypertarget{conditions-for-the-least-squares-line}{%
+\subsection{Conditions for the least squares line}\label{conditions-for-the-least-squares-line}}
 
 When performing inference on a least squares line, the follow conditions are generally required
 
-- Linearity: the data should follow a linear trend
-- Nearly normal residuals: residuals must be nearly normal
-- Constant variability: the variability of points around the least squares line remains roughly constant
-- Independent observations: individual data points must be independent 
+\begin{itemize}
+\tightlist
+\item
+  Linearity: the data should follow a linear trend
+\item
+  Nearly normal residuals: residuals must be nearly normal
+\item
+  Constant variability: the variability of points around the least squares line remains roughly constant
+\item
+  Independent observations: individual data points must be independent
+\end{itemize}
 
 The scatterplot and the residual plot will be used to assess the conditions for approximating the data with the T-distribution
 
-
 \begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
-5. Are the conditions met 
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Are the conditions met
+\end{enumerate}
 
 \vspace{1in}
 
+\hypertarget{ask-a-reseach-question}{%
+\subsection{Ask a reseach question}\label{ask-a-reseach-question}}
 
-### Ask a reseach question
-
-6. Write out the null hypothesis in words.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  Write out the null hypothesis in words.
+\end{enumerate}
 
 \vspace{1in}
 
-7. Using the research question, write the alternative hypothesis in notation.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  Using the research question, write the alternative hypothesis in notation.
+\end{enumerate}
 
 \vspace{0.5in}
 
-### Summarize and visualize the data
-
-8. Enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
-
-{r}
-lm.hand <- lm(xxx~xxxx, data=hands) #lm(response~explanatory)
-summary(lm.hand)$coefficients
-\end{verbatim}
+\hypertarget{summarize-and-visualize-the-data}{%
+\subsection{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{7}
-\tightlist
+\item
+  Using the provided R markdown file, enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
+
+  \{r\}
+  lm.hand \textless- lm(xxx\textasciitilde xxxx, data=hands) \#lm(response\textasciitilde explanatory)
+  summary(lm.hand)\$coefficients
 \item
   Using the output above, write the equation of the regression line.
 \end{enumerate}

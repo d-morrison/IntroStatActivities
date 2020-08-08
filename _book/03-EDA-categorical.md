@@ -149,7 +149,7 @@ ggplot(data = cps,   #This specifies the dataset
     Let B = the event the person is a boy, and C = the event the person is a weekly gambler.
 \vspace{0.1in}
 
-a. Draw a segmented bar plot of gambling segmented by sex.
+a. Draw a segmented bar plot of sex segmented by gambling.
 \vspace{2in}
 
 b. Identify what each numerical value represents in probability notation.

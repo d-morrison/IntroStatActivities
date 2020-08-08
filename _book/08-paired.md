@@ -113,16 +113,15 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 
 
 
-12.  Enter the calculated value from question 11 for xxx to simulate the null distribution and enter the summary statistic from question 9 for xxxx to find the p-value.
+12.  Use the provided R markdown file and enter the calculated value from question 11 for xxx to simulate the null distribution and enter the summary statistic from question 9 for xxxx to find the p-value.
 
-   {r, warning = FALSE}
-paired_test(data = Air$Difference,   #Vector of differences or dataset with column for each group
+    {r, warning = FALSE}
+    paired_test(data = Air$Difference,   #Vector of differences or data set with column for each group
             shift = xxx,   #Shift needed for bootstrap hypothesis test
             direction = "less",  #Direction of alternative
             as_extreme_as = xxxx,  #Observed statistic
             number_repetitions = 1000,  #Number of draws for null distribution
             which_first = 1)  #Not needed when using calculated differences
-
 
 13. Sketch the null distribution created in Question 12 here.
 
