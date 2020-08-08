@@ -1,4 +1,4 @@
-# Record Snowfall
+# Weather Patterns and Record Snowfall
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, 
@@ -17,11 +17,19 @@ library(mosaic)
 
 * Interpret and evaluate a p-value
 
-* Find a bootstap confidence interval for the difference in means
+* Find a bootstap confidence interval for a difference in means
 
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
-## Record snowfall
+## Terminology
+
+In this study we will use simulation based methods to analyze two independent quantitative variables. The following terms will be covered in this activity.
+
+* Independent groups
+
+* Difference in means
+
+## Weather Patterns and Record snowfall
 
 In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the collapse of two flat-roofed buildings on the MSU campus.  A writer for the Washington Post predicted the heavy snowfall for 2018-2019 due to the El Nino weather pattern that occurred in that season. A meteorologist in Montana wanted to see if the weather pattern really was associated with total snowfall. She obtained historical data from 44 years on the weather pattern (El Nino or La Nina) and snowfall (in inches) at the Billings Weather Station.  
 
@@ -55,7 +63,7 @@ favstats(Snowfall~WeatherPattern, data=Snow)
 
 \vspace{1in}
 
-2. Which group (El Nino or La Nina) has the highest center? Explain what measure you are using?
+2. Which group (El Nino or La Nina) has the highest center? Explain which measure you are using.
 
 \vspace{1in}
 
@@ -67,7 +75,7 @@ favstats(Snowfall~WeatherPattern, data=Snow)
 
 \vspace{1in}
 
-5.  Is this a paired data set or independent groups?  Explain your answer.
+5.  Is this a paired data set or two independent groups?  Explain your answer.
 
 \vspace{1in}
 
@@ -81,7 +89,7 @@ favstats(Snowfall~WeatherPattern, data=Snow)
 
 \vspace{1in}
 
-8.  Identify which is the null hypothesis and which is the alternative hypothesis. 
+8.  Identify which of your answers in question 7 is the null hypothesis and which is the alternative hypothesis. 
 
 \vspace{1in}
 
@@ -113,7 +121,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \vspace{1in}
 
-14.  Once we create a null distribution of 1000 simulations, at what value do you expect the distribution to be centered at?  Explain your answer.
+14.  Once we create a null distribution of 1000 simulations, at what value do you expect the distribution to be centered?  Explain your answer.
 
 \vspace{1in}
 
@@ -142,13 +150,11 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 * Summary statistic
 
-* P-value
+* P-value and interpretation
 
 * Conclusion (written to answer the research question)
 
-* Confidence interval
-
-* Interpretation of the confidence interval
+* Confidence interval and interpretation
 
 * Scope of inference
 
