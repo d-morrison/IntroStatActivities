@@ -115,13 +115,16 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 
 12.  Use the provided R markdown file and enter the calculated value from question 11 for xxx to simulate the null distribution and enter the summary statistic from question 9 for xxxx to find the p-value.
 
-    {r, warning = FALSE}
+
+```r
     paired_test(data = Air$Difference,   #Vector of differences or data set with column for each group
             shift = xxx,   #Shift needed for bootstrap hypothesis test
             direction = "less",  #Direction of alternative
             as_extreme_as = xxxx,  #Observed statistic
             number_repetitions = 1000,  #Number of draws for null distribution
             which_first = 1)  #Not needed when using calculated differences
+```
+    
 
 13. Sketch the null distribution created in Question 12 here.
 
@@ -149,7 +152,7 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 \vspace{1in}
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-5-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-6-1} \end{center}
 
 19.  Use the bootstrapped distribution above to find a 99% confidence interval for the parameter of interest.  Report the confidence interval in interval notation.
 

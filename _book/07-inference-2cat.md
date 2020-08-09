@@ -188,10 +188,13 @@ where the standard error is calculated using the pooled proportion of successes.
 
 We will use the pnorm function in R to find the p-value. Use the provided R markdown file and enter the value of the test statistic at xxx.
 
-    {r, echo=TRUE, collapse=FALSE}
+
+```r
     pnorm(xxx #enter value of test statistic
       , m=0, s=1 #using the standard normal mean = 0, sd = 1
       , lower.tail=TRUE) # gives a p-value less than the test statistic
+```
+    
 
 20.  Report the p-value.
 \vspace{0.2in}
