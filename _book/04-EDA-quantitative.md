@@ -167,6 +167,7 @@ ggplot(data = movies,  #Data set
 \vspace{.5in}
 
 
+\newpage
 
 ## Additional notes
 

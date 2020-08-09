@@ -136,7 +136,8 @@ ggplot(data = injury,   #This specifies the dataset
        y = "",  #Remove y axis label
        fill = "_____________") + #Change legend label
   scale_fill_discrete(labels = c("_________", "_________")) +
-  scale_x_discrete(labels = c("_____________", "_____________"))
+  scale_x_discrete(labels = c("_____________", "_____________")) +
+  scale_fill_grey()
 
 ```
 
@@ -257,7 +258,7 @@ qnorm(0.95 + 0.025) #multiplier for 95% confidence interval
 
 * Scope of inference
 
-\vspace{3in}
+\vspace{.5in}
 
 
 ### Types of errors

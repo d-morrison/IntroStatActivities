@@ -249,7 +249,7 @@ qnorm(0.95 + 0.025) #multiplier for 95% confidence interval
 
 * Scope of inference
 
-\vspace{3in}
+\vspace{.5in}
 
 
 ### Types of errors

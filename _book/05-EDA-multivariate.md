@@ -223,12 +223,13 @@ In the next plot we are graphing three variables.
 ```r
 ggplot(data = movies,   #This is the data set
        aes(x = budget_mil, y = revenue_mil, color = content_rating)) +  #Specify variables
-  geom_point(aes(pch = content_rating)) +  #Add scatterplot of points
+  geom_point(aes(shape = content_rating), size = 3) +  #Add scatterplot of points
   labs(x = "Budget in Millions ($)",  #Label x-axis
        y = "Revenue in Millions ($)",  #Label y-axis
        color = "Content Rating",  #Label legend
        title = "Revenue vs. Budget") + #Be sure to tile your plots
-  geom_smooth(method = "lm", se = FALSE)  #Add regression lines
+  geom_smooth(method = "lm", se = FALSE, lwd = 2) + #Add regression lines
+  scale_color_grey() #Make black and white
 ```
 
 

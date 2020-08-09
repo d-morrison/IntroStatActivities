@@ -124,7 +124,8 @@ ggplot(data = cps,   #This specifies the dataset
   geom_bar(stat = "count", position = "fill") +  #Tell it to make a stacked bar plot
   labs(title = "Segmented Bar Plot of Sector by Sex",  #Make sure to title your plot 
        x = "Sector",   #Label the x axis
-       y = "")  #Remove y axis label
+       y = "") +  #Remove y axis label
+    scale_fill_grey()  #Make figure black and white
 ```
 
 
