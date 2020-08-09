@@ -41,7 +41,7 @@
 8& 7& W& 10/7& Winter Sports Helmet Use and Head Injuries \\*	
 8& 7& H& 10/8& Winter Sports Helmet Use and Head Injuries \\*
 8& 7& F& 10/9& Winter Sports Helmet Use and Head Injuries \\ \hline
-9& 7& M& 10/12& Helmet Use and Head Injuries \\*
+9& 7& M& 10/12& Winter Sports Helmet Use and Head Injuries \\*
 9& 8& T& 10/13& COVID-19 and Air Pollution \\*
 9& 8& W& 10/14& COVID-19 and Air Pollution \\*	
 9& 8& H& 10/15& COVID-19 and Air Pollution \\*
@@ -61,7 +61,7 @@
 12& $-$& W$-$F& 11/4$-$11/6& Exam 2 \\ \hline
 13& $-$& M$-$T& 11/9$-$11/10& Exam 2 \\*
 13& $-$& W& 11/11& No class  $-$  Veterans Day \\*
-14& $-$& H$-$W&11/12$-$11/18& Review \\ \hline
+13& $-$& H$-$W&11/12$-$11/18& Review \\ \hline
 \end{longtable}
 
 

@@ -15,7 +15,7 @@
 
 ## Terminology review
 
-In this study we will analyze paired quantitative data using simulation-based methods. The following terms will be covered in this activity.
+In today's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
 
 * Mean difference
 
@@ -25,7 +25,7 @@ In this study we will analyze paired quantitative data using simulation-based me
 
 * Shifted null distribution
 
-For further explanation of these topics see Section 6.2 in the textbook.
+To review these concepts see Section 6.2 in the textbook.
 
 ## COVID-19 and air pollution
 

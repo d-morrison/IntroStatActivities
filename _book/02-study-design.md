@@ -15,9 +15,7 @@
 
 ## Terminology review
 
-Statistics is the study of how best to collect, analyze, and draw conclusions from data.  Statistical inference will allow us to make a statement about a population parameter based on a sample statistic.
-
-Some terms covered in this activity are...
+In today's activity, we will examine different types of sampling bias and study designs, confounding variables, and how to determine the scope of inference for a study. Some terms covered in this activity are:
 
 * Population
 
@@ -27,25 +25,25 @@ Some terms covered in this activity are...
     
 * Statistic
 
-* Selection Bias
+* Selection bias
 
-* Response Bias
+* Response bias
 
-* Non-response Bias
+* Non-response bias
 
-* Scope of Inference
+* Scope of inference
 
-* Explanatory Variable
+* Explanatory variable
 
-* Response Variable
+* Response variable
 
-* Confounding Variable
+* Confounding variable
 
-* Experiments
+* Experiment
 
-* Observational Study
+* Observational study
 
-To review these concepts see Section 1.3 to 1.6 in the textbook.  
+To review these concepts see Sections 1.3 through 1.6 in the textbook.  
 
 \newpage
 

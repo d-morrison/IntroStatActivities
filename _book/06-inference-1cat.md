@@ -15,7 +15,7 @@
 
 ## Terminology review
 
-In this activity we will introduction simulation hypothesis testing and confidence intervals for a single categorical variable. These are a few of the terms we will cover in today's activity:
+In today's activity, we will introduction simulation hypothesis testing and confidence intervals for a single categorical variable. Some terms covered in this activity are:
 
 * Parameter of interest
 
@@ -33,7 +33,7 @@ In this activity we will introduction simulation hypothesis testing and confiden
 
 * Confidence interval
 
-To review these concepts see Chapter 5 in your textbook, focusing on Sections 5.1 to 5.3.
+To review these concepts see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
 ## Steps of the statistical investigation process
 

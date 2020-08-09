@@ -15,7 +15,7 @@
 
 ## Terminology review
 
-In today's activity we will review summary measures and plots for quantitative variables.  Some terms covered in this activity are
+In today's activity, we will review summary measures and plots for quantitative variables.  Some terms covered in this activity are:
 
 * Two measures of center: mean, median
 * Two measures of spread (variability): standard deviation, inter-quartile range (IQR)

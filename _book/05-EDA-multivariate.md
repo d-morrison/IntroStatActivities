@@ -19,7 +19,7 @@
 
 ## Terminology review
 
-In today's activity we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are
+In today's activity, we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are:
 
 * Scatterplot
 

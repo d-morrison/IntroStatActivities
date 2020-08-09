@@ -4,7 +4,7 @@
 
 ## Learning objectives
 
-* Write out the null and alternative hypothesis for one categorical and one quantitative Variable
+* Write out the null and alternative hypothesis for one categorical and one quantitative variable
 
 * Calculate and carry-out simulation based hypothesis test for a difference in means
 
@@ -14,13 +14,15 @@
 
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
-## Terminology
+## Terminology review
 
-In this study we will use simulation based methods to analyze two independent quantitative variables. The following terms will be covered in this activity.
+In today's activity, we will use simulation-based methods to analyze two independent quantitative variables. Some terms covered in this activity are:
 
 * Independent groups
 
 * Difference in means
+
+To review these concepts see Section 6.3 in the textbook.
 
 ## Weather Patterns and Record snowfall
 

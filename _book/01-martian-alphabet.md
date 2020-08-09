@@ -14,7 +14,7 @@ output:
 * Identify observational units, variables, and variable types in a statistical study
 
 ## Terminology review
-Today in class you will be introduced to the following terms:
+Statistics is the study of how best to collect, analyze, and draw conclusions from data.  Today in class you will be introduced to the following terms:
 
 * Observational units or cases
 
@@ -26,7 +26,7 @@ Today in class you will be introduced to the following terms:
 
 * Distribution
 
-For more on these concepts, read Section 1.2 in the textbook.
+For more on these concepts, read Sections 1.2 and 2.1 in the textbook.
 
 ## Can you read "Martian"?
 

@@ -16,7 +16,7 @@
 
 ## Terminology review
 
-In today's activity we will review summary measures and plots for categorical variables.  Some terms covered in this activity are...
+In today's activity, we will review summary measures and plots for categorical variables.  Some terms covered in this activity are:
 
 * Proportions 
 
@@ -26,11 +26,11 @@ In today's activity we will review summary measures and plots for categorical va
 
 * Probability
 
-* Conditional Probability
+* Conditional probability
 
 * Two-way tables
 
-To review these concepts see Section 2.1 and 2.2 in the textbook.  
+To review these concepts see Sections 2.1 and 2.2 in the textbook.  
 
 \newpage
 ## "Current" Population Survey: 1985

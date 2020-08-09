@@ -18,27 +18,27 @@ output:
 * Create and interpret a confidence interval for the difference in proportions
 
 ## Terminology review
-In this activity we will use theory-based methods to analyze two categorical variables. Here are a few terms we will use in today's activity.
+In today's activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
 
 * Conditional proportion
 
 * Z test
 
-* z* multiplier
+* $z*$ multiplier
 
-* Null Hypothesis
+* Null hypothesis
 
-* Alternative Hypothesis
+* Alternative hypothesis
 
 * Test statistic
 
-* Standard Normal Distribution
+* Standard normal distribution
 
-* Type 1 and Type 2 Errors
+* Type 1 and Type 2 errors
 
 * Decisions
 
-Review Chapter 5 in your textbook for more information on these topics.
+To review these concepts see Chapter 5 in your textbook.
 
 \newpage
 
