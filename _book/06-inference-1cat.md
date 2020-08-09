@@ -186,9 +186,11 @@ To use the computer simulation, we will need to enter the "probability of succes
 \vspace{.2in}
 * Direction:
 
-\vspace{.2in}
+\newpage
 
 
+
+The following R code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 18 match the code inputs. 
 
 
 ```r
