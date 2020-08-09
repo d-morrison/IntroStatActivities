@@ -3031,6 +3031,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{weather-patterns-and-record-snowfall}{%
 \chapter{Weather Patterns and Record Snowfall}\label{weather-patterns-and-record-snowfall}}
 
+\newcommand\latexcode[1]{#1}
+
 \hypertarget{learning-objectives-4}{%
 \section{Learning objectives}\label{learning-objectives-4}}
 
@@ -3064,7 +3066,7 @@ To review these concepts see Section 6.3 in the textbook.
 \hypertarget{weather-patterns-and-record-snowfall-1}{%
 \section{Weather Patterns and Record snowfall}\label{weather-patterns-and-record-snowfall-1}}
 
-In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the collapse of two flat-roofed buildings on the MSU campus. A writer for the Washington Post predicted the heavy snowfall for 2018-2019 due to the El Nino weather pattern that occurred in that season. A meteorologist in Montana wanted to see if the weather pattern really was associated with total snowfall. She obtained historical data from 44 years on the weather pattern (El Nino or La Nina) and snowfall (in inches) at the Billings Weather Station.
+In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the collapse of two flat-roofed buildings on the MSU campus. A writer for the Washington Post predicted the heavy snowfall for 2018-2019 due to the El Ni\~{n}o weather pattern that occurred in that season. A meteorologist in Montana wanted to see if the weather pattern really was associated with total snowfall. She obtained historical data from 44 years on the weather pattern (El Ni\~{n}o or La Ni\~{n}a) and snowfall (in inches) at the Billings Weather Station.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -3108,7 +3110,7 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 \setcounter{enumi}{1}
 \tightlist
 \item
-  Which group (El Nino or La Nina) has the highest center? Explain which measure you are using.
+  Which group (El Ni\~{n}o or La Ni\~{n}a) has the highest center? Explain which measure you are using.
 \end{enumerate}
 
 \vspace{1in}
@@ -3151,7 +3153,7 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 \setcounter{enumi}{5}
 \tightlist
 \item
-  Write out the parameter of interest in context of the study. Use proper notation and be sure to define your subscripts. Use El Nino minus La Nina as the order of subtraction.
+  Write out the parameter of interest in context of the study. Use proper notation and be sure to define your subscripts. Use El Ni\~{n}o minus La Ni\~{n}a as the order of subtraction.
 \end{enumerate}
 
 \vspace{1in}
@@ -3184,7 +3186,7 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 \setcounter{enumi}{8}
 \tightlist
 \item
-  Calculate the summary statistic. Use El Nino minus La Nina as the order of subtraction. What is the appropriate notation for the statistic?
+  Calculate the summary statistic. Use El Ni\~{n}o minus La Ni\~{n}a as the order of subtraction. What is the appropriate notation for the statistic?
 \end{enumerate}
 
 \vspace{0.5in}
@@ -3192,7 +3194,7 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 \hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}{%
 \subsection{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}}
 
-Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, we asssume there is no association between variables. This means that a snowfall value could be in either an El Nino year or a La Nina year.
+Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, we asssume there is no association between variables. This means that a snowfall value could be in either an El Ni\~{n}o year or a La Ni\~{n}a year.
 
 To demonstrate this your instructor will use cards to represent the sample.
 
@@ -3246,15 +3248,25 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \vspace{1in}
 
-\textbf{simulation}
+\textbf{Simulation method}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{14}
 \tightlist
 \item
-  Load the package CatStats. Using the \ldots.Enter the values for the \ldots.
+  Load the package \texttt{catstats}. Using the sample code below, enter the values for the variables, dataset, first in subtraction, number of simulations, observed statistic, and direction of the alternative hypothesis.
 \end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{two_mean_test}\NormalTok{(RESPONSE}\OperatorTok{~}\NormalTok{PREDICTOR, }\DataTypeTok{data =}\NormalTok{ DATASET,  }\CommentTok{#Variables and data}
+                    \DataTypeTok{first_in_subtraction =} \StringTok{"VALUE"}\NormalTok{, }\CommentTok{#First value in order of subtraction}
+                    \DataTypeTok{number_repetitions =} \CommentTok{###,  #Number of simulations}
+                    \DataTypeTok{as_extreme_as =} \CommentTok{###,  #Observed statistic}
+                    \DataTypeTok{direction =} \StringTok{"??"}\NormalTok{)  }\CommentTok{#Direction of alternative: "greater", "less", or "two-sided"}
+\end{Highlighting}
+\end{Shaded}
 
 \vspace{1in}
 
@@ -3273,10 +3285,17 @@ To demonstrate this your instructor will use cards to represent the sample.
 \setcounter{enumi}{16}
 \tightlist
 \item
-  Using bootstrapping find a 90\% confidence interval.
+  Using bootstrapping find a 90\% confidence interval. (Sample code given below.)
 \end{enumerate}
 
-\textbf{bootstrapping simulation}
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{two_mean_bootstrap_CI}\NormalTok{(RESPONSE}\OperatorTok{~}\NormalTok{PREDICTOR, }\DataTypeTok{data =}\NormalTok{ DATASET,  }\CommentTok{#Variables and data}
+                      \DataTypeTok{first_in_subtraction =} \StringTok{"VALUE"}\NormalTok{, }\CommentTok{#First value in order of subtraction}
+                      \DataTypeTok{number_repetitions =} \CommentTok{###,  #Number of simulations}
+                      \DataTypeTok{confidence_level =} \CommentTok{##)}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3332,7 +3351,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 \setcounter{enumi}{20}
 \tightlist
 \item
-  If we had data on 45 La Nina years and 47 El Nino years and found a similar summary statistic, what would happen to the p-value? The width of the confidence interval? The power?
+  If we had data on 45 La Ni\~{n}a years and 47 El Ni\~{n}o years and found a similar summary statistic, what would happen to the p-value? The width of the confidence interval? The power?
 \end{enumerate}
 
 \vspace{1in}
@@ -3459,6 +3478,8 @@ The variables in this dataset consist of the following:
 \vspace{1in}
 
 If you indicated there are potential outliers, which points are they?
+
+\vspace{0.5in}
 
 \hypertarget{conditions-for-the-least-squares-line}{%
 \subsection{Conditions for the least squares line}\label{conditions-for-the-least-squares-line}}
@@ -3707,7 +3728,8 @@ The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df.
        \DataTypeTok{y =} \StringTok{"Speed (sec/peg)"}\NormalTok{,  }\CommentTok{#Label y-axis}
        \DataTypeTok{legend =} \StringTok{"Dominant hand"}\NormalTok{,  }\CommentTok{#Label your legend}
        \DataTypeTok{title =} \StringTok{"Scatterplot of Age vs. Speed"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{#Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{#Add regression line}
+\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{#Add regression line}
+\StringTok{  }\KeywordTok{scale_color_grey}\NormalTok{() }\CommentTok{#Make greyscale for printing }
 \end{Highlighting}
 \end{Shaded}
 

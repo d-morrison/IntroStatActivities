@@ -78,6 +78,8 @@ The variables in this dataset consist of the following:
 
 If you indicated there are potential outliers, which points are they?
 
+\vspace{0.5in}
+
 ### Conditions for the least squares line
 
 When performing inference on a least squares line, the follow conditions are generally required
@@ -210,7 +212,8 @@ ggplot(data = hands,   #This is the data set
        y = "Speed (sec/peg)",  #Label y-axis
        legend = "Dominant hand",  #Label your legend
        title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
-  geom_smooth(method = "lm", se = FALSE)  #Add regression line
+  geom_smooth(method = "lm", se = FALSE) +  #Add regression line
+  scale_color_grey() #Make greyscale for printing 
 ```
 
 
