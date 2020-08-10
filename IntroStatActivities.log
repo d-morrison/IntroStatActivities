@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.8.9)  9 AUG 2020 22:41
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.8.9)  9 AUG 2020 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1082,63 +1082,60 @@ Activity 1.
 Activity 2.
 [5
 
-] [6] [7]
-File: images/ScopeOfInference.png Graphic file (type bmp)
-<images/ScopeOfInference.png>
-[8] [9]
+]
 Activity 3.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 383.
-[10
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 193.
+[6
 
 ]
 Activity 4.
-[11
+[7
 
 ]
 Activity 5.
-[12
+[8
 
 ]
 Activity 6.
-[13
+[9
 
 ]
 Activity 7.
-[14
+[10
 
 ]
 Activity 8.
-[15
+[11
 
 ]
 Activity 9.
-[16
+[12
 
 ]
 Activity 10.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 642.
-[17
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 452.
+[13
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 642.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 452.
 (./IntroStatActivities.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 642.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 642.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 452.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 452.
 Package rerunfilecheck Info: File `IntroStatActivities.out' has not changed.
 (rerunfilecheck)             Checksum: 5B6FB08A936349F10AD2528D15E741D3;1984.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 642.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 452.
  ) 
 Here is how much of TeX's memory you used:
- 17705 strings out of 481691
- 312621 string characters out of 5931754
- 729059 words of memory out of 5000000
- 34585 multiletter control sequences out of 15000+600000
+ 17690 strings out of 481691
+ 312311 string characters out of 5931754
+ 727037 words of memory out of 5000000
+ 34575 multiletter control sequences out of 15000+600000
  538670 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 52i,5n,118p,913b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,5n,118p,913b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on IntroStatActivities.pdf (18 pages).
+Output written on IntroStatActivities.pdf (14 pages).

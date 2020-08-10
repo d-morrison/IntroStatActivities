@@ -18,14 +18,16 @@
 In today's activity, we will review summary measures and plots for quantitative variables.  Some terms covered in this activity are:
 
 * Two measures of center: mean, median
+
 * Two measures of spread (variability): standard deviation, inter-quartile range (IQR)
+
 * Types of graphs: boxplots, dot plots, histograms
 
 To review these concepts see Section 2.3 in the textbook.
 
 ## Movies released in 2016
 
-A data set was collected on Movies released since 1916 to 2016.  Here is a list of some of the variables collected on these movies.
+A data set was collected on movies released in 2016.  Here is a list of some of the variables collected on these movies.
 
 * Year: Year the movie was released
 
