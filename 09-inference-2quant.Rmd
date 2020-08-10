@@ -168,13 +168,13 @@ two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
 
 
 
-18. Interpret the interval you calculated in Question 17. 
+18. Interpret the interval you calculated in question 17. 
 
 \vspace{1in}
 
 ### Communicate the results and answer the research question {-}
 
-19.  Write a paragraph summarizing the results of the study.  Be sure to include:
+19.  Write a paragraph summarizing the results of the study.  Be sure to describe:
 
 * Summary statistic
 

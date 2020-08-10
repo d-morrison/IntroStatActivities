@@ -30,7 +30,7 @@ Physical therapists often evaluate manual (hand) dexterity by having patients co
 The variables in this data set^[Data source: Hand Dexterity in Children: Administration and Normative Values of the Functional Dexterity Test (FDT), Gogola, G., et al., 2013] consist of the following:
 
 | **Variable** 	| **Description** |
-|----	|-------------	|
+|---	|-------------	|
 | `time` | Recorded time to flip all 16 pegs (seconds) |
 | `speed` | Average speed to flip a peg for each participant (seconds per peg)|
 | `age` | Age of the participants (years)|
@@ -83,11 +83,11 @@ hands <- # Write over original data with the following
     ```
 \vspace{2in}
 
-4. Describe the features of the plot you created in Question 3.
+4. Describe the features of the plot you created in question 3.  
 
 \vspace{1in}
 
-    If you indicated there are potential outliers, which points are they?
+|        If you indicated there are potential outliers, which points are they?
 
 \vspace{0.5in}
 
@@ -108,7 +108,7 @@ The scatterplot and the residual plots will be used to assess the conditions for
 
 \begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
-5. Are the conditions met to approximate the $t$-distribution?
+5. Are the conditions met to approximate to use the $t$-distribution to approximate the sampling distribution of our test statistic?
 
 \vspace{1in}
 
@@ -202,7 +202,7 @@ qt(0.95+0.025, 172) #95% t* multiplier
 
 \vspace{1in}
 
-19.  Summarize the results of the study in a written paragraph.  Be sure to include.
+19.  Summarize the results of the study in a written paragraph.  Be sure to describe:
 
 * Summary statistic
 
@@ -218,6 +218,7 @@ qt(0.95+0.025, 172) #95% t* multiplier
 
 \vspace{3in}
 
+\newpage
 
 ### Revisit and look forward {-}
 
@@ -241,7 +242,7 @@ qt(0.95+0.025, 172) #95% t* multiplier
     \begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-6-1} \end{center}
 
 
-
+\vspace{1in}
 ## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.

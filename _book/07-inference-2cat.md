@@ -259,7 +259,7 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 
 \vspace{1in}
 
-25. Write a paragraph summarizing the results of the study.  Be sure to include:
+25. Write a paragraph summarizing the results of the study.  Be sure to describe:
 
 * Summary statistic
 

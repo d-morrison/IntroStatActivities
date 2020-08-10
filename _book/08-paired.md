@@ -33,6 +33,9 @@ To review these concepts, see Section 6.2 in the textbook.
 
 In June 2020, the social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 appeared to help 'flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured below which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants. 
 
+Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015 - 2019). Note that higher AQI scores indicate worse air quality.
+
+
 \begin{figure}
 
 {\centering \includegraphics[width=0.6\linewidth]{images/air_pollution_greyscale} 
@@ -42,12 +45,14 @@ In June 2020, the social distancing efforts and stay-at-home directives to help 
 \caption{The India Gate in New Delhi, India}(\#fig:unnamed-chunk-1)
 \end{figure}
 
-Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015 - 2019). Note that higher AQI scores indicate worse air quality.
+\vspace{.05in}
 
 
 
 
+\begin{center}\includegraphics[width=0.6\linewidth]{08-paired_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
+\vspace{.1in}
 
 |               |         Mean         | Standard deviation | Sample size |
 |:-------------:|:--------------------:|--------------------|-------------|
@@ -127,7 +132,7 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 ```
     
 
-13. Sketch the null distribution created in Question 12 here.
+13. Sketch the null distribution created in question 12 here.
 
 \vspace{2in}
 
@@ -177,13 +182,14 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 
 \vspace{.8in}
 
-21. Do the results of your confidence interval and hypothesis test agree?  What does each tell you about the null hypothesis?
-
-\vspace{1in}
-
 \newpage
 
-22.  Write a paragraph summarizes the results of this study.  Be sure to include:
+21. Do the results of your confidence interval and hypothesis test agree?  What does each tell you about the null hypothesis?
+
+\vspace{.7in}
+
+
+22.  Write a paragraph summarizes the results of this study.  Be sure to describe:
 
 * Summary statistic
 
@@ -200,7 +206,7 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 ### Revisit and look forward {-}
 
 23. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
-\vspace{1in}
+\vspace{0.6in}
 
 
 ## Additional notes
