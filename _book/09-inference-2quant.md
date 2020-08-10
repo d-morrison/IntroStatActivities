@@ -24,7 +24,7 @@ In today's activity, we will use simulation-based methods to analyze two indepen
 
 * Difference in means
 
-To review these concepts see Section 6.3 in the textbook.
+To review these concepts, see Section 6.3 in the textbook.
 
 ## Weather Patterns and Record snowfall
 

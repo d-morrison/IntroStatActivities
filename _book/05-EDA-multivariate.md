@@ -29,9 +29,9 @@ In today's activity, we will review summary measures and plots for two quantitat
 
 * Least-squares line of regression
 
-* Coefficient of determination (r-squared)
+* Coefficient of determination ($r$-squared)
 
-To review these concepts see Chapter 3 in the textbook.  
+To review these concepts, see Chapter 3 in the textbook.  
 
 ## Movies released in 2016
 
@@ -84,19 +84,21 @@ ggplot(data = movies,   #This is the data set
 
 * Form (linear, non-linear)
 
-\vspace{.5in}
+\vspace{.4in}
 
 * Direction (positive, negative)
 
-\vspace{.5in}
+\vspace{.4in}
 
 * Strength
 
-\vspace{.5in}
+\vspace{.4in}
 
 * Unusual observations or outliers
 
-\vspace{.5in}
+\vspace{.4in}
+
+\newpage
 
 4. Does there appear to be an association between 'Budget' and 'Revenue'? Explain.
 
@@ -134,7 +136,7 @@ movies %>%
 
 5.  Using the output above, which two variables have the strongest correlation?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 6.  What is the value of correlation between 'Budget' and 'Revenue'?
 
@@ -142,15 +144,17 @@ movies %>%
 
 7.  Based on the value of correlation what would the sign of the slope be? Positive or negative?  Explain.
 
-\vspace{1in}
+\vspace{0.5in}
 
 8.  Does your answer to question 7 match the direction you choose in question 3?
 
-\vspace{0.3in}
+\vspace{0.2in}
 
 9.  Explain why the correlation values on the diagonal are equal to 1.
 
 \vspace{1in}
+
+\newpage
 
 ### Slope
 
@@ -171,17 +175,17 @@ summary(revenueLM)$coefficients # Display coefficient summary
 #> budget_mil   0.9236972  0.1418579 6.511426 1.806269e-08
 ```
 
-10.  Write out the least squares line using the summary statistics provided.
+10.  Write out the least squares line using the summary statistics provided in proper statistical notation.
 
-\vspace{1in}
+\vspace{.8in}
 
 11. Interpret the value of slope in context of the problem.
 
 \vspace{1in}
 
-12. Using the least squares line from Question 10, predict the revenue for a movie with a budget of 165 million.
+12. Using the least squares line from question 10, predict the revenue for a movie with a budget of 165 million.
 
-\vspace{1in}
+\vspace{.8in}
 
 ### Residuals
 
@@ -197,11 +201,13 @@ $e_i=y_i-\hat{y}_i$
 
 13.  The movie, *Independence Day: Resurgence*, had a budget of 165 million and revenue of 102.315 million.  Find the residual for this movie.
 
-\vspace{1in}
+\vspace{.8in}
 
 14.  Did the line of regression overestimate or underestimate the revenue for this movie? 
 
-\vspace{1in}
+\vspace{.2in}
+
+\newpage
 
 ### Coefficient of determination (squared correlation)
 
@@ -210,13 +216,12 @@ The coefficient of determination, $r^2$, can also be used to describe the streng
 
 15.  Use the correlation, $r$, to calculate the coefficient of determination between 'Budget' and 'Revenue', $r^2$.
 
-\vspace{1in}
+\vspace{.4in}
 
 16.  Interpret the coefficient of determination in context of the problem.
 
-\vspace{1in}
+\vspace{.6in}
 
-\newpage
 ### Multivariate plots
 What if we wanted to see if the relationship between 'Budget' and 'Revenue' differs if we add another variable into the picture?  The following plot visualized three variables, creating a **multivariate** plot. 
 

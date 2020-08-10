@@ -30,11 +30,11 @@ In today's activity, we will review summary measures and plots for categorical v
 
 * Two-way tables
 
-To review these concepts see Sections 2.1 and 2.2 in the textbook.  
+To review these concepts, see Sections 2.1 and 2.2 in the textbook.  
 
 \newpage
 ## "Current" Population Survey: 1985
-The data set we will use for this activity is from the Current Population Survey in 1985.  The CPS is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population.  The following table summarizes the data:
+The data set we will use for this activity is from the Current Population Survey (CPS) in 1985.  The CPS is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population.  The following table describes the variables in the data set:
 
 
 \begin{center}\includegraphics[width=0.7\linewidth]{images/cps} \end{center}
@@ -54,7 +54,7 @@ The data set we will use for this activity is from the Current Population Survey
 \vspace{0.5in}
 
 
-An important part of understanding data is to create visual pictures of what the data represent.  In this activity we will create graphical representations of categorical data.
+An important part of understanding data is to create visual pictures of what the data represent.  In this activity, we will create graphical representations of categorical data.
 
 ### `R` code
 
@@ -64,7 +64,7 @@ you would use in order to produce output or plots. These
 demonstrate how to read the data set into `R` using the `read.csv()` function, and tell `R` to treat the `sector` and `sex` variables as categorical variables ("factors").
 
 ```r
-cps <- read.csv("data/cps.csv") #This will read in the dataset
+cps <- read.csv("data/cps.csv") #This will read in the data set
 cps$sector <- factor(cps$sector) #When a variable is categorical, need to make it a factor
 cps$sex <- factor(cps$sex)
 ```
@@ -73,7 +73,7 @@ cps$sex <- factor(cps$sex)
 
 ### Displaying a single categorical variable
 
-If we wanted to know how many people in our data set were in each sector, we would create a bar plot of the variable sector.
+If we wanted to know how many people in our data set were in each sector, we would create a frequency bar plot of the variable `sector`.
 
 
 
@@ -90,11 +90,11 @@ ggplot(data = cps,   #This specifies the dataset
 
 
 \begin{center}\includegraphics[width=0.5\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-3-1} \end{center}
-4.  Which Sector has the largest number of people in it?
+4.  Which sector of the economy has the largest number of people in it? Approximately how many people are in this sector?
 
 \vspace{0.3in}
 
-We could also choose to display the data as a proportion in a relative frequency bar plot. To find the relative frequency divide the count in each sector by the sample size.  These are sample proportions. 
+We could also choose to display the data as a proportion in a relative frequency bar plot. To find the relative frequency, divide the count in each sector by the sample size.  These are sample proportions. 
 
 ```r
 ggplot(data = cps,   #This specifies the dataset
@@ -115,7 +115,7 @@ ggplot(data = cps,   #This specifies the dataset
 
 ### Displaying two categorical variables
 
-To see the differences in proportion of each sector between males and females we would create a segmented bar plot of sector segmented by sex.
+To examine the differences proportion of males and females across sectors, we would create a segmented bar plot of `sector` segmented by `sex`.
 
 
 ```r
@@ -140,32 +140,34 @@ ggplot(data = cps,   #This specifies the dataset
 
 \vspace{0.5in}
 
-8. Which variable is the explanatory variable?  Which is the response variable?
+8. Which variable is the bar plot treating as the explanatory variable?  Which is the response variable?
 
 \newpage
 
 ## Probability 
 
-9. A study was reported in which ninth grade Minnesota teens were asked whether they had gambled at least once a week in the past year.  The sample consisted of 49.1% boys.  The proportion of boys who had gambled at least once per week during the past year was 0.229, while among non-boys this proportion was only 0.045.  
+9. A study was reported in which ninth grade Minnesota teens were asked whether they had gambled at least once a week in the past year.  The sample consisted of 49.1% boys.  The proportion of boys who had gambled at least once per week during the past year was 0.229, while among non-boys this proportion was only 0.045. 
+\vspace{1mm}
+
     Let B = the event the person is a boy, and C = the event the person is a weekly gambler.
 \vspace{0.1in}
 
-a. Draw a segmented bar plot of sex segmented by gambling.
-\vspace{2in}
+a. Draw a segmented bar plot of sex segmented by gambling. Make sure to clearly label your axes and legend.
+\vspace{1.8in}
 
-b. Identify what each numerical value represents in probability notation.
+b. Identify what each numerical value given in the problem represents in probability notation.
 \vspace{.1in}
 
 |                 0.491 =  
- \vspace{.2in}
+ \vspace{.1in}
  
 |                 0.229 =  
-\vspace{.2in}
+\vspace{.1in}
 
 |                 0.045 =  
-\vspace{.2in}
+\vspace{.1in}
 
-c. Create a two-way hypothetical table to represent the situation.  Recall that in a two-way table, the explanatory variable should be your column headers (similar to the x-axis in a segmented bar graph!) while the response variable becomes the row headers.
+c. Create a hypothetical two-way table to represent the situation.  Recall that in a two-way table, the explanatory variable should be your column headers (similar to the $x$-axis in a segmented bar graph!) while the response variable becomes the row headers.
 
 | \hspace{1in}      |\hspace{1in}     |\hspace{1in}     | Total        |
 |-------|---|---|---------|
@@ -175,31 +177,34 @@ c. Create a two-way hypothetical table to represent the situation.  Recall that 
 | Total |   |   | 100,000 |
 
 d. Find $P(\mbox{B and C})$. What does this probability represent in the context of the problem?
-\vspace{1in}
+\vspace{.8in}
 
 e. Find the probability that a selected non-gambler is a non-boy. What is the notation used for this probability?
 
 \newpage
 
-10. In a computer store, 30% of the computers in stock are laptops and 70% are desktops.  Five percent of the laptops are on sale, while 10% of the desktops are on sale.  Let L = the event the computer is a laptop, and S = the event the computer is on sale.
+10. In a computer store, 30% of the computers in stock are laptops and 70% are desktops.  Five percent of the laptops are on sale, while 10% of the desktops are on sale.
+\vspace{1mm}
+
+    Let L = the event the computer is a laptop, and S = the event the computer is on sale.
 \vspace{0.1in}
 
-   a. Identify what each numerical value represents in probability notation.
+   a. Identify what each numerical value given in the problem represents in probability notation.
 \vspace{.1in}
 
 |                 0.30 =  
- \vspace{.2in}
+ \vspace{.1in}
  
 |                 0.70 =  
-\vspace{.2in}
+\vspace{.1in}
 
 |                 0.05 =  
-\vspace{.2in}
+\vspace{.1in}
 
 |                 0.10 =  
-\vspace{.2in}
+\vspace{.1in}
 
-   b. Create a two-way table to represent the situation.
+   b. Create a hypothetical two-way table to represent the situation.
 
 | \hspace{1in}      |\hspace{1in}     |\hspace{1in}     | Total        |
 |-------|---|---|---------|
@@ -209,7 +214,7 @@ e. Find the probability that a selected non-gambler is a non-boy. What is the no
 | Total |   |   | 100,000 |
 
    c. Calculate the probability that a randomly selected computer will be a desktop, given that the computer is on sale. What is the notation used for this probability?
-\vspace{1in}
+\vspace{.8in}
 
 
    d. Find $P(S | L^C)$. What does this probability represent in context of the problem?

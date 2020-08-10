@@ -23,7 +23,7 @@ In today's activity, we will review summary measures and plots for quantitative 
 
 * Types of graphs: boxplots, dot plots, histograms
 
-To review these concepts see Section 2.3 in the textbook.
+To review these concepts, see Section 2.3 in the textbook.
 
 ## Movies released in 2016
 
@@ -47,7 +47,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 \newpage
 
-## Vocabulary review
+### Vocabulary review
 
 1. What are the observational units in this data set?
 
@@ -63,7 +63,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 
 
-## Summarizing a single quantitative variable
+### Summarizing a single quantitative variable
 
 The `favstats` function gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable 'IMDb'.
 
@@ -86,7 +86,7 @@ favstats(movies$imdb_score)  # [data set name]$[variable name]
 6. Report the value of the standard deviation and interpret this value in context of the problem.
 \vspace{1in}
 
-## Displaying a single quantitative variable
+### Displaying a single quantitative variable
 
 7. What are the three types of plots used to plot a single quantitative variable?
 
@@ -133,7 +133,7 @@ The boxplot is created using the five number summary:
 
 \newpage
 
-## Displaying a single categorical and single quantitative variable
+### Displaying a single categorical and single quantitative variable
 
 The boxplot of 'Budget' in millions by 'Content rating' is plotted using the code below.  This plot helps to compare the budget for different levels of content rating.
 
