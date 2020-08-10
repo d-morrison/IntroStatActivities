@@ -40,7 +40,7 @@ In today's activity, we will use theory-based methods to analyze two categorical
 
 * Decisions
 
-To review these concepts see Chapter 5 in your textbook.
+To review these concepts, see Chapter 5 in your textbook.
 
 \newpage
 

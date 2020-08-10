@@ -33,7 +33,7 @@ In today's activity, we will introduce simulation hypothesis testing and confide
 
 * Confidence interval
 
-To review these concepts see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
+To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
 ## Steps of the statistical investigation process
 

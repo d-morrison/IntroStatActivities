@@ -21,7 +21,7 @@ In today's activity, we will use theory-based tests of inference for regression 
 
 * Regression line
 
-To review these concepts see Chapters 3 and 7 in the textbook.
+To review these concepts, see Chapters 3 and 7 in the textbook.
 
 ## Hand dexterity
 
