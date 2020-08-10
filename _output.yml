@@ -5,7 +5,7 @@ bookdown::pdf_book:
   citation_package: natbib
   keep_tex: yes
   highlight: tango
-  toc: true
+  toc: false
   toc_depth: 1
   number_sections: true
   split_by: chapter

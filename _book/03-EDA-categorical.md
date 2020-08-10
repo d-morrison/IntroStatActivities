@@ -36,8 +36,18 @@ To review these concepts, see Sections 2.1 and 2.2 in the textbook.
 ## "Current" Population Survey: 1985
 The data set we will use for this activity is from the Current Population Survey (CPS) in 1985.  The CPS is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population.  The following table describes the variables in the data set:
 
-
-\begin{center}\includegraphics[width=0.7\linewidth]{images/cps} \end{center}
+| **Variable**  	| **Description**                                                                                                            	|
+|-----------	|------------------------------------------------------------------------------------------------------------------------	|
+| `educ`    	| Number of years of education                                                                                           	|
+| `south`   	| Whether lives in southern region of the US: `S` = lives in south, `NS` = does not live in south                        	|
+| `sex`     	| Sex: `M` = male, `F` = female                                                                                          	|
+| `exper`   	| Number of years of work experience (inferred from age and education)                                                   	|
+| `union`   	| Whether union member: `Union` or `Not`                                                                                 	|
+| `wage`    	| Wage (dollars per hour)                                                                                                	|
+| `age`     	| Age (years)                                                                                                            	|
+| `race`    	| Race: `W` = white, `NW` = not white                                                                                    	|
+| `sector`  	| Sector of the economy: `clerical`, `const` (construction),  `management`, `manufacturing`, `professional`, `sales`, `service`, `other` 	|
+| `married` 	| Marital status: `Married` or `Single`                                                                                  	|
 
 ### Vocabulary review
 
@@ -83,7 +93,7 @@ If we wanted to know how many people in our data set were in each sector, we wou
 
 
 ```r
-ggplot(data = cps,   #This specifies the dataset
+ggplot(data = cps,   #This specifies the data set
        aes(y = sector)) +   #This specifies the variable
   geom_bar(stat = "count") +  #Tell it to make a bar plot
   labs(title = "Frequency Bar Plot of Sector",  #Give your plot a title
@@ -94,7 +104,7 @@ ggplot(data = cps,   #This specifies the dataset
 
 
 
-\begin{center}\includegraphics[width=0.5\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-3-1} \end{center}
+\begin{center}\includegraphics[width=0.5\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-2-1} \end{center}
 4.  Which sector of the economy has the largest number of people in it? Approximately how many people are in this sector?
 
 \vspace{0.3in}
@@ -102,7 +112,7 @@ ggplot(data = cps,   #This specifies the dataset
 We could also choose to display the data as a proportion in a relative frequency bar plot. To find the relative frequency, divide the count in each sector by the sample size.  These are sample proportions. 
 
 ```r
-ggplot(data = cps,   #This specifies the dataset
+ggplot(data = cps,   #This specifies the data set
        aes(x = sector)) +   #This specifies the variable
   geom_bar(aes(y = ..prop.., group = 1)) +  #Tell it to make a bar plot with proportions
   labs(title = "Relative Frequency Bar Plot of Sector",  #Give your plot a title
@@ -112,7 +122,7 @@ ggplot(data = cps,   #This specifies the dataset
 
 
 
-\begin{center}\includegraphics[width=0.5\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-4-1} \end{center}
+\begin{center}\includegraphics[width=0.5\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
 5.  Which features in the relative frequency bar plot are the same as the frequency bar plot?  Which are different?
 
@@ -124,7 +134,7 @@ To examine the differences proportion of males and females across sectors, we wo
 
 
 ```r
-ggplot(data = cps,   #This specifies the dataset
+ggplot(data = cps,   #This specifies the data set
        aes(x = sector, fill = sex)) +   #This specifies the variables
   geom_bar(stat = "count", position = "fill") +  #Tell it to make a stacked bar plot
   labs(title = "Segmented Bar Plot of Sector by Sex",  #Make sure to title your plot 
@@ -135,7 +145,7 @@ ggplot(data = cps,   #This specifies the dataset
 
 
 
-\begin{center}\includegraphics[width=0.6\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-5-1} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
 6.  Using the segmented bar plot, which sector has about the same proportion of males and females?
 

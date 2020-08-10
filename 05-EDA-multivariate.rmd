@@ -1,18 +1,5 @@
 # Movie Profits
 
-```{r echo=F, fig.height=4}
-movies <- read.csv("data/Movies.csv") #reads in data
-movies$content_rating <- factor(movies$content_rating) 
-rating <- c("PG", "PG-13", "R") #chooses levels of a variable
-movies <- movies[movies$content_rating %in% rating,]
-movies$content_rating <- factor(movies$content_rating)
-movies$title_year <- factor(movies$title_year)
-year <- c("2016") #chooses a single year
-movies <- movies[movies$title_year %in% year,]
-movies$title_year <- factor(movies$title_year)
-movies <- na.omit(movies) #removes mising values
-```
-
 ## Learning objectives
 
 * Identify and create appropriate summary statistics and plots
@@ -76,6 +63,7 @@ We will revisit the data set used last week collected on Movies released in 2016
 We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. This shows a scatterplot of 'Budget' as a predictor of 'Revenue' (note: both variables are measures in "millions of dollars").  
 
 ```{r echo=t, fig.height=5,fig.width=12, message = FALSE}
+movies <- read.csv("data/Movies2016.csv") #Reads in data set
 ggplot(data = movies,   #This is the data set
        aes(x = budget_mil, y = revenue_mil))+  #Specify variables
   geom_point() +  #Add scatterplot of points

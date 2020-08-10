@@ -157,6 +157,7 @@ For the next exercises, identify the explanatory variable, the response variable
 \vspace{0.5in}
 
 \newpage
+
 7. In another study, a local health department randomly selected 1000 US adults without COVID-19 to participate in a health survey.  Each participant was assessed at the beginning of the study and then followed for one year.  They were interested to see which participants elected to receive a vaccination for COVID-19 and whether any participants developed COVID-19.
 \vspace{0.1in}
     

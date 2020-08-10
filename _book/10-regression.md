@@ -13,7 +13,7 @@
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
 ## Terminology review
-In today's activity, we will use theory-based tests of inference for regression slope. Some terms covered in this activity are:
+In today's activity, we will use theory-based hypothesis tests and confidence intervals for a linear regression slope. Some terms covered in this activity are:
 
 * Correlation
 
