@@ -34,6 +34,8 @@ In today's activity, we will use theory-based methods to analyze two categorical
 
 * Standard normal distribution
 
+* Independence and Success-Failure conditions
+
 * Type 1 and Type 2 errors
 
 * Decisions
@@ -201,10 +203,10 @@ where the standard error is calculated using the pooled proportion of successes.
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided R markdown file and enter the value of the test statistic at xxx.
+We will use the pnorm function in `R` to find the p-value. Use the provided R markdown file and enter the value of the test statistic at xx.
 
 ```{r, echo=TRUE, eval=FALSE}
-    pnorm(xxx #enter value of test statistic
+    pnorm(xx #enter value of test statistic
       , m=0, s=1 #using the standard normal mean = 0, sd = 1
       , lower.tail=TRUE) # gives a p-value less than the test statistic
 ```
@@ -225,7 +227,7 @@ To find a confidence interval for the difference in proportions we will add and 
  
 Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval!  Here, use the sample proportions for each group to calculate the standard error for the difference in proportions.
 
-The $z^*$ multiplier is found under the normal distribution. We find the values that encompass the middle 95% of the data.
+The $z^*$ multiplier is found under the Standard normal distribution. We find the values that encompass the middle 95% of the distribution.  If 95\% of the Standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail.  The qnorm function in `R` will tell us the $z^*$ value for the desired percentile (in this case, 0.95 + 0.025, 97.5\% percentile). 
 
 ```{r, echo=TRUE, collapse=FALSE}
 qnorm(0.95 + 0.025) #multiplier for 95% confidence interval
@@ -265,10 +267,11 @@ qnorm(0.95 + 0.025) #multiplier for 95% confidence interval
 
 Hypothesis tests are not flawless. In a hypothesis test, there are two competing hypotheses: the null and alternative. We make a decision about which might be true, but we may choose incorrectly.  
 
-|       |            | Test Conclusion |                |
-|:-----:|:----------:|-----------------|----------------|
-| Truth | $H_0$ true |  good decision  |  Type 1 Error  |
-|       | $H_A$ true |  Type 2 Error   |  good decision |
+|       |            | Test Conclusion |                     |
+|       |            | Reject $H_0$    | Fail to reject $H_0$|
+|:-----:|:----------:|-----------------|---------------------|
+| Truth | $H_0$ true |  good decision  |  Type 1 Error       |
+|       | $H_A$ true |  Type 2 Error   |  good decision      |
 
 A Type 1 Error is rejecting the null hypothesis when $H_0$ is actually true. A Type 2 Error is failing to reject the null hypothesis when the alternative is actually true.
 
