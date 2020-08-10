@@ -40,7 +40,7 @@ In today's activity, we will review summary measures and plots for two quantitat
 
 * Least-squares line of regression
 
-* Coefficient of determination (R-squared)
+* Coefficient of determination (r-squared)
 
 To review these concepts see Chapter 3 in the textbook.  
 
@@ -186,13 +186,12 @@ $e_i=y_i-\hat{y}_i$
 
 \vspace{1in}
 
-### Coefficient of determination (R-squared)
+### Coefficient of determination (squared correlation)
 
-The coefficient of determination, $R^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $R^2$ describes the amount of variation in the response that is explained by the least squares line with the explanatory variable.  
+The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $r^2$ measures the proportion of variation in the response that is explained by the least squares line with the explanatory variable.  
 
-***SHOULD WE GIVE STUDENTS AN EQUATION TO USE HERE?***
 
-15.  Calculate the coefficient of determination between 'Budget' and 'Revenue'.
+15.  Use the correlation, $r$, to calculate the coefficient of determination between 'Budget' and 'Revenue', $r^2$.
 
 \vspace{1in}
 
