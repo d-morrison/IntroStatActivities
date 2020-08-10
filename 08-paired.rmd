@@ -11,6 +11,8 @@
 
 * Find a confidence interval for the mean difference using bootstrapping
 
+* Interpret a confidence interval
+
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
 ## Terminology review
@@ -295,9 +297,15 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 
 20. Interpret the 99% confidence interval in the context of the problem.
 
+\vspace{1in}
+
+21. Do the results of your confidence interval and hypothesis test agree?  What does each tell you about the null hypothesis?
+
+\vspace{1in}
+
 \newpage
 
-21.  Write a paragraph summarizes the results of this study.  Be sure to include:
+22.  Write a paragraph summarizes the results of this study.  Be sure to include:
 
 * Summary statistic
 
@@ -313,7 +321,7 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 
 ### Revisit and look forward
 
-22. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
+23. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
 \vspace{1in}
 
 
