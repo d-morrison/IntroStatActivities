@@ -97,7 +97,7 @@ The proportion in question 6 is called a **summary statistic**---a single value 
 
 Looking at the data set and the summary statistics is only one way to display the data.  We will also want to create a visualization or picture of the data. A **frequency bar plot** is used to display categorical data as a count or frequency. Since our variable has two levels, correct or incorrect, we will create two bars---one for each level.
 
-7. Plot the observed class data using a frequency bar plot. 
+7. Plot the observed class data using a frequency bar plot. Be sure to add a scale to the y-axis.
 
 
 \begin{center}\includegraphics[width=0.4\linewidth]{images/barplot_martian} \end{center}
@@ -105,7 +105,7 @@ Looking at the data set and the summary statistics is only one way to display th
 We can also visualize the data as a proportion in a **relative frequency bar plot**.  Relative frequency is the proportion calculated for each level of the categorical variable. 
 
 
-8. Plot the observed class data using a relative frequency bar plot.
+8. Plot the observed class data using a relative frequency bar plot. Be sure to add a scale to the y-axis.
 
 
 \begin{center}\includegraphics[width=0.4\linewidth]{images/relative_barplot_martian} \end{center}
