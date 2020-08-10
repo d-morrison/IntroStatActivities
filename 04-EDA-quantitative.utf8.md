@@ -59,26 +59,17 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 \vspace{.5in}
 
-```{r echo=F, fig.height=4}
-par(mfrow=c(1,2))
-movies <- read.csv("data/Movies.csv") #reads in data
-movies$content_rating <- factor(movies$content_rating)
-rating <- c("PG", "PG-13", "R")
-movies <- movies[movies$content_rating %in% rating,]
-movies$content_rating <- factor(movies$content_rating)
-movies$title_year <- factor(movies$title_year)
-year <- c("2016")
-movies <- movies[movies$title_year %in% year,]
-movies$title_year <- factor(movies$title_year)
-movies <- na.omit(movies)
-```
+
 
 ### Summarizing a single quantitative variable
 
 The `favstats` function gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable 'IMDb'.
 
-```{r, echo=TRUE}
+
+```r
 favstats(movies$imdb_score)  # [data set name]$[variable name]
+#>  min  Q1 median  Q3 max     mean        sd  n missing
+#>  3.4 5.9    6.6 7.1 8.2 6.459016 0.9218418 61       0
 ```
 
 
@@ -101,7 +92,8 @@ favstats(movies$imdb_score)  # [data set name]$[variable name]
 
 A histogram of the variable 'IMDb Score' is shown below.  Notice that the bin width is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score of 4.75 will fall into the bin for 4.75 - 5.25.  Visually this shows us the range of IMDb scores for Movies released in 2016.
 
-```{r, out.width="60%", echo=TRUE}
+
+```r
 ggplot(data = movies,   #Name data set
        aes(x = imdb_score)) +   #Name variable to plot
   geom_histogram(binwidth = 0.5) +  #Create histogram with specified binwidth
@@ -109,6 +101,10 @@ ggplot(data = movies,   #Name data set
        x = "IMDb Score", #Label for x axis
        y = "Frequency") #Label for y axis
 ```
+
+
+
+\begin{center}\includegraphics[width=0.6\linewidth]{04-EDA-quantitative_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
 
 8. Which range of IMDb scores have the highest frequency?
@@ -139,7 +135,8 @@ The boxplot is created using the five number summary:
 
 The boxplot of 'Budget' in millions by 'Content rating' is plotted using the code below.  This plot helps to compare the budget for different levels of content rating.
 
-```{r, out.width="60%", echo=TRUE}
+
+```r
 ggplot(data = movies,  #Data set
        aes(y = budget_mil, x = content_rating))+  #Identify variables
   geom_boxplot()+  #Tell it to make a boxplot
@@ -147,6 +144,10 @@ ggplot(data = movies,  #Data set
         x = "Content Rating",    #x-axis label
        y = "Budget (in Millions)")  #y-axis label
 ```
+
+
+
+\begin{center}\includegraphics[width=0.6\linewidth]{04-EDA-quantitative_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
 11. Answer the following questions about the boxplots above.
 
