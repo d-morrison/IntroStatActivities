@@ -158,12 +158,6 @@ movies %>%
 
 The linear model function in R gives us the summary for the least squares regression line.  The estimate for (Intercept) is the y-intercept for the line of least squares and the estimate for budget_mil is the value of $b_1$, the slope.
 
-You may remember from middle and high school that slope $=\frac{\mbox{rise}}{\mbox{run}}$.  
-
-Using $b_1$ to represent slope, we can write that as the fraction $\frac{b_1}{1}$. 
-
-Therefore, the slope predicts the how much the line will *rise* for each *run* of +1. In other words, as the x variable increases by 1 unit, the y variable is expected to change (increase/decrease) by the value of slope.
-
 
 ```r
 # Fit linear model: y ~ x
@@ -176,6 +170,13 @@ summary(revenueLM)$coefficients # Display coefficient summary
 #> (Intercept) 20.0362329 14.3458255 1.396659 1.677479e-01
 #> budget_mil   0.9236972  0.1418579 6.511426 1.806269e-08
 ```
+
+You may remember from middle and high school that slope $=\frac{\mbox{rise}}{\mbox{run}}$.  
+
+Using $b_1$ to represent slope, we can write that as the fraction $\frac{b_1}{1}$. 
+
+Therefore, the slope predicts the how much the line will *rise* for each *run* of +1. In other words, as the x variable increases by 1 unit, the y variable is expected to change (increase/decrease) by the value of slope.
+
 
 10.  Write out the least squares line using the summary statistics provided in proper statistical notation.
 
