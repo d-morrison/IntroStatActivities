@@ -37,8 +37,6 @@ To review these concepts, see Chapter 3 in the textbook.
 
 We will revisit the data set used last week collected on Movies released in 2016. Here is a reminder of the variables collected on these movies.
 
-* Year: Year the movie was released
-
 * Budget: The amount of money (in US $ millions) budgeted for the production of the movie
 
 * Revenue: The amount of money (in US $ millions) the movie made after release
