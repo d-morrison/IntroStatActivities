@@ -1,4 +1,4 @@
-# IMDb Movie Reviews: Part II
+# Movie Profits
 
 ```{r echo=F, fig.height=4}
 movies <- read.csv("data/Movies.csv") #reads in data
@@ -200,7 +200,7 @@ The coefficient of determination, $R^2$, can also be used to describe the streng
 
 \newpage
 ### Multivariate plots
-In the next plot we are graphing three variables. 
+What is wanted to see if the relationship between 'Budget' and 'Revenue' differs if we add another variable into the picture?  The following plot visualized three variables, creating a multivariate plot. 
 
 ```{r echo=TRUE, fig.height=5,fig.width=12, message = FALSE}
 ggplot(data = movies,   #This is the data set
