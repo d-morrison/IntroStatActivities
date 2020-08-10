@@ -74,10 +74,11 @@ access a version of `R` on your laptop, or plan to use the school computers for 
 Throughout these activities, we will often include the `R` code
 you would use in order to produce output or plots. These
 "code chunks" appear in gray. In the code chunk below, we
-demonstrate how to read the data set into `R` using the `read.csv()` function, and tell `R` to treat the `sector` and `sex` variables as categorical variables ("factors").
+demonstrate how to read the data set into `R` using the `read.csv()` function.
 
 The \# sign is not part of the `R` code. 
 It is used by these authors to add comments to the `R` code and explain what each call is telling the program to do.
+`R` will ignore everything after a \# sign when executing the code.
 ```{r, echo=TRUE}
 cps <- read.csv("data/cps.csv") #This will read in the data set
 ```

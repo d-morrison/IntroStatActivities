@@ -9,12 +9,14 @@ documentclass: report
 description: This is the coursepack of in-class activities for STAT 216 Fall 2020.
 ---
 
+<!-- Comment out next three lines to remove blank page after title page -->
 \newpage
 \thispagestyle{empty}
 \mbox{}
 
 \setcounter{tocdepth}{0}
 \tableofcontents
+\setcounter{page}{1}
 
 \newpage
 # Preface {-}
