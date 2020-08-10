@@ -35,7 +35,7 @@ To review these concepts see Chapter 3 in the textbook.
 
 ## Movies released in 2016
 
-We will revisit the data set used last week collected on Movies released since 1916 to 2016. Here is a reminder of the variables collected on these movies.
+We will revisit the data set used last week collected on Movies released in 2016. Here is a reminder of the variables collected on these movies.
 
 * Year: Year the movie was released
 
@@ -64,7 +64,7 @@ We will revisit the data set used last week collected on Movies released since 1
 
 \vspace{0.3in}
 
-We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. This shows a scatterplot of 'Budget' as a predictor of 'Revenue' (note: both variables are measures in "millions of dollars".  
+We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. This shows a scatterplot of 'Budget' as a predictor of 'Revenue' (note: both variables are measures in "millions of dollars").  
 
 
 ```r
@@ -207,6 +207,8 @@ $e_i=y_i-\hat{y}_i$
 
 The coefficient of determination, $R^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $R^2$ describes the amount of variation in the response that is explained by the least squares line with the explanatory variable.  
 
+***SHOULD WE GIVE STUDENTS AN EQUATION TO USE HERE?***
+
 15.  Calculate the coefficient of determination between 'Budget' and 'Revenue'.
 
 \vspace{1in}
@@ -217,7 +219,7 @@ The coefficient of determination, $R^2$, can also be used to describe the streng
 
 \newpage
 ### Multivariate plots
-What is wanted to see if the relationship between 'Budget' and 'Revenue' differs if we add another variable into the picture?  The following plot visualized three variables, creating a multivariate plot. 
+What if we wanted to see if the relationship between 'Budget' and 'Revenue' differs if we add another variable into the picture?  The following plot visualized three variables, creating a **multivariate** plot. 
 
 
 ```r
