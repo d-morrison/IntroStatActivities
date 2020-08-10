@@ -136,7 +136,7 @@ ggplot(data = cps,   #This specifies the dataset
     Let B = the event the person is a boy, and C = the event the person is a weekly gambler.
 \vspace{0.1in}
 
-a. Draw a segmented bar plot showing the proportion of gamblers between boys and non-boys.
+a. Draw a segmented bar plot of sex segmented by gambling.
 \vspace{2in}
 
 b. Identify what each numerical value represents in probability notation.
@@ -151,7 +151,7 @@ b. Identify what each numerical value represents in probability notation.
 |                 0.045 =  
 \vspace{.2in}
 
-c. Create a two-way hypothetical table to represent the situation.
+c. Create a two-way hypothetical table to represent the situation.  Recall that in a two-way table, the explanatory variable should be your column headers (similar to the x-axis in a segmented bar graph!) while the response variable becomes the row headers.
 
 | \hspace{1in}      |\hspace{1in}     |\hspace{1in}     | Total        |
 |-------|---|---|---------|
