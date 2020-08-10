@@ -101,11 +101,7 @@ injury %>% group_by(Helmet) %>% count(Injury)
 
 In this study we are looking at the relationship between two groups or two parameters ($\pi_1$ and $\pi_2$).  Remember we define the parameter for a categorical variable as the true proportion of observational units that are labeled as a "success" in the response variable.  
 
-7. What is the variable of interest in this study?
-
-\vspace{0.5in}
-
-8. Write the two parameters of interest for this study.  Let 1 = skier/snowboarder wore helmet, 2 = skier/snowboarder did not wear helmet.
+7. Write the two parameters of interest for this study.  Let 1 = skier/snowboarder wore helmet, 2 = skier/snowboarder did not wear helmet.
 
    $\pi_1$ - 
 \vspace{0.5in}
@@ -115,21 +111,21 @@ In this study we are looking at the relationship between two groups or two param
 
 When comparing two groups, we assume the two parameters are equal in the null hypothesis---there is no association between the variables.
 
-9.  Write the null hypothesis out in words using your answers to question 8.
+8.  Write the null hypothesis out in words using your answers to question 7.
 
 \vspace{1in}
 
-10.  What is the research question?
+9.  What is the research question?
 
 \vspace{1in}
 
-11. Based on the research question fill in the appropriate sign for the alternative hypothesis:
+10. Based on the research question fill in the appropriate sign for the alternative hypothesis ($<$, $>$, or $\neq$):
 \vspace{0.25in}
 
 |           $H_A: \pi_1 -\pi_2$ __________ 0
 
 
-
+\newpage 
 ### Summarize and visualize the data {-}
 
 ```{r echo=FALSE, fig.height=4}
@@ -140,26 +136,25 @@ ggplot(aes(x = Helmet, fill = Injury)) +   #This specifies the variables
        x = "___________________",   #Label the x axis
        y = "",  #Remove y axis label
        fill = "_____________") + #Change legend label
-  scale_fill_discrete(labels = c("_________", "_________")) +
+  scale_fill_discrete(labels = c("_________", "_________"), type=c("black","grey")) +
   scale_x_discrete(labels = c("_____________", "_____________")) +
-  scale_fill_grey()
-
+  theme_bw()
 ```
 
-12.  Fill in the blanks on the graph with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who use helmets and those who do not use helmets.  *Hint*: Use the conditional proportions from questions 5 and 6.
+11.  Fill in the blanks on the graph with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who use helmets and those who do not use helmets.  *Hint*: Use the conditional proportions from questions 5 and 6.
 
 \vspace{0.1in}
 
-13.  Based on the segmented bar plot, Does there appear to be an association between helmet use and head injury?  Explain.
+12.  Based on the segmented bar plot, Does there appear to be an association between helmet use and head injury?  Explain.
 
 \vspace{1in}
 
-14.  Calculate the point estimate for this study.  Use helmet use minus no helmet use as the order of subtraction.
+13.  Calculate the point estimate for this study.  Use helmet use minus no helmet use as the order of subtraction.
 
 \vspace{1in}
 
 
-15. What is the notation used for the value calculated in question 14?
+14. What is the notation used for the value calculated in question 14?
 
 
 \vspace{0.5in}
@@ -176,11 +171,11 @@ Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$:
 
 \vspace{.25in}
 
-16.  Is the independence condition met? Explain your answer.
+15.  Is the independence condition met? Explain your answer.
 
 \vspace{1in}
 
-17. Is the success-failure condition met for each group?  Explain your answer.
+16. Is the success-failure condition met for each group?  Explain your answer.
 
 \vspace{1in}
 
@@ -201,11 +196,11 @@ $$
 
 \vspace{.25in}
 
-18. Calculate the $SE(\hat{p}_1-\hat{p}_2)$.
+17. Calculate the $SE(\hat{p}_1-\hat{p}_2)$.
 
 \vspace{1in}
 
-19. Calculate the test statistic.
+18. Calculate the test statistic.
 
 \vspace{1in}
 
@@ -218,10 +213,10 @@ pnorm(xx, # Enter value of test statistic
 ```
     
 
-20.  Report the p-value.
+19.  Report the p-value.
 \vspace{0.2in}
 
-21.  How much evidence does the p-value provide against the null hypothesis?
+20.  How much evidence does the p-value provide against the null hypothesis?
 
 \vspace{0.4in}
 
@@ -234,7 +229,7 @@ To find a confidence interval for the difference in proportions we will add and 
 Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval!  Here, use the sample proportions for each group to calculate the standard error for the difference in proportions.
 
 
-22. Calculate the standard error for a difference in proportions to create a 95% confidence interval.  
+21. Calculate the standard error for a difference in proportions to create a 95% confidence interval.  
 
 \vspace{1in}
 
@@ -244,15 +239,15 @@ The $z^*$ multiplier is found under the standard normal distribution. We find th
 qnorm(0.975) # Multiplier for 95% confidence interval
 ```
 
-23. Using the multiplier of $z^*$ = 1.96, calculate the 95% confidence interval for the difference in true proportion of head injuries for those that used helmets minus those who did not. 
+22. Using the multiplier of $z^*$ = 1.96, calculate the 95% confidence interval for the difference in true proportion of head injuries for those that used helmets minus those who did not. 
 
 \vspace{1in}
 
-24. Interpret the confidence interval found in question 23 in context of the problem.
+23. Interpret the confidence interval found in question 23 in context of the problem.
 
 \vspace{1in}
 
-25. Write a paragraph summarizing the results of the study.  Be sure to describe:
+24. Write a paragraph summarizing the results of the study.  Be sure to describe:
 
 * Summary statistic
 
@@ -296,15 +291,15 @@ Hypothesis tests are not flawless. In a hypothesis test, there are two competing
 
 Shown in the table above, a **Type 1 Error** is rejecting the null hypothesis when $H_0$ is actually true. A **Type 2 Error** is failing to reject the null hypothesis when the alternative is actually true.
 
-26.  Using a significance level of 0.05, what decision do you make in regards to the null hypothesis?
+25.  Using a significance level of 0.05, what decision do you make in regards to the null hypothesis?
 
 \vspace{0.5in}
 
-27. What type of error could we have made?
+267. What type of error could we have made?
 
 \vspace{0.5in}
 
-28.  Write this error in context of the problem.
+27.  Write this error in context of the problem.
 
 \vspace{1in}
 

@@ -35,7 +35,7 @@ The variables in this data set^[Data source: Hand Dexterity in Children: Adminis
 | `speed` | Average speed to flip a peg for each participant (seconds per peg)|
 | `age` | Age of the participants (years)|
 | `dominant` | Whether the participant's dominant hand was used, coded as 0 for no, 1 for yes|
-| `gender` | The participant's gender, recorded as a binary variable, 0 for male, 1 for female |
+| `gender` | The participant's gender, recorded as a binary variable, 0 for male, 1 for non-male |
 | `HD` | The dominant hand of the participant, recorded as `R` for right hand, `L` for left hand |
 | `handUsed` | Which hand the participant used to complete the test, recorded as `R` for right hand, `L` for left hand |
 

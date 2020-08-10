@@ -57,12 +57,6 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional fighters. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male boxers we will see if there is an over-prevalence of left-handed fighters.
 
-```{r echo=TRUE, fig.height=4, collapse=FALSE}
-handedness <- read.csv("data/Male_boxers_sample.csv") # Read in data set
-handedness_sub <- handedness %>%
-  select(Stance) # Select Stance variable
-dim(handedness_sub) # Check dimensions of data set are 500 rows x 1 col
-```
 
 ### Summary statistics review {-}
 
@@ -107,8 +101,10 @@ dim(handedness_sub) # Check dimensions of data set are 500 rows x 1 col
 <!-- ``` -->
 
 ```{r, echo=TRUE, collapse=FALSE, message=FALSE, warning=FALSE}
-handedness_sub %>% count(Stance)  # Count number in each Stance category
+handedness <- read.csv("data/Male_boxers_sample.csv") # Read in data set
+handedness %>% count(Stance)  # Count number in each Stance category
 ```
+
 8.  Calculate the appropriate summary statistic that represents the research question.  Use appropriate notation.
 
 \vspace{0.5in}

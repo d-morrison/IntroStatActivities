@@ -58,17 +58,6 @@ We will work through a six-step process to complete a hypothesis test for a sing
 Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional fighters. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male boxers we will see if there is an over-prevalence of left-handed fighters.
 
 
-```r
-handedness <- read.csv("data/Male_boxers_sample.csv") # Read in data set
-handedness_sub <- handedness %>%
-  select(Stance) # Select Stance variable
-dim(handedness_sub) # Check dimensions of data set are 500 rows x 1 col
-```
-
-```
-#> [1] 500   1
-```
-
 ### Summary statistics review {-}
 
 1.  What are the observational units?
@@ -113,7 +102,8 @@ dim(handedness_sub) # Check dimensions of data set are 500 rows x 1 col
 
 
 ```r
-handedness_sub %>% count(Stance)  # Count number in each Stance category
+handedness <- read.csv("data/Male_boxers_sample.csv") # Read in data set
+handedness %>% count(Stance)  # Count number in each Stance category
 ```
 
 ```
@@ -121,6 +111,7 @@ handedness_sub %>% count(Stance)  # Count number in each Stance category
 #> 1  left-handed  81
 #> 2 right-handed 419
 ```
+
 8.  Calculate the appropriate summary statistic that represents the research question.  Use appropriate notation.
 
 \vspace{0.5in}
@@ -220,7 +211,7 @@ one_proportion_test(probability_success = 0.1, #Null hypothesis value
 
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-4-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
 \newpage
 
@@ -268,7 +259,7 @@ one_proportion_bootstrap_CI(sample_size = 500, #Sample size
 
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-7-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-6-1} \end{center}
 
 25. What is the value at the center of this distribution?  Why does this make sense?
 \vspace{.8in}

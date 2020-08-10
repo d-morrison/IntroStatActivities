@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.29)  10 AUG 2020 14:22
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.29)  10 AUG 2020 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1094,25 +1094,25 @@ Activity 6.
 [33
 
 ] [34] [35] [36]
-File: 06-inference-1cat_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
+File: 06-inference-1cat_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (
 type pdf)
-<use 06-inference-1cat_files/figure-latex/unnamed-chunk-4-1.pdf>
+<use 06-inference-1cat_files/figure-latex/unnamed-chunk-3-1.pdf>
 [37]
 File: images/soe_gradient_grayscale.png Graphic file (type bmp)
 <images/soe_gradient_grayscale.png>
 [38]
-File: 06-inference-1cat_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (
+File: 06-inference-1cat_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (
 type pdf)
-<use 06-inference-1cat_files/figure-latex/unnamed-chunk-7-1.pdf>
+<use 06-inference-1cat_files/figure-latex/unnamed-chunk-6-1.pdf>
 [39] [40] [41]
 Activity 7.
 [42
 
-] [43]
+] [43] [44]
 File: 07-inference-2cat_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (
 type pdf)
 <use 07-inference-2cat_files/figure-latex/unnamed-chunk-2-1.pdf>
-[44] [45] [46] [47] [48] [49]
+[45] [46] [47] [48] [49]
 Activity 8.
 File: images/air_pollution_greyscale.png Graphic file (type bmp)
 <images/air_pollution_greyscale.png>
@@ -1142,7 +1142,7 @@ File: 10-regression_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type
  pdf)
 <use 10-regression_files/figure-latex/unnamed-chunk-3-1.pdf>
 [64] [65]
-Underfull \hbox (badness 10000) in paragraph at lines 4045--4046
+Underfull \hbox (badness 10000) in paragraph at lines 4025--4026
 
  []
 
@@ -1150,19 +1150,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 4045--4046
 File: 10-regression_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type
  pdf)
 <use 10-regression_files/figure-latex/unnamed-chunk-6-1.pdf>
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4155.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4135.
 [68]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4155.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4135.
 (./IntroStatActivities.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4155.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 4155.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4135.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 4135.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19986 strings out of 479712
- 356534 string characters out of 5889204
+ 19985 strings out of 479712
+ 356517 string characters out of 5889204
  825350 words of memory out of 5000000
  36881 multiletter control sequences out of 15000+600000
  541579 words of font info for 87 fonts, out of 8000000 for 9000
