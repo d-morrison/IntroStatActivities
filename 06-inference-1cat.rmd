@@ -13,6 +13,8 @@
 
 * Use bootstrapping to find a confidence interval for a single proportion
 
+* Interpret a confidence interval
+
 ## Terminology review
 
 In today's activity, we will introduce simulation hypothesis testing and confidence intervals for a single categorical variable. Some terms covered in this activity are:
@@ -53,7 +55,7 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 ## Handedness of male boxers
 
-Left-handedness is a trait that is found in about 10% of the population. The fighting claim states that left-handed men have an advantage in competition.  Past studies have shown that left-handed men are over-represented among professional fighters. In this random sample of 500 male boxers we will see if there is an over-prevalence of left-handed fighters.
+Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional fighters. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male boxers we will see if there is an over-prevalence of left-handed fighters.
 
 ```{r echo=F, fig.height=4, collapse=FALSE}
 handedness <- read.csv("data/Male_boxers.csv")
@@ -109,7 +111,7 @@ tally(~Stance, data=handedness_sub, margins=T)
 
 ### Use statistical analysis methods to draw inferences from the data
 
-When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, the true value of interest.  
+When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the true value of interest.  
 
 9.  Write out the parameter of interest for this study. (Hint: the true proportion of....)
 
@@ -163,9 +165,9 @@ Let's think about how to use cards to create one simulation of 500 boxers under 
 17.  Once we have one simulated sample, what would we calculate and plot on the null distribution?
 \vspace{1in}
 
-We will use the computer to simulate 1000 different samples of 500 male boxers, plotting the proportion who are left handed in each sample, based on the assumption that the true proportion of male boxers who are left handed is 0.1.  This is called the null distribution because it is created based on the assumption that the null hypothesis is true.
+We will use the computer to simulate a null distribution of 1000 different samples of 500 male boxers, plotting the proportion who are left handed in each sample, based on the assumption that the true proportion of male boxers who are left handed is 0.1 (or that the null hypothesis is true).  
 
-To use the computer simulation, we will need to enter the "probability of success," "sample size," "number of repetitions," "as extreme as," and the "direction" (matches the direction of the alternative hypothesis).
+To use the computer simulation, we will need to enter the "probability of success" ($\pi_0$), "sample size" (the number of observational units in the sample), "number of repetitions" (the number of samples to be generated), "as extreme as" (the observed statistic), and the "direction" (matches the direction of the alternative hypothesis).
 
 18.  What values should be entered into the simulation?
 
