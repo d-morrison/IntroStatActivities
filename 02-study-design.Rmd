@@ -85,7 +85,7 @@ In these next questions, identify the target population, the sample, the variabl
 
 \newpage
 
-3. A television station is interested in predicting whether or not voters in its listening area are opposed to legalizing marijuana for adult use. It asks its viewers to phone in and indicate whether they are in favor of this or opposed to this. Of the 2241 viewers who phoned in, forty-five percent were opposed to legalizing marijuana.
+3. A television station is interested in predicting whether or not a local referendum to legalize marijuana for adult use will pass. It asks its viewers to phone in and indicate whether they are in favor of this or opposed to this. Of the 2241 viewers who phoned in, forty-five percent were opposed to legalizing marijuana.
 \vspace{0.1in}
 
     Target population: 
@@ -100,7 +100,7 @@ In these next questions, identify the target population, the sample, the variabl
     Type of Bias:
 \vspace{0.3in}
 
-4. To gauge the interest in a new swimming pool, a local organization stood outside of the Bogart Pool during open hours.  One of the questions they asked was, "Since the Bogart Pool is in such bad repair, don't you agree that the city should fund a new pool?"
+4. To gauge the interest in a new swimming pool, a local organization stood outside of the Bogart Pool during open hours.  One of the questions they asked was, "Since the Bogart Pool is in such bad repair, don't you agree that the city should fund a new pool?"  
 \vspace{0.1in}
 
     Target population: 
