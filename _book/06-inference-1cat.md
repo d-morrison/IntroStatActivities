@@ -225,7 +225,7 @@ one_proportion_test(probability_success = 0.1, #Null hypothesis value
 
 23. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one.)
 
-![](images/soe_gradient.png)
+![](images/soe_gradient_grayscale.png)
 
 A **point estimate** provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible range of values for the parameter. This plausible range of values for the population parameter is called a confidence interval. 
 
