@@ -113,7 +113,7 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 
 
 
-12.  Use the provided R markdown file and enter the calculated value from question 11 for xxx to simulate the null distribution and enter the summary statistic from question 9 for xxxx to find the p-value.
+12.  Use the provided `R` markdown file and enter the calculated value from question 11 for xxx to simulate the null distribution and enter the summary statistic from question 9 for xxxx to find the p-value.
 
 
 ```r
@@ -150,6 +150,17 @@ To simulate the null distribution we will use a bootstrapping method - sampling 
 18. Write out the parameter of interest in context of the study.
 
 \vspace{1in}
+
+The following `R` code creates a bootstrap distribution showing 1000 simulations of the mean difference.  
+
+
+```r
+paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
+                    number_repetitions = 1000, #Number of bootstrap samples for CI
+                    confidence_level = 0.99,  #Confidence level in decimal form
+                    which_first = 1)  #Not needed when entering vector of differences
+```
+
 
 
 \begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-6-1} \end{center}

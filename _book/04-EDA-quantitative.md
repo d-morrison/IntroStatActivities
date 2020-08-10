@@ -1,4 +1,4 @@
-# IMDb Movie Reviews: Part I
+# IMDb Movie Reviews
 
 ## Learning objectives
 

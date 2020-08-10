@@ -126,15 +126,15 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 \begin{center}\includegraphics[width=0.7\linewidth]{07-inference-2cat_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
-12.  Fill in the blanks on the graph with the appropriate variables and values to plot a segmented bar plot of helmet use segmented by injury.
+12.  Fill in the blanks on the graph with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who use helmets and those who do not use helmets.  *Hint: use the conditional proportions from questions 5 and 6.
 
-\vspace{1in}
+\vspace{0.1in}
 
 13.  Based on the bar plot, Does there appear to be an association between helmet use and head injury?  Explain.
 
 \vspace{1in}
 
-14.  Calculate the point estimate for this study.  We will use helmet use minus no helmet use as the order of subtraction.
+14.  Calculate the point estimate for this study.  Use helmet use minus no helmet use as the order of subtraction.
 
 \vspace{1in}
 
@@ -186,7 +186,7 @@ where the standard error is calculated using the pooled proportion of successes.
 
 \vspace{1in}
 
-We will use the pnorm function in R to find the p-value. Use the provided R markdown file and enter the value of the test statistic at xxx.
+We will use the pnorm function in `R` to find the p-value. Use the provided R markdown file and enter the value of the test statistic at xxx.
 
 
 ```r

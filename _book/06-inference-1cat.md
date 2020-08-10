@@ -117,7 +117,7 @@ When testing data we must first identify the null hypothesis.  The null hypothes
 
 \vspace{1in}
 
-10.  We will assume that the true proportion of male boxers who are left handed is the same as the general population, 0.1. Using the parameter of interest in question 9, write out the null hypothesis in words.
+10.  Using the parameter of interest in question 9, write out the null hypothesis in words.
 
 \vspace{1in}
 
@@ -190,7 +190,7 @@ To use the computer simulation, we will need to enter the "probability of succes
 
 
 
-The following R code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 18 match the code inputs. 
+The following `R` code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 18 match the code inputs. 
 
 
 ```r
@@ -235,6 +235,8 @@ We will use bootstrapping to find the 95% confidence interval.
 \vspace{1in}
 
 
+The following `R` code produced the following bootstrap distribution with 1000 simulations. 
+
 
 ```r
 one_proportion_bootstrap_CI(sample_size = 500, #Sample size
@@ -247,14 +249,17 @@ one_proportion_bootstrap_CI(sample_size = 500, #Sample size
 
 \begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-6-1} \end{center}
 
-25. Explain why the two vertical lines (they are blue in the simulation) are at the 2.5th percentile and the 97.5th percentile.
+25. What is the value at the center of this distribution?  Why does this make sense?
+\vspace{1in}
+
+16. Explain why the two vertical lines are at the 2.5th percentile and the 97.5th percentile.
 
 \vspace{1in}
 
-26. Report the 95% bootstrapped confidence interval for $\pi$.  Use interval notation: (lower value, upper value).
+27. Report the 95% bootstrapped confidence interval for $\pi$.  Use interval notation: (lower value, upper value).
 
 \vspace{1in}
-27.  What are we 95% confident is contained within this interval?
+28.  Interpret the 95% confidence interval in context.
 
 \vspace{1in}
 
@@ -262,7 +267,7 @@ one_proportion_bootstrap_CI(sample_size = 500, #Sample size
 
 When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.
 
-28.  Write a paragraph summarizing the results.  Be sure to include:
+29.  Write a paragraph summarizing the results.  Be sure to include:
 
 * Summary statistic
 
@@ -278,7 +283,7 @@ When we write a conclusion we answer the research question by stating how much e
 
 ### Revisit and look forward
 
-29. Suggest a new research question that you might investigate, building on what you learned in this study.
+30. Suggest a new research question that you might investigate, building on what you learned in this study.
 
 \vspace{1in}
 
