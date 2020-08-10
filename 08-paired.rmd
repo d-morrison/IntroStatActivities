@@ -240,7 +240,7 @@ paired_bootstrap_CI <- function(data, number_repetitions = 100, confidence_level
 
 ```
 
-12.  Use the provided R markdown file and enter the calculated value from question 11 for xxx to simulate the null distribution and enter the summary statistic from question 9 for xxxx to find the p-value.
+12.  Use the provided `R` markdown file and enter the calculated value from question 11 for xxx to simulate the null distribution and enter the summary statistic from question 9 for xxxx to find the p-value.
 
 ```{r, echo=TRUE, eval=FALSE, warning = FALSE}
     paired_test(data = Air$Difference,   #Vector of differences or data set with column for each group
@@ -277,7 +277,7 @@ paired_bootstrap_CI <- function(data, number_repetitions = 100, confidence_level
 
 \vspace{1in}
 
-The following 'R' code creates a bootstrap distribution showing 1000 simulations of the mean difference.  
+The following `R` code creates a bootstrap distribution showing 1000 simulations of the mean difference.  
 
 ```{r, echo=TRUE, warning = FALSE}
 paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences

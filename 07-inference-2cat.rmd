@@ -201,7 +201,7 @@ where the standard error is calculated using the pooled proportion of successes.
 
 \vspace{1in}
 
-We will use the pnorm function in 'R' to find the p-value. Use the provided R markdown file and enter the value of the test statistic at xxx.
+We will use the pnorm function in `R` to find the p-value. Use the provided R markdown file and enter the value of the test statistic at xxx.
 
 ```{r, echo=TRUE, eval=FALSE}
     pnorm(xxx #enter value of test statistic
