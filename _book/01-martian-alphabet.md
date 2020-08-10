@@ -34,7 +34,7 @@ How well can humans distinguish one “Martian” letter from another? In today�
 
 \vspace{0.3in}
 
-### Steps of the statistical investigation process
+### Steps of the statistical investigation process {-}
 
 **Step 1**: The first step of any statistical investigation is to *ask a research question*.  In this study the research question is: can we as a class read Martian? (We will refine this later on!).
 

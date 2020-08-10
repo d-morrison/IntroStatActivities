@@ -59,13 +59,9 @@ Left-handedness is a trait that is found in about 10% of the population. Past st
 
 
 ```r
-handedness <- read.csv("data/Male_boxers.csv") # Read in data set
-set.seed(12980) # Set random number generator to select 
-                # same sample each time.
-                # Remove this line to get a different random sample.
+handedness <- read.csv("data/Male_boxers_sample.csv") # Read in data set
 handedness_sub <- handedness %>%
-  select(Stance) %>% # Select Stance variable
-  sample_n(500, replace=FALSE) # Randomly sample 500 rows
+  select(Stance) # Select Stance variable
 dim(handedness_sub) # Check dimensions of data set are 500 rows x 1 col
 ```
 
@@ -73,7 +69,7 @@ dim(handedness_sub) # Check dimensions of data set are 500 rows x 1 col
 #> [1] 500   1
 ```
 
-### Summary statistics review
+### Summary statistics review {-}
 
 1.  What are the observational units?
 
@@ -91,13 +87,13 @@ dim(handedness_sub) # Check dimensions of data set are 500 rows x 1 col
 
 \vspace{0.5in}
 
-### Ask a research question
+### Ask a research question {-}
 
 5. Identify the research question for this study.
 
 \vspace{1in}
 
-### Design a study and collect data
+### Design a study and collect data {-}
 
 6. What is the target population for this study?
 
@@ -107,7 +103,7 @@ dim(handedness_sub) # Check dimensions of data set are 500 rows x 1 col
 
 \vspace{1in}
 
-### Summarize and visualize the data
+### Summarize and visualize the data {-}
 
 <!-- ```{r, echo=TRUE, collapse=FALSE} -->
 <!-- # Counts for Handedness -->
@@ -121,14 +117,6 @@ handedness_sub %>% count(Stance)  # Count number in each Stance category
 ```
 
 ```
-#> Warning: `count_()` is deprecated as of dplyr 0.7.0.
-#> Please use `count()` instead.
-#> See vignette('programming') for more help
-#> This warning is displayed once every 8 hours.
-#> Call `lifecycle::last_warnings()` to see where this warning was generated.
-```
-
-```
 #>         Stance   n
 #> 1  left-handed  81
 #> 2 right-handed 419
@@ -137,11 +125,11 @@ handedness_sub %>% count(Stance)  # Count number in each Stance category
 
 \vspace{0.5in}
 
-### Use statistical analysis methods to draw inferences from the data
+### Use statistical analysis methods to draw inferences from the data {-}
 
 When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the true value of interest.  
 
-9.  Write out the parameter of interest for this study. (Hint: the true proportion of....)
+9.  Write out the parameter of interest for this study. *Hint*: The parameter of interest is the true proportion of....
 
 \vspace{1in}
 
@@ -212,13 +200,13 @@ To use the computer simulation, we will need to enter the "probability of succes
 * As extreme as:
     
 \vspace{.2in}
-* Direction:
+* Direction (`"greater"`, `"less"`, or `"two-sided"`):
 
-\newpage
+\vspace{.2in}
 
 
 
-The following `R` code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 18 match the code inputs. 
+The following `R` code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 18 match the code inputs.
 
 
 ```r
@@ -234,6 +222,8 @@ one_proportion_test(probability_success = 0.1, #Null hypothesis value
 
 \begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
+\newpage
+
 19. Around what value is the null distribution centered?  Why does that make sense?
 
 \vspace{1in}
@@ -246,14 +236,17 @@ one_proportion_test(probability_success = 0.1, #Null hypothesis value
 
 \vspace{1in}
 
-22.  Using the simulation, what is the proportion of samples at this summary statistic or greater, if the true proportion of male boxers is 0.1? *Hint: Look under the simulation.*
+22.  Using the simulation, what is the proportion of samples at this summary statistic or greater, if the true proportion of male boxers is 0.1? *Hint*: Look under the simulation.
 
 \vspace{1in}
 |         This is the **p-value**.  The smaller the p-value the more evidence we have against the null hypothesis.
 
 23. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one.)
 
-![](images/soe_gradient_grayscale.png)
+
+\begin{center}\includegraphics[width=0.9\linewidth]{images/soe_gradient_grayscale} \end{center}
+
+\newpage
 
 A **point estimate** provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible range of values for the parameter. This plausible range of values for the population parameter is called a confidence interval. 
 
@@ -275,27 +268,27 @@ one_proportion_bootstrap_CI(sample_size = 500, #Sample size
 
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-6-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-7-1} \end{center}
 
 25. What is the value at the center of this distribution?  Why does this make sense?
-\vspace{1in}
+\vspace{.8in}
 
 16. Explain why the two vertical lines are at the 2.5th percentile and the 97.5th percentile.
 
-\vspace{1in}
+\vspace{.8in}
 
 27. Report the 95% bootstrapped confidence interval for $\pi$.  Use interval notation: (lower value, upper value).
 
 \vspace{1in}
 28.  Interpret the 95% confidence interval in context.
 
-\vspace{1in}
+\vspace{.8in}
 
-### Communicate the results and answer the research question
+### Communicate the results and answer the research question {-}
 
 When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.
 
-29.  Write a paragraph summarizing the results.  Be sure to include:
+29.  Write a paragraph summarizing the results.  Be sure to describe:
 
 * Summary statistic
 
@@ -307,15 +300,15 @@ When we write a conclusion we answer the research question by stating how much e
 
 * Generalization - to what group do the results apply?
 
-\vspace{3in}
+\vspace{3.5in}
 
-### Revisit and look forward
+### Revisit and look forward {-}
 
 30. Suggest a new research question that you might investigate, building on what you learned in this study.
 
-\vspace{1in}
+\vspace{.6in}
 
-
+\newpage
 
 ## Additional notes
 

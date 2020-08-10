@@ -27,27 +27,38 @@ To review these concepts, see Chapters 3 and 7 in the textbook.
 
 Physical therapists often evaluate manual (hand) dexterity by having patients complete simple tasks, such as moving pegs on a board or threading objects through holes. Researchers want to examine the manual dexterity of children as part of a follow-up study of a test originally designed for adults to see how manual dexterity changes with age. In this test, 174 participants were given a board with 16 pegs, each in their own hole, arranged in a 4x4 grid. Participants were instructed to pick up the peg with one hand, flip it over by rotating their wrist, then reinsert it in the same hole. Using this test, researchers want to know if as people age the speed at which they can flip all 16 pegs increases.
 
-The variables in this dataset consist of the following:
+The variables in this data set^[Data source: Hand Dexterity in Children: Administration and Normative Values of the Functional Dexterity Test (FDT), Gogola, G., et al., 2013] consist of the following:
 
-- **time:** Recorded time to flip all 16 pegs, measured in seconds.
-
-- **speed:** The average speed to flip a peg for each participant (seconds per peg).
-
-- **age:** Age of the participants, measured in years.
-
-- **dominant:** Whether the participant's dominant hand was used, coded as 0 for no, 1 for yes.
-
-- **gender:** The participant's gender, recorded as a binary variable, 0 for male, 1 for female.
-
-- **HD:** The dominant hand of the participant, recorded as "R" for right hand, "L" for left hand.
-
-- **handUsed:** Which hand the participant used to complete the test, recorded as "R" for right hand, "L" for left hand.
-
-*Data source: Hand Dexterity in Children: Administration and Normative Values of the Functional Dexterity Test (FDT), Gogola, G., et al., 2013*
+| **Variable** 	| **Description** |
+|----	|-------------	|
+| `time` | Recorded time to flip all 16 pegs (seconds) |
+| `speed` | Average speed to flip a peg for each participant (seconds per peg)|
+| `age` | Age of the participants (years)|
+| `dominant` | Whether the participant's dominant hand was used, coded as 0 for no, 1 for yes|
+| `gender` | The participant's gender, recorded as a binary variable, 0 for male, 1 for female |
+| `HD` | The dominant hand of the participant, recorded as `R` for right hand, `L` for left hand |
+| `handUsed` | Which hand the participant used to complete the test, recorded as `R` for right hand, `L` for left hand |
 
 
 
-### Vocabulary review
+```r
+# Read in data set
+hands <- read.csv("data/hands.csv")
+
+# Rename variables (odd original coding)
+colnames(hands) <- c("time","speed","age","dominant","gender",
+                     "HD","handUsed") 
+
+# Code categorical variables as factors
+hands <- # Write over original data with the following
+  hands %>% # Pipe data set into
+  mutate(dominant = factor(dominant), # Recode categorical variables as factors
+         gender = factor(gender),
+         HD = factor(HD),
+         handUsed = factor(handUsed))
+```
+
+### Vocabulary review {-}
 
 1. Explain why regression methods are appropriate to use to address the researchers' question. Make sure you clearly define the variables of interest in your explanation and their roles.
 
@@ -60,16 +71,16 @@ The variables in this dataset consist of the following:
 
 3. Use the provided `R` markdown file to create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names ('speed' and 'age') for xxx and xxxx. Provide this plot. Based on your plot, does it appear that there is a relationship between ``age`` and ``speed``? Note: ``age`` should be on the x-axis.
  
-
-```r
-    ggplot(data = hands,   #This is the data set
-       aes(x = xxx, y = xxxx))+  #Specify variables
-    geom_point() +  #Add scatterplot of points
-    labs(x = "Age (yrs)",  #Label x-axis
-       y = "Speed (sec/peg)",  #Label y-axis
-       title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
-    geom_smooth(method = "lm", se = FALSE)  #Add regression line
-```
+    
+    ```r
+    hands %>% # Pipe data set into...
+    ggplot(aes(x = xxx, y = xxxx))+  #Specify variables
+      geom_point() +  #Add scatterplot of points
+      labs(x = "Age (yrs)",  #Label x-axis
+           y = "Speed (sec/peg)",  #Label y-axis
+           title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
+      geom_smooth(method = "lm", se = FALSE)  #Add regression line
+    ```
 \vspace{2in}
 
 4. Describe the features of the plot you created in Question 3.
@@ -80,7 +91,7 @@ If you indicated there are potential outliers, which points are they?
 
 \vspace{0.5in}
 
-### Conditions for the least squares line
+### Conditions for the least squares line {-}
 
 When performing inference on a least squares line, the follow conditions are generally required
 
@@ -99,7 +110,7 @@ The scatterplot and the residual plots will be used to assess the conditions for
 \vspace{1in}
 
 
-### Ask a research question
+### Ask a research question {-}
 
 6. Write out the null hypothesis in words.
 
@@ -109,14 +120,14 @@ The scatterplot and the residual plots will be used to assess the conditions for
 
 \vspace{0.5in}
 
-### Summarize and visualize the data
+### Summarize and visualize the data {-}
 
 Using the provided `R` markdown file, enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
 
 
 ```r
-    lm.hand <- lm(xxx~xxxx, data=hands) #lm(response~explanatory)
-    summary(lm.hand)$coefficients
+lm.hand <- lm(xxx~xxxx, data=hands) #lm(response~explanatory)
+summary(lm.hand)$coefficients
 ```
 8.  Using the output from the evaluated `R` code above, write the equation of the regression line.
 
@@ -134,7 +145,7 @@ Using the provided `R` markdown file, enter the response variable into the linea
 
 \vspace{1in}
 
-### Use statistical inferential methods to draw inferences from the data
+### Use statistical inferential methods to draw inferences from the data {-}
 
 To find the value of the test statistic to test the slope we will use, 
 
@@ -168,13 +179,16 @@ The $t^*$ multiplier comes from the $t$-distribution with $n-2$ df.
 
 ```r
 qt(0.95+0.025, 172) #95% t* multiplier 
+```
+
+```
 #> [1] 1.973852
 ```
 
 16. Calculate the 95% confidence interval for the true slope.
 \vspace{1in}
 
-### Communicate the results and answer the research question
+### Communicate the results and answer the research question {-}
 
 17. Based on the p-value, write a conclusion in context of the problem.
 
@@ -198,27 +212,29 @@ qt(0.95+0.025, 172) #95% t* multiplier
 
 * Scope of inference
 
-\vspace{2in}
-### Revisit and look forward
+\vspace{3in}
+
+
+### Revisit and look forward {-}
 
 20. Is there an effect due to gender on the linear relationship between age and speed?  Explain your answer using the scatterplot below.
 
-
-```r
-ggplot(data = hands,   #This is the data set
-       aes(x = age, y = speed, color = dominant))+  #Specify variables
-  geom_point(aes(pch = dominant)) +  #Add scatterplot of points
-  labs(x = "Age (yrs)",  #Label x-axis
-       y = "Speed (sec/peg)",  #Label y-axis
-       legend = "Dominant hand",  #Label your legend
-       title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
-  geom_smooth(method = "lm", se = FALSE) +  #Add regression line
-  scale_color_grey() #Make greyscale for printing 
-```
-
-
-
-\begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-6-1} \end{center}
+    
+    ```r
+    hands %>% # Pipe data set into...
+    ggplot(aes(x = age, y = speed, color = dominant))+  #Specify variables
+      geom_point(aes(pch = dominant)) +  #Add scatterplot of points
+      labs(x = "Age (yrs)",  #Label x-axis
+           y = "Speed (sec/peg)",  #Label y-axis
+           legend = "Dominant hand",  #Label your legend
+           title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
+      geom_smooth(method = "lm", se = FALSE) +  #Add regression line
+      scale_color_grey() #Make greyscale for printing 
+    ```
+    
+    
+    
+    \begin{center}\includegraphics[width=0.7\linewidth]{10-regression_files/figure-latex/unnamed-chunk-6-1} \end{center}
 
 
 

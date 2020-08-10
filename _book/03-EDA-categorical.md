@@ -49,7 +49,7 @@ The data set we will use for this activity is from the Current Population Survey
 | `sector` | Sector of the economy: `clerical`, `const` (construction),  `management`, `manufacturing`, `professional`, `sales`, `service`, `other` |
 | `married` | Marital status: `Married` or `Single` |
 
-### Vocabulary review
+### Vocabulary review {-}
 
 1. What are the observational units?
 
@@ -66,7 +66,7 @@ The data set we will use for this activity is from the Current Population Survey
 
 An important part of understanding data is to create visual pictures of what the data represent.  In this activity, we will create graphical representations of categorical data.
 
-### `R` code
+### `R` code {-}
 
 `R` is a free statistical analysis software program we will use in Stat 216.  Please see D2L for instructions on how to download or 
 access a version of `R` on your laptop, or plan to use the school computers for some parts of assigned out of class work for this course.
@@ -84,7 +84,7 @@ cps <- read.csv("data/cps.csv") #This will read in the data set
 ```
 
 
-### Displaying a single categorical variable
+### Displaying a single categorical variable {-}
 
 If we wanted to know how many people in our data set were in each sector, we would create a frequency bar plot of the variable `sector`.
 
@@ -126,7 +126,7 @@ ggplot(aes(x = sector)) +   #This specifies the variable
 
 \vspace{1in}
 
-### Displaying two categorical variables
+### Displaying two categorical variables {-}
 
 To examine the differences proportion of males and females across sectors, we would create a segmented bar plot of `sector` segmented by `sex`.
 

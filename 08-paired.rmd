@@ -39,13 +39,13 @@ include_graphics("images/air_pollution_greyscale.png")
 
 Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015 - 2019). Note that higher AQI scores indicate worse air quality.
 
-```{r}
-Air <- read.csv("data/AirPollutionCOVID.csv")
+```{r, include=FALSE}
+Air <- read.csv("data/AirPollutionCOVID.csv") # Read data in
 ```
 
-```{r, out.width="60%"}
-ggplot(data = Air,  #Dataset containing variables
-       aes(y = Difference)) + #Variables to be used
+```{r, out.width="60%", include=FALSE}
+Air %>% # Pipe data set into...
+  ggplot(aes(y = Difference)) + #Variables to be used
     geom_boxplot() + #make a boxplot
     labs(title = "Boxplot of the Differences in AQI Scores",  #Title plot
          y = "Difference in air quality score") +
@@ -61,7 +61,7 @@ ggplot(data = Air,  #Dataset containing variables
 | Differences   | $\bar{x}_d$ = -4.152 | $s_d$ = 17.096     | $n_d$ = 33  |
 
 \newpage
-### Vocabulary review
+### Vocabulary review {-}
 
 1. What is the sample size? 
 
@@ -79,7 +79,7 @@ ggplot(data = Air,  #Dataset containing variables
 
 \vspace{0.3in}
 
-### Ask a research question
+### Ask a research question {-}
 
 5. What are the two competing possibilities to run a hypothesis test for this study?
 
@@ -98,7 +98,7 @@ ggplot(data = Air,  #Dataset containing variables
 \vspace{1in}
 
 \newpage
-### Summarize and visualize the data 
+### Summarize and visualize the data  {-}
 
 9. Report the summary statistic for the data.  
 
@@ -109,7 +109,7 @@ ggplot(data = Air,  #Dataset containing variables
 \vspace{0.3in}
 
 
-### Use statistical inferential methods to draw inferences from the data
+### Use statistical inferential methods to draw inferences from the data {-}
 
 To simulate the null distribution we will use a bootstrapping method.  Recall that the null distribution must be created under the assumption that the null hypothesis is true.  Therefore, before bootstrapping we will need to shift each data point by the difference $\mu_0 - \bar{x}$.  This will ensure that the mean of the shifted data is $\mu_0$ and that the simulated null distribution will be centered at the null value.  
 
@@ -269,15 +269,15 @@ paired_bootstrap_CI <- function(data, number_repetitions = 100, confidence_level
 
 16. Interpret the p-value in the context of the problem.
 
-\vspace{1in}
+\vspace{.8in}
 
 17. How much evidence does this provide for improved air quality in US cities?
 
-\vspace{.5in}
+\vspace{.3in}
 
 18. Write out the parameter of interest in context of the study.
 
-\vspace{1in}
+\vspace{.6in}
 
 The following `R` code creates a bootstrap distribution showing 1000 simulations of the mean difference.  
 
@@ -293,11 +293,11 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 \vspace{.3in}
 
 
-### Communicate the results and answer the research question.
+### Communicate the results and answer the research question. {-}
 
 20. Interpret the 99% confidence interval in the context of the problem.
 
-\vspace{1in}
+\vspace{.8in}
 
 21. Do the results of your confidence interval and hypothesis test agree?  What does each tell you about the null hypothesis?
 
@@ -319,7 +319,7 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 
 \vspace{3in}
 
-### Revisit and look forward
+### Revisit and look forward {-}
 
 23. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
 \vspace{1in}

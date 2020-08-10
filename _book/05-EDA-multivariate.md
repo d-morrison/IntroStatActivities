@@ -47,7 +47,7 @@ We will revisit the data set used last week collected on Movies released in 2016
 
 \newpage
 
-### Vocabulary review
+### Vocabulary review {-}
 
 1.  What type of plot is used to display two quantitative variables?
 
@@ -98,7 +98,7 @@ ggplot(aes(x = budget_mil, y = revenue_mil))+  #Specify variables
 
 \vspace{1in}
 
-### Correlation 
+### Correlation  {-}
 
 Correlation measures the strength and the direction between two quantitative variables.  The closer the value of correlation to + or - 1 the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  
 
@@ -150,7 +150,7 @@ movies %>%  #Data set pipes into...
 
 \newpage
 
-### Slope
+### Slope {-}
 
 The linear model function in R gives us the summary for the least squares regression line.  The estimate for (Intercept) is the y-intercept for the line of least squares and the estimate for budget_mil is the value of $b_1$, the slope.
 
@@ -186,7 +186,7 @@ Therefore, the slope predicts the how much the line will *rise* for each *run* o
 
 \vspace{.6in}
 
-### Residuals
+### Residuals {-}
 
 The model we are using assumes the relationship between the two variables follows a straight line. The residuals are the errors, or the part that hasn't been modeled by the line.
 
@@ -208,7 +208,7 @@ $e_i=y_i-\hat{y}_i$
 
 \newpage
 
-### Coefficient of determination (squared correlation)
+### Coefficient of determination (squared correlation) {-}
 
 The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $r^2$ measures the proportion of variation in the response that is explained by the least squares line with the explanatory variable.  
 
@@ -221,7 +221,7 @@ The coefficient of determination, $r^2$, can also be used to describe the streng
 
 \vspace{.6in}
 
-### Multivariate plots
+### Multivariate plots {-}
 What if we wanted to see if the relationship between 'Budget' and 'Revenue' differs if we add another variable into the picture?  The following plot visualized three variables, creating a **multivariate** plot. 
 
 

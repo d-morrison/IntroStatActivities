@@ -41,7 +41,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 \newpage
 
-### Vocabulary review
+### Vocabulary review {-}
 
 1. What are the observational units in this data set?
 
@@ -55,7 +55,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 \vspace{.5in}
 
-### Summarizing a single quantitative variable
+### Summarizing a single quantitative variable {-}
 
 The `favstats` function gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable `imdb_score`.
 
@@ -82,7 +82,7 @@ movies %>% #Data set piped into...
 6. Report the value of the standard deviation and interpret this value in context of the problem.
 \vspace{1in}
 
-### Displaying a single quantitative variable
+### Displaying a single quantitative variable {-}
 
 7. What are the three types of plots used to plot a single quantitative variable?
 
@@ -113,7 +113,7 @@ ggplot(aes(x = imdb_score)) +   #Name variable to plot
 
 \vspace{0.4in}
 
-10. Which five summary statistics are used in creating a box plot? (Hint: Together they are called the **five-number summary** of the variable.)
+10. Which five summary statistics are used in creating a box plot? *Hint*: Together they are called the **five-number summary** of the variable.
 
 \vspace{0.4in}
 
@@ -152,7 +152,7 @@ ggplot(aes(x = imdb_score)) +   #Name variable to plot
 
 \vspace{1.5in}
 
-### Displaying a single categorical and single quantitative variable
+### Displaying a single categorical and single quantitative variable {-}
 
 The box plot of 'Budget' in millions by 'Content rating' is plotted using the code below.  This plot helps to compare the budget for different levels of content rating.
 

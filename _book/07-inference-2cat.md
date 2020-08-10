@@ -34,7 +34,7 @@ In today's activity, we will use theory-based methods to analyze two categorical
 
 * Standard normal distribution
 
-* Independence and Success-Failure conditions
+* Independence and success-failure conditions
 
 * Type 1 and Type 2 errors
 
@@ -44,8 +44,8 @@ To review these concepts, see Chapter 5 in your textbook.
 
 \newpage
 
-## Helmet Use and Head Injuries
-In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the Journal of the American Medical Association, Vol. 295, No. 8, we can see the results from a random sample 3562 skiers and snowboarders involved in accidents. 
+## Helmet use and head injuries
+In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the *Journal of the American Medical Association*, Vol. 295, No. 8 (2006), we can see the results from a random sample 3562 skiers and snowboarders involved in accidents. 
 
 |                | Helmet Use | No Helmet Use | Total |
 |:--------------:|:----------:|:-------------:|:-----:|
@@ -53,10 +53,31 @@ In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by S
 | No Head Injury |     656    |      2330     |  2986 |
 | Total          |     752    |      2810     |  3562 |
 
+These counts can be found in `R` by using the `count()` function:
 
+```r
+injury <- read.csv("data/head_injury.csv") # Read data set in
+injury <- # Write over original data with the following
+  injury %>% # Pipe data set into
+  mutate(Helmet <- factor(Helmet),
+         Injury <- factor(Injury)) # Convert to factors
+
+injury %>% group_by(Helmet) %>% count(Injury)
+```
+
+```
+#> # A tibble: 4 x 3
+#> # Groups:   Helmet [2]
+#>   Helmet      Injury             n
+#>   <chr>       <chr>          <int>
+#> 1 No_Helmet   Head_Injury      480
+#> 2 No_Helmet   No_Head_Injury  2330
+#> 3 Wore_Helmet Head_Injury       96
+#> 4 Wore_Helmet No_Head_Injury   656
+```
 Is there evidence that safety helmet use reduces the risk of head injury for skiers and snowboarders? 
 
-### Vocabulary review
+### Vocabulary review {-}
 
 1.  What is the explanatory variable?
 
@@ -88,9 +109,7 @@ Is there evidence that safety helmet use reduces the risk of head injury for ski
 \vspace{.6in}
 
 
-
- 
-### Ask a research question
+### Ask a research question {-}
 
 In this study we are looking at the relationship between two groups or two parameters ($\pi_1$ and $\pi_2$).  Remember we define the parameter for a categorical variable as the true proportion of observational units that are labeled as a "success" in the response variable.  
 
@@ -123,12 +142,27 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 
 
-### Summarize and visualize the data
+### Summarize and visualize the data {-}
+
+
+```r
+injury %>%
+ggplot(aes(x = Helmet, fill = Injury)) +   #This specifies the variables
+  geom_bar(stat = "count", position = "fill") +  #Tell it to make a stacked bar plot
+  labs(title = "Segmented Bar Plot of Helmet Use by Injury",  #Make sure to title your plot 
+       x = "___________________",   #Label the x axis
+       y = "",  #Remove y axis label
+       fill = "_____________") + #Change legend label
+  scale_fill_discrete(labels = c("_________", "_________")) +
+  scale_x_discrete(labels = c("_____________", "_____________")) +
+  scale_fill_grey()
+```
+
 
 
 \begin{center}\includegraphics[width=0.7\linewidth]{07-inference-2cat_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
-12.  Fill in the blanks on the graph with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who use helmets and those who do not use helmets.  *Hint: use the conditional proportions from questions 5 and 6.
+12.  Fill in the blanks on the graph with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who use helmets and those who do not use helmets.  *Hint*: Use the conditional proportions from questions 5 and 6.
 
 \vspace{0.1in}
 
@@ -145,7 +179,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 
 \vspace{0.5in}
-### Use statistical analysis methods to draw inferences from the data
+### Use statistical analysis methods to draw inferences from the data {-}
 
 To test the null hypothesis we could use simulation methods as we did with a single categorical variable. In this activity we will focus on theory-based methods.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
@@ -192,9 +226,9 @@ We will use the pnorm function in `R` to find the p-value. Use the provided R ma
 
 
 ```r
-    pnorm(xx #enter value of test statistic
-      , m=0, s=1 #using the standard normal mean = 0, sd = 1
-      , lower.tail=TRUE) # gives a p-value less than the test statistic
+pnorm(xx, # Enter value of test statistic
+      m=0, s=1 # Using the standard normal mean = 0, sd = 1
+      lower.tail=TRUE) # Gives a p-value less than the test statistic
 ```
     
 
@@ -222,7 +256,7 @@ The $z^*$ multiplier is found under the standard normal distribution. We find th
 
 
 ```r
-qnorm(0.975) #multiplier for 95% confidence interval
+qnorm(0.975) # Multiplier for 95% confidence interval
 ```
 
 ```
@@ -254,15 +288,34 @@ qnorm(0.975) #multiplier for 95% confidence interval
 \vspace{.5in}
 
 
-### Types of errors
+### Types of errors {-}
 
 Hypothesis tests are not flawless. In a hypothesis test, there are two competing hypotheses: the null and alternative. We make a decision about which might be true, but we may choose incorrectly.  
 
-|       |            | Test Conclusion |                     |
-|:-----:|:----------:|-----------------|---------------------|
-|       |            | Reject $H_0$    | Fail to reject $H_0$|
-| Truth | $H_0$ true |  good decision  |  Type 1 Error       |
-|       | $H_A$ true |  Type 2 Error   |  good decision      |
+<!-- |       |            | Test Conclusion |                     | -->
+<!-- |       |            | Reject $H_0$    | Fail to reject $H_0$| -->
+<!-- |:-----:|:----------:|-----------------|---------------------| -->
+<!-- | Truth | $H_0$ true |  good decision  |  Type 1 Error       | -->
+<!-- |       | $H_A$ true |  Type 2 Error   |  good decision      | -->
+
+\begin{table}
+
+\caption{(\#tab:fourHTScenarios)Four different scenarios for hypothesis tests.}
+\centering
+\begin{tabular}[t]{l|l|l|l}
+\hline
+\multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{2}{c}{**Test conclusion**} \\
+\cline{3-4}
+ &  &  & \\
+\hline
+ &  & Fail to reject \$H\_0\$ & Reject \$H\_0\$\\
+\hline
+ & \$H\_0\$ true & good decision & Type 1 Error\\
+\hline
+**Truth** & \$H\_A\$ true & Type 2 Error & good decision\\
+\hline
+\end{tabular}
+\end{table}
 
 A Type 1 Error is rejecting the null hypothesis when $H_0$ is actually true. A Type 2 Error is failing to reject the null hypothesis when the alternative is actually true.
 

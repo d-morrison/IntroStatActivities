@@ -11,6 +11,8 @@
 
 * Find a confidence interval for the mean difference using bootstrapping
 
+* Interpret a confidence interval
+
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
 ## Terminology review
@@ -45,7 +47,6 @@ Have high population-density U.S. cities seen the same improved air quality cond
 
 
 
-\begin{center}\includegraphics[width=0.6\linewidth]{08-paired_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
 
 |               |         Mean         | Standard deviation | Sample size |
@@ -55,7 +56,7 @@ Have high population-density U.S. cities seen the same improved air quality cond
 | Differences   | $\bar{x}_d$ = -4.152 | $s_d$ = 17.096     | $n_d$ = 33  |
 
 \newpage
-### Vocabulary review
+### Vocabulary review {-}
 
 1. What is the sample size? 
 
@@ -73,7 +74,7 @@ Have high population-density U.S. cities seen the same improved air quality cond
 
 \vspace{0.3in}
 
-### Ask a research question
+### Ask a research question {-}
 
 5. What are the two competing possibilities to run a hypothesis test for this study?
 
@@ -92,7 +93,7 @@ Have high population-density U.S. cities seen the same improved air quality cond
 \vspace{1in}
 
 \newpage
-### Summarize and visualize the data 
+### Summarize and visualize the data  {-}
 
 9. Report the summary statistic for the data.  
 
@@ -103,7 +104,7 @@ Have high population-density U.S. cities seen the same improved air quality cond
 \vspace{0.3in}
 
 
-### Use statistical inferential methods to draw inferences from the data
+### Use statistical inferential methods to draw inferences from the data {-}
 
 To simulate the null distribution we will use a bootstrapping method.  Recall that the null distribution must be created under the assumption that the null hypothesis is true.  Therefore, before bootstrapping we will need to shift each data point by the difference $\mu_0 - \bar{x}$.  This will ensure that the mean of the shifted data is $\mu_0$ and that the simulated null distribution will be centered at the null value.  
 
@@ -141,15 +142,15 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 16. Interpret the p-value in the context of the problem.
 
-\vspace{1in}
+\vspace{.8in}
 
 17. How much evidence does this provide for improved air quality in US cities?
 
-\vspace{.5in}
+\vspace{.3in}
 
 18. Write out the parameter of interest in context of the study.
 
-\vspace{1in}
+\vspace{.6in}
 
 The following `R` code creates a bootstrap distribution showing 1000 simulations of the mean difference.  
 
@@ -170,13 +171,19 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 \vspace{.3in}
 
 
-### Communicate the results and answer the research question.
+### Communicate the results and answer the research question. {-}
 
 20. Interpret the 99% confidence interval in the context of the problem.
 
+\vspace{.8in}
+
+21. Do the results of your confidence interval and hypothesis test agree?  What does each tell you about the null hypothesis?
+
+\vspace{1in}
+
 \newpage
 
-21.  Write a paragraph summarizes the results of this study.  Be sure to include:
+22.  Write a paragraph summarizes the results of this study.  Be sure to include:
 
 * Summary statistic
 
@@ -190,9 +197,9 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 
 \vspace{3in}
 
-### Revisit and look forward
+### Revisit and look forward {-}
 
-22. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
+23. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
 \vspace{1in}
 
 
