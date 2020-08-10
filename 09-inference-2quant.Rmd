@@ -131,7 +131,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 **Simulation method**
 
-15.  Load the package `catstats`.  Using the sample code below, enter the values for the variables, dataset, first in subtraction, number of simulations, observed statistic, and direction of the alternative hypothesis.
+15.  Using the provided `R` markdown file, enter the values for the variables, dataset, first in subtraction, number of simulations, observed statistic, and direction of the alternative hypothesis.
 ```{r, echo = TRUE, eval = FALSE}
 two_mean_test(RESPONSE~PREDICTOR, data = DATASET,  #Variables and data
                     first_in_subtraction = "VALUE", #First value in order of subtraction
@@ -147,9 +147,9 @@ two_mean_test(RESPONSE~PREDICTOR, data = DATASET,  #Variables and data
 
 \vspace{1in}
 
-17. Using bootstrapping find a 90% confidence interval. (Sample code given below.) 
+17. Using bootstrapping find a 90% confidence interval. Use the provided `R` markdown file. Enter the variables, first in subtraction, number of repetitions, and the confidence level.
 ```{r, echo = TRUE, eval = FALSE}
-two_mean_bootstrap_CI(RESPONSE~PREDICTOR, data = DATASET,  #Variables and data
+two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
                       first_in_subtraction = "VALUE", #First value in order of subtraction
                       number_repetitions = ###,  #Number of simulations
                       confidence_level = ##)
@@ -183,7 +183,7 @@ two_mean_bootstrap_CI(RESPONSE~PREDICTOR, data = DATASET,  #Variables and data
 
 \vspace{1in}
 
-21. If we had data on 45 La Ni\latexcode{\~{n}}a years and 47 El Ni\latexcode{\~{n}}o years and found a similar summary statistic, what would happen to the p-value?  The width of the confidence interval?  The power?
+21. If we had data on 45 La Ni\latexcode{\~{n}}a years and 47 El Ni\latexcode{\~{n}}o years and found a similar summary statistic, what would happen to the p-value?  The width of the confidence interval?  The power of the test?
 
 \vspace{1in}
 

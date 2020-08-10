@@ -190,7 +190,7 @@ To use the computer simulation, we will need to enter the "probability of succes
 
 
 
-The following R code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 18 match the code inputs. 
+The following `R` code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 18 match the code inputs. 
 
 
 ```r
@@ -235,7 +235,7 @@ We will use bootstrapping to find the 95% confidence interval.
 \vspace{1in}
 
 
-The following R code produced the following bootstrap distribution with 1000 simulations. 
+The following `R` code produced the following bootstrap distribution with 1000 simulations. 
 
 
 ```r
