@@ -36,18 +36,18 @@ To review these concepts, see Sections 2.1 and 2.2 in the textbook.
 ## "Current" Population Survey: 1985
 The data set we will use for this activity is from the Current Population Survey (CPS) in 1985.  The CPS is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population.  The following table describes the variables in the data set:
 
-| **Variable**  	| **Description**                                                                                                            	|
-|-----------	|------------------------------------------------------------------------------------------------------------------------	|
-| `educ`    	| Number of years of education                                                                                           	|
-| `south`   	| Whether lives in southern region of the US: `S` = lives in south, `NS` = does not live in south                        	|
-| `sex`     	| Sex: `M` = male, `F` = female                                                                                          	|
-| `exper`   	| Number of years of work experience (inferred from age and education)                                                   	|
-| `union`   	| Whether union member: `Union` or `Not`                                                                                 	|
-| `wage`    	| Wage (dollars per hour)                                                                                                	|
-| `age`     	| Age (years)                                                                                                            	|
-| `race`    	| Race: `W` = white, `NW` = not white                                                                                    	|
-| `sector`  	| Sector of the economy: `clerical`, `const` (construction),  `management`, `manufacturing`, `professional`, `sales`, `service`, `other` 	|
-| `married` 	| Marital status: `Married` or `Single`                                                                                  	|
+| **Variable** | **Description** |
+|--	|---------------	|
+| `educ` | Number of years of education |
+| `south` | Whether lives in southern region of the US: `S` = lives in south, `NS` = does not live in south  |
+| `sex` | Sex: `M` = male, `F` = female  |
+| `exper` | Number of years of work experience (inferred from age and education) |
+| `union` | Whether union member: `Union` or `Not` |
+| `wage` | Wage (dollars per hour) 	|
+| `age` | Age (years)  |
+| `race` | Race: `W` = white, `NW` = not white	|
+| `sector` | Sector of the economy: `clerical`, `const` (construction),  `management`, `manufacturing`, `professional`, `sales`, `service`, `other` |
+| `married` | Marital status: `Married` or `Single` |
 
 ### Vocabulary review
 
@@ -81,8 +81,6 @@ It is used by these authors to add comments to the `R` code and explain what eac
 
 ```r
 cps <- read.csv("data/cps.csv") #This will read in the data set
-cps$sector <- factor(cps$sector) #When a variable is categorical, need to make it a factor
-cps$sex <- factor(cps$sex)
 ```
 
 
@@ -93,8 +91,8 @@ If we wanted to know how many people in our data set were in each sector, we wou
 
 
 ```r
-ggplot(data = cps,   #This specifies the data set
-       aes(y = sector)) +   #This specifies the variable
+cps %>% #Data set piped into...
+ggplot(aes(y = sector)) +   #This specifies the variable
   geom_bar(stat = "count") +  #Tell it to make a bar plot
   labs(title = "Frequency Bar Plot of Sector",  #Give your plot a title
        x = "Frequency",   #Label the x axis
@@ -112,8 +110,8 @@ ggplot(data = cps,   #This specifies the data set
 We could also choose to display the data as a proportion in a relative frequency bar plot. To find the relative frequency, divide the count in each sector by the sample size.  These are sample proportions. 
 
 ```r
-ggplot(data = cps,   #This specifies the data set
-       aes(x = sector)) +   #This specifies the variable
+cps %>% #Data set piped into...
+ggplot(aes(x = sector)) +   #This specifies the variable
   geom_bar(aes(y = ..prop.., group = 1)) +  #Tell it to make a bar plot with proportions
   labs(title = "Relative Frequency Bar Plot of Sector",  #Give your plot a title
        x = "Sector",   #Label the x axis
@@ -134,8 +132,8 @@ To examine the differences proportion of males and females across sectors, we wo
 
 
 ```r
-ggplot(data = cps,   #This specifies the data set
-       aes(x = sector, fill = sex)) +   #This specifies the variables
+cps %>% #Data set piped into...
+ggplot(aes(x = sector, fill = sex)) +   #This specifies the variables
   geom_bar(stat = "count", position = "fill") +  #Tell it to make a stacked bar plot
   labs(title = "Segmented Bar Plot of Sector by Sex",  #Make sure to title your plot 
        x = "Sector",   #Label the x axis

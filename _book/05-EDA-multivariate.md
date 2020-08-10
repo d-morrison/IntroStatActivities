@@ -35,20 +35,17 @@ To review these concepts, see Chapter 3 in the textbook.
 
 We will revisit the data set used last week collected on Movies released in 2016. Here is a reminder of the variables collected on these movies.
 
-* Budget: The amount of money (in US $ millions) budgeted for the production of the movie
+| **Variable** 	| **Description** |
+|----	|-------------	|
+| `budget_mil` | Amount of money (in US $ millions) budgeted for the production of the movie |
+| `revenue_mil` | Amount of money (in US $ millions) the movie made after release|
+| `duration` | Length of the movie (in minutes)|
+| `content_rating` | Rating of the movie (`G`, `PG`, `PG-13`, `R`, `Not Rated`)|
+| `imdb_score` | IMDb user rating score from 1 to 10 |
+| `genres` | Categories the movie falls into (e.g., Action, Drama, etc.) |
+| `movie_facebook_likes` | Number of likes a movie receives on Facebook |
 
-* Revenue: The amount of money (in US $ millions) the movie made after release
-
-* Duration: The length of the movie (in minutes)
-
-* Content Rating: Rating of the movie (G, PG, PG-13, R, Not Rated)
-
-* IMDb Score: User rating score from 1 to 10
-
-* Genre: Category the movie falls into
-
-* Movie Facebook Likes: Number of likes a movie receives on Facebook
-
+\newpage
 
 ### Vocabulary review
 
@@ -65,8 +62,8 @@ We will look at the relationship between 'Budget' and 'Revenue' for movies relea
 
 ```r
 movies <- read.csv("data/Movies2016.csv") #Reads in data set
-ggplot(data = movies,   #This is the data set
-       aes(x = budget_mil, y = revenue_mil))+  #Specify variables
+movies %>% #Data set pipes into...
+ggplot(aes(x = budget_mil, y = revenue_mil))+  #Specify variables
   geom_point() +  #Add scatterplot of points
   labs(x = "Budget in Millions ($)",  #Label x-axis
        y = "Revenue in Millions ($)",  #Label y-axis
@@ -108,7 +105,7 @@ Correlation measures the strength and the direction between two quantitative var
 
 ```r
 # Take subset of variables
-movies %>%
+movies %>%  #Data set pipes into...
   select(c("budget_mil", "revenue_mil",  # Take subset of variables
            "duration", "imdb_score", 
            "movie_facebook_likes")) %>%
@@ -174,12 +171,12 @@ You may remember from middle and high school that slope $=\frac{\mbox{rise}}{\mb
 
 Using $b_1$ to represent slope, we can write that as the fraction $\frac{b_1}{1}$. 
 
-Therefore, the slope predicts the how much the line will *rise* for each *run* of +1. In other words, as the x variable increases by 1 unit, the y variable is expected to change (increase/decrease) by the value of slope.
+Therefore, the slope predicts the how much the line will *rise* for each *run* of +1. In other words, as the $x$ variable increases by 1 unit, the $y$ variable is expected to change (increase/decrease) by the value of slope.
 
 
 10.  Write out the least squares line using the summary statistics provided in proper statistical notation.
 
-\vspace{.8in}
+\vspace{.6in}
 
 11. Interpret the value of slope in context of the problem.
 
@@ -187,7 +184,7 @@ Therefore, the slope predicts the how much the line will *rise* for each *run* o
 
 12. Using the least squares line from question 10, predict the revenue for a movie with a budget of 165 million.
 
-\vspace{.8in}
+\vspace{.6in}
 
 ### Residuals
 
@@ -229,8 +226,8 @@ What if we wanted to see if the relationship between 'Budget' and 'Revenue' diff
 
 
 ```r
-ggplot(data = movies,   #This is the data set
-       aes(x = budget_mil, y = revenue_mil, color = content_rating)) +  #Specify variables
+movies %>% #Data set pipes into...
+ggplot(aes(x = budget_mil, y = revenue_mil, color = content_rating)) +  #Specify variables
   geom_point(aes(shape = content_rating), size = 3) +  #Add scatterplot of points
   labs(x = "Budget in Millions ($)",  #Label x-axis
        y = "Revenue in Millions ($)",  #Label y-axis
@@ -252,6 +249,7 @@ ggplot(data = movies,   #This is the data set
 
 \vspace{1in}
 
+\newpage
 
 ## Additional notes
 

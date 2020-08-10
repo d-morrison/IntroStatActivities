@@ -29,7 +29,7 @@ To review these concepts, see Section 2.3 in the textbook.
 
 A data set was collected on movies released in 2016.  Here is a list of some of the variables collected on these movies.
 
-| **Variable** 	| **Description**  	|
+| **Variable** 	| **Description** |
 |----	|-------------	|
 | `budget_mil` | Amount of money (in US $ millions) budgeted for the production of the movie |
 | `revenue_mil` | Amount of money (in US $ millions) the movie made after release|
@@ -57,11 +57,12 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 ### Summarizing a single quantitative variable
 
-The `favstats` function gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable 'IMDb'.
+The `favstats` function gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable `imdb_score`.
 
 ```{r, echo=TRUE, collapse = FALSE}
-movies <- read.csv("data/Movies2016.csv") #Reads in data set
-favstats(movies$imdb_score)  #Syntax: [data set name]$[variable name]
+movies <- read.csv("data/Movies2016.csv") # Read in data set
+movies %>% #Data set piped into...
+  summarise(favstats(imdb_score)) #Apply favstats function to imdb_score
 ```
 
 4. Give the values for the two measures of center.
@@ -84,8 +85,8 @@ favstats(movies$imdb_score)  #Syntax: [data set name]$[variable name]
 A histogram of the variable 'IMDb Score' is shown below.  Notice that the bin width is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score of 4.75 will fall into the bin for 4.75 - 5.25.  Visually this shows us the range of IMDb scores for Movies released in 2016.
 
 ```{r, out.width="60%", echo=TRUE}
-ggplot(data = movies,   #Name data set
-       aes(x = imdb_score)) +   #Name variable to plot
+movies %>% #Data set piped into...
+ggplot(aes(x = imdb_score)) +   #Name variable to plot
   geom_histogram(binwidth = 0.5) +  #Create histogram with specified binwidth
   labs(title = "Histogram of IMDb Score of Movies in 2016", #title for plot
        x = "IMDb Score", #Label for x axis

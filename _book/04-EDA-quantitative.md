@@ -29,7 +29,7 @@ To review these concepts, see Section 2.3 in the textbook.
 
 A data set was collected on movies released in 2016.  Here is a list of some of the variables collected on these movies.
 
-| **Variable** 	| **Description**  	|
+| **Variable** 	| **Description** |
 |----	|-------------	|
 | `budget_mil` | Amount of money (in US $ millions) budgeted for the production of the movie |
 | `revenue_mil` | Amount of money (in US $ millions) the movie made after release|
@@ -57,17 +57,18 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 ### Summarizing a single quantitative variable
 
-The `favstats` function gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable 'IMDb'.
+The `favstats` function gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable `imdb_score`.
 
 
 ```r
-movies <- read.csv("data/Movies2016.csv") #Reads in data set
-favstats(movies$imdb_score)  #Syntax: [data set name]$[variable name]
+movies <- read.csv("data/Movies2016.csv") # Read in data set
+movies %>% #Data set piped into...
+  summarise(favstats(imdb_score)) #Apply favstats function to imdb_score
 ```
 
 ```
-#>  min   Q1 median  Q3 max     mean       sd  n missing
-#>  3.4 5.65    6.4 7.1 8.2 6.309783 1.086689 92       0
+#>   min   Q1 median  Q3 max     mean       sd  n missing
+#> 1 3.4 5.65    6.4 7.1 8.2 6.309783 1.086689 92       0
 ```
 
 4. Give the values for the two measures of center.
@@ -91,8 +92,8 @@ A histogram of the variable 'IMDb Score' is shown below.  Notice that the bin wi
 
 
 ```r
-ggplot(data = movies,   #Name data set
-       aes(x = imdb_score)) +   #Name variable to plot
+movies %>% #Data set piped into...
+ggplot(aes(x = imdb_score)) +   #Name variable to plot
   geom_histogram(binwidth = 0.5) +  #Create histogram with specified binwidth
   labs(title = "Histogram of IMDb Score of Movies in 2016", #title for plot
        x = "IMDb Score", #Label for x axis
@@ -162,7 +163,7 @@ movies %>%  #Data set piped into...
   ggplot(aes(y = budget_mil, x = content_rating))+  #Identify variables
   geom_boxplot()+  #Tell it to make a box plot
   labs(title = "Side by side box plot of budget by content rating",  #Title
-        x = "Content Rating",    #x-axis label
+       x = "Content Rating",    #x-axis label
        y = "Budget (in Millions)")  #y-axis label
 ```
 
