@@ -156,9 +156,12 @@ movies %>%
 
 ### Slope
 
-The slope measures the change in y for each increase in x by 1.  In other words, as the x variable increases by 1 unit, the y variable changes (increases/decreases) by the value of slope.
-
 The linear model function in R gives us the summary for the least squares regression line.  The estimate for (Intercept) is the y-intercept for the line of least squares and the estimate for budget_mil is the value of $b_1$, the slope.
+
+You may remember from middle and high school that slope $=\frac{\mbox{rise}}{\mbox{run}}$.  
+Using $b_1$ to represent slope, we can write that as the fraction $\frac{b_1}{1}$.  
+Therefore, the slope predicts the how much the line will *rise* for each *run* of +1.  
+In other words, as the x variable increases by 1 unit, the y variable is expected to change (increase/decrease) by the value of slope.
 
 
 ```r
