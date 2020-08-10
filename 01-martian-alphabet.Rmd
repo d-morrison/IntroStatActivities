@@ -114,22 +114,22 @@ include_graphics("images/relative_barplot_martian.png")
 **Step 4**: The next step is to *use statistical analysis methods to draw inferences from the data*. To answer the research question, we will simulate what *could* have happened in our class given random chance, repeat that many times to understand the expected *variability* between different "randomly guessing" classes, then compare our class's observed data to the simulation.  This gives us an estimate of how often (or the probability of) our class's result would occur if we were all merely guessing, allowing us to determine if the data provides evidence that we as a class can in fact read Martian.
 
 9. If humans really don’t know Martian and are just guessing which is Bumba, what are the chances of getting it right?
-\vspace{0.5in}
+\vspace{0.3in}
 
     How could we use a coin to simulate each student “just guessing” which Martian letter is Bumba?
-\vspace{1in}
+\vspace{.9in}
 
     How could we use coins to simulate the entire class “just guessing” which Martian letter is Bumba? 
-\vspace{1in}
+\vspace{.9in}
 
     How many people in your class would you expect to choose Bumba correctly just by chance?  Explain your reasoning.
-\vspace{1in}
+\vspace{.9in}
 
 10. Each of you will flip a coin one time to simulate your “guess”.  Let Heads = correct, Tails = incorrect.  What was the result of your simulation?
-\vspace{.4in}
+\vspace{.3in}
 
     What was the result from your class’s simulation?  What proportion of students “guessed” correctly in the simulation?
-\vspace{.4in}
+\vspace{.3in}
 
 11. If students really don’t know Martian and are just guessing which is Bumba, which seems more unusual: the result from your class’s **simulation** or the observed proportion of students in your class that were correct (this is your summary statistic from question 6)?  Explain your reasoning.
 
