@@ -163,7 +163,7 @@ For the next exercises, identify the explanatory variable, the response variable
     Explanatory variable:
 \vspace{0.25in}
 
-    Response variable:
+    Response vnariable:
 \vspace{0.25in}
 
     Study design:
