@@ -36,7 +36,7 @@ In June 2020, the social distancing efforts and stay-at-home directives to help 
 Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015--2019). Note that higher AQI scores indicate worse air quality. A box plot of the differences in AQI scores for the 33 cities and a table of summary statistics are shown below.
 
 
-```{r covid, fig.cap="The India Gate in New Delhi, India", out.width="60%"}
+```{r covid, fig.cap="The India Gate in New Delhi, India.", out.width="60%"}
 include_graphics("images/air_pollution_greyscale.png")
 ```
 
