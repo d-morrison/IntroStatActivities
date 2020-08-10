@@ -1,7 +1,5 @@
 # Movie Profits
 
-
-
 ## Learning objectives
 
 * Identify and create appropriate summary statistics and plots
@@ -66,6 +64,7 @@ We will look at the relationship between 'Budget' and 'Revenue' for movies relea
 
 
 ```r
+movies <- read.csv("data/Movies2016.csv") #Reads in data set
 ggplot(data = movies,   #This is the data set
        aes(x = budget_mil, y = revenue_mil))+  #Specify variables
   geom_point() +  #Add scatterplot of points
@@ -77,7 +76,7 @@ ggplot(data = movies,   #This is the data set
 
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{05-EDA-multivariate_files/figure-latex/unnamed-chunk-2-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{05-EDA-multivariate_files/figure-latex/unnamed-chunk-1-1} \end{center}
 3. Assess the four features of the scatterplot that describe this relationship. Describe each feature using a complete sentence!
 
 * Form (linear, non-linear)
@@ -119,16 +118,16 @@ movies %>%
 
 ```
 #>                      budget_mil revenue_mil duration imdb_score
-#> budget_mil                1.000       0.647    0.527      0.308
-#> revenue_mil               0.647       1.000    0.252      0.488
-#> duration                  0.527       0.252    1.000      0.236
-#> imdb_score                0.308       0.488    0.236      1.000
-#> movie_facebook_likes      0.648       0.671    0.562      0.346
+#> budget_mil                1.000       0.686    0.463      0.292
+#> revenue_mil               0.686       1.000    0.227      0.398
+#> duration                  0.463       0.227    1.000      0.261
+#> imdb_score                0.292       0.398    0.261      1.000
+#> movie_facebook_likes      0.678       0.723    0.438      0.309
 #>                      movie_facebook_likes
-#> budget_mil                          0.648
-#> revenue_mil                         0.671
-#> duration                            0.562
-#> imdb_score                          0.346
+#> budget_mil                          0.678
+#> revenue_mil                         0.723
+#> duration                            0.438
+#> imdb_score                          0.309
 #> movie_facebook_likes                1.000
 ```
 
@@ -166,9 +165,9 @@ summary(revenueLM)$coefficients # Display coefficient summary
 ```
 
 ```
-#>               Estimate Std. Error  t value     Pr(>|t|)
-#> (Intercept) 20.0362329 14.3458255 1.396659 1.677479e-01
-#> budget_mil   0.9236972  0.1418579 6.511426 1.806269e-08
+#>              Estimate Std. Error  t value     Pr(>|t|)
+#> (Intercept) 9.1693054  9.0175499 1.016829 3.119606e-01
+#> budget_mil  0.9460001  0.1056786 8.951670 4.339561e-14
 ```
 
 You may remember from middle and high school that slope $=\frac{\mbox{rise}}{\mbox{run}}$.  
@@ -243,7 +242,7 @@ ggplot(data = movies,   #This is the data set
 
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{05-EDA-multivariate_files/figure-latex/unnamed-chunk-5-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{05-EDA-multivariate_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
 25.  Identify the three varables plotted in this graph.
 
