@@ -58,10 +58,16 @@ An important part of understanding data is to create visual pictures of what the
 
 ### `R` code
 
+`R` is a free statistical analysis software program we will use in Stat 216.  Please see D2L for instructions on how to download or 
+access a version of `R` on your laptop, or plan to use the school computers for some parts of assigned out of class work for this course.
+
 Throughout these activities, we will often include the `R` code
 you would use in order to produce output or plots. These
 "code chunks" appear in gray. In the code chunk below, we
 demonstrate how to read the data set into `R` using the `read.csv()` function, and tell `R` to treat the `sector` and `sex` variables as categorical variables ("factors").
+
+The \# sign is not part of the `R` code. 
+It is used by us to add comments to the `R` code and explain what each call is telling the program to do.
 
 ```r
 cps <- read.csv("data/cps.csv") #This will read in the data set
@@ -69,7 +75,6 @@ cps$sector <- factor(cps$sector) #When a variable is categorical, need to make i
 cps$sex <- factor(cps$sex)
 ```
 
-\newpage
 
 ### Displaying a single categorical variable
 

@@ -40,6 +40,46 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -132,308 +172,25 @@ Placeholder
 \hypertarget{martian-alphabet}{%
 \chapter{Martian Alphabet}\label{martian-alphabet}}
 
+Placeholder
+
 \hypertarget{learning-outcomes}{%
 \section{Learning outcomes}\label{learning-outcomes}}
-
-\begin{itemize}
-\item
-  Describe the statistical investigation process
-\item
-  Identify observational units, variables, and variable types in a statistical study
-\end{itemize}
 
 \hypertarget{terminology-review}{%
 \section{Terminology review}\label{terminology-review}}
 
-Statistics is the study of how best to collect, analyze, and draw conclusions from data. Today in class you will be introduced to the following terms:
-
-\begin{itemize}
-\item
-  Observational units or cases
-\item
-  Variables: categorical or quantitative
-\item
-  Proportions
-\item
-  Graphs: frequency bar plot and relative frequency bar plot
-\item
-  Distribution
-\end{itemize}
-
-For more on these concepts, read Sections 1.2 and 2.1 in the textbook.
-
 \hypertarget{can-you-read-martian}{%
 \section{Can you read ``Martian''?}\label{can-you-read-martian}}
-
-How well can humans distinguish one ``Martian'' letter from another? In today's activity, we'll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or on the right.
-
-\vspace{0.3in}
 
 \hypertarget{steps-of-the-statistical-investigation-process}{%
 \subsection{Steps of the statistical investigation process}\label{steps-of-the-statistical-investigation-process}}
 
-\textbf{Step 1}: The first step of any statistical investigation is to \emph{ask a research question}. In this study the research question is: can we as a class read Martian? (We will refine this later on!).
-
-\textbf{Step 2}: To answer any research question, we must \emph{design a study and collect data}. For our question, the study consists of each student being presented with two Martian letters and asking which was Bumba. Your responses will become our observed data that we will explore.
-
-\newpage
-
-\textbf{Observational units} or \textbf{cases} are the subjects data are collected on. In a spreadsheet of the data set, each row will represent a single observational unit.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  What are the observational units in this study?
-\end{enumerate}
-
-\vspace{0.4in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  How many students are in class today? This is the \emph{sample size}.
-\end{enumerate}
-
-\vspace{0.3in}
-
-A \textbf{variable} is information collected or measured on each observational unit or case. Each column in a data set will represent a different variable. Today we are only measuring one variable on each observational unit.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  Identify the variable we are collecting on each observational unit in this study, i.e., what are we measuring on each student?
-\end{enumerate}
-
-\vspace{.8in}
-
-We will look at two types of variables: \textbf{quantitative} and \textbf{categorical} (see Figure \ref{fig:types-of-variables}).
-
-Quantitative variables are numerical measurements that can be discrete (whole, non-negative numbers) or continuous (any value within an interval). The number of students in a class would be a discrete variable as you can not have a partial student. GPA would be a continuous variable ranging from 0 to 4.0.
-
-Categorical variables are data that are in groups or categories such as eye color, state of residency, or whether or not a student lives on campus. Categorical variables with a natural ordering are considered ordinal variables while those without a natural ordering are considered a nominal variable. All categorical variables will be treated as nominal for analysis in this course.
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.6\linewidth]{images/variables} 
-
-}
-
-\caption{Types of variables.}\label{fig:types-of-variables}
-\end{figure}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  Is the variable identified in question 3 categorical or quantitative?
-\end{enumerate}
-
-\vspace{0.3in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
-\tightlist
-\item
-  Were you correct or incorrect in identifying Bumba?
-\end{enumerate}
-
-\vspace{0.3in}
-
-\newpage
-
-\textbf{Step 3}: Once we have collected data, the next step is to \emph{summarize and visualize the data}.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
-\tightlist
-\item
-  How many people in your class were correct in identifying Bumba? Using the class size from question 2, calculate the proportion of students who correctly identified Bumba.
-\end{enumerate}
-
-\begin{center}
-$\mbox{proportion} = \frac{\mbox{number of students who correctly identified Bumba}}{\mbox{total number of students}}$
-\end{center}
-
-\vspace{0.7in}
-
-The proportion in question 6 is called a \textbf{summary statistic}---a single value that summarizes the data set. It is important to note that a variable is different than a summary statistic. A \emph{variable} is measured on a \emph{single observational unit} while a summary statistic is calculated from a group of observational units. For example, the variable ``whether or not a student lives on campus'' can be measured on each individual student. In a class of 50 students we can calculate the proportion of students who live on campus, the summary statistic. Look back and make sure you wrote the variable in question 3 as a variable, NOT a summary statistic.
-
-Looking at the data set and the summary statistics is only one way to display the data. We will also want to create a visualization or picture of the data. A \textbf{frequency bar plot} is used to display categorical data as a count or frequency. Since our variable has two levels, correct or incorrect, we will create two bars---one for each level.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
-\tightlist
-\item
-  Plot the observed class data using a frequency bar plot. Be sure to add a scale to the y-axis.
-\end{enumerate}
-
-\begin{center}\includegraphics[width=0.4\linewidth]{images/barplot_martian} \end{center}
-
-We can also visualize the data as a proportion in a \textbf{relative frequency bar plot}. Relative frequency is the proportion calculated for each level of the categorical variable.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{7}
-\tightlist
-\item
-  Plot the observed class data using a relative frequency bar plot. Be sure to add a scale to the y-axis.
-\end{enumerate}
-
-\begin{center}\includegraphics[width=0.4\linewidth]{images/relative_barplot_martian} \end{center}
-
-\newpage
-
-\textbf{Step 4}: The next step is to \emph{use statistical analysis methods to draw inferences from the data}. To answer the research question, we will simulate what \emph{could} have happened in our class given random chance, repeat that many times to understand the expected \emph{variability} between different ``randomly guessing'' classes, then compare our class's observed data to the simulation. This gives us an estimate of how often (or the probability of) our class's result would occur if we were all merely guessing, allowing us to determine if the data provides evidence that we as a class can in fact read Martian.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
-\item
-  If humans really don't know Martian and are just guessing which is Bumba, what are the chances of getting it right?
-  \vspace{0.3in}
-
-  How could we use a coin to simulate each student ``just guessing'' which Martian letter is Bumba?
-  \vspace{.9in}
-
-  How could we use coins to simulate the entire class ``just guessing'' which Martian letter is Bumba?
-  \vspace{.9in}
-
-  How many people in your class would you expect to choose Bumba correctly just by chance? Explain your reasoning.
-  \vspace{.9in}
-\item
-  Each of you will flip a coin one time to simulate your ``guess''. Let Heads = correct, Tails = incorrect. What was the result of your simulation?
-  \vspace{.3in}
-
-  What was the result from your class's simulation? What proportion of students ``guessed'' correctly in the simulation?
-  \vspace{.3in}
-\item
-  If students really don't know Martian and are just guessing which is Bumba, which seems more unusual: the result from your class's \textbf{simulation} or the observed proportion of students in your class that were correct (this is your summary statistic from question 6)? Explain your reasoning.
-\end{enumerate}
-
-\newpage
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{11}
-\tightlist
-\item
-  While your observed class data is likely far different from the simulated ``just-guessing'' class, comparing our class data to a single simulation does not seem to give enough information. The differences seen could just be due to that set of coin flips! Let's simulate another class. Each student should flip your coin again. What was the result from your class's second simulation? What proportion of students ``guessed'' correctly in the second simulation? Create a plot to compare the two simulated results with the observed class result.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
-\tightlist
-\item
-  We still unfortunately only have a couple of simulations to compare our class data to. It would be much better to be able to see how our class compared to hundreds or thousands of ``just-guessing'' classes. Since we don't want to flip coins all class period, your instructor will use a computer simulation to get 1000 trials. Fill in the following blanks to describe how we would create a simulation of random guessing with 1000 trials.
-\end{enumerate}
-
-~~~~~~~~~~Probability of correct guesses: \_\_\_\_\_
-
-\vspace{0.05in}
-
-~~~~~~~~~~Sample size: \_\_\_\_\_
-
-\vspace{0.05in}
-
-~~~~~~~~~~Number of repetitions: \_\_\_\_\_
-
-\vspace{0.05in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{13}
-\tightlist
-\item
-  Sketch the distribution displayed by your instructor here, being sure to label each axis appropriately.
-\end{enumerate}
-
-\vspace{1.5in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{14}
-\tightlist
-\item
-  Is your class particularly good or bad at Martian? How can you use the plot in question 14 to tell?
-\end{enumerate}
-
-\vspace{.8in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{15}
-\tightlist
-\item
-  Is it \emph{possible} that we could see our class results just by chance if everyone was just guessing? Explain your reasoning.
-\end{enumerate}
-
-\vspace{.5in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{16}
-\tightlist
-\item
-  Is it \emph{likely} that we could see our class results just by chance if everyone was just guessing? Explain your reasoning.
-\end{enumerate}
-
-\vspace{.5in}
-
-\newpage
-
-\textbf{Step 5}: The next step in the statistical investigation process is to \emph{communicate the results and answer the research question}.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{17}
-\tightlist
-\item
-  Does this activity provide strong evidence that students were not just guessing at random? If so, what do you think is going on here? Can we as a class read Martian?\footnote{Reference for ``Martian alphabet'' is a TED talk given by Vilayanur Ramachandran in 2007. The synesthesia part begins at roughly 17:30 minutes: \texttt{http://www.ted.com/talks/vilayanur\_ramachandran\_on\_your\_mind}.}
-\end{enumerate}
-
-\vspace{1in}
-
-\textbf{Step 6}: The final step of any statistical investigation is to \emph{revisit and look ahead}.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{18}
-\tightlist
-\item
-  Can you think of any limitations of our study? Can you think of a new topic that might be on interest based on the results of our study?
-\end{enumerate}
-
-\vspace{1in}
-
 \hypertarget{take-home-messages}{%
 \section{Take home messages}\label{take-home-messages}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  In this course we will learn how to evaluate a claim by comparing observed results (classes' ``guesses'' when asked to identify Bumba) to a distribution of many simulated results under an assumption like ``blind guessing.''
-\item
-  Blind guessing between two outcomes will be correct only about half the time. We can create data (via computer simulation) to fit the assumption of blind guessing.
-\item
-  Unusual observed results will make us doubt the assumptions used to create the simulated distribution. A large number of correct ``guesses'' is evidence that a person was not just blindly guessing.
-\end{enumerate}
-
 \hypertarget{additional-notes}{%
 \section{Additional notes}\label{additional-notes}}
-
-Use this space to summarize your thoughts and take additional notes on today's activity, and to write down the names and contact information of your team mates.
 
 \hypertarget{study-design}{%
 \chapter{Study Design}\label{study-design}}
@@ -458,34 +215,346 @@ Placeholder
 \hypertarget{current-population-survey}{%
 \chapter{Current Population Survey}\label{current-population-survey}}
 
-Placeholder
-
 \hypertarget{learning-outcomes}{%
 \section{Learning outcomes}\label{learning-outcomes}}
+
+\begin{itemize}
+\item
+  Identify and create appropriate summary statistics and plots
+  given a data set or research question
+\item
+  Plots for a single categorical variable: bar plot
+\item
+  Plots for association between two categorical variables:
+  segmented bar plot, mosaic plot
+\item
+  Recognize and simulate probabilities as long-run frequencies
+\item
+  Construct two-way tables to evaluate conditional probabilities
+\end{itemize}
 
 \hypertarget{terminology-review}{%
 \section{Terminology review}\label{terminology-review}}
 
+In today's activity, we will review summary measures and plots for categorical variables. Some terms covered in this activity are:
+
+\begin{itemize}
+\item
+  Proportions
+\item
+  Bar plots
+\item
+  Segmented bar plots
+\item
+  Probability
+\item
+  Conditional probability
+\item
+  Two-way tables
+\end{itemize}
+
+To review these concepts, see Sections 2.1 and 2.2 in the textbook.
+
+\newpage
+
 \hypertarget{current-population-survey-1985}{%
 \section{``Current'' Population Survey: 1985}\label{current-population-survey-1985}}
+
+The data set we will use for this activity is from the Current Population Survey (CPS) in 1985. The CPS is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population. The following table describes the variables in the data set:
+
+\begin{center}\includegraphics[width=0.7\linewidth]{images/cps} \end{center}
 
 \hypertarget{vocabulary-review}{%
 \subsection{Vocabulary review}\label{vocabulary-review}}
 
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  What are the observational units?
+\end{enumerate}
+
+\vspace{0.2in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Which variables are categorical?
+\end{enumerate}
+
+\vspace{0.4in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  What types of plots can be used to display categorical data?
+\end{enumerate}
+
+\vspace{0.5in}
+
+An important part of understanding data is to create visual pictures of what the data represent. In this activity, we will create graphical representations of categorical data.
+
 \hypertarget{r-code}{%
 \subsection{\texorpdfstring{\texttt{R} code}{R code}}\label{r-code}}
+
+\texttt{R} is a free statistical analysis software program we will use in Stat 216. Please see D2L for instructions on how to download or
+access a version of \texttt{R} on your laptop, or plan to use the school computers for some parts of assigned out of class work for this course.
+
+Throughout these activities, we will often include the \texttt{R} code
+you would use in order to produce output or plots. These
+``code chunks'' appear in gray. In the code chunk below, we
+demonstrate how to read the data set into \texttt{R} using the \texttt{read.csv()} function, and tell \texttt{R} to treat the \texttt{sector} and \texttt{sex} variables as categorical variables (``factors'').
+
+The \# sign is not part of the \texttt{R} code.
+It is used by us to add comments to the \texttt{R} code and explain what each call is telling the program to do.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cps <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/cps.csv"}\NormalTok{) }\CommentTok{#This will read in the data set}
+\NormalTok{cps}\OperatorTok{$}\NormalTok{sector <-}\StringTok{ }\KeywordTok{factor}\NormalTok{(cps}\OperatorTok{$}\NormalTok{sector) }\CommentTok{#When a variable is categorical, need to make it a factor}
+\NormalTok{cps}\OperatorTok{$}\NormalTok{sex <-}\StringTok{ }\KeywordTok{factor}\NormalTok{(cps}\OperatorTok{$}\NormalTok{sex)}
+\end{Highlighting}
+\end{Shaded}
 
 \hypertarget{displaying-a-single-categorical-variable}{%
 \subsection{Displaying a single categorical variable}\label{displaying-a-single-categorical-variable}}
 
+If we wanted to know how many people in our data set were in each sector, we would create a frequency bar plot of the variable \texttt{sector}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ cps,   }\CommentTok{#This specifies the dataset}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ sector)) }\OperatorTok{+}\StringTok{   }\CommentTok{#This specifies the variable}
+\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{#Tell it to make a bar plot}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Frequency Bar Plot of Sector"}\NormalTok{,  }\CommentTok{#Give your plot a title}
+       \DataTypeTok{x =} \StringTok{"Frequency"}\NormalTok{,   }\CommentTok{#Label the x axis}
+       \DataTypeTok{y =} \StringTok{"Sector"}\NormalTok{)  }\OperatorTok{+}\StringTok{ }\CommentTok{#Label the y axis}
+\StringTok{  }\KeywordTok{coord_flip}\NormalTok{()  }\CommentTok{#Turn the bars so they are vertical}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics[width=0.5\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-3-1} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Which sector of the economy has the largest number of people in it? Approximately how many people are in this sector?
+\end{enumerate}
+
+\vspace{0.3in}
+
+We could also choose to display the data as a proportion in a relative frequency bar plot. To find the relative frequency, divide the count in each sector by the sample size. These are sample proportions.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ cps,   }\CommentTok{#This specifies the dataset}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ sector)) }\OperatorTok{+}\StringTok{   }\CommentTok{#This specifies the variable}
+\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ ..prop.., }\DataTypeTok{group =} \DecValTok{1}\NormalTok{)) }\OperatorTok{+}\StringTok{  }\CommentTok{#Tell it to make a bar plot with proportions}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Relative Frequency Bar Plot of Sector"}\NormalTok{,  }\CommentTok{#Give your plot a title}
+       \DataTypeTok{x =} \StringTok{"Sector"}\NormalTok{,   }\CommentTok{#Label the x axis}
+       \DataTypeTok{y =} \StringTok{"Relative Frequency"}\NormalTok{)  }\CommentTok{#Label the y axis}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics[width=0.5\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-4-1} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Which features in the relative frequency bar plot are the same as the frequency bar plot? Which are different?
+\end{enumerate}
+
+\vspace{1in}
+
 \hypertarget{displaying-two-categorical-variables}{%
 \subsection{Displaying two categorical variables}\label{displaying-two-categorical-variables}}
+
+To examine the differences proportion of males and females across sectors, we would create a segmented bar plot of \texttt{sector} segmented by \texttt{sex}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ cps,   }\CommentTok{#This specifies the dataset}
+       \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ sector, }\DataTypeTok{fill =}\NormalTok{ sex)) }\OperatorTok{+}\StringTok{   }\CommentTok{#This specifies the variables}
+\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{, }\DataTypeTok{position =} \StringTok{"fill"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{#Tell it to make a stacked bar plot}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Segmented Bar Plot of Sector by Sex"}\NormalTok{,  }\CommentTok{#Make sure to title your plot }
+       \DataTypeTok{x =} \StringTok{"Sector"}\NormalTok{,   }\CommentTok{#Label the x axis}
+       \DataTypeTok{y =} \StringTok{""}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{#Remove y axis label}
+\StringTok{    }\KeywordTok{scale_fill_grey}\NormalTok{()  }\CommentTok{#Make figure black and white}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics[width=0.6\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-5-1} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  Using the segmented bar plot, which sector has about the same proportion of males and females?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  Which sector has the highest proportion of females?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  Which variable is the bar plot treating as the explanatory variable? Which is the response variable?
+\end{enumerate}
+
+\newpage
 
 \hypertarget{probability}{%
 \section{Probability}\label{probability}}
 
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\item
+  A study was reported in which ninth grade Minnesota teens were asked whether they had gambled at least once a week in the past year. The sample consisted of 49.1\% boys. The proportion of boys who had gambled at least once per week during the past year was 0.229, while among non-boys this proportion was only 0.045.
+  \vspace{1mm}
+
+  Let B = the event the person is a boy, and C = the event the person is a weekly gambler.
+  \vspace{0.1in}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Draw a segmented bar plot of sex segmented by gambling. Make sure to clearly label your axes and legend.
+  \vspace{1.8in}
+\item
+  Identify what each numerical value given in the problem represents in probability notation.
+  \vspace{.1in}
+\end{enumerate}
+
+~~~~~~~~~~~~~~~~0.491 = \vspace{.1in}\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}0.229 =
+
+\vspace{.1in}
+
+~~~~~~~~~~~~~~~~0.045 =
+
+\vspace{.1in}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Create a hypothetical two-way table to represent the situation. Recall that in a two-way table, the explanatory variable should be your column headers (similar to the \(x\)-axis in a segmented bar graph!) while the response variable becomes the row headers.
+\end{enumerate}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\hspace{1in} & \hspace{1in} & \hspace{1in} & Total\tabularnewline
+\midrule
+\endhead
+\hspace{1in} & & &\tabularnewline
+\hspace{1in} & & &\tabularnewline
+\hspace{1in} & & &\tabularnewline
+Total & & & 100,000\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\setcounter{enumi}{3}
+\item
+  Find \(P(\mbox{B and C})\). What does this probability represent in the context of the problem?
+  \vspace{.8in}
+\item
+  Find the probability that a selected non-gambler is a non-boy. What is the notation used for this probability?
+\end{enumerate}
+
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\item
+  In a computer store, 30\% of the computers in stock are laptops and 70\% are desktops. Five percent of the laptops are on sale, while 10\% of the desktops are on sale.
+  \vspace{1mm}
+
+  Let L = the event the computer is a laptop, and S = the event the computer is on sale.
+  \vspace{0.1in}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  Identify what each numerical value given in the problem represents in probability notation.
+  \vspace{.1in}
+\end{enumerate}
+
+~~~~~~~~~~~~~~~~0.30 = \vspace{.1in}\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}0.70 =
+
+\vspace{.1in}
+
+~~~~~~~~~~~~~~~~0.05 =
+
+\vspace{.1in}
+
+~~~~~~~~~~~~~~~~0.10 =
+
+\vspace{.1in}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Create a hypothetical two-way table to represent the situation.
+\end{enumerate}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\hspace{1in} & \hspace{1in} & \hspace{1in} & Total\tabularnewline
+\midrule
+\endhead
+\hspace{1in} & & &\tabularnewline
+\hspace{1in} & & &\tabularnewline
+\hspace{1in} & & &\tabularnewline
+Total & & & 100,000\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\setcounter{enumi}{2}
+\item
+  Calculate the probability that a randomly selected computer will be a desktop, given that the computer is on sale. What is the notation used for this probability?
+  \vspace{.8in}
+\item
+  Find \(P(S | L^C)\). What does this probability represent in context of the problem?
+  \vspace{1in}
+\end{enumerate}
+
 \hypertarget{additional-notes}{%
 \section{Additional notes}\label{additional-notes}}
+
+Use this space to summarize your thoughts and take additional notes on today's activity.
 
 \hypertarget{imdb-movie-reviews}{%
 \chapter{IMDb Movie Reviews}\label{imdb-movie-reviews}}
