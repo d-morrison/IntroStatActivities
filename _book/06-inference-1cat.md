@@ -13,6 +13,8 @@
 
 * Use bootstrapping to find a confidence interval for a single proportion
 
+* Interpret a confidence interval
+
 ## Terminology review
 
 In today's activity, we will introduce simulation hypothesis testing and confidence intervals for a single categorical variable. Some terms covered in this activity are:
@@ -53,9 +55,23 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 ## Handedness of male boxers
 
-Left-handedness is a trait that is found in about 10% of the population. The fighting claim states that left-handed men have an advantage in competition.  Past studies have shown that left-handed men are over-represented among professional fighters. In this random sample of 500 male boxers we will see if there is an over-prevalence of left-handed fighters.
+Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional fighters. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male boxers we will see if there is an over-prevalence of left-handed fighters.
 
 
+```r
+handedness <- read.csv("data/Male_boxers.csv") # Read in data set
+set.seed(12980) # Set random number generator to select 
+                # same sample each time.
+                # Remove this line to get a different random sample.
+handedness_sub <- handedness %>%
+  select(Stance) %>% # Select Stance variable
+  sample_n(500, replace=FALSE) # Randomly sample 500 rows
+dim(handedness_sub) # Check dimensions of data set are 500 rows x 1 col
+```
+
+```
+#> [1] 500   1
+```
 
 ### Summary statistics review
 
@@ -93,17 +109,29 @@ Left-handedness is a trait that is found in about 10% of the population. The fig
 
 ### Summarize and visualize the data
 
+<!-- ```{r, echo=TRUE, collapse=FALSE} -->
+<!-- # Counts for Handedness -->
+<!-- # Tally creates a table with a count for each level of the variable -->
+<!-- tally(~Stance, data=handedness_sub, margins=T)  -->
+<!-- ``` -->
+
 
 ```r
-# Counts for Handedness
-#Tally creates a table with a count for each level of the variable
-tally(~Stance, data=handedness_sub, margins=T) 
+handedness_sub %>% count(Stance)  # Count number in each Stance category
 ```
 
 ```
-#> Stance
-#>  left-handed right-handed        Total 
-#>           81          419          500
+#> Warning: `count_()` is deprecated as of dplyr 0.7.0.
+#> Please use `count()` instead.
+#> See vignette('programming') for more help
+#> This warning is displayed once every 8 hours.
+#> Call `lifecycle::last_warnings()` to see where this warning was generated.
+```
+
+```
+#>         Stance   n
+#> 1  left-handed  81
+#> 2 right-handed 419
 ```
 8.  Calculate the appropriate summary statistic that represents the research question.  Use appropriate notation.
 
@@ -111,7 +139,7 @@ tally(~Stance, data=handedness_sub, margins=T)
 
 ### Use statistical analysis methods to draw inferences from the data
 
-When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, the true value of interest.  
+When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the true value of interest.  
 
 9.  Write out the parameter of interest for this study. (Hint: the true proportion of....)
 
@@ -165,9 +193,9 @@ Let's think about how to use cards to create one simulation of 500 boxers under 
 17.  Once we have one simulated sample, what would we calculate and plot on the null distribution?
 \vspace{1in}
 
-We will use the computer to simulate 1000 different samples of 500 male boxers, plotting the proportion who are left handed in each sample, based on the assumption that the true proportion of male boxers who are left handed is 0.1.  This is called the null distribution because it is created based on the assumption that the null hypothesis is true.
+We will use the computer to simulate a null distribution of 1000 different samples of 500 male boxers, plotting the proportion who are left handed in each sample, based on the assumption that the true proportion of male boxers who are left handed is 0.1 (or that the null hypothesis is true).  
 
-To use the computer simulation, we will need to enter the "probability of success," "sample size," "number of repetitions," "as extreme as," and the "direction" (matches the direction of the alternative hypothesis).
+To use the computer simulation, we will need to enter the "probability of success" ($\pi_0$), "sample size" (the number of observational units in the sample), "number of repetitions" (the number of samples to be generated), "as extreme as" (the observed statistic), and the "direction" (matches the direction of the alternative hypothesis).
 
 18.  What values should be entered into the simulation?
 

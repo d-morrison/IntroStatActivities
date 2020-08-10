@@ -57,11 +57,15 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional fighters. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male boxers we will see if there is an over-prevalence of left-handed fighters.
 
-```{r echo=F, fig.height=4, collapse=FALSE}
-handedness <- read.csv("data/Male_boxers.csv")
-handedness$Stance <- factor(handedness$Stance)
-set.seed(12980)
-handedness_sub <- handedness[sample(nrow(handedness), 500), ]
+```{r echo=TRUE, fig.height=4, collapse=FALSE}
+handedness <- read.csv("data/Male_boxers.csv") # Read in data set
+set.seed(12980) # Set random number generator to select 
+                # same sample each time.
+                # Remove this line to get a different random sample.
+handedness_sub <- handedness %>%
+  select(Stance) %>% # Select Stance variable
+  sample_n(500, replace=FALSE) # Randomly sample 500 rows
+dim(handedness_sub) # Check dimensions of data set are 500 rows x 1 col
 ```
 
 ### Summary statistics review
@@ -100,10 +104,14 @@ handedness_sub <- handedness[sample(nrow(handedness), 500), ]
 
 ### Summarize and visualize the data
 
+<!-- ```{r, echo=TRUE, collapse=FALSE} -->
+<!-- # Counts for Handedness -->
+<!-- # Tally creates a table with a count for each level of the variable -->
+<!-- tally(~Stance, data=handedness_sub, margins=T)  -->
+<!-- ``` -->
+
 ```{r, echo=TRUE, collapse=FALSE}
-# Counts for Handedness
-#Tally creates a table with a count for each level of the variable
-tally(~Stance, data=handedness_sub, margins=T) 
+handedness_sub %>% count(Stance)  # Count number in each Stance category
 ```
 8.  Calculate the appropriate summary statistic that represents the research question.  Use appropriate notation.
 
