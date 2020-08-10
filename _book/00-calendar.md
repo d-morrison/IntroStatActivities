@@ -20,16 +20,16 @@
 3& 3& H& 9/3& Current Population Survey \\*
 3& 3& F& 9/4& Current Population Survey \\ \hline
 4& -& M& 9/7&	No class $-$ Labor Day \\*
-4& 4& T& 9/8& IMDb Movie Reviews: Part I \\*
-4& 4& W& 9/9& IMDb Movie Reviews: Part I \\*
-4& 4& H& 9/10& IMDb Movie Reviews: Part I \\*
-4& 4& F& 9/11& IMDb Movie Reviews: Part I \\ \hline
-5& 4& M& 9/14& IMDb Movie Reviews: Part I \\*
-5& 5& T& 9/15& IMDb Movie Reviews: Part II \\*
-5& 5& W& 9/16& IMDb Movie Reviews: Part II \\*	
-5& 5& H& 9/17& IMDb Movie Reviews: Part II \\*
-5& 5& F& 9/18& IMDb Movie Reviews: Part II \\ \hline
-6& 5& M& 9/21& IMDb Movie Reviews: Part II \\*
+4& 4& T& 9/8& IMDb Movie Reviews \\*
+4& 4& W& 9/9& IMDb Movie Reviews \\*
+4& 4& H& 9/10& IMDb Movie Reviews \\*
+4& 4& F& 9/11& IMDb Movie Reviews \\ \hline
+5& 4& M& 9/14& IMDb Movie Reviews \\*
+5& 5& T& 9/15& Movie Profits \\*
+5& 5& W& 9/16& Movie Profits \\*	
+5& 5& H& 9/17& Movie Profits \\*
+5& 5& F& 9/18& Movie Profits \\ \hline
+6& 5& M& 9/21& Movie Profits \\*
 6& $-$& T$-$F& 9/22$-$9/25& Exam 1 \\ \hline
 7& $-$& M& 9/28& Exam 1 \\*
 7& 6& T& 9/29& Handedness of Male Boxers \\*

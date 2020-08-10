@@ -49,11 +49,19 @@ Let’s explore the data.
 
 \vspace{0.3in}
 
-A **variable** is information collected or measured on each observational unit or case. We will look at two types of variables: **quantitative** and **categorical**.  Each column in a data set will represent a different variable. 
+A **variable** is information collected or measured on each observational unit or case. Each column in a data set will represent a different variable. 
+
+3. Identify the variable we are collecting on each observational unit in this study, i.e., what are we measuring on each student?
+
+\vspace{.8in}
+
+It is important to note that a variable is different than a summary statistic. A variable is measured on a **single observational unit** while a summary statistic is calculated from a group of observational units.  For example, the variable **whether or not a student lives on campus** can be measured on each individual student.  In a class of 50 students we can calculate the proportion of students who live on campus, the summary statistic.  Make sure you wrote the variable in question 3 as a variable **NOT** a summary statistic. 
+
+We will look at two types of variables: **quantitative** and **categorical**. 
 
 Quantitative variables are numerical measurements that can be discrete (whole, non-negative numbers) or continuous (any value within an interval).  The number of students in a class would be a discrete variable as you can not have a partial student.  GPA would be a continuous variable ranging from 0 to 4.0. 
 
-Categorical variables are data that are in groups or categories such as eye color, state of residency, or whether or not a student is considered in-state. Categorical variables with a natural ordering are considered ordinal variables while those without a natural ordering are considered a nominal variable.  All variables will be treated as nominal for analysis.
+Categorical variables are data that are in groups or categories such as eye color, state of residency, or whether or not a student lives on campus. Categorical variables with a natural ordering are considered ordinal variables while those without a natural ordering are considered a nominal variable.  All categorical variables will be treated as nominal for analysis.
 
 \begin{figure}
 
@@ -63,12 +71,6 @@ Categorical variables are data that are in groups or categories such as eye colo
 
 \caption{Types of variables.}(\#fig:unnamed-chunk-1)
 \end{figure}
-
-3. Identify the variable we are collecting on each observational unit in this study, i.e., what are we measuring on each student?
-
-\vspace{.8in}
-
-It is important to note that a variable is different than a summary statistic. A variable is measured on a **single observational unit** while a summary statistic is calculated from a group of observational units.  For example, the variable **whether or not a student is considered in-state** can be measured on each individual student.  In a class of 50 students we can calculate the proportion of students who are considered in-state, the summary statistic.  Make sure you wrote the variable in question 3 as a variable **NOT** a summary statistic. 
 
 4. Is the variable identified in question 3 categorical or quantitative?
 
@@ -165,7 +167,7 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 ## Take home messages
 
-1.	In this course we will learn how to evaluate a claim by comparing observed results (classes’ “guesses”) to a distribution of many simulated results under an assumption like “blind guessing.”
+1.	In this course we will learn how to evaluate a claim by comparing observed results (classes’ "guesses" when asked to identify Bumba) to a distribution of many simulated results under an assumption like “blind guessing.”
 
 2.	Blind guessing between two outcomes will be correct only about half the time. We can create data (via computer simulation) to fit the assumption of blind guessing.
 
