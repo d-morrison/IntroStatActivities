@@ -45,7 +45,7 @@ To review these concepts, see Chapter 5 in your textbook.
 \newpage
 
 ## Helmet use and head injuries
-In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the *Journal of the American Medical Association*, Vol. 295, No. 8 (2006), we can see the results from a random sample 3562 skiers and snowboarders involved in accidents. 
+In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the *Journal of the American Medical Association*, Vol. 295, No. 8 (2006), we can see the summary results from a random sample 3562 skiers and snowboarders involved in accidents in the two-way table below. Is there evidence that safety helmet use reduces the risk of head injury for skiers and snowboarders? 
 
 |                | Helmet Use | No Helmet Use | Total |
 |:--------------:|:----------:|:-------------:|:-----:|
@@ -75,21 +75,21 @@ injury %>% group_by(Helmet) %>% count(Injury)
 #> 3 Wore_Helmet Head_Injury       96
 #> 4 Wore_Helmet No_Head_Injury   656
 ```
-Is there evidence that safety helmet use reduces the risk of head injury for skiers and snowboarders? 
+
 
 ### Vocabulary review {-}
 
 1.  What is the explanatory variable?
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 2. What is the response variable?
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 3. Is this an experiment or observational study?  Justify your answer.
 
-\vspace{0.3in}
+\vspace{0.4in}
 
 4.  Put an X in the box that represents the appropriate scope of inference for this study.
 
@@ -145,21 +145,6 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 ### Summarize and visualize the data {-}
 
 
-```r
-injury %>%
-ggplot(aes(x = Helmet, fill = Injury)) +   #This specifies the variables
-  geom_bar(stat = "count", position = "fill") +  #Tell it to make a stacked bar plot
-  labs(title = "Segmented Bar Plot of Helmet Use by Injury",  #Make sure to title your plot 
-       x = "___________________",   #Label the x axis
-       y = "",  #Remove y axis label
-       fill = "_____________") + #Change legend label
-  scale_fill_discrete(labels = c("_________", "_________")) +
-  scale_x_discrete(labels = c("_____________", "_____________")) +
-  scale_fill_grey()
-```
-
-
-
 \begin{center}\includegraphics[width=0.7\linewidth]{07-inference-2cat_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 12.  Fill in the blanks on the graph with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who use helmets and those who do not use helmets.  *Hint*: Use the conditional proportions from questions 5 and 6.
@@ -179,6 +164,7 @@ ggplot(aes(x = Helmet, fill = Injury)) +   #This specifies the variables
 
 
 \vspace{0.5in}
+\newpage
 ### Use statistical analysis methods to draw inferences from the data {-}
 
 To test the null hypothesis we could use simulation methods as we did with a single categorical variable. In this activity we will focus on theory-based methods.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
@@ -201,16 +187,18 @@ Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$:
 
 To calculate the test statistic we use: 
 
-\begin{center}
-    $Z = \frac{\text{point estimate} - \text{null value}}{SE}$
+$$
+Z = \frac{\text{point estimate} - \text{null value}}{SE}
+$$
 
 where the standard error is calculated using the pooled proportion of successes.
 
-   $SE(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\frac{1}{n_2})}, \text{where}$ 
-    
-   $\hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}$
-    
-\end{center}
+$$
+SE(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\frac{1}{n_2})}, \text{  where}
+$$
+$$
+\hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
+$$
 
 \vspace{.25in}
 
@@ -299,25 +287,20 @@ Hypothesis tests are not flawless. In a hypothesis test, there are two competing
 <!-- |       | $H_A$ true |  Type 2 Error   |  good decision      | -->
 
 \begin{table}
-
-\caption{(\#tab:fourHTScenarios)Four different scenarios for hypothesis tests.}
 \centering
-\begin{tabular}[t]{l|l|l|l}
+\begin{tabular}[h]{ll|cc}
 \hline
-\multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{2}{c}{**Test conclusion**} \\
-\cline{3-4}
- &  &  & \\
+ & &  \multicolumn{2}{c}{\textbf{Test conclusion}} \\
+ &  & \multicolumn{1}{c}{Fail to reject $H_0$} & \multicolumn{1}{c}{Reject $H_0$}\\
 \hline
- &  & Fail to reject \$H\_0\$ & Reject \$H\_0\$\\
+ & $H_0$ true & good decision & Type 1 Error\\
 \hline
- & \$H\_0\$ true & good decision & Type 1 Error\\
-\hline
-**Truth** & \$H\_A\$ true & Type 2 Error & good decision\\
+\textbf{Truth} & $H_A$ true & Type 2 Error & good decision\\
 \hline
 \end{tabular}
 \end{table}
 
-A Type 1 Error is rejecting the null hypothesis when $H_0$ is actually true. A Type 2 Error is failing to reject the null hypothesis when the alternative is actually true.
+A **Type 1 Error** is rejecting the null hypothesis when $H_0$ is actually true. A **Type 2 Error** is failing to reject the null hypothesis when the alternative is actually true.
 
 26.  Using a significance level of 0.05, what decision do you make in regards to the null hypothesis?
 

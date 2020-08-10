@@ -69,12 +69,12 @@ hands <- # Write over original data with the following
 \vspace{1in}
 
 
-3. Use the provided `R` markdown file to create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names ('speed' and 'age') for xxx and xxxx. Provide this plot. Based on your plot, does it appear that there is a relationship between ``age`` and ``speed``? Note: ``age`` should be on the x-axis.
+3. Use the provided `R` markdown file to create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names ('speed' and 'age') for xx and yy. Provide this plot. Based on your plot, does it appear that there is a relationship between ``age`` and ``speed``? Note: ``age`` should be on the x-axis.
  
     
     ```r
     hands %>% # Pipe data set into...
-    ggplot(aes(x = xxx, y = xxxx))+  #Specify variables
+    ggplot(aes(x = xx, y = yy))+  #Specify variables
       geom_point() +  #Add scatterplot of points
       labs(x = "Age (yrs)",  #Label x-axis
            y = "Speed (sec/peg)",  #Label y-axis
@@ -87,7 +87,7 @@ hands <- # Write over original data with the following
 
 \vspace{1in}
 
-If you indicated there are potential outliers, which points are they?
+    If you indicated there are potential outliers, which points are they?
 
 \vspace{0.5in}
 
@@ -95,10 +95,13 @@ If you indicated there are potential outliers, which points are they?
 
 When performing inference on a least squares line, the follow conditions are generally required
 
-- Linearity: the data should follow a linear trend
-- Nearly normal residuals: residuals must be nearly normal
-- Constant variability: the variability of points around the least squares line remains roughly constant
-- Independent observations: individual data points must be independent 
+* Linearity: the data should follow a linear trend
+
+* Nearly normal residuals: residuals must be nearly normal
+
+* Constant variability: the variability of points around the least squares line remains roughly constant
+
+* Independent observations: individual data points must be independent 
 
 The scatterplot and the residual plots will be used to assess the conditions for approximating the data with the $t$-distribution.
 
@@ -109,7 +112,7 @@ The scatterplot and the residual plots will be used to assess the conditions for
 
 \vspace{1in}
 
-
+\newpage
 ### Ask a research question {-}
 
 6. Write out the null hypothesis in words.
@@ -122,13 +125,14 @@ The scatterplot and the residual plots will be used to assess the conditions for
 
 ### Summarize and visualize the data {-}
 
-Using the provided `R` markdown file, enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
+Using the provided `R` markdown file, enter the response variable into the linear model function for xx and the explanatory variable for yy to get the linear model output.
 
 
 ```r
-lm.hand <- lm(xxx~xxxx, data=hands) #lm(response~explanatory)
+lm.hand <- lm(xx~yy, data=hands) #lm(response~explanatory)
 summary(lm.hand)$coefficients
 ```
+
 8.  Using the output from the evaluated `R` code above, write the equation of the regression line.
 
 \vspace{1in}
@@ -174,7 +178,7 @@ Recall that a confidence interval is calculated by adding and subtracting the ma
 $$\mbox{point estimate}\pm t^*SE(estimate)$$
 $$b_1 \pm t^* SE(b_1)$$
  
-The $t^*$ multiplier comes from the $t$-distribution with $n-2$ df.
+The $t^*$ multiplier comes from the $t$-distribution with $n-2$ df.  Recall for a 95\% confidence interval, use the 97.5\% percentile (95\% of the distribution is in the middle, leaving 2.5\% in each tail).
 
 
 ```r
@@ -194,7 +198,7 @@ qt(0.95+0.025, 172) #95% t* multiplier
 
 \vspace{1in}
 
-18. Interpret the 95% confidence interval in context of the problem.
+18. Does the p-value agree with the 95\% confidence interval?  What does each tell you about the null hypothesis?
 
 \vspace{1in}
 

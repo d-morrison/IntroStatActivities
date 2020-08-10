@@ -115,7 +115,7 @@ hist(lm.hand$resid, xlab="Residuals", ylab="Frequency",
 
 \vspace{1in}
 
-
+\newpage
 ### Ask a research question {-}
 
 6. Write out the null hypothesis in words.

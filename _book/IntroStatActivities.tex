@@ -2525,7 +2525,7 @@ To review these concepts, see Chapter 5 in your textbook.
 \hypertarget{helmet-use-and-head-injuries}{%
 \section{Helmet use and head injuries}\label{helmet-use-and-head-injuries}}
 
-In ``Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders'' by Sullheim et. al., in the \emph{Journal of the American Medical Association}, Vol. 295, No.~8 (2006), we can see the results from a random sample 3562 skiers and snowboarders involved in accidents.
+In ``Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders'' by Sullheim et. al., in the \emph{Journal of the American Medical Association}, Vol. 295, No.~8 (2006), we can see the summary results from a random sample 3562 skiers and snowboarders involved in accidents in the two-way table below. Is there evidence that safety helmet use reduces the risk of head injury for skiers and snowboarders?
 
 \begin{longtable}[]{@{}cccc@{}}
 \toprule
@@ -2563,8 +2563,6 @@ These counts can be found in \texttt{R} by using the \texttt{count()} function:
 #> 4 Wore_Helmet No_Head_Injury   656
 \end{verbatim}
 
-Is there evidence that safety helmet use reduces the risk of head injury for skiers and snowboarders?
-
 \hypertarget{vocabulary-review}{%
 \subsection*{Vocabulary review}\label{vocabulary-review}}
 \addcontentsline{toc}{subsection}{Vocabulary review}
@@ -2576,7 +2574,7 @@ Is there evidence that safety helmet use reduces the risk of head injury for ski
   What is the explanatory variable?
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2586,7 +2584,7 @@ Is there evidence that safety helmet use reduces the risk of head injury for ski
   What is the response variable?
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2596,7 +2594,7 @@ Is there evidence that safety helmet use reduces the risk of head injury for ski
   Is this an experiment or observational study? Justify your answer.
 \end{enumerate}
 
-\vspace{0.3in}
+\vspace{0.4in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2703,21 +2701,6 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 \subsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
 \addcontentsline{toc}{subsection}{Summarize and visualize the data}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{injury }\OperatorTok{\%\textgreater{}\%}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ Helmet, }\DataTypeTok{fill =}\NormalTok{ Injury)) }\OperatorTok{+}\StringTok{   }\CommentTok{\#This specifies the variables}
-\StringTok{  }\KeywordTok{geom\_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{, }\DataTypeTok{position =} \StringTok{"fill"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Tell it to make a stacked bar plot}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Segmented Bar Plot of Helmet Use by Injury"}\NormalTok{,  }\CommentTok{\#Make sure to title your plot }
-       \DataTypeTok{x =} \StringTok{"\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_"}\NormalTok{,   }\CommentTok{\#Label the x axis}
-       \DataTypeTok{y =} \StringTok{""}\NormalTok{,  }\CommentTok{\#Remove y axis label}
-       \DataTypeTok{fill =} \StringTok{"\_\_\_\_\_\_\_\_\_\_\_\_\_"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\#Change legend label}
-\StringTok{  }\KeywordTok{scale\_fill\_discrete}\NormalTok{(}\DataTypeTok{labels =} \KeywordTok{c}\NormalTok{(}\StringTok{"\_\_\_\_\_\_\_\_\_"}\NormalTok{, }\StringTok{"\_\_\_\_\_\_\_\_\_"}\NormalTok{)) }\OperatorTok{+}
-\StringTok{  }\KeywordTok{scale\_x\_discrete}\NormalTok{(}\DataTypeTok{labels =} \KeywordTok{c}\NormalTok{(}\StringTok{"\_\_\_\_\_\_\_\_\_\_\_\_\_"}\NormalTok{, }\StringTok{"\_\_\_\_\_\_\_\_\_\_\_\_\_"}\NormalTok{)) }\OperatorTok{+}
-\StringTok{  }\KeywordTok{scale\_fill\_grey}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
 \begin{center}\includegraphics[width=0.7\linewidth]{07-inference-2cat_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 \begin{enumerate}
@@ -2759,6 +2742,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 \end{enumerate}
 
 \vspace{0.5in}
+\newpage
 
 \hypertarget{use-statistical-analysis-methods-to-draw-inferences-from-the-data}{%
 \subsection*{Use statistical analysis methods to draw inferences from the data}\label{use-statistical-analysis-methods-to-draw-inferences-from-the-data}}
@@ -2799,16 +2783,18 @@ Conditions for the sample distribution of \(\hat{p}_1-\hat{p}_2\):
 
 To calculate the test statistic we use:
 
-\begin{center}
-    $Z = \frac{\text{point estimate} - \text{null value}}{SE}$
+\[
+Z = \frac{\text{point estimate} - \text{null value}}{SE}
+\]
 
 where the standard error is calculated using the pooled proportion of successes.
 
-   $SE(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\frac{1}{n_2})}, \text{where}$ 
-    
-   $\hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}$
-    
-\end{center}
+\[
+SE(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\frac{1}{n_2})}, \text{  where}
+\]
+\[
+\hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
+\]
 
 \vspace{.25in}
 
@@ -2936,25 +2922,20 @@ The \(z^*\) multiplier is found under the standard normal distribution. We find 
 Hypothesis tests are not flawless. In a hypothesis test, there are two competing hypotheses: the null and alternative. We make a decision about which might be true, but we may choose incorrectly.
 
 \begin{table}
-
-\caption{\label{tab:fourHTScenarios}Four different scenarios for hypothesis tests.}
 \centering
-\begin{tabular}[t]{l|l|l|l}
+\begin{tabular}[h]{ll|cc}
 \hline
-\multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{2}{c}{**Test conclusion**} \\
-\cline{3-4}
- &  &  & \\
+ & &  \multicolumn{2}{c}{\textbf{Test conclusion}} \\
+ &  & \multicolumn{1}{c}{Fail to reject $H_0$} & \multicolumn{1}{c}{Reject $H_0$}\\
 \hline
- &  & Fail to reject \$H\_0\$ & Reject \$H\_0\$\\
+ & $H_0$ true & good decision & Type 1 Error\\
 \hline
- & \$H\_0\$ true & good decision & Type 1 Error\\
-\hline
-**Truth** & \$H\_A\$ true & Type 2 Error & good decision\\
+\textbf{Truth} & $H_A$ true & Type 2 Error & good decision\\
 \hline
 \end{tabular}
 \end{table}
 
-A Type 1 Error is rejecting the null hypothesis when \(H_0\) is actually true. A Type 2 Error is failing to reject the null hypothesis when the alternative is actually true.
+A \textbf{Type 1 Error} is rejecting the null hypothesis when \(H_0\) is actually true. A \textbf{Type 2 Error} is failing to reject the null hypothesis when the alternative is actually true.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3857,12 +3838,12 @@ Which hand the participant used to complete the test, recorded as \texttt{R} for
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
 \item
-  Use the provided \texttt{R} markdown file to create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names (`speed' and `age') for xxx and xxxx. Provide this plot. Based on your plot, does it appear that there is a relationship between \texttt{age} and \texttt{speed}? Note: \texttt{age} should be on the x-axis.
+  Use the provided \texttt{R} markdown file to create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names (`speed' and `age') for xx and yy. Provide this plot. Based on your plot, does it appear that there is a relationship between \texttt{age} and \texttt{speed}? Note: \texttt{age} should be on the x-axis.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{hands }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Pipe data set into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xxx, }\DataTypeTok{y =}\NormalTok{ xxxx))}\OperatorTok{+}\StringTok{  }\CommentTok{\#Specify variables}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{y =}\NormalTok{ yy))}\OperatorTok{+}\StringTok{  }\CommentTok{\#Specify variables}
 \StringTok{  }\KeywordTok{geom\_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{\#Add scatterplot of points}
 \StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Age (yrs)"}\NormalTok{,  }\CommentTok{\#Label x{-}axis}
        \DataTypeTok{y =} \StringTok{"Speed (sec/peg)"}\NormalTok{,  }\CommentTok{\#Label y{-}axis}
@@ -3878,7 +3859,9 @@ Which hand the participant used to complete the test, recorded as \texttt{R} for
 
 \vspace{1in}
 
+\begin{verbatim}
 If you indicated there are potential outliers, which points are they?
+\end{verbatim}
 
 \vspace{0.5in}
 
@@ -3889,7 +3872,6 @@ If you indicated there are potential outliers, which points are they?
 When performing inference on a least squares line, the follow conditions are generally required
 
 \begin{itemize}
-\tightlist
 \item
   Linearity: the data should follow a linear trend
 \item
@@ -3913,6 +3895,8 @@ The scatterplot and the residual plots will be used to assess the conditions for
 \end{enumerate}
 
 \vspace{1in}
+
+\newpage
 
 \hypertarget{ask-a-research-question}{%
 \subsection*{Ask a research question}\label{ask-a-research-question}}
@@ -3942,11 +3926,11 @@ The scatterplot and the residual plots will be used to assess the conditions for
 \subsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
 \addcontentsline{toc}{subsection}{Summarize and visualize the data}
 
-Using the provided \texttt{R} markdown file, enter the response variable into the linear model function for xxx and the explanatory variable for xxxx to get the linear model output.
+Using the provided \texttt{R} markdown file, enter the response variable into the linear model function for xx and the explanatory variable for yy to get the linear model output.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{lm.hand \textless{}{-}}\StringTok{ }\KeywordTok{lm}\NormalTok{(xxx}\OperatorTok{\textasciitilde{}}\NormalTok{xxxx, }\DataTypeTok{data=}\NormalTok{hands) }\CommentTok{\#lm(response\textasciitilde{}explanatory)}
+\NormalTok{lm.hand \textless{}{-}}\StringTok{ }\KeywordTok{lm}\NormalTok{(xx}\OperatorTok{\textasciitilde{}}\NormalTok{yy, }\DataTypeTok{data=}\NormalTok{hands) }\CommentTok{\#lm(response\textasciitilde{}explanatory)}
 \KeywordTok{summary}\NormalTok{(lm.hand)}\OperatorTok{$}\NormalTok{coefficients}
 \end{Highlighting}
 \end{Shaded}
@@ -4047,7 +4031,7 @@ Recall that a confidence interval is calculated by adding and subtracting the ma
 \[\mbox{point estimate}\pm t^*SE(estimate)\]
 \[b_1 \pm t^* SE(b_1)\]
 
-The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df.
+The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df. Recall for a 95\% confidence interval, use the 97.5\% percentile (95\% of the distribution is in the middle, leaving 2.5\% in each tail).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4087,7 +4071,7 @@ The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df.
 \setcounter{enumi}{17}
 \tightlist
 \item
-  Interpret the 95\% confidence interval in context of the problem.
+  Does the p-value agree with the 95\% confidence interval? What does each tell you about the null hypothesis?
 \end{enumerate}
 
 \vspace{1in}
