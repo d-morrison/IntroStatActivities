@@ -259,8 +259,8 @@ qnorm(0.95 + 0.025) #multiplier for 95% confidence interval
 Hypothesis tests are not flawless. In a hypothesis test, there are two competing hypotheses: the null and alternative. We make a decision about which might be true, but we may choose incorrectly.  
 
 |       |            | Test Conclusion |                     |
-|       |            | Reject $H_0$    | Fail to reject $H_0$|
 |:-----:|:----------:|-----------------|---------------------|
+|       |            | Reject $H_0$    | Fail to reject $H_0$|
 | Truth | $H_0$ true |  good decision  |  Type 1 Error       |
 |       | $H_A$ true |  Type 2 Error   |  good decision      |
 
