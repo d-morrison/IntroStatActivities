@@ -57,7 +57,7 @@ We will revisit the data set used last week collected on Movies released in 2016
 
 \vspace{0.3in}
 
-We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. This shows a scatterplot of 'Budget' as a predictor of 'Revenue' (note: both variables are measures in "millions of dollars").  
+We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. This shows a scatterplot of 'Budget' as a predictor of 'Revenue' (Note: both variables are measures in "millions of dollars").  
 
 
 ```r
@@ -152,7 +152,7 @@ movies %>%  #Data set pipes into...
 
 ### Slope {-}
 
-The linear model function in R gives us the summary for the least squares regression line.  The estimate for (Intercept) is the y-intercept for the line of least squares and the estimate for budget_mil is the value of $b_1$, the slope.
+The linear model function in `R` gives us the summary for the least squares regression line.  The estimate for `(Intercept)` is the $y$-intercept for the line of least squares and the estimate for `budget_mil` is the value of $b_1$, the slope.
 
 
 ```r

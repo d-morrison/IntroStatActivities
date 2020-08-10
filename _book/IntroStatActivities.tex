@@ -1351,7 +1351,8 @@ The \texttt{favstats} function gives the summary statistics for a quantitative v
 
 \newpage
 
-A histogram of the variable `IMDb Score' is shown below. Notice that the bin width is 0.5. For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75. It is important to note that a movie with a IMDb score of 4.75 will fall into the bin for 4.75 - 5.25. Visually this shows us the range of IMDb scores for Movies released in 2016.
+A histogram of the IMDb scores is shown below. Visually, this shows us the range of IMDb scores for Movies released in 2016.
+Notice that the \textbf{bin width} is 0.5. For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75. It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1443,7 +1444,7 @@ A histogram of the variable `IMDb Score' is shown below. Notice that the bin wid
 \subsection*{Displaying a single categorical and single quantitative variable}\label{displaying-a-single-categorical-and-single-quantitative-variable}}
 \addcontentsline{toc}{subsection}{Displaying a single categorical and single quantitative variable}
 
-The box plot of `Budget' in millions by `Content rating' is plotted using the code below. This plot helps to compare the budget for different levels of content rating.
+The box plot of movie budgets (in millions) by content rating is plotted using the code below. This plot helps to compare the budget for different levels of content rating.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1483,7 +1484,7 @@ The box plot of `Budget' in millions by `Content rating' is plotted using the co
   \vspace{0.2in}
 \item
   What is the value for the third quartile (Q3) for the PG-13 rating? Interpret this value in context.
-  \vspace{.5in}
+  \vspace{.8in}
 \end{enumerate}
 
 \hypertarget{additional-notes}{%
@@ -1610,7 +1611,7 @@ Number of likes a movie receives on Facebook\strut
 
 \vspace{0.3in}
 
-We will look at the relationship between `Budget' and `Revenue' for movies released in 2016. This shows a scatterplot of `Budget' as a predictor of `Revenue' (note: both variables are measures in ``millions of dollars'').
+We will look at the relationship between `Budget' and `Revenue' for movies released in 2016. This shows a scatterplot of `Budget' as a predictor of `Revenue' (Note: both variables are measures in ``millions of dollars'').
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1768,7 +1769,7 @@ Correlation measures the strength and the direction between two quantitative var
 \subsection*{Slope}\label{slope}}
 \addcontentsline{toc}{subsection}{Slope}
 
-The linear model function in R gives us the summary for the least squares regression line. The estimate for (Intercept) is the y-intercept for the line of least squares and the estimate for budget\_mil is the value of \(b_1\), the slope.
+The linear model function in \texttt{R} gives us the summary for the least squares regression line. The estimate for \texttt{(Intercept)} is the \(y\)-intercept for the line of least squares and the estimate for \texttt{budget\_mil} is the value of \(b_1\), the slope.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2915,7 +2916,7 @@ The \(z^*\) multiplier is found under the standard normal distribution. We find 
   Scope of inference
 \end{itemize}
 
-\vspace{.5in}
+\vspace{2in}
 
 \hypertarget{types-of-errors}{%
 \subsection*{Types of errors}\label{types-of-errors}}
@@ -2924,20 +2925,21 @@ The \(z^*\) multiplier is found under the standard normal distribution. We find 
 Hypothesis tests are not flawless. In a hypothesis test, there are two competing hypotheses: the null and alternative. We make a decision about which might be true, but we may choose incorrectly.
 
 \begin{table}
+\caption{Four different possible scenarios for hypothesis tests.}
 \centering
 \begin{tabular}[h]{ll|cc}
 \hline
  & &  \multicolumn{2}{c}{\textbf{Test conclusion}} \\
  &  & \multicolumn{1}{c}{Fail to reject $H_0$} & \multicolumn{1}{c}{Reject $H_0$}\\
 \hline
- & $H_0$ true & good decision & Type 1 Error\\
+ & $H_0$ true & Good decision & Type 1 Error\\
 \hline
-\textbf{Truth} & $H_A$ true & Type 2 Error & good decision\\
+\textbf{Truth} & $H_A$ true & Type 2 Error & Good decision\\
 \hline
 \end{tabular}
 \end{table}
 
-A \textbf{Type 1 Error} is rejecting the null hypothesis when \(H_0\) is actually true. A \textbf{Type 2 Error} is failing to reject the null hypothesis when the alternative is actually true.
+Shown in the table above, a \textbf{Type 1 Error} is rejecting the null hypothesis when \(H_0\) is actually true. A \textbf{Type 2 Error} is failing to reject the null hypothesis when the alternative is actually true.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2968,6 +2970,8 @@ A \textbf{Type 1 Error} is rejecting the null hypothesis when \(H_0\) is actuall
 \end{enumerate}
 
 \vspace{1in}
+
+\newpage
 
 \hypertarget{additional-notes}{%
 \section{Additional notes}\label{additional-notes}}
@@ -3017,9 +3021,9 @@ To review these concepts, see Section 6.2 in the textbook.
 \hypertarget{covid-19-and-air-pollution-1}{%
 \section{COVID-19 and air pollution}\label{covid-19-and-air-pollution-1}}
 
-In June 2020, the social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 appeared to help `flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured below which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants.
+In June 2020, the social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 appeared to help `flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured in Figure @\ref{fig:covid}, which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants.
 
-Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015 - 2019). Note that higher AQI scores indicate worse air quality.
+Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015--2019). Note that higher AQI scores indicate worse air quality. A box plot of the differences in AQI scores for the 33 cities and a table of summary statistics are shown below.
 
 \begin{figure}
 
@@ -3027,16 +3031,21 @@ Have high population-density U.S. cities seen the same improved air quality cond
 
 }
 
-\caption{The India Gate in New Delhi, India}\label{fig:unnamed-chunk-1}
+\caption{The India Gate in New Delhi, India}\label{fig:covid}
 \end{figure}
 
 \vspace{.05in}
 
-\begin{center}\includegraphics[width=0.6\linewidth]{08-paired_files/figure-latex/unnamed-chunk-3-1} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{08-paired_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
-\vspace{.1in}
+\vspace{.2in}
 
 \begin{longtable}[]{@{}ccll@{}}
+\caption{Summary statistics for current AQI scores, median AQI scores from 2015--2019, and the differences in AQI scores.}\tabularnewline
+\toprule
+& Mean & Standard deviation & Sample size\tabularnewline
+\midrule
+\endfirsthead
 \toprule
 & Mean & Standard deviation & Sample size\tabularnewline
 \midrule
@@ -3268,7 +3277,7 @@ The following \texttt{R} code creates a bootstrap distribution showing 1000 simu
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-6-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-5-1} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}

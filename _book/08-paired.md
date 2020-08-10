@@ -31,9 +31,9 @@ To review these concepts, see Section 6.2 in the textbook.
 
 ## COVID-19 and air pollution
 
-In June 2020, the social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 appeared to help 'flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured below which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants. 
+In June 2020, the social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 appeared to help 'flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured in Figure @\ref{fig:covid}, which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants. 
 
-Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015 - 2019). Note that higher AQI scores indicate worse air quality.
+Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015--2019). Note that higher AQI scores indicate worse air quality. A box plot of the differences in AQI scores for the 33 cities and a table of summary statistics are shown below.
 
 
 \begin{figure}
@@ -42,7 +42,7 @@ Have high population-density U.S. cities seen the same improved air quality cond
 
 }
 
-\caption{The India Gate in New Delhi, India}(\#fig:unnamed-chunk-1)
+\caption{The India Gate in New Delhi, India}(\#fig:covid)
 \end{figure}
 
 \vspace{.05in}
@@ -50,9 +50,12 @@ Have high population-density U.S. cities seen the same improved air quality cond
 
 
 
-\begin{center}\includegraphics[width=0.6\linewidth]{08-paired_files/figure-latex/unnamed-chunk-3-1} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{08-paired_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
-\vspace{.1in}
+\vspace{.2in}
+
+
+Table: Summary statistics for current AQI scores, median AQI scores from 2015--2019, and the differences in AQI scores.
 
 |               |         Mean         | Standard deviation | Sample size |
 |:-------------:|:--------------------:|--------------------|-------------|
@@ -169,7 +172,7 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-6-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{08-paired_files/figure-latex/unnamed-chunk-5-1} \end{center}
 
 19.  Use the bootstrapped distribution above to find a 99% confidence interval for the parameter of interest.  Report the confidence interval in interval notation.
 

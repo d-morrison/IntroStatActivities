@@ -88,7 +88,8 @@ movies %>% #Data set piped into...
 
 \newpage
 
-A histogram of the variable 'IMDb Score' is shown below.  Notice that the bin width is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score of 4.75 will fall into the bin for 4.75 - 5.25.  Visually this shows us the range of IMDb scores for Movies released in 2016.
+A histogram of the IMDb scores is shown below.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.  
 
 
 ```r
@@ -154,7 +155,7 @@ ggplot(aes(x = imdb_score)) +   #Name variable to plot
 
 ### Displaying a single categorical and single quantitative variable {-}
 
-The box plot of 'Budget' in millions by 'Content rating' is plotted using the code below.  This plot helps to compare the budget for different levels of content rating.
+The box plot of movie budgets (in millions) by content rating is plotted using the code below.  This plot helps to compare the budget for different levels of content rating.
 
 
 ```r
@@ -186,7 +187,7 @@ movies %>%  #Data set piped into...
 \vspace{0.2in}
 
    e.  What is the value for the third quartile (Q3) for the PG-13 rating?  Interpret this value in context.
-\vspace{.5in}
+\vspace{.8in}
 
 
 

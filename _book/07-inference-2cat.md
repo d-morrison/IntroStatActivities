@@ -273,7 +273,7 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 
 * Scope of inference
 
-\vspace{.5in}
+\vspace{2in}
 
 
 ### Types of errors {-}
@@ -287,20 +287,21 @@ Hypothesis tests are not flawless. In a hypothesis test, there are two competing
 <!-- |       | $H_A$ true |  Type 2 Error   |  good decision      | -->
 
 \begin{table}
+\caption{Four different possible scenarios for hypothesis tests.}
 \centering
 \begin{tabular}[h]{ll|cc}
 \hline
  & &  \multicolumn{2}{c}{\textbf{Test conclusion}} \\
  &  & \multicolumn{1}{c}{Fail to reject $H_0$} & \multicolumn{1}{c}{Reject $H_0$}\\
 \hline
- & $H_0$ true & good decision & Type 1 Error\\
+ & $H_0$ true & Good decision & Type 1 Error\\
 \hline
-\textbf{Truth} & $H_A$ true & Type 2 Error & good decision\\
+\textbf{Truth} & $H_A$ true & Type 2 Error & Good decision\\
 \hline
 \end{tabular}
 \end{table}
 
-A **Type 1 Error** is rejecting the null hypothesis when $H_0$ is actually true. A **Type 2 Error** is failing to reject the null hypothesis when the alternative is actually true.
+Shown in the table above, a **Type 1 Error** is rejecting the null hypothesis when $H_0$ is actually true. A **Type 2 Error** is failing to reject the null hypothesis when the alternative is actually true.
 
 26.  Using a significance level of 0.05, what decision do you make in regards to the null hypothesis?
 
@@ -314,7 +315,7 @@ A **Type 1 Error** is rejecting the null hypothesis when $H_0$ is actually true.
 
 \vspace{1in}
 
-
+\newpage
 
 ## Additional notes
 
