@@ -15,7 +15,7 @@
 
 ## Terminology review
 
-In today's activity, we will introduction simulation hypothesis testing and confidence intervals for a single categorical variable. Some terms covered in this activity are:
+In today's activity, we will introduce simulation hypothesis testing and confidence intervals for a single categorical variable. Some terms covered in this activity are:
 
 * Parameter of interest
 
@@ -122,7 +122,7 @@ When testing data we must first identify the null hypothesis.  The null hypothes
 \newpage
 The notation used for a true proportion is $\pi$.  Since this summarizes a population, it is a parameter. When writing the **null hypothesis** in notation we set the parameter equal to the null value, $H_0: \pi = \pi_0$
 
-11. Write the null hypothesis in notation using the null value of 0.1.
+11. Write the null hypothesis in notation using the null value of 0.1 in place of $\pi_0$.
 
 \vspace{0.5in}
 
