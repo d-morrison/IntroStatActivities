@@ -157,7 +157,7 @@ $$
  
 We will use the linear model output above to get the estimate for slope and standard error.
 
-12.  Calculate the test statistic for slope.  Circle this calculated value in the linear model output.
+12.  Calculate the test statistic for slope.  Identify where this calculated value is in the linear model output.
 
 \vspace{1in}
 
@@ -174,7 +174,7 @@ We will use the linear model output above to get the estimate for slope and stan
 
 Recall that a confidence interval is calculated by adding and subtracting the margin of error to the point estimate.  
 $$\mbox{point estimate}\pm t^*SE(estimate)$$
-i.e., $b_1 \pm t^* SE(b_1)$
+$$b_1 \pm t^* SE(b_1)$$
  
 The $t^*$ multiplier comes from the $t$-distribution with $n-2$ df.
 
