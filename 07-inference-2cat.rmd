@@ -66,7 +66,7 @@ Is there evidence that safety helmet use reduces the risk of head injury for ski
 
 \vspace{0.5in}
 
-3. Is this an experiment or observational study?
+3. Is this an experiment or observational study?  Justify your answer.
 
 \vspace{0.3in}
 
@@ -96,7 +96,7 @@ injury$Injury <- factor(injury$Injury)
  
 ### Ask a research question
 
-In this study we are looking at the relationship between two groups or two parameters ($\pi_1$ and $\pi_2$).  Remember we define the parameter as the true proportion of observational units that represent the variable of interest.  
+In this study we are looking at the relationship between two groups or two parameters ($\pi_1$ and $\pi_2$).  Remember we define the parameter for a categorical variable as the true proportion of observational units that are labeled as a "success" in the response variable.  
 
 7. What is the variable of interest in this study?
 
@@ -147,7 +147,7 @@ ggplot(data = injury,   #This specifies the dataset
 
 \vspace{0.1in}
 
-13.  Based on the bar plot, Does there appear to be an association between helmet use and head injury?  Explain.
+13.  Based on the segmented bar plot, Does there appear to be an association between helmet use and head injury?  Explain.
 
 \vspace{1in}
 
@@ -164,7 +164,7 @@ ggplot(data = injury,   #This specifies the dataset
 
 To test the null hypothesis we could use simulation methods as we did with a single categorical variable. In this activity we will focus on theory-based methods.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
-Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$
+Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$:
 
 * Independence: The data are independent within and between the two groups.
 
@@ -227,16 +227,16 @@ To find a confidence interval for the difference in proportions we will add and 
  
 Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval!  Here, use the sample proportions for each group to calculate the standard error for the difference in proportions.
 
-The $z^*$ multiplier is found under the Standard normal distribution. We find the values that encompass the middle 95% of the distribution.  If 95\% of the Standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail.  The qnorm function in `R` will tell us the $z^*$ value for the desired percentile (in this case, 0.95 + 0.025, 97.5\% percentile). 
-
-```{r, echo=TRUE, collapse=FALSE}
-qnorm(0.95 + 0.025) #multiplier for 95% confidence interval
-```
-
 
 22. Calculate the standard error for a difference in proportions to create a 95% confidence interval.  
 
 \vspace{1in}
+
+The $z^*$ multiplier is found under the standard normal distribution. We find the values that encompass the middle 95% of the distribution.  If 95\% of the standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail.  The qnorm function in `R` will tell us the $z^*$ value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile). 
+
+```{r, echo=TRUE, collapse=FALSE}
+qnorm(0.975) #multiplier for 95% confidence interval
+```
 
 23. Using the multiplier of $z^*$ = 1.96, calculate the 95% confidence interval for the difference in true proportion of head injuries for those that used helmets minus those who did not. 
 

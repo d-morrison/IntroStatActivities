@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.29)  10 AUG 2020 10:53
+||||||| 99da4a9
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.8.9)  10 AUG 2020 07:13
+=======
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.8.9)  10 AUG 2020 09:57
+>>>>>>> 5cca0dd9d5ac1682809bf4871b25aee981b894e1
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
