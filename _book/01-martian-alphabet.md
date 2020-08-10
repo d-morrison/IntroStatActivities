@@ -57,6 +57,8 @@ A **variable** is information collected or measured on each observational unit o
 
 It is important to note that a variable is different than a summary statistic. A variable is measured on a **single observational unit** while a summary statistic is calculated from a group of observational units.  For example, the variable **whether or not a student lives on campus** can be measured on each individual student.  In a class of 50 students we can calculate the proportion of students who live on campus, the summary statistic.  Make sure you wrote the variable in question 3 as a variable **NOT** a summary statistic. 
 
+\vspace{0.1in}
+
 We will look at two types of variables: **quantitative** and **categorical**. 
 
 Quantitative variables are numerical measurements that can be discrete (whole, non-negative numbers) or continuous (any value within an interval).  The number of students in a class would be a discrete variable as you can not have a partial student.  GPA would be a continuous variable ranging from 0 to 4.0. 
