@@ -277,7 +277,9 @@ paired_bootstrap_CI <- function(data, number_repetitions = 100, confidence_level
 
 \vspace{1in}
 
-```{r, warning = FALSE}
+The following 'R' code creates a bootstrap distribution showing 1000 simulations of the mean difference.  
+
+```{r, echo=TRUE, warning = FALSE}
 paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
                     number_repetitions = 1000, #Number of bootstrap samples for CI
                     confidence_level = 0.99,  #Confidence level in decimal form

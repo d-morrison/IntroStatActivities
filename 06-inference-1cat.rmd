@@ -348,7 +348,7 @@ one_proportion_test <- function(probability_success = 0.5,
 }
 ```
 
-The following R code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 18 match the code inputs. 
+The following 'R' code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 18 match the code inputs. 
 
 ```{r, echo=TRUE}
 one_proportion_test(probability_success = 0.1, #Null hypothesis value
@@ -446,7 +446,7 @@ one_proportion_bootstrap_CI <- function(sample_size, number_successes,
 
 ```
 
-The following R code produced the following bootstrap distribution with 1000 simulations. 
+The following 'R' code produced the following bootstrap distribution with 1000 simulations. 
 
 ```{r, echo=TRUE}
 one_proportion_bootstrap_CI(sample_size = 500, #Sample size
