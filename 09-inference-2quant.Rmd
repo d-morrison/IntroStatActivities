@@ -21,11 +21,13 @@ library(mosaic)
 
 * Find a bootstap confidence interval for a difference in means
 
+* Interpret a confidence interval
+
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
 ## Terminology review
 
-In today's activity, we will use simulation-based methods to analyze two independent quantitative variables. Some terms covered in this activity are:
+In today's activity, we will use simulation-based methods to analyze one categorical and one quantitative variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
 
 * Independent groups
 
@@ -75,11 +77,11 @@ favstats(Snowfall~WeatherPattern, data=Snow)
 
 \vspace{1in}
 
-4.  Is this an experiment or an observational study? Explain your reasoning.
+4.  Is this an experiment or an observational study? Justify your answer.
 
 \vspace{1in}
 
-5.  Is this a paired data set or two independent groups?  Explain your answer.
+5.  Is this a paired data set or two independent groups?  Explain your reasoning.
 
 \vspace{1in}
 
@@ -125,7 +127,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \vspace{1in}
 
-14.  Once we create a null distribution of 1000 simulations, at what value do you expect the distribution to be centered?  Explain your answer.
+14.  Once we create a null distribution of 1000 simulations, at what value do you expect the distribution to be centered?  Explain your reasoning.
 
 \vspace{1in}
 
