@@ -63,7 +63,7 @@ A **variable** is information collected or measured on each observational unit o
 
 We will look at two types of variables: **quantitative** and **categorical** (see Figure \@ref(fig:types-of-variables)). 
 
-Quantitative variables are numerical measurements that can be discrete (whole, non-negative numbers) or continuous (any value within an interval).  The number of students in a class would be a discrete variable as you can not have a partial student.  GPA would be a continuous variable ranging from 0 to 4.0. 
+Quantitative variables are numerical measurements that can be discrete (whole, non-negative numbers) or continuous (any value within an interval).  The number of pets one owns would be a discrete variable as you can not have a partial pet.  GPA would be a continuous variable ranging from 0 to 4.0. 
 
 Categorical variables are data that are in groups or categories such as eye color, state of residency, or whether or not a student lives on campus. Categorical variables with a natural ordering are considered ordinal variables while those without a natural ordering are considered a nominal variable.  All categorical variables will be treated as nominal for analysis in this course.
 
