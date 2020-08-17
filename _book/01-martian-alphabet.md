@@ -31,8 +31,12 @@ For more on these concepts, read Sections 1.2 and 2.1 in the textbook.
 ## Can you read "Martian"?
 
 How well can humans distinguish one “Martian” letter from another? In today’s activity, we’ll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or on the right.
+\vspace{2mm}
+
+1.	Were you correct or incorrect in identifying Bumba?
 
 \vspace{0.3in}
+
 
 ### Steps of the statistical investigation process {-}
 
@@ -43,24 +47,24 @@ How well can humans distinguish one “Martian” letter from another? In today�
 \newpage
 **Observational units** or **cases** are the subjects data are collected on. In a spreadsheet of the data set, each row will represent a single observational unit.  
 
-1.  What are the observational units in this study?
+2.  What are the observational units in this study?
 
 \vspace{0.4in}
 
-2.  How many students are in class today? This is the *sample size*.
+3.  How many students are in class today? This is the *sample size*.
 
 \vspace{0.3in}
 
 A **variable** is information collected or measured on each observational unit or case. Each column in a data set will represent a different variable. Today we are only measuring one variable on each observational unit.
 
-3. Identify the variable we are collecting on each observational unit in this study, i.e., what are we measuring on each student?
+4. Identify the variable we are collecting on each observational unit in this study, i.e., what are we measuring on each student?
 
 \vspace{.8in}
 
 
 We will look at two types of variables: **quantitative** and **categorical** (see Figure \@ref(fig:types-of-variables)). 
 
-Quantitative variables are numerical measurements that can be discrete (whole, non-negative numbers) or continuous (any value within an interval).  The number of students in a class would be a discrete variable as you can not have a partial student.  GPA would be a continuous variable ranging from 0 to 4.0. 
+Quantitative variables are numerical measurements that can be discrete (whole, non-negative numbers) or continuous (any value within an interval).  The number of pets one owns would be a discrete variable as you can not have a partial pet.  GPA would be a continuous variable ranging from 0 to 4.0. 
 
 Categorical variables are data that are in groups or categories such as eye color, state of residency, or whether or not a student lives on campus. Categorical variables with a natural ordering are considered ordinal variables while those without a natural ordering are considered a nominal variable.  All categorical variables will be treated as nominal for analysis in this course.
 
@@ -73,11 +77,7 @@ Categorical variables are data that are in groups or categories such as eye colo
 \caption{Types of variables.}(\#fig:types-of-variables)
 \end{figure}
 
-4. Is the variable identified in question 3 categorical or quantitative?
-
-\vspace{0.3in}
-
-5.	Were you correct or incorrect in identifying Bumba?
+5. Is the variable identified in question 4 categorical or quantitative?
 
 \vspace{0.3in}
 
