@@ -118,7 +118,7 @@ ggplot(aes(x = imdb_score)) +   #Name variable to plot
 
 \vspace{0.4in}
 
-11. The three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.5, 8.7, and 9.1:  
+11. The three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:  
 
     
     ```r
@@ -180,7 +180,7 @@ movies %>%  #Data set piped into...
    b. Which content rating has the largest spread?
 \vspace{0.2in}
 
-   c. Which content rating is the most symmetric distribution?
+   c. Which content rating is the most skewed distribution?
 \vspace{0.2in}
 
    d. Fifty percent of movies in 2016 with a PG-13 content rating fall below what value?

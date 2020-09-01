@@ -1,3 +1,5 @@
+<!-- Notes for spring: - split up categorical descriptive stats and probability -->
+
 # Current Population Survey
 
 ## Learning outcomes
