@@ -88,11 +88,11 @@ injury %>% group_by(Helmet) %>% count(Injury)
 |                    | No Random Sample |                       |                     |
 
 
-5. What is the conditional proportion of skiers/snowboarders with a head injury that wore a helmet?
+5. What is the conditional proportion of skiers/snowboarders that wore a helmet with a head injury?
 
 \vspace{.6in}
 
-6. What is the conditional proportion of skiers/snowboarders with a head injury that did not wear a helmet?
+6. What is the conditional proportion of skiers/snowboarders that did not wear a helmet with a head injury?
 
 \vspace{.6in}
 
