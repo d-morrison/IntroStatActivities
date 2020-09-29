@@ -72,7 +72,7 @@ Left-handedness is a trait that is found in about 10% of the population. Past st
 
 \vspace{0.5in}
 
-4. Write out in context the statistic will we calculate to summarize the data.
+4. Write out in context the statistic we will calculate to summarize the data.
 
 \vspace{0.5in}
 
