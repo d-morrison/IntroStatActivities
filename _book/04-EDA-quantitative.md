@@ -180,7 +180,7 @@ movies %>%  #Data set piped into...
    b. Which content rating has the largest spread?
 \vspace{0.2in}
 
-   c. Which content rating is the most symmetric distribution?
+   c. Which content rating is the most skewed distribution?
 \vspace{0.2in}
 
    d. Fifty percent of movies in 2016 with a PG-13 content rating fall below what value?

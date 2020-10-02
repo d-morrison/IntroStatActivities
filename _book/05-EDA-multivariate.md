@@ -241,11 +241,11 @@ ggplot(aes(x = budget_mil, y = revenue_mil, color = content_rating)) +  #Specify
 
 \begin{center}\includegraphics[width=0.7\linewidth]{05-EDA-multivariate_files/figure-latex/unnamed-chunk-4-1} \end{center}
 
-25.  Identify the three varables plotted in this graph.
+17.  Identify the three varables plotted in this graph.
 
 \vspace{0.5in}
 
-26. Does the relationship between 'Budget' and 'Revenue' differ among the different content ratings?  Explain.
+18. Does the relationship between 'Budget' and 'Revenue' differ among the different content ratings?  Explain.
 
 \vspace{1in}
 
