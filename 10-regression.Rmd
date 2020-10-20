@@ -132,7 +132,7 @@ Using the provided `R` markdown file, enter the response variable into the linea
 
 ```{r, echo=TRUE, eval =FALSE}
 lm.hand <- lm(xx~yy, data=hands) #lm(response~explanatory)
-summary(lm.hand)$coefficients
+round(summary(lm.hand)$coefficients, 5)
 ```
 
 8.  Using the output from the evaluated `R` code above, write the equation of the regression line.
