@@ -3627,7 +3627,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 \setcounter{enumi}{16}
 \tightlist
 \item
-  Using bootstrapping find a 90\% confidence interval. Use the provided \texttt{R} markdown file. Enter the variables, first in subtraction, number of repetitions, and the confidence level.
+  Using bootstrapping find a \textbf{95\%} confidence interval. Use the provided \texttt{R} markdown file. Enter the variables, first in subtraction, number of repetitions, and the confidence level.
 \end{enumerate}
 
 \begin{Shaded}
@@ -3635,7 +3635,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 \KeywordTok{two\_mean\_bootstrap\_CI}\NormalTok{(RESPONSE}\OperatorTok{\textasciitilde{}}\NormalTok{EXPLANATORY, }\DataTypeTok{data =}\NormalTok{ DATASET,  }\CommentTok{\#Variables and data}
                       \DataTypeTok{first\_in\_subtraction =} \StringTok{"VALUE"}\NormalTok{, }\CommentTok{\#First value in order of subtraction}
                       \DataTypeTok{number\_repetitions =} \CommentTok{\#\#\#,  \#Number of simulations}
-                      \DataTypeTok{confidence\_level =} \CommentTok{\#\#)}
+                      \DataTypeTok{confidence\_level =} \FloatTok{0.95}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3932,7 +3932,7 @@ Using the provided \texttt{R} markdown file, enter the response variable into th
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{lm.hand \textless{}{-}}\StringTok{ }\KeywordTok{lm}\NormalTok{(xx}\OperatorTok{\textasciitilde{}}\NormalTok{yy, }\DataTypeTok{data=}\NormalTok{hands) }\CommentTok{\#lm(response\textasciitilde{}explanatory)}
-\KeywordTok{summary}\NormalTok{(lm.hand)}\OperatorTok{$}\NormalTok{coefficients}
+\KeywordTok{round}\NormalTok{(}\KeywordTok{summary}\NormalTok{(lm.hand)}\OperatorTok{$}\NormalTok{coefficients, }\DecValTok{5}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4112,7 +4112,7 @@ The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df. Recall
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{19}
 \item
-  Is there an effect due to gender on the linear relationship between age and speed? Explain your answer using the scatterplot below.
+  Is there an effect due to \textbf{whether the participant used their dominant hand} on the linear relationship between age and speed? Explain your answer using the scatterplot below.
 
 \begin{Shaded}
 \begin{Highlighting}[]
