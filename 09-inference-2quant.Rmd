@@ -63,8 +63,7 @@ ggplot(aes(x = WeatherPattern, y = Snowfall)) +
 ```{r, echo=TRUE, collapse=FALSE}
 # Summary statistics
 Snow %>% 
-    group_by(WeatherPattern) %>%
-    summarise(favstats(Snowfall)) 
+     summarize(favstats(Snowfall~WeatherPattern))
 ```
 
 
@@ -145,7 +144,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 15.  Using the provided `R` markdown file, enter the values for the variables, data set, first in subtraction, number of simulations, observed statistic, and direction of the alternative hypothesis.
 ```{r, echo = TRUE, eval = FALSE}
 two_mean_test(RESPONSE~PREDICTOR, data = DATASET,  #Variables and data
-                    first_in_subtraction = "VALUE", #First value in order of subtraction
+                    first_in_subtraction = "OUTCOME", #First outcome in order of subtraction
                     number_repetitions = ###,  #Number of simulations
                     as_extreme_as = ###,  #Observed statistic
                     direction = "??")  #Direction of alternative: "greater", "less", or "two-sided"
