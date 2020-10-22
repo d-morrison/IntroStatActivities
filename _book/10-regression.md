@@ -130,7 +130,7 @@ Using the provided `R` markdown file, enter the response variable into the linea
 
 ```r
 lm.hand <- lm(xx~yy, data=hands) #lm(response~explanatory)
-summary(lm.hand)$coefficients
+round(summary(lm.hand)$coefficients, 5)
 ```
 
 8.  Using the output from the evaluated `R` code above, write the equation of the regression line.
@@ -222,7 +222,7 @@ qt(0.95+0.025, 172) #95% t* multiplier
 
 ### Revisit and look forward {-}
 
-20. Is there an effect due to gender on the linear relationship between age and speed?  Explain your answer using the scatterplot below.
+20. Is there an effect due to **whether the participant used their dominant hand** on the linear relationship between age and speed?  Explain your answer using the scatterplot below.
 
     
     ```r

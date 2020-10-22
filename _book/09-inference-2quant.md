@@ -167,13 +167,13 @@ two_mean_test(RESPONSE~PREDICTOR, data = DATASET,  #Variables and data
 
 \vspace{1in}
 
-17. Using bootstrapping find a 90% confidence interval. Use the provided `R` markdown file. Enter the variables, first in subtraction, number of repetitions, and the confidence level.
+17. Using bootstrapping find a **95\%** confidence interval. Use the provided `R` markdown file. Enter the variables, first in subtraction, number of repetitions, and the confidence level.
 
 ```r
 two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
                       first_in_subtraction = "VALUE", #First value in order of subtraction
                       number_repetitions = ###,  #Number of simulations
-                      confidence_level = ##)
+                      confidence_level = 0.95)
 ```
 
 
