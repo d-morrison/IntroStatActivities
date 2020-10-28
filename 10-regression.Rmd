@@ -128,10 +128,10 @@ hist(lm.hand$resid, xlab="Residuals", ylab="Frequency",
 
 ### Summarize and visualize the data {-}
 
-Using the provided `R` markdown file, enter the response variable into the linear model function for xx and the explanatory variable for yy to get the linear model output.
+Using the provided `R` markdown file, enter the response variable into the linear model function for yy and the explanatory variable for xx to get the linear model output.
 
 ```{r, echo=TRUE, eval =FALSE}
-lm.hand <- lm(xx~yy, data=hands) #lm(response~explanatory)
+lm.hand <- lm(yy~xx, data=hands) #lm(response~explanatory)
 round(summary(lm.hand)$coefficients, 5)
 ```
 
