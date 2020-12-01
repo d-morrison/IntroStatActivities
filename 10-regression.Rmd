@@ -111,7 +111,7 @@ hist(lm.hand$resid, xlab="Residuals", ylab="Frequency",
      main = "Histogram of Residuals") # Histogram of residuals
 ```
 
-5. Are the conditions met to approximate to use the $t$-distribution to approximate the sampling distribution of our test statistic?
+5. Are the conditions met to use the $t$-distribution to approximate the sampling distribution of our test statistic?
 
 \vspace{1in}
 
