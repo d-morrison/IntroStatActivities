@@ -11,13 +11,9 @@
 
 * Interpret and evaluate a p-value
 
-* Use bootstrapping to find a confidence interval for a single proportion
-
-* Interpret a confidence interval
-
 ## Terminology review
 
-In today's activity, we will introduce simulation hypothesis testing and confidence intervals for a single categorical variable. Some terms covered in this activity are:
+In today's in-class activity, we will introduce simulation hypothesis testing and confidence intervals for a single categorical variable. Some terms covered in this activity are:
 
 * Parameter of interest
 
@@ -30,10 +26,6 @@ In today's activity, we will introduce simulation hypothesis testing and confide
 * Null distribution
 
 * p-value
-
-* Bootstrapping
-
-* Confidence interval
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
@@ -55,10 +47,10 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 ## Handedness of male boxers
 
-Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional fighters. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male boxers we will see if there is an over-prevalence of left-handed fighters.
+Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional fighters. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male boxers we want to see if there is an over-prevalence of left-handed fighters.
 
 
-### Summary statistics review {-}
+### Summary statistics review: Complete Q1 - 4 before coming to class {-}
 
 1.  What are the observational units?
 
@@ -72,7 +64,7 @@ Left-handedness is a trait that is found in about 10% of the population. Past st
 
 \vspace{0.5in}
 
-4. Write out in context the statistic we will calculate to summarize the data.
+4. Write out in context the statistic we will calculate to summarize the data.  
 
 \vspace{0.5in}
 
@@ -92,6 +84,13 @@ Left-handedness is a trait that is found in about 10% of the population. Past st
 
 \vspace{1in}
 
+
+Before completing the hypothesis test, we must check that the cases are independent.  The sample observations are independent if the outcome of one observation does not influence the outcome of another. One way this condition is met is if data come from a simple random sample of the target population.
+
+8.  Are the cases independent? Justify your answer.
+
+\vspace{1in}
+
 ### Summarize and visualize the data {-}
 
 <!-- ```{r, echo=TRUE, collapse=FALSE} -->
@@ -105,40 +104,41 @@ handedness <- read.csv("data/Male_boxers_sample.csv") # Read in data set
 handedness %>% count(Stance)  # Count number in each Stance category
 ```
 
-8.  Calculate the appropriate summary statistic that represents the research question.  Use appropriate notation.
+9.  Using the output above, calculate the appropriate summary statistic that represents the research question.  Use appropriate notation.
 
 \vspace{0.5in}
 
 ### Use statistical analysis methods to draw inferences from the data {-}
 
-When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the true value of interest.  
+When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the true value of interest.  *For example, in the Martian Alphabet Activity the parameter of interest is the true proportion of statistic students who correctly identify bumba.*
 
-9.  Write out the parameter of interest for this study. *Hint*: The parameter of interest is the true proportion of....
+
+10.  Write out the parameter of interest for this study. 
 
 \vspace{1in}
 
-10.  Using the parameter of interest in question 9, write out the null hypothesis in words.
+11.  Using the parameter of interest in question 10, write out the null hypothesis in words.  What do we assume to be true about the parameter of interest?
 
 \vspace{1in}
 
 \newpage
 The notation used for a true proportion is $\pi$.  Since this summarizes a population, it is a parameter. When writing the **null hypothesis** in notation we set the parameter equal to the null value, $H_0: \pi = \pi_0$
 
-11. Write the null hypothesis in notation using the null value of 0.1 in place of $\pi_0$.
+12. Write the null hypothesis in notation using the null value of 0.1 in place of $\pi_0$ in the equation given above.
 
 \vspace{0.5in}
 
 The **alternative hypothesis** is the claim to be tested and the direction is based on the research question.  
 
-12.  Based on the research question from question 5, are we testing that the parameter is greater than 0.1, less than 0.1 or different than 0.1? 
+13.  Based on the research question from question 5, are we testing that the parameter is greater than 0.1, less than 0.1 or different than 0.1? 
 
 \vspace{0.5in}
 
-13. Write out the alternative hypothesis in words.
+14. Write out the alternative hypothesis in words.
 
 \vspace{1in}
 
-14.  Write out the alternative hypothesis in notation.
+15.  Write out the alternative hypothesis in notation.
 
 \vspace{0.5in}
 
@@ -152,24 +152,25 @@ Notice that these two competing possibilities represent the null and alternative
   
 The null distribution is created under the assumption the null hypothesis is true.  In this case, we assume the true proportion of male boxers who are left handed is 0.1 so we will create 1000 different simulations of 500 boxers under this assumption.
 
-Let's think about how to use cards to create one simulation of 500 boxers under the assumption the null hypothesis is true.  Suppose blue cards represents left-handed and red cards represents right-handed.
+Let's think about how to use red and blue cards to create one simulation of 500 boxers under the assumption the null hypothesis is true.  Suppose blue cards represents left-handed and red cards represents right-handed.
 
-15.  How many cards total do we need?  How many blue ones?  How many red ones?
-
-\vspace{0.5in}
-
-16.  Next, we would mix the cards together and draw 1 card, write down if it's red or blue, and replace the card.  How many times would we need to repeat this process to simulate our sample?
+16.  How many cards total do we need?  How many blue ones?  How many red ones?
 
 \vspace{0.5in}
 
-17.  Once we have one simulated sample, what would we calculate and plot on the null distribution?
+17.  Next, we would mix the cards together and draw 1 card, write down if it's red or blue, and replace the card.  How many times would we need to repeat this process to simulate our sample?
+
+\vspace{0.5in}
+
+18.  Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
+
 \vspace{1in}
 
 We will use the computer to simulate a null distribution of 1000 different samples of 500 male boxers, plotting the proportion who are left handed in each sample, based on the assumption that the true proportion of male boxers who are left handed is 0.1 (or that the null hypothesis is true).  
 
-To use the computer simulation, we will need to enter the "probability of success" ($\pi_0$), "sample size" (the number of observational units in the sample), "number of repetitions" (the number of samples to be generated), "as extreme as" (the observed statistic), and the "direction" (matches the direction of the alternative hypothesis).
+To use the computer simulation, we will need to enter the "probability of success" ($\pi_0$), "sample size" (the number of observational units or cases in the sample), "number of repetitions" (the number of samples to be generated), "as extreme as" (the observed statistic), and the "direction" (matches the direction of the alternative hypothesis).
 
-18.  What values should be entered into the simulation?
+19.  What values should be entered for each of the following into the simulation?
 
 \vspace{.2in}
 * Probability of success:
@@ -188,169 +189,7 @@ To use the computer simulation, we will need to enter the "probability of succes
 
 \vspace{.2in}
 
-```{r, echo = FALSE}
-#Note will need to update to loading catstats when package is ready
-###############
-#Function to reproduce one proportion test applet
-#Arguments: 
-#probability_success: value between 0 and 1, represents null hypothesis value for proportion
-#sample_size: number of trials used to compute proportion
-#number_repetitions: number of draws for simulation test
-#as_extreme_as: observed statistic (between 0 and 1)
-#direction: one of "greater", "less", or "two-sided" to give direction of hypothsis test
-#report_value: value to return from simulations - "number" for number of successes or "proportion" for proportion of successes
-#
-#Returns: produced plot of distribution of simulated values, with values as or more extreme
-#than specified value highlighted and reports proportion of successes in simulations as subtitle on plot
-###############
-
-one_proportion_test <- function(probability_success = 0.5,
-                                sample_size = 5,
-                                number_repetitions = 1,
-                                as_extreme_as,
-                                direction = c("greater", "less", "two-sided"),
-                                report_value = c("number", "proportion")){
-  if(number_repetitions < 1 | !(number_repetitions %%1 == 0))
-    stop("number of repetitions must be positive and integer valued")
-  if(sample_size < 1 | !(sample_size %%1 == 0))
-    stop("Sample size must be positive and integer valued")
-  if(probability_success < 0 | probability_success > 1)
-    stop("Probability of success must be between zero and one")
-  if(!(direction %in% c("greater", "less", "two-sided")))
-    stop("Direction must be one of 'greater',  'less', or 'two-sided'")
-  if(!(report_value %in% c("number", "proportion")))
-    stop("Value to report must be either 'number' or 'proportion' of successes")
-  if(is.null(as_extreme_as))
-    stop("Must enter cutoff value for 'as_extreme_as")
-  
-  number_heads <- rbinom(number_repetitions, sample_size, probability_success)
-  range_heads <- max(number_heads) - min(number_heads)
-  success_tab = table(number_heads)
-  
-  if(!(direction == "two-sided")){
-    if(report_value == "number"){
-      proportion_extreme <- ifelse(direction == "greater",
-                                   mean(number_heads >= as_extreme_as),
-                                   mean(number_heads <= as_extreme_as))
-    }else {
-      proportion_extreme <- ifelse(direction == "greater",
-                                   mean(number_heads/sample_size >= as_extreme_as),
-                                   mean(number_heads/sample_size <= as_extreme_as))
-    }
-    
-    if(report_value == "number"){
-      plot(0,0, "n", xlim = c(min(min(number_heads), as_extreme_as-range_heads/5), 
-                              max(max(number_heads), as_extreme_as + range_heads/5)),
-           ylim = c(0, max(success_tab)+1),
-           xlab = "Number of successes", ylab = "", yaxt ="n",
-           sub = paste("Proportion of Samples = ", 
-                       proportion_extreme*number_repetitions, 
-                       "/", number_repetitions, " = ", 
-                       round(proportion_extreme,4), sep = ""))
-      for(i in 1:length(success_tab)){
-        lines(rep(names(success_tab)[i],2), c(0, success_tab[i]), lwd = 5, 
-              col = ifelse(direction == "greater",
-                           ifelse(as.numeric(names(success_tab[i])) >= as_extreme_as, "blue", "black"),
-                           ifelse(as.numeric(names(success_tab[i])) <= as_extreme_as, "blue", "black")))
-      }
-      abline(v = ifelse(direction == "greater", as_extreme_as-0.5, as_extreme_as + 0.5), 
-             col = "blue", lwd = 2)
-      cutoff_label <- ifelse(direction == "greater",
-                             paste(">=", as_extreme_as),
-                             paste("<=", as_extreme_as))
-      text(ifelse(direction == "greater", as_extreme_as-0.25, as_extreme_as+0.25), 
-           max(success_tab), labels = cutoff_label,
-           pos = ifelse(direction == "greater", 4, 2))
-    }else{
-      plot(0,0, "n", xlim =c(min(min(number_heads)/sample_size, as_extreme_as-range_heads/(5*sample_size)), 
-                             max(max(number_heads)/sample_size, as_extreme_as + range_heads/(5*sample_size))),
-           ylim = c(0, max(success_tab)+1),
-           xlab = "Proportion of successes", ylab = "", yaxt ="n",
-           sub = paste("Proportion of Samples = ", 
-                       proportion_extreme*number_repetitions, 
-                       "/", number_repetitions, " = ", 
-                       round(proportion_extreme,4), sep = ""))
-      for(i in 1:length(success_tab)){
-        lines(rep(as.numeric(names(success_tab)[i])/sample_size,2), c(0, success_tab[i]), lwd = 5, 
-              col = ifelse(direction == "greater",
-                           ifelse(as.numeric(names(success_tab[i]))/sample_size >= as_extreme_as, 
-                                  "blue", "black"),
-                           ifelse(as.numeric(names(success_tab[i]))/sample_size <= as_extreme_as, 
-                                  "blue", "black")))
-      }
-      abline(v = ifelse(direction == "greater", as_extreme_as-0.5/sample_size, 
-                        as_extreme_as + 0.5/sample_size), col = "blue", lwd = 2)
-      cutoff_label <- ifelse(direction == "greater",
-                             paste(">=", as_extreme_as),
-                             paste("<=", as_extreme_as))
-      text(ifelse(direction == "greater", as_extreme_as-0.25/sample_size, as_extreme_as+0.25/sample_size), 
-           max(success_tab), labels = cutoff_label,
-           pos = ifelse(direction == "greater", 4, 2))
-    }
-  }else if(report_value == "number"){
-    if(as_extreme_as > probability_success*sample_size){
-      upper = as_extreme_as
-      lower = max(0, 2*probability_success*sample_size-as_extreme_as)
-    }else{
-      lower = as_extreme_as
-      upper = min(sample_size, 2*probability_success*sample_size-as_extreme_as)
-    }
-    proportion_extreme <- mean(number_heads <= lower | number_heads >= upper)
-    
-    plot(0,0, "n", xlim = c(min(min(number_heads), lower-range_heads/5), 
-                            max(max(number_heads), upper + range_heads/5)),
-         ylim = c(0, max(success_tab)+1),
-         xlab = "Number of successes", ylab = "", yaxt ="n",
-         sub = paste("Proportion of Samples = ", 
-                     proportion_extreme*number_repetitions, 
-                     "/", number_repetitions, " = ", 
-                     round(proportion_extreme,4), sep = ""))
-    for(i in 1:length(success_tab)){
-      lines(rep(names(success_tab)[i],2), c(0, success_tab[i]), lwd = 5, 
-            col = ifelse(as.numeric(names(success_tab[i])) <= lower |
-                           as.numeric(names(success_tab[i])) >= upper, "blue", "black"))
-    }
-    abline(v = c(lower + 0.5, upper - 0.5), 
-           col = "blue", lwd = 2)
-    cutoff_label <- c(paste("<=", lower), paste(">=", upper))
-    text(c(lower-0.25, upper+0.25), 
-         rep(max(success_tab),2), labels = cutoff_label,
-         pos = c(4, 2))
-  }else{
-    if(as_extreme_as > probability_success){
-      upper = as_extreme_as
-      lower = max(0, 2*probability_success-as_extreme_as)
-    }else{
-      lower = as_extreme_as
-      upper = min(1, 2*probability_success-as_extreme_as)
-    }
-    proportion_extreme <- mean(number_heads <= lower*sample_size | number_heads >= upper*sample_size)
-    
-    plot(0,0, "n", xlim =c(min(min(number_heads)/sample_size, lower-range_heads/(5*sample_size)), 
-                           max(max(number_heads)/sample_size, upper + range_heads/(5*sample_size))),
-         ylim = c(0, max(success_tab)+1),
-         xlab = "Proportion of successes", ylab = "", yaxt ="n",
-         sub = paste("Proportion of Samples = ", 
-                     proportion_extreme*number_repetitions, 
-                     "/", number_repetitions, " = ", 
-                     round(proportion_extreme,4), sep = ""))
-    for(i in 1:length(success_tab)){
-      lines(rep(as.numeric(names(success_tab)[i])/sample_size,2), c(0, success_tab[i]), lwd = 5, 
-            col = ifelse(as.numeric(names(success_tab[i]))/sample_size <= lower |
-                           as.numeric(names(success_tab[i]))/sample_size >= upper, "blue", "black"))
-    }
-    abline(v = c(lower + 0.5/sample_size, upper - 0.5/sample_size), 
-           col = "blue", lwd = 2)
-    cutoff_label <- c(paste("<=", lower), paste(">=", upper))
-    text(c(lower+0.25/sample_size, upper-0.25/sample_size), 
-         rep(max(success_tab),2), labels = cutoff_label,
-         pos = c(2, 4))
-  }
-  
-}
-```
-
-The following `R` code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 18 match the code inputs.
+The following `R` code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 19 match the code inputs.
 
 ```{r, echo=TRUE}
 one_proportion_test(probability_success = 0.1, #Null hypothesis value
@@ -362,126 +201,42 @@ one_proportion_test(probability_success = 0.1, #Null hypothesis value
 ```
 
 \newpage
-
-19. Around what value is the null distribution centered?  Why does that make sense?
-
-\vspace{1in}
-
-20. Where does the statistic (value from question 8) fall in the null distribution?  Is it towards the center or in one of the tails?  
+20. Around what value is the null distribution centered?  Why does that make sense?
 
 \vspace{1in}
 
-21.  Is the statistic likely to happen or unlikely to happen if the true proportion of male boxers is 0.1?  Explain your answer.
+21. Where does the statistic (value from question 9) fall in the null distribution?  Is it towards the center or in one of the tails?  
 
 \vspace{1in}
 
-22.  Using the simulation, what is the proportion of samples at this summary statistic or greater, if the true proportion of male boxers is 0.1? *Hint*: Look under the simulation.
+22.  Is the statistic likely to happen or unlikely to happen if the true proportion of male boxers is 0.1?  Explain your answer using the plot.
+
+\vspace{1in}
+
+23.  Using the simulation, what is the proportion of samples at the summary statistic or greater, if the true proportion of male boxers is 0.1? *Hint*: Look under the simulation.
 
 \vspace{1in}
 |         This is the **p-value**.  The smaller the p-value the more evidence we have against the null hypothesis.
 
-23. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one.)
+24. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one.)
 
 ```{r, out.width="90%"}
 include_graphics("images/soe_gradient_grayscale.png")
 ```
 
-\newpage
-
-A **point estimate** provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible range of values for the parameter. This plausible range of values for the population parameter is called a confidence interval. 
-
-We will use bootstrapping to find the 95% confidence interval. 
-
-24.  In your own words, explain the bootstrapping process.
-\vspace{1in}
-```{r, echo = FALSE}
-#Delete when can load catstats library
-###############
-#Function to produce bootstrap CI for one proportion
-#Arguments: 
-#sample_size: number of trials used to compute proportion
-#number_success: how many successes were observed in those trials?
-#number_repetitions: number of draws for simulation test
-#confidence level: confidence level for interval in decimal form.  Defaults to 95%
-#
-#Returns: produced plot of distribution of bootstrapped values, with values as or more extreme
-#than confidence interval range highlighted and reports CI as subtitle on plot
-###############
-
-one_proportion_bootstrap_CI <- function(sample_size, number_successes,                        
-                                        number_repetitions = 100, confidence_level = 0.95){
-  if(number_repetitions < 1 | !(number_repetitions %%1 == 0))
-    stop("number of repetitions must be positive and integer valued")
-  if(number_successes < 1 | !(number_successes %%1 == 0))
-    stop("number of successes must be positive and integer valued")
-  if(sample_size < 1 | !(sample_size %%1 == 0))
-    stop("sample size must be positive and integer valued")
-  if(confidence_level < 0 | confidence_level > 1)
-    stop("Confidence level must be given in decimal form")
-  
-  sim_pop <- rep(0, sample_size)
-  sim_pop[1:number_successes] <- 1
-  
-  sim_props <- rep(NA, number_repetitions)
-  for(i in 1:number_repetitions){
-    sim_props[i] <- mean(sample(sim_pop, sample_size, replace = TRUE))
-  }
-  
-  success_tab = table(sim_props)
-  
-  low_ci <- quantile(sim_props, (1-confidence_level)/2)
-  high_ci <- quantile(sim_props, 1-(1-confidence_level)/2)
-  
-  plot(0,0, "n", xlim = c(min(min(sim_props), low_ci-(max(sim_props)-min(sim_props))/5), max(sim_props)),
-       ylim = c(0, max(success_tab)+1),
-       xlab = "Bootstrapped values of the proportion", ylab = "", yaxt = "n",
-       sub = paste0(100*confidence_level, "% CI: (", 
-                    low_ci, ", ", high_ci, ")"))
-  for(i in 1:length(success_tab)){
-    lines(rep(as.numeric(names(success_tab)[i]),2), c(0, success_tab[i]), lwd = 5, 
-          col = ifelse(as.numeric(names(success_tab[i])) <= low_ci |
-                         as.numeric(names(success_tab[i])) >= high_ci, "blue", "black"))
-  }
-  abline(v = c(low_ci, high_ci), 
-         col = "blue", lwd = 2)
-  cutoff_label <- c(paste(round(100*(1-confidence_level)/2, 1), "percentile"), 
-                    paste(round(100*(1-(1-confidence_level)/2), 1), "percentile"))
-  text(c(low_ci, high_ci), 
-       rep(max(success_tab),2), labels = cutoff_label,
-       pos = c(2, 4), cex = .75)
-}
-
-
-```
-
-The following `R` code produced the following bootstrap distribution with 1000 simulations. 
-
-```{r, echo=TRUE}
-one_proportion_bootstrap_CI(sample_size = 500, #Sample size
-                    number_successes = 81, #Observed number of successes
-                    number_repetitions = 1000, #Number of bootstrap samples to use
-                    confidence_level = 0.95) #Confidence level as a decimal
-```
-
-25. What is the value at the center of this distribution?  Why does this make sense?
-\vspace{.8in}
-
-16. Explain why the two vertical lines are at the 2.5th percentile and the 97.5th percentile.
-
-\vspace{.8in}
-
-27. Report the 95% bootstrapped confidence interval for $\pi$.  Use interval notation: (lower value, upper value).
+25.  What does the p-value measure?  Interpret the p-value in context of the problem.
 
 \vspace{1in}
-28.  Interpret the 95% confidence interval in context.
-
-\vspace{.8in}
 
 ### Communicate the results and answer the research question {-}
 
 When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.
 
-29.  Write a paragraph summarizing the results.  Be sure to describe:
+26. Write a conclusion in context of the study.
+
+\vspace{1in}
+
+27.  Write a paragraph summarizing the results.  Be sure to describe:
 
 * Summary statistic
 
@@ -489,21 +244,78 @@ When we write a conclusion we answer the research question by stating how much e
 
 * Conclusion (written to answer the research question)
 
-* Confidence interval and interpretation
-
 * Generalization - to what group do the results apply?
 
 \vspace{3.5in}
 
 ### Revisit and look forward {-}
 
-30. Suggest a new research question that you might investigate, building on what you learned in this study.
+28. Suggest a new research question that you might investigate, building on what you learned in this study.
 
 \vspace{.6in}
 
 \newpage
 
+
+## Out of Class Activity
+
+The remaining questions cover theory based methods for testing a single categorical variable.  Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
+
+A single proportion can be mathematically modeled using the normal distribution if certain conditions are met.
+
+Conditions for the sample distribution of $\hat{p}$.
+
+* Independence: The sample’s observations are independent, e.g., are from a simple random sample
+
+* Success-Failure Condition: We expect to see at least 10 successes and 10 failures in the sample, $n\pi≥10$  and $n(1-\pi)≥10$
+
+29.  We already verified that the independence condition is satisfied in Q8 Is the success-failure condition met to model the data with the Normal distribution?
+
+\vspace{0.5in}
+
+To calculate the standardized statistic we use: 
+
+$$
+Z = \frac{\text{point estimate} - \text{null value}}{SE}
+$$
+For a single categorical variable the standardized sample proportion is calculated using:
+
+$$
+Z = \frac{\hat{p} - \pi_0}{SE_0(\hat{p})}
+$$
+where the standard error is calculated using the null value.
+
+$$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$
+30.  Calculate the null standard error of the sample proportion.
+
+\vspace{1in}
+
+31.  Calculate the standardized sample proportion.  
+
+\vspace{1in}
+
+The standardized statistic measures the number of standard errors the sample statistic is from the null value.
+
+32.  Interpret the standardized sample proportion in context of the problem.
+
+\vspace{1in}
+
+We will use the pnorm function in `R` to find the p-value. Use the provided R markdown file and enter the value of the standardized statistic calculated in Q31 at xx.
+
+```{r, echo=TRUE, eval=FALSE}
+pnorm(xx, # Enter value of standardized statistic
+      m=0, s=1 # Using the standard normal mean = 0, sd = 1
+      lower.tail=TRUE) # Gives a p-value less than the standardized statistic
+```
+    
+
+33.  Report the p-value obtained from the R output.
+\vspace{0.2in}
+
+34.  Is the p-value found in question 33 similar to the p-value found using the simulation test?  Explain why you would expect this to be true.
+
+\vspace{0.5in}
+
 ## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
-
