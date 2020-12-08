@@ -86,20 +86,11 @@ injury %>% group_by(Helmet) %>% count(Injury)
 |                    | No Random Sample |                       |                     |
 
 
-5. Calculate the conditional proportion of skiers/snowboarders that wore a helmet with a head injury.
-
-\vspace{.6in}
-
-6. Calculate the conditional proportion of skiers/snowboarders that did not wear a helmet with a head injury.
-
-\vspace{.6in}
-
-
 ### Ask a research question {-}
 
 In this study we are looking at the relationship between two groups or two parameters ($\pi_1$ and $\pi_2$).  Remember we define the parameter for a categorical variable as the true proportion of observational units that are labeled as a "success" in the response variable.  
 
-7. Write the two parameters of interest for this study.  Let 1 = skier/snowboarder wore helmet, 2 = skier/snowboarder did not wear helmet.
+5. Write the two parameters of interest for this study.  Let 1 = skier/snowboarder wore helmet, 2 = skier/snowboarder did not wear helmet.
 
    $\pi_1$ - 
 \vspace{0.5in}
@@ -109,15 +100,15 @@ In this study we are looking at the relationship between two groups or two param
 
 When comparing two groups, we assume the two parameters are equal in the null hypothesis---there is no association between the variables.
 
-8.  Write the null hypothesis out in words using your answers to question 7.
+6.  Write the null hypothesis out in words using your answers to question 5.
 
 \vspace{1in}
 
-9.  What is the research question?
+7.  What is the research question?
 
 \vspace{1in}
 
-10. Based on the research question fill in the appropriate sign for the alternative hypothesis ($<$, $>$, or $\neq$):
+8. Based on the research question fill in the appropriate sign for the alternative hypothesis ($<$, $>$, or $\neq$):
 \vspace{0.25in}
 
 |           $H_A: \pi_1 -\pi_2$ __________ 0
@@ -125,6 +116,14 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 \newpage 
 ### Summarize and visualize the data {-}
+
+9. Calculate the conditional proportion of skiers/snowboarders that wore a helmet with a head injury.
+
+\vspace{.6in}
+
+10. Calculate the conditional proportion of skiers/snowboarders that did not wear a helmet with a head injury.
+
+\vspace{.6in}
 
 ```{r echo=FALSE, fig.height=4}
 injury %>%
@@ -139,7 +138,7 @@ ggplot(aes(x = Helmet, fill = Injury)) +   #This specifies the variables
   theme_bw()
 ```
 
-11.  Fill in the blanks on the graph with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who use helmets and those who do not use helmets.  *Hint*: Use the conditional proportions from questions 5 and 6.
+11.  Fill in the blanks on the graph with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who use helmets and those who do not use helmets.  *Hint*: Use the conditional proportions from questions 9 and 10.
 
 \vspace{0.1in}
 
@@ -211,7 +210,7 @@ pnorm(xx, # Enter value of test statistic
 ```
     
 
-19.  Report the p-value from th `R` output.
+19.  Report the p-value from the `R` output.
 \vspace{0.2in}
 
 20.  Interpret the p-value in context of the study.
@@ -286,6 +285,7 @@ Shown in the table above, a **Type 1 Error** is rejecting the null hypothesis wh
 
 The remaining questions cover simulation methods for testing two categorical variables. Use section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.
 
+27.  
 
 
 ## Additional notes
