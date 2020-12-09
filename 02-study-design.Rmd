@@ -53,7 +53,7 @@ To review these concepts, see Sections 1.3 through 1.6 in the textbook.
 
 \newpage
 
-## Types of sampling bias
+## Types of sampling bias: Complete Q1 - 2 before class.  
 
 There are two parts to study design: how the sample was selected and how the study was conducted.  First, we will look at sampling and types of bias (selection, non-response, or response).
 
@@ -106,22 +106,7 @@ In these next questions, identify the target population, the sample, the variabl
     Type(s) of bias:
 \vspace{0.3in}
 
-4. To gauge the interest in a new swimming pool, a local organization stood outside of the Bogart Pool during open hours.  One of the questions they asked was, "Since the Bogart Pool is in such bad repair, don't you agree that the city should fund a new pool?"
-\vspace{0.1in}
-
-    Target population: 
-\vspace{0.3in}
-
-    Sample:
-\vspace{0.3in}
-
-    Variable:
-\vspace{0.3in}
-
-    Type(s) of bias:
-\vspace{0.3in}
-
-5. The Bozeman school district is interested in surveying parents of students about their opinions on returning to school this fall following the COVID-19 pandemic.  They divided the school district into 10 divisions based on location and randomly surveyed 20 households within each division.
+4. To gauge the interest in a new swimming pool, a local organization stood outside of the Bogart Pool in Bozeman, MT during open hours.  One of the questions they asked was, "Since the Bogart Pool is in such bad repair, don't you agree that the city should fund a new pool?"
 \vspace{0.1in}
 
     Target population: 
@@ -147,7 +132,7 @@ include_graphics("images/ScopeOfInferenceGreyscale.png")
 
 For the next exercises, identify the explanatory variable, the response variable, the study design (observational study or experiment), and the scope of inference.
 
-6. The pharmaceutical company Moderna Therapeutics is working in conjunction with the National Institutes of Health towards a vaccine for COVID-19 and has recently begun Phase 3 clinical trials.  US clinical research sites will enroll 30,000 volunteers without COVID-19 to participate. Participants will be randomly assigned to receive either the candidate vaccine or a saline placebo.  They will then be followed to assess vaccine-related symptoms and development of COVID-19. The trial is double-blind, so neither the investigators nor the participants will know who is assigned to which group.
+5. The pharmaceutical company Moderna Therapeutics is working in conjunction with the National Institutes of Health towards a vaccine for COVID-19 and has recently begun Phase 3 clinical trials.  US clinical research sites will enroll 30,000 volunteers without COVID-19 to participate. Participants will be randomly assigned to receive either the candidate vaccine or a saline placebo.  They will then be followed to assess vaccine-related symptoms and development of COVID-19. The trial is double-blind, so neither the investigators nor the participants will know who is assigned to which group.
 \vspace{0.1in}
     
     Explanatory variable:
@@ -164,13 +149,13 @@ For the next exercises, identify the explanatory variable, the response variable
 
 \newpage
 
-7. In another study, a local health department randomly selected 1000 US adults without COVID-19 to participate in a health survey.  Each participant was assessed at the beginning of the study and then followed for one year.  They were interested to see which participants elected to receive a vaccination for COVID-19 and whether any participants developed COVID-19.
+6. In another study, a local health department randomly selected 1000 US adults without COVID-19 to participate in a health survey.  Each participant was assessed at the beginning of the study and then followed for one year.  They were interested to see which participants elected to receive a vaccination for COVID-19 and whether any participants developed COVID-19.
 \vspace{0.1in}
     
     Explanatory variable:
 \vspace{0.25in}
 
-    Response vnariable:
+    Response variable:
 \vspace{0.25in}
 
     Study design:
@@ -204,10 +189,17 @@ text(0.595, 0.565, "?",
 par(par_og) # restore original par
 ```
 
-8. For each of the studies in questions 6 and 7, determine whether confounding variables could be an issue. If so, identify a potential confounding variable and explain how it meets the definition of a confounding variable.
+7. For each of the studies in questions 5 and 6, determine whether confounding variables could be an issue. If so, identify a potential confounding variable and explain how it meets the definition of a confounding variable.
 \vspace{1.5in}
 
 ## Out of Class Activity
+
+
+
+1. The Bozeman school district is interested in surveying parents of students about their opinions on returning to in-person classes school following the COVID-19 pandemic.  They divided the school district into 10 divisions based on location and randomly surveyed 20 households within each division.  Explain why selection bias would be present in this study designs.
+\vspace{1in}
+
+
 
 ## Additional notes
 

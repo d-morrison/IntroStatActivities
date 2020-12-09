@@ -82,7 +82,7 @@ The \# sign is not part of the `R` code.
 It is used by these authors to add comments to the `R` code and explain what each call is telling the program to do.
 `R` will ignore everything after a \# sign when executing the code.
 ```{r, echo=TRUE}
-cps <- read.csv("data/cps.csv") #This will read in the data set
+cps <- read.csv("https://math.montana.edu/courses/s216/data/cps.csv") #This will read in the data set
 ```
 
 
@@ -147,7 +147,7 @@ ggplot(aes(x = sector, fill = sex)) +   #This specifies the variables
 
 ## Probability 
 
-9. A study was reported in which ninth grade Minnesota teens were asked whether they had gambled at least once a week in the past year.  The sample consisted of 49.1% boys.  The proportion of boys who had gambled at least once per week during the past year was 0.229, while among non-boys this proportion was only 0.045. 
+9. A study was reported in which ninth grade Minnesota teens were asked whether they had gambled at least once a week in the past year.  The sample consisted of 49.1% male teens.  The proportion of male teens who had gambled at least once per week during the past year was 0.229, while among non-male teens this proportion was only 0.045. 
 \vspace{1mm}
 
     Let B = the event the person is a boy, and C = the event the person is a weekly gambler.
