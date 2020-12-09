@@ -84,7 +84,6 @@ Left-handedness is a trait that is found in about 10% of the population. Past st
 
 \vspace{1in}
 
-
 Before completing the hypothesis test, we must check that the cases are independent.  The sample observations are independent if the outcome of one observation does not influence the outcome of another. One way this condition is met is if data come from a simple random sample of the target population.
 
 8.  Are the cases independent? Justify your answer.
@@ -205,7 +204,7 @@ one_proportion_test(probability_success = 0.1, #Null hypothesis value
 
 \vspace{1in}
 
-21. Where does the statistic (value from question 9) fall in the null distribution?  Is it towards the center or in one of the tails?  
+21. Where does the statistic (value from question 9) fall in the null distribution?  Is it near the center of the distribution (near 0.1) or in one of the tails of the distribution?  
 
 \vspace{1in}
 
@@ -213,7 +212,7 @@ one_proportion_test(probability_success = 0.1, #Null hypothesis value
 
 \vspace{1in}
 
-23.  Using the simulation, what is the proportion of samples at the summary statistic or greater, if the true proportion of male boxers is 0.1? *Hint*: Look under the simulation.
+23.  Using the simulation, what is the proportion of simulated samples at the summary statistic or greater, if the true proportion of male boxers is 0.1? *Hint*: Look under the simulation.
 
 \vspace{1in}
 |         This is the **p-value**.  The smaller the p-value the more evidence we have against the null hypothesis.
@@ -267,11 +266,11 @@ Conditions for the sample distribution of $\hat{p}$.
 
 * Independence: The sample’s observations are independent, e.g., are from a simple random sample
 
-* Success-Failure Condition: We expect to see at least 10 successes and 10 failures in the sample, $n\pi≥10$  and $n(1-\pi)≥10$
+* Success-Failure Condition: We *expect* to see at least 10 successes and 10 failures in the sample, $n\pi≥10$  and $n(1-\pi)≥10$
 
-29.  We already verified that the independence condition is satisfied in Q8 Is the success-failure condition met to model the data with the Normal distribution?
+29.  We already verified that the independence condition is satisfied in Q8 Is the success-failure condition met to model the data with the Normal distribution?  Show your work to support your answer.
 
-\vspace{0.5in}
+\vspace{1in}
 
 To calculate the standardized statistic we use: 
 
@@ -300,7 +299,7 @@ The standardized statistic measures the number of standard errors the sample sta
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided R markdown file and enter the value of the standardized statistic calculated in Q31 at xx.
+We will use the pnorm function in `R` to find the p-value. Use the provided R script file and enter the value of the standardized statistic calculated in Q31 at xx.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic

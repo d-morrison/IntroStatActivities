@@ -51,9 +51,9 @@ In today's activity, we will use bootstrapping to find the 95% confidence interv
 
 \vspace{0.5in}
 
-To use the computer simulation to create a bootstrap distribution, we will need to enter the "sample size" (the number of observational units or cases in the sample), "number of successes" (the number of cases that are left-handed (success)), "number of repetitions" (the number of samples to be generated), and the "confidence level" (which level of confidence are we using to create the confidence interval).
+To use the computer simulation to create a bootstrap distribution, we will need to enter the "sample size" (the number of observational units or cases in the sample), "number of successes" (the number of cases that are left-handed), "number of repetitions" (the number of samples to be generated), and the "confidence level" (which level of confidence are we using to create the confidence interval).
 
-6.  What values should be entered for each of the following into the simulation to create the bootstrap distribution?
+6.  What values should be entered for each of the following into the simulation to create the bootstrap distribution to find a 95% confidence interval?
 
 \vspace{.2in}
 * Sample size:
@@ -192,6 +192,7 @@ To find the confidence interval we will add and subtract the margin of error to 
 
 $$\text{point estimate}\pm\text{margin of error}$$
 $$\hat{p}\pm z^* SE(\hat{p})$$
+
 22.  Calculate the standard error of the sample proportion to find a 95% confidence interval.
 
 \vspace{0.5in}
@@ -209,6 +210,7 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 24.  Verify that the simulation confidence interval found using bootstrapping is similar to the confidence interval calculating using theory-based methods.
 
 \vspace{1in}
+
 ## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.

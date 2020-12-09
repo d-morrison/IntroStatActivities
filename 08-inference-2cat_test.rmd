@@ -43,7 +43,7 @@ To review these concepts, see Chapter 5 in your textbook.
 \newpage
 
 ## Helmet use and head injuries
-In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the *Journal of the American Medical Association*, Vol. 295, No. 8 (2006), we can see the summary results from a random sample 3562 skiers and snowboarders involved in accidents in the two-way table below. Is there evidence that safety helmet use reduces the risk of head injury for skiers and snowboarders? 
+In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the *Journal of the American Medical Association*, Vol. 295, No. 8 (2006), we can see the summary results from a random sample 3562 skiers and snowboarders involved in accidents in the two-way table below. Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders? 
 
 |                | Helmet Use | No Helmet Use | Total |
 |:--------------:|:----------:|:-------------:|:-----:|
@@ -53,17 +53,17 @@ In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by S
 
 These counts can be found in `R` by using the `count()` function:
 ```{r, echo=TRUE, warning=FALSE, message=FALSE, collapse=FALSE}
-injury <- read.csv("data/head_injury.csv") # Read data set in
+injury <- read.csv("https://math.montana.edu/courses/s216/data/HeadInjuries.csv") # Read data set in
 injury <- # Write over original data with the following
   injury %>% # Pipe data set into
   mutate(Helmet <- factor(Helmet),
-         Injury <- factor(Injury)) # Convert to factors
+         Outcome <- factor(Outcome)) # Convert to factors
 
-injury %>% group_by(Helmet) %>% count(Injury)
+injury %>% group_by(Helmet) %>% count(Outcome)
 ```
 
 
-### Vocabulary review {-}
+### Vocabulary review. Complete Q1 - 4 before coming to class. {-}
 
 1.  What is the explanatory variable?
 
@@ -127,7 +127,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 ```{r echo=FALSE, fig.height=4}
 injury %>%
-ggplot(aes(x = Helmet, fill = Injury)) +   #This specifies the variables
+ggplot(aes(x = Helmet, fill = Outcome)) +   #This specifies the variables
   geom_bar(stat = "count", position = "fill") +  #Tell it to make a stacked bar plot
   labs(title = "Segmented Bar Plot of Helmet Use by Injury",  #Make sure to title your plot 
        x = "___________________",   #Label the x axis
@@ -151,14 +151,14 @@ ggplot(aes(x = Helmet, fill = Injury)) +   #This specifies the variables
 \vspace{1in}
 
 
-14. What is the notation used for the value calculated in question 14?
+14. What is the notation used for the value calculated in question 13?
 
 
 \vspace{0.5in}
 \newpage
 ### Use statistical analysis methods to draw inferences from the data {-}
 
-To test the null hypothesis we could use simulation methods as we did with a single categorical variable. In the in-class activity we will focus on theory-based methods.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
+To test the null hypothesis we could use simulation methods as we did with a single categorical variable in class. In this in-class activity we will focus on theory-based methods.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
 Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$:
 
@@ -182,10 +182,10 @@ $$
 Z = \frac{\text{point estimate} - \text{null value}}{SE}
 $$
 
-where the standard error is calculated using the pooled proportion of successes.
+where the null standard error is calculated using the pooled proportion of successes.
 
 $$
-SE(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\frac{1}{n_2})}, \text{  where}
+SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\frac{1}{n_2})}, \text{  where}
 $$
 $$
 \hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
@@ -193,7 +193,7 @@ $$
 
 \vspace{.25in}
 
-17. Calculate the $SE(\hat{p}_1-\hat{p}_2)$.
+17. Calculate the $SE_0(\hat{p}_1-\hat{p}_2)$.
 
 \vspace{1in}
 
@@ -204,9 +204,9 @@ $$
 We will use the pnorm function in `R` to find the p-value. Use the provided R markdown file and enter the value of the standardized statistic found in question 18 at xx.
 
 ```{r, echo=TRUE, eval=FALSE}
-pnorm(xx, # Enter value of test statistic
+pnorm(xx, # Enter value of standardized statistic
       m=0, s=1 # Using the standard normal mean = 0, sd = 1
-      lower.tail=TRUE) # Gives a p-value less than the test statistic
+      lower.tail=TRUE) # Gives a p-value less than the standardized statistic
 ```
     
 
@@ -223,7 +223,7 @@ pnorm(xx, # Enter value of test statistic
 
 22.  Write a conclusion to the test. 
 
-vspace{1in}
+\vspace{1in}
 
 ### Types of errors {-}
 
@@ -285,8 +285,70 @@ Shown in the table above, a **Type 1 Error** is rejecting the null hypothesis wh
 
 The remaining questions cover simulation methods for testing two categorical variables. Use section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.
 
-27.  
+27.  First let's think about how one simulation would be created on the null distribution using cards.  
 
+How many cards would you need?
+
+\vspace{0.1in}
+
+What would be written on each card?
+
+\vspace{0.5in}
+
+28. Next, we would mix the cards together and shuffle into two piles.  How many cards would be in each pile?  What would each pile represent?
+
+\vspace{1in}
+
+29. Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
+
+\vspace{1in}
+
+30.  To create the null distribution, we will use the two proportion test.  We will need to enter the response variable name and the explanatory name for the formula, the dataset name identified above, the first outcome for the order of subtraction, number of repetitions, the outcome that is a success, and the direction of the alternative hypothesis.
+
+The response variable name is Outcome and the explanatory variable name is Helmet.
+
+What values should be entered for each of the following into the simulation?
+
+\vspace{.2in}
+* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction):
+
+\vspace{.2in}
+* Number of repetitions:
+    
+\vspace{.2in}
+* Response Value Numerator (What is the outcome for the response variable that is considered a success?):
+
+\vspace{.2in}
+* As extreme as:
+    
+\vspace{.2in}
+* Direction (`"greater"`, `"less"`, or `"two-sided"`):
+
+\vspace{.2in}
+
+The following `R` code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 30 match the code inputs.
+
+```{r}
+two_proportion_test(formula = Outcome ~ Helmet, #response~explanatory
+                    data= injury, #name of dataset
+                    first_in_subtraction = "Yes", #order of subtraction: enter the name of Group 1
+                    number_repetitions = 1000, #always use a minimum of 1000 repetitions
+                    response_value_numerator = "Head Injury", #define which outcome is a success 
+                    as_extreme_as = -0.043, #type your calculated observed statistic (difference in sample proportions)
+                    direction="less") #alternative hypothesis direction ("greater","less","two-sided")
+```
+
+31.  What is the p-value?
+
+\vspace{0.2in}
+
+32.  How much evidence is there against the null hypothesis?
+
+\vspace{0.2in}
+
+33.  Is the p-value found in question 32 similar to the p-value found using the theory-based test?  Explain why you would expect this to be true.
+
+\vspace{1in}
 
 ## Additional notes
 
