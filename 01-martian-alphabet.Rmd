@@ -140,7 +140,7 @@ include_graphics("images/relative_barplot_martian.png")
 \vspace{1in}
 
 
-13.	We still unfortunately only have a couple of simulations to compare our class data to.  It would be much better to be able to see how our class compared to hundreds or thousands of “just-guessing” classes.  Since we don’t want to flip coins all class period, your instructor will use a computer simulation to get 1000 trials. Fill in the following blanks to describe how we would create a simulation of random guessing with 1000 trials.
+13.	We still unfortunately only have a couple of simulations to compare our class data to.  It would be much better to be able to see how our class compared to hundreds or thousands of “just-guessing” classes.  Since we don’t want to flip coins all class period, your instructor will use a computer simulation to get 1000 trials. Fill in the following blanks to describe how we would create a simulation of random guessing with 1000 trials (repetitions).
 
 |           Probability of correct guesses: _____
 \vspace{0.05in}
@@ -155,10 +155,9 @@ include_graphics("images/relative_barplot_martian.png")
 
 \vspace{1.5in}
 
-15. Is your class particularly good or bad at Martian?  How can you use the plot in question 14 to tell? 
+15. Is your class particularly good or bad at Martian?  Use the plot in question 14 to explain your answer. 
 
 \vspace{.8in}
-
 
 16.	Is it *possible* that we could see our class results just by chance if everyone was just guessing?  Explain your reasoning.
 
@@ -192,7 +191,7 @@ include_graphics("images/relative_barplot_martian.png")
 
 ## Out of Class Activity
 
-Since this class is taught in a blended format we are only in class one day per week.  During class we will complete the in-class activity from the course pack.  Outside of class students will read from the textbook, watch course videos, and complete an out-of-class activity on the other two days of class.  To become familiar with the course outline, read through the syllabus, https://mtstateintrostats.github.io/Syllabus/, the day specific cohort calendar, and watch the Stat 216 Course Tour on D2L before answering the following questions.
+Since this class is taught in a blended format we are only in class one day per week.  During class we will complete the in-class activity from the course pack.  Outside of class, students will read from the textbook, watch course videos, and complete an out-of-class activity on the other two days of class.  To become familiar with the course outline, read through the syllabus, https://mtstateintrostats.github.io/Syllabus/, the day specific cohort calendar, and watch the Stat 216 Course Tour on D2L before answering the following questions.
 
 1. When are the case study discussion posts due?
 
@@ -206,13 +205,22 @@ Since this class is taught in a blended format we are only in class one day per 
 
 \space{0.5in}
 
-In Stat 216 we will use the statistical package `R` to analyze data.  Read through the instructions on the syllabus and download `R` and `RStudio Desktop` to your computer.  If you have a Chromebook or have problems installing on your machine, you will need to use `RStudio Cloud` or an MSU virtual machine.  Read through the ??? chapter in the textbook before completing the following questions.
+In Stat 216 we will use the statistical package `R` to analyze data.  Read through the instructions on the syllabus and download `R` and `RStudio Desktop` to your computer.  If you have a Chromebook or have problems installing on your machine, you will need to use `RStudio Cloud` or an MSU virtual machine.  Read through the ??? chapter in the textbook and watch the video `RStudio_GettingStarted` on D2L -> Content -> Primary Resources before completing the following questions.
 
-Open `RStudio` on your computer.  Download the ??? from D2L and open in `RStudio`.  If the file does not open directly, open manually:
+Open `RStudio` on your computer.  Download the Martian Alphabet `RScript` file from D2L and open in `RStudio`.  If the file does not open directly, open manually:
 
  * In `RStudio` click on File in the upper left hand corner, choose Open File, find the downloaded file.
  
-If you are using `RStudioCloud` 
+If you are using `RStudioCloud` watch the video `RStudioCloud_GettingStarted` on D2L -> Content -> Primary Resources to learn how to open the file in `RStudioCloud`.
+
+In the Martian Alphabet script file, highlight the first 8 lines of code and click run.  
+
+Throughout the semester we will use the package tidyverse to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol %>%.)  We will use the package ggplot2 to create graphs in `RStudio` and the package catstats starting in Chapter 5.  Once you have installed 
+
+Enter your class size (Q3) for sample_size and the number of students who were correct in identifying Bumba (Q6) for as_extreme_as in the one_proportion_test.  Highlight lines 10 - 15 and click run.
+
+4.  Does the distribution created from this code similar to what you saw in class in Q14?
+
 
 ## Additional notes
 
