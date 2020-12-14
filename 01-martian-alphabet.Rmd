@@ -217,6 +217,10 @@ In the Martian Alphabet `Rscript` file, highlight the first 8 lines of code and 
 
 Throughout the semester we will use the package `tidyverse` to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol %>%.)  We will use the package ggplot2 to create graphs in `RStudio`, the package `mosaic` to use the favstats function to find summary statistics for quantitative variables, and the package `catstats` starting in Chapter 5.  Once you have installed these packages you will only need to use the library function to call each package to use.
 
+The \# sign is not part of the `R` code. 
+It is used by these authors to add comments to the `R` code and explain what each call is telling the program to do.
+`R` will ignore everything after a \# sign when executing the code.
+
 Enter your class size (Q3 from the in-class activity) for sample_size and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for as_extreme_as in the one_proportion_test.  Highlight lines 10 - 15 and click run.
 
 4.  Is the distribution created from this code similar to what you saw in class in Q14?
