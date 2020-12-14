@@ -165,7 +165,7 @@ The \# sign is not part of the `R` code.
 It is used by these authors to add comments to the `R` code and explain what each call is telling the program to do.
 `R` will ignore everything after a \# sign when executing the code.
 
-Ue the provided `RScript` file, Myopia Out of Class Code Activity 3 to answer the following questions. 
+Use the provided `RScript` file, Myopia Out of Class Code Activity 3 to answer the following questions. 
 
 ```{r, echo=TRUE}
 myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv") #This will read in the data set

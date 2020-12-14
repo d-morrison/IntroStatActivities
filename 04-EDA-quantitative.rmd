@@ -41,7 +41,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 \newpage
 
-### Vocabulary review {-}
+### Vocabulary review. Complete question 1 - 3 before coming to class. {-}
 
 1. What are the observational units in this data set?
 
@@ -57,7 +57,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 ### Summarizing a single quantitative variable {-}
 
-The `favstats` function gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable `imdb_score`.
+The `favstats` function from the `'mosaic` package gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable `imdb_score`.
 
 ```{r, echo=TRUE, collapse = FALSE}
 movies <- read.csv("data/Movies2016.csv") # Read in data set
@@ -82,12 +82,13 @@ movies %>% #Data set piped into...
 
 \newpage
 
-A histogram of the IMDb scores is shown below.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, `imdb_score` i the provided `RScript` file for xx.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+
 Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.  
 
 ```{r, out.width="60%", echo=TRUE}
 movies %>% #Data set piped into...
-ggplot(aes(x = imdb_score)) +   #Name variable to plot
+ggplot(aes(x = xx)) +   #Name variable to plot
   geom_histogram(binwidth = 0.5) +  #Create histogram with specified binwidth
   labs(title = "Histogram of IMDb Score of Movies in 2016", #title for plot
        x = "IMDb Score", #Label for x axis
@@ -95,7 +96,7 @@ ggplot(aes(x = imdb_score)) +   #Name variable to plot
 ```
 
 
-8. Which range of IMDb scores have the highest frequency?
+8. Using the histogram created, which range of IMDb scores have the highest frequency?
 
 \vspace{0.4in}
 
@@ -107,7 +108,7 @@ ggplot(aes(x = imdb_score)) +   #Name variable to plot
 
 \vspace{0.4in}
 
-11. The three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:  
+11. Using the code below we see that the three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:  
 
 ```{r, indent = "    ", echo = TRUE, collapse = FALSE}
 movies %>% # Data set pipes into...
@@ -122,18 +123,18 @@ movies %>% # Data set pipes into...
   slice_max(imdb_score, n = 3)  # Show 3 largest values
 ```
 
-    Using the summary statistics above, and the smallest and largest values of variable to check for outliers, sketch a box plot of IMDb Score.  Be sure to label the axes.
+    Using the summary statistics above, and the smallest and largest values of the variable to check for outliers, sketch a box plot of IMDb Score.  Be sure to label the axes.
 
 \vspace{1.5in}
 
 ### Displaying a single categorical and single quantitative variable {-}
 
-The box plot of movie budgets (in millions) by content rating is plotted using the code below.  This plot helps to compare the budget for different levels of content rating.
+The box plot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for yy and the variable `content_rating` for xx. This plot helps to compare the budget for different levels of content rating.
 
 ```{r, out.width="60%", echo=TRUE}
 movies %>%  #Data set piped into...
   filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
-  ggplot(aes(y = budget_mil, x = content_rating))+  #Identify variables
+  ggplot(aes(y = yy, x = xx))+  #Identify variables
   geom_boxplot()+  #Tell it to make a box plot
   labs(title = "Side by side box plot of budget by content rating",  #Title
        x = "Content Rating",    #x-axis label
@@ -148,16 +149,48 @@ movies %>%  #Data set piped into...
    b. Which content rating has the largest spread?
 \vspace{0.2in}
 
-   c. Which content rating is the most skewed distribution?
+   c. Which content rating has the most skewed distribution?
 \vspace{0.2in}
 
-   d. Fifty percent of movies in 2016 with a PG-13 content rating fall below what value?
-\vspace{0.2in}
+   d. Fifty percent of movies in 2016 with a PG-13 content rating fall below what value?  What is the name of this value?
+\vspace{0.4in}
 
    e.  What is the value for the third quartile (Q3) for the PG-13 rating?  Interpret this value in context.
 \vspace{.8in}
 
+## Out of Class Activity
+For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the Movies data set.    
 
+To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.
+
+```{r}
+movies %>% #Data set piped into...
+  summarise(favstats(imdb_score~content_rating)) #Apply favstats function to imdb_score
+```
+
+1.  Using the provided `RScript` file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx.
+
+```{r, out.width="60%", echo=TRUE}
+movies %>%  #Data set piped into...
+  filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
+  ggplot(aes(y = yy, x = xx))+  #Identify variables
+  geom_boxplot()+  #Tell it to make a box plot
+  labs(title = "Side by side box plot of budget by content rating",  #Title
+       x = "Content Rating",    #x-axis label
+       y = "Budget (in Millions)")  #y-axis label
+```
+
+a.  Using the provided favstats output and the side-by-side boxplots, interpret the value of the quartile 1 for the R content rating.
+
+\vspace{1in}
+
+b. Which content rating has the highest center?
+
+\vspace{0.2in}
+
+c. Which variable is the explanatory variable? Response variable?
+
+\vspace{0.5in}
 
 ## Additional notes
 
