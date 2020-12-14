@@ -205,22 +205,23 @@ Since this class is taught in a blended format we are only in class one day per 
 
 \space{0.5in}
 
-In Stat 216 we will use the statistical package `R` to analyze data.  Read through the instructions on the syllabus and download `R` and `RStudio Desktop` to your computer.  If you have a Chromebook or have problems installing on your machine, you will need to use `RStudio Cloud` or an MSU virtual machine.  Read through the ??? chapter in the textbook and watch the video `RStudio_GettingStarted` on D2L -> Content -> Primary Resources before completing the following questions.
+In Stat 216 we will use the statistical package `R` to analyze data.  Read through the instructions on the syllabus and download `R` and `RStudio Desktop` to your computer.  If you have a Chromebook or have problems installing on your machine, you will need to use `RStudio Cloud` or an MSU virtual machine.  Read through the preliminaries chapter in the textbook and watch the video `RStudio_GettingStarted` on D2L -> Content -> Primary Resources before completing the following questions.
 
 Open `RStudio` on your computer.  Download the Martian Alphabet `RScript` file from D2L and open in `RStudio`.  If the file does not open directly, open manually:
 
- * In `RStudio` click on File in the upper left hand corner, choose Open File, find the downloaded file.
+    * In `RStudio` click on File in the upper left hand corner, choose Open File, find the downloaded file.
  
 If you are using `RStudioCloud` watch the video `RStudioCloud_GettingStarted` on D2L -> Content -> Primary Resources to learn how to open the file in `RStudioCloud`.
 
-In the Martian Alphabet script file, highlight the first 8 lines of code and click run.  
+In the Martian Alphabet `Rscript` file, highlight the first 8 lines of code and click run.  
 
-Throughout the semester we will use the package tidyverse to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol %>%.)  We will use the package ggplot2 to create graphs in `RStudio` and the package catstats starting in Chapter 5.  Once you have installed 
+Throughout the semester we will use the package `tidyverse` to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol %>%.)  We will use the package ggplot2 to create graphs in `RStudio`, the package `mosaic` to use the favstats function to find summary statistics for quantitative variables, and the package `catstats` starting in Chapter 5.  Once you have installed these packages you will only need to use the library function to call each package to use.
 
-Enter your class size (Q3) for sample_size and the number of students who were correct in identifying Bumba (Q6) for as_extreme_as in the one_proportion_test.  Highlight lines 10 - 15 and click run.
+Enter your class size (Q3 from the in-class activity) for sample_size and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for as_extreme_as in the one_proportion_test.  Highlight lines 10 - 15 and click run.
 
-4.  Does the distribution created from this code similar to what you saw in class in Q14?
+4.  Is the distribution created from this code similar to what you saw in class in Q14?
 
+\vspace{1in}
 
 ## Additional notes
 
