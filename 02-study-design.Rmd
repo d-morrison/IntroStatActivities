@@ -1,12 +1,5 @@
 # Study Design
 
-
-\textcolor{red}{
-Notes to change for spring 2020:
-* Activity too long - suggest some pre-class questions
-* Add diagram of confounding variable
-}
-
 ## Learning outcomes
 
 * Explain the purpose of random sampling and its effect on scope of inference

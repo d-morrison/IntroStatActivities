@@ -47,7 +47,7 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 ## Handedness of male boxers
 
-Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional fighters. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male boxers we want to see if there is an over-prevalence of left-handed fighters.
+Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers we want to see if there is an over-prevalence of left-handed fighters.
 
 
 ### Summary statistics review: Complete Q1 - 4 before coming to class {-}
@@ -169,7 +169,7 @@ We will use the computer to simulate a null distribution of 1000 different sampl
 
 To use the computer simulation, we will need to enter the "probability of success" ($\pi_0$), "sample size" (the number of observational units or cases in the sample), "number of repetitions" (the number of samples to be generated), "as extreme as" (the observed statistic), and the "direction" (matches the direction of the alternative hypothesis).
 
-19.  What values should be entered for each of the following into the simulation?
+19.  What values should be entered for each of the following into the one proportion test to create 1000 simulations?
 
 \vspace{.2in}
 * Probability of success:
@@ -188,42 +188,45 @@ To use the computer simulation, we will need to enter the "probability of succes
 
 \vspace{.2in}
 
-The following `R` code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 19 match the code inputs.
+Using the provided `RScript` file, fill in the values/words for xx with your answers from question 19 to create a null distribution with 1000 simulations.
 
 ```{r, echo=TRUE}
-one_proportion_test(probability_success = 0.1, #Null hypothesis value
-                    sample_size = 500, #Enter sample size
+one_proportion_test(probability_success = xx, #Null hypothesis value
+                    sample_size = xx, #Enter sample size
                     number_repetitions = 1000, #Enter number of simulations
-                    as_extreme_as = 81/500, #observed statistic
-                    direction = "greater", #specify direction of alternative hypothesis
+                    as_extreme_as = xx, #observed statistic
+                    direction = "xx", #specify direction of alternative hypothesis
                     report_value = "proportion") #Reporting proportion or number of successes?
 ```
 
+20.  Sketch the null distribution created from the R code here.
+
 \newpage
-20. Around what value is the null distribution centered?  Why does that make sense?
+
+21. Around what value is the null distribution centered?  Why does that make sense?
 
 \vspace{1in}
 
-21. Where does the statistic (value from question 9) fall in the null distribution?  Is it near the center of the distribution (near 0.1) or in one of the tails of the distribution?  
+22. Circle the statistic (value from question 9) on the distribution you drew in question 20.  Where does the statistic fall in the null distribution?  Is it near the center of the distribution (near 0.1) or in one of the tails of the distribution?  
 
 \vspace{1in}
 
-22.  Is the statistic likely to happen or unlikely to happen if the true proportion of male boxers is 0.1?  Explain your answer using the plot.
+23.  Is the statistic likely to happen or unlikely to happen if the true proportion of male boxers is 0.1?  Explain your answer using the plot.
 
 \vspace{1in}
 
-23.  Using the simulation, what is the proportion of simulated samples at the summary statistic or greater, if the true proportion of male boxers is 0.1? *Hint*: Look under the simulation.
+24.  Using the simulation, what is the proportion of simulated samples at the summary statistic or greater, if the true proportion of male boxers is 0.1? *Hint*: Look under the simulation.
 
 \vspace{1in}
 |         This is the **p-value**.  The smaller the p-value the more evidence we have against the null hypothesis.
 
-24. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one.)
+25. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one.)
 
 ```{r, out.width="90%"}
 include_graphics("images/soe_gradient_grayscale.png")
 ```
 
-25.  What does the p-value measure?  Interpret the p-value in context of the problem.
+26.  What does the p-value measure?  Interpret the p-value in context of the problem.
 
 \vspace{1in}
 
@@ -231,11 +234,11 @@ include_graphics("images/soe_gradient_grayscale.png")
 
 When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.
 
-26. Write a conclusion in context of the study.
+27. Write a conclusion in context of the study.
 
 \vspace{1in}
 
-27.  Write a paragraph summarizing the results.  Be sure to describe:
+28.  Write a paragraph summarizing the results.  Be sure to describe:
 
 * Summary statistic
 
@@ -249,7 +252,7 @@ When we write a conclusion we answer the research question by stating how much e
 
 ### Revisit and look forward {-}
 
-28. Suggest a new research question that you might investigate, building on what you learned in this study.
+29. Suggest a new research question that you might investigate, building on what you learned in this study.
 
 \vspace{.6in}
 
@@ -268,7 +271,7 @@ Conditions for the sample distribution of $\hat{p}$.
 
 * Success-Failure Condition: We *expect* to see at least 10 successes and 10 failures in the sample, $n\pi≥10$  and $n(1-\pi)≥10$
 
-29.  We already verified that the independence condition is satisfied in Q8 Is the success-failure condition met to model the data with the Normal distribution?  Show your work to support your answer.
+1.  We already verified that the independence condition is satisfied in Q8 Is the success-failure condition met to model the data with the Normal distribution?  Show your work to support your answer.
 
 \vspace{1in}
 
@@ -285,33 +288,33 @@ $$
 where the standard error is calculated using the null value.
 
 $$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$
-30.  Calculate the null standard error of the sample proportion.
+2.  Calculate the null standard error of the sample proportion.
 
 \vspace{1in}
 
-31.  Calculate the standardized sample proportion.  
+3.  Calculate the standardized sample proportion.  
 
 \vspace{1in}
 
 The standardized statistic measures the number of standard errors the sample statistic is from the null value.
 
-32.  Interpret the standardized sample proportion in context of the problem.
+4.  Interpret the standardized sample proportion in context of the problem.
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided R script file and enter the value of the standardized statistic calculated in Q31 at xx.
+We will use the pnorm function in `R` to find the p-value. Use the provided `RScript` file and enter the value of the standardized statistic calculated in question 3 at xx.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
       m=0, s=1 # Using the standard normal mean = 0, sd = 1
       lower.tail=TRUE) # Gives a p-value less than the standardized statistic
 ```
-    
+  
 
-33.  Report the p-value obtained from the R output.
+5.  Report the p-value obtained from the R output.
 \vspace{0.2in}
 
-34.  Is the p-value found in question 33 similar to the p-value found using the simulation test?  Explain why you would expect this to be true.
+6.  Is the p-value found in question 5 similar to the p-value found using the simulation test?  Explain why you would expect this to be true.
 
 \vspace{0.5in}
 

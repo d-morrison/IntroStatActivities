@@ -19,7 +19,7 @@ library(mosaic)
 
 * Interpret and evaluate a p-value
 
-* Find a bootstap confidence interval for a difference in means
+* Find a bootstrap confidence interval for a difference in means
 
 * Interpret a confidence interval
 
@@ -39,6 +39,7 @@ To review these concepts, see Section 6.3 in the textbook.
 
 In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the collapse of two flat-roofed buildings on the MSU campus.  A writer for the Washington Post predicted the heavy snowfall for 2018-2019 due to the El Ni\latexcode{\~{n}}o weather pattern that occurred in that season. A meteorologist in Montana wanted to see if the weather pattern really was associated with total snowfall. She obtained historical data from 44 years on the weather pattern (El Ni\latexcode{\~{n}}o or La Ni\latexcode{\~{n}}a) and snowfall (in inches) at the Billings Weather Station.  
 
+Notice from the `R` code that the name of the data set is `Snow`.
 
 ``````{r, echo=TRUE, collapse=FALSE}
 Snow <- read.csv("data/SnowfallbyWeatherPattern.csv") # Read in data set
@@ -67,13 +68,13 @@ Snow %>%
 ```
 
 
-### Quantitative variables review {-}
+### Quantitative variables review.  Complete questions 1 - 5 before class. {-}
 
 1. The two variables assessed in this study are the type of weather pattern and snowfall.  Identify the role for each variable (explanatory, response).
 
 \vspace{.6in}
 
-2. Which group (El Ni\latexcode{\~{n}}o or La Ni\latexcode{\~{n}}a) has the highest center? Explain which measure you are using.
+2. Which group (El Ni\latexcode{\~{n}}o or La Ni\latexcode{\~{n}}a) has the highest center? Explain which measure of center you are using.
 
 \vspace{.6in}
 
@@ -115,7 +116,7 @@ Snow %>%
 
 ### Use statistical inferential methods to draw inferences from the data {-}
 
-Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, we asssume there is no association between variables.  This means that a snowfall value could be in either an El Ni\latexcode{\~{n}}o year or a La Ni\latexcode{\~{n}}a year.
+Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, we assume there is no association between variables.  This means that a snowfall value could be in either an El Ni\latexcode{\~{n}}o year or a La Ni\latexcode{\~{n}}a year.
 
 To demonstrate this your instructor will use cards to represent the sample.  
 
@@ -141,39 +142,55 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 **Simulation method**
 
-15.  Using the provided `R` markdown file, enter the values for the variables, data set, first in subtraction, number of simulations, observed statistic, and direction of the alternative hypothesis.
+15.  When using the two mean test we need to enter the name of the response variable, `Snowfall` and the name of the explanatory variable, `WeatherPattern` for the formula.  The name of the data set as shown above is `Snow`.  What values should be entered for each of the following into the two mean test to create 1000 simulations?
+
+\vspace{.2in}
+* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction?):
+
+\vspace{.2in}
+* Number of repetitions:
+    
+\vspace{.2in}
+* As extreme as:
+    
+\vspace{.2in}
+* Direction (`"greater"`, `"less"`, or `"two-sided"`):
+
+\vspace{.2in}
+
+16.  Using the `RScript` file for this activity, enter your answers for question 15 in place of the xx's to produce the null distribution with 1000 simulations.
+
 ```{r, echo = TRUE, eval = FALSE}
-two_mean_test(RESPONSE~PREDICTOR, data = DATASET,  #Variables and data
-                    first_in_subtraction = "OUTCOME", #First outcome in order of subtraction
-                    number_repetitions = ###,  #Number of simulations
-                    as_extreme_as = ###,  #Observed statistic
-                    direction = "??")  #Direction of alternative: "greater", "less", or "two-sided"
+two_mean_test(Snowfall~WeatherPattern, data = Snow,  #Variables and data
+                    first_in_subtraction = "xx", #First outcome in order of subtraction
+                    number_repetitions = 1000,  #Number of simulations
+                    as_extreme_as = xx,  #Observed statistic
+                    direction = "xx")  #Direction of alternative: "greater", "less", or "two-sided"
 ```
 
 \vspace{1in}
 
 
-16.  Report the p-value. How much evidence does the p-value provide against the null hypothesis?
+17.  Report the p-value. How much evidence does the p-value provide against the null hypothesis?
 
 \vspace{1in}
 
-17. Using bootstrapping find a **95\%** confidence interval. Use the provided `R` markdown file. Enter the variables, first in subtraction, number of repetitions, and the confidence level.
+18. Using bootstrapping find a **95\%** confidence interval. Use the provided `RScript` file. Enter the variable names and data set name as in the two mean test, outcome name for the first in subtraction, number of repetitions, and the confidence level.
 ```{r, echo = TRUE, eval = FALSE}
 two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
-                      first_in_subtraction = "VALUE", #First value in order of subtraction
-                      number_repetitions = ###,  #Number of simulations
-                      confidence_level = 0.95)
+                      first_in_subtraction = "xx", #First value in order of subtraction
+                      number_repetitions = 1000,  #Number of simulations
+                      confidence_level = xx)
 ```
 
 
-
-18. Interpret the interval you calculated in question 17. 
+19. Interpret the interval you calculated in question 18. 
 
 \vspace{1in}
 
 ### Communicate the results and answer the research question {-}
 
-19.  Write a paragraph summarizing the results of the study.  Be sure to describe:
+20.  Write a paragraph summarizing the results of the study.  Be sure to describe:
 
 * Summary statistic
 
@@ -189,17 +206,79 @@ two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
 
 ### Revisit and look forward {-}
 
-20.  Would the results from the theory-based test match the results we saw with the simulation?  Explain why or why not.
+21.  Would the results from the theory-based test match the results we saw with the simulation?  Explain why or why not.
 
 \vspace{1in}
 
-21. If we had data on 45 La Ni\latexcode{\~{n}}a years and 47 El Ni\latexcode{\~{n}}o years and found a similar summary statistic, what would happen to the p-value?  The width of the confidence interval?  The power of the test?
+22. If we had data on 45 La Ni\latexcode{\~{n}}a years and 47 El Ni\latexcode{\~{n}}o years and found a similar summary statistic, what would happen to the p-value?  The width of the confidence interval?  The power of the test?
 
 \vspace{1in}
 
 
+## Out of Class Activity
+
+The remaining questions cover inference for a difference in means using theory based methods.  Use section 6.3.3 in the textbook and the TwoMeanTheory video to complete the following questions.
+
+The sampling distribution for $\bar{x}_1-\bar{x}_2$ can be modeled using a normal distribution when certain conditions are met.
+
+Conditions for the sample distribution of $\bar{x}_1-\bar{x}_2$.
+
+* Independence: The sample’s observations are independent
+
+* Normality: each sample should be approximately normal
+
+For each sample: 
+** n < 30: If the sample size n is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
+
+** n ≥ 30: If the sample size n is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
+
+In question 21 in the in-class activity we noted that there were issues with the normality condition.  
+
+\vspace{1in}
+
+To find the Standardized Statistic for the difference in means:
+
+|     $T = \frac{\bar{x}_1-\bar{x}_2}{SE(\bar{x}_1-\bar{x}_2)}$
+
+where the standard error of the mean difference
+
+|     $SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}$
+
+1.  Calculate the standard error of the difference in means.
+
+\vspace{0.5in}
+
+2.  Calculate the standardized statistic.
+
+\vspace{0.5in}
+
+Using the provided `RScript` file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value.  
+
+```{r}
+pt(xx, df=20, lower.tail=TRUE)
+```
+
+3.  Explain why the p-value found using theory-based methods is not similar to the simulation p-value found in the in-class activity?
+
+\vspace{0.5in}
 
 
+To calculate the 95% confidence interval using the formula:
+
+$\bar{x}_1- \bar{x}_2\pm t^* SE(\bar{x}_1- \bar{x}_2)$ we will need to find the $t^*$ multiplier using the function qt.  
+
+For a 95% confidence interval we are finding the $t^*$ value at the 95th percentile with df = minimum(n - 1) = 21 - 1 = 20.
+
+```{r}
+qt(0.975, df = 20, lower.tail=TRUE)
+```
+
+4.  Calculate the 95% confidence interval using theory-based methods.
+
+\vspace{1in}
+
+
+\vspace{1in}
 ## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.

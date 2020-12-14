@@ -61,7 +61,7 @@ injury <- # Write over original data with the following
 
 injury %>% group_by(Helmet) %>% count(Outcome)
 ```
-
+Notice that the name of the explanatory variable is `Helmet` with outcomes `Yes` and `No` and the name of the response variable is `Outcome` with outcomes `Head Injury` and `No Head Injury`.
 
 ### Vocabulary review. Complete Q1 - 4 before coming to class. {-}
 
@@ -146,7 +146,7 @@ ggplot(aes(x = Helmet, fill = Outcome)) +   #This specifies the variables
 
 \vspace{1in}
 
-13.  Calculate the point estimate (summary statistic) for this study.  Use helmet use minus no helmet use as the order of subtraction.
+13.  Calculate the summary statistic for this study.  Use helmet use (`Yes`) minus no helmet use (`No`) as the order of subtraction.
 
 \vspace{1in}
 
@@ -164,7 +164,7 @@ Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$:
 
 * Independence: The data are independent within and between the two groups. (*Remember*: This also must be true to use simulation methods!)
 
-* Success-Failure Condition: The success-failure condition holds for each group.
+* Success-Failure Condition: The success-failure condition holds for each group.  Under the null hypothesis, the proportions $\pi_1$ and $\pi_2$ are equal, so we check the success-failure condition with our best estimate of these values under $H_0$, the pooled proportion from the two samples,
 
 \vspace{.25in}
 
@@ -172,7 +172,7 @@ Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$:
 
 \vspace{1in}
 
-16. Is the success-failure condition met for each group?  Explain your answer.
+16. Is the success-failure condition met for each group?  Show your work to verify your answer.
 
 \vspace{1in}
 
@@ -201,7 +201,7 @@ $$
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided R markdown file and enter the value of the standardized statistic found in question 18 at xx.
+We will use the pnorm function in `R` to find the p-value. Use the provided `RScript` file and enter the value of the standardized statistic found in question 18 at xx.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
@@ -283,31 +283,31 @@ Shown in the table above, a **Type 1 Error** is rejecting the null hypothesis wh
 
 ## Out of Class Activity
 
-The remaining questions cover simulation methods for testing two categorical variables. Use section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.
+The remaining questions cover simulation methods for testing two categorical variables. Use section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.  
 
-27.  First let's think about how one simulation would be created on the null distribution using cards.  
+1.  First let's think about how one simulation would be created on the null distribution using cards.  
 
-How many cards would you need?
+    How many cards would you need?
 
 \vspace{0.1in}
 
-What would be written on each card?
+    What would be written on each card?
 
 \vspace{0.5in}
 
-28. Next, we would mix the cards together and shuffle into two piles.  How many cards would be in each pile?  What would each pile represent?
+2. Next, we would mix the cards together and shuffle into two piles.  How many cards would be in each pile?  What would each pile represent?
 
 \vspace{1in}
 
-29. Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
+3. Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
 
 \vspace{1in}
 
-30.  To create the null distribution, we will use the two proportion test.  We will need to enter the response variable name and the explanatory name for the formula, the dataset name identified above, the first outcome for the order of subtraction, number of repetitions, the outcome that is a success, and the direction of the alternative hypothesis.
+4.  To create the null distribution, we will use the two proportion test.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name identified above as `injury`, the outcome for the explanatory variable to give the order of subtraction for First in Subtraction, number of repetitions, the outcome for the response variable that is a success for Response Value Numerator, and the direction of the alternative hypothesis.
 
 The response variable name is Outcome and the explanatory variable name is Helmet.
 
-What values should be entered for each of the following into the simulation?
+What inputs should be entered for each of the following to create the simulation?
 
 \vspace{.2in}
 * First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction):
@@ -319,34 +319,34 @@ What values should be entered for each of the following into the simulation?
 * Response Value Numerator (What is the outcome for the response variable that is considered a success?):
 
 \vspace{.2in}
-* As extreme as:
+* As extreme as (enter the value for the sample difference in proportions):
     
 \vspace{.2in}
 * Direction (`"greater"`, `"less"`, or `"two-sided"`):
 
 \vspace{.2in}
 
-The following `R` code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 30 match the code inputs.
+Using the `RScript` file for this activity, enter your answers for question 4 in place of the xx's to produce the null distribution with 1000 simulations.
 
 ```{r}
 two_proportion_test(formula = Outcome ~ Helmet, #response~explanatory
                     data= injury, #name of dataset
-                    first_in_subtraction = "Yes", #order of subtraction: enter the name of Group 1
+                    first_in_subtraction = "xx", #order of subtraction: enter the name of Group 1
                     number_repetitions = 1000, #always use a minimum of 1000 repetitions
-                    response_value_numerator = "Head Injury", #define which outcome is a success 
-                    as_extreme_as = -0.043, #type your calculated observed statistic (difference in sample proportions)
-                    direction="less") #alternative hypothesis direction ("greater","less","two-sided")
+                    response_value_numerator = "xx", #define which outcome is a success 
+                    as_extreme_as = xx, #type your calculated observed statistic (difference in sample proportions)
+                    direction="xx") #alternative hypothesis direction ("greater","less","two-sided")
 ```
 
-31.  What is the p-value?
+5.  What value is the null distribution centered around?  Explain why this makes sense?
+
+\vspace{1in}
+
+6.  What is the p-value? *Remember*: This is the value given at the bottom of the null distribution.
 
 \vspace{0.2in}
 
-32.  How much evidence is there against the null hypothesis?
-
-\vspace{0.2in}
-
-33.  Is the p-value found in question 32 similar to the p-value found using the theory-based test?  Explain why you would expect this to be true.
+7.  Is the p-value found in question 6 for the out of class activity similar to the p-value found using the theory-based test?  Explain why you would expect this to be true.
 
 \vspace{1in}
 
