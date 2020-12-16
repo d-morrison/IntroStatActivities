@@ -1,4 +1,4 @@
-# Hand Dexterity
+# Moneyball
 
 ## Learning outcomes
 * Given a research question, construct the null and alternative hypotheses
@@ -23,38 +23,38 @@ In today's activity, we will use theory-based hypothesis tests and confidence in
 
 To review these concepts, see Chapters 3 and 7 in the textbook.
 
-## Hand dexterity
+## Moneyball
 
-Physical therapists often evaluate manual (hand) dexterity by having patients complete simple tasks, such as moving pegs on a board or threading objects through holes. Researchers want to examine the manual dexterity of children as part of a follow-up study of a test originally designed for adults to see how manual dexterity changes with age. In this test, 174 participants were given a board with 16 pegs, each in their own hole, arranged in a 4x4 grid. Participants were instructed to pick up the peg with one hand, flip it over by rotating their wrist, then reinsert it in the same hole. Using this test, researchers want to know if as people age the speed at which they can flip all 16 pegs increases.
+The goal of a Major League baseball team is to make the playoffs. In 2002, the manager of the Oakland A's, Billy Beane with the help of Paul DePodesta began to use statistics to determine which players to choose for their season.  Based on past data, Paul determined that to make it to the playoffs, the A's would need to win at least 95 games in regular season.  They also analyzed the relationship between number of runs and number of wins.  The Oakland A's won 20 consecutive games and a total of 103 for the season.  The success of this use of sports analytics was portrayed by the 2011 movie, *Moneyball*.
 
-The variables in this data set^[Data source: Hand Dexterity in Children: Administration and Normative Values of the Functional Dexterity Test (FDT), Gogola, G., et al., 2013] consist of the following:
+In this study we will see if there is a positive linear relationship between the difference in the number of runs scored minus the number of runs allowed and the number of wins for teams in the years before 2002.
+
+Some of the variables collected in this data set consist of the following:
 
 | **Variable** 	| **Description** |
 |---	|-------------	|
-| `time` | Recorded time to flip all 16 pegs (seconds) |
-| `speed` | Average speed to flip a peg for each participant (seconds per peg)|
-| `age` | Age of the participants (years)|
-| `dominant` | Whether the participant's dominant hand was used, coded as 0 for no, 1 for yes|
-| `gender` | The participant's gender, recorded as a binary variable, 0 for male, 1 for non-male |
-| `HD` | The dominant hand of the participant, recorded as `R` for right hand, `L` for left hand |
-| `handUsed` | Which hand the participant used to complete the test, recorded as `R` for right hand, `L` for left hand |
+| `RA` | Runs allowed |
+| `RS` | Runs scored |
+| `OBP` | On Base Percentage |
+| `SLG` | Slugging Percentage |
+| `BA` | Batting Average |
+| `OOBP` | Opponent's On Base Percentage |
+| `OSLG` | Opponent's Slugging Percentage |
+| `W` | Number of Wins in the season |
+| `RD` | Difference of runs scored minus runs allowed
 
 
 ```{r, echo = TRUE, fig.width=7,fig.height=6, collapse=FALSE}
 # Read in data set
-hands <- read.csv("data/hands.csv")
+baseball <- read.csv("data/baseball.csv")
 
-# Rename variables (odd original coding)
-colnames(hands) <- c("time","speed","age","dominant","gender",
-                     "HD","handUsed") 
+baseball$RD <- baseball$RS - baseball$RA #create variable run difference
 
 # Code categorical variables as factors
-hands <- # Write over original data with the following
-  hands %>% # Pipe data set into
-  mutate(dominant = factor(dominant), # Recode categorical variables as factors
-         gender = factor(gender),
-         HD = factor(HD),
-         handUsed = factor(handUsed))
+baseball <- # Write over original data with the following
+  baseball %>% # Pipe data set into
+  subset(Year < 2002) # Recode categorical variables as factors
+
 ```
 
 ### Vocabulary review {-}
@@ -63,25 +63,20 @@ hands <- # Write over original data with the following
 
 \vspace{1in}
 
-2. What is the scope of inference for this study?  Explain your answer. 
-
-\vspace{1in}
-
-
-3. Use the provided `R` markdown file to create a scatterplot to examine the relationship between the speed at which a participant can flip a peg and the age of the participant by filling in the variable names ('speed' and 'age') for xx and yy. Provide this plot. Based on your plot, does it appear that there is a relationship between ``age`` and ``speed``? Note: ``age`` should be on the x-axis.
+2. Use the provided `RScript` file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names ('RD' and 'W') for xx and yy. Sketch this plot below. Based on your plot, does it appear that there is a relationship between ``run difference`` and ``wins``? Note: ``RD`` should be on the x-axis.
  
 ```{r, echo=TRUE, eval=FALSE, indent = "    "}
-hands %>% # Pipe data set into...
-ggplot(aes(x = xx, y = yy))+  #Specify variables
+baseball %>% # Pipe data set into...
+ggplot(aes(x = RD, y = W))+  #Specify variables
   geom_point() +  #Add scatterplot of points
-  labs(x = "Age (yrs)",  #Label x-axis
-       y = "Speed (sec/peg)",  #Label y-axis
-       title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
+  labs(x = "Difference in number of runs",  #Label x-axis
+       y = "Number of wins",  #Label y-axis
+       title = "Scatterplot of Run Difference vs. Number of Wins") + #Be sure to tile your plots
   geom_smooth(method = "lm", se = FALSE)  #Add regression line
 ```
 \vspace{2in}
 
-4. Describe the features of the plot you created in question 3.  
+3. Describe the features of the plot you created in question 2.  
 
 \vspace{1in}
 
@@ -104,56 +99,56 @@ When performing inference on a least squares line, the follow conditions are gen
 The scatterplot and the residual plots will be used to assess the conditions for approximating the data with the $t$-distribution.
 
 ```{r}
-lm.hand <- lm(speed~age, data = hands) # Fit linear regression model
+lm.baseball <- lm(W~RD, data = baseball) # Fit linear regression model
 par(mfrow=c(1,2)) # Set graphics parameters to plot 2 plots in 1 row
-plot(lm.hand, which=1) # Residual vs fitted values
-hist(lm.hand$resid, xlab="Residuals", ylab="Frequency",
+plot(lm.baseball, which=1) # Residual vs fitted values
+hist(lm.baseball$resid, xlab="Residuals", ylab="Frequency",
      main = "Histogram of Residuals") # Histogram of residuals
 ```
 
-5. Are the conditions met to use the $t$-distribution to approximate the sampling distribution of our test statistic?
+4. Are the conditions met to use the $t$-distribution to approximate the sampling distribution of our test statistic?
 
 \vspace{1in}
 
 \newpage
 ### Ask a research question {-}
 
-6. Write out the null hypothesis in words.
+5. Write out the null hypothesis in words.
 
 \vspace{1in}
 
-7. Using the research question, write the alternative hypothesis in notation.
+6. Using the research question, write the alternative hypothesis in notation to test the slope.
 
 \vspace{0.5in}
 
 ### Summarize and visualize the data {-}
 
-Using the provided `R` markdown file, enter the response variable into the linear model function for yy and the explanatory variable for xx to get the linear model output.
+Using the provided `RScript` file, enter the response variable into the linear model function for yy and the explanatory variable for xx to get the linear model output.
 
 ```{r, echo=TRUE, eval =FALSE}
-lm.hand <- lm(yy~xx, data=hands) #lm(response~explanatory)
-round(summary(lm.hand)$coefficients, 5)
+lm.baseball <- lm(W~RD, data=baseball) #lm(response~explanatory)
+round(summary(lm.baseball)$coefficients, 5)
 ```
 
-8.  Using the output from the evaluated `R` code above, write the equation of the regression line.
+7.  Using the output from the evaluated `R` code above, write the equation of the regression line.
 
 \vspace{1in}
 
-9.  Interpret the slope in context of the problem.
+8.  Interpret the slope in context of the problem.
 
 \vspace{1in}
 
-10. Using your estimated line of best fit, predict the per peg speed for a participant who was 9.18 years old. Show all work.
+9. Using your estimated line of best fit, predict the number of wins for a run difference of 147. Show all work.
 
 \vspace{1in}
 
-11. Calculate the residual associated with the observation (9.18, 2.95), using your estimated regression line from question 8. 
+10. In 2002 the Oakland A's has a run difference of 147 and 103 wins. Calculate the residual associated with the observation (147, 103), using your estimated regression line from question 7. 
 
 \vspace{1in}
 
 ### Use statistical inferential methods to draw inferences from the data {-}
 
-To find the value of the test statistic to test the slope we will use, 
+To find the value of the standardized statistic to test the slope we will use, 
 
 $$
 T = \frac{\mbox{slope estimate}}{SE} = \frac{b_1}{SE(b_1)}
@@ -161,18 +156,18 @@ $$
  
 We will use the linear model output above to get the estimate for slope and standard error.
 
-12.  Calculate the test statistic for slope.  Identify where this calculated value is in the linear model output.
+11.  Calculate the standardized statistic for slope.  Identify where this calculated value is in the linear model output.
 
 \vspace{1in}
 
-13.  Interpret the test statistic in context of the problem.
+12.  Interpret the standardized statistic in context of the problem.
 
 \vspace{1in}
 
-14.  Using the linear model output, report the p-value for the test of significance.
+13.  Using the linear model output, report the p-value for the test of significance.
 
 \vspace{0.5in}
-15. Based on the p-value, how much evidence is there against the null hypothesis?
+14. Based on the p-value, how much evidence is there against the null hypothesis?
 
 \vspace{0.5in}
 
@@ -183,10 +178,14 @@ $$b_1 \pm t^* SE(b_1)$$
 The $t^*$ multiplier comes from the $t$-distribution with $n-2$ df.  Recall for a 95\% confidence interval, use the 97.5\% percentile (95\% of the distribution is in the middle, leaving 2.5\% in each tail).
 
 ```{r, echo=TRUE, collapse=FALSE}
-qt(0.95+0.025, 172) #95% t* multiplier 
+qt(0.95+0.025, 900) #95% t* multiplier 
 ```
 
-16. Calculate the 95% confidence interval for the true slope.
+15. Calculate the 95% confidence interval for the true slope.
+\vspace{1in}
+
+16. Interpret the 95% confidence interval in context of the problem.
+
 \vspace{1in}
 
 ### Communicate the results and answer the research question {-}
@@ -219,22 +218,86 @@ qt(0.95+0.025, 172) #95% t* multiplier
 
 ### Revisit and look forward {-}
 
-20. Is there an effect due to **whether the participant used their dominant hand** on the linear relationship between age and speed?  Explain your answer using the scatterplot below.
+20. In order to predict the number of runs scored, Beane and DePodesta looked at the prediction model using both the team's on base percentage and slugging percentage. The following `R` code gives the estimates for the regression model with both of these variables.
 
 ```{r, echo=TRUE, indent = "    "}
-hands %>% # Pipe data set into...
-ggplot(aes(x = age, y = speed, color = dominant))+  #Specify variables
-  geom_point(aes(pch = dominant)) +  #Add scatterplot of points
-  labs(x = "Age (yrs)",  #Label x-axis
-       y = "Speed (sec/peg)",  #Label y-axis
-       legend = "Dominant hand",  #Label your legend
-       title = "Scatterplot of Age vs. Speed") + #Be sure to tile your plots
-  geom_smooth(method = "lm", se = FALSE) +  #Add regression line
-  scale_color_grey() #Make greyscale for printing 
+lm.score <- lm(RS~OBP+SLG, data=baseball)
+round(summary(lm.score)$coefficients, 5)
 ```
+Use the provided `R` output to write the linear regression model including all variables.  The estimated line of regression is:
 
+|    $\widehat{runs scored} = b_0 + b_1*OBP + b_2*SLG$
 
 \vspace{1in}
+
+21. Predict the number of wins for the Oakland A's in 2002 if the team OBP is 0.339 and the team SLPG is 0.430.
+
+\vspace{1in}
+
+## Out of class activity
+In the out of class activity we will focus on using simulation based methods for inference of regression.  Use section 7.1 in the textbook and the TwoQuantSim video to complete the following questions.  
+
+First let's think about how one simulation would be created on the null distribution using cards.  First we would write the values for the response variable, wins, on each card.  Next, we would shuffle the y values to a new x value (explanatory variable).  Then, find the line of regression for the shuffled cards.  
+
+1. Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
+
+\vspace{1in}
+
+2.  To create the null distribution, we will use the regression test from the catstats package.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name identified above as `baseball`, the statistic for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
+
+The response variable name is `W` (wins) and the explanatory variable name is `RD` (run difference).
+
+What inputs should be entered for each of the following to create the simulation?
+
+\vspace{.2in}
+
+* Direction (`"greater"`, `"less"`, or `"two-sided"`):
+
+\vspace{.2in}
+
+*statistic (choose `"slope"` or `"correlation"`):
+
+\vspace{.2in}
+* As extreme as (enter the value for the sample slope):
+
+\vspace{0.2in}
+
+* Number of repetitions:
+    
+\vspace{.2in}
+
+Using the `RScript` file for this activity, enter your answers for question 2 in place of the xx's to produce the null distribution with 1000 simulations.
+
+```{r}
+regression_test(W~RD, # response ~ explanatory
+               data = baseball, # name of data set
+               direction = "xx", # sign in alternative ("greater", "less", "two-sided")
+               statistic = "xx", 
+               as_extreme_as = xx, #observed slope
+               number_repetitions = 1000) #Number of simulated samples for null distribution
+       
+```
+
+3.  Report the value of the p-value.  Is this value similar to what was seen with the theory-based methods?
+
+\vspace{0.5in}
+
+Fill in the xx's in the regression bootstrap CI function to find a 95% confidence interval.
+
+```{r}
+regression_bootstrap_CI(W~RD, # response ~ explanatory
+                        data = baseball, # name of data set
+                        confidence_level = xx, # confidence level as decimal
+                        statistic = "xx", # slope or correlation
+                        number_repetitions = 1000) #Number of simulated samples for null distribution
+```
+4.  Report the bootstrap 95% confidence interval in interval notation.  
+\vspace{0.5in}
+   
+5. Is the bootstrap 95% confidence interval similar to what was found using theory-based methods?  Why did you expect this to be true?
+
+\vspace{1in}
+
 ## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
