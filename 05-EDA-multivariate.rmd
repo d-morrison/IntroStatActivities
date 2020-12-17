@@ -48,19 +48,20 @@ We will revisit the data set used last week collected on Movies released in 2016
 \newpage
 
 ### Vocabulary review. Complete questions 1 - 4 before coming to class.{-}
+
 Note: You will need to use the provided `RScript` for activity 5 to complete question 3.
 
 1.  What type of plot is used to display two quantitative variables?
 
 \vspace{0.2in}
 
-2.  What summary statistics are used to describe the relationship between two quantitative variables?
+2.  What three summary statistics are used to describe the relationship between two quantitative variables?
 
 \vspace{0.3in}
 
-We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. Enter the variable name `budget_mil` for xx and `revenue_mil` for yy to create the scatterplot. (Note: both variables are measures in "millions of dollars").  
+We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. Enter the variable name `budget_mil` for xx and `revenue_mil` for yy to create the scatterplot. (Note: both variables are measures in "millions of dollars").  Highlight and run lines 1 - 12.
 
-```{r echo=t, fig.height=5,fig.width=12, message = FALSE}
+```{r echo=t, fig.height=5,fig.width=12, message = FALSE, eval=FALSE}
 movies <- read.csv("data/Movies2016.csv") #Reads in data set
 movies %>% #Data set pipes into...
 ggplot(aes(x = xx, y = yy))+  #Specify variables
@@ -116,7 +117,7 @@ movies %>%  #Data set pipes into...
 
 \vspace{0.3in}
 
-7.  Based on the value of correlation what would the sign of the slope be? Positive or negative?  Explain.
+7.  Based on the value of correlation found in question 6, what would the sign of the slope be? Positive or negative?  Explain.
 
 \vspace{0.5in}
 
@@ -144,7 +145,7 @@ You may remember from middle and high school that slope $=\frac{\mbox{rise}}{\mb
 
 Using $b_1$ to represent slope, we can write that as the fraction $\frac{b_1}{1}$. 
 
-Therefore, the slope predicts the how much the line will *rise* for each *run* of +1. In other words, as the $x$ variable increases by 1 unit, the $y$ variable is expected to change (increase/decrease) by the value of slope.
+Therefore, the slope predicts how much the line will *rise* for each *run* of +1. In other words, as the $x$ variable increases by 1 unit, the $y$ variable is expected to change (increase/decrease) by the value of slope.
 
 
 10.  Write out the least squares line using the summary statistics provided in proper statistical notation.
@@ -203,7 +204,7 @@ The third summary measure from two quantitative variables is the coefficient of 
 \vspace{.6in}
 
 ### Multivariate plots {-}
-What if we wanted to see if the relationship between 'Budget' and 'Revenue' differs if we add another variable into the picture?  The following plot visualized three variables, creating a **multivariate** plot. 
+What if we wanted to see if the relationship between 'Budget' and 'Revenue' differs if we add another variable into the picture?  The following plot visualizes three variables, creating a **multivariate** plot. 
 
 ```{r echo=TRUE, fig.height=5,fig.width=12, message = FALSE}
 movies %>% #Data set pipes into...

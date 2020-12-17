@@ -109,7 +109,7 @@ handedness %>% count(Stance)  # Count number in each Stance category
 
 ### Use statistical analysis methods to draw inferences from the data {-}
 
-When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the true value of interest.  *For example, in the Martian Alphabet Activity the parameter of interest is the true proportion of statistic students who correctly identify bumba.*
+When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the true value of interest.  *For example, in the Martian Alphabet Activity the parameter of interest is the true proportion of statistic students who correctly identify Bumba.*
 
 
 10.  Write out the parameter of interest for this study. 
@@ -188,9 +188,9 @@ To use the computer simulation, we will need to enter the "probability of succes
 
 \vspace{.2in}
 
-Using the provided `RScript` file, fill in the values/words for xx with your answers from question 19 to create a null distribution with 1000 simulations.
+Using the provided `RScript` file, fill in the values/words for xx with your answers from question 19 to create a null distribution with 1000 simulations, highlight and run lines 1 - 14.
 
-```{r, echo=TRUE}
+```{r, echo=TRUE, eval = FALSE}
 one_proportion_test(probability_success = xx, #Null hypothesis value
                     sample_size = xx, #Enter sample size
                     number_repetitions = 1000, #Enter number of simulations
@@ -211,11 +211,11 @@ one_proportion_test(probability_success = xx, #Null hypothesis value
 
 \vspace{1in}
 
-23.  Is the statistic likely to happen or unlikely to happen if the true proportion of male boxers is 0.1?  Explain your answer using the plot.
+23.  Is the statistic likely to happen or unlikely to happen if the true proportion of male boxers who are left-handed is 0.1?  Explain your answer using the plot.
 
 \vspace{1in}
 
-24.  Using the simulation, what is the proportion of simulated samples at the summary statistic or greater, if the true proportion of male boxers is 0.1? *Hint*: Look under the simulation.
+24.  Using the simulation, what is the proportion of simulated samples at the summary statistic or greater, if the true proportion of male boxers who are left-handed is 0.1? *Hint*: Look under the simulation.
 
 \vspace{1in}
 |         This is the **p-value**.  The smaller the p-value the more evidence we have against the null hypothesis.
@@ -298,11 +298,11 @@ $$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$
 
 The standardized statistic measures the number of standard errors the sample statistic is from the null value.
 
-4.  Interpret the standardized sample proportion in context of the problem.
+4.  Interpret the standardized sample proportion from question 3 in context of the problem.
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided `RScript` file and enter the value of the standardized statistic calculated in question 3 at xx.
+We will use the pnorm function in `R` to find the p-value. Use the provided `RScript` file and enter the value of the standardized statistic calculated in question 3 at xx, highlight and run lines 18 - 20.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic

@@ -35,7 +35,7 @@ To review these concepts, see Sections 2.1 and 2.2 in the textbook.
 \newpage
 
 ## "Current" Population Survey: 1985
-The data set we will use for this activity is from the Current Population Survey (CPS) in 1985.  The CPS is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population.  The following table describes the variables in the data set:
+The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population.  The following table describes the variables in the data set:
 
 | **Variable** | **Description** |
 |--	|---------------	|
@@ -60,23 +60,20 @@ The data set we will use for this activity is from the Current Population Survey
 
 \vspace{1in}
 
-3.  What types of plots can be used to display categorical data?
+3.  What types of plot can be used to display a single categorical variable?  Two categorical variables?
 
 \vspace{1in}
 
 ## Probability 
 
-4. Since the early 1980s, the rapid antigen detection test (RADT) of group A *streptococci* has been used to detect strep throat. A recent study of the accuracy of this test shows that the sensitivity, positive RADT given person has strep throat in children, is 86%, while the specificity, negative RADT given the person does not have strep throat, in children is 92%.  The prevalence of group A strep is 37% in children less than 18 years old. 
+4. Since the early 1980s, the rapid antigen detection test (RADT) of group A *streptococci* has been used to detect strep throat. A recent study of the accuracy of this test shows that the sensitivity, positive RADT given person has strep throat in children is 86%, while the specificity, negative RADT given the person does not have strep throat in children is 92%.  The prevalence, the probability of having group A strep, is 37% in children less than 18 years old. 
 
 \vspace{1mm}
 
     Let A = the event the child has strep throat, and B = the event the child has a positive RADT.
 \vspace{0.1in}
 
-a. Draw a segmented bar plot of RADT results segmented by infection. Make sure to clearly label your axes and legend.
-\vspace{1.8in}
-
-b. Identify what each numerical value given in the problem represents in probability notation.
+a. Identify what each numerical value given in the problem represents in probability notation.
 \vspace{.1in}
 
 |                 0.86 =  
@@ -88,7 +85,7 @@ b. Identify what each numerical value given in the problem represents in probabi
 |                 0.37 =  
 \vspace{.1in}
 
-c. Create a hypothetical two-way table to represent the situation.  Recall that in a two-way table, the explanatory variable should be your column headers (similar to the $x$-axis in a segmented bar graph!) while the response variable becomes the row headers.
+b. Create a hypothetical two-way table to represent the situation.  Recall that in a two-way table, the explanatory variable should be your column headers (similar to the $x$-axis in a segmented bar graph!) while the response variable becomes the row headers.
 
 | \hspace{1in}      |\hspace{1in}     |\hspace{1in}     | Total        |
 |-------|---|---|---------|
@@ -97,10 +94,10 @@ c. Create a hypothetical two-way table to represent the situation.  Recall that 
 |    \hspace{1in}     |   |   |         |
 | Total |   |   | 100,000 |
 
-d. Find $P(\mbox{A and B})$. What does this probability represent in the context of the problem?
+c. Find $P(\mbox{A and B})$. What does this probability represent in the context of the problem?
 \vspace{.8in}
 
-e. Find the probability that a child with a positive RADT actually has strep throat. What is the notation used for this probability?
+d. Find the probability that a child with a positive RADT actually has strep throat. What is the notation used for this probability?
 
 \newpage
 
@@ -161,11 +158,7 @@ you would use in order to produce output or plots. These
 "code chunks" appear in gray. In the code chunk below, we
 demonstrate how to read the data set into `R` using the `read.csv()` function.
 
-The \# sign is not part of the `R` code. 
-It is used by these authors to add comments to the `R` code and explain what each call is telling the program to do.
-`R` will ignore everything after a \# sign when executing the code.
-
-Use the provided `RScript` file, Myopia Out of Class Code Activity 3 to answer the following questions. 
+Open the provided `RScript` file for activity 3 in `RStudio` or `RStudioCloud` to answer the following questions. Highlight and run lines 1 - 5.  These lines of code read in the data set and names the data set myopia.  The library function tells `R` which packages will be needed.  
 
 ```{r, echo=TRUE}
 myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv") #This will read in the data set
@@ -174,10 +167,10 @@ myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSigh
 
 ### Displaying a single categorical variable {-}
 
-If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight`, for xx to create a bar plot.
+If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight`, for xx into the ggplot code to create a bar plot.  Notice this is a **frequency** bar plot plotting counts (the number of children in each level of sight).
 
 
-```{r, out.width="50%", echo=TRUE}
+```{r, out.width="50%", echo=TRUE, eval = FALSE}
 myopia %>% #Data set piped into...
 ggplot(aes(y = xx)) +   #This specifies the variable
   geom_bar(stat = "count") +  #Tell it to make a bar plot
@@ -186,7 +179,7 @@ ggplot(aes(y = xx)) +   #This specifies the variable
        y = "Level of Myopia")  + #Label the y axis
   coord_flip()  #Turn the bars so they are vertical
 ```
-1.  Estimate how many children have some level of myopia?
+1.  Using the bar chart created, estimate how many children have some level of myopia?
 
 \vspace{0.3in}
 
@@ -208,9 +201,9 @@ ggplot(aes(x = Sight)) +   #This specifies the variable
 
 ### Displaying two categorical variables {-}
 
-To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, Light (explanatory variable) for xx and the variable name, Sight (response variable) for yy.
+To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, Light (explanatory variable) for xx and the variable name, Sight (response variable) for yy in the `RScript` file.
 
-```{r, out.width="60%", echo=TRUE}
+```{r, out.width="60%", echo=TRUE, eval=FALSE}
 myopia %>% #Data set piped into...
 ggplot(aes(x = xx, fill = yy)) +   #This specifies the variables
   geom_bar(stat = "count", position = "fill") +  #Tell it to make a stacked bar plot

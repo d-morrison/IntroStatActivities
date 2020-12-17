@@ -43,7 +43,7 @@ To review these concepts, see Chapter 5 in your textbook.
 \newpage
 
 ## Helmet use and head injuries
-In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the *Journal of the American Medical Association*, Vol. 295, No. 8 (2006), we can see the summary results from a random sample 3562 skiers and snowboarders involved in accidents in the two-way table below. Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders? 
+In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the *Journal of the American Medical Association*, Vol. 295, No. 8 (2006), we can see the summary results from a random sample of 3562 skiers and snowboarders involved in accidents in the two-way table below. Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders? 
 
 |                | Helmet Use | No Helmet Use | Total |
 |:--------------:|:----------:|:-------------:|:-----:|
@@ -166,6 +166,11 @@ Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$:
 
 * Success-Failure Condition: The success-failure condition holds for each group.  Under the null hypothesis, the proportions $\pi_1$ and $\pi_2$ are equal, so we check the success-failure condition with our best estimate of these values under $H_0$, the pooled proportion from the two samples,
 
+|     $\hat{p}_{pool} * n_1 \ge 10$
+|     $(1 - \hat{p}_{pool}) * n_1 \ge 10$
+|     $\hat{p}_{pool} * n_2 \ge 10$
+|     $(1 - \hat{p}_{pool}) * n_2 \ge 10$
+
 \vspace{.25in}
 
 15.  Is the independence condition met? Explain your answer.
@@ -201,7 +206,7 @@ $$
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided `RScript` file and enter the value of the standardized statistic found in question 18 at xx.
+We will use the pnorm function in `R` to find the p-value. Use the provided `RScript` file and enter the value of the standardized statistic found in question 18 at xx, highlight and run lines 27 - 29.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
@@ -217,7 +222,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 \vspace{1in}
 
-21.  How much evidence does the p-value provide against the null hypothesis? *Hint*: Refer to the guidelines given in Activity 6.
+21.  How much evidence does the p-value provide against the null hypothesis? *Hint*: Refer to the guidelines given in activity 6.
 
 \vspace{0.4in}
 
@@ -310,7 +315,7 @@ The response variable name is Outcome and the explanatory variable name is Helme
 What inputs should be entered for each of the following to create the simulation?
 
 \vspace{.2in}
-* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction):
+* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction?):
 
 \vspace{.2in}
 * Number of repetitions:
@@ -326,9 +331,9 @@ What inputs should be entered for each of the following to create the simulation
 
 \vspace{.2in}
 
-Using the `RScript` file for this activity, enter your answers for question 4 in place of the xx's to produce the null distribution with 1000 simulations.
+Using the `RScript` file for this activity, enter your answers for question 4 in place of the xx's to produce the null distribution with 1000 simulations, highlight and run lines 1 - 12 and then 33 - 39.
 
-```{r}
+```{r, echo=TRUE, eval=FALSE}
 two_proportion_test(formula = Outcome ~ Helmet, #response~explanatory
                     data= injury, #name of dataset
                     first_in_subtraction = "xx", #order of subtraction: enter the name of Group 1

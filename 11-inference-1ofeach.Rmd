@@ -27,7 +27,7 @@ library(mosaic)
 
 ## Terminology review
 
-In today's activity, we will use simulation-based methods to analyze one categorical and one quantitative variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
+In today's in-class activity, we will use simulation-based methods to analyze one categorical and one quantitative variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
 
 * Independent groups
 
@@ -158,7 +158,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \vspace{.2in}
 
-16.  Using the `RScript` file for this activity, enter your answers for question 15 in place of the xx's to produce the null distribution with 1000 simulations.
+16.  Using the `RScript` file for this activity, enter your answers for question 15 in place of the xx's to produce the null distribution with 1000 simulations.  Highlight and run lines 1 - 29.
 
 ```{r, echo = TRUE, eval = FALSE}
 two_mean_test(Snowfall~WeatherPattern, data = Snow,  #Variables and data
@@ -175,7 +175,7 @@ two_mean_test(Snowfall~WeatherPattern, data = Snow,  #Variables and data
 
 \vspace{1in}
 
-18. Using bootstrapping find a **95\%** confidence interval. Use the provided `RScript` file. Enter the variable names and data set name as in the two mean test, outcome name for the first in subtraction, number of repetitions, and the confidence level.
+18. Using bootstrapping find a 95\% confidence interval. Use the provided `RScript` file. Enter the variable names and data set name as in the two mean test, outcome name for the first in subtraction, number of repetitions, and the confidence level.  Report the 95\% confidence interval in interval notation.
 ```{r, echo = TRUE, eval = FALSE}
 two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
                       first_in_subtraction = "xx", #First value in order of subtraction
@@ -252,7 +252,7 @@ where the standard error of the mean difference
 
 \vspace{0.5in}
 
-Using the provided `RScript` file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value.  
+Using the provided `RScript` file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value.  Highlight and run line 39.
 
 ```{r}
 pt(xx, df=20, lower.tail=TRUE)
@@ -263,17 +263,17 @@ pt(xx, df=20, lower.tail=TRUE)
 \vspace{0.5in}
 
 
-To calculate the 95% confidence interval using the formula:
+To calculate the 95\% confidence interval using the formula:
 
 $\bar{x}_1- \bar{x}_2\pm t^* SE(\bar{x}_1- \bar{x}_2)$ we will need to find the $t^*$ multiplier using the function qt.  
 
-For a 95% confidence interval we are finding the $t^*$ value at the 95th percentile with df = minimum(n - 1) = 21 - 1 = 20.
+For a 95% confidence interval we are finding the $t^*$ value at the 97.5th percentile with df = minimum(n - 1) = 21 - 1 = 20.
 
 ```{r}
 qt(0.975, df = 20, lower.tail=TRUE)
 ```
 
-4.  Calculate the 95% confidence interval using theory-based methods.
+4.  Calculate the 95\% confidence interval using theory-based methods.
 
 \vspace{1in}
 

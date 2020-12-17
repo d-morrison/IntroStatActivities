@@ -33,7 +33,7 @@ To review these concepts, see Section 6.2 in the textbook.
 
 In June 2020, the social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 appeared to help 'flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured in Figure \@ref{fig:covid}, which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants. 
 
-Have high population-density U.S. cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated U.S. cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015--2019). Note that higher AQI scores indicate worse air quality. A box plot of the differences in AQI scores for the 33 cities and a table of summary statistics are shown below.
+Have high population-density US cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated US cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015--2019). Note that higher AQI scores indicate worse air quality. A box plot of the differences in AQI scores for the 33 cities and a table of summary statistics are shown below.
 
 
 ```{r covid, fig.cap="The India Gate in New Delhi, India.", out.width="60%"}
@@ -86,7 +86,7 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 
 \vspace{0.3in}
 
-5.  Are the differences in AQI scores independent for each case (U.S. city)?  Explain.
+5.  Are the differences in AQI scores independent for each case (US city)?  Explain.
 
 \vspace{0.3in}
 
@@ -128,7 +128,7 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 \vspace{.7in}
 
-13.  Use the provided `RScript` file and enter the calculated value from question 12 for xx to simulate the null distribution and enter the summary statistic from question 10 for yy to find the p-value.
+13.  Use the provided `RScript` file and enter the calculated value from question 12 for xx to simulate the null distribution and enter the summary statistic from question 10 for yy to find the p-value.  Highlight and run lines 1 - 21.
 
 ```{r, echo=TRUE, eval=FALSE, warning = FALSE}
     paired_test(data = Air$Difference,   #Vector of differences or data set with column for each group
@@ -149,7 +149,7 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 \vspace{.5in}
 
 
-16. What proportion of samples are at or less than the sample mean difference in AQI Scores for current scores minus 5 year median scores?
+16. What proportion of samples are at or less than the sample mean difference in AQI scores for current scores minus 5 year median scores?
 
 \newpage
 
@@ -165,9 +165,9 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 \vspace{.6in}
 
-20.  Using the provided `RScript` file fill in the missing value at xx in the paired bootstrap CI to find a 99% confidence interval.  Report the confidence interval in interval notation.
+20.  Using the provided `RScript` file fill in the missing value at xx in the paired bootstrap CI to find a 99\% confidence interval, highlight and run lines 24 - 27.  Report the confidence interval in interval notation.
 
-```{r, echo=TRUE, warning = FALSE}
+```{r, echo=TRUE, eval=FALSE, warning = FALSE}
 paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
                     number_repetitions = 1000, #Number of bootstrap samples for CI
                     confidence_level = xx,  #Confidence level in decimal form
@@ -179,7 +179,7 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 
 ### Communicate the results and answer the research question. {-}
 
-21. Interpret the 99% confidence interval in the context of the problem.
+21. Interpret the 99\% confidence interval in the context of the problem.
 
 \vspace{.8in}
 
@@ -211,9 +211,9 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 
 ## Out of Class Activity
 
-The remaining questions cover theory-based methods for testing a single categorical variable.  Use section 6.2.3 in the textbook and the OneMeanTheory video to complete the following questions.
+The remaining questions cover theory-based methods for testing paired quantitative data.  Use section 6.2.3 in the textbook and the OneMeanTheory video to complete the following questions.
 
-The sampling distribution for $\bar{x}$ based on a sample of size $n$ from a population with a true mean $\mu$ and true standard deviation $\sigma$  can be modeled using a normal distribution when certain conditions are met.
+The sampling distribution for $\bar{x}$ based on a sample of size $n$ from a population with a true mean $\mu$ and true standard deviation $\sigma$ can be modeled using a normal distribution when certain conditions are met.
 
 Conditions for the sample distribution of $\bar{x}$.
 
@@ -245,7 +245,7 @@ where the standard error of the mean difference
 
 \vspace{0.5in}
 
-Using the provided `RScript` file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 33 - 1 = 32, and lower.tail = TRUE to find the p-value.  
+Using the provided `RScript` file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 33 - 1 = 32, and lower.tail = TRUE to find the p-value.  Highlight and run line 31.  
 
 ```{r}
 pt(xx, df=32, lower.tail=TRUE)
@@ -256,17 +256,17 @@ pt(xx, df=32, lower.tail=TRUE)
 \vspace{0.5in}
 
 
-To calculate the 99% confidence interval use the following formula:
+To calculate the 99\% confidence interval use the following formula:
 
 |    $\bar{x}_d\pm t^* SE(\bar{x}_d)$ we will need to find the $t^*$ multiplier using the function qt.  
 
-For a 99% confidence interval we are finding the $t^*$ value at the 99.5th percentile with df = minimum(n - 1) = 33 - 1 = 32.
+For a 99\% confidence interval we are finding the $t^*$ value at the 99.5th percentile with df = n - 1 = 33 - 1 = 32.
 
 ```{r}
 qt(0.995, df = 32, lower.tail=TRUE)
 ```
 
-5.  Calculate the 99% confidence interval using theory-based methods.
+5.  Calculate the 99\% confidence interval using theory-based methods.
 
 \vspace{1in}
 

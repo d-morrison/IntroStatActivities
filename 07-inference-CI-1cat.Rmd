@@ -68,9 +68,9 @@ To use the computer simulation to create a bootstrap distribution, we will need 
     
 \vspace{.2in}
 
-Using the provided `RScript` file, fill in the values/words for xx with your answers from question 6 to create a bootstrap distribution with 1000 simulations.
+Using the provided `RScript` file, fill in the values/words for xx with your answers from question 6 to create a bootstrap distribution with 1000 simulations, highlight and run lines 1 - 11.
 
-```{r, echo=TRUE}
+```{r, echo=TRUE, eval=FALSE}
 one_proportion_bootstrap_CI(sample_size = xx, #Sample size
                     number_successes = xx, #Observed number of successes
                     number_repetitions = 1000, #Number of bootstrap samples to use
@@ -87,22 +87,22 @@ one_proportion_bootstrap_CI(sample_size = xx, #Sample size
 
 \vspace{.8in}
 
-10. Report the 95% bootstrapped confidence interval for $\pi$.  Use interval notation: (lower value, upper value).
+10. Report the 95\% bootstrapped confidence interval for $\pi$.  Use interval notation: (lower value, upper value).
 
 \vspace{1in}
-11.  Interpret the 95% confidence interval in context.
+11.  Interpret the 95\% confidence interval in context.
 
 \vspace{.8in}
 
 ### Communicate the results and answer the research question {-}
 
-12.  Does the confidence interval confirm your conclusion from Activity 6?  Explain your answer.
+12.  Does the confidence interval confirm your conclusion from activity 6?  Explain your answer.
 
 \vspace{1in}
 
 ### Effect of confidence level
 
-13.  Suppose instead of finding a 95% confidence interval, we found a 90% confidence interval.  Would you expect the 90% confidence interval to be narrower or wider?  Explain your answer.
+13.  Suppose instead of finding a 95\% confidence interval, we found a 90\% confidence interval.  Would you expect the 90\% confidence interval to be narrower or wider?  Explain your answer.
 
 \vspace{0.5in}
 
@@ -117,13 +117,13 @@ one_proportion_bootstrap_CI(sample_size = 500, #Sample size
 
 \vspace{0.5in}
 
-15.  Report both the 95% confidence interval (question 10) and the 90% confidence interval (question 14).  Is the 90% confidence interval narrower or wider than the 95% confidence interval?
+15.  Report both the 95\% confidence interval (question 10) and the 90\% confidence interval (question 14).  Is the 90\% confidence interval narrower or wider than the 95\% confidence interval?
 
 \vspace{0.5in}
 
 ### What does "confidence" mean?
 
-In the interpretation of the confidence interval, we say that we are 95% or 90% confident that the parameter is within the confidence interval.  Why are we able to make that claim.  What does it mean to say "we are 95% confident"?
+In the interpretation of the confidence interval, we say that we are 95\% or 90\% confident that the parameter is within the confidence interval.  Why are we able to make that claim?  What does it mean to say "we are 95\% confident"?
 
 16.  Go to this website, http://www.rossmanchance.com/ISIapplets.html and choose `Simulating Confidence Intervals`.  In the input on the left-hand side of the screen enter 0.1 for $\pi$, 500 for $\n$, and 100 for `Intervals`.  Click 'sample`.
 
@@ -137,7 +137,7 @@ In the interpretation of the confidence interval, we say that we are 95% or 90% 
 \vspace{0.5in}
 
 
-How many intervals out of 100 contain $\pi$, the null value of 0.1? *Hint*:  This is given to the left of the graph of green and red intervals.
+    How many intervals out of 100 contain $\pi$, the null value of 0.1? *Hint*:  This is given to the left of the graph of green and red intervals.
 
 \vspace{0.5in}
 
@@ -161,17 +161,17 @@ How many intervals out of 100 contain $\pi$, the null value of 0.1? *Hint*:  Thi
 
 The remaining questions cover theory based methods for testing a single categorical variable.  Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
 
-Recall that to use theory-based methods we must check the conditions to approximate the sample distribution with the Normal distribution.  From the previous activity we saw that independence was satisfied as the researchers took a random sample 
+Recall that to use theory-based methods we must check the conditions to approximate the sample distribution with the Normal distribution.  From the previous activity we saw that independence was satisfied as the researchers took a random sample.
 
-For finding a confidence interval we need to be sure we have at least 10 successes and 10 failures in our sample.
+For finding a confidence interval we need to be sure we have at least 10 successes and 10 failures in our **sample**.
 
 *  $n\hat{p}≥10$  and $n(1-\hat{p})≥10$
 
-1.  Verify that the success/failure condition is met to use theory based methods to find a 95% confidence interval.  
+1.  Verify that the success/failure condition is met to use theory based methods to find a 95\% confidence interval.  
 
 \vspace{0.5in}
 
-To calculate the 95% confidence interval we will find the standard error using the sample proportion.
+To calculate the 95\% confidence interval we will find the standard error using the sample proportion.
 
 $$SE(\hat{p}) = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$
 To find the confidence interval we will add and subtract the margin of error to the point estimate.
@@ -179,17 +179,17 @@ To find the confidence interval we will add and subtract the margin of error to 
 $$\text{point estimate}\pm\text{margin of error}$$
 $$\hat{p}\pm z^* SE(\hat{p})$$
 
-2.  Calculate the standard error of the sample proportion to find a 95% confidence interval.
+2.  Calculate the standard error of the sample proportion to find a 95\% confidence interval.
 
 \vspace{0.5in}
 
-The $z^*$ multiplier is found under the standard normal distribution. We find the values that encompass the middle 95% of the distribution.  If 95\% of the standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail.  The qnorm function in `R` will tell us the $z^*$ value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile). 
+The $z^*$ multiplier is found under the standard normal distribution. We find the values that encompass the middle 95\% of the distribution.  If 95\% of the standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail.  The qnorm function in `R` will tell us the $z^*$ value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile). 
 
 ```{r, echo=TRUE, collapse=FALSE}
 qnorm(0.975) # Multiplier for 95% confidence interval
 ```
 
-3. Using the multiplier of $z^*$ = 1.96, calculate the 95% confidence interval for the true proportion of male boxers who are left-handed. 
+3. Using the multiplier of $z^*$ = 1.96, calculate the 95\% confidence interval for the true proportion of male boxers who are left-handed. 
 
 \vspace{1in}
 

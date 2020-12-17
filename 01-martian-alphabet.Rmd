@@ -69,7 +69,7 @@ We will look at two types of variables: **quantitative** and **categorical** (se
 
 Quantitative variables are numerical measurements that can be discrete (whole, non-negative numbers) or continuous (any value within an interval).  The number of pets one owns would be a discrete variable as you can not have a partial pet.  GPA would be a continuous variable ranging from 0 to 4.0. 
 
-Categorical variables are data that are in groups or categories such as eye color, state of residency, or whether or not a student lives on campus. Categorical variables with a natural ordering are considered ordinal variables while those without a natural ordering are considered a nominal variable.  All categorical variables will be treated as nominal for analysis in this course.
+Categorical variables are data that are in groups or categories such as eye color, state of residency, or whether or not a student lives on campus. Categorical variables with a natural ordering are considered ordinal variables while those without a natural ordering are considered nominal variables.  All categorical variables will be treated as nominal for analysis in this course.
 
 ```{r types-of-variables, fig.align = "center", out.width="60%", fig.cap="Types of variables."}
 include_graphics("images/variables.png")
@@ -125,7 +125,7 @@ include_graphics("images/relative_barplot_martian.png")
     How many people in your class would you expect to choose Bumba correctly just by chance?  Explain your reasoning.
 \vspace{.9in}
 
-10. Each of you will flip a coin one time to simulate your “guess”.  Let Heads = correct, Tails = incorrect.  What was the result of your simulation?
+10. Each student will flip a coin one time to simulate your “guess”.  Let Heads = correct, Tails = incorrect.  What was the result of your one simulation?
 \vspace{.3in}
 
     What was the result from your class’s simulation?  What proportion of students “guessed” correctly in the simulation?
@@ -135,7 +135,7 @@ include_graphics("images/relative_barplot_martian.png")
 
 \newpage
 
-12.	While your observed class data is likely far different from the simulated “just-guessing” class, comparing our class data to a single simulation does not seem to give enough information.  The differences seen could just be due to that set of coin flips!  Let’s simulate another class.  Each student should flip your coin again.  What was the result from your class’s second simulation?  What proportion of students “guessed” correctly in the second simulation?  Create a plot to compare the two simulated results with the observed class result.
+12.	While your observed class data is likely far different from the simulated “just-guessing” class, comparing our class data to a single simulation does not seem to give enough information.  The differences seen could just be due to that set of coin flips!  Let’s simulate another class.  Each student should flip their coin again.  What was the result from your class’s second simulation?  What proportion of students “guessed” correctly in the second simulation?  Create a plot to compare the two simulated results with the observed class result.
 
 \vspace{1in}
 
@@ -176,7 +176,7 @@ include_graphics("images/relative_barplot_martian.png")
 
 **Step 6**: The final step of any statistical investigation is to *revisit and look ahead*. 
 
-19. Can you think of any limitations of our study?  Can you think of a new topic that might be on interest based on the results of our study?
+19. Can you think of any limitations of our study?  Can you think of a new topic that might be of interest based on the results of our study?
 
 \vspace{1in}
 
@@ -205,7 +205,7 @@ Since this class is taught in a blended format we are only in class one day per 
 
 \space{0.5in}
 
-In Stat 216 we will use the statistical package `R` to analyze data.  Read through the instructions on the syllabus and download `R` and `RStudio Desktop` to your computer.  If you have a Chromebook or have problems installing on your machine, you will need to use `RStudio Cloud` or an MSU virtual machine.  Read through the preliminaries chapter in the textbook and watch the video `RStudio_GettingStarted` on D2L -> Content -> Primary Resources before completing the following questions.
+In Stat 216 we will use the statistical package `R` to analyze data.  Read through the instructions on the syllabus and download `R` and `RStudio Desktop` to your computer.  If you have a Chromebook or have problems installing `R` and `RStudio Desktop` on your machine, you will need to use `RStudio Cloud` or an MSU virtual machine.  Read through the preliminaries chapter in the textbook and watch the video `RStudio_GettingStarted` on D2L -> Content -> Primary Resources before completing the following questions.
 
 Open `RStudio` on your computer.  Download the Martian Alphabet `RScript` file from D2L and open in `RStudio`.  If the file does not open directly, open manually:
 
@@ -213,15 +213,15 @@ Open `RStudio` on your computer.  Download the Martian Alphabet `RScript` file f
  
 If you are using `RStudioCloud` watch the video `RStudioCloud_GettingStarted` on D2L -> Content -> Primary Resources to learn how to open the file in `RStudioCloud`.
 
-In the Martian Alphabet `Rscript` file, highlight the first 8 lines of code and click run.  
+In the Martian Alphabet `Rscript` file, highlight the first 10 lines of code and click run.  
 
-Throughout the semester we will use the package `tidyverse` to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol %>%.)  We will use the package ggplot2 to create graphs in `RStudio`, the package `mosaic` to use the favstats function to find summary statistics for quantitative variables, and the package `catstats` starting in Chapter 5.  Once you have installed these packages you will only need to use the library function to call each package to use.
+Throughout the semester we will use the package `tidyverse` to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol %>%.)  We will use the package ggplot2 to create graphs in `RStudio`, the package `mosaic` to use the favstats function to find summary statistics for quantitative variables, and the package `catstats` starting in Chapter 5 to create simulations.  Once you have installed these packages you will only need to use the library function to call each package to use.
 
 The \# sign is not part of the `R` code. 
 It is used by these authors to add comments to the `R` code and explain what each call is telling the program to do.
 `R` will ignore everything after a \# sign when executing the code.
 
-Enter your class size (Q3 from the in-class activity) for sample_size and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for as_extreme_as in the one_proportion_test.  Highlight lines 10 - 15 and click run.
+In the Martian Alphabet `RScript` file for the one proportion test, enter your class size (Q3 from the in-class activity) for sample_size and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for as_extreme_as in the one_proportion_test.  Highlight lines 12 - 17 and click run.
 
 4.  Is the distribution created from this code similar to what you saw in class in Q14?
 

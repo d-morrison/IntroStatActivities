@@ -7,15 +7,11 @@
 * Create and interpret a confidence interval for the difference in proportions
 
 ## Terminology review
-In today's activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
+In today's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
 * Standard normal distribution
 
 * Independence and success-failure conditions
-
-* Type 1 and Type 2 errors
-
-* Decisions
 
 To review these concepts, see Chapter 5 in your textbook.
 
@@ -26,7 +22,7 @@ To review these concepts, see Chapter 5 in your textbook.
 In activity 8, we found very strong evidence that helmet use is associated with a reduction in head injury for skiers and snowboarders.  In this in-class activity we will estimate the parameter of interest, the difference in true proportion of skiers and snowboarders with head injuries for those who wore helmets and those that did not, using theory-based methods.
 
 
-In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the *Journal of the American Medical Association*, Vol. 295, No. 8 (2006), we can see the summary results from a random sample 3562 skiers and snowboarders involved in accidents in the two-way table below. Estimate the difference in true proportion of skiers and snowboarders with head injuries for those who wore helmets and those that did not. 
+The summary results from a random sample of 3562 skiers and snowboarders involved in accidents in the two-way table below. Estimate the difference in true proportion of skiers and snowboarders with head injuries for those who wore helmets and those that did not. 
 
 |                | Helmet Use | No Helmet Use | Total |
 |:--------------:|:----------:|:-------------:|:-----:|
@@ -46,7 +42,7 @@ injury %>% group_by(Helmet) %>% count(Injury)
 ```
 
 
-### Vocabulary review {-}
+### Vocabulary review. Complete questions 1 - 3 before coming to class. {-}
 
 1.  Report the point estimate for this study.  Use helmet use minus no helmet use as the order of subtraction.
 
@@ -56,20 +52,20 @@ injury %>% group_by(Helmet) %>% count(Injury)
 
 \vspace{1in}
 
-3. Based on the results from activity 8, do you expect the 95% confidence interval to contain the null value of zero?  Explain your answer.
+3. Based on the results from activity 8, do you expect the 95\% confidence interval to contain the null value of zero?  Explain your answer.
 
 \vspace{1in}
 
 
 ### Use statistical analysis methods to draw inferences from the data {-}
 
-To test the null hypothesis we could use simulation methods as we did with a single categorical variable. In this activity we will focus on theory-based methods.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
+In this activity we will focus on theory-based methods to calculate a confidence interval.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
 Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$:
 
 * Independence: The data are independent within and between the two groups.
 
-* Success-Failure Condition: The success-failure condition holds for each group.  All cells in the table have at least 10 observations.
+* Success-Failure Condition: For a confidence interval, the success-failure condition holds for each group.  All cells in the table have at least 10 observations.
 
 
 4. In activity 8, we saw that the independence condition was met since the study used a random sample.  Is the success-failure condition to find the confidence interval met for each group?  Explain your answer.
@@ -82,10 +78,10 @@ To find a confidence interval for the difference in proportions we will add and 
  
  $$SE(\hat{p}_1-\hat{p}_2) = \sqrt{\left(\frac{\hat{p}_1 (1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2 (1-\hat{p}_2)}{n_2}\right)}$$
  
-Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from what we used in activity 8!  Here, use the sample proportions for each group to calculate the standard error for the difference in proportions.
+Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in activity 8!  Here, use the sample proportions for each group to calculate the standard error for the difference in proportions.
 
 
-5. Calculate the standard error for a difference in proportions to create a 95% confidence interval.  
+5. Calculate the standard error for a difference in proportions to create a 95\% confidence interval.  
 
 \vspace{1in}
 
@@ -103,11 +99,11 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 
 \vspace{1.5in}
 
-8. Using the multiplier of $z^*$ = 1.96 and the standard error found in question 5, calculate the margin of error for a 95% confidence interval.
+8. Using the multiplier of $z^*$ = 1.96 and the standard error found in question 5, calculate the margin of error for a 95\% confidence interval.
 
 \vspace{0.5in}
 
-9. Calculate the 95% confidence interval for the difference in true proportion of head injuries for those that used helmets minus those who did not. 
+9. Calculate the 95\% confidence interval for the difference in true proportion of head injuries for those that used helmets minus those who did not. 
 
 \vspace{1in}
 
@@ -126,11 +122,11 @@ Suppose in another sample of skiers and snowboarders involved in accidents we sa
 |      Total     |    1056    |      3944     |  5000 |
 
 
-11.  Calculate the margin of error for a 95% confidence interval using a multiplier of $z^*$ = 1.96 for this new sample.  Is the margin of error larger or smaller than the margin of error for the original study?
+11.  Calculate the margin of error for a 95\% confidence interval using a multiplier of $z^*$ = 1.96 for this new sample.  Is the margin of error larger or smaller than the margin of error for the original study?
 
 \vspace{1in}
 
-12.  Calculate the 95% confidence interval for this new study using the margin of error from question 11.  
+12.  Calculate the 95\% confidence interval for this new study using the margin of error from question 11.  
 
 \vspace{1in}
 
@@ -139,21 +135,19 @@ Suppose in another sample of skiers and snowboarders involved in accidents we sa
 \vspace{1in}
 
 
-**12. Write a paragraph summarizing the results of the study.  Be sure to describe:
+## Relative Risk
 
-* Summary statistic
+Another summary statistic that can be calculated for two categorical variables is the relative risk.  The relative risk is calculated as the ratio of the conditional proportions.
 
-* Test statistic and interpretation
+|     $\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}$
 
-* P-value and interpretation
+14.  Calculate the relative risk of head injury for those who wore helmets compared to those who did not.
 
-* Conclusion (written to answer the research question)
+\vspace{1in}
 
-* Confidence interval and interpretation
+15.  Interpret the relative risk in context of the problem.
 
-* Scope of inference
-
-\vspace{2in}
+\vspace{1in}
 
 
 \newpage
@@ -166,10 +160,10 @@ The remaining questions cover simulation methods for creating the bootstrap dist
 
 The response variable name is Outcome and the explanatory variable name is Helmet.
 
-What values should be entered for each of the following into the simulation to create a 95% confidence interval?
+What values should be entered for each of the following into the simulation to create a 95\% confidence interval?
 
 \vspace{.2in}
-* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction):
+* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction?):
 
 \vspace{.2in}
 * Response Value Numerator (What is the outcome for the response variable that is considered a success?):
@@ -182,9 +176,9 @@ What values should be entered for each of the following into the simulation to c
 
 \vspace{.2in}
 
-Using the `RScript` file for this activity, enter your answers for question 1 in place of the xx's to produce the bootstrap distribution with 1000 simulations.
+Using the `RScript` file for this activity, enter your answers for question 1 in place of the xx's to produce the bootstrap distribution with 1000 simulations, highlight and run lines 1 - 24.
 
-```{r}
+```{r, echo=TRUE, eval=FALSE}
 two_proportion_bootstrap_CI(formula = Outcome ~ Helmet, 
                             data=injury, #name of dataset
                             first_in_subtraction = "xx", #order of subtraction: enter the name of Group 1
@@ -194,7 +188,7 @@ two_proportion_bootstrap_CI(formula = Outcome ~ Helmet,
 
 ```
 
-2. Report the bootstrap 95% confidence interval. 
+2. Report the bootstrap 95\% confidence interval. 
 
 \vspace{0.5in}
 
@@ -202,7 +196,7 @@ two_proportion_bootstrap_CI(formula = Outcome ~ Helmet,
 
 \vspace{0.3in}
 
-4. Is the bootstrap 95% confidence interval similar to what was found using theory-based methods?  Why did you expect this to be true?
+4. Is the bootstrap 95\% confidence interval similar to what was found using theory-based methods?  Why did you expect this to be true?
 
 \vspace{1in}
 

@@ -82,11 +82,11 @@ movies %>% #Data set piped into...
 
 \newpage
 
-To create a histogram of the IMDb scores, enter the variable name, `imdb_score` i the provided `RScript` file for xx.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `RScript` file for xx, highlight and run the code lines 1 - 15.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.  
 
-```{r, out.width="60%", echo=TRUE}
+```{r, out.width="60%", echo=TRUE, eval=FALSE}
 movies %>% #Data set piped into...
 ggplot(aes(x = xx)) +   #Name variable to plot
   geom_histogram(binwidth = 0.5) +  #Create histogram with specified binwidth
@@ -129,9 +129,9 @@ movies %>% # Data set pipes into...
 
 ### Displaying a single categorical and single quantitative variable {-}
 
-The box plot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for yy and the variable `content_rating` for xx. This plot helps to compare the budget for different levels of content rating.
+The box plot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for yy and the variable `content_rating` for xx, highlight and run code lines 27 - 34. This plot helps to compare the budget for different levels of content rating.
 
-```{r, out.width="60%", echo=TRUE}
+```{r, out.width="60%", echo=TRUE, eval=FALSE}
 movies %>%  #Data set piped into...
   filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
   ggplot(aes(y = yy, x = xx))+  #Identify variables
@@ -159,7 +159,7 @@ movies %>%  #Data set piped into...
 \vspace{.8in}
 
 ## Out of Class Activity
-For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the Movies data set.    
+For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the Movies data set.  Download and open the provided `RScript` file and run the first 7 lines of code.
 
 To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.
 
@@ -168,9 +168,9 @@ movies %>% #Data set piped into...
   summarise(favstats(imdb_score~content_rating)) #Apply favstats function to imdb_score
 ```
 
-1.  Using the provided `RScript` file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx.
+1.  Using the provided `RScript` file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx, highlight and run code lines 38 - 46.
 
-```{r, out.width="60%", echo=TRUE}
+```{r, out.width="60%", echo=TRUE, eval=FALSE}
 movies %>%  #Data set piped into...
   filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
   ggplot(aes(y = yy, x = xx))+  #Identify variables
