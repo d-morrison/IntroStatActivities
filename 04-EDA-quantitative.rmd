@@ -69,7 +69,7 @@ movies %>% #Data set piped into...
 
 \vspace{0.5in}
 
-5. Calculate the IQR.
+5. Calculate the Interquartile range (IQR = Q3 - Q1).
 
 \vspace{0.5in}
 
@@ -82,7 +82,7 @@ movies %>% #Data set piped into...
 
 \newpage
 
-To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `RScript` file for xx, highlight and run lines 1 - 15.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `RScript` file for xx at line 12, highlight and run lines 1 - 16.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.  
 
@@ -132,7 +132,7 @@ movies %>% # Data set pipes into...
 
 ### Displaying a single categorical and single quantitative variable {-}
 
-The box plot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for yy and the variable `content_rating` for xx, highlight and run code lines 27 - 34. This plot helps to compare the budget for different levels of content rating.
+The box plot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for yy and the variable `content_rating` for xx at line 31, highlight and run code lines 29 - 35. This plot helps to compare the budget for different levels of content rating.
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
 movies %>%  #Data set piped into...
@@ -148,8 +148,9 @@ movies %>%  #Data set piped into...
 
 \vspace{1.5in}
 
+\newpage
 
-14. Answer the following questions about the box plots above.
+14. Answer the following questions about the box plots created.
 
    a. Which content rating has the highest center?
 \vspace{0.2in}
@@ -167,7 +168,7 @@ movies %>%  #Data set piped into...
 \vspace{.8in}
 
 ## Out of Class Activity
-For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the Movies data set.  Download and open the provided `RScript` file and run the first 7 lines of code.
+For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the Movies data set.  Download and open the provided `RScript` file, highlight and run the first 8 lines of code.
 
 To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.
 
@@ -176,7 +177,7 @@ movies %>% #Data set piped into...
   summarise(favstats(imdb_score~content_rating)) #Apply favstats function to imdb_score
 ```
 
-1.  Using the provided `RScript` file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx, highlight and run lines 38 - 46.
+Using the provided `RScript` file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx at line 44, highlight and run lines 39 - 48.
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
 movies %>%  #Data set piped into...
@@ -188,18 +189,18 @@ movies %>%  #Data set piped into...
        y = "Budget (in Millions)")  #y-axis label
 ```
 
-a.  Using the provided favstats output and the side-by-side boxplots, interpret the value of quartile 1 for the R content rating.
+1.  Using the provided favstats output and the side-by-side boxplots, interpret the value of quartile 1 for the R content rating.
 
 \vspace{1in}
 
-b. Which content rating has the highest center?
+2. Which content rating has the highest center?
 
 \vspace{0.2in}
 
-c. Which variable is the explanatory variable? Response variable?
+3. Which variable is the explanatory variable? Response variable?
 
 \vspace{0.5in}
 
 ## Additional notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

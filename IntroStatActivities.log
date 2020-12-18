@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.12.17)  17 DEC 2020 21:54
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.12.17)  18 DEC 2020 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,99 +1189,99 @@ File: images/ScopeOfInferenceGreyscale.png Graphic file (type bmp)
 File: 02-study-design_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (ty
 pe pdf)
 <use 02-study-design_files/figure-latex/unnamed-chunk-2-1.pdf>
-[16] [17]
+[16] [17] [18]
 Activity 3.
-[18
+[19
 
-] [19] [20] [21]
+] [20] [21] [22]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1136.
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1149.
-[22]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1162.
+[23]
 File: 03-EDA-categorical_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file 
 (type pdf)
 <use 03-EDA-categorical_files/figure-latex/unnamed-chunk-3-1.pdf>
-[23] [24]
+[24] [25] [26]
 Activity 4.
-[25
+[27
 
-] [26] [27] [28] [29] [30]
+] [28] [29] [30] [31] [32]
 Activity 5.
 
 Overfull \vbox (20.44685pt too high) has occurred while \output is active []
 
-[31
+[33
 
-] [32] [33] [34] [35]
+] [34] [35] [36] [37] [38]
 File: 05-EDA-multivariate_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file
  (type pdf)
 <use 05-EDA-multivariate_files/figure-latex/unnamed-chunk-5-1.pdf>
-[36] [37] [38]
+[39] [40]
 Activity 6.
-[39
+[41
 
-] [40] [41] [42] [43] [44] [45]
+] [42] [43] [44] [45] [46] [47]
 File: images/soe_gradient_grayscale.png Graphic file (type bmp)
 <images/soe_gradient_grayscale.png>
-[46] [47] [48] [49] [50]
+[48] [49] [50] [51] [52]
 Activity 7.
-[51
+[53
 
-] [52] [53]
+] [54] [55]
 File: 07-inference-CI-1cat_files/figure-latex/unnamed-chunk-2-1.pdf Graphic fil
 e (type pdf)
 <use 07-inference-CI-1cat_files/figure-latex/unnamed-chunk-2-1.pdf>
-[54] [55] [56] [57]
+[56] [57] [58] [59]
 Activity 8.
-[58
+[60
 
-] [59] [60]
+] [61] [62]
 File: 08-inference-2cat_test_files/figure-latex/unnamed-chunk-2-1.pdf Graphic f
 ile (type pdf)
 <use 08-inference-2cat_test_files/figure-latex/unnamed-chunk-2-1.pdf>
-[61] [62] [63] [64] [65] [66] [67]
+[63] [64] [65] [66] [67] [68] [69]
 Activity 9.
-[68
+[70
 
-] [69] [70] [71] [72] [73] [74] [75]
+] [71] [72] [73] [74] [75] [76] [77]
 Activity 10.
 File: images/air_pollution_greyscale.png Graphic file (type bmp)
 <images/air_pollution_greyscale.png>
 File: 10-paired_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf
 )
 <use 10-paired_files/figure-latex/unnamed-chunk-2-1.pdf>
-[76
+[78
 
 ]
 Overfull \vbox (18.10683pt too high) has occurred while \output is active []
 
-[77] [78] [79] [80] [81] [82] [83]
+[79] [80] [81] [82] [83] [84] [85]
 Missing character: There is no ≥ in font [lmroman10-regular]:mapping=tex-text;!
-[84] [85]
+[86] [87]
 Activity 11.
-[86
+[88
 
 ]
 File: 11-inference-1ofeach_files/figure-latex/unnamed-chunk-2-1.pdf Graphic fil
 e (type pdf)
 <use 11-inference-1ofeach_files/figure-latex/unnamed-chunk-2-1.pdf>
-[87] [88] [89] [90] [91]
+[89] [90] [91] [92] [93]
 Missing character: There is no ≥ in font [lmroman10-regular]:mapping=tex-text;!
-[92] [93]
+[94] [95]
 Activity 12.
-[94
+[96
 
-] [95]
+] [97]
 File: 12-regression_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type
  pdf)
 <use 12-regression_files/figure-latex/unnamed-chunk-3-1.pdf>
-[96] [97]
-Underfull \hbox (badness 10000) in paragraph at lines 5351--5352
+[98] [99]
+Underfull \hbox (badness 10000) in paragraph at lines 5386--5387
 
  []
 
-[98] [99] [100] [101] [102] [103] (./IntroStatActivities.aux)
+[100] [101] [102] [103] [104] [105] (./IntroStatActivities.aux)
 Package rerunfilecheck Info: File `IntroStatActivities.out' has not changed.
 (rerunfilecheck)             Checksum: 526D94D0FCFC9520F2AFA0674F127874;2542.
 
@@ -1290,11 +1290,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  17984 strings out of 479290
- 316659 string characters out of 5875361
- 803161 words of memory out of 5000000
+ 316655 string characters out of 5875361
+ 803413 words of memory out of 5000000
  37204 multiletter control sequences out of 15000+600000
  409929 words of font info for 86 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,9n,118p,887b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on IntroStatActivities.pdf (105 pages).
+Output written on IntroStatActivities.pdf (107 pages).

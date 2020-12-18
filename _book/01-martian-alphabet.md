@@ -37,7 +37,6 @@ How well can humans distinguish one “Martian” letter from another? In today�
 
 \vspace{0.3in}
 
-
 ### Steps of the statistical investigation process {-}
 
 **Step 1**: The first step of any statistical investigation is to *ask a research question*.  In this study the research question is: can we as a class read Martian? (We will refine this later on!).
@@ -57,7 +56,7 @@ How well can humans distinguish one “Martian” letter from another? In today�
 
 A **variable** is information collected or measured on each observational unit or case. Each column in a data set will represent a different variable. Today we are only measuring one variable on each observational unit.
 
-4. Identify the variable we are collecting on each observational unit in this study, i.e., what are we measuring on each student?
+4. Identify the variable we are collecting on each observational unit in this study, i.e., what are we measuring on each student?  *Hint*: Your answer to question 1 is the outcome for the variable measured on one observational unit.
 
 \vspace{.8in}
 
@@ -95,7 +94,7 @@ $\mbox{proportion} = \frac{\mbox{number of students who correctly identified Bum
 The proportion in question 6 is called a **summary statistic**---a single value that summarizes the data set. It is important to note that a variable is different than a summary statistic. A *variable* is measured on a *single observational unit* while a summary statistic is calculated from a group of observational units.  For example, the variable "whether or not a student lives on campus" can be measured on each individual student.  In a class of 50 students we can calculate the proportion of students who live on campus, the summary statistic.  Look back and make sure you wrote the variable in question 3 as a variable, NOT a summary statistic. 
 
 
-Looking at the data set and the summary statistic is only one way to display the data.  We will also want to create a visualization or picture of the data. A **frequency bar plot** is used to display categorical data as a count or frequency. Since our variable has two levels, correct or incorrect, we will create two bars---one for each level.
+Looking at the data set and the summary statistic is only one way to display the data.  We will also want to create a visualization or picture of the data. A **frequency bar plot** is used to display categorical data as a count or frequency. Since our variable has two levels or outcomes, correct or incorrect, we will create two bars---one for each level.
 
 7. Plot the observed class data using a frequency bar plot. Be sure to add a scale to the y-axis.
 
@@ -111,7 +110,7 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 \begin{center}\includegraphics[width=0.4\linewidth]{images/relative_barplot_martian} \end{center}
 
 \newpage                    
-**Step 4**: The next step is to *use statistical analysis methods to draw inferences from the data*. To answer the research question, we will simulate what *could* have happened in our class given random chance, repeat that many times to understand the expected *variability* between different "randomly guessing" classes, then compare our class's observed data to the simulation.  This gives us an estimate of how often (or the probability of) the class's result would occur if students were all merely guessing, allowing us to determine if the data provides evidence that we as a class can in fact read Martian.
+**Step 4**: The next step is to *use statistical analysis methods to draw inferences from the data*. To answer the research question, we will simulate what *could* have happened in our class given random chance, repeat many times to understand the expected *variability* between different "randomly guessing" classes, then compare our class's observed data to the simulation.  This gives us an estimate of how often (or the probability of) the class's result would occur if students were all merely guessing, allowing us to determine if the data provides evidence that we as a class can in fact read Martian.
 
 9. If humans really don’t know Martian and are just guessing which is Bumba, what are the chances of getting it right?
 \vspace{0.3in}
@@ -184,7 +183,7 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 1.	In this course we will learn how to evaluate a claim by comparing observed results (classes’ "guesses" when asked to identify Bumba) to a distribution of many simulated results under an assumption like “blind guessing.”
 
-2.	Blind guessing between two outcomes will be correct only about half the time. We can create data (via computer simulation) to fit the assumption of blind guessing.
+2.	Blind guessing between two outcomes will be correct only about half the time. We can simulate data using a computer program to fit the assumption of blind guessing.
 
 3.	Unusual observed results will make us doubt the assumptions used to create the simulated distribution. A large number of correct “guesses” is evidence that a person was not just blindly guessing.
 
@@ -196,15 +195,15 @@ Since this class is taught in a blended format we are only in class one day per 
 
 1. When are the case study discussion posts due?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 2.  For your cohort, what day and time are the weekly assignments due on Gradescope?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 3.  For your cohort, when is Exam 1? Exam 2?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 In Stat 216 we will use the statistical package `R` to analyze data.  Read through the instructions on the syllabus and download `R` and `RStudio Desktop` to your computer.  If you have a Chromebook or have problems installing `R` and `RStudio Desktop` on your machine, you will need to use `RStudio Cloud` or an MSU virtual machine.  Read through the preliminaries chapter in the textbook and watch the video `RStudio_GettingStarted` on D2L -> Content -> Primary Resources before completing the following questions.
 
@@ -214,20 +213,20 @@ Open `RStudio` on your computer.  Download the Martian Alphabet `RScript` file f
  
 If you are using `RStudioCloud` watch the video `RStudioCloud_GettingStarted` on D2L -> Content -> Primary Resources to learn how to open the file in `RStudioCloud`.
 
-In the Martian Alphabet `Rscript` file, highlight the first 10 lines of code and click run.  
+In the Martian Alphabet `Rscript` file, highlight the first 14 lines of code and click run. This will install the packages needed for this course.  We review a few of these packages here. 
 
-Throughout the semester we will use the package `tidyverse` to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol %>%.)  We will use the package ggplot2 to create graphs in `RStudio`, the package `mosaic` to use the favstats function to find summary statistics for quantitative variables, and the package `catstats` starting in Chapter 5 to create simulations.  Once you have installed these packages you will only need to use the library function to call each package to use.
+Throughout the semester we will use the package `tidyverse` to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol %>%.)  We will use the package `ggplot2` to create graphs in `RStudio`, the package `mosaic` to use the favstats function to find summary statistics for quantitative variables, and the package `catstats` starting in Chapter 5 to create simulations.  Once you have installed these packages you will only need to use the library function to call each package to use.
 
 The \# sign is not part of the `R` code. 
 It is used by these authors to add comments to the `R` code and explain what each call is telling the program to do.
 `R` will ignore everything after a \# sign when executing the code.
 
-In the Martian Alphabet `RScript` file for the one proportion test, enter your class size (Q3 from the in-class activity) for sample_size and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for as_extreme_as in the one_proportion_test.  Highlight lines 12 - 17 and click run.
+In the Martian Alphabet `RScript` file for the one proportion test, enter your class size (Q3 from the in-class activity) for sample_size and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for as_extreme_as in the one_proportion_test.  Highlight lines 16 - 21 and click run.
 
 4.  Is the distribution created from this code similar to what you saw in class in Q14?
 
-\vspace{1in}
+\vspace{0.3in}
 
 ## Additional notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity, and to write down the names and contact information of your team mates.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered, and to write down the names and contact information of your teammates.

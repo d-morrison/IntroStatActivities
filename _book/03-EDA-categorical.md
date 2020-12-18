@@ -44,7 +44,7 @@ The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census 
 | `sex` | Sex: `M` = male, `F` = female  |
 | `exper` | Number of years of work experience (inferred from age and education) |
 | `union` | Whether union member: `Union` or `Not` |
-| `wage` | Wage (dollars per hour) 	|
+| `wage` | Wage (dollars per hour)  |
 | `age` | Age (years)  |
 | `race` | Race: `W` = white, `NW` = not white	|
 | `sector` | Sector of the economy: `clerical`, `const` (construction),  `management`, `manufacturing`, `professional`, `sales`, `service`, `other` |
@@ -66,13 +66,13 @@ The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census 
 
 ## Probability 
 
-4. Since the early 1980s, the rapid antigen detection test (RADT) of group A *streptococci* has been used to detect strep throat. A recent study of the accuracy of this test shows that the sensitivity, positive RADT given person has strep throat in children is 86%, while the specificity, negative RADT given the person does not have strep throat in children is 92%.  The prevalence, the probability of having group A strep, is 37% in children less than 18 years old. 
+4. Since the early 1980s, the rapid antigen detection test (RADT) of group A *streptococci* has been used to detect strep throat. A recent study of the accuracy of this test shows that the sensitivity, the probability of a positive RADT given the person has strep throat, is 86% in children, while the specificity, the probability of a negative RADT given the person does not have strep throat, is 92% in children.  The prevalence, the probability of having group A strep, is 37% in children. 
 \vspace{1mm}
 
     Let A = the event the child has strep throat, and B = the event the child has a positive RADT.
 \vspace{0.1in}
 
-a. Identify what each numerical value given in the problem represents in probability notation.
+  a. Identify what each numerical value given in the problem represents in probability notation.
 \vspace{.1in}
 
 |                 0.86 =  
@@ -84,7 +84,7 @@ a. Identify what each numerical value given in the problem represents in probabi
 |                 0.37 =  
 \vspace{.1in}
 
-b. Create a hypothetical two-way table to represent the situation.  Recall that in a two-way table, the explanatory variable should be your column headers (similar to the $x$-axis in a segmented bar graph!) while the response variable becomes the row headers.
+   b. Create a hypothetical two-way table to represent the situation.  Recall that in a two-way table, the explanatory variable should be your column headers (similar to the $x$-axis in a segmented bar graph!) while the response variable becomes the row headers.
 
 | \hspace{1in}      |\hspace{1in}     |\hspace{1in}     | Total        |
 |-------|---|---|---------|
@@ -93,10 +93,14 @@ b. Create a hypothetical two-way table to represent the situation.  Recall that 
 |    \hspace{1in}     |   |   |         |
 | Total |   |   | 100,000 |
 
-c. Find $P(\mbox{A and B})$. What does this probability represent in the context of the problem?
+   c. Find $P(\mbox{A and B})$. What does this probability represent in the context of the problem?
 \vspace{.8in}
 
-d. Find the probability that a child with a positive RADT actually has strep throat. What is the notation used for this probability?
+   d. Find the probability that a child with a positive RADT actually has strep throat. What is the notation used for this probability?
+
+\vspace{.8in}
+
+   e.  What is the probability that a child does not have strep given that they have a positive test?  What is the notation used for this probability?
 
 \newpage
 
@@ -134,9 +138,10 @@ d. Find the probability that a child with a positive RADT actually has strep thr
 \vspace{.8in}
 
 
-   d. Find $P(S | L^C)$. What does this probability represent in context of the problem?
+   d. Find $P(S^C | L^C)$. What does this probability represent in context of the problem?
 \vspace{1in}
 
+   e. What is the probability a randomly selected computer is both a laptop and on sale?  Give the appropriate probability notation.
 \newpage
 
 ## Out of class activity
@@ -158,7 +163,7 @@ you would use in order to produce output or plots. These
 "code chunks" appear in gray. In the code chunk below, we
 demonstrate how to read the data set into `R` using the `read.csv()` function.
 
-Open the provided `RScript` file for activity 3 in `RStudio` or `RStudioCloud` to answer the following questions. Highlight and run lines 1 - 5.  These lines of code read in the data set and names the data set myopia.  The library function tells `R` which packages will be needed.  
+Open the provided `RScript` file for activity 3 in `RStudio` or `RStudioCloud` to answer the following questions. Highlight and run lines 1 - 5.  These lines of code read in the data set and name the data set myopia.  The library function tells `R` which packages will be needed.  
 
 
 ```r
@@ -169,7 +174,7 @@ myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSigh
 
 ### Displaying a single categorical variable {-}
 
-If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight`, for xx into the ggplot code to create a bar plot.  Notice this is a **frequency** bar plot plotting counts (the number of children in each level of sight).
+If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight`, for xx into the ggplot code in line 10 in the `RScript` file to create a bar plot.  Highlight and run lines 9 - 15.  Notice this is a **frequency** bar plot plotting counts (the number of children in each level of sight).  
 
 
 
@@ -182,7 +187,13 @@ ggplot(aes(y = xx)) +   #This specifies the variable
        y = "Level of Myopia")  + #Label the y axis
   coord_flip()  #Turn the bars so they are vertical
 ```
-1.  Using the bar chart created, estimate how many children have some level of myopia?
+\newpage
+
+1.  Sketch the bar plot created here.  Be sure to label the axes.
+
+\vspace{1.5in}
+
+2. Using the bar chart created, estimate how many children have some level of myopia?
 
 \vspace{0.3in}
 
@@ -202,13 +213,15 @@ ggplot(aes(x = Sight)) +   #This specifies the variable
 
 \begin{center}\includegraphics[width=0.5\linewidth]{03-EDA-categorical_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
-2.  Which features in the relative frequency bar plot are the same as the frequency bar plot?  Which are different?
+3.  Which features in the relative frequency bar plot are the same as the frequency bar plot?  Which are different?
 
 \vspace{1in}
 
+\newpage
+
 ### Displaying two categorical variables {-}
 
-To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, Light (explanatory variable) for xx and the variable name, Sight (response variable) for yy in the `RScript` file.
+To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, Light (explanatory variable) for xx and the variable name, Sight (response variable) for yy in the `RScript` file in line 28.  Highlight and run lines 27 - 33. 
 
 
 ```r
@@ -221,21 +234,23 @@ ggplot(aes(x = xx, fill = yy)) +   #This specifies the variables
     scale_fill_grey()  #Make figure black and white
 ```
 
-3. Sketch the segmented bar plot created here.
+4. Sketch the segmented bar plot created here.  Be sure to label the axes.
 
-\vspace{1in}
+\vspace{1.5in}
 
 
-4. From the segmented bar plot, estimate the proportion of no myopia for those that used a Nightlight.
+5. From the segmented bar plot, estimate the proportion of no myopia for those that used a Nightlight.
+
+\vspace{0.5in}
+
+6. Which level of light has the highest proportion of `No Myopia`?
 
 \vspace{0.5in}
 
-5. Which level of light has the highest proportion of `No Myopia`?
-
-\vspace{0.5in}
+\newpage
 
 ## Additional notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 

@@ -6,7 +6,7 @@
 
 * Explain the purpose of random assignment and its effect on scope of inference
 
-* Identify whether a study is observational or an experiment
+* Identify whether a study design is observational or an experiment
 
 * Identify confounding variables in observational studies and explain why they are confounding
 
@@ -46,7 +46,7 @@ To review these concepts, see Sections 1.3 through 1.6 in the textbook.
 
 \newpage
 
-## Types of sampling bias: Complete Q1 - 2 before class.  
+## Types of sampling bias: Complete Q1 before class.  
 
 There are two parts to study design: how the sample was selected and how the study was conducted.  First, we will look at sampling and types of bias (selection, non-response, or response).
 
@@ -125,7 +125,7 @@ include_graphics("images/ScopeOfInferenceGreyscale.png")
 
 For the next exercises, identify the explanatory variable, the response variable, the study design (observational study or experiment), and the scope of inference (using the above chart).
 
-5. The pharmaceutical company Moderna Therapeutics is working in conjunction with the National Institutes of Health towards a vaccine for COVID-19 and has recently begun Phase 3 clinical trials.  US clinical research sites will enroll 30,000 volunteers without COVID-19 to participate. Participants will be randomly assigned to receive either the candidate vaccine or a saline placebo.  They will then be followed to assess vaccine-related symptoms and development of COVID-19. The trial is double-blind, so neither the investigators nor the participants will know who is assigned to which group.
+5. The pharmaceutical company Moderna Therapeutics is working in conjunction with the National Institutes of Health towards a vaccine for COVID-19 and has recently begun Phase 3 clinical trials.  US clinical research sites will enroll 30,000 volunteers without COVID-19 to participate. Participants will be randomly assigned to receive either the candidate vaccine or a saline placebo.  They will then be followed to assess whether or not they develop COVID-19. The trial is double-blind, so neither the investigators nor the participants will know who is assigned to which group.
 \vspace{0.1in}
     
     Explanatory variable:
@@ -212,6 +212,7 @@ In the in-class activity we looked at sampling methods and study design.  Here a
 
 \vspace{1in}
 
+\newpage
 ## Additional notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

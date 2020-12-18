@@ -37,7 +37,7 @@
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
   pdftitle={  STAT 216 Activity Coursepack},
-  pdfauthor={Melinda Yager},
+  pdfauthor={Melinda Yager, Jade Schmidt, Dr.~Stacey Hancock},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -149,7 +149,7 @@ STAT 216 Activity Coursepack}
 }
 \makeatother
 \subtitle{Spring 2021}
-\author{Melinda Yager}
+\author{Melinda Yager, Jade Schmidt, Dr.~Stacey Hancock}
 \date{}
 
 \begin{document}
@@ -307,7 +307,7 @@ A \textbf{variable} is information collected or measured on each observational u
 \setcounter{enumi}{3}
 \tightlist
 \item
-  Identify the variable we are collecting on each observational unit in this study, i.e., what are we measuring on each student?
+  Identify the variable we are collecting on each observational unit in this study, i.e., what are we measuring on each student? \emph{Hint}: Your answer to question 1 is the outcome for the variable measured on one observational unit.
 \end{enumerate}
 
 \vspace{.8in}
@@ -357,7 +357,7 @@ $\mbox{proportion} = \frac{\mbox{number of students who correctly identified Bum
 
 The proportion in question 6 is called a \textbf{summary statistic}---a single value that summarizes the data set. It is important to note that a variable is different than a summary statistic. A \emph{variable} is measured on a \emph{single observational unit} while a summary statistic is calculated from a group of observational units. For example, the variable ``whether or not a student lives on campus'' can be measured on each individual student. In a class of 50 students we can calculate the proportion of students who live on campus, the summary statistic. Look back and make sure you wrote the variable in question 3 as a variable, NOT a summary statistic.
 
-Looking at the data set and the summary statistic is only one way to display the data. We will also want to create a visualization or picture of the data. A \textbf{frequency bar plot} is used to display categorical data as a count or frequency. Since our variable has two levels, correct or incorrect, we will create two bars---one for each level.
+Looking at the data set and the summary statistic is only one way to display the data. We will also want to create a visualization or picture of the data. A \textbf{frequency bar plot} is used to display categorical data as a count or frequency. Since our variable has two levels or outcomes, correct or incorrect, we will create two bars---one for each level.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -383,7 +383,7 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
 
 \newpage
 
-\textbf{Step 4}: The next step is to \emph{use statistical analysis methods to draw inferences from the data}. To answer the research question, we will simulate what \emph{could} have happened in our class given random chance, repeat that many times to understand the expected \emph{variability} between different ``randomly guessing'' classes, then compare our class's observed data to the simulation. This gives us an estimate of how often (or the probability of) the class's result would occur if students were all merely guessing, allowing us to determine if the data provides evidence that we as a class can in fact read Martian.
+\textbf{Step 4}: The next step is to \emph{use statistical analysis methods to draw inferences from the data}. To answer the research question, we will simulate what \emph{could} have happened in our class given random chance, repeat many times to understand the expected \emph{variability} between different ``randomly guessing'' classes, then compare our class's observed data to the simulation. This gives us an estimate of how often (or the probability of) the class's result would occur if students were all merely guessing, allowing us to determine if the data provides evidence that we as a class can in fact read Martian.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -514,7 +514,7 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
 \item
   In this course we will learn how to evaluate a claim by comparing observed results (classes' ``guesses'' when asked to identify Bumba) to a distribution of many simulated results under an assumption like ``blind guessing.''
 \item
-  Blind guessing between two outcomes will be correct only about half the time. We can create data (via computer simulation) to fit the assumption of blind guessing.
+  Blind guessing between two outcomes will be correct only about half the time. We can simulate data using a computer program to fit the assumption of blind guessing.
 \item
   Unusual observed results will make us doubt the assumptions used to create the simulated distribution. A large number of correct ``guesses'' is evidence that a person was not just blindly guessing.
 \end{enumerate}
@@ -533,7 +533,7 @@ Since this class is taught in a blended format we are only in class one day per 
   When are the case study discussion posts due?
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -543,7 +543,7 @@ Since this class is taught in a blended format we are only in class one day per 
   For your cohort, what day and time are the weekly assignments due on Gradescope?
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -553,7 +553,7 @@ Since this class is taught in a blended format we are only in class one day per 
   For your cohort, when is Exam 1? Exam 2?
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 In Stat 216 we will use the statistical package \texttt{R} to analyze data. Read through the instructions on the syllabus and download \texttt{R} and \texttt{RStudio\ Desktop} to your computer. If you have a Chromebook or have problems installing \texttt{R} and \texttt{RStudio\ Desktop} on your machine, you will need to use \texttt{RStudio\ Cloud} or an MSU virtual machine. Read through the preliminaries chapter in the textbook and watch the video \texttt{RStudio\_GettingStarted} on D2L -\textgreater{} Content -\textgreater{} Primary Resources before completing the following questions.
 
@@ -567,15 +567,15 @@ Open \texttt{RStudio} on your computer. Download the Martian Alphabet \texttt{RS
 
 If you are using \texttt{RStudioCloud} watch the video \texttt{RStudioCloud\_GettingStarted} on D2L -\textgreater{} Content -\textgreater{} Primary Resources to learn how to open the file in \texttt{RStudioCloud}.
 
-In the Martian Alphabet \texttt{Rscript} file, highlight the first 10 lines of code and click run.
+In the Martian Alphabet \texttt{Rscript} file, highlight the first 14 lines of code and click run. This will install the packages needed for this course. We review a few of these packages here.
 
-Throughout the semester we will use the package \texttt{tidyverse} to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol \%\textgreater\%.) We will use the package ggplot2 to create graphs in \texttt{RStudio}, the package \texttt{mosaic} to use the favstats function to find summary statistics for quantitative variables, and the package \texttt{catstats} starting in Chapter 5 to create simulations. Once you have installed these packages you will only need to use the library function to call each package to use.
+Throughout the semester we will use the package \texttt{tidyverse} to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol \%\textgreater\%.) We will use the package \texttt{ggplot2} to create graphs in \texttt{RStudio}, the package \texttt{mosaic} to use the favstats function to find summary statistics for quantitative variables, and the package \texttt{catstats} starting in Chapter 5 to create simulations. Once you have installed these packages you will only need to use the library function to call each package to use.
 
 The \# sign is not part of the \texttt{R} code.
 It is used by these authors to add comments to the \texttt{R} code and explain what each call is telling the program to do.
 \texttt{R} will ignore everything after a \# sign when executing the code.
 
-In the Martian Alphabet \texttt{RScript} file for the one proportion test, enter your class size (Q3 from the in-class activity) for sample\_size and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for as\_extreme\_as in the one\_proportion\_test. Highlight lines 12 - 17 and click run.
+In the Martian Alphabet \texttt{RScript} file for the one proportion test, enter your class size (Q3 from the in-class activity) for sample\_size and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for as\_extreme\_as in the one\_proportion\_test. Highlight lines 16 - 21 and click run.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -585,12 +585,12 @@ In the Martian Alphabet \texttt{RScript} file for the one proportion test, enter
   Is the distribution created from this code similar to what you saw in class in Q14?
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.3in}
 
 \hypertarget{additional-notes}{%
 \section{Additional notes}\label{additional-notes}}
 
-Use this space to summarize your thoughts and take additional notes on today's activity, and to write down the names and contact information of your team mates.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered, and to write down the names and contact information of your teammates.
 
 \hypertarget{study-design}{%
 \chapter{Study Design}\label{study-design}}
@@ -604,7 +604,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \item
   Explain the purpose of random assignment and its effect on scope of inference
 \item
-  Identify whether a study is observational or an experiment
+  Identify whether a study design is observational or an experiment
 \item
   Identify confounding variables in observational studies and explain why they are confounding
 \item
@@ -649,8 +649,8 @@ To review these concepts, see Sections 1.3 through 1.6 in the textbook.
 
 \newpage
 
-\hypertarget{types-of-sampling-bias-complete-q1---2-before-class.}{%
-\section{Types of sampling bias: Complete Q1 - 2 before class.}\label{types-of-sampling-bias-complete-q1---2-before-class.}}
+\hypertarget{types-of-sampling-bias-complete-q1-before-class.}{%
+\section{Types of sampling bias: Complete Q1 before class.}\label{types-of-sampling-bias-complete-q1-before-class.}}
 
 There are two parts to study design: how the sample was selected and how the study was conducted. First, we will look at sampling and types of bias (selection, non-response, or response).
 
@@ -742,7 +742,7 @@ For the next exercises, identify the explanatory variable, the response variable
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{4}
 \item
-  The pharmaceutical company Moderna Therapeutics is working in conjunction with the National Institutes of Health towards a vaccine for COVID-19 and has recently begun Phase 3 clinical trials. US clinical research sites will enroll 30,000 volunteers without COVID-19 to participate. Participants will be randomly assigned to receive either the candidate vaccine or a saline placebo. They will then be followed to assess vaccine-related symptoms and development of COVID-19. The trial is double-blind, so neither the investigators nor the participants will know who is assigned to which group.
+  The pharmaceutical company Moderna Therapeutics is working in conjunction with the National Institutes of Health towards a vaccine for COVID-19 and has recently begun Phase 3 clinical trials. US clinical research sites will enroll 30,000 volunteers without COVID-19 to participate. Participants will be randomly assigned to receive either the candidate vaccine or a saline placebo. They will then be followed to assess whether or not they develop COVID-19. The trial is double-blind, so neither the investigators nor the participants will know who is assigned to which group.
   \vspace{0.1in}
 
   Explanatory variable:
@@ -840,10 +840,12 @@ In the in-class activity we looked at sampling methods and study design. Here ar
 
 \vspace{1in}
 
+\newpage
+
 \hypertarget{additional-notes}{%
 \section{Additional notes}\label{additional-notes}}
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 \hypertarget{whats-the-probability}{%
 \chapter{What's the probability?}\label{whats-the-probability}}
@@ -932,7 +934,7 @@ Whether union member: \texttt{Union} or \texttt{Not}\strut
 \begin{minipage}[t]{0.11\columnwidth}\raggedright
 \texttt{wage}\strut
 \end{minipage} & \begin{minipage}[t]{0.83\columnwidth}\raggedright
-Wage (dollars per hour) \textbar{}\strut
+Wage (dollars per hour)\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.11\columnwidth}\raggedright
 \texttt{age}\strut
@@ -997,7 +999,7 @@ Marital status: \texttt{Married} or \texttt{Single}\strut
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{3}
 \item
-  Since the early 1980s, the rapid antigen detection test (RADT) of group A \emph{streptococci} has been used to detect strep throat. A recent study of the accuracy of this test shows that the sensitivity, positive RADT given person has strep throat in children is 86\%, while the specificity, negative RADT given the person does not have strep throat in children is 92\%. The prevalence, the probability of having group A strep, is 37\% in children less than 18 years old.
+  Since the early 1980s, the rapid antigen detection test (RADT) of group A \emph{streptococci} has been used to detect strep throat. A recent study of the accuracy of this test shows that the sensitivity, the probability of a positive RADT given the person has strep throat, is 86\% in children, while the specificity, the probability of a negative RADT given the person does not have strep throat, is 92\% in children. The prevalence, the probability of having group A strep, is 37\% in children.
   \vspace{1mm}
 
   Let A = the event the child has strep throat, and B = the event the child has a positive RADT.
@@ -1049,6 +1051,16 @@ Total & & & 100,000\tabularnewline
   \vspace{.8in}
 \item
   Find the probability that a child with a positive RADT actually has strep throat. What is the notation used for this probability?
+\end{enumerate}
+
+\vspace{.8in}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  What is the probability that a child does not have strep given that they have a positive test? What is the notation used for this probability?
 \end{enumerate}
 
 \newpage
@@ -1112,11 +1124,12 @@ Total & & & 100,000\tabularnewline
   Calculate the probability that a randomly selected computer will be a desktop, given that the computer is on sale. What is the notation used for this probability?
   \vspace{.8in}
 \item
-  Find \(P(S | L^C)\). What does this probability represent in context of the problem?
+  Find \(P(S^C | L^C)\). What does this probability represent in context of the problem?
   \vspace{1in}
+\item
+  What is the probability a randomly selected computer is both a laptop and on sale? Give the appropriate probability notation.
+  \newpage
 \end{enumerate}
-
-\newpage
 
 \hypertarget{out-of-class-activity}{%
 \section{Out of class activity}\label{out-of-class-activity}}
@@ -1141,7 +1154,7 @@ you would use in order to produce output or plots. These
 ``code chunks'' appear in gray. In the code chunk below, we
 demonstrate how to read the data set into \texttt{R} using the \texttt{read.csv()} function.
 
-Open the provided \texttt{RScript} file for activity 3 in \texttt{RStudio} or \texttt{RStudioCloud} to answer the following questions. Highlight and run lines 1 - 5. These lines of code read in the data set and names the data set myopia. The library function tells \texttt{R} which packages will be needed.
+Open the provided \texttt{RScript} file for activity 3 in \texttt{RStudio} or \texttt{RStudioCloud} to answer the following questions. Highlight and run lines 1 - 5. These lines of code read in the data set and name the data set myopia. The library function tells \texttt{R} which packages will be needed.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1154,7 +1167,7 @@ Open the provided \texttt{RScript} file for activity 3 in \texttt{RStudio} or \t
 \subsection*{Displaying a single categorical variable}\label{displaying-a-single-categorical-variable}}
 \addcontentsline{toc}{subsection}{Displaying a single categorical variable}
 
-If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable \texttt{Sight}. Enter the variable name, \texttt{Sight}, for xx into the ggplot code to create a bar plot. Notice this is a \textbf{frequency} bar plot plotting counts (the number of children in each level of sight).
+If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable \texttt{Sight}. Enter the variable name, \texttt{Sight}, for xx into the ggplot code in line 10 in the \texttt{RScript} file to create a bar plot. Highlight and run lines 9 - 15. Notice this is a \textbf{frequency} bar plot plotting counts (the number of children in each level of sight).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1168,8 +1181,20 @@ If we wanted to know how many children in our data set were in each level of myo
 \end{Highlighting}
 \end{Shaded}
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Sketch the bar plot created here. Be sure to label the axes.
+\end{enumerate}
+
+\vspace{1.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
 \tightlist
 \item
   Using the bar chart created, estimate how many children have some level of myopia?
@@ -1194,7 +1219,7 @@ We could also choose to display the data as a proportion in a relative frequency
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
+\setcounter{enumi}{2}
 \tightlist
 \item
   Which features in the relative frequency bar plot are the same as the frequency bar plot? Which are different?
@@ -1202,11 +1227,13 @@ We could also choose to display the data as a proportion in a relative frequency
 
 \vspace{1in}
 
+\newpage
+
 \hypertarget{displaying-two-categorical-variables}{%
 \subsection*{Displaying two categorical variables}\label{displaying-two-categorical-variables}}
 \addcontentsline{toc}{subsection}{Displaying two categorical variables}
 
-To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of \texttt{Light} segmented by \texttt{Sight}. To create the segmented bar plot enter the variable name, Light (explanatory variable) for xx and the variable name, Sight (response variable) for yy in the \texttt{RScript} file.
+To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of \texttt{Light} segmented by \texttt{Sight}. To create the segmented bar plot enter the variable name, Light (explanatory variable) for xx and the variable name, Sight (response variable) for yy in the \texttt{RScript} file in line 28. Highlight and run lines 27 - 33.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1222,17 +1249,17 @@ To examine the differences in level of myopia for the level of light, we would c
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
+\setcounter{enumi}{3}
 \tightlist
 \item
-  Sketch the segmented bar plot created here.
+  Sketch the segmented bar plot created here. Be sure to label the axes.
 \end{enumerate}
 
-\vspace{1in}
+\vspace{1.5in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\setcounter{enumi}{4}
 \tightlist
 \item
   From the segmented bar plot, estimate the proportion of no myopia for those that used a Nightlight.
@@ -1242,7 +1269,7 @@ To examine the differences in level of myopia for the level of light, we would c
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
+\setcounter{enumi}{5}
 \tightlist
 \item
   Which level of light has the highest proportion of \texttt{No\ Myopia}?
@@ -1250,10 +1277,12 @@ To examine the differences in level of myopia for the level of light, we would c
 
 \vspace{0.5in}
 
+\newpage
+
 \hypertarget{additional-notes}{%
 \section{Additional notes}\label{additional-notes}}
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 \hypertarget{imdb-movie-reviews}{%
 \chapter{IMDb Movie Reviews}\label{imdb-movie-reviews}}
@@ -1412,7 +1441,7 @@ The \texttt{favstats} function from the \texttt{mosaic} package gives the summar
 \setcounter{enumi}{4}
 \tightlist
 \item
-  Calculate the IQR.
+  Calculate the Interquartile range (IQR = Q3 - Q1).
 \end{enumerate}
 
 \vspace{0.5in}
@@ -1440,7 +1469,7 @@ The \texttt{favstats} function from the \texttt{mosaic} package gives the summar
 
 \newpage
 
-To create a histogram of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{RScript} file for xx, highlight and run lines 1 - 15. Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{RScript} file for xx at line 12, highlight and run lines 1 - 16. Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the \textbf{bin width} is 0.5. For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75. It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.
 
@@ -1540,7 +1569,7 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
 \subsection*{Displaying a single categorical and single quantitative variable}\label{displaying-a-single-categorical-and-single-quantitative-variable}}
 \addcontentsline{toc}{subsection}{Displaying a single categorical and single quantitative variable}
 
-The box plot of movie budgets (in millions) by content rating is plotted using the code below. Enter the variable \texttt{budget\_mil} for yy and the variable \texttt{content\_rating} for xx, highlight and run code lines 27 - 34. This plot helps to compare the budget for different levels of content rating.
+The box plot of movie budgets (in millions) by content rating is plotted using the code below. Enter the variable \texttt{budget\_mil} for yy and the variable \texttt{content\_rating} for xx at line 31, highlight and run code lines 29 - 35. This plot helps to compare the budget for different levels of content rating.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1564,12 +1593,14 @@ The box plot of movie budgets (in millions) by content rating is plotted using t
 
 \vspace{1.5in}
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{13}
 \tightlist
 \item
-  Answer the following questions about the box plots above.
+  Answer the following questions about the box plots created.
 \end{enumerate}
 
 \begin{enumerate}
@@ -1594,7 +1625,7 @@ The box plot of movie budgets (in millions) by content rating is plotted using t
 \hypertarget{out-of-class-activity}{%
 \section{Out of Class Activity}\label{out-of-class-activity}}
 
-For a little more practice using \texttt{Rstudio} to create graphs of quantitative variables we will look at some other variables in the Movies data set. Download and open the provided \texttt{RScript} file and run the first 7 lines of code.
+For a little more practice using \texttt{Rstudio} to create graphs of quantitative variables we will look at some other variables in the Movies data set. Download and open the provided \texttt{RScript} file, highlight and run the first 8 lines of code.
 
 To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response\textasciitilde explanatory.
 
@@ -1613,12 +1644,7 @@ To use the favstats function in the mosaic package with two variables, we will e
 #> 4              R 3.5 5.375    6.3 7.050 8.1 6.221875 1.1335740 32       0
 \end{verbatim}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Using the provided \texttt{RScript} file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, \texttt{imdb\_score} for yy and \texttt{content\_rating} for xx, highlight and run lines 38 - 46.
-\end{enumerate}
+Using the provided \texttt{RScript} file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, \texttt{imdb\_score} for yy and \texttt{content\_rating} for xx at line 44, highlight and run lines 39 - 48.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1633,7 +1659,7 @@ To use the favstats function in the mosaic package with two variables, we will e
 \end{Shaded}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
+\def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
   Using the provided favstats output and the side-by-side boxplots, interpret the value of quartile 1 for the R content rating.
@@ -1642,7 +1668,7 @@ To use the favstats function in the mosaic package with two variables, we will e
 \vspace{1in}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
+\def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
 \tightlist
 \item
@@ -1652,7 +1678,7 @@ To use the favstats function in the mosaic package with two variables, we will e
 \vspace{0.2in}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
+\def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
 \tightlist
 \item
@@ -1664,7 +1690,7 @@ To use the favstats function in the mosaic package with two variables, we will e
 \hypertarget{additional-notes}{%
 \section{Additional notes}\label{additional-notes}}
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 \hypertarget{movie-profits}{%
 \chapter{Movie Profits}\label{movie-profits}}
@@ -1766,7 +1792,7 @@ Number of likes a movie receives on Facebook\strut
 \subsection*{Vocabulary review. Complete Q1 - 4 before class.}\label{vocabulary-review.-complete-q1---4-before-class.}}
 \addcontentsline{toc}{subsection}{Vocabulary review. Complete Q1 - 4 before class.}
 
-Note: You will need to use the provided \texttt{RScript} for activity 5 to complete question 3.
+Note: You will need to use the provided \texttt{RScript} file for activity 5 to complete question 3.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1785,9 +1811,9 @@ Note: You will need to use the provided \texttt{RScript} for activity 5 to compl
   What three summary statistics are used to describe the relationship between two quantitative variables?
 \end{enumerate}
 
-\vspace{0.3in}
+\vspace{0.4in}
 
-We will look at the relationship between `Budget' and `Revenue' for movies released in 2016. Enter the variable name \texttt{budget\_mil} for xx and \texttt{revenue\_mil} for yy to create the scatterplot. (Note: both variables are measured in ``millions of dollars''). Highlight and run lines 1 - 12.
+We will look at the relationship between \texttt{Budget} and \texttt{Revenue} for movies released in 2016. Enter the variable name \texttt{budget\_mil} for xx and \texttt{revenue\_mil} for yy at line 7 in the \texttt{RScript} file to create the scatterplot. (Note: both variables are measured in ``millions of dollars''). Highlight and run lines 1 - 12.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1804,6 +1830,17 @@ We will look at the relationship between `Budget' and `Revenue' for movies relea
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
+\tightlist
+\item
+  Sketch the scatterplot created from the code.
+\end{enumerate}
+
+\vspace{1.5in}
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
 \tightlist
 \item
   Assess the four features of the scatterplot that describe this relationship. Describe each feature using a complete sentence!
@@ -1841,14 +1878,12 @@ We will look at the relationship between `Budget' and `Revenue' for movies relea
 
 \vspace{.4in}
 
-\newpage
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\setcounter{enumi}{4}
 \tightlist
 \item
-  Does there appear to be an association between `Budget' and `Revenue'? Explain.
+  Does there appear to be an association between \texttt{Budget} and \texttt{Revenue}? Explain.
 \end{enumerate}
 
 \vspace{1in}
@@ -1857,7 +1892,9 @@ We will look at the relationship between `Budget' and `Revenue' for movies relea
 \subsection*{Correlation}\label{correlation}}
 \addcontentsline{toc}{subsection}{Correlation}
 
-Correlation measures the strength and the direction between two quantitative variables. The closer the value of correlation to + or - 1 the stronger the linear relationship. Values close to zero indicate a very weak linear relationship between the two variables. The following output shows a correlation matrix between several pairs of quantitative variables.
+Correlation measures the strength and the direction of the linear relationship between two quantitative variables. The closer the value of correlation to + or - 1 the stronger the linear relationship. Values close to zero indicate a very weak linear relationship between the two variables. The following output shows a correlation matrix between several pairs of quantitative variables.
+
+\newpage
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1887,7 +1924,7 @@ Correlation measures the strength and the direction between two quantitative var
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
+\setcounter{enumi}{5}
 \tightlist
 \item
   Using the output above, which two variables have the strongest correlation?
@@ -1897,7 +1934,7 @@ Correlation measures the strength and the direction between two quantitative var
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
+\setcounter{enumi}{6}
 \tightlist
 \item
   What is the value of correlation between `Budget' and `Revenue'?
@@ -1907,27 +1944,27 @@ Correlation measures the strength and the direction between two quantitative var
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
+\setcounter{enumi}{7}
 \tightlist
 \item
-  Based on the value of correlation found in question 6, what would the sign of the slope be? Positive or negative? Explain.
+  Based on the value of correlation found in question 7, what would the sign of the slope be? Positive or negative? Explain.
 \end{enumerate}
 
 \vspace{0.5in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{7}
+\setcounter{enumi}{8}
 \tightlist
 \item
-  Does your answer to question 7 match the direction you choose in question 3?
+  Does your answer to question 8 match the direction you choose in question 4?
 \end{enumerate}
 
 \vspace{0.2in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
+\setcounter{enumi}{9}
 \tightlist
 \item
   Explain why the correlation values on the diagonal are equal to 1.
@@ -1963,7 +2000,7 @@ Therefore, the slope predicts how much the line will \emph{rise} for each \emph{
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
+\setcounter{enumi}{10}
 \tightlist
 \item
   Write out the least squares line using the summary statistics provided in proper statistical notation.
@@ -1973,7 +2010,7 @@ Therefore, the slope predicts how much the line will \emph{rise} for each \emph{
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{10}
+\setcounter{enumi}{11}
 \tightlist
 \item
   Interpret the value of slope in context of the problem.
@@ -1983,10 +2020,10 @@ Therefore, the slope predicts how much the line will \emph{rise} for each \emph{
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{11}
+\setcounter{enumi}{12}
 \tightlist
 \item
-  Using the least squares line from question 10, predict the revenue for a movie with a budget of 165 million.
+  Using the least squares line from question 11, predict the revenue for a movie with a budget of 165 million.
 \end{enumerate}
 
 \vspace{.6in}
@@ -2007,7 +2044,7 @@ $e_i=y_i-\hat{y}_i$
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
+\setcounter{enumi}{13}
 \tightlist
 \item
   The movie, \emph{Independence Day: Resurgence}, had a budget of 165 million and revenue of 102.315 million. Find the residual for this movie.
@@ -2017,15 +2054,13 @@ $e_i=y_i-\hat{y}_i$
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{13}
+\setcounter{enumi}{14}
 \tightlist
 \item
   Did the line of regression overestimate or underestimate the revenue for this movie?
 \end{enumerate}
 
 \vspace{.2in}
-
-\newpage
 
 \hypertarget{out-of-class-activity}{%
 \section{Out of Class Activity}\label{out-of-class-activity}}
@@ -2034,7 +2069,7 @@ $e_i=y_i-\hat{y}_i$
 \subsection*{Coefficient of determination (squared correlation)}\label{coefficient-of-determination-squared-correlation}}
 \addcontentsline{toc}{subsection}{Coefficient of determination (squared correlation)}
 
-The third summary measure from two quantitative variables is the coefficient of determination (\(r^2\)). The coefficient of determination, \(r^2\), can also be used to describe the strength of the linear relationship between two quantitative variables. \(r^2\) measures the proportion of variation in the response that is explained by the least squares line with the explanatory variable. There are two ways to calculate the coefficient of determination:
+The third summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination (\(r^2\)). The coefficient of determination, \(r^2\), can also be used to describe the strength of the linear relationship between two quantitative variables. \(r^2\) measures the proportion of variation in the response that is explained by the least squares line with the explanatory variable. There are two ways to calculate the coefficient of determination:
 
 ~~~\(r^2 = (r)^2\) - square the value of the correlation coefficient
 
@@ -2044,7 +2079,7 @@ The third summary measure from two quantitative variables is the coefficient of 
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Use the correlation, \(r\), found in question 6, to calculate the coefficient of determination between \texttt{Budget} and \texttt{Revenue}, \(r^2\).
+  Use the correlation, \(r\), found in question 7, to calculate the coefficient of determination between \texttt{Budget} and \texttt{Revenue}, \(r^2\).
 \end{enumerate}
 
 \vspace{.4in}
@@ -2117,7 +2152,7 @@ What if we wanted to see if the relationship between \texttt{Budget} and \texttt
 \hypertarget{additional-notes}{%
 \section{Additional notes}\label{additional-notes}}
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 \hypertarget{handedness-of-male-boxers}{%
 \chapter{Handedness of Male Boxers}\label{handedness-of-male-boxers}}

@@ -4,7 +4,8 @@ title: |
   \vspace{1cm}  
   STAT 216 Activity Coursepack
 subtitle: Spring 2021
-author: Melinda Yager
+author: Melinda Yager, Jade Schmidt, Dr. Stacey Hancock
+location: Montana State University
 site: bookdown::bookdown_site
 documentclass: report
 description: This is the coursepack of in-class activities for STAT 216 Spring 2021.
