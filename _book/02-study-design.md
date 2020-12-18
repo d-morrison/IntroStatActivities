@@ -156,6 +156,16 @@ For the next exercises, identify the explanatory variable, the response variable
     What is the scope of inference for this study?
 \vspace{0.5in}
 
+A **confounding variable** is a variable that is _both_
+
+1. associated with the explanatory variable, _and_
+2. associated with the response variable.
+
+When both these conditions are met, if we observe an association between the explanatory variable and the response variable in the data, we cannot be sure if this association is due to the explanatory variable or the confounding variable---the explanatory and confounding variables are "confounded."
+
+
+\begin{center}\includegraphics[width=0.7\linewidth]{02-study-design_files/figure-latex/unnamed-chunk-2-1} \end{center}
+
 7. For each of the studies in questions 5 and 6, determine whether confounding variables could be an issue. If so, identify a potential confounding variable and explain how it meets the definition of a confounding variable.
 \vspace{1.5in}
 
@@ -163,7 +173,7 @@ For the next exercises, identify the explanatory variable, the response variable
 
 In the in-class activity we looked at sampling methods and study design.  Here are a few more questions to review that material.  
 
-1. The Bozeman school district is interested in surveying parents of students about their opinions on returning to in-person classes following the COVID-19 pandemic.  They divided the school district into 10 divisions based on location and randomly surveyed 20 households within each division.  Explain why selection bias would be present in this study designs.
+1. The Bozeman school district is interested in surveying parents of students about their opinions on returning to in-person classes following the COVID-19 pandemic.  They divided the school district into 10 divisions based on location and randomly surveyed 20 households within each division.  Explain why selection bias would be present in this study design.
 \vspace{1in}
 
 2. A study published in 2007 by Christopher Johnson, professor of music education and music therapy at the University of Kansas, revealed that students in elementary schools with superior music education programs scored around 20 percent higher in math scores on standardized tests, compared to schools with low-quality music programs.  Explain how school budget could be a potential confounding variable.  Be sure to address how the confounding variable is related to both the explanatory and response variable. 

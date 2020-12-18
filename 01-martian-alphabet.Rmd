@@ -135,12 +135,12 @@ include_graphics("images/relative_barplot_martian.png")
 
 \newpage
 
-12.	While your observed class data is likely far different from the simulated “just-guessing” class, comparing our class data to a single simulation does not seem to give enough information.  The differences seen could just be due to that set of coin flips!  Let’s simulate another class.  Each student should flip their coin again.  What was the result from your class’s second simulation?  What proportion of students “guessed” correctly in the second simulation?  Create a plot to compare the two simulated results with the observed class result.
+12.	While your observed class data is likely far different from the simulated “just-guessing” class, comparing our class data to a single simulation does not give enough information.  The differences seen could just be due to that set of coin flips!  Let’s simulate another class.  Each student should flip their coin again.  What was the result from your class’s second simulation?  What proportion of students “guessed” correctly in the second simulation?  Create a plot to compare the two simulated results with the observed class result.
 
 \vspace{1in}
 
 
-13.	We still unfortunately only have a couple of simulations to compare our class data to.  It would be much better to be able to see how our class compared to hundreds or thousands of “just-guessing” classes.  Since we don’t want to flip coins all class period, your instructor will use a computer simulation to get 1000 trials. Fill in the following blanks to describe how we would create a simulation of random guessing with 1000 trials (repetitions).
+13.	We still only have a couple of simulations to compare our class data to.  It would be much better to be able to see how our class compared to hundreds or thousands of “just-guessing” classes.  Since we don’t want to flip coins all class period, your instructor will use a computer simulation to get 1000 trials. Fill in the following blanks to describe how we would create a simulation of random guessing with 1000 trials (repetitions).
 
 |           Probability of correct guesses: _____
 \vspace{0.05in}
@@ -151,13 +151,13 @@ include_graphics("images/relative_barplot_martian.png")
 |           Number of repetitions: _____
 \vspace{0.05in}
 
-14.  Sketch the distribution displayed by your instructor here, being sure to label each axis appropriately. 
+14.  Sketch the distribution displayed by your instructor here.  Label each axis appropriately. 
 
 \vspace{1.5in}
 
 15. Is your class particularly good or bad at Martian?  Use the plot in question 14 to explain your answer. 
 
-\vspace{.8in}
+\vspace{.5in}
 
 16.	Is it *possible* that we could see our class results just by chance if everyone was just guessing?  Explain your reasoning.
 
@@ -167,7 +167,6 @@ include_graphics("images/relative_barplot_martian.png")
 
 \vspace{.5in}
 
-\newpage
 **Step 5**: The next step in the statistical investigation process is to *communicate the results and answer the research question*.
 
 18.	Does this activity provide strong evidence that students were not just guessing at random? If so, what do you think is going on here?  Can we as a class read Martian?^[Reference for “Martian alphabet” is a TED talk given by Vilayanur Ramachandran in 2007. The synesthesia part begins at roughly 17:30 minutes: `http://www.ted.com/talks/vilayanur_ramachandran_on_your_mind`.]  
@@ -189,6 +188,8 @@ include_graphics("images/relative_barplot_martian.png")
 
 3.	Unusual observed results will make us doubt the assumptions used to create the simulated distribution. A large number of correct “guesses” is evidence that a person was not just blindly guessing.
 
+\newpage
+
 ## Out of Class Activity
 
 Since this class is taught in a blended format we are only in class one day per week.  During class we will complete the in-class activity from the course pack.  Outside of class, students will read from the textbook, watch course videos, and complete an out-of-class activity on the other two days of class.  To become familiar with the course outline, read through the syllabus, https://mtstateintrostats.github.io/Syllabus/, the day specific cohort calendar, and watch the Stat 216 Course Tour on D2L before answering the following questions.
@@ -203,13 +204,13 @@ Since this class is taught in a blended format we are only in class one day per 
 
 3.  For your cohort, when is Exam 1? Exam 2?
 
-\space{0.5in}
+\vspace{0.5in}
 
 In Stat 216 we will use the statistical package `R` to analyze data.  Read through the instructions on the syllabus and download `R` and `RStudio Desktop` to your computer.  If you have a Chromebook or have problems installing `R` and `RStudio Desktop` on your machine, you will need to use `RStudio Cloud` or an MSU virtual machine.  Read through the preliminaries chapter in the textbook and watch the video `RStudio_GettingStarted` on D2L -> Content -> Primary Resources before completing the following questions.
 
 Open `RStudio` on your computer.  Download the Martian Alphabet `RScript` file from D2L and open in `RStudio`.  If the file does not open directly, open manually:
 
-    * In `RStudio` click on File in the upper left hand corner, choose Open File, find the downloaded file.
+* In `RStudio` click on File in the upper left hand corner, choose Open File, find the downloaded file.
  
 If you are using `RStudioCloud` watch the video `RStudioCloud_GettingStarted` on D2L -> Content -> Primary Resources to learn how to open the file in `RStudioCloud`.
 

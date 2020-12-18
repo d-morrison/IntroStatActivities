@@ -50,7 +50,7 @@ The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census 
 | `sector` | Sector of the economy: `clerical`, `const` (construction),  `management`, `manufacturing`, `professional`, `sales`, `service`, `other` |
 | `married` | Marital status: `Married` or `Single` |
 
-### Vocabulary review. Complete Q1 - 3 before attending class. {-}
+### Vocabulary review. Complete Q1 - 3 before class. {-}
 
 1. What are the observational units?
 
@@ -62,12 +62,11 @@ The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census 
 
 3.  What types of plot can be used to display a single categorical variable?  Two categorical variables?
 
-\vspace{1in}
+\newpage
 
 ## Probability 
 
 4. Since the early 1980s, the rapid antigen detection test (RADT) of group A *streptococci* has been used to detect strep throat. A recent study of the accuracy of this test shows that the sensitivity, positive RADT given person has strep throat in children is 86%, while the specificity, negative RADT given the person does not have strep throat in children is 92%.  The prevalence, the probability of having group A strep, is 37% in children less than 18 years old. 
-
 \vspace{1mm}
 
     Let A = the event the child has strep throat, and B = the event the child has a positive RADT.
@@ -138,13 +137,14 @@ d. Find the probability that a child with a positive RADT actually has strep thr
    d. Find $P(S | L^C)$. What does this probability represent in context of the problem?
 \vspace{1in}
 
+\newpage
 
-##Out of class activity
+## Out of class activity
 
 For this part of the activity we will focus on using `RStudio` and the provided `RScript` file to create graphs and calculate proportions from each group.  
 
-## Nightlight use and myopia
-In a study reported in Nature (1999, Vol. 399, pp. 113-114), a survey of 479 children found that those who had slept with a nightlight or in a fully lit room before the age of 2 had a higher incidence of nearsightedness (myopia) later in childhood).
+### Nightlight use and myopia
+In a study reported in Nature (1999, Vol. 399, pp. 113-114), a survey of 479 children found that those who had slept with a nightlight or in a fully lit room before the age of 2 had a higher incidence of nearsightedness (myopia) later in childhood.
 
 In this study, there are two variables studied: `Light`: level of light in room at night (no light, night light, full light) and `Sight`: level of myopia developed later in childhood (high myopia, myopia, no myopia).
 
@@ -162,7 +162,8 @@ Open the provided `RScript` file for activity 3 in `RStudio` or `RStudioCloud` t
 
 
 ```r
-myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv") #This will read in the data set
+#This will read in the data set
+myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv") 
 ```
 
 
@@ -220,11 +221,16 @@ ggplot(aes(x = xx, fill = yy)) +   #This specifies the variables
     scale_fill_grey()  #Make figure black and white
 ```
 
-3.  From the segmented bar plot, estimate the proportion of no myopia for those that used a Nightlight.
+3. Sketch the segmented bar plot created here.
+
+\vspace{1in}
+
+
+4. From the segmented bar plot, estimate the proportion of no myopia for those that used a Nightlight.
 
 \vspace{0.5in}
 
-4. Which level of light has the highest proportion of `No Myopia`?
+5. Which level of light has the highest proportion of `No Myopia`?
 
 \vspace{0.5in}
 

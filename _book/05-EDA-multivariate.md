@@ -47,7 +47,7 @@ We will revisit the data set used last week collected on Movies released in 2016
 
 \newpage
 
-### Vocabulary review. Complete questions 1 - 4 before coming to class.{-}
+### Vocabulary review. Complete Q1 - 4 before class.{-}
 
 Note: You will need to use the provided `RScript` for activity 5 to complete question 3.
 
@@ -61,7 +61,7 @@ Note: You will need to use the provided `RScript` for activity 5 to complete que
 
 \vspace{0.3in}
 
-We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. Enter the variable name `budget_mil` for xx and `revenue_mil` for yy to create the scatterplot. (Note: both variables are measures in "millions of dollars").  Highlight and run lines 1 - 12.
+We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. Enter the variable name `budget_mil` for xx and `revenue_mil` for yy to create the scatterplot. (Note: both variables are measured in "millions of dollars").  Highlight and run lines 1 - 12.
 
 
 ```r
@@ -107,22 +107,23 @@ movies %>%  #Data set pipes into
   select(c("budget_mil", "revenue_mil", 
            "duration", "imdb_score", 
            "movie_facebook_likes")) %>%
-  cor(use="pairwise.complete.obs")
+  cor(use="pairwise.complete.obs") %>%
+  round(3)
 ```
 
 ```
-#>                      budget_mil revenue_mil  duration imdb_score
-#> budget_mil            1.0000000   0.6862946 0.4627869  0.2917576
-#> revenue_mil           0.6862946   1.0000000 0.2266835  0.3975692
-#> duration              0.4627869   0.2266835 1.0000000  0.2610799
-#> imdb_score            0.2917576   0.3975692 0.2610799  1.0000000
-#> movie_facebook_likes  0.6781949   0.7228596 0.4378434  0.3090747
+#>                      budget_mil revenue_mil duration imdb_score
+#> budget_mil                1.000       0.686    0.463      0.292
+#> revenue_mil               0.686       1.000    0.227      0.398
+#> duration                  0.463       0.227    1.000      0.261
+#> imdb_score                0.292       0.398    0.261      1.000
+#> movie_facebook_likes      0.678       0.723    0.438      0.309
 #>                      movie_facebook_likes
-#> budget_mil                      0.6781949
-#> revenue_mil                     0.7228596
-#> duration                        0.4378434
-#> imdb_score                      0.3090747
-#> movie_facebook_likes            1.0000000
+#> budget_mil                          0.678
+#> revenue_mil                         0.723
+#> duration                            0.438
+#> imdb_score                          0.309
+#> movie_facebook_likes                1.000
 ```
 
 5.  Using the output above, which two variables have the strongest correlation?
@@ -144,8 +145,6 @@ movies %>%  #Data set pipes into
 9.  Explain why the correlation values on the diagonal are equal to 1.
 
 \vspace{1in}
-
-\newpage
 
 ### Slope {-}
 
@@ -205,16 +204,17 @@ $e_i=y_i-\hat{y}_i$
 
 \newpage
 
-##Out of Class Activity
+## Out of Class Activity
+
 ### Coefficient of determination (squared correlation) {-}
 
-The third summary measure from two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $r^2$ measures the proportion of variation in the response that is explained by the least squares line with the explanatory variable.  There are two ways to calculate the coefficient of determination. 
+The third summary measure from two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $r^2$ measures the proportion of variation in the response that is explained by the least squares line with the explanatory variable.  There are two ways to calculate the coefficient of determination: 
 
 |    $r^2 = (r)^2$ - square the value of the correlation coefficient
 
 |    $r^2 = \frac{s_{response}^2 - s_{residuals}^2}{s_{response}^2}$ - using the variances
 
-1.  Use the correlation, $r$ found in question 6, to calculate the coefficient of determination between 'Budget' and 'Revenue', $r^2$.
+1.  Use the correlation, $r$, found in question 6, to calculate the coefficient of determination between `Budget` and `Revenue`, $r^2$.
 
 \vspace{.4in}
 
@@ -227,7 +227,7 @@ The third summary measure from two quantitative variables is the coefficient of 
 \vspace{.6in}
 
 ### Multivariate plots {-}
-What if we wanted to see if the relationship between 'Budget' and 'Revenue' differs if we add another variable into the picture?  The following plot visualizes three variables, creating a **multivariate** plot. 
+What if we wanted to see if the relationship between `Budget` and `Revenue` differs if we add another variable into the picture?  The following plot visualizes three variables, creating a **multivariate** plot. 
 
 
 ```r
@@ -251,7 +251,7 @@ movies %>% #Data set pipes into...
 
 \vspace{0.5in}
 
-5. Does the relationship between 'Budget' and 'Revenue' differ among the different content ratings?  Explain.
+5. Does the relationship between `Budget` and `Revenue` differ among the different content ratings?  Explain.
 
 \vspace{1in}
 

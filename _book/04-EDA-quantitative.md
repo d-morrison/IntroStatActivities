@@ -41,11 +41,11 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 \newpage
 
-### Vocabulary review. Complete question 1 - 3 before coming to class. {-}
+### Vocabulary review. Complete Q1 - 3 before class. {-}
 
 1. What are the observational units in this data set?
 
-\vspace{0.3in}
+\vspace{0.1in}
 
 2. Which of the above listed variables are categorical?
 
@@ -57,7 +57,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 ### Summarizing a single quantitative variable {-}
 
-The `favstats` function from the `'mosaic` package gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable `imdb_score`.
+The `favstats` function from the `mosaic` package gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable `imdb_score`.
 
 
 ```r
@@ -88,7 +88,7 @@ movies %>% #Data set piped into...
 
 \newpage
 
-To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `RScript` file for xx, highlight and run the code lines 1 - 15.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `RScript` file for xx, highlight and run lines 1 - 15.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.  
 
@@ -103,19 +103,23 @@ ggplot(aes(x = xx)) +   #Name variable to plot
 ```
 
 
-8. Using the histogram created, which range of IMDb scores have the highest frequency?
+8. Sketch the histogram created here.
+
+\vspace{1in}
+
+9. Which range of IMDb scores have the highest frequency?
 
 \vspace{0.4in}
 
-9. What is the shape of the distribution of IMDb scores?
+10. What is the shape of the distribution of IMDb scores?
 
 \vspace{0.4in}
 
-10. Which five summary statistics are used in creating a box plot? *Hint*: Together they are called the **five-number summary** of the variable.
+11. Which five summary statistics are used in creating a box plot? *Hint*: Together they are called the **five-number summary** of the variable.
 
 \vspace{0.4in}
 
-11. Using the code below we see that the three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:  
+12. Using the code below we see that the three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:  
 
     
     ```r
@@ -130,7 +134,6 @@ ggplot(aes(x = xx)) +   #Name variable to plot
     #> 2        3.5
     #> 3        3.7
     ```
-\newpage  
 
     
     ```r
@@ -165,7 +168,12 @@ movies %>%  #Data set piped into...
        y = "Budget (in Millions)")  #y-axis label
 ```
 
-12. Answer the following questions about the box plots above.
+13. Sketch the boxplots created using the `R` code.
+
+\vspace{1.5in}
+
+
+14. Answer the following questions about the box plots above.
 
    a. Which content rating has the highest center?
 \vspace{0.2in}
@@ -188,6 +196,11 @@ For a little more practice using `Rstudio` to create graphs of quantitative vari
 To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.
 
 
+```r
+movies %>% #Data set piped into...
+  summarise(favstats(imdb_score~content_rating)) #Apply favstats function to imdb_score
+```
+
 ```
 #>   content_rating min    Q1 median    Q3 max     mean        sd  n missing
 #> 1      Not Rated 3.7 4.700    5.7 6.700 7.7 5.700000 2.8284271  2       0
@@ -196,7 +209,7 @@ To use the favstats function in the mosaic package with two variables, we will e
 #> 4              R 3.5 5.375    6.3 7.050 8.1 6.221875 1.1335740 32       0
 ```
 
-1.  Using the provided `RScript` file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx, highlight and run code lines 38 - 46.
+1.  Using the provided `RScript` file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx, highlight and run lines 38 - 46.
 
 
 ```r
@@ -209,7 +222,7 @@ movies %>%  #Data set piped into...
        y = "Budget (in Millions)")  #y-axis label
 ```
 
-a.  Using the provided favstats output and the side-by-side boxplots, interpret the value of the quartile 1 for the R content rating.
+a.  Using the provided favstats output and the side-by-side boxplots, interpret the value of quartile 1 for the R content rating.
 
 \vspace{1in}
 

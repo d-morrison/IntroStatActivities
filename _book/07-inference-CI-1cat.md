@@ -1,4 +1,4 @@
-# Estimating the Proportion of Left-Handedness of Male Boxers
+# Estimating the Proportion of Left-Handed Male Boxers
 
 ## Learning objectives
 
@@ -25,7 +25,7 @@ Last week, we found very strong evidence that the true proportion of male boxers
 A **point estimate** provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible range of values for the parameter. This plausible range of values for the population parameter is called a confidence interval. 
 
 
-### Activity Intro. Complete Q1 - 4 before coming to class. {-}
+### Activity Intro. Complete Q1 - 4 before class. {-}
 
 1.  What is the value of the point estimate?
 
@@ -38,7 +38,7 @@ A **point estimate** provides a single plausible value for a parameter. However,
 In today's activity, we will use bootstrapping to find the 95% confidence interval. See Section 5.3.2 for more information on bootstrapping.
 
 3.  In your own words, explain the bootstrapping process.
-\vspace{1in}
+\vspace{0.5in}
 
 4.  Write the conclusion to your test from last week.
 
@@ -53,20 +53,21 @@ In today's activity, we will use bootstrapping to find the 95% confidence interv
 To use the computer simulation to create a bootstrap distribution, we will need to enter the "sample size" (the number of observational units or cases in the sample), "number of successes" (the number of cases that are left-handed), "number of repetitions" (the number of samples to be generated), and the "confidence level" (which level of confidence are we using to create the confidence interval).
 
 6.  What values should be entered for each of the following into the simulation to create the bootstrap distribution to find a 95\% confidence interval?
+\vspace{1mm}
 
-\vspace{.2in}
 * Sample size:
+
+\vspace{.1in}
  
-\vspace{.2in}
 * Number of successes:
     
-\vspace{.2in}
+\vspace{.1in}
 * Number of repetitions:
     
-\vspace{.2in}
+\vspace{.1in}
 * Confidence level (as a decimal):
     
-\vspace{.2in}
+\vspace{.1in}
 
 Using the provided `RScript` file, fill in the values/words for xx with your answers from question 6 to create a bootstrap distribution with 1000 simulations, highlight and run lines 1 - 11.
 
@@ -132,19 +133,17 @@ one_proportion_bootstrap_CI(sample_size = 500, #Sample size
 In the interpretation of the confidence interval, we say that we are 95\% or 90\% confident that the parameter is within the confidence interval.  Why are we able to make that claim?  What does it mean to say "we are 95\% confident"?
 
 16.  Go to this website, http://www.rossmanchance.com/ISIapplets.html and choose `Simulating Confidence Intervals`.  In the input on the left-hand side of the screen enter 0.1 for $\pi$, 500 for $n$, and 100 for `Intervals`.  Click 'sample`.
+\vspace{1mm}
 
-    In the graph on the bottom right, click on a green dot.  Write down the confidence interval for this sample given on the graph on the left.  Does this confidence interval contain the null value of 0.1?
-
+|    In the graph on the bottom right, click on a green dot.  Write down the confidence interval for this sample given on the graph on the left.  Does this confidence interval contain the null value of 0.1?
 \vspace{0.5in}
 
 
-    Now click on a red dot.  Write down the confidence interval for this sample.  Does this confidence interval contain the null value of 0.1.?
-
+|    Now click on a red dot.  Write down the confidence interval for this sample.  Does this confidence interval contain the null value of 0.1.?
 \vspace{0.5in}
 
 
-    How many intervals out of 100 contain $\pi$, the null value of 0.1? *Hint*:  This is given to the left of the graph of green and red intervals.
-
+|    How many intervals out of 100 contain $\pi$, the null value of 0.1? *Hint*:  This is given to the left of the graph of green and red intervals.
 \vspace{0.5in}
 
 17.  Click on `sample` nine more times.  Write down the `Running Total` for the proportion of intervals that contain $\pi$.  
