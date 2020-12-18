@@ -1,13 +1,6 @@
 # Weather Patterns and Record Snowfall
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, 
-                      message = FALSE,
-                      warnings = FALSE, 
-                      eval = T)
-options(show.signif.stars = FALSE)
-library(mosaic)
-```
+
 
 \newcommand\latexcode[1]{#1}
 
@@ -41,7 +34,8 @@ In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the 
 
 Notice from the `R` code that the name of the data set is `Snow`.
 
-``````{r, echo=TRUE, collapse=FALSE}
+
+```r
 Snow <- read.csv("data/SnowfallbyWeatherPattern.csv") # Read in data set
 # Code categorical variables as factors
 Snow <- # Write over original data with the following
@@ -51,7 +45,8 @@ Snow <- # Write over original data with the following
 
 \newpage
 
-```{r, echo = TRUE, out.width = "60%"}
+
+```r
 # Side-by-side box plots
 Snow %>%
 ggplot(aes(x = WeatherPattern, y = Snowfall)) +
@@ -61,10 +56,21 @@ ggplot(aes(x = WeatherPattern, y = Snowfall)) +
     coord_flip()
 ```
 
-```{r, echo=TRUE, collapse=FALSE}
+
+
+\begin{center}\includegraphics[width=0.6\linewidth]{11-inference-1ofeach_files/figure-latex/unnamed-chunk-2-1} \end{center}
+
+
+```r
 # Summary statistics
 Snow %>% 
      summarize(favstats(Snowfall~WeatherPattern))
+```
+
+```
+#>   WeatherPattern  min   Q1 median   Q3   max     mean       sd  n missing
+#> 1        El_Nino 31.9 46.4   57.7 64.3  87.9 56.23043 13.00823 23       0
+#> 2        La_Nina 44.5 51.4   60.9 70.3 107.2 63.13333 15.48626 21       0
 ```
 
 
@@ -160,7 +166,8 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 16.  Using the `RScript` file for this activity, enter your answers for question 15 in place of the xx's to produce the null distribution with 1000 simulations.  Highlight and run lines 1 - 29.
 
-```{r, echo = TRUE, eval = FALSE}
+
+```r
 two_mean_test(Snowfall~WeatherPattern, data = Snow,  #Variables and data
                     first_in_subtraction = "xx", #First outcome in order of subtraction
                     number_repetitions = 1000,  #Number of simulations
@@ -176,7 +183,8 @@ two_mean_test(Snowfall~WeatherPattern, data = Snow,  #Variables and data
 \vspace{1in}
 
 18. Using bootstrapping find a 95\% confidence interval. Use the provided `RScript` file. Enter the variable names and data set name as in the two mean test, outcome name for the first in subtraction, number of repetitions, and the confidence level.  Report the 95\% confidence interval in interval notation.
-```{r, echo = TRUE, eval = FALSE}
+
+```r
 two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
                       first_in_subtraction = "xx", #First value in order of subtraction
                       number_repetitions = 1000,  #Number of simulations
@@ -254,7 +262,8 @@ where the standard error of the mean difference
 
 Using the provided `RScript` file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value.  Highlight and run line 39.
 
-```{r, echo=TRUE, eval=FALSE}
+
+```r
 pt(xx, df=20, lower.tail=TRUE)
 ```
 
@@ -269,8 +278,10 @@ $\bar{x}_1- \bar{x}_2\pm t^* SE(\bar{x}_1- \bar{x}_2)$ we will need to find the 
 
 For a 95% confidence interval we are finding the $t^*$ value at the 97.5th percentile with df = minimum(n - 1) = 21 - 1 = 20.
 
-```{r}
+
+```r
 qt(0.975, df = 20, lower.tail=TRUE)
+#> [1] 2.085963
 ```
 
 4.  Calculate the 95\% confidence interval using theory-based methods.

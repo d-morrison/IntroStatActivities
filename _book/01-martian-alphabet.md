@@ -66,7 +66,7 @@ We will look at two types of variables: **quantitative** and **categorical** (se
 
 Quantitative variables are numerical measurements that can be discrete (whole, non-negative numbers) or continuous (any value within an interval).  The number of pets one owns would be a discrete variable as you can not have a partial pet.  GPA would be a continuous variable ranging from 0 to 4.0. 
 
-Categorical variables are data that are in groups or categories such as eye color, state of residency, or whether or not a student lives on campus. Categorical variables with a natural ordering are considered ordinal variables while those without a natural ordering are considered a nominal variable.  All categorical variables will be treated as nominal for analysis in this course.
+Categorical variables are data that are in groups or categories such as eye color, state of residency, or whether or not a student lives on campus. Categorical variables with a natural ordering are considered ordinal variables while those without a natural ordering are considered nominal variables.  All categorical variables will be treated as nominal for analysis in this course.
 
 \begin{figure}
 
@@ -95,7 +95,7 @@ $\mbox{proportion} = \frac{\mbox{number of students who correctly identified Bum
 The proportion in question 6 is called a **summary statistic**---a single value that summarizes the data set. It is important to note that a variable is different than a summary statistic. A *variable* is measured on a *single observational unit* while a summary statistic is calculated from a group of observational units.  For example, the variable "whether or not a student lives on campus" can be measured on each individual student.  In a class of 50 students we can calculate the proportion of students who live on campus, the summary statistic.  Look back and make sure you wrote the variable in question 3 as a variable, NOT a summary statistic. 
 
 
-Looking at the data set and the summary statistics is only one way to display the data.  We will also want to create a visualization or picture of the data. A **frequency bar plot** is used to display categorical data as a count or frequency. Since our variable has two levels, correct or incorrect, we will create two bars---one for each level.
+Looking at the data set and the summary statistic is only one way to display the data.  We will also want to create a visualization or picture of the data. A **frequency bar plot** is used to display categorical data as a count or frequency. Since our variable has two levels, correct or incorrect, we will create two bars---one for each level.
 
 7. Plot the observed class data using a frequency bar plot. Be sure to add a scale to the y-axis.
 
@@ -111,7 +111,7 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 \begin{center}\includegraphics[width=0.4\linewidth]{images/relative_barplot_martian} \end{center}
 
 \newpage                    
-**Step 4**: The next step is to *use statistical analysis methods to draw inferences from the data*. To answer the research question, we will simulate what *could* have happened in our class given random chance, repeat that many times to understand the expected *variability* between different "randomly guessing" classes, then compare our class's observed data to the simulation.  This gives us an estimate of how often (or the probability of) our class's result would occur if we were all merely guessing, allowing us to determine if the data provides evidence that we as a class can in fact read Martian.
+**Step 4**: The next step is to *use statistical analysis methods to draw inferences from the data*. To answer the research question, we will simulate what *could* have happened in our class given random chance, repeat that many times to understand the expected *variability* between different "randomly guessing" classes, then compare our class's observed data to the simulation.  This gives us an estimate of how often (or the probability of) the class's result would occur if students were all merely guessing, allowing us to determine if the data provides evidence that we as a class can in fact read Martian.
 
 9. If humans really don’t know Martian and are just guessing which is Bumba, what are the chances of getting it right?
 \vspace{0.3in}
@@ -125,7 +125,7 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
     How many people in your class would you expect to choose Bumba correctly just by chance?  Explain your reasoning.
 \vspace{.9in}
 
-10. Each of you will flip a coin one time to simulate your “guess”.  Let Heads = correct, Tails = incorrect.  What was the result of your simulation?
+10. Each student will flip a coin one time to simulate your “guess”.  Let Heads = correct, Tails = incorrect.  What was the result of your one simulation?
 \vspace{.3in}
 
     What was the result from your class’s simulation?  What proportion of students “guessed” correctly in the simulation?
@@ -135,12 +135,12 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 \newpage
 
-12.	While your observed class data is likely far different from the simulated “just-guessing” class, comparing our class data to a single simulation does not seem to give enough information.  The differences seen could just be due to that set of coin flips!  Let’s simulate another class.  Each student should flip your coin again.  What was the result from your class’s second simulation?  What proportion of students “guessed” correctly in the second simulation?  Create a plot to compare the two simulated results with the observed class result.
+12.	While your observed class data is likely far different from the simulated “just-guessing” class, comparing our class data to a single simulation does not seem to give enough information.  The differences seen could just be due to that set of coin flips!  Let’s simulate another class.  Each student should flip their coin again.  What was the result from your class’s second simulation?  What proportion of students “guessed” correctly in the second simulation?  Create a plot to compare the two simulated results with the observed class result.
 
 \vspace{1in}
 
 
-13.	We still unfortunately only have a couple of simulations to compare our class data to.  It would be much better to be able to see how our class compared to hundreds or thousands of “just-guessing” classes.  Since we don’t want to flip coins all class period, your instructor will use a computer simulation to get 1000 trials. Fill in the following blanks to describe how we would create a simulation of random guessing with 1000 trials.
+13.	We still unfortunately only have a couple of simulations to compare our class data to.  It would be much better to be able to see how our class compared to hundreds or thousands of “just-guessing” classes.  Since we don’t want to flip coins all class period, your instructor will use a computer simulation to get 1000 trials. Fill in the following blanks to describe how we would create a simulation of random guessing with 1000 trials (repetitions).
 
 |           Probability of correct guesses: _____
 \vspace{0.05in}
@@ -155,10 +155,9 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 \vspace{1.5in}
 
-15. Is your class particularly good or bad at Martian?  How can you use the plot in question 14 to tell? 
+15. Is your class particularly good or bad at Martian?  Use the plot in question 14 to explain your answer. 
 
 \vspace{.8in}
-
 
 16.	Is it *possible* that we could see our class results just by chance if everyone was just guessing?  Explain your reasoning.
 
@@ -177,7 +176,7 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 **Step 6**: The final step of any statistical investigation is to *revisit and look ahead*. 
 
-19. Can you think of any limitations of our study?  Can you think of a new topic that might be on interest based on the results of our study?
+19. Can you think of any limitations of our study?  Can you think of a new topic that might be of interest based on the results of our study?
 
 \vspace{1in}
 
@@ -189,6 +188,44 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 2.	Blind guessing between two outcomes will be correct only about half the time. We can create data (via computer simulation) to fit the assumption of blind guessing.
 
 3.	Unusual observed results will make us doubt the assumptions used to create the simulated distribution. A large number of correct “guesses” is evidence that a person was not just blindly guessing.
+
+## Out of Class Activity
+
+Since this class is taught in a blended format we are only in class one day per week.  During class we will complete the in-class activity from the course pack.  Outside of class, students will read from the textbook, watch course videos, and complete an out-of-class activity on the other two days of class.  To become familiar with the course outline, read through the syllabus, https://mtstateintrostats.github.io/Syllabus/, the day specific cohort calendar, and watch the Stat 216 Course Tour on D2L before answering the following questions.
+
+1. When are the case study discussion posts due?
+
+\vspace{0.5in}
+
+2.  For your cohort, what day and time are the weekly assignments due on Gradescope?
+
+\vspace{0.5in}
+
+3.  For your cohort, when is Exam 1? Exam 2?
+
+\space{0.5in}
+
+In Stat 216 we will use the statistical package `R` to analyze data.  Read through the instructions on the syllabus and download `R` and `RStudio Desktop` to your computer.  If you have a Chromebook or have problems installing `R` and `RStudio Desktop` on your machine, you will need to use `RStudio Cloud` or an MSU virtual machine.  Read through the preliminaries chapter in the textbook and watch the video `RStudio_GettingStarted` on D2L -> Content -> Primary Resources before completing the following questions.
+
+Open `RStudio` on your computer.  Download the Martian Alphabet `RScript` file from D2L and open in `RStudio`.  If the file does not open directly, open manually:
+
+    * In `RStudio` click on File in the upper left hand corner, choose Open File, find the downloaded file.
+ 
+If you are using `RStudioCloud` watch the video `RStudioCloud_GettingStarted` on D2L -> Content -> Primary Resources to learn how to open the file in `RStudioCloud`.
+
+In the Martian Alphabet `Rscript` file, highlight the first 10 lines of code and click run.  
+
+Throughout the semester we will use the package `tidyverse` to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol %>%.)  We will use the package ggplot2 to create graphs in `RStudio`, the package `mosaic` to use the favstats function to find summary statistics for quantitative variables, and the package `catstats` starting in Chapter 5 to create simulations.  Once you have installed these packages you will only need to use the library function to call each package to use.
+
+The \# sign is not part of the `R` code. 
+It is used by these authors to add comments to the `R` code and explain what each call is telling the program to do.
+`R` will ignore everything after a \# sign when executing the code.
+
+In the Martian Alphabet `RScript` file for the one proportion test, enter your class size (Q3 from the in-class activity) for sample_size and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for as_extreme_as in the one_proportion_test.  Highlight lines 12 - 17 and click run.
+
+4.  Is the distribution created from this code similar to what you saw in class in Q14?
+
+\vspace{1in}
 
 ## Additional notes
 

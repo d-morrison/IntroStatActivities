@@ -11,13 +11,9 @@
 
 * Interpret and evaluate a p-value
 
-* Use bootstrapping to find a confidence interval for a single proportion
-
-* Interpret a confidence interval
-
 ## Terminology review
 
-In today's activity, we will introduce simulation hypothesis testing and confidence intervals for a single categorical variable. Some terms covered in this activity are:
+In today's in-class activity, we will introduce simulation hypothesis testing and confidence intervals for a single categorical variable. Some terms covered in this activity are:
 
 * Parameter of interest
 
@@ -30,10 +26,6 @@ In today's activity, we will introduce simulation hypothesis testing and confide
 * Null distribution
 
 * p-value
-
-* Bootstrapping
-
-* Confidence interval
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
@@ -55,10 +47,10 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 ## Handedness of male boxers
 
-Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional fighters. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male boxers we will see if there is an over-prevalence of left-handed fighters.
+Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers we want to see if there is an over-prevalence of left-handed fighters.
 
 
-### Summary statistics review {-}
+### Summary statistics review: Complete Q1 - 4 before coming to class {-}
 
 1.  What are the observational units?
 
@@ -72,7 +64,7 @@ Left-handedness is a trait that is found in about 10% of the population. Past st
 
 \vspace{0.5in}
 
-4. Write out in context the statistic we will calculate to summarize the data.
+4. Write out in context the statistic we will calculate to summarize the data.  
 
 \vspace{0.5in}
 
@@ -89,6 +81,12 @@ Left-handedness is a trait that is found in about 10% of the population. Past st
 \vspace{0.5in}
 
 7. Did the researchers use a biased or an unbiased method of selection? Explain your answer.
+
+\vspace{1in}
+
+Before completing the hypothesis test, we must check that the cases are independent.  The sample observations are independent if the outcome of one observation does not influence the outcome of another. One way this condition is met is if data come from a simple random sample of the target population.
+
+8.  Are the cases independent? Justify your answer.
 
 \vspace{1in}
 
@@ -112,40 +110,41 @@ handedness %>% count(Stance)  # Count number in each Stance category
 #> 2 right-handed 419
 ```
 
-8.  Calculate the appropriate summary statistic that represents the research question.  Use appropriate notation.
+9.  Using the output above, calculate the appropriate summary statistic that represents the research question.  Use appropriate notation.
 
 \vspace{0.5in}
 
 ### Use statistical analysis methods to draw inferences from the data {-}
 
-When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the true value of interest.  
+When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the true value of interest.  *For example, in the Martian Alphabet Activity the parameter of interest is the true proportion of statistic students who correctly identify Bumba.*
 
-9.  Write out the parameter of interest for this study. *Hint*: The parameter of interest is the true proportion of....
+
+10.  Write out the parameter of interest for this study. 
 
 \vspace{1in}
 
-10.  Using the parameter of interest in question 9, write out the null hypothesis in words.
+11.  Using the parameter of interest in question 10, write out the null hypothesis in words.  What do we assume to be true about the parameter of interest?
 
 \vspace{1in}
 
 \newpage
 The notation used for a true proportion is $\pi$.  Since this summarizes a population, it is a parameter. When writing the **null hypothesis** in notation we set the parameter equal to the null value, $H_0: \pi = \pi_0$
 
-11. Write the null hypothesis in notation using the null value of 0.1 in place of $\pi_0$.
+12. Write the null hypothesis in notation using the null value of 0.1 in place of $\pi_0$ in the equation given above.
 
 \vspace{0.5in}
 
 The **alternative hypothesis** is the claim to be tested and the direction is based on the research question.  
 
-12.  Based on the research question from question 5, are we testing that the parameter is greater than 0.1, less than 0.1 or different than 0.1? 
+13.  Based on the research question from question 5, are we testing that the parameter is greater than 0.1, less than 0.1 or different than 0.1? 
 
 \vspace{0.5in}
 
-13. Write out the alternative hypothesis in words.
+14. Write out the alternative hypothesis in words.
 
 \vspace{1in}
 
-14.  Write out the alternative hypothesis in notation.
+15.  Write out the alternative hypothesis in notation.
 
 \vspace{0.5in}
 
@@ -159,24 +158,25 @@ Notice that these two competing possibilities represent the null and alternative
   
 The null distribution is created under the assumption the null hypothesis is true.  In this case, we assume the true proportion of male boxers who are left handed is 0.1 so we will create 1000 different simulations of 500 boxers under this assumption.
 
-Let's think about how to use cards to create one simulation of 500 boxers under the assumption the null hypothesis is true.  Suppose blue cards represents left-handed and red cards represents right-handed.
+Let's think about how to use red and blue cards to create one simulation of 500 boxers under the assumption the null hypothesis is true.  Suppose blue cards represents left-handed and red cards represents right-handed.
 
-15.  How many cards total do we need?  How many blue ones?  How many red ones?
-
-\vspace{0.5in}
-
-16.  Next, we would mix the cards together and draw 1 card, write down if it's red or blue, and replace the card.  How many times would we need to repeat this process to simulate our sample?
+16.  How many cards total do we need?  How many blue ones?  How many red ones?
 
 \vspace{0.5in}
 
-17.  Once we have one simulated sample, what would we calculate and plot on the null distribution?
+17.  Next, we would mix the cards together and draw 1 card, write down if it's red or blue, and replace the card.  How many times would we need to repeat this process to simulate our sample?
+
+\vspace{0.5in}
+
+18.  Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
+
 \vspace{1in}
 
 We will use the computer to simulate a null distribution of 1000 different samples of 500 male boxers, plotting the proportion who are left handed in each sample, based on the assumption that the true proportion of male boxers who are left handed is 0.1 (or that the null hypothesis is true).  
 
-To use the computer simulation, we will need to enter the "probability of success" ($\pi_0$), "sample size" (the number of observational units in the sample), "number of repetitions" (the number of samples to be generated), "as extreme as" (the observed statistic), and the "direction" (matches the direction of the alternative hypothesis).
+To use the computer simulation, we will need to enter the "probability of success" ($\pi_0$), "sample size" (the number of observational units or cases in the sample), "number of repetitions" (the number of samples to be generated), "as extreme as" (the observed statistic), and the "direction" (matches the direction of the alternative hypothesis).
 
-18.  What values should be entered into the simulation?
+19.  What values should be entered for each of the following into the one proportion test to create 1000 simulations?
 
 \vspace{.2in}
 * Probability of success:
@@ -195,91 +195,57 @@ To use the computer simulation, we will need to enter the "probability of succes
 
 \vspace{.2in}
 
-
-
-The following `R` code produced the null distribution with 1000 simulations that follows.  Check that your answers to question 18 match the code inputs.
+Using the provided `RScript` file, fill in the values/words for xx with your answers from question 19 to create a null distribution with 1000 simulations, highlight and run lines 1 - 14.
 
 
 ```r
-one_proportion_test(probability_success = 0.1, #Null hypothesis value
-                    sample_size = 500, #Enter sample size
+one_proportion_test(probability_success = xx, #Null hypothesis value
+                    sample_size = xx, #Enter sample size
                     number_repetitions = 1000, #Enter number of simulations
-                    as_extreme_as = 81/500, #observed statistic
-                    direction = "greater", #specify direction of alternative hypothesis
+                    as_extreme_as = xx, #observed statistic
+                    direction = "xx", #specify direction of alternative hypothesis
                     report_value = "proportion") #Reporting proportion or number of successes?
 ```
 
-
-
-\begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-3-1} \end{center}
+20.  Sketch the null distribution created from the R code here.
 
 \newpage
 
-19. Around what value is the null distribution centered?  Why does that make sense?
+21. Around what value is the null distribution centered?  Why does that make sense?
 
 \vspace{1in}
 
-20. Where does the statistic (value from question 8) fall in the null distribution?  Is it towards the center or in one of the tails?  
+22. Circle the statistic (value from question 9) on the distribution you drew in question 20.  Where does the statistic fall in the null distribution?  Is it near the center of the distribution (near 0.1) or in one of the tails of the distribution?  
 
 \vspace{1in}
 
-21.  Is the statistic likely to happen or unlikely to happen if the true proportion of male boxers is 0.1?  Explain your answer.
+23.  Is the statistic likely to happen or unlikely to happen if the true proportion of male boxers who are left-handed is 0.1?  Explain your answer using the plot.
 
 \vspace{1in}
 
-22.  Using the simulation, what is the proportion of samples at this summary statistic or greater, if the true proportion of male boxers is 0.1? *Hint*: Look under the simulation.
+24.  Using the simulation, what is the proportion of simulated samples at the summary statistic or greater, if the true proportion of male boxers who are left-handed is 0.1? *Hint*: Look under the simulation.
 
 \vspace{1in}
 |         This is the **p-value**.  The smaller the p-value the more evidence we have against the null hypothesis.
 
-23. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one.)
+25. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one.)
 
 
 \begin{center}\includegraphics[width=0.9\linewidth]{images/soe_gradient_grayscale} \end{center}
 
-\newpage
-
-A **point estimate** provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible range of values for the parameter. This plausible range of values for the population parameter is called a confidence interval. 
-
-We will use bootstrapping to find the 95% confidence interval. 
-
-24.  In your own words, explain the bootstrapping process.
-\vspace{1in}
-
-
-The following `R` code produced the following bootstrap distribution with 1000 simulations. 
-
-
-```r
-one_proportion_bootstrap_CI(sample_size = 500, #Sample size
-                    number_successes = 81, #Observed number of successes
-                    number_repetitions = 1000, #Number of bootstrap samples to use
-                    confidence_level = 0.95) #Confidence level as a decimal
-```
-
-
-
-\begin{center}\includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/unnamed-chunk-6-1} \end{center}
-
-25. What is the value at the center of this distribution?  Why does this make sense?
-\vspace{.8in}
-
-16. Explain why the two vertical lines are at the 2.5th percentile and the 97.5th percentile.
-
-\vspace{.8in}
-
-27. Report the 95% bootstrapped confidence interval for $\pi$.  Use interval notation: (lower value, upper value).
+26.  What does the p-value measure?  Interpret the p-value in context of the problem.
 
 \vspace{1in}
-28.  Interpret the 95% confidence interval in context.
-
-\vspace{.8in}
 
 ### Communicate the results and answer the research question {-}
 
 When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.
 
-29.  Write a paragraph summarizing the results.  Be sure to describe:
+27. Write a conclusion in context of the study.
+
+\vspace{1in}
+
+28.  Write a paragraph summarizing the results.  Be sure to describe:
 
 * Summary statistic
 
@@ -287,21 +253,79 @@ When we write a conclusion we answer the research question by stating how much e
 
 * Conclusion (written to answer the research question)
 
-* Confidence interval and interpretation
-
 * Generalization - to what group do the results apply?
 
 \vspace{3.5in}
 
 ### Revisit and look forward {-}
 
-30. Suggest a new research question that you might investigate, building on what you learned in this study.
+29. Suggest a new research question that you might investigate, building on what you learned in this study.
 
 \vspace{.6in}
 
 \newpage
 
+
+## Out of Class Activity
+
+The remaining questions cover theory based methods for testing a single categorical variable.  Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
+
+A single proportion can be mathematically modeled using the normal distribution if certain conditions are met.
+
+Conditions for the sample distribution of $\hat{p}$.
+
+* Independence: The sample’s observations are independent, e.g., are from a simple random sample
+
+* Success-Failure Condition: We *expect* to see at least 10 successes and 10 failures in the sample, $n\pi≥10$  and $n(1-\pi)≥10$
+
+1.  We already verified that the independence condition is satisfied in Q8 Is the success-failure condition met to model the data with the Normal distribution?  Show your work to support your answer.
+
+\vspace{1in}
+
+To calculate the standardized statistic we use: 
+
+$$
+Z = \frac{\text{point estimate} - \text{null value}}{SE}
+$$
+For a single categorical variable the standardized sample proportion is calculated using:
+
+$$
+Z = \frac{\hat{p} - \pi_0}{SE_0(\hat{p})}
+$$
+where the standard error is calculated using the null value.
+
+$$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$
+2.  Calculate the null standard error of the sample proportion.
+
+\vspace{1in}
+
+3.  Calculate the standardized sample proportion.  
+
+\vspace{1in}
+
+The standardized statistic measures the number of standard errors the sample statistic is from the null value.
+
+4.  Interpret the standardized sample proportion from question 3 in context of the problem.
+
+\vspace{1in}
+
+We will use the pnorm function in `R` to find the p-value. Use the provided `RScript` file and enter the value of the standardized statistic calculated in question 3 at xx, highlight and run lines 18 - 20.
+
+
+```r
+pnorm(xx, # Enter value of standardized statistic
+      m=0, s=1 # Using the standard normal mean = 0, sd = 1
+      lower.tail=TRUE) # Gives a p-value less than the standardized statistic
+```
+  
+
+5.  Report the p-value obtained from the R output.
+\vspace{0.2in}
+
+6.  Is the p-value found in question 5 similar to the p-value found using the simulation test?  Explain why you would expect this to be true.
+
+\vspace{0.5in}
+
 ## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
-

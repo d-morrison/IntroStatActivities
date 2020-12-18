@@ -13,10 +13,12 @@ rmd_files: [
   "04-EDA-quantitative.Rmd",
   "05-EDA-multivariate.Rmd",
   "06-inference-1cat.Rmd",
-  "07-inference-2cat.Rmd",
-  "08-paired.Rmd",
-  "09-inference-2quant.Rmd",
-  "10-regression.Rmd"
-  # "11-references.Rmd"
+  "07-inference-CI-1cat.Rmd",
+  "08-inference-2cat_test.Rmd",
+  "09-inference-2cat_CI.Rmd",
+  "10-paired.Rmd",
+  "11-inference-1ofeach.Rmd",
+  "12-regression.Rmd"
+  # "13-references.Rmd"
   ]
 before_chapter_script: "_common.R"

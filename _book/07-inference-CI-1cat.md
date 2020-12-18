@@ -70,7 +70,8 @@ To use the computer simulation to create a bootstrap distribution, we will need 
 
 Using the provided `RScript` file, fill in the values/words for xx with your answers from question 6 to create a bootstrap distribution with 1000 simulations, highlight and run lines 1 - 11.
 
-```{r, echo=TRUE, eval=FALSE}
+
+```r
 one_proportion_bootstrap_CI(sample_size = xx, #Sample size
                     number_successes = xx, #Observed number of successes
                     number_repetitions = 1000, #Number of bootstrap samples to use
@@ -108,12 +109,17 @@ one_proportion_bootstrap_CI(sample_size = xx, #Sample size
 
 14.  The following `R` code produced the bootstrap distribution with 1000 simulations that follows.  What value changed in the code? 
 
-```{r, echo=TRUE}
+
+```r
 one_proportion_bootstrap_CI(sample_size = 500, #Sample size
                     number_successes = 81, #Observed number of successes
                     number_repetitions = 1000, #Number of bootstrap samples to use
                     confidence_level = 0.90) #Confidence level as a decimal
 ```
+
+
+
+\begin{center}\includegraphics[width=0.7\linewidth]{07-inference-CI-1cat_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 \vspace{0.5in}
 
@@ -185,8 +191,13 @@ $$\hat{p}\pm z^* SE(\hat{p})$$
 
 The $z^*$ multiplier is found under the standard normal distribution. We find the values that encompass the middle 95\% of the distribution.  If 95\% of the standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail.  The qnorm function in `R` will tell us the $z^*$ value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile). 
 
-```{r, echo=TRUE, collapse=FALSE}
+
+```r
 qnorm(0.975) # Multiplier for 95% confidence interval
+```
+
+```
+#> [1] 1.959964
 ```
 
 3. Using the multiplier of $z^*$ = 1.96, calculate the 95\% confidence interval for the true proportion of male boxers who are left-handed. 

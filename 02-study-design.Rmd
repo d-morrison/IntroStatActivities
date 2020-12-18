@@ -157,31 +157,6 @@ For the next exercises, identify the explanatory variable, the response variable
     What is the scope of inference for this study?
 \vspace{0.5in}
 
-```{r confounding variable}
-par_og <- par(no.readonly = TRUE) # save original par
-par(mar = rep(0, 4))
-plot(c(-0.05, 1.2),
-     c(0.39, 1),
-     type = 'n',
-     axes = FALSE)
-text(0.59, 0.89, 'confounding variable', cex = 1.3)
-rect(0.4, 0.8, 0.78, 1)
-text(0.3, 0.49, 'explanatory', cex = 1.3)
-rect(0.1, 0.4, 0.48, 0.6)
-arrows(0.49, 0.78, 0.38, 0.62,
-       length = 0.08, lwd = 1.5)
-text(0.87, 0.5, 'response', cex = 1.3)
-rect(0.71,0.4, 1.01, 0.6)
-arrows(0.67, 0.78, 0.8, 0.62,
-       length = 0.08, lwd = 1.5)
-
-arrows(0.5, 0.5, 0.69, 0.5,
-       length = 0.08, col = COL[6,2])
-text(0.595, 0.565, "?",
-     cex = 1.5, col = COL[4])
-par(par_og) # restore original par
-```
-
 7. For each of the studies in questions 5 and 6, determine whether confounding variables could be an issue. If so, identify a potential confounding variable and explain how it meets the definition of a confounding variable.
 \vspace{1.5in}
 

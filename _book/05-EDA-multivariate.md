@@ -47,33 +47,32 @@ We will revisit the data set used last week collected on Movies released in 2016
 
 \newpage
 
-### Vocabulary review {-}
+### Vocabulary review. Complete questions 1 - 4 before coming to class.{-}
+
+Note: You will need to use the provided `RScript` for activity 5 to complete question 3.
+
+
 
 1.  What type of plot is used to display two quantitative variables?
 
 \vspace{0.2in}
 
-2.  What summary statistics are used to describe the relationship between two quantitative variables?
+2.  What three summary statistics are used to describe the relationship between two quantitative variables?
 
 \vspace{0.3in}
 
-We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. This shows a scatterplot of 'Budget' as a predictor of 'Revenue' (Note: both variables are measures in "millions of dollars").  
+We will look at the relationship between 'Budget' and 'Revenue' for movies released in 2016. Enter the variable name `budget_mil` for xx and `revenue_mil` for yy to create the scatterplot. (Note: both variables are measures in "millions of dollars").  Highlight and run lines 1 - 12.
 
 
 ```r
-movies <- read.csv("data/Movies2016.csv") #Reads in data set
 movies %>% #Data set pipes into...
-ggplot(aes(x = budget_mil, y = revenue_mil))+  #Specify variables
+ggplot(aes(x = xx, y = yy))+  #Specify variables
   geom_point() +  #Add scatterplot of points
   labs(x = "Budget in Millions ($)",  #Label x-axis
        y = "Revenue in Millions ($)",  #Label y-axis
        title = "Revenue vs. Budget") + #Be sure to tile your plots
   geom_smooth(method = "lm", se = FALSE)  #Add regression line
 ```
-
-
-
-\begin{center}\includegraphics[width=0.7\linewidth]{05-EDA-multivariate_files/figure-latex/unnamed-chunk-1-1} \end{center}
 3. Assess the four features of the scatterplot that describe this relationship. Describe each feature using a complete sentence!
 
 * Form (linear, non-linear)
@@ -104,28 +103,26 @@ Correlation measures the strength and the direction between two quantitative var
 
 
 ```r
-# Take subset of variables
-movies %>%  #Data set pipes into...
-  select(c("budget_mil", "revenue_mil",  # Take subset of variables
+movies %>%  #Data set pipes into
+  select(c("budget_mil", "revenue_mil", 
            "duration", "imdb_score", 
            "movie_facebook_likes")) %>%
-  cor(use="pairwise.complete.obs") %>% # Calculate correlation matrix
-  round(3)  # Round to 3 decimals
+  cor(use="pairwise.complete.obs")
 ```
 
 ```
-#>                      budget_mil revenue_mil duration imdb_score
-#> budget_mil                1.000       0.686    0.463      0.292
-#> revenue_mil               0.686       1.000    0.227      0.398
-#> duration                  0.463       0.227    1.000      0.261
-#> imdb_score                0.292       0.398    0.261      1.000
-#> movie_facebook_likes      0.678       0.723    0.438      0.309
+#>                      budget_mil revenue_mil  duration imdb_score
+#> budget_mil            1.0000000   0.6862946 0.4627869  0.2917576
+#> revenue_mil           0.6862946   1.0000000 0.2266835  0.3975692
+#> duration              0.4627869   0.2266835 1.0000000  0.2610799
+#> imdb_score            0.2917576   0.3975692 0.2610799  1.0000000
+#> movie_facebook_likes  0.6781949   0.7228596 0.4378434  0.3090747
 #>                      movie_facebook_likes
-#> budget_mil                          0.678
-#> revenue_mil                         0.723
-#> duration                            0.438
-#> imdb_score                          0.309
-#> movie_facebook_likes                1.000
+#> budget_mil                      0.6781949
+#> revenue_mil                     0.7228596
+#> duration                        0.4378434
+#> imdb_score                      0.3090747
+#> movie_facebook_likes            1.0000000
 ```
 
 5.  Using the output above, which two variables have the strongest correlation?
@@ -136,7 +133,7 @@ movies %>%  #Data set pipes into...
 
 \vspace{0.3in}
 
-7.  Based on the value of correlation what would the sign of the slope be? Positive or negative?  Explain.
+7.  Based on the value of correlation found in question 6, what would the sign of the slope be? Positive or negative?  Explain.
 
 \vspace{0.5in}
 
@@ -171,7 +168,7 @@ You may remember from middle and high school that slope $=\frac{\mbox{rise}}{\mb
 
 Using $b_1$ to represent slope, we can write that as the fraction $\frac{b_1}{1}$. 
 
-Therefore, the slope predicts the how much the line will *rise* for each *run* of +1. In other words, as the $x$ variable increases by 1 unit, the $y$ variable is expected to change (increase/decrease) by the value of slope.
+Therefore, the slope predicts how much the line will *rise* for each *run* of +1. In other words, as the $x$ variable increases by 1 unit, the $y$ variable is expected to change (increase/decrease) by the value of slope.
 
 
 10.  Write out the least squares line using the summary statistics provided in proper statistical notation.
@@ -208,26 +205,35 @@ $e_i=y_i-\hat{y}_i$
 
 \newpage
 
+##Out of Class Activity
 ### Coefficient of determination (squared correlation) {-}
 
-The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $r^2$ measures the proportion of variation in the response that is explained by the least squares line with the explanatory variable.  
+The third summary measure from two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $r^2$ measures the proportion of variation in the response that is explained by the least squares line with the explanatory variable.  There are two ways to calculate the coefficient of determination. 
 
+|    $r^2 = (r)^2$ - square the value of the correlation coefficient
 
-15.  Use the correlation, $r$, to calculate the coefficient of determination between 'Budget' and 'Revenue', $r^2$.
+|    $r^2 = \frac{s_{response}^2 - s_{residuals}^2}{s_{response}^2}$ - using the variances
+
+1.  Use the correlation, $r$ found in question 6, to calculate the coefficient of determination between 'Budget' and 'Revenue', $r^2$.
 
 \vspace{.4in}
 
-16.  Interpret the coefficient of determination in context of the problem.
+2.  The variance of the response variable, revenue in millions, is about $s_{revenue}^2 = 8024.261$ and the variability in the residuals is about $s_{residuals}^2 = 4244.832$.  Use these values to calculate the coefficient of determination.  Verify that your answers to 1 and 2 are the same.
+
+\vspace{1in}
+
+3.  Interpret the coefficient of determination in context of the problem.
 
 \vspace{.6in}
 
 ### Multivariate plots {-}
-What if we wanted to see if the relationship between 'Budget' and 'Revenue' differs if we add another variable into the picture?  The following plot visualized three variables, creating a **multivariate** plot. 
+What if we wanted to see if the relationship between 'Budget' and 'Revenue' differs if we add another variable into the picture?  The following plot visualizes three variables, creating a **multivariate** plot. 
 
 
 ```r
 movies %>% #Data set pipes into...
-ggplot(aes(x = budget_mil, y = revenue_mil, color = content_rating)) +  #Specify variables
+  filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
+  ggplot(aes(x = budget_mil, y = revenue_mil, color = content_rating)) +  #Specify variables
   geom_point(aes(shape = content_rating), size = 3) +  #Add scatterplot of points
   labs(x = "Budget in Millions ($)",  #Label x-axis
        y = "Revenue in Millions ($)",  #Label y-axis
@@ -239,13 +245,13 @@ ggplot(aes(x = budget_mil, y = revenue_mil, color = content_rating)) +  #Specify
 
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{05-EDA-multivariate_files/figure-latex/unnamed-chunk-4-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{05-EDA-multivariate_files/figure-latex/unnamed-chunk-5-1} \end{center}
 
-17.  Identify the three varables plotted in this graph.
+4.  Identify the three variables plotted in this graph.
 
 \vspace{0.5in}
 
-18. Does the relationship between 'Budget' and 'Revenue' differ among the different content ratings?  Explain.
+5. Does the relationship between 'Budget' and 'Revenue' differ among the different content ratings?  Explain.
 
 \vspace{1in}
 

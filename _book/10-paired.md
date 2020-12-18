@@ -36,25 +36,21 @@ In June 2020, the social distancing efforts and stay-at-home directives to help 
 Have high population-density US cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated US cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015--2019). Note that higher AQI scores indicate worse air quality. A box plot of the differences in AQI scores for the 33 cities and a table of summary statistics are shown below.
 
 
-```{r covid, fig.cap="The India Gate in New Delhi, India.", out.width="60%"}
-include_graphics("images/air_pollution_greyscale.png")
-```
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/air_pollution_greyscale} 
+
+}
+
+\caption{The India Gate in New Delhi, India.}(\#fig:covid)
+\end{figure}
 
 \vspace{.05in}
 
-```{r, include=FALSE}
-Air <- read.csv("data/AirPollutionCOVID.csv") # Read data in
-```
 
-```{r, out.width="60%"}
-Air %>% # Pipe data set into...
-  ggplot(aes(y = Difference)) + #Variables to be used
-    geom_boxplot() + #make a boxplot
-    labs(title = "Boxplot of the Differences in AQI Scores",  #Title plot
-         y = "Difference in air quality score") +
-  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank()) +
-  coord_flip()
-```
+
+
+\begin{center}\includegraphics[width=0.6\linewidth]{10-paired_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 \vspace{.2in}
 
@@ -130,7 +126,8 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 13.  Use the provided `RScript` file and enter the calculated value from question 12 for xx to simulate the null distribution and enter the summary statistic from question 10 for yy to find the p-value.  Highlight and run lines 1 - 21.
 
-```{r, echo=TRUE, eval=FALSE, warning = FALSE}
+
+```r
     paired_test(data = Air$Difference,   #Vector of differences or data set with column for each group
             shift = xx,   #Shift needed for bootstrap hypothesis test
             as_extreme_as = yy,  #Observed statistic
@@ -167,7 +164,8 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 20.  Using the provided `RScript` file fill in the missing value at xx in the paired bootstrap CI to find a 99\% confidence interval, highlight and run lines 24 - 27.  Report the confidence interval in interval notation.
 
-```{r, echo=TRUE, eval=FALSE, warning = FALSE}
+
+```r
 paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
                     number_repetitions = 1000, #Number of bootstrap samples for CI
                     confidence_level = xx,  #Confidence level in decimal form
@@ -247,7 +245,8 @@ where the standard error of the mean difference
 
 Using the provided `RScript` file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 33 - 1 = 32, and lower.tail = TRUE to find the p-value.  Highlight and run line 31.  
 
-```{r, echo=TRUE, eval=FALSE}
+
+```r
 pt(xx, df=32, lower.tail=TRUE)
 ```
 
@@ -262,8 +261,10 @@ To calculate the 99\% confidence interval use the following formula:
 
 For a 99\% confidence interval we are finding the $t^*$ value at the 99.5th percentile with df = n - 1 = 33 - 1 = 32.
 
-```{r, echo=TRUE}
+
+```r
 qt(0.995, df = 32, lower.tail=TRUE)
+#> [1] 2.738481
 ```
 
 5.  Calculate the 99\% confidence interval using theory-based methods.

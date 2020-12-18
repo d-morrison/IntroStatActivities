@@ -23,6 +23,7 @@ suppressMessages(library(mosaic))
 suppressMessages(library(car))
 suppressMessages(library(readr))
 suppressMessages(library(kableExtra))
+suppressMessages(library(catstats))
 
 # suppressMessages(library(ggmosaic))
 # suppressMessages(library(skimr))
