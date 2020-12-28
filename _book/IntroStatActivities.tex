@@ -90,7 +90,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -136,6 +136,9 @@
 [\vspace{1.5ex}%
 \titlerule]
 \titlespacing*{\chapter}{0pt}{-40pt}{20pt}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{plainnat}
 
@@ -157,7 +160,10 @@ STAT 216 Activity Coursepack}
 
 \newpage
 \thispagestyle{empty}
-\mbox{}
+
+This resource was developed by Melinda Yager, Jade Schmidt, and Stacey Hancock in 2021 to accompany the online textbook: Carnegie, N., Hancock, S., Meyer, E., Schmidt, J., and Yager, M. (2021). \emph{Montana State Introductory Statistics with R}. Montana State University. \url{https://mtstateintrostats.github.io/IntroStatTextbook/}.
+
+This resource is released under a \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons BY-NC-SA 4.0} license unless otherwise noted.
 
 \setcounter{tocdepth}{0}
 \tableofcontents
@@ -169,7 +175,64 @@ STAT 216 Activity Coursepack}
 \chapter*{Preface}\label{preface}}
 \addcontentsline{toc}{chapter}{Preface}
 
-This coursepack accompanies the textbook for STAT 216: Introduction to Statistics at Montana State University. Each of the activities in this workbook is designed to target specific learning outcomes of the course, giving you practice with important statistical concepts in a group setting with instructor guidance. Bring this workbook with you to class each week, and take notes in the workbook as you would your own notes. A well-written complete workbook will provide an optimal study guide for exams! The activities are broken into three sections: pre-class, in-class, and after class. Read through the introduction for each activity and complete the pre-class questions before attending class each week. In class you will work through the in-class section with your group and instructor. After class you will complete the out of class part of the activity.
+This coursepack accompanies the textbook for STAT 216: Introduction to Statistics at Montana State University. Each of the activities in this workbook is designed to target specific learning outcomes of the course, giving you practice with important statistical concepts in a group setting with instructor guidance. Bring this workbook with you to class each week, and take notes in the workbook as you would your own notes. A well-written complete workbook will provide an optimal study guide for exams!
+
+The activities in this coursepack are broken into three sections: pre-class, in-class, and after class. Read through the introduction for each activity and complete the pre-class questions before attending class each week. In class, you will work through the in-class section with your group and instructor. After class, you will complete the out of class part of the activity.
+
+STAT 216 is a 3-credit blended course. Rather than meeting for a total of 150 structured minutes in class per week, students meet with their instructor and cohort of classmates for 50 minutes of class per week. The other 100 minutes typically spent in class are instead spent outside of class watching instructor video lectures, reading the textbook, working through case studies, and participating in online discussion with your classmates. This structure serves two purposes: (1) enhance the safety of our community during the COVID-19 pandemic, and (2) provide additional flexibility for students to create their own schedule and make their own decisions on how they learn best.
+
+In our experience, it takes six to nine hours per week outside of class to achieve a good grade in STAT 216 -- this means six to nine hours outside of the 150 minutes of time set aside for learning course material each week. By ``good'' we mean at least a C because a grade of C- or below does not count toward fulfilling degree requirements. Many of you set your goals higher than just getting a C, and we fully support that. You
+need roughly nine hours per week to review past activities, read feedback on previous assignments, complete current assignments, and prepare for the next day's class. A typical week in the life of a STAT 216 student looks like:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Prior to weekly class meeting}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Read assigned sections of textbook, using the provided reading guides to take notes on the material.
+  \item
+    Watch assigned videos on that week's content, pausing to take notes and answer video quiz questions.
+  \item
+    Read through the introduction to the week's in-class activity and complete the pre-class questions.
+  \item
+    Read through the week's homework assignment and note any questions you may have on the content.
+  \end{itemize}
+\item
+  \emph{In class meeting}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Work through in-class activity with your classmates and instructor, taking detailed notes on your answers to each question in the activity.
+  \end{itemize}
+\item
+  \emph{After weekly class meeting}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Complete the out-of-class part of the activity, plus any additional parts of the activity you did not complete in class.
+  \item
+    Review the posted activity solutions and wrap-up videos, and take notes on key points.
+  \item
+    Finish watching any remaining assigned videos or readings for the week.
+  \item
+    Read through the week's case study and post case study discussion posts on D2L.
+  \item
+    Complete the week's homework assignment.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{stat-216-syllabus}{%
+\chapter*{STAT 216 Syllabus}\label{stat-216-syllabus}}
+\addcontentsline{toc}{chapter}{STAT 216 Syllabus}
+
+The course syllabus for STAT 216 can also be found online at \url{https://mtstateintrostats.github.io/Syllabus/}.
+
+TODO: Copy and paste syllabus here once finalized.
 
 \hypertarget{spring-2021-calendar-of-in-class-activities}{%
 \chapter*{Spring 2021 Calendar of In-Class Activities}\label{spring-2021-calendar-of-in-class-activities}}
@@ -1158,8 +1221,8 @@ Open the provided \texttt{RScript} file for activity 3 in \texttt{RStudio} or \t
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{#This will read in the data set}
-\NormalTok{myopia <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv"}\NormalTok{) }
+\CommentTok{\#This will read in the data set}
+\NormalTok{myopia \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv"}\NormalTok{) }
 \end{Highlighting}
 \end{Shaded}
 
@@ -1171,13 +1234,13 @@ If we wanted to know how many children in our data set were in each level of myo
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{myopia }\OperatorTok{%>%}\StringTok{ }\CommentTok{#Data set piped into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ xx)) }\OperatorTok{+}\StringTok{   }\CommentTok{#This specifies the variable}
-\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{#Tell it to make a bar plot}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Frequency Bar Plot of Level of Myopia"}\NormalTok{,  }\CommentTok{#Give your plot a title}
-       \DataTypeTok{x =} \StringTok{"Frequency"}\NormalTok{,   }\CommentTok{#Label the x axis}
-       \DataTypeTok{y =} \StringTok{"Level of Myopia"}\NormalTok{)  }\OperatorTok{+}\StringTok{ }\CommentTok{#Label the y axis}
-\StringTok{  }\KeywordTok{coord_flip}\NormalTok{()  }\CommentTok{#Turn the bars so they are vertical}
+\NormalTok{myopia }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\#Data set piped into...}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ xx)) }\OperatorTok{+}\StringTok{   }\CommentTok{\#This specifies the variable}
+\StringTok{  }\KeywordTok{geom\_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Tell it to make a bar plot}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Frequency Bar Plot of Level of Myopia"}\NormalTok{,  }\CommentTok{\#Give your plot a title}
+       \DataTypeTok{x =} \StringTok{"Frequency"}\NormalTok{,   }\CommentTok{\#Label the x axis}
+       \DataTypeTok{y =} \StringTok{"Level of Myopia"}\NormalTok{)  }\OperatorTok{+}\StringTok{ }\CommentTok{\#Label the y axis}
+\StringTok{  }\KeywordTok{coord\_flip}\NormalTok{()  }\CommentTok{\#Turn the bars so they are vertical}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1206,12 +1269,12 @@ We could also choose to display the data as a proportion in a relative frequency
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{myopia }\OperatorTok{%>%}\StringTok{ }\CommentTok{#Data set piped into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ Sight)) }\OperatorTok{+}\StringTok{   }\CommentTok{#This specifies the variable}
-\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ ..prop.., }\DataTypeTok{group =} \DecValTok{1}\NormalTok{)) }\OperatorTok{+}\StringTok{  }\CommentTok{#Tell it to make a bar plot with proportions}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Relative Frequency Bar Plot of Level of Myopia"}\NormalTok{,  }\CommentTok{#Give your plot a title}
-       \DataTypeTok{x =} \StringTok{"Level of Myopia"}\NormalTok{,   }\CommentTok{#Label the x axis}
-       \DataTypeTok{y =} \StringTok{"Relative Frequency"}\NormalTok{)  }\CommentTok{#Label the y axis}
+\NormalTok{myopia }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\#Data set piped into...}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ Sight)) }\OperatorTok{+}\StringTok{   }\CommentTok{\#This specifies the variable}
+\StringTok{  }\KeywordTok{geom\_bar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ ..prop.., }\DataTypeTok{group =} \DecValTok{1}\NormalTok{)) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Tell it to make a bar plot with proportions}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Relative Frequency Bar Plot of Level of Myopia"}\NormalTok{,  }\CommentTok{\#Give your plot a title}
+       \DataTypeTok{x =} \StringTok{"Level of Myopia"}\NormalTok{,   }\CommentTok{\#Label the x axis}
+       \DataTypeTok{y =} \StringTok{"Relative Frequency"}\NormalTok{)  }\CommentTok{\#Label the y axis}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1237,13 +1300,13 @@ To examine the differences in level of myopia for the level of light, we would c
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{myopia }\OperatorTok{%>%}\StringTok{ }\CommentTok{#Data set piped into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{fill =}\NormalTok{ yy)) }\OperatorTok{+}\StringTok{   }\CommentTok{#This specifies the variables}
-\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{, }\DataTypeTok{position =} \StringTok{"fill"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{#Tell it to make a stacked bar plot}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Segmented Bar Plot of Night Light Use by Level of Myopia"}\NormalTok{,  }\CommentTok{#Make sure to title your plot }
-       \DataTypeTok{x =} \StringTok{"Level of Light"}\NormalTok{,   }\CommentTok{#Label the x axis}
-       \DataTypeTok{y =} \StringTok{""}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{#Remove y axis label}
-\StringTok{    }\KeywordTok{scale_fill_grey}\NormalTok{()  }\CommentTok{#Make figure black and white}
+\NormalTok{myopia }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\#Data set piped into...}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{fill =}\NormalTok{ yy)) }\OperatorTok{+}\StringTok{   }\CommentTok{\#This specifies the variables}
+\StringTok{  }\KeywordTok{geom\_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{, }\DataTypeTok{position =} \StringTok{"fill"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Tell it to make a stacked bar plot}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Segmented Bar Plot of Night Light Use by Level of Myopia"}\NormalTok{,  }\CommentTok{\#Make sure to title your plot }
+       \DataTypeTok{x =} \StringTok{"Level of Light"}\NormalTok{,   }\CommentTok{\#Label the x axis}
+       \DataTypeTok{y =} \StringTok{""}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Remove y axis label}
+\StringTok{    }\KeywordTok{scale\_fill\_grey}\NormalTok{()  }\CommentTok{\#Make figure black and white}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1415,9 +1478,9 @@ The \texttt{favstats} function from the \texttt{mosaic} package gives the summar
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/Movies2016.csv"}\NormalTok{) }\CommentTok{# Read in data set}
-\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{#Data set piped into...}
-\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(imdb_score)) }\CommentTok{#Apply favstats function to imdb_score}
+\NormalTok{movies \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/Movies2016.csv"}\NormalTok{) }\CommentTok{\# Read in data set}
+\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\#Data set piped into...}
+\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(imdb\_score)) }\CommentTok{\#Apply favstats function to imdb\_score}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1475,12 +1538,12 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{#Data set piped into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx)) }\OperatorTok{+}\StringTok{   }\CommentTok{#Name variable to plot}
-\StringTok{  }\KeywordTok{geom_histogram}\NormalTok{(}\DataTypeTok{binwidth =} \FloatTok{0.5}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{#Create histogram with specified binwidth}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Histogram of IMDb Score of Movies in 2016"}\NormalTok{, }\CommentTok{#title for plot}
-       \DataTypeTok{x =} \StringTok{"IMDb Score"}\NormalTok{, }\CommentTok{#Label for x axis}
-       \DataTypeTok{y =} \StringTok{"Frequency"}\NormalTok{) }\CommentTok{#Label for y axis}
+\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\#Data set piped into...}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx)) }\OperatorTok{+}\StringTok{   }\CommentTok{\#Name variable to plot}
+\StringTok{  }\KeywordTok{geom\_histogram}\NormalTok{(}\DataTypeTok{binwidth =} \FloatTok{0.5}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Create histogram with specified binwidth}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Histogram of IMDb Score of Movies in 2016"}\NormalTok{, }\CommentTok{\#title for plot}
+       \DataTypeTok{x =} \StringTok{"IMDb Score"}\NormalTok{, }\CommentTok{\#Label for x axis}
+       \DataTypeTok{y =} \StringTok{"Frequency"}\NormalTok{) }\CommentTok{\#Label for y axis}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1532,9 +1595,9 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Data set pipes into...}
-\StringTok{  }\KeywordTok{select}\NormalTok{(imdb_score) }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Select imdb_score variable}
-\StringTok{  }\KeywordTok{slice_min}\NormalTok{(imdb_score, }\DataTypeTok{n =} \DecValTok{3}\NormalTok{)  }\CommentTok{# Show 3 smallest values}
+\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set pipes into...}
+\StringTok{  }\KeywordTok{select}\NormalTok{(imdb\_score) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Select imdb\_score variable}
+\StringTok{  }\KeywordTok{slice\_min}\NormalTok{(imdb\_score, }\DataTypeTok{n =} \DecValTok{3}\NormalTok{)  }\CommentTok{\# Show 3 smallest values}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1547,9 +1610,9 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Data set pipes into...}
-\StringTok{  }\KeywordTok{select}\NormalTok{(imdb_score) }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Select imdb_score variable}
-\StringTok{  }\KeywordTok{slice_max}\NormalTok{(imdb_score, }\DataTypeTok{n =} \DecValTok{3}\NormalTok{)  }\CommentTok{# Show 3 largest values}
+\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set pipes into...}
+\StringTok{  }\KeywordTok{select}\NormalTok{(imdb\_score) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Select imdb\_score variable}
+\StringTok{  }\KeywordTok{slice\_max}\NormalTok{(imdb\_score, }\DataTypeTok{n =} \DecValTok{3}\NormalTok{)  }\CommentTok{\# Show 3 largest values}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1573,13 +1636,13 @@ The box plot of movie budgets (in millions) by content rating is plotted using t
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{%>%}\StringTok{  }\CommentTok{#Data set piped into...}
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content_rating }\OperatorTok{!=}\StringTok{ "Not Rated"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Remove Not Rated movies}
-\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ yy, }\DataTypeTok{x =}\NormalTok{ xx))}\OperatorTok{+}\StringTok{  }\CommentTok{#Identify variables}
-\StringTok{  }\KeywordTok{geom_boxplot}\NormalTok{()}\OperatorTok{+}\StringTok{  }\CommentTok{#Tell it to make a box plot}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Side by side box plot of budget by content rating"}\NormalTok{,  }\CommentTok{#Title}
-       \DataTypeTok{x =} \StringTok{"Content Rating"}\NormalTok{,    }\CommentTok{#x-axis label}
-       \DataTypeTok{y =} \StringTok{"Budget (in Millions)"}\NormalTok{)  }\CommentTok{#y-axis label}
+\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{  }\CommentTok{\#Data set piped into...}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(content\_rating }\OperatorTok{!=}\StringTok{ "Not Rated"}\NormalTok{) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Remove Not Rated movies}
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ yy, }\DataTypeTok{x =}\NormalTok{ xx))}\OperatorTok{+}\StringTok{  }\CommentTok{\#Identify variables}
+\StringTok{  }\KeywordTok{geom\_boxplot}\NormalTok{()}\OperatorTok{+}\StringTok{  }\CommentTok{\#Tell it to make a box plot}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Side by side box plot of budget by content rating"}\NormalTok{,  }\CommentTok{\#Title}
+       \DataTypeTok{x =} \StringTok{"Content Rating"}\NormalTok{,    }\CommentTok{\#x{-}axis label}
+       \DataTypeTok{y =} \StringTok{"Budget (in Millions)"}\NormalTok{)  }\CommentTok{\#y{-}axis label}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1631,8 +1694,8 @@ To use the favstats function in the mosaic package with two variables, we will e
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{#Data set piped into...}
-\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(imdb_score}\OperatorTok{~}\NormalTok{content_rating)) }\CommentTok{#Apply favstats function to imdb_score}
+\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\#Data set piped into...}
+\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(imdb\_score}\OperatorTok{\textasciitilde{}}\NormalTok{content\_rating)) }\CommentTok{\#Apply favstats function to imdb\_score}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1648,13 +1711,13 @@ Using the provided \texttt{RScript} file, we will create side-by-side histograms
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{%>%}\StringTok{  }\CommentTok{#Data set piped into...}
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content_rating }\OperatorTok{!=}\StringTok{ "Not Rated"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Remove Not Rated movies}
-\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ yy, }\DataTypeTok{x =}\NormalTok{ xx))}\OperatorTok{+}\StringTok{  }\CommentTok{#Identify variables}
-\StringTok{  }\KeywordTok{geom_boxplot}\NormalTok{()}\OperatorTok{+}\StringTok{  }\CommentTok{#Tell it to make a box plot}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Side by side box plot of budget by content rating"}\NormalTok{,  }\CommentTok{#Title}
-       \DataTypeTok{x =} \StringTok{"Content Rating"}\NormalTok{,    }\CommentTok{#x-axis label}
-       \DataTypeTok{y =} \StringTok{"Budget (in Millions)"}\NormalTok{)  }\CommentTok{#y-axis label}
+\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{  }\CommentTok{\#Data set piped into...}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(content\_rating }\OperatorTok{!=}\StringTok{ "Not Rated"}\NormalTok{) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Remove Not Rated movies}
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ yy, }\DataTypeTok{x =}\NormalTok{ xx))}\OperatorTok{+}\StringTok{  }\CommentTok{\#Identify variables}
+\StringTok{  }\KeywordTok{geom\_boxplot}\NormalTok{()}\OperatorTok{+}\StringTok{  }\CommentTok{\#Tell it to make a box plot}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Side by side box plot of budget by content rating"}\NormalTok{,  }\CommentTok{\#Title}
+       \DataTypeTok{x =} \StringTok{"Content Rating"}\NormalTok{,    }\CommentTok{\#x{-}axis label}
+       \DataTypeTok{y =} \StringTok{"Budget (in Millions)"}\NormalTok{)  }\CommentTok{\#y{-}axis label}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1817,13 +1880,13 @@ We will look at the relationship between \texttt{Budget} and \texttt{Revenue} fo
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{#Data set pipes into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{y =}\NormalTok{ yy))}\OperatorTok{+}\StringTok{  }\CommentTok{#Specify variables}
-\StringTok{  }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{#Add scatterplot of points}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{#Label x-axis}
-       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{#Label y-axis}
-       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{#Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{#Add regression line}
+\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\#Data set pipes into...}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{y =}\NormalTok{ yy))}\OperatorTok{+}\StringTok{  }\CommentTok{\#Specify variables}
+\StringTok{  }\KeywordTok{geom\_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{\#Add scatterplot of points}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{\#Label x{-}axis}
+       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{\#Label y{-}axis}
+       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\#Be sure to tile your plots}
+\StringTok{  }\KeywordTok{geom\_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{\#Add regression line}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1898,11 +1961,11 @@ Correlation measures the strength and the direction of the linear relationship b
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{%>%}\StringTok{  }\CommentTok{#Data set pipes into}
-\StringTok{  }\KeywordTok{select}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"budget_mil"}\NormalTok{, }\StringTok{"revenue_mil"}\NormalTok{, }
-           \StringTok{"duration"}\NormalTok{, }\StringTok{"imdb_score"}\NormalTok{, }
-           \StringTok{"movie_facebook_likes"}\NormalTok{)) }\OperatorTok{%>%}
-\StringTok{  }\KeywordTok{cor}\NormalTok{(}\DataTypeTok{use=}\StringTok{"pairwise.complete.obs"}\NormalTok{) }\OperatorTok{%>%}
+\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{  }\CommentTok{\#Data set pipes into}
+\StringTok{  }\KeywordTok{select}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"budget\_mil"}\NormalTok{, }\StringTok{"revenue\_mil"}\NormalTok{, }
+           \StringTok{"duration"}\NormalTok{, }\StringTok{"imdb\_score"}\NormalTok{, }
+           \StringTok{"movie\_facebook\_likes"}\NormalTok{)) }\OperatorTok{\%\textgreater{}\%}
+\StringTok{  }\KeywordTok{cor}\NormalTok{(}\DataTypeTok{use=}\StringTok{"pairwise.complete.obs"}\NormalTok{) }\OperatorTok{\%\textgreater{}\%}
 \StringTok{  }\KeywordTok{round}\NormalTok{(}\DecValTok{3}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
@@ -1980,9 +2043,9 @@ The linear model function in \texttt{R} gives us the summary for the least squar
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{# Fit linear model: y ~ x}
-\NormalTok{revenueLM <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(revenue_mil }\OperatorTok{~}\StringTok{ }\NormalTok{budget_mil, }\DataTypeTok{data=}\NormalTok{movies)}
-\KeywordTok{summary}\NormalTok{(revenueLM)}\OperatorTok{$}\NormalTok{coefficients }\CommentTok{# Display coefficient summary}
+\CommentTok{\# Fit linear model: y \textasciitilde{} x}
+\NormalTok{revenueLM \textless{}{-}}\StringTok{ }\KeywordTok{lm}\NormalTok{(revenue\_mil }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{budget\_mil, }\DataTypeTok{data=}\NormalTok{movies)}
+\KeywordTok{summary}\NormalTok{(revenueLM)}\OperatorTok{$}\NormalTok{coefficients }\CommentTok{\# Display coefficient summary}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2112,16 +2175,16 @@ What if we wanted to see if the relationship between \texttt{Budget} and \texttt
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{#Data set pipes into...}
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content_rating }\OperatorTok{!=}\StringTok{ "Not Rated"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Remove Not Rated movies}
-\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget_mil, }\DataTypeTok{y =}\NormalTok{ revenue_mil, }\DataTypeTok{color =}\NormalTok{ content_rating)) }\OperatorTok{+}\StringTok{  }\CommentTok{#Specify variables}
-\StringTok{  }\KeywordTok{geom_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{shape =}\NormalTok{ content_rating), }\DataTypeTok{size =} \DecValTok{3}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{#Add scatterplot of points}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{#Label x-axis}
-       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{#Label y-axis}
-       \DataTypeTok{color =} \StringTok{"Content Rating"}\NormalTok{,  }\CommentTok{#Label legend}
-       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{#Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{, }\DataTypeTok{lwd =} \DecValTok{2}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{#Add regression lines}
-\StringTok{  }\KeywordTok{scale_color_grey}\NormalTok{() }\CommentTok{#Make black and white}
+\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\#Data set pipes into...}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(content\_rating }\OperatorTok{!=}\StringTok{ "Not Rated"}\NormalTok{) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Remove Not Rated movies}
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget\_mil, }\DataTypeTok{y =}\NormalTok{ revenue\_mil, }\DataTypeTok{color =}\NormalTok{ content\_rating)) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Specify variables}
+\StringTok{  }\KeywordTok{geom\_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{shape =}\NormalTok{ content\_rating), }\DataTypeTok{size =} \DecValTok{3}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\#Add scatterplot of points}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{\#Label x{-}axis}
+       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{\#Label y{-}axis}
+       \DataTypeTok{color =} \StringTok{"Content Rating"}\NormalTok{,  }\CommentTok{\#Label legend}
+       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\#Be sure to tile your plots}
+\StringTok{  }\KeywordTok{geom\_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{, }\DataTypeTok{lwd =} \DecValTok{2}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\#Add regression lines}
+\StringTok{  }\KeywordTok{scale\_color\_grey}\NormalTok{() }\CommentTok{\#Make black and white}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2298,8 +2361,8 @@ Before completing the hypothesis test, we must check that the cases are independ
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{handedness <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/Male_boxers_sample.csv"}\NormalTok{) }\CommentTok{# Read in data set}
-\NormalTok{handedness }\OperatorTok{%>%}\StringTok{ }\KeywordTok{count}\NormalTok{(Stance)  }\CommentTok{# Count number in each Stance category}
+\NormalTok{handedness \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/Male\_boxers\_sample.csv"}\NormalTok{) }\CommentTok{\# Read in data set}
+\NormalTok{handedness }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\KeywordTok{count}\NormalTok{(Stance)  }\CommentTok{\# Count number in each Stance category}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2496,12 +2559,12 @@ Using the provided \texttt{RScript} file, fill in the values/words for xx with y
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{one_proportion_test}\NormalTok{(}\DataTypeTok{probability_success =}\NormalTok{ xx, }\CommentTok{#Null hypothesis value}
-                    \DataTypeTok{sample_size =}\NormalTok{ xx, }\CommentTok{#Enter sample size}
-                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{#Enter number of simulations}
-                    \DataTypeTok{as_extreme_as =}\NormalTok{ xx, }\CommentTok{#observed statistic}
-                    \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{#specify direction of alternative hypothesis}
-                    \DataTypeTok{report_value =} \StringTok{"proportion"}\NormalTok{) }\CommentTok{#Reporting proportion or number of successes?}
+\KeywordTok{one\_proportion\_test}\NormalTok{(}\DataTypeTok{probability\_success =}\NormalTok{ xx, }\CommentTok{\#Null hypothesis value}
+                    \DataTypeTok{sample\_size =}\NormalTok{ xx, }\CommentTok{\#Enter sample size}
+                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\#Enter number of simulations}
+                    \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx, }\CommentTok{\#observed statistic}
+                    \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\#specify direction of alternative hypothesis}
+                    \DataTypeTok{report\_value =} \StringTok{"proportion"}\NormalTok{) }\CommentTok{\#Reporting proportion or number of successes?}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2694,7 +2757,7 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{06-inference-1cat_files/figure-latex/simpleNormal-1} 
+{\centering \includegraphics[width=0.7\linewidth]{06-inference-1cat_test_files/figure-latex/simpleNormal-1} 
 
 }
 
@@ -2727,9 +2790,9 @@ We will use the pnorm function in \texttt{R} to find the p-value. Use the provid
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{pnorm}\NormalTok{(xx, }\CommentTok{# Enter value of standardized statistic}
-      \DataTypeTok{m=}\DecValTok{0}\NormalTok{, }\DataTypeTok{s=}\DecValTok{1} \CommentTok{# Using the standard normal mean = 0, sd = 1}
-      \DataTypeTok{lower.tail=}\OtherTok{FALSE}\NormalTok{) }\CommentTok{# Gives a p-value greater than the standardized statistic}
+\KeywordTok{pnorm}\NormalTok{(xx, }\CommentTok{\# Enter value of standardized statistic}
+      \DataTypeTok{m=}\DecValTok{0}\NormalTok{, }\DataTypeTok{s=}\DecValTok{1} \CommentTok{\# Using the standard normal mean = 0, sd = 1}
+      \DataTypeTok{lower.tail=}\OtherTok{FALSE}\NormalTok{) }\CommentTok{\# Gives a p{-}value greater than the standardized statistic}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2884,10 +2947,10 @@ Using the provided \texttt{RScript} file, fill in the values/words for xx with y
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{one_proportion_bootstrap_CI}\NormalTok{(}\DataTypeTok{sample_size =}\NormalTok{ xx, }\CommentTok{#Sample size}
-                    \DataTypeTok{number_successes =}\NormalTok{ xx, }\CommentTok{#Observed number of successes}
-                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{#Number of bootstrap samples to use}
-                    \DataTypeTok{confidence_level =} \FloatTok{0.95}\NormalTok{) }\CommentTok{#Confidence level as a decimal}
+\KeywordTok{one\_proportion\_bootstrap\_CI}\NormalTok{(}\DataTypeTok{sample\_size =}\NormalTok{ xx, }\CommentTok{\#Sample size}
+                    \DataTypeTok{number\_successes =}\NormalTok{ xx, }\CommentTok{\#Observed number of successes}
+                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\#Number of bootstrap samples to use}
+                    \DataTypeTok{confidence\_level =} \FloatTok{0.95}\NormalTok{) }\CommentTok{\#Confidence level as a decimal}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2972,14 +3035,14 @@ Using the provided \texttt{RScript} file, fill in the values/words for xx with y
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{one_proportion_bootstrap_CI}\NormalTok{(}\DataTypeTok{sample_size =} \DecValTok{500}\NormalTok{, }\CommentTok{#Sample size}
-                    \DataTypeTok{number_successes =} \DecValTok{81}\NormalTok{, }\CommentTok{#Observed number of successes}
-                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{#Number of bootstrap samples to use}
-                    \DataTypeTok{confidence_level =} \FloatTok{0.90}\NormalTok{) }\CommentTok{#Confidence level as a decimal}
+\KeywordTok{one\_proportion\_bootstrap\_CI}\NormalTok{(}\DataTypeTok{sample\_size =} \DecValTok{500}\NormalTok{, }\CommentTok{\#Sample size}
+                    \DataTypeTok{number\_successes =} \DecValTok{81}\NormalTok{, }\CommentTok{\#Observed number of successes}
+                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\#Number of bootstrap samples to use}
+                    \DataTypeTok{confidence\_level =} \FloatTok{0.90}\NormalTok{) }\CommentTok{\#Confidence level as a decimal}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics[width=0.7\linewidth]{07-inference-CI-1cat_files/figure-latex/unnamed-chunk-2-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{07-inference-1cat_CI_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 \vspace{0.5in}
 
@@ -3103,7 +3166,7 @@ The \(z^*\) multiplier is found under the standard normal distribution. We find 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.975}\NormalTok{) }\CommentTok{# Multiplier for 95% confidence interval}
+\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.975}\NormalTok{) }\CommentTok{\# Multiplier for 95\% confidence interval}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3205,13 +3268,13 @@ These counts can be found in \texttt{R} by using the \texttt{count()} function:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{injury <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/HeadInjuries.csv"}\NormalTok{) }\CommentTok{# Read data set in}
-\NormalTok{injury <-}\StringTok{ }\CommentTok{# Write over original data with the following}
-\StringTok{  }\NormalTok{injury }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Pipe data set into}
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(Helmet <-}\StringTok{ }\KeywordTok{factor}\NormalTok{(Helmet),}
-\NormalTok{         Outcome <-}\StringTok{ }\KeywordTok{factor}\NormalTok{(Outcome)) }\CommentTok{# Convert to factors}
+\NormalTok{injury \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/HeadInjuries.csv"}\NormalTok{) }\CommentTok{\# Read data set in}
+\NormalTok{injury \textless{}{-}}\StringTok{ }\CommentTok{\# Write over original data with the following}
+\StringTok{  }\NormalTok{injury }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Pipe data set into}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(Helmet \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(Helmet),}
+\NormalTok{         Outcome \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(Outcome)) }\CommentTok{\# Convert to factors}
 
-\NormalTok{injury }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(Helmet) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{count}\NormalTok{(Outcome)}
+\NormalTok{injury }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\KeywordTok{group\_by}\NormalTok{(Helmet) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\KeywordTok{count}\NormalTok{(Outcome)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3484,9 +3547,9 @@ We will use the pnorm function in \texttt{R} to find the p-value. Use the provid
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{pnorm}\NormalTok{(xx, }\CommentTok{# Enter value of standardized statistic}
-      \DataTypeTok{m=}\DecValTok{0}\NormalTok{, }\DataTypeTok{s=}\DecValTok{1} \CommentTok{# Using the standard normal mean = 0, sd = 1}
-      \DataTypeTok{lower.tail=}\OtherTok{TRUE}\NormalTok{) }\CommentTok{# Gives a p-value less than the standardized statistic}
+\KeywordTok{pnorm}\NormalTok{(xx, }\CommentTok{\# Enter value of standardized statistic}
+      \DataTypeTok{m=}\DecValTok{0}\NormalTok{, }\DataTypeTok{s=}\DecValTok{1} \CommentTok{\# Using the standard normal mean = 0, sd = 1}
+      \DataTypeTok{lower.tail=}\OtherTok{TRUE}\NormalTok{) }\CommentTok{\# Gives a p{-}value less than the standardized statistic}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3698,13 +3761,13 @@ Using the \texttt{RScript} file for this activity, enter your answers for questi
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{two_proportion_test}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{~}\StringTok{ }\NormalTok{Helmet, }\CommentTok{#response~explanatory}
-                    \DataTypeTok{data=}\NormalTok{ injury, }\CommentTok{#name of dataset}
-                    \DataTypeTok{first_in_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{#order of subtraction: enter the name of Group 1}
-                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{#always use a minimum of 1000 repetitions}
-                    \DataTypeTok{response_value_numerator =} \StringTok{"xx"}\NormalTok{, }\CommentTok{#define which outcome is a success }
-                    \DataTypeTok{as_extreme_as =}\NormalTok{ xx, }\CommentTok{#type your calculated observed statistic (difference in sample proportions)}
-                    \DataTypeTok{direction=}\StringTok{"xx"}\NormalTok{) }\CommentTok{#alternative hypothesis direction ("greater","less","two-sided")}
+\KeywordTok{two\_proportion\_test}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{Helmet, }\CommentTok{\#response\textasciitilde{}explanatory}
+                    \DataTypeTok{data=}\NormalTok{ injury, }\CommentTok{\#name of dataset}
+                    \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\#order of subtraction: enter the name of Group 1}
+                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\#always use a minimum of 1000 repetitions}
+                    \DataTypeTok{response\_value\_numerator =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\#define which outcome is a success }
+                    \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx, }\CommentTok{\#type your calculated observed statistic (difference in sample proportions)}
+                    \DataTypeTok{direction=}\StringTok{"xx"}\NormalTok{) }\CommentTok{\#alternative hypothesis direction ("greater","less","two{-}sided")}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3888,7 +3951,7 @@ The \(z^*\) multiplier is found under the standard normal distribution. We find 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.975}\NormalTok{) }\CommentTok{# Multiplier for 95% confidence interval}
+\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.975}\NormalTok{) }\CommentTok{\# Multiplier for 95\% confidence interval}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4021,13 +4084,9 @@ To create the bootstrap distribution, we will use the two proportion bootstrap C
 The response variable name is Outcome and the explanatory variable name is Helmet.
 
 \newpage
+1
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  What values should be entered for each of the following into the simulation to create a 95\% confidence interval?
-\end{enumerate}
+. What values should be entered for each of the following into the simulation to create a 95\% confidence interval?
 
 \vspace{.5mm}
 
@@ -4067,12 +4126,12 @@ Using the \texttt{RScript} file for this activity, enter your answers for questi
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{two_proportion_bootstrap_CI}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{~}\StringTok{ }\NormalTok{Helmet, }
-                            \DataTypeTok{data=}\NormalTok{injury, }\CommentTok{#name of dataset}
-                            \DataTypeTok{first_in_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{#order of subtraction: enter the name of Group 1}
-                            \DataTypeTok{response_value_numerator =} \StringTok{"xx"}\NormalTok{, }\CommentTok{#define which outcome is a success }
-                            \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{#always use a minimum of 1000 repetitions}
-                            \DataTypeTok{confidence_level =} \FloatTok{0.95}\NormalTok{) }\CommentTok{#enter the level of confidence as a decimal}
+\KeywordTok{two\_proportion\_bootstrap\_CI}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{Helmet, }
+                            \DataTypeTok{data=}\NormalTok{injury, }\CommentTok{\#name of dataset}
+                            \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\#order of subtraction: enter the name of Group 1}
+                            \DataTypeTok{response\_value\_numerator =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\#define which outcome is a success }
+                            \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\#always use a minimum of 1000 repetitions}
+                            \DataTypeTok{confidence\_level =} \FloatTok{0.95}\NormalTok{) }\CommentTok{\#enter the level of confidence as a decimal}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4338,12 +4397,12 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 
 \begin{Shaded}
 \begin{Highlighting}[]
-    \KeywordTok{paired_test}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Air}\OperatorTok{$}\NormalTok{Difference,   }\CommentTok{#Vector of differences or data set with column for each group}
-            \DataTypeTok{shift =}\NormalTok{ xx,   }\CommentTok{#Shift needed for bootstrap hypothesis test}
-            \DataTypeTok{as_extreme_as =}\NormalTok{ yy,  }\CommentTok{#Observed statistic}
-            \DataTypeTok{direction =} \StringTok{"less"}\NormalTok{,  }\CommentTok{#Direction of alternative}
-            \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{#Number of simulated samples for null distribution}
-            \DataTypeTok{which_first =} \DecValTok{1}\NormalTok{)  }\CommentTok{#Not needed when using calculated differences}
+    \KeywordTok{paired\_test}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Air}\OperatorTok{$}\NormalTok{Difference,   }\CommentTok{\#Vector of differences or data set with column for each group}
+            \DataTypeTok{shift =}\NormalTok{ xx,   }\CommentTok{\#Shift needed for bootstrap hypothesis test}
+            \DataTypeTok{as\_extreme\_as =}\NormalTok{ yy,  }\CommentTok{\#Observed statistic}
+            \DataTypeTok{direction =} \StringTok{"less"}\NormalTok{,  }\CommentTok{\#Direction of alternative}
+            \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\#Number of simulated samples for null distribution}
+            \DataTypeTok{which\_first =} \DecValTok{1}\NormalTok{)  }\CommentTok{\#Not needed when using calculated differences}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4417,10 +4476,10 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{paired_bootstrap_CI}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Air}\OperatorTok{$}\NormalTok{Difference, }\CommentTok{#Enter vector of differences}
-                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{#Number of bootstrap samples for CI}
-                    \DataTypeTok{confidence_level =}\NormalTok{ xx,  }\CommentTok{#Confidence level in decimal form}
-                    \DataTypeTok{which_first =} \DecValTok{1}\NormalTok{)  }\CommentTok{#Not needed when entering vector of differences}
+\KeywordTok{paired\_bootstrap\_CI}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Air}\OperatorTok{$}\NormalTok{Difference, }\CommentTok{\#Enter vector of differences}
+                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\#Number of bootstrap samples for CI}
+                    \DataTypeTok{confidence\_level =}\NormalTok{ xx,  }\CommentTok{\#Confidence level in decimal form}
+                    \DataTypeTok{which\_first =} \DecValTok{1}\NormalTok{)  }\CommentTok{\#Not needed when entering vector of differences}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4575,7 +4634,7 @@ We will need to find the \(t^*\) multiplier using the function qt. For a 99\% co
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{qt}\NormalTok{(}\FloatTok{0.995}\NormalTok{, }\DataTypeTok{df =} \DecValTok{32}\NormalTok{, }\DataTypeTok{lower.tail=}\OtherTok{TRUE}\NormalTok{)}
-\CommentTok{#> [1] 2.738481}
+\CommentTok{\#\textgreater{} [1] 2.738481}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4650,11 +4709,11 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{Snow <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/SnowfallbyWeatherPattern.csv"}\NormalTok{) }\CommentTok{# Read in data set}
-\CommentTok{# Code categorical variables as factors}
-\NormalTok{Snow <-}\StringTok{ }\CommentTok{# Write over original data with the following}
-\StringTok{  }\NormalTok{Snow }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Pipe data set into}
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{WeatherPattern =} \KeywordTok{factor}\NormalTok{(WeatherPattern)) }\CommentTok{# Convert to factor}
+\NormalTok{Snow \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/SnowfallbyWeatherPattern.csv"}\NormalTok{) }\CommentTok{\# Read in data set}
+\CommentTok{\# Code categorical variables as factors}
+\NormalTok{Snow \textless{}{-}}\StringTok{ }\CommentTok{\# Write over original data with the following}
+\StringTok{  }\NormalTok{Snow }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Pipe data set into}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{WeatherPattern =} \KeywordTok{factor}\NormalTok{(WeatherPattern)) }\CommentTok{\# Convert to factor}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4662,13 +4721,13 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{# Side-by-side box plots}
-\NormalTok{Snow }\OperatorTok{%>%}
+\CommentTok{\# Side{-}by{-}side box plots}
+\NormalTok{Snow }\OperatorTok{\%\textgreater{}\%}
 \KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ WeatherPattern, }\DataTypeTok{y =}\NormalTok{ Snowfall)) }\OperatorTok{+}
-\StringTok{    }\KeywordTok{geom_boxplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{geom\_boxplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
 \StringTok{    }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Snowfall by weather pattern"}\NormalTok{,}
          \DataTypeTok{x =} \StringTok{"Weather pattern"}\NormalTok{) }\OperatorTok{+}
-\StringTok{    }\KeywordTok{coord_flip}\NormalTok{()}
+\StringTok{    }\KeywordTok{coord\_flip}\NormalTok{()}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4676,9 +4735,9 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{# Summary statistics}
-\NormalTok{Snow }\OperatorTok{%>%}\StringTok{ }
-\StringTok{     }\KeywordTok{summarize}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(Snowfall}\OperatorTok{~}\NormalTok{WeatherPattern))}
+\CommentTok{\# Summary statistics}
+\NormalTok{Snow }\OperatorTok{\%\textgreater{}\%}\StringTok{ }
+\StringTok{     }\KeywordTok{summarize}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(Snowfall}\OperatorTok{\textasciitilde{}}\NormalTok{WeatherPattern))}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4905,11 +4964,11 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{two_mean_test}\NormalTok{(Snowfall}\OperatorTok{~}\NormalTok{WeatherPattern, }\DataTypeTok{data =}\NormalTok{ Snow,  }\CommentTok{#Variables and data}
-                    \DataTypeTok{first_in_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{#First outcome in order of subtraction}
-                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{#Number of simulations}
-                    \DataTypeTok{as_extreme_as =}\NormalTok{ xx,  }\CommentTok{#Observed statistic}
-                    \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{)  }\CommentTok{#Direction of alternative: "greater", "less", or "two-sided"}
+\KeywordTok{two\_mean\_test}\NormalTok{(Snowfall}\OperatorTok{\textasciitilde{}}\NormalTok{WeatherPattern, }\DataTypeTok{data =}\NormalTok{ Snow,  }\CommentTok{\#Variables and data}
+                    \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\#First outcome in order of subtraction}
+                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\#Number of simulations}
+                    \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx,  }\CommentTok{\#Observed statistic}
+                    \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{)  }\CommentTok{\#Direction of alternative: "greater", "less", or "two{-}sided"}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4936,10 +4995,10 @@ Sketch the null distribution created using the code above.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{two_mean_bootstrap_CI}\NormalTok{(RESPONSE}\OperatorTok{~}\NormalTok{EXPLANATORY, }\DataTypeTok{data =}\NormalTok{ DATASET,  }\CommentTok{#Variables and data}
-                      \DataTypeTok{first_in_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{#First value in order of subtraction}
-                      \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{#Number of simulations}
-                      \DataTypeTok{confidence_level =}\NormalTok{ xx)}
+\KeywordTok{two\_mean\_bootstrap\_CI}\NormalTok{(RESPONSE}\OperatorTok{\textasciitilde{}}\NormalTok{EXPLANATORY, }\DataTypeTok{data =}\NormalTok{ DATASET,  }\CommentTok{\#Variables and data}
+                      \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\#First value in order of subtraction}
+                      \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\#Number of simulations}
+                      \DataTypeTok{confidence\_level =}\NormalTok{ xx)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -5119,7 +5178,7 @@ We will need to find the \(t^*\) multiplier using the function qt. For a 95\% co
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{qt}\NormalTok{(}\FloatTok{0.975}\NormalTok{, }\DataTypeTok{df =} \DecValTok{20}\NormalTok{, }\DataTypeTok{lower.tail=}\OtherTok{TRUE}\NormalTok{)}
-\CommentTok{#> [1] 2.085963}
+\CommentTok{\#\textgreater{} [1] 2.085963}
 \end{Highlighting}
 \end{Shaded}
 
@@ -5206,15 +5265,15 @@ Some of the variables collected in this data set consist of the following:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{# Read in data set}
-\NormalTok{baseball <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/baseball.csv"}\NormalTok{)}
+\CommentTok{\# Read in data set}
+\NormalTok{baseball \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/baseball.csv"}\NormalTok{)}
 
-\NormalTok{baseball}\OperatorTok{$}\NormalTok{RD <-}\StringTok{ }\NormalTok{baseball}\OperatorTok{$}\NormalTok{RS }\OperatorTok{-}\StringTok{ }\NormalTok{baseball}\OperatorTok{$}\NormalTok{RA }\CommentTok{#create variable run difference}
+\NormalTok{baseball}\OperatorTok{$}\NormalTok{RD \textless{}{-}}\StringTok{ }\NormalTok{baseball}\OperatorTok{$}\NormalTok{RS }\OperatorTok{{-}}\StringTok{ }\NormalTok{baseball}\OperatorTok{$}\NormalTok{RA }\CommentTok{\#create variable run difference}
 
-\CommentTok{# Code categorical variables as factors}
-\NormalTok{baseball <-}\StringTok{ }\CommentTok{# Write over original data with the following}
-\StringTok{  }\NormalTok{baseball }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Pipe data set into}
-\StringTok{  }\KeywordTok{subset}\NormalTok{(Year }\OperatorTok{<}\StringTok{ }\DecValTok{2002}\NormalTok{) }\CommentTok{# Select only years before 2002}
+\CommentTok{\# Code categorical variables as factors}
+\NormalTok{baseball \textless{}{-}}\StringTok{ }\CommentTok{\# Write over original data with the following}
+\StringTok{  }\NormalTok{baseball }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Pipe data set into}
+\StringTok{  }\KeywordTok{subset}\NormalTok{(Year }\OperatorTok{\textless{}}\StringTok{ }\DecValTok{2002}\NormalTok{) }\CommentTok{\# Select only years before 2002}
 \end{Highlighting}
 \end{Shaded}
 
@@ -5239,13 +5298,13 @@ Some of the variables collected in this data set consist of the following:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{baseball }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Pipe data set into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{y =}\NormalTok{ yy))}\OperatorTok{+}\StringTok{  }\CommentTok{#Specify variables}
-\StringTok{  }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{#Add scatterplot of points}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Difference in number of runs"}\NormalTok{,  }\CommentTok{#Label x-axis}
-       \DataTypeTok{y =} \StringTok{"Number of wins"}\NormalTok{,  }\CommentTok{#Label y-axis}
-       \DataTypeTok{title =} \StringTok{"Scatterplot of Run Difference vs. Number of Wins"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{#Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{#Add regression line}
+\NormalTok{baseball }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Pipe data set into...}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{y =}\NormalTok{ yy))}\OperatorTok{+}\StringTok{  }\CommentTok{\#Specify variables}
+\StringTok{  }\KeywordTok{geom\_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{\#Add scatterplot of points}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Difference in number of runs"}\NormalTok{,  }\CommentTok{\#Label x{-}axis}
+       \DataTypeTok{y =} \StringTok{"Number of wins"}\NormalTok{,  }\CommentTok{\#Label y{-}axis}
+       \DataTypeTok{title =} \StringTok{"Scatterplot of Run Difference vs. Number of Wins"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\#Be sure to tile your plots}
+\StringTok{  }\KeywordTok{geom\_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{\#Add regression line}
 \end{Highlighting}
 \end{Shaded}
 \item
@@ -5331,7 +5390,7 @@ Using the provided \texttt{RScript} file, enter the response variable name, \tex
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{lm.baseball <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(yy}\OperatorTok{~}\NormalTok{xx, }\DataTypeTok{data=}\NormalTok{baseball) }\CommentTok{#lm(response~explanatory)}
+\NormalTok{lm.baseball \textless{}{-}}\StringTok{ }\KeywordTok{lm}\NormalTok{(yy}\OperatorTok{\textasciitilde{}}\NormalTok{xx, }\DataTypeTok{data=}\NormalTok{baseball) }\CommentTok{\#lm(response\textasciitilde{}explanatory)}
 \KeywordTok{round}\NormalTok{(}\KeywordTok{summary}\NormalTok{(lm.baseball)}\OperatorTok{$}\NormalTok{coefficients, }\DecValTok{5}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
@@ -5436,7 +5495,7 @@ The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df. Recall
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{qt}\NormalTok{(}\FloatTok{0.95+0.025}\NormalTok{, }\DecValTok{900}\NormalTok{) }\CommentTok{#95% t* multiplier }
+\KeywordTok{qt}\NormalTok{(}\FloatTok{0.95+0.025}\NormalTok{, }\DecValTok{900}\NormalTok{) }\CommentTok{\#95\% t* multiplier }
 \end{Highlighting}
 \end{Shaded}
 
@@ -5515,12 +5574,12 @@ In order to see what team attributes would have the most impact on the number of
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{lm.score <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(RS}\OperatorTok{~}\NormalTok{OBP}\OperatorTok{+}\NormalTok{SLG, }\DataTypeTok{data=}\NormalTok{baseball)}
+\NormalTok{lm.score \textless{}{-}}\StringTok{ }\KeywordTok{lm}\NormalTok{(RS}\OperatorTok{\textasciitilde{}}\NormalTok{OBP}\OperatorTok{+}\NormalTok{SLG, }\DataTypeTok{data=}\NormalTok{baseball)}
 \KeywordTok{round}\NormalTok{(}\KeywordTok{summary}\NormalTok{(lm.score)}\OperatorTok{$}\NormalTok{coefficients, }\DecValTok{5}\NormalTok{)}
-\CommentTok{#>              Estimate Std. Error   t value Pr(>|t|)}
-\CommentTok{#> (Intercept) -804.6271   18.92079 -42.52608        0}
-\CommentTok{#> OBP         2737.7680   90.68455  30.19001        0}
-\CommentTok{#> SLG         1584.9086   42.15559  37.59665        0}
+\CommentTok{\#\textgreater{}              Estimate Std. Error   t value Pr(\textgreater{}|t|)}
+\CommentTok{\#\textgreater{} (Intercept) {-}804.6271   18.92079 {-}42.52608        0}
+\CommentTok{\#\textgreater{} OBP         2737.7680   90.68455  30.19001        0}
+\CommentTok{\#\textgreater{} SLG         1584.9086   42.15559  37.59665        0}
 \end{Highlighting}
 \end{Shaded}
 
@@ -5612,12 +5671,12 @@ Using the \texttt{RScript} file for this activity, enter your answers for questi
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{regression_test}\NormalTok{(W}\OperatorTok{~}\NormalTok{RD, }\CommentTok{# response ~ explanatory}
-               \DataTypeTok{data =}\NormalTok{ baseball, }\CommentTok{# name of data set}
-               \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{# sign in alternative ("greater", "less", "two-sided")}
+\KeywordTok{regression\_test}\NormalTok{(W}\OperatorTok{\textasciitilde{}}\NormalTok{RD, }\CommentTok{\# response \textasciitilde{} explanatory}
+               \DataTypeTok{data =}\NormalTok{ baseball, }\CommentTok{\# name of data set}
+               \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# sign in alternative ("greater", "less", "two{-}sided")}
                \DataTypeTok{statistic =} \StringTok{"xx"}\NormalTok{, }
-               \DataTypeTok{as_extreme_as =}\NormalTok{ x, }\CommentTok{#observed slope}
-               \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{#Number of simulated samples for null distribution}
+               \DataTypeTok{as\_extreme\_as =}\NormalTok{ x, }\CommentTok{\#observed slope}
+               \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{\#Number of simulated samples for null distribution}
        
 \end{Highlighting}
 \end{Shaded}
@@ -5636,11 +5695,11 @@ Fill in the xx's in the regression bootstrap CI function in the provided \texttt
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{regression_bootstrap_CI}\NormalTok{(W}\OperatorTok{~}\NormalTok{RD, }\CommentTok{# response ~ explanatory}
-                        \DataTypeTok{data =}\NormalTok{ baseball, }\CommentTok{# name of data set}
-                        \DataTypeTok{confidence_level =}\NormalTok{ xx, }\CommentTok{# confidence level as decimal}
-                        \DataTypeTok{statistic =} \StringTok{"xx"}\NormalTok{, }\CommentTok{# slope or correlation}
-                        \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{#Number of simulated samples for bootstrap distribution}
+\KeywordTok{regression\_bootstrap\_CI}\NormalTok{(W}\OperatorTok{\textasciitilde{}}\NormalTok{RD, }\CommentTok{\# response \textasciitilde{} explanatory}
+                        \DataTypeTok{data =}\NormalTok{ baseball, }\CommentTok{\# name of data set}
+                        \DataTypeTok{confidence\_level =}\NormalTok{ xx, }\CommentTok{\# confidence level as decimal}
+                        \DataTypeTok{statistic =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# slope or correlation}
+                        \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{\#Number of simulated samples for bootstrap distribution}
 \end{Highlighting}
 \end{Shaded}
 
