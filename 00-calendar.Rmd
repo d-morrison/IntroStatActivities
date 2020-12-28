@@ -1,4 +1,4 @@
-# Fall 2020 Calendar of In-Class Activities {-}
+# Spring 2021 Calendar of In-Class Activities {-}
 
 \begin{longtable}{|p{.1\textwidth}|l|p{.1\textwidth}|l|p{.40\textwidth}|}
 \hline
@@ -20,18 +20,18 @@
 5& 5& W& 2/10& Movie Profits \\*	
 5& 5& F& 2/12& Movie Profits \\ \hline
 6& $-$& M$-$F& 2/15$-$2/19& Exam 1 \\ \hline
-7& 6& M& 2/22& Handedness of Male Boxers Part 1 \\*
-7& 6& W& 2/24& Handedness of Male Boxers Part 1 \\*	
-7& 6& F& 2/26& Handedness of Male Boxers Part 1 \\ \hline
-8& 7& M& 3/1& Handedness of Male Boxers Part 2 \\*
-8& 7& W& 3/3& Handedness of Male Boxers Part 2 \\*	
-8& 7& F& 3/5& Handedness of Male Boxers Part 2 \\ \hline
-9& 8& M& 3/8& Winter Sports Helmet Use and Head Injuries Part 1 \\*
-9& 8& W& 3/10& Winter Sports Helmet Use and Head Injuries Part 1 \\*	
-9& 8& F& 3/12& Winter Sports Helmet Use and Head Injuries Part 1 \\ \hline
-10& 9& M& 3/15& Winter Sports Helmet Use and Head Injuries Part 2 \\*
-10& 9& W& 3/17& Winter Sports Helmet Use and Head Injuries Part 2 \\*	
-10& 9& F& 3/19& Winter Sports Helmet Use and Head Injuries Part 2 \\ \hline
+7& 6& M& 2/22& Handedness of Male Boxers \\*
+7& 6& W& 2/24& Handedness of Male Boxers \\*	
+7& 6& F& 2/26& Handedness of Male Boxers \\ \hline
+8& 7& M& 3/1& Estimate the Proportion of Left-Handed Male Boxers \\*
+8& 7& W& 3/3& Estimate the Proportion of Left-Handed Male Boxers \\*	
+8& 7& F& 3/5& Estimate the Proportion of Left-Handed Male Boxers \\ \hline
+9& 8& M& 3/8& Winter Sports Helmet Use and Head Injuries \\*
+9& 8& W& 3/10& Winter Sports Helmet Use and Head Injuries \\*	
+9& 8& F& 3/12& Winter Sports Helmet Use and Head Injuries \\ \hline
+10& 9& M& 3/15& Estimate the Difference in Proportion of Head Injuries \\*
+10& 9& W& 3/17& Estimate the Difference in Proportion of Head Injuries \\*
+10& 9& F& 3/19& Estimate the Difference in Proportion of Head Injuries \\ \hline
 11& 10& M& 3/22& COVID-19 and Air Pollution \\*
 11& 10& W& 3/24& COVID-19 and Air Pollution \\*	
 11& 10& F& 3/26& COVID-19 and Air Pollution \\ \hline

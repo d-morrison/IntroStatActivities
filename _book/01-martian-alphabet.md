@@ -30,7 +30,7 @@ For more on these concepts, read Sections 1.2 and 2.1 in the textbook.
 
 ## Can you read "Martian"?
 
-How well can humans distinguish one “Martian” letter from another? In today’s activity, we’ll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or on the right.
+How well can humans distinguish one “Martian” letter from another? In this week’s activity, we’ll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or on the right.
 \vspace{2mm}
 
 1.	Were you correct or incorrect in identifying Bumba?
@@ -215,7 +215,7 @@ If you are using `RStudioCloud` watch the video `RStudioCloud_GettingStarted` on
 
 In the Martian Alphabet `Rscript` file, highlight the first 14 lines of code and click run. This will install the packages needed for this course.  We review a few of these packages here. 
 
-Throughout the semester we will use the package `tidyverse` to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol %>%.)  We will use the package `ggplot2` to create graphs in `RStudio`, the package `mosaic` to use the favstats function to find summary statistics for quantitative variables, and the package `catstats` starting in Chapter 5 to create simulations.  Once you have installed these packages you will only need to use the library function to call each package to use.
+Throughout the semester we will use the package `tidyverse` to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol `%>%`.)  We will use the package `ggplot2` to create graphs in `RStudio`, the package `mosaic` to use the favstats function to find summary statistics for quantitative variables, and the package `catstats` starting in Chapter 5 to create simulations.  Once you have installed these packages you will only need to use the library function to call each package to use.
 
 The \# sign is not part of the `R` code. 
 It is used by these authors to add comments to the `R` code and explain what each call is telling the program to do.

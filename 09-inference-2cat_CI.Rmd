@@ -1,4 +1,4 @@
-# Winter Sports Helmet Use and Head Injuries
+# Estimate the Difference in Proportion of Head Injuries
 
 ## Learning objectives
 
@@ -7,7 +7,7 @@
 * Create and interpret a confidence interval for the difference in proportions
 
 ## Terminology review
-In today's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
+In this week's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
 * Standard normal distribution
 
@@ -15,14 +15,12 @@ In today's activity, we will use theory-based methods to estimate the difference
 
 To review these concepts, see Chapter 5 in your textbook.
 
-\newpage
-
 ## Helmet use and head injuries
 
 In activity 8, we found very strong evidence that helmet use is associated with a reduction in head injury for skiers and snowboarders.  In this in-class activity we will estimate the parameter of interest, the difference in true proportion of skiers and snowboarders with head injuries for those who wore helmets and those that did not, using theory-based methods.
 
 
-The summary results from a random sample of 3562 skiers and snowboarders involved in accidents in the two-way table below. Estimate the difference in true proportion of skiers and snowboarders with head injuries for those who wore helmets and those that did not. 
+The summary results from a random sample of 3562 skiers and snowboarders involved in accidents is displayed in the two-way table below. Estimate the difference in true proportion of skiers and snowboarders with head injuries for those who wore helmets and those that did not. 
 
 |                | Helmet Use | No Helmet Use | Total |
 |:--------------:|:----------:|:-------------:|:-----:|
@@ -30,19 +28,7 @@ The summary results from a random sample of 3562 skiers and snowboarders involve
 | No Head Injury |     656    |      2330     |  2986 |
 | Total          |     752    |      2810     |  3562 |
 
-These counts can be found in `R` by using the `count()` function:
-```{r, echo=TRUE, warning=FALSE, message=FALSE, collapse=FALSE}
-injury <- read.csv("data/head_injury.csv") # Read data set in
-injury <- # Write over original data with the following
-  injury %>% # Pipe data set into
-  mutate(Helmet <- factor(Helmet),
-         Injury <- factor(Injury)) # Convert to factors
-
-injury %>% group_by(Helmet) %>% count(Injury)
-```
-
-
-### Vocabulary review. Complete questions 1 - 3 before coming to class. {-}
+### Vocabulary review. Complete Q1 - 3 before class. {-}
 
 1.  Report the point estimate for this study.  Use helmet use minus no helmet use as the order of subtraction.
 
@@ -134,12 +120,14 @@ Suppose in another sample of skiers and snowboarders involved in accidents we sa
 
 \vspace{1in}
 
+\newpage
 
 ## Relative Risk
 
 Another summary statistic that can be calculated for two categorical variables is the relative risk.  The relative risk is calculated as the ratio of the conditional proportions.
 
-|     $\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}$
+
+$$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}$$
 
 14.  Calculate the relative risk of head injury for those who wore helmets compared to those who did not.
 
@@ -150,23 +138,22 @@ Another summary statistic that can be calculated for two categorical variables i
 \vspace{1in}
 
 
-\newpage
-
 ## Out of Class Activity
 
 The remaining questions cover simulation methods for creating the bootstrap distribution to find the confidence interval. Use section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.
 
-1.  To create the bootstrap distribution, we will use the two proportion bootstrap CI function.  We will need to enter the response variable name and the explanatory name for the formula, the data set name identified above as `injury`, the outcome for the explanatory variable to give the order of subtraction for First in Subtraction, number of repetitions, the outcome for the response variable that is a success for Response Value Numerator, and the confidence level as a decimal.
+To create the bootstrap distribution, we will use the two proportion bootstrap CI function.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name identified above as `injury`, the outcome for the explanatory variable to give the order of subtraction for First in Subtraction, number of repetitions, the outcome for the response variable that is a success for Response Value Numerator, and the confidence level as a decimal.
 
 The response variable name is Outcome and the explanatory variable name is Helmet.
 
-What values should be entered for each of the following into the simulation to create a 95\% confidence interval?
+\newpage
+1. What values should be entered for each of the following into the simulation to create a 95\% confidence interval?
+
+\vspace{.5mm}
+* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"Yes"` or `"No"`):
 
 \vspace{.2in}
-* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction?):
-
-\vspace{.2in}
-* Response Value Numerator (What is the outcome for the response variable that is considered a success?):
+* Response Value Numerator (What is the outcome for the response variable that is considered a success? `"Head Injury"` or `"No Head Injury"`):
 
 \vspace{.2in}
 * Number of repetitions:
@@ -176,7 +163,7 @@ What values should be entered for each of the following into the simulation to c
 
 \vspace{.2in}
 
-Using the `RScript` file for this activity, enter your answers for question 1 in place of the xx's to produce the bootstrap distribution with 1000 simulations, highlight and run lines 1 - 24.
+Using the `RScript` file for this activity, enter your answers for question 1 in place of the xx's in the two proportion bootstrap CI function to produce the bootstrap distribution with 1000 simulations, highlight and run lines 1 - 22.
 
 ```{r, echo=TRUE, eval=FALSE}
 two_proportion_bootstrap_CI(formula = Outcome ~ Helmet, 
@@ -198,7 +185,7 @@ two_proportion_bootstrap_CI(formula = Outcome ~ Helmet,
 
 4. Is the bootstrap 95\% confidence interval similar to what was found using theory-based methods?  Why did you expect this to be true?
 
-\vspace{1in}
+\newpage
 
 ## Additional notes
 

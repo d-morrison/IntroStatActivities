@@ -20,7 +20,7 @@
 
 ## Terminology review
 
-In today's in-class activity, we will use simulation-based methods to analyze one categorical and one quantitative variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
+In this week's in-class activity, we will use simulation-based methods to analyze one categorical and one quantitative variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
 
 * Independent groups
 
@@ -74,7 +74,7 @@ Snow %>%
 ```
 
 
-### Quantitative variables review.  Complete questions 1 - 5 before class. {-}
+### Quantitative variables review.  Complete Q1 - 5 before class. {-}
 
 1. The two variables assessed in this study are the type of weather pattern and snowfall.  Identify the role for each variable (explanatory, response).
 
@@ -138,20 +138,20 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \vspace{1in}
 
-13.  What value is calculated from the cards and plotted on the null distribution?
+13.  What value is calculated from the cards and plotted on the null distribution?  *Hint*: What statistic are we calculating from the data?
 
-\vspace{1in}
+\vspace{0.3in}
 
 14.  Once we create a null distribution of 1000 simulations, at what value do you expect the distribution to be centered?  Explain your reasoning.
 
-\vspace{1in}
+\vspace{.8in}
 
 **Simulation method**
 
 15.  When using the two mean test we need to enter the name of the response variable, `Snowfall` and the name of the explanatory variable, `WeatherPattern` for the formula.  The name of the data set as shown above is `Snow`.  What values should be entered for each of the following into the two mean test to create 1000 simulations?
 
 \vspace{.2in}
-* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction?):
+* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"El_Nino"` or `"La_Nina"`:
 
 \vspace{.2in}
 * Number of repetitions:
@@ -175,14 +175,15 @@ two_mean_test(Snowfall~WeatherPattern, data = Snow,  #Variables and data
                     direction = "xx")  #Direction of alternative: "greater", "less", or "two-sided"
 ```
 
-\vspace{1in}
+Sketch the null distribution created using the code above.
+\vspace{1.5in}
 
 
 17.  Report the p-value. How much evidence does the p-value provide against the null hypothesis?
 
-\vspace{1in}
+\vspace{0.5in}
 
-18. Using bootstrapping find a 95\% confidence interval. Use the provided `RScript` file. Enter the variable names and data set name as in the two mean test, outcome name for the first in subtraction, number of repetitions, and the confidence level.  Report the 95\% confidence interval in interval notation.
+18. Using bootstrapping find a 95\% confidence interval. Use the provided `RScript` file for the two mean bootstrap CI function. Enter the variable names and data set name as in the two mean test, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 32 - 35. Report the 95\% confidence interval in interval notation.
 
 ```r
 two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
@@ -191,6 +192,7 @@ two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
                       confidence_level = xx)
 ```
 
+\vspace{0.3in}
 
 19. Interpret the interval you calculated in question 18. 
 
@@ -235,28 +237,30 @@ Conditions for the sample distribution of $\bar{x}_1-\bar{x}_2$.
 
 * Normality: each sample should be approximately normal
 
-For each sample: 
-** n < 30: If the sample size n is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
+  + For each sample: 
 
-** n ≥ 30: If the sample size n is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
+    - $n < 30$: If the sample size n is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
 
-In question 21 in the in-class activity we noted that there were issues with the normality condition.  
+    - $n \le 30$: If the sample size n is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
+
+1.  In question 21 in the in-class activity we noted that there were issues with the normality condition.  Explain how that will affect the p-value and confidence interval found with theory-based methods.
 
 \vspace{1in}
 
-To find the Standardized Statistic for the difference in means:
+To find the Standardized Statistic for the difference in means we will calculate:
 
-|     $T = \frac{\bar{x}_1-\bar{x}_2}{SE(\bar{x}_1-\bar{x}_2)}$
+$$T = \frac{\bar{x}_1-\bar{x}_2}{SE(\bar{x}_1-\bar{x}_2)}$$
 
-where the standard error of the mean difference
+where the standard error of the difference in means is calculated using:
 
-|     $SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}$
+$$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}$$
+\newpage
 
-1.  Calculate the standard error of the difference in means.
+2.  Calculate the standard error of the difference in means.
 
 \vspace{0.5in}
 
-2.  Calculate the standardized statistic.
+3.  Calculate the standardized statistic for the difference in means.
 
 \vspace{0.5in}
 
@@ -264,19 +268,27 @@ Using the provided `RScript` file, enter the T score (for xx) into the pt functi
 
 
 ```r
-pt(xx, df=20, lower.tail=TRUE)
+2*pt(xx, df=20, lower.tail=TRUE)
 ```
 
-3.  Explain why the p-value found using theory-based methods is not similar to the simulation p-value found in the in-class activity?
+4. Explain why we multiplied by 2 in the code above.
+
+\vspace{0.3in}
+
+5. Report the p-value from the `R` output.
+
+\vspace{0.3in}
+
+6.  Explain why the p-value found using theory-based methods from the p-value found using simulation methods in the in-class activity.
 
 \vspace{0.5in}
 
 
-To calculate the 95\% confidence interval using the formula:
+To calculate the 95\% confidence interval use the formula:
 
-$\bar{x}_1- \bar{x}_2\pm t^* SE(\bar{x}_1- \bar{x}_2)$ we will need to find the $t^*$ multiplier using the function qt.  
+$$\bar{x}_1- \bar{x}_2\pm t^* SE(\bar{x}_1- \bar{x}_2)$$
 
-For a 95% confidence interval we are finding the $t^*$ value at the 97.5th percentile with df = minimum(n - 1) = 21 - 1 = 20.
+We will need to find the $t^*$ multiplier using the function qt.  For a 95% confidence interval we are finding the $t^*$ value at the 97.5th percentile with df = minimum(n - 1) = 21 - 1 = 20.
 
 
 ```r
@@ -284,12 +296,12 @@ qt(0.975, df = 20, lower.tail=TRUE)
 #> [1] 2.085963
 ```
 
-4.  Calculate the 95\% confidence interval using theory-based methods.
+7.  Calculate the 95\% confidence interval using theory-based methods.
 
 \vspace{1in}
 
+\newpage
 
-\vspace{1in}
 ## Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.

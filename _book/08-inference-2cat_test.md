@@ -7,7 +7,7 @@ output:
 
 ## Learning objectives
 
-* Write out the null and alternative hypothesis for two categorical variables
+* Write out the null and alternative hypotheses for two categorical variables
 
 * Assess the conditions to use the standard normal distribution for a difference in proportions
 
@@ -16,7 +16,7 @@ output:
 * Find the p-value and assess the strength of evidence
 
 ## Terminology review
-In today's activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
+In this week's in-class activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
 
 * Conditional proportion
 
@@ -75,19 +75,19 @@ injury %>% group_by(Helmet) %>% count(Outcome)
 ```
 Notice that the name of the explanatory variable is `Helmet` with outcomes `Yes` and `No` and the name of the response variable is `Outcome` with outcomes `Head Injury` and `No Head Injury`.
 
-### Vocabulary review. Complete Q1 - 4 before coming to class. {-}
+### Vocabulary review. Complete Q1 - 4 before class. {-}
 
 1.  What is the explanatory variable?
 
-\vspace{0.4in}
+\vspace{0.3in}
 
 2. What is the response variable?
 
-\vspace{0.4in}
+\vspace{0.3in}
 
 3. Is this an experiment or observational study?  Justify your answer.
 
-\vspace{0.4in}
+\newpage
 
 4.  Put an X in the box that represents the appropriate scope of inference for this study.
 
@@ -103,6 +103,7 @@ Notice that the name of the explanatory variable is `Helmet` with outcomes `Yes`
 In this study we are looking at the relationship between two groups or two parameters ($\pi_1$ and $\pi_2$).  Remember we define the parameter for a categorical variable as the true proportion of observational units that are labeled as a "success" in the response variable.  
 
 5. Write the two parameters of interest for this study.  Let 1 = skier/snowboarder wore helmet, 2 = skier/snowboarder did not wear helmet.
+\vspace{1mm}
 
    $\pi_1$ - 
 \vspace{0.5in}
@@ -114,11 +115,11 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 6.  Write the null hypothesis out in words using your answers to question 5.
 
-\vspace{1in}
+\vspace{0.81in}
 
 7.  What is the research question?
 
-\vspace{1in}
+\vspace{0.5in}
 
 8. Based on the research question fill in the appropriate sign for the alternative hypothesis ($<$, $>$, or $\neq$):
 \vspace{0.25in}
@@ -129,35 +130,35 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 \newpage 
 ### Summarize and visualize the data {-}
 
-9. Calculate the conditional proportion of skiers/snowboarders that wore a helmet with a head injury.
+9. Using the two-way table, calculate the conditional proportion of skiers/snowboarders that wore a helmet with a head injury.
 
-\vspace{.6in}
+\vspace{.3in}
 
-10. Calculate the conditional proportion of skiers/snowboarders that did not wear a helmet with a head injury.
+10. Using the two-way table, calculate the conditional proportion of skiers/snowboarders that did not wear a helmet with a head injury.
 
-\vspace{.6in}
+\vspace{.3in}
 
 
 \begin{center}\includegraphics[width=0.7\linewidth]{08-inference-2cat_test_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
-11.  Fill in the blanks on the graph with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who use helmets and those who do not use helmets.  *Hint*: Use the conditional proportions from questions 9 and 10.
+11.  Fill in the blanks on the graph above with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who wear helmets and those who do not wear helmets.  *Hint*: Use the conditional proportions from questions 9 and 10.
 
-\vspace{0.1in}
+\vspace{1mm}
 
 12.  Based on the segmented bar plot, Does there appear to be an association between helmet use and head injury?  Explain using the plot.
 
-\vspace{1in}
+\vspace{0.7in}
 
 13.  Calculate the summary statistic for this study.  Use helmet use (`Yes`) minus no helmet use (`No`) as the order of subtraction.
 
-\vspace{1in}
+\vspace{0.5in}
 
 
 14. What is the notation used for the value calculated in question 13?
 
-
-\vspace{0.5in}
+\vspace{0.2in}
 \newpage
+
 ### Use statistical analysis methods to draw inferences from the data {-}
 
 To test the null hypothesis we could use simulation methods as we did with a single categorical variable in class. In this in-class activity we will focus on theory-based methods.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
@@ -168,16 +169,18 @@ Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$:
 
 * Success-Failure Condition: The success-failure condition holds for each group.  Under the null hypothesis, the proportions $\pi_1$ and $\pi_2$ are equal, so we check the success-failure condition with our best estimate of these values under $H_0$, the pooled proportion from the two samples,
 
-|     $\hat{p}_{pool} * n_1 \ge 10$
-|     $(1 - \hat{p}_{pool}) * n_1 \ge 10$
-|     $\hat{p}_{pool} * n_2 \ge 10$
-|     $(1 - \hat{p}_{pool}) * n_2 \ge 10$
+$$
+\hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
+$$
+
+|     $$\hat{p}_{pool} * n_1 \ge 10, (1 - \hat{p}_{pool}) * n_1 \ge 10$$
+|     $$\hat{p}_{pool} * n_2 \ge 10, (1 - \hat{p}_{pool}) * n_2 \ge 10$$
 
 \vspace{.25in}
 
 15.  Is the independence condition met? Explain your answer.
 
-\vspace{1in}
+\vspace{0.5in}
 
 16. Is the success-failure condition met for each group?  Show your work to verify your answer.
 
@@ -192,11 +195,9 @@ $$
 where the null standard error is calculated using the pooled proportion of successes.
 
 $$
-SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\frac{1}{n_2})}, \text{  where}
+SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\frac{1}{n_2})}
 $$
-$$
-\hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
-$$
+
 
 \vspace{.25in}
 
@@ -208,7 +209,7 @@ $$
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided `RScript` file and enter the value of the standardized statistic found in question 18 at xx, highlight and run lines 27 - 29.
+We will use the pnorm function in `R` to find the p-value. Use the provided `RScript` file and enter the value of the standardized statistic found in question 18 at xx in line 27, highlight and run lines 27 - 29.
 
 
 ```r
@@ -296,7 +297,6 @@ The remaining questions cover simulation methods for testing two categorical var
 1.  First let's think about how one simulation would be created on the null distribution using cards.  
 
     How many cards would you need?
-
 \vspace{0.1in}
 
     What would be written on each card?
@@ -311,20 +311,22 @@ The remaining questions cover simulation methods for testing two categorical var
 
 \vspace{1in}
 
-4.  To create the null distribution, we will use the two proportion test.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name identified above as `injury`, the outcome for the explanatory variable to give the order of subtraction for First in Subtraction, number of repetitions, the outcome for the response variable that is a success for Response Value Numerator, and the direction of the alternative hypothesis.
+To create the null distribution, we will use the two proportion test.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name identified above as `injury`, the outcome for the explanatory variable to give the order of subtraction for First in Subtraction, number of repetitions, the outcome for the response variable that is a success for Response Value Numerator, and the direction of the alternative hypothesis.
 
 The response variable name is Outcome and the explanatory variable name is Helmet.
 
-What inputs should be entered for each of the following to create the simulation?
+\newpage
+
+4.  What inputs should be entered for each of the following to create the simulation?
 
 \vspace{.2in}
-* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction?):
+* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"Yes"` or `"No"`):
 
 \vspace{.2in}
 * Number of repetitions:
     
 \vspace{.2in}
-* Response Value Numerator (What is the outcome for the response variable that is considered a success?):
+* Response Value Numerator (What is the outcome for the response variable that is considered a success? `"Head Injury"` or `"No Head Injury"`):
 
 \vspace{.2in}
 * As extreme as (enter the value for the sample difference in proportions):
@@ -334,7 +336,7 @@ What inputs should be entered for each of the following to create the simulation
 
 \vspace{.2in}
 
-Using the `RScript` file for this activity, enter your answers for question 4 in place of the xx's to produce the null distribution with 1000 simulations, highlight and run lines 1 - 12 and then 33 - 39.
+Using the `RScript` file for this activity, enter your answers for question 4 in place of the xx's in the two proportion test code to produce the null distribution with 1000 simulations, highlight and run lines 1 - 12 and then 33 - 39.
 
 
 ```r
@@ -347,18 +349,23 @@ two_proportion_test(formula = Outcome ~ Helmet, #response~explanatory
                     direction="xx") #alternative hypothesis direction ("greater","less","two-sided")
 ```
 
-5.  What value is the null distribution centered around?  Explain why this makes sense?
+5.  Sketch the null distribution created here.
+
+\newpage
+
+
+6. What value is the null distribution centered around?  Explain why this makes sense?
 
 \vspace{1in}
 
-6.  What is the p-value? *Remember*: This is the value given at the bottom of the null distribution.
+7.  What is the p-value? *Remember*: This is the value given at the bottom of the null distribution.
 
 \vspace{0.2in}
 
-7.  Is the p-value found in question 6 for the out of class activity similar to the p-value found using the theory-based test?  Explain why you would expect this to be true.
+8.  Is the p-value found in question 7 for the out of class activity similar to the p-value found using the theory-based test?  Explain why you would expect this to be true.
 
 \vspace{1in}
 
 ## Additional notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

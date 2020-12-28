@@ -1,4 +1,4 @@
-# Estimating the Proportion of Left-Handed Male Boxers
+# Estimate the Proportion of Left-Handed Male Boxers
 
 ## Learning objectives
 
@@ -8,7 +8,7 @@
 
 ## Terminology review
 
-In today's activity, we will introduce simulation confidence intervals for a single categorical variable. Some terms covered in this activity are:
+In this week's in-class activity, we will introduce simulation confidence intervals for a single categorical variable. Some terms covered in this activity are:
 
 * Parameter of interest
 
@@ -35,12 +35,12 @@ A **point estimate** provides a single plausible value for a parameter. However,
 
 \vspace{0.5in}
 
-In today's activity, we will use bootstrapping to find the 95% confidence interval. See Section 5.3.2 for more information on bootstrapping.
+In this week's activity, we will use bootstrapping to find the 95\% confidence interval. See Section 5.3.2 for more information on bootstrapping.
 
 3.  In your own words, explain the bootstrapping process.
 \vspace{0.5in}
 
-4.  Write the conclusion to your test from last week.
+4.  Write the conclusion to your test from activity 6.
 
 \vspace{0.5in}
 
@@ -69,7 +69,7 @@ To use the computer simulation to create a bootstrap distribution, we will need 
     
 \vspace{.1in}
 
-Using the provided `RScript` file, fill in the values/words for xx with your answers from question 6 to create a bootstrap distribution with 1000 simulations, highlight and run lines 1 - 11.
+Using the provided `RScript` file, fill in the values/words for xx with your answers from question 6 in the one proportion bootstrap CI code to create a bootstrap distribution with 1000 simulations, highlight and run lines 1 - 11.
 
 
 ```r
@@ -80,7 +80,7 @@ one_proportion_bootstrap_CI(sample_size = xx, #Sample size
 ```
 7.  Sketch the bootstrap distribution created below.
 
-\vspace{1.5in}
+\vspace{1.8in}
 
 8. What is the value at the center of this bootstrap distribution?  Why does this make sense?
 \vspace{.8in}
@@ -91,7 +91,7 @@ one_proportion_bootstrap_CI(sample_size = xx, #Sample size
 
 10. Report the 95\% bootstrapped confidence interval for $\pi$.  Use interval notation: (lower value, upper value).
 
-\vspace{1in}
+\vspace{0.3in}
 11.  Interpret the 95\% confidence interval in context.
 
 \vspace{.8in}
@@ -101,6 +101,8 @@ one_proportion_bootstrap_CI(sample_size = xx, #Sample size
 12.  Does the confidence interval confirm your conclusion from activity 6?  Explain your answer.
 
 \vspace{1in}
+
+\newpage
 
 ### Effect of confidence level
 
@@ -127,6 +129,8 @@ one_proportion_bootstrap_CI(sample_size = 500, #Sample size
 15.  Report both the 95\% confidence interval (question 10) and the 90\% confidence interval (question 14).  Is the 90\% confidence interval narrower or wider than the 95\% confidence interval?
 
 \vspace{0.5in}
+
+\newpage
 
 ### What does *confidence* mean?
 
@@ -164,7 +168,7 @@ In the interpretation of the confidence interval, we say that we are 95\% or 90\
 
 ## Out of Class Activity
 
-The remaining questions cover theory based methods for testing a single categorical variable.  Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
+The remaining questions cover theory-based methods for testing a single categorical variable.  Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
 
 Recall that to use theory-based methods we must check the conditions to approximate the sample distribution with the Normal distribution.  From the previous activity we saw that independence was satisfied as the researchers took a random sample.
 
@@ -209,5 +213,5 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 
 ## Additional notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 

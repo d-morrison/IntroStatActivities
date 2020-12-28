@@ -17,7 +17,7 @@
 
 ## Terminology review
 
-In today's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
+In this week's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
 
 * Mean difference
 
@@ -31,7 +31,7 @@ To review these concepts, see Section 6.2 in the textbook.
 
 ## COVID-19 and air pollution
 
-In June 2020, the social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 appeared to help 'flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured in Figure \@ref{fig:covid}, which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants. 
+In June 2020, the social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 appeared to help 'flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured in Figure \@ref(fig:covid), which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants. 
 
 Have high population-density US cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated US cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015--2019). Note that higher AQI scores indicate worse air quality. A box plot of the differences in AQI scores for the 33 cities and a table of summary statistics are shown below.
 
@@ -68,7 +68,7 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 | Differences   | $\bar{x}_d$ = -4.152 | $s_d$ = 17.096     | $n_d$ = 33  |
 
 \newpage
-### Vocabulary review.  Complete questions 1 - 4 before class.{-}
+### Vocabulary review.  Complete Q1 - 5 before class.{-}
 
 1. What is the sample size? 
 
@@ -108,7 +108,6 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 
 \vspace{1in}
 
-\newpage
 ### Summarize and visualize the data  {-}
 
 10. Report the summary statistic for the data.  
@@ -151,7 +150,7 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 16. What proportion of samples are at or less than the sample mean difference in AQI scores for current scores minus 5 year median scores?
 
-\newpage
+\vspace{.3in}
 
 17. Interpret the p-value in the context of the problem.
 
@@ -183,7 +182,6 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 
 \vspace{.8in}
 
-\newpage
 
 22. Do the results of your confidence interval and hypothesis test agree?  What does each tell you about the null hypothesis?
 
@@ -209,6 +207,8 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 24. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
 \vspace{0.6in}
 
+\newpage
+
 ## Out of Class Activity
 
 The remaining questions cover theory-based methods for testing paired quantitative data.  Use section 6.2.3 in the textbook and the OneMeanTheory video to complete the following questions.
@@ -221,21 +221,21 @@ Conditions for the sample distribution of $\bar{x}$.
 
 * Normality: data should be approximately normal
 
-** n < 30: If the sample size n is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
+    - n < 30: If the sample size n is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
 
-** n ≥ 30: If the sample size n is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
+    - n ≥ 30: If the sample size n is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
 
 1.  In the in-class activity we verified that the independence condition was satisfied.  Is the normality condition met to use the theory-based methods for analysis?  Explain your answer.
 
 \vspace{1in}
 
-To find the Standardized Statistic for the paired differences:
+To find the standardized statistic for the paired differences we will use the following formula:
 
-|     $T = \frac{\bar{x}_d}{SE(\bar{x}_d)}$
+$$T = \frac{\bar{x}_d}{SE(\bar{x}_d)}$$
 
-where the standard error of the mean difference
+where the standard error of the mean difference is:
 
-|     $SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}$
+$$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}$$
 
 2.  Calculate the standard error of the mean difference.
 
@@ -258,9 +258,9 @@ pt(xx, df=32, lower.tail=TRUE)
 
 To calculate the 99\% confidence interval use the following formula:
 
-|    $\bar{x}_d\pm t^* SE(\bar{x}_d)$ we will need to find the $t^*$ multiplier using the function qt.  
+$$\bar{x}_d\pm t^* SE(\bar{x}_d)$$
 
-For a 99\% confidence interval we are finding the $t^*$ value at the 99.5th percentile with df = n - 1 = 33 - 1 = 32.
+We will need to find the $t^*$ multiplier using the function qt. For a 99\% confidence interval we are finding the $t^*$ value at the 99.5th percentile with df = n - 1 = 33 - 1 = 32.
 
 ```{r, echo=TRUE}
 qt(0.995, df = 32, lower.tail=TRUE)

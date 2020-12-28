@@ -16,7 +16,7 @@
 
 ## Terminology review
 
-In today's in-class activity, we will cover two-way tables and probability.  In the out of class activity, we will review summary measures and plots for categorical variables.  Some terms covered in this activity are:
+In this week's in-class activity, we will cover two-way tables and probability.  In the out of class activity, we will review summary measures and plots for categorical variables.  Some terms covered in this activity are:
 
 * Proportions 
 
@@ -191,7 +191,7 @@ ggplot(aes(y = xx)) +   #This specifies the variable
 
 \vspace{1.5in}
 
-2. Using the bar chart created, estimate how many children have some level of myopia?
+2. Using the bar chart created, estimate how many children have some level of myopia.
 
 \vspace{0.3in}
 
@@ -215,7 +215,7 @@ ggplot(aes(x = Sight)) +   #This specifies the variable
 
 ### Displaying two categorical variables {-}
 
-To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, Light (explanatory variable) for xx and the variable name, Sight (response variable) for yy in the `RScript` file in line 28.  Highlight and run lines 27 - 33. 
+To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` (explanatory variable) for xx and the variable name, `Sight` (response variable) for yy in the `RScript` file in line 28.  Highlight and run lines 27 - 33. 
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
 myopia %>% #Data set piped into...

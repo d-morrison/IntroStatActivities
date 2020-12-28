@@ -15,7 +15,7 @@
 
 ## Terminology review
 
-In today's activity, we will review summary measures and plots for quantitative variables.  Some terms covered in this activity are:
+In this week's activity, we will review summary measures and plots for quantitative variables.  Some terms covered in this activity are:
 
 * Two measures of center: mean, median
 
@@ -168,7 +168,7 @@ movies %>%  #Data set piped into...
 \vspace{.8in}
 
 ## Out of Class Activity
-For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the Movies data set.  Download and open the provided `RScript` file, highlight and run the first 8 lines of code.
+For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the `Movies` data set.  Download and open the provided `RScript` file, highlight and run the first 8 lines of code.
 
 To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.
 
