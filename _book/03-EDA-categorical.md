@@ -1,4 +1,4 @@
-# What's the probability?
+# Activity 3:  What's the probability?
 
 ## Learning outcomes
 

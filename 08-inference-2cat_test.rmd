@@ -1,9 +1,4 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-# Winter Sports Helmet Use and Head Injuries
+# Activity 8:  Winter Sports Helmet Use and Head Injuries - Testing
 
 ## Learning objectives
 

@@ -1,4 +1,4 @@
-# COVID-19 and Air Pollution
+# Activity 10:  COVID-19 and Air Pollution
 
 ## Learning outcomes
 

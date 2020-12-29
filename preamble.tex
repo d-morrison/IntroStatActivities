@@ -5,6 +5,7 @@
 \usepackage{longtable}
 \usepackage{longtable}
 \usepackage{xcolor}
+\usepackage{setspace}
 
 \pagestyle{plain}
 
@@ -15,7 +16,11 @@
 \addtolength{\textheight}{3cm}
 \addtolength{\textwidth}{2cm}
 
-\renewcommand*{\chaptername}{Activity}
+% Spacing for reading guides
+\newcommand{\rgs}{\vspace{12pt}} % Vertical space
+\newcommand{\rgi}{\hspace{20pt}}  % Indent
+
+\renewcommand*{\chaptername}{Chapter}
 
 \titleformat{\chapter}[display]
 {\bfseries\Large}

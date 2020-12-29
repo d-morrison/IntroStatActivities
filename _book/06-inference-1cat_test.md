@@ -1,4 +1,4 @@
-# Handedness of Male Boxers
+# Activity 6:  Handedness of Male Boxers - Testing
 
 ## Learning objectives
 

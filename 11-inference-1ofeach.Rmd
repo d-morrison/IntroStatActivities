@@ -1,4 +1,4 @@
-# Weather Patterns and Record Snowfall
+# Activity 11:  Weather Patterns and Record Snowfall
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, 

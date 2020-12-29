@@ -1,14 +1,6 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-# Martian Alphabet
+# Activity 1:  Martian Alphabet
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-options(show.signif.stars = FALSE)
-```
+\setstretch{1}
 
 ## Learning outcomes
 

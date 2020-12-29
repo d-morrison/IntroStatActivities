@@ -1,11 +1,6 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-# Martian Alphabet
+# Activity 1:  Martian Alphabet
 
-
+\setstretch{1}
 
 ## Learning outcomes
 

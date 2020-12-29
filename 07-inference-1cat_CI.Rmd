@@ -1,4 +1,4 @@
-# Estimate the Proportion of Left-Handed Male Boxers
+# Activity 6:  Handedness of Male Boxers - Estimation
 
 ## Learning objectives
 

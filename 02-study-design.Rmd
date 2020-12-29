@@ -1,4 +1,4 @@
-# Study Design
+# Activity 2: Study Design
 
 ## Learning outcomes
 

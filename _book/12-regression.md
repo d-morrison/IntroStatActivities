@@ -1,4 +1,4 @@
-# Moneyball
+# Activity 12:  Moneyball
 
 ## Learning outcomes
 * Given a research question, construct the null and alternative hypotheses

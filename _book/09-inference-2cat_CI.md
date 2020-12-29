@@ -1,4 +1,4 @@
-# Estimate the Difference in Proportion of Head Injuries
+# Activity 9:  Winter Sports Helmet Use and Head Injuries - Estimation
 
 ## Learning objectives
 
