@@ -1,14 +1,182 @@
-# Activity 1:  Martian Alphabet
+# Basics of Data
+
+## Reading Guide: Basics of Data
+
+\setstretch{1.25}
+
+### Sections 1.1 (Case study) and 1.2 (Data basics) {-}
+
+#### Vocabulary {-}
+
+Data:
+\rgs
+
+Summary statistic:
+\rgs
+
+Case/Observational unit:
+\rgs
+
+Variable:
+\rgs
+
+\rgi Quantitative variable:
+\rgs
+
+\rgi Discrete variables:
+\rgs
+
+\rgi \rgi Examples of discrete variables using the `County` data: 
+\rgs
+
+\rgi Continuous variables:
+\rgs
+
+\rgi \rgi Examples of continuous variables using the `County` data: 
+\rgs
+
+Example of a number which is NOT a numerical variable: 
+\rgs
+
+Categorical variable:
+\rgs
+
+\rgi Ordinal variable:
+\rgs
+
+\rgi \rgi Example of an ordinal variable using the `County` data:
+\rgs
+
+\rgi Nominal variable:
+\rgs
+
+\rgi \rgi Examples of nominal variables using the `County` data:
+
+\rgs
+
+**Note: Ordinal and nominal variables will be treated the same in this course.  We recommend taking more statistics courses in the future to learn better methods of analysis for ordinal variables.**
+
+Data frame:
+\rgs
+
+Scatterplot:
+\rgs
+	
+\rgi Each point represents:  
+
+\rgi Positive association:  
+
+\rgi Negative association:   
+
+Association or Dependent variables:
+\rgs
+
+Independent variables:
+\rgs
+
+Explanatory variable:
+\rgs
+
+Response variable:
+\rgs
+
+Observational study:
+\rgs
+
+Experiment:
+\rgs
+
+Placebo:
+\rgs
+
+#### Notes {-}
+
+Big Idea: Variability is inevitable!  We would not expect to get _exactly_ 50 heads in 100 coin flips.  The statistical question then is whether any differences found in data are due to random variability, or if something else is going on.  
+
+> The larger the difference, the **less we believe the difference was due to chance.**
+
+In a data frame, rows correspond to ___________________ 
+
+and columns correspond to __________________.
+
+How many types of variables are discussed?  Explain the differences between them and give an example of each.
+\rgs
+\rgs
+\newpage
+
+True or False: A pair of variables be both associated AND independent.  
+True or False: Given a pair of variables, will one always be the explanatory and one the response variable.  
+True or False: If a study does have an explanatory and a response variable, that means changes in the explanatory variable must cause changes in the response variable?  
+True or False: Observational studies can show a naturally occurring association between variables.  
+
+#### Example (Section 1.1 - Case study: Using stents to prevent strokes) {-}
+
+1.	What is the principle question the researchers hope to answer?  (We call this the **research question**.)
+\rgs
+\rgs
+
+
+2.	When creating two groups to compare, do the groups have to be the same size (same number of people in each)?
+\rgs
+\rgs
+
+3.	What are the cases or observational units in this study?
+\rgs
+\rgs
+
+
+4.	Is there a clear explanatory and response variable?  If so, name the variable in each role and determine the type of variable (discrete, continuous, nominal, or ordinal).
+\rgs
+\rgs
+
+
+5.	What is the purpose of the control group?
+\rgs
+\rgs
+
+
+6.	Is this an example of an observational study or an experiment?  How do you know?
+\rgs
+\rgs
+
+
+
+7.	Consider Tables 1.1 and 1.2.  Which table is more helpful in answering the research question?  Justify your answer.
+\rgs
+\rgs
+
+
+8.	Describe in words what is shown in Figure 1.1.  Specifically, compare the proportion of patients who had a stroke between the treatment and control groups after 30 days as well as after 365 days.
+\rgs
+\rgs
+
+
+
+9.	Given the notion that the larger the difference between the two groups (for a given sample size), the less believable it is that the difference was due to chance, which measurement period (30 days or 365 days) provide stronger evidence that there is an association between stents and strokes, or that the differences are not due to random chance?
+\rgs
+\rgs
+
+
+10.	This study reported finding evidence that stents **increase** the risk of stroke.  Does this conclusion apply to all patients and all stents?
+\rgs
+\rgs
+
+11.	This study reported finding evidence that stents **increase** the risk of stroke.  This conclusion implies a causal link between stents and an increased risk of stroke.  Is that conclusion valid?  Justify your answer.
+
+
+\newpage
+
+## Activity:  Martian Alphabet
 
 \setstretch{1}
 
-## Learning outcomes
+### Learning outcomes
 
 * Describe the statistical investigation process
 
 * Identify observational units, variables, and variable types in a statistical study
 
-## Terminology review
+### Terminology review
 Statistics is the study of how best to collect, analyze, and draw conclusions from data.  Today in class you will be introduced to the following terms:
 
 * Observational units or cases
@@ -23,7 +191,7 @@ Statistics is the study of how best to collect, analyze, and draw conclusions fr
 
 For more on these concepts, read Sections 1.2 and 2.1 in the textbook.
 
-## Can you read "Martian"?
+### Can you read "Martian"?
 
 How well can humans distinguish one “Martian” letter from another? In this week’s activity, we’ll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or on the right.
 \vspace{2mm}
@@ -32,7 +200,7 @@ How well can humans distinguish one “Martian” letter from another? In this w
 
 \vspace{0.3in}
 
-### Steps of the statistical investigation process {-}
+#### Steps of the statistical investigation process {-}
 
 **Step 1**: The first step of any statistical investigation is to *ask a research question*.  In this study the research question is: can we as a class read Martian? (We will refine this later on!).
 
@@ -174,7 +342,7 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 \vspace{1in}
 
 
-## Take home messages
+### Take-home messages
 
 1.	In this course we will learn how to evaluate a claim by comparing observed results (classes’ "guesses" when asked to identify Bumba) to a distribution of many simulated results under an assumption like “blind guessing.”
 
@@ -182,9 +350,8 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 3.	Unusual observed results will make us doubt the assumptions used to create the simulated distribution. A large number of correct “guesses” is evidence that a person was not just blindly guessing.
 
-\newpage
 
-## Out of Class Activity
+### Out-of-class activity
 
 Since this class is taught in a blended format we are only in class one day per week.  During class we will complete the in-class activity from the course pack.  Outside of class, students will read from the textbook, watch course videos, and complete an out-of-class activity on the other two days of class.  To become familiar with the course outline, read through the syllabus, https://mtstateintrostats.github.io/Syllabus/, the day specific cohort calendar, and watch the Stat 216 Course Tour on D2L before answering the following questions.
 
@@ -222,6 +389,6 @@ In the Martian Alphabet `RScript` file for the one proportion test, enter your c
 
 \vspace{0.3in}
 
-## Additional notes
+### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered, and to write down the names and contact information of your teammates.

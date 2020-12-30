@@ -11,11 +11,13 @@ documentclass: report
 description: This is the coursepack of in-class activities for STAT 216 Spring 2021.
 ---
 
-<!-- Notes for authors: -->
+<!-- Notes for authors on formatting: -->
+
 <!-- For each chapter, main title is in title case; remaining section headers capitalize the first word only. -->
 <!-- Reading guides use 1.25 line spacing; activities use 1 line spacing. -->
 <!-- When referring to R, use `R`. -->
 <!-- Reading guides do not have section numbers (use {-} after each header). -->
+<!-- Comments in displayed code: # Capitalize phrase. -->
 
 \newpage
 \thispagestyle{empty}
@@ -24,7 +26,7 @@ This resource was developed by Melinda Yager, Jade Schmidt, and Stacey Hancock i
 
 This resource is released under a [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license unless otherwise noted.
 
-\setcounter{tocdepth}{0}
+\setcounter{tocdepth}{1}
 \tableofcontents
 \setcounter{page}{1}
 
@@ -33,7 +35,7 @@ This resource is released under a [Creative Commons BY-NC-SA 4.0](https://creati
 
 This coursepack accompanies the textbook for STAT 216: Introduction to Statistics at Montana State University. The coursepack includes reading guides to aid in taking notes while you complete the required readings, and in-class activities. Each of the activities in this workbook is designed to target specific learning outcomes of the course, giving you practice with important statistical concepts in a group setting with instructor guidance. Bring this workbook with you to class each week, and take notes in the workbook as you would your own notes. A well-written complete workbook will provide an optimal study guide for exams!  
 
-The activities in this coursepack are broken into three sections: pre-class, in-class, and after class.  Read through the introduction for each activity and complete the pre-class questions before attending class each week.  In class, you will work through the in-class section with your group and instructor.  After class, you will complete the out of class part of the activity.
+The activities in this coursepack are broken into three sections: pre-class, in-class, and after class.  Read through the introduction for each activity and complete the pre-class questions before attending class each week.  In class, you will work through the in-class section with your group and instructor.  After class, you will complete the out-of-class part of the activity.
 
 STAT 216 is a 3-credit blended course. Rather than meeting for a total of 150 structured minutes in class per week, students meet with their instructor and cohort of classmates for 50 minutes of class per week. The other 100 minutes typically spent in class are instead spent outside of class watching instructor video lectures, reading the textbook, working through case studies, and participating in online discussion with your classmates. This structure serves two purposes: (1) enhance the safety of our community during the COVID-19 pandemic, and (2) provide additional flexibility for students to create their own schedule and make their own decisions on how they learn best. 
 

@@ -1,8 +1,16 @@
-# Activity 12:  Moneyball
+# Inference for Two Quantitative Variables
+
+## Reading Guide: 
+
+\setstretch{1.25}
+
+\newpage
+
+## Activity:  Moneyball
 
 \setstretch{1}
 
-## Learning outcomes
+### Learning outcomes
 * Given a research question, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols
   
@@ -14,7 +22,7 @@
 
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
-## Terminology review
+### Terminology review
 In this week's in-class activity, we will use theory-based methods for hypothesis tests and confidence intervals for linear regression slope. Some terms covered in this activity are:
 
 * Correlation
@@ -27,7 +35,7 @@ To review these concepts, see Chapters 3 and 7 in the textbook.
 
 \newpage
 
-## Moneyball
+### Moneyball
 
 The goal of a Major League baseball team is to make the playoffs. In 2002, the manager of the Oakland A's, Billy Beane with the help of Paul DePodesta began to use statistics to determine which players to choose for their season.  Based on past data, Paul determined that to make it to the playoffs, the A's would need to win at least 95 games in the regular season.  In order to win more games they would need to score more runs than they allowed.  In this study, we will see if there is evidence of a positive linear relationship between the difference in the number of runs scored minus the number of runs allowed and the number of wins for teams in the years before 2002.  
 
@@ -54,7 +62,7 @@ Some of the variables collected in this data set consist of the following:
 # Read in data set
 baseball <- read.csv("data/baseball.csv")
 
-baseball$RD <- baseball$RS - baseball$RA #create variable run difference
+baseball$RD <- baseball$RS - baseball$RA # Create variable run difference
 
 # Code categorical variables as factors
 baseball <- # Write over original data with the following
@@ -62,7 +70,7 @@ baseball <- # Write over original data with the following
   subset(Year < 2002) # Select only years before 2002
 ```
 
-### Vocabulary review. Complete Q1 - 4 before class. {-}
+#### Vocabulary review. Complete Q1 - 4 before class. {-}
 
 1. Explain why regression methods are appropriate to use to address the researchers' question. Make sure you clearly define the variables of interest in your explanation and their roles.
 
@@ -73,12 +81,12 @@ baseball <- # Write over original data with the following
     
     ```r
     baseball %>% # Pipe data set into...
-    ggplot(aes(x = xx, y = yy))+  #Specify variables
-      geom_point() +  #Add scatterplot of points
-      labs(x = "Difference in number of runs",  #Label x-axis
-           y = "Number of wins",  #Label y-axis
-           title = "Scatterplot of Run Difference vs. Number of Wins") + #Be sure to tile your plots
-      geom_smooth(method = "lm", se = FALSE)  #Add regression line
+    ggplot(aes(x = xx, y = yy))+  # Specify variables
+      geom_point() +  # Add scatterplot of points
+      labs(x = "Difference in number of runs",  # Label x-axis
+           y = "Number of wins",  # Label y-axis
+           title = "Scatterplot of Run Difference vs. Number of Wins") + # Be sure to tile your plots
+      geom_smooth(method = "lm", se = FALSE)  # Add regression line
     ```
 
 3. Sketch the plot created below. Based on your plot, does it appear that there is a relationship between ``run difference`` and ``wins``? Note: ``RD`` should be on the x-axis.
@@ -93,7 +101,7 @@ baseball <- # Write over original data with the following
 
 \vspace{0.5in}
 
-### Conditions for the least squares line {-}
+#### Conditions for the least squares line {-}
 
 When performing inference on a least squares line, the follow conditions are generally required
 
@@ -115,7 +123,7 @@ The scatterplot and the residual plots will be used to assess the conditions for
 \vspace{1.5in}
 
 
-### Ask a research question {-}
+#### Ask a research question {-}
 
 6. Write out the null hypothesis in words.
 
@@ -125,13 +133,13 @@ The scatterplot and the residual plots will be used to assess the conditions for
 
 \vspace{0.5in}
 
-### Summarize and visualize the data {-}
+#### Summarize and visualize the data {-}
 
 Using the provided `RScript` file, enter the response variable name, `W` into the linear model function for yy and the explanatory variable name, `RD` for xx in line 32 to get the linear model output.  Highlight and run lines 32 - 33.
 
 
 ```r
-lm.baseball <- lm(yy~xx, data=baseball) #lm(response~explanatory)
+lm.baseball <- lm(yy~xx, data=baseball) # lm(response~explanatory)
 round(summary(lm.baseball)$coefficients, 5)
 ```
 
@@ -151,7 +159,7 @@ round(summary(lm.baseball)$coefficients, 5)
 
 \vspace{1in}
 
-### Use statistical inferential methods to draw inferences from the data {-}
+#### Use statistical inferential methods to draw inferences from the data {-}
 
 To find the value of the standardized statistic to test the slope we will use, 
 
@@ -184,7 +192,7 @@ The $t^*$ multiplier comes from the $t$-distribution with $n-2$ df.  Recall for 
 
 
 ```r
-qt(0.95+0.025, 900) #95% t* multiplier 
+qt(0.95+0.025, 900) # 95% t* multiplier 
 ```
 
 ```
@@ -198,7 +206,7 @@ qt(0.95+0.025, 900) #95% t* multiplier
 
 \vspace{1in}
 
-### Communicate the results and answer the research question {-}
+#### Communicate the results and answer the research question {-}
 
 18. Based on the p-value, write a conclusion in context of the problem.
 
@@ -226,7 +234,7 @@ qt(0.95+0.025, 900) #95% t* multiplier
 
 \newpage
 
-### Revisit and look forward {-}
+#### Revisit and look forward {-}
 
 In order to see what team attributes would have the most impact on the number of runs scored, Beane and DePodesta created several prediction models.  Using 2001 statistics, they looked at a prediction model using both the team's on base percentage and slugging percentage to predict the number of runs scored. The following `R` code gives the estimates for the regression model with both of these variables included.
 
@@ -249,8 +257,13 @@ $$\widehat{\text{runs scored}} = b_0 + b_1*OBP + b_2*SLG$$
 
 \vspace{1in}
 
-## Out of class activity
-In the out of class activity we will focus on using simulation based methods for inference of regression.  Use section 7.1 in the textbook and the TwoQuantSim video to complete the following questions.  
+### Take-home messages
+
+1.	TODO
+
+### Out-of-class activity
+
+In the out-of-class activity we will focus on using simulation based methods for inference of regression.  Use section 7.1 in the textbook and the TwoQuantSim video to complete the following questions.  
 
 First let's think about how one simulation would be created on the null distribution using cards.  First we would write the values for the response variable, wins, on each card.  Next, we would shuffle the y values to a new x value (explanatory variable).  Then, find the line of regression for the shuffled cards.  
 
@@ -286,11 +299,11 @@ Using the `RScript` file for this activity, enter your answers for question 2 in
 
 ```r
 regression_test(W~RD, # response ~ explanatory
-               data = baseball, # name of data set
-               direction = "xx", # sign in alternative ("greater", "less", "two-sided")
+               data = baseball, # Name of data set
+               direction = "xx", # Sign in alternative ("greater", "less", "two-sided")
                statistic = "xx", 
-               as_extreme_as = x, #observed slope
-               number_repetitions = 1000) #Number of simulated samples for null distribution
+               as_extreme_as = x, # Observed slope
+               number_repetitions = 1000) # Number of simulated samples for null distribution
        
 ```
 
@@ -303,10 +316,10 @@ Fill in the xx's in the regression bootstrap CI function in the provided `RScrip
 
 ```r
 regression_bootstrap_CI(W~RD, # response ~ explanatory
-                        data = baseball, # name of data set
-                        confidence_level = xx, # confidence level as decimal
-                        statistic = "xx", # slope or correlation
-                        number_repetitions = 1000) #Number of simulated samples for bootstrap distribution
+                        data = baseball, # Name of data set
+                        confidence_level = xx, # Confidence level as decimal
+                        statistic = "xx", # Slope or correlation
+                        number_repetitions = 1000) # Number of simulated samples for bootstrap distribution
 ```
 4.  Report the bootstrap 95\% confidence interval in interval notation.  
 \vspace{0.5in}
@@ -315,6 +328,6 @@ regression_bootstrap_CI(W~RD, # response ~ explanatory
 
 \vspace{1in}
 
-## Additional notes
+### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.

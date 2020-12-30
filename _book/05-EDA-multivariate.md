@@ -1,8 +1,16 @@
-# Activity 5:  Movie Profits
+# Exploring Multivariable Data
+
+## Reading Guide: 
+
+\setstretch{1.25}
+
+\newpage
+
+## Activity:  Movie Profits
 
 \setstretch{1}
 
-## Learning objectives
+### Learning objectives
 
 * Identify and create appropriate summary statistics and plots
   given a data set with two quantitative variables
@@ -17,7 +25,7 @@
 
 * Interpret the coefficient of determination in context of the problem
 
-## Terminology review
+### Terminology review
 
 In this week's activity, we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are:
 
@@ -33,7 +41,7 @@ In this week's activity, we will review summary measures and plots for two quant
 
 To review these concepts, see Chapter 3 in the textbook.  
 
-## Movies released in 2016
+### Movies released in 2016
 
 We will revisit the data set used last week collected on Movies released in 2016. Here is a reminder of the variables collected on these movies.
 
@@ -49,7 +57,7 @@ We will revisit the data set used last week collected on Movies released in 2016
 
 \newpage
 
-### Vocabulary review. Complete Q1 - 4 before class.{-}
+#### Vocabulary review. Complete Q1 - 4 before class.{-}
 
 Note: You will need to use the provided `RScript` file for activity 5 to complete question 3.
 
@@ -67,13 +75,13 @@ We will look at the relationship between `Budget` and `Revenue` for movies relea
 
 
 ```r
-movies %>% #Data set pipes into...
-ggplot(aes(x = xx, y = yy))+  #Specify variables
-  geom_point() +  #Add scatterplot of points
-  labs(x = "Budget in Millions ($)",  #Label x-axis
-       y = "Revenue in Millions ($)",  #Label y-axis
-       title = "Revenue vs. Budget") + #Be sure to tile your plots
-  geom_smooth(method = "lm", se = FALSE)  #Add regression line
+movies %>% # Data set pipes into...
+ggplot(aes(x = xx, y = yy))+  # Specify variables
+  geom_point() +  # Add scatterplot of points
+  labs(x = "Budget in Millions ($)",  # Label x-axis
+       y = "Revenue in Millions ($)",  # Label y-axis
+       title = "Revenue vs. Budget") + # Be sure to tile your plots
+  geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
 3. Sketch the scatterplot created from the code.
 
@@ -103,7 +111,7 @@ ggplot(aes(x = xx, y = yy))+  #Specify variables
 
 \vspace{1in}
 
-### Correlation  {-}
+#### Correlation  {-}
 
 Correlation measures the strength and the direction of the linear relationship between two quantitative variables.  The closer the value of correlation to + or - 1 the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  
 
@@ -111,7 +119,7 @@ Correlation measures the strength and the direction of the linear relationship b
 
 
 ```r
-movies %>%  #Data set pipes into
+movies %>%  # Data set pipes into
   select(c("budget_mil", "revenue_mil", 
            "duration", "imdb_score", 
            "movie_facebook_likes")) %>%
@@ -154,7 +162,7 @@ movies %>%  #Data set pipes into
 
 \vspace{1in}
 
-### Slope {-}
+#### Slope {-}
 
 The linear model function in `R` gives us the summary for the least squares regression line.  The estimate for `(Intercept)` is the $y$-intercept for the line of least squares and the estimate for `budget_mil` is the value of $b_1$, the slope.
 
@@ -190,7 +198,7 @@ Therefore, the slope predicts how much the line will *rise* for each *run* of +1
 
 \vspace{.6in}
 
-### Residuals {-}
+#### Residuals {-}
 
 The model we are using assumes the relationship between the two variables follows a straight line. The residuals are the errors, or the part that hasn't been modeled by the line.
 
@@ -210,9 +218,13 @@ $e_i=y_i-\hat{y}_i$
 
 \vspace{.2in}
 
-## Out of Class Activity
+### Take-home messages
 
-### Coefficient of determination (squared correlation) {-}
+1.	TODO
+
+### Out-of-class activity
+
+#### Coefficient of determination (squared correlation) {-}
 
 The third summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $r^2$ measures the proportion of variation in the response that is explained by the least squares line with the explanatory variable.  There are two ways to calculate the coefficient of determination: 
 
@@ -232,21 +244,21 @@ The third summary measure used to explain the linear relationship between two qu
 
 \vspace{.6in}
 
-### Multivariate plots {-}
+#### Multivariate plots {-}
 What if we wanted to see if the relationship between `Budget` and `Revenue` differs if we add another variable into the picture?  The following plot visualizes three variables, creating a **multivariate** plot. 
 
 
 ```r
-movies %>% #Data set pipes into...
+movies %>% # Data set pipes into...
   filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
-  ggplot(aes(x = budget_mil, y = revenue_mil, color = content_rating)) +  #Specify variables
-  geom_point(aes(shape = content_rating), size = 3) +  #Add scatterplot of points
-  labs(x = "Budget in Millions ($)",  #Label x-axis
-       y = "Revenue in Millions ($)",  #Label y-axis
-       color = "Content Rating",  #Label legend
-       title = "Revenue vs. Budget") + #Be sure to tile your plots
-  geom_smooth(method = "lm", se = FALSE, lwd = 2) + #Add regression lines
-  scale_color_grey() #Make black and white
+  ggplot(aes(x = budget_mil, y = revenue_mil, color = content_rating)) +  # Specify variables
+  geom_point(aes(shape = content_rating), size = 3) +  # Add scatterplot of points
+  labs(x = "Budget in Millions ($)",  # Label x-axis
+       y = "Revenue in Millions ($)",  # Label y-axis
+       color = "Content Rating",  # Label legend
+       title = "Revenue vs. Budget") + # Be sure to tile your plots
+  geom_smooth(method = "lm", se = FALSE, lwd = 2) + # Add regression lines
+  scale_color_grey() # Make black and white
 ```
 
 
@@ -263,7 +275,7 @@ movies %>% #Data set pipes into...
 
 \newpage
 
-## Additional notes
+### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 

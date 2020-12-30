@@ -1,8 +1,16 @@
-# Activity 6:  Handedness of Male Boxers - Testing
+# Inference for a Single Categorical Variable: Hypothesis Testing
+
+## Reading Guide: 
+
+\setstretch{1.25}
+
+\newpage
+
+## Activity:  Handedness of Male Boxers - Testing
 
 \setstretch{1}
 
-## Learning objectives
+### Learning objectives
 
 * Identify the two possible explanations (one assuming the null hypothesis, and one assuming the alternative hypothesis) for a relationship seen in sample data
 
@@ -13,7 +21,7 @@
 
 * Interpret and evaluate a p-value
 
-## Terminology review
+### Terminology review
 
 In this week's in-class activity, we will introduce simulation hypothesis testing for a single categorical variable. Some terms covered in this activity are:
 
@@ -31,7 +39,7 @@ In this week's in-class activity, we will introduce simulation hypothesis testin
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-## Steps of the statistical investigation process
+### Steps of the statistical investigation process
 
 We will work through a six-step process to complete a hypothesis test for a single proportion.
 
@@ -47,12 +55,12 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 * **Revisit and look forward** to point out limitations of the study and suggest new studies that could be performed to build on the findings of the study 
 
-## Handedness of male boxers
+### Handedness of male boxers
 
 Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers we want to see if there is an over-prevalence of left-handed fighters.
 
 
-### Summary statistics review: Complete Q1 - 4 before class {-}
+#### Summary statistics review: Complete Q1 - 4 before class {-}
 
 1.  What are the observational units?
 
@@ -70,13 +78,13 @@ Left-handedness is a trait that is found in about 10% of the population. Past st
 
 \vspace{0.5in}
 
-### Ask a research question {-}
+#### Ask a research question {-}
 
 5. Identify the research question for this study.
 
 \vspace{1in}
 
-### Design a study and collect data {-}
+#### Design a study and collect data {-}
 
 Before completing the hypothesis test, we must check that the cases are independent.  The sample observations are independent if the outcome of one observation does not influence the outcome of another. One way this condition is met is if data come from a simple random sample of the target population.
 
@@ -84,7 +92,7 @@ Before completing the hypothesis test, we must check that the cases are independ
 
 \vspace{1in}
 
-### Summarize and visualize the data {-}
+#### Summarize and visualize the data {-}
 
 <!-- ```{r, echo=TRUE, collapse=FALSE} -->
 <!-- # Counts for Handedness -->
@@ -102,7 +110,7 @@ handedness %>% count(Stance)  # Count number in each Stance category
 \vspace{0.5in}
 
 
-### Use statistical analysis methods to draw inferences from the data {-}
+#### Use statistical analysis methods to draw inferences from the data {-}
 
 When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the true value of interest.  *For example, in the Martian Alphabet Activity the parameter of interest is the true proportion of statistic students who correctly identify Bumba.*
 
@@ -189,12 +197,12 @@ To use the computer simulation, we will need to enter the "probability of succes
 Using the provided `RScript` file, fill in the values/words for xx with your answers from question 17 in the one proportion test to create a null distribution with 1000 simulations, highlight and run lines 1 - 14.
 
 ```{r, echo=TRUE, eval = FALSE}
-one_proportion_test(probability_success = xx, #Null hypothesis value
-                    sample_size = xx, #Enter sample size
-                    number_repetitions = 1000, #Enter number of simulations
-                    as_extreme_as = xx, #observed statistic
-                    direction = "xx", #specify direction of alternative hypothesis
-                    report_value = "proportion") #Reporting proportion or number of successes?
+one_proportion_test(probability_success = xx, # Null hypothesis value
+                    sample_size = xx, # Enter sample size
+                    number_repetitions = 1000, # Enter number of simulations
+                    as_extreme_as = xx, # Observed statistic
+                    direction = "xx", # Specify direction of alternative hypothesis
+                    report_value = "proportion") # Reporting proportion or number of successes?
 ```
 
 18.  Sketch the null distribution created from the R code here.
@@ -230,7 +238,7 @@ include_graphics("images/soe_gradient_grayscale.png")
 
 \vspace{1in}
 
-### Communicate the results and answer the research question {-}
+#### Communicate the results and answer the research question {-}
 
 When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.
 
@@ -250,7 +258,7 @@ When we write a conclusion we answer the research question by stating how much e
 
 \vspace{3in}
 
-### Revisit and look forward {-}
+#### Revisit and look forward {-}
 
 27. Suggest a new research question that you might investigate, building on what you learned in this study.
 
@@ -258,7 +266,11 @@ When we write a conclusion we answer the research question by stating how much e
 
 
 
-## Out of Class Activity
+### Take-home messages
+
+1.	TODO
+
+### Out-of-class activity
 
 The remaining questions cover theory-based methods for testing a single categorical variable.  Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
 
@@ -333,6 +345,6 @@ pnorm(xx, # Enter value of standardized statistic
 
 \vspace{0.5in}
 
-## Additional notes
+### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

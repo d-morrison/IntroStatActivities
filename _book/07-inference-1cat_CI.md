@@ -1,14 +1,22 @@
-# Activity 6:  Handedness of Male Boxers - Estimation
+# Inference for a Single Categorical Variable: Confidence Intervals
+
+## Reading Guide: 
+
+\setstretch{1.25}
+
+\newpage
+
+## Activity:  Handedness of Male Boxers - Estimation
 
 \setstretch{1}
 
-## Learning objectives
+### Learning objectives
 
 * Use bootstrapping to find a confidence interval for a single proportion
 
 * Interpret a confidence interval
 
-## Terminology review
+### Terminology review
 
 In this week's in-class activity, we will introduce simulation confidence intervals for a single categorical variable. Some terms covered in this activity are:
 
@@ -20,14 +28,14 @@ In this week's in-class activity, we will introduce simulation confidence interv
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-## Handedness of male boxers
+### Handedness of male boxers
 
 Last week, we found very strong evidence that the true proportion of male boxers who are left-handed is greater than the general population, 0.1.  We will use this same study to estimate the parameter of interest.  As a reminder: left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  Using the data from this random sample of 500 male boxers we want to estimate the true proportion of male boxers who are left-handed.  Recall from the last activity in the sample of 500 male boxers, 81 were left-handed.
 
 A **point estimate** provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible range of values for the parameter. This plausible range of values for the population parameter is called a confidence interval. 
 
 
-### Activity Intro. Complete Q1 - 4 before class. {-}
+#### Activity Intro. Complete Q1 - 4 before class. {-}
 
 1.  What is the value of the point estimate?
 
@@ -46,7 +54,7 @@ In this week's activity, we will use bootstrapping to find the 95\% confidence i
 
 \vspace{0.5in}
 
-### Use statistical analysis methods to draw inferences from the data {-}
+#### Use statistical analysis methods to draw inferences from the data {-}
 
 5.  Write out the parameter of interest for this study.
 
@@ -75,10 +83,10 @@ Using the provided `RScript` file, fill in the values/words for xx with your ans
 
 
 ```r
-one_proportion_bootstrap_CI(sample_size = xx, #Sample size
-                    number_successes = xx, #Observed number of successes
-                    number_repetitions = 1000, #Number of bootstrap samples to use
-                    confidence_level = 0.95) #Confidence level as a decimal
+one_proportion_bootstrap_CI(sample_size = xx, # Sample size
+                    number_successes = xx, # Observed number of successes
+                    number_repetitions = 1000, # Number of bootstrap samples to use
+                    confidence_level = 0.95) # Confidence level as a decimal
 ```
 7.  Sketch the bootstrap distribution created below.
 
@@ -98,7 +106,7 @@ one_proportion_bootstrap_CI(sample_size = xx, #Sample size
 
 \vspace{.8in}
 
-### Communicate the results and answer the research question {-}
+#### Communicate the results and answer the research question {-}
 
 12.  Does the confidence interval confirm your conclusion from activity 6?  Explain your answer.
 
@@ -106,7 +114,7 @@ one_proportion_bootstrap_CI(sample_size = xx, #Sample size
 
 \newpage
 
-### Effect of confidence level
+#### Effect of confidence level
 
 13.  Suppose instead of finding a 95\% confidence interval, we found a 90\% confidence interval.  Would you expect the 90\% confidence interval to be narrower or wider?  Explain your answer.
 
@@ -116,10 +124,10 @@ one_proportion_bootstrap_CI(sample_size = xx, #Sample size
 
 
 ```r
-one_proportion_bootstrap_CI(sample_size = 500, #Sample size
-                    number_successes = 81, #Observed number of successes
-                    number_repetitions = 1000, #Number of bootstrap samples to use
-                    confidence_level = 0.90) #Confidence level as a decimal
+one_proportion_bootstrap_CI(sample_size = 500, # Sample size
+                    number_successes = 81, # Observed number of successes
+                    number_repetitions = 1000, # Number of bootstrap samples to use
+                    confidence_level = 0.90) # Confidence level as a decimal
 ```
 
 
@@ -134,7 +142,7 @@ one_proportion_bootstrap_CI(sample_size = 500, #Sample size
 
 \newpage
 
-### What does *confidence* mean?
+#### What does *confidence* mean?
 
 In the interpretation of the confidence interval, we say that we are 95\% or 90\% confident that the parameter is within the confidence interval.  Why are we able to make that claim?  What does it mean to say "we are 95\% confident"?
 
@@ -160,7 +168,7 @@ In the interpretation of the confidence interval, we say that we are 95\% or 90\
 
 \vspace{1in}
 
-### Revisit and look forward {-}
+#### Revisit and look forward {-}
 
 19. Suggest a new research question that you might investigate, building on what you learned in this study.
 
@@ -168,7 +176,11 @@ In the interpretation of the confidence interval, we say that we are 95\% or 90\
 
 \newpage
 
-## Out of Class Activity
+### Take-home messages
+
+1.	TODO
+
+### Out-of-class activity
 
 The remaining questions cover theory-based methods for testing a single categorical variable.  Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
 
@@ -213,7 +225,7 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 
 \vspace{1in}
 
-## Additional notes
+### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 

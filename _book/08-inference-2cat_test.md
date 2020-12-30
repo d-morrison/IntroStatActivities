@@ -1,8 +1,16 @@
-# Activity 8:  Winter Sports Helmet Use and Head Injuries - Testing
+# Inference for Two Categorical Variables: Hypothesis Testing
+
+## Reading Guide: 
+
+\setstretch{1.25}
+
+\newpage
+
+## Activity:  Winter Sports Helmet Use and Head Injuries - Testing
 
 \setstretch{1}
 
-## Learning objectives
+### Learning objectives
 
 * Write out the null and alternative hypotheses for two categorical variables
 
@@ -12,7 +20,7 @@
 
 * Find the p-value and assess the strength of evidence
 
-## Terminology review
+### Terminology review
 In this week's in-class activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
 
 * Conditional proportion
@@ -39,7 +47,7 @@ To review these concepts, see Chapter 5 in your textbook.
 
 \newpage
 
-## Helmet use and head injuries
+### Helmet use and head injuries
 In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the *Journal of the American Medical Association*, Vol. 295, No. 8 (2006), we can see the summary results from a random sample of 3562 skiers and snowboarders involved in accidents in the two-way table below. Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders? 
 
 |                | Helmet Use | No Helmet Use | Total |
@@ -72,7 +80,7 @@ injury %>% group_by(Helmet) %>% count(Outcome)
 ```
 Notice that the name of the explanatory variable is `Helmet` with outcomes `Yes` and `No` and the name of the response variable is `Outcome` with outcomes `Head Injury` and `No Head Injury`.
 
-### Vocabulary review. Complete Q1 - 4 before class. {-}
+#### Vocabulary review. Complete Q1 - 4 before class. {-}
 
 1.  What is the explanatory variable?
 
@@ -95,7 +103,7 @@ Notice that the name of the explanatory variable is `Helmet` with outcomes `Yes`
 |                    | No Random Sample |                       |                     |
 
 
-### Ask a research question {-}
+#### Ask a research question {-}
 
 In this study we are looking at the relationship between two groups or two parameters ($\pi_1$ and $\pi_2$).  Remember we define the parameter for a categorical variable as the true proportion of observational units that are labeled as a "success" in the response variable.  
 
@@ -125,7 +133,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 
 \newpage 
-### Summarize and visualize the data {-}
+#### Summarize and visualize the data {-}
 
 9. Using the two-way table, calculate the conditional proportion of skiers/snowboarders that wore a helmet with a head injury.
 
@@ -156,7 +164,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 \vspace{0.2in}
 \newpage
 
-### Use statistical analysis methods to draw inferences from the data {-}
+#### Use statistical analysis methods to draw inferences from the data {-}
 
 To test the null hypothesis we could use simulation methods as we did with a single categorical variable in class. In this in-class activity we will focus on theory-based methods.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
@@ -231,7 +239,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 \vspace{1in}
 
-### Types of errors {-}
+#### Types of errors {-}
 
 Hypothesis tests are not flawless. In a hypothesis test, there are two competing hypotheses: the null and alternative. We make a decision about which might be true, but we may choose incorrectly.  
 
@@ -287,7 +295,11 @@ Shown in the table above, a **Type 1 Error** is rejecting the null hypothesis wh
 
 \newpage
 
-## Out of Class Activity
+### Take-home messages
+
+1.	TODO
+
+### Out-of-class activity
 
 The remaining questions cover simulation methods for testing two categorical variables. Use section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.  
 
@@ -337,13 +349,13 @@ Using the `RScript` file for this activity, enter your answers for question 4 in
 
 
 ```r
-two_proportion_test(formula = Outcome ~ Helmet, #response~explanatory
-                    data= injury, #name of dataset
-                    first_in_subtraction = "xx", #order of subtraction: enter the name of Group 1
-                    number_repetitions = 1000, #always use a minimum of 1000 repetitions
-                    response_value_numerator = "xx", #define which outcome is a success 
-                    as_extreme_as = xx, #type your calculated observed statistic (difference in sample proportions)
-                    direction="xx") #alternative hypothesis direction ("greater","less","two-sided")
+two_proportion_test(formula = Outcome ~ Helmet, # response~explanatory
+                    data= injury, # Name of dataset
+                    first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
+                    number_repetitions = 1000, # Always use a minimum of 1000 repetitions
+                    response_value_numerator = "xx", # Define which outcome is a success 
+                    as_extreme_as = xx, # Type your calculated observed statistic (difference in sample proportions)
+                    direction="xx") # Alternative hypothesis direction ("greater","less","two-sided")
 ```
 
 5.  Sketch the null distribution created here.
@@ -359,10 +371,10 @@ two_proportion_test(formula = Outcome ~ Helmet, #response~explanatory
 
 \vspace{0.2in}
 
-8.  Is the p-value found in question 7 for the out of class activity similar to the p-value found using the theory-based test?  Explain why you would expect this to be true.
+8.  Is the p-value found in question 7 for the out-of-class activity similar to the p-value found using the theory-based test?  Explain why you would expect this to be true.
 
 \vspace{1in}
 
-## Additional notes
+### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

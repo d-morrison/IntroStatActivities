@@ -1,8 +1,16 @@
-# Activity 11:  Weather Patterns and Record Snowfall
+# Inference for a Quantitative Response with Independent Samples
+
+## Reading Guide: 
+
+\setstretch{1.25}
+
+\newpage
+
+## Activity:  Weather Patterns and Record Snowfall
 
 \setstretch{1}
 
-## Learning objectives
+### Learning objectives
 
 * Write out the null and alternative hypothesis for one categorical and one quantitative variable
 
@@ -16,7 +24,7 @@
 
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
-## Terminology review
+### Terminology review
 
 In this week's in-class activity, we will use simulation-based methods to analyze one categorical and one quantitative variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
 
@@ -26,7 +34,7 @@ In this week's in-class activity, we will use simulation-based methods to analyz
 
 To review these concepts, see Section 6.3 in the textbook.
 
-## Weather patterns and record snowfall
+### Weather patterns and record snowfall
 
 In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the collapse of two flat-roofed buildings on the MSU campus.  A writer for the Washington Post predicted the heavy snowfall for 2018-2019 due to the El Ni\latexcode{\~{n}}o weather pattern that occurred in that season. A meteorologist in Montana wanted to see if the weather pattern really was associated with total snowfall. She obtained historical data from 44 years on the weather pattern (El Ni\latexcode{\~{n}}o or La Ni\latexcode{\~{n}}a) and snowfall (in inches) at the Billings Weather Station.  
 
@@ -59,7 +67,7 @@ Snow %>%
 ```
 
 
-### Quantitative variables review.  Complete Q1 - 5 before class. {-}
+#### Quantitative variables review.  Complete Q1 - 5 before class. {-}
 
 1. The two variables assessed in this study are the type of weather pattern and snowfall.  Identify the role for each variable (explanatory, response).
 
@@ -83,7 +91,7 @@ Snow %>%
 
 \vspace{1in}
 
-### Ask a research question {-}
+#### Ask a research question {-}
 
 6.  Write out the parameter of interest in context of the study.  Use proper notation and be sure to define your subscripts.  Use El Ni\latexcode{\~{n}}o minus La Ni\latexcode{\~{n}}a as the order of subtraction.
 
@@ -97,7 +105,7 @@ Snow %>%
 
 \vspace{1in}
 
-### Summarize and visualize the data {-}
+#### Summarize and visualize the data {-}
 
 9. Calculate the summary statistic.  Use El Ni\latexcode{\~{n}}o minus La Ni\latexcode{\~{n}}a as the order of subtraction. What is the appropriate notation for the statistic?
 
@@ -105,7 +113,7 @@ Snow %>%
 
 \newpage 
 
-### Use statistical inferential methods to draw inferences from the data {-}
+#### Use statistical inferential methods to draw inferences from the data {-}
 
 Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, we assume there is no association between variables.  This means that a snowfall value could be in either an El Ni\latexcode{\~{n}}o year or a La Ni\latexcode{\~{n}}a year.
 
@@ -152,11 +160,11 @@ To demonstrate this your instructor will use cards to represent the sample.
 16.  Using the `RScript` file for this activity, enter your answers for question 15 in place of the xx's to produce the null distribution with 1000 simulations.  Highlight and run lines 1 - 29.
 
 ```{r, echo = TRUE, eval = FALSE}
-two_mean_test(Snowfall~WeatherPattern, data = Snow,  #Variables and data
-                    first_in_subtraction = "xx", #First outcome in order of subtraction
-                    number_repetitions = 1000,  #Number of simulations
-                    as_extreme_as = xx,  #Observed statistic
-                    direction = "xx")  #Direction of alternative: "greater", "less", or "two-sided"
+two_mean_test(Snowfall~WeatherPattern, data = Snow,  # Variables and data
+                    first_in_subtraction = "xx", # First outcome in order of subtraction
+                    number_repetitions = 1000,  # Number of simulations
+                    as_extreme_as = xx,  # Observed statistic
+                    direction = "xx")  # Direction of alternative: "greater", "less", or "two-sided"
 ```
 
 Sketch the null distribution created using the code above.
@@ -169,9 +177,9 @@ Sketch the null distribution created using the code above.
 
 18. Using bootstrapping find a 95\% confidence interval. Use the provided `RScript` file for the two mean bootstrap CI function. Enter the variable names and data set name as in the two mean test, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 32 - 35. Report the 95\% confidence interval in interval notation.
 ```{r, echo = TRUE, eval = FALSE}
-two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
-                      first_in_subtraction = "xx", #First value in order of subtraction
-                      number_repetitions = 1000,  #Number of simulations
+two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  # Variables and data
+                      first_in_subtraction = "xx", # First value in order of subtraction
+                      number_repetitions = 1000,  # Number of simulations
                       confidence_level = xx)
 ```
 
@@ -181,7 +189,7 @@ two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
 
 \vspace{1in}
 
-### Communicate the results and answer the research question {-}
+#### Communicate the results and answer the research question {-}
 
 20.  Write a paragraph summarizing the results of the study.  Be sure to describe:
 
@@ -197,7 +205,7 @@ two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
 
 \vspace{3in}
 
-### Revisit and look forward {-}
+#### Revisit and look forward {-}
 
 21.  Would the results from the theory-based test match the results we saw with the simulation?  Explain why or why not.
 
@@ -208,7 +216,11 @@ two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  #Variables and data
 \vspace{1in}
 
 
-## Out of Class Activity
+### Take-home messages
+
+1.	TODO
+
+### Out-of-class activity
 
 The remaining questions cover inference for a difference in means using theory based methods.  Use section 6.3.3 in the textbook and the TwoMeanTheory video to complete the following questions.
 
@@ -282,7 +294,7 @@ qt(0.975, df = 20, lower.tail=TRUE)
 
 \newpage
 
-## Additional notes
+### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 

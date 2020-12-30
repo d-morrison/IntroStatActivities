@@ -1,8 +1,203 @@
-# Activity 4:  IMDb Movie Reviews
+# Exploring Quantitative Data
+
+## Reading Guide: Quantitative Data
+
+\setstretch{1.25}
+
+### Section 2.3 (Exploring quantitative data) {-}
+
+### Type of Plots {-}
+
+Scatterplot:
+\rgs
+
+Dotplot:
+\rgs
+
+Histogram:
+\rgs
+
+Density plot:
+\rgs
+
+Boxplot:
+\rgs
+
+
+#### Vocabulary {-}
+
+Four characteristics of a scatterplot:
+
+\rgi Form:
+\rgs
+
+\rgi Strength:
+\rgs
+
+\rgi Direction:
+\rgs
+
+\rgi Unusual observations or outliers:
+\rgs
+
+Data density:
+\rgs
+
+Tail:
+\rgs
+
+Skew:
+\rgs
+
+Symmetric:
+\rgs
+
+Modality:
+\rgs
+
+Distribution (of a variable):
+\rgs
+
+\rgi Four characteristics of the distribution of 1 quantitative variable:
+	
+\rgi Center:
+\rgs
+
+\rgi Variability:
+\rgs
+
+\rgi Shape:
+\rgs
+
+\rgi Outliers:
+\rgs
+
+Point estimate:
+\rgs
+
+Deviation:
+\rgs
+
+Five number summary:
+\rgs
+
+$X^{th}$ percentile:
+\rgs
+
+	E.g. if the value 6 is 10th percentile, then 10% of the data have values 6 or below.
+
+Interquartile range (IQR):
+\rgs
+
+Robust statistics:
+\rgs
+
+#### Notes {-}
+
+What type of plot(s) are appropriate for displaying one quantitative variable?
+\rgs
+
+What type of plot(s) are appropriate for displaying two quantitative variables?
+\rgs
+
+What type of plot(s) are appropriate for displaying one quantitative variable and one categorical variable?
+\rgs
+
+What are the two ways to measure the ‘center’ of a distribution?  Which one is considered robust to skew/outliers?
+\rgs
+
+What are the three ways to measure the ‘variability’ of a distribution?  Which one is considered robust to skew/outliers?
+\rgs
+
+How are variance and standard deviation related?
+\rgs
+
+Fill in the following table with the appropriate notation.
+\begin{center}
+\begin{tabular}{|l|p{2in}|p{2in}|} \hline
+Summary Measure & Parameter & Statistic \\ \hline
+Mean & & \\ 
+& & \\ \hline
+Variance & & \\ 
+& & \\ \hline
+Standard deviation & & \\ 
+& & \\ \hline
+\end{tabular}
+\end{center}
+
+How are outliers denoted on a boxplot?  How can you mathematically determine if a data set has outliers?
+\rgs
+
+
+### Section 2.4 (`R`: Exploratory data analysis) and Section 2.5 (Chapter 2 review) {-}
+
+Section 2.4 presents four tutorials on analyzing quantitative data in `R`.  We recommend you complete all four.
+
+#### Notes {-}
+
+Statistics summarize _____________ .
+
+Parameters summarize _____________.
+
+Fill in the following table with the appropriate notation for each summary measure.
+
+\begin{center}
+\begin{tabular}{|l|p{2in}|p{2in}|}\hline
+Summary measure & Statistic & Parameter \\ \hline
+Sample size & & \\ 
+& & \\ 
+& & \\ \hline
+Proportion & & \\ 
+(used to summarize & & \\ 
+1 categorical variable) & & \\ \hline
+Mean & & \\ 
+(used to summarize & & \\ 
+1 quantitative variable)& & \\ \hline
+Correlation & & \\ 
+(used to summarize & & \\ 
+two quantitative variables)& & \\ \hline
+Regression line slope & & \\ 
+(used to summarize & & \\ 
+two quantitative variables)& & \\ \hline
+\end{tabular}
+\end{center}
+
+Look at the table of vocabulary terms.  If there are any you do not know, be sure to review the appropriate section of your text.
+
+#### Data visualization summary {-}
+
+Fill in the following table to help associate type of plot for each of several scenarios.
+
+\begin{center}
+\begin{tabular}{|l|p{3in}|} \hline
+ & Appropriate plot(s) \\ \hline
+1 categorical variable & \\
+(categorical response, no explanatory) & \\ \hline
+1 quantitative variable  & \\
+(quantitative response, no explanatory) & \\ \hline
+Two categorical variables  & \\
+(categorical response, categorical explanatory) & \\ \hline
+One of each  & \\
+(quantitative response, categorical explanatory) & \\ \hline
+Two quantitative variables  & \\
+(quantitative response, quantitative explanatory) & \\ \hline
+\end{tabular}
+\end{center}
+
+\rgs
+Decision tree for determining an appropriate plot  given a number of variables and their types from Chapter 2 review:
+
+
+\begin{center}\includegraphics[width=0.7\linewidth]{04-EDA-quantitative_files/figure-latex/decision-tree-plots-1} \end{center}
+
+
+\newpage
+
+## Activity:  IMDb Movie Reviews
 
 \setstretch{1}
 
-## Learning objectives
+### Learning objectives
 
 * Identify and create appropriate summary statistics and plots
   given a data set or research question for quantitative data
@@ -15,7 +210,7 @@
   of a single quantitative variable
   (center, variability, shape, outliers)
 
-## Terminology review
+### Terminology review
 
 In this week's activity, we will review summary measures and plots for quantitative variables.  Some terms covered in this activity are:
 
@@ -27,7 +222,7 @@ In this week's activity, we will review summary measures and plots for quantitat
 
 To review these concepts, see Section 2.3 in the textbook.
 
-## Movies released in 2016
+### Movies released in 2016
 
 A data set was collected on movies released in 2016.  Here is a list of some of the variables collected on these movies.
 
@@ -43,7 +238,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 \newpage
 
-### Vocabulary review. Complete Q1 - 3 before class. {-}
+#### Vocabulary review. Complete Q1 - 3 before class. {-}
 
 1. What are the observational units in this data set?
 
@@ -57,15 +252,15 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 \vspace{.5in}
 
-### Summarizing a single quantitative variable {-}
+#### Summarizing a single quantitative variable {-}
 
 The `favstats` function from the `mosaic` package gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable `imdb_score`.
 
 
 ```r
 movies <- read.csv("data/Movies2016.csv") # Read in data set
-movies %>% #Data set piped into...
-  summarise(favstats(imdb_score)) #Apply favstats function to imdb_score
+movies %>% # Data set piped into...
+  summarise(favstats(imdb_score)) # Apply favstats function to imdb_score
 ```
 
 ```
@@ -84,7 +279,7 @@ movies %>% #Data set piped into...
 6. Report the value of the standard deviation and interpret this value in context of the problem.
 \vspace{1in}
 
-### Displaying a single quantitative variable {-}
+#### Displaying a single quantitative variable {-}
 
 7. What are the three types of plots used to plot a single quantitative variable?
 
@@ -96,12 +291,12 @@ Notice that the **bin width** is 0.5.  For example the first bin consists of the
 
 
 ```r
-movies %>% #Data set piped into...
-ggplot(aes(x = xx)) +   #Name variable to plot
-  geom_histogram(binwidth = 0.5) +  #Create histogram with specified binwidth
-  labs(title = "Histogram of IMDb Score of Movies in 2016", #title for plot
-       x = "IMDb Score", #Label for x axis
-       y = "Frequency") #Label for y axis
+movies %>% # Data set piped into...
+ggplot(aes(x = xx)) +   # Name variable to plot
+  geom_histogram(binwidth = 0.5) +  # Create histogram with specified binwidth
+  labs(title = "Histogram of IMDb Score of Movies in 2016", # Title for plot
+       x = "IMDb Score", # Label for x axis
+       y = "Frequency") # Label for y axis
 ```
 
 
@@ -155,19 +350,19 @@ ggplot(aes(x = xx)) +   #Name variable to plot
 
 \vspace{1.5in}
 
-### Displaying a single categorical and single quantitative variable {-}
+#### Displaying a single categorical and single quantitative variable {-}
 
 The box plot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for yy and the variable `content_rating` for xx at line 31, highlight and run code lines 29 - 35. This plot helps to compare the budget for different levels of content rating.
 
 
 ```r
-movies %>%  #Data set piped into...
+movies %>%  # Data set piped into...
   filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
-  ggplot(aes(y = yy, x = xx))+  #Identify variables
-  geom_boxplot()+  #Tell it to make a box plot
-  labs(title = "Side by side box plot of budget by content rating",  #Title
-       x = "Content Rating",    #x-axis label
-       y = "Budget (in Millions)")  #y-axis label
+  ggplot(aes(y = yy, x = xx))+  # Identify variables
+  geom_boxplot()+  # Tell it to make a box plot
+  labs(title = "Side by side box plot of budget by content rating",  # Title
+       x = "Content Rating",    # x-axis label
+       y = "Budget (in Millions)")  # y-axis label
 ```
 
 13. Sketch the boxplots created using the `R` code.
@@ -193,15 +388,20 @@ movies %>%  #Data set piped into...
    e.  What is the value for the third quartile (Q3) for the PG-13 rating?  Interpret this value in context.
 \vspace{.8in}
 
-## Out of Class Activity
+### Take-home messages
+
+1.	TODO
+
+### Out-of-class activity
+
 For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the `Movies` data set.  Download and open the provided `RScript` file, highlight and run the first 8 lines of code.
 
 To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.
 
 
 ```r
-movies %>% #Data set piped into...
-  summarise(favstats(imdb_score~content_rating)) #Apply favstats function to imdb_score
+movies %>% # Data set piped into...
+  summarise(favstats(imdb_score~content_rating)) # Apply favstats function to imdb_score
 ```
 
 ```
@@ -216,13 +416,13 @@ Using the provided `RScript` file, we will create side-by-side histograms of IMD
 
 
 ```r
-movies %>%  #Data set piped into...
+movies %>%  # Data set piped into...
   filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
-  ggplot(aes(y = yy, x = xx))+  #Identify variables
-  geom_boxplot()+  #Tell it to make a box plot
-  labs(title = "Side by side box plot of budget by content rating",  #Title
-       x = "Content Rating",    #x-axis label
-       y = "Budget (in Millions)")  #y-axis label
+  ggplot(aes(y = yy, x = xx))+  # Identify variables
+  geom_boxplot()+  # Tell it to make a box plot
+  labs(title = "Side by side box plot of budget by content rating",  # Title
+       x = "Content Rating",    # x-axis label
+       y = "Budget (in Millions)")  # y-axis label
 ```
 
 1.  Using the provided favstats output and the side-by-side boxplots, interpret the value of quartile 1 for the R content rating.
@@ -237,6 +437,6 @@ movies %>%  #Data set piped into...
 
 \vspace{0.5in}
 
-## Additional notes
+### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

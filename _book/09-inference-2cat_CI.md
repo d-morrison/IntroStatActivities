@@ -1,14 +1,22 @@
-# Activity 9:  Winter Sports Helmet Use and Head Injuries - Estimation
+# Inference for Two Categorical Variables: Confidence Intervals
+
+## Reading Guide: 
+
+\setstretch{1.25}
+
+\newpage
+
+## Activity:  Winter Sports Helmet Use and Head Injuries - Estimation
 
 \setstretch{1}
 
-## Learning objectives
+### Learning objectives
 
 * Assess the conditions to use the standard normal distribution for a difference in proportions
 
 * Create and interpret a confidence interval for the difference in proportions
 
-## Terminology review
+### Terminology review
 In this week's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
 * Standard normal distribution
@@ -17,7 +25,7 @@ In this week's activity, we will use theory-based methods to estimate the differ
 
 To review these concepts, see Chapter 5 in your textbook.
 
-## Helmet use and head injuries
+### Helmet use and head injuries
 
 In activity 8, we found very strong evidence that helmet use is associated with a reduction in head injury for skiers and snowboarders.  In this in-class activity we will estimate the parameter of interest, the difference in true proportion of skiers and snowboarders with head injuries for those who wore helmets and those that did not, using theory-based methods.
 
@@ -30,7 +38,7 @@ The summary results from a random sample of 3562 skiers and snowboarders involve
 | No Head Injury |     656    |      2330     |  2986 |
 | Total          |     752    |      2810     |  3562 |
 
-### Vocabulary review. Complete Q1 - 3 before class. {-}
+#### Vocabulary review. Complete Q1 - 3 before class. {-}
 
 1.  Report the point estimate for this study.  Use helmet use minus no helmet use as the order of subtraction.
 
@@ -45,7 +53,7 @@ The summary results from a random sample of 3562 skiers and snowboarders involve
 \vspace{1in}
 
 
-### Use statistical analysis methods to draw inferences from the data {-}
+#### Use statistical analysis methods to draw inferences from the data {-}
 
 In this activity we will focus on theory-based methods to calculate a confidence interval.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
@@ -104,7 +112,7 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 
 \vspace{1in}
 
-## Effect of Sample Size 
+### Effect of sample size 
 
 Suppose in another sample of skiers and snowboarders involved in accidents we saw these results:
 
@@ -129,7 +137,7 @@ Suppose in another sample of skiers and snowboarders involved in accidents we sa
 
 \newpage
 
-## Relative Risk
+### Relative risk
 
 Another summary statistic that can be calculated for two categorical variables is the relative risk.  The relative risk is calculated as the ratio of the conditional proportions.
 
@@ -145,7 +153,11 @@ $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}$$
 \vspace{1in}
 
 
-## Out of Class Activity
+### Take-home messages
+
+1.	TODO
+
+### Out-of-class activity
 
 The remaining questions cover simulation methods for creating the bootstrap distribution to find the confidence interval. Use section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.
 
@@ -175,11 +187,11 @@ Using the `RScript` file for this activity, enter your answers for question 1 in
 
 ```r
 two_proportion_bootstrap_CI(formula = Outcome ~ Helmet, 
-                            data=injury, #name of dataset
-                            first_in_subtraction = "xx", #order of subtraction: enter the name of Group 1
-                            response_value_numerator = "xx", #define which outcome is a success 
-                            number_repetitions = 1000, #always use a minimum of 1000 repetitions
-                            confidence_level = 0.95) #enter the level of confidence as a decimal
+                            data=injury, # Name of dataset
+                            first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
+                            response_value_numerator = "xx", # Define which outcome is a success 
+                            number_repetitions = 1000, # Always use a minimum of 1000 repetitions
+                            confidence_level = 0.95) # Enter the level of confidence as a decimal
 
 ```
 
@@ -195,6 +207,6 @@ two_proportion_bootstrap_CI(formula = Outcome ~ Helmet,
 
 \newpage
 
-## Additional notes
+### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.

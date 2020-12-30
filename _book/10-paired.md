@@ -1,8 +1,16 @@
-# Activity 10:  COVID-19 and Air Pollution
+# Inference for a Quantitative Response with Paired Samples
+
+## Reading Guide: 
+
+\setstretch{1.25}
+
+\newpage
+
+## Activity:  COVID-19 and Air Pollution
 
 \setstretch{1}
 
-## Learning outcomes
+### Learning outcomes
 
 * Given a research question, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols
@@ -17,7 +25,7 @@
 
 * Use a confidence interval to determine the conclusion of a hypothesis test
 
-## Terminology review
+### Terminology review
 
 In this week's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
 
@@ -31,7 +39,7 @@ In this week's activity, we will analyze paired quantitative data using simulati
 
 To review these concepts, see Section 6.2 in the textbook.
 
-## COVID-19 and air pollution
+### COVID-19 and air pollution
 
 In June 2020, the social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 appeared to help 'flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured in Figure \@ref(fig:covid), which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants. 
 
@@ -66,7 +74,7 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 | Differences   | $\bar{x}_d$ = -4.152 | $s_d$ = 17.096     | $n_d$ = 33  |
 
 \newpage
-### Vocabulary review.  Complete Q1 - 5 before class.{-}
+#### Vocabulary review.  Complete Q1 - 5 before class.{-}
 
 1. What is the sample size? 
 
@@ -88,7 +96,7 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 
 \vspace{0.3in}
 
-### Ask a research question {-}
+#### Ask a research question {-}
 
 6. What are the two competing possibilities to run a hypothesis test for this study?
 
@@ -106,7 +114,7 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 
 \vspace{1in}
 
-### Summarize and visualize the data  {-}
+#### Summarize and visualize the data  {-}
 
 10. Report the summary statistic for the data.  
 
@@ -117,7 +125,7 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 \vspace{0.3in}
 
 
-### Use statistical inferential methods to draw inferences from the data {-}
+#### Use statistical inferential methods to draw inferences from the data {-}
 
 To simulate the null distribution we will use a bootstrapping method.  Recall that the null distribution must be created under the assumption that the null hypothesis is true.  Therefore, before bootstrapping we will need to shift each data point by the difference $\mu_0 - \bar{x}$.  This will ensure that the mean of the shifted data is $\mu_0$ and that the simulated null distribution will be centered at the null value.  
 
@@ -129,12 +137,12 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 
 ```r
-    paired_test(data = Air$Difference,   #Vector of differences or data set with column for each group
-            shift = xx,   #Shift needed for bootstrap hypothesis test
-            as_extreme_as = yy,  #Observed statistic
-            direction = "less",  #Direction of alternative
-            number_repetitions = 1000,  #Number of simulated samples for null distribution
-            which_first = 1)  #Not needed when using calculated differences
+    paired_test(data = Air$Difference,   # Vector of differences or data set with column for each group
+            shift = xx,   # Shift needed for bootstrap hypothesis test
+            as_extreme_as = yy,  # Observed statistic
+            direction = "less",  # Direction of alternative
+            number_repetitions = 1000,  # Number of simulated samples for null distribution
+            which_first = 1)  # Not needed when using calculated differences
 ```
     
 
@@ -167,16 +175,16 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 
 ```r
-paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
-                    number_repetitions = 1000, #Number of bootstrap samples for CI
-                    confidence_level = xx,  #Confidence level in decimal form
-                    which_first = 1)  #Not needed when entering vector of differences
+paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
+                    number_repetitions = 1000, # Number of bootstrap samples for CI
+                    confidence_level = xx,  # Confidence level in decimal form
+                    which_first = 1)  # Not needed when entering vector of differences
 ```
 
 \vspace{.3in}
 
 
-### Communicate the results and answer the research question. {-}
+#### Communicate the results and answer the research question. {-}
 
 21. Interpret the 99\% confidence interval in the context of the problem.
 
@@ -202,14 +210,18 @@ paired_bootstrap_CI(data = Air$Difference, #Enter vector of differences
 
 \vspace{3in}
 
-### Revisit and look forward {-}
+#### Revisit and look forward {-}
 
 24. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
 \vspace{0.6in}
 
 \newpage
 
-## Out of Class Activity
+### Take-home messages
+
+1.	TODO
+
+### Out-of-class activity
 
 The remaining questions cover theory-based methods for testing paired quantitative data.  Use section 6.2.3 in the textbook and the OneMeanTheory video to complete the following questions.
 
@@ -277,6 +289,6 @@ qt(0.995, df = 32, lower.tail=TRUE)
 
 \vspace{1in}
 
-## Additional notes
+### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.

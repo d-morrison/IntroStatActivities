@@ -24,22 +24,9 @@ suppressMessages(library(car))
 suppressMessages(library(readr))
 suppressMessages(library(kableExtra))
 suppressMessages(library(catstats))
-
-# suppressMessages(library(ggmosaic))
-# suppressMessages(library(skimr))
-# suppressMessages(library(janitor))
-# suppressMessages(library(openintro))
-# suppressMessages(library(scales))
-# suppressMessages(library(infer))
-# suppressMessages(library(patchwork))
-# suppressMessages(library(gghighlight))
-# suppressMessages(library(maps))
-# suppressMessages(library(gridExtra))
-# suppressMessages(library(ggraph))
-# suppressMessages(library(igraph))
-# suppressMessages(library(RColorBrewer))
-
-
+suppressMessages(library(RColorBrewer))
+suppressMessages(library(igraph))
+suppressMessages(library(ggraph))
 
 
 # dplyr options ----------------------------------------------------------------
