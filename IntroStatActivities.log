@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.29)  29 DEC 2020 21:48
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.29)  29 DEC 2020 22:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1182,22 +1182,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 
 ] [4
 
-]
-Underfull \hbox (badness 2005) in paragraph at lines 271--272
-[]|\TU/lmr/m/n/10 Estimate the Proportion of Left-Handed
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 272--273
-[]|\TU/lmr/m/n/10 Estimate the Proportion of Left-Handed
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 273--273
-[]|\TU/lmr/m/n/10 Estimate the Proportion of Left-Handed
- []
-
-[5
+] [5
 
 ]
 Chapter 1.
@@ -1331,7 +1316,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  20086 strings out of 479712
  357994 string characters out of 5889204
- 820202 words of memory out of 5000000
+ 817136 words of memory out of 5000000
  36974 multiletter control sequences out of 15000+600000
  541595 words of font info for 89 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

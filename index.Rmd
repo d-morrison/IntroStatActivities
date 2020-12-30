@@ -42,14 +42,14 @@ STAT 216 is a 3-credit blended course. Rather than meeting for a total of 150 st
 In our experience, it takes six to nine hours per week outside of class to achieve a good grade in STAT 216 -- this means six to nine hours outside of the 150 minutes of time set aside for learning course material each week.  By “good” we mean at least a C because a grade of C- or below does not count toward fulfilling degree requirements.  Many of you set your goals higher than just getting a C, and we fully support that.  You
 need roughly nine hours per week to review past activities, read feedback on previous assignments, complete current assignments, and prepare for the next day's class. A typical week in the life of a STAT 216 student looks like:
 
-* _Prior to weekly class meeting_:
+* _Prior to class meeting_:
     - Read assigned sections of textbook, using the provided reading guides to take notes on the material.
     - Watch assigned videos on that week's content, pausing to take notes and answer video quiz questions.
     - Read through the introduction to the week's in-class activity and complete the pre-class questions.
     - Read through the week's homework assignment and note any questions you may have on the content.
 * _During class meeting_:
     - Work through in-class activity with your classmates and instructor, taking detailed notes on your answers to each question in the activity.
-* _After weekly class meeting_:
+* _After class meeting_:
     - Complete the out-of-class part of the activity, plus any additional parts of the activity you did not complete in class.
     - Review the posted activity solutions and wrap-up videos, and take notes on key points.
     - Finish watching any remaining assigned videos or readings for the week.
