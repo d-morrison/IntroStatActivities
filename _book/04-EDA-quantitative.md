@@ -388,9 +388,6 @@ movies %>%  # Data set piped into...
    e.  What is the value for the third quartile (Q3) for the PG-13 rating?  Interpret this value in context.
 \vspace{.8in}
 
-### Take-home messages
-
-1.	TODO
 
 ### Out-of-class activity
 
@@ -436,6 +433,10 @@ movies %>%  # Data set piped into...
 3. Which variable is the explanatory variable? Response variable?
 
 \vspace{0.5in}
+
+### Take-home messages
+
+1.	TODO
 
 ### Additional notes
 

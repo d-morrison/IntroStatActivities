@@ -218,10 +218,6 @@ $e_i=y_i-\hat{y}_i$
 
 \vspace{.2in}
 
-### Take-home messages
-
-1.	TODO
-
 ### Out-of-class activity
 
 #### Coefficient of determination (squared correlation) {-}
@@ -273,7 +269,11 @@ movies %>% # Data set pipes into...
 
 \vspace{1in}
 
-\newpage
+
+
+### Take-home messages
+
+1.	TODO
 
 ### Additional notes
 

@@ -216,9 +216,6 @@ two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  # Variables and dat
 \vspace{1in}
 
 
-### Take-home messages
-
-1.	TODO
 
 ### Out-of-class activity
 
@@ -292,7 +289,10 @@ qt(0.975, df = 20, lower.tail=TRUE)
 
 \vspace{1in}
 
-\newpage
+### Take-home messages
+
+1.	TODO
+
 
 ### Additional notes
 

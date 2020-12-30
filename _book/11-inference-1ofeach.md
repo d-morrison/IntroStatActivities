@@ -231,9 +231,6 @@ two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  # Variables and dat
 \vspace{1in}
 
 
-### Take-home messages
-
-1.	TODO
 
 ### Out-of-class activity
 
@@ -309,7 +306,10 @@ We will need to find the $t^*$ multiplier using the function qt.  For a 95% conf
 
 \vspace{1in}
 
-\newpage
+### Take-home messages
+
+1.	TODO
+
 
 ### Additional notes
 

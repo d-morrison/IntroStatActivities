@@ -215,11 +215,7 @@ paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
 24. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
 \vspace{0.6in}
 
-\newpage
 
-### Take-home messages
-
-1.	TODO
 
 ### Out-of-class activity
 
@@ -288,6 +284,10 @@ qt(0.995, df = 32, lower.tail=TRUE)
 6.  Explain why the theory-based and simulation confidence intervals are not quite the same.
 
 \vspace{1in}
+
+### Take-home messages
+
+1.	TODO
 
 ### Additional notes
 

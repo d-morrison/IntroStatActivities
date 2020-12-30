@@ -257,10 +257,6 @@ $$\widehat{\text{runs scored}} = b_0 + b_1*OBP + b_2*SLG$$
 
 \vspace{1in}
 
-### Take-home messages
-
-1.	TODO
-
 ### Out-of-class activity
 
 In the out-of-class activity we will focus on using simulation based methods for inference of regression.  Use section 7.1 in the textbook and the TwoQuantSim video to complete the following questions.  
@@ -327,6 +323,10 @@ regression_bootstrap_CI(W~RD, # response ~ explanatory
 5. Is the bootstrap 95\% confidence interval similar to what was found using theory-based methods?  Why did you expect this to be true?
 
 \vspace{1in}
+
+### Take-home messages
+
+1.	TODO
 
 ### Additional notes
 

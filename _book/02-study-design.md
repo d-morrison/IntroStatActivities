@@ -330,9 +330,6 @@ When both these conditions are met, if we observe an association between the exp
 \vspace{1.5in}
 
 
-### Take-home messages
-
-1.	TODO
 
 ### Out-of-class activity
 
@@ -353,7 +350,12 @@ In the in-class activity we looked at sampling methods and study design.  Here a
 
 \vspace{1in}
 
-\newpage
+
+
+### Take-home messages
+
+1.	TODO
+
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

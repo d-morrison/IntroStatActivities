@@ -293,11 +293,6 @@ Shown in the table above, a **Type 1 Error** is rejecting the null hypothesis wh
 \vspace{2in}
 
 
-\newpage
-
-### Take-home messages
-
-1.	TODO
 
 ### Out-of-class activity
 
@@ -374,6 +369,11 @@ two_proportion_test(formula = Outcome ~ Helmet, # response~explanatory
 8.  Is the p-value found in question 7 for the out-of-class activity similar to the p-value found using the theory-based test?  Explain why you would expect this to be true.
 
 \vspace{1in}
+
+### Take-home messages
+
+1.	TODO
+
 
 ### Additional notes
 

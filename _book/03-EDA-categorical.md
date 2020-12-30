@@ -401,11 +401,7 @@ The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census 
 \vspace{1in}
 
    e. What is the probability a randomly selected computer is both a laptop and on sale?  Give the appropriate probability notation.
-\newpage
 
-### Take-home messages
-
-1.	TODO
 
 ### Out-of-class activity
 
@@ -510,7 +506,11 @@ ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
 
 \vspace{0.5in}
 
-\newpage
+
+### Take-home messages
+
+1.	TODO
+
 
 ### Additional notes
 

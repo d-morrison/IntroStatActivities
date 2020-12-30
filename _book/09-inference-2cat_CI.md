@@ -153,9 +153,6 @@ $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}$$
 \vspace{1in}
 
 
-### Take-home messages
-
-1.	TODO
 
 ### Out-of-class activity
 
@@ -205,7 +202,12 @@ two_proportion_bootstrap_CI(formula = Outcome ~ Helmet,
 
 4. Is the bootstrap 95\% confidence interval similar to what was found using theory-based methods?  Why did you expect this to be true?
 
-\newpage
+\vspace{0.5in}
+
+### Take-home messages
+
+1.	TODO
+
 
 ### Additional notes
 

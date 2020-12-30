@@ -273,10 +273,6 @@ When we write a conclusion we answer the research question by stating how much e
 
 
 
-### Take-home messages
-
-1.	TODO
-
 ### Out-of-class activity
 
 The remaining questions cover theory-based methods for testing a single categorical variable.  Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
@@ -353,6 +349,10 @@ pnorm(xx, # Enter value of standardized statistic
 7.  Is the p-value found in question 6 similar to the p-value found using the simulation test?  Explain why you would expect this to be true.
 
 \vspace{0.5in}
+
+### Take-home messages
+
+1.	TODO
 
 ### Additional notes
 
