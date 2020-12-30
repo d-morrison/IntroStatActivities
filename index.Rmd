@@ -2,7 +2,7 @@
 title: |
   ![](images/msu-campus.jpg){width=5in} 
   \vspace{1cm}  
-  STAT 216 Activity Coursepack
+  STAT 216 Coursepack
 subtitle: Spring 2021
 author: Melinda Yager, Jade Schmidt, Dr. Stacey Hancock
 location: Montana State University
