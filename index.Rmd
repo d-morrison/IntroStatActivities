@@ -11,6 +11,12 @@ documentclass: report
 description: This is the coursepack of in-class activities for STAT 216 Spring 2021.
 ---
 
+<!-- Notes for authors: -->
+<!-- For each chapter, main title is in title case; remaining section headers capitalize the first word only. -->
+<!-- Reading guides use 1.25 line spacing; activities use 1 line spacing. -->
+<!-- When referring to R, use `R`. -->
+<!-- Reading guides do not have section numbers (use {-} after each header). -->
+
 \newpage
 \thispagestyle{empty}
 

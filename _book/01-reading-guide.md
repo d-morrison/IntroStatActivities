@@ -1,10 +1,10 @@
 # Reading Guide 1: Basics of Data
 
+\setstretch{1.25}
+
 ## Sections 1.1 (Case Study) and 1.2 (Basics of Data) {-}
 
 ### Vocabulary {-}
-
-\setstretch{1.25}
 
 Data:
 \rgs

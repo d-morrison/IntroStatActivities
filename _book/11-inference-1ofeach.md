@@ -1,8 +1,6 @@
 # Activity 11:  Weather Patterns and Record Snowfall
 
-
-
-\newcommand\latexcode[1]{#1}
+\setstretch{1}
 
 ## Learning objectives
 
@@ -291,8 +289,7 @@ $$\bar{x}_1- \bar{x}_2\pm t^* SE(\bar{x}_1- \bar{x}_2)$$
 We will need to find the $t^*$ multiplier using the function qt.  For a 95% confidence interval we are finding the $t^*$ value at the 97.5th percentile with df = minimum(n - 1) = 21 - 1 = 20.
 
 
-```r
-qt(0.975, df = 20, lower.tail=TRUE)
+```
 #> [1] 2.085963
 ```
 

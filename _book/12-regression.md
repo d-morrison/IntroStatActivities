@@ -1,5 +1,7 @@
 # Activity 12:  Moneyball
 
+\setstretch{1}
+
 ## Learning outcomes
 * Given a research question, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols

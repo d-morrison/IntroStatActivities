@@ -1,5 +1,7 @@
 # Activity 2: Study Design
 
+\setstretch{1}
+
 ## Learning outcomes
 
 * Explain the purpose of random sampling and its effect on scope of inference

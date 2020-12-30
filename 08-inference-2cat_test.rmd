@@ -1,5 +1,7 @@
 # Activity 8:  Winter Sports Helmet Use and Head Injuries - Testing
 
+\setstretch{1}
+
 ## Learning objectives
 
 * Write out the null and alternative hypotheses for two categorical variables

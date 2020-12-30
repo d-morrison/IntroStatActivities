@@ -1,5 +1,7 @@
 # Activity 6:  Handedness of Male Boxers - Testing
 
+\setstretch{1}
+
 ## Learning objectives
 
 * Identify the two possible explanations (one assuming the null hypothesis, and one assuming the alternative hypothesis) for a relationship seen in sample data

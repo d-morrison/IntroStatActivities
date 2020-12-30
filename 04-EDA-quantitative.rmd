@@ -1,5 +1,7 @@
 # Activity 4:  IMDb Movie Reviews
 
+\setstretch{1}
+
 ## Learning objectives
 
 * Identify and create appropriate summary statistics and plots

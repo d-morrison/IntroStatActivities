@@ -1,5 +1,7 @@
 # Activity 9:  Winter Sports Helmet Use and Head Injuries - Estimation
 
+\setstretch{1}
+
 ## Learning objectives
 
 * Assess the conditions to use the standard normal distribution for a difference in proportions

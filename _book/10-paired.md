@@ -1,5 +1,7 @@
 # Activity 10:  COVID-19 and Air Pollution
 
+\setstretch{1}
+
 ## Learning outcomes
 
 * Given a research question, construct the null and alternative hypotheses

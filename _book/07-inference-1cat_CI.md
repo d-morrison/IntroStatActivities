@@ -1,5 +1,7 @@
 # Activity 6:  Handedness of Male Boxers - Estimation
 
+\setstretch{1}
+
 ## Learning objectives
 
 * Use bootstrapping to find a confidence interval for a single proportion

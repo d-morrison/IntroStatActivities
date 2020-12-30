@@ -1,5 +1,7 @@
 # Activity 3:  What's the probability?
 
+\setstretch{1}
+
 ## Learning outcomes
 
 * Recognize and simulate probabilities as long-run frequencies
