@@ -321,7 +321,8 @@ regression_bootstrap_CI(W~RD, # response ~ explanatory
 
 2. To check the validity conditions for using theory-based methods we must use the diagnostic plots to check for normality of resiudals and constant variability and the scatterplot to check for linearity.  
 
-3. 
+3. To interpret a confidence interval for the slope: Think about how to interpret the sample slope and use that info in the confidence interval for slope.  
+
 
 ### Additional notes
 
