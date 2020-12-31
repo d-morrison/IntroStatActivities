@@ -11,7 +11,7 @@
 Scatterplot:
 \rgs
 
-Dotplot:
+Dot plot:
 \rgs
 
 Histogram:
@@ -20,7 +20,7 @@ Histogram:
 Density plot:
 \rgs
 
-Boxplot:
+Box plot:
 \rgs
 
 
@@ -125,7 +125,7 @@ Standard deviation & & \\
 \end{tabular}
 \end{center}
 
-How are outliers denoted on a boxplot?  How can you mathematically determine if a data set has outliers?
+How are outliers denoted on a box plot?  How can you mathematically determine if a data set has outliers?
 \rgs
 
 
@@ -216,9 +216,9 @@ ggraph(mygraph, layout = 'dendrogram', circular = FALSE) +
                   rep(c("Quantitative","Categorical","None"),2),
                   "Scatterplot",
                   "Stacked histogram", 
-                  "Side-by-side boxplots", "Boxplot",
+                  "Side-by-side box plots", "Box plot",
                   "Density plot", "Histogram",
-                  "Dotplot", "Side-by-side boxplots",
+                  "Dot plot", "Side-by-side box plots",
                   "Smoothed scatterplot", "Segmented bar plot", 
                   "Mosaic plot", "Bar plot")),
     label.padding = unit(0.3, "lines"),
@@ -388,7 +388,7 @@ movies %>%  # Data set piped into...
        y = "Budget (in Millions)")  # y-axis label
 ```
 
-13. Sketch the boxplots created using the `R` code.
+13. Sketch the box plots created using the `R` code.
 
 \vspace{1.5in}
 
@@ -435,7 +435,7 @@ movies %>%  # Data set piped into...
        y = "Budget (in Millions)")  # y-axis label
 ```
 
-1.  Using the provided favstats output and the side-by-side boxplots, interpret the value of quartile 1 for the R content rating.
+1.  Using the provided favstats output and the side-by-side box plots, interpret the value of quartile 1 for the R content rating.
 
 \vspace{1in}
 
@@ -449,7 +449,13 @@ movies %>%  # Data set piped into...
 
 ### Take-home messages
 
-1.	TODO
+1.	Histograms, box plots, and dot plots can all be used to graphically display quantitative variables.  When we have a single categorical variable and a single quantitative variable we will display the data in side-by-side plots.
+
+2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5*IQR$ and greater than $Q_3 + 1.5*IQR$ are considering outliers and are graphically represented by a dot outside of the whiskers on the box plot.
+
+3.  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers.  There are two measures of center: mean and the median and two measures of spread: standard deviation and the interquartile range, IQR = Q1- Q3. 
+
+4.  The median and IQR are robust measures that are not affected by the presence of outliers. 
 
 ### Additional notes
 

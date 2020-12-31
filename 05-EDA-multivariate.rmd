@@ -246,7 +246,15 @@ movies %>% # Data set pipes into...
 
 ### Take-home messages
 
-1.	TODO
+1.	Two quantitative variables are graphically displayed in a scatterplot.  The explanatory variable is on the x-axis and the response variable is on the y-axis.  When describing the relationship between two quantitative variables we look at the form (linear or non-linear), direction (positive or negative), strength, and for the presence of outliers. 
+
+2.  There are three summary statistics used to summarize the relationship between two quantitative variables: correlation, slope of the regression line, and the coefficient of determination.  
+
+3. The sign of correlation and the sign of the slope will be the same.  The closer the value of correlation is to -1 or +1 the stronger the relationship between the explanatory and the response variable.  
+
+4.  The coefficient of determination measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100% the stronger the relationship.
+
+5.  We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable.  This is extrapolation.  
 
 ### Additional notes
 

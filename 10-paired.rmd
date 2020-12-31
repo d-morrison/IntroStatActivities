@@ -286,7 +286,11 @@ qt(0.995, df = 32, lower.tail=TRUE)
 
 ### Take-home messages
 
-1.	TODO
+1.	The differences in a paired data set is treated like a single quantitative variable when analyzing.  Paired data (or paired samples) occur when pairs of measurements are collected. We are only interested in the population (and sample) of differences, and not in the original data. 
+
+2.  When using bootstrapping to create the null distribution centered at the null value for both paired data and a single quantitative variable we first need to shift the data by the difference, $\mu_0 - \bar{x}_d$ and then sample with replacement from the shifted data. 
+
+3. When analyzing paired data the summary statistic is the mean difference NOT the difference in means.  This terminology will be *very* important in the interpretations.
 
 ### Additional notes
 

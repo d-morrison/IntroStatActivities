@@ -502,7 +502,13 @@ ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
 
 ### Take-home messages
 
-1.	TODO
+1.	Bar charts can be used to graphically display a single categorical variable either as counts or proportions.  Segmented bar charts and mosaic plots are used to display two categorical variables. 
+
+2.  Segmented bar charts always have a scale from 0 - 100%.  The bars represent the outcomes of the explanatory variable.  Each bar is segmented by the response variable. If the heights of each segment are the same for each bar there is no association between variables. 
+
+3.  Mosaic plots are similar to segmented bar charts but the widths of the bars also show the number of observations within each outcome.  
+
+4.  Conditional probabilities are calculated dependent on a 2nd variable.  In the probability notation the variable following `|` is the variable that we are conditioning on.  The denominator used to calculate the probability will be the total for the variable we are conditioning on.  
 
 
 ### Additional notes

@@ -200,7 +200,13 @@ two_proportion_bootstrap_CI(formula = Outcome ~ Helmet,
 
 ### Take-home messages
 
-1.	TODO
+1.	Simulation methods and theory-based methods should give the same results for a study if the validity conditions are met.  Check the validity conditions for each type of test to determine if theory-based methods can be used.
+
+2.  When calculating the standard error for the difference in proportions when doing a hypothesis test we use the pooled proportion of successes, the best estimate for calculating the variability under the assumption the null hypothesis is true.  For a confidence interval, we use the values of the two conditional proportions to calculate the standard error.  Make note of the difference in these two formulas. 
+
+3.  In addition to estimating the difference in proportions for two categorical variables we can also find the relative risk, the ratio of conditional proportions.  
+
+4.  Increasing sample size will result in less sample to sample variability which will result in a narrower confidence interval.  
 
 
 ### Additional notes
