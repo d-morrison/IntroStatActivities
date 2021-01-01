@@ -1,8 +1,362 @@
 # Exploring Multivariable Data
 
-## Reading Guide: 
+## Reading Guide: Quantitative Data
 
 \setstretch{1.25}
+
+### Section 3.1 (Fitting a line, residuals, and correlation) {-}
+
+### Reminders for Section 2.3
+
+Scatterplot: displays two quantitative variables; one dot = two measurements (x, y) on one observational unit
+
+Four characteristics of a scatterplot:
+
+\rgi Form: pattern of the dots plotted.  Is the trend generally linear (you can fit a straight line to the data) or non-linear?
+
+\rgi Strength: how closely do the points follow a trend?  Very closely (strong)? No pattern (weak)?
+
+\rgi Direction: as the x values increase, do the y-values tend to increase (positive) or decrease (negative)?
+
+\rgi Unusual observations or outliers: points that do not fit the overall pattern of the data
+
+#### Vocabulary {-}
+
+Residual: 
+\rgs
+
+\rgi Formula: 
+\rgs
+
+Residual Plot: 
+\rgs
+
+Correlation:
+\rgs
+
+#### Notes {-}
+
+General equation of a linear regression for a population: $y= \beta_0+ \beta_1 x+\epsilon$ where
+	
+\rgi $x$ represents 
+\rgs
+
+\rgi $y$ represents 
+\rgs
+
+\rgi $\beta_0$  represents 
+\rgs
+
+\rgi $\beta_1$  represents 
+\rgs
+
+\rgi $\epsilon$ represents 
+\rgs
+
+General equation of a linear regression model from sample data:  $\hat{y}= b_0+ b_1 x$ where
+	
+\rgi $x$ represents
+\rgs
+
+\rgi $\hat{y}$ represents
+\rgs
+
+\rgi $b_0$  represents 
+\rgs
+
+\rgi $b_1$  represents 
+\rgs
+
+Fill in the following table with the appropriate notation for each summary measure. 
+\begin{center}
+\begin{tabular}{|l|p{2in}|p{2in}|} \hline
+Summary Measure & Parameter & Statistic \\ \hline
+Correlation & & \\ 
+& & \\ \hline
+Slope & & \\ 
+& & \\ \hline
+Y-intercept & & \\ 
+& & \\ \hline
+\end{tabular}
+\end{center}
+
+Fill in the blanks below to define some of the properties of correlation:
+
+\rgi The value of correlation must be between ___________. (Includes the endpoints of the interval)
+
+\rgi The sign of correlation gives the ______________ of the linear relationship.
+
+\rgi The magnitude of correlation gives the ____________ of the linear relationship.
+
+True or false: A scatterplot that shows random scatter would be considered non-linear.
+
+True or false: To calculate a predicted y-value from a given x-value, just look at the scatterplot and estimate the y-value.
+
+True or false: A positive residual indicates the data point is above the regression line.
+
+#### Example: Brushtail Possums {-}
+
+1.	What are the observational units?  
+\rgs
+
+2.	Look at the scatterplot in figure 3.5.
+
+\rgi a)	What is the explanatory variable?  The response variable?  What type is each?
+\rgs
+
+\rgi b)	What is the form of the scatterplot?  
+\rgs
+
+\rgi c)	What is the direction of the scatterplot? 
+\rgs
+
+\rgi d)	What is the strength of the scatterplot? 
+\rgs
+
+\rgi e)	Are there any outliers on the scatterplot?  
+\rgs
+
+3.	Write the equation of the regression line, in context (do not use x and y, use variable names instead).
+\rgs
+
+4.	Calculate the predicted head length for a possum with a 76.0 cm total length.
+\rgs
+
+5.	One of the possums in the data set has a total length of 76.0 cm and a head length of 85.1 cm.  Calculate the residual for this possum.  Does this possum lie above or below the regression line?
+\rgs
+
+###  Section 3.2 (Least Squares Regression) {-}
+
+You may skip the special topic sections: 3.2.3.1, 3.2.6
+
+#### Vocabulary {-}
+
+Least squares criterion:
+\rgs
+
+Least squares line: 
+\rgs
+
+lm(): 
+\rgs
+\rgi name_of_model<-lm(response ~ explanatory, data=data_set_name)
+	
+slope: 
+\rgs
+
+y-intercept:  
+\rgs
+
+Extrapolation: 
+
+\rgi Assumes the pattern seen in the data extends beyond the data collected!
+
+Coefficient of determination 
+
+\rgi $s_y^2$ (or SST) represents 
+\rgs
+
+\rgi $s_{RES}^2$ (or SSE) represents 
+\rgs
+
+#### Notes {-}
+
+Two methods for determining the best line:
+
+\rgi 1.
+\rgs
+
+\rgi 2.
+\rgs
+
+Notation for the coefficient of determination: 
+\rgs
+
+Formulas for calculating the coefficient of determination:
+\rgs
+
+True or false: A correlation between two quantitative variables implies a causal relationship exists between the variables.
+
+True or false: The slope of the line tells us how much to expect the y variable to increase or decrease when the x variable increases by 1 unit.
+
+True or false: The coefficient of determination is just the square of the correlation.
+
+#### Example: Elmhurst College {-}
+
+1.	What are the observational units?  
+\rgs
+
+2.	Look at the scatterplot in figure 3.13.
+
+\rgi a)	What is the explanatory variable?  The response variable?  
+\rgs
+
+\rgi b)	What is the form of the scatterplot?  
+\rgs
+
+\rgi c)	What is the direction of the scatterplot? 
+\rgs
+
+\rgi d)	What is the strength of the scatterplot? 
+\rgs
+
+\rgi e)	Are there any outliers on the scatterplot?  
+\rgs
+
+3.	Write the equation of the regression line, in context (do not use x and y, use variable names instead).
+\rgs
+
+4.	Interpret the slope of the line, in the context of the problem.  Remember that both family income and gift aid from the university are measured in $1000s.
+\rgs
+
+5.	Interpret the y-intercept of the line, in the context of the problem.  Remember that both family income and gift aid from the university are measured in $1000s.
+\rgs
+
+6.	Is your interpretation in question 5 an example of extrapolation?
+\rgs
+
+7.	Give and interpret, in context, the value of the coefficient of determination.
+\rgs
+
+###  Section 3.3 (Outliers in linear regression) {-}
+
+#### Vocabulary {-}
+
+Outlier: 
+\rgs
+
+Leverage: 
+\rgs
+
+Influential: 
+\rgs
+
+#### Notes {-}
+
+Investigate, but do not remove, outliers. Unless you find there was an actual error in the data collection, ignoring outliers can make models poor predictors!
+
+True or false: All high leverage outliers are influential.
+
+True or false: An outlier is considered high leverage if it is extreme in it’s x-value.
+
+### Section 3.4 (R: Correlation and Regression) and Section 3.5 (Chapter 3 Review) {-}
+
+Section 3.4 presents five tutorials on analyzing two quantitative variables in R.  We recommend you complete all five. 
+
+#### Notes {-}
+
+Statistics summarize 
+\rgs
+
+Parameters summarize 
+\rgs
+ 
+What are the two ways to calculate the coefficient of determination?
+\rgs
+
+What is the formula for calculating a residual?
+\rgs
+
+Determine whether each of the following statements about the correlation coefficient are true or false:
+
+1.	Correlation coefficient must be a positive number.
+
+2.	Stronger linear relationships are indicated by correlation coefficients far from 0. 
+
+3.	The correlation coefficient is a robust statistic.  
+
+4.	When two variables are highly correlated, that indicates a causal relationship exists between the variables.  
+
+5.	The sign of the correlation coefficient will be the same as the sign of the regression line slope, though the values are typically different. 
+
+Fill in the blanks to correctly interpret:
+
+*	Slope
+
+\rgi For every ____________________________, we expect _________________ to increase (if slope is _____________) or decrease (if slope is ____________) by the absolute value of the _________.
+
+* Y-intercept
+
+\rgi If _______________, we expect the _______________________________________________
+
+Look at the table of vocabulary terms.  If there are any you do not know, be sure to review the appropriate section of your text. 
+
+### Section 4.1 (Gapminder world) {-}
+
+### Reminder from Section 3.1 {-} 
+Use color and a legend to add a third variable to a scatterplot.
+
+\rgi e.g. Color the dots to represent different levels of a categorical variable or shading to represent different values of a quantitative variable
+
+#### Vocabulary {-} 
+
+Interaction: 
+\rgi
+
+Aesthetic: 
+\rgi
+
+#### Notes {-}
+
+If the response and one predictor are quantitative and the other predictor categorical, we fit a regression line for each level of the categorical predictor.  
+
+\rgi Parallel slopes would indicate that that the two predictors ___________________ in explaining the response.
+
+\rgi Non-parallel slopes would indicate that the two predictors ___________________ in explaining the response.
+
+True or false: Scatterplots can only display two variables at a time.
+
+### Section 4.2 (Simpson’s Paradox, revisited) {-}
+
+#### Reminder from Section 2.1 {-}
+
+Simpson’s Paradox: when the relationship between the explanatory and response variable is reversed when looking at the relationship within different levels of a confounding variable
+
+#### Notes {-}
+
+True or false: Simpson’s Paradox can only occur when the explanatory, response, and confounding variable are all categorical.
+
+#### Example: SAT scores {-}
+
+1.	What are the observational units?  
+\rgs
+
+2.	Look at the scatterplot in figure 4.5.
+
+\rgi a)	What is the explanatory variable?  The response variable?  
+\rgs
+
+\rgi b)	What is the form of the scatterplot? 
+\rgs
+
+\rgi c)	What is the direction of the scatterplot? 
+\rgs
+
+\rgi d)	What is the strength of the scatterplot? 
+\rgs
+
+\rgi e)	Are there any outliers on the scatterplot?  
+\rgs
+
+3.	What would need to be done to eliminate the confounding variable: percent of eligible students taking the SAT?
+\rgs
+
+4.	What about the scatterplots in figure 4.6 demonstrate the percent of eligible students taking the SAT is a confounding variable?
+\rgs
+
+5.	How does figure 4.7 demonstrate Simpson’s Paradox?
+\rgs
+
+### Section 4.3 (R: Multiple regression) and Section 4.4 (Chapter 4 Review) {-}
+
+Section 4.3 discusses multiple regression and presents five tutorials on analyzing multiple variables in R.  This section is a special topic, meaning you are not required to read or complete these tutorials.
+ 
+#### Notes {-} 
+
+To determine if the relationship between two quantitative variables differs across levels of a categorical variable, you should compare 
+
+
+Simpson’s Paradox: 
 
 \newpage
 
@@ -59,7 +413,7 @@ We will revisit the data set used last week collected on Movies released in 2016
 
 #### Vocabulary review. Complete Q1 - 4 before class.{-}
 
-Note: You will need to use the provided `RScript` file for activity 5 to complete question 3.
+Note: You will need to use the provided `R` script file for activity 5 to complete question 3.
 
 
 
@@ -71,7 +425,7 @@ Note: You will need to use the provided `RScript` file for activity 5 to complet
 
 \vspace{0.4in}
 
-We will look at the relationship between `Budget` and `Revenue` for movies released in 2016. Enter the variable name `budget_mil` for xx and `revenue_mil` for yy at line 7 in the `RScript` file to create the scatterplot. (Note: both variables are measured in "millions of dollars").  Highlight and run lines 1 - 12.
+We will look at the relationship between `Budget` and `Revenue` for movies released in 2016. Enter the variable name `budget_mil` for xx and `revenue_mil` for yy at line 7 in the `R` script file to create the scatterplot. (Note: both variables are measured in "millions of dollars").  Highlight and run lines 1 - 12.
 
 
 ```r
@@ -273,7 +627,15 @@ movies %>% # Data set pipes into...
 
 ### Take-home messages
 
-1.	TODO
+1.	Two quantitative variables are graphically displayed in a scatterplot.  The explanatory variable is on the x-axis and the response variable is on the y-axis.  When describing the relationship between two quantitative variables we look at the form (linear or non-linear), direction (positive or negative), strength, and for the presence of outliers. 
+
+2.  There are three summary statistics used to summarize the relationship between two quantitative variables: correlation, slope of the regression line, and the coefficient of determination.  
+
+3. The sign of correlation and the sign of the slope will be the same.  The closer the value of correlation is to -1 or +1 the stronger the relationship between the explanatory and the response variable.  
+
+4.  The coefficient of determination measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100% the stronger the relationship.
+
+5.  We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable.  This is extrapolation.  
 
 ### Additional notes
 

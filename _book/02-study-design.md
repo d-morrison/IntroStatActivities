@@ -354,7 +354,12 @@ In the in-class activity we looked at sampling methods and study design.  Here a
 
 ### Take-home messages
 
-1.	TODO
+1.	If the sample is selected using a non-biased method of selection (i.e. a random sample of the target population) then the results of the study can be generalized to the target population.  When using biased methods of selection the results only apply to the sample selected or similar observational units.
+
+2.  The study design determines if we can draw causal inferences or not.  A randomized experiment allows us to conclude that there is a causal (cause and effect) relationship between the explanatory and response variable.  Observational studies have potential confounding variables within the study that prevent us from drawing a causal relationship between the variables.
+
+3.  Confounding variables are variables not included in the study that are related to both the explanatory and the response variables. When there are potential confounding variables in the study we cannot draw a causal inferences. 
+
 
 ### Additional notes
 

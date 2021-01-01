@@ -11,7 +11,7 @@
 Scatterplot:
 \rgs
 
-Dotplot:
+Dot plot:
 \rgs
 
 Histogram:
@@ -20,7 +20,7 @@ Histogram:
 Density plot:
 \rgs
 
-Boxplot:
+Box plot:
 \rgs
 
 
@@ -125,7 +125,7 @@ Standard deviation & & \\
 \end{tabular}
 \end{center}
 
-How are outliers denoted on a boxplot?  How can you mathematically determine if a data set has outliers?
+How are outliers denoted on a box plot?  How can you mathematically determine if a data set has outliers?
 \rgs
 
 
@@ -285,7 +285,7 @@ movies %>% # Data set piped into...
 
 \newpage
 
-To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `RScript` file for xx at line 12, highlight and run lines 1 - 16.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for xx at line 12, highlight and run lines 1 - 16.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.  
 
@@ -365,7 +365,7 @@ movies %>%  # Data set piped into...
        y = "Budget (in Millions)")  # y-axis label
 ```
 
-13. Sketch the boxplots created using the `R` code.
+13. Sketch the box plots created using the `R` code.
 
 \vspace{1.5in}
 
@@ -391,7 +391,7 @@ movies %>%  # Data set piped into...
 
 ### Out-of-class activity
 
-For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the `Movies` data set.  Download and open the provided `RScript` file, highlight and run the first 8 lines of code.
+For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the `Movies` data set.  Download and open the provided `R` script file, highlight and run the first 8 lines of code.
 
 To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.
 
@@ -409,7 +409,7 @@ movies %>% # Data set piped into...
 #> 4              R 3.5 5.375    6.3 7.050 8.1 6.221875 1.1335740 32       0
 ```
 
-Using the provided `RScript` file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx at line 44, highlight and run lines 39 - 48.
+Using the provided `R` script file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx at line 44, highlight and run lines 39 - 48.
 
 
 ```r
@@ -422,7 +422,7 @@ movies %>%  # Data set piped into...
        y = "Budget (in Millions)")  # y-axis label
 ```
 
-1.  Using the provided favstats output and the side-by-side boxplots, interpret the value of quartile 1 for the R content rating.
+1.  Using the provided favstats output and the side-by-side box plots, interpret the value of quartile 1 for the R content rating.
 
 \vspace{1in}
 
@@ -436,7 +436,13 @@ movies %>%  # Data set piped into...
 
 ### Take-home messages
 
-1.	TODO
+1.	Histograms, box plots, and dot plots can all be used to graphically display quantitative variables.  When we have a single categorical variable and a single quantitative variable we will display the data in side-by-side plots.
+
+2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5*IQR$ and greater than $Q_3 + 1.5*IQR$ are considering outliers and are graphically represented by a dot outside of the whiskers on the box plot.
+
+3.  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers.  There are two measures of center: mean and the median and two measures of spread: standard deviation and the interquartile range, IQR = Q1- Q3. 
+
+4.  The median and IQR are robust measures that are not affected by the presence of outliers. 
 
 ### Additional notes
 

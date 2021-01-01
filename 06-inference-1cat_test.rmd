@@ -109,7 +109,7 @@ True or False:  When conducting a simulation-based hypothesis test, the null hyp
 
 #### Formulas {-}
 
-$SD(\hat{p}) = $
+$SD(\hat{p})$ =
 \rgs
 
 General form of a theory-based confidence interval: 
@@ -225,7 +225,7 @@ This function will plot a $N(\mu, \sigma)$ distribution and shade the area that 
 i.e.: normTail(m = 5, s = 2, L = 3)creates the plot pictured above.
 		Changing L to U will shade the area above x.  normTail(m = 5, s = 2, U = 3) plots
 		
-```{r normlt3, fig.cap="", out.width="60%"}
+```{r normgt3, fig.cap="", out.width="60%"}
 include_graphics("images/Norm_greaterthan_3.png")
 ```
 

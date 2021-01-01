@@ -4,6 +4,7 @@
 
 \setstretch{1.25}
 
+
 \newpage
 
 ## Activity:  Handedness of Male Boxers - Estimation
@@ -224,7 +225,15 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 
 ### Take-home messages
 
-1.	TODO
+1.	The goal in a hypothesis test is to assess how strong the evidence of an effect, while the goal in creating a confidence interval is to determine how large the effect is.  A confidence interval is a range of *plausible* values for the parameter of interest.  
+
+2. The confidence interval is built around the point estimate or observed calculated statistic from the sample.  This means that the sample statistic is the center of the confidence interval.  
+
+3. The confidence interval includes a measure of sample to sample variability represented by the margin of error.  In simulation methods (bootstrapping), a simulated distribution of possible sample statistics is created showing the possible sample to sample variability.  Then we find the middle percent of the distribution around the sample statistic using the percentile method to give the range of values for the confidence interval.  This shows us that we are X% confident that the parameter is within these values, where X represents the level of confidence.
+
+4.  In theory-based methods we add and subtract the margin of error to the sample statistic.  The margin of error is calculated using a multiplier that corresponds to the level of confidence times the variability (standard error) of the statistic.  
+
+5.  When the null value is within the confidence interval it is a plausible value for the parameter of interest and we would find a larger p-value for the hypothesis test.  Conversely, if the null value is NOT within the confidence interval we would find a small p-value for the hypothesis test and strong evidence against the null hypothesis. 
 
 ### Additional notes
 

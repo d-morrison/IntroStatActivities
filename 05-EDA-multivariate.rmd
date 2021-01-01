@@ -300,7 +300,7 @@ Aesthetic:
 
 If the response and one predictor are quantitative and the other predictor categorical, we fit a regression line for each level of the categorical predictor.  
 
-\rig Parallel slopes would indicate that that the two predictors ___________________ in explaining the response.
+\rgi Parallel slopes would indicate that that the two predictors ___________________ in explaining the response.
 
 \rgi Non-parallel slopes would indicate that the two predictors ___________________ in explaining the response.
 

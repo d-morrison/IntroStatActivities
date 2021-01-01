@@ -308,7 +308,9 @@ We will need to find the $t^*$ multiplier using the function qt.  For a 95% conf
 
 ### Take-home messages
 
-1.	TODO
+1.	This activity differs from activity 10 because the responses are independent not paired.  This data is analyzed as a difference in means.  
+
+2. 
 
 
 ### Additional notes

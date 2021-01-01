@@ -4,6 +4,7 @@
 
 \setstretch{1.25}
 
+
 \newpage
 
 ## Activity:  Handedness of Male Boxers - Estimation

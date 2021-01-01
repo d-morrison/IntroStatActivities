@@ -372,7 +372,15 @@ two_proportion_test(formula = Outcome ~ Helmet, # response~explanatory
 
 ### Take-home messages
 
-1.	TODO
+1.	When comparing two groups, we are looking at the relationship between two parameters.  In the null hypothesis we assume the two parameters are equal or that there is no difference between the two proportions.  
+
+2.  We use the same guidelines for the strength of evidence as we did in activity 6.  
+
+3.  The standardized statistic when the response variable is categorical is a Z score and compared to the standard normal distribution to find the p-value.  To find the standardardized statistic we take the value of the statistic minus the null value, divided by the standard error of the statistic.  The standardized statistic measures the number of standard errors the statistic is from the null value. 
+
+4.  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type I error.
+
+5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance leve), we could have a possible Type II error.
 
 
 ### Additional notes

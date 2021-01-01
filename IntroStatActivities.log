@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.12.30)  31 DEC 2020 11:16
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.12.30)  31 DEC 2020 23:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -612,6 +612,24 @@ LaTeX Warning: Label `take-home-messages' multiply defined.
 LaTeX Warning: Label `additional-notes' multiply defined.
 
 
+LaTeX Warning: Label `reading-guide-quantitative-data' multiply defined.
+
+
+LaTeX Warning: Label `vocabulary' multiply defined.
+
+
+LaTeX Warning: Label `notes' multiply defined.
+
+
+LaTeX Warning: Label `vocabulary-1' multiply defined.
+
+
+LaTeX Warning: Label `notes-1' multiply defined.
+
+
+LaTeX Warning: Label `notes-2' multiply defined.
+
+
 LaTeX Warning: Label `learning-objectives' multiply defined.
 
 
@@ -630,7 +648,16 @@ LaTeX Warning: Label `take-home-messages' multiply defined.
 LaTeX Warning: Label `additional-notes' multiply defined.
 
 
-LaTeX Warning: Label `reading-guide' multiply defined.
+LaTeX Warning: Label `vocabulary' multiply defined.
+
+
+LaTeX Warning: Label `notes' multiply defined.
+
+
+LaTeX Warning: Label `vocabulary-1' multiply defined.
+
+
+LaTeX Warning: Label `notes-1' multiply defined.
 
 
 LaTeX Warning: Label `learning-objectives' multiply defined.
@@ -650,9 +677,6 @@ LaTeX Warning: Label `take-home-messages' multiply defined.
 
 
 LaTeX Warning: Label `additional-notes' multiply defined.
-
-
-LaTeX Warning: Label `reading-guide' multiply defined.
 
 
 LaTeX Warning: Label `learning-objectives' multiply defined.
@@ -1314,44 +1338,70 @@ file (type pdf)
 Chapter 5.
 [52
 
-] [53] [54] [55] [56] [57] [58]
+] [53] [54] [55] [56]
+Overfull \hbox (76.46188pt too wide) in paragraph at lines 3000--3001
+[] \TU/lmr/m/n/10 If _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-, we expect the _-_-_-_-_-_-
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+-_- 
+ []
+
+[57] [58] [59] [60] [61] [62] [63] [64] [65]
 File: 05-EDA-multivariate_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file
  (type pdf)
 <use 05-EDA-multivariate_files/figure-latex/unnamed-chunk-5-1.pdf>
-[59] [60]
+[66] [67]
 Chapter 6.
-[61
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+[68
 
-] [62] [63] [64] [65] [66] [67]
+]
+Missing character: There is no ≤ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+[69] [70]
+Missing character: There is no μ in font [lmmono10-regular]:!
+Missing character: There is no σ in font [lmmono10-regular]:!
+Missing character: There is no μ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no σ in font [lmroman10-regular]:mapping=tex-text;!
+File: images/Norm_lessthan_3.png Graphic file (type bmp)
+<images/Norm_lessthan_3.png>
+[71]
+Missing character: There is no μ in font [lmmono10-regular]:!
+Missing character: There is no σ in font [lmmono10-regular]:!
+File: images/Norm_greaterthan_3.png Graphic file (type bmp)
+<images/Norm_greaterthan_3.png>
+Missing character: There is no μ in font [lmmono10-regular]:!
+Missing character: There is no σ in font [lmmono10-regular]:!
+[72] [73] [74] [75] [76] [77] [78] [79]
 File: images/soe_gradient_grayscale.png Graphic file (type bmp)
 <images/soe_gradient_grayscale.png>
-[68] [69] [70]
+[80] [81] [82]
 File: 06-inference-1cat_test_files/figure-latex/simpleNormal-1.pdf Graphic file
  (type pdf)
 <use 06-inference-1cat_test_files/figure-latex/simpleNormal-1.pdf>
-[71] [72]
+[83] [84]
 Chapter 7.
-[73
+[85
 
-] [74] [75] [76]
+] [86] [87] [88]
 File: 07-inference-1cat_CI_files/figure-latex/unnamed-chunk-2-1.pdf Graphic fil
 e (type pdf)
 <use 07-inference-1cat_CI_files/figure-latex/unnamed-chunk-2-1.pdf>
-[77] [78] [79] [80]
+[89] [90] [91] [92]
 Chapter 8.
-[81
+[93
 
-] [82] [83] [84]
+] [94] [95] [96]
 File: 08-inference-2cat_test_files/figure-latex/unnamed-chunk-2-1.pdf Graphic f
 ile (type pdf)
 <use 08-inference-2cat_test_files/figure-latex/unnamed-chunk-2-1.pdf>
-[85] [86] [87] [88] [89] [90] [91]
+[97] [98] [99] [100] [101] [102] [103]
 Chapter 9.
-[92
+[104
 
-] [93] [94] [95] [96] [97] [98] [99]
+] [105] [106] [107] [108] [109] [110] [111]
 Chapter 10.
-[100
+[112
 
 ]
 File: images/air_pollution_greyscale.png Graphic file (type bmp)
@@ -1359,43 +1409,43 @@ File: images/air_pollution_greyscale.png Graphic file (type bmp)
 File: 10-paired_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf
 )
 <use 10-paired_files/figure-latex/unnamed-chunk-2-1.pdf>
-[101] [102] [103] [104] [105] [106]
+[113] [114] [115] [116] [117] [118]
 Missing character: There is no ≥ in font [lmroman10-regular]:mapping=tex-text;!
-[107] [108]
+[119] [120]
 Chapter 11.
-[109
+[121
 
-] [110]
+] [122]
 File: 11-inference-1ofeach_files/figure-latex/unnamed-chunk-2-1.pdf Graphic fil
 e (type pdf)
 <use 11-inference-1ofeach_files/figure-latex/unnamed-chunk-2-1.pdf>
-[111] [112] [113] [114] [115] [116] [117] [118]
+[123] [124] [125] [126] [127] [128] [129] [130]
 Chapter 12.
-[119
+[131
 
-] [120] [121]
+] [132] [133]
 File: 12-regression_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type
  pdf)
 <use 12-regression_files/figure-latex/unnamed-chunk-3-1.pdf>
-[122] [123] [124]
-Underfull \hbox (badness 10000) in paragraph at lines 6582--6583
+[134] [135] [136]
+Underfull \hbox (badness 10000) in paragraph at lines 7293--7294
 
  []
 
-[125] [126] [127] [128] [129] (./IntroStatActivities.aux)
+[137] [138] [139] [140] [141] (./IntroStatActivities.aux)
 Package rerunfilecheck Info: File `IntroStatActivities.out' has not changed.
-(rerunfilecheck)             Checksum: F397DF071F37E6F8922C5B2E6B5C8D47;9128.
+(rerunfilecheck)             Checksum: 0D18DA15345E6D9323F6A627D6D0B02E;9340.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18096 strings out of 479290
- 320013 string characters out of 5875361
- 800844 words of memory out of 5000000
- 37307 multiletter control sequences out of 15000+600000
+ 18143 strings out of 479290
+ 321313 string characters out of 5875361
+ 801807 words of memory out of 5000000
+ 37352 multiletter control sequences out of 15000+600000
  409937 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,9n,118p,827b,438s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on IntroStatActivities.pdf (132 pages).
+Output written on IntroStatActivities.pdf (144 pages).

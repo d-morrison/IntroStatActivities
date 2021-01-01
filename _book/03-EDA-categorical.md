@@ -405,7 +405,7 @@ The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census 
 
 ### Out-of-class activity
 
-For this part of the activity we will focus on using `RStudio` and the provided `RScript` file to create graphs and calculate proportions from each group.  
+For this part of the activity we will focus on using `RStudio` and the provided `R` script file to create graphs and calculate proportions from each group.  
 
 #### Nightlight use and myopia
 In a study reported in Nature (1999, Vol. 399, pp. 113-114), a survey of 479 children found that those who had slept with a nightlight or in a fully lit room before the age of 2 had a higher incidence of nearsightedness (myopia) later in childhood.
@@ -422,7 +422,7 @@ you would use in order to produce output or plots. These
 "code chunks" appear in gray. In the code chunk below, we
 demonstrate how to read the data set into `R` using the `read.csv()` function.
 
-Open the provided `RScript` file for activity 3 in `RStudio` or `RStudioCloud` to answer the following questions. Highlight and run lines 1 - 5.  These lines of code read in the data set and name the data set myopia.  The library function tells `R` which packages will be needed.  
+Download and open the provided `R` script file for activity 3 to answer the following questions. Highlight and run lines 1 - 5.  These lines of code read in the data set and name the data set myopia.  The library function tells `R` which packages will be needed.  
 
 
 ```r
@@ -433,7 +433,7 @@ myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSigh
 
 #### Displaying a single categorical variable {-}
 
-If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight`, for xx into the ggplot code in line 10 in the `RScript` file to create a bar plot.  Highlight and run lines 9 - 15.  Notice this is a **frequency** bar plot plotting counts (the number of children in each level of sight).  
+If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight`, for xx into the ggplot code in line 10 in the `R` script file to create a bar plot.  Highlight and run lines 9 - 15.  Notice this is a **frequency** bar plot plotting counts (the number of children in each level of sight).  
 
 
 
@@ -480,7 +480,7 @@ ggplot(aes(x = Sight)) +   # This specifies the variable
 
 #### Displaying two categorical variables {-}
 
-To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` (explanatory variable) for xx and the variable name, `Sight` (response variable) for yy in the `RScript` file in line 28.  Highlight and run lines 27 - 33. 
+To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` (explanatory variable) for xx and the variable name, `Sight` (response variable) for yy in the `R` script file in line 28.  Highlight and run lines 27 - 33. 
 
 
 ```r
@@ -509,7 +509,13 @@ ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
 
 ### Take-home messages
 
-1.	TODO
+1.	Bar charts can be used to graphically display a single categorical variable either as counts or proportions.  Segmented bar charts and mosaic plots are used to display two categorical variables. 
+
+2.  Segmented bar charts always have a scale from 0 - 100%.  The bars represent the outcomes of the explanatory variable.  Each bar is segmented by the response variable. If the heights of each segment are the same for each bar there is no association between variables. 
+
+3.  Mosaic plots are similar to segmented bar charts but the widths of the bars also show the number of observations within each outcome.  
+
+4.  Conditional probabilities are calculated dependent on a 2nd variable.  In the probability notation the variable following `|` is the variable that we are conditioning on.  The denominator used to calculate the probability will be the total for the variable we are conditioning on.  
 
 
 ### Additional notes
