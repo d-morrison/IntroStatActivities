@@ -1,8 +1,245 @@
 # Inference for a Single Categorical Variable: Hypothesis Testing
 
-## Reading Guide: 
+## Reading Guide: Categorical Inference
 
 \setstretch{1.25}
+
+### Vocabulary {-}
+
+Statistical inference: 
+\rgs
+
+Hypothesis test: 
+
+\rgi Also called a ‘significance test’
+\rgs
+
+Simulation-based method: 
+\rgs
+
+Theory-based method: 
+\rgs
+
+Confidence interval: 
+\rgs
+
+Margin of error: 
+\rgs
+
+Central Limit Theorem:
+\rgs
+
+Sampling distribution: 
+\rgs
+
+Standard deviation of a statistic: 
+\rgs
+
+Standard error of a statistic: 
+\rgs
+
+Null hypothesis: 
+\rgs
+
+Alternative hypothesis: 
+\rgs
+
+P-value: 
+\rgs
+
+Test statistic/point estimate: 
+\rgs
+
+Decision: 
+\rgs
+
+Significance level: 
+\rgi Typically use α=0.05
+\rgs
+
+Statistically significant: 
+\rgs
+
+#### Notes {-}
+
+What ‘theory’ is behind the theory-based methods of analysis?
+\rgs
+
+Consider the US judicial system:
+\rgi What is the null hypothesis?  
+\rgs
+
+\rgi	What is the alternative hypothesis? 
+\rgs
+
+\rgi The jury is presented with evidence.  
+\rgs
+
+If the evidence is strong (beyond a reasonable doubt), the jury will find the defendant: 
+If the evidence is not strong (not beyond a reasonable doubt), the jury will find the defendant: 
+\rgs
+
+To create a simulation, which hypothesis (null or alternative) do we assume is true? 
+\rgs
+
+More on p-values: 
+
+\rgi Lower the p-value: 
+\rgs
+
+\rgi Interpretations require: 
+\rgs
+
+General steps of a hypothesis test:
+\rgs
+
+Conclusions should include:
+\rgs
+
+Decisions:
+\rgi If p-value≤α, the decision is to: 
+
+\rgi If p-value>α, the decision is to: 
+
+True or False: If the p-value is above 0.10, that means the null hypothesis is true.
+
+
+True or False:  When conducting a simulation-based hypothesis test, the null hypothesis is assumed to be true to create the simulation.
+	
+
+#### Formulas {-}
+
+$SD(\hat{p}) = $
+\rgs
+
+General form of a theory-based confidence interval: 
+\rgs
+
+Margin of error: 
+\rgs
+
+#### Example: Martian Alphabet {-} 
+
+1. What is the sample statistic presented in this example?  What notation would be used to represent this value?
+\rgs
+
+2. What are the two possible explanations for how these data could have occurred? 
+\rgs
+
+
+3. Of the two explanations, which is the null and which is the alternative hypothesis?
+\rgs
+
+
+4. How could coins be used to create a simulation of what should happen if everyone in the class was just guessing?
+\rgs
+
+5. How can we use the simulation to determine which of the two possibilities is more believable?
+\rgs
+
+6. Interpret the 95% confidence interval provided in the textbook.
+\rgs
+
+7. The formula for the interval is $\frac{34}{38}\pm (2×0.08) = 0.89 \pm 0.16$.  Calculating that, you should get (0.73, 1.05).  Why was the interval shown in the textbook (0.73, 1) instead of (0.73, 1.05)?
+\rgs
+
+8. What decision should be made at the $\alpha = 0.05$ level?  Justify your answer.
+\rgs
+
+9. Are the results in this example statistically significant?  Justify your answer.
+\rgs
+
+### Section 5.2 (The Normal Distribution) {-}
+
+#### Vocabulary {-}
+
+Normal distribution: 
+\rgs
+
+\rgi Notation:
+\rgs
+
+\rgi Also known as: normal curve, normal model
+
+\rgi Standard Normal distribution: 
+\rgs
+
+\rgi Notation:
+\rgs
+
+Z-score:
+\rgs
+
+Xth percentile: 
+\rgs
+
+68-95-99.7 rule: 
+\rgs
+
+#### Notes {-}
+
+Interpretation of a z-score: 
+\rgs
+
+True or False: The more unusual observation will be the observation with the largest z-score.
+	
+Approximately what percent of a Normal distribution is in the interval
+
+\rgi (mean – standard deviation, mean + standard deviation) 
+\rgs
+ 
+\rgi (mean – 2*(standard deviation), mean + 2*(standard deviation)) 
+\rgs
+
+\rgi (mean – 3*(standard deviation), mean + 3*(standard deviation)) 
+\rgs
+
+#### Formulas {-}
+
+z =
+\rgs
+
+#### R Coding {-}
+Will need to change the value of the mean, sd, and q to match the question
+
+```{r, echo=TRUE, eval=FALSE}
+pnorm(mean = μ, sd = σ, q = x, lower.tail = TRUE)
+```
+
+This function will return the percent of the N(μ,σ) distribution which is below the value x.
+
+i.e.: pnorm(mean = 5, sd = 2, q = 3, lower.tail = TRUE)will give us the percent of a N(5,2) distribution which is below 3, which equals 0.159.
+ 
+```{r normlt3, fig.cap="", out.width="60%"}
+include_graphics("images/Norm_lessthan_3.png")
+```
+
+Changing to lower.tail = FALSE will give the percent of the distribution which is above x.
+
+```{r, echo=TRUE, eval=FALSE}
+normTail(m = μ, s = σ, L = x)
+```
+
+This function will plot a $N(\mu, \sigma)$ distribution and shade the area that is below the value x.
+
+i.e.: normTail(m = 5, s = 2, L = 3)creates the plot pictured above.
+		Changing L to U will shade the area above x.  normTail(m = 5, s = 2, U = 3) plots
+		
+```{r normlt3, fig.cap="", out.width="60%"}
+include_graphics("images/Norm_greaterthan_3.png")
+```
+
+```{r, echo=TRUE, eval=FALSE}
+qnorm(mean = μ, sd = σ, p = x, lower.tail = TRUE)
+```
+
+This function will return the value on the $N(\mu,\sigma)$ distribution which has x area of the distribution below it.
+
+i.e.: qnorm(mean = 5, sd = 2, p = 0.159, lower.tail = TRUE) will give us the value on a N(5,2) distribution which has 0.159 (15.9%) of the distribution below it, which equals 3 (from above).
+
+Changing to lower.tail = FALSE will give the value which has x area of the distribution **above** it.
+
+We would recommend you work through each of the examples in section 5.2.4 using `R`.
 
 \newpage
 
@@ -194,7 +431,7 @@ To use the computer simulation, we will need to enter the "probability of succes
 
 \vspace{.2in}
 
-Using the provided `RScript` file, fill in the values/words for xx with your answers from question 17 in the one proportion test to create a null distribution with 1000 simulations, highlight and run lines 1 - 14.
+Using the provided `R` script file, fill in the values/words for xx with your answers from question 17 in the one proportion test to create a null distribution with 1000 simulations, highlight and run lines 1 - 14.
 
 ```{r, echo=TRUE, eval = FALSE}
 one_proportion_test(probability_success = xx, # Null hypothesis value
@@ -264,8 +501,6 @@ When we write a conclusion we answer the research question by stating how much e
 
 \vspace{.6in}
 
-
-
 ### Out-of-class activity
 
 The remaining questions cover theory-based methods for testing a single categorical variable.  Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
@@ -325,7 +560,7 @@ The standardized statistic measures the number of standard errors the sample sta
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided `RScript` file and enter the value of the standardized statistic calculated in question 3 at xx in line 18, highlight and run lines 18 - 20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value greater than the value of the standardized statistic.  Use `lower.tail = TRUE` when doing a left-sided test and `lower.tail = FALSE` when doing a right-sided test.  To find a two-sided p-value use a left-sided test and multiply the p-value found by 2.
+We will use the pnorm function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 3 at xx in line 18, highlight and run lines 18 - 20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value greater than the value of the standardized statistic.  Use `lower.tail = TRUE` when doing a left-sided test and `lower.tail = FALSE` when doing a right-sided test.  To find a two-sided p-value use a left-sided test and multiply the p-value found by 2.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic

@@ -326,7 +326,7 @@ movies %>% # Data set piped into...
 
 \newpage
 
-To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `RScript` file for xx at line 12, highlight and run lines 1 - 16.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for xx at line 12, highlight and run lines 1 - 16.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.  
 
@@ -414,7 +414,7 @@ movies %>%  # Data set piped into...
 
 ### Out-of-class activity
 
-For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the `Movies` data set.  Download and open the provided `RScript` file, highlight and run the first 8 lines of code.
+For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the `Movies` data set.  Download and open the provided `R` script file, highlight and run the first 8 lines of code.
 
 To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.
 
@@ -423,7 +423,7 @@ movies %>% # Data set piped into...
   summarise(favstats(imdb_score~content_rating)) # Apply favstats function to imdb_score
 ```
 
-Using the provided `RScript` file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx at line 44, highlight and run lines 39 - 48.
+Using the provided `R` script file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx at line 44, highlight and run lines 39 - 48.
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
 movies %>%  # Data set piped into...
