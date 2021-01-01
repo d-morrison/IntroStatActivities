@@ -80,7 +80,7 @@ To use the computer simulation to create a bootstrap distribution, we will need 
     
 \vspace{.1in}
 
-Using the provided `RScript` file, fill in the values/words for xx with your answers from question 6 in the one proportion bootstrap CI code to create a bootstrap distribution with 1000 simulations, highlight and run lines 1 - 11.
+Using the provided `R` script file, fill in the values/words for xx with your answers from question 6 in the one proportion bootstrap CI code to create a bootstrap distribution with 1000 simulations, highlight and run lines 1 - 11.
 
 ```{r, echo=TRUE, eval=FALSE}
 one_proportion_bootstrap_CI(sample_size = xx, # Sample size
