@@ -33,6 +33,7 @@ Margin of error:
 \rgs
 
 ### Section 5.3.2 and 5.3.3 (One Proportion: Bootstrap confidence intervals and Theory-based inferential methods)
+*In section 5.3.3, read only the section on Confidence intervals for $\pi$*
 
 #### Reminders from previous sections {-}
 
@@ -46,6 +47,16 @@ Confidence interval: a process to determine how large an effect is; a range of p
 		Also called ‘estimation’
 
 \rgi Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval
+
+Parameter: a value summarizing a variable(s) for a population
+
+Statistic: a value summarizing a variable(s) for a sample
+
+Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
+
+Standard deviation of a statistic: the variability of statistics from 1000s of samples.  How far, on average, each statistic is from the true value of the parameter.
+
+Standard error of a statistic: estimated standard deviation of a statistic.
 
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
 

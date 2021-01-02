@@ -231,7 +231,7 @@ We would recommend you work through each of the examples in section 5.2.4 using 
 
 
 ### Section 5.3 (Inference for One Proportion) 
-*skip section 5.3.2 and stop before 5.3.3 Confidence interval for $\pi$* {-}
+*skip section 5.3.2 and stop before 5.3.3 Confidence intervals for $\pi$* {-}
 
 #### Reminders from previous sections {-}
 
@@ -271,9 +271,9 @@ Simulation-based method: Simulate lots of samples of size n, then find the propo
 
 Theory-based method: Develop a mathematical model for the statistic and use the model to calculate the probability of the observed sample statistic occurring 
 
-Null hypothesis: $H_0$ the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is wrong
+Null hypothesis: $H_0$ the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**
 
-Alternative hypothesis: $H_A$ the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is correct
+Alternative hypothesis: $H_A$ the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**
 
 P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true
 
@@ -281,9 +281,9 @@ P-value: probability of seeing the observed sample data, or something more extre
 
 Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance
 
-Significance level: (α) a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not
+Significance level: ($\alpha$) a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not
 
-\rgi Typically use α=0.05
+\rgi Typically use $\alpha$ =0.05
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
