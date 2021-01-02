@@ -4,7 +4,10 @@
 
 \setstretch{1.25}
 
-### Vocabulary {-}
+### Section 5.1 (Foundations of Inference) 
+*skip section 5.1.4*
+
+#### Vocabulary {-}
 
 Statistical inference: 
 \rgs
@@ -18,12 +21,6 @@ Simulation-based method:
 \rgs
 
 Theory-based method: 
-\rgs
-
-Confidence interval: 
-\rgs
-
-Margin of error: 
 \rgs
 
 Central Limit Theorem:
@@ -54,8 +51,8 @@ Decision:
 \rgs
 
 Significance level: 
-\rgi Typically use α=0.05
-\rgs
+\rgi 
+\rgs Typically use $\alpha=0.05$
 
 Statistically significant: 
 \rgs
@@ -114,11 +111,6 @@ True or False:  When conducting a simulation-based hypothesis test, the null hyp
 $SD(\hat{p})$ =
 \rgs
 
-General form of a theory-based confidence interval: 
-\rgs
-
-Margin of error: 
-\rgs
 
 #### Example: Martian Alphabet {-} 
 
@@ -139,16 +131,10 @@ Margin of error:
 5. How can we use the simulation to determine which of the two possibilities is more believable?
 \rgs
 
-6. Interpret the 95% confidence interval provided in the textbook.
+6. What decision should be made at the $\alpha = 0.05$ level?  Justify your answer.
 \rgs
 
-7. The formula for the interval is $\frac{34}{38}\pm (2×0.08) = 0.89 \pm 0.16$.  Calculating that, you should get (0.73, 1.05).  Why was the interval shown in the textbook (0.73, 1) instead of (0.73, 1.05)?
-\rgs
-
-8. What decision should be made at the $\alpha = 0.05$ level?  Justify your answer.
-\rgs
-
-9. Are the results in this example statistically significant?  Justify your answer.
+7. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
 ### Section 5.2 (The Normal Distribution) {-}
@@ -244,7 +230,8 @@ Changing to lower.tail = FALSE will give the value which has x area of the distr
 We would recommend you work through each of the examples in section 5.2.4 using `R`.
 
 
-### Section 5.3 (Inference for One Proportion) {-}
+### Section 5.3 (Inference for One Proportion) 
+*skip section 5.3.2 and stop before 5.3.3 Confidence interval for $\pi$* {-}
 
 #### Reminders from previous sections {-}
 
@@ -300,13 +287,6 @@ Significance level: (α) a threshold used to determine if a p-value provides eno
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-
-Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter
-
-\rgi Also called ‘estimation’
-
-Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval
-
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
 
 #### Vocabulary {-}
@@ -320,31 +300,11 @@ Null value:
 Null distribution:  
 \rgs
 
-Bootstrapping: 
-\rgs
-
-Bootstrapped resample: 
-\rgs
-
-Bootstrapped statistic: 
-\rgs
-
 Standardized statistic:
 \rgs
 
-Confidence level: 
-\rgs
 		
 #### Notes {-}
-
-Purpose of bootstrapping: 
-\rgs
-
-How is bootstrapping used?  
-\rgs
-
-If we want to find a 90% confidence interval, what percentiles of the bootstrap distribution would we need?  
-\rgs
 
 Conditions for the Central Limit Theorem to apply (for the sampling distribution of $\hat{p}$ to be Normal)
 
@@ -360,13 +320,6 @@ Conditions for the Central Limit Theorem to apply (for the sampling distribution
 \rgi Checked by: 
 \rgs
 
-How can we determine the value of $z^*$ to use as the multiplier in a confidence interval?
-\rgs
-
-In R, use qnorm(mean = __, sd = __, p = __)
-
-The higher the confidence level, the (larger/smaller) the multiplier, meaning the confidence interval will be (wider/narrower).
-
 #### Formulas {-}
 
 $SD(\hat{p})$ =
@@ -381,17 +334,7 @@ Standardized statistic/standardized sample proportion:
 
 $z$ =
 \rgs
-		
-Standard error of the sample proportion when we do not assume the null hypothesis is true.
-
-$SE(\hat{p})$ =
-\rgs
 	
-Theory-based confidence interval for a sample proportion: 
-\rgs
-
-Margin of error of a confidence interval for a sample proportion: 
-\rgs
 
 #### Example: Organ Donations {-}
 
@@ -428,16 +371,10 @@ Margin of error of a confidence interval for a sample proportion:
 10. What conclusion should the researcher make?
 \rgs
 
-11. How could we use cards to simulate 1 bootstrapped resample?  How many blue cards – to represent what?  How many red cards – to represent what?  How many times would we draw a card and replace it back in the deck?  What would you record once you completed the draw-with-replacement process?
+11. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
-12. Interpret the 95% confidence interval provided in the textbook.
-\rgs
-
-13. Are the results in this example statistically significant?  Justify your answer.
-\rgs
-
-14.	Are the conditions met to use theoretical methods to analyze these data?
+12.	Are the conditions met to use theoretical methods to analyze these data?
 \rgs
 
 
@@ -476,19 +413,7 @@ Margin of error of a confidence interval for a sample proportion:
 11. What conclusion should the researcher make?
 \rgs
 
-12. Calculate the standard error of the sample proportion when we do not assume the null hypothesis is true.
-\rgs
-
-13. Calculate the margin of error for a 95\% confidence interval for π using 1.96 as the multiplier.
-\rgs
-
-14.	Calculate a 95\% confidence interval for π using your margin of error calculated above.
-\rgs
-
-15. Interpret the 95\% confidence interval provided in the textbook.
-\rgs
-
-16. Are the results in this example statistically significant?  Justify your answer.
+12. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
 \newpage

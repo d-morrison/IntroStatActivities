@@ -1,14 +1,12 @@
 --- 
-title: |
-  ![](images/msu-campus.jpg){width=5in} 
-  \vspace{1cm}  
-  STAT 216 Coursepack
+title: "![](images/msu-campus.jpg){width=5in}"
+author: "Melinda Yager, Jade Schmidt, Dr. Stacey Hancock"
 subtitle: Spring 2021
-author: Melinda Yager, Jade Schmidt, Dr. Stacey Hancock
-location: Montana State University
+output: pdf_document
 site: bookdown::bookdown_site
 documentclass: report
 description: This is the coursepack of in-class activities for STAT 216 Spring 2021.
+location: Montana State University
 ---
 
 <!-- Notes for authors on formatting: -->
