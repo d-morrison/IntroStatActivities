@@ -379,6 +379,150 @@ Overall (pooled) proportion of successes:
 
 \rgi *Note: a p-value, p-value interpretation, decision, and conclusion for this example can be found in the Reading Guide solutions for 5.4.1to5.4.2 and 5.4.3.*
 
+### Section 5.5 (Errors, Power, and Practical Importance) {-}
+
+#### Reminders from previous sections {-}
+
+Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance
+
+\rgi If p-value $< \alpha$, then reject $H_0$
+
+\rgi If p-value $> \alpha$, then fail to reject $H_0$
+
+Significance level: ($\alpha$) a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not
+
+\rgi Typically use $\alpha =0.05$
+
+Statistically significant: results are considered statistically significant if the p-value is below the significance level.
+
+#### Vocabulary {-}
+
+Type I error: 
+\rgs
+
+Type II error: 
+\rgs
+
+Confirmation bias: 
+\rgs
+
+Power: 
+\rgs
+		
+Practical Importance: 
+\rgs
+
+#### Notes {-}
+
+Fill in the following table with whether the decision was correct or not and if not, what type of error was made.
+\begin{center}
+\begin{tabular}{|p{2in}|p{2in}|p{2in}|}
+\hline
+ & \multicolumn{2}{|c|}{\textbf{Test conclusion (based on data)}} \\ \hline
+ \textbf{Truth (unknown)} & Reject null hyp. & Fail to reject null hyp. \\ \hline
+ Null hyp. is true && \\ 
+ Alt. hyp. is true (null hyp. is false) & & \\ 
+  & & \\
+   & & \\ \hline
+   Non-random sample && \\ 
+   (or other sampling bias) & & \\ 
+  & & \\
+   & & \\ \hline
+\end{tabular}
+\end{center}
+
+\rgs
+
+How are significance level and type I error rate related?
+\rgs
+
+How are significance level and type II error rate related?
+\rgs
+
+
+After collecting data, a researcher decides to change from a two-sided test to a one-sided test.  Why is this a bad idea?
+
+1. It ____________ (increases/decreases) the chance of a type I error.
+
+2. This can result in ________________________.
+\rgs
+
+How are power and type I error rate related?
+\rgs
+
+How are power and type II error rate related?
+\rgs
+
+How can we increase the power of a test?
+
+1. ________ (Increase/Decrease) the significance level
+\rgs
+
+2. ________ (Increase/Decrease) the sample size
+\rgs
+
+3. Change from a ___ (one/two)-sided to a ___ (one/two)-sided test
+\rgs
+
+4. Have a ________ (larger/smaller) standard deviation of the statistic
+\rgs
+
+5. Have the alternative parameter value _______ (closer/farther) from the null value
+\rgs
+
+Results are likely to be statistically significant (but may not be practically important) if the sample size is __________(large/small).
+\rgs
+
+Results are unlikely to be statistically significant (but may be practically important) if the sample size is __________(large/small).
+\rgs
+
+#### Examples: {-} 
+
+1. In the Gender Discrimination study in the textbook and presented as an example in Reading Guide 5.4.1to5.4.2,
+
+\rgi a. What was the p-value of the test?
+\rgs
+
+\rgi b.	At the 5% significance level, what decision would you make?
+\rgs
+
+\rgi c. What type of error might have occurred in these data?
+\rgs
+
+\rgi d. Interpret that error in the context of the problem.
+\rgs
+\rgs
+
+2. In the Opportunity Cost study in the textbook and presented as an example in the reading guide for sections 5.4.1 to 5.4.2,
+
+\rgi a. What was the p-value of the test?
+\rgs
+
+\rgi b. At the 5% significance level, what decision would you make?
+\rgs
+
+\rgi c. What type of error might have occurred in these data?
+\rgs
+
+\rgi d. Interpret that error in the context of the problem.
+\rgs
+\rgs
+
+3. In the CPR and blood thinners study in the textbook and presented as an example in the reading guide for sections 5.4.1 to 5.4.2,
+
+\rgi a. What was the p-value of the test?
+\rgs
+
+\rgi b. At the 5% significance level, what decision would you make?
+\rgs
+
+\rgi c. What type of error might have occurred in these data?
+\rgs
+
+\rgi d. Interpret that error in the context of the problem.
+\rgs
+\rgs
+
 
 \newpage
 
