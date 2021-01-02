@@ -98,7 +98,7 @@ T-score: the name for a standardized statistic which is compared to a t-distribu
 
 #### Notes {-}
 
-To create a simulated null distribution, 
+To create a **simulated null distribution**, 
 
 1. How many cards will you need and how will the cards be labeled?
 \rgs
@@ -109,7 +109,7 @@ To create a simulated null distribution,
 3. After shuffling, what value will be plotted on the simulated null distribution?
 \rgs
 
-To create a bootstrap distribution, 
+To create a **bootstrap distribution**, 
 
 1. How many cards will you need and how will the cards be labeled?
 \rgs
