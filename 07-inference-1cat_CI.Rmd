@@ -5,6 +5,7 @@
 ### Section 5.1.4 (Foundations of inference: Confidence intervals)
 
 **Videos**  
+
 * 5.1
 
 \setstretch{1.25}
@@ -42,6 +43,7 @@ Margin of error:
 In section 5.3.3, read only the sub-section on "Confidence interval for $\pi$". The other sections were covered last week.
 
 **Videos**  
+
 * 5.3
 * OnePropTheory
 

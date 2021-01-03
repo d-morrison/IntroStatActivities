@@ -2,10 +2,14 @@
 
 ## Reading Guide: Inference for a difference in two means
 
-\setstretch{1.25}
-
 ### Section 6.3 (Inference for a difference in two means) {-}
 
+**Videos**  
+
+* 6.3
+* TwoMeanRand
+
+\setstretch{1.25}
 #### Reminders from previous sections {-}
 
 $n_1$= sample size of group 1
@@ -28,7 +32,7 @@ $\sigma$ = population standard deviation
 	
 3. Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
 
-4. Compare the observed test statistic to the null distribution to calculate a p-value
+4. Compare the observed test statistic to the null distribution to calculate a p-value.
 
 5. Make a conclusion based on the p-value and write the conclusion in context.
 
@@ -177,7 +181,7 @@ $s_1$ represents
 $s_2$ represents 
 \rgs
 
-#### Example: Test Scores {-}
+#### Example: Test scores {-}
 
 1.	What are the observational units?
 \rgs
@@ -219,7 +223,7 @@ The proportion of simulated null samples at ____ or ___________.
 \rgs
 \rgs
 
-#### Example: ESC and Heart Attacks {-}
+#### Example: ESC and heart attacks {-}
 
 1.	What is the research question?
 \rgs
@@ -250,7 +254,7 @@ The proportion of simulated null samples at ____ or ___________.
 \rgs
 \rgs
 
-#### Example: NC Births {-}
+#### Example: NC births {-}
 
 1. What is the research question?
 \rgs

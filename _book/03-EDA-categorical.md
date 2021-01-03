@@ -49,6 +49,7 @@ State what these introductory functions do in `R`:
 \setstretch{1}
 
 **Videos**  
+
 * 2.1
 * MosaicPlots
 
@@ -151,6 +152,7 @@ a ______________ variable.
 \setstretch{1}
 
 **Videos**  
+
 * 2.2
 
 \setstretch{1.25}

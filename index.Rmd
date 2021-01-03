@@ -16,7 +16,7 @@ location: Montana State University
 
 <!-- Notes for authors on formatting: -->
 
-<!-- For each chapter, main title is in title case; remaining section headers capitalize the first word only. -->
+<!-- For each chapter, main title, reading guide section title, and activity section title are in title case; remaining section headers capitalize the first word only. -->
 <!-- Reading guides use 1.25 line spacing; activities use 1 line spacing. -->
 <!-- When referring to R, use `R`. -->
 <!-- Reading guides do not have section numbers (use {-} after each header). -->

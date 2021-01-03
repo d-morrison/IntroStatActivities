@@ -2,9 +2,13 @@
 
 ## Reading Guide: Confidence Intervals for a Difference in Proportions
 
-\setstretch{1.25}
+### Section 5.4.3 (Bootstrap confidence interval for a difference in proportions)  {-}
 
-### Section 5.4.1 to 5.4.2 (Simulation Tests for a Difference in Proportions; Two-sided Hypotheses)  {-}
+**Videos**  
+
+* 5.4
+
+\setstretch{1.25}
 
 #### Reminders from previous sections {-}
 
@@ -97,7 +101,16 @@ How are confidence level and significance level related (for a two-sided test)?
 \rgs
 
 ### Section 5.4.4 (Theory-based Methods for a Difference in Proportions)  {-}
-*read only the section on Confidence intervals for $\pi_1 - \pi_2$*
+
+\setstretch{1}
+
+In section 5.4.4, read only the sub-section on "Confidence interval for $\pi_1 - \pi_2$". The other sections were covered last week.
+
+**Videos**  
+
+* 5.4
+
+\setstretch{1.25}
 
 #### Reminders from previous sections {-}
 

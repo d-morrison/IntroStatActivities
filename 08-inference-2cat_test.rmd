@@ -2,9 +2,14 @@
 
 ## Reading Guide: Hypothesis Testing for a Difference in Proportions
 
-\setstretch{1.25}
+### Section 5.4.1 to 5.4.2 (Simulation Tests for a difference in proportions; Two-sided hypotheses)  {-}
 
-### Section 5.4.1 to 5.4.2 (Simulation Tests for a Difference in Proportions; Two-sided Hypotheses)  {-}
+**Videos**  
+
+* 5.4
+* TwoPropSim
+
+\setstretch{1.25}
 
 #### Reminders from previous sections {-}
 
@@ -22,7 +27,7 @@ $\pi$ = population proportion
 	
 3. Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
 
-4. Compare the observed test statistic to the null distribution to calculate a p-value
+4. Compare the observed test statistic to the null distribution to calculate a p-value.
 
 5. Make a conclusion based on the p-value and write the conclusion in context.
 
@@ -283,8 +288,17 @@ Population proportion of group 2:
 \rgs
 
 
-### Section 5.4.4 (Theory-based Methods for a Difference in Proportions)  {-}
-*skip section on Confidence Interval for $\pi_1 - \pi_2$*
+### Section 5.4.4 (Theory-based methods for a difference in proportions)  {-}
+
+You may skip the sub-section on "Confidence Interval for $\pi_1 - \pi_2$*". This section will be covered next week.
+
+\setstretch{1}
+
+**Videos**  
+
+* 5.4
+
+\setstretch{1.25}
 
 #### Reminders from previous sections {-}
 
@@ -379,7 +393,16 @@ Overall (pooled) proportion of successes:
 
 \rgi *Note: a p-value, p-value interpretation, decision, and conclusion for this example can be found in the Reading Guide solutions for 5.4.1to5.4.2 and 5.4.3.*
 
-### Section 5.5 (Errors, Power, and Practical Importance) {-}
+### Section 5.5 (Errors, power, and practical importance) {-}
+
+\setstretch{1}
+
+**Videos**  
+
+* 5.5
+* Errors_Power
+
+\setstretch{1.25}
 
 #### Reminders from previous sections {-}
 

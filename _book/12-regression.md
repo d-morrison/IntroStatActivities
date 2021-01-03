@@ -2,9 +2,14 @@
 
 ## Reading Guide: Inference for slope and correlation
 
-\setstretch{1.25}
+### Section 7.1 and 7.2 (Inference for regression and model conditions) {-}
 
-### Section 7.1 and 7.2 (Inference for regression and Model conditions) {-}
+**Videos**  
+
+* 7.1and7.2
+* RegressionSim
+
+\setstretch{1.25}
 
 #### Reminders from previous sections {-}
 
@@ -44,7 +49,7 @@ Slope interpretation: a 1 unit increase in the *x* variable is associated with a
 	
 3. Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
 
-4. Compare the observed test statistic to the null distribution to calculate a p-value
+4. Compare the observed test statistic to the null distribution to calculate a p-value.
 
 5. Make a conclusion based on the p-value and write the conclusion in context.
 

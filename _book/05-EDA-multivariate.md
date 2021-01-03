@@ -7,6 +7,7 @@
 \setstretch{1}
 
 **Videos**  
+
 * Chapter3
 
 \setstretch{1.25}
@@ -137,6 +138,7 @@ True or false: A positive residual indicates the data point is above the regress
 You may skip the special topic Sections 3.2.3.1 and 3.2.6.
 
 **Videos**  
+
 * Chapter3
 
 \setstretch{1.25}
@@ -235,6 +237,7 @@ True or false: The coefficient of determination is just the square of the correl
 \setstretch{1}
 
 **Videos**  
+
 * Chapter3
 
 \setstretch{1.25}
@@ -263,6 +266,7 @@ True or false: An outlier is considered high leverage if it is extreme in it’s
 \setstretch{1}
 
 **Videos**  
+
 * Chapter3
 
 \setstretch{1.25}
@@ -312,6 +316,7 @@ Look at the table of vocabulary terms.  If there are any you do not know, be sur
 \setstretch{1}
 
 **Videos**  
+
 * Chapter4
 
 \setstretch{1.25}
@@ -344,6 +349,7 @@ True or false: Scatterplots can only display two variables at a time.
 \setstretch{1}
 
 **Videos**  
+
 * Chapter4
 
 \setstretch{1.25}
@@ -394,6 +400,7 @@ True or false: Simpson’s Paradox can only occur when the explanatory, response
 Section 4.3 discusses multiple regression and presents five tutorials on analyzing multiple variables in R.  This section is a special topic, meaning you are not required to read or complete these tutorials.
 
 **Videos**  
+
 * Chapter4
 
 \setstretch{1.25}

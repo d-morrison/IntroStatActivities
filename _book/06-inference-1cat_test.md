@@ -7,6 +7,7 @@
 You may skip the special topic Section 5.1.4.
 
 **Videos**  
+
 * 5.1
 
 \setstretch{1.25}
@@ -146,6 +147,7 @@ $SD(\hat{p})$ =
 \setstretch{1}
 
 **Videos**  
+
 * 5.2
 
 \setstretch{1.25}
@@ -259,6 +261,7 @@ We would recommend you work through each of the examples in section 5.2.4 using 
 You may skip Section 5.3.2 and stop before the "Confidence interval for $\pi$ sub-section in Section 5.3.3. These sections will be covered next week.
 
 **Videos**  
+
 * 5.3
 * OnePropTheory
 
@@ -281,7 +284,7 @@ $\pi$ = population proportion
 	
 3. Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
 
-4. Compare the observed test statistic to the null distribution to calculate a p-value
+4. Compare the observed test statistic to the null distribution to calculate a p-value.
 
 5. Make a conclusion based on the p-value and write the conclusion in context.
 

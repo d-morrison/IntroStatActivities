@@ -1,10 +1,15 @@
 # Inference for a Quantitative Response with Paired Samples
 
-## Reading Guide: Inference for a single mean or paired mean difference 
+## Reading Guide: Inference for a Single Mean or Paired Mean Difference 
+
+### Section 6.1 (Inference for one mean) {-}
+
+**Videos**  
+
+* 6.1
+* OneMeanTheory
 
 \setstretch{1.25}
-
-### Section 6.1 (Inference for a one mean) {-}
 
 #### Reminders from previous sections {-}
 
@@ -26,7 +31,7 @@ $\sigma$ = population standard deviation
 	
 3. Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
 
-4. Compare the observed test statistic to the null distribution to calculate a p-value
+4. Compare the observed test statistic to the null distribution to calculate a p-value.
 
 5. Make a conclusion based on the p-value and write the conclusion in context.
 
@@ -191,7 +196,8 @@ $\mu_0$ represents
 \rgs 
 
 
-#### Example: Mercury Content of Dolphin Muscle {-}
+#### Example: Mercury content of dolphin muscle {-}
+
 1. What is the research question?
 \rgs 
 
@@ -282,6 +288,14 @@ $\mu_0$ represents
 
 
 ### Section 6.2 (Inference for paired mean difference)  {-}
+
+\setstretch{1}
+
+**Videos**  
+
+* 6.2
+
+\setstretch{1.25}
 
 #### Vocabulary {-}
 
@@ -383,7 +397,7 @@ $s_d=$
 \rgs
 
 
-#### Example: College Textbook Prices {-}
+#### Example: College textbook prices {-}
 
 1. What is the research question?
 \rgs
