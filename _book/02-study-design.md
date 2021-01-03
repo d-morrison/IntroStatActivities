@@ -239,7 +239,7 @@ In these next questions, identify the target population, the sample selected, th
     Type(s) of bias:
 \vspace{0.3in}
 
-2.  Pew Research surveys US adults about many different topics.  Recently, a survey was conducted to assess current presidential approval.  A random sample of 6395 US adults was taken.  One of the questions asked in the survey was, "Do you agree or disagree with President Trump on many or nearly all of the top issues facing the country today?" Of those surveyed, 42% said they did agree.
+2.  Recently, a survey was conducted to assess current presidential approval in the United States.  A random sample of 6395 US adults was taken.  One of the questions asked in the survey was, "Do you agree or disagree with the President on many or nearly all of the top issues facing the country today?" Of those surveyed, 42% said they did agree.
 \vspace{0.25in}
 
     Target population: 
@@ -271,7 +271,7 @@ In these next questions, identify the target population, the sample selected, th
     Type(s) of bias:
 \vspace{0.3in}
 
-4. To gauge the interest in a new swimming pool, a local organization stood outside of the Bogart Pool in Bozeman, MT during open hours.  One of the questions they asked was, "Since the Bogart Pool is in such bad repair, don't you agree that the city should fund a new pool?"
+4. To gauge the interest in a new swimming pool, a local organization stood outside of the Bogart Pool in Bozeman, MT, during open hours.  One of the questions they asked was, "Since the Bogart Pool is in such bad repair, don't you agree that the city should fund a new pool?"
 \vspace{0.1in}
 
     Target population: 
@@ -289,14 +289,14 @@ In these next questions, identify the target population, the sample selected, th
 \newpage
 
 ### Study design
-The two main study designs we will cover are **observational studies** and **experiments**.  Both the sampling method and the study design will help to determine the **scope of inference** for a study.  Remember that only in a randomized experiment can we conclude a **causal** (cause and effect) relationship between the explanatory and response variable.
+The two main study designs we will cover are **observational studies** and **experiments**.  Both the sampling method and the study design will help to determine the **scope of inference** for a study: To whom can we generalize, and can we conclude causation or only association?  Remember that only in a randomized experiment can we conclude a **causal** (cause and effect) relationship between the explanatory and response variable.
 
 
 \begin{center}\includegraphics[width=0.75\linewidth]{images/ScopeOfInferenceGreyscale} \end{center}
 
 For the next exercises, identify the explanatory variable, the response variable, the study design (observational study or experiment), and the scope of inference (using the above chart).
 
-5. The pharmaceutical company Moderna Therapeutics is working in conjunction with the National Institutes of Health towards a vaccine for COVID-19 and has recently begun Phase 3 clinical trials.  US clinical research sites will enroll 30,000 volunteers without COVID-19 to participate. Participants will be randomly assigned to receive either the candidate vaccine or a saline placebo.  They will then be followed to assess whether or not they develop COVID-19. The trial is double-blind, so neither the investigators nor the participants will know who is assigned to which group.
+5. The pharmaceutical company Moderna Therapeutics,  working in conjunction with the National Institutes of Health, conducted Phase 3 clinical trials towards a vaccine for COVID-19 last fall.  US clinical research sites enrolled 30,000 volunteers without COVID-19 to participate. Participants were randomly assigned to receive either the candidate vaccine or a saline placebo.  They were then followed to assess whether or not they developed COVID-19. The trial was double-blind, so neither the investigators nor the participants knew who is assigned to which group.
 \vspace{0.1in}
     
     Explanatory variable:
@@ -348,7 +348,7 @@ When both these conditions are met, if we observe an association between the exp
 
 ### Out-of-class activity
 
-In the in-class activity we looked at sampling methods and study design.  Here are a few more questions to review that material.  
+In the in-class activity, we looked at sampling methods and study design.  Here are a few more questions to review that material.  
 
 1. The Bozeman school district is interested in surveying parents of students about their opinions on returning to in-person classes following the COVID-19 pandemic.  They divided the school district into 10 divisions based on location and randomly surveyed 20 households within each division.  Explain why selection bias would be present in this study design.
 \vspace{1in}
@@ -369,11 +369,11 @@ In the in-class activity we looked at sampling methods and study design.  Here a
 
 ### Take-home messages
 
-1.	If the sample is selected using a non-biased method of selection (i.e. a random sample of the target population) then the results of the study can be generalized to the target population.  When using biased methods of selection the results only apply to the sample selected or similar observational units.
+1.	If the sample is selected using a random and non-biased method of selection (i.e., a random sample of the target population with no response or non-response bias), then the results of the study can be generalized to the target population.  When using biased methods of selection, the results only apply to the sample selected or similar observational units.
 
-2.  The study design determines if we can draw causal inferences or not.  A randomized experiment allows us to conclude that there is a causal (cause and effect) relationship between the explanatory and response variable.  Observational studies have potential confounding variables within the study that prevent us from drawing a causal relationship between the variables.
+2.  The study design determines if we can draw causal inferences or not.  If an association is detected, a randomized experiment allows us to conclude that there is a causal (cause-and-effect) relationship between the explanatory and response variable.  Observational studies have potential confounding variables within the study that prevent us from drawing a causal relationship between the variables.
 
-3.  Confounding variables are variables not included in the study that are related to both the explanatory and the response variables. When there are potential confounding variables in the study we cannot draw a causal inferences. 
+3.  Confounding variables are variables not included in the study that are related to both the explanatory and the response variables. When there are potential confounding variables in the study we cannot draw causal inferences. 
 
 
 ### Additional notes
