@@ -1,6 +1,6 @@
 # Inference for Two Quantitative Variables
 
-## Reading Guide: Inference for slope and correlation
+## Reading Guide: Inference for Slope and Correlation
 
 ### Section 7.1 and 7.2 (Inference for regression and model conditions) {-}
 
@@ -316,7 +316,6 @@ In this week's in-class activity, we will use theory-based methods for hypothesi
 
 To review these concepts, see Chapters 3 and 7 in the textbook.
 
-\newpage
 
 ### Moneyball
 

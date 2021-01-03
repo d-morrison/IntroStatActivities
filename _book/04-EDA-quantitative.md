@@ -244,7 +244,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 | `genres` | Categories the movie falls into (e.g., Action, Drama, etc.) |
 | `movie_facebook_likes` | Number of likes a movie receives on Facebook |
 
-\newpage
+
 
 #### Vocabulary review. Complete Q1 - 3 before class. {-}
 

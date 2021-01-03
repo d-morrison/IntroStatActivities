@@ -502,6 +502,9 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 * **Revisit and look forward** to point out limitations of the study and suggest new studies that could be performed to build on the findings of the study 
 
+
+\newpage
+
 ### Handedness of male boxers
 
 Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers we want to see if there is an over-prevalence of left-handed fighters.

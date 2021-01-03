@@ -588,7 +588,6 @@ In this week's in-class activity, we will use theory-based methods to analyze tw
 
 To review these concepts, see Chapter 5 in your textbook.
 
-\newpage
 
 ### Helmet use and head injuries
 In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the *Journal of the American Medical Association*, Vol. 295, No. 8 (2006), we can see the summary results from a random sample of 3562 skiers and snowboarders involved in accidents in the two-way table below. Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders? 

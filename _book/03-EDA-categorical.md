@@ -312,7 +312,6 @@ In this week's in-class activity, we will cover two-way tables and probability. 
 
 To review these concepts, see Sections 2.1 and 2.2 in the textbook.  
 
-\newpage
 
 ### "Current" Population Survey: 1985
 The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census Bureau and the Bureau of Labor Statistics to track labor force statistics for the United States population.  The following table describes the variables in the data set:

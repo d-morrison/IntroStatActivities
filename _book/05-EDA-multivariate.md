@@ -192,7 +192,7 @@ Formulas for calculating the coefficient of determination:
 
 True or false: A correlation between two quantitative variables implies a causal relationship exists between the variables.
 
-True or false: The slope of the line tells us how much to expect the y variable to increase or decrease when the x variable increases by 1 unit.
+True or false: The slope of the line tells us how much to expect the $y$ variable to increase or decrease when the $x$ variable increases by 1 unit.
 
 True or false: The coefficient of determination is just the square of the correlation.
 
@@ -464,7 +464,6 @@ We will revisit the data set used last week collected on Movies released in 2016
 | `genres` | Categories the movie falls into (e.g., Action, Drama, etc.) |
 | `movie_facebook_likes` | Number of likes a movie receives on Facebook |
 
-\newpage
 
 #### Vocabulary review. Complete Q1 - 4 before class.{-}
 
