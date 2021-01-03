@@ -282,17 +282,16 @@ Total & & & 100,000 \\ \hline
 
 ### Learning outcomes
 
-* Recognize and simulate probabilities as long-run frequencies
+* Recognize and simulate probabilities as long-run frequencies.
 
-* Construct two-way tables to evaluate conditional probabilities
+* Construct two-way tables to evaluate conditional probabilities.
 
-* Identify and create appropriate summary statistics and plots
-  given a data set or research question
+* Identify and create appropriate summary statistics and plots given a data set or research question.
   
-* Plots for a single categorical variable: bar plot
+* Plots for a single categorical variable: bar plot.
 
 * Plots for association between two categorical variables:
-  segmented bar plot, mosaic plot
+  segmented bar plot, mosaic plot.
 
 ### Terminology review
 

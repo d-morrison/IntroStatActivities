@@ -555,13 +555,13 @@ Results are unlikely to be statistically significant (but may be practically imp
 
 ### Learning objectives
 
-* Write out the null and alternative hypotheses for two categorical variables
+* Write out the null and alternative hypotheses for two categorical variables.
 
-* Assess the conditions to use the standard normal distribution for a difference in proportions
+* Assess the conditions to use the standard normal distribution for a difference in proportions.
 
-* Calculate the Z test statistic for the difference in proportions
+* Calculate the Z test statistic for the difference in proportions.
 
-* Find the p-value and assess the strength of evidence
+* Find the p-value and assess the strength of evidence.
 
 ### Terminology review
 In this week's in-class activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:

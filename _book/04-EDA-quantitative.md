@@ -207,16 +207,13 @@ Decision tree for determining an appropriate plot  given a number of variables a
 
 ### Learning objectives
 
-* Identify and create appropriate summary statistics and plots
-  given a data set or research question for quantitative data
+* Identify and create appropriate summary statistics and plots given a data set or research question for quantitative data.
 
 * Interpret the following summary statistics in context:
   median, lower quartile, upper quartile,
-  standard deviation, inter-quartile range
+  standard deviation, inter-quartile range.
 
-* Given a plot or set of plots, describe and compare the distribution(s)
-  of a single quantitative variable
-  (center, variability, shape, outliers)
+* Given a plot or set of plots, describe and compare the distribution(s) of a single quantitative variable (center, variability, shape, outliers).
 
 ### Terminology review
 

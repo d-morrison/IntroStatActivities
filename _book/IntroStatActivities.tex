@@ -485,9 +485,9 @@ True or False: Observational studies can show a naturally occurring association 
 
 \begin{itemize}
 \item
-  Describe the statistical investigation process
+  Describe the statistical investigation process.
 \item
-  Identify observational units, variables, and variable types in a statistical study
+  Identify observational units, variables, and variable types in a statistical study.
 \end{itemize}
 
 \hypertarget{terminology-review}{%
@@ -795,18 +795,33 @@ Since this class is taught in a blended format, we are only in class one day per
 
 \vspace{0.3in}
 
+\hypertarget{introduction-to-r}{%
+\subsubsection{\texorpdfstring{Introduction to \texttt{R}}{Introduction to R}}\label{introduction-to-r}}
+
 In Stat 216 we will use the statistical package \texttt{R} to analyze data through the IDE (integrated development environment) RStudio. Though it is possible to download \texttt{R} and RStudio on your own computer, we will use this program through the MSU RStudio server: \url{https://rstudio.math.montana.edu/}.
 
-Read through the preliminaries chapter in the textbook and watch the video \texttt{RStudio\_GettingStarted} on D2L -\textgreater{} Content -\textgreater{} Primary Resources before completing the following questions.
+Read through the preliminaries chapter in the textbook and watch the video ``Starting with \texttt{R}'' before completing the following questions.
 
 The RStudio workflow operates best by the use of ``Projects''. You should create a separate project for each activity or assignment in this course that requires the use of \texttt{R}. To get started with this activity, follow these steps:
 
 \begin{itemize}
 \tightlist
 \item
-  Log onto the RStudio server linked above using your NetID and password.
+  Log onto the RStudio server using your NetID and password: \url{https://rstudio.math.montana.edu/}.
 \item
-  In the top right corner, you will see a dropdown menu next to ``Project'' that currently says ``(None)''. Click on this menu and choose ``New Project''. (Alternatively, you can click the ``File'' menu in the top left and select ``New Project''.) A ``New Project Wizard'' window should pop up: click ``New Directory'', click ``New Project'', then give your project directory a name (e.g., ``Activity1''). \emph{Do not use spaces or other characters in the name.} Click Browse and choose a location where you would like to save your project (you can create a new folder if desired). Leave the default settings, and click ``Create Project''. (Now, if you click on the home icon in the top right, you will see your RStudio account, and the project should be listed under ``Projects''.)
+  In the top right corner, you will see a dropdown menu next to ``Project'' that currently says ``(None)''. Click on this menu and choose ``New Project''. (Alternatively, you can click the ``File'' menu in the top left and select ``New Project''.)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A ``New Project Wizard'' window should pop up: click ``New Directory'', then click ``New Project''.
+  \item
+    Give your project directory a name (e.g., Activity1). \emph{Do not use spaces or other characters in the name.}
+  \item
+    Click ``Browse'' and choose a location where you would like to save your project (you can create a new folder if desired). Note that this location is on your server account, not on your computer.
+  \item
+    Leave all other boxes unchecked, and click ``Create Project''. (Now, if you click on the home icon in the top right, you will see your RStudio account, and the project should be listed under ``Projects''.)
+  \end{itemize}
 \item
   Download the Martian Alphabet \texttt{R} script file from D2L.
 \item
@@ -815,15 +830,25 @@ The RStudio workflow operates best by the use of ``Projects''. You should create
   You should see the uploaded file appear in the list of files. Click on the filename to open the file.
 \end{itemize}
 
-In the Martian Alphabet \texttt{R} script file, highlight the first 14 lines of code and click run. This will load the packages (or libraries) needed for this course; each package is a collection of R functions. We review a few of these packages here.
+In the Martian Alphabet \texttt{R} script file, highlight all of the lines of code that start with \texttt{library} and click ``Run''. This will load the \textbf{packages} (or libraries) needed for this course; each package is a collection of \texttt{R} functions. We review a few of these packages here.
 
-Throughout the semester we will use the package \texttt{tidyverse} to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol \texttt{\%\textgreater{}\%}.) We will use the package \texttt{ggplot2} to create graphs in \texttt{RStudio}, the package \texttt{mosaic} to use the \texttt{favstats} function to find summary statistics for quantitative variables, and the package \texttt{catstats} starting in Chapter 5 to create simulations for statistical inference. These packages are installed in the RStudio server, but you need to use the \texttt{library} function to call the package into your R environment.
+\begin{itemize}
+\tightlist
+\item
+  Throughout the semester we will use the package \texttt{tidyverse} to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol \texttt{\%\textgreater{}\%}.) Contained in \texttt{tidyverse} is the package \texttt{ggplot2}, used to create graphs in RStudio.
+\item
+  The package \texttt{mosaic} contains the \texttt{favstats} function to find summary statistics for quantitative variables.
+\item
+  We will use the package \texttt{catstats}, starting in Chapter 5, to create simulations for statistical inference.
+\end{itemize}
+
+These packages are already installed in the RStudio server, but you need to use the \texttt{library} function to call the package into your R environment.
 
 The \# sign is not part of the \texttt{R} code.
 It is used by these authors to add comments to the \texttt{R} code and explain what each call is telling the program to do.
 \texttt{R} will ignore everything after a \# sign when executing the code.
 
-In the Martian Alphabet \texttt{R} script file for the \texttt{one\_proportion\_test} function arguments, enter your class size (Q3 from the in-class activity) for \texttt{sample\_size} and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for \texttt{as\_extreme\_as} argument. Highlight lines 16\$-\$21 and click run.
+In the Martian Alphabet \texttt{R} script file for the \texttt{one\_proportion\_test} function arguments, enter your class size (Q3 from the in-class activity) for \texttt{sample\_size} and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for \texttt{as\_extreme\_as} argument. Highlight these lines and click run.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1060,15 +1085,15 @@ True or False: If random sampling of the target population is used, and no other
 
 \begin{itemize}
 \item
-  Explain the purpose of random sampling and its effect on scope of inference
+  Explain the purpose of random sampling and its effect on scope of inference.
 \item
-  Explain the purpose of random assignment and its effect on scope of inference
+  Explain the purpose of random assignment and its effect on scope of inference.
 \item
-  Identify whether a study design is observational or an experiment
+  Identify whether a study design is observational or an experiment.
 \item
-  Identify confounding variables in observational studies and explain why they are confounding
+  Identify confounding variables in observational studies and explain why they are confounding.
 \item
-  Identify the types of bias present in a study
+  Identify the types of bias present in a study.
 \end{itemize}
 
 \hypertarget{terminology-review-1}{%
@@ -1662,17 +1687,16 @@ Total & & & 100,000 \\ \hline
 
 \begin{itemize}
 \item
-  Recognize and simulate probabilities as long-run frequencies
+  Recognize and simulate probabilities as long-run frequencies.
 \item
-  Construct two-way tables to evaluate conditional probabilities
+  Construct two-way tables to evaluate conditional probabilities.
 \item
-  Identify and create appropriate summary statistics and plots
-  given a data set or research question
+  Identify and create appropriate summary statistics and plots given a data set or research question.
 \item
-  Plots for a single categorical variable: bar plot
+  Plots for a single categorical variable: bar plot.
 \item
   Plots for association between two categorical variables:
-  segmented bar plot, mosaic plot
+  segmented bar plot, mosaic plot.
 \end{itemize}
 
 \hypertarget{terminology-review-2}{%
@@ -2334,16 +2358,13 @@ Decision tree for determining an appropriate plot given a number of variables an
 
 \begin{itemize}
 \item
-  Identify and create appropriate summary statistics and plots
-  given a data set or research question for quantitative data
+  Identify and create appropriate summary statistics and plots given a data set or research question for quantitative data.
 \item
   Interpret the following summary statistics in context:
   median, lower quartile, upper quartile,
-  standard deviation, inter-quartile range
+  standard deviation, inter-quartile range.
 \item
-  Given a plot or set of plots, describe and compare the distribution(s)
-  of a single quantitative variable
-  (center, variability, shape, outliers)
+  Given a plot or set of plots, describe and compare the distribution(s) of a single quantitative variable (center, variability, shape, outliers).
 \end{itemize}
 
 \hypertarget{terminology-review-3}{%
@@ -3290,17 +3311,17 @@ Simpson's Paradox:
 \begin{itemize}
 \item
   Identify and create appropriate summary statistics and plots
-  given a data set with two quantitative variables
+  given a data set with two quantitative variables.
 \item
-  Use scatterplots to assess the relationship between two quantitative variables
+  Use scatterplots to assess the relationship between two quantitative variables.
 \item
-  Find the correlation coefficient
+  Find the estimated line of regression using summary statistics and \texttt{R} linear model (\texttt{lm}) output.
 \item
-  Find the estimated line of regression using summary statistics and \texttt{R} linear model (\texttt{lm}) output
+  Interpret the slope coefficient in context of the problem.
 \item
-  Interpret the slope coefficient in context of the problem
+  Interpret \(R^2\), the coefficient of determination, in context of the problem.
 \item
-  Interpret the coefficient of determination in context of the problem
+  Find the correlation coefficient from \texttt{R} output or from \(R^2\) and the sign of the slope.
 \end{itemize}
 
 \hypertarget{terminology-review-4}{%
@@ -4277,14 +4298,14 @@ Standardized statistic/standardized sample proportion:
 
 \begin{itemize}
 \item
-  Identify the two possible explanations (one assuming the null hypothesis, and one assuming the alternative hypothesis) for a relationship seen in sample data
+  Identify the two possible explanations (one assuming the null hypothesis, and one assuming the alternative hypothesis) for a relationship seen in sample data.
 \item
   Given a research question, construct the null and alternative hypotheses
-  in words and using appropriate statistical symbols
+  in words and using appropriate statistical symbols.
 \item
-  Describe and perform simulation-based hypothesis tests for a single proportion
+  Describe and perform simulation-based hypothesis tests for a single proportion.
 \item
-  Interpret and evaluate a p-value
+  Interpret and evaluate a p-value.
 \end{itemize}
 
 \hypertarget{terminology-review-5}{%
@@ -5125,9 +5146,9 @@ Margin of error of a confidence interval for a sample proportion:
 
 \begin{itemize}
 \item
-  Use bootstrapping to find a confidence interval for a single proportion
+  Use bootstrapping to find a confidence interval for a single proportion.
 \item
-  Interpret a confidence interval
+  Interpret a confidence interval for a single proportion.
 \end{itemize}
 
 \hypertarget{terminology-review-6}{%
@@ -6188,13 +6209,13 @@ Results are unlikely to be statistically significant (but may be practically imp
 
 \begin{itemize}
 \item
-  Write out the null and alternative hypotheses for two categorical variables
+  Write out the null and alternative hypotheses for two categorical variables.
 \item
-  Assess the conditions to use the standard normal distribution for a difference in proportions
+  Assess the conditions to use the standard normal distribution for a difference in proportions.
 \item
-  Calculate the Z test statistic for the difference in proportions
+  Calculate the Z test statistic for the difference in proportions.
 \item
-  Find the p-value and assess the strength of evidence
+  Find the p-value and assess the strength of evidence.
 \end{itemize}
 
 \hypertarget{terminology-review-7}{%
@@ -7029,9 +7050,9 @@ Margin of error of a confidence interval for a difference in sample proportions:
 
 \begin{itemize}
 \item
-  Assess the conditions to use the standard normal distribution for a difference in proportions
+  Assess the conditions to use the standard normal distribution for a difference in proportions.
 \item
-  Create and interpret a confidence interval for the difference in proportions
+  Create and interpret a confidence interval for the difference in proportions.
 \end{itemize}
 
 \hypertarget{terminology-review-8}{%
@@ -7959,18 +7980,18 @@ Confidence interval:
 
 \begin{itemize}
 \item
-  Given a research question, construct the null and alternative hypotheses
-  in words and using appropriate statistical symbols
+  Given a research question, construct the null and alternative hypotheses for a paired mean difference
+  in words and using appropriate statistical symbols.
 \item
-  Describe and perform a simulation-based hypothesis test for paired quantitative data
+  Describe and perform a simulation-based hypothesis test for paired quantitative data.
 \item
-  Interpret and evaluate a p-value
+  Interpret and evaluate a p-value.
 \item
-  Find a confidence interval for the mean difference using bootstrapping
+  Find a confidence interval for the mean difference using bootstrapping.
 \item
-  Interpret a confidence interval
+  Interpret a confidence interval for the mean difference.
 \item
-  Use a confidence interval to determine the conclusion of a hypothesis test
+  Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
 \hypertarget{terminology-review-9}{%
@@ -8836,17 +8857,17 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_\_\_\_\_\_\_\_.
 
 \begin{itemize}
 \item
-  Write out the null and alternative hypothesis for one categorical and one quantitative variable
+  Write out the null and alternative hypothesis for one categorical and one quantitative variable.
 \item
-  Calculate and carry-out simulation based hypothesis test for a difference in means
+  Calculate and carry-out simulation-based hypothesis test for a difference in means.
 \item
-  Interpret and evaluate a p-value
+  Interpret and evaluate a p-value.
 \item
-  Find a bootstrap confidence interval for a difference in means
+  Find a bootstrap confidence interval for a difference in means.
 \item
-  Interpret a confidence interval
+  Interpret a confidence interval for a difference in means.
 \item
-  Use a confidence interval to determine the conclusion of a hypothesis test
+  Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
 \hypertarget{terminology-review-10}{%
@@ -9729,16 +9750,16 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_.
 
 \begin{itemize}
 \item
-  Given a research question, construct the null and alternative hypotheses
+  Given a research question, construct the null and alternative hypotheses for two quantitative variables
   in words and using appropriate statistical symbols
 \item
-  Describe and perform theory-based hypothesis tests for the slope
+  Describe and perform theory-based hypothesis tests for the slope or correlation coefficient.
 \item
-  Interpret and evaluate a p-value
+  Interpret and evaluate a p-value.
 \item
-  Construct and interpret a theory-based confidence interval for slope
+  Construct and interpret a theory-based confidence interval for the slope or correlation coefficient.
 \item
-  Use a confidence interval to determine the conclusion of a hypothesis test
+  Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
 \hypertarget{terminology-review-11}{%

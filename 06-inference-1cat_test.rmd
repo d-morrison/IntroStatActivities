@@ -448,14 +448,14 @@ $z$ =
 
 ### Learning objectives
 
-* Identify the two possible explanations (one assuming the null hypothesis, and one assuming the alternative hypothesis) for a relationship seen in sample data
+* Identify the two possible explanations (one assuming the null hypothesis, and one assuming the alternative hypothesis) for a relationship seen in sample data.
 
 * Given a research question, construct the null and alternative hypotheses
-  in words and using appropriate statistical symbols
+  in words and using appropriate statistical symbols.
   
-* Describe and perform simulation-based hypothesis tests for a single proportion
+* Describe and perform simulation-based hypothesis tests for a single proportion.
 
-* Interpret and evaluate a p-value
+* Interpret and evaluate a p-value.
 
 ### Terminology review
 

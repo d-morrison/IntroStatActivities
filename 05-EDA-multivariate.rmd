@@ -422,17 +422,19 @@ Simpson’s Paradox:
 ### Learning objectives
 
 * Identify and create appropriate summary statistics and plots
-  given a data set with two quantitative variables
+  given a data set with two quantitative variables.
   
-* Use scatterplots to assess the relationship between two quantitative variables
+* Use scatterplots to assess the relationship between two quantitative variables.
 
-* Find the correlation coefficient 
+* Find the estimated line of regression using summary statistics and `R` linear model (`lm`) output.
 
-* Find the estimated line of regression using summary statistics and `R` linear model (`lm`) output
+* Interpret the slope coefficient in context of the problem.
 
-* Interpret the slope coefficient in context of the problem
+* Interpret $R^2$, the coefficient of determination, in context of the problem.
 
-* Interpret the coefficient of determination in context of the problem
+* Find the correlation coefficient from `R` output or from $R^2$ and the sign of the slope.
+
+
 
 ### Terminology review
 

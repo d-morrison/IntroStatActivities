@@ -316,17 +316,17 @@ The proportion of simulated null samples at ____ or ___________.
 
 ### Learning objectives
 
-* Write out the null and alternative hypothesis for one categorical and one quantitative variable
+* Write out the null and alternative hypothesis for one categorical and one quantitative variable.
 
-* Calculate and carry-out simulation based hypothesis test for a difference in means
+* Calculate and carry-out simulation-based hypothesis test for a difference in means.
 
-* Interpret and evaluate a p-value
+* Interpret and evaluate a p-value.
 
-* Find a bootstrap confidence interval for a difference in means
+* Find a bootstrap confidence interval for a difference in means.
 
-* Interpret a confidence interval
+* Interpret a confidence interval for a difference in means.
 
-* Use a confidence interval to determine the conclusion of a hypothesis test
+* Use a confidence interval to determine the conclusion of a hypothesis test.
 
 ### Terminology review
 

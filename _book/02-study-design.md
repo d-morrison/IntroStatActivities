@@ -174,15 +174,15 @@ True or False: If random sampling of the target population is used, and no other
 
 ### Learning outcomes
 
-* Explain the purpose of random sampling and its effect on scope of inference
+* Explain the purpose of random sampling and its effect on scope of inference.
 
-* Explain the purpose of random assignment and its effect on scope of inference
+* Explain the purpose of random assignment and its effect on scope of inference.
 
-* Identify whether a study design is observational or an experiment
+* Identify whether a study design is observational or an experiment.
 
-* Identify confounding variables in observational studies and explain why they are confounding
+* Identify confounding variables in observational studies and explain why they are confounding.
 
-* Identify the types of bias present in a study
+* Identify the types of bias present in a study.
 
 ### Terminology review
 

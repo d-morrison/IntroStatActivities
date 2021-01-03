@@ -294,16 +294,16 @@ The proportion of simulated null samples at ____ or ____.
 \setstretch{1}
 
 ### Learning outcomes
-* Given a research question, construct the null and alternative hypotheses
+* Given a research question, construct the null and alternative hypotheses for two quantitative variables
   in words and using appropriate statistical symbols
   
-* Describe and perform theory-based hypothesis tests for the slope 
+* Describe and perform theory-based hypothesis tests for the slope or correlation coefficient.
 
-* Interpret and evaluate a p-value
+* Interpret and evaluate a p-value.
 
-* Construct and interpret a theory-based confidence interval for slope
+* Construct and interpret a theory-based confidence interval for the slope or correlation coefficient.
 
-* Use a confidence interval to determine the conclusion of a hypothesis test
+* Use a confidence interval to determine the conclusion of a hypothesis test.
 
 ### Terminology review
 In this week's in-class activity, we will use theory-based methods for hypothesis tests and confidence intervals for linear regression slope. Some terms covered in this activity are:

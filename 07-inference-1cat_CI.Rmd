@@ -197,9 +197,9 @@ Margin of error of a confidence interval for a sample proportion:
 
 ### Learning objectives
 
-* Use bootstrapping to find a confidence interval for a single proportion
+* Use bootstrapping to find a confidence interval for a single proportion.
 
-* Interpret a confidence interval
+* Interpret a confidence interval for a single proportion.
 
 ### Terminology review
 

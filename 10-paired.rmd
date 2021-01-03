@@ -475,18 +475,18 @@ $s_d=$
 
 ### Learning outcomes
 
-* Given a research question, construct the null and alternative hypotheses
-  in words and using appropriate statistical symbols
+* Given a research question, construct the null and alternative hypotheses for a paired mean difference
+  in words and using appropriate statistical symbols.
   
-* Describe and perform a simulation-based hypothesis test for paired quantitative data
+* Describe and perform a simulation-based hypothesis test for paired quantitative data.
 
-* Interpret and evaluate a p-value
+* Interpret and evaluate a p-value.
 
-* Find a confidence interval for the mean difference using bootstrapping
+* Find a confidence interval for the mean difference using bootstrapping.
 
-* Interpret a confidence interval
+* Interpret a confidence interval for the mean difference.
 
-* Use a confidence interval to determine the conclusion of a hypothesis test
+* Use a confidence interval to determine the conclusion of a hypothesis test.
 
 ### Terminology review
 

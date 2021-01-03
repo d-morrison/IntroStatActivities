@@ -179,9 +179,9 @@ True or False: Observational studies can show a naturally occurring association 
 
 ### Learning outcomes
 
-* Describe the statistical investigation process
+* Describe the statistical investigation process.
 
-* Identify observational units, variables, and variable types in a statistical study
+* Identify observational units, variables, and variable types in a statistical study.
 
 ### Terminology review
 Statistics is the study of how best to collect, analyze, and draw conclusions from data.  Today in class you will be introduced to the following terms:
@@ -371,28 +371,38 @@ Since this class is taught in a blended format, we are only in class one day per
 
 \vspace{0.3in}
 
+#### Introduction to `R`
+
 In Stat 216 we will use the statistical package `R` to analyze data through the IDE (integrated development environment) RStudio. Though it is possible to download `R` and RStudio on your own computer, we will use this program through the MSU RStudio server: [https://rstudio.math.montana.edu/](https://rstudio.math.montana.edu/). 
 
-Read through the preliminaries chapter in the textbook and watch the video `RStudio_GettingStarted` on D2L -> Content -> Primary Resources before completing the following questions.
+Read through the preliminaries chapter in the textbook and watch the video "Starting with `R`" before completing the following questions.
 
 
 The RStudio workflow operates best by the use of "Projects". You should create a separate project for each activity or assignment in this course that requires the use of `R`. To get started with this activity, follow these steps:
 
-* Log onto the RStudio server linked above using your NetID and password. 
-* In the top right corner, you will see a dropdown menu next to "Project" that currently says "(None)". Click on this menu and choose "New Project". (Alternatively, you can click the "File" menu in the top left and select "New Project".) A "New Project Wizard" window should pop up: click "New Directory",  click "New Project", then give your project directory a name (e.g., "Activity1"). _Do not use spaces or other characters in the name._ Click Browse and choose a location where you would like to save your project (you can create a new folder if desired). Leave the default settings, and click "Create Project". (Now, if you click on the home icon in the top right, you will see your RStudio account, and the project should be listed under "Projects".)
+* Log onto the RStudio server using your NetID and password: [https://rstudio.math.montana.edu/](https://rstudio.math.montana.edu/). 
+* In the top right corner, you will see a dropdown menu next to "Project" that currently says "(None)". Click on this menu and choose "New Project". (Alternatively, you can click the "File" menu in the top left and select "New Project".) 
+    - A "New Project Wizard" window should pop up: click "New Directory", then click "New Project".
+    - Give your project directory a name (e.g., Activity1). _Do not use spaces or other characters in the name._ 
+    - Click "Browse" and choose a location where you would like to save your project (you can create a new folder if desired). Note that this location is on your server account, not on your computer.
+    - Leave all other boxes unchecked, and click "Create Project". (Now, if you click on the home icon in the top right, you will see your RStudio account, and the project should be listed under "Projects".)
 * Download the Martian Alphabet `R` script file from D2L.
 * Click "Upload" in the "Files" tab in the bottom right window of RStudio. Click "Choose File", and navigate to the folder where the Martian Alphabet `R` script file is saved. Then click "Open"; then click "Ok". 
 * You should see the uploaded file appear in the list of files. Click on the filename to open the file. 
 
-In the Martian Alphabet `R` script file, highlight the first 14 lines of code and click run. This will load the packages (or libraries) needed for this course; each package is a collection of R functions.  We review a few of these packages here. 
+In the Martian Alphabet `R` script file, highlight all of the lines of code that start with `library` and click "Run". This will load the **packages** (or libraries) needed for this course; each package is a collection of `R` functions.  We review a few of these packages here. 
 
-Throughout the semester we will use the package `tidyverse` to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol `%>%`.)  We will use the package `ggplot2` to create graphs in `RStudio`, the package `mosaic` to use the `favstats` function to find summary statistics for quantitative variables, and the package `catstats` starting in Chapter 5 to create simulations for statistical inference.  These packages are installed in the RStudio server, but you need to use the `library` function to call the package into your R environment. 
+* Throughout the semester we will use the package `tidyverse` to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol `%>%`.)  Contained in `tidyverse` is the package `ggplot2`, used to create graphs in RStudio.
+* The package `mosaic` contains the `favstats` function to find summary statistics for quantitative variables.
+* We will use the package `catstats`, starting in Chapter 5, to create simulations for statistical inference.  
+
+These packages are already installed in the RStudio server, but you need to use the `library` function to call the package into your R environment. 
 
 The \# sign is not part of the `R` code. 
 It is used by these authors to add comments to the `R` code and explain what each call is telling the program to do.
 `R` will ignore everything after a \# sign when executing the code.
 
-In the Martian Alphabet `R` script file for the `one_proportion_test` function arguments, enter your class size (Q3 from the in-class activity) for `sample_size` and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for `as_extreme_as` argument.  Highlight lines 16$-$21 and click run.
+In the Martian Alphabet `R` script file for the `one_proportion_test` function arguments, enter your class size (Q3 from the in-class activity) for `sample_size` and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for `as_extreme_as` argument.  Highlight these lines and click run.
 
 4.  Is the distribution created from this code similar to what you saw in class in Q14?
 
