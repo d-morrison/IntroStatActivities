@@ -2,10 +2,14 @@
 
 ## Reading Guide: Categorical Inference
 
-\setstretch{1.25}
-
 ### Section 5.1 (Foundations of Inference) 
-*skip section 5.1.4*
+
+You may skip the special topic Section 5.1.4.
+
+**Videos**  
+* 5.1
+
+\setstretch{1.25}
 
 #### Vocabulary {-}
 
@@ -112,7 +116,7 @@ $SD(\hat{p})$ =
 \rgs
 
 
-#### Example: Martian Alphabet {-} 
+#### Example: Martian alphabet {-} 
 
 1. What is the sample statistic presented in this example?  What notation would be used to represent this value?
 \rgs
@@ -137,7 +141,14 @@ $SD(\hat{p})$ =
 7. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
-### Section 5.2 (The Normal Distribution) {-}
+### Section 5.2 (The normal distribution) {-}
+
+\setstretch{1}
+
+**Videos**  
+* 5.2
+
+\setstretch{1.25}
 
 #### Vocabulary {-}
 
@@ -230,8 +241,18 @@ Changing to lower.tail = FALSE will give the value which has x area of the distr
 We would recommend you work through each of the examples in section 5.2.4 using `R`.
 
 
-### Section 5.3 (Inference for One Proportion) 
-*skip section 5.3.2 and stop before 5.3.3 Confidence intervals for $\pi$* {-}
+### Section 5.3 (Inference for one proportion) 
+
+\setstretch{1}
+
+You may skip Section 5.3.2 and stop before the "Confidence interval for $\pi$ sub-section in Section 5.3.3. These sections will be covered next week.
+
+**Videos**  
+* 5.3
+* OnePropTheory
+
+
+\setstretch{1.25}
 
 #### Reminders from previous sections {-}
 
@@ -336,7 +357,7 @@ $z$ =
 \rgs
 	
 
-#### Example: Organ Donations {-}
+#### Example: Organ donations {-}
 
 1. What is the sample statistic presented in this example?  What notation would be used to represent this value?
 \rgs
@@ -378,7 +399,7 @@ $z$ =
 \rgs
 
 
-#### Example: Payday Loans {-}
+#### Example: Payday loans {-}
 
 1. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs

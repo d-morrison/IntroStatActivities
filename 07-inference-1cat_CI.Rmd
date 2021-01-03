@@ -2,9 +2,12 @@
 
 ## Reading Guide: Categorical Inference
 
-\setstretch{1.25}
+### Section 5.1.4 (Foundations of inference: Confidence intervals)
 
-### Section 5.1.4 (Foundations of Inference: Confidence Intervals)
+**Videos**  
+* 5.1
+
+\setstretch{1.25}
 
 #### Vocabulary {-}
 
@@ -33,7 +36,16 @@ Margin of error:
 \rgs
 
 ### Section 5.3.2 and 5.3.3 (One Proportion: Bootstrap confidence intervals and Theory-based inferential methods)
-*In section 5.3.3, read only the section on Confidence intervals for $\pi$*
+
+\setstretch{1}
+
+In section 5.3.3, read only the sub-section on "Confidence interval for $\pi$". The other sections were covered last week.
+
+**Videos**  
+* 5.3
+* OnePropTheory
+
+\setstretch{1.25}
 
 #### Reminders from previous sections {-}
 

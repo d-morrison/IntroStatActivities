@@ -2,9 +2,12 @@
 
 ## Reading Guide: Quantitative Data
 
-\setstretch{1.25}
-
 ### Section 2.3 (Exploring quantitative data) {-}
+
+**Videos**  
+* 2.3
+
+\setstretch{1.25}
 
 ### Type of Plots {-}
 

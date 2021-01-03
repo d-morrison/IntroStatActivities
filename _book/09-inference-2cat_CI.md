@@ -1,8 +1,155 @@
 # Inference for Two Categorical Variables: Confidence Intervals
 
-## Reading Guide: 
+## Reading Guide: Confidence Intervals for a Difference in Proportions
 
 \setstretch{1.25}
+
+### Section 5.4.1 to 5.4.2 (Simulation Tests for a Difference in Proportions; Two-sided Hypotheses)  {-}
+
+#### Reminders from previous sections {-}
+
+Sample size of group 1: $n_1$
+
+Sample size of group 2: $n_2$
+
+Sample proportion of group 1:  $\hat{p_1}$
+
+Sample proportion of group 2: $\hat{p_2}$
+
+Population proportion of group 1: $\pi_1$
+
+Population proportion of group 2: $\pi_2$
+
+Parameter: a value summarizing a variable(s) for a population
+
+Statistic: a value summarizing a variable(s) for a sample
+
+Point estimate: other names for the statistic from a sample; our best guess for the parameter of interest.
+
+Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
+
+Standard deviation of a statistic: the variability of statistics from 1000s of samples.  How far, on average, each statistic is from the true value of the parameter.
+
+Standard error of a statistic: estimated standard deviation of a statistic.
+
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter
+\rgi Also called ‘estimation’
+
+Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval
+
+Bootstrapping: the process of drawing with replacement n times from the original sample
+
+Bootstrapped resample: a random sample of size n from the original sample, selected with replacement
+
+Bootstrapped statistic: the statistic recorded from the bootstrapped resample
+
+Confidence level: how confident we are that the confidence interval will capture the parameter
+
+
+#### Notes {-}
+To create a single bootstrap resample for two categorical variables, how many cards will you need and how will the cards be labeled?
+\rgs
+
+What is done with the cards once they are labeled?
+\rgs
+
+Interpretations of confidence level must include:
+\rgs
+\rgs
+
+How do you determine if the results of a hypothesis test agree with a confidence interval?
+\rgs
+\rgs
+
+How are confidence level and significance level related (for a two-sided test)?
+\rgs
+
+#### Example: CPR and blood thinner {-}
+1.	What is the research question?
+\rgs
+
+2.	What is the sample difference in proportions presented in this example?  What notation would be used to represent this value?
+\rgs
+
+3.	What is the parameter (using a difference in proportion) representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+\rgs
+
+4.	How could we use cards to simulate **1** bootstrap resample?  How many blue cards – to represent what?  How many red cards – to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
+\rgs
+
+5.	How can we calculate a 90% confidence interval from the bootstrap distribution for this example?
+\rgs
+
+6.	What was the 90% confidence interval? 
+\rgs
+
+7.	Interpret the confidence interval in the context of the problem.
+\rgs
+\rgs
+
+8.	Interpret the confidence level in the context of the problem.
+\rgs
+\rgs
+
+9.	Does the conclusion of the hypothesis test match the confidence interval?
+\rgs
+
+### Section 5.4.4 (Theory-based Methods for a Difference in Proportions)  {-}
+*read only the section on Confidence intervals for $\pi_1 - \pi_2$*
+
+#### Reminders from previous sections {-}
+
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
+
+#### Notes {-}
+
+Conditions for the CLT to apply for two categorical variables
+1.	Independence: 
+\rgs
+
+\rgi a.	Checked by: 
+\rgs
+
+2.	Success/Failure condition: 
+\rgs
+
+\rgi a.	Checked by: 
+\rgs
+
+#### Formulas {-}
+
+$SD(\hat{p_1} - \hat{p_2})=$
+\rgs
+
+Standard error of the difference in sample proportions when we do not assume the null hypothesis is true:
+$SE(\hat{p_1} - \hat{p_2})=$
+\rgs
+
+Theory-based confidence interval for a s difference in sample proportions: 
+\rgs
+
+Margin of error of a confidence interval for a difference in sample proportions: 
+\rgs
+
+
+#### Example: CPR and blood thinner {-}
+
+1. What is the sample difference in proportions presented in this example?  What notation would be used to represent this value?
+\rgs
+
+2. What is the parameter (using a difference in proportion) representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+
+3. Calculate the standard error of the difference in sample proportions without assuming a null hypothesis.
+\rgs
+
+4. Calculate the 90% confidence interval using z^⋆=1.65 as the multiplier.
+\rgs
+
+\rgi *Note: a confidence interval interpretation and confidence level interpretation for this example can be found in the Reading Guide solutions for 5.4.1to5.4.2 and 5.4.3.*
+
 
 \newpage
 

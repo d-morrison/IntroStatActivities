@@ -2,9 +2,16 @@
 
 ## Reading Guide: Categorical Inference
 
+### Section 5.1 (Foundations of Inference) 
+
+You may skip the special topic Section 5.1.4.
+
+**Videos**  
+* 5.1
+
 \setstretch{1.25}
 
-### Vocabulary {-}
+#### Vocabulary {-}
 
 Statistical inference: 
 \rgs
@@ -18,12 +25,6 @@ Simulation-based method:
 \rgs
 
 Theory-based method: 
-\rgs
-
-Confidence interval: 
-\rgs
-
-Margin of error: 
 \rgs
 
 Central Limit Theorem:
@@ -54,8 +55,8 @@ Decision:
 \rgs
 
 Significance level: 
-\rgi Typically use α=0.05
-\rgs
+\rgi 
+\rgs Typically use $\alpha=0.05$
 
 Statistically significant: 
 \rgs
@@ -66,10 +67,11 @@ What ‘theory’ is behind the theory-based methods of analysis?
 \rgs
 
 Consider the US judicial system:
+
 \rgi What is the null hypothesis?  
 \rgs
 
-\rgi	What is the alternative hypothesis? 
+\rgi What is the alternative hypothesis? 
 \rgs
 
 \rgi The jury is presented with evidence.  
@@ -97,6 +99,7 @@ Conclusions should include:
 \rgs
 
 Decisions:
+
 \rgi If p-value≤α, the decision is to: 
 
 \rgi If p-value>α, the decision is to: 
@@ -112,13 +115,8 @@ True or False:  When conducting a simulation-based hypothesis test, the null hyp
 $SD(\hat{p})$ =
 \rgs
 
-General form of a theory-based confidence interval: 
-\rgs
 
-Margin of error: 
-\rgs
-
-#### Example: Martian Alphabet {-} 
+#### Example: Martian alphabet {-} 
 
 1. What is the sample statistic presented in this example?  What notation would be used to represent this value?
 \rgs
@@ -137,19 +135,20 @@ Margin of error:
 5. How can we use the simulation to determine which of the two possibilities is more believable?
 \rgs
 
-6. Interpret the 95% confidence interval provided in the textbook.
+6. What decision should be made at the $\alpha = 0.05$ level?  Justify your answer.
 \rgs
 
-7. The formula for the interval is $\frac{34}{38}\pm (2×0.08) = 0.89 \pm 0.16$.  Calculating that, you should get (0.73, 1.05).  Why was the interval shown in the textbook (0.73, 1) instead of (0.73, 1.05)?
+7. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
-8. What decision should be made at the $\alpha = 0.05$ level?  Justify your answer.
-\rgs
+### Section 5.2 (The normal distribution) {-}
 
-9. Are the results in this example statistically significant?  Justify your answer.
-\rgs
+\setstretch{1}
 
-### Section 5.2 (The Normal Distribution) {-}
+**Videos**  
+* 5.2
+
+\setstretch{1.25}
 
 #### Vocabulary {-}
 
@@ -251,6 +250,203 @@ i.e.: qnorm(mean = 5, sd = 2, p = 0.159, lower.tail = TRUE) will give us the val
 Changing to lower.tail = FALSE will give the value which has x area of the distribution **above** it.
 
 We would recommend you work through each of the examples in section 5.2.4 using `R`.
+
+
+### Section 5.3 (Inference for one proportion) 
+
+\setstretch{1}
+
+You may skip Section 5.3.2 and stop before the "Confidence interval for $\pi$ sub-section in Section 5.3.3. These sections will be covered next week.
+
+**Videos**  
+* 5.3
+* OnePropTheory
+
+
+\setstretch{1.25}
+
+#### Reminders from previous sections {-}
+
+$n$ = sample size
+
+$\hat{p}$ = sample proportion
+
+$\pi$ = population proportion
+
+#### General steps of a hypothesis test: {-}
+
+1. Frame the research question in terms of hypotheses.
+
+2. Collect and summarize data using a test statistic.
+	
+3. Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
+
+4. Compare the observed test statistic to the null distribution to calculate a p-value
+
+5. Make a conclusion based on the p-value and write the conclusion in context.
+
+Parameter: a value summarizing a variable(s) for a population
+
+Statistic: a value summarizing a variable(s) for a sample
+
+Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
+
+Standard deviation of a statistic: the variability of statistics from 1000s of samples.  How far, on average, each statistic is from the true value of the parameter.
+
+Standard error of a statistic: estimated standard deviation of a statistic.
+
+Hypothesis test: a process to determine how strong the evidence of an effect is
+		
+\rgi Also called a ‘significance test’
+
+Simulation-based method: Simulate lots of samples of size n, then find the proportion of the simulations that are at least as extreme as the observed sample statistic
+
+Theory-based method: Develop a mathematical model for the statistic and use the model to calculate the probability of the observed sample statistic occurring 
+
+Null hypothesis: $H_0$ the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**
+
+Alternative hypothesis: $H_A$ the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**
+
+P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true
+
+\rgi Lower the p-value the Stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis
+
+Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance
+
+Significance level: ($\alpha$) a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not
+
+\rgi Typically use $\alpha$ =0.05
+
+Statistically significant: results are considered statistically significant if the p-value is below the significance level.
+
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
+
+#### Vocabulary {-}
+
+Test statistic/Point estimate: 
+\rgs
+
+Null value:
+\rgs
+
+Null distribution:  
+\rgs
+
+Standardized statistic:
+\rgs
+
+		
+#### Notes {-}
+
+Conditions for the Central Limit Theorem to apply (for the sampling distribution of $\hat{p}$ to be Normal)
+
+\rgi Independence: 
+\rgs
+
+\rgi Checked by: 
+\rgs
+
+\rgi Success/Failure condition: 
+\rgs
+
+\rgi Checked by: 
+\rgs
+
+#### Formulas {-}
+
+$SD(\hat{p})$ =
+\rgs
+
+Null standard error of the sample proportion:
+
+$SE_0(\hat{p})$ = 
+\rgs
+	
+Standardized statistic/standardized sample proportion:
+
+$z$ =
+\rgs
+	
+
+#### Example: Organ donations {-}
+
+1. What is the sample statistic presented in this example?  What notation would be used to represent this value?
+\rgs
+
+2. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+
+3. Write the null and which is the alternative hypothesis in words.
+\rgs
+
+4. Write the null and which is the alternative hypothesis in notation.
+\rgs
+
+
+5. To simulate the null distribution, we would not be able to use coins.  Why is that?
+\rgs
+
+
+6. How could we use cards to simulate 1 sample which assumes the null hypothesis is true?  How many blue cards – to represent what?  How many red cards – to represent what?  How many times would we draw a card and replace it back in the deck?  What would you record once you completed the draw-with-replacement process?
+\rgs
+
+7. How can we calculate a p-value from the simulated null distribution for this example?
+\rgs
+
+
+8. What was the p-value of the test? 
+\rgs
+
+9. At the 5% significance level, what decision would you make?
+\rgs
+
+10. What conclusion should the researcher make?
+\rgs
+
+11. Are the results in this example statistically significant?  Justify your answer.
+\rgs
+
+12.	Are the conditions met to use theoretical methods to analyze these data?
+\rgs
+
+
+#### Example: Payday loans {-}
+
+1. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+
+2. Write the null and which is the alternative hypothesis in words.
+\rgs
+
+3. Write the null and which is the alternative hypothesis in notation.
+\rgs
+	
+4. Are the conditions met to use theoretical methods to analyze these data?
+\rgs
+
+5. Calculate the null standard error of the sample proportion.
+\rgs
+
+6. What is the sample statistic presented in this example?  What notation would be used to represent this value?
+\rgs
+
+7. Calculate the standardized sample proportion.
+\rgs
+
+8. How can we calculate a p-value from the Normal distribution for this example?
+\rgs
+
+9. What was the p-value of the test? 
+\rgs
+	
+10. At the 5\% significance level, what decision would you make?
+\rgs
+
+11. What conclusion should the researcher make?
+\rgs
+
+12. Are the results in this example statistically significant?  Justify your answer.
+\rgs
 
 \newpage
 

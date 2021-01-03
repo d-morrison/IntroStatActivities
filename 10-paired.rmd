@@ -136,7 +136,7 @@ Conditions to use the CLT for means:
 
 #### Formulas{-}
 
-$SE(\overine{x})=$
+$SE(\overline{x})=$
 \rgs 
 
 $t=$
@@ -147,7 +147,7 @@ Confidence interval:
 
 #### Notation {-}
 
-$μ_0$ represents 
+$\mu_0$ represents 
 \rgs 
 
 
@@ -334,16 +334,16 @@ Confidence interval:
 
 #### Notation {-}
 
-$\overline{x_d}= $
+$\overline{x_d}=$
 \rgs
 
 $s_d=$ 
 \rgs
 
-$μ_d=$ 
+$\mu_d=$ 
 \rgs
 
-$σ_d=$ 
+$s_d=$ 
 \rgs
 
 #### Example: Tires {-}
@@ -409,7 +409,7 @@ $σ_d=$
 \rgs
 \rgs
 
-8. Give the 95% confidence interval for $μ_d$.
+8. Give the 95% confidence interval for $\mu_d$.
 \rgs
 
 9. Interpret your 95% confidence interval in the context of the problem.
@@ -445,7 +445,7 @@ $σ_d=$
 18. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
-19. Using $t^\star=2.00$, calculate a 95% confidence interval for $μ_d$.
+19. Using $t^\star=2.00$, calculate a 95% confidence interval for $\mu_d$.
 \rgs
 	
 20. Interpret the interval calculated in the context of the problem.
@@ -680,9 +680,9 @@ Conditions for the sample distribution of $\bar{x}$.
 
 * Normality: data should be approximately normal
 
-    - n < 30: If the sample size n is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
+    - n $<$ 30: If the sample size n is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
 
-    - n ≥ 30: If the sample size n is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
+    - n $\geq$ 30: If the sample size n is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
 
 1.  In the in-class activity we verified that the independence condition was satisfied.  Is the normality condition met to use the theory-based methods for analysis?  Explain your answer.
 

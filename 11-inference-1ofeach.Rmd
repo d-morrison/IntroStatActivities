@@ -12,7 +12,7 @@ $n_1$= sample size of group 1
 
 $n_2$ = sample size of group 2
 
-$\ovelrine{x}$ = sample mean
+$\overline{x}$ = sample mean
 
 $s$ = sample standard deviation
 
@@ -142,7 +142,7 @@ True or False: A large p-value indicates that the null hypothesis is true.
 
 #### Formulas {-}
 
-$SE(\overline(x_1} - \overline{x_2})=$
+$SE(\overline{x_1} - \overline{x_2})=$
 \rgs
 
 $t=$

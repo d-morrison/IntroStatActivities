@@ -2,9 +2,13 @@
 
 ## Reading Guide: Sampling, Experimental Design, and Scope of Inference
 
-\setstretch{1.25}
-
 ### Section 1.3 (Sampling principles and strategies) {-}
+
+**Videos**  
+
+* 1.3
+
+\setstretch{1.25}
 
 #### Vocabulary {-}
 
@@ -62,6 +66,14 @@ True or False: Random sampling helps to resolve selection bias, but has no impac
 
 
 ### Sections 1.4 (Observational studies), 1.5 (Experiments), and 1.6 (Scope of inference) {-}
+
+\setstretch{1}
+
+**Videos**  
+
+* 1.4to1.6
+
+\setstretch{1.25}
 
 #### Reminders from Section 1.2 {-}
 

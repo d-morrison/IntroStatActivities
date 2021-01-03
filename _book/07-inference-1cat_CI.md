@@ -1,8 +1,190 @@
 # Inference for a Single Categorical Variable: Confidence Intervals
 
-## Reading Guide: 
+## Reading Guide: Categorical Inference
+
+### Section 5.1.4 (Foundations of inference: Confidence intervals)
+
+**Videos**  
+* 5.1
 
 \setstretch{1.25}
+
+#### Vocabulary {-}
+
+Confidence interval: 
+\rgs
+
+Margin of error: 
+\rgs
+
+#### Formulas {-}
+
+General form of a theory-based confidence interval: 
+\rgs
+
+Margin of error: 
+\rgs
+
+#### Example: Martian Alphabet {-} 
+1. What is the sample statistic presented in this example?  What notation would be used to represent this value?
+\rgs
+
+2. Interpret the 95% confidence interval provided in the textbook.
+\rgs
+
+3. The formula for the interval is 34/38±(2×0.08)=0.89±0.16.  Calculating that, you should get (0.73, 1.05).  Why was the interval shown in the textbook (0.73, 1) instead of (0.73, 1.05)?
+\rgs
+
+### Section 5.3.2 and 5.3.3 (One Proportion: Bootstrap confidence intervals and Theory-based inferential methods)
+
+\setstretch{1}
+
+In section 5.3.3, read only the sub-section on "Confidence interval for $\pi$". The other sections were covered last week.
+
+**Videos**  
+* 5.3
+* OnePropTheory
+
+\setstretch{1.25}
+
+#### Reminders from previous sections {-}
+
+$n$ = sample size
+
+$\hat{p}$ = sample proportion
+
+$\pi$ = population proportion
+
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter
+		Also called ‘estimation’
+
+\rgi Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval
+
+Parameter: a value summarizing a variable(s) for a population
+
+Statistic: a value summarizing a variable(s) for a sample
+
+Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
+
+Standard deviation of a statistic: the variability of statistics from 1000s of samples.  How far, on average, each statistic is from the true value of the parameter.
+
+Standard error of a statistic: estimated standard deviation of a statistic.
+
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
+
+
+#### Vocabulary {-}
+
+Test statistic/Point estimate: 
+\rgs
+
+Bootstrapping: 
+\rgs
+
+Bootstrapped resample: 
+\rgs
+
+Bootstrapped statistic: 
+\rgs
+
+Confidence level: 
+\rgs
+		
+#### Notes {-} 
+
+Purpose of bootstrapping: 
+\rgs
+
+How is bootstrapping used?  
+\rgs
+
+If we want to find a 90% confidence interval, what percentiles of the bootstrap distribution would we need?  
+\rgs
+
+Conditions for the Central Limit Theorem to apply (for the sampling distribution of $\hat{p}$ to be Normal)
+
+\rgi Independence: 
+\rgs
+
+\rgi Checked by: 
+\rgs
+
+\rgi Success/Failure condition: 
+\rgs
+
+\rgi Checked by: 
+\rgs
+
+How can we determine the value of z^⋆ to use as the multiplier in a confidence interval?
+\rgs
+
+\rgi In 'R', use qnorm(mean = __, sd = __, p = __)
+
+Select one answer in each set of parentheses: The higher the confidence level, the (larger/smaller) the multiplier, meaning the confidence interval will be (wider/narrower).
+
+#### Formulas {-}
+
+$SD(\hat{p})$ =
+\rgs
+
+Standard error of the sample proportion when we do not assume the null hypothesis is true.
+$SE(\hat{p})$ = 
+\rgs
+	
+Theory-based confidence interval for a sample proportion: 
+\rgs
+
+Margin of error of a confidence interval for a sample proportion: 
+\rgs
+
+#### Example: Organ Donations {-}
+
+1. What is the sample statistic presented in this example?  What notation would be used to represent this value?
+\rgs
+
+2. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+
+3. How could we use cards to simulate **1** bootstrapped resample?  How many blue cards – to represent what?  How many red cards – to represent what?  How many times would we draw a card and replace it back in the deck?  What would you record once you completed the draw-with-replacement process?
+\rgs
+\rgs
+
+4.	Interpret the 95% confidence interval provided in the textbook.
+\rgs
+
+5.	Are the results in this example statistically significant?  Justify your answer.
+\rgs
+
+6.	Are the conditions met to use theoretical methods to analyze these data?
+\rgs
+
+#### Example: Payday Loans {-}
+
+1. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+
+2. Are the conditions met to use theoretical methods to analyze these data?
+\rgs
+
+3. What is the sample statistic presented in this example?  What notation would be used to represent this value?
+\rgs
+
+4. Calculate the standard error of the sample proportion when we do not assume the null hypothesis is true.
+\rgs
+
+5. Calculate the margin of error for a 95% confidence interval for π using 1.96 as the multiplier.
+\rgs
+
+6. Calculate a 95% confidence interval for π using your margin of error calculated above.
+\rgs
+
+7. Interpret the 95% confidence interval provided in the textbook.
+\rgs
+
+8. Are the results in this example statistically significant?  Justify your answer.
+\rgs
+
+
 
 
 \newpage
@@ -80,7 +262,7 @@ To use the computer simulation to create a bootstrap distribution, we will need 
     
 \vspace{.1in}
 
-Using the provided `RScript` file, fill in the values/words for xx with your answers from question 6 in the one proportion bootstrap CI code to create a bootstrap distribution with 1000 simulations, highlight and run lines 1 - 11.
+Using the provided `R` script file, fill in the values/words for xx with your answers from question 6 in the one proportion bootstrap CI code to create a bootstrap distribution with 1000 simulations, highlight and run lines 1 - 11.
 
 
 ```r

@@ -2,9 +2,14 @@
 
 ## Reading Guide: Quantitative Data
 
-\setstretch{1.25}
-
 ### Section 3.1 (Fitting a line, residuals, and correlation) {-}
+
+\setstretch{1}
+
+**Videos**  
+* Chapter3
+
+\setstretch{1.25}
 
 ### Reminders for Section 2.3
 
@@ -94,7 +99,7 @@ True or false: To calculate a predicted y-value from a given x-value, just look 
 
 True or false: A positive residual indicates the data point is above the regression line.
 
-#### Example: Brushtail Possums {-}
+#### Example: Brushtail possums {-}
 
 1.	What are the observational units?  
 \rgs
@@ -125,9 +130,16 @@ True or false: A positive residual indicates the data point is above the regress
 5.	One of the possums in the data set has a total length of 76.0 cm and a head length of 85.1 cm.  Calculate the residual for this possum.  Does this possum lie above or below the regression line?
 \rgs
 
-###  Section 3.2 (Least Squares Regression) {-}
+###  Section 3.2 (Least squares regression) {-}
 
-You may skip the special topic sections: 3.2.3.1, 3.2.6
+\setstretch{1}
+
+You may skip the special topic Sections 3.2.3.1 and 3.2.6.
+
+**Videos**  
+* Chapter3
+
+\setstretch{1.25}
 
 #### Vocabulary {-}
 
@@ -220,6 +232,13 @@ True or false: The coefficient of determination is just the square of the correl
 
 ###  Section 3.3 (Outliers in linear regression) {-}
 
+\setstretch{1}
+
+**Videos**  
+* Chapter3
+
+\setstretch{1.25}
+
 #### Vocabulary {-}
 
 Outlier: 
@@ -239,7 +258,14 @@ True or false: All high leverage outliers are influential.
 
 True or false: An outlier is considered high leverage if it is extreme in it’s x-value.
 
-### Section 3.4 (R: Correlation and Regression) and Section 3.5 (Chapter 3 Review) {-}
+### Section 3.4 (R: Correlation and regression) and Section 3.5 (Chapter 3 review) {-}
+
+\setstretch{1}
+
+**Videos**  
+* Chapter3
+
+\setstretch{1.25}
 
 Section 3.4 presents five tutorials on analyzing two quantitative variables in R.  We recommend you complete all five. 
 
@@ -283,6 +309,13 @@ Look at the table of vocabulary terms.  If there are any you do not know, be sur
 
 ### Section 4.1 (Gapminder world) {-}
 
+\setstretch{1}
+
+**Videos**  
+* Chapter4
+
+\setstretch{1.25}
+
 ### Reminder from Section 3.1 {-} 
 Use color and a legend to add a third variable to a scatterplot.
 
@@ -307,6 +340,13 @@ If the response and one predictor are quantitative and the other predictor categ
 True or false: Scatterplots can only display two variables at a time.
 
 ### Section 4.2 (Simpson’s Paradox, revisited) {-}
+
+\setstretch{1}
+
+**Videos**  
+* Chapter4
+
+\setstretch{1.25}
 
 #### Reminder from Section 2.1 {-}
 
@@ -347,10 +387,17 @@ True or false: Simpson’s Paradox can only occur when the explanatory, response
 5.	How does figure 4.7 demonstrate Simpson’s Paradox?
 \rgs
 
-### Section 4.3 (R: Multiple regression) and Section 4.4 (Chapter 4 Review) {-}
+### Section 4.4 (Chapter 4 Review) {-}
+
+\setstretch{1}
 
 Section 4.3 discusses multiple regression and presents five tutorials on analyzing multiple variables in R.  This section is a special topic, meaning you are not required to read or complete these tutorials.
- 
+
+**Videos**  
+* Chapter4
+
+\setstretch{1.25}
+
 #### Notes {-} 
 
 To determine if the relationship between two quantitative variables differs across levels of a categorical variable, you should compare 

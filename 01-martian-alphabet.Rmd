@@ -2,9 +2,16 @@
 
 ## Reading Guide: Basics of Data
 
-\setstretch{1.25}
-
 ### Sections 1.1 (Case study) and 1.2 (Data basics) {-}
+
+**Videos**  
+
+* Stat 216 Course_Tour
+* Instructor bio
+* 1.2.1_1.2.2
+* 1.2.3_1.2.4_1.2.5
+
+\setstretch{1.25}
 
 #### Vocabulary {-}
 

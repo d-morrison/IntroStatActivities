@@ -1,8 +1,528 @@
 # Inference for Two Categorical Variables: Hypothesis Testing
 
-## Reading Guide: 
+## Reading Guide: Hypothesis Testing for a Difference in Proportions
 
 \setstretch{1.25}
+
+### Section 5.4.1 to 5.4.2 (Simulation Tests for a Difference in Proportions; Two-sided Hypotheses)  {-}
+
+#### Reminders from previous sections {-}
+
+$n$ = sample size
+
+$\hat{p}$ = sample proportion
+
+$\pi$ = population proportion
+
+#### General steps of a hypothesis test: {-}
+
+1. Frame the research question in terms of hypotheses.
+
+2. Collect and summarize data using a test statistic.
+	
+3. Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
+
+4. Compare the observed test statistic to the null distribution to calculate a p-value
+
+5. Make a conclusion based on the p-value and write the conclusion in context.
+
+Parameter: a value summarizing a variable(s) for a population
+
+Statistic: a value summarizing a variable(s) for a sample
+
+Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
+
+Standard deviation of a statistic: the variability of statistics from 1000s of samples.  How far, on average, each statistic is from the true value of the parameter.
+
+Standard error of a statistic: estimated standard deviation of a statistic.
+
+Hypothesis test: a process to determine how strong the evidence of an effect is
+		
+\rgi Also called a ‘significance test’
+
+Simulation-based method: Simulate lots of samples of size n, then find the proportion of the simulations that are at least as extreme as the observed sample statistic
+
+Theory-based method: Develop a mathematical model for the statistic and use the model to calculate the probability of the observed sample statistic occurring 
+
+Null hypothesis: $H_0$ the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**
+
+Alternative hypothesis: $H_A$ the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**
+
+Null value: the value of the parameter when we assume the null hypothesis is true (labeled as $parameter_0$)
+
+Null distribution:  the simulated or modeled distribution of statistics (sampling distribution) we would expect to occur if the null hypothesis is true.
+
+P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true
+
+\rgi Lower the p-value the Stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis
+
+Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance
+
+Significance level: ($\alpha$) a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not
+
+\rgi Typically use $\alpha$ =0.05
+
+Statistically significant: results are considered statistically significant if the p-value is below the significance level.
+
+#### Vocabulary {-}
+
+Randomization test: 
+\rgs
+
+Relative risk: 
+\rgs
+
+One-sided hypothesis test: 
+\rgs
+
+Two-side hypothesis test: 
+\rgs
+
+#### Notes {-}
+
+In a simulation test for two categorical variables, how many cards will you need and how will the cards be labeled?
+\rgs
+
+Why, in the simulation test, are the cards all shuffled together and randomly dealt into two new groups?
+\rgs
+
+After shuffling, how many cards are dealt into each pile?
+\rgs
+
+Interpreting relative risk ($RR = \frac{\hat{p_1}}{\hat{p_2}}$)
+
+\rgi The proportion of success in group 1 is ______ times the proportion of success in group 2.
+
+\rgi The proportion of success in group 1 is ______ times higher/lower than in group 2.
+
+\rgi The proportion of success in group 1 is ______ % higher/lower than in group 2.
+
+Write the null hypothesis in notation for a test of relative risk.
+\rgs
+
+How does the p-value in a two-sided test compare to the p-value in a one-sided test?
+\rgs
+
+#### Formulas {-}
+
+Relative risk = 
+\rgs
+
+#### Notation {-1}
+Sample size of group 1: 
+\rgs
+
+Sample size of group 2: 
+\rgs
+
+Sample proportion of group 1: 
+\rgs
+
+Sample proportion of group 2: 
+\rgs
+
+Population proportion of group 1: 
+\rgs
+
+Population proportion of group 2: 
+\rgs
+
+#### Example: Gender Discrimination {-}
+1. What is the research question?
+\rgs
+
+2. What are the observational units?
+\rgs
+
+3. What type of study design was used?  Justify your answer.
+\rgs
+
+4. What is the appropriate scope of inference for these data?
+\rgs
+
+5. What is the sample statistic presented in this example?  What notation would be used to represent this value?
+\rgs
+
+6. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+\rgs
+
+7. Write the null and the alternative hypothesis in words.
+\rgs
+\rgs
+
+8. Write the null and the alternative hypothesis in notation.
+\rgs
+
+9. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many blue cards – to represent what?  How many red cards – to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
+\rgs
+
+10. How can we calculate a p-value from the simulated null distribution for this example?
+\rgs
+\rgs
+
+11. What was the p-value of the test? 
+\rgs
+
+12. At the 5% significance level, what decision would you make?
+\rgs
+
+13. What conclusion should the researcher make?
+\rgs
+\rgs
+
+14. Are the results in this example statistically significant?  Justify your answer.
+\rgs
+
+
+#### Example: Opportunity Cost {-}
+1. What is the research question?
+\rgs
+
+2. What are the observational units?
+\rgs
+
+3. What type of study design was used?  Justify your answer.
+\rgs
+
+4. What is the appropriate scope of inference for these data?
+\rgs
+
+5. What is the sample statistic presented in this example?  What notation would be used to represent this value?
+\rgs
+
+6. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+\rgs
+
+7. Write the null and the alternative hypothesis in words.
+\rgs
+\rgs
+
+8. Write the null and the alternative hypothesis in notation.
+\rgs
+
+9. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*? How many blue cards – to represent what?  How many red cards – to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
+\rgs
+
+10. How can we calculate a p-value from the simulated null distribution for this example?
+\rgs
+\rgs
+
+11. What was the p-value of the test? 
+\rgs
+
+12. Interpret the p-value in the context of the problem.
+\rgs
+\rgs
+
+13. At the 5% significance level, what decision would you make?
+\rgs
+
+14. What conclusion should the researcher make?
+\rgs
+
+15. Are the results in this example statistically significant?  Justify your answer.
+\rgs
+
+#### Example: CPR and blood thinner {-}
+
+1. What is the research question?
+\rgs
+
+2. What are the observational units?
+\rgs
+
+3. What type of study design was used?  Justify your answer.
+\rgs
+
+4. What is the appropriate scope of inference for these data?
+\rgs
+
+5. What is the sample difference in proportions presented in this example?  What notation would be used to represent this value?
+\rgs
+
+6. What is the sample relative risk?  Interpret the value in the context of the study.
+\rgs
+
+7. What is the parameter (using a difference in proportion) representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+\rgs
+
+8. Write the null and the alternative hypothesis in words.
+\rgs
+\rgs
+
+9. Write the null and the alternative hypothesis in notation.
+\rgs
+
+10. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many blue cards – to represent what?  How many red cards – to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
+\rgs
+
+11. How can we calculate a p-value from the simulated null distribution for this example?
+\rgs
+\rgs
+
+12. What was the p-value of the test? 
+\rgs
+
+13. Interpret the p-value in the context of the problem.
+\rgs
+\rgs
+
+14. At the 5% significance level, what decision would you make?
+\rgs
+
+15. What conclusion should the researcher make?
+\rgs
+
+16. Are the results in this example statistically significant?  Justify your answer.
+\rgs
+
+
+### Section 5.4.4 (Theory-based Methods for a Difference in Proportions)  {-}
+*skip section on Confidence Interval for $\pi_1 - \pi_2$*
+
+#### Reminders from previous sections {-}
+
+Sample size of group 1: $n_1$
+
+Sample size of group 2: $n_2$
+
+Sample proportion of group 1:  $\hat{p_1}$
+
+Sample proportion of group 2: $\hat{p_2}$
+
+Population proportion of group 1: $\pi_1$
+
+Population proportion of group 2: $\pi_2$
+
+Test statistic/Point estimate: other names for the statistic from a sample; our best guess for the parameter of interest.
+
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
+
+#### Notes {-}
+
+Conditions for the CLT to apply for two categorical variables
+1.	Independence: 
+\rgs
+
+\rgi a.	Checked by: 
+\rgs
+
+2.	Success/Failure condition: 
+\rgs
+
+\rgi a.	Checked by: 
+\rgs
+
+#### Formulas {-}
+
+$SD(\hat{p_1} - \hat{p_2})=$
+\rgs
+
+Null standard error of the difference in sample proportions:
+$SE_0(\hat{p_1} - \hat{p_2})=$
+\rgs
+
+Standardized statistic/standardized difference in sample proportions:
+$z=$
+\rgs
+
+#### Notation {-}
+Overall (pooled) proportion of successes:
+\rgs
+
+#### Example: CPR and blood thinner {-}
+
+1. What are the observational units?
+\rgs
+
+2. What type of study design was used?  Justify your answer.
+\rgs
+
+3. What is the appropriate scope of inference for these data?
+\rgs
+
+4. What is the sample difference in proportions presented in this example?  What notation would be used to represent this value?
+\rgs
+
+5. What is the parameter (using a difference in proportion) representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+
+6. Write the null and the alternative hypothesis in words.
+\rgs
+\rgs
+
+7. Write the null and the alternative hypothesis in notation.
+\rgs
+
+8. Is it valid to use theory-based methods to analyze these data?
+\rgs
+\rgs
+
+9. Calculate the pooled or overall proportion of successes. What notation would be used to represent this value?
+\rgs
+
+10. Calculate the null standard error of the difference in sample proportions.
+\rgs
+
+11.	Calculate the standardized statistic
+\rgs
+
+12. Interpret the standardized statistic in the context of the problem.
+\rgs
+\rgs
+
+\rgi *Note: a p-value, p-value interpretation, decision, and conclusion for this example can be found in the Reading Guide solutions for 5.4.1to5.4.2 and 5.4.3.*
+
+### Section 5.5 (Errors, Power, and Practical Importance) {-}
+
+#### Reminders from previous sections {-}
+
+Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance
+
+\rgi If p-value $< \alpha$, then reject $H_0$
+
+\rgi If p-value $> \alpha$, then fail to reject $H_0$
+
+Significance level: ($\alpha$) a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not
+
+\rgi Typically use $\alpha =0.05$
+
+Statistically significant: results are considered statistically significant if the p-value is below the significance level.
+
+#### Vocabulary {-}
+
+Type I error: 
+\rgs
+
+Type II error: 
+\rgs
+
+Confirmation bias: 
+\rgs
+
+Power: 
+\rgs
+		
+Practical Importance: 
+\rgs
+
+#### Notes {-}
+
+Fill in the following table with whether the decision was correct or not and if not, what type of error was made.
+\begin{center}
+\begin{tabular}{|p{2in}|p{2in}|p{2in}|}
+\hline
+ & \multicolumn{2}{|c|}{\textbf{Test conclusion (based on data)}} \\ \hline
+ \textbf{Truth (unknown)} & Reject null hyp. & Fail to reject null hyp. \\ \hline
+ Null hyp. is true && \\ 
+ Alt. hyp. is true (null hyp. is false) & & \\ 
+  & & \\
+   & & \\ \hline
+   Non-random sample && \\ 
+   (or other sampling bias) & & \\ 
+  & & \\
+   & & \\ \hline
+\end{tabular}
+\end{center}
+
+\rgs
+
+How are significance level and type I error rate related?
+\rgs
+
+How are significance level and type II error rate related?
+\rgs
+
+
+After collecting data, a researcher decides to change from a two-sided test to a one-sided test.  Why is this a bad idea?
+
+1. It ____________ (increases/decreases) the chance of a type I error.
+
+2. This can result in ________________________.
+\rgs
+
+How are power and type I error rate related?
+\rgs
+
+How are power and type II error rate related?
+\rgs
+
+How can we increase the power of a test?
+
+1. ________ (Increase/Decrease) the significance level
+\rgs
+
+2. ________ (Increase/Decrease) the sample size
+\rgs
+
+3. Change from a ___ (one/two)-sided to a ___ (one/two)-sided test
+\rgs
+
+4. Have a ________ (larger/smaller) standard deviation of the statistic
+\rgs
+
+5. Have the alternative parameter value _______ (closer/farther) from the null value
+\rgs
+
+Results are likely to be statistically significant (but may not be practically important) if the sample size is __________(large/small).
+\rgs
+
+Results are unlikely to be statistically significant (but may be practically important) if the sample size is __________(large/small).
+\rgs
+
+#### Examples: {-} 
+
+1. In the Gender Discrimination study in the textbook and presented as an example in Reading Guide 5.4.1to5.4.2,
+
+\rgi a. What was the p-value of the test?
+\rgs
+
+\rgi b.	At the 5% significance level, what decision would you make?
+\rgs
+
+\rgi c. What type of error might have occurred in these data?
+\rgs
+
+\rgi d. Interpret that error in the context of the problem.
+\rgs
+\rgs
+
+2. In the Opportunity Cost study in the textbook and presented as an example in the reading guide for sections 5.4.1 to 5.4.2,
+
+\rgi a. What was the p-value of the test?
+\rgs
+
+\rgi b. At the 5% significance level, what decision would you make?
+\rgs
+
+\rgi c. What type of error might have occurred in these data?
+\rgs
+
+\rgi d. Interpret that error in the context of the problem.
+\rgs
+\rgs
+
+3. In the CPR and blood thinners study in the textbook and presented as an example in the reading guide for sections 5.4.1 to 5.4.2,
+
+\rgi a. What was the p-value of the test?
+\rgs
+
+\rgi b. At the 5% significance level, what decision would you make?
+\rgs
+
+\rgi c. What type of error might have occurred in these data?
+\rgs
+
+\rgi d. Interpret that error in the context of the problem.
+\rgs
+\rgs
+
 
 \newpage
 

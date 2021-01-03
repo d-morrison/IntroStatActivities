@@ -2,9 +2,13 @@
 
 ## Reading Guide: Introduction to `R`, Categorical Data, and Probability
 
-\setstretch{1.25}
-
 ### Section 1.7 (Data in `R`) {-}
+
+**Videos**  
+
+* Starting_with_R
+
+\setstretch{1.25}
 
 #### Notes {-}
 
@@ -41,6 +45,14 @@ State what these introductory functions do in `R`:
 `<-`
 
 ### Section 2.1 (Exploring categorical data) {-}
+
+\setstretch{1}
+
+**Videos**  
+* 2.1
+* MosaicPlots
+
+\setstretch{1.25}
 
 #### Vocabulary {-}
 
@@ -135,6 +147,13 @@ a ______________ variable.
 \rgs
 
 ### Section 2.2 (Probability with tables) {-}
+
+\setstretch{1}
+
+**Videos**  
+* 2.2
+
+\setstretch{1.25}
 
 #### Vocabulary {-}
 
