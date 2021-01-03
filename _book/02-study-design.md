@@ -344,6 +344,8 @@ When both these conditions are met, if we observe an association between the exp
 
 
 
+\newpage
+
 ### Out-of-class activity
 
 In the in-class activity we looked at sampling methods and study design.  Here are a few more questions to review that material.  

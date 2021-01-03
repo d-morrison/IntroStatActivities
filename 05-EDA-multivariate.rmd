@@ -192,7 +192,7 @@ Formulas for calculating the coefficient of determination:
 
 True or false: A correlation between two quantitative variables implies a causal relationship exists between the variables.
 
-True or false: The slope of the line tells us how much to expect the y variable to increase or decrease when the x variable increases by 1 unit.
+True or false: The slope of the line tells us how much to expect the $y$ variable to increase or decrease when the $x$ variable increases by 1 unit.
 
 True or false: The coefficient of determination is just the square of the correlation.
 

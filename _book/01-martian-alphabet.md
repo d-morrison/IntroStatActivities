@@ -353,6 +353,8 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 
 
+\newpage
+
 ### Out-of-class activity
 
 Since this class is taught in a blended format, we are only in class one day per week.  During class we will complete the in-class activity from the course pack.  Outside of class, students will read from the textbook, watch course videos, and complete an out-of-class activity on the other two days of class.  To become familiar with the course outline, read through the syllabus, [https://mtstateintrostats.github.io/Syllabus/](https://mtstateintrostats.github.io/Syllabus/), your day specific cohort calendar, and watch the Stat 216 Course Tour on D2L before answering the following questions.

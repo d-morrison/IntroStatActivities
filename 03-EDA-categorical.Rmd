@@ -534,6 +534,8 @@ ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
 4.  Conditional probabilities are calculated dependent on a 2nd variable.  In the probability notation the variable following `|` is the variable that we are conditioning on.  The denominator used to calculate the probability will be the total for the variable we are conditioning on.  
 
 
+\newpage
+
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

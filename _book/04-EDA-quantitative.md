@@ -377,7 +377,6 @@ movies %>%  # Data set piped into...
 
 \vspace{1.5in}
 
-\newpage
 
 14. Answer the following questions about the box plots created.
 
