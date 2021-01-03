@@ -105,7 +105,7 @@ Segmented bar plot:
 Simpson’s Paradox:
 \rgs
 
-\newpage
+
 #### Notes {-}
 
 In a contingency table, which variable (explanatory or response) generally will make the columns of the table?  Which variable on the rows?
@@ -249,7 +249,7 @@ Method for creating a hypothetical two-way table:
 \rgi Finally,
 \rgs
 
-
+\newpage
 \rgi Hypothetical two-way table:
 
 \begin{center}
@@ -424,6 +424,7 @@ The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census 
    e. What is the probability a randomly selected computer is both a laptop and on sale?  Give the appropriate probability notation.
 
 
+
 ### Out-of-class activity
 
 For this part of the activity we will focus on using `RStudio` and the provided `R` script file to create graphs and calculate proportions from each group.  
@@ -508,7 +509,8 @@ To examine the differences in level of myopia for the level of light, we would c
 myopia %>% # Data set piped into...
 ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
   geom_bar(stat = "count", position = "fill") +  # Tell it to make a stacked bar plot
-  labs(title = "Segmented Bar Plot of Night Light Use by Level of Myopia",  # Make sure to title your plot 
+  labs(title = "Segmented Bar Plot of Night Light Use by Level of Myopia",  
+       # Make sure to title your plot 
        x = "Level of Light",   # Label the x axis
        y = "") +  # Remove y axis label
     scale_fill_grey()  # Make figure black and white

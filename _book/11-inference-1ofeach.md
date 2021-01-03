@@ -536,6 +536,7 @@ two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  # Variables and dat
 
 
 
+
 ### Out-of-class activity
 
 The remaining questions cover inference for a difference in means using theory based methods.  Use section 6.3.3 in the textbook and the TwoMeanTheory video to complete the following questions.
@@ -612,7 +613,7 @@ We will need to find the $t^*$ multiplier using the function qt.  For a 95% conf
 
 ### Take-home messages
 
-1.	This activity differs from activity 10 because the responses are independent not paired.  This data is analyzed as a difference in means.  
+1.	This activity differs from Activity 10 because the responses are independent not paired.  These data are analyzed as a difference in means.  
 
 2. 
 

@@ -336,10 +336,11 @@ A **confounding variable** is a variable that is _both_
 When both these conditions are met, if we observe an association between the explanatory variable and the response variable in the data, we cannot be sure if this association is due to the explanatory variable or the confounding variable---the explanatory and confounding variables are "confounded."
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{02-study-design_files/figure-latex/unnamed-chunk-2-1} \end{center}
+\begin{center}\includegraphics[width=0.4\linewidth]{02-study-design_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 7. For each of the studies in questions 5 and 6, determine whether confounding variables could be an issue. If so, identify a potential confounding variable and explain how it meets the definition of a confounding variable.
 \vspace{1.5in}
+
 
 
 
@@ -356,11 +357,11 @@ In the in-class activity we looked at sampling methods and study design.  Here a
 
 3.  What is the purpose of random selection of a sample from the population? 
 
-\vspace{1in}
+\vspace{0.8in}
 
 4.  What is the purpose of random assignment of the cases in a study to the explanatory variable groups?
 
-\vspace{1in}
+\vspace{0.8in}
 
 
 

@@ -1,7 +1,9 @@
 # Spring 2021 Calendar of In-Class Activities {-}
 
 
-This calendar only lists the in-class activities and exams each week. For required readings and videos, due dates for assignments and case study posts, and project deadlines, refer to your cohort's calendar at:  [https://mtstateintrostats.github.io/Syllabus/#Course_calendars](https://mtstateintrostats.github.io/Syllabus/#Course_calendars).
+This calendar only lists the in-class activities and exams each week. For required readings and videos, due dates for assignments and case study posts, and project deadlines, refer to your cohort's calendar at:  
+
+[https://mtstateintrostats.github.io/Syllabus/#Course_calendars](https://mtstateintrostats.github.io/Syllabus/#Course_calendars).
 
 \begin{longtable}{|l|l|l|l|p{.55\textwidth}|}
 \hline

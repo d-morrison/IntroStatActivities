@@ -700,6 +700,7 @@ When we write a conclusion we answer the research question by stating how much e
 
 \vspace{.6in}
 
+
 ### Out-of-class activity
 
 The remaining questions cover theory-based methods for testing a single categorical variable.  Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.

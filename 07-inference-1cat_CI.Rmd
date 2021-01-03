@@ -356,6 +356,7 @@ In the interpretation of the confidence interval, we say that we are 95\% or 90\
 
 
 
+
 ### Out-of-class activity
 
 The remaining questions cover theory-based methods for testing a single categorical variable.  Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.

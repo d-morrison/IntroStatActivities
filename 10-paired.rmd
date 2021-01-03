@@ -682,6 +682,7 @@ paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
 
 
 
+
 ### Out-of-class activity
 
 The remaining questions cover theory-based methods for testing paired quantitative data.  Use section 6.2.3 in the textbook and the OneMeanTheory video to complete the following questions.

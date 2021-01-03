@@ -309,6 +309,7 @@ $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}$$
 
 
 
+
 ### Out-of-class activity
 
 The remaining questions cover simulation methods for creating the bootstrap distribution to find the confidence interval. Use section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.

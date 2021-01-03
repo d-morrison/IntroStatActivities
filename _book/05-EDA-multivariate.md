@@ -151,10 +151,11 @@ Least squares criterion:
 Least squares line: 
 \rgs
 
-lm(): 
+`lm()` `R` function: 
+\rgi `name_of_model <- lm(response ~ explanatory, data = data_set_name)`
+
 \rgs
-\rgi name_of_model<-lm(response ~ explanatory, data=data_set_name)
-	
+
 slope: 
 \rgs
 
@@ -387,7 +388,7 @@ True or false: Simpson’s Paradox can only occur when the explanatory, response
 3.	What would need to be done to eliminate the confounding variable: percent of eligible students taking the SAT?
 \rgs
 
-4.	What about the scatterplots in figure 4.6 demonstrate the percent of eligible students taking the SAT is a confounding variable?
+4.	What about the scatterplots in Figure 4.6 demonstrate the percent of eligible students taking the SAT is a confounding variable?
 \rgs
 
 5.	How does figure 4.7 demonstrate Simpson’s Paradox?

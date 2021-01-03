@@ -151,10 +151,11 @@ Least squares criterion:
 Least squares line: 
 \rgs
 
-lm(): 
+`lm()` `R` function: 
+\rgi `name_of_model <- lm(response ~ explanatory, data = data_set_name)`
+
 \rgs
-\rgi name_of_model<-lm(response ~ explanatory, data=data_set_name)
-	
+
 slope: 
 \rgs
 

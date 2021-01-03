@@ -240,7 +240,9 @@ need roughly nine hours per week to review past activities, read feedback on pre
 \chapter*{Spring 2021 Calendar of In-Class Activities}\label{spring-2021-calendar-of-in-class-activities}}
 \addcontentsline{toc}{chapter}{Spring 2021 Calendar of In-Class Activities}
 
-This calendar only lists the in-class activities and exams each week. For required readings and videos, due dates for assignments and case study posts, and project deadlines, refer to your cohort's calendar at: \url{https://mtstateintrostats.github.io/Syllabus/\#Course_calendars}.
+This calendar only lists the in-class activities and exams each week. For required readings and videos, due dates for assignments and case study posts, and project deadlines, refer to your cohort's calendar at:
+
+\url{https://mtstateintrostats.github.io/Syllabus/\#Course_calendars}.
 
 \begin{longtable}{|l|l|l|l|p{.55\textwidth}|}
 \hline
@@ -415,7 +417,6 @@ and columns correspond to \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
 How many types of variables are discussed? Explain the differences between them and give an example of each.
 \rgs
 \rgs
-\newpage
 
 True or False: A pair of variables be both associated AND independent.\\
 True or False: Given a pair of variables, will one always be the explanatory and one the response variable.\\
@@ -574,7 +575,7 @@ The outcome of a categorical variable is a group or category such as eye color, 
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.6\linewidth]{images/variables} 
+{\centering \includegraphics[width=0.5\linewidth]{images/variables} 
 
 }
 
@@ -1250,7 +1251,7 @@ A \textbf{confounding variable} is a variable that is \emph{both}
 
 When both these conditions are met, if we observe an association between the explanatory variable and the response variable in the data, we cannot be sure if this association is due to the explanatory variable or the confounding variable---the explanatory and confounding variables are ``confounded.''
 
-\begin{center}\includegraphics[width=0.7\linewidth]{02-study-design_files/figure-latex/unnamed-chunk-2-1} \end{center}
+\begin{center}\includegraphics[width=0.4\linewidth]{02-study-design_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1285,7 +1286,7 @@ In the in-class activity we looked at sampling methods and study design. Here ar
   What is the purpose of random selection of a sample from the population?
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1295,7 +1296,7 @@ In the in-class activity we looked at sampling methods and study design. Here ar
   What is the purpose of random assignment of the cases in a study to the explanatory variable groups?
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.8in}
 
 \hypertarget{take-home-messages-1}{%
 \subsection{Take-home messages}\label{take-home-messages-1}}
@@ -1442,8 +1443,6 @@ Segmented bar plot:
 
 Simpson's Paradox:
 \rgs
-
-\newpage
 
 \hypertarget{notes-4}{%
 \subsubsection*{Notes}\label{notes-4}}
@@ -1617,6 +1616,8 @@ Method for creating a hypothetical two-way table:
 
 \rgi Finally,
 \rgs
+
+\newpage
 
 \rgi Hypothetical two-way table:
 
@@ -2041,7 +2042,8 @@ To examine the differences in level of myopia for the level of light, we would c
 \NormalTok{myopia }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set piped into...}
 \KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{fill =}\NormalTok{ yy)) }\OperatorTok{+}\StringTok{   }\CommentTok{\# This specifies the variables}
 \StringTok{  }\KeywordTok{geom\_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{, }\DataTypeTok{position =} \StringTok{"fill"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\# Tell it to make a stacked bar plot}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Segmented Bar Plot of Night Light Use by Level of Myopia"}\NormalTok{,  }\CommentTok{\# Make sure to title your plot }
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Segmented Bar Plot of Night Light Use by Level of Myopia"}\NormalTok{,  }
+       \CommentTok{\# Make sure to title your plot }
        \DataTypeTok{x =} \StringTok{"Level of Light"}\NormalTok{,   }\CommentTok{\# Label the x axis}
        \DataTypeTok{y =} \StringTok{""}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\# Remove y axis label}
 \StringTok{    }\KeywordTok{scale\_fill\_grey}\NormalTok{()  }\CommentTok{\# Make figure black and white}
@@ -2199,9 +2201,7 @@ Five number summary:
 \(X^{th}\) percentile:
 \rgs
 
-\begin{verbatim}
-E.g. if the value 6 is 10th percentile, then 10% of the data have values 6 or below.
-\end{verbatim}
+E.g. if the value 6 is 10th percentile, then 10\% of the data have values 6 or below.
 
 Interquartile range (IQR):
 \rgs
@@ -2262,13 +2262,14 @@ Statistics summarize \_\_\_\_\_\_\_\_\_\_\_\_\_ .
 
 Parameters summarize \_\_\_\_\_\_\_\_\_\_\_\_\_.
 
+\newpage
+
 Fill in the following table with the appropriate notation for each summary measure.
 
 \begin{center}
 \begin{tabular}{|l|p{2in}|p{2in}|}\hline
 Summary measure & Statistic & Parameter \\ \hline
 Sample size & & \\ 
-& & \\ 
 & & \\ \hline
 Proportion & & \\ 
 (used to summarize & & \\ 
@@ -2310,6 +2311,8 @@ Two quantitative variables  & \\
 \end{center}
 
 \rgs
+
+\newpage
 
 Decision tree for determining an appropriate plot given a number of variables and their types from Chapter 2 review:
 
@@ -2928,9 +2931,10 @@ Least squares criterion:
 Least squares line:
 \rgs
 
-lm():
+\texttt{lm()} \texttt{R} function:
+\rgi \texttt{name\_of\_model\ \textless{}-\ lm(response\ \textasciitilde{}\ explanatory,\ data\ =\ data\_set\_name)}
+
 \rgs
-\rgi name\_of\_model\textless-lm(response \textasciitilde{} explanatory, data=data\_set\_name)
 
 slope:
 \rgs
@@ -3240,7 +3244,7 @@ True or false: Simpson's Paradox can only occur when the explanatory, response, 
   What would need to be done to eliminate the confounding variable: percent of eligible students taking the SAT?
   \rgs
 \item
-  What about the scatterplots in figure 4.6 demonstrate the percent of eligible students taking the SAT is a confounding variable?
+  What about the scatterplots in Figure 4.6 demonstrate the percent of eligible students taking the SAT is a confounding variable?
   \rgs
 \item
   How does figure 4.7 demonstrate Simpson's Paradox?
@@ -9356,7 +9360,7 @@ We will need to find the \(t^*\) multiplier using the function qt. For a 95\% co
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  This activity differs from activity 10 because the responses are independent not paired. This data is analyzed as a difference in means.
+  This activity differs from Activity 10 because the responses are independent not paired. These data are analyzed as a difference in means.
 \item
 \end{enumerate}
 
@@ -10243,7 +10247,7 @@ Fill in the xx's in the regression bootstrap CI function in the provided \texttt
 \item
   The p-value for a test for correlation should be approximately the same as the p-value for the test of slope. In the simulation test, we just change the statistic type from slope to correlation and use the appropriate sample statistic value.
 \item
-  To check the validity conditions for using theory-based methods we must use the diagnostic plots to check for normality of resiudals and constant variability and the scatterplot to check for linearity.
+  To check the validity conditions for using theory-based methods we must use the diagnostic plots to check for normality of residuals and constant variability and the scatterplot to check for linearity.
 \item
   To interpret a confidence interval for the slope: Think about how to interpret the sample slope and use that info in the confidence interval for slope.
 \end{enumerate}

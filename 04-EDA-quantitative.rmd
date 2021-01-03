@@ -88,7 +88,7 @@ Five number summary:
 $X^{th}$ percentile:
 \rgs
 
-	E.g. if the value 6 is 10th percentile, then 10% of the data have values 6 or below.
+E.g. if the value 6 is 10th percentile, then 10% of the data have values 6 or below.
 
 Interquartile range (IQR):
 \rgs
@@ -143,13 +143,14 @@ Statistics summarize _____________ .
 
 Parameters summarize _____________.
 
+\newpage
+
 Fill in the following table with the appropriate notation for each summary measure.
 
 \begin{center}
 \begin{tabular}{|l|p{2in}|p{2in}|}\hline
 Summary measure & Statistic & Parameter \\ \hline
 Sample size & & \\ 
-& & \\ 
 & & \\ \hline
 Proportion & & \\ 
 (used to summarize & & \\ 
@@ -189,6 +190,9 @@ Two quantitative variables  & \\
 \end{center}
 
 \rgs
+
+\newpage
+
 Decision tree for determining an appropriate plot  given a number of variables and their types from Chapter 2 review:
 
 ```{r decision-tree-plots, fig.fullwidth=TRUE}

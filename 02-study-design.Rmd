@@ -336,7 +336,7 @@ A **confounding variable** is a variable that is _both_
 
 When both these conditions are met, if we observe an association between the explanatory variable and the response variable in the data, we cannot be sure if this association is due to the explanatory variable or the confounding variable---the explanatory and confounding variables are "confounded."
 
-```{r}
+```{r, out.width="40%"}
 par_og <- par(no.readonly = TRUE) # save original par
 par(mar = rep(0, 4))
 plot(c(-0.05, 1.2),
@@ -367,6 +367,7 @@ par(par_og) # restore original par
 
 
 
+
 ### Out-of-class activity
 
 In the in-class activity we looked at sampling methods and study design.  Here are a few more questions to review that material.  
@@ -380,11 +381,11 @@ In the in-class activity we looked at sampling methods and study design.  Here a
 
 3.  What is the purpose of random selection of a sample from the population? 
 
-\vspace{1in}
+\vspace{0.8in}
 
 4.  What is the purpose of random assignment of the cases in a study to the explanatory variable groups?
 
-\vspace{1in}
+\vspace{0.8in}
 
 
 

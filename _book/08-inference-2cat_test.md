@@ -837,6 +837,7 @@ Shown in the table above, a **Type 1 Error** is rejecting the null hypothesis wh
 
 
 
+
 ### Out-of-class activity
 
 The remaining questions cover simulation methods for testing two categorical variables. Use section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.  

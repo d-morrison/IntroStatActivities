@@ -109,7 +109,7 @@ and columns correspond to __________________.
 How many types of variables are discussed?  Explain the differences between them and give an example of each.
 \rgs
 \rgs
-\newpage
+
 
 True or False: A pair of variables be both associated AND independent.  
 True or False: Given a pair of variables, will one always be the explanatory and one the response variable.  
@@ -239,7 +239,7 @@ The outcome of a categorical variable is a group or category such as eye color, 
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.6\linewidth]{images/variables} 
+{\centering \includegraphics[width=0.5\linewidth]{images/variables} 
 
 }
 
@@ -352,6 +352,7 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 
 
+
 ### Out-of-class activity
 
 Since this class is taught in a blended format, we are only in class one day per week.  During class we will complete the in-class activity from the course pack.  Outside of class, students will read from the textbook, watch course videos, and complete an out-of-class activity on the other two days of class.  To become familiar with the course outline, read through the syllabus, [https://mtstateintrostats.github.io/Syllabus/](https://mtstateintrostats.github.io/Syllabus/), your day specific cohort calendar, and watch the Stat 216 Course Tour on D2L before answering the following questions.
@@ -397,7 +398,7 @@ In the Martian Alphabet `R` script file for the `one_proportion_test` function a
 
 ### Take-home messages
 
-1.	In this course we will learn how to evaluate a claim by comparing observed results (classes’ "guesses" when asked to identify Bumba) to a distribution of many simulated results under an assumption like “blind guessing.”
+1.	In this course we will learn how to evaluate a claim by comparing observed results (classes’ "guesses" when asked to identify Bumba) to a distribution of many simulated results under an assumption like "blind guessing."
 
 2.	Blind guessing between two outcomes will be correct only about half the time. We can simulate data using a computer program to fit the assumption of blind guessing.
 

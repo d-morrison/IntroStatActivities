@@ -533,6 +533,7 @@ $$\widehat{\text{runs scored}} = b_0 + b_1*OBP + b_2*SLG$$
 
 \vspace{1in}
 
+
 ### Out-of-class activity
 
 In the out-of-class activity we will focus on using simulation based methods for inference of regression.  Use section 7.1 in the textbook and the TwoQuantSim video to complete the following questions.  
@@ -602,7 +603,7 @@ regression_bootstrap_CI(W~RD, # response ~ explanatory
 
 1.	The p-value for a test for correlation should be approximately the same as the p-value for the test of slope.  In the simulation test, we just change the statistic type from slope to correlation and use the appropriate sample statistic value.  
 
-2. To check the validity conditions for using theory-based methods we must use the diagnostic plots to check for normality of resiudals and constant variability and the scatterplot to check for linearity.  
+2. To check the validity conditions for using theory-based methods we must use the diagnostic plots to check for normality of residuals and constant variability and the scatterplot to check for linearity.  
 
 3. To interpret a confidence interval for the slope: Think about how to interpret the sample slope and use that info in the confidence interval for slope.  
 
