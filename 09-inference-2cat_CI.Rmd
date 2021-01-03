@@ -335,7 +335,7 @@ The response variable name is Outcome and the explanatory variable name is Helme
 
 \vspace{.2in}
 
-Using the `RScript` file for this activity, enter your answers for question 1 in place of the xx's in the two proportion bootstrap CI function to produce the bootstrap distribution with 1000 simulations, highlight and run lines 1 - 22.
+Using the `R` script file for this activity, enter your answers for question 1 in place of the xx's in the two proportion bootstrap CI function to produce the bootstrap distribution with 1000 simulations, highlight and run lines 1 - 22.
 
 ```{r, echo=TRUE, eval=FALSE}
 two_proportion_bootstrap_CI(formula = Outcome ~ Helmet, 
