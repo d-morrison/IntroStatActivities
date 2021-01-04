@@ -1,7 +1,4 @@
 book_filename: "IntroStatActivities"
-language:
-  ui:
-    chapter_name: "Chapter "
 delete_merged_file: true
 new_session: yes
 rmd_files: [

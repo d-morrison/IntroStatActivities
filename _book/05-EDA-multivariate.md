@@ -12,19 +12,19 @@
 
 \setstretch{1.25}
 
-### Reminders for Section 2.3
+#### Reminders from Section 2.3 {-}
 
-Scatterplot: displays two quantitative variables; one dot = two measurements (x, y) on one observational unit
+Scatterplot: displays two quantitative variables; one dot = two measurements ($x$, $y$) on one observational unit
 
 Four characteristics of a scatterplot:
+\setstretch{1}
 
-\rgi Form: pattern of the dots plotted.  Is the trend generally linear (you can fit a straight line to the data) or non-linear?
+* *Form*: pattern of the dots plotted.  Is the trend generally linear (you can fit a straight line to the data) or non-linear?  
+* *Strength*: how closely do the points follow a trend?  Very closely (strong)? No pattern (weak)?  
+* *Direction*: as the $x$ values increase, do the $y$-values tend to increase (positive) or decrease (negative)?  
+* Unusual observations or *outliers*: points that do not fit the overall pattern of the data. 
 
-\rgi Strength: how closely do the points follow a trend?  Very closely (strong)? No pattern (weak)?
-
-\rgi Direction: as the x values increase, do the y-values tend to increase (positive) or decrease (negative)?
-
-\rgi Unusual observations or outliers: points that do not fit the overall pattern of the data
+\setstretch{1.25}
 
 #### Vocabulary {-}
 
@@ -34,7 +34,7 @@ Residual:
 \rgi Formula: 
 \rgs
 
-Residual Plot: 
+Residual plot: 
 \rgs
 
 Correlation:
@@ -42,7 +42,7 @@ Correlation:
 
 #### Notes {-}
 
-General equation of a linear regression for a population: $y= \beta_0+ \beta_1 x+\epsilon$ where
+General equation of a linear regression for a *population*: $y= \beta_0+ \beta_1 x+\epsilon$, where
 	
 \rgi $x$ represents 
 \rgs
@@ -59,7 +59,7 @@ General equation of a linear regression for a population: $y= \beta_0+ \beta_1 x
 \rgi $\epsilon$ represents 
 \rgs
 
-General equation of a linear regression model from sample data:  $\hat{y}= b_0+ b_1 x$ where
+General equation of a linear regression model from *sample* data:  $\hat{y}= b_0+ b_1 x$, where
 	
 \rgi $x$ represents
 \rgs
@@ -81,7 +81,7 @@ Correlation & & \\
 & & \\ \hline
 Slope & & \\ 
 & & \\ \hline
-Y-intercept & & \\ 
+$y$-intercept & & \\ 
 & & \\ \hline
 \end{tabular}
 \end{center}
@@ -96,21 +96,25 @@ Fill in the blanks below to define some of the properties of correlation:
 
 True or false: A scatterplot that shows random scatter would be considered non-linear.
 
-True or false: To calculate a predicted y-value from a given x-value, just look at the scatterplot and estimate the y-value.
+True or false: If the correlation between two quantitative variables is equal to zero, then the two variables are not associated.
+
+True or false: To calculate a predicted $y$-value from a given $x$-value, just look at the scatterplot and estimate the $y$-value.
 
 True or false: A positive residual indicates the data point is above the regression line.
+
+\newpage 
 
 #### Example: Brushtail possums {-}
 
 1.	What are the observational units?  
 \rgs
 
-2.	Look at the scatterplot in figure 3.5.
+2.	Look at the scatterplot in Figure 3.5.
 
 \rgi a)	What is the explanatory variable?  The response variable?  What type is each?
 \rgs
 
-\rgi b)	What is the form of the scatterplot?  
+\rgi b)	What is the form of the scatterplot?
 \rgs
 
 \rgi c)	What is the direction of the scatterplot? 
@@ -119,10 +123,10 @@ True or false: A positive residual indicates the data point is above the regress
 \rgi d)	What is the strength of the scatterplot? 
 \rgs
 
-\rgi e)	Are there any outliers on the scatterplot?  
+\rgi e)	Are there any outliers on the scatterplot?
 \rgs
 
-3.	Write the equation of the regression line, in context (do not use x and y, use variable names instead).
+3.	Write the equation of the regression line, in context (do not use $x$ and $y$, use variable names instead).
 \rgs
 
 4.	Calculate the predicted head length for a possum with a 76.0 cm total length.
@@ -159,14 +163,14 @@ Least squares line:
 slope: 
 \rgs
 
-y-intercept:  
+$y$-intercept:  
 \rgs
 
 Extrapolation: 
 
 \rgi Assumes the pattern seen in the data extends beyond the data collected!
 
-Coefficient of determination 
+Coefficient of determination: 
 
 \rgi $s_y^2$ (or SST) represents 
 \rgs
@@ -201,7 +205,7 @@ True or false: The coefficient of determination is just the square of the correl
 1.	What are the observational units?  
 \rgs
 
-2.	Look at the scatterplot in figure 3.13.
+2.	Look at the scatterplot in Figure 3.13.
 
 \rgi a)	What is the explanatory variable?  The response variable?  
 \rgs
@@ -218,13 +222,15 @@ True or false: The coefficient of determination is just the square of the correl
 \rgi e)	Are there any outliers on the scatterplot?  
 \rgs
 
-3.	Write the equation of the regression line, in context (do not use x and y, use variable names instead).
+3.	Write the equation of the regression line, in context (do not use $x$ and $y$, use variable names instead).
 \rgs
 
 4.	Interpret the slope of the line, in the context of the problem.  Remember that both family income and gift aid from the university are measured in $1000s.
 \rgs
+\rgs
 
-5.	Interpret the y-intercept of the line, in the context of the problem.  Remember that both family income and gift aid from the university are measured in $1000s.
+5.	Interpret the $y$-intercept of the line, in the context of the problem.  Remember that both family income and gift aid from the university are measured in $1000s.
+\rgs
 \rgs
 
 6.	Is your interpretation in question 5 an example of extrapolation?
@@ -232,6 +238,8 @@ True or false: The coefficient of determination is just the square of the correl
 
 7.	Give and interpret, in context, the value of the coefficient of determination.
 \rgs
+\rgs
+
 
 ###  Section 3.3 (Outliers in linear regression) {-}
 
@@ -260,7 +268,7 @@ Investigate, but do not remove, outliers. Unless you find there was an actual er
 
 True or false: All high leverage outliers are influential.
 
-True or false: An outlier is considered high leverage if it is extreme in it’s x-value.
+True or false: An outlier is considered high leverage if it is extreme in its $x$-value.
 
 ### Section 3.4 (R: Correlation and regression) and Section 3.5 (Chapter 3 review) {-}
 
@@ -272,7 +280,7 @@ True or false: An outlier is considered high leverage if it is extreme in it’s
 
 \setstretch{1.25}
 
-Section 3.4 presents five tutorials on analyzing two quantitative variables in R.  We recommend you complete all five. 
+Section 3.4 presents five tutorials on analyzing two quantitative variables in `R`.  We recommend you complete all five. 
 
 #### Notes {-}
 
@@ -290,7 +298,7 @@ What is the formula for calculating a residual?
 
 Determine whether each of the following statements about the correlation coefficient are true or false:
 
-1.	Correlation coefficient must be a positive number.
+1.	The correlation coefficient must be a positive number.
 
 2.	Stronger linear relationships are indicated by correlation coefficients far from 0. 
 
@@ -302,15 +310,17 @@ Determine whether each of the following statements about the correlation coeffic
 
 Fill in the blanks to correctly interpret:
 
-*	Slope
+*	Slope:
 
-\rgi For every ____________________________, we expect _________________ to increase (if slope is _____________) or decrease (if slope is ____________) by the absolute value of the _________.
+    For every ____________________________, we expect _________________ to increase (if slope is _____________) or decrease (if slope is ____________) by the absolute value of the _________.
 
-* Y-intercept
+* $y$-intercept:
 
-\rgi If _______________, we expect the _______________________________________________
+    If _______________, we predict the __________________________ to equal __________.
 
 Look at the table of vocabulary terms.  If there are any you do not know, be sure to review the appropriate section of your text. 
+
+\newpage
 
 ### Section 4.1 (Gapminder world) {-}
 
@@ -323,25 +333,23 @@ Look at the table of vocabulary terms.  If there are any you do not know, be sur
 \setstretch{1.25}
 
 ### Reminder from Section 3.1 {-} 
-Use color and a legend to add a third variable to a scatterplot.
-
-\rgi e.g. Color the dots to represent different levels of a categorical variable or shading to represent different values of a quantitative variable
+Use color and a legend to add a third variable to a scatterplot. E.g., Color the dots to represent different levels of a categorical variable or shading to represent different values of a quantitative variable.
 
 #### Vocabulary {-} 
 
 Interaction: 
-\rgi
+\rgs
 
 Aesthetic: 
-\rgi
+\rgs
 
 #### Notes {-}
 
 If the response and one predictor are quantitative and the other predictor categorical, we fit a regression line for each level of the categorical predictor.  
 
-\rgi Parallel slopes would indicate that that the two predictors ___________________ in explaining the response.
+* Parallel slopes would indicate that that the two predictors ___________________ in explaining the response.
 
-\rgi Non-parallel slopes would indicate that the two predictors ___________________ in explaining the response.
+* Non-parallel slopes would indicate that the two predictors ___________________ in explaining the response.
 
 True or false: Scatterplots can only display two variables at a time.
 
@@ -357,20 +365,22 @@ True or false: Scatterplots can only display two variables at a time.
 
 #### Reminder from Section 2.1 {-}
 
-Simpson’s Paradox: when the relationship between the explanatory and response variable is reversed when looking at the relationship within different levels of a confounding variable
+Simpson’s Paradox: when the relationship between the explanatory and response variable is reversed when looking at the relationship within different levels of a confounding variable.
 
 #### Notes {-}
 
-True or false: Simpson’s Paradox can only occur when the explanatory, response, and confounding variable are all categorical.
+True or false: Simpson’s Paradox can only occur when the explanatory, response, and confounding variables are all categorical.
+
+\newpage
 
 #### Example: SAT scores {-}
 
 1.	What are the observational units?  
 \rgs
 
-2.	Look at the scatterplot in figure 4.5.
+2.	Look at the scatterplot in Figure 4.5.
 
-\rgi a)	What is the explanatory variable?  The response variable?  
+\rgi a)	What is the explanatory variable?  The response variable?
 \rgs
 
 \rgi b)	What is the form of the scatterplot? 
@@ -382,23 +392,23 @@ True or false: Simpson’s Paradox can only occur when the explanatory, response
 \rgi d)	What is the strength of the scatterplot? 
 \rgs
 
-\rgi e)	Are there any outliers on the scatterplot?  
+\rgi e)	Are there any outliers on the scatterplot?
 \rgs
 
-3.	What would need to be done to eliminate the confounding variable: percent of eligible students taking the SAT?
+3.	What would need to be done to the study design in order to eliminate the confounding variable: percent of eligible students taking the SAT?
 \rgs
 
-4.	What about the scatterplots in Figure 4.6 demonstrate the percent of eligible students taking the SAT is a confounding variable?
+4.	What features of the scatterplots in Figure 4.6 demonstrate that the percent of eligible students taking the SAT is a confounding variable?
 \rgs
 
-5.	How does figure 4.7 demonstrate Simpson’s Paradox?
+5.	How does Figure 4.7 demonstrate Simpson’s Paradox?
 \rgs
 
-### Section 4.4 (Chapter 4 Review) {-}
+### Section 4.4 (Chapter 4 review) {-}
 
 \setstretch{1}
 
-Section 4.3 discusses multiple regression and presents five tutorials on analyzing multiple variables in R.  This section is a special topic, meaning you are not required to read or complete these tutorials.
+Section 4.3 discusses multiple regression and presents five tutorials on analyzing multiple variables in `R`.  This section is a special topic, meaning you are not required to read or complete these tutorials.
 
 **Videos**  
 
@@ -409,7 +419,7 @@ Section 4.3 discusses multiple regression and presents five tutorials on analyzi
 #### Notes {-} 
 
 To determine if the relationship between two quantitative variables differs across levels of a categorical variable, you should compare 
-
+\rgs
 
 Simpson’s Paradox: 
 

@@ -1,0 +1,317 @@
+\contentsline {chapter}{Preface}{2}{chapter*.2}%
+\contentsline {chapter}{Spring 2021 Calendar of In-Class Activities}{3}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Basics of Data}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Reading Guide: Basics of Data}{4}{section.1.1}%
+\contentsline {subsection}{Sections 1.1 (Case study) and 1.2 (Data basics)}{4}{section.1.1}%
+\contentsline {subsubsection}{Vocabulary}{4}{section.1.1}%
+\contentsline {subsubsection}{Notes}{5}{section.1.1}%
+\contentsline {subsubsection}{Example (Section 1.1 - Case study: Using stents to prevent strokes)}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Activity: Martian Alphabet}{8}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Learning outcomes}{8}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Terminology review}{8}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Can you read ``Martian''?}{8}{subsection.1.2.3}%
+\contentsline {subsubsection}{Steps of the statistical investigation process}{8}{Item.12}%
+\contentsline {subsection}{\numberline {1.2.4}Out-of-class activity}{14}{subsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.4.1}Introduction to \texttt {R}}{14}{subsubsection.1.2.4.1}%
+\contentsline {subsection}{\numberline {1.2.5}Take-home messages}{15}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Additional notes}{15}{subsection.1.2.6}%
+\contentsline {chapter}{\numberline {2}Study Design}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Reading Guide: Sampling, Experimental Design, and Scope of Inference}{16}{section.2.1}%
+\contentsline {subsection}{Section 1.3 (Sampling principles and strategies)}{16}{section.2.1}%
+\contentsline {subsubsection}{Vocabulary}{16}{section.2.1}%
+\contentsline {subsubsection}{Notes}{17}{section.2.1}%
+\contentsline {paragraph}{Notes on types of sampling bias}{17}{section.2.1}%
+\contentsline {subsection}{Sections 1.4 (Observational studies), 1.5 (Experiments), and 1.6 (Scope of inference)}{17}{section.2.1}%
+\contentsline {subsubsection}{Reminders from Section 1.2}{17}{section.2.1}%
+\contentsline {subsubsection}{Vocabulary}{17}{section.2.1}%
+\contentsline {subsubsection}{Notes}{18}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Activity: Study Design}{20}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Learning outcomes}{20}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Terminology review}{20}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Types of sampling bias: Complete Q1 before class.}{21}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Study design}{23}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Out-of-class activity}{25}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Take-home messages}{25}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Additional notes}{26}{subsection.2.2.7}%
+\contentsline {chapter}{\numberline {3}Exploring Categorical Data}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Reading Guide: Introduction to \texttt {R}, Categorical Data, and Probability}{27}{section.3.1}%
+\contentsline {subsection}{Section 1.7 (Data in \texttt {R})}{27}{section.3.1}%
+\contentsline {subsubsection}{Notes}{27}{section.3.1}%
+\contentsline {subsubsection}{Functions}{27}{section.3.1}%
+\contentsline {subsection}{Section 2.1 (Exploring categorical data)}{28}{section.3.1}%
+\contentsline {subsubsection}{Vocabulary}{28}{section.3.1}%
+\contentsline {subsubsection}{Notes}{29}{section.3.1}%
+\contentsline {subsubsection}{Review of Simpson's Paradox:}{29}{section.3.1}%
+\contentsline {subsection}{Section 2.2 (Probability with tables)}{30}{section.3.1}%
+\contentsline {subsubsection}{Vocabulary}{30}{section.3.1}%
+\contentsline {subsubsection}{Notes}{30}{section.3.1}%
+\contentsline {subsubsection}{Example: Baby Jeff}{31}{Item.57}%
+\contentsline {section}{\numberline {3.2}Activity: What's the probability?}{33}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Learning outcomes}{33}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Terminology review}{33}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}``Current'' Population Survey: 1985}{34}{subsection.3.2.3}%
+\contentsline {subsubsection}{Vocabulary review. Complete Q1--Q3 before class.}{34}{table.3.1}%
+\contentsline {subsection}{\numberline {3.2.4}Probability}{35}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Out-of-class activity}{37}{subsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.5.1}Nightlight use and myopia}{37}{subsubsection.3.2.5.1}%
+\contentsline {subsubsection}{\texttt {R} code}{37}{Item.83}%
+\contentsline {subsubsection}{Displaying a single categorical variable}{37}{Item.83}%
+\contentsline {subsubsection}{Displaying two categorical variables}{39}{Item.86}%
+\contentsline {subsection}{\numberline {3.2.6}Take-home messages}{39}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Additional notes}{40}{subsection.3.2.7}%
+\contentsline {chapter}{\numberline {4}Exploring Quantitative Data}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Reading Guide: Quantitative Data}{41}{section.4.1}%
+\contentsline {subsection}{Section 2.3 (Exploring quantitative data)}{41}{section.4.1}%
+\contentsline {subsection}{Types of plots}{41}{section.4.1}%
+\contentsline {subsubsection}{Vocabulary}{41}{section.4.1}%
+\contentsline {subsubsection}{Notes}{42}{section.4.1}%
+\contentsline {subsection}{Section 2.4 (\texttt {R}: Exploratory data analysis) and Section 2.5 (Chapter 2 review)}{43}{section.4.1}%
+\contentsline {subsubsection}{Notes}{43}{section.4.1}%
+\contentsline {subsubsection}{Data visualization summary}{44}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Activity: IMDb Movie Reviews}{46}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Learning objectives}{46}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Terminology review}{46}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Movies released in 2016}{46}{subsection.4.2.3}%
+\contentsline {subsubsection}{Vocabulary review. Complete Q1--Q3 before class.}{46}{table.4.1}%
+\contentsline {subsubsection}{Summarizing a single quantitative variable}{47}{Item.96}%
+\contentsline {subsubsection}{Displaying a single quantitative variable}{47}{Item.99}%
+\contentsline {subsubsection}{Displaying a single categorical and single quantitative variable}{49}{Item.105}%
+\contentsline {subsection}{\numberline {4.2.4}Out-of-class activity}{50}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Take-home messages}{50}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Additional notes}{51}{subsection.4.2.6}%
+\contentsline {chapter}{\numberline {5}Exploring Multivariable Data}{52}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Reading Guide: Quantitative Data}{52}{section.5.1}%
+\contentsline {subsection}{Section 3.1 (Fitting a line, residuals, and correlation)}{52}{section.5.1}%
+\contentsline {subsubsection}{Reminders from Section 2.3}{52}{section.5.1}%
+\contentsline {subsubsection}{Vocabulary}{52}{section.5.1}%
+\contentsline {subsubsection}{Notes}{52}{section.5.1}%
+\contentsline {subsubsection}{Example: Brushtail possums}{54}{section.5.1}%
+\contentsline {subsection}{Section 3.2 (Least squares regression)}{54}{Item.124}%
+\contentsline {subsubsection}{Vocabulary}{54}{Item.124}%
+\contentsline {subsubsection}{Notes}{55}{Item.124}%
+\contentsline {subsubsection}{Example: Elmhurst College}{55}{Item.124}%
+\contentsline {subsection}{Section 3.3 (Outliers in linear regression)}{56}{Item.131}%
+\contentsline {subsubsection}{Vocabulary}{56}{Item.131}%
+\contentsline {subsubsection}{Notes}{56}{Item.131}%
+\contentsline {subsection}{Section 3.4 (R: Correlation and regression) and Section 3.5 (Chapter 3 review)}{57}{Item.131}%
+\contentsline {subsubsection}{Notes}{57}{Item.131}%
+\contentsline {subsection}{Section 4.1 (Gapminder world)}{58}{Item.136}%
+\contentsline {subsection}{Reminder from Section 3.1}{58}{Item.136}%
+\contentsline {subsubsection}{Vocabulary}{58}{Item.136}%
+\contentsline {subsubsection}{Notes}{58}{Item.136}%
+\contentsline {subsection}{Section 4.2 (Simpson's Paradox, revisited)}{58}{Item.136}%
+\contentsline {subsubsection}{Reminder from Section 2.1}{58}{Item.136}%
+\contentsline {subsubsection}{Notes}{58}{Item.136}%
+\contentsline {subsubsection}{Example: SAT scores}{59}{Item.136}%
+\contentsline {subsection}{Section 4.4 (Chapter 4 review)}{59}{Item.141}%
+\contentsline {subsubsection}{Notes}{59}{Item.141}%
+\contentsline {section}{\numberline {5.2}Activity: Movie Profits}{60}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Learning objectives}{60}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Terminology review}{60}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Movies released in 2016}{60}{subsection.5.2.3}%
+\contentsline {subsubsection}{Vocabulary review. Complete Q1--Q4 before class.}{60}{table.5.1}%
+\contentsline {subsubsection}{Correlation}{62}{Item.146}%
+\contentsline {subsubsection}{Slope}{63}{Item.151}%
+\contentsline {subsubsection}{Residuals}{64}{Item.154}%
+\contentsline {subsection}{\numberline {5.2.4}Out-of-class activity}{64}{subsection.5.2.4}%
+\contentsline {subsubsection}{Coefficient of determination (squared correlation)}{64}{subsection.5.2.4}%
+\contentsline {subsubsection}{Multivariate plots}{65}{Item.159}%
+\contentsline {subsection}{\numberline {5.2.5}Take-home messages}{66}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Additional notes}{66}{subsection.5.2.6}%
+\contentsline {chapter}{\numberline {6}Inference for a Single Categorical Variable: Hypothesis Testing}{67}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Reading Guide: Categorical Inference}{67}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Section 5.1 (Foundations of Inference)}{67}{subsection.6.1.1}%
+\contentsline {subsubsection}{Vocabulary}{67}{subsection.6.1.1}%
+\contentsline {subsubsection}{Notes}{68}{subsection.6.1.1}%
+\contentsline {subsubsection}{Formulas}{69}{subsection.6.1.1}%
+\contentsline {subsubsection}{Example: Martian alphabet}{69}{subsection.6.1.1}%
+\contentsline {subsection}{Section 5.2 (The normal distribution)}{69}{Item.173}%
+\contentsline {subsubsection}{Vocabulary}{69}{Item.173}%
+\contentsline {subsubsection}{Notes}{70}{Item.173}%
+\contentsline {subsubsection}{Formulas}{70}{Item.173}%
+\contentsline {subsubsection}{R Coding}{70}{Item.173}%
+\contentsline {subsection}{\numberline {6.1.2}Section 5.3 (Inference for one proportion)}{72}{subsection.6.1.2}%
+\contentsline {subsubsection}{Reminders from previous sections}{72}{subsection.6.1.2}%
+\contentsline {subsubsection}{General steps of a hypothesis test:}{72}{subsection.6.1.2}%
+\contentsline {subsubsection}{Vocabulary}{73}{Item.178}%
+\contentsline {subsubsection}{Notes}{73}{Item.178}%
+\contentsline {subsubsection}{Formulas}{74}{Item.178}%
+\contentsline {subsubsection}{Example: Organ donations}{74}{Item.178}%
+\contentsline {subsubsection}{Example: Payday loans}{75}{Item.190}%
+\contentsline {section}{\numberline {6.2}Activity: Handedness of Male Boxers - Testing}{76}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Learning objectives}{76}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Terminology review}{76}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Steps of the statistical investigation process}{76}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Handedness of male boxers}{77}{subsection.6.2.4}%
+\contentsline {subsubsection}{Summary statistics review: Complete Q1--Q4 before class.}{77}{subsection.6.2.4}%
+\contentsline {subsubsection}{Ask a research question}{77}{Item.206}%
+\contentsline {subsubsection}{Design a study and collect data}{77}{Item.207}%
+\contentsline {subsubsection}{Summarize and visualize the data}{77}{Item.208}%
+\contentsline {subsubsection}{Use statistical analysis methods to draw inferences from the data}{78}{Item.209}%
+\contentsline {subsubsection}{Communicate the results and answer the research question}{83}{Item.226}%
+\contentsline {subsubsection}{Revisit and look forward}{83}{Item.228}%
+\contentsline {subsection}{\numberline {6.2.5}Out-of-class activity}{84}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.6}Take-home messages}{86}{subsection.6.2.6}%
+\contentsline {subsection}{\numberline {6.2.7}Additional notes}{86}{subsection.6.2.7}%
+\contentsline {chapter}{\numberline {7}Inference for a Single Categorical Variable: Confidence Intervals}{87}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Reading Guide: Categorical Inference}{87}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Section 5.1.4 (Foundations of inference: Confidence intervals)}{87}{subsection.7.1.1}%
+\contentsline {subsubsection}{Vocabulary}{87}{subsection.7.1.1}%
+\contentsline {subsubsection}{Formulas}{87}{subsection.7.1.1}%
+\contentsline {subsubsection}{Example: Martian Alphabet}{87}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Section 5.3.2 and 5.3.3 (One Proportion: Bootstrap confidence intervals and Theory-based inferential methods)}{87}{subsection.7.1.2}%
+\contentsline {subsubsection}{Reminders from previous sections}{88}{subsection.7.1.2}%
+\contentsline {subsubsection}{Vocabulary}{88}{subsection.7.1.2}%
+\contentsline {subsubsection}{Notes}{88}{subsection.7.1.2}%
+\contentsline {subsubsection}{Formulas}{89}{subsection.7.1.2}%
+\contentsline {subsubsection}{Example: Organ Donations}{89}{subsection.7.1.2}%
+\contentsline {subsubsection}{Example: Payday Loans}{90}{Item.249}%
+\contentsline {section}{\numberline {7.2}Activity: Handedness of Male Boxers - Estimation}{91}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Learning objectives}{91}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Terminology review}{91}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Handedness of male boxers}{91}{subsection.7.2.3}%
+\contentsline {subsubsection}{Activity Intro. Complete Q1--Q4 before class.}{91}{subsection.7.2.3}%
+\contentsline {subsubsection}{Use statistical analysis methods to draw inferences from the data}{92}{Item.261}%
+\contentsline {subsubsection}{Communicate the results and answer the research question}{93}{Item.268}%
+\contentsline {subsubsection}{\numberline {7.2.3.1}Effect of confidence level}{94}{subsubsection.7.2.3.1}%
+\contentsline {subsubsection}{\numberline {7.2.3.2}What does \emph {confidence} mean?}{95}{subsubsection.7.2.3.2}%
+\contentsline {subsubsection}{Revisit and look forward}{95}{Item.275}%
+\contentsline {subsection}{\numberline {7.2.4}Out-of-class activity}{95}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}Take-home messages}{97}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}Additional notes}{97}{subsection.7.2.6}%
+\contentsline {chapter}{\numberline {8}Inference for Two Categorical Variables: Hypothesis Testing}{98}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Reading Guide: Hypothesis Testing for a Difference in Proportions}{98}{section.8.1}%
+\contentsline {subsection}{Section 5.4.1 to 5.4.2 (Simulation Tests for a difference in proportions; Two-sided hypotheses)}{98}{section.8.1}%
+\contentsline {subsubsection}{Reminders from previous sections}{98}{section.8.1}%
+\contentsline {subsubsection}{General steps of a hypothesis test:}{98}{section.8.1}%
+\contentsline {subsubsection}{Vocabulary}{99}{Item.290}%
+\contentsline {subsubsection}{Notes}{99}{Item.290}%
+\contentsline {subsubsection}{Formulas}{100}{Item.290}%
+\contentsline {subsubsection}{\numberline {8.1.0.1}Notation \{-1\}}{100}{subsubsection.8.1.0.1}%
+\contentsline {subsubsection}{Example: Gender Discrimination}{100}{subsubsection.8.1.0.1}%
+\contentsline {subsubsection}{Example: Opportunity Cost}{101}{Item.304}%
+\contentsline {subsubsection}{Example: CPR and blood thinner}{102}{Item.319}%
+\contentsline {subsection}{Section 5.4.4 (Theory-based methods for a difference in proportions)}{103}{Item.335}%
+\contentsline {subsubsection}{Reminders from previous sections}{104}{Item.335}%
+\contentsline {subsubsection}{Notes}{104}{Item.335}%
+\contentsline {subsubsection}{Formulas}{104}{Item.336}%
+\contentsline {subsubsection}{Notation}{104}{Item.336}%
+\contentsline {subsubsection}{Example: CPR and blood thinner}{104}{Item.336}%
+\contentsline {subsection}{Section 5.5 (Errors, power, and practical importance)}{105}{Item.348}%
+\contentsline {subsubsection}{Reminders from previous sections}{105}{Item.348}%
+\contentsline {subsubsection}{Vocabulary}{106}{Item.348}%
+\contentsline {subsubsection}{Notes}{106}{Item.348}%
+\contentsline {subsubsection}{Examples:}{107}{Item.355}%
+\contentsline {section}{\numberline {8.2}Activity: Winter Sports Helmet Use and Head Injuries - Testing}{109}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Learning objectives}{109}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Terminology review}{109}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Helmet use and head injuries}{109}{subsection.8.2.3}%
+\contentsline {subsubsection}{Vocabulary review. Complete Q1--Q4 before class.}{110}{table.8.1}%
+\contentsline {subsubsection}{Ask a research question}{111}{table.8.2}%
+\contentsline {subsubsection}{Summarize and visualize the data}{112}{Item.366}%
+\contentsline {subsubsection}{Use statistical analysis methods to draw inferences from the data}{113}{Item.372}%
+\contentsline {subsubsection}{Types of errors}{114}{Item.380}%
+\contentsline {subsection}{\numberline {8.2.4}Out-of-class activity}{115}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Take-home messages}{118}{subsection.8.2.5}%
+\contentsline {subsection}{\numberline {8.2.6}Additional notes}{118}{subsection.8.2.6}%
+\contentsline {chapter}{\numberline {9}Inference for Two Categorical Variables: Confidence Intervals}{119}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Reading Guide: Confidence Intervals for a Difference in Proportions}{119}{section.9.1}%
+\contentsline {subsection}{Section 5.4.3 (Bootstrap confidence interval for a difference in proportions)}{119}{section.9.1}%
+\contentsline {subsubsection}{Reminders from previous sections}{119}{section.9.1}%
+\contentsline {subsubsection}{Notes}{120}{section.9.1}%
+\contentsline {subsubsection}{Example: CPR and blood thinner}{120}{section.9.1}%
+\contentsline {subsection}{Section 5.4.4 (Theory-based Methods for a Difference in Proportions)}{121}{Item.406}%
+\contentsline {subsubsection}{Reminders from previous sections}{121}{Item.406}%
+\contentsline {subsubsection}{Notes}{121}{Item.406}%
+\contentsline {subsubsection}{Formulas}{121}{Item.407}%
+\contentsline {subsubsection}{Example: CPR and blood thinner}{121}{Item.407}%
+\contentsline {section}{\numberline {9.2}Activity: Winter Sports Helmet Use and Head Injuries - Estimation}{123}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Learning objectives}{123}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Terminology review}{123}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Helmet use and head injuries}{123}{subsection.9.2.3}%
+\contentsline {subsubsection}{Vocabulary review. Complete Q1--Q3 before class.}{123}{table.9.1}%
+\contentsline {subsubsection}{Use statistical analysis methods to draw inferences from the data}{124}{Item.414}%
+\contentsline {subsection}{\numberline {9.2.4}Effect of sample size}{125}{subsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.2.5}Relative risk}{127}{subsection.9.2.5}%
+\contentsline {subsection}{\numberline {9.2.6}Out-of-class activity}{127}{subsection.9.2.6}%
+\contentsline {subsection}{\numberline {9.2.7}Take-home messages}{128}{subsection.9.2.7}%
+\contentsline {subsection}{\numberline {9.2.8}Additional notes}{129}{subsection.9.2.8}%
+\contentsline {chapter}{\numberline {10}Inference for a Quantitative Response with Paired Samples}{130}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Reading Guide: Inference for a Single Mean or Paired Mean Difference}{130}{section.10.1}%
+\contentsline {subsection}{Section 6.1 (Inference for one mean)}{130}{section.10.1}%
+\contentsline {subsubsection}{Reminders from previous sections}{130}{section.10.1}%
+\contentsline {subsubsection}{General steps of a hypothesis test:}{130}{section.10.1}%
+\contentsline {subsubsection}{Vocabulary}{132}{Item.438}%
+\contentsline {subsubsection}{Notes}{132}{Item.438}%
+\contentsline {subsubsection}{Formulas}{132}{Item.440}%
+\contentsline {subsubsection}{Notation}{133}{Item.440}%
+\contentsline {subsubsection}{Example: Edinburgh rentals}{133}{Item.440}%
+\contentsline {subsubsection}{Example: Mercury content of dolphin muscle}{133}{Item.448}%
+\contentsline {subsubsection}{Example: Cherry Blossom Race}{134}{Item.458}%
+\contentsline {subsection}{Section 6.2 (Inference for paired mean difference)}{135}{Item.474}%
+\contentsline {subsubsection}{Vocabulary}{135}{Item.474}%
+\contentsline {subsubsection}{Notes}{135}{Item.474}%
+\contentsline {subsubsection}{Formulas}{136}{Item.479}%
+\contentsline {subsubsection}{Notation}{136}{Item.479}%
+\contentsline {subsubsection}{Example: Tires}{137}{Item.479}%
+\contentsline {subsubsection}{Example: College textbook prices}{137}{Item.488}%
+\contentsline {section}{\numberline {10.2}Activity: COVID-19 and Air Pollution}{139}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Learning outcomes}{139}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Terminology review}{139}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}COVID-19 and air pollution}{139}{subsection.10.2.3}%
+\contentsline {subsubsection}{Vocabulary review. Complete Q1--Q5 before class.}{141}{table.10.1}%
+\contentsline {subsubsection}{Ask a research question}{141}{Item.513}%
+\contentsline {subsubsection}{Summarize and visualize the data}{142}{Item.517}%
+\contentsline {subsubsection}{Use statistical inferential methods to draw inferences from the data}{142}{Item.519}%
+\contentsline {subsubsection}{Communicate the results and answer the research question.}{143}{Item.528}%
+\contentsline {subsubsection}{Revisit and look forward}{144}{Item.531}%
+\contentsline {subsection}{\numberline {10.2.4}Out-of-class activity}{144}{subsection.10.2.4}%
+\contentsline {subsection}{\numberline {10.2.5}Take-home messages}{145}{subsection.10.2.5}%
+\contentsline {subsection}{\numberline {10.2.6}Additional notes}{145}{subsection.10.2.6}%
+\contentsline {chapter}{\numberline {11}Inference for a Quantitative Response with Independent Samples}{146}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Reading Guide: Inference for a difference in two means}{146}{section.11.1}%
+\contentsline {subsection}{Section 6.3 (Inference for a difference in two means)}{146}{section.11.1}%
+\contentsline {subsubsection}{Reminders from previous sections}{146}{section.11.1}%
+\contentsline {subsubsection}{General steps of a hypothesis test:}{146}{section.11.1}%
+\contentsline {subsubsection}{Notes}{148}{Item.546}%
+\contentsline {subsubsection}{Formulas}{148}{Item.553}%
+\contentsline {subsubsection}{Notation}{149}{Item.553}%
+\contentsline {subsubsection}{Example: Test scores}{149}{Item.553}%
+\contentsline {subsubsection}{Example: ESC and heart attacks}{150}{Item.564}%
+\contentsline {subsubsection}{Example: NC births}{151}{Item.572}%
+\contentsline {section}{\numberline {11.2}Activity: Weather Patterns and Record Snowfall}{152}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Learning objectives}{152}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Terminology review}{152}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}Weather patterns and record snowfall}{152}{subsection.11.2.3}%
+\contentsline {subsubsection}{Quantitative variables review. Complete Q1--Q5 before class.}{153}{subsection.11.2.3}%
+\contentsline {subsubsection}{Ask a research question}{154}{Item.593}%
+\contentsline {subsubsection}{Summarize and visualize the data}{154}{Item.596}%
+\contentsline {subsubsection}{Use statistical inferential methods to draw inferences from the data}{155}{Item.597}%
+\contentsline {subsubsection}{Communicate the results and answer the research question}{156}{Item.607}%
+\contentsline {subsubsection}{Revisit and look forward}{157}{Item.608}%
+\contentsline {subsection}{\numberline {11.2.4}Out-of-class activity}{157}{subsection.11.2.4}%
+\contentsline {subsection}{\numberline {11.2.5}Take-home messages}{159}{subsection.11.2.5}%
+\contentsline {subsection}{\numberline {11.2.6}Additional notes}{159}{subsection.11.2.6}%
+\contentsline {chapter}{\numberline {12}Inference for Two Quantitative Variables}{160}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Reading Guide: Inference for Slope and Correlation}{160}{section.12.1}%
+\contentsline {subsection}{Section 7.1 and 7.2 (Inference for regression and model conditions)}{160}{section.12.1}%
+\contentsline {subsubsection}{Reminders from previous sections}{160}{section.12.1}%
+\contentsline {subsubsection}{General steps of a hypothesis test:}{160}{section.12.1}%
+\contentsline {subsubsection}{Notes}{162}{Item.624}%
+\contentsline {subsubsection}{Formulas}{163}{Item.633}%
+\contentsline {subsubsection}{Example: Crop yields}{163}{Item.633}%
+\contentsline {subsubsection}{Example: Midterm elections and Unemployment}{164}{Item.646}%
+\contentsline {section}{\numberline {12.2}Activity: Moneyball}{166}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Learning outcomes}{166}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}Terminology review}{166}{subsection.12.2.2}%
+\contentsline {subsection}{\numberline {12.2.3}Moneyball}{166}{subsection.12.2.3}%
+\contentsline {subsubsection}{Vocabulary review. Complete Q1--Q4 before class.}{167}{table.12.1}%
+\contentsline {subsubsection}{Conditions for the least squares line}{168}{Item.666}%
+\contentsline {subsubsection}{Ask a research question}{169}{Item.667}%
+\contentsline {subsubsection}{Summarize and visualize the data}{169}{Item.669}%
+\contentsline {subsubsection}{Use statistical inferential methods to draw inferences from the data}{170}{Item.673}%
+\contentsline {subsubsection}{Communicate the results and answer the research question}{171}{Item.679}%
+\contentsline {subsubsection}{Revisit and look forward}{173}{Item.682}%
+\contentsline {subsection}{\numberline {12.2.4}Out-of-class activity}{173}{subsection.12.2.4}%
+\contentsline {subsection}{\numberline {12.2.5}Take-home messages}{175}{subsection.12.2.5}%
+\contentsline {subsection}{\numberline {12.2.6}Additional notes}{175}{subsection.12.2.6}%
