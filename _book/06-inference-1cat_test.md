@@ -171,7 +171,7 @@ Normal distribution:
 
 \newpage
 
-Standard Normal distribution: 
+Standard normal distribution: 
 \rgs
 
 \rgi Notation:
@@ -193,7 +193,7 @@ Interpretation of a Z-score:
 
 True or False: The more unusual observation will be the observation with the largest Z-score.
 	
-Approximately what percent of a Normal distribution is in the interval
+Approximately what percent of a normal distribution is in the interval
 
 \rgi (mean – standard deviation, mean + standard deviation):
 \rgs
@@ -349,7 +349,7 @@ Significance level ($\alpha$): a threshold used to determine if a p-value provid
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric).
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately normal (bell-shaped and symmetric).
 
 #### Vocabulary {-}
 
@@ -379,7 +379,7 @@ Conditions for the Central Limit Theorem to apply (for the sampling distribution
 \rgi \rgi Checked by: 
 \rgs
 
-\rgi Success/Failure condition: 
+\rgi Success-failure condition: 
 \rgs
 
 \rgi \rgi Checked by: 
@@ -466,7 +466,7 @@ $Z$ =
 7. Calculate the standardized sample proportion.
 \rgs
 
-8. How can we calculate a p-value from the Normal distribution for this example?
+8. How can we calculate a p-value from the normal distribution for this example?
 \rgs
 
 9. What was the p-value of the test? 
@@ -540,7 +540,7 @@ We will work through a six-step process to complete a hypothesis test for a sing
 Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers, we want to see if there is an over-prevalence of left-handed fighters.
 
 
-#### Summary statistics review: Complete Q1--Q4 before class. {-}
+#### Summary statistics review. Complete Q1--Q4 before class. {-}
 
 1.  What are the observational units?
 
@@ -773,9 +773,9 @@ The sampling distribution of a single proportion --- how that proportion varies 
 
 Conditions for the sampling distribution of $\hat{p}$ to follow an approximate normal distribution:
 
-* Independence: The sample’s observations are independent, e.g., are from a simple random sample.
+* **Independence**: The sample’s observations are independent, e.g., are from a simple random sample.
 
-* Success-Failure Condition: We *expect* to see at least 10 successes and 10 failures in the sample, $n\pi≥10$  and $n(1-\pi)≥10$.
+* **Success-failure condition**: We *expect* to see at least 10 successes and 10 failures in the sample, $n\pi≥10$  and $n(1-\pi)≥10$.
 
 1.  We already verified that the independence condition is satisfied in question 6, since the independence condition is required for both simulation-based and theory-based methods. Is the success-failure condition met to model the data with the normal distribution?  Show your work to support your answer. Hint: We don't know the true value of the parameter, $\pi$, so we use the null value, $\pi_0$, to check the success-failure condition.
 
