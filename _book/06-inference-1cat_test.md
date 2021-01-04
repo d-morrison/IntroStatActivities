@@ -2,7 +2,7 @@
 
 ## Reading Guide: Categorical Inference
 
-### Section 5.1 (Foundations of inference) {-}
+### Section 5.1 (Foundations of inference: Hypothesis tests) {-}
 
 You may skip Section 5.1.4. This section will be covered next week.
 
@@ -371,7 +371,7 @@ Standardized statistic:
 		
 #### Notes {-}
 
-Conditions for the Central Limit Theorem to apply (for the sampling distribution of $\hat{p}$ to be Normal)
+Conditions for the Central Limit Theorem to apply (for the sampling distribution of $\hat{p}$ to be approximately normal)
 
 \rgi Independence: 
 \rgs
@@ -814,10 +814,10 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 
 }
 
-\caption{A normal curve.}(\#fig:simpleNormal)
+\caption{A standard normal curve.}(\#fig:simpleNormal)
 \end{figure}
 
-4.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the $x$-axis of the standard normal distribution displayed above, and mark on the value of the standardized statistic calculated in question 3.
+4.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the $x$-axis of the standard normal distribution displayed in Figure \@ref(fig:simpleNormal), and mark on the value of the standardized statistic calculated in question 3.
 
 \vspace{0.2in}
 

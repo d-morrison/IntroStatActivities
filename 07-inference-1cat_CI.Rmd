@@ -36,11 +36,13 @@ Margin of error:
 3. The formula for the interval is 34/38±(2×0.08)=0.89±0.16.  Calculating that, you should get (0.73, 1.05).  Why was the interval shown in the textbook (0.73, 1) instead of (0.73, 1.05)?
 \rgs
 
-### Section 5.3.2 and 5.3.3 (One Proportion: Bootstrap confidence intervals and Theory-based inferential methods) {-}
+### Sections 5.3.2 and 5.3.3 (One proportion: Bootstrap confidence intervals and Theory-based inferential methods) {-}
 
 \setstretch{1}
 
-In section 5.3.3, read only the sub-section on "Confidence interval for $\pi$". The other sections were covered last week.
+In Section 5.3.3, read only the sub-section on "Confidence interval for $\pi$". The other sections were covered last week.
+
+\newpage
 
 **Videos**  
 
@@ -57,27 +59,29 @@ $\hat{p}$ = sample proportion
 
 $\pi$ = population proportion
 
-Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter
-		Also called ‘estimation’
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter; also called 'estimation'.
 
-\rgi Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval
+Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval.
 
-Parameter: a value summarizing a variable(s) for a population
+Parameter: a value summarizing a variable(s) for a population.
 
-Statistic: a value summarizing a variable(s) for a sample
+Statistic: a value summarizing a variable(s) for a sample.
 
 Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
 
-Standard deviation of a statistic: the variability of statistics from 1000s of samples.  How far, on average, each statistic is from the true value of the parameter.
+Standard deviation of a statistic: the variability of statistics from 1000s of samples; how far, on average, each statistic is from the true value of the parameter.
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
-Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric).
 
 
 #### Vocabulary {-}
 
-Test statistic/Point estimate: 
+Point estimate: 
+\rgs
+
+Test statistic:
 \rgs
 
 Bootstrapping: 
@@ -103,24 +107,24 @@ How is bootstrapping used?
 If we want to find a 90% confidence interval, what percentiles of the bootstrap distribution would we need?  
 \rgs
 
-Conditions for the Central Limit Theorem to apply (for the sampling distribution of $\hat{p}$ to be Normal)
+Conditions for the Central Limit Theorem to apply (for the sampling distribution of $\hat{p}$ to be approximately normal)
 
 \rgi Independence: 
 \rgs
 
-\rgi Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
 \rgi Success/Failure condition: 
 \rgs
 
-\rgi Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
-How can we determine the value of z^⋆ to use as the multiplier in a confidence interval?
+How can we determine the value of $z^⋆$ to use as the multiplier in a confidence interval?
 \rgs
 
-\rgi In 'R', use qnorm(mean = __, sd = __, p = __)
+\rgi In `R`, use `qnorm(mean = __, sd = __, p = __)`.
 
 Select one answer in each set of parentheses: The higher the confidence level, the (larger/smaller) the multiplier, meaning the confidence interval will be (wider/narrower).
 
@@ -129,7 +133,8 @@ Select one answer in each set of parentheses: The higher the confidence level, t
 $SD(\hat{p})$ =
 \rgs
 
-Standard error of the sample proportion when we do not assume the null hypothesis is true.
+Standard error of the sample proportion when we do not assume the null hypothesis is true:
+
 $SE(\hat{p})$ = 
 \rgs
 	
@@ -139,7 +144,7 @@ Theory-based confidence interval for a sample proportion:
 Margin of error of a confidence interval for a sample proportion: 
 \rgs
 
-#### Example: Organ Donations {-}
+#### Example: Organ donations {-}
 
 1. What is the sample statistic presented in this example?  What notation would be used to represent this value?
 \rgs
@@ -147,7 +152,7 @@ Margin of error of a confidence interval for a sample proportion:
 2. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
 
-3. How could we use cards to simulate **1** bootstrapped resample?  How many blue cards – to represent what?  How many red cards – to represent what?  How many times would we draw a card and replace it back in the deck?  What would you record once you completed the draw-with-replacement process?
+3. How could we use cards to simulate **1** bootstrapped resample?  How many blue cards --- to represent what?  How many red cards --- to represent what?  How many times would we draw a card and replace it back in the deck?  What would you record once you completed the draw-with-replacement process?
 \rgs
 \rgs
 
@@ -160,7 +165,7 @@ Margin of error of a confidence interval for a sample proportion:
 6.	Are the conditions met to use theoretical methods to analyze these data?
 \rgs
 
-#### Example: Payday Loans {-}
+#### Example: Payday loans {-}
 
 1. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
@@ -174,10 +179,10 @@ Margin of error of a confidence interval for a sample proportion:
 4. Calculate the standard error of the sample proportion when we do not assume the null hypothesis is true.
 \rgs
 
-5. Calculate the margin of error for a 95% confidence interval for π using 1.96 as the multiplier.
+5. Calculate the margin of error for a 95% confidence interval for $\pi$ using 1.96 as the multiplier.
 \rgs
 
-6. Calculate a 95% confidence interval for π using your margin of error calculated above.
+6. Calculate a 95% confidence interval for $\pi$ using your margin of error calculated above.
 \rgs
 
 7. Interpret the 95% confidence interval provided in the textbook.
@@ -200,7 +205,7 @@ Margin of error of a confidence interval for a sample proportion:
 
 ### Terminology review
 
-In this week's in-class activity, we will introduce simulation confidence intervals for a single categorical variable. Some terms covered in this activity are:
+In this week's in-class activity, we will introduce simulation-based confidence intervals for a single proportion. Some terms covered in this activity are:
 
 * Parameter of interest
 

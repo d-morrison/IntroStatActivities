@@ -2,7 +2,7 @@
 
 ## Reading Guide: Hypothesis Testing for a Difference in Proportions
 
-### Section 5.4.1 to 5.4.2 (Simulation tests for a difference in proportions; Two-sided hypotheses)  {-}
+### Sections 5.4.1 and 5.4.2 (Simulation tests for a difference in proportions; Two-sided hypotheses)  {-}
 
 **Videos**  
 
