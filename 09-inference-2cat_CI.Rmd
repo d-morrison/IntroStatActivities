@@ -166,15 +166,15 @@ Margin of error of a confidence interval for a difference in sample proportions:
 
 \newpage
 
-## Activity:  Winter Sports Helmet Use and Head Injuries - Estimation
+## Activity:  Winter Sports Helmet Use and Head Injuries --- Estimation
 
 \setstretch{1}
 
 ### Learning objectives
 
-* Assess the conditions to use the standard normal distribution for a difference in proportions.
+* Assess the conditions to use the normal distribution model for a difference in proportions.
 
-* Create and interpret a confidence interval for the difference in proportions.
+* Create and interpret a theory-based confidence interval for a difference in proportions.
 
 ### Terminology review
 In this week's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:

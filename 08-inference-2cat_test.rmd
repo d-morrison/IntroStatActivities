@@ -549,19 +549,20 @@ Results are unlikely to be statistically significant (but may be practically imp
 
 \newpage
 
-## Activity:  Winter Sports Helmet Use and Head Injuries - Testing
+## Activity:  Winter Sports Helmet Use and Head Injuries --- Testing
 
 \setstretch{1}
 
 ### Learning objectives
 
-* Write out the null and alternative hypotheses for two categorical variables.
+* Given a research question involving two categorical variables, construct the null and alternative hypotheses
+  in words and using appropriate statistical symbols.
+  
+* Assess the conditions to use the normal distribution model for a difference in proportions.
 
-* Assess the conditions to use the standard normal distribution for a difference in proportions.
+* Calculate the Z test statistic for a difference in proportions.
 
-* Calculate the Z test statistic for the difference in proportions.
-
-* Find the p-value and assess the strength of evidence.
+* Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a difference in proportions.
 
 ### Terminology review
 In this week's in-class activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:

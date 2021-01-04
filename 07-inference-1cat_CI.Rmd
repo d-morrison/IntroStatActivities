@@ -188,7 +188,7 @@ Margin of error of a confidence interval for a sample proportion:
 
 \newpage
 
-## Activity:  Handedness of Male Boxers - Estimation
+## Activity:  Handedness of Male Boxers --- Estimation
 
 \setstretch{1}
 

@@ -316,13 +316,14 @@ The proportion of simulated null samples at ____ or ___________.
 
 ### Learning objectives
 
-* Write out the null and alternative hypothesis for one categorical and one quantitative variable.
+* Given a research question involving one categorical explanatory variable and one quantitative response variable, construct the null and alternative hypotheses
+  in words and using appropriate statistical symbols.
 
-* Calculate and carry-out simulation-based hypothesis test for a difference in means.
+* Describe and perform a simulation-based hypothesis test for a difference in means.
 
-* Interpret and evaluate a p-value.
+* Interpret and evaluate a p-value for a simulation-based hypothesis test for a difference in means.
 
-* Find a bootstrap confidence interval for a difference in means.
+* Use bootstrapping to find a confidence interval for a difference in means.
 
 * Interpret a confidence interval for a difference in means.
 
@@ -495,7 +496,7 @@ two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  # Variables and dat
 
 #### Communicate the results and answer the research question {-}
 
-20.  Write a paragraph summarizing the results of the study.  Be sure to describe:
+20.  Write a paragraph summarizing the results of the study as if you are reporting the results to your supervisor.  Be sure to describe:
 
 * Summary statistic
 

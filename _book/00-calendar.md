@@ -24,19 +24,19 @@ This calendar only lists the in-class activities and exams each week. For requir
 5& 4& M& 2/8& Movie Profits \\*
 5& 5& W& 2/10& Movie Profits \\*	
 5& 5& F& 2/12& Movie Profits \\ \hline
-6& 6& M& 2/15& Handedness of Male Boxers - Testing (\textit{No class})\\*
-6& 6& W& 2/17& Handedness of Male Boxers - Testing \\*	
-6& 6& F& 2/19& Handedness of Male Boxers - Testing \\ \hline
+6& 6& M& 2/15& Handedness of Male Boxers --- Testing (\textit{No class})\\*
+6& 6& W& 2/17& Handedness of Male Boxers --- Testing \\*	
+6& 6& F& 2/19& Handedness of Male Boxers --- Testing \\ \hline
 7& ---& M--F& 2/22--2/26& \textbf{Exam 1} \\ \hline
-8& 7& M& 3/1& Handedness of Male Boxers - Estimation \\*
-8& 7& W& 3/3& Handedness of Male Boxers - Estimation \\*	
-8& 7& F& 3/5& Handedness of Male Boxers - Estimation \\ \hline
-9& 8& M& 3/8& Winter Sports Helmet Use and Head Injuries - Testing \\*
-9& 8& W& 3/10& Winter Sports Helmet Use and Head Injuries - Testing \\*	
-9& 8& F& 3/12& Winter Sports Helmet Use and Head Injuries - Testing \\ \hline
-10& 9& M& 3/15& Winter Sports Helmet Use and Head Injuries - Estimation \\*
-10& 9& W& 3/17& Winter Sports Helmet Use and Head Injuries - Estimation \\*
-10& 9& F& 3/19& Winter Sports Helmet Use and Head Injuries - Estimation \\ \hline
+8& 7& M& 3/1& Handedness of Male Boxers --- Estimation \\*
+8& 7& W& 3/3& Handedness of Male Boxers --- Estimation \\*	
+8& 7& F& 3/5& Handedness of Male Boxers --- Estimation \\ \hline
+9& 8& M& 3/8& Winter Sports Helmet Use and Head Injuries --- Testing \\*
+9& 8& W& 3/10& Winter Sports Helmet Use and Head Injuries --- Testing \\*	
+9& 8& F& 3/12& Winter Sports Helmet Use and Head Injuries --- Testing \\ \hline
+10& 9& M& 3/15& Winter Sports Helmet Use and Head Injuries --- Estimation \\*
+10& 9& W& 3/17& Winter Sports Helmet Use and Head Injuries --- Estimation \\*
+10& 9& F& 3/19& Winter Sports Helmet Use and Head Injuries --- Estimation \\ \hline
 11& 10& M& 3/22& COVID-19 and Air Pollution \\*
 11& 10& W& 3/24& COVID-19 and Air Pollution \\*	
 11& 10& F& 3/26& COVID-19 and Air Pollution \\ \hline

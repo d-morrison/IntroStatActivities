@@ -294,14 +294,17 @@ The proportion of simulated null samples at ____ or ____.
 \setstretch{1}
 
 ### Learning outcomes
-* Given a research question, construct the null and alternative hypotheses for two quantitative variables
-  in words and using appropriate statistical symbols
+
+* Given a research question involving two quantitative variables, construct the null and alternative hypotheses
+  in words and using appropriate statistical symbols.
   
-* Describe and perform theory-based hypothesis tests for the slope or correlation coefficient.
+* Assess the conditions to use the normal distribution model for a slope or correlation.
 
-* Interpret and evaluate a p-value.
+* Find the T test statistic for a slope or correlation based off of `lm()` output in `R`.
 
-* Construct and interpret a theory-based confidence interval for the slope or correlation coefficient.
+* Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a slope or correlation.
+
+* Create and interpret a theory-based confidence interval for a slope or correlation.
 
 * Use a confidence interval to determine the conclusion of a hypothesis test.
 
@@ -496,7 +499,7 @@ qt(0.95+0.025, 900) # 95% t* multiplier
 
 \vspace{1in}
 
-20.  Summarize the results of the study in a written paragraph.  Be sure to describe:
+20.  Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper.  Be sure to describe:
 
 * Summary statistic
 

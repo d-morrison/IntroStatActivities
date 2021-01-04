@@ -475,16 +475,16 @@ $s_d=$
 
 ### Learning outcomes
 
-* Given a research question, construct the null and alternative hypotheses for a paired mean difference
+* Given a research question involving paired differences, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols.
   
-* Describe and perform a simulation-based hypothesis test for paired quantitative data.
+* Describe and perform a simulation-based hypothesis test for a paired mean difference.
 
-* Interpret and evaluate a p-value.
+* Interpret and evaluate a p-value for a simulation-based hypothesis test for a paired mean difference.
 
-* Find a confidence interval for the mean difference using bootstrapping.
+* Use bootstrapping to find a confidence interval for a paired mean difference.
 
-* Interpret a confidence interval for the mean difference.
+* Interpret a confidence interval for a paired mean difference.
 
 * Use a confidence interval to determine the conclusion of a hypothesis test.
 
@@ -661,7 +661,7 @@ paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
 \vspace{.7in}
 
 
-23.  Write a paragraph summarizes the results of this study.  Be sure to describe:
+23.  Write a paragraph summarizes the results of this study as if you were describing the results to your roommate.  Be sure to describe:
 
 * Summary statistic
 

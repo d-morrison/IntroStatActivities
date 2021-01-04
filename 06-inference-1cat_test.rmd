@@ -167,7 +167,9 @@ Normal distribution:
 \rgi Notation:
 \rgs
 
-\rgi \rgi Also known as: normal curve, normal model
+\rgi \rgi Also known as: normal curve, normal model, Gaussian distribution
+
+\newpage
 
 Standard Normal distribution: 
 \rgs
@@ -471,7 +473,7 @@ $Z$ =
 
 \newpage
 
-## Activity:  Handedness of Male Boxers - Testing
+## Activity:  Handedness of Male Boxers --- Testing
 
 \setstretch{1}
 
@@ -479,16 +481,16 @@ $Z$ =
 
 * Identify the two possible explanations (one assuming the null hypothesis, and one assuming the alternative hypothesis) for a relationship seen in sample data.
 
-* Given a research question, construct the null and alternative hypotheses
+* Given a research question involving a single categorical variable, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols.
   
-* Describe and perform simulation-based hypothesis tests for a single proportion.
+* Describe and perform a simulation-based hypothesis test for a single proportion.
 
-* Interpret and evaluate a p-value.
+* Interpret and evaluate a p-value for a simulation-based hypothesis test for a single proportion.
 
 ### Terminology review
 
-In this week's in-class activity, we will introduce simulation hypothesis testing for a single categorical variable. Some terms covered in this activity are:
+In this week's in-class activity, we will introduce simulation-based hypothesis testing for a single categorical variable. Some terms covered in this activity are:
 
 * Parameter of interest
 
@@ -506,7 +508,7 @@ To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5
 
 ### Steps of the statistical investigation process
 
-We will work through a six-step process to complete a hypothesis test for a single proportion.
+We will work through a six-step process to complete a hypothesis test for a single proportion, first introduced in the Martian Alphabet Activity in week 1.
 
 * **Ask a research question** that can be addressed by collecting data. What are the researchers trying to show?
 
@@ -514,18 +516,18 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 * **Summarize and visualize the data**. Calculate summary statistics and create graphical plots that best represent the research question.
 
-* **Use statistical analysis methods to draw inferences from the data**. Choose an analysis technique appropriate for the data and identify the p-value. In this study, we will focus on using randomization.
+* **Use statistical analysis methods to draw inferences from the data**. Choose an statistical inference method appropriate for the data and identify the p-value and/or confidence interval after checking assumptions. In this study, we will focus on using randomization to generate a simulated p-value.
 
-* **Communicate the results and answer the research question**. Using the p-value and confidence interval from the analysis, determine whether the data provide statistical evidence against the null hypothesis. 
+* **Communicate the results and answer the research question**. Using the p-value and confidence interval from the analysis, determine whether the data provide statistical evidence against the null hypothesis. Write a conclusion that addresses the research question.
 
-* **Revisit and look forward** to point out limitations of the study and suggest new studies that could be performed to build on the findings of the study 
+* **Revisit and look forward** to point out limitations of the study and suggest new studies that could be performed to build on the findings of the study.
 
 
 \newpage
 
 ### Handedness of male boxers
 
-Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers we want to see if there is an over-prevalence of left-handed fighters.
+Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers, we want to see if there is an over-prevalence of left-handed fighters.
 
 
 #### Summary statistics review: Complete Q1--Q4 before class. {-}
@@ -534,15 +536,15 @@ Left-handedness is a trait that is found in about 10% of the population. Past st
 
 \vspace{0.5in}
 
-2.  What variable are we testing?  Is it categorical or quantitative?
+2.  What variable are we measuring on each observational unit?  Is it categorical or quantitative?
 
 \vspace{0.5in}
 
-3. What type of plot would be appropriate to visually display the data?
+3. What type of plot would be appropriate to visually display these data?
 
 \vspace{0.5in}
 
-4. Write out in context the statistic we will calculate to summarize the data.  
+4. Write out in context the statistic we will calculate to summarize the data.
 
 \vspace{0.5in}
 
@@ -554,11 +556,13 @@ Left-handedness is a trait that is found in about 10% of the population. Past st
 
 #### Design a study and collect data {-}
 
-Before completing the hypothesis test, we must check that the cases are independent.  The sample observations are independent if the outcome of one observation does not influence the outcome of another. One way this condition is met is if data come from a simple random sample of the target population.
+Before using statistical inference methods, we must check that the cases are independent.  The sample observations are independent if the outcome of one observation does not influence the outcome of another. One way this condition is met is if data come from a simple random sample of the target population.
 
 6.  Are the cases independent? Justify your answer.
 
 \vspace{1in}
+
+\newpage 
 
 #### Summarize and visualize the data {-}
 
@@ -577,72 +581,80 @@ handedness %>% count(Stance)  # Count number in each Stance category
 
 \vspace{0.5in}
 
+8.  What type of plot should be used to represent these data? Sketch this plot.
+
+\vspace{1.5in}
 
 #### Use statistical analysis methods to draw inferences from the data {-}
 
-When testing data we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the true value of interest.  *For example, in the Martian Alphabet Activity the parameter of interest is the true proportion of statistic students who correctly identify Bumba.*
+When performing a hypothesis test, we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the value that summarizes the variable in the population.  *For example, in the Martian Alphabet Activity, the parameter of interest is the true proportion of statistic students who would correctly identify Bumba.*
 
-8.  Write out the parameter of interest for this study. 
+9.  Write out the parameter of interest for this study. 
 
 \vspace{0.8in}
 
-9.  Using the parameter of interest in question 8, write out the null hypothesis in words.  What do we assume to be true about the parameter of interest?
+10.  Using the parameter of interest in question 9, write out the null hypothesis in words.  That is, what do we assume to be true about the parameter of interest when we perform our simulation?
+
+\vspace{0.8in}
+
+The notation used for a population proportion (or probability, or true proportion) is $\pi$.  Since this summarizes a population, it is a parameter. When writing the **null hypothesis** in notation, we set the parameter equal to the null value, $H_0: \pi = \pi_0$.
+
+11. Write the null hypothesis in notation using the null value of 0.1 in place of $\pi_0$ in the equation given above.
+
+\vspace{0.5in}
 
 \newpage
 
-The notation used for a true proportion is $\pi$.  Since this summarizes a population, it is a parameter. When writing the **null hypothesis** in notation we set the parameter equal to the null value, $H_0: \pi = \pi_0$
+The **alternative hypothesis** is the claim to be tested and the direction of the claim (less than, greater than, or not equal to) is based on the research question.  
 
-10. Write the null hypothesis in notation using the null value of 0.1 in place of $\pi_0$ in the equation given above.
+12.  Based on the research question from question 5, are we testing that the parameter is greater than 0.1, less than 0.1 or different than 0.1? 
 
-\vspace{0.5in}
+\vspace{0.4in}
 
-The **alternative hypothesis** is the claim to be tested and the direction is based on the research question.  
-
-11.  Based on the research question from question 5, are we testing that the parameter is greater than 0.1, less than 0.1 or different than 0.1? 
-
-\vspace{0.5in}
-
-12. Write out the alternative hypothesis in words.
+13. Write out the alternative hypothesis in words.
 
 \vspace{1in}
 
-13.  Write out the alternative hypothesis in notation.
+14.  Write out the alternative hypothesis in notation.
 
 \vspace{0.5in}
 
 Remember that when utilizing a hypothesis test, we are evaluating two competing possibilities. For this study the **two possibilities** are either...
 
-* The true proportion of male boxers who are left handed is 0.1 and our results just occurred by random chance or
+* The true proportion of male boxers who are left-handed is 0.1 and our results just occurred by random chance; or,
   
-* The true proportion of male boxers who are left handed is greater than 0.1 and our results reflect this
+* The true proportion of male boxers who are left-handed is greater than 0.1 and our results reflect this.
   
 Notice that these two competing possibilities represent the null and alternative hypotheses.
   
-The null distribution is created under the assumption the null hypothesis is true.  In this case, we assume the true proportion of male boxers who are left handed is 0.1 so we will create 1000 different simulations of 500 boxers under this assumption.
+We will now simulate a **null distribution** of sample proportions. The null distribution is created under the assumption the null hypothesis is true.  In this case, we assume the true proportion of male boxers who are left-handed is 0.1, so we will create 1000 (or more) different simulations of 500 boxers under this assumption.
 
-\newpage
+Let's think about how to use red and blue cards to create one simulation of 500 boxers under the assumption the null hypothesis is true.  Suppose blue cards represents left-handed boxers and red cards represents right-handed boxers.
 
-Let's think about how to use red and blue cards to create one simulation of 500 boxers under the assumption the null hypothesis is true.  Suppose blue cards represents left-handed and red cards represents right-handed.
-
-14.  How many cards total do we need?  How many blue ones?  How many red ones?
+15.  How many cards total do we need?  How many blue ones?  How many red ones?
 
 \vspace{0.5in}
 
-15.  Next, we would mix the cards together and draw 1 card, write down if it's red or blue, and replace the card.  How many times would we need to repeat this process to simulate our sample?
+16.  Next, we would mix the cards together and draw 1 card, write down if it's red or blue, and replace the card.  How many times would we need to repeat this process to simulate one sample?
 
 \vspace{0.5in}
 
-16.  Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
+17.  Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
 
 \vspace{1in}
 
-We will use the computer to simulate a null distribution of 1000 different samples of 500 male boxers, plotting the proportion who are left handed in each sample, based on the assumption that the true proportion of male boxers who are left handed is 0.1 (or that the null hypothesis is true).  
+We will use the computer to simulate a null distribution of 1000 different samples of 500 male boxers, plotting the proportion who are left-handed in each sample, based on the assumption that the true proportion of male boxers who are left-handed is 0.1 (or that the null hypothesis is true).  
 
-To use the computer simulation, we will need to enter the "probability of success" ($\pi_0$), "sample size" (the number of observational units or cases in the sample), "number of repetitions" (the number of samples to be generated), "as extreme as" (the observed statistic), and the "direction" (matches the direction of the alternative hypothesis).
+To use the computer simulation, we will need to enter the 
 
-\newpage
+* assumed "probability of success" ($\pi_0$), 
+* "sample size" (the number of observational units or cases in the sample),
+* "number of repetitions" (the number of samples to be generated), 
+* "as extreme as" (the observed statistic), and 
+* the "direction" (matches the direction of the alternative hypothesis).
 
-17.  What values should be entered for each of the following into the one proportion test to create 1000 simulations?
+
+18.  What values should be entered for each of the following into the one proportion test to create 1000 simulations?
 
 \vspace{1mm}
 
@@ -662,7 +674,7 @@ To use the computer simulation, we will need to enter the "probability of succes
 
 \vspace{.2in}
 
-Using the provided `R` script file, fill in the values/words for xx with your answers from question 17 in the one proportion test to create a null distribution with 1000 simulations, highlight and run lines 1--14.
+Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 18 in the one proportion test to create a null distribution with 1000 simulations. Then highlight and run lines 1--14.
 
 ```{r, echo=TRUE, eval = FALSE}
 one_proportion_test(probability_success = xx, # Null hypothesis value
@@ -673,36 +685,37 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
                     report_value = "proportion") # Reporting proportion or number of successes?
 ```
 
-18.  Sketch the null distribution created from the R code here.
+19. Sketch the null distribution created from the `R` code here.
 
 \vspace{1.8in}
 
-19. Around what value is the null distribution centered?  Why does that make sense?
+20. Around what value is the null distribution centered?  Why does that make sense?
 
 \vspace{1in}
 
-20. Circle the statistic (value from question 7) on the distribution you drew in question 18.  Where does the statistic fall in the null distribution?  Is it near the center of the distribution (near 0.1) or in one of the tails of the distribution?  
+21. Circle the observed statistic (value from question 7) on the distribution you drew in question 19.  Where does this statistic fall in the null distribution: Is it near the center of the distribution (near 0.1) or in one of the tails of the distribution?  
 
 \vspace{1in}
 
-21.  Is the statistic likely to happen or unlikely to happen if the true proportion of male boxers who are left-handed is 0.1?  Explain your answer using the plot.
+22. Is the observed statistic likely to happen or unlikely to happen if the true proportion of male boxers who are left-handed is 0.1?  Explain your answer using the plot.
 
 \vspace{1in}
 
-22.  Using the simulation, what is the proportion of simulated samples at the summary statistic or greater, if the true proportion of male boxers who are left-handed is 0.1? *Hint*: Look under the simulation.
+23.  Using the simulation, what is the proportion of simulated samples that generated a sample proportion at the observed statistic or greater, if the true proportion of male boxers who are left-handed is 0.1? *Hint*: Look under the simulation.
 
 \vspace{1in}
-|         This is the **p-value**.  The smaller the p-value the more evidence we have against the null hypothesis.
 
-23. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one.)
+The value in question 23 is the **p-value**.  The smaller the p-value, the more evidence we have against the null hypothesis. (Why?)
+
+24. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one of the five descriptions.)
 
 ```{r, out.width="90%"}
 include_graphics("images/soe_gradient_grayscale.png")
 ```
 
-\newpage
 
-24.  What does the p-value measure?  Interpret the p-value in context of the problem.
+
+25.  What does the p-value measure?: Interpret the p-value in context of the problem.
 
 \vspace{1in}
 
@@ -710,11 +723,11 @@ include_graphics("images/soe_gradient_grayscale.png")
 
 When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.
 
-25. Write a conclusion in context of the study.
+26. Write a conclusion in context of the study.
 
 \vspace{1in}
 
-26.  Write a paragraph summarizing the results.  Be sure to describe:
+27.  Write a paragraph summarizing the results as if you were writing a press release.  Be sure to describe:
 
 * Summary statistic
 
@@ -722,16 +735,18 @@ When we write a conclusion we answer the research question by stating how much e
 
 * Conclusion (written to answer the research question)
 
-* Generalization - to what group do the results apply?
+* Generalization --- to what group do the results apply?
 
-\vspace{3in}
+\vspace{4in}
 
 #### Revisit and look forward {-}
 
-27. Suggest a new research question that you might investigate, building on what you learned in this study.
+28. Suggest a new research question that you might investigate, building on what you learned in this study.
 
 \vspace{.6in}
 
+
+\newpage
 
 ### Out-of-class activity
 
