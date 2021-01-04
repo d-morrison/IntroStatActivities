@@ -198,7 +198,7 @@ The summary results from a random sample of 3562 skiers and snowboarders involve
 | No Head Injury |     656    |      2330     |  2986 |
 | Total          |     752    |      2810     |  3562 |
 
-#### Vocabulary review. Complete Q1 - 3 before class. {-}
+#### Vocabulary review. Complete Q1--Q3 before class. {-}
 
 1.  Report the point estimate for this study.  Use helmet use minus no helmet use as the order of subtraction.
 
@@ -340,7 +340,7 @@ The response variable name is Outcome and the explanatory variable name is Helme
 
 \vspace{.2in}
 
-Using the `RScript` file for this activity, enter your answers for question 1 in place of the xx's in the two proportion bootstrap CI function to produce the bootstrap distribution with 1000 simulations, highlight and run lines 1 - 22.
+Using the `R` script file for this activity, enter your answers for question 1 in place of the xx's in the two proportion bootstrap CI function to produce the bootstrap distribution with 1000 simulations, highlight and run lines 1--22.
 
 
 ```r

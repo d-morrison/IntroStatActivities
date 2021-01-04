@@ -537,7 +537,7 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 | Differences   | $\bar{x}_d$ = -4.152 | $s_d$ = 17.096     | $n_d$ = 33  |
 
 \newpage
-#### Vocabulary review.  Complete Q1 - 5 before class.{-}
+#### Vocabulary review.  Complete Q1--Q5 before class.{-}
 
 1. What is the sample size? 
 
@@ -596,7 +596,7 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 \vspace{.7in}
 
-13.  Use the provided `RScript` file and enter the calculated value from question 12 for xx to simulate the null distribution and enter the summary statistic from question 10 for yy to find the p-value.  Highlight and run lines 1 - 21.
+13.  Use the provided `R` script file and enter the calculated value from question 12 for xx to simulate the null distribution and enter the summary statistic from question 10 for yy to find the p-value.  Highlight and run lines 1--21.
 
 
 ```r
@@ -634,7 +634,7 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 \vspace{.6in}
 
-20.  Using the provided `RScript` file fill in the missing value at xx in the paired bootstrap CI to find a 99\% confidence interval, highlight and run lines 24 - 27.  Report the confidence interval in interval notation.
+20.  Using the provided `R` script file fill in the missing value at xx in the paired bootstrap CI to find a 99\% confidence interval, highlight and run lines 24--27.  Report the confidence interval in interval notation.
 
 
 ```r
@@ -717,7 +717,7 @@ $$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}$$
 
 \vspace{0.5in}
 
-Using the provided `RScript` file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 33 - 1 = 32, and lower.tail = TRUE to find the p-value.  Highlight and run line 31.  
+Using the provided `R` script file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 33 - 1 = 32, and lower.tail = TRUE to find the p-value.  Highlight and run line 31.  
 
 
 ```r

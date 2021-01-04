@@ -499,7 +499,7 @@ We will work through a six-step process to complete a hypothesis test for a sing
 Left-handedness is a trait that is found in about 10% of the population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers we want to see if there is an over-prevalence of left-handed fighters.
 
 
-#### Summary statistics review: Complete Q1$-$Q4 before class {-}
+#### Summary statistics review: Complete Q1--Q4 before class. {-}
 
 1.  What are the observational units?
 
@@ -633,7 +633,7 @@ To use the computer simulation, we will need to enter the "probability of succes
 
 \vspace{.2in}
 
-Using the provided `R` script file, fill in the values/words for xx with your answers from question 17 in the one proportion test to create a null distribution with 1000 simulations, highlight and run lines 1$-$14.
+Using the provided `R` script file, fill in the values/words for xx with your answers from question 17 in the one proportion test to create a null distribution with 1000 simulations, highlight and run lines 1--14.
 
 ```{r, echo=TRUE, eval = FALSE}
 one_proportion_test(probability_success = xx, # Null hypothesis value
@@ -763,7 +763,7 @@ The standardized statistic measures the number of standard errors the sample sta
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 3 at xx in line 18, highlight and run lines 18$-$20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value greater than the value of the standardized statistic.  Use `lower.tail = TRUE` when doing a left-sided test and `lower.tail = FALSE` when doing a right-sided test.  To find a two-sided p-value use a left-sided test and multiply the p-value found by 2.
+We will use the pnorm function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 3 at xx in line 18, highlight and run lines 18--20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value greater than the value of the standardized statistic.  Use `lower.tail = TRUE` when doing a left-sided test and `lower.tail = FALSE` when doing a right-sided test.  To find a two-sided p-value use a left-sided test and multiply the p-value found by 2.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic

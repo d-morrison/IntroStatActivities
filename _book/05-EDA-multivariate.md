@@ -430,7 +430,7 @@ Simpson’s Paradox:
 
 * Interpret the slope coefficient in context of the problem.
 
-* Interpret $R^2$, the coefficient of determination, in context of the problem.
+* Calculated and interpret $R^2$, the coefficient of determination, in context of the problem.
 
 * Find the correlation coefficient from `R` output or from $R^2$ and the sign of the slope.
 
@@ -467,13 +467,13 @@ We will revisit the data set used last week collected on Movies released in 2016
 | `movie_facebook_likes` | Number of likes a movie receives on Facebook |
 
 
-#### Vocabulary review. Complete Q1 - 4 before class.{-}
+#### Vocabulary review. Complete Q1--Q4 before class.{-}
 
 Note: You will need to use the provided `R` script file for activity 5 to complete question 3.
 
 
 
-1.  What type of plot is used to display two quantitative variables?
+1.  What type of plot is used to display the relationship between `budget_mil` and `revenue_mil`?
 
 \vspace{0.2in}
 
@@ -481,7 +481,7 @@ Note: You will need to use the provided `R` script file for activity 5 to comple
 
 \vspace{0.4in}
 
-We will look at the relationship between `Budget` and `Revenue` for movies released in 2016. Enter the variable name `budget_mil` for xx and `revenue_mil` for yy at line 7 in the `R` script file to create the scatterplot. (Note: both variables are measured in "millions of dollars").  Highlight and run lines 1 - 12.
+We will look at the relationship between budget and revenue for movies released in 2016. Enter the variable name `budget_mil` for xx and `revenue_mil` for yy at line 7 in the `R` script file to create the scatterplot. (Note: both variables are measured in "millions of dollars").  Highlight and run lines 1--12.
 
 
 ```r

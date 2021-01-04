@@ -330,7 +330,7 @@ The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census 
 | `sector` | Sector of the economy: `clerical`, `const` (construction),  `management`, `manufacturing`, `professional`, `sales`, `service`, `other` |
 | `married` | Marital status: `Married` or `Single` |
 
-#### Vocabulary review. Complete Q1$-$Q3 before class. {-}
+#### Vocabulary review. Complete Q1--Q3 before class. {-}
 
 1. What are the observational units?
 
@@ -466,13 +466,13 @@ demonstrate how to read the data set into `R` using the `read.csv()` function.
 myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv") 
 ```
 
-Download and open the provided `R` script file for Activity 3 to answer the following questions. Highlight and run lines 1$-$5.  These lines of code read in the data set and name the data set `myopia`.  The library function tells `R` which packages will be needed.  
+Download and open the provided `R` script file for Activity 3 to answer the following questions. Highlight and run lines 1--5.  These lines of code read in the data set and name the data set `myopia`.  The library function tells `R` which packages will be needed.  
 
 
 
 #### Displaying a single categorical variable {-}
 
-If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight`, for xx into the `ggplot` code in line 10 in the `R` script file to create a bar plot.  Highlight and run lines 9$-$15.  Notice this is a **frequency** bar plot plotting counts (the number of children in each level of sight is displayed on the $y$-axis).  
+If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight`, for xx into the `ggplot` code in line 10 in the `R` script file to create a bar plot.  Highlight and run lines 9--15.  Notice this is a **frequency** bar plot plotting counts (the number of children in each level of sight is displayed on the $y$-axis).  
 
 
 ```{r, out.width="50%", echo=TRUE, eval = FALSE}
@@ -514,7 +514,7 @@ ggplot(aes(x = Sight)) +   # This specifies the variable
 
 #### Displaying two categorical variables {-}
 
-To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` (explanatory variable) for xx and the variable name, `Sight` (response variable) for yy in the `R` script file in line 28.  Highlight and run lines 27$-$33. 
+To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` (explanatory variable) for xx and the variable name, `Sight` (response variable) for yy in the `R` script file in line 28.  Highlight and run lines 27--33. 
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
 myopia %>% # Data set piped into...

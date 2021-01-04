@@ -230,7 +230,7 @@ The proportion of simulated null samples at ____ or ____.
 \rgs
 \rgs
 
-13. Interpret the 95% confidence interval provided.
+13. Interpret the 95\% confidence interval provided.
 \rgs
 \rgs
 
@@ -280,7 +280,7 @@ The proportion of simulated null samples at ____ or ____.
 14. What conclusion should the researcher make?
 \rgs
 
-15. Calculate a 95% confidence interval for the parameter of interest using `qt(0.975, df = 27) = 2.052` as the $t^\star$ value.
+15. Calculate a 95\% confidence interval for the parameter of interest using `qt(0.975, df = 27) = 2.052` as the $t^\star$ value.
 \rgs
 
 16. Interpret your interval in the context of the problem.
@@ -352,13 +352,13 @@ baseball <- # Write over original data with the following
   subset(Year < 2002) # Select only years before 2002
 ```
 
-#### Vocabulary review. Complete Q1 - 4 before class. {-}
+#### Vocabulary review. Complete Q1--Q4 before class. {-}
 
 1. Explain why regression methods are appropriate to use to address the researchers' question. Make sure you clearly define the variables of interest in your explanation and their roles.
 
 \newpage
 
-2. Use the provided `RScript` file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names (`RD` and `W`) for xx and yy in line 17.  Highlight and run lines 1 - 22. 
+2. Use the provided `R` script file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names (`RD` and `W`) for xx and yy in line 17.  Highlight and run lines 1--22. 
  
     
     ```r
@@ -417,7 +417,7 @@ The scatterplot and the residual plots will be used to assess the conditions for
 
 #### Summarize and visualize the data {-}
 
-Using the provided `RScript` file, enter the response variable name, `W` into the linear model function for yy and the explanatory variable name, `RD` for xx in line 32 to get the linear model output.  Highlight and run lines 32 - 33.
+Using the provided `R` script file, enter the response variable name, `W` into the linear model function for yy and the explanatory variable name, `RD` for xx in line 32 to get the linear model output.  Highlight and run lines 32--33.
 
 
 ```r
@@ -573,7 +573,7 @@ The response variable name is `W` (wins) and the explanatory variable name is `R
     
 \vspace{.2in}
 
-Using the `RScript` file for this activity, enter your answers for question 2 in place of the xx's for the regression test to produce the null distribution with 1000 simulations.  Highlight and run lines 1 - 13 and then lines 44-49.
+Using the `R` script file for this activity, enter your answers for question 2 in place of the xx's for the regression test to produce the null distribution with 1000 simulations.  Highlight and run lines 1--13 and then lines 44--49.
 
 
 ```r
@@ -590,7 +590,7 @@ regression_test(W~RD, # response ~ explanatory
 
 \vspace{0.5in}
 
-Fill in the xx's in the regression bootstrap CI function in the provided `RScript` file to find a 95\% confidence interval. Highlight and run lines 52-56. 
+Fill in the xx's in the regression bootstrap CI function in the provided `R` script file to find a 95\% confidence interval. Highlight and run lines 52--56. 
 
 
 ```r

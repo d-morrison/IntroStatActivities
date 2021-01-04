@@ -88,7 +88,7 @@ Five number summary:
 $X^{th}$ percentile:
 \rgs
 
-E.g. if the value 6 is 10th percentile, then 10% of the data have values 6 or below.
+\rgi E.g., if the value 6 is 10th percentile, then 10% of the data have values 6 or below.
 
 Interquartile range (IQR):
 \rgs
@@ -131,6 +131,7 @@ Standard deviation & & \\
 
 How are outliers denoted on a box plot?  How can you mathematically determine if a data set has outliers?
 \rgs
+\rgs
 
 
 ### Section 2.4 (`R`: Exploratory data analysis) and Section 2.5 (Chapter 2 review) {-}
@@ -154,10 +155,10 @@ Sample size & & \\
 & & \\ \hline
 Proportion & & \\ 
 (used to summarize & & \\ 
-1 categorical variable) & & \\ \hline
+one categorical variable) & & \\ \hline
 Mean & & \\ 
 (used to summarize & & \\ 
-1 quantitative variable)& & \\ \hline
+one quantitative variable)& & \\ \hline
 Correlation & & \\ 
 (used to summarize & & \\ 
 two quantitative variables)& & \\ \hline
@@ -166,6 +167,8 @@ Regression line slope & & \\
 two quantitative variables)& & \\ \hline
 \end{tabular}
 \end{center}
+
+\rgs
 
 Look at the table of vocabulary terms.  If there are any you do not know, be sure to review the appropriate section of your text.
 
@@ -176,9 +179,9 @@ Fill in the following table to help associate type of plot for each of several s
 \begin{center}
 \begin{tabular}{|l|p{3in}|} \hline
  & Appropriate plot(s) \\ \hline
-1 categorical variable & \\
+One categorical variable & \\
 (categorical response, no explanatory) & \\ \hline
-1 quantitative variable  & \\
+One quantitative variable  & \\
 (quantitative response, no explanatory) & \\ \hline
 Two categorical variables  & \\
 (categorical response, categorical explanatory) & \\ \hline
@@ -243,7 +246,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 
 
-#### Vocabulary review. Complete Q1 - 3 before class. {-}
+#### Vocabulary review. Complete Q1--Q3 before class. {-}
 
 1. What are the observational units in this data set?
 
@@ -277,7 +280,7 @@ movies %>% # Data set piped into...
 
 \vspace{0.5in}
 
-5. Calculate the Interquartile range (IQR = Q3 - Q1).
+5. Calculate the interquartile range (IQR = Q3 $-$ Q1).
 
 \vspace{0.5in}
 
@@ -288,9 +291,9 @@ movies %>% # Data set piped into...
 
 7. What are the three types of plots used to plot a single quantitative variable?
 
-\newpage
+\vspace{1in}
 
-To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for xx at line 12, highlight and run lines 1 - 16.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for xx at line 12, highlight and run lines 1--16.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.  
 
@@ -304,6 +307,7 @@ ggplot(aes(x = xx)) +   # Name variable to plot
        y = "Frequency") # Label for y axis
 ```
 
+\newpage
 
 8. Sketch the histogram created here.
 
@@ -311,17 +315,17 @@ ggplot(aes(x = xx)) +   # Name variable to plot
 
 9. Which range of IMDb scores have the highest frequency?
 
-\vspace{0.4in}
+\vspace{0.3in}
 
 10. What is the shape of the distribution of IMDb scores?
 
-\vspace{0.4in}
+\vspace{0.3in}
 
 11. Which five summary statistics are used in creating a box plot? *Hint*: Together they are called the **five-number summary** of the variable.
 
-\vspace{0.4in}
+\vspace{0.3in}
 
-12. Using the code below we see that the three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:  
+12. Using the code below, we see that the three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:  
 
     
     ```r
@@ -351,13 +355,16 @@ ggplot(aes(x = xx)) +   # Name variable to plot
     #> 3        8.0
     ```
 
-    Using the summary statistics above, and the smallest and largest values of the variable to check for outliers, sketch a box plot of IMDb Score.  Be sure to label the axes.
+    Using the summary statistics displayed in the `favstats` output, and the smallest and largest values of the variable to check for outliers, sketch a box plot of IMDb Score.  Be sure to label the axis.
 
 \vspace{1.5in}
 
+
+\newpage 
+
 #### Displaying a single categorical and single quantitative variable {-}
 
-The box plot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for yy and the variable `content_rating` for xx at line 31, highlight and run code lines 29 - 35. This plot helps to compare the budget for different levels of content rating.
+The box plot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for yy and the variable `content_rating` for xx at line 31, highlight and run code lines 29--35. This plot helps to compare the budget distribution for different levels of content rating.
 
 
 ```r
@@ -370,7 +377,7 @@ movies %>%  # Data set piped into...
        y = "Budget (in Millions)")  # y-axis label
 ```
 
-13. Sketch the box plots created using the `R` code.
+13. Sketch the box plots created from running the `R` code above.
 
 \vspace{1.5in}
 
@@ -393,16 +400,18 @@ movies %>%  # Data set piped into...
 \vspace{.8in}
 
 
+\newpage
+
 ### Out-of-class activity
 
-For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the `Movies` data set.  Download and open the provided `R` script file, highlight and run the first 8 lines of code.
+For a little more practice using RStudio to create graphs of quantitative variables, we will look at some other variables in the `Movies` data set.  Download and open the provided `R` script file, highlight and run the first 8 lines of code.
 
-To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.
+To use the `favstats` function in the `mosaic` package with two variables, we will enter the variables as a formula, `response ~ explanatory`.
 
 
 ```r
 movies %>% # Data set piped into...
-  summarise(favstats(imdb_score~content_rating)) # Apply favstats function to imdb_score
+  summarise(favstats(imdb_score ~ content_rating)) # Summary stats of imdb_score by content rating
 ```
 
 ```
@@ -413,7 +422,7 @@ movies %>% # Data set piped into...
 #> 4              R 3.5 5.375    6.3 7.050 8.1 6.221875 1.1335740 32       0
 ```
 
-Using the provided `R` script file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx at line 44, highlight and run lines 39 - 48.
+Using the provided `R` script file, we will create side-by-side histograms of IMDb scores by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx at line 44, highlight and run lines 39--48.
 
 
 ```r
@@ -426,7 +435,7 @@ movies %>%  # Data set piped into...
        y = "Budget (in Millions)")  # y-axis label
 ```
 
-1.  Using the provided favstats output and the side-by-side box plots, interpret the value of quartile 1 for the R content rating.
+1.  Using the provided `favstats` output and the side-by-side box plots, interpret the value of quartile 1 for the R content rating.
 
 \vspace{1in}
 
@@ -434,7 +443,7 @@ movies %>%  # Data set piped into...
 
 \vspace{0.2in}
 
-3. Which variable is the explanatory variable? Response variable?
+3. Which variable is the explanatory variable in the side-by-side box plots? Response variable?
 
 \vspace{0.5in}
 
@@ -442,11 +451,11 @@ movies %>%  # Data set piped into...
 
 1.	Histograms, box plots, and dot plots can all be used to graphically display quantitative variables.  When we have a single categorical variable and a single quantitative variable we will display the data in side-by-side plots.
 
-2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5*IQR$ and greater than $Q_3 + 1.5*IQR$ are considering outliers and are graphically represented by a dot outside of the whiskers on the box plot.
+2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5 \times IQR$ and greater than $Q_3 + 1.5\times IQR$ are considering outliers and are graphically represented by a dot outside of the whiskers on the box plot. Whiskers extend to the smallest and largest values in the data set that are *not* considered outliers.
 
-3.  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers.  There are two measures of center: mean and the median and two measures of spread: standard deviation and the interquartile range, IQR = Q1- Q3. 
+3.  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers.  There are two measures of center: mean and median; and two measures of spread: standard deviation and the interquartile range, IQR = Q1 $-$ Q3. 
 
-4.  The median and IQR are robust measures that are not affected by the presence of outliers. 
+4.  The median and IQR are robust measures that are not affected by the presence of outliers or skewness; the mean and standard deviation are not robust and can be greatly affected by skewness and the presence of outliers. 
 
 ### Additional notes
 
