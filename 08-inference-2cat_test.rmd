@@ -421,10 +421,10 @@ Statistically significant: results are considered statistically significant if t
 
 #### Vocabulary {-}
 
-Type I error: 
+Type 1 error: 
 \rgs
 
-Type II error: 
+Type 2 error: 
 \rgs
 
 Confirmation bias: 
@@ -608,21 +608,20 @@ injury <- # Write over original data with the following
 
 injury %>% group_by(Helmet) %>% count(Outcome)
 ```
-Notice that the name of the explanatory variable is `Helmet` with outcomes `Yes` and `No` and the name of the response variable is `Outcome` with outcomes `Head Injury` and `No Head Injury`.
 
 #### Vocabulary review. Complete Q1--Q4 before class. {-}
 
-1.  What is the explanatory variable?
+1.  What is the name of the explanatory variable in the `R` output? What are its categories?
 
 \vspace{0.3in}
 
-2. What is the response variable?
+2. What is the response variable in the `R` output? What are its categories?
 
 \vspace{0.3in}
 
 3. Is this an experiment or observational study?  Justify your answer.
 
-\newpage
+\vspace{0.5in}
 
 4.  Put an X in the box that represents the appropriate scope of inference for this study.
 
@@ -635,41 +634,39 @@ Notice that the name of the explanatory variable is `Helmet` with outcomes `Yes`
 
 #### Ask a research question {-}
 
-In this study we are looking at the relationship between two groups or two parameters ($\pi_1$ and $\pi_2$).  Remember we define the parameter for a categorical variable as the true proportion of observational units that are labeled as a "success" in the response variable.  
+The research question as stated above is: Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders? In order to set up our hypotheses, we need to express this research question in terms of parameters. 
+Remember, we define the parameter for a single categorical variable as the true proportion of observational units that are labeled as a "success" in the response variable.  
 
-5. Write the two parameters of interest for this study.  Let 1 = skier/snowboarder wore helmet, 2 = skier/snowboarder did not wear helmet.
+5. Write the two parameters of interest for this study.  Let 1 = skier/snowboarder wore helmet, 2 = skier/snowboarder did not wear helmet. 
 \vspace{1mm}
 
-   $\pi_1$ - 
+   $\pi_1$ --- 
 \vspace{0.5in}
 
-   $\pi_2$ - 
+   $\pi_2$ ---
 \vspace{0.5in}
 
 When comparing two groups, we assume the two parameters are equal in the null hypothesis---there is no association between the variables.
 
 6.  Write the null hypothesis out in words using your answers to question 5.
 
-\vspace{0.81in}
+\vspace{0.8in}
 
-7.  What is the research question?
 
-\vspace{0.5in}
-
-8. Based on the research question fill in the appropriate sign for the alternative hypothesis ($<$, $>$, or $\neq$):
+8. Based on the research question, fill in the appropriate sign for the alternative hypothesis ($<$, $>$, or $\neq$):
 \vspace{0.25in}
 
 |           $H_A: \pi_1 -\pi_2$ __________ 0
 
 
-\newpage 
+ 
 #### Summarize and visualize the data {-}
 
-9. Using the two-way table, calculate the conditional proportion of skiers/snowboarders that wore a helmet with a head injury.
+9. Using the two-way table above, calculate the conditional proportion of helmet-wearing skiers/snowboarders that sustained a head injury.
 
 \vspace{.3in}
 
-10. Using the two-way table, calculate the conditional proportion of skiers/snowboarders that did not wear a helmet with a head injury.
+10. Using the two-way table above, calculate the conditional proportion of non-helmet-wearing skiers/snowboarders that sustained a head injury.
 
 \vspace{.3in}
 
@@ -686,7 +683,7 @@ ggplot(aes(x = Helmet, fill = Outcome)) +   # This specifies the variables
   theme_bw()
 ```
 
-11.  Fill in the blanks on the graph above with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who wear helmets and those who do not wear helmets.  *Hint*: Use the conditional proportions from questions 9 and 10.
+11.  Fill in the blanks on the graph above with the appropriate variable names and categories to complete the segmented bar plot comparing the proportion of head injuries between those who wear helmets and those who do not wear helmets.  *Hint*: Use the conditional proportions from questions 9 and 10.
 
 \vspace{1mm}
 
@@ -702,24 +699,26 @@ ggplot(aes(x = Helmet, fill = Outcome)) +   # This specifies the variables
 14. What is the notation used for the value calculated in question 13?
 
 \vspace{0.2in}
-\newpage
+
 
 #### Use statistical analysis methods to draw inferences from the data {-}
 
-To test the null hypothesis we could use simulation methods as we did with a single categorical variable in class. In this in-class activity we will focus on theory-based methods.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
+To test the null hypothesis, we could use simulation-based methods as we did with a single categorical variable in class. In this in-class activity, we will focus on theory-based methods.  Like with a single proportion, the sampling distribution of a difference in sample proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
-Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$:
+Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an approximate normal distribution:
 
-* Independence: The data are independent within and between the two groups. (*Remember*: This also must be true to use simulation methods!)
+* **Independence**: The data are independent within and between the two groups. (*Remember*: This also must be true to use simulation methods!)
 
-* Success-Failure Condition: The success-failure condition holds for each group.  Under the null hypothesis, the proportions $\pi_1$ and $\pi_2$ are equal, so we check the success-failure condition with our best estimate of these values under $H_0$, the pooled proportion from the two samples,
+* **Success-failure condition**: The success-failure condition holds for each group.  Under the null hypothesis, the proportions $\pi_1$ and $\pi_2$ are equal, so we check the success-failure condition with our best estimate of these values under $H_0$, the pooled proportion from the two samples,
 
 $$
 \hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
 $$
+We then check that all four of the following inequalities hold:
 
-|     $$\hat{p}_{pool} * n_1 \ge 10, (1 - \hat{p}_{pool}) * n_1 \ge 10$$
-|     $$\hat{p}_{pool} * n_2 \ge 10, (1 - \hat{p}_{pool}) * n_2 \ge 10$$
+$$\hat{p}_{pool} \times n_1 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_1 \geq 10,$$
+
+$$\hat{p}_{pool} \times n_2 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_2 \geq 10$$
 
 \vspace{.25in}
 
@@ -734,19 +733,17 @@ $$
 To calculate the standardized statistic we use: 
 
 $$
-Z = \frac{\text{point estimate} - \text{null value}}{SE}
+Z = \frac{\text{point estimate} - \text{null value}}{SE},
 $$
 
-where the null standard error is calculated using the pooled proportion of successes.
+where the null standard error is calculated using the pooled proportion of successes:
 
 $$
-SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\frac{1}{n_2})}
+SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}.
 $$
 
 
-\vspace{.25in}
-
-17. Calculate the $SE_0(\hat{p}_1-\hat{p}_2)$.
+17. Calculate $SE_0(\hat{p}_1-\hat{p}_2)$.
 
 \vspace{1in}
 
@@ -754,7 +751,7 @@ $$
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 18 at xx in line 27, highlight and run lines 27--29.
+We will use the `pnorm` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 18 at `xx` in line 27; highlight and run lines 27--29.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
@@ -770,7 +767,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 \vspace{1in}
 
-21.  How much evidence does the p-value provide against the null hypothesis? *Hint*: Refer to the guidelines given in activity 6.
+21.  How much evidence does the p-value provide against the null hypothesis? *Hint*: Refer to the guidelines given in Activity 6.
 
 \vspace{0.4in}
 
@@ -789,7 +786,7 @@ Hypothesis tests are not flawless. In a hypothesis test, there are two competing
 <!-- |       | $H_A$ true |  Type 2 Error   |  good decision      | -->
 
 \begin{table}
-\caption{Four different possible scenarios for hypothesis tests.}
+\caption{Four different possible scenarios for hypothesis test decisions.}
 \centering
 \begin{tabular}[h]{ll|cc}
 \hline
@@ -801,9 +798,10 @@ Hypothesis tests are not flawless. In a hypothesis test, there are two competing
 \textbf{Truth} & $H_A$ true & Type 2 Error & Good decision\\
 \hline
 \end{tabular}
+\label{tab:errors}
 \end{table}
 
-Shown in the table above, a **Type 1 Error** is rejecting the null hypothesis when $H_0$ is actually true. A **Type 2 Error** is failing to reject the null hypothesis when the alternative is actually true.
+Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the null hypothesis when $H_0$ is actually true. A **Type 2 Error** happens when we fail to reject the null hypothesis when the alternative is actually true.
 
 23.  Using a significance level of 0.05, based on the p-value found in question 19, what decision do you make in regards to the null hypothesis?
 
@@ -817,7 +815,7 @@ Shown in the table above, a **Type 1 Error** is rejecting the null hypothesis wh
 
 \vspace{1in}
 
-26. Write a paragraph summarizing the results of the study.  Be sure to describe:
+26. Write a paragraph summarizing the results of the study as if writing a press release.  Be sure to describe:
 
 * Summary statistic
 
@@ -917,9 +915,9 @@ two_proportion_test(formula = Outcome ~ Helmet, # response~explanatory
 
 3.  The standardized statistic when the response variable is categorical is a Z score and compared to the standard normal distribution to find the p-value.  To find the standardardized statistic we take the value of the statistic minus the null value, divided by the standard error of the statistic.  The standardized statistic measures the number of standard errors the statistic is from the null value. 
 
-4.  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type I error.
+4.  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type 1 error.
 
-5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance leve), we could have a possible Type II error.
+5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance leve), we could have a possible Type 2 error.
 
 
 ### Additional notes

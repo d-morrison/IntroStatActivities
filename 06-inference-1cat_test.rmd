@@ -756,7 +756,7 @@ The sampling distribution of a single proportion --- how that proportion varies 
 
 Conditions for the sampling distribution of $\hat{p}$ to follow an approximate normal distribution:
 
-* **Independence**: The sample’s observations are independent, e.g., are from a simple random sample.
+* **Independence**: The sample’s observations are independent, e.g., are from a simple random sample. (*Remember*: This also must be true to use simulation methods!)
 
 * **Success-failure condition**: We *expect* to see at least 10 successes and 10 failures in the sample, $n\pi≥10$  and $n(1-\pi)≥10$.
 

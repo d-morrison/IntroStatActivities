@@ -4867,7 +4867,7 @@ Conditions for the sampling distribution of \(\hat{p}\) to follow an approximate
 
 \begin{itemize}
 \item
-  \textbf{Independence}: The sample's observations are independent, e.g., are from a simple random sample.
+  \textbf{Independence}: The sample's observations are independent, e.g., are from a simple random sample. (\emph{Remember}: This also must be true to use simulation methods!)
 \item
   \textbf{Success-failure condition}: We \emph{expect} to see at least 10 successes and 10 failures in the sample, \(n\pi≥10\) and \(n(1-\pi)≥10\).
 \end{itemize}
@@ -6159,10 +6159,10 @@ Statistically significant: results are considered statistically significant if t
 \subsubsection*{Vocabulary}\label{vocabulary-16}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
-Type I error:
+Type 1 error:
 \rgs
 
-Type II error:
+Type 2 error:
 \rgs
 
 Confirmation bias:
@@ -6405,8 +6405,6 @@ These counts can be found in \texttt{R} by using the \texttt{count()} function:
 #> 4 Yes    No Head Injury   656
 \end{verbatim}
 
-Notice that the name of the explanatory variable is \texttt{Helmet} with outcomes \texttt{Yes} and \texttt{No} and the name of the response variable is \texttt{Outcome} with outcomes \texttt{Head\ Injury} and \texttt{No\ Head\ Injury}.
-
 \hypertarget{vocabulary-review.-complete-q1q4-before-class.-1}{%
 \subsubsection*{Vocabulary review. Complete Q1--Q4 before class.}\label{vocabulary-review.-complete-q1q4-before-class.-1}}
 \addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1--Q4 before class.}
@@ -6415,7 +6413,7 @@ Notice that the name of the explanatory variable is \texttt{Helmet} with outcome
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  What is the explanatory variable?
+  What is the name of the explanatory variable in the \texttt{R} output? What are its categories?
 \end{enumerate}
 
 \vspace{0.3in}
@@ -6425,7 +6423,7 @@ Notice that the name of the explanatory variable is \texttt{Helmet} with outcome
 \setcounter{enumi}{1}
 \tightlist
 \item
-  What is the response variable?
+  What is the response variable in the \texttt{R} output? What are its categories?
 \end{enumerate}
 
 \vspace{0.3in}
@@ -6438,7 +6436,7 @@ Notice that the name of the explanatory variable is \texttt{Helmet} with outcome
   Is this an experiment or observational study? Justify your answer.
 \end{enumerate}
 
-\newpage
+\vspace{0.5in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6463,7 +6461,8 @@ Selection of Cases & Random Sample & &\tabularnewline
 \subsubsection*{Ask a research question}\label{ask-a-research-question-1}}
 \addcontentsline{toc}{subsubsection}{Ask a research question}
 
-In this study we are looking at the relationship between two groups or two parameters (\(\pi_1\) and \(\pi_2\)). Remember we define the parameter for a categorical variable as the true proportion of observational units that are labeled as a ``success'' in the response variable.
+The research question as stated above is: Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders? In order to set up our hypotheses, we need to express this research question in terms of parameters.
+Remember, we define the parameter for a single categorical variable as the true proportion of observational units that are labeled as a ``success'' in the response variable.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6472,10 +6471,10 @@ In this study we are looking at the relationship between two groups or two param
   Write the two parameters of interest for this study. Let 1 = skier/snowboarder wore helmet, 2 = skier/snowboarder did not wear helmet.
   \vspace{1mm}
 
-  \(\pi_1\) -
+  \(\pi_1\) ---
   \vspace{0.5in}
 
-  \(\pi_2\) -
+  \(\pi_2\) ---
   \vspace{0.5in}
 \end{enumerate}
 
@@ -6489,30 +6488,18 @@ When comparing two groups, we assume the two parameters are equal in the null hy
   Write the null hypothesis out in words using your answers to question 5.
 \end{enumerate}
 
-\vspace{0.81in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
-\tightlist
-\item
-  What is the research question?
-\end{enumerate}
-
-\vspace{0.5in}
+\vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{7}
 \tightlist
 \item
-  Based on the research question fill in the appropriate sign for the alternative hypothesis (\(<\), \(>\), or \(\neq\)):
+  Based on the research question, fill in the appropriate sign for the alternative hypothesis (\(<\), \(>\), or \(\neq\)):
   \vspace{0.25in}
 \end{enumerate}
 
 ~~~~~~~~~~\(H_A: \pi_1 -\pi_2\) \_\_\_\_\_\_\_\_\_\_ 0
-
-\newpage
 
 \hypertarget{summarize-and-visualize-the-data-1}{%
 \subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-1}}
@@ -6523,7 +6510,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 \setcounter{enumi}{8}
 \tightlist
 \item
-  Using the two-way table, calculate the conditional proportion of skiers/snowboarders that wore a helmet with a head injury.
+  Using the two-way table above, calculate the conditional proportion of helmet-wearing skiers/snowboarders that sustained a head injury.
 \end{enumerate}
 
 \vspace{.3in}
@@ -6533,7 +6520,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 \setcounter{enumi}{9}
 \tightlist
 \item
-  Using the two-way table, calculate the conditional proportion of skiers/snowboarders that did not wear a helmet with a head injury.
+  Using the two-way table above, calculate the conditional proportion of non-helmet-wearing skiers/snowboarders that sustained a head injury.
 \end{enumerate}
 
 \vspace{.3in}
@@ -6545,7 +6532,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 \setcounter{enumi}{10}
 \tightlist
 \item
-  Fill in the blanks on the graph above with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who wear helmets and those who do not wear helmets. \emph{Hint}: Use the conditional proportions from questions 9 and 10.
+  Fill in the blanks on the graph above with the appropriate variable names and categories to complete the segmented bar plot comparing the proportion of head injuries between those who wear helmets and those who do not wear helmets. \emph{Hint}: Use the conditional proportions from questions 9 and 10.
 \end{enumerate}
 
 \vspace{1mm}
@@ -6579,29 +6566,30 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 \end{enumerate}
 
 \vspace{0.2in}
-\newpage
 
 \hypertarget{use-statistical-analysis-methods-to-draw-inferences-from-the-data-2}{%
 \subsubsection*{Use statistical analysis methods to draw inferences from the data}\label{use-statistical-analysis-methods-to-draw-inferences-from-the-data-2}}
 \addcontentsline{toc}{subsubsection}{Use statistical analysis methods to draw inferences from the data}
 
-To test the null hypothesis we could use simulation methods as we did with a single categorical variable in class. In this in-class activity we will focus on theory-based methods. Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
+To test the null hypothesis, we could use simulation-based methods as we did with a single categorical variable in class. In this in-class activity, we will focus on theory-based methods. Like with a single proportion, the sampling distribution of a difference in sample proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
-Conditions for the sample distribution of \(\hat{p}_1-\hat{p}_2\):
+Conditions for the sampling distribution of \(\hat{p}_1-\hat{p}_2\) to follow an approximate normal distribution:
 
 \begin{itemize}
 \item
-  Independence: The data are independent within and between the two groups. (\emph{Remember}: This also must be true to use simulation methods!)
+  \textbf{Independence}: The data are independent within and between the two groups. (\emph{Remember}: This also must be true to use simulation methods!)
 \item
-  Success-Failure Condition: The success-failure condition holds for each group. Under the null hypothesis, the proportions \(\pi_1\) and \(\pi_2\) are equal, so we check the success-failure condition with our best estimate of these values under \(H_0\), the pooled proportion from the two samples,
+  \textbf{Success-failure condition}: The success-failure condition holds for each group. Under the null hypothesis, the proportions \(\pi_1\) and \(\pi_2\) are equal, so we check the success-failure condition with our best estimate of these values under \(H_0\), the pooled proportion from the two samples,
 \end{itemize}
 
 \[
 \hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
 \]
+We then check that all four of the following inequalities hold:
 
-~~~~\[\hat{p}_{pool} * n_1 \ge 10, (1 - \hat{p}_{pool}) * n_1 \ge 10\]\\
-\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\[\hat{p}_{pool} * n_2 \ge 10, (1 - \hat{p}_{pool}) * n_2 \ge 10\]
+\[\hat{p}_{pool} \times n_1 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_1 \geq 10,\]
+
+\[\hat{p}_{pool} \times n_2 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_2 \geq 10\]
 
 \vspace{.25in}
 
@@ -6628,23 +6616,21 @@ Conditions for the sample distribution of \(\hat{p}_1-\hat{p}_2\):
 To calculate the standardized statistic we use:
 
 \[
-Z = \frac{\text{point estimate} - \text{null value}}{SE}
+Z = \frac{\text{point estimate} - \text{null value}}{SE},
 \]
 
-where the null standard error is calculated using the pooled proportion of successes.
+where the null standard error is calculated using the pooled proportion of successes:
 
 \[
-SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\frac{1}{n_2})}
+SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}.
 \]
-
-\vspace{.25in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{16}
 \tightlist
 \item
-  Calculate the \(SE_0(\hat{p}_1-\hat{p}_2)\).
+  Calculate \(SE_0(\hat{p}_1-\hat{p}_2)\).
 \end{enumerate}
 
 \vspace{1in}
@@ -6659,7 +6645,7 @@ SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\
 
 \vspace{1in}
 
-We will use the pnorm function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic found in question 18 at xx in line 27, highlight and run lines 27--29.
+We will use the \texttt{pnorm} function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic found in question 18 at \texttt{xx} in line 27; highlight and run lines 27--29.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6686,7 +6672,7 @@ We will use the pnorm function in \texttt{R} to find the p-value. Use the provid
 \setcounter{enumi}{20}
 \tightlist
 \item
-  How much evidence does the p-value provide against the null hypothesis? \emph{Hint}: Refer to the guidelines given in activity 6.
+  How much evidence does the p-value provide against the null hypothesis? \emph{Hint}: Refer to the guidelines given in Activity 6.
 \end{enumerate}
 
 \vspace{0.4in}
@@ -6708,7 +6694,7 @@ We will use the pnorm function in \texttt{R} to find the p-value. Use the provid
 Hypothesis tests are not flawless. In a hypothesis test, there are two competing hypotheses: the null and alternative. We make a decision about which might be true, but we may choose incorrectly.
 
 \begin{table}
-\caption{Four different possible scenarios for hypothesis tests.}
+\caption{Four different possible scenarios for hypothesis test decisions.}
 \centering
 \begin{tabular}[h]{ll|cc}
 \hline
@@ -6720,9 +6706,10 @@ Hypothesis tests are not flawless. In a hypothesis test, there are two competing
 \textbf{Truth} & $H_A$ true & Type 2 Error & Good decision\\
 \hline
 \end{tabular}
+\label{tab:errors}
 \end{table}
 
-Shown in the table above, a \textbf{Type 1 Error} is rejecting the null hypothesis when \(H_0\) is actually true. A \textbf{Type 2 Error} is failing to reject the null hypothesis when the alternative is actually true.
+Shown in Table \ref{tab:errors}, a \textbf{Type 1 Error} happens when we reject the null hypothesis when \(H_0\) is actually true. A \textbf{Type 2 Error} happens when we fail to reject the null hypothesis when the alternative is actually true.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6759,7 +6746,7 @@ Shown in the table above, a \textbf{Type 1 Error} is rejecting the null hypothes
 \setcounter{enumi}{25}
 \tightlist
 \item
-  Write a paragraph summarizing the results of the study. Be sure to describe:
+  Write a paragraph summarizing the results of the study as if writing a press release. Be sure to describe:
 \end{enumerate}
 
 \begin{itemize}
@@ -6937,9 +6924,9 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \item
   The standardized statistic when the response variable is categorical is a Z score and compared to the standard normal distribution to find the p-value. To find the standardardized statistic we take the value of the statistic minus the null value, divided by the standard error of the statistic. The standardized statistic measures the number of standard errors the statistic is from the null value.
 \item
-  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type I error.
+  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type 1 error.
 \item
-  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance leve), we could have a possible Type II error.
+  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance leve), we could have a possible Type 2 error.
 \end{enumerate}
 
 \hypertarget{additional-notes-7}{%
@@ -7242,13 +7229,13 @@ Total & 752 & 2810 & 3562\tabularnewline
 
 In this activity we will focus on theory-based methods to calculate a confidence interval. Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
-Conditions for the sample distribution of \(\hat{p}_1-\hat{p}_2\):
+Conditions for the sampling distribution of \(\hat{p}_1-\hat{p}_2\) to follow an approximate normal distribution:
 
 \begin{itemize}
 \item
-  Independence: The data are independent within and between the two groups.
+  \textbf{Independence}: The data are independent within and between the two groups. (\emph{Remember}: This also must be true to use simulation methods!)
 \item
-  Success-Failure Condition: For a confidence interval, the success-failure condition holds for each group. All cells in the table have at least 10 observations.
+  \textbf{Success-failure condition}: The success-failure condition holds for each group. Since we are not assuming a null hypothesis, we do not use the pooled sample proportion to check this condition as we did in Activity 8. Instead, we use the individual sample proportions \(\hat{p}_1\) and \(\hat{p}_2\). Equivalently, we check that all cells in the table have at least 10 observations.
 \end{itemize}
 
 \begin{enumerate}
