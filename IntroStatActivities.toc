@@ -172,7 +172,7 @@
 \contentsline {subsection}{\numberline {7.2.1}Learning objectives}{91}{subsection.7.2.1}%
 \contentsline {subsection}{\numberline {7.2.2}Terminology review}{91}{subsection.7.2.2}%
 \contentsline {subsection}{\numberline {7.2.3}Handedness of male boxers}{91}{subsection.7.2.3}%
-\contentsline {subsubsection}{Activity Intro. Complete Q1--Q4 before class.}{91}{subsection.7.2.3}%
+\contentsline {subsubsection}{Activity intro: Complete Q1--Q4 before class.}{91}{subsection.7.2.3}%
 \contentsline {subsubsection}{Use statistical analysis methods to draw inferences from the data}{92}{Item.262}%
 \contentsline {subsubsection}{Communicate the results and answer the research question}{93}{Item.269}%
 \contentsline {subsubsection}{\numberline {7.2.3.1}Effect of confidence level}{94}{subsubsection.7.2.3.1}%
