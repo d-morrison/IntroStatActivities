@@ -112,11 +112,11 @@
 \contentsline {subsubsection}{Vocabulary review. Complete Q1--Q4 before class.}{60}{table.5.1}%
 \contentsline {subsubsection}{Correlation}{62}{Item.146}%
 \contentsline {subsubsection}{Slope}{63}{Item.151}%
-\contentsline {subsubsection}{Residuals}{64}{Item.154}%
+\contentsline {subsubsection}{Residuals}{63}{Item.154}%
 \contentsline {subsection}{\numberline {5.2.4}Out-of-class activity}{64}{subsection.5.2.4}%
 \contentsline {subsubsection}{Coefficient of determination (squared correlation)}{64}{subsection.5.2.4}%
-\contentsline {subsubsection}{Multivariate plots}{65}{Item.159}%
-\contentsline {subsection}{\numberline {5.2.5}Take-home messages}{66}{subsection.5.2.5}%
+\contentsline {subsubsection}{Multivariable plots}{64}{Item.159}%
+\contentsline {subsection}{\numberline {5.2.5}Take-home messages}{65}{subsection.5.2.5}%
 \contentsline {subsection}{\numberline {5.2.6}Additional notes}{66}{subsection.5.2.6}%
 \contentsline {chapter}{\numberline {6}Inference for a Single Categorical Variable: Hypothesis Testing}{67}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Reading Guide: Categorical Inference}{67}{section.6.1}%

@@ -436,7 +436,7 @@ Simpson’s Paradox:
   
 * Use scatterplots to assess the relationship between two quantitative variables.
 
-* Find the estimated line of regression using summary statistics and `R` linear model (`lm`) output.
+* Find the estimated line of regression using summary statistics and `R` linear model (`lm()`) output.
 
 * Interpret the slope coefficient in context of the problem.
 
@@ -452,13 +452,15 @@ In this week's activity, we will review summary measures and plots for two quant
 
 * Scatterplot
 
-* Correlation
+* Correlation ($r$ or $R$)
 
-* Slope
+* Coefficient of determination ($r$-squared or $R^2$)
 
 * Least-squares line of regression
 
-* Coefficient of determination ($r$-squared)
+* Slope and $y$-intercept
+
+* Residuals
 
 To review these concepts, see Chapter 3 in the textbook.  
 
@@ -479,19 +481,19 @@ We will revisit the data set used last week collected on Movies released in 2016
 
 #### Vocabulary review. Complete Q1--Q4 before class.{-}
 
-Note: You will need to use the provided `R` script file for activity 5 to complete question 3.
+Note: You will need to use the provided `R` script file for Activity 5 to complete question 3.
 
 
 
-1.  What type of plot is used to display the relationship between `budget_mil` and `revenue_mil`?
+1.  What type of plot should used to display the relationship between `budget_mil` and `revenue_mil`?
 
 \vspace{0.2in}
 
-2.  What three summary statistics are used to describe the relationship between two quantitative variables?
+2.  What three summary statistics could be used to describe the relationship between two quantitative variables?
 
 \vspace{0.4in}
 
-We will look at the relationship between budget and revenue for movies released in 2016. Enter the variable name `budget_mil` for xx and `revenue_mil` for yy at line 7 in the `R` script file to create the scatterplot. (Note: both variables are measured in "millions of dollars").  Highlight and run lines 1--12.
+We will look at the relationship between budget and revenue for movies released in 2016. Enter the variable name `budget_mil` for xx and `revenue_mil` for yy at line 7 in the `R` script file to create the scatterplot. (Note: both variables are measured in "millions of dollars", or $MM.)  Highlight and run lines 1--12.
 
 
 ```r
@@ -505,8 +507,7 @@ ggplot(aes(x = xx, y = yy))+  # Specify variables
 ```
 3. Sketch the scatterplot created from the code.
 
-\vspace{1.5in}
-\newpage
+\vspace{1.8in}
 
 4. Assess the four features of the scatterplot that describe this relationship. Describe each feature using a complete sentence!
 
@@ -527,15 +528,16 @@ ggplot(aes(x = xx, y = yy))+  # Specify variables
 \vspace{.4in}
 
 
-5. Does there appear to be an association between `Budget` and `Revenue`? Explain.
+5. Does there appear to be an association between budget and revenue? Explain.
 
 \vspace{1in}
 
+\newpage 
+
 #### Correlation  {-}
 
-Correlation measures the strength and the direction of the linear relationship between two quantitative variables.  The closer the value of correlation to + or - 1 the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  
+Correlation measures the strength and the direction of the linear relationship between two quantitative variables.  The closer the value of correlation to $+1$ or $-1$, the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  
 
-\newpage 
 
 
 ```r
@@ -562,11 +564,11 @@ movies %>%  # Data set pipes into
 #> movie_facebook_likes                1.000
 ```
 
-6.  Using the output above, which two variables have the strongest correlation?
+6.  Using the output above, which two variables have the *strongest* correlation? What is the value of this correlation?
 
-\vspace{0.3in}
+\vspace{0.5in}
 
-7.  What is the value of correlation between 'Budget' and 'Revenue'?
+7.  What is the value of correlation between budget and revenue?
 
 \vspace{0.3in}
 
@@ -580,11 +582,13 @@ movies %>%  # Data set pipes into
 
 10.  Explain why the correlation values on the diagonal are equal to 1.
 
-\vspace{1in}
+\vspace{0.8in}
+
+\newpage
 
 #### Slope {-}
 
-The linear model function in `R` gives us the summary for the least squares regression line.  The estimate for `(Intercept)` is the $y$-intercept for the line of least squares and the estimate for `budget_mil` is the value of $b_1$, the slope.
+The linear model function in `R` (`lm()`) gives us the summary for the least squares regression line.  The estimate for `(Intercept)` is the $y$-intercept for the line of least squares, and the estimate for `budget_mil` (the $x$-variable name) is the value of $b_1$, the slope.
 
 
 ```r
@@ -599,38 +603,38 @@ summary(revenueLM)$coefficients # Display coefficient summary
 #> budget_mil  0.9460001  0.1056786 8.951670 4.339561e-14
 ```
 
+11.  Write out the least squares line using the summary statistics provided above. Use proper statistical notation.
+
+\vspace{.5in}
+
 You may remember from middle and high school that slope $=\frac{\mbox{rise}}{\mbox{run}}$.  
 
 Using $b_1$ to represent slope, we can write that as the fraction $\frac{b_1}{1}$. 
 
-Therefore, the slope predicts how much the line will *rise* for each *run* of +1. In other words, as the $x$ variable increases by 1 unit, the $y$ variable is expected to change (increase/decrease) by the value of slope.
+Therefore, the slope predicts how much the line will *rise* for each *run* of +1. In other words, as the $x$ variable increases by 1 unit, the $y$ variable is predicted to change (increase/decrease) by the value of slope.
 
-
-11.  Write out the least squares line using the summary statistics provided in proper statistical notation.
-
-\vspace{.6in}
 
 12. Interpret the value of slope in context of the problem.
 
-\vspace{1in}
+\vspace{.8in}
 
-13. Using the least squares line from question 11, predict the revenue for a movie with a budget of 165 million.
+13. Using the least squares line from question 11, predict the revenue for a movie with a budget of 165 $MM.
 
 \vspace{.6in}
 
 #### Residuals {-}
 
-The model we are using assumes the relationship between the two variables follows a straight line. The residuals are the errors, or the part that hasn't been modeled by the line.
+The model we are using assumes the relationship between the two variables follows a straight line. The residuals are the errors, or the variability in the response that hasn't been modeled by the line (model).
 
 \begin{center}
 Data = Model + Residual
 
-Residual = Data - Model
+$\implies$ Residual = Data $-$ Model
 
 $e_i=y_i-\hat{y}_i$
 \end{center}
 
-14.  The movie, *Independence Day: Resurgence*, had a budget of 165 million and revenue of 102.315 million.  Find the residual for this movie.
+14.  The movie *Independence Day: Resurgence* had a budget of 165 \$MM and revenue of 102.315 \$MM.  Find the residual for this movie.
 
 \vspace{.8in}
 
@@ -642,26 +646,27 @@ $e_i=y_i-\hat{y}_i$
 
 #### Coefficient of determination (squared correlation) {-}
 
-The third summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. $r^2$ measures the proportion of variation in the response that is explained by the least squares line with the explanatory variable.  There are two ways to calculate the coefficient of determination: 
+The third summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. The value of $r^2$ (a value between 0 and 1) represents the **proportion of variation in the response that is explained by the least squares line with the explanatory variable**.  There are two ways to calculate the coefficient of determination: 
 
-|    $r^2 = (r)^2$ - square the value of the correlation coefficient
+|    Square the correlation coefficient:  $r^2 = (r)^2$
 
-|    $r^2 = \frac{s_{response}^2 - s_{residuals}^2}{s_{response}^2}$ - using the variances
+|    Use the variances of the response and the residuals:  $r^2 = \dfrac{s_y^2 - s_{RES}^2}{s_y^2} = \dfrac{SST - SSE}{SST}$
 
-1.  Use the correlation, $r$, found in question 7, to calculate the coefficient of determination between `Budget` and `Revenue`, $r^2$.
+
+1.  Use the correlation, $r$, found in question 7 of the in-class activity, to calculate the coefficient of determination between budget and revenue, $r^2$.
 
 \vspace{.4in}
 
-2.  The variance of the response variable, revenue in millions, is about $s_{revenue}^2 = 8024.261$ and the variability in the residuals is about $s_{residuals}^2 = 4244.832$.  Use these values to calculate the coefficient of determination.  Verify that your answers to 1 and 2 are the same.
+2.  The variance of the response variable, revenue in \$MM, is about $s_{revenue}^2 = 8024.261$ \$MM$^2$  and the variability in the residuals is about $s_{RES}^2 = 4244.832$ \$MM$^2$.  Use these values to calculate the coefficient of determination.  Verify that your answers to 1 and 2 are the same.
 
 \vspace{1in}
 
-3.  Interpret the coefficient of determination in context of the problem.
+3.  Write a sentence interpreting the coefficient of determination in context of the problem.
 
-\vspace{.6in}
+\vspace{.8in}
 
-#### Multivariate plots {-}
-What if we wanted to see if the relationship between `Budget` and `Revenue` differs if we add another variable into the picture?  The following plot visualizes three variables, creating a **multivariate** plot. 
+#### Multivariable plots {-}
+What if we wanted to see if the relationship between movie budget and revenue differs if we add another variable into the picture?  The following plot visualizes three variables, creating a **multivariable** plot. 
 
 
 ```r
@@ -685,7 +690,7 @@ movies %>% # Data set pipes into...
 
 \vspace{0.5in}
 
-5. Does the relationship between `Budget` and `Revenue` differ among the different content ratings?  Explain.
+5. Does the *relationship* between movie budget and revenue differ among the different content ratings?  Explain.
 
 \vspace{1in}
 
@@ -693,15 +698,17 @@ movies %>% # Data set pipes into...
 
 ### Take-home messages
 
-1.	Two quantitative variables are graphically displayed in a scatterplot.  The explanatory variable is on the x-axis and the response variable is on the y-axis.  When describing the relationship between two quantitative variables we look at the form (linear or non-linear), direction (positive or negative), strength, and for the presence of outliers. 
+1.	Two quantitative variables are graphically displayed in a scatterplot.  The explanatory variable is on the $x$-axis and the response variable is on the $y$-axis.  When describing the relationship between two quantitative variables we look at the form (linear or non-linear), direction (positive or negative), strength, and for the presence of outliers. 
 
-2.  There are three summary statistics used to summarize the relationship between two quantitative variables: correlation, slope of the regression line, and the coefficient of determination.  
+2.  There are three summary statistics used to summarize the relationship between two quantitative variables: correlation ($r$), slope of the regression line ($b_1$), and the coefficient of determination ($r^2$).  
 
-3. The sign of correlation and the sign of the slope will be the same.  The closer the value of correlation is to -1 or +1 the stronger the relationship between the explanatory and the response variable.  
+3. The sign of correlation and the sign of the slope will always be the same.  The closer the value of correlation is to $-1$ or $+1$, the stronger the relationship between the explanatory and the response variable.  
 
-4.  The coefficient of determination measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100% the stronger the relationship.
+4.  The coefficient of determination multiplied by 100 ($r^2 \times 100$) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100%, the stronger the relationship.
 
-5.  We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable.  This is extrapolation.  
+5.  We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable (why?).  This is called **extrapolation**.  
+
+\newpage
 
 ### Additional notes
 
