@@ -750,33 +750,33 @@ When we write a conclusion we answer the research question by stating how much e
 
 ### Out-of-class activity
 
-The remaining questions cover theory-based methods for testing a single categorical variable.  Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
+The in-class activity covered simulation-based methods for hypothesis tests involving a single categorical variable. The remaining questions cover theory-based methods for testing a single categorical variable.  Use Section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
 
-A single proportion can be mathematically modeled using the normal distribution if certain conditions are met.
+The sampling distribution of a single proportion --- how that proportion varies from sample to sample --- can be mathematically modeled using the normal distribution if certain conditions are met.
 
-Conditions for the sample distribution of $\hat{p}$.
+Conditions for the sampling distribution of $\hat{p}$ to follow an approximate normal distribution:
 
-* Independence: The sample’s observations are independent, e.g., are from a simple random sample
+* Independence: The sample’s observations are independent, e.g., are from a simple random sample.
 
-* Success-Failure Condition: We *expect* to see at least 10 successes and 10 failures in the sample, $n\pi≥10$  and $n(1-\pi)≥10$
+* Success-Failure Condition: We *expect* to see at least 10 successes and 10 failures in the sample, $n\pi≥10$  and $n(1-\pi)≥10$.
 
-1.  We already verified that the independence condition is satisfied in question 6. Is the success-failure condition met to model the data with the Normal distribution?  Show your work to support your answer.
+1.  We already verified that the independence condition is satisfied in question 6, since the independence condition is required for both simulation-based and theory-based methods. Is the success-failure condition met to model the data with the normal distribution?  Show your work to support your answer. Hint: We don't know the true value of the parameter, $\pi$, so we use the null value, $\pi_0$, to check the success-failure condition.
 
 \vspace{1in}
 
-To calculate the standardized statistic we use: 
+To calculate the standardized statistic we use the general formula 
 
 $$
-Z = \frac{\text{point estimate} - \text{null value}}{SE}
+Z = \frac{\text{point estimate} - \text{null value}}{SE_0(\text{point estimate})}.
 $$
-For a single categorical variable the standardized sample proportion is calculated using:
+For a single categorical variable the standardized sample proportion is calculated using
 
 $$
-Z = \frac{\hat{p} - \pi_0}{SE_0(\hat{p})}
+Z = \frac{\hat{p} - \pi_0}{SE_0(\hat{p})},
 $$
-where the standard error is calculated using the null value.
+where the standard error is calculated using the null value:
 
-$$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$
+$$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$.
 \vspace{0.5mm}
 
 2.  Calculate the null standard error of the sample proportion.
@@ -787,27 +787,35 @@ $$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$
 
 \vspace{1in}
 
-The standardized statistic is used as a ruler to measure how far the sample statistic is from the null value.  Essentially we are converting the sample proportion into a measure of standard errors to compare to the standard normal distribution.  
+\newpage
 
-```{r simpleNormal, fig.cap="A normal curve.", warning=FALSE, fig.width=10}
+The standardized statistic is used as a ruler to measure how far the sample statistic is from the null value.  Essentially, we are converting the sample proportion into a measure of standard errors to compare to the standard normal distribution.  
+
+```{r simpleNormal, fig.cap="A standard normal curve.", warning=FALSE, fig.width=8}
 X <- seq(-5,5,0.01)
 Y <- dnorm(X)
-plot(X, Y, type='l', axes=F, xlim=c(-4,4), lwd=2, ylab="", xlab="X")
+plot(X, Y, type='l', axes=F, xlim=c(-4,4), lwd=2, ylab="", xlab="Z")
 #axis(1, at=-3:3)
 abline(h=-0.002)
 ```
 
-4.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, mark on the standard normal distribution above the value of the standardized statistic calculated in question 3.
+4.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the $x$-axis of the standard normal distribution displayed in Figure \@ref(simpleNormal), and mark on the value of the standardized statistic calculated in question 3.
 
 \vspace{0.2in}
 
-The standardized statistic measures the number of standard errors the sample statistic is from the null value.
+The standardized statistic measures the *number of standard errors the sample statistic is from the null value*.
 
 5.  Interpret the standardized sample proportion from question 3 in context of the problem.
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 3 at xx in line 18, highlight and run lines 18--20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value greater than the value of the standardized statistic.  Use `lower.tail = TRUE` when doing a left-sided test and `lower.tail = FALSE` when doing a right-sided test.  To find a two-sided p-value use a left-sided test and multiply the p-value found by 2.
+We will use the `pnorm` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 3 at xx in line 18; highlight and run lines 18--20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
+
+Notes:
+
+* Use `lower.tail = TRUE` when doing a left-sided test.
+* Use `lower.tail = FALSE` when doing a right-sided test.
+* To find a two-sided p-value, use a left-sided test for negative Z or a right-sided test for positive Z, then multiply the value found by 2 to get the p-value.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
@@ -823,15 +831,17 @@ pnorm(xx, # Enter value of standardized statistic
 
 \vspace{0.5in}
 
+\newpage
+
 ### Take-home messages
 
-1.	In a hypothesis test we have two competing hypotheses, the null hypothesis and the alternative hypothesis.  The null hypothesis represents either a skeptical perspective or a perspective of no difference or no effect, and an alternative hypothesis, which represents a new perspective such as the possibility that there has been a change or that there is a treatment effect in an experiment.  
+1.	In a hypothesis test we have two competing hypotheses, the null hypothesis and the alternative hypothesis.  The null hypothesis represents either a skeptical perspective or a perspective of no difference or no effect. The alternative hypothesis represents a new perspective such as the possibility that there has been a change or that there is a treatment effect in an experiment.  
 
-2.  In a simulation test, we create a distribution of possible simulated statistics for our sample if the null hypothesis is true.  Then we see if the calculated observed statistic from the data is likely or unlikely to occur when compared to the null distribution.  
+2.  In a simulation-based test, we create a distribution of possible simulated statistics for our sample if the null hypothesis is true.  Then we see if the calculated observed statistic from the data is likely or unlikely to occur when compared to the null distribution.  
 
-3.  The p-value is the probability of the observed statistic occurring or more extreme if the null hypothesis is true.  The farther in the tail of the distribution the observed statistic is the smaller the probability is (smaller the p-value!).  The **smaller** the p-value the **more** evidence the statistic provides **against** the null hypothesis.  
+3.  The p-value is the probability of the observed statistic occurring or more extreme if the null hypothesis is true.  The farther in the tail of the distribution the observed statistic is, the smaller the probability is (smaller the p-value!).  The **smaller** the p-value, the **more** evidence the statistic provides **against** the null hypothesis. (Think carefully about why this makes sense!) 
 
-4.  When writing a conclusion to a test, we are answering the research question.  How much evidence does the statistic provide in support of the alternative hypothesis?  Use the guidelines for the strength of evidence throughout this course to assess the evidence against the null hypothesis.  
+4.  A 'decision' is a statement about strength of evidence against the null hypothesis: reject the null if the p-value is below a pre-set significance level, and fail to reject the null if the p-value is above a pre-set significance level. When writing a 'conclusion' to a hypothesis test, on the other hand, we are answering the research question.  Thus, a conclusion is a statement about strength of evidence *for the alternative hypothesis*. Use the guidelines for the strength of evidence throughout this course to assess the evidence against the null hypothesis.  
 
 ### Additional notes
 
