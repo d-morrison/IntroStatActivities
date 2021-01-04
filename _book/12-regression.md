@@ -25,17 +25,17 @@ $b_1$: sample slope
 
 $r$: sample correlation
 
-Scatterplot: displays two quantitative variables; one dot = two measurements (x, y) on one observational unit
+Scatterplot: displays two quantitative variables; one dot = two measurements (x, y) on one observational unit.
 
 Four characteristics of a scatterplot:
+\setstretch{1}
 
-\rgi *Form*: pattern of the dots plotted.  Is the trend generally linear (you can fit a straight line to the data) or non-linear?
+* *Form*: pattern of the dots plotted.  Is the trend generally linear (you can fit a straight line to the data) or non-linear?  
+* *Strength*: how closely do the points follow a trend?  Very closely (strong)? No pattern (weak)?  
+* *Direction*: as the $x$ values increase, do the $y$-values tend to increase (positive) or decrease (negative)?  
+* Unusual observations or *outliers*: points that do not fit the overall pattern of the data. 
 
-\rgi *Strength*: how closely do the points follow a trend?  Very closely (strong)? No pattern (weak)?
-
-\rgi *Direction*: as the x values increase, do the y-values tend to increase (positive) or decrease (negative)?
-
-\rgi *Unusual observations or outliers*: points that do not fit the overall pattern of the data
+\setstretch{1.25}
 
 Least squares regression line: $\hat{y} = b_0+b_1x$ , where $b_0$ is the estimate for `(Intercept)` and $b_1$ is the estimate for the `x-variable` name in the `R` regression output.
 
@@ -53,41 +53,45 @@ General steps of a hypothesis test:
 
 5. Make a conclusion based on the p-value and write the conclusion in context.
 
-Parameter: a value summarizing a variable(s) for a population
+Parameter: a value summarizing a variable(s) for a population.
 
-Statistic: a value summarizing a variable(s) for a sample
+Statistic: a value summarizing a variable(s) for a sample.
 
 Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
 
-Standard deviation of a statistic: the variability of statistics from 1000s of samples.  How far, on average, each statistic is from the true value of the parameter.
+Standard deviation of a statistic: the variability of statistics from 1000s of samples; how far, on average, each statistic is from the true value of the parameter.
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
-Hypothesis test: a process to determine how strong the evidence of an effect is
+Hypothesis test: a process to determine how strong the evidence of an effect is.
 		
-\rgi Also called a ‘significance test’
+\rgi Also called a ‘significance test’.
 
-Simulation-based method: Simulate lots of samples of size n, then find the proportion of the simulations that are at least as extreme as the observed sample statistic
+Simulation-based method: Simulate lots of samples of size $n$ under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
 
-Theory-based method: Develop a mathematical model for the statistic and use the model to calculate the probability of the observed sample statistic occurring 
+Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
 
-Null hypothesis: $H_0$ the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**
+Null hypothesis ($H_0$): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**
 
-Alternative hypothesis: $H_A$ the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**
+Alternative hypothesis ($H_A$): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**
 
 Null value: the value of the parameter when we assume the null hypothesis is true (labeled as $parameter_0$)
 
 Null distribution:  the simulated or modeled distribution of statistics (sampling distribution) we would expect to occur if the null hypothesis is true.
 
-P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true
+P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true.
 
-\rgi Lower the p-value the stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis
+$\implies$ Lower the p-value the stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis.
 
-Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance
+Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance.
 
-Significance level: ($\alpha$) a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not
+* If p-value $\leq \alpha$, then reject $H_0$.
 
-\rgi Typically use $\alpha$ =0.05
+* If p-value $> \alpha$, then fail to reject $H_0$.
+
+Significance level ($\alpha$): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
+
+\rgi Common levels of $\alpha$ include 0.01, 0.05, and 0.10.
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
@@ -106,11 +110,9 @@ Confidence level: how confident we are that the confidence interval will capture
 
 Bootstrap X% confidence interval: ($(\frac{(1-X)}{2})^{th}$ percentile,$(X+(\frac{(1-X)}{2})^{th}$ percentile) of a bootstrap distribution
 
-Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be bell-shaped and symmetric
-
 t-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard Normal distribution
 	Note: width depends on the sample size (used to calculate degrees of freedom – df for short)
-	Larger df  Closer the t distribution is to the standard Normal distribution
+	Larger df $\implies$ Closer the t distribution is to the standard Normal distribution
 
 Degrees of freedom (df): describes the variability of the t-distribution
 

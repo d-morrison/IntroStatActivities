@@ -32,7 +32,7 @@ Point estimate: other names for the statistic from a sample; our best guess for 
 
 Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
 
-Standard deviation of a statistic: the variability of statistics from 1000s of samples.  How far, on average, each statistic is from the true value of the parameter.
+Standard deviation of a statistic: the variability of statistics from 1000s of samples; how far, on average, each statistic is from the true value of the parameter.
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
@@ -114,7 +114,7 @@ In section 5.4.4, read only the sub-section on "Confidence interval for $\pi_1 -
 
 #### Reminders from previous sections {-}
 
-Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately normal (bell-shaped and symmetric).
 
 #### Notes {-}
 

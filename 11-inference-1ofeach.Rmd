@@ -36,41 +36,45 @@ General steps of a hypothesis test:
 
 5. Make a conclusion based on the p-value and write the conclusion in context.
 
-Parameter: a value summarizing a variable(s) for a population
+Parameter: a value summarizing a variable(s) for a population.
 
-Statistic: a value summarizing a variable(s) for a sample
+Statistic: a value summarizing a variable(s) for a sample.
 
 Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
 
-Standard deviation of a statistic: the variability of statistics from 1000s of samples.  How far, on average, each statistic is from the true value of the parameter.
+Standard deviation of a statistic: the variability of statistics from 1000s of samples; how far, on average, each statistic is from the true value of the parameter.
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
-Hypothesis test: a process to determine how strong the evidence of an effect is
+Hypothesis test: a process to determine how strong the evidence of an effect is.
 		
-\rgi Also called a ‘significance test’
+\rgi Also called a ‘significance test’.
 
-Simulation-based method: Simulate lots of samples of size n, then find the proportion of the simulations that are at least as extreme as the observed sample statistic
+Simulation-based method: Simulate lots of samples of size $n$ under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
 
-Theory-based method: Develop a mathematical model for the statistic and use the model to calculate the probability of the observed sample statistic occurring 
+Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
 
-Null hypothesis: $H_0$ the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**
+Null hypothesis ($H_0$): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**
 
-Alternative hypothesis: $H_A$ the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**
+Alternative hypothesis ($H_A$): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**
 
 Null value: the value of the parameter when we assume the null hypothesis is true (labeled as $parameter_0$)
 
 Null distribution:  the simulated or modeled distribution of statistics (sampling distribution) we would expect to occur if the null hypothesis is true.
 
-P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true
+P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true.
 
-\rgi Lower the p-value the stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis
+$\implies$ Lower the p-value the stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis.
 
-Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance
+Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance.
 
-Significance level: ($\alpha$) a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not
+* If p-value $\leq \alpha$, then reject $H_0$.
 
-\rgi Typically use $\alpha$ =0.05
+* If p-value $> \alpha$, then fail to reject $H_0$.
+
+Significance level ($\alpha$): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
+
+\rgi Common levels of $\alpha$ include 0.01, 0.05, and 0.10.
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
@@ -89,7 +93,7 @@ Confidence level: how confident we are that the confidence interval will capture
 
 Bootstrap X% confidence interval: ($(\frac{(1-X)}{2})^{th}$ percentile,$(X+(\frac{(1-X)}{2})^{th}$ percentile) of a bootstrap distribution
 
-Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be bell-shaped and symmetric
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample mean (or proportion) will be approximately normal (bell-shaped and symmetric).
 
 t-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard Normal distribution
 	Note: width depends on the sample size (used to calculate degrees of freedom – df for short)

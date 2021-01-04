@@ -40,10 +40,10 @@ Standard deviation of a statistic:
 Standard error of a statistic: 
 \rgs
 
-Null hypothesis: 
+Null hypothesis ($H_0$): 
 \rgs
 
-Alternative hypothesis: 
+Alternative hypothesis ($H_A$): 
 \rgs
 
 P-value: 
@@ -102,7 +102,7 @@ General steps of a hypothesis test:
 Conclusions should include:
 \rgs
 
-Decisions:
+Decision:
 
 \rgi If p-value $\leq \alpha$, the decision is to: 
 
@@ -311,7 +311,7 @@ Statistic: a value summarizing a variable(s) for a sample.
 
 Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
 
-Standard deviation of a statistic: the variability of statistics from 1000s of samples.  How far, on average, each statistic is from the true value of the parameter.
+Standard deviation of a statistic: the variability of statistics from 1000s of samples; how far, on average, each statistic is from the true value of the parameter.
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
@@ -321,11 +321,11 @@ Hypothesis test: a process to determine how strong the evidence of an effect is.
 
 Simulation-based method: Simulate lots of samples of size $n$ under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
 
-Theory-based method: Develop a mathematical model for the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
+Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
 
-Null hypothesis: $H_0$ the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**.
+Null hypothesis ($H_0$): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**.
 
-Alternative hypothesis: $H_A$ the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**.
+Alternative hypothesis ($H_A$): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**.
 
 P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true.
 
