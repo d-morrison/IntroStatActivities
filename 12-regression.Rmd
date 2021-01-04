@@ -2,7 +2,7 @@
 
 ## Reading Guide: Inference for Slope and Correlation
 
-### Section 7.1 and 7.2 (Inference for regression and model conditions) {-}
+### Sections 7.1 and 7.2 (Inference for regression and model conditions) {-}
 
 **Videos**  
 
@@ -41,7 +41,7 @@ Least squares regression line: $\hat{y} = b_0+b_1x$ , where $b_0$ is the estimat
 
 Slope interpretation: a 1 unit increase in the *x* variable is associated with a $|b_1 |$ unit increase/decrease in the *y*-variable
 
-#### General steps of a hypothesis test: {-}
+General steps of a hypothesis test:
 
 1. Frame the research question in terms of hypotheses.
 
@@ -234,7 +234,7 @@ The proportion of simulated null samples at ____ or ____.
 \rgs
 \rgs
 
-#### Example: Midterm elections and Unemployment {-}
+#### Example: Midterm elections and unemployment {-}
 
 1. What is the research question?
 \rgs

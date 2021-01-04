@@ -2,7 +2,7 @@
 
 ## Reading Guide: Hypothesis Testing for a Difference in Proportions
 
-### Section 5.4.1 to 5.4.2 (Simulation Tests for a difference in proportions; Two-sided hypotheses)  {-}
+### Section 5.4.1 to 5.4.2 (Simulation tests for a difference in proportions; Two-sided hypotheses)  {-}
 
 **Videos**  
 
@@ -19,7 +19,7 @@ $\hat{p}$ = sample proportion
 
 $\pi$ = population proportion
 
-#### General steps of a hypothesis test: {-}
+General steps of a hypothesis test:
 
 1. Frame the research question in terms of hypotheses.
 
@@ -132,7 +132,7 @@ Population proportion of group 1:
 Population proportion of group 2: 
 \rgs
 
-#### Example: Gender Discrimination {-}
+#### Example: Gender discrimination {-}
 1. What is the research question?
 \rgs
 
@@ -181,7 +181,7 @@ Population proportion of group 2:
 \rgs
 
 
-#### Example: Opportunity Cost {-}
+#### Example: Opportunity cost {-}
 1. What is the research question?
 \rgs
 

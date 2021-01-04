@@ -2,9 +2,9 @@
 
 ## Reading Guide: Categorical Inference
 
-### Section 5.1 (Foundations of Inference) 
+### Section 5.1 (Foundations of inference) {-}
 
-You may skip the special topic Section 5.1.4.
+You may skip Section 5.1.4. This section will be covered next week.
 
 **Videos**  
 
@@ -19,7 +19,7 @@ Statistical inference:
 
 Hypothesis test: 
 
-\rgi Also called a ‘significance test’
+\rgi Also called a ‘significance test’.
 \rgs
 
 Simulation-based method: 
@@ -49,15 +49,17 @@ Alternative hypothesis:
 P-value: 
 \rgs
 
-Test statistic/point estimate: 
+Point estimate: 
+\rgs
+
+Test statistic: 
 \rgs
 
 Decision: 
 \rgs
 
-Significance level: 
-\rgi 
-\rgs Typically use $\alpha=0.05$
+Significance level ($\alpha$): 
+\rgs 
 
 Statistically significant: 
 \rgs
@@ -69,17 +71,18 @@ What ‘theory’ is behind the theory-based methods of analysis?
 
 Consider the US judicial system:
 
-\rgi What is the null hypothesis?  
+\rgi What is the null hypothesis?
 \rgs
 
-\rgi What is the alternative hypothesis? 
+\rgi What is the alternative hypothesis?
 \rgs
 
-\rgi The jury is presented with evidence.  
+\rgi The jury is presented with evidence.
+
+|          - If the evidence is strong (beyond a reasonable doubt), the jury will find the defendant: 
 \rgs
 
-If the evidence is strong (beyond a reasonable doubt), the jury will find the defendant: 
-If the evidence is not strong (not beyond a reasonable doubt), the jury will find the defendant: 
+|          - If the evidence is not strong (not beyond a reasonable doubt), the jury will find the defendant: 
 \rgs
 
 To create a simulation, which hypothesis (null or alternative) do we assume is true? 
@@ -101,9 +104,11 @@ Conclusions should include:
 
 Decisions:
 
-\rgi If p-value≤α, the decision is to: 
+\rgi If p-value $\leq \alpha$, the decision is to: 
 
-\rgi If p-value>α, the decision is to: 
+\rgi If p-value $> \alpha$, the decision is to: 
+
+\newpage
 
 True or False: If the p-value is above 0.10, that means the null hypothesis is true.
 
@@ -132,11 +137,13 @@ $SD(\hat{p})$ =
 
 4. How could coins be used to create a simulation of what should happen if everyone in the class was just guessing?
 \rgs
+\rgs
 
 5. How can we use the simulation to determine which of the two possibilities is more believable?
 \rgs
+\rgs
 
-6. What decision should be made at the $\alpha = 0.05$ level?  Justify your answer.
+6. What decision should be made at an $\alpha = 0.05$ significance level?  Justify your answer.
 \rgs
 
 7. Are the results in this example statistically significant?  Justify your answer.
@@ -160,9 +167,9 @@ Normal distribution:
 \rgi Notation:
 \rgs
 
-\rgi Also known as: normal curve, normal model
+\rgi \rgi Also known as: normal curve, normal model
 
-\rgi Standard Normal distribution: 
+Standard Normal distribution: 
 \rgs
 
 \rgi Notation:
@@ -171,7 +178,7 @@ Normal distribution:
 Z-score:
 \rgs
 
-Xth percentile: 
+$X$th percentile: 
 \rgs
 
 68-95-99.7 rule: 
@@ -179,86 +186,104 @@ Xth percentile:
 
 #### Notes {-}
 
-Interpretation of a z-score: 
+Interpretation of a Z-score: 
 \rgs
 
-True or False: The more unusual observation will be the observation with the largest z-score.
+True or False: The more unusual observation will be the observation with the largest Z-score.
 	
 Approximately what percent of a Normal distribution is in the interval
 
-\rgi (mean – standard deviation, mean + standard deviation) 
+\rgi (mean – standard deviation, mean + standard deviation):
 \rgs
  
-\rgi (mean – 2*(standard deviation), mean + 2*(standard deviation)) 
+\rgi (mean – 2$\times$(standard deviation), mean + 2$\times$(standard deviation)):
 \rgs
 
-\rgi (mean – 3*(standard deviation), mean + 3*(standard deviation)) 
+\rgi (mean – 3$\times$(standard deviation), mean + 3$\times$(standard deviation)):
 \rgs
 
 #### Formulas {-}
 
-z =
+Z =
 \rgs
 
-#### R Coding {-}
-Will need to change the value of the mean, sd, and q to match the question
+### `R` coding {-}
+
+##### Calculating normal probabilities {-}
+
+When using the `pnorm` `R` function, you will need to enter values for the arguments `mean`, `sd`, and `q` to match the question.
 
 
 ```r
-pnorm(mean = μ, sd = σ, q = x, lower.tail = TRUE)
+pnorm(mean = mu, sd = sigma, q = x, lower.tail = TRUE)
 ```
 
-This function will return the percent of the N(μ,σ) distribution which is below the value x.
+This function will return the proportion of the N(`mu`,`sigma`) distribution which is *below* the value `x`.
 
-i.e.: pnorm(mean = 5, sd = 2, q = 3, lower.tail = TRUE)will give us the percent of a N(5,2) distribution which is below 3, which equals 0.159.
+Example: `pnorm(mean = 5, sd = 2, q = 3, lower.tail = TRUE)` will give us the proportion of a N(5,2) distribution which is below 3, which equals 0.159:
  
+
+```r
+pnorm(mean = 5, sd = 2, q = 3, lower.tail = TRUE)
+#> [1] 0.1586553
+```
+
+Changing to `lower.tail = FALSE` will give the proportion of the distribution which is *above* the value `x`.
+
+
+```r
+pnorm(mean = 5, sd = 2, q = 3, lower.tail = FALSE)
+#> [1] 0.8413447
+```
+
+##### Displaying normal probabilities {-} 
+
+When using the `normTail` `R` function, you will need to enter values for the arguments `m`, `s`, and `L` (or `U`) to match the question.
+
+
+```r
+normTail(m = mu, s = sigma, L = x)
+```
+
+This function (in the `openintro` package) will plot a N(`mu`, `sigma`) distribution and shade the area that is below the value `x`.
+
+Example: `normTail(m = 5, s = 2, L = 3)` creates the plot pictured below.
+
 \begin{figure}
 
-{\centering \includegraphics[width=0.6\linewidth]{images/Norm_lessthan_3} 
+{\centering \includegraphics[width=0.6\linewidth]{06-inference-1cat_test_files/figure-latex/normgt3-1} 
 
 }
 
 \end{figure}
 
-Changing to lower.tail = FALSE will give the percent of the distribution which is above x.
+Changing `L` to `U` will shade the area *above* `x`.  
+
+Example: `normTail(m = 5, s = 2, U = 3)` plots a N(5,2) distribution with the area above 3 shaded.
+
+##### Calculating normal percentiles {-}
+
+When using the `qnorm` `R` function, you will need to enter values for the arguments `mean`, `sd`, and `p` to match the question.
 
 
 ```r
-normTail(m = μ, s = σ, L = x)
+qnorm(mean = mu, sd = sigma, p = x, lower.tail = TRUE)
 ```
 
-This function will plot a $N(\mu, \sigma)$ distribution and shade the area that is below the value x.
+This function will return the value on the N(`mu`, `sigma`) distribution which has `x` area of the distribution *below* it.
 
-i.e.: normTail(m = 5, s = 2, L = 3)creates the plot pictured above.
-		Changing L to U will shade the area above x.  normTail(m = 5, s = 2, U = 3) plots
-		
-\begin{figure}
+Example:  `qnorm(mean = 5, sd = 2, p = 0.159, lower.tail = TRUE)` will give us the value on a N(5,2) distribution which has 0.159 (15.9%) of the distribution below it, which equals 3 (from the `R` output above).
 
-{\centering \includegraphics[width=0.6\linewidth]{images/Norm_greaterthan_3} 
+Changing to `lower.tail = FALSE` will give the value which has `x` area of the distribution *above* it.
 
-}
-
-\end{figure}
+We would recommend you work through each of the examples in Section 5.2.4 using `R`.
 
 
-```r
-qnorm(mean = μ, sd = σ, p = x, lower.tail = TRUE)
-```
-
-This function will return the value on the $N(\mu,\sigma)$ distribution which has x area of the distribution below it.
-
-i.e.: qnorm(mean = 5, sd = 2, p = 0.159, lower.tail = TRUE) will give us the value on a N(5,2) distribution which has 0.159 (15.9%) of the distribution below it, which equals 3 (from above).
-
-Changing to lower.tail = FALSE will give the value which has x area of the distribution **above** it.
-
-We would recommend you work through each of the examples in section 5.2.4 using `R`.
-
-
-### Section 5.3 (Inference for one proportion) 
+### Section 5.3 (Inference for one proportion) {-}
 
 \setstretch{1}
 
-You may skip Section 5.3.2 and stop before the "Confidence interval for $\pi$ sub-section in Section 5.3.3. These sections will be covered next week.
+You may skip Section 5.3.2 and stop before the "Confidence interval for $\pi$" sub-section in Section 5.3.3. These sections will be covered next week.
 
 **Videos**  
 
@@ -276,7 +301,7 @@ $\hat{p}$ = sample proportion
 
 $\pi$ = population proportion
 
-#### General steps of a hypothesis test: {-}
+General steps of a hypothesis test:
 
 1. Frame the research question in terms of hypotheses.
 
@@ -288,9 +313,9 @@ $\pi$ = population proportion
 
 5. Make a conclusion based on the p-value and write the conclusion in context.
 
-Parameter: a value summarizing a variable(s) for a population
+Parameter: a value summarizing a variable(s) for a population.
 
-Statistic: a value summarizing a variable(s) for a sample
+Statistic: a value summarizing a variable(s) for a sample.
 
 Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
 
@@ -298,41 +323,44 @@ Standard deviation of a statistic: the variability of statistics from 1000s of s
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
-Hypothesis test: a process to determine how strong the evidence of an effect is
+Hypothesis test: a process to determine how strong the evidence of an effect is.
 		
-\rgi Also called a ‘significance test’
+\rgi Also called a ‘significance test’.
 
-Simulation-based method: Simulate lots of samples of size n, then find the proportion of the simulations that are at least as extreme as the observed sample statistic
+Simulation-based method: Simulate lots of samples of size $n$ under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
 
-Theory-based method: Develop a mathematical model for the statistic and use the model to calculate the probability of the observed sample statistic occurring 
+Theory-based method: Develop a mathematical model for the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
 
-Null hypothesis: $H_0$ the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**
+Null hypothesis: $H_0$ the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**.
 
-Alternative hypothesis: $H_A$ the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**
+Alternative hypothesis: $H_A$ the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**.
 
-P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true
+P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true.
 
-\rgi Lower the p-value the Stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis
+$\implies$ Lower the p-value the stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis.
 
-Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance
+Decision: a determination of whether to 'reject' or 'fail to reject' a null hypothesis based on a p-value and a pre-set level of significance.
 
-Significance level: ($\alpha$) a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not
+Significance level ($\alpha$): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
 
-\rgi Typically use $\alpha$ =0.05
+\rgi Common levels of $\alpha$ include 0.01, 0.05, and 0.10.
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric).
 
 #### Vocabulary {-}
 
-Test statistic/Point estimate: 
+Point estimate: 
+\rgs
+
+Test statistic:
 \rgs
 
 Null value:
 \rgs
 
-Null distribution:  
+Null distribution:
 \rgs
 
 Standardized statistic:
@@ -346,13 +374,13 @@ Conditions for the Central Limit Theorem to apply (for the sampling distribution
 \rgi Independence: 
 \rgs
 
-\rgi Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
 \rgi Success/Failure condition: 
 \rgs
 
-\rgi Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
 #### Formulas {-}
@@ -367,7 +395,7 @@ $SE_0(\hat{p})$ =
 	
 Standardized statistic/standardized sample proportion:
 
-$z$ =
+$Z$ =
 \rgs
 	
 
@@ -379,18 +407,18 @@ $z$ =
 2. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
 
-3. Write the null and which is the alternative hypothesis in words.
+3. Write the null and alternative hypotheses in words.
 \rgs
 
-4. Write the null and which is the alternative hypothesis in notation.
-\rgs
-
-
-5. To simulate the null distribution, we would not be able to use coins.  Why is that?
+4. Write the null and alternative hypotheses in notation.
 \rgs
 
 
-6. How could we use cards to simulate 1 sample which assumes the null hypothesis is true?  How many blue cards – to represent what?  How many red cards – to represent what?  How many times would we draw a card and replace it back in the deck?  What would you record once you completed the draw-with-replacement process?
+5. To simulate the null distribution, we would not be able to use coins.  Why or why not?
+\rgs
+
+
+6. How could we use cards to simulate 1 sample which assumes the null hypothesis is true?  How many blue cards --- to represent what?  How many red cards --- to represent what?  How many times would we draw a card and replace it back in the deck?  What would you record once you completed the draw-with-replacement process?
 \rgs
 
 7. How can we calculate a p-value from the simulated null distribution for this example?
@@ -418,10 +446,10 @@ $z$ =
 1. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
 
-2. Write the null and which is the alternative hypothesis in words.
+3. Write the null and alternative hypotheses in words.
 \rgs
 
-3. Write the null and which is the alternative hypothesis in notation.
+4. Write the null and alternative hypotheses in notation.
 \rgs
 	
 4. Are the conditions met to use theoretical methods to analyze these data?

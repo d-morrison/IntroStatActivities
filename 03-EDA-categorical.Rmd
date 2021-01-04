@@ -131,7 +131,7 @@ True or false: Two categorical variables are associated if the conditional propo
 
 True or false: When a segmented bar plot has segments that sum to 1 (or 100%), the segment heights correspond to the proportions conditioned on the **segment**.
 
-#### Review of Simpson’s Paradox: {-}
+#### Review of Simpson’s Paradox {-}
 
 Based on the segmented bar plot in Figure 2.6, which race of defendant was more likely to have the death penalty invoked?
 \rgs

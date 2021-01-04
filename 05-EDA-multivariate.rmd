@@ -332,7 +332,8 @@ Look at the table of vocabulary terms.  If there are any you do not know, be sur
 
 \setstretch{1.25}
 
-### Reminder from Section 3.1 {-} 
+#### Reminder from Section 3.1 {-} 
+
 Use color and a legend to add a third variable to a scatterplot. E.g., Color the dots to represent different levels of a categorical variable or shading to represent different values of a quantitative variable.
 
 #### Vocabulary {-} 

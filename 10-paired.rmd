@@ -23,7 +23,7 @@ $\mu$ = population mean
 
 $\sigma$ = population standard deviation
 
-#### General steps of a hypothesis test: {-}
+General steps of a hypothesis test:
 
 1. Frame the research question in terms of hypotheses.
 

@@ -41,7 +41,7 @@
 \contentsline {subsection}{Section 2.1 (Exploring categorical data)}{28}{section.3.1}%
 \contentsline {subsubsection}{Vocabulary}{28}{section.3.1}%
 \contentsline {subsubsection}{Notes}{29}{section.3.1}%
-\contentsline {subsubsection}{Review of Simpson's Paradox:}{29}{section.3.1}%
+\contentsline {subsubsection}{Review of Simpson's Paradox}{29}{section.3.1}%
 \contentsline {subsection}{Section 2.2 (Probability with tables)}{30}{section.3.1}%
 \contentsline {subsubsection}{Vocabulary}{30}{section.3.1}%
 \contentsline {subsubsection}{Notes}{30}{section.3.1}%
@@ -96,7 +96,7 @@
 \contentsline {subsection}{Section 3.4 (R: Correlation and regression) and Section 3.5 (Chapter 3 review)}{57}{Item.131}%
 \contentsline {subsubsection}{Notes}{57}{Item.131}%
 \contentsline {subsection}{Section 4.1 (Gapminder world)}{58}{Item.136}%
-\contentsline {subsection}{Reminder from Section 3.1}{58}{Item.136}%
+\contentsline {subsubsection}{Reminder from Section 3.1}{58}{Item.136}%
 \contentsline {subsubsection}{Vocabulary}{58}{Item.136}%
 \contentsline {subsubsection}{Notes}{58}{Item.136}%
 \contentsline {subsection}{Section 4.2 (Simpson's Paradox, revisited)}{58}{Item.136}%
@@ -120,24 +120,26 @@
 \contentsline {subsection}{\numberline {5.2.6}Additional notes}{66}{subsection.5.2.6}%
 \contentsline {chapter}{\numberline {6}Inference for a Single Categorical Variable: Hypothesis Testing}{67}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Reading Guide: Categorical Inference}{67}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Section 5.1 (Foundations of Inference)}{67}{subsection.6.1.1}%
-\contentsline {subsubsection}{Vocabulary}{67}{subsection.6.1.1}%
-\contentsline {subsubsection}{Notes}{68}{subsection.6.1.1}%
-\contentsline {subsubsection}{Formulas}{69}{subsection.6.1.1}%
-\contentsline {subsubsection}{Example: Martian alphabet}{69}{subsection.6.1.1}%
+\contentsline {subsection}{Section 5.1 (Foundations of inference)}{67}{section.6.1}%
+\contentsline {subsubsection}{Vocabulary}{67}{section.6.1}%
+\contentsline {subsubsection}{Notes}{68}{section.6.1}%
+\contentsline {subsubsection}{Formulas}{69}{section.6.1}%
+\contentsline {subsubsection}{Example: Martian alphabet}{69}{section.6.1}%
 \contentsline {subsection}{Section 5.2 (The normal distribution)}{69}{Item.173}%
 \contentsline {subsubsection}{Vocabulary}{69}{Item.173}%
 \contentsline {subsubsection}{Notes}{70}{Item.173}%
 \contentsline {subsubsection}{Formulas}{70}{Item.173}%
-\contentsline {subsubsection}{R Coding}{70}{Item.173}%
-\contentsline {subsection}{\numberline {6.1.2}Section 5.3 (Inference for one proportion)}{72}{subsection.6.1.2}%
-\contentsline {subsubsection}{Reminders from previous sections}{72}{subsection.6.1.2}%
-\contentsline {subsubsection}{General steps of a hypothesis test:}{72}{subsection.6.1.2}%
+\contentsline {subsection}{\texttt {R} coding}{70}{Item.173}%
+\contentsline {paragraph}{Calculating normal probabilities}{70}{Item.173}%
+\contentsline {paragraph}{Displaying normal probabilities}{71}{Item.173}%
+\contentsline {paragraph}{Calculating normal percentiles}{71}{Item.173}%
+\contentsline {subsection}{Section 5.3 (Inference for one proportion)}{71}{Item.173}%
+\contentsline {subsubsection}{Reminders from previous sections}{72}{Item.173}%
 \contentsline {subsubsection}{Vocabulary}{73}{Item.178}%
 \contentsline {subsubsection}{Notes}{73}{Item.178}%
-\contentsline {subsubsection}{Formulas}{74}{Item.178}%
+\contentsline {subsubsection}{Formulas}{73}{Item.178}%
 \contentsline {subsubsection}{Example: Organ donations}{74}{Item.178}%
-\contentsline {subsubsection}{Example: Payday loans}{75}{Item.190}%
+\contentsline {subsubsection}{Example: Payday loans}{74}{Item.190}%
 \contentsline {section}{\numberline {6.2}Activity: Handedness of Male Boxers - Testing}{76}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Learning objectives}{76}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Terminology review}{76}{subsection.6.2.2}%
@@ -155,16 +157,16 @@
 \contentsline {subsection}{\numberline {6.2.7}Additional notes}{86}{subsection.6.2.7}%
 \contentsline {chapter}{\numberline {7}Inference for a Single Categorical Variable: Confidence Intervals}{87}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Reading Guide: Categorical Inference}{87}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Section 5.1.4 (Foundations of inference: Confidence intervals)}{87}{subsection.7.1.1}%
-\contentsline {subsubsection}{Vocabulary}{87}{subsection.7.1.1}%
-\contentsline {subsubsection}{Formulas}{87}{subsection.7.1.1}%
-\contentsline {subsubsection}{Example: Martian Alphabet}{87}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Section 5.3.2 and 5.3.3 (One Proportion: Bootstrap confidence intervals and Theory-based inferential methods)}{87}{subsection.7.1.2}%
-\contentsline {subsubsection}{Reminders from previous sections}{88}{subsection.7.1.2}%
-\contentsline {subsubsection}{Vocabulary}{88}{subsection.7.1.2}%
-\contentsline {subsubsection}{Notes}{88}{subsection.7.1.2}%
-\contentsline {subsubsection}{Formulas}{89}{subsection.7.1.2}%
-\contentsline {subsubsection}{Example: Organ Donations}{89}{subsection.7.1.2}%
+\contentsline {subsection}{Section 5.1.4 (Foundations of inference: Confidence intervals)}{87}{section.7.1}%
+\contentsline {subsubsection}{Vocabulary}{87}{section.7.1}%
+\contentsline {subsubsection}{Formulas}{87}{section.7.1}%
+\contentsline {subsubsection}{Example: Martian Alphabet}{87}{section.7.1}%
+\contentsline {subsection}{Section 5.3.2 and 5.3.3 (One Proportion: Bootstrap confidence intervals and Theory-based inferential methods)}{87}{Item.243}%
+\contentsline {subsubsection}{Reminders from previous sections}{88}{Item.243}%
+\contentsline {subsubsection}{Vocabulary}{88}{Item.243}%
+\contentsline {subsubsection}{Notes}{88}{Item.243}%
+\contentsline {subsubsection}{Formulas}{89}{Item.243}%
+\contentsline {subsubsection}{Example: Organ Donations}{89}{Item.243}%
 \contentsline {subsubsection}{Example: Payday Loans}{90}{Item.249}%
 \contentsline {section}{\numberline {7.2}Activity: Handedness of Male Boxers - Estimation}{91}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}Learning objectives}{91}{subsection.7.2.1}%
@@ -181,15 +183,14 @@
 \contentsline {subsection}{\numberline {7.2.6}Additional notes}{97}{subsection.7.2.6}%
 \contentsline {chapter}{\numberline {8}Inference for Two Categorical Variables: Hypothesis Testing}{98}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Reading Guide: Hypothesis Testing for a Difference in Proportions}{98}{section.8.1}%
-\contentsline {subsection}{Section 5.4.1 to 5.4.2 (Simulation Tests for a difference in proportions; Two-sided hypotheses)}{98}{section.8.1}%
+\contentsline {subsection}{Section 5.4.1 to 5.4.2 (Simulation tests for a difference in proportions; Two-sided hypotheses)}{98}{section.8.1}%
 \contentsline {subsubsection}{Reminders from previous sections}{98}{section.8.1}%
-\contentsline {subsubsection}{General steps of a hypothesis test:}{98}{section.8.1}%
 \contentsline {subsubsection}{Vocabulary}{99}{Item.290}%
 \contentsline {subsubsection}{Notes}{99}{Item.290}%
 \contentsline {subsubsection}{Formulas}{100}{Item.290}%
 \contentsline {subsubsection}{\numberline {8.1.0.1}Notation \{-1\}}{100}{subsubsection.8.1.0.1}%
-\contentsline {subsubsection}{Example: Gender Discrimination}{100}{subsubsection.8.1.0.1}%
-\contentsline {subsubsection}{Example: Opportunity Cost}{101}{Item.304}%
+\contentsline {subsubsection}{Example: Gender discrimination}{100}{subsubsection.8.1.0.1}%
+\contentsline {subsubsection}{Example: Opportunity cost}{101}{Item.304}%
 \contentsline {subsubsection}{Example: CPR and blood thinner}{102}{Item.319}%
 \contentsline {subsection}{Section 5.4.4 (Theory-based methods for a difference in proportions)}{103}{Item.335}%
 \contentsline {subsubsection}{Reminders from previous sections}{104}{Item.335}%
@@ -240,7 +241,6 @@
 \contentsline {section}{\numberline {10.1}Reading Guide: Inference for a Single Mean or Paired Mean Difference}{130}{section.10.1}%
 \contentsline {subsection}{Section 6.1 (Inference for one mean)}{130}{section.10.1}%
 \contentsline {subsubsection}{Reminders from previous sections}{130}{section.10.1}%
-\contentsline {subsubsection}{General steps of a hypothesis test:}{130}{section.10.1}%
 \contentsline {subsubsection}{Vocabulary}{132}{Item.438}%
 \contentsline {subsubsection}{Notes}{132}{Item.438}%
 \contentsline {subsubsection}{Formulas}{132}{Item.440}%
@@ -269,10 +269,9 @@
 \contentsline {subsection}{\numberline {10.2.5}Take-home messages}{145}{subsection.10.2.5}%
 \contentsline {subsection}{\numberline {10.2.6}Additional notes}{145}{subsection.10.2.6}%
 \contentsline {chapter}{\numberline {11}Inference for a Quantitative Response with Independent Samples}{146}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Reading Guide: Inference for a difference in two means}{146}{section.11.1}%
+\contentsline {section}{\numberline {11.1}Reading Guide: Inference for a Difference in Two Means}{146}{section.11.1}%
 \contentsline {subsection}{Section 6.3 (Inference for a difference in two means)}{146}{section.11.1}%
 \contentsline {subsubsection}{Reminders from previous sections}{146}{section.11.1}%
-\contentsline {subsubsection}{General steps of a hypothesis test:}{146}{section.11.1}%
 \contentsline {subsubsection}{Notes}{148}{Item.546}%
 \contentsline {subsubsection}{Formulas}{148}{Item.553}%
 \contentsline {subsubsection}{Notation}{149}{Item.553}%
@@ -294,13 +293,12 @@
 \contentsline {subsection}{\numberline {11.2.6}Additional notes}{159}{subsection.11.2.6}%
 \contentsline {chapter}{\numberline {12}Inference for Two Quantitative Variables}{160}{chapter.12}%
 \contentsline {section}{\numberline {12.1}Reading Guide: Inference for Slope and Correlation}{160}{section.12.1}%
-\contentsline {subsection}{Section 7.1 and 7.2 (Inference for regression and model conditions)}{160}{section.12.1}%
+\contentsline {subsection}{Sections 7.1 and 7.2 (Inference for regression and model conditions)}{160}{section.12.1}%
 \contentsline {subsubsection}{Reminders from previous sections}{160}{section.12.1}%
-\contentsline {subsubsection}{General steps of a hypothesis test:}{160}{section.12.1}%
 \contentsline {subsubsection}{Notes}{162}{Item.624}%
 \contentsline {subsubsection}{Formulas}{163}{Item.633}%
 \contentsline {subsubsection}{Example: Crop yields}{163}{Item.633}%
-\contentsline {subsubsection}{Example: Midterm elections and Unemployment}{164}{Item.646}%
+\contentsline {subsubsection}{Example: Midterm elections and unemployment}{164}{Item.646}%
 \contentsline {section}{\numberline {12.2}Activity: Moneyball}{166}{section.12.2}%
 \contentsline {subsection}{\numberline {12.2.1}Learning outcomes}{166}{subsection.12.2.1}%
 \contentsline {subsection}{\numberline {12.2.2}Terminology review}{166}{subsection.12.2.2}%

@@ -1,6 +1,6 @@
 # Inference for a Quantitative Response with Independent Samples
 
-## Reading Guide: Inference for a difference in two means
+## Reading Guide: Inference for a Difference in Two Means
 
 ### Section 6.3 (Inference for a difference in two means) {-}
 
@@ -24,7 +24,7 @@ $\mu$ = population mean
 
 $\sigma$ = population standard deviation
 
-#### General steps of a hypothesis test: {-}
+General steps of a hypothesis test:
 
 1. Frame the research question in terms of hypotheses.
 
