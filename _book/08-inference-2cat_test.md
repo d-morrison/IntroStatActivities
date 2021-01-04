@@ -622,7 +622,7 @@ injury %>% group_by(Helmet) %>% count(Outcome)
 ```
 Notice that the name of the explanatory variable is `Helmet` with outcomes `Yes` and `No` and the name of the response variable is `Outcome` with outcomes `Head Injury` and `No Head Injury`.
 
-#### Vocabulary review. Complete Q1 - 4 before class. {-}
+#### Vocabulary review. Complete Q1$-$Q4 before class. {-}
 
 1.  What is the explanatory variable?
 
@@ -756,7 +756,7 @@ $$
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided `RScript` file and enter the value of the standardized statistic found in question 18 at xx in line 27, highlight and run lines 27 - 29.
+We will use the pnorm function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 18 at xx in line 27, highlight and run lines 27$-$29.
 
 
 ```r
@@ -883,7 +883,7 @@ The response variable name is Outcome and the explanatory variable name is Helme
 
 \vspace{.2in}
 
-Using the `RScript` file for this activity, enter your answers for question 4 in place of the xx's in the two proportion test code to produce the null distribution with 1000 simulations, highlight and run lines 1 - 12 and then 33 - 39.
+Using the `R` script file for this activity, enter your answers for question 4 in place of the xx's in the two proportion test code to produce the null distribution with 1000 simulations, highlight and run lines 1$-$12 and then 33$-$39.
 
 
 ```r

@@ -330,7 +330,7 @@ The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census 
 | `sector` | Sector of the economy: `clerical`, `const` (construction),  `management`, `manufacturing`, `professional`, `sales`, `service`, `other` |
 | `married` | Marital status: `Married` or `Single` |
 
-#### Vocabulary review. Complete Q1$-$Q3 before class. {-}
+#### Vocabulary review. Complete Q1$-$Q4 before class. {-}
 
 1. What are the observational units?
 
@@ -467,7 +467,7 @@ demonstrate how to read the data set into `R` using the `read.csv()` function.
 myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv") 
 ```
 
-Download and open the provided `R` script file for Activity 3 to answer the following questions. Highlight and run lines 1$-$5.  These lines of code read in the data set and name the data set `myopia`.  The library function tells `R` which packages will be needed.  
+Download and open the provided `R` script file for Activity 3 to answer the following questions. Highlight and run lines 1 $-$ 5.  These lines of code read in the data set and name the data set `myopia`.  The library function tells `R` which packages will be needed.  
 
 
 

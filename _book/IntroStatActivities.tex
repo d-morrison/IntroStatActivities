@@ -89,7 +89,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx}
+\usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -142,9 +142,6 @@
 [\vspace{1.5ex}%
 \titlerule]
 \titlespacing*{\chapter}{0pt}{-40pt}{20pt}
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{plainnat}
 
@@ -202,7 +199,7 @@ need roughly nine hours per week to review past activities, read feedback on pre
   \begin{itemize}
   \tightlist
   \item
-    Read assigned sections of textbook, using the provided reading guides to take notes on the material.
+    Read assigned sections of the textbook, using the provided reading guides to take notes on the material.
   \item
     Watch assigned videos on that week's content, pausing to take notes and answer video quiz questions.
   \item
@@ -261,23 +258,23 @@ This calendar only lists the in-class activities and exams each week. For requir
 4& 4& W& 2/3& IMDb Movie Reviews \\*
 4& 4& F& 2/5& IMDb Movie Reviews \\ \hline
 5& 4& M& 2/8& Movie Profits \\*
-5& 5& W& 2/10& Movie Profits \\*    
+5& 5& W& 2/10& Movie Profits \\*	
 5& 5& F& 2/12& Movie Profits \\ \hline
 6& 6& M& 2/15& Handedness of Male Boxers - Testing (\textit{No class})\\*
-6& 6& W& 2/17& Handedness of Male Boxers - Testing \\*  
+6& 6& W& 2/17& Handedness of Male Boxers - Testing \\*	
 6& 6& F& 2/19& Handedness of Male Boxers - Testing \\ \hline
 7& $-$& M$-$F& 2/22$-$2/26& \textbf{Exam 1} \\ \hline
 8& 7& M& 3/1& Handedness of Male Boxers - Estimation \\*
-8& 7& W& 3/3& Handedness of Male Boxers - Estimation \\*    
+8& 7& W& 3/3& Handedness of Male Boxers - Estimation \\*	
 8& 7& F& 3/5& Handedness of Male Boxers - Estimation \\ \hline
 9& 8& M& 3/8& Winter Sports Helmet Use and Head Injuries - Testing \\*
-9& 8& W& 3/10& Winter Sports Helmet Use and Head Injuries - Testing \\* 
+9& 8& W& 3/10& Winter Sports Helmet Use and Head Injuries - Testing \\*	
 9& 8& F& 3/12& Winter Sports Helmet Use and Head Injuries - Testing \\ \hline
 10& 9& M& 3/15& Winter Sports Helmet Use and Head Injuries - Estimation \\*
 10& 9& W& 3/17& Winter Sports Helmet Use and Head Injuries - Estimation \\*
 10& 9& F& 3/19& Winter Sports Helmet Use and Head Injuries - Estimation \\ \hline
 11& 10& M& 3/22& COVID-19 and Air Pollution \\*
-11& 10& W& 3/24& COVID-19 and Air Pollution \\* 
+11& 10& W& 3/24& COVID-19 and Air Pollution \\*	
 11& 10& F& 3/26& COVID-19 and Air Pollution \\ \hline
 12& 11& M& 3/29& Weather Patterns and Record Snowfall \\*
 12& 11& W& 3/31& Weather Patterns and Record Snowfall \\*
@@ -418,9 +415,9 @@ How many types of variables are discussed? Explain the differences between them 
 \rgs
 \rgs
 
-True or False: A pair of variables be both associated AND independent.\\
-True or False: Given a pair of variables, will one always be the explanatory and one the response variable.\\
-True or False: If a study does have an explanatory and a response variable, that means changes in the explanatory variable must cause changes in the response variable?\\
+True or False: A pair of variables can be both associated AND independent.\\
+True or False: Given a pair of variables, one will always be the explanatory variable and one the response variable.\\
+True or False: If a study does have an explanatory and a response variable, that means changes in the explanatory variable must \textbf{cause} changes in the response variable.
 True or False: Observational studies can show a naturally occurring association between variables.
 
 \hypertarget{example-section-1.1---case-study-using-stents-to-prevent-strokes}{%
@@ -523,7 +520,7 @@ How well can humans distinguish one ``Martian'' letter from another? In this wee
   Were you correct or incorrect in identifying Bumba?
 \end{enumerate}
 
-\vspace{0.3in}
+\vspace{1mm}
 
 \hypertarget{steps-of-the-statistical-investigation-process}{%
 \subsubsection*{Steps of the statistical investigation process}\label{steps-of-the-statistical-investigation-process}}
@@ -543,7 +540,7 @@ How well can humans distinguish one ``Martian'' letter from another? In this wee
   What are the observational units in this study?
 \end{enumerate}
 
-\vspace{0.4in}
+\vspace{0.2in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -553,7 +550,7 @@ How well can humans distinguish one ``Martian'' letter from another? In this wee
   How many students are in class today? This is the \textbf{sample size}.
 \end{enumerate}
 
-\vspace{0.3in}
+\vspace{0.2in}
 
 A \textbf{variable} is information collected or measured on each observational unit or case. Each column in a data set will represent a different variable. Today we are only measuring one variable on each observational unit.
 
@@ -636,6 +633,8 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
 
 \textbf{Step 4}: The next step is to \emph{use statistical analysis methods to draw inferences from the data}. To answer the research question, we will simulate what \emph{could} have happened in our class given random chance, repeat many times to understand the expected \emph{variability} between different ``randomly guessing'' classes, then compare our class's observed data to the simulation. This gives us an estimate of how often (or the probability of) the class's result would occur if students were all merely guessing, allowing us to determine if the data provides evidence that we as a class can in fact read Martian.
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{8}
@@ -656,12 +655,12 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
   \vspace{.3in}
 
   What was the result from your class's simulation? What proportion of students ``guessed'' correctly in the simulation?
-  \vspace{.3in}
+  \vspace{.5in}
 \item
   If students really don't know Martian and are just guessing which is Bumba, which seems more unusual: the result from your class's \textbf{simulation} or the observed proportion of students in your class that were correct (this is your summary statistic from question 6)? Explain your reasoning.
 \end{enumerate}
 
-\vspace{1in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -692,8 +691,6 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
 ~~~~~~~~~~Number of repetitions: \_\_\_\_\_
 
 \vspace{0.05in}
-
-\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -733,7 +730,7 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
   Is it \emph{likely} that we could see our class results just by chance if everyone was just guessing? Explain your reasoning.
 \end{enumerate}
 
-\vspace{.5in}
+\newpage
 
 \textbf{Step 5}: The next step in the statistical investigation process is to \emph{communicate the results and answer the research question}.
 
@@ -898,8 +895,8 @@ Use this space to summarize your thoughts and take additional notes on this week
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-1}{%
-\subsubsection*{Vocabulary}\label{vocabulary-1}}
+\hypertarget{vocabulary}{%
+\subsubsection*{Vocabulary}\label{vocabulary}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 (Target) Population:
@@ -935,15 +932,15 @@ Non-response rate:
 Representative:
 \rgs
 
-\hypertarget{notes-1}{%
-\subsubsection*{Notes}\label{notes-1}}
+\hypertarget{notes}{%
+\subsubsection*{Notes}\label{notes}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Ideally, how should we sample cases from our target population? Using what sampling method?
 \rgs
 
 \hypertarget{notes-on-types-of-sampling-bias}{%
-\paragraph*{Notes on types of sampling bias}\label{notes-on-types-of-sampling-bias}}
+\paragraph{Notes on types of sampling bias}\label{notes-on-types-of-sampling-bias}}
 \addcontentsline{toc}{paragraph}{Notes on types of sampling bias}
 
 \begin{itemize}
@@ -984,8 +981,8 @@ True or False: Random sampling helps to resolve selection bias, but has no impac
 
 \textbf{Response variable}: The variable researchers think \emph{may be} influenced by the other variable. This variable is always observed, never controlled or assigned.
 
-\hypertarget{vocabulary-2}{%
-\subsubsection*{Vocabulary}\label{vocabulary-2}}
+\hypertarget{vocabulary-1}{%
+\subsubsection*{Vocabulary}\label{vocabulary-1}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Observational study:
@@ -1036,8 +1033,8 @@ Generalizability:
 Causation:
 \rgs
 
-\hypertarget{notes-2}{%
-\subsubsection*{Notes}\label{notes-2}}
+\hypertarget{notes-1}{%
+\subsubsection*{Notes}\label{notes-1}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 What are the four principles of a well-designed randomized experiment?\\
@@ -1080,8 +1077,8 @@ True or False: If random sampling of the target population is used, and no other
 
 \setstretch{1}
 
-\hypertarget{learning-outcomes-1}{%
-\subsection{Learning outcomes}\label{learning-outcomes-1}}
+\hypertarget{learning-outcomes}{%
+\subsection{Learning outcomes}\label{learning-outcomes}}
 
 \begin{itemize}
 \item
@@ -1096,8 +1093,8 @@ True or False: If random sampling of the target population is used, and no other
   Identify the types of bias present in a study.
 \end{itemize}
 
-\hypertarget{terminology-review-1}{%
-\subsection{Terminology review}\label{terminology-review-1}}
+\hypertarget{terminology-review}{%
+\subsection{Terminology review}\label{terminology-review}}
 
 In this week's activity, we will examine different types of sampling bias and study designs, confounding variables, and how to determine the scope of inference for a study. Some terms covered in this activity are:
 
@@ -1227,7 +1224,7 @@ For the next exercises, identify the explanatory variable, the response variable
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{4}
 \item
-  The pharmaceutical company Moderna Therapeutics, working in conjunction with the National Institutes of Health, conducted Phase 3 clinical trials towards a vaccine for COVID-19 last fall. US clinical research sites enrolled 30,000 volunteers without COVID-19 to participate. Participants were randomly assigned to receive either the candidate vaccine or a saline placebo. They were then followed to assess whether or not they developed COVID-19. The trial was double-blind, so neither the investigators nor the participants knew who is assigned to which group.
+  The pharmaceutical company Moderna Therapeutics, working in conjunction with the National Institutes of Health, conducted Phase 3 clinical trials towards a vaccine for COVID-19 last fall. US clinical research sites enrolled 30,000 volunteers without COVID-19 to participate. Participants were randomly assigned to receive either the candidate vaccine or a saline placebo. They were then followed to assess whether or not they developed COVID-19. The trial was double-blind, so neither the investigators nor the participants knew who was assigned to which group.
   \vspace{0.1in}
 
   Explanatory variable:
@@ -1291,8 +1288,8 @@ When both these conditions are met, if we observe an association between the exp
 
 \newpage
 
-\hypertarget{out-of-class-activity-1}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-1}}
+\hypertarget{out-of-class-activity}{%
+\subsection{Out-of-class activity}\label{out-of-class-activity}}
 
 In the in-class activity, we looked at sampling methods and study design. Here are a few more questions to review that material.
 
@@ -1327,21 +1324,21 @@ In the in-class activity, we looked at sampling methods and study design. Here a
 
 \vspace{0.8in}
 
-\hypertarget{take-home-messages-1}{%
-\subsection{Take-home messages}\label{take-home-messages-1}}
+\hypertarget{take-home-messages}{%
+\subsection{Take-home messages}\label{take-home-messages}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
   If the sample is selected using a random and non-biased method of selection (i.e., a random sample of the target population with no response or non-response bias), then the results of the study can be generalized to the target population. When using biased methods of selection, the results only apply to the sample selected or similar observational units.
 \item
-  The study design determines if we can draw causal inferences or not. If an association is detected, a randomized experiment allows us to conclude that there is a causal (cause-and-effect) relationship between the explanatory and response variable. Observational studies have potential confounding variables within the study that prevent us from drawing a causal relationship between the variables.
+  The study design determines if we can draw causal inferences or not. If an association is detected, a randomized experiment allows us to conclude that there is a causal (cause-and-effect) relationship between the explanatory and response variable. Observational studies have potential confounding variables within the study that prevent us from inferring a causal relationship between the variables.
 \item
   Confounding variables are variables not included in the study that are related to both the explanatory and the response variables. When there are potential confounding variables in the study we cannot draw causal inferences.
 \end{enumerate}
 
-\hypertarget{additional-notes-1}{%
-\subsection{Additional notes}\label{additional-notes-1}}
+\hypertarget{additional-notes}{%
+\subsection{Additional notes}\label{additional-notes}}
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
@@ -1365,8 +1362,8 @@ Use this space to summarize your thoughts and take additional notes on this week
 
 \setstretch{1.25}
 
-\hypertarget{notes-3}{%
-\subsubsection*{Notes}\label{notes-3}}
+\hypertarget{notes}{%
+\subsubsection*{Notes}\label{notes}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 \texttt{R} is case sensitive, meaning it reads \texttt{data} differently from \texttt{Data}. If you get an error message, check that your capitalization is correct.
@@ -1421,8 +1418,8 @@ State what these introductory functions do in \texttt{R}:
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-3}{%
-\subsubsection*{Vocabulary}\label{vocabulary-3}}
+\hypertarget{vocabulary}{%
+\subsubsection*{Vocabulary}\label{vocabulary}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Frequency table:
@@ -1473,8 +1470,8 @@ Segmented bar plot:
 Simpson's Paradox:
 \rgs
 
-\hypertarget{notes-4}{%
-\subsubsection*{Notes}\label{notes-4}}
+\hypertarget{notes-1}{%
+\subsubsection*{Notes}\label{notes-1}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 In a contingency table, which variable (explanatory or response) generally will make the columns of the table? Which variable on the rows?
@@ -1532,8 +1529,8 @@ a \_\_\_\_\_\_\_\_\_\_\_\_\_\_ variable.
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-4}{%
-\subsubsection*{Vocabulary}\label{vocabulary-4}}
+\hypertarget{vocabulary-1}{%
+\subsubsection*{Vocabulary}\label{vocabulary-1}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Random process:
@@ -1578,8 +1575,8 @@ Specificity:
 Prevalence:
 \rgs
 
-\hypertarget{notes-5}{%
-\subsubsection*{Notes}\label{notes-5}}
+\hypertarget{notes-2}{%
+\subsubsection*{Notes}\label{notes-2}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Method for creating a hypothetical two-way table:
@@ -1618,18 +1615,10 @@ Method for creating a hypothetical two-way table:
   Let \(T\) be the event a child tests positive for CPK. What does \(T^C\) represent?
   \rgs
 \item
-  Write each of the following values in proper notation:
-
-  \begin{enumerate}
-  \def\labelenumii{\alph{enumii}.}
-  \tightlist
-  \item
-    \(1/10000 = 0.0001 = P( \hspace{1in} )\)\\
-  \item
-    \(100\% = 1.0 = P( \hspace{1in} )\)\\
-  \item
-    \(99.98\% = 0.9998 = P( \hspace{1in} )\)
-  \end{enumerate}
+  Write each of the following values in proper notation:\\
+  a. \(1/10000 = 0.0001 = P( \hspace{1in} )\)\\
+  b. \(100\% = 1.0 = P( \hspace{1in} )\)\\
+  c.~\(99.98\% = 0.9998 = P( \hspace{1in} )\)
 \item
   Write out the steps for creating the hypothetical two-way table in section 2.2.4 of your textbook, then copy the table below.
 \end{enumerate}
@@ -1653,13 +1642,13 @@ Method for creating a hypothetical two-way table:
 \begin{center}
 \begin{tabular}{|l|p{1.3in}|p{1.3in}|p{1.3in}|}
 \hline
-&   Test Positive   & Test Negative & Total \\ \hline
-Has CPK     & & & \\
-    & & & \\
-    & & & \\ \hline
-Does not have CPK       & & & \\
-    & & & \\
-    & & & \\ \hline     
+&	Test Positive	& Test Negative	& Total \\ \hline
+Has CPK		& & & \\
+	& & & \\
+	& & & \\ \hline
+Does not have CPK		& & & \\
+	& & & \\
+	& & & \\ \hline		
 Total & & & 100,000 \\ \hline
 \end{tabular}
 \end{center}
@@ -1682,8 +1671,8 @@ Total & & & 100,000 \\ \hline
 
 \setstretch{1}
 
-\hypertarget{learning-outcomes-2}{%
-\subsection{Learning outcomes}\label{learning-outcomes-2}}
+\hypertarget{learning-outcomes}{%
+\subsection{Learning outcomes}\label{learning-outcomes}}
 
 \begin{itemize}
 \item
@@ -1699,8 +1688,8 @@ Total & & & 100,000 \\ \hline
   segmented bar plot, mosaic plot.
 \end{itemize}
 
-\hypertarget{terminology-review-2}{%
-\subsection{Terminology review}\label{terminology-review-2}}
+\hypertarget{terminology-review}{%
+\subsection{Terminology review}\label{terminology-review}}
 
 In this week's in-class activity, we will cover two-way tables and probability. In the out-of-class activity, we will review summary measures and plots for categorical variables. Some terms covered in this activity are:
 
@@ -1775,7 +1764,7 @@ Age (years)\strut
 \begin{minipage}[t]{0.11\columnwidth}\raggedright
 \texttt{race}\strut
 \end{minipage} & \begin{minipage}[t]{0.83\columnwidth}\raggedright
-Race: \texttt{W} = white, \texttt{NW} = not white\strut
+Race: \texttt{W} = white, \texttt{NW} = not white \textbar{}\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.11\columnwidth}\raggedright
 \texttt{sector}\strut
@@ -1790,9 +1779,9 @@ Marital status: \texttt{Married} or \texttt{Single}\strut
 \bottomrule
 \end{longtable}
 
-\hypertarget{vocabulary-review.-complete-q1-q3-before-class.}{%
-\subsubsection*{\texorpdfstring{Vocabulary review. Complete Q1\(-\)Q3 before class.}{Vocabulary review. Complete Q1-Q3 before class.}}\label{vocabulary-review.-complete-q1-q3-before-class.}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1\(-\)Q3 before class.}
+\hypertarget{vocabulary-review.-complete-q1-q4-before-class.}{%
+\subsubsection*{\texorpdfstring{Vocabulary review. Complete Q1\(-\)Q4 before class.}{Vocabulary review. Complete Q1-Q4 before class.}}\label{vocabulary-review.-complete-q1-q4-before-class.}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1\(-\)Q4 before class.}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1943,8 +1932,8 @@ Marital status: \texttt{Married} or \texttt{Single}\strut
 
 \newpage
 
-\hypertarget{out-of-class-activity-2}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-2}}
+\hypertarget{out-of-class-activity}{%
+\subsection{Out-of-class activity}\label{out-of-class-activity}}
 
 For this part of the activity we will focus on using RStudio and the provided \texttt{R} script file to create graphs and calculate proportions from each group.
 
@@ -1977,12 +1966,12 @@ demonstrate how to read the data set into \texttt{R} using the \texttt{read.csv(
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# This will read in the data set}
-\NormalTok{myopia \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv"}\NormalTok{) }
+\CommentTok{# This will read in the data set}
+\NormalTok{myopia <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv"}\NormalTok{) }
 \end{Highlighting}
 \end{Shaded}
 
-Download and open the provided \texttt{R} script file for Activity 3 to answer the following questions. Highlight and run lines 1\$-\$5. These lines of code read in the data set and name the data set \texttt{myopia}. The library function tells \texttt{R} which packages will be needed.
+Download and open the provided \texttt{R} script file for Activity 3 to answer the following questions. Highlight and run lines 1 \(-\) 5. These lines of code read in the data set and name the data set \texttt{myopia}. The library function tells \texttt{R} which packages will be needed.
 
 \hypertarget{displaying-a-single-categorical-variable}{%
 \subsubsection*{Displaying a single categorical variable}\label{displaying-a-single-categorical-variable}}
@@ -1992,13 +1981,13 @@ If we wanted to know how many children in our data set were in each level of myo
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{myopia }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set piped into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ xx)) }\OperatorTok{+}\StringTok{   }\CommentTok{\# This specifies the variable}
-\StringTok{  }\KeywordTok{geom\_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\# Tell it to make a bar plot}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Frequency Bar Plot of Level of Myopia"}\NormalTok{,  }\CommentTok{\# Give your plot a title}
-       \DataTypeTok{x =} \StringTok{"Frequency"}\NormalTok{,   }\CommentTok{\# Label the x axis}
-       \DataTypeTok{y =} \StringTok{"Level of Myopia"}\NormalTok{)  }\OperatorTok{+}\StringTok{ }\CommentTok{\# Label the y axis}
-\StringTok{  }\KeywordTok{coord\_flip}\NormalTok{()  }\CommentTok{\# Turn the bars so they are vertical}
+\NormalTok{myopia }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Data set piped into...}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ xx)) }\OperatorTok{+}\StringTok{   }\CommentTok{# This specifies the variable}
+\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{# Tell it to make a bar plot}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Frequency Bar Plot of Level of Myopia"}\NormalTok{,  }\CommentTok{# Give your plot a title}
+       \DataTypeTok{x =} \StringTok{"Frequency"}\NormalTok{,   }\CommentTok{# Label the x axis}
+       \DataTypeTok{y =} \StringTok{"Level of Myopia"}\NormalTok{)  }\OperatorTok{+}\StringTok{ }\CommentTok{# Label the y axis}
+\StringTok{  }\KeywordTok{coord_flip}\NormalTok{()  }\CommentTok{# Turn the bars so they are vertical}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2028,12 +2017,12 @@ We could also choose to display the data as a proportion in a \textbf{relative f
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{myopia }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set piped into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ Sight)) }\OperatorTok{+}\StringTok{   }\CommentTok{\# This specifies the variable}
-\StringTok{  }\KeywordTok{geom\_bar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ ..prop.., }\DataTypeTok{group =} \DecValTok{1}\NormalTok{)) }\OperatorTok{+}\StringTok{  }\CommentTok{\# Tell it to make a bar plot with proportions}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Relative Frequency Bar Plot of Level of Myopia"}\NormalTok{,  }\CommentTok{\# Give your plot a title}
-       \DataTypeTok{x =} \StringTok{"Level of Myopia"}\NormalTok{,   }\CommentTok{\# Label the x axis}
-       \DataTypeTok{y =} \StringTok{"Relative Frequency"}\NormalTok{)  }\CommentTok{\# Label the y axis}
+\NormalTok{myopia }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Data set piped into...}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ Sight)) }\OperatorTok{+}\StringTok{   }\CommentTok{# This specifies the variable}
+\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ ..prop.., }\DataTypeTok{group =} \DecValTok{1}\NormalTok{)) }\OperatorTok{+}\StringTok{  }\CommentTok{# Tell it to make a bar plot with proportions}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Relative Frequency Bar Plot of Level of Myopia"}\NormalTok{,  }\CommentTok{# Give your plot a title}
+       \DataTypeTok{x =} \StringTok{"Level of Myopia"}\NormalTok{,   }\CommentTok{# Label the x axis}
+       \DataTypeTok{y =} \StringTok{"Relative Frequency"}\NormalTok{)  }\CommentTok{# Label the y axis}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2059,14 +2048,14 @@ To examine the differences in level of myopia for the level of light, we would c
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{myopia }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set piped into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{fill =}\NormalTok{ yy)) }\OperatorTok{+}\StringTok{   }\CommentTok{\# This specifies the variables}
-\StringTok{  }\KeywordTok{geom\_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{, }\DataTypeTok{position =} \StringTok{"fill"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\# Tell it to make a stacked bar plot}
+\NormalTok{myopia }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Data set piped into...}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{fill =}\NormalTok{ yy)) }\OperatorTok{+}\StringTok{   }\CommentTok{# This specifies the variables}
+\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{, }\DataTypeTok{position =} \StringTok{"fill"}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{# Tell it to make a stacked bar plot}
 \StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Segmented Bar Plot of Night Light Use by Level of Myopia"}\NormalTok{,  }
-       \CommentTok{\# Make sure to title your plot }
-       \DataTypeTok{x =} \StringTok{"Level of Light"}\NormalTok{,   }\CommentTok{\# Label the x axis}
-       \DataTypeTok{y =} \StringTok{""}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\# Remove y axis label}
-\StringTok{    }\KeywordTok{scale\_fill\_grey}\NormalTok{()  }\CommentTok{\# Make figure black and white}
+       \CommentTok{# Make sure to title your plot }
+       \DataTypeTok{x =} \StringTok{"Level of Light"}\NormalTok{,   }\CommentTok{# Label the x axis}
+       \DataTypeTok{y =} \StringTok{""}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{# Remove y axis label}
+\StringTok{    }\KeywordTok{scale_fill_grey}\NormalTok{()  }\CommentTok{# Make figure black and white}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2100,8 +2089,8 @@ To examine the differences in level of myopia for the level of light, we would c
 
 \vspace{0.5in}
 
-\hypertarget{take-home-messages-2}{%
-\subsection{Take-home messages}\label{take-home-messages-2}}
+\hypertarget{take-home-messages}{%
+\subsection{Take-home messages}\label{take-home-messages}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2117,8 +2106,8 @@ To examine the differences in level of myopia for the level of light, we would c
 
 \newpage
 
-\hypertarget{additional-notes-2}{%
-\subsection{Additional notes}\label{additional-notes-2}}
+\hypertarget{additional-notes}{%
+\subsection{Additional notes}\label{additional-notes}}
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
@@ -2161,8 +2150,8 @@ Density plot:
 Box plot:
 \rgs
 
-\hypertarget{vocabulary-5}{%
-\subsubsection*{Vocabulary}\label{vocabulary-5}}
+\hypertarget{vocabulary}{%
+\subsubsection*{Vocabulary}\label{vocabulary}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Four characteristics of a scatterplot:
@@ -2231,8 +2220,8 @@ Interquartile range (IQR):
 Robust statistics:
 \rgs
 
-\hypertarget{notes-6}{%
-\subsubsection*{Notes}\label{notes-6}}
+\hypertarget{notes}{%
+\subsubsection*{Notes}\label{notes}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 What type of plot(s) are appropriate for displaying one quantitative variable?
@@ -2276,8 +2265,8 @@ How are outliers denoted on a box plot? How can you mathematically determine if 
 
 Section 2.4 presents four tutorials on analyzing quantitative data in \texttt{R}. We recommend you complete all four.
 
-\hypertarget{notes-7}{%
-\subsubsection*{Notes}\label{notes-7}}
+\hypertarget{notes-1}{%
+\subsubsection*{Notes}\label{notes-1}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Statistics summarize \_\_\_\_\_\_\_\_\_\_\_\_\_ .
@@ -2361,8 +2350,8 @@ Decision tree for determining an appropriate plot given a number of variables an
   Given a plot or set of plots, describe and compare the distribution(s) of a single quantitative variable (center, variability, shape, outliers).
 \end{itemize}
 
-\hypertarget{terminology-review-3}{%
-\subsection{Terminology review}\label{terminology-review-3}}
+\hypertarget{terminology-review}{%
+\subsection{Terminology review}\label{terminology-review}}
 
 In this week's activity, we will review summary measures and plots for quantitative variables. Some terms covered in this activity are:
 
@@ -2429,9 +2418,9 @@ Number of likes a movie receives on Facebook\strut
 \bottomrule
 \end{longtable}
 
-\hypertarget{vocabulary-review.-complete-q1---3-before-class.}{%
-\subsubsection*{Vocabulary review. Complete Q1 - 3 before class.}\label{vocabulary-review.-complete-q1---3-before-class.}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1 - 3 before class.}
+\hypertarget{vocabulary-review.-complete-q1-q3-before-class.}{%
+\subsubsection*{\texorpdfstring{Vocabulary review. Complete Q1\(-\)Q3 before class.}{Vocabulary review. Complete Q1-Q3 before class.}}\label{vocabulary-review.-complete-q1-q3-before-class.}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1\(-\)Q3 before class.}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2470,9 +2459,9 @@ The \texttt{favstats} function from the \texttt{mosaic} package gives the summar
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/Movies2016.csv"}\NormalTok{) }\CommentTok{\# Read in data set}
-\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set piped into...}
-\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(imdb\_score)) }\CommentTok{\# Apply favstats function to imdb\_score}
+\NormalTok{movies <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/Movies2016.csv"}\NormalTok{) }\CommentTok{# Read in data set}
+\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Data set piped into...}
+\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(imdb_score)) }\CommentTok{# Apply favstats function to imdb_score}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2524,18 +2513,18 @@ The \texttt{favstats} function from the \texttt{mosaic} package gives the summar
 
 \newpage
 
-To create a histogram of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{R} script file for xx at line 12, highlight and run lines 1 - 16. Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{R} script file for xx at line 12, highlight and run lines 1\$-\$16. Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the \textbf{bin width} is 0.5. For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75. It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set piped into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx)) }\OperatorTok{+}\StringTok{   }\CommentTok{\# Name variable to plot}
-\StringTok{  }\KeywordTok{geom\_histogram}\NormalTok{(}\DataTypeTok{binwidth =} \FloatTok{0.5}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\# Create histogram with specified binwidth}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Histogram of IMDb Score of Movies in 2016"}\NormalTok{, }\CommentTok{\# Title for plot}
-       \DataTypeTok{x =} \StringTok{"IMDb Score"}\NormalTok{, }\CommentTok{\# Label for x axis}
-       \DataTypeTok{y =} \StringTok{"Frequency"}\NormalTok{) }\CommentTok{\# Label for y axis}
+\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Data set piped into...}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx)) }\OperatorTok{+}\StringTok{   }\CommentTok{# Name variable to plot}
+\StringTok{  }\KeywordTok{geom_histogram}\NormalTok{(}\DataTypeTok{binwidth =} \FloatTok{0.5}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{# Create histogram with specified binwidth}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Histogram of IMDb Score of Movies in 2016"}\NormalTok{, }\CommentTok{# Title for plot}
+       \DataTypeTok{x =} \StringTok{"IMDb Score"}\NormalTok{, }\CommentTok{# Label for x axis}
+       \DataTypeTok{y =} \StringTok{"Frequency"}\NormalTok{) }\CommentTok{# Label for y axis}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2587,9 +2576,9 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set pipes into...}
-\StringTok{  }\KeywordTok{select}\NormalTok{(imdb\_score) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Select imdb\_score variable}
-\StringTok{  }\KeywordTok{slice\_min}\NormalTok{(imdb\_score, }\DataTypeTok{n =} \DecValTok{3}\NormalTok{)  }\CommentTok{\# Show 3 smallest values}
+\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Data set pipes into...}
+\StringTok{  }\KeywordTok{select}\NormalTok{(imdb_score) }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Select imdb_score variable}
+\StringTok{  }\KeywordTok{slice_min}\NormalTok{(imdb_score, }\DataTypeTok{n =} \DecValTok{3}\NormalTok{)  }\CommentTok{# Show 3 smallest values}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2602,9 +2591,9 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set pipes into...}
-\StringTok{  }\KeywordTok{select}\NormalTok{(imdb\_score) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Select imdb\_score variable}
-\StringTok{  }\KeywordTok{slice\_max}\NormalTok{(imdb\_score, }\DataTypeTok{n =} \DecValTok{3}\NormalTok{)  }\CommentTok{\# Show 3 largest values}
+\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Data set pipes into...}
+\StringTok{  }\KeywordTok{select}\NormalTok{(imdb_score) }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Select imdb_score variable}
+\StringTok{  }\KeywordTok{slice_max}\NormalTok{(imdb_score, }\DataTypeTok{n =} \DecValTok{3}\NormalTok{)  }\CommentTok{# Show 3 largest values}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2624,17 +2613,17 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
 \subsubsection*{Displaying a single categorical and single quantitative variable}\label{displaying-a-single-categorical-and-single-quantitative-variable}}
 \addcontentsline{toc}{subsubsection}{Displaying a single categorical and single quantitative variable}
 
-The box plot of movie budgets (in millions) by content rating is plotted using the code below. Enter the variable \texttt{budget\_mil} for yy and the variable \texttt{content\_rating} for xx at line 31, highlight and run code lines 29 - 35. This plot helps to compare the budget for different levels of content rating.
+The box plot of movie budgets (in millions) by content rating is plotted using the code below. Enter the variable \texttt{budget\_mil} for yy and the variable \texttt{content\_rating} for xx at line 31, highlight and run code lines 29\$-\$35. This plot helps to compare the budget for different levels of content rating.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{  }\CommentTok{\# Data set piped into...}
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content\_rating }\OperatorTok{!=}\StringTok{ "Not Rated"}\NormalTok{) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Remove Not Rated movies}
-\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ yy, }\DataTypeTok{x =}\NormalTok{ xx))}\OperatorTok{+}\StringTok{  }\CommentTok{\# Identify variables}
-\StringTok{  }\KeywordTok{geom\_boxplot}\NormalTok{()}\OperatorTok{+}\StringTok{  }\CommentTok{\# Tell it to make a box plot}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Side by side box plot of budget by content rating"}\NormalTok{,  }\CommentTok{\# Title}
-       \DataTypeTok{x =} \StringTok{"Content Rating"}\NormalTok{,    }\CommentTok{\# x{-}axis label}
-       \DataTypeTok{y =} \StringTok{"Budget (in Millions)"}\NormalTok{)  }\CommentTok{\# y{-}axis label}
+\NormalTok{movies }\OperatorTok{%>%}\StringTok{  }\CommentTok{# Data set piped into...}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(content_rating }\OperatorTok{!=}\StringTok{ "Not Rated"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Remove Not Rated movies}
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ yy, }\DataTypeTok{x =}\NormalTok{ xx))}\OperatorTok{+}\StringTok{  }\CommentTok{# Identify variables}
+\StringTok{  }\KeywordTok{geom_boxplot}\NormalTok{()}\OperatorTok{+}\StringTok{  }\CommentTok{# Tell it to make a box plot}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Side by side box plot of budget by content rating"}\NormalTok{,  }\CommentTok{# Title}
+       \DataTypeTok{x =} \StringTok{"Content Rating"}\NormalTok{,    }\CommentTok{# x-axis label}
+       \DataTypeTok{y =} \StringTok{"Budget (in Millions)"}\NormalTok{)  }\CommentTok{# y-axis label}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2675,8 +2664,8 @@ The box plot of movie budgets (in millions) by content rating is plotted using t
   \vspace{.8in}
 \end{enumerate}
 
-\hypertarget{out-of-class-activity-3}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-3}}
+\hypertarget{out-of-class-activity}{%
+\subsection{Out-of-class activity}\label{out-of-class-activity}}
 
 For a little more practice using \texttt{Rstudio} to create graphs of quantitative variables we will look at some other variables in the \texttt{Movies} data set. Download and open the provided \texttt{R} script file, highlight and run the first 8 lines of code.
 
@@ -2684,8 +2673,8 @@ To use the favstats function in the mosaic package with two variables, we will e
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set piped into...}
-\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(imdb\_score}\OperatorTok{\textasciitilde{}}\NormalTok{content\_rating)) }\CommentTok{\# Apply favstats function to imdb\_score}
+\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Data set piped into...}
+\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(imdb_score}\OperatorTok{~}\NormalTok{content_rating)) }\CommentTok{# Apply favstats function to imdb_score}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2697,17 +2686,17 @@ To use the favstats function in the mosaic package with two variables, we will e
 #> 4              R 3.5 5.375    6.3 7.050 8.1 6.221875 1.1335740 32       0
 \end{verbatim}
 
-Using the provided \texttt{R} script file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, \texttt{imdb\_score} for yy and \texttt{content\_rating} for xx at line 44, highlight and run lines 39 - 48.
+Using the provided \texttt{R} script file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, \texttt{imdb\_score} for yy and \texttt{content\_rating} for xx at line 44, highlight and run lines 39\$-\$48.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{  }\CommentTok{\# Data set piped into...}
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content\_rating }\OperatorTok{!=}\StringTok{ "Not Rated"}\NormalTok{) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Remove Not Rated movies}
-\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ yy, }\DataTypeTok{x =}\NormalTok{ xx))}\OperatorTok{+}\StringTok{  }\CommentTok{\# Identify variables}
-\StringTok{  }\KeywordTok{geom\_boxplot}\NormalTok{()}\OperatorTok{+}\StringTok{  }\CommentTok{\# Tell it to make a box plot}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Side by side box plot of budget by content rating"}\NormalTok{,  }\CommentTok{\# Title}
-       \DataTypeTok{x =} \StringTok{"Content Rating"}\NormalTok{,    }\CommentTok{\# x{-}axis label}
-       \DataTypeTok{y =} \StringTok{"Budget (in Millions)"}\NormalTok{)  }\CommentTok{\# y{-}axis label}
+\NormalTok{movies }\OperatorTok{%>%}\StringTok{  }\CommentTok{# Data set piped into...}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(content_rating }\OperatorTok{!=}\StringTok{ "Not Rated"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Remove Not Rated movies}
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ yy, }\DataTypeTok{x =}\NormalTok{ xx))}\OperatorTok{+}\StringTok{  }\CommentTok{# Identify variables}
+\StringTok{  }\KeywordTok{geom_boxplot}\NormalTok{()}\OperatorTok{+}\StringTok{  }\CommentTok{# Tell it to make a box plot}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Side by side box plot of budget by content rating"}\NormalTok{,  }\CommentTok{# Title}
+       \DataTypeTok{x =} \StringTok{"Content Rating"}\NormalTok{,    }\CommentTok{# x-axis label}
+       \DataTypeTok{y =} \StringTok{"Budget (in Millions)"}\NormalTok{)  }\CommentTok{# y-axis label}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2740,8 +2729,8 @@ Using the provided \texttt{R} script file, we will create side-by-side histogram
 
 \vspace{0.5in}
 
-\hypertarget{take-home-messages-3}{%
-\subsection{Take-home messages}\label{take-home-messages-3}}
+\hypertarget{take-home-messages}{%
+\subsection{Take-home messages}\label{take-home-messages}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2755,16 +2744,16 @@ Using the provided \texttt{R} script file, we will create side-by-side histogram
   The median and IQR are robust measures that are not affected by the presence of outliers.
 \end{enumerate}
 
-\hypertarget{additional-notes-3}{%
-\subsection{Additional notes}\label{additional-notes-3}}
+\hypertarget{additional-notes}{%
+\subsection{Additional notes}\label{additional-notes}}
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 \hypertarget{exploring-multivariable-data}{%
 \chapter{Exploring Multivariable Data}\label{exploring-multivariable-data}}
 
-\hypertarget{reading-guide-quantitative-data-1}{%
-\section{Reading Guide: Quantitative Data}\label{reading-guide-quantitative-data-1}}
+\hypertarget{reading-guide-quantitative-data}{%
+\section{Reading Guide: Quantitative Data}\label{reading-guide-quantitative-data}}
 
 \hypertarget{section-3.1-fitting-a-line-residuals-and-correlation}{%
 \subsection*{Section 3.1 (Fitting a line, residuals, and correlation)}\label{section-3.1-fitting-a-line-residuals-and-correlation}}
@@ -2797,8 +2786,8 @@ Four characteristics of a scatterplot:
 
 \rgi Unusual observations or outliers: points that do not fit the overall pattern of the data
 
-\hypertarget{vocabulary-6}{%
-\subsubsection*{Vocabulary}\label{vocabulary-6}}
+\hypertarget{vocabulary}{%
+\subsubsection*{Vocabulary}\label{vocabulary}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Residual:
@@ -2813,8 +2802,8 @@ Residual Plot:
 Correlation:
 \rgs
 
-\hypertarget{notes-8}{%
-\subsubsection*{Notes}\label{notes-8}}
+\hypertarget{notes}{%
+\subsubsection*{Notes}\label{notes}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 General equation of a linear regression for a population: \(y= \beta_0+ \beta_1 x+\epsilon\) where
@@ -2936,8 +2925,8 @@ You may skip the special topic Sections 3.2.3.1 and 3.2.6.
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-7}{%
-\subsubsection*{Vocabulary}\label{vocabulary-7}}
+\hypertarget{vocabulary-1}{%
+\subsubsection*{Vocabulary}\label{vocabulary-1}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Least squares criterion:
@@ -2969,8 +2958,8 @@ Coefficient of determination
 \rgi \(s_{RES}^2\) (or SSE) represents
 \rgs
 
-\hypertarget{notes-9}{%
-\subsubsection*{Notes}\label{notes-9}}
+\hypertarget{notes-1}{%
+\subsubsection*{Notes}\label{notes-1}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Two methods for determining the best line:
@@ -3057,8 +3046,8 @@ True or false: The coefficient of determination is just the square of the correl
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-8}{%
-\subsubsection*{Vocabulary}\label{vocabulary-8}}
+\hypertarget{vocabulary-2}{%
+\subsubsection*{Vocabulary}\label{vocabulary-2}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Outlier:
@@ -3070,8 +3059,8 @@ Leverage:
 Influential:
 \rgs
 
-\hypertarget{notes-10}{%
-\subsubsection*{Notes}\label{notes-10}}
+\hypertarget{notes-2}{%
+\subsubsection*{Notes}\label{notes-2}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Investigate, but do not remove, outliers. Unless you find there was an actual error in the data collection, ignoring outliers can make models poor predictors!
@@ -3098,8 +3087,8 @@ True or false: An outlier is considered high leverage if it is extreme in it's x
 
 Section 3.4 presents five tutorials on analyzing two quantitative variables in R. We recommend you complete all five.
 
-\hypertarget{notes-11}{%
-\subsubsection*{Notes}\label{notes-11}}
+\hypertarget{notes-3}{%
+\subsubsection*{Notes}\label{notes-3}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Statistics summarize
@@ -3174,8 +3163,8 @@ Use color and a legend to add a third variable to a scatterplot.
 
 \rgi e.g.~Color the dots to represent different levels of a categorical variable or shading to represent different values of a quantitative variable
 
-\hypertarget{vocabulary-9}{%
-\subsubsection*{Vocabulary}\label{vocabulary-9}}
+\hypertarget{vocabulary-3}{%
+\subsubsection*{Vocabulary}\label{vocabulary-3}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Interaction:
@@ -3184,8 +3173,8 @@ Interaction:
 Aesthetic:
 \rgi
 
-\hypertarget{notes-12}{%
-\subsubsection*{Notes}\label{notes-12}}
+\hypertarget{notes-4}{%
+\subsubsection*{Notes}\label{notes-4}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 If the response and one predictor are quantitative and the other predictor categorical, we fit a regression line for each level of the categorical predictor.
@@ -3218,8 +3207,8 @@ True or false: Scatterplots can only display two variables at a time.
 
 Simpson's Paradox: when the relationship between the explanatory and response variable is reversed when looking at the relationship within different levels of a confounding variable
 
-\hypertarget{notes-13}{%
-\subsubsection*{Notes}\label{notes-13}}
+\hypertarget{notes-5}{%
+\subsubsection*{Notes}\label{notes-5}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 True or false: Simpson's Paradox can only occur when the explanatory, response, and confounding variable are all categorical.
@@ -3284,8 +3273,8 @@ Section 4.3 discusses multiple regression and presents five tutorials on analyzi
 
 \setstretch{1.25}
 
-\hypertarget{notes-14}{%
-\subsubsection*{Notes}\label{notes-14}}
+\hypertarget{notes-6}{%
+\subsubsection*{Notes}\label{notes-6}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 To determine if the relationship between two quantitative variables differs across levels of a categorical variable, you should compare
@@ -3299,8 +3288,8 @@ Simpson's Paradox:
 
 \setstretch{1}
 
-\hypertarget{learning-objectives-1}{%
-\subsection{Learning objectives}\label{learning-objectives-1}}
+\hypertarget{learning-objectives}{%
+\subsection{Learning objectives}\label{learning-objectives}}
 
 \begin{itemize}
 \item
@@ -3313,13 +3302,13 @@ Simpson's Paradox:
 \item
   Interpret the slope coefficient in context of the problem.
 \item
-  Interpret \(R^2\), the coefficient of determination, in context of the problem.
+  Calculated and interpret \(R^2\), the coefficient of determination, in context of the problem.
 \item
   Find the correlation coefficient from \texttt{R} output or from \(R^2\) and the sign of the slope.
 \end{itemize}
 
-\hypertarget{terminology-review-4}{%
-\subsection{Terminology review}\label{terminology-review-4}}
+\hypertarget{terminology-review}{%
+\subsection{Terminology review}\label{terminology-review}}
 
 In this week's activity, we will review summary measures and plots for two quantitative variables. Some terms covered in this activity are:
 
@@ -3338,8 +3327,8 @@ In this week's activity, we will review summary measures and plots for two quant
 
 To review these concepts, see Chapter 3 in the textbook.
 
-\hypertarget{movies-released-in-2016-1}{%
-\subsection{Movies released in 2016}\label{movies-released-in-2016-1}}
+\hypertarget{movies-released-in-2016}{%
+\subsection{Movies released in 2016}\label{movies-released-in-2016}}
 
 We will revisit the data set used last week collected on Movies released in 2016. Here is a reminder of the variables collected on these movies.
 
@@ -3390,9 +3379,9 @@ Number of likes a movie receives on Facebook\strut
 \bottomrule
 \end{longtable}
 
-\hypertarget{vocabulary-review.-complete-q1---4-before-class.}{%
-\subsubsection*{Vocabulary review. Complete Q1 - 4 before class.}\label{vocabulary-review.-complete-q1---4-before-class.}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1 - 4 before class.}
+\hypertarget{vocabulary-review.-complete-q1-q4-before-class.}{%
+\subsubsection*{\texorpdfstring{Vocabulary review. Complete Q1\(-\)Q4 before class.}{Vocabulary review. Complete Q1-Q4 before class.}}\label{vocabulary-review.-complete-q1-q4-before-class.}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1\(-\)Q4 before class.}
 
 Note: You will need to use the provided \texttt{R} script file for activity 5 to complete question 3.
 
@@ -3400,7 +3389,7 @@ Note: You will need to use the provided \texttt{R} script file for activity 5 to
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  What type of plot is used to display two quantitative variables?
+  What type of plot is used to display the relationship between \texttt{budget\_mil} and \texttt{revenue\_mil}?
 \end{enumerate}
 
 \vspace{0.2in}
@@ -3415,17 +3404,17 @@ Note: You will need to use the provided \texttt{R} script file for activity 5 to
 
 \vspace{0.4in}
 
-We will look at the relationship between \texttt{Budget} and \texttt{Revenue} for movies released in 2016. Enter the variable name \texttt{budget\_mil} for xx and \texttt{revenue\_mil} for yy at line 7 in the \texttt{R} script file to create the scatterplot. (Note: both variables are measured in ``millions of dollars''). Highlight and run lines 1 - 12.
+We will look at the relationship between budget and revenue for movies released in 2016. Enter the variable name \texttt{budget\_mil} for xx and \texttt{revenue\_mil} for yy at line 7 in the \texttt{R} script file to create the scatterplot. (Note: both variables are measured in ``millions of dollars''). Highlight and run lines 1\$-\$12.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set pipes into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{y =}\NormalTok{ yy))}\OperatorTok{+}\StringTok{  }\CommentTok{\# Specify variables}
-\StringTok{  }\KeywordTok{geom\_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{\# Add scatterplot of points}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
-       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
-       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\# Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom\_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
+\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Data set pipes into...}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{y =}\NormalTok{ yy))}\OperatorTok{+}\StringTok{  }\CommentTok{# Specify variables}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{# Add scatterplot of points}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{# Label x-axis}
+       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{# Label y-axis}
+       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{# Be sure to tile your plots}
+\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{# Add regression line}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3500,11 +3489,11 @@ Correlation measures the strength and the direction of the linear relationship b
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{  }\CommentTok{\# Data set pipes into}
-\StringTok{  }\KeywordTok{select}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"budget\_mil"}\NormalTok{, }\StringTok{"revenue\_mil"}\NormalTok{, }
-           \StringTok{"duration"}\NormalTok{, }\StringTok{"imdb\_score"}\NormalTok{, }
-           \StringTok{"movie\_facebook\_likes"}\NormalTok{)) }\OperatorTok{\%\textgreater{}\%}
-\StringTok{  }\KeywordTok{cor}\NormalTok{(}\DataTypeTok{use=}\StringTok{"pairwise.complete.obs"}\NormalTok{) }\OperatorTok{\%\textgreater{}\%}
+\NormalTok{movies }\OperatorTok{%>%}\StringTok{  }\CommentTok{# Data set pipes into}
+\StringTok{  }\KeywordTok{select}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"budget_mil"}\NormalTok{, }\StringTok{"revenue_mil"}\NormalTok{, }
+           \StringTok{"duration"}\NormalTok{, }\StringTok{"imdb_score"}\NormalTok{, }
+           \StringTok{"movie_facebook_likes"}\NormalTok{)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{cor}\NormalTok{(}\DataTypeTok{use=}\StringTok{"pairwise.complete.obs"}\NormalTok{) }\OperatorTok{%>%}
 \StringTok{  }\KeywordTok{round}\NormalTok{(}\DecValTok{3}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
@@ -3582,9 +3571,9 @@ The linear model function in \texttt{R} gives us the summary for the least squar
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# Fit linear model: y \textasciitilde{} x}
-\NormalTok{revenueLM \textless{}{-}}\StringTok{ }\KeywordTok{lm}\NormalTok{(revenue\_mil }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{budget\_mil, }\DataTypeTok{data=}\NormalTok{movies)}
-\KeywordTok{summary}\NormalTok{(revenueLM)}\OperatorTok{$}\NormalTok{coefficients }\CommentTok{\# Display coefficient summary}
+\CommentTok{# Fit linear model: y ~ x}
+\NormalTok{revenueLM <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(revenue_mil }\OperatorTok{~}\StringTok{ }\NormalTok{budget_mil, }\DataTypeTok{data=}\NormalTok{movies)}
+\KeywordTok{summary}\NormalTok{(revenueLM)}\OperatorTok{$}\NormalTok{coefficients }\CommentTok{# Display coefficient summary}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3664,8 +3653,8 @@ $e_i=y_i-\hat{y}_i$
 
 \vspace{.2in}
 
-\hypertarget{out-of-class-activity-4}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-4}}
+\hypertarget{out-of-class-activity}{%
+\subsection{Out-of-class activity}\label{out-of-class-activity}}
 
 \hypertarget{coefficient-of-determination-squared-correlation}{%
 \subsubsection*{Coefficient of determination (squared correlation)}\label{coefficient-of-determination-squared-correlation}}
@@ -3714,16 +3703,16 @@ What if we wanted to see if the relationship between \texttt{Budget} and \texttt
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set pipes into...}
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content\_rating }\OperatorTok{!=}\StringTok{ "Not Rated"}\NormalTok{) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Remove Not Rated movies}
-\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget\_mil, }\DataTypeTok{y =}\NormalTok{ revenue\_mil, }\DataTypeTok{color =}\NormalTok{ content\_rating)) }\OperatorTok{+}\StringTok{  }\CommentTok{\# Specify variables}
-\StringTok{  }\KeywordTok{geom\_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{shape =}\NormalTok{ content\_rating), }\DataTypeTok{size =} \DecValTok{3}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{\# Add scatterplot of points}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
-       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
-       \DataTypeTok{color =} \StringTok{"Content Rating"}\NormalTok{,  }\CommentTok{\# Label legend}
-       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\# Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom\_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{, }\DataTypeTok{lwd =} \DecValTok{2}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\# Add regression lines}
-\StringTok{  }\KeywordTok{scale\_color\_grey}\NormalTok{() }\CommentTok{\# Make black and white}
+\NormalTok{movies }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Data set pipes into...}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(content_rating }\OperatorTok{!=}\StringTok{ "Not Rated"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Remove Not Rated movies}
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ budget_mil, }\DataTypeTok{y =}\NormalTok{ revenue_mil, }\DataTypeTok{color =}\NormalTok{ content_rating)) }\OperatorTok{+}\StringTok{  }\CommentTok{# Specify variables}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{shape =}\NormalTok{ content_rating), }\DataTypeTok{size =} \DecValTok{3}\NormalTok{) }\OperatorTok{+}\StringTok{  }\CommentTok{# Add scatterplot of points}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{# Label x-axis}
+       \DataTypeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{# Label y-axis}
+       \DataTypeTok{color =} \StringTok{"Content Rating"}\NormalTok{,  }\CommentTok{# Label legend}
+       \DataTypeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{# Be sure to tile your plots}
+\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{, }\DataTypeTok{lwd =} \DecValTok{2}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{# Add regression lines}
+\StringTok{  }\KeywordTok{scale_color_grey}\NormalTok{() }\CommentTok{# Make black and white}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3749,8 +3738,8 @@ What if we wanted to see if the relationship between \texttt{Budget} and \texttt
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-4}{%
-\subsection{Take-home messages}\label{take-home-messages-4}}
+\hypertarget{take-home-messages}{%
+\subsection{Take-home messages}\label{take-home-messages}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3766,8 +3755,8 @@ What if we wanted to see if the relationship between \texttt{Budget} and \texttt
   We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable. This is extrapolation.
 \end{enumerate}
 
-\hypertarget{additional-notes-4}{%
-\subsection{Additional notes}\label{additional-notes-4}}
+\hypertarget{additional-notes}{%
+\subsection{Additional notes}\label{additional-notes}}
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
@@ -3792,8 +3781,8 @@ You may skip the special topic Section 5.1.4.
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-10}{%
-\subsubsection*{Vocabulary}\label{vocabulary-10}}
+\hypertarget{vocabulary}{%
+\subsubsection*{Vocabulary}\label{vocabulary}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Statistical inference:
@@ -3844,8 +3833,8 @@ Significance level:
 Statistically significant:
 \rgs
 
-\hypertarget{notes-15}{%
-\subsubsection*{Notes}\label{notes-15}}
+\hypertarget{notes}{%
+\subsubsection*{Notes}\label{notes}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 What `theory' is behind the theory-based methods of analysis?
@@ -3945,8 +3934,8 @@ True or False: When conducting a simulation-based hypothesis test, the null hypo
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-11}{%
-\subsubsection*{Vocabulary}\label{vocabulary-11}}
+\hypertarget{vocabulary-1}{%
+\subsubsection*{Vocabulary}\label{vocabulary-1}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Normal distribution:
@@ -3972,8 +3961,8 @@ Xth percentile:
 68-95-99.7 rule:
 \rgs
 
-\hypertarget{notes-16}{%
-\subsubsection*{Notes}\label{notes-16}}
+\hypertarget{notes-1}{%
+\subsubsection*{Notes}\label{notes-1}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Interpretation of a z-score:
@@ -4141,8 +4130,8 @@ Statistically significant: results are considered statistically significant if t
 
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
 
-\hypertarget{vocabulary-12}{%
-\subsubsection*{Vocabulary}\label{vocabulary-12}}
+\hypertarget{vocabulary-2}{%
+\subsubsection*{Vocabulary}\label{vocabulary-2}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Test statistic/Point estimate:
@@ -4157,8 +4146,8 @@ Null distribution:\\
 Standardized statistic:
 \rgs
 
-\hypertarget{notes-17}{%
-\subsubsection*{Notes}\label{notes-17}}
+\hypertarget{notes-2}{%
+\subsubsection*{Notes}\label{notes-2}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Conditions for the Central Limit Theorem to apply (for the sampling distribution of \(\hat{p}\) to be Normal)
@@ -4287,8 +4276,8 @@ Standardized statistic/standardized sample proportion:
 
 \setstretch{1}
 
-\hypertarget{learning-objectives-2}{%
-\subsection{Learning objectives}\label{learning-objectives-2}}
+\hypertarget{learning-objectives}{%
+\subsection{Learning objectives}\label{learning-objectives}}
 
 \begin{itemize}
 \item
@@ -4302,8 +4291,8 @@ Standardized statistic/standardized sample proportion:
   Interpret and evaluate a p-value.
 \end{itemize}
 
-\hypertarget{terminology-review-5}{%
-\subsection{Terminology review}\label{terminology-review-5}}
+\hypertarget{terminology-review}{%
+\subsection{Terminology review}\label{terminology-review}}
 
 In this week's in-class activity, we will introduce simulation hypothesis testing for a single categorical variable. Some terms covered in this activity are:
 
@@ -4324,8 +4313,8 @@ In this week's in-class activity, we will introduce simulation hypothesis testin
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-\hypertarget{steps-of-the-statistical-investigation-process-1}{%
-\subsection{Steps of the statistical investigation process}\label{steps-of-the-statistical-investigation-process-1}}
+\hypertarget{steps-of-the-statistical-investigation-process}{%
+\subsection{Steps of the statistical investigation process}\label{steps-of-the-statistical-investigation-process}}
 
 We will work through a six-step process to complete a hypothesis test for a single proportion.
 
@@ -4351,9 +4340,9 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 Left-handedness is a trait that is found in about 10\% of the population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition. In this random sample of 500 male professional boxers we want to see if there is an over-prevalence of left-handed fighters.
 
-\hypertarget{summary-statistics-review-complete-q1---4-before-class}{%
-\subsubsection*{Summary statistics review: Complete Q1 - 4 before class}\label{summary-statistics-review-complete-q1---4-before-class}}
-\addcontentsline{toc}{subsubsection}{Summary statistics review: Complete Q1 - 4 before class}
+\hypertarget{summary-statistics-review-complete-q1-q4-before-class}{%
+\subsubsection*{\texorpdfstring{Summary statistics review: Complete Q1\(-\)Q4 before class}{Summary statistics review: Complete Q1-Q4 before class}}\label{summary-statistics-review-complete-q1-q4-before-class}}
+\addcontentsline{toc}{subsubsection}{Summary statistics review: Complete Q1\(-\)Q4 before class}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4430,8 +4419,8 @@ Before completing the hypothesis test, we must check that the cases are independ
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{handedness \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/Male\_boxers\_sample.csv"}\NormalTok{) }\CommentTok{\# Read in data set}
-\NormalTok{handedness }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\KeywordTok{count}\NormalTok{(Stance)  }\CommentTok{\# Count number in each Stance category}
+\NormalTok{handedness <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/Male_boxers_sample.csv"}\NormalTok{) }\CommentTok{# Read in data set}
+\NormalTok{handedness }\OperatorTok{%>%}\StringTok{ }\KeywordTok{count}\NormalTok{(Stance)  }\CommentTok{# Count number in each Stance category}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4624,16 +4613,16 @@ To use the computer simulation, we will need to enter the ``probability of succe
 
 \vspace{.2in}
 
-Using the provided \texttt{R} script file, fill in the values/words for xx with your answers from question 17 in the one proportion test to create a null distribution with 1000 simulations, highlight and run lines 1 - 14.
+Using the provided \texttt{R} script file, fill in the values/words for xx with your answers from question 17 in the one proportion test to create a null distribution with 1000 simulations, highlight and run lines 1\$-\$14.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{one\_proportion\_test}\NormalTok{(}\DataTypeTok{probability\_success =}\NormalTok{ xx, }\CommentTok{\# Null hypothesis value}
-                    \DataTypeTok{sample\_size =}\NormalTok{ xx, }\CommentTok{\# Enter sample size}
-                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Enter number of simulations}
-                    \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx, }\CommentTok{\# Observed statistic}
-                    \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Specify direction of alternative hypothesis}
-                    \DataTypeTok{report\_value =} \StringTok{"proportion"}\NormalTok{) }\CommentTok{\# Reporting proportion or number of successes?}
+\KeywordTok{one_proportion_test}\NormalTok{(}\DataTypeTok{probability_success =}\NormalTok{ xx, }\CommentTok{# Null hypothesis value}
+                    \DataTypeTok{sample_size =}\NormalTok{ xx, }\CommentTok{# Enter sample size}
+                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{# Enter number of simulations}
+                    \DataTypeTok{as_extreme_as =}\NormalTok{ xx, }\CommentTok{# Observed statistic}
+                    \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{# Specify direction of alternative hypothesis}
+                    \DataTypeTok{report_value =} \StringTok{"proportion"}\NormalTok{) }\CommentTok{# Reporting proportion or number of successes?}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4762,8 +4751,8 @@ When we write a conclusion we answer the research question by stating how much e
 
 \vspace{.6in}
 
-\hypertarget{out-of-class-activity-5}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-5}}
+\hypertarget{out-of-class-activity}{%
+\subsection{Out-of-class activity}\label{out-of-class-activity}}
 
 The remaining questions cover theory-based methods for testing a single categorical variable. Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
 
@@ -4855,13 +4844,13 @@ The standardized statistic measures the number of standard errors the sample sta
 
 \vspace{1in}
 
-We will use the pnorm function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic calculated in question 3 at xx in line 18, highlight and run lines 18 - 20. Notice that in line 20 it says \texttt{lower.tail\ =\ FALSE}. \texttt{R} will calculate the p-value greater than the value of the standardized statistic. Use \texttt{lower.tail\ =\ TRUE} when doing a left-sided test and \texttt{lower.tail\ =\ FALSE} when doing a right-sided test. To find a two-sided p-value use a left-sided test and multiply the p-value found by 2.
+We will use the pnorm function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic calculated in question 3 at xx in line 18, highlight and run lines 18\$-\$20. Notice that in line 20 it says \texttt{lower.tail\ =\ FALSE}. \texttt{R} will calculate the p-value greater than the value of the standardized statistic. Use \texttt{lower.tail\ =\ TRUE} when doing a left-sided test and \texttt{lower.tail\ =\ FALSE} when doing a right-sided test. To find a two-sided p-value use a left-sided test and multiply the p-value found by 2.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{pnorm}\NormalTok{(xx, }\CommentTok{\# Enter value of standardized statistic}
-      \DataTypeTok{m=}\DecValTok{0}\NormalTok{, }\DataTypeTok{s=}\DecValTok{1} \CommentTok{\# Using the standard normal mean = 0, sd = 1}
-      \DataTypeTok{lower.tail=}\OtherTok{FALSE}\NormalTok{) }\CommentTok{\# Gives a p{-}value greater than the standardized statistic}
+\KeywordTok{pnorm}\NormalTok{(xx, }\CommentTok{# Enter value of standardized statistic}
+      \DataTypeTok{m=}\DecValTok{0}\NormalTok{, }\DataTypeTok{s=}\DecValTok{1} \CommentTok{# Using the standard normal mean = 0, sd = 1}
+      \DataTypeTok{lower.tail=}\OtherTok{FALSE}\NormalTok{) }\CommentTok{# Gives a p-value greater than the standardized statistic}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4877,8 +4866,8 @@ We will use the pnorm function in \texttt{R} to find the p-value. Use the provid
 
 \vspace{0.5in}
 
-\hypertarget{take-home-messages-5}{%
-\subsection{Take-home messages}\label{take-home-messages-5}}
+\hypertarget{take-home-messages}{%
+\subsection{Take-home messages}\label{take-home-messages}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4892,16 +4881,16 @@ We will use the pnorm function in \texttt{R} to find the p-value. Use the provid
   When writing a conclusion to a test, we are answering the research question. How much evidence does the statistic provide in support of the alternative hypothesis? Use the guidelines for the strength of evidence throughout this course to assess the evidence against the null hypothesis.
 \end{enumerate}
 
-\hypertarget{additional-notes-5}{%
-\subsection{Additional notes}\label{additional-notes-5}}
+\hypertarget{additional-notes}{%
+\subsection{Additional notes}\label{additional-notes}}
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 \hypertarget{inference-for-a-single-categorical-variable-confidence-intervals}{%
 \chapter{Inference for a Single Categorical Variable: Confidence Intervals}\label{inference-for-a-single-categorical-variable-confidence-intervals}}
 
-\hypertarget{reading-guide-categorical-inference-1}{%
-\section{Reading Guide: Categorical Inference}\label{reading-guide-categorical-inference-1}}
+\hypertarget{reading-guide-categorical-inference}{%
+\section{Reading Guide: Categorical Inference}\label{reading-guide-categorical-inference}}
 
 \hypertarget{section-5.1.4-foundations-of-inference-confidence-intervals}{%
 \subsection{Section 5.1.4 (Foundations of inference: Confidence intervals)}\label{section-5.1.4-foundations-of-inference-confidence-intervals}}
@@ -4916,8 +4905,8 @@ Use this space to summarize your thoughts and take additional notes on this week
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-13}{%
-\subsubsection*{Vocabulary}\label{vocabulary-13}}
+\hypertarget{vocabulary}{%
+\subsubsection*{Vocabulary}\label{vocabulary}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Confidence interval:
@@ -4926,8 +4915,8 @@ Confidence interval:
 Margin of error:
 \rgs
 
-\hypertarget{formulas-3}{%
-\subsubsection*{Formulas}\label{formulas-3}}
+\hypertarget{formulas}{%
+\subsubsection*{Formulas}\label{formulas}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 General form of a theory-based confidence interval:
@@ -4936,8 +4925,8 @@ General form of a theory-based confidence interval:
 Margin of error:
 \rgs
 
-\hypertarget{example-martian-alphabet-1}{%
-\subsubsection*{Example: Martian Alphabet}\label{example-martian-alphabet-1}}
+\hypertarget{example-martian-alphabet}{%
+\subsubsection*{Example: Martian Alphabet}\label{example-martian-alphabet}}
 \addcontentsline{toc}{subsubsection}{Example: Martian Alphabet}
 
 \begin{enumerate}
@@ -4972,8 +4961,8 @@ In section 5.3.3, read only the sub-section on ``Confidence interval for \(\pi\)
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-1}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-1}}
+\hypertarget{reminders-from-previous-sections}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n\) = sample size
@@ -4999,8 +4988,8 @@ Standard error of a statistic: estimated standard deviation of a statistic.
 
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
 
-\hypertarget{vocabulary-14}{%
-\subsubsection*{Vocabulary}\label{vocabulary-14}}
+\hypertarget{vocabulary-1}{%
+\subsubsection*{Vocabulary}\label{vocabulary-1}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Test statistic/Point estimate:
@@ -5018,8 +5007,8 @@ Bootstrapped statistic:
 Confidence level:
 \rgs
 
-\hypertarget{notes-18}{%
-\subsubsection*{Notes}\label{notes-18}}
+\hypertarget{notes}{%
+\subsubsection*{Notes}\label{notes}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Purpose of bootstrapping:
@@ -5052,8 +5041,8 @@ How can we determine the value of z\^{}⋆ to use as the multiplier in a confide
 
 Select one answer in each set of parentheses: The higher the confidence level, the (larger/smaller) the multiplier, meaning the confidence interval will be (wider/narrower).
 
-\hypertarget{formulas-4}{%
-\subsubsection*{Formulas}\label{formulas-4}}
+\hypertarget{formulas-1}{%
+\subsubsection*{Formulas}\label{formulas-1}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(SD(\hat{p})\) =
@@ -5069,8 +5058,8 @@ Theory-based confidence interval for a sample proportion:
 Margin of error of a confidence interval for a sample proportion:
 \rgs
 
-\hypertarget{example-organ-donations-1}{%
-\subsubsection*{Example: Organ Donations}\label{example-organ-donations-1}}
+\hypertarget{example-organ-donations}{%
+\subsubsection*{Example: Organ Donations}\label{example-organ-donations}}
 \addcontentsline{toc}{subsubsection}{Example: Organ Donations}
 
 \begin{enumerate}
@@ -5096,8 +5085,8 @@ Margin of error of a confidence interval for a sample proportion:
   \rgs
 \end{enumerate}
 
-\hypertarget{example-payday-loans-1}{%
-\subsubsection*{Example: Payday Loans}\label{example-payday-loans-1}}
+\hypertarget{example-payday-loans}{%
+\subsubsection*{Example: Payday Loans}\label{example-payday-loans}}
 \addcontentsline{toc}{subsubsection}{Example: Payday Loans}
 
 \begin{enumerate}
@@ -5135,8 +5124,8 @@ Margin of error of a confidence interval for a sample proportion:
 
 \setstretch{1}
 
-\hypertarget{learning-objectives-3}{%
-\subsection{Learning objectives}\label{learning-objectives-3}}
+\hypertarget{learning-objectives}{%
+\subsection{Learning objectives}\label{learning-objectives}}
 
 \begin{itemize}
 \item
@@ -5145,8 +5134,8 @@ Margin of error of a confidence interval for a sample proportion:
   Interpret a confidence interval for a single proportion.
 \end{itemize}
 
-\hypertarget{terminology-review-6}{%
-\subsection{Terminology review}\label{terminology-review-6}}
+\hypertarget{terminology-review}{%
+\subsection{Terminology review}\label{terminology-review}}
 
 In this week's in-class activity, we will introduce simulation confidence intervals for a single categorical variable. Some terms covered in this activity are:
 
@@ -5161,16 +5150,16 @@ In this week's in-class activity, we will introduce simulation confidence interv
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-\hypertarget{handedness-of-male-boxers-1}{%
-\subsection{Handedness of male boxers}\label{handedness-of-male-boxers-1}}
+\hypertarget{handedness-of-male-boxers}{%
+\subsection{Handedness of male boxers}\label{handedness-of-male-boxers}}
 
 Last week, we found very strong evidence that the true proportion of male boxers who are left-handed is greater than the general population, 0.1. We will use this same study to estimate the parameter of interest. As a reminder: left-handedness is a trait that is found in about 10\% of the population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition. Using the data from this random sample of 500 male boxers we want to estimate the true proportion of male boxers who are left-handed. Recall from the last activity in the sample of 500 male boxers, 81 were left-handed.
 
 A \textbf{point estimate} provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible range of values for the parameter. This plausible range of values for the population parameter is called a confidence interval.
 
-\hypertarget{activity-intro.-complete-q1---4-before-class.}{%
-\subsubsection*{Activity Intro. Complete Q1 - 4 before class.}\label{activity-intro.-complete-q1---4-before-class.}}
-\addcontentsline{toc}{subsubsection}{Activity Intro. Complete Q1 - 4 before class.}
+\hypertarget{activity-intro.-complete-q1-q4-before-class.}{%
+\subsubsection*{\texorpdfstring{Activity Intro. Complete Q1\(-\)Q4 before class.}{Activity Intro. Complete Q1-Q4 before class.}}\label{activity-intro.-complete-q1-q4-before-class.}}
+\addcontentsline{toc}{subsubsection}{Activity Intro. Complete Q1\(-\)Q4 before class.}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5205,8 +5194,8 @@ In this week's activity, we will use bootstrapping to find the 95\% confidence i
 
 \vspace{0.5in}
 
-\hypertarget{use-statistical-analysis-methods-to-draw-inferences-from-the-data-1}{%
-\subsubsection*{Use statistical analysis methods to draw inferences from the data}\label{use-statistical-analysis-methods-to-draw-inferences-from-the-data-1}}
+\hypertarget{use-statistical-analysis-methods-to-draw-inferences-from-the-data}{%
+\subsubsection*{Use statistical analysis methods to draw inferences from the data}\label{use-statistical-analysis-methods-to-draw-inferences-from-the-data}}
 \addcontentsline{toc}{subsubsection}{Use statistical analysis methods to draw inferences from the data}
 
 \begin{enumerate}
@@ -5262,14 +5251,14 @@ To use the computer simulation to create a bootstrap distribution, we will need 
 
 \vspace{.1in}
 
-Using the provided \texttt{R} script file, fill in the values/words for xx with your answers from question 6 in the one proportion bootstrap CI code to create a bootstrap distribution with 1000 simulations, highlight and run lines 1 - 11.
+Using the provided \texttt{R} script file, fill in the values/words for xx with your answers from question 6 in the one proportion bootstrap CI code to create a bootstrap distribution with 1000 simulations, highlight and run lines 1\$-\$11.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{one\_proportion\_bootstrap\_CI}\NormalTok{(}\DataTypeTok{sample\_size =}\NormalTok{ xx, }\CommentTok{\# Sample size}
-                    \DataTypeTok{number\_successes =}\NormalTok{ xx, }\CommentTok{\# Observed number of successes}
-                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Number of bootstrap samples to use}
-                    \DataTypeTok{confidence\_level =} \FloatTok{0.95}\NormalTok{) }\CommentTok{\# Confidence level as a decimal}
+\KeywordTok{one_proportion_bootstrap_CI}\NormalTok{(}\DataTypeTok{sample_size =}\NormalTok{ xx, }\CommentTok{# Sample size}
+                    \DataTypeTok{number_successes =}\NormalTok{ xx, }\CommentTok{# Observed number of successes}
+                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{# Number of bootstrap samples to use}
+                    \DataTypeTok{confidence_level =} \FloatTok{0.95}\NormalTok{) }\CommentTok{# Confidence level as a decimal}
 \end{Highlighting}
 \end{Shaded}
 
@@ -5315,8 +5304,8 @@ Using the provided \texttt{R} script file, fill in the values/words for xx with 
 
 \vspace{.8in}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question-1}{%
-\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-1}}
+\hypertarget{communicate-the-results-and-answer-the-research-question}{%
+\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question}}
 \addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
 
 \begin{enumerate}
@@ -5354,10 +5343,10 @@ Using the provided \texttt{R} script file, fill in the values/words for xx with 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{one\_proportion\_bootstrap\_CI}\NormalTok{(}\DataTypeTok{sample\_size =} \DecValTok{500}\NormalTok{, }\CommentTok{\# Sample size}
-                    \DataTypeTok{number\_successes =} \DecValTok{81}\NormalTok{, }\CommentTok{\# Observed number of successes}
-                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Number of bootstrap samples to use}
-                    \DataTypeTok{confidence\_level =} \FloatTok{0.90}\NormalTok{) }\CommentTok{\# Confidence level as a decimal}
+\KeywordTok{one_proportion_bootstrap_CI}\NormalTok{(}\DataTypeTok{sample_size =} \DecValTok{500}\NormalTok{, }\CommentTok{# Sample size}
+                    \DataTypeTok{number_successes =} \DecValTok{81}\NormalTok{, }\CommentTok{# Observed number of successes}
+                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{# Number of bootstrap samples to use}
+                    \DataTypeTok{confidence_level =} \FloatTok{0.90}\NormalTok{) }\CommentTok{# Confidence level as a decimal}
 \end{Highlighting}
 \end{Shaded}
 
@@ -5423,8 +5412,8 @@ In the interpretation of the confidence interval, we say that we are 95\% or 90\
 
 \vspace{1in}
 
-\hypertarget{revisit-and-look-forward-1}{%
-\subsubsection*{Revisit and look forward}\label{revisit-and-look-forward-1}}
+\hypertarget{revisit-and-look-forward}{%
+\subsubsection*{Revisit and look forward}\label{revisit-and-look-forward}}
 \addcontentsline{toc}{subsubsection}{Revisit and look forward}
 
 \begin{enumerate}
@@ -5437,8 +5426,8 @@ In the interpretation of the confidence interval, we say that we are 95\% or 90\
 
 \vspace{.6in}
 
-\hypertarget{out-of-class-activity-6}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-6}}
+\hypertarget{out-of-class-activity}{%
+\subsection{Out-of-class activity}\label{out-of-class-activity}}
 
 The remaining questions cover theory-based methods for testing a single categorical variable. Use section 5.3.3 in the textbook and the OnePropTheory video to complete the following questions.
 
@@ -5483,7 +5472,7 @@ The \(z^*\) multiplier is found under the standard normal distribution. We find 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.975}\NormalTok{) }\CommentTok{\# Multiplier for 95\% confidence interval}
+\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.975}\NormalTok{) }\CommentTok{# Multiplier for 95% confidence interval}
 \end{Highlighting}
 \end{Shaded}
 
@@ -5511,8 +5500,8 @@ The \(z^*\) multiplier is found under the standard normal distribution. We find 
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-6}{%
-\subsection{Take-home messages}\label{take-home-messages-6}}
+\hypertarget{take-home-messages}{%
+\subsection{Take-home messages}\label{take-home-messages}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5528,8 +5517,8 @@ The \(z^*\) multiplier is found under the standard normal distribution. We find 
   When the null value is within the confidence interval it is a plausible value for the parameter of interest and we would find a larger p-value for the hypothesis test. Conversely, if the null value is NOT within the confidence interval we would find a small p-value for the hypothesis test and strong evidence against the null hypothesis.
 \end{enumerate}
 
-\hypertarget{additional-notes-6}{%
-\subsection{Additional notes}\label{additional-notes-6}}
+\hypertarget{additional-notes}{%
+\subsection{Additional notes}\label{additional-notes}}
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
@@ -5555,8 +5544,8 @@ Use this space to summarize your thoughts and take additional notes on this week
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-2}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-2}}
+\hypertarget{reminders-from-previous-sections}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n\) = sample size
@@ -5565,8 +5554,8 @@ Use this space to summarize your thoughts and take additional notes on this week
 
 \(\pi\) = population proportion
 
-\hypertarget{general-steps-of-a-hypothesis-test-1}{%
-\subsubsection*{General steps of a hypothesis test:}\label{general-steps-of-a-hypothesis-test-1}}
+\hypertarget{general-steps-of-a-hypothesis-test}{%
+\subsubsection*{General steps of a hypothesis test:}\label{general-steps-of-a-hypothesis-test}}
 \addcontentsline{toc}{subsubsection}{General steps of a hypothesis test:}
 
 \begin{enumerate}
@@ -5621,8 +5610,8 @@ Significance level: (\(\alpha\)) a threshold used to determine if a p-value prov
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-\hypertarget{vocabulary-15}{%
-\subsubsection*{Vocabulary}\label{vocabulary-15}}
+\hypertarget{vocabulary}{%
+\subsubsection*{Vocabulary}\label{vocabulary}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Randomization test:
@@ -5637,8 +5626,8 @@ One-sided hypothesis test:
 Two-side hypothesis test:
 \rgs
 
-\hypertarget{notes-19}{%
-\subsubsection*{Notes}\label{notes-19}}
+\hypertarget{notes}{%
+\subsubsection*{Notes}\label{notes}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 In a simulation test for two categorical variables, how many cards will you need and how will the cards be labeled?
@@ -5664,8 +5653,8 @@ Write the null hypothesis in notation for a test of relative risk.
 How does the p-value in a two-sided test compare to the p-value in a one-sided test?
 \rgs
 
-\hypertarget{formulas-5}{%
-\subsubsection*{Formulas}\label{formulas-5}}
+\hypertarget{formulas}{%
+\subsubsection*{Formulas}\label{formulas}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 Relative risk =
@@ -5884,8 +5873,8 @@ You may skip the sub-section on "Confidence Interval for \(\pi_1 - \pi_2\)*". Th
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-3}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-3}}
+\hypertarget{reminders-from-previous-sections-1}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-1}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 Sample size of group 1: \(n_1\)
@@ -5904,8 +5893,8 @@ Test statistic/Point estimate: other names for the statistic from a sample; our 
 
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
 
-\hypertarget{notes-20}{%
-\subsubsection*{Notes}\label{notes-20}}
+\hypertarget{notes-1}{%
+\subsubsection*{Notes}\label{notes-1}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Conditions for the CLT to apply for two categorical variables
@@ -5927,8 +5916,8 @@ Conditions for the CLT to apply for two categorical variables
 \rgi a. Checked by:
 \rgs
 
-\hypertarget{formulas-6}{%
-\subsubsection*{Formulas}\label{formulas-6}}
+\hypertarget{formulas-1}{%
+\subsubsection*{Formulas}\label{formulas-1}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(SD(\hat{p_1} - \hat{p_2})=\)
@@ -6016,8 +6005,8 @@ Overall (pooled) proportion of successes:
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-4}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-4}}
+\hypertarget{reminders-from-previous-sections-2}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-2}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance
@@ -6032,8 +6021,8 @@ Significance level: (\(\alpha\)) a threshold used to determine if a p-value prov
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-\hypertarget{vocabulary-16}{%
-\subsubsection*{Vocabulary}\label{vocabulary-16}}
+\hypertarget{vocabulary-1}{%
+\subsubsection*{Vocabulary}\label{vocabulary-1}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Type I error:
@@ -6051,8 +6040,8 @@ Power:
 Practical Importance:
 \rgs
 
-\hypertarget{notes-21}{%
-\subsubsection*{Notes}\label{notes-21}}
+\hypertarget{notes-2}{%
+\subsubsection*{Notes}\label{notes-2}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Fill in the following table with whether the decision was correct or not and if not, what type of error was made.
@@ -6198,8 +6187,8 @@ Results are unlikely to be statistically significant (but may be practically imp
 
 \setstretch{1}
 
-\hypertarget{learning-objectives-4}{%
-\subsection{Learning objectives}\label{learning-objectives-4}}
+\hypertarget{learning-objectives}{%
+\subsection{Learning objectives}\label{learning-objectives}}
 
 \begin{itemize}
 \item
@@ -6212,8 +6201,8 @@ Results are unlikely to be statistically significant (but may be practically imp
   Find the p-value and assess the strength of evidence.
 \end{itemize}
 
-\hypertarget{terminology-review-7}{%
-\subsection{Terminology review}\label{terminology-review-7}}
+\hypertarget{terminology-review}{%
+\subsection{Terminology review}\label{terminology-review}}
 
 In this week's in-class activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
 
@@ -6262,13 +6251,13 @@ These counts can be found in \texttt{R} by using the \texttt{count()} function:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{injury \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/HeadInjuries.csv"}\NormalTok{) }\CommentTok{\# Read data set in}
-\NormalTok{injury \textless{}{-}}\StringTok{ }\CommentTok{\# Write over original data with the following}
-\StringTok{  }\NormalTok{injury }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Pipe data set into}
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(Helmet \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(Helmet),}
-\NormalTok{         Outcome \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(Outcome)) }\CommentTok{\# Convert to factors}
+\NormalTok{injury <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/HeadInjuries.csv"}\NormalTok{) }\CommentTok{# Read data set in}
+\NormalTok{injury <-}\StringTok{ }\CommentTok{# Write over original data with the following}
+\StringTok{  }\NormalTok{injury }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Pipe data set into}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(Helmet <-}\StringTok{ }\KeywordTok{factor}\NormalTok{(Helmet),}
+\NormalTok{         Outcome <-}\StringTok{ }\KeywordTok{factor}\NormalTok{(Outcome)) }\CommentTok{# Convert to factors}
 
-\NormalTok{injury }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\KeywordTok{group\_by}\NormalTok{(Helmet) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\KeywordTok{count}\NormalTok{(Outcome)}
+\NormalTok{injury }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(Helmet) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{count}\NormalTok{(Outcome)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -6285,9 +6274,9 @@ These counts can be found in \texttt{R} by using the \texttt{count()} function:
 
 Notice that the name of the explanatory variable is \texttt{Helmet} with outcomes \texttt{Yes} and \texttt{No} and the name of the response variable is \texttt{Outcome} with outcomes \texttt{Head\ Injury} and \texttt{No\ Head\ Injury}.
 
-\hypertarget{vocabulary-review.-complete-q1---4-before-class.-1}{%
-\subsubsection*{Vocabulary review. Complete Q1 - 4 before class.}\label{vocabulary-review.-complete-q1---4-before-class.-1}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1 - 4 before class.}
+\hypertarget{vocabulary-review.-complete-q1-q4-before-class.}{%
+\subsubsection*{\texorpdfstring{Vocabulary review. Complete Q1\(-\)Q4 before class.}{Vocabulary review. Complete Q1-Q4 before class.}}\label{vocabulary-review.-complete-q1-q4-before-class.}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1\(-\)Q4 before class.}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6337,8 +6326,8 @@ Selection of Cases & Random Sample & &\tabularnewline
 \bottomrule
 \end{longtable}
 
-\hypertarget{ask-a-research-question-1}{%
-\subsubsection*{Ask a research question}\label{ask-a-research-question-1}}
+\hypertarget{ask-a-research-question}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question}}
 \addcontentsline{toc}{subsubsection}{Ask a research question}
 
 In this study we are looking at the relationship between two groups or two parameters (\(\pi_1\) and \(\pi_2\)). Remember we define the parameter for a categorical variable as the true proportion of observational units that are labeled as a ``success'' in the response variable.
@@ -6392,8 +6381,8 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 \newpage
 
-\hypertarget{summarize-and-visualize-the-data-1}{%
-\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-1}}
+\hypertarget{summarize-and-visualize-the-data}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
 \begin{enumerate}
@@ -6459,8 +6448,8 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 \vspace{0.2in}
 \newpage
 
-\hypertarget{use-statistical-analysis-methods-to-draw-inferences-from-the-data-2}{%
-\subsubsection*{Use statistical analysis methods to draw inferences from the data}\label{use-statistical-analysis-methods-to-draw-inferences-from-the-data-2}}
+\hypertarget{use-statistical-analysis-methods-to-draw-inferences-from-the-data}{%
+\subsubsection*{Use statistical analysis methods to draw inferences from the data}\label{use-statistical-analysis-methods-to-draw-inferences-from-the-data}}
 \addcontentsline{toc}{subsubsection}{Use statistical analysis methods to draw inferences from the data}
 
 To test the null hypothesis we could use simulation methods as we did with a single categorical variable in class. In this in-class activity we will focus on theory-based methods. Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
@@ -6537,13 +6526,13 @@ SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\
 
 \vspace{1in}
 
-We will use the pnorm function in \texttt{R} to find the p-value. Use the provided \texttt{RScript} file and enter the value of the standardized statistic found in question 18 at xx in line 27, highlight and run lines 27 - 29.
+We will use the pnorm function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic found in question 18 at xx in line 27, highlight and run lines 27\$-\$29.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{pnorm}\NormalTok{(xx, }\CommentTok{\# Enter value of standardized statistic}
-      \DataTypeTok{m=}\DecValTok{0}\NormalTok{, }\DataTypeTok{s=}\DecValTok{1} \CommentTok{\# Using the standard normal mean = 0, sd = 1}
-      \DataTypeTok{lower.tail=}\OtherTok{TRUE}\NormalTok{) }\CommentTok{\# Gives a p{-}value less than the standardized statistic}
+\KeywordTok{pnorm}\NormalTok{(xx, }\CommentTok{# Enter value of standardized statistic}
+      \DataTypeTok{m=}\DecValTok{0}\NormalTok{, }\DataTypeTok{s=}\DecValTok{1} \CommentTok{# Using the standard normal mean = 0, sd = 1}
+      \DataTypeTok{lower.tail=}\OtherTok{TRUE}\NormalTok{) }\CommentTok{# Gives a p-value less than the standardized statistic}
 \end{Highlighting}
 \end{Shaded}
 
@@ -6655,8 +6644,8 @@ Shown in the table above, a \textbf{Type 1 Error} is rejecting the null hypothes
 
 \vspace{2in}
 
-\hypertarget{out-of-class-activity-7}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-7}}
+\hypertarget{out-of-class-activity}{%
+\subsection{Out-of-class activity}\label{out-of-class-activity}}
 
 The remaining questions cover simulation methods for testing two categorical variables. Use section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.
 
@@ -6749,17 +6738,17 @@ The response variable name is Outcome and the explanatory variable name is Helme
 
 \vspace{.2in}
 
-Using the \texttt{RScript} file for this activity, enter your answers for question 4 in place of the xx's in the two proportion test code to produce the null distribution with 1000 simulations, highlight and run lines 1 - 12 and then 33 - 39.
+Using the \texttt{R} script file for this activity, enter your answers for question 4 in place of the xx's in the two proportion test code to produce the null distribution with 1000 simulations, highlight and run lines 1\$-\(12 and then 33\)-\$39.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{two\_proportion\_test}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{Helmet, }\CommentTok{\# response\textasciitilde{}explanatory}
-                    \DataTypeTok{data=}\NormalTok{ injury, }\CommentTok{\# Name of dataset}
-                    \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Order of subtraction: enter the name of Group 1}
-                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Always use a minimum of 1000 repetitions}
-                    \DataTypeTok{response\_value\_numerator =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Define which outcome is a success }
-                    \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx, }\CommentTok{\# Type your calculated observed statistic (difference in sample proportions)}
-                    \DataTypeTok{direction=}\StringTok{"xx"}\NormalTok{) }\CommentTok{\# Alternative hypothesis direction ("greater","less","two{-}sided")}
+\KeywordTok{two_proportion_test}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{~}\StringTok{ }\NormalTok{Helmet, }\CommentTok{# response~explanatory}
+                    \DataTypeTok{data=}\NormalTok{ injury, }\CommentTok{# Name of dataset}
+                    \DataTypeTok{first_in_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{# Order of subtraction: enter the name of Group 1}
+                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{# Always use a minimum of 1000 repetitions}
+                    \DataTypeTok{response_value_numerator =} \StringTok{"xx"}\NormalTok{, }\CommentTok{# Define which outcome is a success }
+                    \DataTypeTok{as_extreme_as =}\NormalTok{ xx, }\CommentTok{# Type your calculated observed statistic (difference in sample proportions)}
+                    \DataTypeTok{direction=}\StringTok{"xx"}\NormalTok{) }\CommentTok{# Alternative hypothesis direction ("greater","less","two-sided")}
 \end{Highlighting}
 \end{Shaded}
 
@@ -6803,8 +6792,8 @@ Using the \texttt{RScript} file for this activity, enter your answers for questi
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-7}{%
-\subsection{Take-home messages}\label{take-home-messages-7}}
+\hypertarget{take-home-messages}{%
+\subsection{Take-home messages}\label{take-home-messages}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6820,8 +6809,8 @@ Using the \texttt{RScript} file for this activity, enter your answers for questi
   If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance leve), we could have a possible Type II error.
 \end{enumerate}
 
-\hypertarget{additional-notes-7}{%
-\subsection{Additional notes}\label{additional-notes-7}}
+\hypertarget{additional-notes}{%
+\subsection{Additional notes}\label{additional-notes}}
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
@@ -6845,8 +6834,8 @@ Use this space to summarize your thoughts and take additional notes on this week
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-5}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-5}}
+\hypertarget{reminders-from-previous-sections}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 Sample size of group 1: \(n_1\)
@@ -6886,8 +6875,8 @@ Bootstrapped statistic: the statistic recorded from the bootstrapped resample
 
 Confidence level: how confident we are that the confidence interval will capture the parameter
 
-\hypertarget{notes-22}{%
-\subsubsection*{Notes}\label{notes-22}}
+\hypertarget{notes}{%
+\subsubsection*{Notes}\label{notes}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 To create a single bootstrap resample for two categorical variables, how many cards will you need and how will the cards be labeled?
@@ -6907,8 +6896,8 @@ How do you determine if the results of a hypothesis test agree with a confidence
 How are confidence level and significance level related (for a two-sided test)?
 \rgs
 
-\hypertarget{example-cpr-and-blood-thinner-2}{%
-\subsubsection*{Example: CPR and blood thinner}\label{example-cpr-and-blood-thinner-2}}
+\hypertarget{example-cpr-and-blood-thinner}{%
+\subsubsection*{Example: CPR and blood thinner}\label{example-cpr-and-blood-thinner}}
 \addcontentsline{toc}{subsubsection}{Example: CPR and blood thinner}
 
 \begin{enumerate}
@@ -6946,8 +6935,8 @@ How are confidence level and significance level related (for a two-sided test)?
   \rgs
 \end{enumerate}
 
-\hypertarget{section-5.4.4-theory-based-methods-for-a-difference-in-proportions-1}{%
-\subsection*{Section 5.4.4 (Theory-based Methods for a Difference in Proportions)}\label{section-5.4.4-theory-based-methods-for-a-difference-in-proportions-1}}
+\hypertarget{section-5.4.4-theory-based-methods-for-a-difference-in-proportions}{%
+\subsection*{Section 5.4.4 (Theory-based Methods for a Difference in Proportions)}\label{section-5.4.4-theory-based-methods-for-a-difference-in-proportions}}
 \addcontentsline{toc}{subsection}{Section 5.4.4 (Theory-based Methods for a Difference in Proportions)}
 
 \setstretch{1}
@@ -6964,14 +6953,14 @@ In section 5.4.4, read only the sub-section on ``Confidence interval for \(\pi_1
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-6}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-6}}
+\hypertarget{reminders-from-previous-sections-1}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-1}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
 
-\hypertarget{notes-23}{%
-\subsubsection*{Notes}\label{notes-23}}
+\hypertarget{notes-1}{%
+\subsubsection*{Notes}\label{notes-1}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Conditions for the CLT to apply for two categorical variables
@@ -6993,8 +6982,8 @@ Conditions for the CLT to apply for two categorical variables
 \rgi a. Checked by:
 \rgs
 
-\hypertarget{formulas-7}{%
-\subsubsection*{Formulas}\label{formulas-7}}
+\hypertarget{formulas}{%
+\subsubsection*{Formulas}\label{formulas}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(SD(\hat{p_1} - \hat{p_2})=\)
@@ -7010,8 +6999,8 @@ Theory-based confidence interval for a s difference in sample proportions:
 Margin of error of a confidence interval for a difference in sample proportions:
 \rgs
 
-\hypertarget{example-cpr-and-blood-thinner-3}{%
-\subsubsection*{Example: CPR and blood thinner}\label{example-cpr-and-blood-thinner-3}}
+\hypertarget{example-cpr-and-blood-thinner-1}{%
+\subsubsection*{Example: CPR and blood thinner}\label{example-cpr-and-blood-thinner-1}}
 \addcontentsline{toc}{subsubsection}{Example: CPR and blood thinner}
 
 \begin{enumerate}
@@ -7039,8 +7028,8 @@ Margin of error of a confidence interval for a difference in sample proportions:
 
 \setstretch{1}
 
-\hypertarget{learning-objectives-5}{%
-\subsection{Learning objectives}\label{learning-objectives-5}}
+\hypertarget{learning-objectives}{%
+\subsection{Learning objectives}\label{learning-objectives}}
 
 \begin{itemize}
 \item
@@ -7049,8 +7038,8 @@ Margin of error of a confidence interval for a difference in sample proportions:
   Create and interpret a confidence interval for the difference in proportions.
 \end{itemize}
 
-\hypertarget{terminology-review-8}{%
-\subsection{Terminology review}\label{terminology-review-8}}
+\hypertarget{terminology-review}{%
+\subsection{Terminology review}\label{terminology-review}}
 
 In this week's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
@@ -7063,8 +7052,8 @@ In this week's activity, we will use theory-based methods to estimate the differ
 
 To review these concepts, see Chapter 5 in your textbook.
 
-\hypertarget{helmet-use-and-head-injuries-1}{%
-\subsection{Helmet use and head injuries}\label{helmet-use-and-head-injuries-1}}
+\hypertarget{helmet-use-and-head-injuries}{%
+\subsection{Helmet use and head injuries}\label{helmet-use-and-head-injuries}}
 
 In activity 8, we found very strong evidence that helmet use is associated with a reduction in head injury for skiers and snowboarders. In this in-class activity we will estimate the parameter of interest, the difference in true proportion of skiers and snowboarders with head injuries for those who wore helmets and those that did not, using theory-based methods.
 
@@ -7081,9 +7070,9 @@ Total & 752 & 2810 & 3562\tabularnewline
 \bottomrule
 \end{longtable}
 
-\hypertarget{vocabulary-review.-complete-q1---3-before-class.-1}{%
-\subsubsection*{Vocabulary review. Complete Q1 - 3 before class.}\label{vocabulary-review.-complete-q1---3-before-class.-1}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1 - 3 before class.}
+\hypertarget{vocabulary-review.-complete-q1-q3-before-class.}{%
+\subsubsection*{\texorpdfstring{Vocabulary review. Complete Q1\(-\)Q3 before class.}{Vocabulary review. Complete Q1-Q3 before class.}}\label{vocabulary-review.-complete-q1-q3-before-class.}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1\(-\)Q3 before class.}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7114,8 +7103,8 @@ Total & 752 & 2810 & 3562\tabularnewline
 
 \vspace{1in}
 
-\hypertarget{use-statistical-analysis-methods-to-draw-inferences-from-the-data-3}{%
-\subsubsection*{Use statistical analysis methods to draw inferences from the data}\label{use-statistical-analysis-methods-to-draw-inferences-from-the-data-3}}
+\hypertarget{use-statistical-analysis-methods-to-draw-inferences-from-the-data}{%
+\subsubsection*{Use statistical analysis methods to draw inferences from the data}\label{use-statistical-analysis-methods-to-draw-inferences-from-the-data}}
 \addcontentsline{toc}{subsubsection}{Use statistical analysis methods to draw inferences from the data}
 
 In this activity we will focus on theory-based methods to calculate a confidence interval. Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
@@ -7171,7 +7160,7 @@ The \(z^*\) multiplier is found under the standard normal distribution. We find 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.975}\NormalTok{) }\CommentTok{\# Multiplier for 95\% confidence interval}
+\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.975}\NormalTok{) }\CommentTok{# Multiplier for 95% confidence interval}
 \end{Highlighting}
 \end{Shaded}
 
@@ -7294,8 +7283,8 @@ Another summary statistic that can be calculated for two categorical variables i
 
 \vspace{1in}
 
-\hypertarget{out-of-class-activity-8}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-8}}
+\hypertarget{out-of-class-activity}{%
+\subsection{Out-of-class activity}\label{out-of-class-activity}}
 
 The remaining questions cover simulation methods for creating the bootstrap distribution to find the confidence interval. Use section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.
 
@@ -7304,9 +7293,13 @@ To create the bootstrap distribution, we will use the two proportion bootstrap C
 The response variable name is Outcome and the explanatory variable name is Helmet.
 
 \newpage
-1
 
-. What values should be entered for each of the following into the simulation to create a 95\% confidence interval?
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  What values should be entered for each of the following into the simulation to create a 95\% confidence interval?
+\end{enumerate}
 
 \vspace{.5mm}
 
@@ -7342,16 +7335,16 @@ The response variable name is Outcome and the explanatory variable name is Helme
 
 \vspace{.2in}
 
-Using the \texttt{RScript} file for this activity, enter your answers for question 1 in place of the xx's in the two proportion bootstrap CI function to produce the bootstrap distribution with 1000 simulations, highlight and run lines 1 - 22.
+Using the \texttt{R} script file for this activity, enter your answers for question 1 in place of the xx's in the two proportion bootstrap CI function to produce the bootstrap distribution with 1000 simulations, highlight and run lines 1\$-\$22.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{two\_proportion\_bootstrap\_CI}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{Helmet, }
-                            \DataTypeTok{data=}\NormalTok{injury, }\CommentTok{\# Name of dataset}
-                            \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Order of subtraction: enter the name of Group 1}
-                            \DataTypeTok{response\_value\_numerator =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Define which outcome is a success }
-                            \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Always use a minimum of 1000 repetitions}
-                            \DataTypeTok{confidence\_level =} \FloatTok{0.95}\NormalTok{) }\CommentTok{\# Enter the level of confidence as a decimal}
+\KeywordTok{two_proportion_bootstrap_CI}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{~}\StringTok{ }\NormalTok{Helmet, }
+                            \DataTypeTok{data=}\NormalTok{injury, }\CommentTok{# Name of dataset}
+                            \DataTypeTok{first_in_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{# Order of subtraction: enter the name of Group 1}
+                            \DataTypeTok{response_value_numerator =} \StringTok{"xx"}\NormalTok{, }\CommentTok{# Define which outcome is a success }
+                            \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{# Always use a minimum of 1000 repetitions}
+                            \DataTypeTok{confidence_level =} \FloatTok{0.95}\NormalTok{) }\CommentTok{# Enter the level of confidence as a decimal}
 \end{Highlighting}
 \end{Shaded}
 
@@ -7385,8 +7378,8 @@ Using the \texttt{RScript} file for this activity, enter your answers for questi
 
 \vspace{0.5in}
 
-\hypertarget{take-home-messages-8}{%
-\subsection{Take-home messages}\label{take-home-messages-8}}
+\hypertarget{take-home-messages}{%
+\subsection{Take-home messages}\label{take-home-messages}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7400,8 +7393,8 @@ Using the \texttt{RScript} file for this activity, enter your answers for questi
   Increasing sample size will result in less sample to sample variability which will result in a narrower confidence interval.
 \end{enumerate}
 
-\hypertarget{additional-notes-8}{%
-\subsection{Additional notes}\label{additional-notes-8}}
+\hypertarget{additional-notes}{%
+\subsection{Additional notes}\label{additional-notes}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
@@ -7427,8 +7420,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-7}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-7}}
+\hypertarget{reminders-from-previous-sections}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n\) = sample size
@@ -7441,8 +7434,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \(\sigma\) = population standard deviation
 
-\hypertarget{general-steps-of-a-hypothesis-test-2}{%
-\subsubsection*{General steps of a hypothesis test:}\label{general-steps-of-a-hypothesis-test-2}}
+\hypertarget{general-steps-of-a-hypothesis-test}{%
+\subsubsection*{General steps of a hypothesis test:}\label{general-steps-of-a-hypothesis-test}}
 \addcontentsline{toc}{subsubsection}{General steps of a hypothesis test:}
 
 \begin{enumerate}
@@ -7514,8 +7507,8 @@ Bootstrap X\% confidence interval: (\((\frac{(1-X)}{2})^{th}\) percentile,\((X+(
 
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be bell-shaped and symmetric
 
-\hypertarget{vocabulary-17}{%
-\subsubsection*{Vocabulary}\label{vocabulary-17}}
+\hypertarget{vocabulary}{%
+\subsubsection*{Vocabulary}\label{vocabulary}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 \(t\)-distribution:
@@ -7530,8 +7523,8 @@ Degrees of freedom (df):
 T-score:
 \rgs 
 
-\hypertarget{notes-24}{%
-\subsubsection*{Notes}\label{notes-24}}
+\hypertarget{notes}{%
+\subsubsection*{Notes}\label{notes}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 To create a bootstrap distribution test, how many cards will you need and how will the cards be labeled?
@@ -7577,8 +7570,8 @@ Conditions to use the CLT for means:
 \rgi Checked by:
 \rgs 
 
-\hypertarget{formulas-8}{%
-\subsubsection*{Formulas}\label{formulas-8}}
+\hypertarget{formulas}{%
+\subsubsection*{Formulas}\label{formulas}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(SE(\overline{x})=\)
@@ -7590,8 +7583,8 @@ Conditions to use the CLT for means:
 Confidence interval:
 \rgs 
 
-\hypertarget{notation-1}{%
-\subsubsection*{Notation}\label{notation-1}}
+\hypertarget{notation}{%
+\subsubsection*{Notation}\label{notation}}
 \addcontentsline{toc}{subsubsection}{Notation}
 
 \(\mu_0\) represents
@@ -7763,8 +7756,8 @@ Confidence interval:
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-18}{%
-\subsubsection*{Vocabulary}\label{vocabulary-18}}
+\hypertarget{vocabulary-1}{%
+\subsubsection*{Vocabulary}\label{vocabulary-1}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Paired data:
@@ -7776,8 +7769,8 @@ Paired data:
 \rgi Paired with matching:
 \rgs
 
-\hypertarget{notes-25}{%
-\subsubsection*{Notes}\label{notes-25}}
+\hypertarget{notes-1}{%
+\subsubsection*{Notes}\label{notes-1}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 For each of the following scenarios, determine if the two sets of observations are paired or independent.
@@ -7820,8 +7813,8 @@ Conditions to use the CLT for paired mean difference:
 \rgi a. Checked by:
 \rgs
 
-\hypertarget{formulas-9}{%
-\subsubsection*{Formulas}\label{formulas-9}}
+\hypertarget{formulas-1}{%
+\subsubsection*{Formulas}\label{formulas-1}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(SE(\overline{x_d})=\)
@@ -7833,8 +7826,8 @@ Conditions to use the CLT for paired mean difference:
 Confidence interval:
 \rgs
 
-\hypertarget{notation-2}{%
-\subsubsection*{Notation}\label{notation-2}}
+\hypertarget{notation-1}{%
+\subsubsection*{Notation}\label{notation-1}}
 \addcontentsline{toc}{subsubsection}{Notation}
 
 \(\overline{x_d}=\)
@@ -7969,8 +7962,8 @@ Confidence interval:
 
 \setstretch{1}
 
-\hypertarget{learning-outcomes-3}{%
-\subsection{Learning outcomes}\label{learning-outcomes-3}}
+\hypertarget{learning-outcomes}{%
+\subsection{Learning outcomes}\label{learning-outcomes}}
 
 \begin{itemize}
 \item
@@ -7988,8 +7981,8 @@ Confidence interval:
   Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
-\hypertarget{terminology-review-9}{%
-\subsection{Terminology review}\label{terminology-review-9}}
+\hypertarget{terminology-review}{%
+\subsection{Terminology review}\label{terminology-review}}
 
 In this week's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
 
@@ -8046,9 +8039,9 @@ Differences & \(\bar{x}_d\) = -4.152 & \(s_d\) = 17.096 & \(n_d\) = 33\tabularne
 
 \newpage
 
-\hypertarget{vocabulary-review.-complete-q1---5-before-class.}{%
-\subsubsection*{Vocabulary review. Complete Q1 - 5 before class.}\label{vocabulary-review.-complete-q1---5-before-class.}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1 - 5 before class.}
+\hypertarget{vocabulary-review.-complete-q1-q5-before-class.}{%
+\subsubsection*{\texorpdfstring{Vocabulary review. Complete Q1\(-\)Q5 before class.}{Vocabulary review. Complete Q1-Q5 before class.}}\label{vocabulary-review.-complete-q1-q5-before-class.}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1\(-\)Q5 before class.}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8099,8 +8092,8 @@ Differences & \(\bar{x}_d\) = -4.152 & \(s_d\) = 17.096 & \(n_d\) = 33\tabularne
 
 \vspace{0.3in}
 
-\hypertarget{ask-a-research-question-2}{%
-\subsubsection*{Ask a research question}\label{ask-a-research-question-2}}
+\hypertarget{ask-a-research-question}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question}}
 \addcontentsline{toc}{subsubsection}{Ask a research question}
 
 \begin{enumerate}
@@ -8143,8 +8136,8 @@ Differences & \(\bar{x}_d\) = -4.152 & \(s_d\) = 17.096 & \(n_d\) = 33\tabularne
 
 \vspace{1in}
 
-\hypertarget{summarize-and-visualize-the-data-2}{%
-\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-2}}
+\hypertarget{summarize-and-visualize-the-data}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
 \begin{enumerate}
@@ -8188,17 +8181,17 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 \setcounter{enumi}{12}
 \tightlist
 \item
-  Use the provided \texttt{RScript} file and enter the calculated value from question 12 for xx to simulate the null distribution and enter the summary statistic from question 10 for yy to find the p-value. Highlight and run lines 1 - 21.
+  Use the provided \texttt{R} script file and enter the calculated value from question 12 for xx to simulate the null distribution and enter the summary statistic from question 10 for yy to find the p-value. Highlight and run lines 1\$-\$21.
 \end{enumerate}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-    \KeywordTok{paired\_test}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Air}\OperatorTok{$}\NormalTok{Difference,   }\CommentTok{\# Vector of differences or data set with column for each group}
-            \DataTypeTok{shift =}\NormalTok{ xx,   }\CommentTok{\# Shift needed for bootstrap hypothesis test}
-            \DataTypeTok{as\_extreme\_as =}\NormalTok{ yy,  }\CommentTok{\# Observed statistic}
-            \DataTypeTok{direction =} \StringTok{"less"}\NormalTok{,  }\CommentTok{\# Direction of alternative}
-            \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\# Number of simulated samples for null distribution}
-            \DataTypeTok{which\_first =} \DecValTok{1}\NormalTok{)  }\CommentTok{\# Not needed when using calculated differences}
+    \KeywordTok{paired_test}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Air}\OperatorTok{$}\NormalTok{Difference,   }\CommentTok{# Vector of differences or data set with column for each group}
+            \DataTypeTok{shift =}\NormalTok{ xx,   }\CommentTok{# Shift needed for bootstrap hypothesis test}
+            \DataTypeTok{as_extreme_as =}\NormalTok{ yy,  }\CommentTok{# Observed statistic}
+            \DataTypeTok{direction =} \StringTok{"less"}\NormalTok{,  }\CommentTok{# Direction of alternative}
+            \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{# Number of simulated samples for null distribution}
+            \DataTypeTok{which_first =} \DecValTok{1}\NormalTok{)  }\CommentTok{# Not needed when using calculated differences}
 \end{Highlighting}
 \end{Shaded}
 
@@ -8267,15 +8260,15 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 \setcounter{enumi}{19}
 \tightlist
 \item
-  Using the provided \texttt{RScript} file fill in the missing value at xx in the paired bootstrap CI to find a 99\% confidence interval, highlight and run lines 24 - 27. Report the confidence interval in interval notation.
+  Using the provided \texttt{R} script file fill in the missing value at xx in the paired bootstrap CI to find a 99\% confidence interval, highlight and run lines 24\$-\$27. Report the confidence interval in interval notation.
 \end{enumerate}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{paired\_bootstrap\_CI}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Air}\OperatorTok{$}\NormalTok{Difference, }\CommentTok{\# Enter vector of differences}
-                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Number of bootstrap samples for CI}
-                    \DataTypeTok{confidence\_level =}\NormalTok{ xx,  }\CommentTok{\# Confidence level in decimal form}
-                    \DataTypeTok{which\_first =} \DecValTok{1}\NormalTok{)  }\CommentTok{\# Not needed when entering vector of differences}
+\KeywordTok{paired_bootstrap_CI}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Air}\OperatorTok{$}\NormalTok{Difference, }\CommentTok{# Enter vector of differences}
+                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{# Number of bootstrap samples for CI}
+                    \DataTypeTok{confidence_level =}\NormalTok{ xx,  }\CommentTok{# Confidence level in decimal form}
+                    \DataTypeTok{which_first =} \DecValTok{1}\NormalTok{)  }\CommentTok{# Not needed when entering vector of differences}
 \end{Highlighting}
 \end{Shaded}
 
@@ -8328,8 +8321,8 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 
 \vspace{3in}
 
-\hypertarget{revisit-and-look-forward-2}{%
-\subsubsection*{Revisit and look forward}\label{revisit-and-look-forward-2}}
+\hypertarget{revisit-and-look-forward}{%
+\subsubsection*{Revisit and look forward}\label{revisit-and-look-forward}}
 \addcontentsline{toc}{subsubsection}{Revisit and look forward}
 
 \begin{enumerate}
@@ -8341,8 +8334,8 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
   \vspace{0.6in}
 \end{enumerate}
 
-\hypertarget{out-of-class-activity-9}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-9}}
+\hypertarget{out-of-class-activity}{%
+\subsection{Out-of-class activity}\label{out-of-class-activity}}
 
 The remaining questions cover theory-based methods for testing paired quantitative data. Use section 6.2.3 in the textbook and the OneMeanTheory video to complete the following questions.
 
@@ -8401,7 +8394,7 @@ where the standard error of the mean difference is:
 
 \vspace{0.5in}
 
-Using the provided \texttt{RScript} file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 33 - 1 = 32, and lower.tail = TRUE to find the p-value. Highlight and run line 31.
+Using the provided \texttt{R} script file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 33 - 1 = 32, and lower.tail = TRUE to find the p-value. Highlight and run line 31.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -8428,7 +8421,7 @@ We will need to find the \(t^*\) multiplier using the function qt. For a 99\% co
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{qt}\NormalTok{(}\FloatTok{0.995}\NormalTok{, }\DataTypeTok{df =} \DecValTok{32}\NormalTok{, }\DataTypeTok{lower.tail=}\OtherTok{TRUE}\NormalTok{)}
-\CommentTok{\#\textgreater{} [1] 2.738481}
+\CommentTok{#> [1] 2.738481}
 \end{Highlighting}
 \end{Shaded}
 
@@ -8452,8 +8445,8 @@ We will need to find the \(t^*\) multiplier using the function qt. For a 99\% co
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-9}{%
-\subsection{Take-home messages}\label{take-home-messages-9}}
+\hypertarget{take-home-messages}{%
+\subsection{Take-home messages}\label{take-home-messages}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8465,8 +8458,8 @@ We will need to find the \(t^*\) multiplier using the function qt. For a 99\% co
   When analyzing paired data the summary statistic is the mean difference NOT the difference in means. This terminology will be \emph{very} important in the interpretations.
 \end{enumerate}
 
-\hypertarget{additional-notes-9}{%
-\subsection{Additional notes}\label{additional-notes-9}}
+\hypertarget{additional-notes}{%
+\subsection{Additional notes}\label{additional-notes}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
@@ -8492,8 +8485,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-8}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-8}}
+\hypertarget{reminders-from-previous-sections}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n_1\)= sample size of group 1
@@ -8508,8 +8501,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \(\sigma\) = population standard deviation
 
-\hypertarget{general-steps-of-a-hypothesis-test-3}{%
-\subsubsection*{General steps of a hypothesis test:}\label{general-steps-of-a-hypothesis-test-3}}
+\hypertarget{general-steps-of-a-hypothesis-test}{%
+\subsubsection*{General steps of a hypothesis test:}\label{general-steps-of-a-hypothesis-test}}
 \addcontentsline{toc}{subsubsection}{General steps of a hypothesis test:}
 
 \begin{enumerate}
@@ -8589,8 +8582,8 @@ Degrees of freedom (df): describes the variability of the t-distribution
 
 T-score: the name for a standardized statistic which is compared to a t-distribution
 
-\hypertarget{notes-26}{%
-\subsubsection*{Notes}\label{notes-26}}
+\hypertarget{notes}{%
+\subsubsection*{Notes}\label{notes}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 To create a \textbf{simulated null distribution},
@@ -8643,13 +8636,13 @@ Conditions to use the CLT for a difference in two means:
 \rgs
 
 In a two-sample t-test, how are the degrees of freedom determined?
-\rgs        
+\rgs		
 
 True or False: A large p-value indicates that the null hypothesis is true.
 \rgs
 
-\hypertarget{formulas-10}{%
-\subsubsection*{Formulas}\label{formulas-10}}
+\hypertarget{formulas}{%
+\subsubsection*{Formulas}\label{formulas}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(SE(\overline{x_1} - \overline{x_2})=\)
@@ -8661,8 +8654,8 @@ True or False: A large p-value indicates that the null hypothesis is true.
 Confidence interval:
 \rgs
 
-\hypertarget{notation-3}{%
-\subsubsection*{Notation}\label{notation-3}}
+\hypertarget{notation}{%
+\subsubsection*{Notation}\label{notation}}
 \addcontentsline{toc}{subsubsection}{Notation}
 
 \(mu_1\) represents
@@ -8846,8 +8839,8 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_\_\_\_\_\_\_\_.
 
 \setstretch{1}
 
-\hypertarget{learning-objectives-6}{%
-\subsection{Learning objectives}\label{learning-objectives-6}}
+\hypertarget{learning-objectives}{%
+\subsection{Learning objectives}\label{learning-objectives}}
 
 \begin{itemize}
 \item
@@ -8864,8 +8857,8 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_\_\_\_\_\_\_\_.
   Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
-\hypertarget{terminology-review-10}{%
-\subsection{Terminology review}\label{terminology-review-10}}
+\hypertarget{terminology-review}{%
+\subsection{Terminology review}\label{terminology-review}}
 
 In this week's in-class activity, we will use simulation-based methods to analyze one categorical and one quantitative variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
 
@@ -8887,11 +8880,11 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{Snow \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/SnowfallbyWeatherPattern.csv"}\NormalTok{) }\CommentTok{\# Read in data set}
-\CommentTok{\# Code categorical variables as factors}
-\NormalTok{Snow \textless{}{-}}\StringTok{ }\CommentTok{\# Write over original data with the following}
-\StringTok{  }\NormalTok{Snow }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Pipe data set into}
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{WeatherPattern =} \KeywordTok{factor}\NormalTok{(WeatherPattern)) }\CommentTok{\# Convert to factor}
+\NormalTok{Snow <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/SnowfallbyWeatherPattern.csv"}\NormalTok{) }\CommentTok{# Read in data set}
+\CommentTok{# Code categorical variables as factors}
+\NormalTok{Snow <-}\StringTok{ }\CommentTok{# Write over original data with the following}
+\StringTok{  }\NormalTok{Snow }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Pipe data set into}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{WeatherPattern =} \KeywordTok{factor}\NormalTok{(WeatherPattern)) }\CommentTok{# Convert to factor}
 \end{Highlighting}
 \end{Shaded}
 
@@ -8899,13 +8892,13 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# Side{-}by{-}side box plots}
-\NormalTok{Snow }\OperatorTok{\%\textgreater{}\%}
+\CommentTok{# Side-by-side box plots}
+\NormalTok{Snow }\OperatorTok{%>%}
 \KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ WeatherPattern, }\DataTypeTok{y =}\NormalTok{ Snowfall)) }\OperatorTok{+}
-\StringTok{    }\KeywordTok{geom\_boxplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{geom_boxplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
 \StringTok{    }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Snowfall by weather pattern"}\NormalTok{,}
          \DataTypeTok{x =} \StringTok{"Weather pattern"}\NormalTok{) }\OperatorTok{+}
-\StringTok{    }\KeywordTok{coord\_flip}\NormalTok{()}
+\StringTok{    }\KeywordTok{coord_flip}\NormalTok{()}
 \end{Highlighting}
 \end{Shaded}
 
@@ -8913,9 +8906,9 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# Summary statistics}
-\NormalTok{Snow }\OperatorTok{\%\textgreater{}\%}\StringTok{ }
-\StringTok{     }\KeywordTok{summarize}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(Snowfall}\OperatorTok{\textasciitilde{}}\NormalTok{WeatherPattern))}
+\CommentTok{# Summary statistics}
+\NormalTok{Snow }\OperatorTok{%>%}\StringTok{ }
+\StringTok{     }\KeywordTok{summarize}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(Snowfall}\OperatorTok{~}\NormalTok{WeatherPattern))}
 \end{Highlighting}
 \end{Shaded}
 
@@ -8925,9 +8918,9 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 #> 2        La_Nina 44.5 51.4   60.9 70.3 107.2 63.13333 15.48626 21       0
 \end{verbatim}
 
-\hypertarget{quantitative-variables-review.-complete-q1---5-before-class.}{%
-\subsubsection*{Quantitative variables review. Complete Q1 - 5 before class.}\label{quantitative-variables-review.-complete-q1---5-before-class.}}
-\addcontentsline{toc}{subsubsection}{Quantitative variables review. Complete Q1 - 5 before class.}
+\hypertarget{quantitative-variables-review.-complete-q1-q5-before-class.}{%
+\subsubsection*{\texorpdfstring{Quantitative variables review. Complete Q1\(-\)Q5 before class.}{Quantitative variables review. Complete Q1-Q5 before class.}}\label{quantitative-variables-review.-complete-q1-q5-before-class.}}
+\addcontentsline{toc}{subsubsection}{Quantitative variables review. Complete Q1\(-\)Q5 before class.}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8980,8 +8973,8 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \vspace{1in}
 
-\hypertarget{ask-a-research-question-3}{%
-\subsubsection*{Ask a research question}\label{ask-a-research-question-3}}
+\hypertarget{ask-a-research-question}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question}}
 \addcontentsline{toc}{subsubsection}{Ask a research question}
 
 \begin{enumerate}
@@ -9014,8 +9007,8 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \vspace{1in}
 
-\hypertarget{summarize-and-visualize-the-data-3}{%
-\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-3}}
+\hypertarget{summarize-and-visualize-the-data}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
 \begin{enumerate}
@@ -9030,8 +9023,8 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \newpage
 
-\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}{%
-\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}}
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data}{%
+\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data}}
 \addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
 
 Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, we assume there is no association between variables. This means that a snowfall value could be in either an El Ni\latexcode{\~{n}}o year or a La Ni\latexcode{\~{n}}a year.
@@ -9137,16 +9130,16 @@ To demonstrate this your instructor will use cards to represent the sample.
 \setcounter{enumi}{15}
 \tightlist
 \item
-  Using the \texttt{RScript} file for this activity, enter your answers for question 15 in place of the xx's to produce the null distribution with 1000 simulations. Highlight and run lines 1 - 29.
+  Using the \texttt{R} script file for this activity, enter your answers for question 15 in place of the xx's to produce the null distribution with 1000 simulations. Highlight and run lines 1\$-\$29.
 \end{enumerate}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{two\_mean\_test}\NormalTok{(Snowfall}\OperatorTok{\textasciitilde{}}\NormalTok{WeatherPattern, }\DataTypeTok{data =}\NormalTok{ Snow,  }\CommentTok{\# Variables and data}
-                    \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# First outcome in order of subtraction}
-                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\# Number of simulations}
-                    \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx,  }\CommentTok{\# Observed statistic}
-                    \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{)  }\CommentTok{\# Direction of alternative: "greater", "less", or "two{-}sided"}
+\KeywordTok{two_mean_test}\NormalTok{(Snowfall}\OperatorTok{~}\NormalTok{WeatherPattern, }\DataTypeTok{data =}\NormalTok{ Snow,  }\CommentTok{# Variables and data}
+                    \DataTypeTok{first_in_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{# First outcome in order of subtraction}
+                    \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{# Number of simulations}
+                    \DataTypeTok{as_extreme_as =}\NormalTok{ xx,  }\CommentTok{# Observed statistic}
+                    \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{)  }\CommentTok{# Direction of alternative: "greater", "less", or "two-sided"}
 \end{Highlighting}
 \end{Shaded}
 
@@ -9168,15 +9161,15 @@ Sketch the null distribution created using the code above.
 \setcounter{enumi}{17}
 \tightlist
 \item
-  Using bootstrapping find a 95\% confidence interval. Use the provided \texttt{RScript} file for the two mean bootstrap CI function. Enter the variable names and data set name as in the two mean test, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal. Highlight and run lines 32 - 35. Report the 95\% confidence interval in interval notation.
+  Using bootstrapping find a 95\% confidence interval. Use the provided \texttt{R} script file for the two mean bootstrap CI function. Enter the variable names and data set name as in the two mean test, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal. Highlight and run lines 32\$-\$35. Report the 95\% confidence interval in interval notation.
 \end{enumerate}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{two\_mean\_bootstrap\_CI}\NormalTok{(RESPONSE}\OperatorTok{\textasciitilde{}}\NormalTok{EXPLANATORY, }\DataTypeTok{data =}\NormalTok{ DATASET,  }\CommentTok{\# Variables and data}
-                      \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# First value in order of subtraction}
-                      \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\# Number of simulations}
-                      \DataTypeTok{confidence\_level =}\NormalTok{ xx)}
+\KeywordTok{two_mean_bootstrap_CI}\NormalTok{(RESPONSE}\OperatorTok{~}\NormalTok{EXPLANATORY, }\DataTypeTok{data =}\NormalTok{ DATASET,  }\CommentTok{# Variables and data}
+                      \DataTypeTok{first_in_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{# First value in order of subtraction}
+                      \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{# Number of simulations}
+                      \DataTypeTok{confidence_level =}\NormalTok{ xx)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -9192,8 +9185,8 @@ Sketch the null distribution created using the code above.
 
 \vspace{1in}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question-2}{%
-\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-2}}
+\hypertarget{communicate-the-results-and-answer-the-research-question}{%
+\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question}}
 \addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
 
 \begin{enumerate}
@@ -9219,8 +9212,8 @@ Sketch the null distribution created using the code above.
 
 \vspace{3in}
 
-\hypertarget{revisit-and-look-forward-3}{%
-\subsubsection*{Revisit and look forward}\label{revisit-and-look-forward-3}}
+\hypertarget{revisit-and-look-forward}{%
+\subsubsection*{Revisit and look forward}\label{revisit-and-look-forward}}
 \addcontentsline{toc}{subsubsection}{Revisit and look forward}
 
 \begin{enumerate}
@@ -9243,8 +9236,8 @@ Sketch the null distribution created using the code above.
 
 \vspace{1in}
 
-\hypertarget{out-of-class-activity-10}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-10}}
+\hypertarget{out-of-class-activity}{%
+\subsection{Out-of-class activity}\label{out-of-class-activity}}
 
 The remaining questions cover inference for a difference in means using theory based methods. Use section 6.3.3 in the textbook and the TwoMeanTheory video to complete the following questions.
 
@@ -9309,7 +9302,7 @@ where the standard error of the difference in means is calculated using:
 
 \vspace{0.5in}
 
-Using the provided \texttt{RScript} file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value. Highlight and run line 39.
+Using the provided \texttt{R} script file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value. Highlight and run line 39.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -9367,8 +9360,8 @@ We will need to find the \(t^*\) multiplier using the function qt. For a 95\% co
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-10}{%
-\subsection{Take-home messages}\label{take-home-messages-10}}
+\hypertarget{take-home-messages}{%
+\subsection{Take-home messages}\label{take-home-messages}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9377,8 +9370,8 @@ We will need to find the \(t^*\) multiplier using the function qt. For a 95\% co
 \item
 \end{enumerate}
 
-\hypertarget{additional-notes-10}{%
-\subsection{Additional notes}\label{additional-notes-10}}
+\hypertarget{additional-notes}{%
+\subsection{Additional notes}\label{additional-notes}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 
@@ -9404,8 +9397,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-9}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-9}}
+\hypertarget{reminders-from-previous-sections}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(\beta_0\): population y-intercept
@@ -9436,8 +9429,8 @@ Least squares regression line: \(\hat{y} = b_0+b_1x\) , where \(b_0\) is the est
 
 Slope interpretation: a 1 unit increase in the \emph{x} variable is associated with a \(|b_1 |\) unit increase/decrease in the \emph{y}-variable
 
-\hypertarget{general-steps-of-a-hypothesis-test-4}{%
-\subsubsection*{General steps of a hypothesis test:}\label{general-steps-of-a-hypothesis-test-4}}
+\hypertarget{general-steps-of-a-hypothesis-test}{%
+\subsubsection*{General steps of a hypothesis test:}\label{general-steps-of-a-hypothesis-test}}
 \addcontentsline{toc}{subsubsection}{General steps of a hypothesis test:}
 
 \begin{enumerate}
@@ -9517,8 +9510,8 @@ Degrees of freedom (df): describes the variability of the t-distribution
 
 T-score: the name for a standardized statistic which is compared to a t-distribution
 
-\hypertarget{notes-27}{%
-\subsubsection*{Notes}\label{notes-27}}
+\hypertarget{notes}{%
+\subsubsection*{Notes}\label{notes}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 To create a \textbf{simulated null distribution},
@@ -9595,7 +9588,7 @@ Conditions to use the CLT for testing slope (or correlation):
 \rgs
 
 In a theoretical test of slope or correlation, how are the degrees of freedom determined?
-\rgs    
+\rgs	
 
 Explain why testing for slope is equivalent to testing for correlation.
 \rgs
@@ -9603,8 +9596,8 @@ Explain why testing for slope is equivalent to testing for correlation.
 Where in the \texttt{R} output can \(SE(b_1)\) be found?
 \rgs
 
-\hypertarget{formulas-11}{%
-\subsubsection*{Formulas}\label{formulas-11}}
+\hypertarget{formulas}{%
+\subsubsection*{Formulas}\label{formulas}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(t=\)
@@ -9647,7 +9640,9 @@ Confidence interval:
   Write the least squares regression line for these data.
   \rgs
 \item
-  How was the p-value for this test found?
+\begin{verbatim}
+How was the p-value for this test found?
+\end{verbatim}
 \end{enumerate}
 
 The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_.
@@ -9739,8 +9734,8 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_.
 
 \setstretch{1}
 
-\hypertarget{learning-outcomes-4}{%
-\subsection{Learning outcomes}\label{learning-outcomes-4}}
+\hypertarget{learning-outcomes}{%
+\subsection{Learning outcomes}\label{learning-outcomes}}
 
 \begin{itemize}
 \item
@@ -9756,8 +9751,8 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_.
   Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
-\hypertarget{terminology-review-11}{%
-\subsection{Terminology review}\label{terminology-review-11}}
+\hypertarget{terminology-review}{%
+\subsection{Terminology review}\label{terminology-review}}
 
 In this week's in-class activity, we will use theory-based methods for hypothesis tests and confidence intervals for linear regression slope. Some terms covered in this activity are:
 
@@ -9800,21 +9795,21 @@ Some of the variables collected in this data set consist of the following:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# Read in data set}
-\NormalTok{baseball \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/baseball.csv"}\NormalTok{)}
+\CommentTok{# Read in data set}
+\NormalTok{baseball <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/baseball.csv"}\NormalTok{)}
 
-\NormalTok{baseball}\OperatorTok{$}\NormalTok{RD \textless{}{-}}\StringTok{ }\NormalTok{baseball}\OperatorTok{$}\NormalTok{RS }\OperatorTok{{-}}\StringTok{ }\NormalTok{baseball}\OperatorTok{$}\NormalTok{RA }\CommentTok{\# Create variable run difference}
+\NormalTok{baseball}\OperatorTok{$}\NormalTok{RD <-}\StringTok{ }\NormalTok{baseball}\OperatorTok{$}\NormalTok{RS }\OperatorTok{-}\StringTok{ }\NormalTok{baseball}\OperatorTok{$}\NormalTok{RA }\CommentTok{# Create variable run difference}
 
-\CommentTok{\# Code categorical variables as factors}
-\NormalTok{baseball \textless{}{-}}\StringTok{ }\CommentTok{\# Write over original data with the following}
-\StringTok{  }\NormalTok{baseball }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Pipe data set into}
-\StringTok{  }\KeywordTok{subset}\NormalTok{(Year }\OperatorTok{\textless{}}\StringTok{ }\DecValTok{2002}\NormalTok{) }\CommentTok{\# Select only years before 2002}
+\CommentTok{# Code categorical variables as factors}
+\NormalTok{baseball <-}\StringTok{ }\CommentTok{# Write over original data with the following}
+\StringTok{  }\NormalTok{baseball }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Pipe data set into}
+\StringTok{  }\KeywordTok{subset}\NormalTok{(Year }\OperatorTok{<}\StringTok{ }\DecValTok{2002}\NormalTok{) }\CommentTok{# Select only years before 2002}
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{vocabulary-review.-complete-q1---4-before-class.-2}{%
-\subsubsection*{Vocabulary review. Complete Q1 - 4 before class.}\label{vocabulary-review.-complete-q1---4-before-class.-2}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1 - 4 before class.}
+\hypertarget{vocabulary-review.-complete-q1-q4-before-class.}{%
+\subsubsection*{\texorpdfstring{Vocabulary review. Complete Q1\(-\)Q4 before class.}{Vocabulary review. Complete Q1-Q4 before class.}}\label{vocabulary-review.-complete-q1-q4-before-class.}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1\(-\)Q4 before class.}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9829,17 +9824,17 @@ Some of the variables collected in this data set consist of the following:
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
 \item
-  Use the provided \texttt{RScript} file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names (\texttt{RD} and \texttt{W}) for xx and yy in line 17. Highlight and run lines 1 - 22.
+  Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names (\texttt{RD} and \texttt{W}) for xx and yy in line 17. Highlight and run lines 1\$-\$22.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{baseball }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Pipe data set into...}
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{y =}\NormalTok{ yy))}\OperatorTok{+}\StringTok{  }\CommentTok{\# Specify variables}
-\StringTok{  }\KeywordTok{geom\_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{\# Add scatterplot of points}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Difference in number of runs"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
-       \DataTypeTok{y =} \StringTok{"Number of wins"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
-       \DataTypeTok{title =} \StringTok{"Scatterplot of Run Difference vs. Number of Wins"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\# Be sure to tile your plots}
-\StringTok{  }\KeywordTok{geom\_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
+\NormalTok{baseball }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Pipe data set into...}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ xx, }\DataTypeTok{y =}\NormalTok{ yy))}\OperatorTok{+}\StringTok{  }\CommentTok{# Specify variables}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{# Add scatterplot of points}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Difference in number of runs"}\NormalTok{,  }\CommentTok{# Label x-axis}
+       \DataTypeTok{y =} \StringTok{"Number of wins"}\NormalTok{,  }\CommentTok{# Label y-axis}
+       \DataTypeTok{title =} \StringTok{"Scatterplot of Run Difference vs. Number of Wins"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{# Be sure to tile your plots}
+\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{# Add regression line}
 \end{Highlighting}
 \end{Shaded}
 \item
@@ -9893,8 +9888,8 @@ The scatterplot and the residual plots will be used to assess the conditions for
 
 \vspace{1.5in}
 
-\hypertarget{ask-a-research-question-4}{%
-\subsubsection*{Ask a research question}\label{ask-a-research-question-4}}
+\hypertarget{ask-a-research-question}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question}}
 \addcontentsline{toc}{subsubsection}{Ask a research question}
 
 \begin{enumerate}
@@ -9917,15 +9912,15 @@ The scatterplot and the residual plots will be used to assess the conditions for
 
 \vspace{0.5in}
 
-\hypertarget{summarize-and-visualize-the-data-4}{%
-\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-4}}
+\hypertarget{summarize-and-visualize-the-data}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
-Using the provided \texttt{RScript} file, enter the response variable name, \texttt{W} into the linear model function for yy and the explanatory variable name, \texttt{RD} for xx in line 32 to get the linear model output. Highlight and run lines 32 - 33.
+Using the provided \texttt{R} script file, enter the response variable name, \texttt{W} into the linear model function for yy and the explanatory variable name, \texttt{RD} for xx in line 32 to get the linear model output. Highlight and run lines 32\$-\$33.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{lm.baseball \textless{}{-}}\StringTok{ }\KeywordTok{lm}\NormalTok{(yy}\OperatorTok{\textasciitilde{}}\NormalTok{xx, }\DataTypeTok{data=}\NormalTok{baseball) }\CommentTok{\# lm(response\textasciitilde{}explanatory)}
+\NormalTok{lm.baseball <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(yy}\OperatorTok{~}\NormalTok{xx, }\DataTypeTok{data=}\NormalTok{baseball) }\CommentTok{# lm(response~explanatory)}
 \KeywordTok{round}\NormalTok{(}\KeywordTok{summary}\NormalTok{(lm.baseball)}\OperatorTok{$}\NormalTok{coefficients, }\DecValTok{5}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
@@ -9970,8 +9965,8 @@ Using the provided \texttt{RScript} file, enter the response variable name, \tex
 
 \vspace{1in}
 
-\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-2}{%
-\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-2}}
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data}{%
+\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data}}
 \addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
 
 To find the value of the standardized statistic to test the slope we will use,
@@ -10030,7 +10025,7 @@ The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df. Recall
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{qt}\NormalTok{(}\FloatTok{0.95+0.025}\NormalTok{, }\DecValTok{900}\NormalTok{) }\CommentTok{\# 95\% t* multiplier }
+\KeywordTok{qt}\NormalTok{(}\FloatTok{0.95+0.025}\NormalTok{, }\DecValTok{900}\NormalTok{) }\CommentTok{# 95% t* multiplier }
 \end{Highlighting}
 \end{Shaded}
 
@@ -10050,8 +10045,8 @@ The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df. Recall
 
 \vspace{1in}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question-3}{%
-\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-3}}
+\hypertarget{communicate-the-results-and-answer-the-research-question}{%
+\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question}}
 \addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
 
 \begin{enumerate}
@@ -10101,20 +10096,20 @@ The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df. Recall
 
 \newpage
 
-\hypertarget{revisit-and-look-forward-4}{%
-\subsubsection*{Revisit and look forward}\label{revisit-and-look-forward-4}}
+\hypertarget{revisit-and-look-forward}{%
+\subsubsection*{Revisit and look forward}\label{revisit-and-look-forward}}
 \addcontentsline{toc}{subsubsection}{Revisit and look forward}
 
 In order to see what team attributes would have the most impact on the number of runs scored, Beane and DePodesta created several prediction models. Using 2001 statistics, they looked at a prediction model using both the team's on base percentage and slugging percentage to predict the number of runs scored. The following \texttt{R} code gives the estimates for the regression model with both of these variables included.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{lm.score \textless{}{-}}\StringTok{ }\KeywordTok{lm}\NormalTok{(RS}\OperatorTok{\textasciitilde{}}\NormalTok{OBP}\OperatorTok{+}\NormalTok{SLG, }\DataTypeTok{data=}\NormalTok{baseball)}
+\NormalTok{lm.score <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(RS}\OperatorTok{~}\NormalTok{OBP}\OperatorTok{+}\NormalTok{SLG, }\DataTypeTok{data=}\NormalTok{baseball)}
 \KeywordTok{round}\NormalTok{(}\KeywordTok{summary}\NormalTok{(lm.score)}\OperatorTok{$}\NormalTok{coefficients, }\DecValTok{5}\NormalTok{)}
-\CommentTok{\#\textgreater{}              Estimate Std. Error   t value Pr(\textgreater{}|t|)}
-\CommentTok{\#\textgreater{} (Intercept) {-}804.6271   18.92079 {-}42.52608        0}
-\CommentTok{\#\textgreater{} OBP         2737.7680   90.68455  30.19001        0}
-\CommentTok{\#\textgreater{} SLG         1584.9086   42.15559  37.59665        0}
+\CommentTok{#>              Estimate Std. Error   t value Pr(>|t|)}
+\CommentTok{#> (Intercept) -804.6271   18.92079 -42.52608        0}
+\CommentTok{#> OBP         2737.7680   90.68455  30.19001        0}
+\CommentTok{#> SLG         1584.9086   42.15559  37.59665        0}
 \end{Highlighting}
 \end{Shaded}
 
@@ -10140,8 +10135,8 @@ In order to see what team attributes would have the most impact on the number of
 
 \vspace{1in}
 
-\hypertarget{out-of-class-activity-11}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-11}}
+\hypertarget{out-of-class-activity}{%
+\subsection{Out-of-class activity}\label{out-of-class-activity}}
 
 In the out-of-class activity we will focus on using simulation based methods for inference of regression. Use section 7.1 in the textbook and the TwoQuantSim video to complete the following questions.
 
@@ -10202,16 +10197,16 @@ The response variable name is \texttt{W} (wins) and the explanatory variable nam
 
 \vspace{.2in}
 
-Using the \texttt{RScript} file for this activity, enter your answers for question 2 in place of the xx's for the regression test to produce the null distribution with 1000 simulations. Highlight and run lines 1 - 13 and then lines 44-49.
+Using the \texttt{R} script file for this activity, enter your answers for question 2 in place of the xx's for the regression test to produce the null distribution with 1000 simulations. Highlight and run lines 1\$-\(13 and then lines 44\)-\$49.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{regression\_test}\NormalTok{(W}\OperatorTok{\textasciitilde{}}\NormalTok{RD, }\CommentTok{\# response \textasciitilde{} explanatory}
-               \DataTypeTok{data =}\NormalTok{ baseball, }\CommentTok{\# Name of data set}
-               \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Sign in alternative ("greater", "less", "two{-}sided")}
+\KeywordTok{regression_test}\NormalTok{(W}\OperatorTok{~}\NormalTok{RD, }\CommentTok{# response ~ explanatory}
+               \DataTypeTok{data =}\NormalTok{ baseball, }\CommentTok{# Name of data set}
+               \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{# Sign in alternative ("greater", "less", "two-sided")}
                \DataTypeTok{statistic =} \StringTok{"xx"}\NormalTok{, }
-               \DataTypeTok{as\_extreme\_as =}\NormalTok{ x, }\CommentTok{\# Observed slope}
-               \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{\# Number of simulated samples for null distribution}
+               \DataTypeTok{as_extreme_as =}\NormalTok{ x, }\CommentTok{# Observed slope}
+               \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{# Number of simulated samples for null distribution}
        
 \end{Highlighting}
 \end{Shaded}
@@ -10226,15 +10221,15 @@ Using the \texttt{RScript} file for this activity, enter your answers for questi
 
 \vspace{0.5in}
 
-Fill in the xx's in the regression bootstrap CI function in the provided \texttt{RScript} file to find a 95\% confidence interval. Highlight and run lines 52-56.
+Fill in the xx's in the regression bootstrap CI function in the provided \texttt{R} script file to find a 95\% confidence interval. Highlight and run lines 52\$-\$56.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{regression\_bootstrap\_CI}\NormalTok{(W}\OperatorTok{\textasciitilde{}}\NormalTok{RD, }\CommentTok{\# response \textasciitilde{} explanatory}
-                        \DataTypeTok{data =}\NormalTok{ baseball, }\CommentTok{\# Name of data set}
-                        \DataTypeTok{confidence\_level =}\NormalTok{ xx, }\CommentTok{\# Confidence level as decimal}
-                        \DataTypeTok{statistic =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Slope or correlation}
-                        \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{\# Number of simulated samples for bootstrap distribution}
+\KeywordTok{regression_bootstrap_CI}\NormalTok{(W}\OperatorTok{~}\NormalTok{RD, }\CommentTok{# response ~ explanatory}
+                        \DataTypeTok{data =}\NormalTok{ baseball, }\CommentTok{# Name of data set}
+                        \DataTypeTok{confidence_level =}\NormalTok{ xx, }\CommentTok{# Confidence level as decimal}
+                        \DataTypeTok{statistic =} \StringTok{"xx"}\NormalTok{, }\CommentTok{# Slope or correlation}
+                        \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{# Number of simulated samples for bootstrap distribution}
 \end{Highlighting}
 \end{Shaded}
 
@@ -10250,8 +10245,8 @@ Fill in the xx's in the regression bootstrap CI function in the provided \texttt
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-11}{%
-\subsection{Take-home messages}\label{take-home-messages-11}}
+\hypertarget{take-home-messages}{%
+\subsection{Take-home messages}\label{take-home-messages}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10263,8 +10258,8 @@ Fill in the xx's in the regression bootstrap CI function in the provided \texttt
   To interpret a confidence interval for the slope: Think about how to interpret the sample slope and use that info in the confidence interval for slope.
 \end{enumerate}
 
-\hypertarget{additional-notes-11}{%
-\subsection{Additional notes}\label{additional-notes-11}}
+\hypertarget{additional-notes}{%
+\subsection{Additional notes}\label{additional-notes}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
 

@@ -51,7 +51,7 @@ In our experience, it takes six to nine hours per week outside of class to achie
 need roughly nine hours per week to review past activities, read feedback on previous assignments, complete current assignments, and prepare for the next day's class. A typical week in the life of a STAT 216 student looks like:
 
 * _Prior to class meeting_:
-    - Read assigned sections of textbook, using the provided reading guides to take notes on the material.
+    - Read assigned sections of the textbook, using the provided reading guides to take notes on the material.
     - Watch assigned videos on that week's content, pausing to take notes and answer video quiz questions.
     - Read through the introduction to the week's in-class activity and complete the pre-class questions.
     - Read through the week's homework assignment and note any questions you may have on the content.

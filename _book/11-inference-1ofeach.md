@@ -384,7 +384,7 @@ Snow %>%
 ```
 
 
-#### Quantitative variables review.  Complete Q1 - 5 before class. {-}
+#### Quantitative variables review.  Complete Q1$-$Q5 before class. {-}
 
 1. The two variables assessed in this study are the type of weather pattern and snowfall.  Identify the role for each variable (explanatory, response).
 
@@ -474,7 +474,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \vspace{.2in}
 
-16.  Using the `RScript` file for this activity, enter your answers for question 15 in place of the xx's to produce the null distribution with 1000 simulations.  Highlight and run lines 1 - 29.
+16.  Using the `R` script file for this activity, enter your answers for question 15 in place of the xx's to produce the null distribution with 1000 simulations.  Highlight and run lines 1$-$29.
 
 
 ```r
@@ -493,7 +493,7 @@ Sketch the null distribution created using the code above.
 
 \vspace{0.5in}
 
-18. Using bootstrapping find a 95\% confidence interval. Use the provided `RScript` file for the two mean bootstrap CI function. Enter the variable names and data set name as in the two mean test, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 32 - 35. Report the 95\% confidence interval in interval notation.
+18. Using bootstrapping find a 95\% confidence interval. Use the provided `R` script file for the two mean bootstrap CI function. Enter the variable names and data set name as in the two mean test, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 32$-$35. Report the 95\% confidence interval in interval notation.
 
 ```r
 two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  # Variables and data
@@ -576,7 +576,7 @@ $$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}$$
 
 \vspace{0.5in}
 
-Using the provided `RScript` file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value.  Highlight and run line 39.
+Using the provided `R` script file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value.  Highlight and run line 39.
 
 
 ```r

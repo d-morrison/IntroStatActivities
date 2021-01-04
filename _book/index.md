@@ -18,9 +18,11 @@ location: Montana State University
 
 <!-- For each chapter, main title, reading guide section title, and activity section title are in title case; remaining section headers capitalize the first word only. -->
 <!-- Reading guides use 1.25 line spacing; activities use 1 line spacing. -->
-<!-- When referring to R, use `R`. -->
+<!-- When referring to R, use `R`. When referring to RStudio, do not use quotes. -->
 <!-- Reading guides do not have section numbers (use {-} after each header). -->
 <!-- Comments in displayed code: # Capitalize phrase. -->
+<!-- For displaying a range of numbers, e.g., 3-5, use math mode for the dash: 3$-$5. -->
+<!-- When cross-referencing activites, capitalize "Activity", e.g., "In Activity 3, we..." -->
 
 \newpage
 \thispagestyle{empty}
@@ -49,7 +51,7 @@ In our experience, it takes six to nine hours per week outside of class to achie
 need roughly nine hours per week to review past activities, read feedback on previous assignments, complete current assignments, and prepare for the next day's class. A typical week in the life of a STAT 216 student looks like:
 
 * _Prior to class meeting_:
-    - Read assigned sections of textbook, using the provided reading guides to take notes on the material.
+    - Read assigned sections of the textbook, using the provided reading guides to take notes on the material.
     - Watch assigned videos on that week's content, pausing to take notes and answer video quiz questions.
     - Read through the introduction to the week's in-class activity and complete the pre-class questions.
     - Read through the week's homework assignment and note any questions you may have on the content.
