@@ -2132,23 +2132,15 @@ Use this space to summarize your thoughts and take additional notes on this week
 \hypertarget{reading-guide-quantitative-data}{%
 \section{Reading Guide: Quantitative Data}\label{reading-guide-quantitative-data}}
 
+\setstretch{1.25}
+
 \hypertarget{section-2.3-exploring-quantitative-data}{%
 \subsection*{Section 2.3 (Exploring quantitative data)}\label{section-2.3-exploring-quantitative-data}}
 \addcontentsline{toc}{subsection}{Section 2.3 (Exploring quantitative data)}
 
-\textbf{Videos}
-
-\begin{itemize}
-\tightlist
-\item
-  2.3
-\end{itemize}
-
-\setstretch{1.25}
-
-\hypertarget{types-of-plots}{%
-\subsection*{Types of plots}\label{types-of-plots}}
-\addcontentsline{toc}{subsection}{Types of plots}
+\hypertarget{type-of-plots}{%
+\subsection*{Type of Plots}\label{type-of-plots}}
+\addcontentsline{toc}{subsection}{Type of Plots}
 
 Scatterplot:
 \rgs
@@ -2227,7 +2219,9 @@ Five number summary:
 \(X^{th}\) percentile:
 \rgs
 
-\rgi e.g., if the value 6 is at the 10th percentile, then 10\% of the data have values 6 or below.
+\begin{verbatim}
+E.g. if the value 6 is 10th percentile, then 10% of the data have values 6 or below.
+\end{verbatim}
 
 Interquartile range (IQR):
 \rgs
@@ -2273,7 +2267,6 @@ Standard deviation & & \\
 
 How are outliers denoted on a box plot? How can you mathematically determine if a data set has outliers?
 \rgs
-\rgs
 
 \hypertarget{section-2.4-r-exploratory-data-analysis-and-section-2.5-chapter-2-review}{%
 \subsection*{\texorpdfstring{Section 2.4 (\texttt{R}: Exploratory data analysis) and Section 2.5 (Chapter 2 review)}{Section 2.4 (R: Exploratory data analysis) and Section 2.5 (Chapter 2 review)}}\label{section-2.4-r-exploratory-data-analysis-and-section-2.5-chapter-2-review}}
@@ -2289,21 +2282,20 @@ Statistics summarize \_\_\_\_\_\_\_\_\_\_\_\_\_ .
 
 Parameters summarize \_\_\_\_\_\_\_\_\_\_\_\_\_.
 
-\newpage
-
 Fill in the following table with the appropriate notation for each summary measure.
 
 \begin{center}
 \begin{tabular}{|l|p{2in}|p{2in}|}\hline
 Summary measure & Statistic & Parameter \\ \hline
 Sample size & & \\ 
+& & \\ 
 & & \\ \hline
 Proportion & & \\ 
 (used to summarize & & \\ 
-one categorical variable) & & \\ \hline
+1 categorical variable) & & \\ \hline
 Mean & & \\ 
 (used to summarize & & \\ 
-one quantitative variable)& & \\ \hline
+1 quantitative variable)& & \\ \hline
 Correlation & & \\ 
 (used to summarize & & \\ 
 two quantitative variables)& & \\ \hline
@@ -2312,8 +2304,6 @@ Regression line slope & & \\
 two quantitative variables)& & \\ \hline
 \end{tabular}
 \end{center}
-
-\rgs
 
 Look at the table of vocabulary terms. If there are any you do not know, be sure to review the appropriate section of your text.
 
@@ -2326,9 +2316,9 @@ Fill in the following table to help associate type of plot for each of several s
 \begin{center}
 \begin{tabular}{|l|p{3in}|} \hline
  & Appropriate plot(s) \\ \hline
-One categorical variable & \\
+1 categorical variable & \\
 (categorical response, no explanatory) & \\ \hline
-One quantitative variable  & \\
+1 quantitative variable  & \\
 (quantitative response, no explanatory) & \\ \hline
 Two categorical variables  & \\
 (categorical response, categorical explanatory) & \\ \hline
@@ -2340,8 +2330,6 @@ Two quantitative variables  & \\
 \end{center}
 
 \rgs
-
-\newpage
 
 Decision tree for determining an appropriate plot given a number of variables and their types from Chapter 2 review:
 
@@ -2359,13 +2347,16 @@ Decision tree for determining an appropriate plot given a number of variables an
 
 \begin{itemize}
 \item
-  Identify and create appropriate summary statistics and plots given a data set or research question for quantitative data.
+  Identify and create appropriate summary statistics and plots
+  given a data set or research question for quantitative data
 \item
   Interpret the following summary statistics in context:
   median, lower quartile, upper quartile,
-  standard deviation, interquartile range.
+  standard deviation, inter-quartile range
 \item
-  Given a plot or set of plots, describe and compare the distribution(s) of a single quantitative variable (center, variability, shape, outliers).
+  Given a plot or set of plots, describe and compare the distribution(s)
+  of a single quantitative variable
+  (center, variability, shape, outliers)
 \end{itemize}
 
 \hypertarget{terminology-review-3}{%
@@ -2377,7 +2368,7 @@ In this week's activity, we will review summary measures and plots for quantitat
 \item
   Two measures of center: mean, median
 \item
-  Two measures of spread (variability): standard deviation, interquartile range (IQR)
+  Two measures of spread (variability): standard deviation, inter-quartile range (IQR)
 \item
   Types of graphs: box plots, dot plots, histograms
 \end{itemize}
@@ -2436,9 +2427,11 @@ Number of likes a movie receives on Facebook\strut
 \bottomrule
 \end{longtable}
 
-\hypertarget{vocabulary-review.-complete-q1q3-before-class.}{%
-\subsubsection*{Vocabulary review. Complete Q1--Q3 before class.}\label{vocabulary-review.-complete-q1q3-before-class.}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1--Q3 before class.}
+\newpage
+
+\hypertarget{vocabulary-review.-complete-q1---3-before-class.}{%
+\subsubsection*{Vocabulary review. Complete Q1 - 3 before class.}\label{vocabulary-review.-complete-q1---3-before-class.}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1 - 3 before class.}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2503,7 +2496,7 @@ The \texttt{favstats} function from the \texttt{mosaic} package gives the summar
 \setcounter{enumi}{4}
 \tightlist
 \item
-  Calculate the interquartile range (IQR = Q3 \(-\) Q1).
+  Calculate the Interquartile range (IQR = Q3 - Q1).
 \end{enumerate}
 
 \vspace{0.5in}
@@ -2529,9 +2522,9 @@ The \texttt{favstats} function from the \texttt{mosaic} package gives the summar
   What are the three types of plots used to plot a single quantitative variable?
 \end{enumerate}
 
-\vspace{0.5in}
+\newpage
 
-To create a histogram of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{R} script file for xx at line 12, highlight and run lines 1--16. Notice that we are using the packages mosaic, ggplot2, and tidyverse for this activity. Visually, this histogram shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{R} script file for xx at line 12, highlight and run lines 1 - 16. Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the \textbf{bin width} is 0.5. For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75. It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.
 
@@ -2564,7 +2557,7 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
   Which range of IMDb scores have the highest frequency?
 \end{enumerate}
 
-\vspace{0.3in}
+\vspace{0.4in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2574,7 +2567,7 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
   What is the shape of the distribution of IMDb scores?
 \end{enumerate}
 
-\vspace{0.3in}
+\vspace{0.4in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2584,13 +2577,13 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
   Which five summary statistics are used in creating a box plot? \emph{Hint}: Together they are called the \textbf{five-number summary} of the variable.
 \end{enumerate}
 
-\vspace{0.3in}
+\vspace{0.4in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{11}
 \item
-  Using the code below, we see that the three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:
+  Using the code below we see that the three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2622,18 +2615,16 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
 #> 3        8.0
 \end{verbatim}
 
-  Using the summary statistics displayed in the \texttt{favstats} output, and the smallest and largest values of the variable to check for outliers, sketch a box plot of IMDb Score. Be sure to label the axis.
+  Using the summary statistics above, and the smallest and largest values of the variable to check for outliers, sketch a box plot of IMDb Score. Be sure to label the axes.
 \end{enumerate}
 
 \vspace{1.5in}
-
-\newpage
 
 \hypertarget{displaying-a-single-categorical-and-single-quantitative-variable}{%
 \subsubsection*{Displaying a single categorical and single quantitative variable}\label{displaying-a-single-categorical-and-single-quantitative-variable}}
 \addcontentsline{toc}{subsubsection}{Displaying a single categorical and single quantitative variable}
 
-The box plot of movie budgets (in millions) by content rating is plotted using the code below. Enter the variable \texttt{budget\_mil} for yy and the variable \texttt{content\_rating} for xx at line 31, highlight and run code lines 29--35. This plot helps to compare the budget distribution for different levels of content rating.
+The box plot of movie budgets (in millions) by content rating is plotted using the code below. Enter the variable \texttt{budget\_mil} for yy and the variable \texttt{content\_rating} for xx at line 31, highlight and run code lines 29 - 35. This plot helps to compare the budget for different levels of content rating.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2652,10 +2643,12 @@ The box plot of movie budgets (in millions) by content rating is plotted using t
 \setcounter{enumi}{12}
 \tightlist
 \item
-  Sketch the box plots created from running the \texttt{R} code above.
+  Sketch the box plots created using the \texttt{R} code.
 \end{enumerate}
 
 \vspace{1.5in}
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2684,19 +2677,17 @@ The box plot of movie budgets (in millions) by content rating is plotted using t
   \vspace{.8in}
 \end{enumerate}
 
-\newpage
-
 \hypertarget{out-of-class-activity-3}{%
 \subsection{Out-of-class activity}\label{out-of-class-activity-3}}
 
-For a little more practice using RStudio to create graphs of quantitative variables, we will look at some other variables in the \texttt{Movies} data set. Download and open the provided \texttt{R} script file, highlight and run the first 8 lines of code.
+For a little more practice using \texttt{Rstudio} to create graphs of quantitative variables we will look at some other variables in the \texttt{Movies} data set. Download and open the provided \texttt{R} script file, highlight and run the first 8 lines of code.
 
-To use the \texttt{favstats} function in the \texttt{mosaic} package with two variables, we will enter the variables as a formula, \texttt{response\ \textasciitilde{}\ explanatory}.
+To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response\textasciitilde explanatory.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set piped into...}
-\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(imdb\_score }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{content\_rating)) }\CommentTok{\# Summary stats of imdb\_score by content rating}
+\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(imdb\_score}\OperatorTok{\textasciitilde{}}\NormalTok{content\_rating)) }\CommentTok{\# Apply favstats function to imdb\_score}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2708,7 +2699,7 @@ To use the \texttt{favstats} function in the \texttt{mosaic} package with two va
 #> 4              R 3.5 5.375    6.3 7.050 8.1 6.221875 1.1335740 32       0
 \end{verbatim}
 
-Using the provided \texttt{R} script file, we will create side-by-side histograms of IMDb scores by movie content rating. Enter the variable name, \texttt{imdb\_score} for yy and \texttt{content\_rating} for xx at line 44, highlight and run lines 39--48.
+Using the provided \texttt{R} script file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, \texttt{imdb\_score} for yy and \texttt{content\_rating} for xx at line 44, highlight and run lines 39 - 48.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2726,7 +2717,7 @@ Using the provided \texttt{R} script file, we will create side-by-side histogram
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Using the provided \texttt{favstats} output and the side-by-side box plots, interpret the value of quartile 1 for the R content rating.
+  Using the provided favstats output and the side-by-side box plots, interpret the value of quartile 1 for the R content rating.
 \end{enumerate}
 
 \vspace{1in}
@@ -2746,7 +2737,7 @@ Using the provided \texttt{R} script file, we will create side-by-side histogram
 \setcounter{enumi}{2}
 \tightlist
 \item
-  Which variable is the explanatory variable in the side-by-side box plots? Response variable?
+  Which variable is the explanatory variable? Response variable?
 \end{enumerate}
 
 \vspace{0.5in}
@@ -2759,11 +2750,11 @@ Using the provided \texttt{R} script file, we will create side-by-side histogram
 \item
   Histograms, box plots, and dot plots can all be used to graphically display quantitative variables. When we have a single categorical variable and a single quantitative variable we will display the data in side-by-side plots.
 \item
-  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value. Values in the data set that are less than \(Q_1 - 1.5 \times IQR\) and greater than \(Q_3 + 1.5\times IQR\) are considering outliers and are graphically represented by a dot outside of the whiskers on the box plot. Whiskers extend to the smallest and largest values in the data set that are \emph{not} considered outliers.
+  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value. Values in the data set that are less than \(Q_1 - 1.5*IQR\) and greater than \(Q_3 + 1.5*IQR\) are considering outliers and are graphically represented by a dot outside of the whiskers on the box plot.
 \item
-  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers. There are two measures of center: mean and median; and two measures of spread: standard deviation and the interquartile range, IQR = Q1 \(-\) Q3.
+  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers. There are two measures of center: mean and the median and two measures of spread: standard deviation and the interquartile range, IQR = Q1- Q3.
 \item
-  The median and IQR are robust measures that are not affected by the presence of outliers or skewness; the mean and standard deviation are not robust and can be greatly affected by skewness and the presence of outliers.
+  The median and IQR are robust measures that are not affected by the presence of outliers.
 \end{enumerate}
 
 \hypertarget{additional-notes-3}{%
@@ -4921,7 +4912,7 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{06-inference-1cat_test_files/figure-latex/simpleNormal-1} 
+{\centering \includegraphics[width=0.6\linewidth]{06-inference-1cat_test_files/figure-latex/simpleNormal-1} 
 
 }
 
@@ -4948,7 +4939,7 @@ The standardized statistic measures the \emph{number of standard errors the samp
   Interpret the standardized sample proportion from question 3 in context of the problem.
 \end{enumerate}
 
-\vspace{1in}
+\vspace{.8in}
 
 We will use the \texttt{pnorm} function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic calculated in question 3 at xx in line 18; highlight and run lines 18--20. Notice that in line 20 it says \texttt{lower.tail\ =\ FALSE}. \texttt{R} will calculate the p-value \emph{greater} than the value of the standardized statistic.
 
@@ -7193,8 +7184,8 @@ Total & 752 & 2810 & 3562\tabularnewline
 \bottomrule
 \end{longtable}
 
-\hypertarget{vocabulary-review.-complete-q1q3-before-class.-1}{%
-\subsubsection*{Vocabulary review. Complete Q1--Q3 before class.}\label{vocabulary-review.-complete-q1q3-before-class.-1}}
+\hypertarget{vocabulary-review.-complete-q1q3-before-class.}{%
+\subsubsection*{Vocabulary review. Complete Q1--Q3 before class.}\label{vocabulary-review.-complete-q1q3-before-class.}}
 \addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1--Q3 before class.}
 
 \begin{enumerate}

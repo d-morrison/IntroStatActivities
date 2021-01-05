@@ -789,7 +789,7 @@ $$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$.
 
 The standardized statistic is used as a ruler to measure how far the sample statistic is from the null value.  Essentially, we are converting the sample proportion into a measure of standard errors to compare to the standard normal distribution.  
 
-```{r simpleNormal, fig.cap="A standard normal curve.", warning=FALSE, fig.width=8}
+```{r simpleNormal, fig.cap="A standard normal curve.", warning=FALSE, out.width="60%"}
 X <- seq(-5,5,0.01)
 Y <- dnorm(X)
 plot(X, Y, type='l', axes=F, xlim=c(-4,4), lwd=2, ylab="", xlab="Z")
@@ -805,9 +805,9 @@ The standardized statistic measures the *number of standard errors the sample st
 
 5.  Interpret the standardized sample proportion from question 3 in context of the problem.
 
-\vspace{1in}
+\vspace{.8in}
 
-We will use the `pnorm` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 3 at xx in line 18; highlight and run lines 18--20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
+We will use the `pnorm` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 3 at `xx` in line 18; highlight and run lines 18--20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
 
 Notes:
 

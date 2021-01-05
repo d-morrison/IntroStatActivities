@@ -808,7 +808,7 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{06-inference-1cat_test_files/figure-latex/simpleNormal-1} 
+{\centering \includegraphics[width=0.6\linewidth]{06-inference-1cat_test_files/figure-latex/simpleNormal-1} 
 
 }
 
@@ -823,7 +823,7 @@ The standardized statistic measures the *number of standard errors the sample st
 
 5.  Interpret the standardized sample proportion from question 3 in context of the problem.
 
-\vspace{1in}
+\vspace{.8in}
 
 We will use the `pnorm` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 3 at xx in line 18; highlight and run lines 18--20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
 
