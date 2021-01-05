@@ -7,7 +7,12 @@ author: "Melinda Yager, Jade Schmidt, Dr. Stacey Hancock"
 subtitle: |
     | Spring 2021
     | Montana State University
-output: pdf_document
+output: 
+    pdf_document:
+        citation_package: biblatex
+bibliography: references.bib
+biblio-style: apalike
+nocite: '@*'
 site: bookdown::bookdown_site
 documentclass: report
 description: This is the coursepack of in-class activities for STAT 216 Spring 2021.
@@ -59,7 +64,7 @@ need roughly nine hours per week to review past activities, read feedback on pre
     - Read through the introduction to the week's in-class activity and complete the pre-class questions.
     - Read through the week's homework assignment and note any questions you may have on the content.
 * _During class meeting_:
-    - Work through in-class activity with your classmates and instructor, taking detailed notes on your answers to each question in the activity.
+    - Work through the in-class activity with your classmates and instructor, taking detailed notes on your answers to each question in the activity.
 * _After class meeting_:
     - Complete the out-of-class part of the activity, plus any additional parts of the activity you did not complete in class.
     - Review the posted activity solutions and wrap-up videos, and take notes on key points.
@@ -67,4 +72,4 @@ need roughly nine hours per week to review past activities, read feedback on pre
     - Read through the week's case study and post case study discussion posts on D2L.
     - Complete the week's homework assignment.
 
-
+\nocite{*}

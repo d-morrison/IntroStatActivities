@@ -15,7 +15,7 @@ rmd_files: [
   "09-inference-2cat_CI.Rmd",
   "10-paired.Rmd",
   "11-inference-1ofeach.Rmd",
-  "12-regression.Rmd"
-  # "13-references.Rmd"
+  "12-regression.Rmd",
+  "13-references.Rmd"
   ]
 before_chapter_script: "_common.R"

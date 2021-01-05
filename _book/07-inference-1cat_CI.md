@@ -432,6 +432,8 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 
 5.  When the null value is within the confidence interval, it is a plausible value for the parameter of interest; thus, we would find a larger p-value for a hypothesis test of that null value.  Conversely, if the null value is NOT within the confidence interval, we would find a small p-value for the hypothesis test and strong evidence against this null hypothesis. 
 
+6. To create one simulated sample on the bootstrap distribution, label $n$ cards with the original responses.  Draw with replacement $n$ times.  Calculate and plot the resampled proportion of successes.
+
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
