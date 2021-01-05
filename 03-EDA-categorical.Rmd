@@ -28,7 +28,7 @@ We highly recommend completing Tutorial 1 at the end of Chapter 1 (all four less
 
 \rgi There are Hint and Solution buttons on the R code box to help you.
 
-We would not expect you to know the coding right now, especially for things like mutations or creating new variables in the data set.  But seeing some initial coding for these more difficult functions will only make you more comfortable using the functions we will use in this course!
+We would not expect you to know the coding right now, especially for things like mutations or creating new variables in the data set.  But seeing some initial coding for these more difficult functions will only make you more comfortable using the functions needed for this course!
 	
 #### Functions {-}
 
@@ -63,7 +63,7 @@ Frequency table:
 Relative frequency table:
 \rgs
 
-Contingency or Two-way table:
+Contingency or two-way table:
 \rgs
 
 Unconditional proportion:
@@ -108,7 +108,7 @@ Simpson’s Paradox:
 
 #### Notes {-}
 
-In a contingency table, which variable (explanatory or response) generally will make the columns of the table?  Which variable on the rows?
+In a contingency table, which variable (explanatory or response) generally will make the columns of the table?  Which variable will make the rows of the table?
 \rgs
 
 In a segmented bar plot, the bars represent the levels of which variable?  The segments represent the levels of which variable?
@@ -230,7 +230,7 @@ Method for creating a hypothetical two-way table:
 2.	Let $T$ be the event a child tests positive for CPK.  What does $T^C$ represent?
 \rgs
 
-3.	Write each of the following values in proper notation:  
+3.	Write each of the following values in proper probability notation:  
     a. $1/10000 = 0.0001 = P( \hspace{1in} )$  
     b. $100\% = 1.0 = P(  \hspace{1in}  )$  
     c. $99.98\% = 0.9998 = P(  \hspace{1in}  )$  
@@ -267,7 +267,7 @@ Total & & & 100,000 \\ \hline
 \end{center}
 \rgs
 
-5.	What is the probability that a child who had a positive test result actually does have CPK?  What notation should be used for this value?
+5.	What is the probability that a child who had a positive test result actually does have CPK?  What probability notation should be used for this value?
 \rgs
 
 
@@ -330,7 +330,7 @@ The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census 
 | `sector` | Sector of the economy: `clerical`, `const` (construction),  `management`, `manufacturing`, `professional`, `sales`, `service`, `other` |
 | `married` | Marital status: `Married` or `Single` |
 
-#### Vocabulary review. Complete Q1--Q3 before class. {-}
+#### Vocabulary review. Complete Q1--Q4 before class. {-}
 
 1. What are the observational units?
 
@@ -389,7 +389,7 @@ The Current Population Survey (CPS) in 1985 is a survey sponsored by the Census 
     d. Find the probability that a child with a positive RADT actually has strep throat. What is the notation used for this probability?
 \vspace{.8in}
 
-    e.  What is the probability that a child does not have strep given that they have a positive test?  What is the notation used for this probability?
+    e.  What is the probability that a child does not have strep given that they have a positive RADT?  What is the notation used for this probability?
 
 \newpage
 
@@ -532,7 +532,7 @@ ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
 \vspace{1.5in}
 
 
-6. From the segmented bar plot, estimate the proportion of no myopia for those that used a Nightlight.
+6. From the segmented bar plot, estimate the proportion of no myopia for those that used a nightlight.
 
 \vspace{0.5in}
 
