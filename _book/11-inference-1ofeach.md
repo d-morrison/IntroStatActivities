@@ -581,7 +581,7 @@ $$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}$$
 
 \vspace{0.5in}
 
-Using the provided `R` script file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value.  Highlight and run line 39.
+Using the provided `R` script file, enter the T-score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value.  Highlight and run line 39.
 
 
 ```r

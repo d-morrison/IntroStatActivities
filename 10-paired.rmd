@@ -45,9 +45,7 @@ Standard deviation of a statistic: the variability of statistics from 1000s of s
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
-Hypothesis test: a process to determine how strong the evidence of an effect is.
-		
-\rgi Also called a ‘significance test’.
+Hypothesis test: a process to determine how strong the evidence of an effect is. Also called a ‘significance test’.
 
 Simulation-based method: Simulate lots of samples of size $n$ under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
 
@@ -77,20 +75,19 @@ Significance level ($\alpha$): a threshold used to determine if a p-value provid
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter.
-\rgi Also called ‘estimation’.
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter. Also called ‘estimation’.
 
 Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval.
 
-Bootstrapping: the process of drawing with replacement n times from the original sample.
+Bootstrapping: the process of drawing with replacement $n$ times from the original sample.
 
-Bootstrapped resample: a random sample of size n from the original sample, selected with replacement.
+Bootstrapped resample: a random sample of size $n$ from the original sample, selected with replacement.
 
 Bootstrapped statistic: the statistic recorded from the bootstrapped resample.
 
 Confidence level: how confident we are that the confidence interval will capture the parameter.
 
-Bootstrap X% confidence interval: ($(\frac{(1-X)}{2})^{th}$ percentile,$(X+(\frac{(1-X)}{2})^{th}$ percentile) of a bootstrap distribution.
+Bootstrap $X$% confidence interval: ($(\frac{(1-X)}{2})^{th}$ percentile, $(X+(\frac{(1-X)}{2})^{th}$ percentile) of a bootstrap distribution.
 
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample mean (or proportion) will be approximately normal (bell-shaped and symmetric).
 
@@ -100,8 +97,9 @@ Central Limit Theorem: For large sample sizes, the sampling distribution of a sa
 $t$-distribution: 
 \rgs 
 
-\rgi Note: width depends on the sample size (used to calculate degrees of freedom – df for short)
-\rgi The larger df, the Closer the $t$ distribution is to the standard Normal distribution
+* The variability in the $t$-distribution depends on the sample size (used to calculate degrees of freedom --- df for short).
+
+* The larger df, the closer the $t$ distribution is to the standard normal distribution.
 
 Degrees of freedom (df): 
 \rgs 
@@ -120,10 +118,10 @@ What do you do with the cards after labeling them?
 After resampling, what value will be plotted on the bootstrap distribution?
 \rgs 
 
-True or False: Bootstrapping can only be used if the sample size is small.
+True or false: Bootstrapping can only be used if the sample size is small.
 \rgs 
 
-Why do we use a $t$ distribution rather than the Normal distribution when analyzing quantitative data?
+Why do we use a $t$-distribution rather than the normal distribution when analyzing quantitative data?
 \rgs 
 
 How do we calculate degrees of freedom for the $t$-distribution?
@@ -131,16 +129,16 @@ How do we calculate degrees of freedom for the $t$-distribution?
 
 Conditions to use the CLT for means:
 
-1. Independence: 
+\rgi Independence: 
 \rgs 
 
-\rgi Checked by: 
+\rgi \rgi Checked by: 
 \rgs 
 
-2. Normality: 
+\rgi Normality: 
 \rgs 
 	
-\rgi Checked by:
+\rgi \rgi Checked by:
 \rgs 
 
 #### Formulas{-}
@@ -148,10 +146,10 @@ Conditions to use the CLT for means:
 $SE(\overline{x})=$
 \rgs 
 
-$t=$
+$T=$
 \rgs 
 
-Confidence interval: 
+Confidence interval for a mean: 
 \rgs 
 
 #### Notation {-}
@@ -165,7 +163,7 @@ $\mu_0$ represents
 1. What are the observational units?
 \rgs 
 
-2. What is the sample statistics presented in this example?  What notation would be used to represent each value?
+2. What are the sample statistics presented in this example?  What notation would be used to represent each value?
 \rgs 
 
 3. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
@@ -175,7 +173,7 @@ $\mu_0$ represents
 4. How could we use cards to simulate **1** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs 
 \rgs 
-
+\rgs 
 
 5. After 1000 resamples are generated, where is the resulting bootstrap distribution centered?  Why does that make sense?
 \rgs 
@@ -196,7 +194,7 @@ $\mu_0$ represents
 \rgs 
 \rgs 
 
-8. Use figure 6.4 to determine a 90% confidence interval for the true standard deviation for three bedroom flats in Edinburgh.
+8. Use Figure 6.4 to determine a 90% confidence interval for the true standard deviation for three bedroom flats in Edinburgh.
 \rgs 
 
 
@@ -208,10 +206,10 @@ $\mu_0$ represents
 2. What are the observational units?
 \rgs 
 
-3. Can the results of this study be generalized to a larger population?
+3. Can the results of this study be generalized to a larger population? Why or why not?
 \rgs 
 
-4. What is the sample statistics presented in this example?  What notation would be used to represent each value?
+4. What are the sample statistics presented in this example?  What notation would be used to represent each value?
 \rgs 
 
 5. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
@@ -244,10 +242,10 @@ $\mu_0$ represents
 2.	What are the observational units?
 \rgs
 
-3.	Can the results of this study be generalized to a larger population?
+3.	Can the results of this study be generalized to a larger population? Why or why not?
 \rgs
 
-4.	What is the sample statistics presented in this example?  What notation would be used to represent each value?
+4.	What are the sample statistics presented in this example?  What notation would be used to represent each value?
 \rgs
 
 5.	What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
@@ -258,20 +256,20 @@ $\mu_0$ represents
 \rgs
 \rgs
 
-7.	Write the null and the alternative hypothesis in words.
+7.	Write the null and the alternative hypotheses in words.
 \rgs
 \rgs
 
-8.	Write the null and  the alternative hypothesis in notation.
+8.	Write the null and  the alternative hypotheses in notation.
 \rgs
 
 9.	Calculate the standard error of the sample mean.
 \rgs
 
-10.	Calculate the t-score (the standardized statistic for the sample mean).
+10.	Calculate the T-score (the standardized statistic for the sample mean).
 \rgs
 
-11.	What distribution should the t-score be compared to in order to calculate a p-value?
+11.	What distribution should the T-score be compared to in order to calculate a p-value?
 \rgs
 
 12.	What was the p-value of the test? 
@@ -327,16 +325,16 @@ For each of the following scenarios, determine if the two sets of observations a
 
 Conditions to use the CLT for paired mean difference:
 
-1.	Independence: 
+\rgi Independence: 
 \rgs
 
-\rgi a.	Checked by: 
+\rgi \rgi Checked by: 
 \rgs 
 
-2.	Normality: 
+\rgi Normality: 
 \rgs
 
-\rgi a.	Checked by:
+\rgi \rgi Checked by:
 \rgs
 
 #### Formulas{-}
@@ -344,10 +342,10 @@ Conditions to use the CLT for paired mean difference:
 $SE(\overline{x_d})=$
 \rgs
 
-$t=$
+$T=$
 \rgs
 
-Confidence interval: 
+Confidence interval for a paired mean difference: 
 \rgs
 
 #### Notation {-}
@@ -372,7 +370,7 @@ $s_d=$
 2.	Why should we treat these data as paired rather than two independent samples?
 \rgs
 
-3.	What is the sample statistics presented in this example?  What notation would be used to represent each value?
+3.	What are the sample statistics presented in this example?  What notation would be used to represent each value?
 \rgs
 
 
@@ -380,14 +378,14 @@ $s_d=$
 \rgs
 \rgs
 
-5.	Write the null and alternative hypothesis in appropriate notation.
+5.	Write the null and alternative hypotheses in appropriate notation.
 \rgs
 
 
 6.	How could we use cards to simulate **1** bootstrap resample *which assumes the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
-
+\rgs
 
 7.	After 1000 resamples are generated, where is the resulting null distribution centered?  Why does that make sense?
 \rgs
@@ -412,7 +410,7 @@ $s_d=$
 3. Why should we treat these data as paired rather than two independent samples?
 \rgs
 
-4. What is the sample statistics presented in this example?  What notation would be used to represent each value?
+4. What are the sample statistics presented in this example?  What notation would be used to represent each value?
 \rgs
 
 5. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
@@ -420,6 +418,7 @@ $s_d=$
 \rgs
 
 6. How could we use cards to simulate **1** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
 \rgs
 \rgs
 
@@ -438,17 +437,17 @@ $s_d=$
 \rgs
 \rgs
 
-11. Write the null and the alternative hypothesis in words.
+11. Write the null and the alternative hypotheses in words.
 \rgs
 \rgs
 
 12. Calculate the standard error of the sample mean difference.
 \rgs
 
-13. Calculate the t-score (the standardized statistic for the sample mean difference).
+13. Calculate the T-score (the standardized statistic for the sample mean difference).
 \rgs
 
-14. What distribution should the t-score be compared to in order to calculate a p-value?
+14. What distribution should the T-score be compared to in order to calculate a p-value?
 \rgs
 
 15. What was the p-value of the test? 
@@ -502,7 +501,7 @@ In this week's activity, we will analyze paired quantitative data using simulati
 
 * Independent groups
 
-* Shifted null distribution
+* Shifted bootstrap (null) distribution
 
 To review these concepts, see Section 6.2 in the textbook.
 
@@ -510,7 +509,7 @@ To review these concepts, see Section 6.2 in the textbook.
 
 In June 2020, the social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 appeared to help 'flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured in Figure \@ref(fig:covid), which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants. 
 
-Have high population-density US cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated US cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015--2019). Note that higher AQI scores indicate worse air quality. A box plot of the differences in AQI scores for the 33 cities and a table of summary statistics are shown below.
+Have high population-density US cities seen the same improved air quality conditions? To study this question, data were gathered from the US Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the US. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated US cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015--2019). Note that higher AQI scores indicate worse air quality. A box plot of the differences in AQI scores for the 33 cities and a table of summary statistics are shown on the next page.
 
 
 ```{r covid, fig.cap="The India Gate in New Delhi, India.", out.width="60%"}
@@ -542,30 +541,32 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 |:-------------:|:--------------------:|--------------------|-------------|
 | Current       | $\bar{x}_1$ = 47.394 | $s_1$ = 14.107     | $n_1$ = 33  |
 | 5 Year Median | $\bar{x}_2$ = 51.545 | $s_2$ = 17.447     | $n_2$ = 33  |
-| Differences   | $\bar{x}_d$ = -4.152 | $s_d$ = 17.096     | $n_d$ = 33  |
+| Differences   | $\bar{x}_d$ = $-4.152$ | $s_d$ = 17.096     | $n_d$ = 33  |
 
 \newpage
 #### Vocabulary review.  Complete Q1--Q5 before class.{-}
 
 1. What is the sample size? 
 
+\vspace{0.3in}
+
+2.  Identify the variables in this study.  What role (explanatory or response) do each have?
+
+\vspace{.5in}
+
+3.  Are the differences in AQI scores independent for each case (US city)?  Explain.
+
 \vspace{0.5in}
 
-2.  Identify the variables in this study.  What role do each have?
+4. Why is this treated as a paired study design and not two independent samples?
 
-\vspace{.8in}
+\vspace{0.5in}
 
-3. Why is this treated as a paired study design and not two independent samples?
+5. Is this an experiment or observational study? Justify your answer.
 
-\vspace{1in}
+\vspace{0.5in}
 
-4. Is this an experiment or observational study? Justify your answer.
 
-\vspace{0.3in}
-
-5.  Are the differences in AQI scores independent for each case (US city)?  Explain.
-
-\vspace{0.3in}
 
 #### Ask a research question {-}
 
@@ -587,7 +588,7 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 
 #### Summarize and visualize the data  {-}
 
-10. Report the summary statistic for the data.  
+10. Report the summary statistic of interest for the data.  
 
 \vspace{0.3in}
 
@@ -598,13 +599,14 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 
 #### Use statistical inferential methods to draw inferences from the data {-}
 
-To simulate the null distribution we will use a bootstrapping method.  Recall that the null distribution must be created under the assumption that the null hypothesis is true.  Therefore, before bootstrapping we will need to shift each data point by the difference $\mu_0 - \bar{x}$.  This will ensure that the mean of the shifted data is $\mu_0$ and that the simulated null distribution will be centered at the null value.  
+##### Hypothesis test {-}
+To simulate the null distribution of paired sample mean differences we will use a bootstrapping method.  Recall that the null distribution must be created under the assumption that the null hypothesis is true.  Therefore, before bootstrapping, we will need to *shift* each data point by the difference $\mu_0 - \bar{x}_d$.  This will ensure that the mean of the shifted data is $\mu_0$ (rather than the mean of the original data, $\bar{x}_d$), and that the simulated null distribution will be centered at the null value.  
 
-12. Calculate the difference $\mu_0 - \bar{x}$.  Will we need to shift the data up or down?
+12. Calculate the difference $\mu_0 - \bar{x}_d$.  Will we need to shift the data up or down?
 
 \vspace{.7in}
 
-13.  We will use the `paired_test()` function in `R` (in the `catstats` package) to simulate the shifted bootstrap distribution of sample mean differences and compute a p-value. Use the provided `R` script file and enter the calculated value from question 12 for `xx` to simulate the null distribution and enter the summary statistic from question 10 for `yy` to find the p-value.  Highlight and run lines 1--21.
+13.  We will use the `paired_test()` function in `R` (in the `catstats` package) to simulate the shifted bootstrap (null) distribution of sample mean differences and compute a p-value. Use the provided `R` script file and enter the calculated value from question 12 for `xx` to simulate the null distribution and enter the summary statistic from question 10 for `yy` to find the p-value.  Highlight and run lines 1--21.
 
 ```{r, echo=TRUE, eval=FALSE, warning = FALSE}
     paired_test(data = Air$Difference,   # Vector of differences or data set with column for each group
@@ -625,7 +627,7 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 \vspace{.5in}
 
 
-16. What proportion of samples are at or less than the sample mean difference in AQI scores for current scores minus 5 year median scores?
+16. What proportion of samples are at or less than the observed sample mean difference in AQI scores for current scores minus 5 year median scores? What is the statistical term for this proportion?
 
 \vspace{.3in}
 
@@ -633,15 +635,22 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 \vspace{.8in}
 
-18. How much evidence does this provide for improved air quality in U.S. cities?
+18. How much evidence does this provide for improved air quality in US cities?
 
 \vspace{.3in}
 
-19. Write out the parameter of interest in context of the study.
+19. If evidence was found for improved air quality in US cities, could we conclude that the stay-at-home directives *caused* the improvement in air quality? Explain.
+
+\vspace{.5in}
+
+##### Confidence interval {-}
+We will use the `paired_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample mean differences and calculate a confidence interval. 
+
+20. Write out the parameter of interest in context of the study.
 
 \vspace{.6in}
 
-20.  We will use the `paired_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample mean differences and calculate a confidence interval. Using the provided `R` script file fill in the missing value at xx in the paired bootstrap CI to find a 99\% confidence interval, highlight and run lines 24--27.  Report the confidence interval in interval notation.
+21. Using the provided `R` script file, fill in the missing value at `xx` to find a 99\% bootstrap confidence interval; highlight and run lines 24--27.  Report the confidence interval in interval notation.
 
 ```{r, echo=TRUE, eval=FALSE, warning = FALSE}
 paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
@@ -650,22 +659,23 @@ paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
                     which_first = 1)  # Not needed when entering vector of differences
 ```
 
-\vspace{.3in}
+\vspace{.5in}
 
 
-#### Communicate the results and answer the research question. {-}
+#### Communicate the results and answer the research question {-}
 
-21. Interpret the 99\% confidence interval in the context of the problem.
+22. Interpret the 99\% confidence interval in the context of the problem.
 
-\vspace{.8in}
+\vspace{1in}
 
 
-22. Do the results of your confidence interval and hypothesis test agree?  What does each tell you about the null hypothesis?
+23. Do the results of your confidence interval and hypothesis test agree?  What does each tell you about the null hypothesis?
 
 \vspace{.7in}
 
+\newpage
 
-23.  Write a paragraph summarizes the results of this study as if you were describing the results to your roommate.  Be sure to describe:
+24.  Write a paragraph summarizes the results of this study as if you were describing the results to your roommate.  Be sure to describe:
 
 * Summary statistic
 
@@ -677,11 +687,11 @@ paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
 
 * Scope of inference
 
-\vspace{3in}
+\vspace{2.6in}
 
 #### Revisit and look forward {-}
 
-24. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
+25. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
 \vspace{0.6in}
 
 
@@ -689,33 +699,33 @@ paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
 
 ### Out-of-class activity
 
-The remaining questions cover theory-based methods for testing paired quantitative data.  Use section 6.2.3 in the textbook and the OneMeanTheory video to complete the following questions.
+The remaining questions cover theory-based methods for testing and estimating a paired mean difference (or single mean).  Use Section 6.2.3 in the textbook and the OneMeanTheory video to complete the following questions.
 
 The sampling distribution for $\bar{x}$ based on a sample of size $n$ from a population with a true mean $\mu$ and true standard deviation $\sigma$ can be modeled using a normal distribution when certain conditions are met.
 
-Conditions for the sample distribution of $\bar{x}$.
+Conditions for the sampling distribution of $\bar{x}$ to follow an approximate normal distribution:
 
-* Independence: The sample’s observations are independent
+* **Independence**: The sample’s observations are independent
 
-* Normality: data should be approximately normal
+* **Normality**: The data should be approximately normal or the sample size should be large.
 
-    - n $<$ 30: If the sample size n is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
+    - $n < 30$: If the sample size $n$ is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
 
-    - n $\geq$ 30: If the sample size n is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
+    - $n \geq 30$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
 
-1.  In the in-class activity we verified that the independence condition was satisfied.  Is the normality condition met to use the theory-based methods for analysis?  Explain your answer.
+1.  In the in-class activity, we verified that the independence condition was satisfied.  Is the normality condition met to use the theory-based methods for analysis?  Explain your answer.
 
 \vspace{1in}
 
 To find the standardized statistic for the paired differences we will use the following formula:
 
-$$T = \frac{\bar{x}_d}{SE(\bar{x}_d)}$$
+$$T = \frac{\bar{x}_d}{SE(\bar{x}_d)},$$
 
-where the standard error of the mean difference is:
+where the standard error of the sample mean difference is:
 
-$$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}$$
+$$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.$$
 
-2.  Calculate the standard error of the mean difference.
+2.  Calculate the standard error of the sample mean difference.
 
 \vspace{0.5in}
 
@@ -723,7 +733,7 @@ $$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}$$
 
 \vspace{0.5in}
 
-Using the provided `R` script file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 33 - 1 = 32, and lower.tail = TRUE to find the p-value.  Highlight and run line 31.  
+Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function using a `df` = $n_d-1 = 33 - 1 = 32$, and `lower.tail = TRUE` to find the p-value.  Highlight and run line 31.  
 
 ```{r, echo=TRUE, eval=FALSE}
 pt(xx, df=32, lower.tail=TRUE)
@@ -734,17 +744,17 @@ pt(xx, df=32, lower.tail=TRUE)
 \vspace{0.5in}
 
 
-To calculate the 99\% confidence interval use the following formula:
+To calculate the 99\% theory-based confidence interval for the paired mean difference, use the following formula:
 
-$$\bar{x}_d\pm t^* SE(\bar{x}_d)$$
+$$\bar{x}_d\pm t^* SE(\bar{x}_d).$$
 
-We will need to find the $t^*$ multiplier using the function qt. For a 99\% confidence interval we are finding the $t^*$ value at the 99.5th percentile with df = n - 1 = 33 - 1 = 32.
+We will need to find the $t^*$ multiplier using the function `qt()`. For a 99\% confidence level, we are finding the $t^*$ value at the 99.5th percentile with `df` = $n_d - 1 = 33 - 1 = 32$.
 
 ```{r, echo=TRUE}
 qt(0.995, df = 32, lower.tail=TRUE)
 ```
 
-5.  Calculate the 99\% confidence interval using theory-based methods.
+5.  Calculate the 99\% confidence interval for the paired mean difference using theory-based methods.
 
 \vspace{1in}
 
@@ -754,11 +764,11 @@ qt(0.995, df = 32, lower.tail=TRUE)
 
 ### Take-home messages
 
-1.	The differences in a paired data set is treated like a single quantitative variable when analyzing.  Paired data (or paired samples) occur when pairs of measurements are collected. We are only interested in the population (and sample) of differences, and not in the original data. 
+1.	The differences in a paired data set are treated like a single quantitative variable when performing a statistical analysis.  Paired data (or paired samples) occur when pairs of measurements are collected. We are only interested in the population (and sample) of differences, and not in the original data. 
 
-2.  When using bootstrapping to create the null distribution centered at the null value for both paired data and a single quantitative variable we first need to shift the data by the difference, $\mu_0 - \bar{x}_d$ and then sample with replacement from the shifted data. 
+2.  When using bootstrapping to create a null distribution centered at the null value for both paired data and a single quantitative variable, we first need to shift the data by the difference $\mu_0 - \bar{x}_d$, and then sample with replacement from the shifted data. 
 
-3. When analyzing paired data the summary statistic is the mean difference NOT the difference in means.  This terminology will be *very* important in the interpretations.
+3. When analyzing paired data, the summary statistic is the 'mean difference' NOT the 'difference in means'.  This terminology will be *very* important in interpretations.
 
 ### Additional notes
 

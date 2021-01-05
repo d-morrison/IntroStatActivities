@@ -6933,7 +6933,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \item
   We use the same guidelines for the strength of evidence as we did in Activity 6.
 \item
-  The standardized statistic when the response variable is categorical is a Z score and is compared to the standard normal distribution to find the p-value. To find the standardized statistic, we take the value of the statistic minus the null value, divided by the null standard error of the statistic. The standardized statistic measures the number of standard errors the statistic is from the null value.
+  The standardized statistic when the response variable is categorical is a Z-score and is compared to the standard normal distribution to find the p-value. To find the standardized statistic, we take the value of the statistic minus the null value, divided by the null standard error of the statistic. The standardized statistic measures the number of standard errors the statistic is from the null value.
 \item
   If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type 1 error. A Type 1 error occurs when we reject a true null hypothesis (false positive).
 \item
@@ -7586,9 +7586,7 @@ Standard deviation of a statistic: the variability of statistics from 1000s of s
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
-Hypothesis test: a process to determine how strong the evidence of an effect is.
-
-\rgi Also called a `significance test'.
+Hypothesis test: a process to determine how strong the evidence of an effect is. Also called a `significance test'.
 
 Simulation-based method: Simulate lots of samples of size \(n\) under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
 
@@ -7621,20 +7619,19 @@ Significance level (\(\alpha\)): a threshold used to determine if a p-value prov
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter.
-\rgi Also called `estimation'.
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter. Also called `estimation'.
 
 Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval.
 
-Bootstrapping: the process of drawing with replacement n times from the original sample.
+Bootstrapping: the process of drawing with replacement \(n\) times from the original sample.
 
-Bootstrapped resample: a random sample of size n from the original sample, selected with replacement.
+Bootstrapped resample: a random sample of size \(n\) from the original sample, selected with replacement.
 
 Bootstrapped statistic: the statistic recorded from the bootstrapped resample.
 
 Confidence level: how confident we are that the confidence interval will capture the parameter.
 
-Bootstrap X\% confidence interval: (\((\frac{(1-X)}{2})^{th}\) percentile,\((X+(\frac{(1-X)}{2})^{th}\) percentile) of a bootstrap distribution.
+Bootstrap \(X\)\% confidence interval: (\((\frac{(1-X)}{2})^{th}\) percentile, \((X+(\frac{(1-X)}{2})^{th}\) percentile) of a bootstrap distribution.
 
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample mean (or proportion) will be approximately normal (bell-shaped and symmetric).
 
@@ -7645,8 +7642,12 @@ Central Limit Theorem: For large sample sizes, the sampling distribution of a sa
 \(t\)-distribution:
 \rgs 
 
-\rgi Note: width depends on the sample size (used to calculate degrees of freedom -- df for short)
-\rgi The larger df, the Closer the \(t\) distribution is to the standard Normal distribution
+\begin{itemize}
+\item
+  The variability in the \(t\)-distribution depends on the sample size (used to calculate degrees of freedom --- df for short).
+\item
+  The larger df, the closer the \(t\) distribution is to the standard normal distribution.
+\end{itemize}
 
 Degrees of freedom (df):
 \rgs 
@@ -7667,10 +7668,10 @@ What do you do with the cards after labeling them?
 After resampling, what value will be plotted on the bootstrap distribution?
 \rgs 
 
-True or False: Bootstrapping can only be used if the sample size is small.
+True or false: Bootstrapping can only be used if the sample size is small.
 \rgs 
 
-Why do we use a \(t\) distribution rather than the Normal distribution when analyzing quantitative data?
+Why do we use a \(t\)-distribution rather than the normal distribution when analyzing quantitative data?
 \rgs 
 
 How do we calculate degrees of freedom for the \(t\)-distribution?
@@ -7678,27 +7679,16 @@ How do we calculate degrees of freedom for the \(t\)-distribution?
 
 Conditions to use the CLT for means:
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Independence:
-  \rgs 
-\end{enumerate}
-
-\rgi Checked by:
+\rgi Independence:
 \rgs 
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  Normality:
-  \rgs 
-\end{enumerate}
+\rgi \rgi Checked by:
+\rgs 
 
-\rgi Checked by:
+\rgi Normality:
+\rgs 
+
+\rgi \rgi Checked by:
 \rgs 
 
 \hypertarget{formulas-8}{%
@@ -7708,10 +7698,10 @@ Conditions to use the CLT for means:
 \(SE(\overline{x})=\)
 \rgs 
 
-\(t=\)
+\(T=\)
 \rgs 
 
-Confidence interval:
+Confidence interval for a mean:
 \rgs 
 
 \hypertarget{notation-2}{%
@@ -7731,7 +7721,7 @@ Confidence interval:
   What are the observational units?
   \rgs 
 \item
-  What is the sample statistics presented in this example? What notation would be used to represent each value?
+  What are the sample statistics presented in this example? What notation would be used to represent each value?
   \rgs 
 \item
   What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
@@ -7739,6 +7729,7 @@ Confidence interval:
   \rgs 
 \item
   How could we use cards to simulate \textbf{1} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs 
   \rgs 
   \rgs 
 \item
@@ -7766,7 +7757,7 @@ Confidence interval:
   \rgs 
   \rgs 
 \item
-  Use figure 6.4 to determine a 90\% confidence interval for the true standard deviation for three bedroom flats in Edinburgh.
+  Use Figure 6.4 to determine a 90\% confidence interval for the true standard deviation for three bedroom flats in Edinburgh.
   \rgs 
 \end{enumerate}
 
@@ -7783,10 +7774,10 @@ Confidence interval:
   What are the observational units?
   \rgs 
 \item
-  Can the results of this study be generalized to a larger population?
+  Can the results of this study be generalized to a larger population? Why or why not?
   \rgs 
 \item
-  What is the sample statistics presented in this example? What notation would be used to represent each value?
+  What are the sample statistics presented in this example? What notation would be used to represent each value?
   \rgs 
 \item
   What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
@@ -7824,10 +7815,10 @@ Confidence interval:
   What are the observational units?
   \rgs
 \item
-  Can the results of this study be generalized to a larger population?
+  Can the results of this study be generalized to a larger population? Why or why not?
   \rgs
 \item
-  What is the sample statistics presented in this example? What notation would be used to represent each value?
+  What are the sample statistics presented in this example? What notation would be used to represent each value?
   \rgs
 \item
   What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
@@ -7838,20 +7829,20 @@ Confidence interval:
   \rgs
   \rgs
 \item
-  Write the null and the alternative hypothesis in words.
+  Write the null and the alternative hypotheses in words.
   \rgs
   \rgs
 \item
-  Write the null and the alternative hypothesis in notation.
+  Write the null and the alternative hypotheses in notation.
   \rgs
 \item
   Calculate the standard error of the sample mean.
   \rgs
 \item
-  Calculate the t-score (the standardized statistic for the sample mean).
+  Calculate the T-score (the standardized statistic for the sample mean).
   \rgs
 \item
-  What distribution should the t-score be compared to in order to calculate a p-value?
+  What distribution should the T-score be compared to in order to calculate a p-value?
   \rgs
 \item
   What was the p-value of the test?
@@ -7921,27 +7912,16 @@ For each of the following scenarios, determine if the two sets of observations a
 
 Conditions to use the CLT for paired mean difference:
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Independence:
-  \rgs
-\end{enumerate}
+\rgi Independence:
+\rgs
 
-\rgi a. Checked by:
+\rgi \rgi Checked by:
 \rgs 
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  Normality:
-  \rgs
-\end{enumerate}
+\rgi Normality:
+\rgs
 
-\rgi a. Checked by:
+\rgi \rgi Checked by:
 \rgs
 
 \hypertarget{formulas-9}{%
@@ -7951,10 +7931,10 @@ Conditions to use the CLT for paired mean difference:
 \(SE(\overline{x_d})=\)
 \rgs
 
-\(t=\)
+\(T=\)
 \rgs
 
-Confidence interval:
+Confidence interval for a paired mean difference:
 \rgs
 
 \hypertarget{notation-3}{%
@@ -7986,17 +7966,18 @@ Confidence interval:
   Why should we treat these data as paired rather than two independent samples?
   \rgs
 \item
-  What is the sample statistics presented in this example? What notation would be used to represent each value?
+  What are the sample statistics presented in this example? What notation would be used to represent each value?
   \rgs
 \item
   What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
   \rgs
   \rgs
 \item
-  Write the null and alternative hypothesis in appropriate notation.
+  Write the null and alternative hypotheses in appropriate notation.
   \rgs
 \item
   How could we use cards to simulate \textbf{1} bootstrap resample \emph{which assumes the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs
   \rgs
   \rgs
 \item
@@ -8027,7 +8008,7 @@ Confidence interval:
   Why should we treat these data as paired rather than two independent samples?
   \rgs
 \item
-  What is the sample statistics presented in this example? What notation would be used to represent each value?
+  What are the sample statistics presented in this example? What notation would be used to represent each value?
   \rgs
 \item
   What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
@@ -8035,6 +8016,7 @@ Confidence interval:
   \rgs
 \item
   How could we use cards to simulate \textbf{1} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs
   \rgs
   \rgs
 \item
@@ -8053,17 +8035,17 @@ Confidence interval:
   \rgs
   \rgs
 \item
-  Write the null and the alternative hypothesis in words.
+  Write the null and the alternative hypotheses in words.
   \rgs
   \rgs
 \item
   Calculate the standard error of the sample mean difference.
   \rgs
 \item
-  Calculate the t-score (the standardized statistic for the sample mean difference).
+  Calculate the T-score (the standardized statistic for the sample mean difference).
   \rgs
 \item
-  What distribution should the t-score be compared to in order to calculate a p-value?
+  What distribution should the T-score be compared to in order to calculate a p-value?
   \rgs
 \item
   What was the p-value of the test?
@@ -8125,7 +8107,7 @@ In this week's activity, we will analyze paired quantitative data using simulati
 \item
   Independent groups
 \item
-  Shifted null distribution
+  Shifted bootstrap (null) distribution
 \end{itemize}
 
 To review these concepts, see Section 6.2 in the textbook.
@@ -8135,7 +8117,7 @@ To review these concepts, see Section 6.2 in the textbook.
 
 In June 2020, the social distancing efforts and stay-at-home directives to help combat the spread of COVID-19 appeared to help `flatten the curve' across the United States, albeit at a high cost to many individuals and businesses. The impact of these measures, though, goes far beyond the infection and death rates from the disease. You may have seen images comparing air quality in large international cities like Rome, Milan, Wuhan, and New Delhi such as the one pictured in Figure \ref{fig:covid}, which seem to indicate, perhaps unsurprisingly, that fewer people driving and factories being shut down have reduced air pollutants.
 
-Have high population-density US cities seen the same improved air quality conditions? To study this question, data was gathered from the U.S. Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the U.S. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated US cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015--2019). Note that higher AQI scores indicate worse air quality. A box plot of the differences in AQI scores for the 33 cities and a table of summary statistics are shown below.
+Have high population-density US cities seen the same improved air quality conditions? To study this question, data were gathered from the US Environmental Protection Agency (EPA) AirData website which records the ozone (O3) and fine particulate matter (PM2.5) values for cities across the US. These measures are used to calculate an air quality index (AQI) score for each city each day of the year. Thirty-three of the most densely populated US cities were selected and the AQI score recorded for April 20, 2020 as well as the five-year median AQI score for April 20th (2015--2019). Note that higher AQI scores indicate worse air quality. A box plot of the differences in AQI scores for the 33 cities and a table of summary statistics are shown on the next page.
 
 \begin{figure}
 
@@ -8164,7 +8146,7 @@ Have high population-density US cities seen the same improved air quality condit
 \endhead
 Current & \(\bar{x}_1\) = 47.394 & \(s_1\) = 14.107 & \(n_1\) = 33\tabularnewline
 5 Year Median & \(\bar{x}_2\) = 51.545 & \(s_2\) = 17.447 & \(n_2\) = 33\tabularnewline
-Differences & \(\bar{x}_d\) = -4.152 & \(s_d\) = 17.096 & \(n_d\) = 33\tabularnewline
+Differences & \(\bar{x}_d\) = \(-4.152\) & \(s_d\) = 17.096 & \(n_d\) = 33\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -8181,47 +8163,47 @@ Differences & \(\bar{x}_d\) = -4.152 & \(s_d\) = 17.096 & \(n_d\) = 33\tabularne
   What is the sample size?
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
 \tightlist
 \item
-  Identify the variables in this study. What role do each have?
+  Identify the variables in this study. What role (explanatory or response) do each have?
 \end{enumerate}
 
-\vspace{.8in}
+\vspace{.5in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
 \tightlist
 \item
-  Why is this treated as a paired study design and not two independent samples?
+  Are the differences in AQI scores independent for each case (US city)? Explain.
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.5in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{3}
 \tightlist
 \item
-  Is this an experiment or observational study? Justify your answer.
+  Why is this treated as a paired study design and not two independent samples?
 \end{enumerate}
 
-\vspace{0.3in}
+\vspace{0.5in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{4}
 \tightlist
 \item
-  Are the differences in AQI scores independent for each case (US city)? Explain.
+  Is this an experiment or observational study? Justify your answer.
 \end{enumerate}
 
-\vspace{0.3in}
+\vspace{0.5in}
 
 \hypertarget{ask-a-research-question-2}{%
 \subsubsection*{Ask a research question}\label{ask-a-research-question-2}}
@@ -8276,7 +8258,7 @@ Differences & \(\bar{x}_d\) = -4.152 & \(s_d\) = 17.096 & \(n_d\) = 33\tabularne
 \setcounter{enumi}{9}
 \tightlist
 \item
-  Report the summary statistic for the data.
+  Report the summary statistic of interest for the data.
 \end{enumerate}
 
 \vspace{0.3in}
@@ -8295,14 +8277,18 @@ Differences & \(\bar{x}_d\) = -4.152 & \(s_d\) = 17.096 & \(n_d\) = 33\tabularne
 \subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data}}
 \addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
 
-To simulate the null distribution we will use a bootstrapping method. Recall that the null distribution must be created under the assumption that the null hypothesis is true. Therefore, before bootstrapping we will need to shift each data point by the difference \(\mu_0 - \bar{x}\). This will ensure that the mean of the shifted data is \(\mu_0\) and that the simulated null distribution will be centered at the null value.
+\hypertarget{hypothesis-test}{%
+\paragraph*{Hypothesis test}\label{hypothesis-test}}
+\addcontentsline{toc}{paragraph}{Hypothesis test}
+
+To simulate the null distribution of paired sample mean differences we will use a bootstrapping method. Recall that the null distribution must be created under the assumption that the null hypothesis is true. Therefore, before bootstrapping, we will need to \emph{shift} each data point by the difference \(\mu_0 - \bar{x}_d\). This will ensure that the mean of the shifted data is \(\mu_0\) (rather than the mean of the original data, \(\bar{x}_d\)), and that the simulated null distribution will be centered at the null value.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{11}
 \tightlist
 \item
-  Calculate the difference \(\mu_0 - \bar{x}\). Will we need to shift the data up or down?
+  Calculate the difference \(\mu_0 - \bar{x}_d\). Will we need to shift the data up or down?
 \end{enumerate}
 
 \vspace{.7in}
@@ -8312,7 +8298,7 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 \setcounter{enumi}{12}
 \tightlist
 \item
-  We will use the \texttt{paired\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the shifted bootstrap distribution of sample mean differences and compute a p-value. Use the provided \texttt{R} script file and enter the calculated value from question 12 for \texttt{xx} to simulate the null distribution and enter the summary statistic from question 10 for \texttt{yy} to find the p-value. Highlight and run lines 1--21.
+  We will use the \texttt{paired\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the shifted bootstrap (null) distribution of sample mean differences and compute a p-value. Use the provided \texttt{R} script file and enter the calculated value from question 12 for \texttt{xx} to simulate the null distribution and enter the summary statistic from question 10 for \texttt{yy} to find the p-value. Highlight and run lines 1--21.
 \end{enumerate}
 
 \begin{Shaded}
@@ -8351,7 +8337,7 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 \setcounter{enumi}{15}
 \tightlist
 \item
-  What proportion of samples are at or less than the sample mean difference in AQI scores for current scores minus 5 year median scores?
+  What proportion of samples are at or less than the observed sample mean difference in AQI scores for current scores minus 5 year median scores? What is the statistical term for this proportion?
 \end{enumerate}
 
 \vspace{.3in}
@@ -8371,7 +8357,7 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 \setcounter{enumi}{17}
 \tightlist
 \item
-  How much evidence does this provide for improved air quality in U.S. cities?
+  How much evidence does this provide for improved air quality in US cities?
 \end{enumerate}
 
 \vspace{.3in}
@@ -8381,6 +8367,22 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 \setcounter{enumi}{18}
 \tightlist
 \item
+  If evidence was found for improved air quality in US cities, could we conclude that the stay-at-home directives \emph{caused} the improvement in air quality? Explain.
+\end{enumerate}
+
+\vspace{.5in}
+
+\hypertarget{confidence-interval}{%
+\paragraph*{Confidence interval}\label{confidence-interval}}
+\addcontentsline{toc}{paragraph}{Confidence interval}
+
+We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample mean differences and calculate a confidence interval.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{19}
+\tightlist
+\item
   Write out the parameter of interest in context of the study.
 \end{enumerate}
 
@@ -8388,10 +8390,10 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{19}
+\setcounter{enumi}{20}
 \tightlist
 \item
-  We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample mean differences and calculate a confidence interval. Using the provided \texttt{R} script file fill in the missing value at xx in the paired bootstrap CI to find a 99\% confidence interval, highlight and run lines 24--27. Report the confidence interval in interval notation.
+  Using the provided \texttt{R} script file, fill in the missing value at \texttt{xx} to find a 99\% bootstrap confidence interval; highlight and run lines 24--27. Report the confidence interval in interval notation.
 \end{enumerate}
 
 \begin{Shaded}
@@ -8403,25 +8405,25 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 \end{Highlighting}
 \end{Shaded}
 
-\vspace{.3in}
+\vspace{.5in}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question.}{%
-\subsubsection*{Communicate the results and answer the research question.}\label{communicate-the-results-and-answer-the-research-question.}}
-\addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question.}
+\hypertarget{communicate-the-results-and-answer-the-research-question-2}{%
+\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-2}}
+\addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{20}
+\setcounter{enumi}{21}
 \tightlist
 \item
   Interpret the 99\% confidence interval in the context of the problem.
 \end{enumerate}
 
-\vspace{.8in}
+\vspace{1in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{21}
+\setcounter{enumi}{22}
 \tightlist
 \item
   Do the results of your confidence interval and hypothesis test agree? What does each tell you about the null hypothesis?
@@ -8429,9 +8431,11 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 
 \vspace{.7in}
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{22}
+\setcounter{enumi}{23}
 \tightlist
 \item
   Write a paragraph summarizes the results of this study as if you were describing the results to your roommate. Be sure to describe:
@@ -8450,7 +8454,7 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
   Scope of inference
 \end{itemize}
 
-\vspace{3in}
+\vspace{2.6in}
 
 \hypertarget{revisit-and-look-forward-2}{%
 \subsubsection*{Revisit and look forward}\label{revisit-and-look-forward-2}}
@@ -8458,7 +8462,7 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{23}
+\setcounter{enumi}{24}
 \tightlist
 \item
   Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain.
@@ -8468,23 +8472,23 @@ To simulate the null distribution we will use a bootstrapping method. Recall tha
 \hypertarget{out-of-class-activity-9}{%
 \subsection{Out-of-class activity}\label{out-of-class-activity-9}}
 
-The remaining questions cover theory-based methods for testing paired quantitative data. Use section 6.2.3 in the textbook and the OneMeanTheory video to complete the following questions.
+The remaining questions cover theory-based methods for testing and estimating a paired mean difference (or single mean). Use Section 6.2.3 in the textbook and the OneMeanTheory video to complete the following questions.
 
 The sampling distribution for \(\bar{x}\) based on a sample of size \(n\) from a population with a true mean \(\mu\) and true standard deviation \(\sigma\) can be modeled using a normal distribution when certain conditions are met.
 
-Conditions for the sample distribution of \(\bar{x}\).
+Conditions for the sampling distribution of \(\bar{x}\) to follow an approximate normal distribution:
 
 \begin{itemize}
 \item
-  Independence: The sample's observations are independent
+  \textbf{Independence}: The sample's observations are independent
 \item
-  Normality: data should be approximately normal
+  \textbf{Normality}: The data should be approximately normal or the sample size should be large.
 
   \begin{itemize}
   \item
-    n \(<\) 30: If the sample size n is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
+    \(n < 30\): If the sample size \(n\) is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
   \item
-    n \(\geq\) 30: If the sample size n is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of \(\bar{x}\) is nearly normal, even if the underlying distribution of individual observations is not.
+    \(n \geq 30\): If the sample size \(n\) is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of \(\bar{x}\) is nearly normal, even if the underlying distribution of individual observations is not.
   \end{itemize}
 \end{itemize}
 
@@ -8492,25 +8496,25 @@ Conditions for the sample distribution of \(\bar{x}\).
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  In the in-class activity we verified that the independence condition was satisfied. Is the normality condition met to use the theory-based methods for analysis? Explain your answer.
+  In the in-class activity, we verified that the independence condition was satisfied. Is the normality condition met to use the theory-based methods for analysis? Explain your answer.
 \end{enumerate}
 
 \vspace{1in}
 
 To find the standardized statistic for the paired differences we will use the following formula:
 
-\[T = \frac{\bar{x}_d}{SE(\bar{x}_d)}\]
+\[T = \frac{\bar{x}_d}{SE(\bar{x}_d)},\]
 
-where the standard error of the mean difference is:
+where the standard error of the sample mean difference is:
 
-\[SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}\]
+\[SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.\]
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
 \tightlist
 \item
-  Calculate the standard error of the mean difference.
+  Calculate the standard error of the sample mean difference.
 \end{enumerate}
 
 \vspace{0.5in}
@@ -8525,7 +8529,7 @@ where the standard error of the mean difference is:
 
 \vspace{0.5in}
 
-Using the provided \texttt{R} script file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 33 - 1 = 32, and lower.tail = TRUE to find the p-value. Highlight and run line 31.
+Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) into the \texttt{pt()} function using a \texttt{df} = \(n_d-1 = 33 - 1 = 32\), and \texttt{lower.tail\ =\ TRUE} to find the p-value. Highlight and run line 31.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -8543,11 +8547,11 @@ Using the provided \texttt{R} script file, enter the T score (for xx) into the p
 
 \vspace{0.5in}
 
-To calculate the 99\% confidence interval use the following formula:
+To calculate the 99\% theory-based confidence interval for the paired mean difference, use the following formula:
 
-\[\bar{x}_d\pm t^* SE(\bar{x}_d)\]
+\[\bar{x}_d\pm t^* SE(\bar{x}_d).\]
 
-We will need to find the \(t^*\) multiplier using the function qt. For a 99\% confidence interval we are finding the \(t^*\) value at the 99.5th percentile with df = n - 1 = 33 - 1 = 32.
+We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. For a 99\% confidence level, we are finding the \(t^*\) value at the 99.5th percentile with \texttt{df} = \(n_d - 1 = 33 - 1 = 32\).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -8561,7 +8565,7 @@ We will need to find the \(t^*\) multiplier using the function qt. For a 99\% co
 \setcounter{enumi}{4}
 \tightlist
 \item
-  Calculate the 99\% confidence interval using theory-based methods.
+  Calculate the 99\% confidence interval for the paired mean difference using theory-based methods.
 \end{enumerate}
 
 \vspace{1in}
@@ -8582,11 +8586,11 @@ We will need to find the \(t^*\) multiplier using the function qt. For a 99\% co
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  The differences in a paired data set is treated like a single quantitative variable when analyzing. Paired data (or paired samples) occur when pairs of measurements are collected. We are only interested in the population (and sample) of differences, and not in the original data.
+  The differences in a paired data set are treated like a single quantitative variable when performing a statistical analysis. Paired data (or paired samples) occur when pairs of measurements are collected. We are only interested in the population (and sample) of differences, and not in the original data.
 \item
-  When using bootstrapping to create the null distribution centered at the null value for both paired data and a single quantitative variable we first need to shift the data by the difference, \(\mu_0 - \bar{x}_d\) and then sample with replacement from the shifted data.
+  When using bootstrapping to create a null distribution centered at the null value for both paired data and a single quantitative variable, we first need to shift the data by the difference \(\mu_0 - \bar{x}_d\), and then sample with replacement from the shifted data.
 \item
-  When analyzing paired data the summary statistic is the mean difference NOT the difference in means. This terminology will be \emph{very} important in the interpretations.
+  When analyzing paired data, the summary statistic is the `mean difference' NOT the `difference in means'. This terminology will be \emph{very} important in interpretations.
 \end{enumerate}
 
 \hypertarget{additional-notes-9}{%
@@ -9322,8 +9326,8 @@ Sketch the null distribution created using the code above.
 
 \vspace{1in}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question-2}{%
-\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-2}}
+\hypertarget{communicate-the-results-and-answer-the-research-question-3}{%
+\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-3}}
 \addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
 
 \begin{enumerate}
@@ -9439,7 +9443,7 @@ where the standard error of the difference in means is calculated using:
 
 \vspace{0.5in}
 
-Using the provided \texttt{R} script file, enter the T score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value. Highlight and run line 39.
+Using the provided \texttt{R} script file, enter the T-score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value. Highlight and run line 39.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -10192,8 +10196,8 @@ The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df. Recall
 
 \vspace{1in}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question-3}{%
-\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-3}}
+\hypertarget{communicate-the-results-and-answer-the-research-question-4}{%
+\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-4}}
 \addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
 
 \begin{enumerate}

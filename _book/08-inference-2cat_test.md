@@ -922,7 +922,7 @@ two_proportion_test(formula = Outcome ~ Helmet, # response~explanatory
 
 2.  We use the same guidelines for the strength of evidence as we did in Activity 6.  
 
-3.  The standardized statistic when the response variable is categorical is a Z score and is compared to the standard normal distribution to find the p-value.  To find the standardized statistic, we take the value of the statistic minus the null value, divided by the null standard error of the statistic.  The standardized statistic measures the number of standard errors the statistic is from the null value. 
+3.  The standardized statistic when the response variable is categorical is a Z-score and is compared to the standard normal distribution to find the p-value.  To find the standardized statistic, we take the value of the statistic minus the null value, divided by the null standard error of the statistic.  The standardized statistic measures the number of standard errors the statistic is from the null value. 
 
 4.  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type 1 error. A Type 1 error occurs when we reject a true null hypothesis (false positive).
 
