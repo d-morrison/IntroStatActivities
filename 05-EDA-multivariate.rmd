@@ -441,7 +441,7 @@ Simpson’s Paradox:
 
 * Interpret the slope coefficient in context of the problem.
 
-* Calculated and interpret $R^2$, the coefficient of determination, in context of the problem.
+* Calculate and interpret $R^2$, the coefficient of determination, in context of the problem.
 
 * Find the correlation coefficient from `R` output or from $R^2$ and the sign of the slope.
 
