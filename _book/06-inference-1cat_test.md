@@ -524,7 +524,7 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 * **Summarize and visualize the data**. Calculate summary statistics and create graphical plots that best represent the research question.
 
-* **Use statistical analysis methods to draw inferences from the data**. Choose an statistical inference method appropriate for the data and identify the p-value and/or confidence interval after checking assumptions. In this study, we will focus on using randomization to generate a simulated p-value.
+* **Use statistical analysis methods to draw inferences from the data**. Choose a statistical inference method appropriate for the data and identify the p-value and/or confidence interval after checking assumptions. In this study, we will focus on using randomization to generate a simulated p-value.
 
 * **Communicate the results and answer the research question**. Using the p-value and confidence interval from the analysis, determine whether the data provide statistical evidence against the null hypothesis. Write a conclusion that addresses the research question.
 
@@ -582,7 +582,8 @@ Before using statistical inference methods, we must check that the cases are ind
 
 
 ```r
-handedness <- read.csv("https://math.montana.edu/courses/s216/data/Male_boxers_sample.csv") # Read in data set
+ # Read in data set
+handedness <- read.csv("https://math.montana.edu/courses/s216/data/Male_boxers_sample.csv")
 handedness %>% count(Stance)  # Count number in each Stance category
 ```
 
@@ -694,11 +695,11 @@ We will use the `one_proportion_test()` function in `R` (in the `catstats` packa
 
 ```r
 one_proportion_test(probability_success = xx, # Null hypothesis value
-                    sample_size = xx, # Enter sample size
-                    number_repetitions = 1000, # Enter number of simulations
-                    as_extreme_as = xx, # Observed statistic
-                    direction = "xx", # Specify direction of alternative hypothesis
-                    report_value = "proportion") # Reporting proportion or number of successes?
+          sample_size = xx, # Enter sample size
+          number_repetitions = 1000, # Enter number of simulations
+          as_extreme_as = xx, # Observed statistic
+          direction = "xx", # Specify direction of alternative hypothesis
+          report_value = "proportion") # Reporting proportion or number of successes?
 ```
 
 19. Sketch the null distribution created from the `R` code here.
@@ -815,7 +816,7 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 \caption{A standard normal curve.}(\#fig:simpleNormal)
 \end{figure}
 
-4.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the $x$-axis of the standard normal distribution displayed in Figure \@ref(fig:simpleNormal), and mark on the value of the standardized statistic calculated in question 3.
+4.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the $x$-axis of the standard normal distribution displayed in Figure \@ref(fig:simpleNormal), and also mark the value of the standardized statistic calculated in question 3.
 
 \vspace{0.2in}
 

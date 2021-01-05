@@ -412,7 +412,6 @@ In the Martian Alphabet `R` script file for the `one_proportion_test()` function
 
 \vspace{0.3in}
 
-\newpage
 
 ### Take-home messages
 

@@ -347,7 +347,7 @@ Using the `R` script file for this activity, enter your answers for question 1 i
 
 ```r
 two_proportion_bootstrap_CI(formula = Outcome ~ Helmet, 
-        data=injury, # Name of dataset
+        data=injury, # Name of data set
         first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
         response_value_numerator = "xx", # Define which outcome is a success 
         number_repetitions = 1000, # Always use a minimum of 1000 repetitions

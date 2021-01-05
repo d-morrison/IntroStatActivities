@@ -606,7 +606,8 @@ To simulate the null distribution of paired sample mean differences we will use 
 
 
 ```r
-    paired_test(data = Air$Difference,   # Vector of differences or data set with column for each group
+    paired_test(data = Air$Difference,   # Vector of differences 
+                                         # or data set with column for each group
             shift = xx,   # Shift needed for bootstrap hypothesis test
             as_extreme_as = yy,  # Observed statistic
             direction = "less",  # Direction of alternative
@@ -617,7 +618,7 @@ To simulate the null distribution of paired sample mean differences we will use 
 
 14. Sketch the null distribution created in question 13 here.
 
-\vspace{2in}
+\vspace{1.9in}
 
 15. Explain why the null distribution is centered at zero. 
 

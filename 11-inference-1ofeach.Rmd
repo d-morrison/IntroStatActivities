@@ -349,6 +349,7 @@ In the winter of 2018--2019, Bozeman had a record snowfall which resulted in the
 Notice from the `R` code that the name of the data set is `Snow`.
 
 ``````{r, echo=TRUE, collapse=FALSE}
+# Read in data set
 Snow <- read.csv("https://math.montana.edu/courses/s216/data/SnowfallByWeatherPattern.csv")
 
 # Code categorical variables as factors
