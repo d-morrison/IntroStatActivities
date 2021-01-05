@@ -582,7 +582,7 @@ Before using statistical inference methods, we must check that the cases are ind
 
 
 ```r
-handedness <- read.csv("data/Male_boxers_sample.csv") # Read in data set
+handedness <- read.csv("https://math.montana.edu/courses/s216/data/Male_boxers_sample.csv") # Read in data set
 handedness %>% count(Stance)  # Count number in each Stance category
 ```
 
@@ -825,7 +825,7 @@ The standardized statistic measures the *number of standard errors the sample st
 
 \vspace{.8in}
 
-We will use the `pnorm` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 3 at xx in line 18; highlight and run lines 18--20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
+We will use the `pnorm` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 3 at `xx` in line 18; highlight and run lines 18--20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
 
 Notes:
 
