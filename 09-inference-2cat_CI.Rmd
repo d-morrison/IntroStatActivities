@@ -379,4 +379,4 @@ two_proportion_bootstrap_CI(formula = Outcome ~ Helmet,
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

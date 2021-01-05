@@ -786,4 +786,4 @@ qt(0.995, df = 32, lower.tail=TRUE)
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
