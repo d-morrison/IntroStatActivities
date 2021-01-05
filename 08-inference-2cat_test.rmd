@@ -27,7 +27,7 @@ General steps of a hypothesis test:
 	
 3. Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
 
-4. Compare the observed test statistic to the null distribution to calculate a p-value.
+4. Compare the observed test (standardized) statistic to the null distribution to calculate a p-value.
 
 5. Make a conclusion based on the p-value and write the conclusion in context.
 
@@ -158,7 +158,8 @@ Population proportion of group 2:
 8. Write the null and the alternative hypotheses in notation.
 \rgs
 
-9. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+9. How could we use cards to simulate **ome** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
 \rgs
 \rgs
 
@@ -207,7 +208,8 @@ Population proportion of group 2:
 8. Write the null and the alternative hypotheses in notation.
 \rgs
 
-9. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*? How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+9. How could we use cards to simulate **one** sample *which assumes the null hypothesis is true*? How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
 \rgs
 \rgs
 
@@ -263,7 +265,8 @@ Population proportion of group 2:
 9. Write the null and the alternative hypotheses in notation.
 \rgs
 
-10. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+10. How could we use cards to simulate **one** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
 \rgs
 \rgs
 
@@ -282,6 +285,7 @@ Population proportion of group 2:
 \rgs
 
 15. What conclusion should the researcher make?
+\rgs
 \rgs
 
 16. Are the results in this example statistically significant?  Justify your answer.
@@ -381,11 +385,14 @@ Overall (pooled) proportion of successes:
 
 9. Calculate the pooled or overall proportion of successes. What notation would be used to represent this value?
 \rgs
+\rgs
 
 10. Calculate the null standard error of the difference in sample proportions.
 \rgs
+\rgs
 
 11.	Calculate the standardized statistic
+\rgs
 \rgs
 
 12. Interpret the standardized statistic in the context of the problem.
@@ -900,7 +907,7 @@ two_proportion_test(formula = Outcome ~ Helmet, # response ~ explanatory
 \vspace{1.5in}
 
 
-6. What value is the null distribution centered around?  Explain why this makes sense?
+6. What value is the null distribution centered around?  Explain why this makes sense.
 
 \vspace{.8in}
 
