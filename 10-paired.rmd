@@ -604,7 +604,7 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 \vspace{.7in}
 
-13.  Use the provided `R` script file and enter the calculated value from question 12 for xx to simulate the null distribution and enter the summary statistic from question 10 for yy to find the p-value.  Highlight and run lines 1--21.
+13.  We will use the `paired_test()` function in `R` (in the `catstats` package) to simulate the shifted bootstrap distribution of sample mean differences and compute a p-value. Use the provided `R` script file and enter the calculated value from question 12 for `xx` to simulate the null distribution and enter the summary statistic from question 10 for `yy` to find the p-value.  Highlight and run lines 1--21.
 
 ```{r, echo=TRUE, eval=FALSE, warning = FALSE}
     paired_test(data = Air$Difference,   # Vector of differences or data set with column for each group
@@ -641,7 +641,7 @@ To simulate the null distribution we will use a bootstrapping method.  Recall th
 
 \vspace{.6in}
 
-20.  Using the provided `R` script file fill in the missing value at xx in the paired bootstrap CI to find a 99\% confidence interval, highlight and run lines 24--27.  Report the confidence interval in interval notation.
+20.  We will use the `paired_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample mean differences and calculate a confidence interval. Using the provided `R` script file fill in the missing value at xx in the paired bootstrap CI to find a 99\% confidence interval, highlight and run lines 24--27.  Report the confidence interval in interval notation.
 
 ```{r, echo=TRUE, eval=FALSE, warning = FALSE}
 paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
