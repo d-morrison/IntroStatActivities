@@ -395,16 +395,16 @@ The RStudio workflow operates best by the use of "Projects". You should create a
 In the Martian Alphabet `R` script file, highlight the lines of code that starts with `library` and click "Run". This will load the **package** (or library) `catstats` needed for this activity; each package is a collection of `R` functions.  We review a few of these packages here. 
 
 * Throughout the semester we will use the package `tidyverse` to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol `%>%`.)  Contained in `tidyverse` is the package `ggplot2`, used to create graphs in RStudio.
-* The package `mosaic` contains the `favstats` function to find summary statistics for quantitative variables.
+* The package `mosaic` contains the `favstats()` function to find summary statistics for quantitative variables.
 * We will use the package `catstats`, starting in Chapter 5 (and in this activity), to create simulations for statistical inference.  
 
-These packages are already installed in the RStudio server, but you need to use the `library` function to call the package into your R environment. We will only use the package `catstats` for this activity.
+These packages are already installed in the RStudio server, but you need to use the `library()` function to call the package into your R environment. We will only use the package `catstats` for this activity.
 
 The \# sign is not part of the `R` code. 
 It is used by these authors to add comments to the `R` code and explain what each call is telling the program to do.
 `R` will ignore everything after a \# sign when executing the code.
 
-In the Martian Alphabet `R` script file for the `one_proportion_test` function arguments, enter your class size (Q3 from the in-class activity) for `sample_size` and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for `as_extreme_as` argument.  Highlight lines 3 -- 8 and click run.
+In the Martian Alphabet `R` script file for the `one_proportion_test()` function arguments, enter your class size (Q3 from the in-class activity) for `sample_size` and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for `as_extreme_as` argument.  Highlight lines 3 -- 8 and click run.
 
 4.  Is the distribution created from this code similar to what you saw in class in Q14?
 

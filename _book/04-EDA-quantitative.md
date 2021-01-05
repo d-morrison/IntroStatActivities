@@ -254,7 +254,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 #### Summarizing a single quantitative variable {-}
 
-The `favstats` function from the `mosaic` package gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable `imdb_score`.
+The `favstats()` function from the `mosaic` package gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable `imdb_score`.
 
 
 ```r
@@ -393,7 +393,7 @@ movies %>%  # Data set piped into...
 
 For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the `Movies` data set.  Download and open the provided `R` script file, highlight and run the first 8 lines of code.
 
-To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.
+To use the `favstats()` function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.
 
 
 ```r

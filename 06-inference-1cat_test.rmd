@@ -211,7 +211,7 @@ Z =
 
 ##### Calculating normal probabilities {-}
 
-When using the `pnorm` `R` function, you will need to enter values for the arguments `mean`, `sd`, and `q` to match the question.
+When using the `pnorm()` `R` function, you will need to enter values for the arguments `mean`, `sd`, and `q` to match the question.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(mean = mu, sd = sigma, q = x, lower.tail = TRUE)
@@ -233,7 +233,7 @@ pnorm(mean = 5, sd = 2, q = 3, lower.tail = FALSE)
 
 ##### Displaying normal probabilities {-} 
 
-When using the `normTail` `R` function, you will need to enter values for the arguments `m`, `s`, and `L` (or `U`) to match the question.
+When using the `normTail()` `R` function, you will need to enter values for the arguments `m`, `s`, and `L` (or `U`) to match the question.
 
 ```{r, echo=TRUE, eval=FALSE}
 normTail(m = mu, s = sigma, L = x)
@@ -254,7 +254,7 @@ Example: `normTail(m = 5, s = 2, U = 3)` plots a N(5,2) distribution with the ar
 
 ##### Calculating normal percentiles {-}
 
-When using the `qnorm` `R` function, you will need to enter values for the arguments `mean`, `sd`, and `p` to match the question.
+When using the `qnorm()` `R` function, you will need to enter values for the arguments `mean`, `sd`, and `p` to match the question.
 
 ```{r, echo=TRUE, eval=FALSE}
 qnorm(mean = mu, sd = sigma, p = x, lower.tail = TRUE)
@@ -807,7 +807,7 @@ The standardized statistic measures the *number of standard errors the sample st
 
 \vspace{.8in}
 
-We will use the `pnorm` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 3 at `xx` in line 18; highlight and run lines 18--20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
+We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 3 at `xx` in line 18; highlight and run lines 18--20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
 
 Notes:
 

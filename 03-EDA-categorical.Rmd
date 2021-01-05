@@ -38,7 +38,7 @@ State what these introductory functions do in `R`:
 
 `head(data_set_name)`
 
-`data_set_name$variable`
+`data_set_name$variable_name`
 
 `%>%`
 
@@ -466,7 +466,7 @@ demonstrate how to read the data set into `R` using the `read.csv()` function.
 myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv") 
 ```
 
-Download and open the provided `R` script file for Activity 3 to answer the following questions. Highlight and run lines 1--5.  These lines of code read in the data set and name the data set `myopia`.  The library function tells `R` which packages will be needed.  
+Download and open the provided `R` script file for Activity 3 to answer the following questions. Highlight and run lines 1--5.  These lines of code read in the data set and name the data set `myopia`.  The `library()` function tells `R` which packages will be needed.  
 
 
 

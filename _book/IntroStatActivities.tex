@@ -839,18 +839,18 @@ In the Martian Alphabet \texttt{R} script file, highlight the lines of code that
 \item
   Throughout the semester we will use the package \texttt{tidyverse} to allow us to use chaining (see Section 1.7 in the textbook for more on this symbol \texttt{\%\textgreater{}\%}.) Contained in \texttt{tidyverse} is the package \texttt{ggplot2}, used to create graphs in RStudio.
 \item
-  The package \texttt{mosaic} contains the \texttt{favstats} function to find summary statistics for quantitative variables.
+  The package \texttt{mosaic} contains the \texttt{favstats()} function to find summary statistics for quantitative variables.
 \item
   We will use the package \texttt{catstats}, starting in Chapter 5 (and in this activity), to create simulations for statistical inference.
 \end{itemize}
 
-These packages are already installed in the RStudio server, but you need to use the \texttt{library} function to call the package into your R environment. We will only use the package \texttt{catstats} for this activity.
+These packages are already installed in the RStudio server, but you need to use the \texttt{library()} function to call the package into your R environment. We will only use the package \texttt{catstats} for this activity.
 
 The \# sign is not part of the \texttt{R} code.
 It is used by these authors to add comments to the \texttt{R} code and explain what each call is telling the program to do.
 \texttt{R} will ignore everything after a \# sign when executing the code.
 
-In the Martian Alphabet \texttt{R} script file for the \texttt{one\_proportion\_test} function arguments, enter your class size (Q3 from the in-class activity) for \texttt{sample\_size} and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for \texttt{as\_extreme\_as} argument. Highlight lines 3 -- 8 and click run.
+In the Martian Alphabet \texttt{R} script file for the \texttt{one\_proportion\_test()} function arguments, enter your class size (Q3 from the in-class activity) for \texttt{sample\_size} and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for \texttt{as\_extreme\_as} argument. Highlight lines 3 -- 8 and click run.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1401,7 +1401,7 @@ State what these introductory functions do in \texttt{R}:
 
 \texttt{head(data\_set\_name)}
 
-\texttt{data\_set\_name\$variable}
+\texttt{data\_set\_name\$variable\_name}
 
 \texttt{\%\textgreater{}\%}
 
@@ -1986,7 +1986,7 @@ demonstrate how to read the data set into \texttt{R} using the \texttt{read.csv(
 \end{Highlighting}
 \end{Shaded}
 
-Download and open the provided \texttt{R} script file for Activity 3 to answer the following questions. Highlight and run lines 1--5. These lines of code read in the data set and name the data set \texttt{myopia}. The library function tells \texttt{R} which packages will be needed.
+Download and open the provided \texttt{R} script file for Activity 3 to answer the following questions. Highlight and run lines 1--5. These lines of code read in the data set and name the data set \texttt{myopia}. The \texttt{library()} function tells \texttt{R} which packages will be needed.
 
 \hypertarget{displaying-a-single-categorical-variable}{%
 \subsubsection*{Displaying a single categorical variable}\label{displaying-a-single-categorical-variable}}
@@ -2466,7 +2466,7 @@ Number of likes a movie receives on Facebook\strut
 \subsubsection*{Summarizing a single quantitative variable}\label{summarizing-a-single-quantitative-variable}}
 \addcontentsline{toc}{subsubsection}{Summarizing a single quantitative variable}
 
-The \texttt{favstats} function from the \texttt{mosaic} package gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable \texttt{imdb\_score}.
+The \texttt{favstats()} function from the \texttt{mosaic} package gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable \texttt{imdb\_score}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2682,7 +2682,7 @@ The box plot of movie budgets (in millions) by content rating is plotted using t
 
 For a little more practice using \texttt{Rstudio} to create graphs of quantitative variables we will look at some other variables in the \texttt{Movies} data set. Download and open the provided \texttt{R} script file, highlight and run the first 8 lines of code.
 
-To use the favstats function in the mosaic package with two variables, we will enter the variables as a formula, response\textasciitilde explanatory.
+To use the \texttt{favstats()} function in the mosaic package with two variables, we will enter the variables as a formula, response\textasciitilde explanatory.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4040,7 +4040,7 @@ Z =
 \paragraph*{Calculating normal probabilities}\label{calculating-normal-probabilities}}
 \addcontentsline{toc}{paragraph}{Calculating normal probabilities}
 
-When using the \texttt{pnorm} \texttt{R} function, you will need to enter values for the arguments \texttt{mean}, \texttt{sd}, and \texttt{q} to match the question.
+When using the \texttt{pnorm()} \texttt{R} function, you will need to enter values for the arguments \texttt{mean}, \texttt{sd}, and \texttt{q} to match the question.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4072,7 +4072,7 @@ Changing to \texttt{lower.tail\ =\ FALSE} will give the proportion of the distri
 \paragraph*{Displaying normal probabilities}\label{displaying-normal-probabilities}}
 \addcontentsline{toc}{paragraph}{Displaying normal probabilities}
 
-When using the \texttt{normTail} \texttt{R} function, you will need to enter values for the arguments \texttt{m}, \texttt{s}, and \texttt{L} (or \texttt{U}) to match the question.
+When using the \texttt{normTail()} \texttt{R} function, you will need to enter values for the arguments \texttt{m}, \texttt{s}, and \texttt{L} (or \texttt{U}) to match the question.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4100,7 +4100,7 @@ Example: \texttt{normTail(m\ =\ 5,\ s\ =\ 2,\ U\ =\ 3)} plots a N(5,2) distribut
 \paragraph*{Calculating normal percentiles}\label{calculating-normal-percentiles}}
 \addcontentsline{toc}{paragraph}{Calculating normal percentiles}
 
-When using the \texttt{qnorm} \texttt{R} function, you will need to enter values for the arguments \texttt{mean}, \texttt{sd}, and \texttt{p} to match the question.
+When using the \texttt{qnorm()} \texttt{R} function, you will need to enter values for the arguments \texttt{mean}, \texttt{sd}, and \texttt{p} to match the question.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4941,7 +4941,7 @@ The standardized statistic measures the \emph{number of standard errors the samp
 
 \vspace{.8in}
 
-We will use the \texttt{pnorm} function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic calculated in question 3 at \texttt{xx} in line 18; highlight and run lines 18--20. Notice that in line 20 it says \texttt{lower.tail\ =\ FALSE}. \texttt{R} will calculate the p-value \emph{greater} than the value of the standardized statistic.
+We will use the \texttt{pnorm()} function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic calculated in question 3 at \texttt{xx} in line 18; highlight and run lines 18--20. Notice that in line 20 it says \texttt{lower.tail\ =\ FALSE}. \texttt{R} will calculate the p-value \emph{greater} than the value of the standardized statistic.
 
 Notes:
 
@@ -5596,7 +5596,7 @@ To find the confidence interval, we will add and subtract the \textbf{margin of 
 \[\text{point estimate}\pm\text{margin of error}\]
 \[\hat{p}\pm z^* SE(\hat{p})\]
 
-The \(z^*\) multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 95\%, we find the Z values that encompass the middle 95\% of the standard normal distribution. If 95\% of the standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail. The \texttt{qnorm} function in \texttt{R} will tell us the \(z^*\) value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile).
+The \(z^*\) multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 95\%, we find the Z values that encompass the middle 95\% of the standard normal distribution. If 95\% of the standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail. The \texttt{qnorm()} function in \texttt{R} will tell us the \(z^*\) value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6643,7 +6643,7 @@ SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})\left(\frac{1}{n
 
 \vspace{1in}
 
-We will use the \texttt{pnorm} function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic found in question 17 at \texttt{xx} in line 27; highlight and run lines 27--29.
+We will use the \texttt{pnorm()} function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic found in question 17 at \texttt{xx} in line 27; highlight and run lines 27--29.
 
 \begin{Shaded}
 \begin{Highlighting}[]
