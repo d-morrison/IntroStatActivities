@@ -130,6 +130,7 @@
 
 \newcommand\latexcode[1]{#1}
 
+% Format chapter titles and spacing
 \renewcommand*{\chaptername}{Activity}
 
 \titleformat{\chapter}[display]
@@ -876,8 +877,6 @@ In the Martian Alphabet \texttt{R} script file for the \texttt{one\_proportion\_
 \end{enumerate}
 
 \vspace{0.3in}
-
-\newpage
 
 \hypertarget{take-home-messages}{%
 \subsection{Take-home messages}\label{take-home-messages}}
@@ -2487,6 +2486,7 @@ The \texttt{favstats()} function from the \texttt{mosaic} package gives the summ
 
 \begin{Shaded}
 \begin{Highlighting}[]
+\CommentTok{\# Read in data set}
 \NormalTok{movies \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/Movies2016.csv"}\NormalTok{) }
 \NormalTok{movies }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Data set piped into...}
 \StringTok{  }\KeywordTok{summarise}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(imdb\_score)) }\CommentTok{\# Apply favstats function to imdb\_score}
@@ -3425,9 +3425,9 @@ Number of likes a movie receives on Facebook\strut
 \bottomrule
 \end{longtable}
 
-\hypertarget{vocabulary-review.-complete-q1q4-before-class.-1}{%
-\subsubsection*{Vocabulary review. Complete Q1--Q4 before class.}\label{vocabulary-review.-complete-q1q4-before-class.-1}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1--Q4 before class.}
+\hypertarget{vocabulary-review.-complete-q1q5-before-class.}{%
+\subsubsection*{Vocabulary review. Complete Q1--Q5 before class.}\label{vocabulary-review.-complete-q1q5-before-class.}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1--Q5 before class.}
 
 Note: You will need to use the provided \texttt{R} script file for Activity 5 to complete question 3.
 
@@ -3435,7 +3435,7 @@ Note: You will need to use the provided \texttt{R} script file for Activity 5 to
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  What type of plot should used to display the relationship between \texttt{budget\_mil} and \texttt{revenue\_mil}?
+  What type of plot should be used to display the relationship between \texttt{budget\_mil} and \texttt{revenue\_mil}?
 \end{enumerate}
 
 \vspace{0.2in}
@@ -3472,7 +3472,7 @@ We will look at the relationship between budget and revenue for movies released 
   Sketch the scatterplot created from the code.
 \end{enumerate}
 
-\vspace{1.8in}
+\vspace{2in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3596,7 +3596,7 @@ Correlation measures the strength and the direction of the linear relationship b
   Does your answer to question 8 match the direction you choose in question 4?
 \end{enumerate}
 
-\vspace{0.2in}
+\vspace{0.3in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3958,11 +3958,13 @@ True or False: When conducting a simulation-based hypothesis test, the null hypo
 \item
   What are the two possible explanations for how these data could have occurred?
   \rgs
+  \rgs
 \item
   Of the two explanations, which is the null and which is the alternative hypothesis?
   \rgs
 \item
   How could coins be used to create a simulation of what should happen if everyone in the class was just guessing?
+  \rgs
   \rgs
   \rgs
 \item
@@ -4279,8 +4281,10 @@ Standardized statistic/standardized sample proportion:
 \item
   What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
   \rgs
+  \rgs
 \item
   Write the null and alternative hypotheses in words.
+  \rgs
   \rgs
 \item
   Write the null and alternative hypotheses in notation.
@@ -4288,11 +4292,15 @@ Standardized statistic/standardized sample proportion:
 \item
   To simulate the null distribution, we would not be able to use coins. Why or why not?
   \rgs
+  \rgs
 \item
   How could we use cards to simulate 1 sample which assumes the null hypothesis is true? How many blue cards --- to represent what? How many red cards --- to represent what? How many times would we draw a card and replace it back in the deck? What would you record once you completed the draw-with-replacement process?
   \rgs
+  \rgs
+  \rgs
 \item
   How can we calculate a p-value from the simulated null distribution for this example?
+  \rgs
   \rgs
 \item
   What was the p-value of the test?
@@ -4303,11 +4311,13 @@ Standardized statistic/standardized sample proportion:
 \item
   What conclusion should the researcher make?
   \rgs
+  \rgs
 \item
   Are the results in this example statistically significant? Justify your answer.
   \rgs
 \item
   Are the conditions met to use theoretical methods to analyze these data?
+  \rgs
   \rgs
 \end{enumerate}
 
@@ -4320,8 +4330,10 @@ Standardized statistic/standardized sample proportion:
 \item
   What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
   \rgs
+  \rgs
 \item
   Write the null and alternative hypotheses in words.
+  \rgs
   \rgs
 \item
   Write the null and alternative hypotheses in notation.
@@ -4329,8 +4341,10 @@ Standardized statistic/standardized sample proportion:
 \item
   Are the conditions met to use theoretical methods to analyze these data?
   \rgs
+  \rgs
 \item
   Calculate the null standard error of the sample proportion.
+  \rgs
   \rgs
 \item
   What is the sample statistic presented in this example? What notation would be used to represent this value?
@@ -4338,8 +4352,10 @@ Standardized statistic/standardized sample proportion:
 \item
   Calculate the standardized sample proportion.
   \rgs
+  \rgs
 \item
   How can we calculate a p-value from the normal distribution for this example?
+  \rgs
   \rgs
 \item
   What was the p-value of the test?
@@ -4349,6 +4365,7 @@ Standardized statistic/standardized sample proportion:
   \rgs
 \item
   What conclusion should the researcher make?
+  \rgs
   \rgs
 \item
   Are the results in this example statistically significant? Justify your answer.
@@ -4412,7 +4429,7 @@ We will work through a six-step process to complete a hypothesis test for a sing
 \item
   \textbf{Summarize and visualize the data}. Calculate summary statistics and create graphical plots that best represent the research question.
 \item
-  \textbf{Use statistical analysis methods to draw inferences from the data}. Choose an statistical inference method appropriate for the data and identify the p-value and/or confidence interval after checking assumptions. In this study, we will focus on using randomization to generate a simulated p-value.
+  \textbf{Use statistical analysis methods to draw inferences from the data}. Choose a statistical inference method appropriate for the data and identify the p-value and/or confidence interval after checking assumptions. In this study, we will focus on using randomization to generate a simulated p-value.
 \item
   \textbf{Communicate the results and answer the research question}. Using the p-value and confidence interval from the analysis, determine whether the data provide statistical evidence against the null hypothesis. Write a conclusion that addresses the research question.
 \item
@@ -4507,7 +4524,8 @@ Before using statistical inference methods, we must check that the cases are ind
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{handedness \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/Male\_boxers\_sample.csv"}\NormalTok{) }\CommentTok{\# Read in data set}
+ \CommentTok{\# Read in data set}
+\NormalTok{handedness \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/Male\_boxers\_sample.csv"}\NormalTok{)}
 \NormalTok{handedness }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\KeywordTok{count}\NormalTok{(Stance)  }\CommentTok{\# Count number in each Stance category}
 \end{Highlighting}
 \end{Shaded}
@@ -4728,11 +4746,11 @@ We will use the \texttt{one\_proportion\_test()} function in \texttt{R} (in the 
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{one\_proportion\_test}\NormalTok{(}\DataTypeTok{probability\_success =}\NormalTok{ xx, }\CommentTok{\# Null hypothesis value}
-                    \DataTypeTok{sample\_size =}\NormalTok{ xx, }\CommentTok{\# Enter sample size}
-                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Enter number of simulations}
-                    \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx, }\CommentTok{\# Observed statistic}
-                    \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Specify direction of alternative hypothesis}
-                    \DataTypeTok{report\_value =} \StringTok{"proportion"}\NormalTok{) }\CommentTok{\# Reporting proportion or number of successes?}
+          \DataTypeTok{sample\_size =}\NormalTok{ xx, }\CommentTok{\# Enter sample size}
+          \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Enter number of simulations}
+          \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx, }\CommentTok{\# Observed statistic}
+          \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Specify direction of alternative hypothesis}
+          \DataTypeTok{report\_value =} \StringTok{"proportion"}\NormalTok{) }\CommentTok{\# Reporting proportion or number of successes?}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4939,7 +4957,7 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 \setcounter{enumi}{3}
 \tightlist
 \item
-  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the \(x\)-axis of the standard normal distribution displayed in Figure \ref{fig:simpleNormal}, and mark on the value of the standardized statistic calculated in question 3.
+  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the \(x\)-axis of the standard normal distribution displayed in Figure \ref{fig:simpleNormal}, and also mark the value of the standardized statistic calculated in question 3.
 \end{enumerate}
 
 \vspace{0.2in}
@@ -5065,6 +5083,7 @@ Margin of error:
   \rgs
 \item
   Interpret the 95\% confidence interval provided in the textbook.
+  \rgs
   \rgs
 \item
   The formula for the interval is 34/38 \(\pm\) (2\$\times\$0.08) = 0.89 \(\pm\) 0.16. Calculating that, you should get (0.73, 1.05). Why was the interval shown in the textbook (0.73, 1) instead of (0.73, 1.05)?
@@ -5205,18 +5224,22 @@ Margin of error of a confidence interval for a sample proportion:
 \item
   What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
   \rgs
+  \rgs
 \item
-  How could we use cards to simulate \textbf{1} bootstrapped resample? How many blue cards --- to represent what? How many red cards --- to represent what? How many times would we draw a card and replace it back in the deck? What would you record once you completed the draw-with-replacement process?
+  How could we use cards to simulate \textbf{one} bootstrapped resample? How many blue cards --- to represent what? How many red cards --- to represent what? How many times would we draw a card and replace it back in the deck? What would you record once you completed the draw-with-replacement process?
+  \rgs
   \rgs
   \rgs
 \item
   Interpret the 95\% confidence interval provided in the textbook.
+  \rgs
   \rgs
 \item
   Are the results in this example statistically significant? Justify your answer.
   \rgs
 \item
   Are the conditions met to use theoretical methods to analyze these data?
+  \rgs
   \rgs
 \end{enumerate}
 
@@ -5229,8 +5252,10 @@ Margin of error of a confidence interval for a sample proportion:
 \item
   What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
   \rgs
+  \rgs
 \item
   Are the conditions met to use theoretical methods to analyze these data?
+  \rgs
   \rgs
 \item
   What is the sample statistic presented in this example? What notation would be used to represent this value?
@@ -5238,14 +5263,18 @@ Margin of error of a confidence interval for a sample proportion:
 \item
   Calculate the standard error of the sample proportion when we do not assume the null hypothesis is true.
   \rgs
+  \rgs
 \item
   Calculate the margin of error for a 95\% confidence interval for \(\pi\) using 1.96 as the multiplier.
+  \rgs
   \rgs
 \item
   Calculate a 95\% confidence interval for \(\pi\) using your margin of error calculated above.
   \rgs
+  \rgs
 \item
   Interpret the 95\% confidence interval provided in the textbook.
+  \rgs
   \rgs
 \item
   Are the results in this example statistically significant? Justify your answer.
@@ -5290,7 +5319,7 @@ To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5
 
 Last week, we found very strong evidence that the true proportion of male boxers who are left-handed is greater than the general population, 0.1. But what \emph{is} the true proportion of male boxers who are left-handed? We will use this same study to estimate this parameter of interest.
 
-A \textbf{point estimate} (our observed statistic) provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible \emph{range} of values for the parameter. This plausible range of values for the population parameter is called an \textbf{interval estimate} or **confidence interval.
+A \textbf{point estimate} (our observed statistic) provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible \emph{range} of values for the parameter. This plausible range of values for the population parameter is called an \textbf{interval estimate} or \textbf{confidence interval}.
 
 As a reminder: left-handedness is a trait that is found in about 10\% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition. Using the data from this random sample of 500 male boxers, we want to estimate, with a given level of confidence, the true proportion of male boxers who are left-handed.
 
@@ -6393,7 +6422,8 @@ These counts can be found in \texttt{R} by using the \texttt{count()} function:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{injury \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/HeadInjuries.csv"}\NormalTok{) }\CommentTok{\# Read data set in}
+\CommentTok{\# Read data set in}
+\NormalTok{injury \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/HeadInjuries.csv"}\NormalTok{) }
 \NormalTok{injury \textless{}{-}}\StringTok{ }\CommentTok{\# Write over original data with the following}
 \StringTok{  }\NormalTok{injury }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Pipe data set into}
 \StringTok{  }\KeywordTok{mutate}\NormalTok{(Helmet \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(Helmet),}
@@ -6414,8 +6444,8 @@ These counts can be found in \texttt{R} by using the \texttt{count()} function:
 #> 4 Yes    No Head Injury   656
 \end{verbatim}
 
-\hypertarget{vocabulary-review.-complete-q1q4-before-class.-2}{%
-\subsubsection*{Vocabulary review. Complete Q1--Q4 before class.}\label{vocabulary-review.-complete-q1q4-before-class.-2}}
+\hypertarget{vocabulary-review.-complete-q1q4-before-class.-1}{%
+\subsubsection*{Vocabulary review. Complete Q1--Q4 before class.}\label{vocabulary-review.-complete-q1q4-before-class.-1}}
 \addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1--Q4 before class.}
 
 \begin{enumerate}
@@ -6882,11 +6912,11 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{two\_proportion\_test}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{Helmet, }\CommentTok{\# response \textasciitilde{} explanatory}
-    \DataTypeTok{data=}\NormalTok{ injury, }\CommentTok{\# Name of dataset}
+    \DataTypeTok{data=}\NormalTok{ injury, }\CommentTok{\# Name of data set}
     \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Order of subtraction: enter the name of Group 1}
     \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Always use a minimum of 1000 repetitions}
     \DataTypeTok{response\_value\_numerator =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Define which outcome is a success }
-    \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx, }\CommentTok{\# Type your calculated observed statistic (difference in sample proportions)}
+    \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx, }\CommentTok{\# Calculated observed statistic (difference in sample proportions)}
     \DataTypeTok{direction=}\StringTok{"xx"}\NormalTok{) }\CommentTok{\# Alternative hypothesis direction ("greater","less","two{-}sided")}
 \end{Highlighting}
 \end{Shaded}
@@ -7476,7 +7506,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{two\_proportion\_bootstrap\_CI}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{Helmet, }
-        \DataTypeTok{data=}\NormalTok{injury, }\CommentTok{\# Name of dataset}
+        \DataTypeTok{data=}\NormalTok{injury, }\CommentTok{\# Name of data set}
         \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Order of subtraction: enter the name of Group 1}
         \DataTypeTok{response\_value\_numerator =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Define which outcome is a success }
         \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Always use a minimum of 1000 repetitions}
@@ -8164,8 +8194,8 @@ Differences & \(\bar{x}_d\) = \(-4.152\) & \(s_d\) = 17.096 & \(n_d\) = 33\tabul
 
 \newpage
 
-\hypertarget{vocabulary-review.-complete-q1q5-before-class.}{%
-\subsubsection*{Vocabulary review. Complete Q1--Q5 before class.}\label{vocabulary-review.-complete-q1q5-before-class.}}
+\hypertarget{vocabulary-review.-complete-q1q5-before-class.-1}{%
+\subsubsection*{Vocabulary review. Complete Q1--Q5 before class.}\label{vocabulary-review.-complete-q1q5-before-class.-1}}
 \addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1--Q5 before class.}
 
 \begin{enumerate}
@@ -8315,7 +8345,8 @@ To simulate the null distribution of paired sample mean differences we will use 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-    \KeywordTok{paired\_test}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Air}\OperatorTok{$}\NormalTok{Difference,   }\CommentTok{\# Vector of differences or data set with column for each group}
+    \KeywordTok{paired\_test}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Air}\OperatorTok{$}\NormalTok{Difference,   }\CommentTok{\# Vector of differences }
+                                         \CommentTok{\# or data set with column for each group}
             \DataTypeTok{shift =}\NormalTok{ xx,   }\CommentTok{\# Shift needed for bootstrap hypothesis test}
             \DataTypeTok{as\_extreme\_as =}\NormalTok{ yy,  }\CommentTok{\# Observed statistic}
             \DataTypeTok{direction =} \StringTok{"less"}\NormalTok{,  }\CommentTok{\# Direction of alternative}
@@ -8332,7 +8363,7 @@ To simulate the null distribution of paired sample mean differences we will use 
   Sketch the null distribution created in question 13 here.
 \end{enumerate}
 
-\vspace{2in}
+\vspace{1.9in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9030,6 +9061,7 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
+\CommentTok{\# Read in data set}
 \NormalTok{Snow \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/SnowfallByWeatherPattern.csv"}\NormalTok{)}
 
 \CommentTok{\# Code categorical variables as factors}
@@ -9969,8 +10001,8 @@ Some of the variables collected in the data set \texttt{baseball} consist of the
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{vocabulary-review.-complete-q1q4-before-class.-3}{%
-\subsubsection*{Vocabulary review. Complete Q1--Q4 before class.}\label{vocabulary-review.-complete-q1q4-before-class.-3}}
+\hypertarget{vocabulary-review.-complete-q1q4-before-class.-2}{%
+\subsubsection*{Vocabulary review. Complete Q1--Q4 before class.}\label{vocabulary-review.-complete-q1q4-before-class.-2}}
 \addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1--Q4 before class.}
 
 \begin{enumerate}
@@ -9987,7 +10019,8 @@ Some of the variables collected in the data set \texttt{baseball} consist of the
 \StringTok{  }\KeywordTok{geom\_point}\NormalTok{() }\OperatorTok{+}\StringTok{  }\CommentTok{\# Add scatterplot of points}
 \StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Difference in number of runs"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
        \DataTypeTok{y =} \StringTok{"Number of wins"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
-       \DataTypeTok{title =} \StringTok{"Scatterplot of Run Difference vs. Number of Wins"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{\# Be sure to tile your plots}
+       \DataTypeTok{title =} \StringTok{"Scatterplot of Run Difference vs. Number of Wins"}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{               }\CommentTok{\# Be sure to tile your plots}
 \StringTok{  }\KeywordTok{geom\_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
 \end{Highlighting}
 \end{Shaded}
@@ -10422,10 +10455,10 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{regression\_bootstrap\_CI}\NormalTok{(W }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{RD, }\CommentTok{\# response \textasciitilde{} explanatory}
-     \DataTypeTok{data =}\NormalTok{ baseball, }\CommentTok{\# Name of data set}
-     \DataTypeTok{confidence\_level =}\NormalTok{ xx, }\CommentTok{\# Confidence level as decimal}
-     \DataTypeTok{statistic =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Slope or correlation}
-     \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{\# Number of simulated samples for bootstrap distribution}
+   \DataTypeTok{data =}\NormalTok{ baseball, }\CommentTok{\# Name of data set}
+   \DataTypeTok{confidence\_level =}\NormalTok{ xx, }\CommentTok{\# Confidence level as decimal}
+   \DataTypeTok{statistic =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Slope or correlation}
+   \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{\# Number of simulated samples for bootstrap distribution}
 \end{Highlighting}
 \end{Shaded}
 

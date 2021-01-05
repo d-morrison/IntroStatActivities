@@ -587,7 +587,8 @@ Before using statistical inference methods, we must check that the cases are ind
 <!-- ``` -->
 
 ```{r, echo=TRUE, collapse=FALSE, message=FALSE, warning=FALSE}
-handedness <- read.csv("https://math.montana.edu/courses/s216/data/Male_boxers_sample.csv") # Read in data set
+ # Read in data set
+handedness <- read.csv("https://math.montana.edu/courses/s216/data/Male_boxers_sample.csv")
 handedness %>% count(Stance)  # Count number in each Stance category
 ```
 
@@ -692,11 +693,11 @@ We will use the `one_proportion_test()` function in `R` (in the `catstats` packa
 
 ```{r, echo=TRUE, eval = FALSE}
 one_proportion_test(probability_success = xx, # Null hypothesis value
-                    sample_size = xx, # Enter sample size
-                    number_repetitions = 1000, # Enter number of simulations
-                    as_extreme_as = xx, # Observed statistic
-                    direction = "xx", # Specify direction of alternative hypothesis
-                    report_value = "proportion") # Reporting proportion or number of successes?
+          sample_size = xx, # Enter sample size
+          number_repetitions = 1000, # Enter number of simulations
+          as_extreme_as = xx, # Observed statistic
+          direction = "xx", # Specify direction of alternative hypothesis
+          report_value = "proportion") # Reporting proportion or number of successes?
 ```
 
 19. Sketch the null distribution created from the `R` code here.

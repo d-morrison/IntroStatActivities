@@ -369,7 +369,8 @@ baseball <- # Write over original data with the following
       geom_point() +  # Add scatterplot of points
       labs(x = "Difference in number of runs",  # Label x-axis
            y = "Number of wins",  # Label y-axis
-           title = "Scatterplot of Run Difference vs. Number of Wins") + # Be sure to tile your plots
+           title = "Scatterplot of Run Difference vs. Number of Wins") + 
+                   # Be sure to tile your plots
       geom_smooth(method = "lm", se = FALSE)  # Add regression line
     ```
 
@@ -609,10 +610,10 @@ We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` p
 
 ```r
 regression_bootstrap_CI(W ~ RD, # response ~ explanatory
-     data = baseball, # Name of data set
-     confidence_level = xx, # Confidence level as decimal
-     statistic = "xx", # Slope or correlation
-     number_repetitions = 1000) # Number of simulated samples for bootstrap distribution
+   data = baseball, # Name of data set
+   confidence_level = xx, # Confidence level as decimal
+   statistic = "xx", # Slope or correlation
+   number_repetitions = 1000) # Number of simulated samples for bootstrap distribution
 ```
 4.  Report the bootstrap 95\% confidence interval in interval notation.  
 \vspace{0.5in}

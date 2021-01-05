@@ -258,6 +258,7 @@ The `favstats()` function from the `mosaic` package gives the summary statistics
 
 
 ```r
+# Read in data set
 movies <- read.csv("https://math.montana.edu/courses/s216/data/Movies2016.csv") 
 movies %>% # Data set piped into...
   summarise(favstats(imdb_score)) # Apply favstats function to imdb_score

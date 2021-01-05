@@ -601,7 +601,8 @@ In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by S
 These counts can be found in `R` by using the `count()` function:
 
 ```r
-injury <- read.csv("https://math.montana.edu/courses/s216/data/HeadInjuries.csv") # Read data set in
+# Read data set in
+injury <- read.csv("https://math.montana.edu/courses/s216/data/HeadInjuries.csv") 
 injury <- # Write over original data with the following
   injury %>% # Pipe data set into
   mutate(Helmet <- factor(Helmet),
@@ -891,11 +892,11 @@ Using the `R` script file for this activity, enter your answers for question 4 i
 
 ```r
 two_proportion_test(formula = Outcome ~ Helmet, # response ~ explanatory
-    data= injury, # Name of dataset
+    data= injury, # Name of data set
     first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
     number_repetitions = 1000, # Always use a minimum of 1000 repetitions
     response_value_numerator = "xx", # Define which outcome is a success 
-    as_extreme_as = xx, # Type your calculated observed statistic (difference in sample proportions)
+    as_extreme_as = xx, # Calculated observed statistic (difference in sample proportions)
     direction="xx") # Alternative hypothesis direction ("greater","less","two-sided")
 ```
 

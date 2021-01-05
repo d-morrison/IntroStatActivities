@@ -609,7 +609,8 @@ To simulate the null distribution of paired sample mean differences we will use 
 13.  We will use the `paired_test()` function in `R` (in the `catstats` package) to simulate the shifted bootstrap (null) distribution of sample mean differences and compute a p-value. Use the provided `R` script file and enter the calculated value from question 12 for `xx` to simulate the null distribution and enter the summary statistic from question 10 for `yy` to find the p-value.  Highlight and run lines 1--21.
 
 ```{r, echo=TRUE, eval=FALSE, warning = FALSE}
-    paired_test(data = Air$Difference,   # Vector of differences or data set with column for each group
+    paired_test(data = Air$Difference,   # Vector of differences 
+                                         # or data set with column for each group
             shift = xx,   # Shift needed for bootstrap hypothesis test
             as_extreme_as = yy,  # Observed statistic
             direction = "less",  # Direction of alternative
@@ -620,7 +621,7 @@ To simulate the null distribution of paired sample mean differences we will use 
 
 14. Sketch the null distribution created in question 13 here.
 
-\vspace{2in}
+\vspace{1.9in}
 
 15. Explain why the null distribution is centered at zero. 
 

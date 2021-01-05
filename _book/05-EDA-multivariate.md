@@ -480,13 +480,13 @@ We will revisit the data set used last week collected on Movies released in 2016
 | `movie_facebook_likes` | Number of likes a movie receives on Facebook |
 
 
-#### Vocabulary review. Complete Q1--Q4 before class.{-}
+#### Vocabulary review. Complete Q1--Q5 before class.{-}
 
 Note: You will need to use the provided `R` script file for Activity 5 to complete question 3.
 
 
 
-1.  What type of plot should used to display the relationship between `budget_mil` and `revenue_mil`?
+1.  What type of plot should be used to display the relationship between `budget_mil` and `revenue_mil`?
 
 \vspace{0.2in}
 
@@ -508,7 +508,7 @@ ggplot(aes(x = xx, y = yy))+  # Specify variables
 ```
 3. Sketch the scatterplot created from the code.
 
-\vspace{1.8in}
+\vspace{2in}
 
 4. Assess the four features of the scatterplot that describe this relationship. Describe each feature using a complete sentence!
 
@@ -579,7 +579,7 @@ movies %>%  # Data set pipes into
 
 9.  Does your answer to question 8 match the direction you choose in question 4?
 
-\vspace{0.2in}
+\vspace{0.3in}
 
 10.  Explain why the correlation values on the diagonal are equal to 1.
 

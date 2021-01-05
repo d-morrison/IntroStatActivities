@@ -129,13 +129,14 @@ $SD(\hat{p})$ =
 
 2. What are the two possible explanations for how these data could have occurred? 
 \rgs
-
+\rgs
 
 3. Of the two explanations, which is the null and which is the alternative hypothesis?
 \rgs
 
 
 4. How could coins be used to create a simulation of what should happen if everyone in the class was just guessing?
+\rgs
 \rgs
 \rgs
 
@@ -406,8 +407,10 @@ $Z$ =
 
 2. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
+\rgs
 
 3. Write the null and alternative hypotheses in words.
+\rgs
 \rgs
 
 4. Write the null and alternative hypotheses in notation.
@@ -416,12 +419,16 @@ $Z$ =
 
 5. To simulate the null distribution, we would not be able to use coins.  Why or why not?
 \rgs
+\rgs
 
 
 6. How could we use cards to simulate 1 sample which assumes the null hypothesis is true?  How many blue cards --- to represent what?  How many red cards --- to represent what?  How many times would we draw a card and replace it back in the deck?  What would you record once you completed the draw-with-replacement process?
 \rgs
+\rgs
+\rgs
 
 7. How can we calculate a p-value from the simulated null distribution for this example?
+\rgs
 \rgs
 
 
@@ -433,11 +440,13 @@ $Z$ =
 
 10. What conclusion should the researcher make?
 \rgs
+\rgs
 
 11. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
 12.	Are the conditions met to use theoretical methods to analyze these data?
+\rgs
 \rgs
 
 
@@ -445,8 +454,10 @@ $Z$ =
 
 1. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
+\rgs
 
 3. Write the null and alternative hypotheses in words.
+\rgs
 \rgs
 
 4. Write the null and alternative hypotheses in notation.
@@ -454,8 +465,10 @@ $Z$ =
 	
 4. Are the conditions met to use theoretical methods to analyze these data?
 \rgs
+\rgs
 
 5. Calculate the null standard error of the sample proportion.
+\rgs
 \rgs
 
 6. What is the sample statistic presented in this example?  What notation would be used to represent this value?
@@ -463,8 +476,10 @@ $Z$ =
 
 7. Calculate the standardized sample proportion.
 \rgs
+\rgs
 
 8. How can we calculate a p-value from the normal distribution for this example?
+\rgs
 \rgs
 
 9. What was the p-value of the test? 
@@ -474,6 +489,7 @@ $Z$ =
 \rgs
 
 11. What conclusion should the researcher make?
+\rgs
 \rgs
 
 12. Are the results in this example statistically significant?  Justify your answer.
@@ -524,7 +540,7 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 * **Summarize and visualize the data**. Calculate summary statistics and create graphical plots that best represent the research question.
 
-* **Use statistical analysis methods to draw inferences from the data**. Choose an statistical inference method appropriate for the data and identify the p-value and/or confidence interval after checking assumptions. In this study, we will focus on using randomization to generate a simulated p-value.
+* **Use statistical analysis methods to draw inferences from the data**. Choose a statistical inference method appropriate for the data and identify the p-value and/or confidence interval after checking assumptions. In this study, we will focus on using randomization to generate a simulated p-value.
 
 * **Communicate the results and answer the research question**. Using the p-value and confidence interval from the analysis, determine whether the data provide statistical evidence against the null hypothesis. Write a conclusion that addresses the research question.
 
@@ -582,7 +598,8 @@ Before using statistical inference methods, we must check that the cases are ind
 
 
 ```r
-handedness <- read.csv("https://math.montana.edu/courses/s216/data/Male_boxers_sample.csv") # Read in data set
+ # Read in data set
+handedness <- read.csv("https://math.montana.edu/courses/s216/data/Male_boxers_sample.csv")
 handedness %>% count(Stance)  # Count number in each Stance category
 ```
 
@@ -694,11 +711,11 @@ We will use the `one_proportion_test()` function in `R` (in the `catstats` packa
 
 ```r
 one_proportion_test(probability_success = xx, # Null hypothesis value
-                    sample_size = xx, # Enter sample size
-                    number_repetitions = 1000, # Enter number of simulations
-                    as_extreme_as = xx, # Observed statistic
-                    direction = "xx", # Specify direction of alternative hypothesis
-                    report_value = "proportion") # Reporting proportion or number of successes?
+          sample_size = xx, # Enter sample size
+          number_repetitions = 1000, # Enter number of simulations
+          as_extreme_as = xx, # Observed statistic
+          direction = "xx", # Specify direction of alternative hypothesis
+          report_value = "proportion") # Reporting proportion or number of successes?
 ```
 
 19. Sketch the null distribution created from the `R` code here.
@@ -815,7 +832,7 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 \caption{A standard normal curve.}(\#fig:simpleNormal)
 \end{figure}
 
-4.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the $x$-axis of the standard normal distribution displayed in Figure \@ref(fig:simpleNormal), and mark on the value of the standardized statistic calculated in question 3.
+4.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the $x$-axis of the standard normal distribution displayed in Figure \@ref(fig:simpleNormal), and also mark the value of the standardized statistic calculated in question 3.
 
 \vspace{0.2in}
 
