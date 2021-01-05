@@ -32,7 +32,7 @@ Point estimate: other names for the statistic from a sample; our best guess for 
 
 Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
 
-Standard deviation of a statistic: the variability of statistics from 1000s of samples.  How far, on average, each statistic is from the true value of the parameter.
+Standard deviation of a statistic: the variability of statistics from 1000s of samples; how far, on average, each statistic is from the true value of the parameter.
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
@@ -114,7 +114,7 @@ In section 5.4.4, read only the sub-section on "Confidence interval for $\pi_1 -
 
 #### Reminders from previous sections {-}
 
-Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately normal (bell-shaped and symmetric).
 
 #### Notes {-}
 
@@ -217,11 +217,11 @@ The summary results from a random sample of 3562 skiers and snowboarders involve
 
 In this activity we will focus on theory-based methods to calculate a confidence interval.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
-Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$:
+Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an approximate normal distribution:
 
-* Independence: The data are independent within and between the two groups.
+* **Independence**: The data are independent within and between the two groups. (*Remember*: This also must be true to use simulation methods!)
 
-* Success-Failure Condition: For a confidence interval, the success-failure condition holds for each group.  All cells in the table have at least 10 observations.
+* **Success-failure condition**: The success-failure condition holds for each group. Since we are not assuming a null hypothesis, we do not use the pooled sample proportion to check this condition as we did in Activity 8. Instead, we use the individual sample proportions $\hat{p}_1$ and $\hat{p}_2$. Equivalently, we check that all cells in the table have at least 10 observations.
 
 
 4. In activity 8, we saw that the independence condition was met since the study used a random sample.  Is the success-failure condition to find the confidence interval met for each group?  Explain your answer.

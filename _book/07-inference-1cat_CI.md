@@ -73,7 +73,7 @@ Standard deviation of a statistic: the variability of statistics from 1000s of s
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
-Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric).
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately normal (bell-shaped and symmetric).
 
 
 #### Vocabulary {-}

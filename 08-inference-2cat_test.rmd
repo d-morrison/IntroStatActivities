@@ -31,43 +31,44 @@ General steps of a hypothesis test:
 
 5. Make a conclusion based on the p-value and write the conclusion in context.
 
-Parameter: a value summarizing a variable(s) for a population
+Parameter: a value summarizing a variable(s) for a population.
 
-Statistic: a value summarizing a variable(s) for a sample
+Statistic: a value summarizing a variable(s) for a sample.
 
 Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
 
-Standard deviation of a statistic: the variability of statistics from 1000s of samples.  How far, on average, each statistic is from the true value of the parameter.
+Standard deviation of a statistic: the variability of statistics from 1000s of samples; how far, on average, each statistic is from the true value of the parameter.
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
-Hypothesis test: a process to determine how strong the evidence of an effect is
+Hypothesis test: a process to determine how strong the evidence of an effect is.
 		
-\rgi Also called a ‘significance test’
+\rgi Also called a ‘significance test’.
 
-Simulation-based method: Simulate lots of samples of size n, then find the proportion of the simulations that are at least as extreme as the observed sample statistic
+Simulation-based method: Simulate lots of samples of size $n$ under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
 
-Theory-based method: Develop a mathematical model for the statistic and use the model to calculate the probability of the observed sample statistic occurring 
+Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
 
-Null hypothesis: $H_0$ the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**
+Null hypothesis ($H_0$): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**.
 
-Alternative hypothesis: $H_A$ the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**
+Alternative hypothesis ($H_A$): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**.
 
-Null value: the value of the parameter when we assume the null hypothesis is true (labeled as $parameter_0$)
+Null value: the value of the parameter when we assume the null hypothesis is true (labeled as $parameter_0$).
 
 Null distribution:  the simulated or modeled distribution of statistics (sampling distribution) we would expect to occur if the null hypothesis is true.
 
-P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true
+P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true.
 
-\rgi Lower the p-value the Stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis
+$\implies$ Lower the p-value the stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis.
 
-Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance
+Decision: a determination of whether to 'reject' or 'fail to reject' a null hypothesis based on a p-value and a pre-set level of significance.
 
-Significance level: ($\alpha$) a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not
+Significance level ($\alpha$): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
 
-\rgi Typically use $\alpha$ =0.05
+\rgi Common levels of $\alpha$ include 0.01, 0.05, and 0.10.
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
+
 
 #### Vocabulary {-}
 
@@ -80,15 +81,15 @@ Relative risk:
 One-sided hypothesis test: 
 \rgs
 
-Two-side hypothesis test: 
+Two-sided hypothesis test: 
 \rgs
 
 #### Notes {-}
 
-In a simulation test for two categorical variables, how many cards will you need and how will the cards be labeled?
+In a randomization test involving two categorical variables, how many cards will you need and how will the cards be labeled?
 \rgs
 
-Why, in the simulation test, are the cards all shuffled together and randomly dealt into two new groups?
+Why, in the randomization test, are the cards all shuffled together and randomly dealt into two new groups?
 \rgs
 
 After shuffling, how many cards are dealt into each pile?
@@ -97,8 +98,6 @@ After shuffling, how many cards are dealt into each pile?
 Interpreting relative risk ($RR = \frac{\hat{p_1}}{\hat{p_2}}$)
 
 \rgi The proportion of success in group 1 is ______ times the proportion of success in group 2.
-
-\rgi The proportion of success in group 1 is ______ times higher/lower than in group 2.
 
 \rgi The proportion of success in group 1 is ______ % higher/lower than in group 2.
 
@@ -113,7 +112,7 @@ How does the p-value in a two-sided test compare to the p-value in a one-sided t
 Relative risk = 
 \rgs
 
-#### Notation {-1}
+#### Notation {-}
 Sample size of group 1: 
 \rgs
 
@@ -152,14 +151,14 @@ Population proportion of group 2:
 \rgs
 \rgs
 
-7. Write the null and the alternative hypothesis in words.
+7. Write the null and the alternative hypotheses in words.
 \rgs
 \rgs
 
-8. Write the null and the alternative hypothesis in notation.
+8. Write the null and the alternative hypotheses in notation.
 \rgs
 
-9. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many blue cards – to represent what?  How many red cards – to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+9. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
 
@@ -201,14 +200,14 @@ Population proportion of group 2:
 \rgs
 \rgs
 
-7. Write the null and the alternative hypothesis in words.
+7. Write the null and the alternative hypotheses in words.
 \rgs
 \rgs
 
-8. Write the null and the alternative hypothesis in notation.
+8. Write the null and the alternative hypotheses in notation.
 \rgs
 
-9. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*? How many blue cards – to represent what?  How many red cards – to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+9. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*? How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
 
@@ -251,19 +250,20 @@ Population proportion of group 2:
 
 6. What is the sample relative risk?  Interpret the value in the context of the study.
 \rgs
+\rgs
 
 7. What is the parameter (using a difference in proportion) representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
 \rgs
 
-8. Write the null and the alternative hypothesis in words.
+8. Write the null and the alternative hypotheses in words.
 \rgs
 \rgs
 
-9. Write the null and the alternative hypothesis in notation.
+9. Write the null and the alternative hypotheses in notation.
 \rgs
 
-10. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many blue cards – to represent what?  How many red cards – to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+10. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
 
@@ -290,7 +290,7 @@ Population proportion of group 2:
 
 ### Section 5.4.4 (Theory-based methods for a difference in proportions)  {-}
 
-You may skip the sub-section on "Confidence Interval for $\pi_1 - \pi_2$*". This section will be covered next week.
+You may skip the sub-section on "Confidence Interval for $\pi_1 - \pi_2$". This section will be covered next week.
 
 \setstretch{1}
 
@@ -314,23 +314,24 @@ Population proportion of group 1: $\pi_1$
 
 Population proportion of group 2: $\pi_2$
 
-Test statistic/Point estimate: other names for the statistic from a sample; our best guess for the parameter of interest.
+Test statistic/Point estimate: other names for a statistic from a sample; the point estimate is our best guess for the parameter of interest.
 
-Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately Normal (bell-shaped and symmetric)
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately normal (bell-shaped and symmetric).
 
 #### Notes {-}
 
-Conditions for the CLT to apply for two categorical variables
-1.	Independence: 
+Conditions for the CLT to apply for a difference in proportions
+
+\rgi Independence: 
 \rgs
 
-\rgi a.	Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
-2.	Success/Failure condition: 
+\rgi Success-failure condition: 
 \rgs
 
-\rgi a.	Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
 #### Formulas {-}
@@ -343,7 +344,7 @@ $SE_0(\hat{p_1} - \hat{p_2})=$
 \rgs
 
 Standardized statistic/standardized difference in sample proportions:
-$z=$
+$Z=$
 \rgs
 
 #### Notation {-}
@@ -367,11 +368,11 @@ Overall (pooled) proportion of successes:
 5. What is the parameter (using a difference in proportion) representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
 
-6. Write the null and the alternative hypothesis in words.
+6. Write the null and the alternative hypotheses in words.
 \rgs
 \rgs
 
-7. Write the null and the alternative hypothesis in notation.
+7. Write the null and the alternative hypotheses in notation.
 \rgs
 
 8. Is it valid to use theory-based methods to analyze these data?
@@ -391,7 +392,7 @@ Overall (pooled) proportion of successes:
 \rgs
 \rgs
 
-\rgi *Note: a p-value, p-value interpretation, decision, and conclusion for this example can be found in the Reading Guide solutions for 5.4.1to5.4.2 and 5.4.3.*
+*Note: a p-value, p-value interpretation, decision, and conclusion for this example can be found in the Reading Guide solutions for Sections 5.4.1--5.4.3.*
 
 ### Section 5.5 (Errors, power, and practical importance) {-}
 
@@ -406,24 +407,24 @@ Overall (pooled) proportion of successes:
 
 #### Reminders from previous sections {-}
 
-Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance
+Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance.
 
-\rgi If p-value $< \alpha$, then reject $H_0$
+* If p-value $\leq \alpha$, then reject $H_0$.
 
-\rgi If p-value $> \alpha$, then fail to reject $H_0$
+* If p-value $> \alpha$, then fail to reject $H_0$.
 
-Significance level: ($\alpha$) a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not
+Significance level ($\alpha$): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
 
-\rgi Typically use $\alpha =0.05$
+\rgi Common levels of $\alpha$ include 0.01, 0.05, and 0.10.
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
 #### Vocabulary {-}
 
-Type I error: 
+Type 1 error: 
 \rgs
 
-Type II error: 
+Type 2 error: 
 \rgs
 
 Confirmation bias: 
@@ -432,34 +433,32 @@ Confirmation bias:
 Power: 
 \rgs
 		
-Practical Importance: 
+Practical importance: 
 \rgs
 
 #### Notes {-}
 
-Fill in the following table with whether the decision was correct or not and if not, what type of error was made.
+Fill in the following table with whether the decision was correct or not, and if not, what type of error was made.
 \begin{center}
 \begin{tabular}{|p{2in}|p{2in}|p{2in}|}
 \hline
  & \multicolumn{2}{|c|}{\textbf{Test conclusion (based on data)}} \\ \hline
  \textbf{Truth (unknown)} & Reject null hyp. & Fail to reject null hyp. \\ \hline
- Null hyp. is true && \\ 
- Alt. hyp. is true (null hyp. is false) & & \\ 
-  & & \\
+ $H_0$ is true && \\ 
+   & & \\ 
    & & \\ \hline
-   Non-random sample && \\ 
-   (or other sampling bias) & & \\ 
-  & & \\
+ $H_A$ is true ($H_0$ is false)  && \\ 
+   & & \\ 
    & & \\ \hline
 \end{tabular}
 \end{center}
 
 \rgs
 
-How are significance level and type I error rate related?
+How are the significance level and type I error rate related?
 \rgs
 
-How are significance level and type II error rate related?
+How are the significance level and type II error rate related?
 \rgs
 
 
@@ -501,7 +500,7 @@ Results are unlikely to be statistically significant (but may be practically imp
 
 #### Examples: {-} 
 
-1. In the Gender Discrimination study in the textbook and presented as an example in Reading Guide 5.4.1to5.4.2,
+1. In the Gender Discrimination study in the textbook and presented as an example in Reading Guide 5.4.1--5.4.2,
 
 \rgi a. What was the p-value of the test?
 \rgs
@@ -516,7 +515,7 @@ Results are unlikely to be statistically significant (but may be practically imp
 \rgs
 \rgs
 
-2. In the Opportunity Cost study in the textbook and presented as an example in the reading guide for sections 5.4.1 to 5.4.2,
+2. In the Opportunity Cost study in the textbook and presented as an example in the reading guide for sections 5.4.1--5.4.2,
 
 \rgi a. What was the p-value of the test?
 \rgs
@@ -531,7 +530,7 @@ Results are unlikely to be statistically significant (but may be practically imp
 \rgs
 \rgs
 
-3. In the CPR and blood thinners study in the textbook and presented as an example in the reading guide for sections 5.4.1 to 5.4.2,
+3. In the CPR and Blood Thinners study in the textbook and presented as an example in the reading guide for sections 5.4.1--5.4.2,
 
 \rgi a. What was the p-value of the test?
 \rgs
@@ -585,7 +584,7 @@ In this week's in-class activity, we will use theory-based methods to analyze tw
 
 * Type 1 and Type 2 errors
 
-* Decisions
+* Decision of a hypothesis test
 
 To review these concepts, see Chapter 5 in your textbook.
 
@@ -609,21 +608,20 @@ injury <- # Write over original data with the following
 
 injury %>% group_by(Helmet) %>% count(Outcome)
 ```
-Notice that the name of the explanatory variable is `Helmet` with outcomes `Yes` and `No` and the name of the response variable is `Outcome` with outcomes `Head Injury` and `No Head Injury`.
 
 #### Vocabulary review. Complete Q1--Q4 before class. {-}
 
-1.  What is the explanatory variable?
+1.  What is the name of the explanatory variable in the `R` output? What are its categories?
 
 \vspace{0.3in}
 
-2. What is the response variable?
+2. What is the response variable in the `R` output? What are its categories?
 
 \vspace{0.3in}
 
 3. Is this an experiment or observational study?  Justify your answer.
 
-\newpage
+\vspace{0.5in}
 
 4.  Put an X in the box that represents the appropriate scope of inference for this study.
 
@@ -636,41 +634,39 @@ Notice that the name of the explanatory variable is `Helmet` with outcomes `Yes`
 
 #### Ask a research question {-}
 
-In this study we are looking at the relationship between two groups or two parameters ($\pi_1$ and $\pi_2$).  Remember we define the parameter for a categorical variable as the true proportion of observational units that are labeled as a "success" in the response variable.  
+The research question as stated above is: Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders? In order to set up our hypotheses, we need to express this research question in terms of parameters. 
+Remember, we define the parameter for a single categorical variable as the true proportion of observational units that are labeled as a "success" in the response variable.  
 
-5. Write the two parameters of interest for this study.  Let 1 = skier/snowboarder wore helmet, 2 = skier/snowboarder did not wear helmet.
+5. Write the two parameters of interest for this study.  Let 1 = skier/snowboarder wore helmet, 2 = skier/snowboarder did not wear helmet. 
 \vspace{1mm}
 
-   $\pi_1$ - 
+   $\pi_1$ --- 
 \vspace{0.5in}
 
-   $\pi_2$ - 
+   $\pi_2$ ---
 \vspace{0.5in}
 
 When comparing two groups, we assume the two parameters are equal in the null hypothesis---there is no association between the variables.
 
 6.  Write the null hypothesis out in words using your answers to question 5.
 
-\vspace{0.81in}
+\vspace{0.8in}
 
-7.  What is the research question?
 
-\vspace{0.5in}
-
-8. Based on the research question fill in the appropriate sign for the alternative hypothesis ($<$, $>$, or $\neq$):
+8. Based on the research question, fill in the appropriate sign for the alternative hypothesis ($<$, $>$, or $\neq$):
 \vspace{0.25in}
 
 |           $H_A: \pi_1 -\pi_2$ __________ 0
 
 
-\newpage 
+ 
 #### Summarize and visualize the data {-}
 
-9. Using the two-way table, calculate the conditional proportion of skiers/snowboarders that wore a helmet with a head injury.
+9. Using the two-way table above, calculate the conditional proportion of helmet-wearing skiers/snowboarders that sustained a head injury.
 
 \vspace{.3in}
 
-10. Using the two-way table, calculate the conditional proportion of skiers/snowboarders that did not wear a helmet with a head injury.
+10. Using the two-way table above, calculate the conditional proportion of non-helmet-wearing skiers/snowboarders that sustained a head injury.
 
 \vspace{.3in}
 
@@ -687,7 +683,7 @@ ggplot(aes(x = Helmet, fill = Outcome)) +   # This specifies the variables
   theme_bw()
 ```
 
-11.  Fill in the blanks on the graph above with the appropriate variables and values to complete the segmented bar plot showing the proportion of head injuries between those who wear helmets and those who do not wear helmets.  *Hint*: Use the conditional proportions from questions 9 and 10.
+11.  Fill in the blanks on the graph above with the appropriate variable names and categories to complete the segmented bar plot comparing the proportion of head injuries between those who wear helmets and those who do not wear helmets.  *Hint*: Use the conditional proportions from questions 9 and 10.
 
 \vspace{1mm}
 
@@ -703,24 +699,26 @@ ggplot(aes(x = Helmet, fill = Outcome)) +   # This specifies the variables
 14. What is the notation used for the value calculated in question 13?
 
 \vspace{0.2in}
-\newpage
+
 
 #### Use statistical analysis methods to draw inferences from the data {-}
 
-To test the null hypothesis we could use simulation methods as we did with a single categorical variable in class. In this in-class activity we will focus on theory-based methods.  Like with a single proportion, the difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
+To test the null hypothesis, we could use simulation-based methods as we did with a single categorical variable in class. In this in-class activity, we will focus on theory-based methods.  Like with a single proportion, the sampling distribution of a difference in sample proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
-Conditions for the sample distribution of $\hat{p}_1-\hat{p}_2$:
+Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an approximate normal distribution:
 
-* Independence: The data are independent within and between the two groups. (*Remember*: This also must be true to use simulation methods!)
+* **Independence**: The data are independent within and between the two groups. (*Remember*: This also must be true to use simulation methods!)
 
-* Success-Failure Condition: The success-failure condition holds for each group.  Under the null hypothesis, the proportions $\pi_1$ and $\pi_2$ are equal, so we check the success-failure condition with our best estimate of these values under $H_0$, the pooled proportion from the two samples,
+* **Success-failure condition**: The success-failure condition holds for each group.  Under the null hypothesis, the proportions $\pi_1$ and $\pi_2$ are equal, so we check the success-failure condition with our best estimate of these values under $H_0$, the pooled proportion from the two samples,
 
 $$
 \hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
 $$
+We then check that all four of the following inequalities hold:
 
-|     $$\hat{p}_{pool} * n_1 \ge 10, (1 - \hat{p}_{pool}) * n_1 \ge 10$$
-|     $$\hat{p}_{pool} * n_2 \ge 10, (1 - \hat{p}_{pool}) * n_2 \ge 10$$
+$$\hat{p}_{pool} \times n_1 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_1 \geq 10,$$
+
+$$\hat{p}_{pool} \times n_2 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_2 \geq 10$$
 
 \vspace{.25in}
 
@@ -735,19 +733,17 @@ $$
 To calculate the standardized statistic we use: 
 
 $$
-Z = \frac{\text{point estimate} - \text{null value}}{SE}
+Z = \frac{\text{point estimate} - \text{null value}}{SE},
 $$
 
-where the null standard error is calculated using the pooled proportion of successes.
+where the null standard error is calculated using the pooled proportion of successes:
 
 $$
-SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})(\frac{1}{n_1}+\frac{1}{n_2})}
+SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}.
 $$
 
 
-\vspace{.25in}
-
-17. Calculate the $SE_0(\hat{p}_1-\hat{p}_2)$.
+17. Calculate $SE_0(\hat{p}_1-\hat{p}_2)$.
 
 \vspace{1in}
 
@@ -755,7 +751,7 @@ $$
 
 \vspace{1in}
 
-We will use the pnorm function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 18 at xx in line 27, highlight and run lines 27--29.
+We will use the `pnorm` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 18 at `xx` in line 27; highlight and run lines 27--29.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
@@ -771,7 +767,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 \vspace{1in}
 
-21.  How much evidence does the p-value provide against the null hypothesis? *Hint*: Refer to the guidelines given in activity 6.
+21.  How much evidence does the p-value provide against the null hypothesis? *Hint*: Refer to the guidelines given in Activity 6.
 
 \vspace{0.4in}
 
@@ -790,7 +786,7 @@ Hypothesis tests are not flawless. In a hypothesis test, there are two competing
 <!-- |       | $H_A$ true |  Type 2 Error   |  good decision      | -->
 
 \begin{table}
-\caption{Four different possible scenarios for hypothesis tests.}
+\caption{Four different possible scenarios for hypothesis test decisions.}
 \centering
 \begin{tabular}[h]{ll|cc}
 \hline
@@ -802,9 +798,10 @@ Hypothesis tests are not flawless. In a hypothesis test, there are two competing
 \textbf{Truth} & $H_A$ true & Type 2 Error & Good decision\\
 \hline
 \end{tabular}
+\label{tab:errors}
 \end{table}
 
-Shown in the table above, a **Type 1 Error** is rejecting the null hypothesis when $H_0$ is actually true. A **Type 2 Error** is failing to reject the null hypothesis when the alternative is actually true.
+Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the null hypothesis when $H_0$ is actually true. A **Type 2 Error** happens when we fail to reject the null hypothesis when the alternative is actually true.
 
 23.  Using a significance level of 0.05, based on the p-value found in question 19, what decision do you make in regards to the null hypothesis?
 
@@ -818,7 +815,7 @@ Shown in the table above, a **Type 1 Error** is rejecting the null hypothesis wh
 
 \vspace{1in}
 
-26. Write a paragraph summarizing the results of the study.  Be sure to describe:
+26. Write a paragraph summarizing the results of the study as if writing a press release.  Be sure to describe:
 
 * Summary statistic
 
@@ -918,9 +915,9 @@ two_proportion_test(formula = Outcome ~ Helmet, # response~explanatory
 
 3.  The standardized statistic when the response variable is categorical is a Z score and compared to the standard normal distribution to find the p-value.  To find the standardardized statistic we take the value of the statistic minus the null value, divided by the standard error of the statistic.  The standardized statistic measures the number of standard errors the statistic is from the null value. 
 
-4.  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type I error.
+4.  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type 1 error.
 
-5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance leve), we could have a possible Type II error.
+5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance leve), we could have a possible Type 2 error.
 
 
 ### Additional notes
