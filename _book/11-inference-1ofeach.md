@@ -350,7 +350,8 @@ Notice from the `R` code that the name of the data set is `Snow`.
 
 
 ```r
-Snow <- read.csv("https://math.montana.edu/courses/s216/data/SnowfallByWeatherPattern.csv") # Read in data set
+Snow <- read.csv("https://math.montana.edu/courses/s216/data/SnowfallByWeatherPattern.csv")
+
 # Code categorical variables as factors
 Snow <- # Write over original data with the following
   Snow %>% # Pipe data set into
