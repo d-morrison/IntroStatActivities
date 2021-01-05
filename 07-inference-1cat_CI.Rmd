@@ -32,6 +32,7 @@ Margin of error:
 
 2. Interpret the 95% confidence interval provided in the textbook.
 \rgs
+\rgs
 
 3. The formula for the interval is 34/38 $\pm$ (2$\times$0.08) = 0.89 $\pm$ 0.16.  Calculating that, you should get (0.73, 1.05).  Why was the interval shown in the textbook (0.73, 1) instead of (0.73, 1.05)?
 \rgs
@@ -151,12 +152,15 @@ Margin of error of a confidence interval for a sample proportion:
 
 2. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
-
-3. How could we use cards to simulate **1** bootstrapped resample?  How many blue cards --- to represent what?  How many red cards --- to represent what?  How many times would we draw a card and replace it back in the deck?  What would you record once you completed the draw-with-replacement process?
-\rgs
 \rgs
 
-4.	Interpret the 95% confidence interval provided in the textbook.
+3. How could we use cards to simulate **one** bootstrapped resample?  How many blue cards --- to represent what?  How many red cards --- to represent what?  How many times would we draw a card and replace it back in the deck?  What would you record once you completed the draw-with-replacement process?
+\rgs
+\rgs
+\rgs
+
+4.	Interpret the 95\% confidence interval provided in the textbook.
+\rgs
 \rgs
 
 5.	Are the results in this example statistically significant?  Justify your answer.
@@ -164,13 +168,16 @@ Margin of error of a confidence interval for a sample proportion:
 
 6.	Are the conditions met to use theoretical methods to analyze these data?
 \rgs
+\rgs
 
 #### Example: Payday loans {-}
 
 1. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
+\rgs
 
 2. Are the conditions met to use theoretical methods to analyze these data?
+\rgs
 \rgs
 
 3. What is the sample statistic presented in this example?  What notation would be used to represent this value?
@@ -178,14 +185,18 @@ Margin of error of a confidence interval for a sample proportion:
 
 4. Calculate the standard error of the sample proportion when we do not assume the null hypothesis is true.
 \rgs
-
-5. Calculate the margin of error for a 95% confidence interval for $\pi$ using 1.96 as the multiplier.
 \rgs
 
-6. Calculate a 95% confidence interval for $\pi$ using your margin of error calculated above.
+5. Calculate the margin of error for a 95\% confidence interval for $\pi$ using 1.96 as the multiplier.
+\rgs
 \rgs
 
-7. Interpret the 95% confidence interval provided in the textbook.
+6. Calculate a 95\% confidence interval for $\pi$ using your margin of error calculated above.
+\rgs
+\rgs
+
+7. Interpret the 95\% confidence interval provided in the textbook.
+\rgs
 \rgs
 
 8. Are the results in this example statistically significant?  Justify your answer.
@@ -219,9 +230,9 @@ To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5
 
 Last week, we found very strong evidence that the true proportion of male boxers who are left-handed is greater than the general population, 0.1.  But what *is* the true proportion of male boxers who are left-handed? We will use this same study to estimate this parameter of interest.  
 
-A **point estimate** (our observed statistic) provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible *range* of values for the parameter. This plausible range of values for the population parameter is called an **interval estimate** or **confidence interval. 
+A **point estimate** (our observed statistic) provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible *range* of values for the parameter. This plausible range of values for the population parameter is called an **interval estimate** or **confidence interval**. 
 
-As a reminder: left-handedness is a trait that is found in about 10% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  Using the data from this random sample of 500 male boxers, we want to estimate, with a given level of confidence, the true proportion of male boxers who are left-handed. 
+As a reminder: left-handedness is a trait that is found in about 10\% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  Using the data from this random sample of 500 male boxers, we want to estimate, with a given level of confidence, the true proportion of male boxers who are left-handed. 
 
 Recall from the last activity that in the sample of 500 male boxers, 81 were left-handed.
 
