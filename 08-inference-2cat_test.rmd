@@ -613,15 +613,19 @@ injury %>% group_by(Helmet) %>% count(Outcome)
 
 1.  What is the name of the explanatory variable in the `R` output? What are its categories?
 
-\vspace{0.3in}
+\vspace{0.2in}
 
 2. What is the response variable in the `R` output? What are its categories?
 
-\vspace{0.3in}
+\vspace{0.2in}
 
-3. Is this an experiment or observational study?  Justify your answer.
+\setstretch{1.5}
+3. Fill in the blanks with one answer from each set of parentheses: This is an  
+________________ (experiment/observational study) because  
+______________ (helmet use/head injury) _______ (was/was not)  
+randomly ____________ (assigned/selected).
 
-\vspace{0.5in}
+\vspace{0.1in}
 
 4.  Put an X in the box that represents the appropriate scope of inference for this study.
 
@@ -630,6 +634,7 @@ injury %>% group_by(Helmet) %>% count(Outcome)
 |                    |                  | Randomized Experiment | Observational Study |
 | Selection of Cases | Random Sample    |                       |                     |
 |                    | No Random Sample |                       |                     |
+\setstretch{1}
 
 
 #### Ask a research question {-}
@@ -653,8 +658,8 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 \vspace{0.8in}
 
 
-8. Based on the research question, fill in the appropriate sign for the alternative hypothesis ($<$, $>$, or $\neq$):
-\vspace{0.25in}
+7. Based on the research question, fill in the appropriate sign for the alternative hypothesis ($<$, $>$, or $\neq$):
+\vspace{0.1in}
 
 |           $H_A: \pi_1 -\pi_2$ __________ 0
 
@@ -662,11 +667,11 @@ When comparing two groups, we assume the two parameters are equal in the null hy
  
 #### Summarize and visualize the data {-}
 
-9. Using the two-way table above, calculate the conditional proportion of helmet-wearing skiers/snowboarders that sustained a head injury.
+8. Using the two-way table above, calculate the conditional proportion of helmet-wearing skiers/snowboarders that sustained a head injury.
 
 \vspace{.3in}
 
-10. Using the two-way table above, calculate the conditional proportion of non-helmet-wearing skiers/snowboarders that sustained a head injury.
+9. Using the two-way table above, calculate the conditional proportion of non-helmet-wearing skiers/snowboarders that sustained a head injury.
 
 \vspace{.3in}
 
@@ -683,22 +688,22 @@ ggplot(aes(x = Helmet, fill = Outcome)) +   # This specifies the variables
   theme_bw()
 ```
 
-11.  Fill in the blanks on the graph above with the appropriate variable names and categories to complete the segmented bar plot comparing the proportion of head injuries between those who wear helmets and those who do not wear helmets.  *Hint*: Use the conditional proportions from questions 9 and 10.
+10.  Fill in the blanks on the graph above with the appropriate variable names and categories to complete the segmented bar plot comparing the proportion of head injuries between those who wear helmets and those who do not wear helmets.  *Hint*: Use the conditional proportions from questions 8 and 9.
 
 \vspace{1mm}
 
-12.  Based on the segmented bar plot, Does there appear to be an association between helmet use and head injury?  Explain using the plot.
+11.  Based on the segmented bar plot, Does there appear to be an association between helmet use and head injury?  Explain using the plot.
 
 \vspace{0.7in}
 
-13.  Calculate the summary statistic for this study.  Use helmet use (`Yes`) minus no helmet use (`No`) as the order of subtraction.
+12.  Calculate the summary statistic for this study.  Use helmet use (`Yes`) minus no helmet use (`No`) as the order of subtraction.
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 
-14. What is the notation used for the value calculated in question 13?
+13. What is the notation used for the value calculated in question 12?
 
-\vspace{0.2in}
+\vspace{0.1in}
 
 
 #### Use statistical analysis methods to draw inferences from the data {-}
@@ -717,18 +722,17 @@ $$
 We then check that all four of the following inequalities hold:
 
 $$\hat{p}_{pool} \times n_1 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_1 \geq 10,$$
-
 $$\hat{p}_{pool} \times n_2 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_2 \geq 10$$
 
-\vspace{.25in}
+\vspace{.1in}
 
-15.  Is the independence condition met? Explain your answer.
+14.  Is the independence condition met? Explain your answer.
 
-\vspace{0.5in}
+\vspace{0.4in}
 
-16. Is the success-failure condition met for each group?  Show your work to verify your answer.
+15. Is the success-failure condition met for each group?  Show your work to verify your answer.
 
-\vspace{1in}
+\vspace{0.8in}
 
 To calculate the standardized statistic we use: 
 
@@ -742,16 +746,17 @@ $$
 SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}.
 $$
 
+\newpage
 
-17. Calculate $SE_0(\hat{p}_1-\hat{p}_2)$.
-
-\vspace{1in}
-
-18. Calculate the standardized statistic.
+16. Calculate $SE_0(\hat{p}_1-\hat{p}_2)$.
 
 \vspace{1in}
 
-We will use the `pnorm` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 18 at `xx` in line 27; highlight and run lines 27--29.
+17. Calculate the standardized statistic.
+
+\vspace{1in}
+
+We will use the `pnorm` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 17 at `xx` in line 27; highlight and run lines 27--29.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
@@ -760,20 +765,22 @@ pnorm(xx, # Enter value of standardized statistic
 ```
     
 
-19.  Report the p-value from the `R` output.
+18.  Report the p-value from the `R` output.
 \vspace{0.2in}
 
-20.  Interpret the p-value in context of the study.
+19.  Interpret the p-value in context of the study.
 
 \vspace{1in}
 
-21.  How much evidence does the p-value provide against the null hypothesis? *Hint*: Refer to the guidelines given in Activity 6.
+20.  How much evidence does the p-value provide against the null hypothesis? *Hint*: Refer to the guidelines given in Activity 6.
 
 \vspace{0.4in}
 
-22.  Write a conclusion to the test. 
+21.  Write a conclusion to the test. 
 
 \vspace{1in}
+
+\newpage
 
 #### Types of errors {-}
 
@@ -803,19 +810,19 @@ Hypothesis tests are not flawless. In a hypothesis test, there are two competing
 
 Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the null hypothesis when $H_0$ is actually true. A **Type 2 Error** happens when we fail to reject the null hypothesis when the alternative is actually true.
 
-23.  Using a significance level of 0.05, based on the p-value found in question 19, what decision do you make in regards to the null hypothesis?
+22.  Using a significance level of 0.05, based on the p-value found in question 18, what decision do you make in regards to the null hypothesis?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
-24. What type of error could we have made?
+23. What type of error could we have made?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
-25.  Write this error in context of the problem.
+24.  Write this error in context of the problem.
 
-\vspace{1in}
+\vspace{0.8in}
 
-26. Write a paragraph summarizing the results of the study as if writing a press release.  Be sure to describe:
+25. Write a paragraph summarizing the results of the study as if writing a press release.  Be sure to describe:
 
 * Summary statistic
 
@@ -831,10 +838,10 @@ Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the 
 
 
 
-
+\newpage
 ### Out-of-class activity
 
-The remaining questions cover simulation methods for testing two categorical variables. Use section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.  
+The remaining questions cover simulation-based methods for testing two categorical variables. Use Section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.  
 
 1.  First let's think about how one simulation would be created on the null distribution using cards.  
 
@@ -847,13 +854,13 @@ The remaining questions cover simulation methods for testing two categorical var
 
 2. Next, we would mix the cards together and shuffle into two piles.  How many cards would be in each pile?  What would each pile represent?
 
-\vspace{1in}
+\vspace{0.8in}
 
 3. Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
 
-\vspace{1in}
+\vspace{0.8in}
 
-To create the null distribution, we will use the two proportion test.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name identified above as `injury`, the outcome for the explanatory variable to give the order of subtraction for First in Subtraction, number of repetitions, the outcome for the response variable that is a success for Response Value Numerator, and the direction of the alternative hypothesis.
+To create the null distribution of sample differences in proportions, we will use the `two_proportion_test` function in `R` (in the `catstats` package).  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name identified above as `injury`, the outcome for the explanatory variable to give the order of subtraction for First in Subtraction, number of repetitions, the outcome for the response variable that is a success for Response Value Numerator, and the direction of the alternative hypothesis.
 
 The response variable name is Outcome and the explanatory variable name is Helmet.
 
