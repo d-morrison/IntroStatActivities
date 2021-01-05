@@ -27,7 +27,7 @@ General steps of a hypothesis test:
 	
 3. Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
 
-4. Compare the observed test statistic to the null distribution to calculate a p-value.
+4. Compare the observed test (standardized) statistic to the null distribution to calculate a p-value.
 
 5. Make a conclusion based on the p-value and write the conclusion in context.
 
@@ -158,7 +158,8 @@ Population proportion of group 2:
 8. Write the null and the alternative hypotheses in notation.
 \rgs
 
-9. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+9. How could we use cards to simulate **ome** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
 \rgs
 \rgs
 
@@ -207,7 +208,8 @@ Population proportion of group 2:
 8. Write the null and the alternative hypotheses in notation.
 \rgs
 
-9. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*? How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+9. How could we use cards to simulate **one** sample *which assumes the null hypothesis is true*? How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
 \rgs
 \rgs
 
@@ -263,7 +265,8 @@ Population proportion of group 2:
 9. Write the null and the alternative hypotheses in notation.
 \rgs
 
-10. How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+10. How could we use cards to simulate **one** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
 \rgs
 \rgs
 
@@ -282,6 +285,7 @@ Population proportion of group 2:
 \rgs
 
 15. What conclusion should the researcher make?
+\rgs
 \rgs
 
 16. Are the results in this example statistically significant?  Justify your answer.
@@ -381,11 +385,14 @@ Overall (pooled) proportion of successes:
 
 9. Calculate the pooled or overall proportion of successes. What notation would be used to represent this value?
 \rgs
+\rgs
 
 10. Calculate the null standard error of the difference in sample proportions.
 \rgs
+\rgs
 
 11.	Calculate the standardized statistic
+\rgs
 \rgs
 
 12. Interpret the standardized statistic in the context of the problem.
@@ -598,6 +605,8 @@ In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by S
 | No Head Injury |     656    |      2330     |  2986 |
 | Total          |     752    |      2810     |  3562 |
 
+\newpage
+
 These counts can be found in `R` by using the `count()` function:
 
 ```r
@@ -655,6 +664,8 @@ randomly ____________ (assigned/selected).
 The research question as stated above is: Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders? In order to set up our hypotheses, we need to express this research question in terms of parameters. 
 Remember, we define the parameter for a single categorical variable as the true proportion of observational units that are labeled as a "success" in the response variable.  
 
+\newpage
+
 5. Write the two parameters of interest for this study.  Let 1 = skier/snowboarder wore helmet, 2 = skier/snowboarder did not wear helmet. 
 \vspace{1mm}
 
@@ -691,7 +702,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 \begin{center}\includegraphics[width=0.7\linewidth]{08-inference-2cat_test_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
-10.  Fill in the blanks on the graph above with the appropriate variable names and categories to complete the segmented bar plot comparing the proportion of head injuries between those who wear helmets and those who do not wear helmets.  *Hint*: Use the conditional proportions from questions 8 and 9.
+10.  Fill in the blanks on the segmented bar plot on the previous page with the appropriate variable names and categories to complete the segmented bar plot comparing the proportion of head injuries between those who wear helmets and those who do not wear helmets.  *Hint*: Use the conditional proportions from questions 8 and 9.
 
 \vspace{1mm}
 
@@ -737,6 +748,8 @@ $$\hat{p}_{pool} \times n_2 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_2
 
 \vspace{0.8in}
 
+\newpage
+
 To calculate the standardized statistic we use: 
 
 $$
@@ -749,7 +762,6 @@ $$
 SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}.
 $$
 
-\newpage
 
 16. Calculate $SE_0(\hat{p}_1-\hat{p}_2)$.
 
@@ -784,7 +796,6 @@ pnorm(xx, # Enter value of standardized statistic
 
 \vspace{1in}
 
-\newpage
 
 #### Types of errors {-}
 
@@ -905,7 +916,7 @@ two_proportion_test(formula = Outcome ~ Helmet, # response ~ explanatory
 \vspace{1.5in}
 
 
-6. What value is the null distribution centered around?  Explain why this makes sense?
+6. What value is the null distribution centered around?  Explain why this makes sense.
 
 \vspace{.8in}
 
@@ -929,7 +940,7 @@ two_proportion_test(formula = Outcome ~ Helmet, # response ~ explanatory
 
 5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance level), we could have a possible Type 2 error. A Type 2 error occurs when we fail to reject a false null hypothesis (false negative).
 
-6. To create one simulated sample on the null distribution, label cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$ representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
+6. To create one simulated sample on the null distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$, representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
 
 
 ### Additional notes

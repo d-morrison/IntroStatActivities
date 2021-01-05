@@ -32,6 +32,7 @@ location: Montana State University
 <!-- Z-score and T-score -->
 <!-- $t$-distribution -->
 <!-- use "data set" (with a space) rather than "dataset" -->
+<!-- $x$ and $y$ for x-axis and y-axis -->
 
 \newpage
 \thispagestyle{empty}
@@ -41,10 +42,13 @@ This resource was developed by Melinda Yager, Jade Schmidt, and Stacey Hancock i
 This resource is released under a [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license unless otherwise noted.
 
 \setcounter{tocdepth}{1}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
 \tableofcontents
-\setcounter{page}{1}
+\thispagestyle{empty}
 
 \newpage
+\setcounter{page}{1}
+
 # Preface {-}
 
 This coursepack accompanies the textbook for STAT 216: Introduction to Statistics at Montana State University, which can be found at [https://mtstateintrostats.github.io/IntroStatTextbook/](https://mtstateintrostats.github.io/IntroStatTextbook/). The syllabus for the course (including the course calendar), data sets, and links to D2L Brightspace, Gradescope, and the MSU RStudio server can be found on the course webpage: [https://math.montana.edu/courses/s216/](https://math.montana.edu/courses/s216/).

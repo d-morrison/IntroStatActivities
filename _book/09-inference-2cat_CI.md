@@ -78,7 +78,8 @@ How are the confidence level and the significance level related (for a two-sided
 \rgs
 \rgs
 
-4.	How could we use cards to simulate **1** bootstrap resample?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+4.	How could we use cards to simulate **one** bootstrap resample?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
 \rgs
 \rgs
 
@@ -155,11 +156,14 @@ Margin of error of a confidence interval for a difference in proportions:
 
 2. What is the parameter (using a difference in proportion) representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
+\rgs
 
 3. Calculate the standard error of the difference in sample proportions without assuming a null hypothesis.
 \rgs
+\rgs
 
 4. Calculate the 90% confidence interval using $z^*=1.65$ as the multiplier.
+\rgs
 \rgs
 
 *Note: A confidence interval interpretation and confidence level interpretation for this example can be found in the Reading Guide solutions for Sections 5.4.1--5.4.3.*
@@ -376,9 +380,9 @@ two_proportion_bootstrap_CI(formula = Outcome ~ Helmet,
 
 4.  Increasing sample size will result in less sample-to-sample variability in statistics, which will result in a smaller standard error, and thus a narrower confidence interval.  
 
-5. To create one simulated sample on the bootstrap distribution, label $n_1 + n_2$ cards with the outcomes for the original responses.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in the proportion of successes. 
+5. To create one simulated sample on the bootstrap distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the outcomes for the original responses.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in the proportion of successes. 
 
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
