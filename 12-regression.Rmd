@@ -311,7 +311,7 @@ Confidence interval:
 * Use a confidence interval to determine the conclusion of a hypothesis test.
 
 ### Terminology review
-In this week's in-class activity, we will use theory-based methods for hypothesis tests and confidence intervals for linear regression slope. Some terms covered in this activity are:
+In this week's in-class activity, we will use theory-based methods for hypothesis tests and confidence intervals for a linear regression slope or correlation. Some terms covered in this activity are:
 
 * Correlation
 
@@ -324,29 +324,28 @@ To review these concepts, see Chapters 3 and 7 in the textbook.
 
 ### Moneyball
 
-The goal of a Major League baseball team is to make the playoffs. In 2002, the manager of the Oakland A's, Billy Beane with the help of Paul DePodesta began to use statistics to determine which players to choose for their season.  Based on past data, Paul determined that to make it to the playoffs, the A's would need to win at least 95 games in the regular season.  In order to win more games they would need to score more runs than they allowed.  In this study, we will see if there is evidence of a positive linear relationship between the difference in the number of runs scored minus the number of runs allowed and the number of wins for teams in the years before 2002.  
+The goal of a Major League baseball team is to make the playoffs. In 2002, the manager of the Oakland A's, Billy Bean, with the help of Paul DePodesta began to use statistics to determine which players to choose for their season.  Based on past data, DePodesta determined that to make it to the playoffs, the A's would need to win at least 95 games in the regular season.  In order to win more games, they would need to score more runs than they allowed. The Oakland A's won 20 consecutive games and a total of 103 games for the season. The success of this use of sports analytics was portrayed by the 2011 movie, *Moneyball*.
 
-The Oakland A's won 20 consecutive games and a total of 103 games for the season.  The success of this use of sports analytics was portrayed by the 2011 movie, *Moneyball*.
+In this study, we will see if there is evidence of a positive linear relationship between the difference in the number of runs scored minus the number of runs allowed and the number of wins for Major League baseball teams in the years before 2002.  
 
-
-Some of the variables collected in this data set consist of the following:
+Some of the variables collected in the data set `baseball` consist of the following:
 
 | **Variable** 	| **Description** |
 |---	|-------------	|
 | `RA` | Runs allowed |
 | `RS` | Runs scored |
-| `OBP` | On Base Percentage |
-| `SLG` | Slugging Percentage |
-| `BA` | Batting Average |
-| `OOBP` | Opponent's On Base Percentage |
-| `OSLG` | Opponent's Slugging Percentage |
-| `W` | Number of Wins in the season |
+| `OBP` | On-base percentage |
+| `SLG` | Slugging percentage |
+| `BA` | Batting average |
+| `OOBP` | Opponent's on-base percentage |
+| `OSLG` | Opponent's slugging percentage |
+| `W` | Number of wins in the season |
 | `RD` | Difference of runs scored minus runs allowed |
 
 
 ```{r, echo = TRUE, fig.width=7,fig.height=6, collapse=FALSE}
 # Read in data set
-baseball <- read.csv("data/baseball.csv")
+baseball <- read.csv("https://math.montana.edu/courses/s216/data/baseball.csv")
 
 baseball$RD <- baseball$RS - baseball$RA # Create variable run difference
 

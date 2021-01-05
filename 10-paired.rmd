@@ -519,7 +519,7 @@ include_graphics("images/air_pollution_greyscale.png")
 \vspace{.05in}
 
 ```{r, include=FALSE}
-Air <- read.csv("data/AirPollutionCOVID.csv") # Read data in
+Air <- read.csv("https://math.montana.edu/courses/s216/data/AirPollutionCOVID.csv")
 ```
 
 ```{r, out.width="60%"}

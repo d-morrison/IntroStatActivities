@@ -304,7 +304,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 The `favstats` function from the `mosaic` package gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable `imdb_score`.
 
 ```{r, echo=TRUE, collapse = FALSE}
-movies <- read.csv("data/Movies2016.csv") # Read in data set
+movies <- read.csv("https://math.montana.edu/courses/s216/data/Movies2016.csv") 
 movies %>% # Data set piped into...
   summarise(favstats(imdb_score)) # Apply favstats function to imdb_score
 ```
