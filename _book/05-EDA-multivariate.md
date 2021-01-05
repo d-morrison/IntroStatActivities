@@ -14,7 +14,7 @@
 
 #### Reminders from Section 2.3 {-}
 
-Scatterplot: displays two quantitative variables; one dot = two measurements ($x$, $y$) on one observational unit
+Scatterplot: displays two quantitative variables; one dot = two measurements ($x$, $y$) on one observational unit.
 
 Four characteristics of a scatterplot:
 \setstretch{1}
@@ -441,7 +441,7 @@ Simpson’s Paradox:
 
 * Interpret the slope coefficient in context of the problem.
 
-* Calculated and interpret $R^2$, the coefficient of determination, in context of the problem.
+* Calculate and interpret $R^2$, the coefficient of determination, in context of the problem.
 
 * Find the correlation coefficient from `R` output or from $R^2$ and the sign of the slope.
 

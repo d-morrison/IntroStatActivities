@@ -14,7 +14,7 @@
 
 #### Reminders from Section 2.3 {-}
 
-Scatterplot: displays two quantitative variables; one dot = two measurements ($x$, $y$) on one observational unit
+Scatterplot: displays two quantitative variables; one dot = two measurements ($x$, $y$) on one observational unit.
 
 Four characteristics of a scatterplot:
 \setstretch{1}

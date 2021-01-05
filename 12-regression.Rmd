@@ -13,19 +13,19 @@
 
 #### Reminders from previous sections {-}
 
-$\beta_0$: population y-intercept
+$\beta_0$: population $y$-intercept
 
 $\beta_1$: population slope
 
 $\rho$: population correlation 
 
-$b_0$: sample y-intercept
+$b_0$: sample $y$-intercept
 
 $b_1$: sample slope
 
 $r$: sample correlation
 
-Scatterplot: displays two quantitative variables; one dot = two measurements (x, y) on one observational unit.
+Scatterplot: displays two quantitative variables; one dot = two measurements ($x$, $y$) on one observational unit.
 
 Four characteristics of a scatterplot:
 \setstretch{1}
@@ -37,9 +37,9 @@ Four characteristics of a scatterplot:
 
 \setstretch{1.25}
 
-Least squares regression line: $\hat{y} = b_0+b_1x$ , where $b_0$ is the estimate for `(Intercept)` and $b_1$ is the estimate for the `x-variable` name in the `R` regression output.
+Least squares regression line: $\hat{y} = b_0+b_1x$ , where $b_0$ is the sample $y$-intercept (the estimate for the `(Intercept)` row in the `R` regression output), and $b_1$ is the sample slope (the estimate for the `x-variable_name` row in the `R`).
 
-Slope interpretation: a 1 unit increase in the *x* variable is associated with a $|b_1 |$ unit increase/decrease in the *y*-variable
+Sample slope interpretation: a 1 unit increase in the *x* variable is associated with a $|b_1 |$ unit *predicted* increase/decrease in the *y*-variable.
 
 General steps of a hypothesis test:
 
@@ -63,19 +63,17 @@ Standard deviation of a statistic: the variability of statistics from 1000s of s
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
-Hypothesis test: a process to determine how strong the evidence of an effect is.
-		
-\rgi Also called a ‘significance test’.
+Hypothesis test: a process to determine how strong the evidence of an effect is. Also called a ‘significance test’.
 
 Simulation-based method: Simulate lots of samples of size $n$ under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
 
 Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
 
-Null hypothesis ($H_0$): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**
+Null hypothesis ($H_0$): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**.
 
-Alternative hypothesis ($H_A$): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**
+Alternative hypothesis ($H_A$): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**.
 
-Null value: the value of the parameter when we assume the null hypothesis is true (labeled as $parameter_0$)
+Null value: the value of the parameter when we assume the null hypothesis is true (labeled as $parameter_0$).
 
 Null distribution:  the simulated or modeled distribution of statistics (sampling distribution) we would expect to occur if the null hypothesis is true.
 
@@ -95,34 +93,33 @@ Significance level ($\alpha$): a threshold used to determine if a p-value provid
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter
-\rgi Also called ‘estimation’
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter. Also called ‘estimation’.
 
-Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval
+Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval.
 
-Bootstrapping: the process of drawing with replacement n times from the original sample
+Bootstrapping: the process of drawing with replacement $n$ times from the original sample.
 
-Bootstrapped resample: a random sample of size n from the original sample, selected with replacement
+Bootstrapped resample: a random sample of size $n$ from the original sample, selected with replacement.
 
-Bootstrapped statistic: the statistic recorded from the bootstrapped resample
+Bootstrapped statistic: the statistic recorded from the bootstrapped resample.
 
-Confidence level: how confident we are that the confidence interval will capture the parameter
+Confidence level: how confident we are that the confidence interval will capture the parameter.
 
-Bootstrap X% confidence interval: ($(\frac{(1-X)}{2})^{th}$ percentile,$(X+(\frac{(1-X)}{2})^{th}$ percentile) of a bootstrap distribution
+Bootstrap $X$% confidence interval: ($(\frac{(1-X)}{2})^{th}$ percentile, $(X+(\frac{(1-X)}{2})^{th}$ percentile) of a bootstrap distribution
 
 $t$-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard normal distribution.
 
 * The variability in a $t$-distribution depends on the sample size (used to calculate degrees of freedom --- df for short).
 * The $t$-distribution gets closer to the standard normal distribution as df increases.
 
-Degrees of freedom (df): describes the variability of the t-distribution
+Degrees of freedom (df): describes the variability of the $t$-distribution.
 
-T-score: the name for a standardized statistic which is compared to a t-distribution
+T-score: the name for a standardized statistic which is compared to a $t$-distribution.
 
 
 #### Notes {-}
 
-To create a **simulated null distribution**, 
+To create a **simulated null distribution** of sample slopes or sample correlations, 
 
 1. How many cards will you need and how will the cards be labeled?
 \rgs
@@ -133,7 +130,7 @@ To create a **simulated null distribution**,
 3. After shuffling, what value will be plotted on the simulated null distribution?
 \rgs
 
-To create a **bootstrap distribution**, 
+To create a **bootstrap distribution** of sample slopes or sample correlations, 
 
 1. How many cards will you need and how will the cards be labeled?
 \rgs
@@ -144,33 +141,35 @@ To create a **bootstrap distribution**,
 3. After shuffling, what value will be plotted on the bootstrap distribution?
 \rgs
 
+\newpage
 
 Conditions to use the CLT for testing slope (or correlation):
-1.	Linearity: 
+
+\rgi Linearity: 
 \rgs
 
-\rgi a.	Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
-2.	Independent observations: 
+\rgi Independent observations: 
 \rgs
 
-\rgi a.	Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
-3.	Nearly normal residuals: 
+\rgi Nearly normal residuals: 
 \rgs
 
-\rgi a.	Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
-4.	Constant or equal variance: 
+\rgi Constant or equal variance: 
 \rgs
 
-\rgi a.	Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
-In a theoretical test of slope or correlation, how are the degrees of freedom determined?
+In a theory-based test of slope or correlation, how are the degrees of freedom determined?
 \rgs	
 
 Explain why testing for slope is equivalent to testing for correlation.
@@ -181,7 +180,7 @@ Where in the `R` output can $SE(b_1)$ be found?
 
 #### Formulas {-}
 
-$t=$
+$T=$
 \rgs
 
 Confidence interval: 
@@ -200,10 +199,11 @@ Confidence interval:
 3.	What is the research question?
 \rgs
 
-4.	Write the null and alternative hypothesis in appropriate notation.
+4.	Write the null and alternative hypotheses in appropriate notation.
 \rgs
 
 5.	How could we use cards to simulate **1** sample which assumes *the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
 \rgs
 \rgs
 
@@ -214,12 +214,10 @@ Confidence interval:
 7.	What are the sample statistics presented in this example?  What notation would be used to represent each value?
 \rgs
 
-8.	Write the least squares regression line for these data.
+8.	Write the least squares regression line for these data in appropriate notation.
 \rgs
 
-9.	 How was the p-value for this test found?
-
-The proportion of simulated null samples at ____ or ____.
+9.	 How was the p-value for this test found? The proportion of simulated null samples at ____ or ____.
 \rgs
 
 10.	Interpret the p-value in the context of the problem.
@@ -230,6 +228,7 @@ The proportion of simulated null samples at ____ or ____.
 \rgs
 
 12.	How could we use cards to simulate **1** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
 \rgs
 \rgs
 
@@ -252,20 +251,20 @@ The proportion of simulated null samples at ____ or ____.
 4. Can the results of this study be generalized to a larger population?
 \rgs
 
-5. Is causal inference appropriate for these data?
+5. Are causal conclusions appropriate for these data?
 \rgs
 
-6. Write the null and the alternative hypothesis in words.
+6. Write the null and the alternative hypotheses in words.
 \rgs
 \rgs
 
-7. Write the null and the alternative hypothesis in notation.
+7. Write the null and the alternative hypotheses in notation.
 \rgs
 
 8. What are the sample statistics presented in this example?  What notation would be used to represent each value?
 \rgs
 
-9. Write the least squares regression line for these data.
+9.	Write the least squares regression line for these data in appropriate notation.
 \rgs
 
 10. From the `R` output, what is the standard error of the slope estimate?
@@ -303,7 +302,7 @@ The proportion of simulated null samples at ____ or ____.
   
 * Assess the conditions to use the normal distribution model for a slope or correlation.
 
-* Find the T test statistic for a slope or correlation based off of `lm()` output in `R`.
+* Find the T test statistic (T-score) for a slope or correlation based off of `lm()` output in `R`.
 
 * Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a slope or correlation.
 

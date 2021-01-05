@@ -2797,7 +2797,7 @@ Use this space to summarize your thoughts and take additional notes on this week
 \subsubsection*{Reminders from Section 2.3}\label{reminders-from-section-2.3}}
 \addcontentsline{toc}{subsubsection}{Reminders from Section 2.3}
 
-Scatterplot: displays two quantitative variables; one dot = two measurements (\(x\), \(y\)) on one observational unit
+Scatterplot: displays two quantitative variables; one dot = two measurements (\(x\), \(y\)) on one observational unit.
 
 Four characteristics of a scatterplot:
 \setstretch{1}
@@ -3340,7 +3340,7 @@ Simpson's Paradox:
 \item
   Interpret the slope coefficient in context of the problem.
 \item
-  Calculated and interpret \(R^2\), the coefficient of determination, in context of the problem.
+  Calculate and interpret \(R^2\), the coefficient of determination, in context of the problem.
 \item
   Find the correlation coefficient from \texttt{R} output or from \(R^2\) and the sign of the slope.
 \end{itemize}
@@ -3991,13 +3991,11 @@ True or False: When conducting a simulation-based hypothesis test, the null hypo
 \subsubsection*{Vocabulary}\label{vocabulary-11}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
-Normal distribution:
+Normal distribution (Also known as: normal curve, normal model, Gaussian distribution):
 \rgs
 
 \rgi Notation:
 \rgs
-
-\rgi \rgi Also known as: normal curve, normal model, Gaussian distribution
 
 \newpage
 
@@ -9550,19 +9548,19 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-9}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
-\(\beta_0\): population y-intercept
+\(\beta_0\): population \(y\)-intercept
 
 \(\beta_1\): population slope
 
 \(\rho\): population correlation
 
-\(b_0\): sample y-intercept
+\(b_0\): sample \(y\)-intercept
 
 \(b_1\): sample slope
 
 \(r\): sample correlation
 
-Scatterplot: displays two quantitative variables; one dot = two measurements (x, y) on one observational unit.
+Scatterplot: displays two quantitative variables; one dot = two measurements (\(x\), \(y\)) on one observational unit.
 
 Four characteristics of a scatterplot:
 \setstretch{1}
@@ -9581,9 +9579,9 @@ Four characteristics of a scatterplot:
 
 \setstretch{1.25}
 
-Least squares regression line: \(\hat{y} = b_0+b_1x\) , where \(b_0\) is the estimate for \texttt{(Intercept)} and \(b_1\) is the estimate for the \texttt{x-variable} name in the \texttt{R} regression output.
+Least squares regression line: \(\hat{y} = b_0+b_1x\) , where \(b_0\) is the sample \(y\)-intercept (the estimate for the \texttt{(Intercept)} row in the \texttt{R} regression output), and \(b_1\) is the sample slope (the estimate for the \texttt{x-variable\_name} row in the \texttt{R}).
 
-Slope interpretation: a 1 unit increase in the \emph{x} variable is associated with a \(|b_1 |\) unit increase/decrease in the \emph{y}-variable
+Sample slope interpretation: a 1 unit increase in the \emph{x} variable is associated with a \(|b_1 |\) unit \emph{predicted} increase/decrease in the \emph{y}-variable.
 
 General steps of a hypothesis test:
 
@@ -9611,19 +9609,17 @@ Standard deviation of a statistic: the variability of statistics from 1000s of s
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
-Hypothesis test: a process to determine how strong the evidence of an effect is.
-
-\rgi Also called a `significance test'.
+Hypothesis test: a process to determine how strong the evidence of an effect is. Also called a `significance test'.
 
 Simulation-based method: Simulate lots of samples of size \(n\) under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
 
 Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
 
-Null hypothesis (\(H_0\)): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is \textbf{wrong}
+Null hypothesis (\(H_0\)): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is \textbf{wrong}.
 
-Alternative hypothesis (\(H_A\)): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is \textbf{correct}
+Alternative hypothesis (\(H_A\)): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is \textbf{correct}.
 
-Null value: the value of the parameter when we assume the null hypothesis is true (labeled as \(parameter_0\))
+Null value: the value of the parameter when we assume the null hypothesis is true (labeled as \(parameter_0\)).
 
 Null distribution: the simulated or modeled distribution of statistics (sampling distribution) we would expect to occur if the null hypothesis is true.
 
@@ -9646,20 +9642,19 @@ Significance level (\(\alpha\)): a threshold used to determine if a p-value prov
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter
-\rgi Also called `estimation'
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter. Also called `estimation'.
 
-Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval
+Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval.
 
-Bootstrapping: the process of drawing with replacement n times from the original sample
+Bootstrapping: the process of drawing with replacement \(n\) times from the original sample.
 
-Bootstrapped resample: a random sample of size n from the original sample, selected with replacement
+Bootstrapped resample: a random sample of size \(n\) from the original sample, selected with replacement.
 
-Bootstrapped statistic: the statistic recorded from the bootstrapped resample
+Bootstrapped statistic: the statistic recorded from the bootstrapped resample.
 
-Confidence level: how confident we are that the confidence interval will capture the parameter
+Confidence level: how confident we are that the confidence interval will capture the parameter.
 
-Bootstrap X\% confidence interval: (\((\frac{(1-X)}{2})^{th}\) percentile,\((X+(\frac{(1-X)}{2})^{th}\) percentile) of a bootstrap distribution
+Bootstrap \(X\)\% confidence interval: (\((\frac{(1-X)}{2})^{th}\) percentile, \((X+(\frac{(1-X)}{2})^{th}\) percentile) of a bootstrap distribution
 
 \(t\)-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard normal distribution.
 
@@ -9671,15 +9666,15 @@ Bootstrap X\% confidence interval: (\((\frac{(1-X)}{2})^{th}\) percentile,\((X+(
   The \(t\)-distribution gets closer to the standard normal distribution as df increases.
 \end{itemize}
 
-Degrees of freedom (df): describes the variability of the t-distribution
+Degrees of freedom (df): describes the variability of the \(t\)-distribution.
 
-T-score: the name for a standardized statistic which is compared to a t-distribution
+T-score: the name for a standardized statistic which is compared to a \(t\)-distribution.
 
 \hypertarget{notes-27}{%
 \subsubsection*{Notes}\label{notes-27}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
-To create a \textbf{simulated null distribution},
+To create a \textbf{simulated null distribution} of sample slopes or sample correlations,
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9694,7 +9689,7 @@ To create a \textbf{simulated null distribution},
   \rgs
 \end{enumerate}
 
-To create a \textbf{bootstrap distribution},
+To create a \textbf{bootstrap distribution} of sample slopes or sample correlations,
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9709,50 +9704,35 @@ To create a \textbf{bootstrap distribution},
   \rgs
 \end{enumerate}
 
+\newpage
+
 Conditions to use the CLT for testing slope (or correlation):
-1. Linearity:
+
+\rgi Linearity:
 \rgs
 
-\rgi a. Checked by:
+\rgi \rgi Checked by:
 \rgs
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  Independent observations:
-  \rgs
-\end{enumerate}
-
-\rgi a. Checked by:
+\rgi Independent observations:
 \rgs
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  Nearly normal residuals:
-  \rgs
-\end{enumerate}
-
-\rgi a. Checked by:
+\rgi \rgi Checked by:
 \rgs
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  Constant or equal variance:
-  \rgs
-\end{enumerate}
-
-\rgi a. Checked by:
+\rgi Nearly normal residuals:
 \rgs
 
-In a theoretical test of slope or correlation, how are the degrees of freedom determined?
+\rgi \rgi Checked by:
+\rgs
+
+\rgi Constant or equal variance:
+\rgs
+
+\rgi \rgi Checked by:
+\rgs
+
+In a theory-based test of slope or correlation, how are the degrees of freedom determined?
 \rgs    
 
 Explain why testing for slope is equivalent to testing for correlation.
@@ -9765,7 +9745,7 @@ Where in the \texttt{R} output can \(SE(b_1)\) be found?
 \subsubsection*{Formulas}\label{formulas-11}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
-\(t=\)
+\(T=\)
 \rgs
 
 Confidence interval:
@@ -9788,10 +9768,11 @@ Confidence interval:
   What is the research question?
   \rgs
 \item
-  Write the null and alternative hypothesis in appropriate notation.
+  Write the null and alternative hypotheses in appropriate notation.
   \rgs
 \item
   How could we use cards to simulate \textbf{1} sample which assumes \emph{the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs
   \rgs
   \rgs
 \item
@@ -9802,18 +9783,11 @@ Confidence interval:
   What are the sample statistics presented in this example? What notation would be used to represent each value?
   \rgs
 \item
-  Write the least squares regression line for these data.
+  Write the least squares regression line for these data in appropriate notation.
   \rgs
 \item
-  How was the p-value for this test found?
-\end{enumerate}
-
-The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_.
-\rgs
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
+  How was the p-value for this test found? The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_.
+  \rgs
 \item
   Interpret the p-value in the context of the problem.
   \rgs
@@ -9823,6 +9797,7 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_.
   \rgs
 \item
   How could we use cards to simulate \textbf{1} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs
   \rgs
   \rgs
 \item
@@ -9851,20 +9826,20 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_.
   Can the results of this study be generalized to a larger population?
   \rgs
 \item
-  Is causal inference appropriate for these data?
+  Are causal conclusions appropriate for these data?
   \rgs
 \item
-  Write the null and the alternative hypothesis in words.
+  Write the null and the alternative hypotheses in words.
   \rgs
   \rgs
 \item
-  Write the null and the alternative hypothesis in notation.
+  Write the null and the alternative hypotheses in notation.
   \rgs
 \item
   What are the sample statistics presented in this example? What notation would be used to represent each value?
   \rgs
 \item
-  Write the least squares regression line for these data.
+  Write the least squares regression line for these data in appropriate notation.
   \rgs
 \item
   From the \texttt{R} output, what is the standard error of the slope estimate?
@@ -9907,7 +9882,7 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_.
 \item
   Assess the conditions to use the normal distribution model for a slope or correlation.
 \item
-  Find the T test statistic for a slope or correlation based off of \texttt{lm()} output in \texttt{R}.
+  Find the T test statistic (T-score) for a slope or correlation based off of \texttt{lm()} output in \texttt{R}.
 \item
   Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a slope or correlation.
 \item

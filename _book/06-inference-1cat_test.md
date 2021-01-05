@@ -161,13 +161,11 @@ $SD(\hat{p})$ =
 
 #### Vocabulary {-}
 
-Normal distribution: 
+Normal distribution (Also known as: normal curve, normal model, Gaussian distribution): 
 \rgs
 
 \rgi Notation:
 \rgs
-
-\rgi \rgi Also known as: normal curve, normal model, Gaussian distribution
 
 \newpage
 
