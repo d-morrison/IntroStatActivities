@@ -178,10 +178,12 @@ This resource was developed by Melinda Yager, Jade Schmidt, and Stacey Hancock i
 This resource is released under a \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons BY-NC-SA 4.0} license unless otherwise noted.
 
 \setcounter{tocdepth}{1}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
 \tableofcontents
-\setcounter{page}{1}
+\thispagestyle{empty}
 
 \newpage
+\setcounter{page}{1}
 
 \hypertarget{preface}{%
 \chapter*{Preface}\label{preface}}
@@ -247,9 +249,8 @@ need roughly nine hours per week to review past activities, read feedback on pre
 \chapter*{Spring 2021 Calendar of In-Class Activities}\label{spring-2021-calendar-of-in-class-activities}}
 \addcontentsline{toc}{chapter}{Spring 2021 Calendar of In-Class Activities}
 
-This calendar only lists the in-class activities and exams each week. For required readings and videos, due dates for assignments and case study posts, and project deadlines, refer to your cohort's calendar at:
-
-\url{https://mtstateintrostats.github.io/Syllabus/\#Course_calendars}.
+This calendar only lists the in-class activities and exams each week. For required readings and videos, due dates for assignments and case study posts, and project deadlines, refer to your cohort's calendar at:\\
+\url{https://mtstateintrostats.github.io/Syllabus/\#Course_calendars}
 
 \begin{longtable}{|l|l|l|l|p{.55\textwidth}|}
 \hline
@@ -2564,7 +2565,7 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
   Sketch the histogram created here.
 \end{enumerate}
 
-\vspace{1.5in}
+\vspace{1.4in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2574,7 +2575,7 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
   Which range of IMDb scores have the highest frequency?
 \end{enumerate}
 
-\vspace{0.4in}
+\vspace{0.2in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2584,7 +2585,7 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
   What is the shape of the distribution of IMDb scores?
 \end{enumerate}
 
-\vspace{0.4in}
+\vspace{0.2in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2732,10 +2733,10 @@ Using the provided \texttt{R} script file, we will create side-by-side histogram
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Using the provided favstats output and the side-by-side box plots, interpret the value of quartile 1 for the R content rating.
+  Using the provided \texttt{favstats} output and the side-by-side box plots, interpret the value of quartile 1 for the R content rating.
 \end{enumerate}
 
-\vspace{1in}
+\vspace{.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2755,7 +2756,7 @@ Using the provided \texttt{R} script file, we will create side-by-side histogram
   Which variable is the explanatory variable? Response variable?
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 \hypertarget{take-home-messages-3}{%
 \subsection{Take-home messages}\label{take-home-messages-3}}
@@ -3799,7 +3800,7 @@ What if we wanted to see if the relationship between movie budget and revenue di
 \item
   The coefficient of determination multiplied by 100 (\(r^2 \times 100\)) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable. The closer the value of the coefficient of determination is to 100\%, the stronger the relationship.
 \item
-  We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable (why?). This is called \textbf{extrapolation}.
+  We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable (reflect on why this is true.). This is called \textbf{extrapolation}.
 \end{enumerate}
 
 \newpage
@@ -4076,6 +4077,8 @@ Example: \texttt{pnorm(mean\ =\ 5,\ sd\ =\ 2,\ q\ =\ 3,\ lower.tail\ =\ TRUE)} w
 \end{Highlighting}
 \end{Shaded}
 
+\newpage
+
 Changing to \texttt{lower.tail\ =\ FALSE} will give the proportion of the distribution which is \emph{above} the value \texttt{x}.
 
 \begin{Shaded}
@@ -4140,6 +4143,8 @@ We would recommend you work through each of the examples in Section 5.2.4 using 
 \setstretch{1}
 
 You may skip Section 5.3.2 and stop before the ``Confidence interval for \(\pi\)'' sub-section in Section 5.3.3. These sections will be covered next week.
+
+\newpage
 
 \textbf{Videos}
 
@@ -4804,7 +4809,9 @@ We will use the \texttt{one\_proportion\_test()} function in \texttt{R} (in the 
 
 \vspace{1in}
 
-The value in question 23 is the \textbf{p-value}. The smaller the p-value, the more evidence we have against the null hypothesis. (Why?)
+The value in question 23 is the \textbf{p-value}. The smaller the p-value, the more evidence we have against the null hypothesis. Explain why this makes sense?
+
+\vspace{0.5in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5024,7 +5031,7 @@ Notes:
 \item
   A \textbf{decision} is a statement about strength of evidence against the null hypothesis: reject the null if the p-value is below a pre-set significance level, and fail to reject the null if the p-value is above a pre-set significance level. When writing a \textbf{conclusion} to a hypothesis test, on the other hand, we are answering the research question. Thus, a conclusion is a statement about strength of evidence \emph{for the alternative hypothesis}. Use the guidelines for the strength of evidence throughout this course to assess the evidence against the null hypothesis.
 \item
-  To create one simulated sample on the null distribution, spin a spinner with probability equal to \(\pi_0\) (the null value), \(n\) times or draw with replacement \(n\) times from a deck of cards created to reflect \(\pi_0\) as the probability of success. Calculate and plot the proportion of successes from the simulatied sample.
+  To create one simulated sample on the null distribution for a sample proportion, spin a spinner with probability equal to \(\pi_0\) (the null value), \(n\) times or draw with replacement \(n\) times from a deck of cards created to reflect \(\pi_0\) as the probability of success. Calculate and plot the proportion of successes from the simulated sample.
 \end{enumerate}
 
 \hypertarget{additional-notes-5}{%
@@ -5690,7 +5697,7 @@ The \(z^*\) multiplier is the percentile of a standard normal distribution that 
 \item
   When the null value is within the confidence interval, it is a plausible value for the parameter of interest; thus, we would find a larger p-value for a hypothesis test of that null value. Conversely, if the null value is NOT within the confidence interval, we would find a small p-value for the hypothesis test and strong evidence against this null hypothesis.
 \item
-  To create one simulated sample on the bootstrap distribution, label \(n\) cards with the original responses. Draw with replacement \(n\) times. Calculate and plot the resampled proportion of successes.
+  To create one simulated sample on the bootstrap distribution for a sample proportion, label \(n\) cards with the original responses. Draw with replacement \(n\) times. Calculate and plot the resampled proportion of successes.
 \end{enumerate}
 
 \hypertarget{additional-notes-6}{%
@@ -5741,7 +5748,7 @@ General steps of a hypothesis test:
 \item
   Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
 \item
-  Compare the observed test statistic to the null distribution to calculate a p-value.
+  Compare the observed test (standardized) statistic to the null distribution to calculate a p-value.
 \item
   Make a conclusion based on the p-value and write the conclusion in context.
 \end{enumerate}
@@ -5887,7 +5894,8 @@ Population proportion of group 2:
   Write the null and the alternative hypotheses in notation.
   \rgs
 \item
-  How could we use cards to simulate \textbf{1} sample \emph{which assumes the null hypothesis is true}? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{ome} sample \emph{which assumes the null hypothesis is true}? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs
   \rgs
   \rgs
 \item
@@ -5942,7 +5950,8 @@ Population proportion of group 2:
   Write the null and the alternative hypotheses in notation.
   \rgs
 \item
-  How could we use cards to simulate \textbf{1} sample \emph{which assumes the null hypothesis is true}? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{one} sample \emph{which assumes the null hypothesis is true}? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs
   \rgs
   \rgs
 \item
@@ -6004,7 +6013,8 @@ Population proportion of group 2:
   Write the null and the alternative hypotheses in notation.
   \rgs
 \item
-  How could we use cards to simulate \textbf{1} sample \emph{which assumes the null hypothesis is true}? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{one} sample \emph{which assumes the null hypothesis is true}? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs
   \rgs
   \rgs
 \item
@@ -6023,6 +6033,7 @@ Population proportion of group 2:
   \rgs
 \item
   What conclusion should the researcher make?
+  \rgs
   \rgs
 \item
   Are the results in this example statistically significant? Justify your answer.
@@ -6142,11 +6153,14 @@ Overall (pooled) proportion of successes:
 \item
   Calculate the pooled or overall proportion of successes. What notation would be used to represent this value?
   \rgs
+  \rgs
 \item
   Calculate the null standard error of the difference in sample proportions.
   \rgs
+  \rgs
 \item
   Calculate the standardized statistic
+  \rgs
   \rgs
 \item
   Interpret the standardized statistic in the context of the problem.
@@ -6418,6 +6432,8 @@ Total & 752 & 2810 & 3562\tabularnewline
 \bottomrule
 \end{longtable}
 
+\newpage
+
 These counts can be found in \texttt{R} by using the \texttt{count()} function:
 
 \begin{Shaded}
@@ -6510,6 +6526,8 @@ Selection of Cases & Random Sample & &\tabularnewline
 The research question as stated above is: Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders? In order to set up our hypotheses, we need to express this research question in terms of parameters.
 Remember, we define the parameter for a single categorical variable as the true proportion of observational units that are labeled as a ``success'' in the response variable.
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{4}
@@ -6578,7 +6596,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 \setcounter{enumi}{9}
 \tightlist
 \item
-  Fill in the blanks on the graph above with the appropriate variable names and categories to complete the segmented bar plot comparing the proportion of head injuries between those who wear helmets and those who do not wear helmets. \emph{Hint}: Use the conditional proportions from questions 8 and 9.
+  Fill in the blanks on the segmented bar plot on the previous page with the appropriate variable names and categories to complete the segmented bar plot comparing the proportion of head injuries between those who wear helmets and those who do not wear helmets. \emph{Hint}: Use the conditional proportions from questions 8 and 9.
 \end{enumerate}
 
 \vspace{1mm}
@@ -6658,6 +6676,8 @@ We then check that all four of the following inequalities hold:
 
 \vspace{0.8in}
 
+\newpage
+
 To calculate the standardized statistic we use:
 
 \[
@@ -6669,8 +6689,6 @@ where the null standard error is calculated using the pooled proportion of succe
 \[
 SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}.
 \]
-
-\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6733,8 +6751,6 @@ We will use the \texttt{pnorm()} function in \texttt{R} to find the p-value. Use
 \end{enumerate}
 
 \vspace{1in}
-
-\newpage
 
 \hypertarget{types-of-errors}{%
 \subsubsection*{Types of errors}\label{types-of-errors}}
@@ -6936,7 +6952,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \setcounter{enumi}{5}
 \tightlist
 \item
-  What value is the null distribution centered around? Explain why this makes sense?
+  What value is the null distribution centered around? Explain why this makes sense.
 \end{enumerate}
 
 \vspace{.8in}
@@ -6977,7 +6993,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \item
   If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance level), we could have a possible Type 2 error. A Type 2 error occurs when we fail to reject a false null hypothesis (false negative).
 \item
-  To create one simulated sample on the null distribution, label cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes \(n_1\) and \(n_2\) representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
+  To create one simulated sample on the null distribution for a difference in sample proportions, label \(n_1 + n_2\) cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes \(n_1\) and \(n_2\), representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
 \end{enumerate}
 
 \hypertarget{additional-notes-7}{%
@@ -7083,7 +7099,8 @@ How are the confidence level and the significance level related (for a two-sided
   \rgs
   \rgs
 \item
-  How could we use cards to simulate \textbf{1} bootstrap resample? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{one} bootstrap resample? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs
   \rgs
   \rgs
 \item
@@ -7176,11 +7193,14 @@ Margin of error of a confidence interval for a difference in proportions:
 \item
   What is the parameter (using a difference in proportion) representing in the context of this problem? What notation would be used to represent this parameter?
   \rgs
+  \rgs
 \item
   Calculate the standard error of the difference in sample proportions without assuming a null hypothesis.
   \rgs
+  \rgs
 \item
   Calculate the 90\% confidence interval using \(z^*=1.65\) as the multiplier.
+  \rgs
   \rgs
 \end{enumerate}
 
@@ -7558,13 +7578,13 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \item
   Increasing sample size will result in less sample-to-sample variability in statistics, which will result in a smaller standard error, and thus a narrower confidence interval.
 \item
-  To create one simulated sample on the bootstrap distribution, label \(n_1 + n_2\) cards with the outcomes for the original responses. Keep groups separate and randomly draw with replacement \(n_1\) times from group 1 and \(n_2\) times from group 2. Calculate and plot the resampled difference in the proportion of successes.
+  To create one simulated sample on the bootstrap distribution for a difference in sample proportions, label \(n_1 + n_2\) cards with the outcomes for the original responses. Keep groups separate and randomly draw with replacement \(n_1\) times from group 1 and \(n_2\) times from group 2. Calculate and plot the resampled difference in the proportion of successes.
 \end{enumerate}
 
 \hypertarget{additional-notes-8}{%
 \subsection{Additional notes}\label{additional-notes-8}}
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 \hypertarget{inference-for-a-quantitative-response-with-paired-samples}{%
 \chapter{Inference for a Quantitative Response with Paired Samples}\label{inference-for-a-quantitative-response-with-paired-samples}}
@@ -7770,7 +7790,7 @@ Confidence interval for a mean:
   \rgs 
   \rgs 
 \item
-  How could we use cards to simulate \textbf{1} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{one} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
   \rgs 
   \rgs 
   \rgs 
@@ -7832,12 +7852,14 @@ Confidence interval for a mean:
 \item
   Calculate the standard error of the sample mean.
   \rgs 
+  \rgs
 \item
   What distribution should be referenced to find the multiplier for a 95\% confidence interval?
   \rgs 
 \item
   Using \(t^\star=2.10\), calculate a 95\% confidence interval for \(\mu\).
   \rgs 
+  \rgs
 \item
   Interpret the interval calculated in the context of the problem.
   \rgs 
@@ -7880,8 +7902,10 @@ Confidence interval for a mean:
 \item
   Calculate the standard error of the sample mean.
   \rgs
+  \rgs
 \item
   Calculate the T-score (the standardized statistic for the sample mean).
+  \rgs
   \rgs
 \item
   What distribution should the T-score be compared to in order to calculate a p-value?
@@ -7898,6 +7922,7 @@ Confidence interval for a mean:
   \rgs
 \item
   What conclusion should the researcher make?
+  \rgs
   \rgs
 \item
   Are the results in this example statistically significant? Justify your answer.
@@ -8018,7 +8043,7 @@ Confidence interval for a paired mean difference:
   Write the null and alternative hypotheses in appropriate notation.
   \rgs
 \item
-  How could we use cards to simulate \textbf{1} bootstrap resample \emph{which assumes the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{one} bootstrap resample \emph{which assumes the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
   \rgs
   \rgs
   \rgs
@@ -8057,7 +8082,7 @@ Confidence interval for a paired mean difference:
   \rgs
   \rgs
 \item
-  How could we use cards to simulate \textbf{1} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{one} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
   \rgs
   \rgs
   \rgs
@@ -8083,8 +8108,10 @@ Confidence interval for a paired mean difference:
 \item
   Calculate the standard error of the sample mean difference.
   \rgs
+  \rgs
 \item
   Calculate the T-score (the standardized statistic for the sample mean difference).
+  \rgs
   \rgs
 \item
   What distribution should the T-score be compared to in order to calculate a p-value?
@@ -8098,11 +8125,13 @@ Confidence interval for a paired mean difference:
 \item
   What conclusion should the researcher make?
   \rgs
+  \rgs
 \item
   Are the results in this example statistically significant? Justify your answer.
   \rgs
 \item
   Using \(t^\star=2.00\), calculate a 95\% confidence interval for \(\mu_d\).
+  \rgs
   \rgs
 \item
   Interpret the interval calculated in the context of the problem.
@@ -8635,15 +8664,15 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Fo
 \item
   When analyzing paired data, the summary statistic is the `mean difference' NOT the `difference in means'\footnote{Technically, if we calculate the differences and then take the mean (mean difference), and we calculate the two means and then take the difference (difference in means), the value will be the same. However, the \emph{sampling variability} of the two statistics will differ, as we will see in Activity 11.}. This terminology will be \emph{very} important in interpretations.
 \item
-  To create one simulated sample on the null distribution, shift the original data by adding \((\mu_0 - \bar{x})\) or \((0 - \bar{x}_d)\). Sample with replacement from the shifted data \(n\) times. Calculate and plot the sample mean or the sample mean difference.
+  To create one simulated sample on the null distribution for a sample mean or mean difference, shift the original data by adding \((\mu_0 - \bar{x})\) or \((0 - \bar{x}_d)\). Sample with replacement from the shifted data \(n\) times. Calculate and plot the sample mean or the sample mean difference.
 \item
-  To create one simulated sample on the bootstrap distribution, label \(n\) cards with the original response values. Randomly draw with replacement \(n\) times. Calculate and plot the resampled mean or the resampled mean difference.
+  To create one simulated sample on the bootstrap distribution for a sample mean or mean difference, label \(n\) cards with the original response values. Randomly draw with replacement \(n\) times. Calculate and plot the resampled mean or the resampled mean difference.
 \end{enumerate}
 
 \hypertarget{additional-notes-9}{%
 \subsection{Additional notes}\label{additional-notes-9}}
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 \hypertarget{inference-for-a-quantitative-response-with-independent-samples}{%
 \chapter{Inference for a Quantitative Response with Independent Samples}\label{inference-for-a-quantitative-response-with-independent-samples}}
@@ -8890,7 +8919,7 @@ Confidence interval for a difference in means:
   Write the null and alternative hypothesis in appropriate notation.
   \rgs
 \item
-  How could we use cards to simulate \textbf{1} sample \emph{which assumes the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{one} sample \emph{which assumes the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
   \rgs
   \rgs
   \rgs
@@ -8938,7 +8967,7 @@ Confidence interval for a difference in means:
   \rgs
   \rgs
 \item
-  How could we use cards to simulate \textbf{1} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{one} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
   \rgs
   \rgs
   \rgs
@@ -8991,8 +9020,10 @@ Confidence interval for a difference in means:
 \item
   Calculate the standard error of the difference in sample means.
   \rgs
+  \rgs
 \item
   Calculate the T-score (the standardized statistic for the sample mean).
+  \rgs
   \rgs
 \item
   What distribution should the T-score be compared to in order to calculate a p-value?
@@ -9003,8 +9034,10 @@ Confidence interval for a difference in means:
 \item
   What conclusion should the researcher make?
   \rgs
+  \rgs
 \item
   Calculate a 95\% confidence interval for the parameter of interest using \texttt{qt(0.975,\ df\ =\ 49)\ =\ 1.677} as the \(t^\star\) value.
+  \rgs
   \rgs
 \item
   Interpret your interval in the context of the problem.
@@ -9567,15 +9600,15 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Fo
 \item
   Review the take-home messages in Activity 6 and apply them to this context.
 \item
-  To create one simulated sample on the null distribution,label cards with the response variable values from the original data. Mix cards together and shuffle into two new groups of sizes \(n_1\) and \(n_2\). Calculate and plot the difference in means.
+  To create one simulated sample on the null distribution for a difference in sample means, label cards with the response variable values from the original data. Mix cards together and shuffle into two new groups of sizes \(n_1\) and \(n_2\). Calculate and plot the difference in means.
 \item
-  To create one simulated sample on the bootstrap distribution, label \(n_1 + n_2\) cards with the original response values. Keep groups separate and randomly draw with replacement \(n_1\) times from group 1 and \(n_2\) times from group 2. Calculate and plot the resampled difference in means.
+  To create one simulated sample on the bootstrap distribution for a difference in sample means, label \(n_1 + n_2\) cards with the original response values. Keep groups separate and randomly draw with replacement \(n_1\) times from group 1 and \(n_2\) times from group 2. Calculate and plot the resampled difference in means.
 \end{enumerate}
 
 \hypertarget{additional-notes-10}{%
 \subsection{Additional notes}\label{additional-notes-10}}
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered
 
 \hypertarget{inference-for-two-quantitative-variables}{%
 \chapter{Inference for Two Quantitative Variables}\label{inference-for-two-quantitative-variables}}
@@ -9826,7 +9859,7 @@ Confidence interval:
   Write the null and alternative hypotheses in appropriate notation.
   \rgs
 \item
-  How could we use cards to simulate \textbf{1} sample which assumes \emph{the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{one} sample which assumes \emph{the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
   \rgs
   \rgs
   \rgs
@@ -9851,7 +9884,7 @@ Confidence interval:
   What conclusion can be drawn from these data?\\
   \rgs
 \item
-  How could we use cards to simulate \textbf{1} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{one} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
   \rgs
   \rgs
   \rgs
@@ -9902,6 +9935,7 @@ Confidence interval:
 \item
   Calculate the T-score (the standardized statistic for the slope).
   \rgs
+  \rgs
 \item
   What distribution should the T-score be compared to in order to calculate a p-value?
   \rgs
@@ -9911,8 +9945,10 @@ Confidence interval:
 \item
   What conclusion should the researcher make?
   \rgs
+  \rgs
 \item
   Calculate a 95\% confidence interval for the parameter of interest using \texttt{qt(0.975,\ df\ =\ 27)\ =\ 2.052} as the \(t^\star\) value.
+  \rgs
   \rgs
 \item
   Interpret your interval in the context of the problem.
@@ -10007,8 +10043,16 @@ Some of the variables collected in the data set \texttt{baseball} consist of the
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\tightlist
 \item
   Explain why regression methods are appropriate to use to address the researchers' question. Make sure you clearly define the variables of interest in your explanation and their roles.
+\end{enumerate}
+
+\vspace{.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
 \item
   Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names (\texttt{RD} and \texttt{W}) for \texttt{xx} and \texttt{yy} in line 17. Highlight and run lines 1--22.
 
@@ -10191,7 +10235,7 @@ To find the value of the standardized statistic to test the slope we will use,
 T = \frac{\mbox{slope estimate}}{SE} = \frac{b_1}{SE(b_1)}.
 \]
 
-We will use the linear model `R output above to get the estimate for slope and the standard error of the slope.
+We will use the linear model \texttt{R} output above to get the estimate for slope and the standard error of the slope.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10385,7 +10429,7 @@ The response variable name is \texttt{W} (wins) and the explanatory variable nam
 \setcounter{enumi}{1}
 \tightlist
 \item
-  What inputs should be entered for each of the following to create the simulation?
+  What inputs should be entered for each of the following to create the simulation to test regression slope?
 \end{enumerate}
 
 \vspace{.5 mm}
@@ -10486,15 +10530,15 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 \item
   To interpret a confidence interval for the slope, think about how to interpret the sample slope and use that information in the confidence interval for slope.
 \item
-  To create one simulated sample on the null distribution, hold the \(x\) values constant and shuffle the \(y\) values to new \(x\) values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
+  To create one simulated sample on the null distribution for a sample slope or sample correlation, hold the \(x\) values constant and shuffle the \(y\) values to new \(x\) values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
 \item
-  To create one simulated sample on the bootstrap distribution, label \(n\) cards with the original (response, explanatory) values. Randomly draw with replacement \(n\) times. Find the regression line for the resampled data and plot the resampled slope or correlation.
+  To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label \(n\) cards with the original (response, explanatory) values. Randomly draw with replacement \(n\) times. Find the regression line for the resampled data and plot the resampled slope or correlation.
 \end{enumerate}
 
 \hypertarget{additional-notes-11}{%
 \subsection{Additional notes}\label{additional-notes-11}}
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 \hypertarget{references}{%
 \chapter*{References}\label{references}}
@@ -10531,6 +10575,9 @@ Stewart, Emily H., Brian Davis, B. Lee Clemans-Taylor, Benjamin Littenberg, Carl
 
 \leavevmode\hypertarget{ref-sulheim2017}{}%
 Sulheim, Steinar, Arne Ekeland, Ingar Holme, and Roald Bahr. 2017. ``Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders: Changes After an Interval of One Decade'' 51 (1): 44--50. \url{https://doi.org/10.1136/bjsports-2015-095798}.
+
+\leavevmode\hypertarget{ref-weather}{}%
+Team, National Weather Service Corporate Image Web. n.d. ``National Weather Service -- Nws Billings.'' \url{https://w2.weather.gov/climate/xmacis.php?wfo=byz}.
 
 \leavevmode\hypertarget{ref-usepa2020}{}%
 US EPA, OAR. 2020. ``Air Data -- Daily Air Quality Tracker.'' Data and Tools. \emph{US EPA}. \url{https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker}.

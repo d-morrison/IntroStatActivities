@@ -202,7 +202,7 @@ Confidence interval:
 4.	Write the null and alternative hypotheses in appropriate notation.
 \rgs
 
-5.	How could we use cards to simulate **1** sample which assumes *the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
+5.	How could we use cards to simulate **one** sample which assumes *the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
 \rgs
@@ -227,7 +227,7 @@ Confidence interval:
 11.	What conclusion can be drawn from these data?  
 \rgs
 
-12.	How could we use cards to simulate **1** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
+12.	How could we use cards to simulate **one** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
 \rgs
@@ -272,6 +272,7 @@ Confidence interval:
 
 11. Calculate the T-score (the standardized statistic for the slope).
 \rgs
+\rgs
 
 12. What distribution should the T-score be compared to in order to calculate a p-value?
 \rgs
@@ -281,8 +282,10 @@ Confidence interval:
 
 14. What conclusion should the researcher make?
 \rgs
+\rgs
 
 15. Calculate a 95\% confidence interval for the parameter of interest using `qt(0.975, df = 27) = 2.052` as the $t^\star$ value.
+\rgs
 \rgs
 
 16. Interpret your interval in the context of the problem.
@@ -358,6 +361,8 @@ baseball <- # Write over original data with the following
 #### Vocabulary review. Complete Q1--Q4 before class. {-}
 
 1. Explain why regression methods are appropriate to use to address the researchers' question. Make sure you clearly define the variables of interest in your explanation and their roles.
+
+\vspace{.5in}
 
 
 2. Use the provided `R` script file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names (`RD` and `W`) for `xx` and `yy` in line 17.  Highlight and run lines 1--22. 
@@ -458,7 +463,7 @@ $$
 T = \frac{\mbox{slope estimate}}{SE} = \frac{b_1}{SE(b_1)}.
 $$
  
-We will use the linear model `R output above to get the estimate for slope and the standard error of the slope.
+We will use the linear model `R` output above to get the estimate for slope and the standard error of the slope.
 
 12.  Calculate the standardized statistic for slope.  Identify where this calculated value is in the linear model `R` output.
 
@@ -567,7 +572,7 @@ We will use the `regression_test()` function in `R` (in the `catstats` package) 
 
 The response variable name is `W` (wins) and the explanatory variable name is `RD` (run difference).
 
-2. What inputs should be entered for each of the following to create the simulation?
+2. What inputs should be entered for each of the following to create the simulation to test regression slope?
 
 \vspace{.5 mm}
 
@@ -630,11 +635,11 @@ regression_bootstrap_CI(W ~ RD, # response ~ explanatory
 
 3. To interpret a confidence interval for the slope, think about how to interpret the sample slope and use that information in the confidence interval for slope.  
 
-4. To create one simulated sample on the null distribution, hold the $x$ values constant and shuffle the $y$ values to new $x$ values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
+4. To create one simulated sample on the null distribution for a sample slope or sample correlation, hold the $x$ values constant and shuffle the $y$ values to new $x$ values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
 
-5. To create one simulated sample on the bootstrap distribution, label $n$ cards with the original (response, explanatory) values.  Randomly draw with replacement $n$ times.  Find the regression line for the resampled data and plot the resampled slope or correlation. 
+5. To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label $n$ cards with the original (response, explanatory) values.  Randomly draw with replacement $n$ times.  Find the regression line for the resampled data and plot the resampled slope or correlation. 
 
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

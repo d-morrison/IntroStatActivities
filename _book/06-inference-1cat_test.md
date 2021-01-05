@@ -229,6 +229,8 @@ pnorm(mean = 5, sd = 2, q = 3, lower.tail = TRUE)
 #> [1] 0.1586553
 ```
 
+\newpage
+
 Changing to `lower.tail = FALSE` will give the proportion of the distribution which is *above* the value `x`.
 
 
@@ -285,6 +287,8 @@ We would recommend you work through each of the examples in Section 5.2.4 using 
 \setstretch{1}
 
 You may skip Section 5.3.2 and stop before the "Confidence interval for $\pi$" sub-section in Section 5.3.3. These sections will be covered next week.
+
+\newpage
 
 **Videos**  
 
@@ -738,7 +742,9 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
 
 \vspace{1in}
 
-The value in question 23 is the **p-value**.  The smaller the p-value, the more evidence we have against the null hypothesis. (Why?)
+The value in question 23 is the **p-value**.  The smaller the p-value, the more evidence we have against the null hypothesis. Explain why this makes sense?
+
+\vspace{0.5in}
 
 24. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one of the five descriptions.)
 
@@ -877,7 +883,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 4.  A **decision** is a statement about strength of evidence against the null hypothesis: reject the null if the p-value is below a pre-set significance level, and fail to reject the null if the p-value is above a pre-set significance level. When writing a **conclusion** to a hypothesis test, on the other hand, we are answering the research question.  Thus, a conclusion is a statement about strength of evidence *for the alternative hypothesis*. Use the guidelines for the strength of evidence throughout this course to assess the evidence against the null hypothesis.  
 
-5.  To create one simulated sample on the null distribution, spin a spinner with probability equal to $\pi_0$ (the null value), $n$ times or draw with replacement $n$ times from a deck of cards created to reflect $\pi_0$ as the probability of success. Calculate and plot the proportion of successes from the simulatied sample. 
+5.  To create one simulated sample on the null distribution for a sample proportion, spin a spinner with probability equal to $\pi_0$ (the null value), $n$ times or draw with replacement $n$ times from a deck of cards created to reflect $\pi_0$ as the probability of success. Calculate and plot the proportion of successes from the simulated sample. 
 
 ### Additional notes
 

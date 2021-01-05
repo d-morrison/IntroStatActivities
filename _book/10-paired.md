@@ -170,7 +170,7 @@ $\mu_0$ represents
 \rgs 
 \rgs 
 
-4. How could we use cards to simulate **1** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
+4. How could we use cards to simulate **one** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs 
 \rgs 
 \rgs 
@@ -181,20 +181,20 @@ $\mu_0$ represents
 
 6. Based on Figure 6.3, give the confidence interval for each of the following confidence levels.
 
-\rgi 90% confidence interval = 
+\rgi 90\% confidence interval = 
 \rgs 
 
-\rgi 95% confidence interval = 
+\rgi 95\% confidence interval = 
 \rgs 
 
-\rgi 99% confidence interval = 
+\rgi 99\% confidence interval = 
 \rgs 
 
-7. Interpret your 99% confidence interval in the context of the problem.
+7. Interpret your 99\% confidence interval in the context of the problem.
 \rgs 
 \rgs 
 
-8. Use Figure 6.4 to determine a 90% confidence interval for the true standard deviation for three bedroom flats in Edinburgh.
+8. Use Figure 6.4 to determine a 90\% confidence interval for the true standard deviation for three bedroom flats in Edinburgh.
 \rgs 
 
 
@@ -222,12 +222,14 @@ $\mu_0$ represents
 
 7. Calculate the standard error of the sample mean.
 \rgs 
+\rgs
 
-8. What distribution should be referenced to find the multiplier for a 95% confidence interval?
+8. What distribution should be referenced to find the multiplier for a 95\% confidence interval?
 \rgs 
 
-9. Using $t^\star=2.10$, calculate a 95% confidence interval for $\mu$.
+9. Using $t^\star=2.10$, calculate a 95\% confidence interval for $\mu$.
 \rgs 
+\rgs
 
 
 10. Interpret the interval calculated in the context of the problem.
@@ -265,8 +267,10 @@ $\mu_0$ represents
 
 9.	Calculate the standard error of the sample mean.
 \rgs
+\rgs
 
 10.	Calculate the T-score (the standardized statistic for the sample mean).
+\rgs
 \rgs
 
 11.	What distribution should the T-score be compared to in order to calculate a p-value?
@@ -283,6 +287,7 @@ $\mu_0$ represents
 \rgs
 
 15.	What conclusion should the researcher make?
+\rgs
 \rgs
 
 16.	Are the results in this example statistically significant?  Justify your answer.
@@ -382,7 +387,7 @@ $s_d=$
 \rgs
 
 
-6.	How could we use cards to simulate **1** bootstrap resample *which assumes the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
+6.	How could we use cards to simulate **one** bootstrap resample *which assumes the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
 \rgs
@@ -417,7 +422,7 @@ $s_d=$
 \rgs
 \rgs
 
-6. How could we use cards to simulate **1** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
+6. How could we use cards to simulate **one** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
 \rgs
@@ -426,10 +431,10 @@ $s_d=$
 \rgs
 \rgs
 
-8. Give the 95% confidence interval for $\mu_d$.
+8. Give the 95\% confidence interval for $\mu_d$.
 \rgs
 
-9. Interpret your 95% confidence interval in the context of the problem.
+9. Interpret your 95\% confidence interval in the context of the problem.
 \rgs
 \rgs
 
@@ -443,8 +448,10 @@ $s_d=$
 
 12. Calculate the standard error of the sample mean difference.
 \rgs
+\rgs
 
 13. Calculate the T-score (the standardized statistic for the sample mean difference).
+\rgs
 \rgs
 
 14. What distribution should the T-score be compared to in order to calculate a p-value?
@@ -453,16 +460,18 @@ $s_d=$
 15. What was the p-value of the test? 
 \rgs
 	
-16. At the 5% significance level, what decision would you make?  What type of error might that be?
+16. At the 5\% significance level, what decision would you make?  What type of error might that be?
 \rgs
 
 17. What conclusion should the researcher make?
+\rgs
 \rgs
 
 18. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
-19. Using $t^\star=2.00$, calculate a 95% confidence interval for $\mu_d$.
+19. Using $t^\star=2.00$, calculate a 95\% confidence interval for $\mu_d$.
+\rgs
 \rgs
 	
 20. Interpret the interval calculated in the context of the problem.
@@ -772,10 +781,10 @@ qt(0.995, df = 32, lower.tail=TRUE)
 
 3. When analyzing paired data, the summary statistic is the 'mean difference' NOT the 'difference in means'^[Technically, if we calculate the differences and then take the mean (mean difference), and we calculate the two means and then take the difference (difference in means), the value will be the same. However, the *sampling variability* of the two statistics will differ, as we will see in Activity 11.].  This terminology will be *very* important in interpretations.
 
-4. To create one simulated sample on the null distribution, shift the original data by adding $(\mu_0 - \bar{x})$ or $(0 - \bar{x}_d)$. Sample with replacement from the shifted data $n$ times. Calculate and plot the sample mean or the sample mean difference.
+4. To create one simulated sample on the null distribution for a sample mean or mean difference, shift the original data by adding $(\mu_0 - \bar{x})$ or $(0 - \bar{x}_d)$. Sample with replacement from the shifted data $n$ times. Calculate and plot the sample mean or the sample mean difference.
 
-5. To create one simulated sample on the bootstrap distribution, label $n$ cards with the original response values.  Randomly draw with replacement $n$ times.  Calculate and plot the resampled mean or the resampled mean difference.
+5. To create one simulated sample on the bootstrap distribution for a sample mean or mean difference, label $n$ cards with the original response values.  Randomly draw with replacement $n$ times.  Calculate and plot the resampled mean or the resampled mean difference.
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

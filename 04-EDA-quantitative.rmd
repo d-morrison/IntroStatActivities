@@ -343,15 +343,15 @@ ggplot(aes(x = xx)) +   # Name variable to plot
 
 8. Sketch the histogram created here.
 
-\vspace{1.5in}
+\vspace{1.4in}
 
 9. Which range of IMDb scores have the highest frequency?
 
-\vspace{0.4in}
+\vspace{0.2in}
 
 10. What is the shape of the distribution of IMDb scores?
 
-\vspace{0.4in}
+\vspace{0.2in}
 
 11. Which five summary statistics are used in creating a box plot? *Hint*: Together they are called the **five-number summary** of the variable.
 
@@ -435,9 +435,9 @@ movies %>%  # Data set piped into...
        y = "Budget (in Millions)")  # y-axis label
 ```
 
-1.  Using the provided favstats output and the side-by-side box plots, interpret the value of quartile 1 for the R content rating.
+1.  Using the provided `favstats` output and the side-by-side box plots, interpret the value of quartile 1 for the R content rating.
 
-\vspace{1in}
+\vspace{.8in}
 
 2. Which content rating has the highest center?
 
@@ -445,7 +445,7 @@ movies %>%  # Data set piped into...
 
 3. Which variable is the explanatory variable? Response variable?
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 ### Take-home messages
 

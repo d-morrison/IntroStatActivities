@@ -202,7 +202,7 @@ $s_2$ represents
 5.	Write the null and alternative hypothesis in appropriate notation.
 \rgs
 
-6.	How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
+6.	How could we use cards to simulate **one** sample *which assumes the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
 \rgs
@@ -244,7 +244,7 @@ $s_2$ represents
 \rgs
 \rgs
 
-6.	How could we use cards to simulate **1** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
+6.	How could we use cards to simulate **one** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
 \rgs
@@ -253,7 +253,7 @@ $s_2$ represents
 \rgs
 \rgs
 
-8.	Does the 90% confidence interval provide evidence of a difference across the two treatments?
+8.	Does the 90\% confidence interval provide evidence of a difference across the two treatments?
 \rgs
 \rgs
 
@@ -291,8 +291,10 @@ $s_2$ represents
 
 10. Calculate the standard error of the difference in sample means.
 \rgs
+\rgs
 
 11. Calculate the T-score (the standardized statistic for the sample mean).
+\rgs
 \rgs
 
 12. What distribution should the T-score be compared to in order to calculate a p-value?
@@ -303,8 +305,10 @@ $s_2$ represents
 
 14. What conclusion should the researcher make?
 \rgs
+\rgs
 
-15. Calculate a 95% confidence interval for the parameter of interest using `qt(0.975, df = 49) = 1.677` as the $t^\star$ value.
+15. Calculate a 95\% confidence interval for the parameter of interest using `qt(0.975, df = 49) = 1.677` as the $t^\star$ value.
+\rgs
 \rgs
 
 16. Interpret your interval in the context of the problem.
@@ -630,14 +634,14 @@ qt(0.975, df = 20, lower.tail=TRUE)
 
 2. Review the take-home messages in Activity 6 and apply them to this context.
 
-3. To create one simulated sample on the null distribution,label cards with the response variable values from the original data.  Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$. Calculate and plot the difference in means. 
+3. To create one simulated sample on the null distribution for a difference in sample means, label cards with the response variable values from the original data.  Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$. Calculate and plot the difference in means. 
 
-4. To create one simulated sample on the bootstrap distribution, label $n_1 + n_2$ cards with the original response values.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in means.  
+4. To create one simulated sample on the bootstrap distribution for a difference in sample means, label $n_1 + n_2$ cards with the original response values.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in means.  
 
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered
 
 
 
