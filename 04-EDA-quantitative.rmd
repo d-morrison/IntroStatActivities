@@ -58,7 +58,7 @@ Modality:
 Distribution (of a variable):
 \rgs
 
-\rgi Four characteristics of the distribution of 1 quantitative variable:
+\rgi Four characteristics of the distribution of one quantitative variable:
 	
 \rgi Center:
 \rgs
@@ -84,7 +84,7 @@ Five number summary:
 $X^{th}$ percentile:
 \rgs
 
-	E.g. if the value 6 is 10th percentile, then 10% of the data have values 6 or below.
+    e.g. if the value 6 is at the 10th percentile, then 10% of the data have values 6 or below.
 
 Interquartile range (IQR):
 \rgs
@@ -149,10 +149,10 @@ Sample size & & \\
 & & \\ \hline
 Proportion & & \\ 
 (used to summarize & & \\ 
-1 categorical variable) & & \\ \hline
+one categorical variable) & & \\ \hline
 Mean & & \\ 
 (used to summarize & & \\ 
-1 quantitative variable)& & \\ \hline
+one quantitative variable)& & \\ \hline
 Correlation & & \\ 
 (used to summarize & & \\ 
 two quantitative variables)& & \\ \hline
@@ -171,9 +171,9 @@ Fill in the following table to help associate type of plot for each of several s
 \begin{center}
 \begin{tabular}{|l|p{3in}|} \hline
  & Appropriate plot(s) \\ \hline
-1 categorical variable & \\
+One categorical variable & \\
 (categorical response, no explanatory) & \\ \hline
-1 quantitative variable  & \\
+One quantitative variable  & \\
 (quantitative response, no explanatory) & \\ \hline
 Two categorical variables  & \\
 (categorical response, categorical explanatory) & \\ \hline
@@ -247,15 +247,15 @@ ggraph(mygraph, layout = 'dendrogram', circular = FALSE) +
 ### Learning objectives
 
 * Identify and create appropriate summary statistics and plots
-  given a data set or research question for quantitative data
+  given a data set or research question for quantitative data.
 
 * Interpret the following summary statistics in context:
   median, lower quartile, upper quartile,
-  standard deviation, inter-quartile range
+  standard deviation, interquartile range.
 
 * Given a plot or set of plots, describe and compare the distribution(s)
   of a single quantitative variable
-  (center, variability, shape, outliers)
+  (center, variability, shape, outliers).
 
 ### Terminology review
 
@@ -263,7 +263,7 @@ In this week's activity, we will review summary measures and plots for quantitat
 
 * Two measures of center: mean, median
 
-* Two measures of spread (variability): standard deviation, inter-quartile range (IQR)
+* Two measures of spread (variability): standard deviation, interquartile range (IQR)
 
 * Types of graphs: box plots, dot plots, histograms
 
@@ -313,7 +313,7 @@ movies %>% # Data set piped into...
 
 \vspace{0.5in}
 
-5. Calculate the Interquartile range (IQR = Q3 - Q1).
+5. Calculate the interquartile range (IQR = Q3 - Q1).
 
 \vspace{0.5in}
 
@@ -342,7 +342,7 @@ ggplot(aes(x = xx)) +   # Name variable to plot
 
 8. Sketch the histogram created here.
 
-\vspace{1in}
+\vspace{1.5in}
 
 9. Which range of IMDb scores have the highest frequency?
 
@@ -392,7 +392,6 @@ movies %>%  # Data set piped into...
 
 \vspace{1.5in}
 
-\newpage
 
 14. Answer the following questions about the box plots created.
 

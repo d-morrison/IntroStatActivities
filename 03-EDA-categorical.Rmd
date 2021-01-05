@@ -127,7 +127,7 @@ What is the difference between a standardized segmented bar plot and a mosaic pl
 
 True or false: Pie charts are generally highly recommended ways to graphically display categorical data.
 
-True or false: Two categorical variables are associated if the conditional proportions of a particular outcome (typically of the response variable) differ across levels of the other variable (typically the explanatory).
+True or false: Two categorical variables are associated if the conditional proportions of a particular outcome (typically of the response variable) differ across levels of the other variable (typically the explanatory variable).
 
 True or false: When a segmented bar plot has segments that sum to 1 (or 100%), the segment heights correspond to the proportions conditioned on the **segment**.
 
@@ -446,7 +446,7 @@ For this part of the activity we will focus on using RStudio and the provided `R
 #### Nightlight use and myopia
 In a study reported in Nature (1999, Vol. 399, pp. 113-114), a survey of 479 children found that those who had slept with a nightlight or in a fully lit room before the age of 2 had a higher incidence of nearsightedness (myopia) later in childhood.
 
-In this study, there are two variables studied: `Light`: level of light in room at night (no light, night light, full light) and `Sight`: level of myopia developed later in childhood (high myopia, myopia, no myopia).
+In this study, there are two variables studied: `Light`: level of light in room at night (no light, nightlight, full light) and `Sight`: level of myopia developed later in childhood (high myopia, myopia, no myopia).
 
 1. Which variable is the explanatory variable? Which is the response variable?
 
@@ -549,7 +549,7 @@ ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
 
 3.  Mosaic plots are similar to segmented bar charts but the widths of the bars also show the number of observations within each outcome.  
 
-4.  Conditional probabilities are calculated dependent on a second variable.  In the probability notation, the variable following `|` is the variable on which we are conditioning.  The denominator used to calculate the probability will be the total for the variable on which we are conditioning.  
+4.  Conditional probabilities are calculated dependent on a second variable.  In probability notation, the variable following `|` is the variable on which we are conditioning.  The denominator used to calculate the probability will be the total for the variable on which we are conditioning.  
 
 
 \newpage
