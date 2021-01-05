@@ -340,7 +340,7 @@ The response variable name is Outcome and the explanatory variable name is Helme
 
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 1 in place of the xx's in the two proportion bootstrap CI function to produce the bootstrap distribution with 1000 simulations, highlight and run lines 1--22.
+We will use the `two_proportion_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of differences in sample proportions and calculate a confidence interval. Using the `R` script file for this activity, enter your answers for question 1 in place of the `xx`'s in the two proportion bootstrap CI function to produce the bootstrap distribution with 1000 simulations, highlight and run lines 1--22.
 
 
 ```r

@@ -843,7 +843,7 @@ Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the 
 
 The remaining questions cover simulation-based methods for testing two categorical variables. Use Section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.  
 
-1.  First let's think about how one simulation would be created on the null distribution using cards.  
+1.  First, let's think about how one simulation would be created on the null distribution using cards.  
 
     How many cards would you need?
 \vspace{0.1in}
@@ -860,22 +860,20 @@ The remaining questions cover simulation-based methods for testing two categoric
 
 \vspace{0.8in}
 
-To create the null distribution of differences in sample proportions, we will use the `two_proportion_test()` function in `R` (in the `catstats` package).  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name identified above as `injury`, the outcome for the explanatory variable to give the order of subtraction for First in Subtraction, number of repetitions, the outcome for the response variable that is a success for Response Value Numerator, and the direction of the alternative hypothesis.
+To create the null distribution of differences in sample proportions, we will use the `two_proportion_test()` function in `R` (in the `catstats` package).  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `injury`), the outcome for the explanatory variable that is first in subtraction, number of repetitions, the outcome for the response variable that is a success (what the numerator counts when calculating a sample proportion), and the direction of the alternative hypothesis.
 
-The response variable name is Outcome and the explanatory variable name is Helmet.
-
-\newpage
+The response variable name is `Outcome` and the explanatory variable name is `Helmet`.
 
 4.  What inputs should be entered for each of the following to create the simulation?
 
 \vspace{.2in}
-* First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"Yes"` or `"No"`):
+* First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"Yes"` or `"No"`):
 
 \vspace{.2in}
 * Number of repetitions:
     
 \vspace{.2in}
-* Response Value Numerator (What is the outcome for the response variable that is considered a success? `"Head Injury"` or `"No Head Injury"`):
+* Response value numerator (What is the outcome for the response variable that is considered a success? `"Head Injury"` or `"No Head Injury"`):
 
 \vspace{.2in}
 * As extreme as (enter the value for the sample difference in proportions):
@@ -885,26 +883,26 @@ The response variable name is Outcome and the explanatory variable name is Helme
 
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 4 in place of the xx's in the two proportion test code to produce the null distribution with 1000 simulations, highlight and run lines 1--12 and then 33--39.
+Using the `R` script file for this activity, enter your answers for question 4 in place of the `xx`'s to produce the null distribution with 1000 simulations; highlight and run lines 1--12 and then 33--39.
 
 ```{r, echo=TRUE, eval=FALSE}
 two_proportion_test(formula = Outcome ~ Helmet, # response~explanatory
-                    data= injury, # Name of dataset
-                    first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
-                    number_repetitions = 1000, # Always use a minimum of 1000 repetitions
-                    response_value_numerator = "xx", # Define which outcome is a success 
-                    as_extreme_as = xx, # Type your calculated observed statistic (difference in sample proportions)
-                    direction="xx") # Alternative hypothesis direction ("greater","less","two-sided")
+    data= injury, # Name of dataset
+    first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
+    number_repetitions = 1000, # Always use a minimum of 1000 repetitions
+    response_value_numerator = "xx", # Define which outcome is a success 
+    as_extreme_as = xx, # Type your calculated observed statistic (difference in sample proportions)
+    direction="xx") # Alternative hypothesis direction ("greater","less","two-sided")
 ```
 
 5.  Sketch the null distribution created here.
 
-\newpage
+\vspace{1.5in}
 
 
 6. What value is the null distribution centered around?  Explain why this makes sense?
 
-\vspace{1in}
+\vspace{.8in}
 
 7.  What is the p-value? *Remember*: This is the value given at the bottom of the null distribution.
 
@@ -912,19 +910,19 @@ two_proportion_test(formula = Outcome ~ Helmet, # response~explanatory
 
 8.  Is the p-value found in question 7 for the out-of-class activity similar to the p-value found using the theory-based test?  Explain why you would expect this to be true.
 
-\vspace{1in}
+\vspace{.8in}
 
 ### Take-home messages
 
-1.	When comparing two groups, we are looking at the relationship between two parameters.  In the null hypothesis we assume the two parameters are equal or that there is no difference between the two proportions.  
+1.	When comparing two groups, we are looking at the difference between two parameters.  In the null hypothesis, we assume the two parameters are equal, or that there is no difference between the two proportions.  
 
-2.  We use the same guidelines for the strength of evidence as we did in activity 6.  
+2.  We use the same guidelines for the strength of evidence as we did in Activity 6.  
 
-3.  The standardized statistic when the response variable is categorical is a Z score and compared to the standard normal distribution to find the p-value.  To find the standardardized statistic we take the value of the statistic minus the null value, divided by the standard error of the statistic.  The standardized statistic measures the number of standard errors the statistic is from the null value. 
+3.  The standardized statistic when the response variable is categorical is a Z score and is compared to the standard normal distribution to find the p-value.  To find the standardized statistic, we take the value of the statistic minus the null value, divided by the null standard error of the statistic.  The standardized statistic measures the number of standard errors the statistic is from the null value. 
 
-4.  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type 1 error.
+4.  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type 1 error. A Type 1 error occurs when we reject a true null hypothesis (false positive).
 
-5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance leve), we could have a possible Type 2 error.
+5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance level), we could have a possible Type 2 error. A Type 2 error occurs when we fail to reject a false null hypothesis (false negative).
 
 
 ### Additional notes

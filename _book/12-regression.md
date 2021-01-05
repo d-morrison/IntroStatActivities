@@ -547,15 +547,15 @@ $$\widehat{\text{runs scored}} = b_0 + b_1*OBP + b_2*SLG$$
 
 ### Out-of-class activity
 
-In the out-of-class activity we will focus on using simulation based methods for inference of regression.  Use section 7.1 in the textbook and the TwoQuantSim video to complete the following questions.  
+In the out-of-class activity we will focus on using simulation-based methods for inference of regression.  Use section 7.1 in the textbook and the TwoQuantSim video to complete the following questions.  
 
-First let's think about how one simulation would be created on the null distribution using cards.  First we would write the values for the response variable, wins, on each card.  Next, we would shuffle the y values to a new x value (explanatory variable).  Then, find the line of regression for the shuffled cards.  
+First let's think about how one simulation would be created on the null distribution using cards.  First we would write the values for the response variable, wins, on each card.  Next, we would shuffle the y values to a new $x$ value (explanatory variable).  Then, find the line of regression for the shuffled cards.  
 
 1. Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
 
 \vspace{1in}
 
-To create the null distribution, we will use the regression test from the catstats package.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name identified above as `baseball`, the statistic for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
+We will use the `regression_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample slopes (or sample correlations) and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name identified above as `baseball`, the statistic for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
 
 The response variable name is `W` (wins) and the explanatory variable name is `RD` (run difference).
 
@@ -578,15 +578,15 @@ The response variable name is `W` (wins) and the explanatory variable name is `R
     
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 2 in place of the xx's for the regression test to produce the null distribution with 1000 simulations.  Highlight and run lines 1--13 and then lines 44--49.
+Using the `R` script file for this activity, enter your answers for question 2 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 1--13 and then lines 44--49.
 
 
 ```r
-regression_test(W~RD, # response ~ explanatory
+regression_test(W ~ RD, # response ~ explanatory
                data = baseball, # Name of data set
                direction = "xx", # Sign in alternative ("greater", "less", "two-sided")
-               statistic = "xx", 
-               as_extreme_as = x, # Observed slope
+               statistic = "xx", # "slope" or "correlation"
+               as_extreme_as = x, # Observed slope or correlation
                number_repetitions = 1000) # Number of simulated samples for null distribution
        
 ```
@@ -595,11 +595,11 @@ regression_test(W~RD, # response ~ explanatory
 
 \vspace{0.5in}
 
-Fill in the xx's in the regression bootstrap CI function in the provided `R` script file to find a 95\% confidence interval. Highlight and run lines 52--56. 
+We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the `xx`'s in the the provided `R` script file to find a 95\% confidence interval. Highlight and run lines 52--56. 
 
 
 ```r
-regression_bootstrap_CI(W~RD, # response ~ explanatory
+regression_bootstrap_CI(W ~ RD, # response ~ explanatory
                         data = baseball, # Name of data set
                         confidence_level = xx, # Confidence level as decimal
                         statistic = "xx", # Slope or correlation

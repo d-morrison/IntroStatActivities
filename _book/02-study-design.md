@@ -77,7 +77,7 @@ True or False: Random sampling helps to resolve selection bias, but has no impac
 
 #### Reminders from Section 1.2 {-}
 
-**Explanatory variable**: The variable researchers think _may be_ effecting the other variable.  What the researchers control/assign in an experiment.  If comparing groups, the explanatory variable puts the observational units into groups.
+**Explanatory variable**: The variable researchers think _may be_ affecting the other variable.  What the researchers control/assign in an experiment.  If comparing groups, the explanatory variable puts the observational units into groups.
 
 **Response variable**: The variable researchers think _may be_ influenced by the other variable.  This variable is always observed, never controlled or assigned.
 
