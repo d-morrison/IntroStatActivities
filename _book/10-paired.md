@@ -769,7 +769,7 @@ qt(0.995, df = 32, lower.tail=TRUE)
 
 2.  When using bootstrapping to create a null distribution centered at the null value for both paired data and a single quantitative variable, we first need to shift the data by the difference $\mu_0 - \bar{x}_d$, and then sample with replacement from the shifted data. 
 
-3. When analyzing paired data, the summary statistic is the 'mean difference' NOT the 'difference in means'.  This terminology will be *very* important in interpretations.
+3. When analyzing paired data, the summary statistic is the 'mean difference' NOT the 'difference in means'^[Technically, if we calculate the differences and then take the mean (mean difference), and we calculate the two means and then take the difference (difference in means), the value will be the same. However, the *sampling variability* of the two statistics will differ, as we will see in Activity 11.].  This terminology will be *very* important in interpretations.
 
 ### Additional notes
 

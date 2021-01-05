@@ -5000,7 +5000,7 @@ Notes:
 \item
   The p-value is the probability of the observed statistic occurring or more extreme if the null hypothesis is true. The farther in the tail of the distribution the observed statistic is, the smaller the probability is (smaller the p-value!). The \textbf{smaller} the p-value, the \textbf{more} evidence the statistic provides \textbf{against} the null hypothesis. (Think carefully about why this makes sense!)
 \item
-  A `decision' is a statement about strength of evidence against the null hypothesis: reject the null if the p-value is below a pre-set significance level, and fail to reject the null if the p-value is above a pre-set significance level. When writing a `conclusion' to a hypothesis test, on the other hand, we are answering the research question. Thus, a conclusion is a statement about strength of evidence \emph{for the alternative hypothesis}. Use the guidelines for the strength of evidence throughout this course to assess the evidence against the null hypothesis.
+  A \textbf{decision} is a statement about strength of evidence against the null hypothesis: reject the null if the p-value is below a pre-set significance level, and fail to reject the null if the p-value is above a pre-set significance level. When writing a \textbf{conclusion} to a hypothesis test, on the other hand, we are answering the research question. Thus, a conclusion is a statement about strength of evidence \emph{for the alternative hypothesis}. Use the guidelines for the strength of evidence throughout this course to assess the evidence against the null hypothesis.
 \end{enumerate}
 
 \hypertarget{additional-notes-5}{%
@@ -6873,7 +6873,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{two\_proportion\_test}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{Helmet, }\CommentTok{\# response\textasciitilde{}explanatory}
+\KeywordTok{two\_proportion\_test}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{Helmet, }\CommentTok{\# response \textasciitilde{} explanatory}
     \DataTypeTok{data=}\NormalTok{ injury, }\CommentTok{\# Name of dataset}
     \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Order of subtraction: enter the name of Group 1}
     \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Always use a minimum of 1000 repetitions}
@@ -8590,7 +8590,7 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Fo
 \item
   When using bootstrapping to create a null distribution centered at the null value for both paired data and a single quantitative variable, we first need to shift the data by the difference \(\mu_0 - \bar{x}_d\), and then sample with replacement from the shifted data.
 \item
-  When analyzing paired data, the summary statistic is the `mean difference' NOT the `difference in means'. This terminology will be \emph{very} important in interpretations.
+  When analyzing paired data, the summary statistic is the `mean difference' NOT the `difference in means'\footnote{Technically, if we calculate the differences and then take the mean (mean difference), and we calculate the two means and then take the difference (difference in means), the value will be the same. However, the \emph{sampling variability} of the two statistics will differ, as we will see in Activity 11.}. This terminology will be \emph{very} important in interpretations.
 \end{enumerate}
 
 \hypertarget{additional-notes-9}{%
@@ -8994,7 +8994,7 @@ Confidence interval for a difference in means:
 \hypertarget{terminology-review-10}{%
 \subsection{Terminology review}\label{terminology-review-10}}
 
-In this week's in-class activity, we will use simulation-based methods to analyze one categorical and one quantitative variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
+In this week's in-class activity, we will use simulation-based methods to analyze the association between one categorical explanatory variable and one quantitative response variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
@@ -9008,7 +9008,7 @@ To review these concepts, see Section 6.3 in the textbook.
 \hypertarget{weather-patterns-and-record-snowfall}{%
 \subsection{Weather patterns and record snowfall}\label{weather-patterns-and-record-snowfall}}
 
-In the winter of 2018-2019, Bozeman had a record snowfall which resulted in the collapse of two flat-roofed buildings on the MSU campus. A writer for the Washington Post predicted the heavy snowfall for 2018-2019 due to the El Ni\latexcode{\~{n}}o weather pattern that occurred in that season. A meteorologist in Montana wanted to see if the weather pattern really was associated with total snowfall. She obtained historical data from 44 years on the weather pattern (El Ni\latexcode{\~{n}}o or La Ni\latexcode{\~{n}}a) and snowfall (in inches) at the Billings Weather Station.
+In the winter of 2018--2019, Bozeman had a record snowfall which resulted in the collapse of two flat-roofed buildings on the MSU campus. A writer for the \emph{Washington Post} predicted the heavy snowfall for 2018--2019 due to the El Ni\latexcode{\~{n}}o weather pattern that occurred in that season. A meteorologist in Montana wanted to see if the weather pattern really was associated with total snowfall. She obtained historical data from 44 years on the weather pattern (El Ni\latexcode{\~{n}}o or La Ni\latexcode{\~{n}}a) and snowfall (in inches) at the Billings Weather Station. Side-by-side boxplots and summary statistics for each group are shown on the following page.
 
 Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
@@ -9042,7 +9042,7 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 \begin{Highlighting}[]
 \CommentTok{\# Summary statistics}
 \NormalTok{Snow }\OperatorTok{\%\textgreater{}\%}\StringTok{ }
-\StringTok{     }\KeywordTok{summarize}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(Snowfall}\OperatorTok{\textasciitilde{}}\NormalTok{WeatherPattern))}
+\StringTok{     }\KeywordTok{summarize}\NormalTok{(}\KeywordTok{favstats}\NormalTok{(Snowfall }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{WeatherPattern))}
 \end{Highlighting}
 \end{Shaded}
 
@@ -9060,7 +9060,7 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  The two variables assessed in this study are the type of weather pattern and snowfall. Identify the role for each variable (explanatory, response).
+  The two variables assessed in this study are the type of weather pattern and snowfall. Identify the role for each variable (explanatory or response).
 \end{enumerate}
 
 \vspace{.6in}
@@ -9070,7 +9070,7 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 \setcounter{enumi}{1}
 \tightlist
 \item
-  Which group (El Ni\latexcode{\~{n}}o or La Ni\latexcode{\~{n}}a) has the highest center? Explain which measure of center you are using.
+  Which group (El Ni\latexcode{\~{n}}o or La Ni\latexcode{\~{n}}a) has the highest center in the distributions of snowfall? Explain which measure of center you are using.
 \end{enumerate}
 
 \vspace{.6in}
@@ -9080,7 +9080,7 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 \setcounter{enumi}{2}
 \tightlist
 \item
-  Using the side-by-side boxplots, which group has the largest spread? How did you make that choice?
+  Using the side-by-side box plots, which group has the largest spread in snowfall? How did you make that choice?
 \end{enumerate}
 
 \vspace{.6in}
@@ -9150,7 +9150,7 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 \setcounter{enumi}{8}
 \tightlist
 \item
-  Calculate the summary statistic. Use El Ni\latexcode{\~{n}}o minus La Ni\latexcode{\~{n}}a as the order of subtraction. What is the appropriate notation for the statistic?
+  Calculate the summary statistic of interest. Use El Ni\latexcode{\~{n}}o minus La Ni\latexcode{\~{n}}a as the order of subtraction. What is the appropriate notation for this statistic?
 \end{enumerate}
 
 \vspace{0.5in}
@@ -9161,9 +9161,13 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 \subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}}
 \addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
 
-Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, we assume there is no association between variables. This means that a snowfall value could be in either an El Ni\latexcode{\~{n}}o year or a La Ni\latexcode{\~{n}}a year.
+\hypertarget{hypothesis-test-1}{%
+\paragraph*{Hypothesis test}\label{hypothesis-test-1}}
+\addcontentsline{toc}{paragraph}{Hypothesis test}
 
-To demonstrate this your instructor will use cards to represent the sample.
+Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that there is no association between the two variables. This means that the snowfall values observed in the data set would have been the same regardless of the weather pattern that year.
+
+To demonstrate this simulation, your instructor will use cards to represent the sample.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9173,7 +9177,7 @@ To demonstrate this your instructor will use cards to represent the sample.
   How many cards will we start with?
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9183,17 +9187,17 @@ To demonstrate this your instructor will use cards to represent the sample.
   What will we write on each card?
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{11}
 \tightlist
 \item
-  Next we will mix the cards together and shuffle into two piles. How many cards will go into each pile? What should we label the piles?
+  Next, we will mix the cards together and shuffle into two piles. How many cards will go into each pile? What should we label the piles?
 \end{enumerate}
 
-\vspace{1in}
+\vspace{.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9215,14 +9219,14 @@ To demonstrate this your instructor will use cards to represent the sample.
 
 \vspace{.8in}
 
-\textbf{Simulation method}
+We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of differences in sample means and compute a p-value.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{14}
 \tightlist
 \item
-  When using the two mean test we need to enter the name of the response variable, \texttt{Snowfall} and the name of the explanatory variable, \texttt{WeatherPattern} for the formula. The name of the data set as shown above is \texttt{Snow}. What values should be entered for each of the following into the two mean test to create 1000 simulations?
+  When using the \texttt{two\_mean\_test()} function, we need to enter the name of the response variable, \texttt{Snowfall}, and the name of the explanatory variable, \texttt{WeatherPattern}, for the formula. The name of the data set as shown above is \texttt{Snow}. What values should be entered for each of the following to create 1000 simulated samples?
 \end{enumerate}
 
 \vspace{.2in}
@@ -9230,7 +9234,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 \begin{itemize}
 \tightlist
 \item
-  First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? \texttt{"El\_Nino"} or \texttt{"La\_Nina"}:
+  First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? \texttt{"El\_Nino"} or \texttt{"La\_Nina"}):
 \end{itemize}
 
 \vspace{.2in}
@@ -9264,20 +9268,21 @@ To demonstrate this your instructor will use cards to represent the sample.
 \setcounter{enumi}{15}
 \tightlist
 \item
-  We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of differences in sample means and compute a p-value. Using the \texttt{R} script file for this activity, enter your answers for question 15 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 1--29.
+  Simulate a null distribution and compute the p-value. Using the \texttt{R} script file for this activity, enter your answers for question 15 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 1--29.
 \end{enumerate}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{two\_mean\_test}\NormalTok{(Snowfall}\OperatorTok{\textasciitilde{}}\NormalTok{WeatherPattern, }\DataTypeTok{data =}\NormalTok{ Snow,  }\CommentTok{\# Variables and data}
-                    \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# First outcome in order of subtraction}
-                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\# Number of simulations}
-                    \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx,  }\CommentTok{\# Observed statistic}
-                    \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{)  }\CommentTok{\# Direction of alternative: "greater", "less", or "two{-}sided"}
+\KeywordTok{two\_mean\_test}\NormalTok{(Snowfall }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{WeatherPattern, }\DataTypeTok{data =}\NormalTok{ Snow,  }\CommentTok{\# Variables and data}
+         \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# First outcome in order of subtraction}
+         \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\# Number of simulations}
+         \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx,  }\CommentTok{\# Observed statistic}
+         \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{)  }\CommentTok{\# Direction of alternative: "greater", "less", or "two{-}sided"}
 \end{Highlighting}
 \end{Shaded}
 
-Sketch the null distribution created using the code above.
+~~~~~~~Sketch the null distribution created using the code above.
+
 \vspace{1.5in}
 
 \begin{enumerate}
@@ -9285,22 +9290,28 @@ Sketch the null distribution created using the code above.
 \setcounter{enumi}{16}
 \tightlist
 \item
-  Report the p-value. How much evidence does the p-value provide against the null hypothesis?
+  Report the p-value. Based off of this p-value, write a conclusion to the hypothesis test.
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.9in}
+
+\hypertarget{confidence-interval-1}{%
+\paragraph*{Confidence interval}\label{confidence-interval-1}}
+\addcontentsline{toc}{paragraph}{Confidence interval}
+
+We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{17}
 \tightlist
 \item
-  Using bootstrapping find a 95\% confidence interval. We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval. Using the provided \texttt{R} script file, enter the variable names and data set name as in the \texttt{two\_mean\_test()} function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal. Highlight and run lines 32--35. Report the 95\% confidence interval in interval notation.
+  Using bootstrapping find a 95\% confidence interval. Using the provided \texttt{R} script file, enter the variable names and data set name as in the \texttt{two\_mean\_test()} function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal. Highlight and run lines 32--35. Report the 95\% confidence interval in interval notation.
 \end{enumerate}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{two\_mean\_bootstrap\_CI}\NormalTok{(RESPONSE}\OperatorTok{\textasciitilde{}}\NormalTok{EXPLANATORY, }\DataTypeTok{data =}\NormalTok{ DATASET,  }\CommentTok{\# Variables and data}
+\KeywordTok{two\_mean\_bootstrap\_CI}\NormalTok{(RESPONSE }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{EXPLANATORY, }\DataTypeTok{data =}\NormalTok{ DATASET,  }\CommentTok{\# Variables and data}
                       \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# First value in order of subtraction}
                       \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\# Number of simulations}
                       \DataTypeTok{confidence\_level =}\NormalTok{ xx)}
@@ -9318,6 +9329,8 @@ Sketch the null distribution created using the code above.
 \end{enumerate}
 
 \vspace{1in}
+
+\newpage
 
 \hypertarget{communicate-the-results-and-answer-the-research-question-3}{%
 \subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-3}}
@@ -9355,7 +9368,7 @@ Sketch the null distribution created using the code above.
 \setcounter{enumi}{20}
 \tightlist
 \item
-  Would the results from the theory-based test match the results we saw with the simulation? Explain why or why not.
+  Would the results from a theory-based test match the results we saw with the simulation? Explain why or why not.
 \end{enumerate}
 
 \vspace{1in}
@@ -9365,36 +9378,33 @@ Sketch the null distribution created using the code above.
 \setcounter{enumi}{21}
 \tightlist
 \item
-  If we had data on 45 La Ni\latexcode{\~{n}}a years and 47 El Ni\latexcode{\~{n}}o years and found a similar summary statistic, what would happen to the p-value? The width of the confidence interval? The power of the test?
+  If we had data on 45 La Ni\latexcode{\~{n}}a years and 47 El Ni\latexcode{\~{n}}o years and found a similar-valued summary statistic, what would happen to the p-value? The width of the confidence interval? The power of the test?
 \end{enumerate}
 
 \vspace{1in}
 
+\newpage
+
 \hypertarget{out-of-class-activity-10}{%
 \subsection{Out-of-class activity}\label{out-of-class-activity-10}}
 
-The remaining questions cover inference for a difference in means using theory based methods. Use section 6.3.3 in the textbook and the TwoMeanTheory video to complete the following questions.
+The remaining questions cover inference for a difference in means using theory-based methods. Use Section 6.3.3 in the textbook and the TwoMeanTheory video to complete the following questions.
 
 The sampling distribution for \(\bar{x}_1-\bar{x}_2\) can be modeled using a normal distribution when certain conditions are met.
 
-Conditions for the sample distribution of \(\bar{x}_1-\bar{x}_2\).
+Conditions for the sampling distribution of \(\bar{x}_1-\bar{x}_2\) to follow an approximate normal distribution:
 
 \begin{itemize}
 \item
-  Independence: The sample's observations are independent
+  \textbf{Independence}: The sample's observations are independent
 \item
-  Normality: each sample should be approximately normal
+  \textbf{Normality}: Each sample should be approximately normal or have a large sample size. For \emph{each} sample:
 
   \begin{itemize}
   \item
-    For each sample:
-
-    \begin{itemize}
-    \item
-      \(n < 30\): If the sample size n is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
-    \item
-      \(n \le 30\): If the sample size n is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of \(\bar{x}\) is nearly normal, even if the underlying distribution of individual observations is not.
-    \end{itemize}
+    \(n < 30\): If the sample size \(n\) is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
+  \item
+    \(n \le 30\): If the sample size \(n\) is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of \(\bar{x}\) is nearly normal, even if the underlying distribution of individual observations is not.
   \end{itemize}
 \end{itemize}
 
@@ -9402,26 +9412,25 @@ Conditions for the sample distribution of \(\bar{x}_1-\bar{x}_2\).
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  In question 21 in the in-class activity we noted that there were issues with the normality condition. Explain how that will affect the p-value and confidence interval found with theory-based methods.
+  In question 21 of the in-class activity, we noted that there were issues with the normality condition. Explain how that will affect the p-value and confidence interval found with theory-based methods.
 \end{enumerate}
 
 \vspace{1in}
 
-To find the Standardized Statistic for the difference in means we will calculate:
+To find the standardized statistic for the difference in means we will calculate:
 
-\[T = \frac{\bar{x}_1-\bar{x}_2}{SE(\bar{x}_1-\bar{x}_2)}\]
+\[T = \frac{\bar{x}_1-\bar{x}_2}{SE(\bar{x}_1-\bar{x}_2)},\]
 
 where the standard error of the difference in means is calculated using:
 
-\[SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}\]
-\newpage
+\[SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}.\]
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
 \tightlist
 \item
-  Calculate the standard error of the difference in means.
+  Calculate the standard error of the difference in sample means.
 \end{enumerate}
 
 \vspace{0.5in}
@@ -9431,12 +9440,12 @@ where the standard error of the difference in means is calculated using:
 \setcounter{enumi}{2}
 \tightlist
 \item
-  Calculate the standardized statistic for the difference in means.
+  Calculate the standardized statistic for the difference in sample eans.
 \end{enumerate}
 
 \vspace{0.5in}
 
-Using the provided \texttt{R} script file, enter the T-score (for xx) into the pt function using a df = minimum(n - 1) = 21 - 1 = 20, and lower.tail = TRUE to find the p-value. Highlight and run line 39.
+Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) into the \texttt{pt()} function using a \texttt{df} = minimum(\(n_1 - 1, n_2 - 1\)) = \(21 - 1\) = 20, and \texttt{lower.tail\ =\ TRUE} to find the p-value. Highlight and run line 39.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -9469,20 +9478,23 @@ Using the provided \texttt{R} script file, enter the T-score (for xx) into the p
 \setcounter{enumi}{5}
 \tightlist
 \item
-  Explain why the p-value found using theory-based methods from the p-value found using simulation methods in the in-class activity.
+  Explain why the p-value found using theory-based methods differs from the p-value found using simulation methods in the in-class activity.
 \end{enumerate}
 
 \vspace{0.5in}
 
-To calculate the 95\% confidence interval use the formula:
+To calculate a theory-based 95\% confidence interval for a difference in means, use the formula:
 
-\[\bar{x}_1- \bar{x}_2\pm t^* SE(\bar{x}_1- \bar{x}_2)\]
+\[\bar{x}_1- \bar{x}_2\pm t^* SE(\bar{x}_1- \bar{x}_2).\]
 
-We will need to find the \(t^*\) multiplier using the function qt. For a 95\% confidence interval we are finding the \(t^*\) value at the 97.5th percentile with df = minimum(n - 1) = 21 - 1 = 20.
+We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. For a 95\% confidence level, we are finding the \(t^*\) value at the 97.5th percentile with \texttt{df} = minimum(\(n_1 - 1, n_2 - 1\)) = 20.
 
-\begin{verbatim}
-#> [1] 2.085963
-\end{verbatim}
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{qt}\NormalTok{(}\FloatTok{0.975}\NormalTok{, }\DataTypeTok{df =} \DecValTok{20}\NormalTok{, }\DataTypeTok{lower.tail=}\OtherTok{TRUE}\NormalTok{)}
+\CommentTok{\#\textgreater{} [1] 2.085963}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9494,14 +9506,17 @@ We will need to find the \(t^*\) multiplier using the function qt. For a 95\% co
 
 \vspace{1in}
 
+\emph{Note that since the normality condition was not met, neither the theory-based p-value nor the theory-based confidence interval are valid.}
+
 \hypertarget{take-home-messages-10}{%
 \subsection{Take-home messages}\label{take-home-messages-10}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  This activity differs from Activity 10 because the responses are independent not paired. These data are analyzed as a difference in means.
+  This activity differs from Activity 10 because the responses are independent, not paired. These data are analyzed as a difference in means, not a mean difference.
 \item
+  Review the take-home messages in Activity 6 and apply them to this context.
 \end{enumerate}
 
 \hypertarget{additional-notes-10}{%

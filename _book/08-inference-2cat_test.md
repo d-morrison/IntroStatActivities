@@ -890,7 +890,7 @@ Using the `R` script file for this activity, enter your answers for question 4 i
 
 
 ```r
-two_proportion_test(formula = Outcome ~ Helmet, # response~explanatory
+two_proportion_test(formula = Outcome ~ Helmet, # response ~ explanatory
     data= injury, # Name of dataset
     first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
     number_repetitions = 1000, # Always use a minimum of 1000 repetitions
