@@ -145,8 +145,12 @@
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage[]{natbib}
-\bibliographystyle{plainnat}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces}%
+  {\par}
 
 \title{\textbf{STAT 216 Coursepack}\\
 ~\\
@@ -216,7 +220,7 @@ need roughly nine hours per week to review past activities, read feedback on pre
   \begin{itemize}
   \tightlist
   \item
-    Work through in-class activity with your classmates and instructor, taking detailed notes on your answers to each question in the activity.
+    Work through the in-class activity with your classmates and instructor, taking detailed notes on your answers to each question in the activity.
   \end{itemize}
 \item
   \emph{After class meeting}:
@@ -235,6 +239,8 @@ need roughly nine hours per week to review past activities, read feedback on pre
     Complete the week's homework assignment.
   \end{itemize}
 \end{itemize}
+
+\nocite{*}
 
 \hypertarget{spring-2021-calendar-of-in-class-activities}{%
 \chapter*{Spring 2021 Calendar of In-Class Activities}\label{spring-2021-calendar-of-in-class-activities}}
@@ -655,13 +661,13 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
   \vspace{0.3in}
 
   How could we use a coin to simulate each student ``just guessing'' which Martian letter is Bumba?
-  \vspace{.9in}
+  \vspace{.5in}
 
   How could we use coins to simulate the entire class ``just guessing'' which Martian letter is Bumba?
-  \vspace{.9in}
+  \vspace{.5in}
 
   How many people in your class would you expect to choose Bumba correctly just by chance? Explain your reasoning.
-  \vspace{.9in}
+  \vspace{.5in}
 \item
   Each student will flip a coin one time to simulate your ``guess'' under the assumption that we can't read Martian. Let Heads = correct, Tails = incorrect. What was the result of your one simulation?
   \vspace{.3in}
@@ -670,11 +676,19 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
   \vspace{.5in}
 \item
   If students really don't know Martian and are just guessing which is Bumba, which seems more unusual: the result from your class's \textbf{simulation} or the observed proportion of students in your class that were correct (this is your summary statistic from question 6)? Explain your reasoning.
+\end{enumerate}
+
+\vspace{.8in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\tightlist
 \item
   While your observed class data is likely far different from the simulated ``just-guessing'' class, comparing our class data to a single simulation does not provide enough information. The differences seen could just be due to the randomness of that set of coin flips! Let's simulate another class. Each student should flip their coin again. What was the result from your class's second simulation? What proportion of students ``guessed'' correctly in the second simulation? Create a plot to compare the two simulated results with the observed class result.
 \end{enumerate}
 
-\vspace{1in}
+\vspace{1.2in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -695,6 +709,8 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
 ~~~~~~~~~~Number of repetitions: \_\_\_\_\_
 
 \vspace{0.05in}
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -734,6 +750,8 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
   Is it \emph{likely} that we could see our class results just by chance if everyone was just guessing? Explain your reasoning.
 \end{enumerate}
 
+\vspace{.5in}
+
 \textbf{Step 5}: The next step in the statistical investigation process is to \emph{communicate the results and answer the research question}.
 
 \begin{enumerate}
@@ -757,6 +775,8 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
 \end{enumerate}
 
 \vspace{1in}
+
+\newpage
 
 \hypertarget{out-of-class-activity}{%
 \subsection{Out-of-class activity}\label{out-of-class-activity}}
@@ -1495,7 +1515,7 @@ What is the difference between a standardized segmented bar plot and a mosaic pl
 
 True or false: Pie charts are generally highly recommended ways to graphically display categorical data.
 
-True or false: Two categorical variables are associated if the conditional proportions of a particular outcome (typically of the response variable) differ across levels of the other variable (typically the explanatory).
+True or false: Two categorical variables are associated if the conditional proportions of a particular outcome (typically of the response variable) differ across levels of the other variable (typically the explanatory variable).
 
 True or false: When a segmented bar plot has segments that sum to 1 (or 100\%), the segment heights correspond to the proportions conditioned on the \textbf{segment}.
 
@@ -1954,7 +1974,7 @@ For this part of the activity we will focus on using RStudio and the provided \t
 
 In a study reported in Nature (1999, Vol. 399, pp.~113-114), a survey of 479 children found that those who had slept with a nightlight or in a fully lit room before the age of 2 had a higher incidence of nearsightedness (myopia) later in childhood.
 
-In this study, there are two variables studied: \texttt{Light}: level of light in room at night (no light, night light, full light) and \texttt{Sight}: level of myopia developed later in childhood (high myopia, myopia, no myopia).
+In this study, there are two variables studied: \texttt{Light}: level of light in room at night (no light, nightlight, full light) and \texttt{Sight}: level of myopia developed later in childhood (high myopia, myopia, no myopia).
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2113,7 +2133,7 @@ To examine the differences in level of myopia for the level of light, we would c
 \item
   Mosaic plots are similar to segmented bar charts but the widths of the bars also show the number of observations within each outcome.
 \item
-  Conditional probabilities are calculated dependent on a second variable. In the probability notation, the variable following \texttt{\textbar{}} is the variable on which we are conditioning. The denominator used to calculate the probability will be the total for the variable on which we are conditioning.
+  Conditional probabilities are calculated dependent on a second variable. In probability notation, the variable following \texttt{\textbar{}} is the variable on which we are conditioning. The denominator used to calculate the probability will be the total for the variable on which we are conditioning.
 \end{enumerate}
 
 \newpage
@@ -2190,7 +2210,7 @@ Modality:
 Distribution (of a variable):
 \rgs
 
-\rgi Four characteristics of the distribution of 1 quantitative variable:
+\rgi Four characteristics of the distribution of one quantitative variable:
 
 \rgi Center:
 \rgs
@@ -2217,7 +2237,7 @@ Five number summary:
 \rgs
 
 \begin{verbatim}
-E.g. if the value 6 is 10th percentile, then 10% of the data have values 6 or below.
+e.g. if the value 6 is at the 10th percentile, then 10% of the data have values 6 or below.
 \end{verbatim}
 
 Interquartile range (IQR):
@@ -2289,10 +2309,10 @@ Sample size & & \\
 & & \\ \hline
 Proportion & & \\ 
 (used to summarize & & \\ 
-1 categorical variable) & & \\ \hline
+one categorical variable) & & \\ \hline
 Mean & & \\ 
 (used to summarize & & \\ 
-1 quantitative variable)& & \\ \hline
+one quantitative variable)& & \\ \hline
 Correlation & & \\ 
 (used to summarize & & \\ 
 two quantitative variables)& & \\ \hline
@@ -2313,9 +2333,9 @@ Fill in the following table to help associate type of plot for each of several s
 \begin{center}
 \begin{tabular}{|l|p{3in}|} \hline
  & Appropriate plot(s) \\ \hline
-1 categorical variable & \\
+One categorical variable & \\
 (categorical response, no explanatory) & \\ \hline
-1 quantitative variable  & \\
+One quantitative variable  & \\
 (quantitative response, no explanatory) & \\ \hline
 Two categorical variables  & \\
 (categorical response, categorical explanatory) & \\ \hline
@@ -2345,15 +2365,15 @@ Decision tree for determining an appropriate plot given a number of variables an
 \begin{itemize}
 \item
   Identify and create appropriate summary statistics and plots
-  given a data set or research question for quantitative data
+  given a data set or research question for quantitative data.
 \item
   Interpret the following summary statistics in context:
   median, lower quartile, upper quartile,
-  standard deviation, inter-quartile range
+  standard deviation, interquartile range.
 \item
   Given a plot or set of plots, describe and compare the distribution(s)
   of a single quantitative variable
-  (center, variability, shape, outliers)
+  (center, variability, shape, outliers).
 \end{itemize}
 
 \hypertarget{terminology-review-3}{%
@@ -2365,7 +2385,7 @@ In this week's activity, we will review summary measures and plots for quantitat
 \item
   Two measures of center: mean, median
 \item
-  Two measures of spread (variability): standard deviation, inter-quartile range (IQR)
+  Two measures of spread (variability): standard deviation, interquartile range (IQR)
 \item
   Types of graphs: box plots, dot plots, histograms
 \end{itemize}
@@ -2493,7 +2513,7 @@ The \texttt{favstats()} function from the \texttt{mosaic} package gives the summ
 \setcounter{enumi}{4}
 \tightlist
 \item
-  Calculate the Interquartile range (IQR = Q3 - Q1).
+  Calculate the interquartile range (IQR = Q3 - Q1).
 \end{enumerate}
 
 \vspace{0.5in}
@@ -2544,7 +2564,7 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
   Sketch the histogram created here.
 \end{enumerate}
 
-\vspace{1in}
+\vspace{1.5in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2644,8 +2664,6 @@ The box plot of movie budgets (in millions) by content rating is plotted using t
 \end{enumerate}
 
 \vspace{1.5in}
-
-\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4987,6 +5005,8 @@ Notes:
   The p-value is the probability of the observed statistic occurring or more extreme if the null hypothesis is true. The farther in the tail of the distribution the observed statistic is, the smaller the probability is (smaller the p-value!). The \textbf{smaller} the p-value, the \textbf{more} evidence the statistic provides \textbf{against} the null hypothesis. (Think carefully about why this makes sense!)
 \item
   A \textbf{decision} is a statement about strength of evidence against the null hypothesis: reject the null if the p-value is below a pre-set significance level, and fail to reject the null if the p-value is above a pre-set significance level. When writing a \textbf{conclusion} to a hypothesis test, on the other hand, we are answering the research question. Thus, a conclusion is a statement about strength of evidence \emph{for the alternative hypothesis}. Use the guidelines for the strength of evidence throughout this course to assess the evidence against the null hypothesis.
+\item
+  To create one simulated sample on the null distribution, spin a spinner with probability equal to \(\pi_0\) (the null value), \(n\) times or draw with replacement \(n\) times from a deck of cards created to reflect \(\pi_0\) as the probability of success. Calculate and plot the proportion of successes from the simulatied sample.
 \end{enumerate}
 
 \hypertarget{additional-notes-5}{%
@@ -5640,6 +5660,8 @@ The \(z^*\) multiplier is the percentile of a standard normal distribution that 
   In theory-based methods, we add and subtract a margin of error to the sample statistic. The margin of error is calculated using a multiplier that corresponds to the level of confidence times the variability (standard error) of the statistic.
 \item
   When the null value is within the confidence interval, it is a plausible value for the parameter of interest; thus, we would find a larger p-value for a hypothesis test of that null value. Conversely, if the null value is NOT within the confidence interval, we would find a small p-value for the hypothesis test and strong evidence against this null hypothesis.
+\item
+  To create one simulated sample on the bootstrap distribution, label \(n\) cards with the original responses. Draw with replacement \(n\) times. Calculate and plot the resampled proportion of successes.
 \end{enumerate}
 
 \hypertarget{additional-notes-6}{%
@@ -6924,6 +6946,8 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
   If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type 1 error. A Type 1 error occurs when we reject a true null hypothesis (false positive).
 \item
   If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance level), we could have a possible Type 2 error. A Type 2 error occurs when we fail to reject a false null hypothesis (false negative).
+\item
+  To create one simulated sample on the null distribution, label cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes \(n_1\) and \(n_2\) representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
 \end{enumerate}
 
 \hypertarget{additional-notes-7}{%
@@ -7503,6 +7527,8 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
   In addition to estimating the difference in proportions for two categorical variables we can also find the relative risk, the ratio of conditional proportions.
 \item
   Increasing sample size will result in less sample-to-sample variability in statistics, which will result in a smaller standard error, and thus a narrower confidence interval.
+\item
+  To create one simulated sample on the bootstrap distribution, label \(n_1 + n_2\) cards with the outcomes for the original responses. Keep groups separate and randomly draw with replacement \(n_1\) times from group 1 and \(n_2\) times from group 2. Calculate and plot the resampled difference in the proportion of successes.
 \end{enumerate}
 
 \hypertarget{additional-notes-8}{%
@@ -8577,6 +8603,10 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Fo
   When using bootstrapping to create a null distribution centered at the null value for both paired data and a single quantitative variable, we first need to shift the data by the difference \(\mu_0 - \bar{x}_d\), and then sample with replacement from the shifted data.
 \item
   When analyzing paired data, the summary statistic is the `mean difference' NOT the `difference in means'\footnote{Technically, if we calculate the differences and then take the mean (mean difference), and we calculate the two means and then take the difference (difference in means), the value will be the same. However, the \emph{sampling variability} of the two statistics will differ, as we will see in Activity 11.}. This terminology will be \emph{very} important in interpretations.
+\item
+  To create one simulated sample on the null distribution, shift the original data by adding \((\mu_0 - \bar{x})\) or \((0 - \bar{x}_d)\). Sample with replacement from the shifted data \(n\) times. Calculate and plot the sample mean or the sample mean difference.
+\item
+  To create one simulated sample on the bootstrap distribution, label \(n\) cards with the original response values. Randomly draw with replacement \(n\) times. Calculate and plot the resampled mean or the resampled mean difference.
 \end{enumerate}
 
 \hypertarget{additional-notes-9}{%
@@ -9504,6 +9534,10 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Fo
   This activity differs from Activity 10 because the responses are independent, not paired. These data are analyzed as a difference in means, not a mean difference.
 \item
   Review the take-home messages in Activity 6 and apply them to this context.
+\item
+  To create one simulated sample on the null distribution,label cards with the response variable values from the original data. Mix cards together and shuffle into two new groups of sizes \(n_1\) and \(n_2\). Calculate and plot the difference in means.
+\item
+  To create one simulated sample on the bootstrap distribution, label \(n_1 + n_2\) cards with the original response values. Keep groups separate and randomly draw with replacement \(n_1\) times from group 1 and \(n_2\) times from group 2. Calculate and plot the resampled difference in means.
 \end{enumerate}
 
 \hypertarget{additional-notes-10}{%
@@ -10418,11 +10452,55 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
   To check the validity conditions for using theory-based methods we must use the residual diagnostic plots to check for normality of residuals and constant variability, and the scatterplot to check for linearity.
 \item
   To interpret a confidence interval for the slope, think about how to interpret the sample slope and use that information in the confidence interval for slope.
+\item
+  To create one simulated sample on the null distribution, hold the \(x\) values constant and shuffle the \(y\) values to new \(x\) values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
+\item
+  To create one simulated sample on the bootstrap distribution, label \(n\) cards with the original (response, explanatory) values. Randomly draw with replacement \(n\) times. Find the regression line for the resampled data and plot the resampled slope or correlation.
 \end{enumerate}
 
 \hypertarget{additional-notes-11}{%
 \subsection{Additional notes}\label{additional-notes-11}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity.
+
+\hypertarget{references}{%
+\chapter*{References}\label{references}}
+\addcontentsline{toc}{chapter}{References}
+
+\hypertarget{refs}{}
+\begin{cslreferences}
+\leavevmode\hypertarget{ref-banerjee2018}{}%
+Banerjee, Sayar. 2018. ``Linear Regression: Moneyball -- Part 1.'' \emph{Medium}. \url{https://towardsdatascience.com/linear-regression-moneyball-part-1-b93b3b9f5b53}.
+
+\leavevmode\hypertarget{ref-imdb}{}%
+``IMDb Movies Extensive Dataset.'' n.d. \url{https://kaggle.com/stefanoleone992/imdb-extensive-dataset}.
+
+\leavevmode\hypertarget{ref-johnson2006}{}%
+Johnson, Christopher M., and Jenny E. Memmott. 2006. ``Examination of Relationships Between Participation in School Music Programs of Differing Quality and Standardized Test Results.'' \emph{Journal of Research in Music Education} 54 (4): 293--307. \url{https://doi.org/10.1177/002242940605400403}.
+
+\leavevmode\hypertarget{ref-moneyball}{}%
+``Moneyball Dataset.'' n.d. \url{https://kaggle.com/wduckett/moneyball-mlb-stats-19622012}.
+
+\leavevmode\hypertarget{ref-ohair2017}{}%
+O'Hair, Allison. 2017. ``Video 4: Using the Model to Make Predictions.'' MIT: MIT Open Courseware. \url{https://ocw.mit.edu/courses/sloan-school-of-management/15-071-the-analytics-edge-spring-2017/linear-regression/moneyball-the-power-of-sports-analytics/video-4-using-the-models-to-make-predictions/}.
+
+\leavevmode\hypertarget{ref-quinn1999}{}%
+Quinn, G. E., C. H. Shin, M. G. Maguire, and R. A. Stone. 1999. ``Myopia and Ambient Lighting at Night.'' \emph{Nature} 399 (6732): 113--14. \url{https://doi.org/10.1038/20094}.
+
+\leavevmode\hypertarget{ref-ramachandran2007}{}%
+Ramachandran, Vilayanur. 2007. ``3 Clues to Understanding Your Brain.'' \url{https://www.ted.com/talks/vs_ramachandran_3_clues_to_understanding_your_brain}.
+
+\leavevmode\hypertarget{ref-richardson2019}{}%
+Richardson, Thomas, and R. Tucker Gilman. 2019. ``Left-Handedness Is Associated with Greater Fighting Success in Humans.'' \emph{Scientific Reports} 9 (1): 15402. \url{https://doi.org/10.1038/s41598-019-51975-3}.
+
+\leavevmode\hypertarget{ref-stewart2014}{}%
+Stewart, Emily H., Brian Davis, B. Lee Clemans-Taylor, Benjamin Littenberg, Carlos A. Estrada, and Robert M. Centor. 2014. ``Rapid Antigen Group a Streptococcus Test to Diagnose Pharyngitis: A Systematic Review and Meta-Analysis'' 9 (11). \url{https://doi.org/10.1371/journal.pone.0111727}.
+
+\leavevmode\hypertarget{ref-sulheim2017}{}%
+Sulheim, Steinar, Arne Ekeland, Ingar Holme, and Roald Bahr. 2017. ``Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders: Changes After an Interval of One Decade'' 51 (1): 44--50. \url{https://doi.org/10.1136/bjsports-2015-095798}.
+
+\leavevmode\hypertarget{ref-usepa2020}{}%
+US EPA, OAR. 2020. ``Air Data -- Daily Air Quality Tracker.'' Data and Tools. \emph{US EPA}. \url{https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker}.
+\end{cslreferences}
 
 \end{document}
