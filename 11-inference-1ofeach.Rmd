@@ -611,6 +611,10 @@ qt(0.975, df = 20, lower.tail=TRUE)
 
 2. Review the take-home messages in Activity 6 and apply them to this context.
 
+3. To create one simulated sample on the null distribution,label cards with the response variable values from the original data.  Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$. Calculate and plot the difference in means. 
+
+4. To create one simulated sample on the bootstrap distribution, label $n_1 + n_2$ cards with the original response values.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in means.  
+
 
 ### Additional notes
 

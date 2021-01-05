@@ -288,13 +288,13 @@ include_graphics("images/relative_barplot_martian.png")
 \vspace{0.3in}
 
     How could we use a coin to simulate each student “just guessing” which Martian letter is Bumba?
-\vspace{.9in}
+\vspace{.5in}
 
     How could we use coins to simulate the entire class “just guessing” which Martian letter is Bumba? 
-\vspace{.9in}
+\vspace{.5in}
 
     How many people in your class would you expect to choose Bumba correctly just by chance?  Explain your reasoning.
-\vspace{.9in}
+\vspace{.5in}
 
 10. Each student will flip a coin one time to simulate your “guess” under the assumption that we can't read Martian.  Let Heads = correct, Tails = incorrect.  What was the result of your one simulation?
 \vspace{.3in}
@@ -304,11 +304,11 @@ include_graphics("images/relative_barplot_martian.png")
 
 11. If students really don’t know Martian and are just guessing which is Bumba, which seems more unusual: the result from your class’s **simulation** or the observed proportion of students in your class that were correct (this is your summary statistic from question 6)?  Explain your reasoning.
 
-
+\vspace{.8in}
 
 12.	While your observed class data is likely far different from the simulated “just-guessing” class, comparing our class data to a single simulation does not provide enough information.  The differences seen could just be due to the randomness of that set of coin flips!  Let’s simulate another class.  Each student should flip their coin again.  What was the result from your class’s second simulation?  What proportion of students “guessed” correctly in the second simulation?  Create a plot to compare the two simulated results with the observed class result.
 
-\vspace{1in}
+\vspace{1.2in}
 
 
 13.	We still only have a couple of simulations to compare our class data to.  It would be much better to be able to see how our class compared to hundreds or thousands of “just-guessing” classes.  Since we don’t want to flip coins all class period, your instructor will use a computer simulation to get 1000 trials. Fill in the following blanks to describe how we would create a simulation of random guessing with 1000 trials (repetitions).
@@ -322,6 +322,7 @@ include_graphics("images/relative_barplot_martian.png")
 |           Number of repetitions: _____
 \vspace{0.05in}
 
+\newpage
 
 14. Sketch the distribution displayed by your instructor here.  Label each axis appropriately. 
 
@@ -337,7 +338,7 @@ include_graphics("images/relative_barplot_martian.png")
 
 17.	Is it *likely* that we could see our class results just by chance if everyone was just guessing?  Explain your reasoning.
 
-
+\vspace{.5in}
 
 **Step 5**: The next step in the statistical investigation process is to *communicate the results and answer the research question*.
 
@@ -352,7 +353,7 @@ include_graphics("images/relative_barplot_martian.png")
 \vspace{1in}
 
 
-
+\newpage
 
 
 ### Out-of-class activity

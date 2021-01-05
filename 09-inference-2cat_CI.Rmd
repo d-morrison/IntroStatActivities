@@ -370,6 +370,8 @@ two_proportion_bootstrap_CI(formula = Outcome ~ Helmet,
 
 4.  Increasing sample size will result in less sample-to-sample variability in statistics, which will result in a smaller standard error, and thus a narrower confidence interval.  
 
+5. To create one simulated sample on the bootstrap distribution, label $n_1 + n_2$ cards with the outcomes for the original responses.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in the proportion of successes. 
+
 
 ### Additional notes
 

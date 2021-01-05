@@ -770,6 +770,10 @@ qt(0.995, df = 32, lower.tail=TRUE)
 
 3. When analyzing paired data, the summary statistic is the 'mean difference' NOT the 'difference in means'^[Technically, if we calculate the differences and then take the mean (mean difference), and we calculate the two means and then take the difference (difference in means), the value will be the same. However, the *sampling variability* of the two statistics will differ, as we will see in Activity 11.].  This terminology will be *very* important in interpretations.
 
+4. To create one simulated sample on the null distribution, shift the original data by adding $(\mu_0 - \bar{x})$ or $(0 - \bar{x}_d)$. Sample with replacement from the shifted data $n$ times. Calculate and plot the sample mean or the sample mean difference.
+
+5. To create one simulated sample on the bootstrap distribution, label $n$ cards with the original response values.  Randomly draw with replacement $n$ times.  Calculate and plot the resampled mean or the resampled mean difference.
+
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity.

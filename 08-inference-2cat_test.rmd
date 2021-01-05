@@ -924,6 +924,8 @@ two_proportion_test(formula = Outcome ~ Helmet, # response ~ explanatory
 
 5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance level), we could have a possible Type 2 error. A Type 2 error occurs when we fail to reject a false null hypothesis (false negative).
 
+6. To create one simulated sample on the null distribution, label cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$ representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
+
 
 ### Additional notes
 
