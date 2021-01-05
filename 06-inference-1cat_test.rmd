@@ -514,7 +514,7 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 * **Summarize and visualize the data**. Calculate summary statistics and create graphical plots that best represent the research question.
 
-* **Use statistical analysis methods to draw inferences from the data**. Choose an statistical inference method appropriate for the data and identify the p-value and/or confidence interval after checking assumptions. In this study, we will focus on using randomization to generate a simulated p-value.
+* **Use statistical analysis methods to draw inferences from the data**. Choose a statistical inference method appropriate for the data and identify the p-value and/or confidence interval after checking assumptions. In this study, we will focus on using randomization to generate a simulated p-value.
 
 * **Communicate the results and answer the research question**. Using the p-value and confidence interval from the analysis, determine whether the data provide statistical evidence against the null hypothesis. Write a conclusion that addresses the research question.
 
@@ -797,7 +797,7 @@ plot(X, Y, type='l', axes=F, xlim=c(-4,4), lwd=2, ylab="", xlab="Z")
 abline(h=-0.002)
 ```
 
-4.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the $x$-axis of the standard normal distribution displayed in Figure \@ref(fig:simpleNormal), and mark on the value of the standardized statistic calculated in question 3.
+4.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the $x$-axis of the standard normal distribution displayed in Figure \@ref(fig:simpleNormal), and also mark the value of the standardized statistic calculated in question 3.
 
 \vspace{0.2in}
 
