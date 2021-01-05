@@ -233,14 +233,17 @@ need roughly nine hours per week to review past activities, read feedback on pre
   \end{itemize}
 \end{itemize}
 
-\hypertarget{spring-2021-calendar-of-in-class-activities}{%
-\chapter*{Spring 2021 Calendar of In-Class Activities}\label{spring-2021-calendar-of-in-class-activities}}
-\addcontentsline{toc}{chapter}{Spring 2021 Calendar of In-Class Activities}
+\hypertarget{inference-for-two-categorical-variables-hypothesis-testing}{%
+\chapter{Inference for Two Categorical Variables: Hypothesis Testing}\label{inference-for-two-categorical-variables-hypothesis-testing}}
 
-This calendar only lists the in-class activities and exams each week. For required readings and videos, due dates for assignments and case study posts, and project deadlines, refer to your cohort's calendar at:
+\hypertarget{reading-guide-hypothesis-testing-for-a-difference-in-proportions}{%
+\section{Reading Guide: Hypothesis Testing for a Difference in Proportions}\label{reading-guide-hypothesis-testing-for-a-difference-in-proportions}}
 
-\url{https://mtstateintrostats.github.io/Syllabus/\#Course_calendars}.
+\hypertarget{sections-5.4.1-and-5.4.2-simulation-tests-for-a-difference-in-proportions-two-sided-hypotheses}{%
+\subsection*{Sections 5.4.1 and 5.4.2 (Simulation tests for a difference in proportions; Two-sided hypotheses)}\label{sections-5.4.1-and-5.4.2-simulation-tests-for-a-difference-in-proportions-two-sided-hypotheses}}
+\addcontentsline{toc}{subsection}{Sections 5.4.1 and 5.4.2 (Simulation tests for a difference in proportions; Two-sided hypotheses)}
 
+<<<<<<< HEAD
 \begin{longtable}{|l|l|l|l|p{.55\textwidth}|}
 \hline
 \textbf{Week}& \textbf{Activity}& \textbf{Day}& \textbf{Date}& \textbf{Activity} \\ \hline
@@ -286,302 +289,274 @@ This calendar only lists the in-class activities and exams each week. For requir
 15& ---& M--F& 4/19--4/23& Looking Ahead \\ \hline
 Finals& ---& M--F& 4/26--4/30& Group Project Presentations \\ \hline
 \end{longtable}
-
-\hypertarget{basics-of-data}{%
-\chapter{Basics of Data}\label{basics-of-data}}
-
-\hypertarget{reading-guide-basics-of-data}{%
-\section{Reading Guide: Basics of Data}\label{reading-guide-basics-of-data}}
-
-\hypertarget{sections-1.1-case-study-and-1.2-data-basics}{%
-\subsection*{Sections 1.1 (Case study) and 1.2 (Data basics)}\label{sections-1.1-case-study-and-1.2-data-basics}}
-\addcontentsline{toc}{subsection}{Sections 1.1 (Case study) and 1.2 (Data basics)}
-
+=======
 \textbf{Videos}
 
 \begin{itemize}
 \tightlist
 \item
-  Stat 216 Course\_Tour
+  5.4
 \item
-  Instructor bio
-\item
-  1.2.1\_1.2.2
-\item
-  1.2.3\_1.2.4\_1.2.5
+  TwoPropSim
 \end{itemize}
 
 \setstretch{1.25}
+
+\hypertarget{reminders-from-previous-sections}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections}}
+\addcontentsline{toc}{subsubsection}{Reminders from previous sections}
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
+
+\(n\) = sample size
+
+\(\hat{p}\) = sample proportion
+
+\(\pi\) = population proportion
+
+General steps of a hypothesis test:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Frame the research question in terms of hypotheses.
+\item
+  Collect and summarize data using a test statistic.
+\item
+  Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
+\item
+  Compare the observed test statistic to the null distribution to calculate a p-value.
+\item
+  Make a conclusion based on the p-value and write the conclusion in context.
+\end{enumerate}
+
+Parameter: a value summarizing a variable(s) for a population.
+
+Statistic: a value summarizing a variable(s) for a sample.
+
+Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
+
+Standard deviation of a statistic: the variability of statistics from 1000s of samples; how far, on average, each statistic is from the true value of the parameter.
+
+Standard error of a statistic: estimated standard deviation of a statistic.
+
+Hypothesis test: a process to determine how strong the evidence of an effect is.
+
+\rgi Also called a `significance test'.
+
+Simulation-based method: Simulate lots of samples of size \(n\) under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
+
+Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
+
+Null hypothesis (\(H_0\)): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is \textbf{wrong}.
+
+Alternative hypothesis (\(H_A\)): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is \textbf{correct}.
+
+Null value: the value of the parameter when we assume the null hypothesis is true (labeled as \(parameter_0\)).
+
+Null distribution: the simulated or modeled distribution of statistics (sampling distribution) we would expect to occur if the null hypothesis is true.
+
+P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true.
+
+\(\implies\) Lower the p-value the stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis.
+
+Decision: a determination of whether to `reject' or `fail to reject' a null hypothesis based on a p-value and a pre-set level of significance.
+
+Significance level (\(\alpha\)): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
+
+\rgi Common levels of \(\alpha\) include 0.01, 0.05, and 0.10.
+
+Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
 \hypertarget{vocabulary}{%
 \subsubsection*{Vocabulary}\label{vocabulary}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
-Data:
+Randomization test:
 \rgs
 
-Summary statistic:
+Relative risk:
 \rgs
 
-Case/Observational unit:
+One-sided hypothesis test:
 \rgs
 
-Variable:
-\rgs
-
-\rgi Quantitative variable:
-\rgs
-
-\rgi Discrete variables:
-\rgs
-
-\rgi \rgi Examples of discrete variables using the \texttt{County} data:
-\rgs
-
-\rgi Continuous variables:
-\rgs
-
-\rgi \rgi Examples of continuous variables using the \texttt{County} data:
-\rgs
-
-Example of a number which is NOT a numerical variable:
-\rgs
-
-Categorical variable:
-\rgs
-
-\rgi Ordinal variable:
-\rgs
-
-\rgi \rgi Example of an ordinal variable using the \texttt{County} data:
-\rgs
-
-\rgi Nominal variable:
-\rgs
-
-\rgi \rgi Examples of nominal variables using the \texttt{County} data:
-
-\rgs
-
-\textbf{Note: Ordinal and nominal variables will be treated the same in this course. We recommend taking more statistics courses in the future to learn better methods of analysis for ordinal variables.}
-
-Data frame:
-\rgs
-
-Scatterplot:
-\rgs
-
-\rgi Each point represents:
-
-\rgi Positive association:
-
-\rgi Negative association:
-
-Association or Dependent variables:
-\rgs
-
-Independent variables:
-\rgs
-
-Explanatory variable:
-\rgs
-
-Response variable:
-\rgs
-
-Observational study:
-\rgs
-
-Experiment:
-\rgs
-
-Placebo:
+Two-sided hypothesis test:
 \rgs
 
 \hypertarget{notes}{%
 \subsubsection*{Notes}\label{notes}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
-Big Idea: Variability is inevitable! We would not expect to get \emph{exactly} 50 heads in 100 coin flips. The statistical question then is whether any differences found in data are due to random variability, or if something else is going on.
-
-\begin{quote}
-The larger the difference, the \textbf{less we believe the difference was due to chance.}
-\end{quote}
-
-In a data frame, rows correspond to \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-and columns correspond to \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
-
-How many types of variables are discussed? Explain the differences between them and give an example of each.
-\rgs
+In a randomization test involving two categorical variables, how many cards will you need and how will the cards be labeled?
 \rgs
 
-True or False: A pair of variables can be both associated AND independent.\\
-True or False: Given a pair of variables, one will always be the explanatory variable and one the response variable.\\
-True or False: If a study does have an explanatory and a response variable, that means changes in the explanatory variable must \textbf{cause} changes in the response variable.
-True or False: Observational studies can show a naturally occurring association between variables.
+Why, in the randomization test, are the cards all shuffled together and randomly dealt into two new groups?
+\rgs
 
-\hypertarget{example-section-1.1---case-study-using-stents-to-prevent-strokes}{%
-\subsubsection*{Example (Section 1.1 - Case study: Using stents to prevent strokes)}\label{example-section-1.1---case-study-using-stents-to-prevent-strokes}}
-\addcontentsline{toc}{subsubsection}{Example (Section 1.1 - Case study: Using stents to prevent strokes)}
+After shuffling, how many cards are dealt into each pile?
+\rgs
+
+Interpreting relative risk (\(RR = \frac{\hat{p_1}}{\hat{p_2}}\))
+
+\rgi The proportion of success in group 1 is \_\_\_\_\_\_ times the proportion of success in group 2.
+
+\rgi The proportion of success in group 1 is \_\_\_\_\_\_ \% higher/lower than in group 2.
+
+Write the null hypothesis in notation for a test of relative risk.
+\rgs
+
+How does the p-value in a two-sided test compare to the p-value in a one-sided test?
+\rgs
+
+\hypertarget{formulas}{%
+\subsubsection*{Formulas}\label{formulas}}
+\addcontentsline{toc}{subsubsection}{Formulas}
+
+Relative risk =
+\rgs
+
+\hypertarget{notation}{%
+\subsubsection*{Notation}\label{notation}}
+\addcontentsline{toc}{subsubsection}{Notation}
+
+Sample size of group 1:
+\rgs
+
+Sample size of group 2:
+\rgs
+
+Sample proportion of group 1:
+\rgs
+
+Sample proportion of group 2:
+\rgs
+
+Population proportion of group 1:
+\rgs
+
+Population proportion of group 2:
+\rgs
+
+\hypertarget{example-gender-discrimination}{%
+\subsubsection*{Example: Gender discrimination}\label{example-gender-discrimination}}
+\addcontentsline{toc}{subsubsection}{Example: Gender discrimination}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  What is the principle question the researchers hope to answer? (We call this the \textbf{research question}.)
+  What is the research question?
+  \rgs
+\item
+  What are the observational units?
+  \rgs
+\item
+  What type of study design was used? Justify your answer.
+  \rgs
+\item
+  What is the appropriate scope of inference for these data?
+  \rgs
+\item
+  What is the sample statistic presented in this example? What notation would be used to represent this value?
+  \rgs
+\item
+  What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
   \rgs
   \rgs
 \item
-  When creating two groups to compare, do the groups have to be the same size (same number of people in each)?
+  Write the null and the alternative hypotheses in words.
   \rgs
   \rgs
 \item
-  What are the cases or observational units in this study?
+  Write the null and the alternative hypotheses in notation.
+  \rgs
+\item
+  How could we use cards to simulate \textbf{1} sample \emph{which assumes the null hypothesis is true}? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
   \rgs
   \rgs
 \item
-  Is there a clear explanatory and response variable? If so, name the variable in each role and determine the type of variable (discrete, continuous, nominal, or ordinal).
+  How can we calculate a p-value from the simulated null distribution for this example?
   \rgs
   \rgs
 \item
-  What is the purpose of the control group?
+  What was the p-value of the test?
+  \rgs
+\item
+  At the 5\% significance level, what decision would you make?
+  \rgs
+\item
+  What conclusion should the researcher make?
   \rgs
   \rgs
 \item
-  Is this an example of an observational study or an experiment? How do you know?
+  Are the results in this example statistically significant? Justify your answer.
   \rgs
-  \rgs
-\item
-  Consider Tables 1.1 and 1.2. Which table is more helpful in answering the research question? Justify your answer.
-  \rgs
-  \rgs
-\item
-  Describe in words what is shown in Figure 1.1. Specifically, compare the proportion of patients who had a stroke between the treatment and control groups after 30 days as well as after 365 days.
-  \rgs
-  \rgs
-\item
-  Given the notion that the larger the difference between the two groups (for a given sample size), the less believable it is that the difference was due to chance, which measurement period (30 days or 365 days) provide stronger evidence that there is an association between stents and strokes, or that the differences are not due to random chance?
-  \rgs
-  \rgs
-\item
-  This study reported finding evidence that stents \textbf{increase} the risk of stroke. Does this conclusion apply to all patients and all stents?
-  \rgs
-  \rgs
-\item
-  This study reported finding evidence that stents \textbf{increase} the risk of stroke. This conclusion implies a causal link between stents and an increased risk of stroke. Is that conclusion valid? Justify your answer.
 \end{enumerate}
 
-\newpage
-
-\hypertarget{activity-martian-alphabet}{%
-\section{Activity: Martian Alphabet}\label{activity-martian-alphabet}}
-
-\setstretch{1}
-
-\hypertarget{learning-outcomes}{%
-\subsection{Learning outcomes}\label{learning-outcomes}}
-
-\begin{itemize}
-\item
-  Describe the statistical investigation process.
-\item
-  Identify observational units, variables, and variable types in a statistical study.
-\end{itemize}
-
-\hypertarget{terminology-review}{%
-\subsection{Terminology review}\label{terminology-review}}
-
-Statistics is the study of how best to collect, analyze, and draw conclusions from data. Today in class you will be introduced to the following terms:
-
-\begin{itemize}
-\item
-  Observational units or cases
-\item
-  Variables: categorical or quantitative
-\item
-  Proportions
-\item
-  Graphs: frequency bar plot and relative frequency bar plot
-\item
-  Distribution
-\end{itemize}
-
-For more on these concepts, read Sections 1.2 and 2.1 in the textbook.
-
-\hypertarget{can-you-read-martian}{%
-\subsection{Can you read ``Martian''?}\label{can-you-read-martian}}
-
-How well can humans distinguish one ``Martian'' letter from another? In this week's activity, we'll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or on the right.
-\vspace{2mm}
+\hypertarget{example-opportunity-cost}{%
+\subsubsection*{Example: Opportunity cost}\label{example-opportunity-cost}}
+\addcontentsline{toc}{subsubsection}{Example: Opportunity cost}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
-  Were you correct or incorrect in identifying Bumba?
+  What is the research question?
+  \rgs
+\item
+  What are the observational units?
+  \rgs
+\item
+  What type of study design was used? Justify your answer.
+  \rgs
+\item
+  What is the appropriate scope of inference for these data?
+  \rgs
+\item
+  What is the sample statistic presented in this example? What notation would be used to represent this value?
+  \rgs
+\item
+  What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
+  \rgs
+  \rgs
+\item
+  Write the null and the alternative hypotheses in words.
+  \rgs
+  \rgs
+\item
+  Write the null and the alternative hypotheses in notation.
+  \rgs
+\item
+  How could we use cards to simulate \textbf{1} sample \emph{which assumes the null hypothesis is true}? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs
+  \rgs
+\item
+  How can we calculate a p-value from the simulated null distribution for this example?
+  \rgs
+  \rgs
+\item
+  What was the p-value of the test?
+  \rgs
+\item
+  Interpret the p-value in the context of the problem.
+  \rgs
+  \rgs
+\item
+  At the 5\% significance level, what decision would you make?
+  \rgs
+\item
+  What conclusion should the researcher make?
+  \rgs
+\item
+  Are the results in this example statistically significant? Justify your answer.
+  \rgs
 \end{enumerate}
 
-\vspace{1mm}
-
-\hypertarget{steps-of-the-statistical-investigation-process}{%
-\subsubsection*{Steps of the statistical investigation process}\label{steps-of-the-statistical-investigation-process}}
-\addcontentsline{toc}{subsubsection}{Steps of the statistical investigation process}
-
-\textbf{Step 1}: The first step of any statistical investigation is to \emph{ask a research question}. In this study the research question is: can we as a class read Martian? (We will refine this later on!).
-
-\textbf{Step 2}: To answer any research question, we must \emph{design a study and collect data}. For our question, the study consists of each student being presented with two Martian letters and asking which was Bumba. Your responses will become our observed data that we will explore.
-
-\textbf{Observational units} or \textbf{cases} are the subjects data are collected on. In a spreadsheet of the data set, each row will represent a single observational unit.
+\hypertarget{example-cpr-and-blood-thinner}{%
+\subsubsection*{Example: CPR and blood thinner}\label{example-cpr-and-blood-thinner}}
+\addcontentsline{toc}{subsubsection}{Example: CPR and blood thinner}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  What are the observational units in this study?
-\end{enumerate}
-
-\vspace{0.2in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  How many students are in class today? This is the \textbf{sample size}.
-\end{enumerate}
-
-\vspace{0.2in}
-
-A \textbf{variable} is information collected or measured on each observational unit or case. Each column in a data set will represent a different variable. Today we are only measuring one variable on each observational unit.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  Identify the variable we are collecting on each observational unit in this study, i.e., what are we measuring on each student? \emph{Hint}: Your answer to question 1 is the outcome for the variable measured on one observational unit.
-\end{enumerate}
-
-\vspace{.8in}
-
-We will look at two types of variables: \textbf{quantitative} and \textbf{categorical} (see Figure \ref{fig:types-of-variables}).
-
-Quantitative variables are numerical measurements that can be discrete (whole, non-negative numbers) or continuous (any value within an interval). The number of pets one owns would be a discrete variable as you can not have a partial pet. GPA would be a continuous variable ranging from 0 to 4.0.
-
-The outcome of a categorical variable is a group or category such as eye color, state of residency, or whether or not a student lives on campus. Categorical variables with a natural ordering are considered ordinal variables while those without a natural ordering are considered nominal variables. All categorical variables will be treated as nominal for analysis in this course.
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.5\linewidth]{images/variables} 
-
-}
-
-\caption{Types of variables.}\label{fig:types-of-variables}
-\end{figure}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+<<<<<<< HEAD
 \setcounter{enumi}{4}
 \tightlist
 \item
@@ -9518,9 +9493,13 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \begin{itemize}
 \tightlist
+=======
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 \item
-  7.1and7.2
+  What is the research question?
+  \rgs
 \item
+<<<<<<< HEAD
   RegressionSim
 \end{itemize}
 
@@ -9562,15 +9541,40 @@ General steps of a hypothesis test:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+=======
+  What are the observational units?
+  \rgs
 \item
-  Frame the research question in terms of hypotheses.
+  What type of study design was used? Justify your answer.
+  \rgs
 \item
-  Collect and summarize data using a test statistic.
+  What is the appropriate scope of inference for these data?
+  \rgs
 \item
-  Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
+  What is the sample difference in proportions presented in this example? What notation would be used to represent this value?
+  \rgs
 \item
-  Compare the observed test statistic to the null distribution to calculate a p-value.
+  What is the sample relative risk? Interpret the value in the context of the study.
+  \rgs
+  \rgs
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 \item
+  What is the parameter (using a difference in proportion) representing in the context of this problem? What notation would be used to represent this parameter?
+  \rgs
+  \rgs
+\item
+  Write the null and the alternative hypotheses in words.
+  \rgs
+  \rgs
+\item
+  Write the null and the alternative hypotheses in notation.
+  \rgs
+\item
+  How could we use cards to simulate \textbf{1} sample \emph{which assumes the null hypothesis is true}? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs
+  \rgs
+\item
+<<<<<<< HEAD
   Make a conclusion based on the p-value and write the conclusion in context.
 \end{enumerate}
 
@@ -9597,9 +9601,34 @@ Null hypothesis: \(H_0\) the skeptical perspective; no difference; no change; no
 Alternative hypothesis: \(H_A\) the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is \textbf{correct}
 
 Null value: the value of the parameter when we assume the null hypothesis is true (labeled as \(parameter_0\))
+=======
+  How can we calculate a p-value from the simulated null distribution for this example?
+  \rgs
+  \rgs
+\item
+  What was the p-value of the test?
+  \rgs
+\item
+  Interpret the p-value in the context of the problem.
+  \rgs
+  \rgs
+\item
+  At the 5\% significance level, what decision would you make?
+  \rgs
+\item
+  What conclusion should the researcher make?
+  \rgs
+\item
+  Are the results in this example statistically significant? Justify your answer.
+  \rgs
+\end{enumerate}
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 
-Null distribution: the simulated or modeled distribution of statistics (sampling distribution) we would expect to occur if the null hypothesis is true.
+\hypertarget{section-5.4.4-theory-based-methods-for-a-difference-in-proportions}{%
+\subsection*{Section 5.4.4 (Theory-based methods for a difference in proportions)}\label{section-5.4.4-theory-based-methods-for-a-difference-in-proportions}}
+\addcontentsline{toc}{subsection}{Section 5.4.4 (Theory-based methods for a difference in proportions)}
 
+<<<<<<< HEAD
 P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true
 
 \rgi Lower the p-value the stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis
@@ -9614,128 +9643,114 @@ Statistically significant: results are considered statistically significant if t
 
 Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter
 \rgi Also called `estimation'
+=======
+You may skip the sub-section on ``Confidence Interval for \(\pi_1 - \pi_2\)''. This section will be covered next week.
 
-Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval
+\setstretch{1}
 
-Bootstrapping: the process of drawing with replacement n times from the original sample
+\textbf{Videos}
 
-Bootstrapped resample: a random sample of size n from the original sample, selected with replacement
+\begin{itemize}
+\tightlist
+\item
+  5.4
+\end{itemize}
 
-Bootstrapped statistic: the statistic recorded from the bootstrapped resample
+\setstretch{1.25}
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 
-Confidence level: how confident we are that the confidence interval will capture the parameter
+\hypertarget{reminders-from-previous-sections-1}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-1}}
+\addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
-Bootstrap X\% confidence interval: (\((\frac{(1-X)}{2})^{th}\) percentile,\((X+(\frac{(1-X)}{2})^{th}\) percentile) of a bootstrap distribution
+Sample size of group 1: \(n_1\)
 
+Sample size of group 2: \(n_2\)
+
+Sample proportion of group 1: \(\hat{p_1}\)
+
+Sample proportion of group 2: \(\hat{p_2}\)
+
+Population proportion of group 1: \(\pi_1\)
+
+<<<<<<< HEAD
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be bell-shaped and symmetric
 
 t-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard Normal distribution
 Note: width depends on the sample size (used to calculate degrees of freedom -- df for short)
 Larger df  Closer the t distribution is to the standard Normal distribution
+=======
+Population proportion of group 2: \(\pi_2\)
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 
-Degrees of freedom (df): describes the variability of the t-distribution
+Test statistic/Point estimate: other names for a statistic from a sample; the point estimate is our best guess for the parameter of interest.
 
-T-score: the name for a standardized statistic which is compared to a t-distribution
+Central Limit Theorem: For large sample sizes, the sampling distribution of a sample proportion (or mean) will be approximately normal (bell-shaped and symmetric).
 
+<<<<<<< HEAD
 \hypertarget{notes}{%
 \subsubsection*{Notes}\label{notes}}
+=======
+\hypertarget{notes-1}{%
+\subsubsection*{Notes}\label{notes-1}}
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 \addcontentsline{toc}{subsubsection}{Notes}
 
-To create a \textbf{simulated null distribution},
+Conditions for the CLT to apply for a difference in proportions
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  How many cards will you need and how will the cards be labeled?
-  \rgs
-\item
-  What do you do with the cards after labeling them?
-  \rgs
-\item
-  After shuffling, what value will be plotted on the simulated null distribution?
-  \rgs
-\end{enumerate}
-
-To create a \textbf{bootstrap distribution},
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  How many cards will you need and how will the cards be labeled?
-  \rgs
-\item
-  What do you do with the cards after labeling them?
-  \rgs
-\item
-  After shuffling, what value will be plotted on the bootstrap distribution?
-  \rgs
-\end{enumerate}
-
-Conditions to use the CLT for testing slope (or correlation):
-1. Linearity:
+\rgi Independence:
 \rgs
 
-\rgi a. Checked by:
+\rgi \rgi Checked by:
 \rgs
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  Independent observations:
-  \rgs
-\end{enumerate}
-
-\rgi a. Checked by:
+\rgi Success-failure condition:
 \rgs
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  Nearly normal residuals:
-  \rgs
-\end{enumerate}
-
-\rgi a. Checked by:
+\rgi \rgi Checked by:
 \rgs
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  Constant or equal variance:
-  \rgs
-\end{enumerate}
+\hypertarget{formulas-1}{%
+\subsubsection*{Formulas}\label{formulas-1}}
+\addcontentsline{toc}{subsubsection}{Formulas}
 
-\rgi a. Checked by:
+\(SD(\hat{p_1} - \hat{p_2})=\)
 \rgs
 
+<<<<<<< HEAD
 In a theoretical test of slope or correlation, how are the degrees of freedom determined?
 \rgs	
 
 Explain why testing for slope is equivalent to testing for correlation.
+=======
+Null standard error of the difference in sample proportions:
+\(SE_0(\hat{p_1} - \hat{p_2})=\)
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 \rgs
 
-Where in the \texttt{R} output can \(SE(b_1)\) be found?
+Standardized statistic/standardized difference in sample proportions:
+\(Z=\)
 \rgs
 
+<<<<<<< HEAD
 \hypertarget{formulas}{%
 \subsubsection*{Formulas}\label{formulas}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(t=\)
 \rgs
+=======
+\hypertarget{notation-1}{%
+\subsubsection*{Notation}\label{notation-1}}
+\addcontentsline{toc}{subsubsection}{Notation}
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 
-Confidence interval:
+Overall (pooled) proportion of successes:
 \rgs
 
-\hypertarget{example-crop-yields}{%
-\subsubsection*{Example: Crop yields}\label{example-crop-yields}}
-\addcontentsline{toc}{subsubsection}{Example: Crop yields}
+\hypertarget{example-cpr-and-blood-thinner-1}{%
+\subsubsection*{Example: CPR and blood thinner}\label{example-cpr-and-blood-thinner-1}}
+\addcontentsline{toc}{subsubsection}{Example: CPR and blood thinner}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9743,30 +9758,26 @@ Confidence interval:
   What are the observational units?
   \rgs
 \item
-  What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
+  What type of study design was used? Justify your answer.
+  \rgs
+\item
+  What is the appropriate scope of inference for these data?
+  \rgs
+\item
+  What is the sample difference in proportions presented in this example? What notation would be used to represent this value?
+  \rgs
+\item
+  What is the parameter (using a difference in proportion) representing in the context of this problem? What notation would be used to represent this parameter?
+  \rgs
+\item
+  Write the null and the alternative hypotheses in words.
   \rgs
   \rgs
 \item
-  What is the research question?
+  Write the null and the alternative hypotheses in notation.
   \rgs
 \item
-  Write the null and alternative hypothesis in appropriate notation.
-  \rgs
-\item
-  How could we use cards to simulate \textbf{1} sample which assumes \emph{the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
-  \rgs
-  \rgs
-\item
-  After 1000 shuffles are generated, where is the resulting simulated distribution centered? Why does that make sense?
-  \rgs
-  \rgs
-\item
-  What are the sample statistics presented in this example? What notation would be used to represent each value?
-  \rgs
-\item
-  Write the least squares regression line for these data.
-  \rgs
-\item
+<<<<<<< HEAD
 \begin{verbatim}
 How was the p-value for this test found?
 \end{verbatim}
@@ -9780,150 +9791,300 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_.
 \setcounter{enumi}{9}
 \item
   Interpret the p-value in the context of the problem.
+=======
+  Is it valid to use theory-based methods to analyze these data?
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
   \rgs
   \rgs
 \item
-  What conclusion can be drawn from these data?\\
+  Calculate the pooled or overall proportion of successes. What notation would be used to represent this value?
   \rgs
 \item
-  How could we use cards to simulate \textbf{1} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
-  \rgs
+  Calculate the null standard error of the difference in sample proportions.
   \rgs
 \item
-  Interpret the 95\% confidence interval provided.
+  Calculate the standardized statistic
+  \rgs
+\item
+  Interpret the standardized statistic in the context of the problem.
   \rgs
   \rgs
 \end{enumerate}
 
-\hypertarget{example-midterm-elections-and-unemployment}{%
-\subsubsection*{Example: Midterm elections and unemployment}\label{example-midterm-elections-and-unemployment}}
-\addcontentsline{toc}{subsubsection}{Example: Midterm elections and unemployment}
+\emph{Note: a p-value, p-value interpretation, decision, and conclusion for this example can be found in the Reading Guide solutions for Sections 5.4.1--5.4.3.}
+
+\hypertarget{section-5.5-errors-power-and-practical-importance}{%
+\subsection*{Section 5.5 (Errors, power, and practical importance)}\label{section-5.5-errors-power-and-practical-importance}}
+\addcontentsline{toc}{subsection}{Section 5.5 (Errors, power, and practical importance)}
+
+\setstretch{1}
+
+\textbf{Videos}
+
+\begin{itemize}
+\tightlist
+\item
+  5.5
+\item
+  Errors\_Power
+\end{itemize}
+
+\setstretch{1.25}
+
+\hypertarget{reminders-from-previous-sections-2}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-2}}
+\addcontentsline{toc}{subsubsection}{Reminders from previous sections}
+
+Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance.
+
+\begin{itemize}
+\item
+  If p-value \(\leq \alpha\), then reject \(H_0\).
+\item
+  If p-value \(> \alpha\), then fail to reject \(H_0\).
+\end{itemize}
+
+Significance level (\(\alpha\)): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
+
+\rgi Common levels of \(\alpha\) include 0.01, 0.05, and 0.10.
+
+Statistically significant: results are considered statistically significant if the p-value is below the significance level.
+
+\hypertarget{vocabulary-1}{%
+\subsubsection*{Vocabulary}\label{vocabulary-1}}
+\addcontentsline{toc}{subsubsection}{Vocabulary}
+
+Type 1 error:
+\rgs
+
+Type 2 error:
+\rgs
+
+Confirmation bias:
+\rgs
+
+Power:
+\rgs
+
+Practical importance:
+\rgs
+
+\hypertarget{notes-2}{%
+\subsubsection*{Notes}\label{notes-2}}
+\addcontentsline{toc}{subsubsection}{Notes}
+
+Fill in the following table with whether the decision was correct or not, and if not, what type of error was made.
+
+\begin{center}
+\begin{tabular}{|p{2in}|p{2in}|p{2in}|}
+\hline
+ & \multicolumn{2}{|c|}{\textbf{Test conclusion (based on data)}} \\ \hline
+ \textbf{Truth (unknown)} & Reject null hyp. & Fail to reject null hyp. \\ \hline
+ $H_0$ is true && \\ 
+   & & \\ 
+   & & \\ \hline
+ $H_A$ is true ($H_0$ is false)  && \\ 
+   & & \\ 
+   & & \\ \hline
+\end{tabular}
+\end{center}
+
+\rgs
+
+How are the significance level and type I error rate related?
+\rgs
+
+How are the significance level and type II error rate related?
+\rgs
+
+After collecting data, a researcher decides to change from a two-sided test to a one-sided test. Why is this a bad idea?
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  What is the research question?
-  \rgs
+  It \_\_\_\_\_\_\_\_\_\_\_\_ (increases/decreases) the chance of a type I error.
 \item
-  What are the observational units?
-  \rgs
-\item
-  What variables will be analyzed? Give the type and role of each.
-  \rgs
-  \rgs
-\item
-  Can the results of this study be generalized to a larger population?
-  \rgs
-\item
-  Is causal inference appropriate for these data?
-  \rgs
-\item
-  Write the null and the alternative hypothesis in words.
-  \rgs
-  \rgs
-\item
-  Write the null and the alternative hypothesis in notation.
-  \rgs
-\item
-  What are the sample statistics presented in this example? What notation would be used to represent each value?
-  \rgs
-\item
-  Write the least squares regression line for these data.
-  \rgs
-\item
-  From the \texttt{R} output, what is the standard error of the slope estimate?
-  \rgs
-\item
-  Calculate the t-score (the standardized statistic for the slope).
-  \rgs
-\item
-  What distribution should the t-score be compared to in order to calculate a p-value?
-  \rgs
-\item
-  What was the p-value of the test?
-  \rgs
-\item
-  What conclusion should the researcher make?
-  \rgs
-\item
-  Calculate a 95\% confidence interval for the parameter of interest using \texttt{qt(0.975,\ df\ =\ 27)\ =\ 2.052} as the \(t^\star\) value.
-  \rgs
-\item
-  Interpret your interval in the context of the problem.
-  \rgs
+  This can result in \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
   \rgs
 \end{enumerate}
 
+How are power and type I error rate related?
+\rgs
+
+How are power and type II error rate related?
+\rgs
+
+How can we increase the power of a test?
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \_\_\_\_\_\_\_\_ (Increase/Decrease) the significance level
+  \rgs
+\item
+  \_\_\_\_\_\_\_\_ (Increase/Decrease) the sample size
+  \rgs
+\item
+  Change from a \_\_\_ (one/two)-sided to a \_\_\_ (one/two)-sided test
+  \rgs
+\item
+  Have a \_\_\_\_\_\_\_\_ (larger/smaller) standard deviation of the statistic
+  \rgs
+\item
+  Have the alternative parameter value \_\_\_\_\_\_\_ (closer/farther) from the null value
+  \rgs
+\end{enumerate}
+
+Results are likely to be statistically significant (but may not be practically important) if the sample size is \_\_\_\_\_\_\_\_\_\_(large/small).
+\rgs
+
+Results are unlikely to be statistically significant (but may be practically important) if the sample size is \_\_\_\_\_\_\_\_\_\_(large/small).
+\rgs
+
+\hypertarget{examples}{%
+\subsubsection*{Examples:}\label{examples}}
+\addcontentsline{toc}{subsubsection}{Examples:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  In the Gender Discrimination study in the textbook and presented as an example in Reading Guide 5.4.1--5.4.2,
+\end{enumerate}
+
+\rgi a. What was the p-value of the test?
+\rgs
+
+\rgi b. At the 5\% significance level, what decision would you make?
+\rgs
+
+\rgi c.~What type of error might have occurred in these data?
+\rgs
+
+\rgi d.~Interpret that error in the context of the problem.
+\rgs
+\rgs
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  In the Opportunity Cost study in the textbook and presented as an example in the reading guide for sections 5.4.1--5.4.2,
+\end{enumerate}
+
+\rgi a. What was the p-value of the test?
+\rgs
+
+\rgi b. At the 5\% significance level, what decision would you make?
+\rgs
+
+\rgi c.~What type of error might have occurred in these data?
+\rgs
+
+\rgi d.~Interpret that error in the context of the problem.
+\rgs
+\rgs
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  In the CPR and Blood Thinners study in the textbook and presented as an example in the reading guide for sections 5.4.1--5.4.2,
+\end{enumerate}
+
+\rgi a. What was the p-value of the test?
+\rgs
+
+\rgi b. At the 5\% significance level, what decision would you make?
+\rgs
+
+\rgi c.~What type of error might have occurred in these data?
+\rgs
+
+\rgi d.~Interpret that error in the context of the problem.
+\rgs
+\rgs
+
 \newpage
 
-\hypertarget{activity-moneyball}{%
-\section{Activity: Moneyball}\label{activity-moneyball}}
+\hypertarget{activity-winter-sports-helmet-use-and-head-injuries-testing}{%
+\section{Activity: Winter Sports Helmet Use and Head Injuries --- Testing}\label{activity-winter-sports-helmet-use-and-head-injuries-testing}}
 
 \setstretch{1}
 
+<<<<<<< HEAD
 \hypertarget{learning-outcomes}{%
 \subsection{Learning outcomes}\label{learning-outcomes}}
+=======
+\hypertarget{learning-objectives}{%
+\subsection{Learning objectives}\label{learning-objectives}}
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 
 \begin{itemize}
 \item
-  Given a research question involving two quantitative variables, construct the null and alternative hypotheses
+  Given a research question involving two categorical variables, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols.
 \item
-  Assess the conditions to use the normal distribution model for a slope or correlation.
+  Assess the conditions to use the normal distribution model for a difference in proportions.
 \item
-  Find the T test statistic for a slope or correlation based off of \texttt{lm()} output in \texttt{R}.
+  Calculate the Z test statistic for a difference in proportions.
 \item
-  Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a slope or correlation.
-\item
-  Create and interpret a theory-based confidence interval for a slope or correlation.
-\item
-  Use a confidence interval to determine the conclusion of a hypothesis test.
+  Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a difference in proportions.
 \end{itemize}
 
 \hypertarget{terminology-review}{%
 \subsection{Terminology review}\label{terminology-review}}
 
-In this week's in-class activity, we will use theory-based methods for hypothesis tests and confidence intervals for linear regression slope. Some terms covered in this activity are:
+In this week's in-class activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
-  Correlation
+  Conditional proportion
 \item
-  Slope
+  Z test
 \item
-  Regression line
+  \(z*\) multiplier
+\item
+  Null hypothesis
+\item
+  Alternative hypothesis
+\item
+  Test statistic
+\item
+  Standard normal distribution
+\item
+  Independence and success-failure conditions
+\item
+  Type 1 and Type 2 errors
+\item
+  Decision of a hypothesis test
 \end{itemize}
 
-To review these concepts, see Chapters 3 and 7 in the textbook.
+To review these concepts, see Chapter 5 in your textbook.
 
-\hypertarget{moneyball}{%
-\subsection{Moneyball}\label{moneyball}}
+\hypertarget{helmet-use-and-head-injuries}{%
+\subsection{Helmet use and head injuries}\label{helmet-use-and-head-injuries}}
 
-The goal of a Major League baseball team is to make the playoffs. In 2002, the manager of the Oakland A's, Billy Beane with the help of Paul DePodesta began to use statistics to determine which players to choose for their season. Based on past data, Paul determined that to make it to the playoffs, the A's would need to win at least 95 games in the regular season. In order to win more games they would need to score more runs than they allowed. In this study, we will see if there is evidence of a positive linear relationship between the difference in the number of runs scored minus the number of runs allowed and the number of wins for teams in the years before 2002.
+In ``Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders'' by Sullheim et. al., in the \emph{Journal of the American Medical Association}, Vol. 295, No.~8 (2006), we can see the summary results from a random sample of 3562 skiers and snowboarders involved in accidents in the two-way table below. Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders?
 
-The Oakland A's won 20 consecutive games and a total of 103 games for the season. The success of this use of sports analytics was portrayed by the 2011 movie, \emph{Moneyball}.
-
-Some of the variables collected in this data set consist of the following:
-
-\begin{longtable}[]{@{}ll@{}}
+\begin{longtable}[]{@{}cccc@{}}
 \toprule
-\textbf{Variable} & \textbf{Description}\tabularnewline
+& Helmet Use & No Helmet Use & Total\tabularnewline
 \midrule
 \endhead
-\texttt{RA} & Runs allowed\tabularnewline
-\texttt{RS} & Runs scored\tabularnewline
-\texttt{OBP} & On Base Percentage\tabularnewline
-\texttt{SLG} & Slugging Percentage\tabularnewline
-\texttt{BA} & Batting Average\tabularnewline
-\texttt{OOBP} & Opponent's On Base Percentage\tabularnewline
-\texttt{OSLG} & Opponent's Slugging Percentage\tabularnewline
-\texttt{W} & Number of Wins in the season\tabularnewline
-\texttt{RD} & Difference of runs scored minus runs allowed\tabularnewline
+Head Injury & 96 & 480 & 576\tabularnewline
+No Head Injury & 656 & 2330 & 2986\tabularnewline
+Total & 752 & 2810 & 3562\tabularnewline
 \bottomrule
 \end{longtable}
 
+These counts can be found in \texttt{R} by using the \texttt{count()} function:
+
 \begin{Shaded}
 \begin{Highlighting}[]
+<<<<<<< HEAD
 \CommentTok{# Read in data set}
 \NormalTok{baseball <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/baseball.csv"}\NormalTok{)}
 
@@ -9936,6 +10097,29 @@ Some of the variables collected in this data set consist of the following:
 \end{Highlighting}
 \end{Shaded}
 
+=======
+\NormalTok{injury \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/HeadInjuries.csv"}\NormalTok{) }\CommentTok{\# Read data set in}
+\NormalTok{injury \textless{}{-}}\StringTok{ }\CommentTok{\# Write over original data with the following}
+\StringTok{  }\NormalTok{injury }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\CommentTok{\# Pipe data set into}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(Helmet \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(Helmet),}
+\NormalTok{         Outcome \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(Outcome)) }\CommentTok{\# Convert to factors}
+
+\NormalTok{injury }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\KeywordTok{group\_by}\NormalTok{(Helmet) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\KeywordTok{count}\NormalTok{(Outcome)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+#> # A tibble: 4 x 3
+#> # Groups:   Helmet [2]
+#>   Helmet Outcome            n
+#>   <chr>  <chr>          <int>
+#> 1 No     Head Injury      480
+#> 2 No     No Head Injury  2330
+#> 3 Yes    Head Injury       96
+#> 4 Yes    No Head Injury   656
+\end{verbatim}
+
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 \hypertarget{vocabulary-review.-complete-q1q4-before-class.}{%
 \subsubsection*{Vocabulary review. Complete Q1--Q4 before class.}\label{vocabulary-review.-complete-q1q4-before-class.}}
 \addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1--Q4 before class.}
@@ -9944,17 +10128,20 @@ Some of the variables collected in this data set consist of the following:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Explain why regression methods are appropriate to use to address the researchers' question. Make sure you clearly define the variables of interest in your explanation and their roles.
+  What is the name of the explanatory variable in the \texttt{R} output? What are its categories?
 \end{enumerate}
 
-\newpage
+\vspace{0.2in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
+\tightlist
 \item
-  Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names (\texttt{RD} and \texttt{W}) for xx and yy in line 17. Highlight and run lines 1--22.
+  What is the response variable in the \texttt{R} output? What are its categories?
+\end{enumerate}
 
+<<<<<<< HEAD
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{baseball }\OperatorTok{%>%}\StringTok{ }\CommentTok{# Pipe data set into...}
@@ -9966,234 +10153,282 @@ Some of the variables collected in this data set consist of the following:
 \StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{)  }\CommentTok{# Add regression line}
 \end{Highlighting}
 \end{Shaded}
+=======
+\vspace{0.2in}
+
+\setstretch{1.5}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 \item
-  Sketch the plot created below. Based on your plot, does it appear that there is a relationship between \texttt{run\ difference} and \texttt{wins}? Note: \texttt{RD} should be on the x-axis.
+  Fill in the blanks with one answer from each set of parentheses: This is an\\
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ (experiment/observational study) because\\
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_ (helmet use/head injury) \_\_\_\_\_\_\_ (was/was not)\\
+  randomly \_\_\_\_\_\_\_\_\_\_\_\_ (assigned/selected).
 \end{enumerate}
 
-\vspace{2in}
+\vspace{0.1in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{3}
 \tightlist
 \item
-  Describe the features of the plot above.
+  Put an X in the box that represents the appropriate scope of inference for this study.
 \end{enumerate}
 
-\vspace{1in}
+\begin{longtable}[]{@{}cccl@{}}
+\toprule
+& & Study Type &\tabularnewline
+\midrule
+\endhead
+& & Randomized Experiment & Observational Study\tabularnewline
+Selection of Cases & Random Sample & &\tabularnewline
+& No Random Sample & &\tabularnewline
+\bottomrule
+\end{longtable}
 
-~~~~~~~If you indicated there are potential outliers, which points are they?
-
-\vspace{0.5in}
-
-\hypertarget{conditions-for-the-least-squares-line}{%
-\subsubsection*{Conditions for the least squares line}\label{conditions-for-the-least-squares-line}}
-\addcontentsline{toc}{subsubsection}{Conditions for the least squares line}
-
-When performing inference on a least squares line, the follow conditions are generally required
-
-\begin{itemize}
-\item
-  Linearity: the data should follow a linear trend
-\item
-  Nearly normal residuals: residuals must be nearly normal
-\item
-  Constant variability: the variability of points around the least squares line remains roughly constant
-\item
-  Independent observations: individual data points must be independent
-\end{itemize}
-
-The scatterplot and the residual plots will be used to assess the conditions for approximating the data with the \(t\)-distribution.
-
-\begin{center}\includegraphics[width=0.7\linewidth]{12-regression_files/figure-latex/unnamed-chunk-3-1} \end{center}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
-\tightlist
-\item
-  Are the conditions met to use the \(t\)-distribution to approximate the sampling distribution of the standardized statistic?
-\end{enumerate}
-
-\vspace{1.5in}
+\setstretch{1}
 
 \hypertarget{ask-a-research-question}{%
 \subsubsection*{Ask a research question}\label{ask-a-research-question}}
 \addcontentsline{toc}{subsubsection}{Ask a research question}
+
+The research question as stated above is: Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders? In order to set up our hypotheses, we need to express this research question in terms of parameters.
+Remember, we define the parameter for a single categorical variable as the true proportion of observational units that are labeled as a ``success'' in the response variable.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\item
+  Write the two parameters of interest for this study. Let 1 = skier/snowboarder wore helmet, 2 = skier/snowboarder did not wear helmet.
+  \vspace{1mm}
+
+  \(\pi_1\) ---
+  \vspace{0.5in}
+
+  \(\pi_2\) ---
+  \vspace{0.5in}
+\end{enumerate}
+
+When comparing two groups, we assume the two parameters are equal in the null hypothesis---there is no association between the variables.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{5}
 \tightlist
 \item
-  Write out the null hypothesis in words.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
-\tightlist
-\item
-  Using the research question, write the alternative hypothesis in notation to test the slope.
-\end{enumerate}
-
-\vspace{0.5in}
-
-\hypertarget{summarize-and-visualize-the-data}{%
-\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
-\addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
-
-Using the provided \texttt{R} script file, enter the response variable name, \texttt{W} into the linear model function for yy and the explanatory variable name, \texttt{RD} for xx in line 32 to get the linear model output. Highlight and run lines 32--33.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{lm.baseball <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(yy}\OperatorTok{~}\NormalTok{xx, }\DataTypeTok{data=}\NormalTok{baseball) }\CommentTok{# lm(response~explanatory)}
-\KeywordTok{round}\NormalTok{(}\KeywordTok{summary}\NormalTok{(lm.baseball)}\OperatorTok{$}\NormalTok{coefficients, }\DecValTok{5}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{7}
-\tightlist
-\item
-  Using the output from the evaluated \texttt{R} code above, write the equation of the regression line.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
-\tightlist
-\item
-  Interpret the slope in context of the problem.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
-\tightlist
-\item
-  Using your estimated line of best fit, predict the number of wins for a run difference of 147. Show all work.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{10}
-\tightlist
-\item
-  In 2002 the Oakland A's had a run difference of 147 and 103 wins. Calculate the residual associated with the observation (147, 103), using your estimated regression line from question 8.
-\end{enumerate}
-
-\vspace{1in}
-
-\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data}{%
-\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data}}
-\addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
-
-To find the value of the standardized statistic to test the slope we will use,
-
-\[
-T = \frac{\mbox{slope estimate}}{SE} = \frac{b_1}{SE(b_1)}
-\]
-
-We will use the linear model output above to get the estimate for slope and standard error of the slope.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{11}
-\tightlist
-\item
-  Calculate the standardized statistic for slope. Identify where this calculated value is in the linear model output.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
-\tightlist
-\item
-  Interpret the standardized statistic in context of the problem.
+  Write the null hypothesis out in words using your answers to question 5.
 \end{enumerate}
 
 \vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  Based on the research question, fill in the appropriate sign for the alternative hypothesis (\(<\), \(>\), or \(\neq\)):
+  \vspace{0.1in}
+\end{enumerate}
+
+~~~~~~~~~~\(H_A: \pi_1 -\pi_2\) \_\_\_\_\_\_\_\_\_\_ 0
+
+\hypertarget{summarize-and-visualize-the-data}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
+\addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  Using the two-way table above, calculate the conditional proportion of helmet-wearing skiers/snowboarders that sustained a head injury.
+\end{enumerate}
+
+\vspace{.3in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  Using the two-way table above, calculate the conditional proportion of non-helmet-wearing skiers/snowboarders that sustained a head injury.
+\end{enumerate}
+
+\vspace{.3in}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{08-inference-2cat_test_files/figure-latex/unnamed-chunk-2-1} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\tightlist
+\item
+  Fill in the blanks on the graph above with the appropriate variable names and categories to complete the segmented bar plot comparing the proportion of head injuries between those who wear helmets and those who do not wear helmets. \emph{Hint}: Use the conditional proportions from questions 8 and 9.
+\end{enumerate}
+
+\vspace{1mm}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  Based on the segmented bar plot, Does there appear to be an association between helmet use and head injury? Explain using the plot.
+\end{enumerate}
+
+<<<<<<< HEAD
+\vspace{1.5in}
+
+\hypertarget{ask-a-research-question}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question}}
+\addcontentsline{toc}{subsubsection}{Ask a research question}
+=======
+\vspace{0.7in}
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\tightlist
+\item
+  Calculate the summary statistic for this study. Use helmet use (\texttt{Yes}) minus no helmet use (\texttt{No}) as the order of subtraction.
+\end{enumerate}
+
+\vspace{0.4in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\tightlist
+\item
+  What is the notation used for the value calculated in question 12?
+\end{enumerate}
+
+\vspace{0.1in}
+
+<<<<<<< HEAD
+\hypertarget{summarize-and-visualize-the-data}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
+\addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
+=======
+\hypertarget{use-statistical-analysis-methods-to-draw-inferences-from-the-data}{%
+\subsubsection*{Use statistical analysis methods to draw inferences from the data}\label{use-statistical-analysis-methods-to-draw-inferences-from-the-data}}
+\addcontentsline{toc}{subsubsection}{Use statistical analysis methods to draw inferences from the data}
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
+
+To test the null hypothesis, we could use simulation-based methods as we did with a single categorical variable in class. In this in-class activity, we will focus on theory-based methods. Like with a single proportion, the sampling distribution of a difference in sample proportions can be mathematically modeled using the normal distribution if certain conditions are met.
+
+<<<<<<< HEAD
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{lm.baseball <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(yy}\OperatorTok{~}\NormalTok{xx, }\DataTypeTok{data=}\NormalTok{baseball) }\CommentTok{# lm(response~explanatory)}
+\KeywordTok{round}\NormalTok{(}\KeywordTok{summary}\NormalTok{(lm.baseball)}\OperatorTok{$}\NormalTok{coefficients, }\DecValTok{5}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+=======
+Conditions for the sampling distribution of \(\hat{p}_1-\hat{p}_2\) to follow an approximate normal distribution:
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
+
+\begin{itemize}
+\item
+  \textbf{Independence}: The data are independent within and between the two groups. (\emph{Remember}: This also must be true to use simulation methods!)
+\item
+  \textbf{Success-failure condition}: The success-failure condition holds for each group. Under the null hypothesis, the proportions \(\pi_1\) and \(\pi_2\) are equal, so we check the success-failure condition with our best estimate of these values under \(H_0\), the pooled proportion from the two samples,
+\end{itemize}
+
+\[
+\hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
+\]
+We then check that all four of the following inequalities hold:
+
+\[\hat{p}_{pool} \times n_1 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_1 \geq 10,\]
+\[\hat{p}_{pool} \times n_2 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_2 \geq 10\]
+
+\vspace{.1in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{13}
 \tightlist
 \item
-  Using the linear model output, report the p-value for the test of significance.
+  Is the independence condition met? Explain your answer.
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{14}
 \tightlist
 \item
-  Based on the p-value, how much evidence is there against the null hypothesis?
+  Is the success-failure condition met for each group? Show your work to verify your answer.
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.8in}
 
-Recall that a confidence interval is calculated by adding and subtracting the margin of error to the point estimate.\\
-\[\mbox{point estimate}\pm t^*SE(estimate)\]
-\[b_1 \pm t^* SE(b_1)\]
+To calculate the standardized statistic we use:
 
-The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df. Recall for a 95\% confidence interval, we use the 97.5\% percentile (95\% of the distribution is in the middle, leaving 2.5\% in each tail). The sample size for this study is 902 so we will use the degrees of freedom 900 (\(n-2\)).
+<<<<<<< HEAD
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data}{%
+\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data}}
+\addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
+=======
+\[
+Z = \frac{\text{point estimate} - \text{null value}}{SE},
+\]
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{qt}\NormalTok{(}\FloatTok{0.95+0.025}\NormalTok{, }\DecValTok{900}\NormalTok{) }\CommentTok{# 95% t* multiplier }
-\end{Highlighting}
-\end{Shaded}
+where the null standard error is calculated using the pooled proportion of successes:
 
-\begin{verbatim}
-#> [1] 1.962603
-\end{verbatim}
+\[
+SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}.
+\]
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{15}
+\tightlist
 \item
-  Calculate the 95\% confidence interval for the true slope.
-  \vspace{0.8in}
-\item
-  Interpret the 95\% confidence interval in context of the problem.
+  Calculate \(SE_0(\hat{p}_1-\hat{p}_2)\).
 \end{enumerate}
 
 \vspace{1in}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question}{%
-\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question}}
-\addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{16}
+\tightlist
+\item
+  Calculate the standardized statistic.
+\end{enumerate}
+
+\vspace{1in}
+
+We will use the \texttt{pnorm} function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic found in question 17 at \texttt{xx} in line 27; highlight and run lines 27--29.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{pnorm}\NormalTok{(xx, }\CommentTok{\# Enter value of standardized statistic}
+      \DataTypeTok{m=}\DecValTok{0}\NormalTok{, }\DataTypeTok{s=}\DecValTok{1} \CommentTok{\# Using the standard normal mean = 0, sd = 1}
+      \DataTypeTok{lower.tail=}\OtherTok{TRUE}\NormalTok{) }\CommentTok{\# Gives a p{-}value less than the standardized statistic}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{17}
-\tightlist
 \item
-  Based on the p-value, write a conclusion in context of the problem.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{18}
-\tightlist
+  Report the p-value from the \texttt{R} output.
+  \vspace{0.2in}
 \item
-  Does the p-value agree with the 95\% confidence interval? What does each tell you about the null hypothesis?
+  Interpret the p-value in context of the study.
 \end{enumerate}
 
 \vspace{1in}
@@ -10203,7 +10438,99 @@ The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df. Recall
 \setcounter{enumi}{19}
 \tightlist
 \item
-  Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper. Be sure to describe:
+  How much evidence does the p-value provide against the null hypothesis? \emph{Hint}: Refer to the guidelines given in Activity 6.
+\end{enumerate}
+
+\vspace{0.4in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{20}
+\tightlist
+\item
+  Write a conclusion to the test.
+\end{enumerate}
+
+\vspace{1in}
+
+\newpage
+
+\hypertarget{types-of-errors}{%
+\subsubsection*{Types of errors}\label{types-of-errors}}
+\addcontentsline{toc}{subsubsection}{Types of errors}
+
+<<<<<<< HEAD
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{qt}\NormalTok{(}\FloatTok{0.95+0.025}\NormalTok{, }\DecValTok{900}\NormalTok{) }\CommentTok{# 95% t* multiplier }
+\end{Highlighting}
+\end{Shaded}
+=======
+Hypothesis tests are not flawless. In a hypothesis test, there are two competing hypotheses: the null and alternative. We make a decision about which might be true, but we may choose incorrectly.
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
+
+\begin{table}
+\caption{Four different possible scenarios for hypothesis test decisions.}
+\centering
+\begin{tabular}[h]{ll|cc}
+\hline
+ & &  \multicolumn{2}{c}{\textbf{Test conclusion}} \\
+ &  & \multicolumn{1}{c}{Fail to reject $H_0$} & \multicolumn{1}{c}{Reject $H_0$}\\
+\hline
+ & $H_0$ true & Good decision & Type 1 Error\\
+\hline
+\textbf{Truth} & $H_A$ true & Type 2 Error & Good decision\\
+\hline
+\end{tabular}
+\label{tab:errors}
+\end{table}
+
+Shown in Table \ref{tab:errors}, a \textbf{Type 1 Error} happens when we reject the null hypothesis when \(H_0\) is actually true. A \textbf{Type 2 Error} happens when we fail to reject the null hypothesis when the alternative is actually true.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{21}
+\tightlist
+\item
+  Using a significance level of 0.05, based on the p-value found in question 18, what decision do you make in regards to the null hypothesis?
+\end{enumerate}
+
+<<<<<<< HEAD
+\vspace{1in}
+
+\hypertarget{communicate-the-results-and-answer-the-research-question}{%
+\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question}}
+\addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
+=======
+\vspace{0.3in}
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{22}
+\tightlist
+\item
+  What type of error could we have made?
+\end{enumerate}
+
+\vspace{0.3in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{23}
+\tightlist
+\item
+  Write this error in context of the problem.
+\end{enumerate}
+
+\vspace{0.8in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{24}
+\tightlist
+\item
+  Write a paragraph summarizing the results of the study as if writing a press release. Be sure to describe:
 \end{enumerate}
 
 \begin{itemize}
@@ -10214,17 +10541,16 @@ The \(t^*\) multiplier comes from the \(t\)-distribution with \(n-2\) df. Recall
 \item
   P-value and interpretation
 \item
-  Confidence interval and interpretation
-\item
   Conclusion (written to answer the research question)
 \item
   Scope of inference
 \end{itemize}
 
-\vspace{3in}
+\vspace{2in}
 
 \newpage
 
+<<<<<<< HEAD
 \hypertarget{revisit-and-look-forward}{%
 \subsubsection*{Revisit and look forward}\label{revisit-and-look-forward}}
 \addcontentsline{toc}{subsubsection}{Revisit and look forward}
@@ -10241,27 +10567,35 @@ In order to see what team attributes would have the most impact on the number of
 \CommentTok{#> SLG         1584.9086   42.15559  37.59665        0}
 \end{Highlighting}
 \end{Shaded}
+=======
+\hypertarget{out-of-class-activity}{%
+\subsection{Out-of-class activity}\label{out-of-class-activity}}
+
+The remaining questions cover simulation-based methods for testing two categorical variables. Use Section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{20}
-\tightlist
 \item
-  Use the provided \texttt{R} output to write the linear regression model including all variables. \emph{Hint}: The estimated line of regression is:
+  First let's think about how one simulation would be created on the null distribution using cards.
+
+  How many cards would you need?
+  \vspace{0.1in}
+
+  What would be written on each card?
 \end{enumerate}
 
-\[\widehat{\text{runs scored}} = b_0 + b_1*OBP + b_2*SLG\]
-
-\vspace{1in}
+\vspace{0.5in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{21}
+\setcounter{enumi}{1}
 \tightlist
 \item
-  Using the line of regression above, predict the number of runs for the Oakland A's in 2002 if the team OBP is 0.339 and the team SLPG is 0.430.
+  Next, we would mix the cards together and shuffle into two piles. How many cards would be in each pile? What would each pile represent?
 \end{enumerate}
 
+<<<<<<< HEAD
 \vspace{1in}
 
 \hypertarget{out-of-class-activity}{%
@@ -10270,53 +10604,43 @@ In order to see what team attributes would have the most impact on the number of
 In the out-of-class activity we will focus on using simulation based methods for inference of regression. Use section 7.1 in the textbook and the TwoQuantSim video to complete the following questions.
 
 First let's think about how one simulation would be created on the null distribution using cards. First we would write the values for the response variable, wins, on each card. Next, we would shuffle the y values to a new x value (explanatory variable). Then, find the line of regression for the shuffled cards.
+=======
+\vspace{0.8in}
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
 \tightlist
 \item
   Once we have one simulated sample, what would we calculate and plot on the null distribution? \emph{Hint}: What statistic are we calculating from the data?
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.8in}
 
-To create the null distribution, we will use the regression test from the catstats package. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name identified above as \texttt{baseball}, the statistic for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
+To create the null distribution of sample differences in proportions, we will use the \texttt{two\_proportion\_test} function in \texttt{R} (in the \texttt{catstats} package). We will need to enter the response variable name and the explanatory variable name for the formula, the data set name identified above as \texttt{injury}, the outcome for the explanatory variable to give the order of subtraction for First in Subtraction, number of repetitions, the outcome for the response variable that is a success for Response Value Numerator, and the direction of the alternative hypothesis.
 
-The response variable name is \texttt{W} (wins) and the explanatory variable name is \texttt{RD} (run difference).
+The response variable name is Outcome and the explanatory variable name is Helmet.
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
+\setcounter{enumi}{3}
 \tightlist
 \item
   What inputs should be entered for each of the following to create the simulation?
 \end{enumerate}
 
-\vspace{.5 mm}
-
-\begin{itemize}
-\tightlist
-\item
-  Direction (\texttt{"greater"}, \texttt{"less"}, or \texttt{"two-sided"}):
-\end{itemize}
-
 \vspace{.2in}
 
 \begin{itemize}
 \tightlist
 \item
-  Statistic (choose \texttt{"slope"} or \texttt{"correlation"}):
+  First in Subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? \texttt{"Yes"} or \texttt{"No"}):
 \end{itemize}
 
 \vspace{.2in}
-
-\begin{itemize}
-\tightlist
-\item
-  As extreme as (enter the value for the sample slope):
-\end{itemize}
-
-\vspace{0.2in}
 
 \begin{itemize}
 \tightlist
@@ -10326,10 +10650,35 @@ The response variable name is \texttt{W} (wins) and the explanatory variable nam
 
 \vspace{.2in}
 
-Using the \texttt{R} script file for this activity, enter your answers for question 2 in place of the xx's for the regression test to produce the null distribution with 1000 simulations. Highlight and run lines 1--13 and then lines 44--49.
+\begin{itemize}
+\tightlist
+\item
+  Response Value Numerator (What is the outcome for the response variable that is considered a success? \texttt{"Head\ Injury"} or \texttt{"No\ Head\ Injury"}):
+\end{itemize}
+
+\vspace{.2in}
+
+\begin{itemize}
+\tightlist
+\item
+  As extreme as (enter the value for the sample difference in proportions):
+\end{itemize}
+
+\vspace{.2in}
+
+\begin{itemize}
+\tightlist
+\item
+  Direction (\texttt{"greater"}, \texttt{"less"}, or \texttt{"two-sided"}):
+\end{itemize}
+
+\vspace{.2in}
+
+Using the \texttt{R} script file for this activity, enter your answers for question 4 in place of the xx's in the two proportion test code to produce the null distribution with 1000 simulations, highlight and run lines 1--12 and then 33--39.
 
 \begin{Shaded}
 \begin{Highlighting}[]
+<<<<<<< HEAD
 \KeywordTok{regression_test}\NormalTok{(W}\OperatorTok{~}\NormalTok{RD, }\CommentTok{# response ~ explanatory}
                \DataTypeTok{data =}\NormalTok{ baseball, }\CommentTok{# Name of data set}
                \DataTypeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{# Sign in alternative ("greater", "less", "two-sided")}
@@ -10337,21 +10686,37 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
                \DataTypeTok{as_extreme_as =}\NormalTok{ x, }\CommentTok{# Observed slope}
                \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{# Number of simulated samples for null distribution}
        
+=======
+\KeywordTok{two\_proportion\_test}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ Outcome }\OperatorTok{\textasciitilde{}}\StringTok{ }\NormalTok{Helmet, }\CommentTok{\# response\textasciitilde{}explanatory}
+                    \DataTypeTok{data=}\NormalTok{ injury, }\CommentTok{\# Name of dataset}
+                    \DataTypeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Order of subtraction: enter the name of Group 1}
+                    \DataTypeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Always use a minimum of 1000 repetitions}
+                    \DataTypeTok{response\_value\_numerator =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Define which outcome is a success }
+                    \DataTypeTok{as\_extreme\_as =}\NormalTok{ xx, }\CommentTok{\# Type your calculated observed statistic (difference in sample proportions)}
+                    \DataTypeTok{direction=}\StringTok{"xx"}\NormalTok{) }\CommentTok{\# Alternative hypothesis direction ("greater","less","two{-}sided")}
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 \end{Highlighting}
 \end{Shaded}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
+\setcounter{enumi}{4}
 \tightlist
 \item
-  Report the p-value from the \texttt{R} output. Is this value similar to what was seen with the theory-based methods?
+  Sketch the null distribution created here.
 \end{enumerate}
 
-\vspace{0.5in}
+\newpage
 
-Fill in the xx's in the regression bootstrap CI function in the provided \texttt{R} script file to find a 95\% confidence interval. Highlight and run lines 52--56.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  What value is the null distribution centered around? Explain why this makes sense?
+\end{enumerate}
 
+<<<<<<< HEAD
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{regression_bootstrap_CI}\NormalTok{(W}\OperatorTok{~}\NormalTok{RD, }\CommentTok{# response ~ explanatory}
@@ -10361,15 +10726,26 @@ Fill in the xx's in the regression bootstrap CI function in the provided \texttt
                         \DataTypeTok{number_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{# Number of simulated samples for bootstrap distribution}
 \end{Highlighting}
 \end{Shaded}
+=======
+\vspace{1in}
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\setcounter{enumi}{6}
+\tightlist
 \item
-  Report the bootstrap 95\% confidence interval in interval notation.\\
-  \vspace{0.5in}
+  What is the p-value? \emph{Remember}: This is the value given at the bottom of the null distribution.
+\end{enumerate}
+
+\vspace{0.2in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
 \item
-  Is the bootstrap 95\% confidence interval similar to what was found using theory-based methods? Why did you expect this to be true?
+  Is the p-value found in question 7 for the out-of-class activity similar to the p-value found using the theory-based test? Explain why you would expect this to be true.
 \end{enumerate}
 
 \vspace{1in}
@@ -10380,16 +10756,20 @@ Fill in the xx's in the regression bootstrap CI function in the provided \texttt
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  The p-value for a test for correlation should be approximately the same as the p-value for the test of slope. In the simulation test, we just change the statistic type from slope to correlation and use the appropriate sample statistic value.
+  When comparing two groups, we are looking at the relationship between two parameters. In the null hypothesis we assume the two parameters are equal or that there is no difference between the two proportions.
 \item
-  To check the validity conditions for using theory-based methods we must use the diagnostic plots to check for normality of residuals and constant variability and the scatterplot to check for linearity.
+  We use the same guidelines for the strength of evidence as we did in activity 6.
 \item
-  To interpret a confidence interval for the slope: Think about how to interpret the sample slope and use that info in the confidence interval for slope.
+  The standardized statistic when the response variable is categorical is a Z score and compared to the standard normal distribution to find the p-value. To find the standardardized statistic we take the value of the statistic minus the null value, divided by the standard error of the statistic. The standardized statistic measures the number of standard errors the statistic is from the null value.
+\item
+  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type 1 error.
+\item
+  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance leve), we could have a possible Type 2 error.
 \end{enumerate}
 
 \hypertarget{additional-notes}{%
 \subsection{Additional notes}\label{additional-notes}}
 
-Use this space to summarize your thoughts and take additional notes on today's activity.
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 \end{document}

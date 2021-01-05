@@ -1,4 +1,5 @@
 \contentsline {chapter}{Preface}{2}{chapter*.2}%
+<<<<<<< HEAD
 \contentsline {chapter}{Spring 2021 Calendar of In-Class Activities}{3}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Basics of Data}{4}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Reading Guide: Basics of Data}{4}{section.1.1}%
@@ -317,3 +318,39 @@
 \contentsline {subsection}{\numberline {12.2.4}Out-of-class activity}{187}{subsection.12.2.4}%
 \contentsline {subsection}{\numberline {12.2.5}Take-home messages}{189}{subsection.12.2.5}%
 \contentsline {subsection}{\numberline {12.2.6}Additional notes}{189}{subsection.12.2.6}%
+=======
+\contentsline {chapter}{\numberline {1}Inference for Two Categorical Variables: Hypothesis Testing}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Reading Guide: Hypothesis Testing for a Difference in Proportions}{3}{section.1.1}%
+\contentsline {subsection}{Sections 5.4.1 and 5.4.2 (Simulation tests for a difference in proportions; Two-sided hypotheses)}{3}{section.1.1}%
+\contentsline {subsubsection}{Reminders from previous sections}{3}{section.1.1}%
+\contentsline {subsubsection}{Vocabulary}{4}{Item.5}%
+\contentsline {subsubsection}{Notes}{4}{Item.5}%
+\contentsline {subsubsection}{Formulas}{5}{Item.5}%
+\contentsline {subsubsection}{Notation}{5}{Item.5}%
+\contentsline {subsubsection}{Example: Gender discrimination}{5}{Item.5}%
+\contentsline {subsubsection}{Example: Opportunity cost}{6}{Item.19}%
+\contentsline {subsubsection}{Example: CPR and blood thinner}{7}{Item.34}%
+\contentsline {subsection}{Section 5.4.4 (Theory-based methods for a difference in proportions)}{8}{Item.50}%
+\contentsline {subsubsection}{Reminders from previous sections}{8}{Item.50}%
+\contentsline {subsubsection}{Notes}{9}{Item.50}%
+\contentsline {subsubsection}{Formulas}{9}{Item.50}%
+\contentsline {subsubsection}{Notation}{9}{Item.50}%
+\contentsline {subsubsection}{Example: CPR and blood thinner}{9}{Item.50}%
+\contentsline {subsection}{Section 5.5 (Errors, power, and practical importance)}{10}{Item.62}%
+\contentsline {subsubsection}{Reminders from previous sections}{10}{Item.62}%
+\contentsline {subsubsection}{Vocabulary}{11}{Item.62}%
+\contentsline {subsubsection}{Notes}{11}{Item.62}%
+\contentsline {subsubsection}{Examples:}{12}{Item.69}%
+\contentsline {section}{\numberline {1.2}Activity: Winter Sports Helmet Use and Head Injuries --- Testing}{14}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Learning objectives}{14}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Terminology review}{14}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Helmet use and head injuries}{14}{subsection.1.2.3}%
+\contentsline {subsubsection}{Vocabulary review. Complete Q1--Q4 before class.}{15}{table.1.1}%
+\contentsline {subsubsection}{Ask a research question}{15}{table.1.2}%
+\contentsline {subsubsection}{Summarize and visualize the data}{16}{Item.79}%
+\contentsline {subsubsection}{Use statistical analysis methods to draw inferences from the data}{17}{Item.85}%
+\contentsline {subsubsection}{Types of errors}{19}{Item.93}%
+\contentsline {subsection}{\numberline {1.2.4}Out-of-class activity}{20}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Take-home messages}{22}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Additional notes}{22}{subsection.1.2.6}%
+>>>>>>> 6902ece40b9553d6adf5f64bb69bb844cf53bb72
