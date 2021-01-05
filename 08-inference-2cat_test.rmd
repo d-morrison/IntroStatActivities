@@ -886,7 +886,7 @@ The response variable name is `Outcome` and the explanatory variable name is `He
 Using the `R` script file for this activity, enter your answers for question 4 in place of the `xx`'s to produce the null distribution with 1000 simulations; highlight and run lines 1--12 and then 33--39.
 
 ```{r, echo=TRUE, eval=FALSE}
-two_proportion_test(formula = Outcome ~ Helmet, # response~explanatory
+two_proportion_test(formula = Outcome ~ Helmet, # response ~ explanatory
     data= injury, # Name of dataset
     first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
     number_repetitions = 1000, # Always use a minimum of 1000 repetitions

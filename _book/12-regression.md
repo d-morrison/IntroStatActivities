@@ -110,9 +110,10 @@ Confidence level: how confident we are that the confidence interval will capture
 
 Bootstrap X% confidence interval: ($(\frac{(1-X)}{2})^{th}$ percentile,$(X+(\frac{(1-X)}{2})^{th}$ percentile) of a bootstrap distribution
 
-t-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard Normal distribution
-	Note: width depends on the sample size (used to calculate degrees of freedom – df for short)
-	Larger df $\implies$ Closer the t distribution is to the standard Normal distribution
+$t$-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard normal distribution.
+
+* The variability in a $t$-distribution depends on the sample size (used to calculate degrees of freedom --- df for short).
+* The $t$-distribution gets closer to the standard normal distribution as df increases.
 
 Degrees of freedom (df): describes the variability of the t-distribution
 
@@ -270,10 +271,10 @@ The proportion of simulated null samples at ____ or ____.
 10. From the `R` output, what is the standard error of the slope estimate?
 \rgs
 
-11. Calculate the t-score (the standardized statistic for the slope).
+11. Calculate the T-score (the standardized statistic for the slope).
 \rgs
 
-12. What distribution should the t-score be compared to in order to calculate a p-value?
+12. What distribution should the T-score be compared to in order to calculate a p-value?
 \rgs
 
 13. What was the p-value of the test? 

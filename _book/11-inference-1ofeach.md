@@ -46,19 +46,17 @@ Standard deviation of a statistic: the variability of statistics from 1000s of s
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
-Hypothesis test: a process to determine how strong the evidence of an effect is.
-		
-\rgi Also called a ‘significance test’.
+Hypothesis test: a process to determine how strong the evidence of an effect is. Also called a ‘significance test’.
 
 Simulation-based method: Simulate lots of samples of size $n$ under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
 
 Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
 
-Null hypothesis ($H_0$): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**
+Null hypothesis ($H_0$): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**.
 
-Alternative hypothesis ($H_A$): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**
+Alternative hypothesis ($H_A$): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**.
 
-Null value: the value of the parameter when we assume the null hypothesis is true (labeled as $parameter_0$)
+Null value: the value of the parameter when we assume the null hypothesis is true (labeled as $parameter_0$).
 
 Null distribution:  the simulated or modeled distribution of statistics (sampling distribution) we would expect to occur if the null hypothesis is true.
 
@@ -78,35 +76,35 @@ Significance level ($\alpha$): a threshold used to determine if a p-value provid
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter
-\rgi Also called ‘estimation’
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter. Also called 'estimation'.
 
-Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval
+Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval.
 
-Bootstrapping: the process of drawing with replacement n times from the original sample
+Bootstrapping: the process of drawing with replacement $n$ times from the original sample.
 
-Bootstrapped resample: a random sample of size n from the original sample, selected with replacement
+Bootstrapped resample: a random sample of size $n$ from the original sample, selected with replacement.
 
-Bootstrapped statistic: the statistic recorded from the bootstrapped resample
+Bootstrapped statistic: the statistic recorded from the bootstrapped resample.
 
-Confidence level: how confident we are that the confidence interval will capture the parameter
+Confidence level: how confident we are that the confidence interval will capture the parameter.
 
-Bootstrap X% confidence interval: ($(\frac{(1-X)}{2})^{th}$ percentile,$(X+(\frac{(1-X)}{2})^{th}$ percentile) of a bootstrap distribution
+Bootstrap $X$% confidence interval: ($(\frac{(1-X)}{2})^{th}$ percentile, $(X+(\frac{(1-X)}{2})^{th}$ percentile) of a bootstrap distribution.
 
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample mean (or proportion) will be approximately normal (bell-shaped and symmetric).
 
-t-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard Normal distribution
-	Note: width depends on the sample size (used to calculate degrees of freedom – df for short)
-	Larger df  Closer the t distribution is to the standard Normal distribution
+$t$-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard normal distribution.
 
-Degrees of freedom (df): describes the variability of the t-distribution
+* The variability in a $t$-distribution depends on the sample size (used to calculate degrees of freedom --- df for short).
+* The $t$-distribution gets closer to the standard normal distribution as df increases.
 
-T-score: the name for a standardized statistic which is compared to a t-distribution
+Degrees of freedom (df): describes the variability of the $t$-distribution.
+
+T-score: the name for a standardized statistic which is compared to a $t$-distribution.
 
 
 #### Notes {-}
 
-To create a **simulated null distribution**, 
+To create a **simulated null distribution** of differences in sample means, 
 
 1. How many cards will you need and how will the cards be labeled?
 \rgs
@@ -117,7 +115,7 @@ To create a **simulated null distribution**,
 3. After shuffling, what value will be plotted on the simulated null distribution?
 \rgs
 
-To create a **bootstrap distribution**, 
+To create a **bootstrap distribution** of differences in sample means, 
 
 1. How many cards will you need and how will the cards be labeled?
 \rgs
@@ -130,22 +128,23 @@ To create a **bootstrap distribution**,
 
 
 Conditions to use the CLT for a difference in two means:
-1.	Independence: 
+
+\rgi Independence: 
 \rgs
 
-\rgi a.	Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
-2.	Normality: 
+\rgi Normality: 
 \rgs
 
-\rgi a.	Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
-In a two-sample t-test, how are the degrees of freedom determined?
+In a two-sample $t$-test, how are the degrees of freedom determined?
 \rgs		
 
-True or False: A large p-value indicates that the null hypothesis is true.
+True or false: A large p-value indicates that the null hypothesis is true.
 \rgs
 
 #### Formulas {-}
@@ -153,15 +152,15 @@ True or False: A large p-value indicates that the null hypothesis is true.
 $SE(\overline{x_1} - \overline{x_2})=$
 \rgs
 
-$t=$
+$T=$
 \rgs
 
-Confidence interval: 
+Confidence interval for a difference in means: 
 \rgs
 
 #### Notation {-}
 
-$mu_1$ represents 
+$\mu_1$ represents 
 \rgs
 
 $\mu_2$ represents 
@@ -206,14 +205,13 @@ $s_2$ represents
 6.	How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
+\rgs
 
 7.	After 1000 shuffles are generated, where is the resulting simulated distribution centered?  Why does that make sense?
 \rgs
 \rgs
 
-8.	How was the p-value for this test found?
-
-The proportion of simulated null samples at ____ or ___________.
+8.	How was the p-value for this test found? The proportion of simulated null samples at ____ or ___________.
 \rgs
 
 9.	Interpret the p-value in the context of the problem.
@@ -235,7 +233,7 @@ The proportion of simulated null samples at ____ or ___________.
 2.	What are the observational units?
 \rgs
 
-3.	What variables are recorded?  Give the type and role of each.
+3.	What variables are recorded?  Give the type (categorical or quantitative) and role (explanatory or response) of each.
 \rgs
 \rgs
 
@@ -249,12 +247,13 @@ The proportion of simulated null samples at ____ or ___________.
 6.	How could we use cards to simulate **1** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
+\rgs
 
 7.	After 1000 resamples are generated, where is the resulting bootstrap distribution centered?  Why does that make sense?
 \rgs
 \rgs
 
-8.	Does the 90% confidence interval show that there is a difference across the two treatments?
+8.	Does the 90% confidence interval provide evidence of a difference across the two treatments?
 \rgs
 \rgs
 
@@ -273,14 +272,14 @@ The proportion of simulated null samples at ____ or ___________.
 4. Can the results of this study be generalized to a larger population?
 \rgs
 
-5. Is causal inference appropriate for these data?
+5. Are causal conclusions appropriate for these data?
 \rgs
 
-6. Write the null and the alternative hypothesis in words.
+6. Write the null and the alternative hypotheses in words.
 \rgs
 \rgs
 
-7. Write the null and the alternative hypothesis in notation.
+7. Write the null and the alternative hypotheses in notation.
 \rgs
 
 8. What are the sample statistics presented in this example?  What notation would be used to represent each value?
@@ -293,10 +292,10 @@ The proportion of simulated null samples at ____ or ___________.
 10. Calculate the standard error of the difference in sample means.
 \rgs
 
-11. Calculate the t-score (the standardized statistic for the sample mean).
+11. Calculate the T-score (the standardized statistic for the sample mean).
 \rgs
 
-12. What distribution should the t-score be compared to in order to calculate a p-value?
+12. What distribution should the T-score be compared to in order to calculate a p-value?
 \rgs
 
 13. What was the p-value of the test?

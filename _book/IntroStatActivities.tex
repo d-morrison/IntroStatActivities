@@ -1329,6 +1329,8 @@ In the in-class activity, we looked at sampling methods and study design. Here a
 
 \vspace{0.8in}
 
+\newpage
+
 \hypertarget{take-home-messages-1}{%
 \subsection{Take-home messages}\label{take-home-messages-1}}
 
@@ -2527,7 +2529,7 @@ The \texttt{favstats} function from the \texttt{mosaic} package gives the summar
   What are the three types of plots used to plot a single quantitative variable?
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.5in}
 
 To create a histogram of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{R} script file for xx at line 12, highlight and run lines 1--16. Notice that we are using the packages mosaic, ggplot2, and tidyverse for this activity. Visually, this histogram shows us the range of IMDb scores for Movies released in 2016.
 
@@ -2543,8 +2545,6 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
        \DataTypeTok{y =} \StringTok{"Frequency"}\NormalTok{) }\CommentTok{\# Label for y axis}
 \end{Highlighting}
 \end{Shaded}
-
-\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8662,19 +8662,17 @@ Standard deviation of a statistic: the variability of statistics from 1000s of s
 
 Standard error of a statistic: estimated standard deviation of a statistic.
 
-Hypothesis test: a process to determine how strong the evidence of an effect is.
-
-\rgi Also called a `significance test'.
+Hypothesis test: a process to determine how strong the evidence of an effect is. Also called a `significance test'.
 
 Simulation-based method: Simulate lots of samples of size \(n\) under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
 
 Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
 
-Null hypothesis (\(H_0\)): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is \textbf{wrong}
+Null hypothesis (\(H_0\)): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is \textbf{wrong}.
 
-Alternative hypothesis (\(H_A\)): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is \textbf{correct}
+Alternative hypothesis (\(H_A\)): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is \textbf{correct}.
 
-Null value: the value of the parameter when we assume the null hypothesis is true (labeled as \(parameter_0\))
+Null value: the value of the parameter when we assume the null hypothesis is true (labeled as \(parameter_0\)).
 
 Null distribution: the simulated or modeled distribution of statistics (sampling distribution) we would expect to occur if the null hypothesis is true.
 
@@ -8697,36 +8695,41 @@ Significance level (\(\alpha\)): a threshold used to determine if a p-value prov
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter
-\rgi Also called `estimation'
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter. Also called `estimation'.
 
-Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval
+Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval.
 
-Bootstrapping: the process of drawing with replacement n times from the original sample
+Bootstrapping: the process of drawing with replacement \(n\) times from the original sample.
 
-Bootstrapped resample: a random sample of size n from the original sample, selected with replacement
+Bootstrapped resample: a random sample of size \(n\) from the original sample, selected with replacement.
 
-Bootstrapped statistic: the statistic recorded from the bootstrapped resample
+Bootstrapped statistic: the statistic recorded from the bootstrapped resample.
 
-Confidence level: how confident we are that the confidence interval will capture the parameter
+Confidence level: how confident we are that the confidence interval will capture the parameter.
 
-Bootstrap X\% confidence interval: (\((\frac{(1-X)}{2})^{th}\) percentile,\((X+(\frac{(1-X)}{2})^{th}\) percentile) of a bootstrap distribution
+Bootstrap \(X\)\% confidence interval: (\((\frac{(1-X)}{2})^{th}\) percentile, \((X+(\frac{(1-X)}{2})^{th}\) percentile) of a bootstrap distribution.
 
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample mean (or proportion) will be approximately normal (bell-shaped and symmetric).
 
-t-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard Normal distribution
-Note: width depends on the sample size (used to calculate degrees of freedom -- df for short)
-Larger df  Closer the t distribution is to the standard Normal distribution
+\(t\)-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard normal distribution.
 
-Degrees of freedom (df): describes the variability of the t-distribution
+\begin{itemize}
+\tightlist
+\item
+  The variability in a \(t\)-distribution depends on the sample size (used to calculate degrees of freedom --- df for short).
+\item
+  The \(t\)-distribution gets closer to the standard normal distribution as df increases.
+\end{itemize}
 
-T-score: the name for a standardized statistic which is compared to a t-distribution
+Degrees of freedom (df): describes the variability of the \(t\)-distribution.
+
+T-score: the name for a standardized statistic which is compared to a \(t\)-distribution.
 
 \hypertarget{notes-26}{%
 \subsubsection*{Notes}\label{notes-26}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
-To create a \textbf{simulated null distribution},
+To create a \textbf{simulated null distribution} of differences in sample means,
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8741,7 +8744,7 @@ To create a \textbf{simulated null distribution},
   \rgs
 \end{enumerate}
 
-To create a \textbf{bootstrap distribution},
+To create a \textbf{bootstrap distribution} of differences in sample means,
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8757,28 +8760,23 @@ To create a \textbf{bootstrap distribution},
 \end{enumerate}
 
 Conditions to use the CLT for a difference in two means:
-1. Independence:
+
+\rgi Independence:
 \rgs
 
-\rgi a. Checked by:
+\rgi \rgi Checked by:
 \rgs
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  Normality:
-  \rgs
-\end{enumerate}
-
-\rgi a. Checked by:
+\rgi Normality:
 \rgs
 
-In a two-sample t-test, how are the degrees of freedom determined?
+\rgi \rgi Checked by:
+\rgs
+
+In a two-sample \(t\)-test, how are the degrees of freedom determined?
 \rgs        
 
-True or False: A large p-value indicates that the null hypothesis is true.
+True or false: A large p-value indicates that the null hypothesis is true.
 \rgs
 
 \hypertarget{formulas-10}{%
@@ -8788,17 +8786,17 @@ True or False: A large p-value indicates that the null hypothesis is true.
 \(SE(\overline{x_1} - \overline{x_2})=\)
 \rgs
 
-\(t=\)
+\(T=\)
 \rgs
 
-Confidence interval:
+Confidence interval for a difference in means:
 \rgs
 
 \hypertarget{notation-4}{%
 \subsubsection*{Notation}\label{notation-4}}
 \addcontentsline{toc}{subsubsection}{Notation}
 
-\(mu_1\) represents
+\(\mu_1\) represents
 \rgs
 
 \(\mu_2\) represents
@@ -8848,20 +8846,14 @@ Confidence interval:
   How could we use cards to simulate \textbf{1} sample \emph{which assumes the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
   \rgs
   \rgs
+  \rgs
 \item
   After 1000 shuffles are generated, where is the resulting simulated distribution centered? Why does that make sense?
   \rgs
   \rgs
 \item
-  How was the p-value for this test found?
-\end{enumerate}
-
-The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_\_\_\_\_\_\_\_.
-\rgs
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
+  How was the p-value for this test found? The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_\_\_\_\_\_\_\_.
+  \rgs
 \item
   Interpret the p-value in the context of the problem.
   \rgs
@@ -8888,7 +8880,7 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_\_\_\_\_\_\_\_.
   What are the observational units?
   \rgs
 \item
-  What variables are recorded? Give the type and role of each.
+  What variables are recorded? Give the type (categorical or quantitative) and role (explanatory or response) of each.
   \rgs
   \rgs
 \item
@@ -8902,12 +8894,13 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_\_\_\_\_\_\_\_.
   How could we use cards to simulate \textbf{1} bootstrap resample \emph{which does not assume the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
   \rgs
   \rgs
+  \rgs
 \item
   After 1000 resamples are generated, where is the resulting bootstrap distribution centered? Why does that make sense?
   \rgs
   \rgs
 \item
-  Does the 90\% confidence interval show that there is a difference across the two treatments?
+  Does the 90\% confidence interval provide evidence of a difference across the two treatments?
   \rgs
   \rgs
 \end{enumerate}
@@ -8932,14 +8925,14 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_\_\_\_\_\_\_\_.
   Can the results of this study be generalized to a larger population?
   \rgs
 \item
-  Is causal inference appropriate for these data?
+  Are causal conclusions appropriate for these data?
   \rgs
 \item
-  Write the null and the alternative hypothesis in words.
+  Write the null and the alternative hypotheses in words.
   \rgs
   \rgs
 \item
-  Write the null and the alternative hypothesis in notation.
+  Write the null and the alternative hypotheses in notation.
   \rgs
 \item
   What are the sample statistics presented in this example? What notation would be used to represent each value?
@@ -8952,10 +8945,10 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_\_\_\_\_\_\_\_.
   Calculate the standard error of the difference in sample means.
   \rgs
 \item
-  Calculate the t-score (the standardized statistic for the sample mean).
+  Calculate the T-score (the standardized statistic for the sample mean).
   \rgs
 \item
-  What distribution should the t-score be compared to in order to calculate a p-value?
+  What distribution should the T-score be compared to in order to calculate a p-value?
   \rgs
 \item
   What was the p-value of the test?
@@ -9653,9 +9646,15 @@ Confidence level: how confident we are that the confidence interval will capture
 
 Bootstrap X\% confidence interval: (\((\frac{(1-X)}{2})^{th}\) percentile,\((X+(\frac{(1-X)}{2})^{th}\) percentile) of a bootstrap distribution
 
-t-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard Normal distribution
-Note: width depends on the sample size (used to calculate degrees of freedom -- df for short)
-Larger df \(\implies\) Closer the t distribution is to the standard Normal distribution
+\(t\)-distribution: A bell-shaped symmetric distribution, centered at 0, wider than the standard normal distribution.
+
+\begin{itemize}
+\tightlist
+\item
+  The variability in a \(t\)-distribution depends on the sample size (used to calculate degrees of freedom --- df for short).
+\item
+  The \(t\)-distribution gets closer to the standard normal distribution as df increases.
+\end{itemize}
 
 Degrees of freedom (df): describes the variability of the t-distribution
 
@@ -9856,10 +9855,10 @@ The proportion of simulated null samples at \_\_\_\_ or \_\_\_\_.
   From the \texttt{R} output, what is the standard error of the slope estimate?
   \rgs
 \item
-  Calculate the t-score (the standardized statistic for the slope).
+  Calculate the T-score (the standardized statistic for the slope).
   \rgs
 \item
-  What distribution should the t-score be compared to in order to calculate a p-value?
+  What distribution should the T-score be compared to in order to calculate a p-value?
   \rgs
 \item
   What was the p-value of the test?

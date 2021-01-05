@@ -285,13 +285,13 @@ movies %>% # Data set piped into...
 \vspace{0.5in}
 
 6. Report the value of the standard deviation and interpret this value in context of the problem.
-\vspace{1in}
+\vspace{1in} 
 
 #### Displaying a single quantitative variable {-}
 
 7. What are the three types of plots used to plot a single quantitative variable?
 
-\vspace{1in}
+\vspace{0.5in}
 
 To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for xx at line 12, highlight and run lines 1--16.  Notice that we are using the packages mosaic, ggplot2, and tidyverse for this activity.  Visually, this histogram shows us the range of IMDb scores for Movies released in 2016.
 
@@ -307,7 +307,6 @@ ggplot(aes(x = xx)) +   # Name variable to plot
        y = "Frequency") # Label for y axis
 ```
 
-\newpage
 
 8. Sketch the histogram created here.
 

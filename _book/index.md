@@ -23,6 +23,9 @@ location: Montana State University
 <!-- Comments in displayed code: # Capitalize phrase. -->
 <!-- For displaying a range of numbers, e.g., 3-5, use an en dash: 3--5. -->
 <!-- When cross-referencing activites, capitalize "Activity", e.g., "In Activity 3, we..." -->
+<!-- When referring to a function in R, use: `function_name()` -->
+<!-- Z-score and T-score -->
+<!-- $t$-distribution -->
 
 \newpage
 \thispagestyle{empty}

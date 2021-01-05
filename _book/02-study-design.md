@@ -365,7 +365,7 @@ In the in-class activity, we looked at sampling methods and study design.  Here 
 
 \vspace{0.8in}
 
-
+\newpage
 
 ### Take-home messages
 

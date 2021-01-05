@@ -104,7 +104,7 @@ T-score: the name for a standardized statistic which is compared to a $t$-distri
 
 #### Notes {-}
 
-To create a **simulated null distribution**, 
+To create a **simulated null distribution** of differences in sample means, 
 
 1. How many cards will you need and how will the cards be labeled?
 \rgs
@@ -115,7 +115,7 @@ To create a **simulated null distribution**,
 3. After shuffling, what value will be plotted on the simulated null distribution?
 \rgs
 
-To create a **bootstrap distribution**, 
+To create a **bootstrap distribution** of differences in sample means, 
 
 1. How many cards will you need and how will the cards be labeled?
 \rgs
@@ -128,22 +128,23 @@ To create a **bootstrap distribution**,
 
 
 Conditions to use the CLT for a difference in two means:
-1.	Independence: 
+
+\rgi Independence: 
 \rgs
 
-\rgi a.	Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
-2.	Normality: 
+\rgi Normality: 
 \rgs
 
-\rgi a.	Checked by: 
+\rgi \rgi Checked by: 
 \rgs
 
-In a two-sample t-test, how are the degrees of freedom determined?
+In a two-sample $t$-test, how are the degrees of freedom determined?
 \rgs		
 
-True or False: A large p-value indicates that the null hypothesis is true.
+True or false: A large p-value indicates that the null hypothesis is true.
 \rgs
 
 #### Formulas {-}
@@ -151,15 +152,15 @@ True or False: A large p-value indicates that the null hypothesis is true.
 $SE(\overline{x_1} - \overline{x_2})=$
 \rgs
 
-$t=$
+$T=$
 \rgs
 
-Confidence interval: 
+Confidence interval for a difference in means: 
 \rgs
 
 #### Notation {-}
 
-$mu_1$ represents 
+$\mu_1$ represents 
 \rgs
 
 $\mu_2$ represents 
@@ -204,14 +205,13 @@ $s_2$ represents
 6.	How could we use cards to simulate **1** sample *which assumes the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
+\rgs
 
 7.	After 1000 shuffles are generated, where is the resulting simulated distribution centered?  Why does that make sense?
 \rgs
 \rgs
 
-8.	How was the p-value for this test found?
-
-The proportion of simulated null samples at ____ or ___________.
+8.	How was the p-value for this test found? The proportion of simulated null samples at ____ or ___________.
 \rgs
 
 9.	Interpret the p-value in the context of the problem.
@@ -233,7 +233,7 @@ The proportion of simulated null samples at ____ or ___________.
 2.	What are the observational units?
 \rgs
 
-3.	What variables are recorded?  Give the type and role of each.
+3.	What variables are recorded?  Give the type (categorical or quantitative) and role (explanatory or response) of each.
 \rgs
 \rgs
 
@@ -247,12 +247,13 @@ The proportion of simulated null samples at ____ or ___________.
 6.	How could we use cards to simulate **1** bootstrap resample *which does not assume the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
+\rgs
 
 7.	After 1000 resamples are generated, where is the resulting bootstrap distribution centered?  Why does that make sense?
 \rgs
 \rgs
 
-8.	Does the 90% confidence interval show that there is a difference across the two treatments?
+8.	Does the 90% confidence interval provide evidence of a difference across the two treatments?
 \rgs
 \rgs
 
@@ -271,14 +272,14 @@ The proportion of simulated null samples at ____ or ___________.
 4. Can the results of this study be generalized to a larger population?
 \rgs
 
-5. Is causal inference appropriate for these data?
+5. Are causal conclusions appropriate for these data?
 \rgs
 
-6. Write the null and the alternative hypothesis in words.
+6. Write the null and the alternative hypotheses in words.
 \rgs
 \rgs
 
-7. Write the null and the alternative hypothesis in notation.
+7. Write the null and the alternative hypotheses in notation.
 \rgs
 
 8. What are the sample statistics presented in this example?  What notation would be used to represent each value?
@@ -370,7 +371,7 @@ ggplot(aes(x = WeatherPattern, y = Snowfall)) +
 ```{r, echo=TRUE, collapse=FALSE}
 # Summary statistics
 Snow %>% 
-     summarize(favstats(Snowfall~WeatherPattern))
+     summarize(favstats(Snowfall ~ WeatherPattern))
 ```
 
 
@@ -467,7 +468,7 @@ To demonstrate this your instructor will use cards to represent the sample.
 16.  We will use the `two_mean_test()` function in `R` (in the `catstats` package) to simulate the null distribution of differences in sample means and compute a p-value. Using the `R` script file for this activity, enter your answers for question 15 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 1--29.
 
 ```{r, echo = TRUE, eval = FALSE}
-two_mean_test(Snowfall~WeatherPattern, data = Snow,  # Variables and data
+two_mean_test(Snowfall ~ WeatherPattern, data = Snow,  # Variables and data
                     first_in_subtraction = "xx", # First outcome in order of subtraction
                     number_repetitions = 1000,  # Number of simulations
                     as_extreme_as = xx,  # Observed statistic
@@ -484,7 +485,7 @@ Sketch the null distribution created using the code above.
 
 18. Using bootstrapping find a 95\% confidence interval. We will use the `two_mean_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval. Using the provided `R` script file, enter the variable names and data set name as in the `two_mean_test()` function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 32--35. Report the 95\% confidence interval in interval notation.
 ```{r, echo = TRUE, eval = FALSE}
-two_mean_bootstrap_CI(RESPONSE~EXPLANATORY, data = DATASET,  # Variables and data
+two_mean_bootstrap_CI(RESPONSE ~ EXPLANATORY, data = DATASET,  # Variables and data
                       first_in_subtraction = "xx", # First value in order of subtraction
                       number_repetitions = 1000,  # Number of simulations
                       confidence_level = xx)
