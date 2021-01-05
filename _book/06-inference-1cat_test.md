@@ -129,13 +129,14 @@ $SD(\hat{p})$ =
 
 2. What are the two possible explanations for how these data could have occurred? 
 \rgs
-
+\rgs
 
 3. Of the two explanations, which is the null and which is the alternative hypothesis?
 \rgs
 
 
 4. How could coins be used to create a simulation of what should happen if everyone in the class was just guessing?
+\rgs
 \rgs
 \rgs
 
@@ -406,8 +407,10 @@ $Z$ =
 
 2. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
+\rgs
 
 3. Write the null and alternative hypotheses in words.
+\rgs
 \rgs
 
 4. Write the null and alternative hypotheses in notation.
@@ -416,12 +419,16 @@ $Z$ =
 
 5. To simulate the null distribution, we would not be able to use coins.  Why or why not?
 \rgs
+\rgs
 
 
 6. How could we use cards to simulate 1 sample which assumes the null hypothesis is true?  How many blue cards --- to represent what?  How many red cards --- to represent what?  How many times would we draw a card and replace it back in the deck?  What would you record once you completed the draw-with-replacement process?
 \rgs
+\rgs
+\rgs
 
 7. How can we calculate a p-value from the simulated null distribution for this example?
+\rgs
 \rgs
 
 
@@ -433,11 +440,13 @@ $Z$ =
 
 10. What conclusion should the researcher make?
 \rgs
+\rgs
 
 11. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
 12.	Are the conditions met to use theoretical methods to analyze these data?
+\rgs
 \rgs
 
 
@@ -445,8 +454,10 @@ $Z$ =
 
 1. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
+\rgs
 
 3. Write the null and alternative hypotheses in words.
+\rgs
 \rgs
 
 4. Write the null and alternative hypotheses in notation.
@@ -454,8 +465,10 @@ $Z$ =
 	
 4. Are the conditions met to use theoretical methods to analyze these data?
 \rgs
+\rgs
 
 5. Calculate the null standard error of the sample proportion.
+\rgs
 \rgs
 
 6. What is the sample statistic presented in this example?  What notation would be used to represent this value?
@@ -463,8 +476,10 @@ $Z$ =
 
 7. Calculate the standardized sample proportion.
 \rgs
+\rgs
 
 8. How can we calculate a p-value from the normal distribution for this example?
+\rgs
 \rgs
 
 9. What was the p-value of the test? 
@@ -474,6 +489,7 @@ $Z$ =
 \rgs
 
 11. What conclusion should the researcher make?
+\rgs
 \rgs
 
 12. Are the results in this example statistically significant?  Justify your answer.

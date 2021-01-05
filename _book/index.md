@@ -31,6 +31,7 @@ location: Montana State University
 <!-- When referring to a function in R, use: `function_name()` -->
 <!-- Z-score and T-score -->
 <!-- $t$-distribution -->
+<!-- use "data set" (with a space) rather than "dataset" -->
 
 \newpage
 \thispagestyle{empty}
