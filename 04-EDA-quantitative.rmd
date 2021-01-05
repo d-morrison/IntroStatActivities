@@ -261,7 +261,7 @@ ggraph(mygraph, layout = 'dendrogram', circular = FALSE) +
 
 * Interpret the following summary statistics in context:
   median, lower quartile, upper quartile,
-  standard deviation, inter-quartile range.
+  standard deviation, interquartile range.
 
 * Given a plot or set of plots, describe and compare the distribution(s) of a single quantitative variable (center, variability, shape, outliers).
 
@@ -271,7 +271,7 @@ In this week's activity, we will review summary measures and plots for quantitat
 
 * Two measures of center: mean, median
 
-* Two measures of spread (variability): standard deviation, inter-quartile range (IQR)
+* Two measures of spread (variability): standard deviation, interquartile range (IQR)
 
 * Types of graphs: box plots, dot plots, histograms
 
