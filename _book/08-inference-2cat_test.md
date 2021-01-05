@@ -844,7 +844,7 @@ Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the 
 \newpage
 ### Out-of-class activity
 
-The remaining questions cover simulation-based methods for testing two categorical variables. Use Section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.  
+The remaining questions cover simulation-based methods for testing two categorical variables. Use Section 5.4.1 in the textbook and the TwoPropSim video to complete the following questions.  
 
 1.  First, let's think about how one simulation would be created on the null distribution using cards.  
 
