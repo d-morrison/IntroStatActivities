@@ -364,7 +364,7 @@ $s_d=$
 $\mu_d=$ 
 \rgs
 
-$s_d=$ 
+$\sigma_d=$ 
 \rgs
 
 #### Example: Tires {-}
