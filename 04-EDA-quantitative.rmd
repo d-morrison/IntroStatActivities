@@ -432,7 +432,7 @@ movies %>%  # Data set piped into...
   geom_boxplot()+  # Tell it to make a box plot
   labs(title = "Side by side box plot of budget by content rating",  # Title
        x = "Content Rating",    # x-axis label
-       y = "Budget (in Millions)")  # y-axis label
+       y = "IMDb Score")  # y-axis label
 ```
 
 1.  Using the provided `favstats` output and the side-by-side box plots, interpret the value of quartile 1 for the R content rating.
