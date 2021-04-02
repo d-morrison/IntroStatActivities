@@ -553,7 +553,7 @@ Conditions for the sampling distribution of $\bar{x}_1-\bar{x}_2$ to follow an a
 
     - $n < 30$: If the sample size $n$ is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
 
-    - $n \le 30$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
+    - $n \ge 30$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
 
 1.  In question 21 of the in-class activity, we noted that there were issues with the normality condition.  Explain how that will affect the p-value and confidence interval found with theory-based methods.
 
