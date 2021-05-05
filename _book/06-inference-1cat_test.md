@@ -835,7 +835,7 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 
 }
 
-\caption{A standard normal curve.}\label{fig:simpleNormal}
+\caption{A standard normal curve.}(\#fig:simpleNormal)
 \end{figure}
 
 4.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the $x$-axis of the standard normal distribution displayed in Figure \@ref(fig:simpleNormal), and also mark the value of the standardized statistic calculated in question 3.

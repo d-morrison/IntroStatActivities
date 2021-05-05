@@ -527,7 +527,7 @@ Have high population-density US cities seen the same improved air quality condit
 
 }
 
-\caption{The India Gate in New Delhi, India.}\label{fig:covid}
+\caption{The India Gate in New Delhi, India.}(\#fig:covid)
 \end{figure}
 
 \vspace{.05in}
