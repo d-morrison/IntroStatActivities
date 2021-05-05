@@ -245,7 +245,7 @@ The outcome of a categorical variable is a group or category such as eye color, 
 
 }
 
-\caption{Types of variables.}(\#fig:types-of-variables)
+\caption{Types of variables.}\label{fig:types-of-variables}
 \end{figure}
 
 5. Is the variable identified in question 4 categorical or quantitative?

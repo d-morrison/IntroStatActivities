@@ -5,7 +5,7 @@ title: |
     | ![](images/msu-campus.jpg){width=5in}
 author: "Melinda Yager, Jade Schmidt, Dr. Stacey Hancock"
 subtitle: |
-    | Spring 2021
+    | Summer 2021
     | Montana State University
 output: 
     pdf_document:
@@ -15,7 +15,7 @@ biblio-style: apalike
 nocite: '@*'
 site: bookdown::bookdown_site
 documentclass: report
-description: This is the coursepack of in-class activities for STAT 216 Spring 2021.
+description: This is the coursepack of in-class activities for STAT 216 Summer 2021.
 location: Montana State University
 ---
 
@@ -58,10 +58,7 @@ Each of the activities in this workbook is designed to target specific learning 
 
 The activities in this coursepack are broken into three sections: pre-class, in-class, and after class.  Read through the introduction for each activity and complete the pre-class questions before attending class each week.  In class, you will work through the in-class section with your group and instructor.  After class, you will complete the out-of-class part of the activity.
 
-STAT 216 is a 3-credit blended course. Rather than meeting for a total of 150 structured minutes in class per week, students meet with their instructor and cohort of classmates for 50 minutes of class per week. The other 100 minutes typically spent in class are instead spent outside of class watching instructor video lectures, reading the textbook, working through case studies, and participating in online discussion with your classmates. This structure serves two purposes: (1) enhance the safety of our community during the COVID-19 pandemic, and (2) provide additional flexibility for students to create their own schedule and make their own decisions on how they learn best. 
-
-In our experience, it takes six to nine hours per week outside of class to achieve a good grade in STAT 216 -- this means six to nine hours outside of the 150 minutes of time set aside for learning course material each week.  By “good” we mean at least a C because a grade of C- or below does not count toward fulfilling degree requirements.  Many of you set your goals higher than just getting a C, and we fully support that.  You
-need roughly nine hours per week to review past activities, read feedback on previous assignments, complete current assignments, and prepare for the next day's class. A typical week in the life of a STAT 216 student looks like:
+A 3-credit course over a 6 week summer session is expected to account for 75 minutes each day, 5 days per week of instructional time.  This is the amount of time you should plan to spend reading and taking notes on the textbook, watching and taking notes on the videos, and attending synchronous learning sessions and office hours.  Additionally, our experience shows that an additional 15 to 22 hours per week of a 6 week course is required to obtain a good grade in this class.  By “good” we mean at least a C because a grade of D or below does not count toward fulfilling degree requirements. Many of you set your goals higher than just getting a C, and we fully support that. You need roughly 20 to 25 hours per week to review past activities, read feedback on previous assignments, complete current assignments, and prepare for the next week's class. A typical week in the life of a STAT 216 student looks like:
 
 * _Prior to class meeting_:
     - Read assigned sections of the textbook, using the provided reading guides to take notes on the material.
