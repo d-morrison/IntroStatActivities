@@ -168,7 +168,7 @@ True or False: If random sampling of the target population is used, and no other
 
 \newpage
 
-## Activity: Study Design
+## Activity: Study Design - Part A
 
 \setstretch{1}
 
@@ -176,17 +176,11 @@ True or False: If random sampling of the target population is used, and no other
 
 * Explain the purpose of random sampling and its effect on scope of inference.
 
-* Explain the purpose of random assignment and its effect on scope of inference.
-
-* Identify whether a study design is observational or an experiment.
-
-* Identify confounding variables in observational studies and explain why they are confounding.
-
 * Identify the types of bias present in a study.
 
 ### Terminology review
 
-In this week's activity, we will examine different types of sampling bias and study designs, confounding variables, and how to determine the scope of inference for a study. Some terms covered in this activity are:
+In this today's activity, we will examine different types of sampling bias and how to determine which population or sub-population the results apply to. Some terms covered in this activity are:
 
 * Population
 
@@ -202,25 +196,13 @@ In this week's activity, we will examine different types of sampling bias and st
 
 * Non-response bias
 
-* Scope of inference
-
-* Explanatory variable
-
-* Response variable
-
-* Confounding variable
-
-* Experiment
-
-* Observational study
-
 To review these concepts, see Sections 1.3 through 1.6 in the textbook.  
 
 \newpage
 
-### Types of sampling bias. Complete Q1 before class.  
+### Types of sampling bias. **Complete Q1 before class - do we want them to complete questions before class?**.  
 
-There are two parts to study design: how the sample was selected and how the study was conducted.  First, we will look at sampling and types of bias (selection, non-response, or response).
+In today's activity, we will look at sampling and types of bias (selection, non-response, or response).
 
 In these next questions, identify the target population, the sample selected, the variable, and the type of bias present.
 
@@ -239,7 +221,7 @@ In these next questions, identify the target population, the sample selected, th
     Type(s) of bias:
 \vspace{0.3in}
 
-2.  Recently, a survey was conducted to assess current presidential approval in the United States.  A random sample of 6395 US adults was taken.  One of the questions asked in the survey was, "Do you agree or disagree with the President on many or nearly all of the top issues facing the country today?" Of those surveyed, 42% said they did agree.
+2.  **Recently, a survey was conducted to assess current presidential approval in the United States.  A random sample of 6395 US adults was taken.  One of the questions asked in the survey was, "Do you agree or disagree with the President on many or nearly all of the top issues facing the country today?" Of those surveyed, 42% said they did agree.**
 \vspace{0.25in}
 
     Target population: 
@@ -288,106 +270,14 @@ In these next questions, identify the target population, the sample selected, th
 
 \newpage
 
-### Study design
-The two main study designs we will cover are **observational studies** and **experiments**.  Both the sampling method and the study design will help to determine the **scope of inference** for a study: To whom can we generalize, and can we conclude causation or only association?  Remember that only in a randomized experiment can we conclude a **causal** (cause and effect) relationship between the explanatory and response variable.
-
-```{r, fig.align = "center", out.width="75%"}
-include_graphics("images/ScopeOfInferenceGreyscale.png")
-```
-
-For the next exercises, identify the explanatory variable, the response variable, the study design (observational study or experiment), and the scope of inference (using the above chart).
-
-5. The pharmaceutical company Moderna Therapeutics,  working in conjunction with the National Institutes of Health, conducted Phase 3 clinical trials towards a vaccine for COVID-19 last fall.  US clinical research sites enrolled 30,000 volunteers without COVID-19 to participate. Participants were randomly assigned to receive either the candidate vaccine or a saline placebo.  They were then followed to assess whether or not they developed COVID-19. The trial was double-blind, so neither the investigators nor the participants knew who was assigned to which group.
-\vspace{0.1in}
-    
-    Explanatory variable:
-\vspace{0.25in}
-
-    Response variable:
-\vspace{0.25in}
-
-    Study design:
-\vspace{0.25in}
-
-    What is the scope of inference for this study?
-\vspace{0.5in}
-
-\newpage
-
-6. In another study, a local health department randomly selected 1000 US adults without COVID-19 to participate in a health survey.  Each participant was assessed at the beginning of the study and then followed for one year.  They were interested to see which participants elected to receive a vaccination for COVID-19 and whether any participants developed COVID-19.
-\vspace{0.1in}
-    
-    Explanatory variable:
-\vspace{0.25in}
-
-    Response variable:
-\vspace{0.25in}
-
-    Study design:
-\vspace{0.25in}
-
-    What is the scope of inference for this study?
-\vspace{0.5in}
-
-A **confounding variable** is a variable that is _both_
-
-1. associated with the explanatory variable, _and_
-2. associated with the response variable.
-
-When both these conditions are met, if we observe an association between the explanatory variable and the response variable in the data, we cannot be sure if this association is due to the explanatory variable or the confounding variable---the explanatory and confounding variables are "confounded."
-
-```{r, out.width="40%"}
-par_og <- par(no.readonly = TRUE) # save original par
-par(mar = rep(0, 4))
-plot(c(-0.05, 1.2),
-     c(0.39, 1),
-     type = 'n',
-     axes = FALSE)
-text(0.59, 0.89, 'confounding 
-     variable', cex = 1.3)
-rect(0.4, 0.8, 0.78, 1)
-text(0.3, 0.49, 'explanatory', cex = 1.3)
-rect(0.1, 0.4, 0.48, 0.6)
-arrows(0.49, 0.78, 0.38, 0.62,
-       length = 0.08, lwd = 1.5)
-text(0.87, 0.5, 'response', cex = 1.3)
-rect(0.71,0.4, 1.01, 0.6)
-arrows(0.67, 0.78, 0.8, 0.62,
-       length = 0.08, lwd = 1.5)
-
-arrows(0.5, 0.5, 0.69, 0.5,
-       length = 0.08)
-text(0.595, 0.565, "?",
-     cex = 1.5)
-par(par_og) # restore original par
-```
-
-7. For each of the studies in questions 5 and 6, determine whether confounding variables could be an issue. If so, identify a potential confounding variable and explain how it meets the definition of a confounding variable.
-\vspace{1.5in}
-
-
-
-
-\newpage
-
-### Out-of-class activity
-
-In the in-class activity, we looked at sampling methods and study design.  Here are a few more questions to review that material.  
-
-1. The Bozeman school district is interested in surveying parents of students about their opinions on returning to in-person classes following the COVID-19 pandemic.  They divided the school district into 10 divisions based on location and randomly surveyed 20 households within each division.  Explain why selection bias would be present in this study design.
+5. The Bozeman school district is interested in surveying parents of students about their opinions on returning to in-person classes following the COVID-19 pandemic.  They divided the school district into 10 divisions based on location and randomly surveyed 20 households within each division.  Explain why selection bias would be present in this study design.
 \vspace{1in}
 
-2. A study published in 2007 by Christopher Johnson, professor of music education and music therapy at the University of Kansas, revealed that students in elementary schools with superior music education programs scored around 20 percent higher in math scores on standardized tests, compared to schools with low-quality music programs.  Explain how school budget could be a potential confounding variable.  Be sure to address how the confounding variable is related to both the explanatory and response variable. 
-
-\vspace{1in}
-
-3.  What is the purpose of random selection of a sample from the population? 
+6.  What is the purpose of random selection of a sample from the population? 
 
 \vspace{0.8in}
 
-4.  What is the purpose of random assignment of the cases in a study to the explanatory variable groups?
 
-\vspace{0.8in}
 
 \newpage
 
@@ -395,11 +285,4 @@ In the in-class activity, we looked at sampling methods and study design.  Here 
 
 1.	If the sample is selected using a random and non-biased method of selection (i.e., a random sample of the target population with no response or non-response bias), then the results of the study can be generalized to the target population.  When using biased methods of selection, the results only apply to the sample selected or similar observational units.
 
-2.  The study design determines if we can draw causal inferences or not.  If an association is detected, a randomized experiment allows us to conclude that there is a causal (cause-and-effect) relationship between the explanatory and response variable.  Observational studies have potential confounding variables within the study that prevent us from inferring a causal relationship between the variables.
 
-3.  Confounding variables are variables not included in the study that are related to both the explanatory and the response variables. When there are potential confounding variables in the study we cannot draw causal inferences. 
-
-
-### Additional notes
-
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

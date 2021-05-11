@@ -1,0 +1,119 @@
+## Activity:  IMDb Movie Reviews - Displaying two variables
+
+\setstretch{1}
+
+### Learning objectives
+
+* Identify and create appropriate summary statistics and plots
+  given a data set or research question for quantitative data.
+
+* Interpret the following summary statistics in context:
+  median, lower quartile, upper quartile,
+  standard deviation, interquartile range.
+
+* Given a plot or set of plots, describe and compare the distribution(s)
+  of a single quantitative variable
+  (center, variability, shape, outliers).
+
+### Terminology review
+
+In this week's activity, we will review summary measures and plots for quantitative variables.  Some terms covered in this activity are:
+
+* Two measures of center: mean, median
+
+* Two measures of spread (variability): standard deviation, interquartile range (IQR)
+
+* Types of graphs: box plots, dot plots, histograms
+
+To review these concepts, see Section 2.3 in the textbook.
+
+### Movies released in 2016
+
+A data set was collected on movies released in 2016.  Here is a list of some of the variables collected on these movies.
+
+| **Variable** 	| **Description** |
+|----	|-------------	|
+| `budget_mil` | Amount of money (in US $ millions) budgeted for the production of the movie |
+| `revenue_mil` | Amount of money (in US $ millions) the movie made after release|
+| `duration` | Length of the movie (in minutes)|
+| `content_rating` | Rating of the movie (`G`, `PG`, `PG-13`, `R`, `Not Rated`)|
+| `imdb_score` | IMDb user rating score from 1 to 10 |
+| `genres` | Categories the movie falls into (e.g., Action, Drama, etc.) |
+| `movie_facebook_likes` | Number of likes a movie receives on Facebook |
+
+\newpage
+
+
+#### Displaying a single categorical and single quantitative variable {-}
+
+The box plot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for yy and the variable `content_rating` for xx at line 31, highlight and run code lines 29 - 35. This plot helps to compare the budget for different levels of content rating.
+
+**Add summary stats**
+
+```{r, out.width="60%", echo=TRUE, eval=FALSE}
+movies %>%  # Data set piped into...
+  filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
+  ggplot(aes(y = yy, x = xx))+  # Identify variables
+  geom_boxplot()+  # Tell it to make a box plot
+  labs(title = "Side by side box plot of budget by content rating",  # Title
+       x = "Content Rating",    # x-axis label
+       y = "Budget (in Millions)")  # y-axis label
+```
+
+1. Sketch the box plots created using the `R` code.
+
+\vspace{1.5in}
+
+
+2. Answer the following questions about the box plots created.
+
+   a. Which content rating has the highest center?
+\vspace{0.2in}
+
+   b. Which content rating has the largest spread?
+\vspace{0.2in}
+
+   c. Which content rating has the most skewed distribution?
+\vspace{0.2in}
+
+   d. Fifty percent of movies in 2016 with a PG-13 content rating fall below what value?  What is the name of this value?
+\vspace{0.4in}
+
+   e.  What is the value for the third quartile (Q3) for the PG-13 rating?  Interpret this value in context.
+\vspace{.8in}
+
+
+### Out-of-class activity
+
+For a little more practice using `Rstudio` to create graphs of quantitative variables we will look at some other variables in the `Movies` data set.  Download and open the provided `R` script file, highlight and run the first 8 lines of code.
+
+To use the `favstats()` function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.
+
+```{r, echo=TRUE, collapse=FALSE}
+movies %>% # Data set piped into...
+  summarise(favstats(imdb_score~content_rating)) # Apply favstats function to imdb_score
+```
+
+Using the provided `R` script file, we will create side-by-side histograms of IMDb by movie content rating. Enter the variable name, `imdb_score` for yy and `content_rating` for xx at line 44, highlight and run lines 39 - 48.
+
+```{r, out.width="60%", echo=TRUE, eval=FALSE}
+movies %>%  # Data set piped into...
+  filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
+  ggplot(aes(y = yy, x = xx))+  # Identify variables
+  geom_boxplot()+  # Tell it to make a box plot
+  labs(title = "Side by side box plot of budget by content rating",  # Title
+       x = "Content Rating",    # x-axis label
+       y = "IMDb Score")  # y-axis label
+```
+
+1.  Using the provided `favstats` output and the side-by-side box plots, interpret the value of quartile 1 for the R content rating.
+
+\vspace{.8in}
+
+2. Which content rating has the highest center?
+
+\vspace{0.2in}
+
+3. Which variable is the explanatory variable? Response variable?
+
+\vspace{0.4in}
