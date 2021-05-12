@@ -286,13 +286,6 @@ Total & & & 100,000 \\ \hline
 
 * Construct two-way tables to evaluate conditional probabilities.
 
-* Identify and create appropriate summary statistics and plots given a data set or research question involving categorical variables.
-  
-* Plots for a single categorical variable: bar plot.
-
-* Plots for association between two categorical variables:
-  segmented bar plot, mosaic plot.
-
 ### Terminology review
 
 In today's activity, we will cover two-way tables and probability.  Some terms covered in this activity are:
@@ -440,10 +433,12 @@ Total & & & 100,000 \\ \hline
 1.  Conditional probabilities are calculated dependent on a second variable.  In probability notation, the variable following `|` is the variable on which we are conditioning.  The denominator used to calculate the probability will be the total for the variable on which we are conditioning.  
 
 
+2. ?????
+
 \newpage
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 

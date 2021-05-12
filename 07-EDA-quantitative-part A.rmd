@@ -259,7 +259,7 @@ ggraph(mygraph, layout = 'dendrogram', circular = FALSE) +
 
 ### Terminology review
 
-In this week's activity, we will review summary measures and plots for quantitative variables.  Some terms covered in this activity are:
+In today's activity, we will review summary measures and plots for quantitative variables.  Some terms covered in this activity are:
 
 * Two measures of center: mean, median
 
@@ -324,11 +324,27 @@ movies %>% # Data set piped into...
 #### Displaying a single quantitative variable {-}
 
 
-**Add a dotplot?**
-
 7. What are the three types of plots used to plot a single quantitative variable?
 
 \newpage
+
+A dotplot will plot a dot for each value in the data set.  The following code will create a dotplot of IMDb scores.
+
+```{r, out.width="60%", echo=TRUE, eval=FALSE}
+movies %>% # Data set piped into...
+ggplot(aes(x = imdb_score)) +   # Name variable to plot
+  geom_dotplot() +  # Create histogram with specified binwidth
+  labs(title = "Dotplot of IMDb Score of Movies in 2016", # Title for plot
+       x = "IMDb Score", # Label for x axis
+       y = "Frequency") # Label for y axis
+```
+8. Sketch the dotplot created here.
+
+\vspace{1.4in}
+
+9. What is the shape of the distribution of IMDb scores?
+
+\vspace{0.2in}
 
 To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for xx at line 12, highlight and run lines 1 - 16.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
@@ -344,23 +360,20 @@ ggplot(aes(x = xx)) +   # Name variable to plot
 ```
 
 
-8. Sketch the histogram created here.
+10. Sketch the histogram created here.
 
 \vspace{1.4in}
 
-9. Which range of IMDb scores have the highest frequency?
+11. Which range of IMDb scores have the highest frequency?
 
 \vspace{0.2in}
 
-10. What is the shape of the distribution of IMDb scores?
 
-\vspace{0.2in}
-
-11. Which five summary statistics are used in creating a box plot? *Hint*: Together they are called the **five-number summary** of the variable.
+12. Which five summary statistics are used in creating a box plot? *Hint*: Together they are called the **five-number summary** of the variable.
 
 \vspace{0.4in}
 
-12. Using the code below we see that the three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:  
+13. Using the code below we see that the three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:  
 
 ```{r, indent = "    ", echo = TRUE, collapse = FALSE}
 movies %>% # Data set pipes into...
@@ -378,7 +391,11 @@ movies %>% # Data set pipes into...
 
 \vspace{1.5in}
 
-13. Compare the three graphs you created.....
+14. Compare the three graphs of IMDb scores created above.
+
+    Which graph is best used to show the shape of the distribution?
+    
+    Which graph is best used to show the outliers of the distribution?
 
 ### Take-home messages
 
@@ -386,10 +403,7 @@ movies %>% # Data set pipes into...
 
 2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5*IQR$ and greater than $Q_3 + 1.5*IQR$ are considering outliers and are graphically represented by a dot outside of the whiskers on the box plot.
 
-3.  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers.  There are two measures of center: mean and the median and two measures of spread: standard deviation and the interquartile range, IQR = Q1- Q3. 
-
-4.  The median and IQR are robust measures that are not affected by the presence of outliers. 
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.

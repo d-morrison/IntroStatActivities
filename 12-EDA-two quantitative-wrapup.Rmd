@@ -1,0 +1,99 @@
+---
+title: "12-EDA-two quantitative-wrap-up"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The Palmer Station Long Term Ecological Research Program sampled three penguin species on islands in the Palmer Archipelago in Antarctica. Researchers took various body measurements on the penguins, including flipper length and body mass. The researchers were interested in the relationship between flipper length and body mass and wondered if flipper length could be used to accurately predict the body mass of these three penguin species. 
+
+Upload and import the `penguins` csv file. Using the following `R` code chunk create a scatterplot of the flipper length and body mass.  Make sure to give your plot a descriptive title.
+
+```{r}
+penguins %>%
+  ggplot(aes(x = flipper_length_mm, y = body_mass_g))+  # Specify variables
+  geom_point() +  # Add scatterplot of points
+  labs(x = "flipper length (mm)",  # Label x-axis
+       y = "body mass (g)",  # Label y-axis
+       title = "TITLE") + # Be sure to tile your plots
+  geom_smooth(method = "lm", se = FALSE)  # Add regression line
+```
+
+1. Assess the four features of the scatterplot that describe this relationship. Describe each feature using a complete sentence!
+
+* Form (linear, non-linear)
+
+\vspace{.4in}
+
+* Direction (positive, negative)
+
+\vspace{.4in}
+
+* Strength
+
+\vspace{.4in}
+
+* Unusual observations or outliers
+
+\vspace{.4in}
+
+```{r, echo=TRUE, collapse = FALSE}
+penguins %>%  # Data set pipes into
+  select(c("bill_length_mm", "bill_depth_mm", 
+           "flipper_length_mm", "body_mass_g")) %>%
+  cor(use="pairwise.complete.obs") %>%
+  round(3)
+```
+
+2.  Using the output above, which two variables have the *strongest* correlation? What is the value of this correlation?
+
+\vspace{0.5in}
+
+3. Using the value of correlation calculate the value of the coefficient of determination.
+
+\vspace{0.5in}
+
+4. Interpret the coefficient of determination in context of the problem.
+
+\vspace{1in}
+
+```{r, echo=TRUE, collapse = FALSE}
+# Fit linear model: y ~ x
+penguinsLM <- lm(body_mass_g~flipper_length_mm, data=penguins)
+summary(penguinsLM)$coefficients # Display coefficient summary
+```
+
+5.  Write out the least squares line using the summary statistics provided above in context of the problem.
+
+\vspace{.5in}
+
+6. Interpret the value of slope in context of the problem.
+
+\vspace{.8in}
+
+7. Using the least squares line from question 5, predict the body mass for a penguin for a flipper length of 181 mm.
+
+\vspace{.6in}
+
+8. One penguin had a flipper length of 181 mm and a body mass of 3750 g. Find the residual for this penguin.
+
+\vspace{.8in}
+
+9.  Did the line of regression overestimate or underestimate the body mass for this penguin?
+
+\vspace{0.5in}
+
+```{r}
+penguins %>%
+  ggplot(aes(x = flipper_length_mm, y = body_mass_g, color=species))+  # Specify variables
+  geom_point(aes(shape = species), size = 3) +  # Add scatterplot of points
+  labs(x = "flipper length (mm)",  # Label x-axis
+       y = "body mass (g)",  # Label y-axis
+       color = "species",
+       title = "TITLE") + # Be sure to tile your plots
+  geom_smooth(method = "lm", se = FALSE)  # Add regression line
+```
+
+10. Does adding the variable species affect the relationship between body mass and flipper length? Explain. 

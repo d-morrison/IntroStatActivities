@@ -1,4 +1,4 @@
-## Activity:  Graphing Categorical Variables
+### Activity:  Graphing Categorical Variables
 
 \setstretch{1}
 
@@ -58,7 +58,7 @@ If we wanted to know how many children in our data set were in each level of myo
 
 ```{r, out.width="50%", echo=TRUE, eval = FALSE}
 myopia %>% # Data set piped into...
-ggplot(aes(y = xx)) +   # This specifies the variable
+ggplot(aes(y = Sight)) +   # This specifies the variable
   geom_bar(stat = "count") +  # Tell it to make a bar plot
   labs(title = "Frequency Bar Plot of Level of Myopia",  # Give your plot a title
        x = "Frequency",   # Label the x axis
@@ -99,7 +99,7 @@ To examine the differences in level of myopia for the level of light, we would c
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
 myopia %>% # Data set piped into...
-ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
+ggplot(aes(x = Light, fill = Sight)) +   # This specifies the variables
   geom_bar(stat = "count", position = "fill") +  # Tell it to make a stacked bar plot
   labs(title = "Segmented Bar Plot of Night Light Use by Level of Myopia",  
        # Make sure to title your plot 
@@ -120,6 +120,58 @@ ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
 7. Which level of light has the highest proportion of `No Myopia`?
 
 \vspace{0.5in}
+
+We could also plot the data using a mosaic plot.
+
+```{r, out.width="60%", echo=TRUE, eval=FALSE}
+myopia %>% # Data set piped into...
+  ggplot() +   # This specifies the variables
+  geom_mosaic(aes(x=product(Light), fill = Sight)) +  # Tell it to make a mosaic plot
+  labs(title = "Mosaic Plot of Night Light Use by Level of Myopia",  
+       # Make sure to title your plot 
+       x = "Level of Light",   # Label the x axis
+       y = "") +  # Remove y axis label
+      scale_fill_grey()  # Make figure black and white
+```
+8.  What is similar and what is different between the segmented bar chart and the mosaic bar chart.
+
+\vspace{1in}
+
+9.  Explain why the bar for `Nightlight` is the widest.
+
+\vspace{0.8in}
+
+The following `R` code gives the counts for each combination of levels of variables.
+
+```{r, echo=TRUE, warning=FALSE, message=FALSE, collapse=FALSE}
+myopia %>% group_by(Sight) %>% count(Light)
+```
+10.  Fill in the following table with the values from the `R` output above.
+
+|             | Full Light | Nightlight | No Light | Total |
+|-------------|------------|------------|----------|-------|
+| High Myopia |            |            |          |       |
+| Myopia      |            |            |          |       |
+| No Myopia   |            |            |          |       |
+| Total       |            |            |          |       |
+
+11.  Calculate the proportion of children with high myopia.
+
+
+\vspace{0.3in}
+
+12.  Calculate the proportion of children that slept with full light that have high myopia. Use appropriate notation.
+
+\vspace{0.3in}
+
+13.  Calculate the proportion of children that slept with no light that have high myopia.  Use appropriate notation.
+
+\vspace{0.3in}
+
+
+14.  Calculate the difference in proportion of children with high myopia for those that slept with full light minus those who slept with no light.  Give the appropriate notation.  Label group 1 as full light and group 2 as no light.
+
+\vspace{0.3in}
 
 
 ### Take-home messages

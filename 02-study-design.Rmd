@@ -186,7 +186,7 @@ In this today's activity, we will examine different types of sampling bias and h
 
 * Sample
 
-* Parameter
+* Parameter **Introduce parameter of interest?**
     
 * Statistic
 
