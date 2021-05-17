@@ -210,75 +210,42 @@ Researchers at the Princeton University wanted to investigate influences on beha
 Use the following code to create a segmented bar plot of .....
 
 ```{r}
-samaritan < - 
+samaritan <- read.csv("data/goodsam.csv")
+samaritan %>%
+        ggplot(aes(x = Condition, fill = Behavior)) +   # This specifies the variables
+  geom_bar(stat = "count", position = "fill") +  # Tell it to make a stacked bar plot
+  labs(title = "xx",  
+       # Make sure to title your plot 
+       x = "Condition",   # Label the x axis
+       y = "") +  # Remove y axis label
+    scale_fill_grey()  # Make figure black and white
 ```
 
-\vspace{1in}
+2.  Sketch the segmented bar plot created here.  
 
+\vspace{1.5in}
+
+3. Does there appear to be an associated between the condition assigned and the behavior?  Explain.
+
+\vspace{1in}
 
 #### Use statistical analysis methods to draw inferences from the data {-}
 
-
-\newpage
-
-### Effect of sample size 
-
-Suppose in another sample of skiers and snowboarders involved in accidents we saw these results:
-
-|                | Helmet Use | No Helmet Use | Total |
-|:--------------:|:----------:|:-------------:|:-----:|
-|   Head Injury  |     135    |      674      |  809  |
-| No Head Injury |     921    |      3270     |  4191 |
-|      Total     |    1056    |      3944     |  5000 |
-
-
-11.  Calculate the margin of error for a 95\% confidence interval using a multiplier of $z^*$ = 1.96 for this new sample.  Is the margin of error larger or smaller than the margin of error for the original study?
-
-\vspace{.8in}
-
-12.  Calculate the 95\% confidence interval for this new study using the margin of error from question 11.  
-
-\vspace{.8in}
-
-13.  Is the confidence interval calculated in question 12 with the larger sample size wider or smaller than the confidence interval in question 9? Why?
-
-\vspace{.8in}
-
-
-### Relative risk
-
-Another summary statistic that can be calculated for two categorical variables is the relative risk.  The relative risk is calculated as the ratio of the conditional proportions:
-
-
-$$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
-
-14.  Calculate the relative risk of head injury for those who wore helmets compared to those who did not.
-
-\vspace{.8in}
-
-15.  Interpret the relative risk in context of the problem.
+4.  Write the parameter of interest in context of the study. Use proper notation.
 
 \vspace{1in}
 
+We will use the `two_proportion_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of differences in sample proportions and calculate a confidence interval. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `samaritan`), the outcome for the explanatory variable that is first in subtraction, number of repetitions, the outcome for the response variable that is a success (what the numerator counts when calculating a sample proportion), and the confidence level as a decimal.
 
+The response variable name is `Behavior` and the explanatory variable name is `Condition`.
 
-\newpage 
-
-### Out-of-class activity
-
-The remaining questions cover simulation-based methods for creating a bootstrap distribution of differences in sample proportions to find a confidence interval. Use Section 5.4.3 in the textbook and the TwoPropSim video to complete the following questions.
-
-We will use the `two_proportion_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of differences in sample proportions and calculate a confidence interval. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `injury`), the outcome for the explanatory variable that is first in subtraction, number of repetitions, the outcome for the response variable that is a success (what the numerator counts when calculating a sample proportion), and the confidence level as a decimal.
-
-The response variable name is `Outcome` and the explanatory variable name is `Helmet`.
-
-1. What values should be entered for each of the following into the simulation to create a 95\% confidence interval?
+5. What values should be entered for each of the following into the simulation to create a 95\% confidence interval?
 
 \vspace{.5mm}
-* First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"Yes"` or `"No"`):
+* First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"Hurry"` or `"No hurry"`):
 
 \vspace{.2in}
-* Response value numerator (What is the outcome for the response variable that is considered a success? `"Head Injury"` or `"No Head Injury"`):
+* Response value numerator (What is the outcome for the response variable that is considered a success? `"Help"` or `"No help"`):
 
 \vspace{.2in}
 * Number of repetitions:
@@ -291,25 +258,47 @@ The response variable name is `Outcome` and the explanatory variable name is `He
 Using the `R` script file for this activity, enter your answers for question 1 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 1--22.
 
 ```{r, echo=TRUE, eval=FALSE}
-two_proportion_bootstrap_CI(formula = Outcome ~ Helmet, 
-        data=injury, # Name of data set
-        first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
-        response_value_numerator = "xx", # Define which outcome is a success 
+two_proportion_bootstrap_CI(formula = Behavior ~ Condition, 
+        data=samaritan, # Name of data set
+        first_in_subtraction = "Hurry", # Order of subtraction: enter the name of Group 1
+        response_value_numerator = "Help", # Define which outcome is a success 
         number_repetitions = 1000, # Always use a minimum of 1000 repetitions
         confidence_level = 0.95) # Enter the level of confidence as a decimal
 ```
+6.  Where is the bootstrap distribution centered?  Explain why.
 
-2. Report the bootstrap 95\% confidence interval. 
+\vspace{0.8in}
+
+7. Report the bootstrap 95\% confidence interval. 
 
 \vspace{0.4in}
 
-3. What percentile of the bootstrap distribution does the upper value of the confidence interval represent?
+8. What percentile of the bootstrap distribution does the upper value of the confidence interval represent?
 
 \vspace{0.3in}
 
-4. Is the bootstrap 95\% confidence interval similar to what was found using theory-based methods?  Why did you expect this to be true?
+9. Interpret the 95\% confidence interval in context of the problem.
 
-\vspace{0.5in}
+\vspace{1in}
+
+10.  What conclusion to the research question can be made based on the 95\% confidence interval?
+
+\vspace{0.8in}
+
+### Relative risk
+
+Another summary statistic that can be calculated for two categorical variables is the relative risk.  The relative risk is calculated as the ratio of the conditional proportions:
+
+
+$$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
+
+10.  Calculate the relative risk of helping for those who were assigned to the hurry condition compared to those who were not.
+
+\vspace{.8in}
+
+11.  Interpret the relative risk in context of the problem.
+
+\vspace{1in}
 
 ### Take-home messages
 

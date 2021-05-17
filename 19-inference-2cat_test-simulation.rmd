@@ -800,13 +800,6 @@ two_proportion_test(formula = Outcome ~ Helmet, # response ~ explanatory
 \vspace{2in}
 
 
-
-\newpage
-
-8.  Is the p-value found in question 7 for the out-of-class activity similar to the p-value found using the theory-based test?  Explain why you would expect this to be true.
-
-\vspace{.8in}
-
 ### Take-home messages
 
 1.	When comparing two groups, we are looking at the difference between two parameters.  In the null hypothesis, we assume the two parameters are equal, or that there is no difference between the two proportions.  
