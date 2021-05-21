@@ -45,10 +45,19 @@ We will again use the data set collected on movies released in 2016.  As a remin
 
 To use the `favstats()` function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.  This function will give the summary statistics for budget for each content rating.
 
-```{r, echo=TRUE, collapse=FALSE}
+
+```r
+movies <- read.csv("https://math.montana.edu/courses/s216/data/Movies2016.csv")
 movies %>% # Data set piped into...
   filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
   summarise(favstats(budget_mil~content_rating)) # Apply favstats function to imdb_score
+```
+
+```
+#>   content_rating min    Q1 median      Q3 max     mean       sd  n missing
+#> 1             PG 0.5 11.00   74.0 151.250 175 86.54167 71.52795 12       0
+#> 2          PG-13 0.0 17.25   33.5 138.750 250 74.17500 74.15190 46       0
+#> 3              R 0.0  7.75   19.5  29.625  60 21.09375 16.99926 32       0
 ```
 1.  Which content rating has the largest IQR?
 
@@ -71,7 +80,8 @@ movies %>% # Data set piped into...
 The box plot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for yy and the variable `content_rating` for xx at line 31, highlight and run code lines 29 - 35. This plot helps to compare the budget for different levels of content rating.
 
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 movies %>%  # Data set piped into...
   filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
   ggplot(aes(y = yy, x = xx))+  # Identify variables
@@ -112,12 +122,14 @@ movies %>%  # Data set piped into...
 
 Let's examine how the presence of outliers affect the values of center and spread. For this part of the activity we will look at the variable revenue on the movies data set.
 
-```{r}
-movies %>% # Data set piped into...
-  summarise(favstats(revenue_mil))
+
+```
+#>   min       Q1   median       Q3      max     mean       sd  n missing
+#> 1   0 1.467318 33.02703 73.13457 407.1973 61.87334 89.57824 92       0
 ```
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 movies %>% # Data set piped into...
 ggplot(aes(x = revenue_mil)) +   # Name variable to plot
   geom_boxplot() +  # Create histogram with specified binwidth
@@ -135,12 +147,14 @@ ggplot(aes(x = revenue_mil)) +   # Name variable to plot
 
 To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub`.  Run the following code...
 
-```{r}
-Movies2016_Sub %>% # Data set piped into...
-  summarise(favstats(revenue_mil))
+
+```
+#>   min       Q1   median       Q3      max    mean       sd  n missing
+#> 1   0 1.467318 33.02703 73.13457 307.1973 55.3516 68.79572 92       0
 ```
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 Movies2016_Sub %>% # Data set piped into...
 ggplot(aes(x = revenue_mil)) +   # Name variable to plot
   geom_boxplot() +  # Create histogram with specified binwidth

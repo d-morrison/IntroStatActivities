@@ -70,8 +70,13 @@ Note that the formula changes when calculating the variability around the statis
 \newpage
 The $z^*$ multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 90\%, we find the Z values that encompass the middle 90\% of the standard normal distribution. If 90\% of the standard normal distribution should be in the middle, that leaves 10\% in the tails, or 5\% in each tail.  The `qnorm()` function in `R` will tell us the $z^*$ value for the desired percentile (in this case, 90\% + 5\% = 95\% percentile). 
 
-```{r, echo=TRUE, collapse=FALSE}
+
+```r
 qnorm(0.95) # Multiplier for 90% confidence interval
+```
+
+```
+#> [1] 1.644854
 ```
 
 8. Sketch a graph of the standard normal distribution and use the graph to explain how the `R` code above is used to find the $z^*$ multiplier.  

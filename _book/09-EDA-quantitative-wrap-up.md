@@ -4,9 +4,7 @@ name:
 output: pdf_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 These data are on a subset of institutions that met the following selection criteria:
 •	Degree granting 
@@ -18,9 +16,14 @@ These data are on a subset of institutions that met the following selection crit
 
 * Note that several variables have missing values for some institutions (denoted by “NA”).
 
-```{r, fig.align = "center", out.width="75%"}
+
+```r
 include_graphics("images/IPEDS_Description.png")
 ```
+
+
+
+\begin{center}\includegraphics[width=0.75\linewidth]{images/IPEDS_Description} \end{center}
 
 1. What are the observational units for this study?
 
@@ -40,10 +43,16 @@ include_graphics("images/IPEDS_Description.png")
 
 Upload and import the data set IPEDS_Data_2018. Enter the name of the data set (see the environment tab) for `datasetname` in the `R` code chunk below.  We will look at the retention rates for the different institutions.  Enter the variable name `Retention` for `variable` in the `R` code chunk below.  Run this chunk of code by clicking on the green play arrow below. 
 
-```{r, echo=TRUE, collapse = FALSE}
+
+```r
 IPEDS <- read.csv("data/IPEDS_Data_2018.csv")
 IPEDS %>%
   summarise(favstats(Retention)) #Gives the summary statistics
+```
+
+```
+#>   min Q1 median Q3 max     mean       sd    n missing
+#> 1   0 60     70 80 100 69.34096 15.08526 2754     165
 ```
 
 5.  Report the value for quartile 3 and interpret this value in context of the study.
@@ -60,7 +69,8 @@ IPEDS %>%
 
 Next we will create both a histogram and a boxplot of the variable `Retention`.  Enter the name of the variable in both sets of `R` code chunks below for `variable`.  Give each plot a descriptive title.  Run the two chunks of code to give the histogram and boxplot.
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 IPEDS %>% # Data set piped into...
 ggplot(aes(x = Retention)) +   # Name variable to plot
   geom_histogram(binwidth = 5) +  # Create dotplot
@@ -69,7 +79,8 @@ ggplot(aes(x = Retention)) +   # Name variable to plot
        y = "Frequency") # Label for y axis
 ```
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 IPEDS %>% # Data set piped into...
 ggplot(aes(x = Retention)) +   # Name variable to plot
   geom_boxplot() +  # Create dotplot
@@ -94,12 +105,17 @@ In the next part of the activity we will compare retention rates for public and 
 
 Enter the name of the explanatory variable and the name of the response variable in the following `R` code to find the summary statistics and create the side by side boxplots of the data.
 
-```{r}
+
+```r
 IPEDS %>%  # Data set piped into...
   summarise(favstats(Retention~Control)) # Apply favstats function to budget_mil and content rating
+#>   Control min Q1 median Q3 max     mean       sd    n missing
+#> 1 Private   0 65     76 85 100 73.11975 17.15953 1286      61
+#> 2  Public  26 58     65 74 100 66.03065 12.06858 1468     104
 ```
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 IPEDS %>%  # Data set piped into...
   ggplot(aes(y = Retention, x = Control))+  # Identify variables
   geom_boxplot()+  # Tell it to make a box plot
@@ -129,7 +145,8 @@ IPEDS %>%  # Data set piped into...
 
 \vspace{0.8in}
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 IPEDS %>%  # Data set piped into...
   ggplot(aes(y = Retention, x = Size))+  # Identify variables
   geom_boxplot()+  # Tell it to make a box plot

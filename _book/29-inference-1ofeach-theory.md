@@ -51,16 +51,8 @@ Conditions for the sampling distribution of $\bar{x}_1-\bar{x}_2$ to follow an a
 
     - $n \ge 30$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
     
-```{r}
-hikes <- read.csv("data/Baseweight.csv")
 
-hikes %>%  # Data set piped into...
-  ggplot(aes(y = Baseweight, x = Trail))+  # Identify variables
-  geom_boxplot()+  # Tell it to make a box plot
-  labs(title = "xx",  # Title
-       x = "Trail",    # x-axis label
-       y = "Baseweight(lbs")  # y-axis label
-```
+\begin{center}\includegraphics[width=0.7\linewidth]{29-inference-1ofeach-theory_files/figure-latex/unnamed-chunk-1-1} \end{center}
 
 3.  Check the conditions to use theory-based methods.....
 
@@ -88,7 +80,8 @@ $$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}.$$
 
 Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function using a `df` = minimum($n_1 - 1, n_2 - 1$) = $131 - 1$ = 130, and `lower.tail = TRUE` to find the p-value.  Highlight and run line 39.
 
-```{r, echo=TRUE, eval=FALSE}
+
+```r
 2*pt(xx, df=130, lower.tail=TRUE)
 ```
 
@@ -115,8 +108,10 @@ $$\bar{x}_1- \bar{x}_2\pm t^* SE(\bar{x}_1- \bar{x}_2).$$
 
 We will need to find the $t^*$ multiplier using the function `qt()`.  For a 95% confidence level, we are finding the $t^*$ value at the 97.5th percentile with `df` = minimum($n_1 - 1, n_2 - 1$) = 130.
 
-```{r, echo=TRUE}
+
+```r
 qt(0.975, df = 130, lower.tail=TRUE)
+#> [1] 1.97838
 ```
 
 11.  Calculate the 95\% confidence interval using theory-based methods.
