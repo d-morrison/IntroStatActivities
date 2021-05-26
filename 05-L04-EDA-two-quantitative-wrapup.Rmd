@@ -1,11 +1,10 @@
----
-title: "12-EDA-two quantitative-wrap-up"
-output: pdf_document
----
+## Week 4 - Lab 3:  Tip Percentages
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+\setstretch{1}
+
+### Learning objectives
+???
+
 
 The Palmer Station Long Term Ecological Research Program sampled three penguin species on islands in the Palmer Archipelago in Antarctica. Researchers took various body measurements on the penguins, including flipper length and body mass. The researchers were interested in the relationship between flipper length and body mass and wondered if flipper length could be used to accurately predict the body mass of these three penguin species. 
 

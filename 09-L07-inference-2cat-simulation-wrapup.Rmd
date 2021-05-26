@@ -1,0 +1,5 @@
+## Week 9 - Lab 7:  COVID infection and Vaccination Rates
+
+\setstretch{1}
+
+### Learning objectives

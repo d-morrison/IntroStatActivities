@@ -1,4 +1,4 @@
-## Activity:  Winter Sports Helmet Use and Head Injuries --- Testing using Theory-based Methods
+## Week 10 - Activity 15:  Winter Sports Helmet Use and Head Injuries --- Testing using Theory-based Methods
 
 \setstretch{1}
 

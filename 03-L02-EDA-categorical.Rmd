@@ -1,4 +1,4 @@
-### Activity:  Graphing Categorical Variables
+### Week 3 - Activity 5:  Graphing Categorical Variables
 
 \setstretch{1}
 

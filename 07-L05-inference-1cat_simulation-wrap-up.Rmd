@@ -1,7 +1,9 @@
----
-title: "15-inference-1cat_test"
-output: pdf_document
----
+## Week 7 - Lab 5:  Tip Percentages
+
+\setstretch{1}
+
+### Learning objectives
+???
 
 Among all comic book characters produced by the comic book publisher Marvel, 25% are female. The comic book publisher DC Comics has taken note of this disparity in the number of female versus male characters, and is trying to diversify their offerings. In a random sample of recently published DC Comics books, 52 characters were included in the comics, of which 15 are female.
 

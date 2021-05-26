@@ -1,0 +1,390 @@
+# Inference for Two Categorical Variables: Hypothesis Testing
+
+## Week 9 - Reading Guide: Hypothesis Testing for a Difference in Proportions
+
+### Sections 5.4.1 and 5.4.2 (Simulation tests for a difference in proportions; Two-sided hypotheses)  {-}
+
+**Videos**  
+
+* 5.4
+* TwoPropSim
+
+\setstretch{1.25}
+
+#### Reminders from previous sections {-}
+
+$n$ = sample size
+
+$\hat{p}$ = sample proportion
+
+$\pi$ = population proportion
+
+General steps of a hypothesis test:
+
+1. Frame the research question in terms of hypotheses.
+
+2. Collect and summarize data using a test statistic.
+	
+3. Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
+
+4. Compare the observed test (standardized) statistic to the null distribution to calculate a p-value.
+
+5. Make a conclusion based on the p-value and write the conclusion in context.
+
+Parameter: a value summarizing a variable(s) for a population.
+
+Statistic: a value summarizing a variable(s) for a sample.
+
+Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
+
+Standard deviation of a statistic: the variability of statistics from 1000s of samples; how far, on average, each statistic is from the true value of the parameter.
+
+Standard error of a statistic: estimated standard deviation of a statistic.
+
+Hypothesis test: a process to determine how strong the evidence of an effect is.
+		
+\rgi Also called a ‘significance test’.
+
+Simulation-based method: Simulate lots of samples of size $n$ under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
+
+Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
+
+Null hypothesis ($H_0$): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**.
+
+Alternative hypothesis ($H_A$): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**.
+
+Null value: the value of the parameter when we assume the null hypothesis is true (labeled as $parameter_0$).
+
+Null distribution:  the simulated or modeled distribution of statistics (sampling distribution) we would expect to occur if the null hypothesis is true.
+
+P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true.
+
+$\implies$ Lower the p-value the stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis.
+
+Decision: a determination of whether to 'reject' or 'fail to reject' a null hypothesis based on a p-value and a pre-set level of significance.
+
+Significance level ($\alpha$): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
+
+\rgi Common levels of $\alpha$ include 0.01, 0.05, and 0.10.
+
+Statistically significant: results are considered statistically significant if the p-value is below the significance level.
+
+
+#### Vocabulary {-}
+
+Randomization test: 
+\rgs
+
+Relative risk: 
+\rgs
+
+One-sided hypothesis test: 
+\rgs
+
+Two-sided hypothesis test: 
+\rgs
+
+#### Notes {-}
+
+In a randomization test involving two categorical variables, how many cards will you need and how will the cards be labeled?
+\rgs
+
+Why, in the randomization test, are the cards all shuffled together and randomly dealt into two new groups?
+\rgs
+
+After shuffling, how many cards are dealt into each pile?
+\rgs
+
+Interpreting relative risk ($RR = \frac{\hat{p_1}}{\hat{p_2}}$)
+
+\rgi The proportion of success in group 1 is ______ times the proportion of success in group 2.
+
+\rgi The proportion of success in group 1 is ______ % higher/lower than in group 2.
+
+Write the null hypothesis in notation for a test of relative risk.
+\rgs
+
+How does the p-value in a two-sided test compare to the p-value in a one-sided test?
+\rgs
+
+#### Formulas {-}
+
+Relative risk = 
+\rgs
+
+#### Notation {-}
+Sample size of group 1: 
+\rgs
+
+Sample size of group 2: 
+\rgs
+
+Sample proportion of group 1: 
+\rgs
+
+Sample proportion of group 2: 
+\rgs
+
+Population proportion of group 1: 
+\rgs
+
+Population proportion of group 2: 
+\rgs
+
+#### Example: Gender discrimination {-}
+1. What is the research question?
+\rgs
+
+2. What are the observational units?
+\rgs
+
+3. What type of study design was used?  Justify your answer.
+\rgs
+
+4. What is the appropriate scope of inference for these data?
+\rgs
+
+5. What is the sample statistic presented in this example?  What notation would be used to represent this value?
+\rgs
+
+6. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+\rgs
+
+7. Write the null and the alternative hypotheses in words.
+\rgs
+\rgs
+
+8. Write the null and the alternative hypotheses in notation.
+\rgs
+
+9. How could we use cards to simulate **ome** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
+\rgs
+\rgs
+
+10. How can we calculate a p-value from the simulated null distribution for this example?
+\rgs
+\rgs
+
+11. What was the p-value of the test? 
+\rgs
+
+12. At the 5% significance level, what decision would you make?
+\rgs
+
+13. What conclusion should the researcher make?
+\rgs
+\rgs
+
+14. Are the results in this example statistically significant?  Justify your answer.
+\rgs
+
+
+#### Example: Opportunity cost {-}
+1. What is the research question?
+\rgs
+
+2. What are the observational units?
+\rgs
+
+3. What type of study design was used?  Justify your answer.
+\rgs
+
+4. What is the appropriate scope of inference for these data?
+\rgs
+
+5. What is the sample statistic presented in this example?  What notation would be used to represent this value?
+\rgs
+
+6. What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+\rgs
+
+7. Write the null and the alternative hypotheses in words.
+\rgs
+\rgs
+
+8. Write the null and the alternative hypotheses in notation.
+\rgs
+
+9. How could we use cards to simulate **one** sample *which assumes the null hypothesis is true*? How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
+\rgs
+\rgs
+
+10. How can we calculate a p-value from the simulated null distribution for this example?
+\rgs
+\rgs
+
+11. What was the p-value of the test? 
+\rgs
+
+12. Interpret the p-value in the context of the problem.
+\rgs
+\rgs
+
+13. At the 5% significance level, what decision would you make?
+\rgs
+
+14. What conclusion should the researcher make?
+\rgs
+
+15. Are the results in this example statistically significant?  Justify your answer.
+\rgs
+
+#### Example: CPR and blood thinner {-}
+
+1. What is the research question?
+\rgs
+
+2. What are the observational units?
+\rgs
+
+3. What type of study design was used?  Justify your answer.
+\rgs
+
+4. What is the appropriate scope of inference for these data?
+\rgs
+
+5. What is the sample difference in proportions presented in this example?  What notation would be used to represent this value?
+\rgs
+
+6. What is the sample relative risk?  Interpret the value in the context of the study.
+\rgs
+\rgs
+
+7. What is the parameter (using a difference in proportion) representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+\rgs
+
+8. Write the null and the alternative hypotheses in words.
+\rgs
+\rgs
+
+9. Write the null and the alternative hypotheses in notation.
+\rgs
+
+10. How could we use cards to simulate **one** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
+\rgs
+\rgs
+
+11. How can we calculate a p-value from the simulated null distribution for this example?
+\rgs
+\rgs
+
+12. What was the p-value of the test? 
+\rgs
+
+13. Interpret the p-value in the context of the problem.
+\rgs
+\rgs
+
+14. At the 5% significance level, what decision would you make?
+\rgs
+
+15. What conclusion should the researcher make?
+\rgs
+\rgs
+
+16. Are the results in this example statistically significant?  Justify your answer.
+\rgs
+
+### Section 5.4.3 (Bootstrap confidence interval for a difference in proportions)  {-}
+
+**Videos**  
+
+* 5.4
+
+\setstretch{1.25}
+
+#### Reminders from previous sections {-}
+
+Sample size of group 1: $n_1$
+
+Sample size of group 2: $n_2$
+
+Sample proportion of group 1:  $\hat{p_1}$
+
+Sample proportion of group 2: $\hat{p_2}$
+
+Population proportion of group 1: $\pi_1$
+
+Population proportion of group 2: $\pi_2$
+
+Parameter: a value summarizing a variable(s) for a population.
+
+Statistic: a value summarizing a variable(s) for a sample.
+
+Point estimate: another name for a statistic from a sample; our best guess for the parameter of interest.
+
+Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
+
+Standard deviation of a statistic: the variability of statistics from 1000s of samples; how far, on average, each statistic is from the true value of the parameter.
+
+Standard error of a statistic: estimated standard deviation of a statistic.
+
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter. Also called ‘estimation’.
+
+Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval.
+
+Bootstrapping: the process of drawing with replacement $n$ times from the original sample.
+
+Bootstrapped resample: a random sample of size $n$ from the original sample, selected with replacement.
+
+Bootstrapped statistic: the statistic recorded from the bootstrapped resample.
+
+Confidence level: how confident we are that the confidence interval will capture the parameter.
+
+
+#### Notes {-}
+To create a single bootstrap resample for two categorical variables, how many cards will you need and how will the cards be labeled?
+\rgs
+
+What is done with the cards once they are labeled?
+\rgs
+
+Interpretations of confidence level must include:
+\rgs
+\rgs
+
+How do you determine if the results of a hypothesis test agree with a confidence interval?
+\rgs
+\rgs
+
+How are the confidence level and the significance level related (for a two-sided test)?
+\rgs
+
+#### Example: CPR and blood thinner {-}
+1.	What is the research question?
+\rgs
+
+2.	What is the sample difference in proportions presented in this example?  What notation would be used to represent this value?
+\rgs
+
+3.	What is the parameter (using a difference in proportion) representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+\rgs
+
+4.	How could we use cards to simulate **one** bootstrap resample?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
+\rgs
+\rgs
+
+5.	How can we calculate a 90% confidence interval from the bootstrap distribution for this example?
+\rgs
+
+6.	What was the 90% confidence interval? 
+\rgs
+
+7.	Interpret the confidence *interval* in the context of the problem.
+\rgs
+\rgs
+
+8.	Interpret the confidence *level* in the context of the problem.
+\rgs
+\rgs
+
+9.	Does the conclusion of the hypothesis test match the confidence interval?
+\rgs

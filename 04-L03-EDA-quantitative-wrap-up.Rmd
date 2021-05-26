@@ -1,12 +1,19 @@
----
-title: "Activity: Graphing and Summarizing Quantitative Variables"
-name: 
-output: pdf_document
----
+## Week 4 - Lab 3:  Tip Percentages
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+\setstretch{1}
+
+### Learning objectives
+
+* Identify and create appropriate summary statistics and plots
+  given a data set or research question for quantitative data.
+
+* Interpret the following summary statistics in context:
+  median, lower quartile, upper quartile,
+  standard deviation, interquartile range.
+
+* Given a plot or set of plots, describe and compare the distribution(s)
+  of a single quantitative variable
+  (center, variability, shape, outliers).
 
 These data are on a subset of institutions that met the following selection criteria:
 •	Degree granting 

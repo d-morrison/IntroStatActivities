@@ -1,4 +1,4 @@
-## Activity:  Movie Profits
+## Week 5 - Activity 8:  Movie Profits
 
 \setstretch{1}
 

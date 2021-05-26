@@ -1,4 +1,4 @@
-## Activity:  IMDb Movie Reviews - Displaying two variables
+## Week 4 - Activity 6:  IMDb Movie Reviews - Displaying two variables
 
 \setstretch{1}
 

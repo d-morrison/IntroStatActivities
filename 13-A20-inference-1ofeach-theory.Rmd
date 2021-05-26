@@ -1,4 +1,4 @@
-## Activity:  Weather Patterns and Record Snowfall
+## Activity:  The Triple Crown
 
 \setstretch{1}
 
