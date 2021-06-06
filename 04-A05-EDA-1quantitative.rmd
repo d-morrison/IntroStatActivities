@@ -43,7 +43,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 \newpage
 
-#### Vocabulary review. Complete Q1 - 3 before class. {-}
+#### Vocabulary review. 
 
 1. What are the observational units in this data set?
 
@@ -96,6 +96,7 @@ ggplot(aes(x = imdb_score)) +   # Name variable to plot
        x = "IMDb Score", # Label for x axis
        y = "Frequency") # Label for y axis
 ```
+
 8. Sketch the dotplot created here.
 
 \vspace{1.4in}
@@ -104,7 +105,7 @@ ggplot(aes(x = imdb_score)) +   # Name variable to plot
 
 \vspace{0.2in}
 
-To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for xx at line 12, highlight and run lines 1 - 16.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for xx at line 20, highlight and run lines 1 - 24.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.  
 
@@ -153,7 +154,11 @@ movies %>% # Data set pipes into...
 
     Which graph is best used to show the shape of the distribution?
     
+    \vspace{0.5in}
+    
     Which graph is best used to show the outliers of the distribution?
+    
+    \vspace{0.5in}
 
 ### Take-home messages
 
