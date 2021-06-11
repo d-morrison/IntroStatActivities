@@ -166,6 +166,8 @@ movies %>% # Data set pipes into...
 
 2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5*IQR$ and greater than $Q_3 + 1.5*IQR$ are considering outliers and are graphically represented by a dot outside of the whiskers on the box plot.
 
+3.  Data should be summarized numerically and displayed graphically to ...
+
 
 ### Additional notes
 

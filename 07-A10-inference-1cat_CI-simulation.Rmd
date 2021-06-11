@@ -1,4 +1,4 @@
-## Week 7 - Activity 10:  Helper/Hinderer --- Estimation using Simulation Methods
+## Week 7 - Activity 10:  Helper-Hinderer --- Estimation using Simulation Methods
 
 \setstretch{1}
 
@@ -20,9 +20,9 @@ In this week's in-class activity, we will introduce simulation-based confidence 
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-###Opinions on Online Classes
+###Helper-Hinderer
 
-A recent study investigated the health characteristics among a random sample of 197 patients who were admitted to a hospital following a positive COVID-19 test result.  Among the variables studied, the researchers tested the Vitamin D level (recorded as deficient or not) of each patient.  The study found that 162 of the patients with COVID-19 were vitamin D deficient.  Is this result evidence that vitamin D deficiency is more common among people hospitalized with COVID-19 than we would expect, given that 42% of the US population is reported to have a vitamin D deficiency?
+In the last class, we Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Watch this short video to see how the experiment was run:  Researchers were hoping to assess: Are infants able to notice and react to helpful or hindering behavior observed in others?  In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.
 
 Before we answer the research question we will create a confidence interval to estimate the the true proportion of patients with COVID-19 that are vitamin D deficient. 
 
