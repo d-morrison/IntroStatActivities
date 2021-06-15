@@ -112,7 +112,7 @@ movies %>%  # Data set piped into...
 
 #### Robust Statistics
 
-Let's examine how the presence of outliers affect the values of center and spread. For this part of the activity we will look at the variable revenue on the movies data set. 
+Let's examine how the presence of outliers affect the values of center and spread. For this part of the activity we will look at the variable revenue in the movies data set. 
 
 ```{r}
 movies %>% # Data set piped into...

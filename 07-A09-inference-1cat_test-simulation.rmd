@@ -52,7 +52,7 @@ We will work through a six-step process to complete a hypothesis test for a sing
 
 ### Helper-Hinderer
 
-Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Watch this short video to see how the experiment was run:  Researchers were hoping to assess: Are infants able to notice and react to helpful or hindering behavior observed in others?  In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.
+Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Watch this short video to see how the experiment was run: https://youtu.be/anCaGBsBOxM. Researchers were hoping to assess: Are infants able to notice and react to helpful or hindering behavior observed in others?  In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.
 
 
 #### Summary statistics review. {-}
@@ -86,12 +86,6 @@ Before using statistical inference methods, we must check that the cases are ind
 \newpage 
 
 #### Summarize and visualize the data {-}
-
-<!-- ```{r, echo=TRUE, collapse=FALSE} -->
-<!-- # Counts for Handedness -->
-<!-- # Tally creates a table with a count for each level of the variable -->
-<!-- tally(~Stance, data=handedness_sub, margins=T)  -->
-<!-- ``` -->
 
 ```{r, echo=TRUE, collapse=FALSE, message=FALSE, warning=FALSE}
  # Read in data set
@@ -131,7 +125,7 @@ The notation used for a population proportion (or probability, or true proportio
 
 The **alternative hypothesis** is the claim to be tested and the direction of the claim (less than, greater than, or not equal to) is based on the research question.  
 
-12.  Based on the research question from question 5, are we testing that the parameter is greater than 0.5, less than 0.5 or different than 0.5? 
+12.  Based on the research question from question 4, are we testing that the parameter is greater than 0.5, less than 0.5 or different than 0.5? 
 
 \vspace{0.4in}
 
@@ -153,7 +147,7 @@ Notice that these two competing possibilities represent the null and alternative
   
 We will now simulate a **null distribution** of sample proportions. The null distribution is created under the assumption the null hypothesis is true.  In this case, we assume the true proportion of infants who choose the helper is 0.5, so we will create 1000 (or more) different simulations of 16 infants under this assumption.
 
-Let's think about how to use red and blue cards to create one simulation of 16 infants under the assumption the null hypothesis is true.  Suppose blue cards represent infants who choose the helper and red cards represent infants who choose the hinderer.
+Let's think about how to use red and blue cards (**or write on the cards?**) to create one simulation of 16 infants under the assumption the null hypothesis is true.  Suppose blue cards represent infants who choose the helper and red cards represent infants who choose the hinderer.
 
 15.  How many cards total do we need?  How many blue ones?  How many red ones?
 
@@ -171,7 +165,7 @@ Let's think about how to use red and blue cards to create one simulation of 16 i
 
 \vspace{1.5in}
 
-We will use the computer to simulate a null distribution of 1000 different samples of 16 infants, plotting the proportion who chose the helper in each sample, based on the assumption that the true proportion of infants who choose the helper is 0.5(or that the null hypothesis is true).  
+We will use the computer to simulate a null distribution of 1000 different samples of 16 infants, plotting the proportion who chose the helper in each sample, based on the assumption that the true proportion of infants who choose the helper is 0.5 (or that the null hypothesis is true).  
 
 To use the computer simulation, we will need to enter the 
 
@@ -274,8 +268,6 @@ When we write a conclusion we answer the research question by stating how much e
 29. Suggest a new research question that you might investigate, building on what you learned in this study.
 
 \vspace{.6in}
-
-
 
 
 \newpage

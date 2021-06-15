@@ -1,11 +1,11 @@
-## Week 7 - Lab 5:  Tip Percentages
+## Week 7 - Lab 5:  Comic Book Characters
 
 \setstretch{1}
 
 ### Learning objectives
 ???
 
-Among all comic book characters produced by the comic book publisher Marvel, 25% are female. The comic book publisher DC Comics has taken note of this disparity in the number of female versus male characters, and is trying to diversify their offerings. In a random sample of recently published DC Comics books, 52 characters were included in the comics, of which 15 are female.
+Among all comic book characters produced by the comic book publisher Marvel, 25\% are female. The comic book publisher DC Comics has taken note of this disparity in the number of female versus male characters, and is trying to diversify their offerings. In a random sample of recently published DC Comics books, 52 characters were included in the comics, of which 15 are female.
 
 1. What type of plot would be appropriate to display this data?
 
@@ -57,7 +57,7 @@ We will use the `one_proportion_test()` function in `R` (in the `catstats` packa
 one_proportion_test(probability_success = 0.25, # Null hypothesis value
           sample_size = 52, # Enter sample size
           number_repetitions = 1000, # Enter number of simulations
-          as_extreme_as = 0.288, # Observed statistic
+          as_extreme_as = 25/52, # Observed statistic
           direction = "greater", # Specify direction of alternative hypothesis
           report_value = "proportion") # Reporting proportion or number of successes?
 ```
@@ -70,29 +70,66 @@ one_proportion_test(probability_success = 0.25, # Null hypothesis value
 
 \vspace{1in}
 
-9. Is the validity condition met to use theory-based methods to analyze?  Explain.
+9. What values should be entered for each of the following into the simulation to create the bootstrap distribution of sample proportions to find a 95\% confidence interval?
+\vspace{1mm}
 
-\vspace{0.8in}
+* Sample size:
 
-10. Calculate the standardized statistic.
+\vspace{.1in}
+ 
+* Number of successes:
+    
+\vspace{.1in}
+* Number of repetitions:
+    
+\vspace{.1in}
+* Confidence level (as a decimal):
+    
+\vspace{.1in}
 
-\vspace{0.8in}
-
-11. Interpret the standardized statistic.
-
-\vspace{0.8in}
-
-
-12.  Sketch a graph of the normal distribution and how to find the p-value for the theory-based test.
-
-\vspace{1.4in}
-
-Use the following code to find the theory-based p-value.
+We will use the `one_proportion_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 5 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 1--11.
 
 ```{r, echo=TRUE, eval=FALSE}
-pnorm(xx, # Enter value of standardized statistic
-      m=0, s=1 # Using the standard normal mean = 0, sd = 1
-      lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
+one_proportion_bootstrap_CI(sample_size = xx, # Sample size
+                    number_successes = xx, # Observed number of successes
+                    number_repetitions = 1000, # Number of bootstrap samples to use
+                    confidence_level = 0.95) # Confidence level as a decimal
 ```
 
-13. Why did you expect that the value of the p-value is similar between theory and simulation methods?
+10.  Report the 95\% confidence interval.
+
+\vspace{0.5in}
+
+11. Interpret the 95\% confidence interval.  
+
+\vspace{0.8in}
+
+12. Do the results of the confidence interval agree with the results of the hypothesis test?  Explain your answer.
+
+\vspace{0.8in}
+
+### What does *confidence* mean?
+
+In the interpretation of a 95\% confidence interval, we say that we are 95\% confident that the parameter is within the confidence interval.  Why are we able to make that claim?  What does it mean to say "we are 95\% confident"?
+
+13.  Go to this website, [http://www.rossmanchance.com/ISIapplets.html](http://www.rossmanchance.com/ISIapplets.html) and choose 'Simulating Confidence Intervals'.  In the input on the left-hand side of the screen enter 0.1 for $\pi$, 500 for $n$, and 100 for 'Intervals'.  Click 'sample'.
+\vspace{1mm}
+
+a) In the graph on the bottom right, click on a green dot.  Write down the confidence interval for this sample given on the graph on the left.  Does this confidence interval contain the null value of 0.1?
+\vspace{0.5in}
+
+
+b) Now click on a red dot.  Write down the confidence interval for this sample.  Does this confidence interval contain the null value of 0.1.?
+\vspace{0.5in}
+
+
+c) How many intervals out of 100 contain $\pi$, the null value of 0.1? *Hint*:  This is given to the left of the graph of green and red intervals.
+\vspace{0.5in}
+
+14.  Click on 'sample' nine more times.  Write down the 'Running Total' for the proportion of intervals that contain $\pi$.  
+
+\vspace{0.5in}
+
+15.  Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?
+
+\vspace{1in}

@@ -135,45 +135,22 @@ pnorm(xx, # Enter value of standardized statistic
 
 \vspace{1in}
 
-#### Types of errors {-}
+#### Relative Risk
 
-Hypothesis tests are not flawless. In a hypothesis test, there are two competing hypotheses: the null and alternative. We make a decision about which might be true, but we may choose incorrectly.  
+Another summary statistic that can be calculated for two categorical variables is the relative risk.  The relative risk is calculated as the ratio of the conditional proportions:
 
-<!-- |       |            | Test Conclusion |                     | -->
-<!-- |       |            | Reject $H_0$    | Fail to reject $H_0$| -->
-<!-- |:-----:|:----------:|-----------------|---------------------| -->
-<!-- | Truth | $H_0$ true |  good decision  |  Type 1 Error       | -->
-<!-- |       | $H_A$ true |  Type 2 Error   |  good decision      | -->
 
-\begin{table}
-\caption{Four different possible scenarios for hypothesis test decisions.}
-\centering
-\begin{tabular}[h]{ll|cc}
-\hline
- & &  \multicolumn{2}{c}{\textbf{Test conclusion}} \\
- &  & \multicolumn{1}{c}{Fail to reject $H_0$} & \multicolumn{1}{c}{Reject $H_0$}\\
-\hline
- & $H_0$ true & Good decision & Type 1 Error\\
-\hline
-\textbf{Truth} & $H_A$ true & Type 2 Error & Good decision\\
-\hline
-\end{tabular}
-\label{tab:errors}
-\end{table}
+$$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 
-Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the null hypothesis when $H_0$ is actually true. A **Type 2 Error** happens when we fail to reject the null hypothesis when the alternative is actually true.
+10.  Calculate the relative risk of helping for those who were assigned to the hurry condition compared to those who were not.
 
-10.  Using a significance level of 0.05, based on the p-value found in question 8, what decision do you make in regards to the null hypothesis?
+\vspace{.8in}
 
-\vspace{0.3in}
+11.  Interpret the relative risk in context of the problem.
 
-11. What type of error could we have made?
+\vspace{1in}
 
-\vspace{0.3in}
 
-12.  Write this error in context of the problem.
-
-**Power questions?**
 
 
 ### Take-home messages
