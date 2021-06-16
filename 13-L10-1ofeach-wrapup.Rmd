@@ -1,5 +1,16 @@
-## Week 13 - Lab 10:  Swearing
+## Week 13 - Lab 10:  Tip Percentages
 
 \setstretch{1}
 
 ### Learning objectives
+
+```{r}
+tips <- read.csv("data/happyface.csv")
+
+tips %>%  # Data set piped into...
+  ggplot(aes(y = TipPct, x = Message))+  # Identify variables
+  geom_boxplot()+  # Tell it to make a box plot
+  labs(title = "xx",  # Title
+       x = "Message",    # x-axis label
+       y = "TipPct")  # y-axis label
+```

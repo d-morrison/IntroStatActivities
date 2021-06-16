@@ -59,7 +59,7 @@ hikes %>%  # Data set piped into...
   geom_boxplot()+  # Tell it to make a box plot
   labs(title = "xx",  # Title
        x = "Trail",    # x-axis label
-       y = "Baseweight(lbs")  # y-axis label
+       y = "Baseweight(lbs)")  # y-axis label
 ```
 
 3.  Check the conditions to use theory-based methods.....

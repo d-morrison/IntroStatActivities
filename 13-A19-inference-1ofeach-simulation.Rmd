@@ -62,7 +62,7 @@ Snow %>%
 ```
 
 
-#### Quantitative variables review.  Complete Q1--Q5 before class. {-}
+#### Quantitative variables review.  {-}
 
 1. The two variables assessed in this study are the type of weather pattern and snowfall.  Identify the role for each variable (explanatory or response).
 
