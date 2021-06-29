@@ -69,7 +69,7 @@ IPEDS %>%
 
 \vspace{1in}
 
-8.  How many missing values are these?  What does this indicate?
+8.  How many missing values are there?  What does this indicate?
 
 \vspace{0.8in}
 

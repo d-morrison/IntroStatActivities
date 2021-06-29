@@ -1,4 +1,4 @@
-## Activity:  The Triple Crown
+## Activity:  Homeless Housing Stability
 
 \setstretch{1}
 
@@ -27,9 +27,11 @@ In today's activity, we will use theory-based methods to analyze the association
 
 To review these concepts, see Section 6.3 in the textbook.
 
-###The triple crown
+### Homeless Housing Stability
 
-The Triple Crown of "Thru" hiking consists of hiking the Appalachian Trail, the Pacific Crest Trail (PCT), and the Continental Divide Trail (CDT). Each year halfwayanywhere.com conducts a survey to better understand the people who hike these trails. One variable which is queried in the survey is the pre-hike "base weight" of a hiker's pack which is the total weight of gear without food, water, and worn gear. The 131 hikers surveyed who completed the CDT had a mean base weight of 15.266 lbs (sd = 5.128 lbs).  The 484 hikers surveyed who completed the PCT had a mean base weight of 17.837 lbs (sd = 7.823 lbs). Is there a difference in average base weight for PCT hikers and CDT hikers?  Use order of subtraction CDT - PCT.
+Homeless people with substance abuse disorders (SUD) have high disease risk, poor access to health case, and are frequent users of Medicaid and other social services.  Low-demand supportive housing with no prerequisites for treatment or sobriety has been shown to improve housing stability and decrease public service use for chronically homeless people with serious mental illness.  Researchers in New York investigated if low-demand housing would also prove beneficial to chronic homeless people with SUD who do not suffer from serious mental illness or if pre-housing SUD treatments were required to improve outcomes.  Between 2007 and 2012, 1937 chronic homeless people with SUD and without serious mental illness applying for low-demand housing were recruited to participate in the study.  Researchers randomly assigned 1425 participants to receive SUD treatment prior to obtaining housing, the other 512 did not undergo SUD treatment.  One of several outcomes measured was the length of stay in supportive housing used as a measure of housing stability.  The length of stay for treatment groups is summarized in the R output provided.
+
+**Research question: Two-sided test**
 
 1. Write out the null hypothesis in notation for this study.  Be sure to identify the subscripts.
 
@@ -52,14 +54,21 @@ Conditions for the sampling distribution of $\bar{x}_1-\bar{x}_2$ to follow an a
     - $n \ge 30$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
     
 ```{r}
-hikes <- read.csv("data/Baseweight.csv")
+SUD <- read.csv("data/SUD.csv")
 
-hikes %>%  # Data set piped into...
-  ggplot(aes(y = Baseweight, x = Trail))+  # Identify variables
+SUD %>%  # Data set piped into...
+  ggplot(aes(y = stay, x = group))+  # Identify variables
   geom_boxplot()+  # Tell it to make a box plot
   labs(title = "xx",  # Title
-       x = "Trail",    # x-axis label
-       y = "Baseweight(lbs)")  # y-axis label
+       x = "Group",    # x-axis label
+       y = "Length of Stay (days)")  # y-axis label
+```
+
+The following code gives the summary statistics for the data.
+
+```{r}
+SUD %>%
+  summarize(favstats(stay ~ group))
 ```
 
 3.  Check the conditions to use theory-based methods.....
@@ -82,14 +91,14 @@ $$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}.$$
 
 \vspace{0.5in}
 
-6.  Calculate the standardized statistic for the difference in sample eans.
+6.  Calculate the standardized statistic for the difference in sample means.
 
 \vspace{0.5in}
 
-Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function using a `df` = minimum($n_1 - 1, n_2 - 1$) = $131 - 1$ = 130, and `lower.tail = TRUE` to find the p-value.  Highlight and run line 39.
+Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function using a `df` = minimum($n_1 - 1, n_2 - 1$) = $512 - 1$ = 511, and `lower.tail = TRUE` to find the p-value.  Highlight and run line 39.
 
 ```{r, echo=TRUE, eval=FALSE}
-2*pt(xx, df=130, lower.tail=TRUE)
+2*pt(xx, df=511, lower.tail=TRUE)
 ```
 
 7. Explain why we multiplied by 2 in the code above.
