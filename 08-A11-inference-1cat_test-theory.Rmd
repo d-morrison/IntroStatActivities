@@ -29,7 +29,7 @@ In today's activity, we will introduce theory-based hypothesis testing for a sin
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-The last activity covered simulation-based methods for hypothesis tests involving a single categorical variable. This activity covers theory-based methods for testing a single categorical variable.  
+Week 7 activities covered simulation-based methods for hypothesis tests involving a single categorical variable. This activity covers theory-based methods for testing a single categorical variable.  
 
 Left-handedness is a trait that is found in about 10\% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers, we want to see if there is an over-prevalence of left-handed fighters.  In the sample of 500 male boxers, 81 were left-handed.
 
@@ -103,7 +103,7 @@ plot(X, Y, type='l', axes=F, xlim=c(-4,4), lwd=2, ylab="", xlab="Z")
 abline(h=-0.002)
 ```
 
-7.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the $x$-axis of the standard normal distribution displayed in Figure \@ref(fig:simpleNormal), and also mark the value of the standardized statistic calculated in question 3.
+7.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in values on the $x$-axis of the standard normal distribution displayed in Figure \@ref(fig:simpleNormal), and also mark the value of the standardized statistic calculated in question 6.
 
 \vspace{0.2in}
 
@@ -129,29 +129,32 @@ pnorm(xx, # Enter value of standardized statistic
   
   
 ```{r}
-openintro::normTail(m = 0, s = 1, U = 0.08)
+openintro::normTail(m = 0, s = 1, U = 2.85)
 ```
 
 9.  Report the p-value obtained from the `R` output.
 \vspace{0.2in}
 
+10.  Write a conclusion based on the value of the p-value.
+\vspace{0.8in}
+
 ###Impacts on the P-value
 
 Suppose that we want to show that the true proportion of male boxers differs from that in the general population. 
 
-10.  Write out the alternative hypothesis in notation for this new research question.
+11.  Write out the alternative hypothesis in notation for this new research question.
 
 \vspace{0.5in}
 
-11.  How would this impact the p-value?  
+12.  How would this impact the p-value?  
 
 \vspace{0.2in}
 
-12.  How much evidence would this p-value provide against the null hypothesis?
+13.  How much evidence would this p-value provide against the null hypothesis?
 
 \vspace{0.3in}
 
-13. Suppose instead of 500 male boxers the researchers only took a sample of 300 male boxers and found the same proportion of male boxers that are left-handed.  Calculate the standardized statistic for this new sample.
+14. Suppose instead of 500 male boxers the researchers only took a sample of 300 male boxers and found the same proportion of male boxers that are left-handed.  Calculate the standardized statistic for this new sample.
 
 \vspace{1in}
 
@@ -163,11 +166,11 @@ pnorm(xx, # Enter value of standardized statistic
       lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
 ```
 
-14.  How does the decrease in sample size affect the p-value?
+15.  How does the decrease in sample size affect the p-value?
 
 \vspace{0.3in}
 
-15. Suppose another sample of 500 male boxers was taken and 68 were found to be left-handed.  Calculate the standardized statistic for this new sample.
+16. Suppose another sample of 500 male boxers was taken and 68 were found to be left-handed.  Calculate the standardized statistic for this new sample.
 
 Use Rstudio find the p-value for this new sample.  
 
@@ -177,11 +180,11 @@ pnorm(xx, # Enter value of standardized statistic
       lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
 ```
 
-16.  How does a statistic closer to the null value affect the p-value?  
+17.  How does a statistic closer to the null value affect the p-value?  
 
 \vspace{0.3in}
 
-17.  Summarize how each of the following affected the p-value?
+18.  Summarize how each of the following affected the p-value?
 
 a) Switching to a two-sided test.
 
@@ -199,11 +202,9 @@ c) Using a sample statistic closer to the null value.
 
 1.	In a hypothesis test we have two competing hypotheses, the null hypothesis and the alternative hypothesis.  The null hypothesis represents either a skeptical perspective or a perspective of no difference or no effect. The alternative hypothesis represents a new perspective such as the possibility that there has been a change or that there is a treatment effect in an experiment.  
 
-2.  In theory-based methods, we add and subtract a margin of error to the sample statistic.  The margin of error is calculated using a multiplier that corresponds to the level of confidence times the variability (standard error) of the statistic.  
+2.  The p-value is the probability of the observed statistic occurring or more extreme if the null hypothesis is true.  The farther in the tail of the distribution the observed statistic is, the smaller the probability is (smaller the p-value!).  The **smaller** the p-value, the **more** evidence the statistic provides **against** the null hypothesis. (Think carefully about why this makes sense!) 
 
-3.  The p-value is the probability of the observed statistic occurring or more extreme if the null hypothesis is true.  The farther in the tail of the distribution the observed statistic is, the smaller the probability is (smaller the p-value!).  The **smaller** the p-value, the **more** evidence the statistic provides **against** the null hypothesis. (Think carefully about why this makes sense!) 
-
-4.  A **decision** is a statement about strength of evidence against the null hypothesis: reject the null if the p-value is below a pre-set significance level, and fail to reject the null if the p-value is above a pre-set significance level. When writing a **conclusion** to a hypothesis test, on the other hand, we are answering the research question.  Thus, a conclusion is a statement about strength of evidence *for the alternative hypothesis*. Use the guidelines for the strength of evidence throughout this course to assess the evidence against the null hypothesis.  
+3.  A **decision** is a statement about strength of evidence against the null hypothesis: reject the null if the p-value is below a pre-set significance level, and fail to reject the null if the p-value is above a pre-set significance level. When writing a **conclusion** to a hypothesis test, on the other hand, we are answering the research question.  Thus, a conclusion is a statement about strength of evidence *for the alternative hypothesis*. Use the guidelines for the strength of evidence throughout this course to assess the evidence against the null hypothesis.  
 
 
 ### Additional notes
