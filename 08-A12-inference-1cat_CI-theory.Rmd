@@ -1,4 +1,4 @@
-## Week 8 - Activity 12:  Male Boxers --- Estimation using Theory-based Methods
+## Activity 8b:  Male Boxers --- Estimation using Theory-based Methods
 
 \setstretch{1}
 
@@ -20,13 +20,11 @@ In this week's in-class activity, we will introduce simulation-based confidence 
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-### Opinions on Online Classes
+### Male Boxers
 
-Last class we found a simulation 95\% confidence interval for the true proportion of patients with COVID-19 that are vitamin D deficient.  In this activity we will use the same data set to find the theory-based 95\% confidence interval.
+Last class we found very strong evidence that the true proportion of male boxers that are left-handed is greater than 0.5.  In this activity we will use the same data set to find the theory-based 95\% confidence interval.
 
-A recent study investigated the health characteristics among a random sample of 197 patients who were admitted to a hospital following a positive COVID-19 test result.  Among the variables studied, the researchers tested the Vitamin D level (recorded as deficient or not) of each patient.  The study found that 162 of the patients with COVID-19 were vitamin D deficient.  Is this result evidence that vitamin D deficiency is more common among people hospitalized with COVID-19 than we would expect, given that 42% of the US population is reported to have a vitamin D deficiency?
-
-Before we answer the research question we will create a confidence interval to estimate the the true proportion of patients with COVID-19 that are vitamin D deficient. 
+Remember from the last activity: Left-handedness is a trait that is found in about 10\% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers, we want to see if there is an over-prevalence of left-handed fighters.  In the sample of 500 male boxers, 81 were left-handed.
 
 Recall that to use theory-based methods we must check the conditions to approximate the sampling distribution with the normal distribution.  From the previous activity, we saw that independence was satisfied as the researchers took a random sample.
 

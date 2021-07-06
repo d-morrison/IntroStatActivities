@@ -1,4 +1,4 @@
-## Week 13 - Activity 19:  Weather Patterns and Record Snowfall
+## Week 13 - Activity 13a:  Weather Patterns and Record Snowfall
 
 \setstretch{1}
 
@@ -19,7 +19,7 @@
 
 ### Terminology review
 
-In this week's in-class activity, we will use simulation-based methods to analyze the association between one categorical explanatory variable and one quantitative response variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
+In today's activity, we will use simulation-based methods to analyze the association between one categorical explanatory variable and one quantitative response variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
 
 * Independent groups
 
@@ -219,9 +219,6 @@ two_mean_bootstrap_CI(RESPONSE ~ EXPLANATORY, data = DATASET,  # Variables and d
 
 
 \newpage
-
-
-*Note that since the normality condition was not met, neither the theory-based p-value nor the theory-based confidence interval are valid.*
 
 ### Take-home messages
 
