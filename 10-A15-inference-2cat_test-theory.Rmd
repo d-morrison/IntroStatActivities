@@ -1,4 +1,4 @@
-## Week 10 - Activity 15:  Winter Sports Helmet Use and Head Injuries --- Testing using Theory-based Methods
+## Activity 10a:  Winter Sports Helmet Use and Head Injuries --- Testing using Theory-based Methods
 
 \setstretch{1}
 
@@ -52,10 +52,10 @@ In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by S
 
 1.  Write the null and alternative hypotheses in notation. 
 
-Ho: 
+|    Ho: 
 \vspace{0.2in}
 
-Ha:
+|    Ha:
 \vspace{0.2in}
 
 2.  Calculate the summary statistic for this study.  Use helmet use (`Yes`) minus no helmet use (`No`) as the order of subtraction.
@@ -65,7 +65,7 @@ Ha:
 `
 #### Use statistical analysis methods to draw inferences from the data {-}
 
-To test the null hypothesis, we could use simulation-based methods as we did with a single categorical variable in class. In this in-class activity, we will focus on theory-based methods.  Like with a single proportion, the sampling distribution of a difference in sample proportions can be mathematically modeled using the normal distribution if certain conditions are met.
+To test the null hypothesis, we could use simulation-based methods as we did in Activity 9a. In this activity, we will focus on theory-based methods.  Like with a single proportion, the sampling distribution of a difference in sample proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
 Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an approximate normal distribution:
 
@@ -114,9 +114,13 @@ $$
 
 \vspace{1in}
 
-7. Draw a ....to find the p-value.
+```{r simpleNormal, fig.cap="A standard normal curve.", warning=FALSE, out.width="60%"}
+openintro::normTail(m = 0, s = 1)
+```
 
-\vspace{1.5in}
+7. Mark the value of the standardized statistic on the standard normal distribution above and shade the area to find the p-value.
+
+\vspace{0.1in}
 
 We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 6 at `xx` in line 27; highlight and run lines 27--29.
 
@@ -131,7 +135,11 @@ pnorm(xx, # Enter value of standardized statistic
 \vspace{0.2in}
 
 
-9.  Is this p-value similar to the p-value found using simulation methods?  Explain why you expected this to be true.
+9.  Interpret the p-value in context of the study.
+
+\vspace{0.5in}
+
+10. Write a conclusion to the research question based on the p-value found.
 
 \vspace{1in}
 
@@ -142,15 +150,13 @@ Another summary statistic that can be calculated for two categorical variables i
 
 $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 
-10.  Calculate the relative risk of helping for those who were assigned to the hurry condition compared to those who were not.
+11.  Calculate the relative risk of helping for those who were assigned to the hurry condition compared to those who were not.
 
 \vspace{.8in}
 
-11.  Interpret the relative risk in context of the problem.
+12.  Interpret the relative risk in context of the problem.
 
 \vspace{1in}
-
-
 
 
 ### Take-home messages
@@ -165,7 +171,7 @@ $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 
 5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance level), we could have a possible Type 2 error. A Type 2 error occurs when we fail to reject a false null hypothesis (false negative).
 
-6. To create one simulated sample on the null distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$, representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
+
 
 
 ### Additional notes

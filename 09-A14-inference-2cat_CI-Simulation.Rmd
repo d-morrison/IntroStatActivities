@@ -4,9 +4,11 @@
 
 ### Learning objectives
 
-* Assess the conditions to use the normal distribution model for a difference in proportions.
+* Identify the parameter of interest for a difference in proportions.
 
-* Create and interpret a theory-based confidence interval for a difference in proportions.
+* Create and interpret a simulation-based confidence interval for a difference in proportions.
+
+* 
 
 ### Terminology review
 In this week's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
@@ -21,7 +23,7 @@ To review these concepts, see Chapter 5 in your textbook.
 
 In the last activity, we found a small p-value for the hypothesis test for a difference in proportions.  There was very strong evidence that those in a hurry will be less likely to help people in need.  In today's activity, we will estimate the true difference in proportion of people who will help others for those in the hurry condition and those not in the hurry condition by finding a confidence interval.  
 
-Researchers at the Princeton University wanted to investigate influences on behavior.  The researchers randomly select 67 students from the Princeton Theological Seminary to participate in a study.  Only 47 students chose to participate in the study, and the data below includes 40 of those students (7 students were removed from the study for various reasons).  As all participants were theology majors planning a career as a preacher, the expectation was that all would have a similar disposition when it comes to helping behavior.  Each student was then shown a 5-minute presentation on the Good Samaritan, a parable in the bible which emphasizes the importance of helping others.  After the presentation, the students were told they needed to give a talk on the Good Samaritan parable at a building across campus.  Half the students were told they were late for the presentation; the other half told they could take their time getting across campus (the condition was randomly assigned).  On the way between buildings, an actor pretending to be a homeless person in distress asked the student for help.  The researchers recorded whether the student helped the actor or not.  The results of the study are shown in the table below.  Do these data provide evidence that those in a hurry will be less likely to help people in need in this situation?  Use the order of subtraction hurry – no hurry.
+Researchers at the Princeton University wanted to investigate influences on behavior.  The researchers randomly select 67 students from the Princeton Theological Seminary to participate in a study.  Only 47 students chose to participate in the study, and the data below includes 40 of those students (7 students were removed from the study for various reasons).  As all participants were theology majors planning a career as a preacher, the expectation was that all would have a similar disposition when it comes to helping behavior.  Each student was then shown a 5-minute presentation on the Good Samaritan, a parable in the Bible which emphasizes the importance of helping others.  After the presentation, the students were told they needed to give a talk on the Good Samaritan parable at a building across campus.  Half the students were told they were late for the presentation; the other half told they could take their time getting across campus (the condition was randomly assigned).  On the way between buildings, an actor pretending to be a homeless person in distress asked the student for help.  The researchers recorded whether the student helped the actor or not.  The results of the study are shown in the table below.  Do these data provide evidence that those in a hurry will be less likely to help people in need in this situation?  Use the order of subtraction hurry – no hurry.
 
 |                    | Hurry Condition | No Hurry Condition | Total |
 |--------------------|-----------------|--------------------|-------|

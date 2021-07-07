@@ -1,4 +1,4 @@
-## Week 4 - Activity 5:  IMDb Movie Reviews - Displaying One Quantitative Variable
+## Activity 4a:  IMDb Movie Reviews - Displaying One Quantitative Variable
 
 \setstretch{1}
 
@@ -86,7 +86,7 @@ movies %>% # Data set piped into...
 
 \newpage
 
-A dotplot will plot a dot for each value in the data set.  The following code will create a dotplot of IMDb scores.
+A dotplot will plot a dot for each value in the data set.  The following code will create a dotplot of IMDb scores.  Notice that we put in the variable name `imdb_score` for x = in the ggplot function.
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
 movies %>% # Data set piped into...
@@ -166,7 +166,7 @@ movies %>% # Data set pipes into...
 
 2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5*IQR$ and greater than $Q_3 + 1.5*IQR$ are considering outliers and are graphically represented by a dot outside of the whiskers on the box plot.
 
-3.  Data should be summarized numerically and displayed graphically to ...
+3.  Data should be summarized numerically and displayed graphically to give us information about the study.
 
 
 ### Additional notes

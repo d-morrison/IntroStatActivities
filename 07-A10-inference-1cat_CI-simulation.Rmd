@@ -1,4 +1,4 @@
-## Week 7 - Activity 10:  Helper-Hinderer --- Estimation using Simulation Methods
+## Activity 7b:  Helper-Hinderer --- Estimation using Simulation Methods
 
 \setstretch{1}
 
@@ -10,7 +10,7 @@
 
 ### Terminology review
 
-In this week's in-class activity, we will introduce simulation-based confidence intervals for a single proportion. Some terms covered in this activity are:
+In today's activity, we will introduce simulation-based confidence intervals for a single proportion. Some terms covered in this activity are:
 
 * Parameter of interest
 
@@ -25,9 +25,9 @@ To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5
 In the last class, we found very strong evidence that the true proportion of infants who will choose the helper character is greater than 0.5. But what is the true proportion of infants who will choose the helper character? We will
 use this same study to estimate this parameter of interest.
 
-A **point estimate** (our observed statistic) provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible *range* of values for the parameter. This plausible range of values for the population parameter is called an **interval estimate** or **confidence interval**. 
-
 As a reminder: Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Watch this short video to see how the experiment was run:  Researchers were hoping to assess: Are infants able to notice and react to helpful or hindering behavior observed in others?  In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.
+
+A **point estimate** (our observed statistic) provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible *range* of values for the parameter. This plausible range of values for the population parameter is called an **interval estimate** or **confidence interval**. 
 
 #### Activity intro. {-}
 
@@ -39,14 +39,14 @@ As a reminder: Do young children know the difference between helpful and unhelpf
 
 \vspace{0.5in}
 
-In this week's activity, we will use bootstrapping to find a 95\% confidence interval for $\pi$, the parameter of interest.  See Section 5.3.2 to review bootstrapping.
+In today's activity, we will use bootstrapping to find a 95\% confidence interval for $\pi$, the parameter of interest.  See Section 5.3.2 to review bootstrapping.
 
 3.  In your own words, explain the bootstrapping process.
 \vspace{0.5in}
 
 #### Use statistical analysis methods to draw inferences from the data {-}
 
-4.  Write out the parameter of interest for this study in words.  **Hint: this is the same as question 8 in activity 9.**
+4.  Write out the parameter of interest for this study in words.  **Hint: this is the same as question 7 in activity 7a.**
 
 \vspace{0.5in}
 
@@ -107,7 +107,7 @@ one_proportion_bootstrap_CI(sample_size = xx, # Sample size
 
 \vspace{.2in}
 
-     Explain how...
+|    Explain how this indicates that the p-value provides strong evidence against the null.
 
 
 #### Effect of confidence level {-}
@@ -130,16 +130,9 @@ one_proportion_bootstrap_CI(sample_size = 16, # Sample size
 
 \vspace{0.5in}
 
+15.  Explain why the upper value of the confidence interval is truncated at 1.
 
-
-#### Revisit and look forward {-}
-
-16. Suggest a new research question that you might investigate, building on what you learned in this study.
-
-\vspace{.6in}
-
-
-
+\vspace{0.5in}
 
 ### Take-home messages
 
@@ -149,9 +142,7 @@ one_proportion_bootstrap_CI(sample_size = 16, # Sample size
 
 3. In simulation-based methods (bootstrapping), a simulated distribution of possible sample statistics is created showing the possible sample to sample variability.  Then we find the middle percent of the distribution around the sample statistic using the percentile method to give the range of values for the confidence interval.  This shows us that we are $X$% confident that the parameter is within these values, where $X$ represents the level of confidence.
 
-4.  In theory-based methods, we add and subtract a margin of error to the sample statistic.  The margin of error is calculated using a multiplier that corresponds to the level of confidence times the variability (standard error) of the statistic.  
-
-5.  When the null value is within the confidence interval, it is a plausible value for the parameter of interest; thus, we would find a larger p-value for a hypothesis test of that null value.  Conversely, if the null value is NOT within the confidence interval, we would find a small p-value for the hypothesis test and strong evidence against this null hypothesis. 
+4.  When the null value is within the confidence interval, it is a plausible value for the parameter of interest; thus, we would find a larger p-value for a hypothesis test of that null value.  Conversely, if the null value is NOT within the confidence interval, we would find a small p-value for the hypothesis test and strong evidence against this null hypothesis. 
 
 6. To create one simulated sample on the bootstrap distribution for a sample proportion, label $n$ cards with the original responses.  Draw with replacement $n$ times.  Calculate and plot the resampled proportion of successes.
 
