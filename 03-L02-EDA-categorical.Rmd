@@ -1,4 +1,4 @@
-### Week 3 - Lab 2:  Graphing Categorical Variables
+### Week 3 Lab:  Graphing Categorical Variables
 
 \setstretch{1}
 

@@ -209,20 +209,6 @@ two_proportion_test(formula = Behavior~Condition, # response ~ explanatory
 
 \vspace{1in}
 
-**23. Write a paragraph summarizing the results of the study as if writing a press release.  Be sure to describe:
-
-* Summary statistic
-
-* Test statistic and interpretation
-
-* P-value and interpretation
-
-* Conclusion (written to answer the research question)
-
-* Scope of inference**
-
-\vspace{2in}
-
 
 ### Take-home messages
 

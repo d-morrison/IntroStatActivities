@@ -94,7 +94,7 @@ The response variable name is `Behavior` and the explanatory variable name is `C
 
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 1 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 1--22.
+Using the `R` script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 1--22.
 
 ```{r, echo=TRUE, eval=FALSE}
 two_proportion_bootstrap_CI(formula = Behavior ~ Condition, 
