@@ -1,4 +1,4 @@
-## Week 13 - Lab 10:  The Triple Crown
+## Week 13 Lab :  The Triple Crown
 
 \setstretch{1}
 
@@ -25,18 +25,6 @@ The Triple Crown of "Thru" hiking consists of hiking the Appalachian Trail, the 
 
 \vspace{0.8in}
 
-The sampling distribution for $\bar{x}_1-\bar{x}_2$ can be modeled using a normal distribution when certain conditions are met.
-
-Conditions for the sampling distribution of $\bar{x}_1-\bar{x}_2$ to follow an approximate normal distribution:
-
-* **Independence**: The sample’s observations are independent
-
-* **Normality**: Each sample should be approximately normal or have a large sample size. For *each* sample:
-
-    - $n < 30$: If the sample size $n$ is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
-
-    - $n \ge 30$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
-    
 ```{r}
 hikes <- read.csv("data/Baseweight.csv")
 
@@ -52,14 +40,16 @@ hikes %>%  # Data set piped into...
 hikes %>%
   summarize(favstats(Baseweight~Trail))
 ```
-
 4. Calculate the summary statistic for this study.  Use appropriate notation.
 
 \vspace{1in}
 
 #### Use statistical inferential methods to draw inferences from the data {-}
 
-5.  Methods??
+5.  Using the provided graphs and summary statistics, determine if it would make the most sense to use theory-based methods or simulation methods.  Explain your reasoning.
+
+\vspace{0.8in}
+
 
 ##### Hypothesis test {-}
 Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that there is no association between the two variables.  This means that the base weight observed in the data set would have been the same regardless of the type of trails.
@@ -124,4 +114,20 @@ two_mean_bootstrap_CI(RESPONSE ~ EXPLANATORY, data = DATASET,  # Variables and d
 13.  Do the results of the CI agree with the p-value??...
 
 \vspace{0.5in}
+
+14. Write a paragraph summarizing the results of the study as if writing a press release.  Be sure to describe:
+
+* Summary statistic and interpretation
+
+* Test statistic and interpretation
+
+* P-value and interpretation
+
+* Confidence interval and interpretation
+
+* Conclusion (written to answer the research question)
+
+* Scope of inference
+
+\vspace{2in}
 
