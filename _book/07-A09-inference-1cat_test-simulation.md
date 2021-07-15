@@ -1,0 +1,281 @@
+## Activity 7a:  Helperer-Hinderer --- Testing using Simulation Methods
+
+\setstretch{1}
+
+### Learning objectives
+
+* Identify the two possible explanations (one assuming the null hypothesis, and one assuming the alternative hypothesis) for a relationship seen in sample data.
+
+* Given a research question involving a single categorical variable, construct the null and alternative hypotheses
+  in words and using appropriate statistical symbols.
+  
+* Describe and perform a simulation-based hypothesis test for a single proportion.
+
+* Interpret and evaluate a p-value for a simulation-based hypothesis test for a single proportion.
+
+### Terminology review
+
+In today's activity, we will introduce simulation-based hypothesis testing for a single categorical variable. Some terms covered in this activity are:
+
+* Parameter of interest
+
+* Null hypothesis
+
+* Alternative hypothesis
+
+* Simulation
+
+* Null distribution
+
+* p-value
+
+To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
+
+### Steps of the statistical investigation process
+
+We will work through a six-step process to complete a hypothesis test for a single proportion, first introduced in the Martian Alphabet Activity in week 1.
+
+* **Ask a research question** that can be addressed by collecting data. What are the researchers trying to show?
+
+* **Design a study and collect data**. This step involves selecting the people or objects to be studied and how to gather relevant data on them.
+
+* **Summarize and visualize the data**. Calculate summary statistics and create graphical plots that best represent the research question.
+
+* **Use statistical analysis methods to draw inferences from the data**. Choose a statistical inference method appropriate for the data and identify the p-value and/or confidence interval after checking assumptions. In this study, we will focus on using randomization to generate a simulated p-value.
+
+* **Communicate the results and answer the research question**. Using the p-value and confidence interval from the analysis, determine whether the data provide statistical evidence against the null hypothesis. Write a conclusion that addresses the research question.
+
+* **Revisit and look forward** to point out limitations of the study and suggest new studies that could be performed to build on the findings of the study.
+
+
+\newpage
+
+### Helper-Hinderer
+
+Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Watch this short video to see how the experiment was run: https://youtu.be/anCaGBsBOxM. Researchers were hoping to assess: Are infants able to notice and react to helpful or hindering behavior observed in others?  In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.
+
+
+#### Summary statistics review. {-}
+
+1.  What are the observational units in this study?
+
+\vspace{0.5in}
+
+2.  What variable are we measuring on each observational unit?  Is it categorical or quantitative?
+
+\vspace{0.5in}
+
+#### Ask a research question {-}
+
+3. Identify the research question for this study.
+
+\vspace{1in}
+
+#### Design a study and collect data {-}
+
+Before using statistical inference methods, we must check that the cases are independent.  The sample observations are independent if the outcome of one observation does not influence the outcome of another. One way this condition is met is if data come from a simple random sample of the target population.
+
+4.  Are the cases independent? Justify your answer.
+
+\vspace{1in}
+
+\newpage 
+
+#### Summarize and visualize the data {-}
+
+
+```r
+ # Read in data set
+infants <- read.csv("data/infantchoice.csv")
+infants %>% count(choice)  # Count number in each choice category
+```
+
+```
+#>     choice  n
+#> 1   helper 14
+#> 2 hinderer  2
+```
+
+5.  Using the output above, calculate the summary statistic to represent the research question.  Use appropriate notation.
+
+\vspace{0.5in}
+
+6.  What type of plot should be used to represent these data? Sketch this plot.
+
+\vspace{1.5in}
+
+#### Use statistical analysis methods to draw inferences from the data {-}
+
+When performing a hypothesis test, we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the value that summarizes the variable in the population.  *For example, in the Martian Alphabet Activity, the parameter of interest is the true proportion of statistic students who would correctly identify Bumba.*
+
+7.  Write out the parameter of interest for this study. 
+
+\vspace{0.8in}
+
+8.  Using the parameter of interest in question 7, write out the null hypothesis in words.  That is, what do we assume to be true about the parameter of interest when we perform our simulation?
+
+\vspace{0.8in}
+
+The notation used for a population proportion (or probability, or true proportion) is $\pi$.  Since this summarizes a population, it is a parameter. When writing the **null hypothesis** in notation, we set the parameter equal to the null value, $H_0: \pi = \pi_0$.
+
+9. Write the null hypothesis in notation using the null value of 0.5 in place of $\pi_0$ in the equation given above.
+
+\vspace{0.5in}
+
+10.  Why are we assuming a null value of 0.5 in this study? 
+
+\newpage
+
+The **alternative hypothesis** is the claim to be tested and the direction of the claim (less than, greater than, or not equal to) is based on the research question.  
+
+11.  Based on the research question from question 3, are we testing that the parameter is greater than 0.5, less than 0.5 or different than 0.5? 
+
+\vspace{0.4in}
+
+12. Write out the alternative hypothesis in words.
+
+\vspace{1in}
+
+13.  Write out the alternative hypothesis in notation.
+
+\vspace{0.5in}
+
+Remember that when utilizing a hypothesis test, we are evaluating two competing possibilities. For this study the **two possibilities** are either...
+
+* The true proportion of infants who choose the helper is 0.5 and our results just occurred by random chance; or,
+  
+* The true proportion of infants who choose the helper is greater than 0.5 and our results reflect this.
+  
+Notice that these two competing possibilities represent the null and alternative hypotheses.
+  
+We will now simulate a **null distribution** of sample proportions. The null distribution is created under the assumption the null hypothesis is true.  In this case, we assume the true proportion of infants who choose the helper is 0.5, so we will create 1000 (or more) different simulations of 16 infants under this assumption.
+
+Let's think about how to use cards to create one simulation of 16 infants under the assumption the null hypothesis is true.  We will write the response variable outcomes on each card to represent the null hypothesis.
+
+14.  How many cards total do we need?  On how many cards will we write **helper**?  On how many cards will we write **hinderer**?
+
+\vspace{0.5in}
+
+15.  Next, we would mix the cards together and draw 1 card, write down if says helper or hinderer, and replace the card.  How many times would we need to repeat this process to simulate one sample?
+
+\vspace{0.5in}
+
+16.  Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
+
+\vspace{0.8in}
+
+17.  Create one simulation using the cards provided.  Report your results to your instructor.  Sketch the distribution of simulated results created by your class below.
+
+\vspace{1.5in}
+
+We will use the computer to simulate a null distribution of 1000 different samples of 16 infants, plotting the proportion who chose the helper in each sample, based on the assumption that the true proportion of infants who choose the helper is 0.5 (or that the null hypothesis is true).  
+
+To use the computer simulation, we will need to enter the 
+
+* assumed "probability of success" ($\pi_0$), 
+* "sample size" (the number of observational units or cases in the sample),
+* "number of repetitions" (the number of samples to be generated), 
+* "as extreme as" (the observed statistic), and 
+* the "direction" (matches the direction of the alternative hypothesis).
+
+
+18.  What values should be entered for each of the following into the one proportion test to create 1000 simulations?
+
+\vspace{1mm}
+
+* Probability of success:
+
+\vspace{.2in}
+* Sample size:
+    
+\vspace{.2in}
+* Number of repetitions:
+    
+\vspace{.2in}
+* As extreme as:
+    
+\vspace{.2in}
+* Direction (`"greater"`, `"less"`, or `"two-sided"`):
+
+\vspace{.2in}
+
+We will use the `one_proportion_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample proportions and compute a p-value. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 18 in the one proportion test to create a null distribution with 1000 simulations. Then highlight and run lines 1--14.
+
+
+```r
+one_proportion_test(probability_success = xx, # Null hypothesis value
+          sample_size = xx, # Enter sample size
+          number_repetitions = 1000, # Enter number of simulations
+          as_extreme_as = xx, # Observed statistic
+          direction = "xx", # Specify direction of alternative hypothesis
+          report_value = "proportion") # Reporting proportion or number of successes?
+```
+
+19. Sketch the null distribution created from the `R` code here.
+
+\vspace{1.8in}
+
+20. Around what value is the null distribution centered?  Why does that make sense?
+
+\vspace{1in}
+
+21. Circle the observed statistic (value from question 5) on the distribution you drew in question 19.  Where does this statistic fall in the null distribution: Is it near the center of the distribution (near 0.5) or in one of the tails of the distribution?  
+
+\vspace{1in}
+
+22. Is the observed statistic likely to happen or unlikely to happen if the true proportion of infants who choose the helper is 0.5?  Explain your answer using the plot.
+
+\vspace{1in}
+
+23.  Using the simulation, what is the proportion of simulated samples that generated a sample proportion at the observed statistic or greater, if the true proportion of infants who choose the helper is 0.5? *Hint*: Look under the simulation.
+
+\vspace{1in}
+
+The value in question 23 is the **p-value**.  The smaller the p-value, the more evidence we have against the null hypothesis. Explain why this makes sense?
+
+\vspace{0.5in}
+
+24. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one of the five descriptions.)
+
+
+\begin{center}\includegraphics[width=0.9\linewidth]{images/soe_gradient_grayscale} \end{center}
+
+25.  What does the p-value measure?: Interpret the p-value in context of the problem.
+
+\vspace{1in}
+
+#### Communicate the results and answer the research question {-}
+
+When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.
+
+26. Write a conclusion in context of the study.
+
+\vspace{1in}
+
+**Put in the labs???** 28.  Write a paragraph summarizing the results as if you were writing a press release.  Be sure to describe:
+
+* Summary statistic
+
+* P-value and interpretation
+
+* Conclusion (written to answer the research question)
+
+* Generalization --- to what group do the results apply?
+
+\vspace{4in}
+
+\newpage
+
+### Take-home messages
+
+1.	In a hypothesis test we have two competing hypotheses, the null hypothesis and the alternative hypothesis.  The null hypothesis represents either a skeptical perspective or a perspective of no difference or no effect. The alternative hypothesis represents a new perspective such as the possibility that there has been a change or that there is a treatment effect in an experiment.  
+
+2.  In a simulation-based test, we create a distribution of possible simulated statistics for our sample if the null hypothesis is true.  Then we see if the calculated observed statistic from the data is likely or unlikely to occur when compared to the null distribution.  
+
+3.  The p-value is the probability of the observed statistic occurring or more extreme if the null hypothesis is true.  The farther in the tail of the distribution the observed statistic is, the smaller the probability is (smaller the p-value!).  The **smaller** the p-value, the **more** evidence the statistic provides **against** the null hypothesis. (Think carefully about why this makes sense!) 
+
+4.  To create one simulated sample on the null distribution for a sample proportion, spin a spinner with probability equal to $\pi_0$ (the null value), $n$ times or draw with replacement $n$ times from a deck of cards created to reflect $\pi_0$ as the probability of success. Calculate and plot the proportion of successes from the simulated sample. 
+
+### Additional notes
+
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.

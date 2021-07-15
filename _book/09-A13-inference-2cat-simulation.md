@@ -1,0 +1,241 @@
+## Activity 9a:  Good Samaritan --- Testing
+
+\setstretch{1}
+
+### Learning objectives
+
+* Given a research question involving two categorical variables, construct the null and alternative hypotheses
+  in words and using appropriate statistical symbols.
+  
+* Describe and perform a simulation-based hypothesis test for a difference in proportions.
+
+* Interpret and evaluate a p-value for a simulation-based hypothesis test for a difference in proportions.
+
+### Terminology review
+In today's activity, we will use simulation-based methods to analyze two categorical variables. Some terms covered in this activity are:
+
+* Conditional proportion
+
+* Null hypothesis
+
+* Alternative hypothesis
+
+* Type 1 and Type 2 errors
+
+* Decision of a hypothesis test
+
+To review these concepts, see Chapter 5 in your textbook.
+
+
+### The Good Samaritan
+
+Researchers at the Princeton University wanted to investigate influences on behavior.  The researchers randomly select 67 students from the Princeton Theological Seminary to participate in a study.  Only 47 students chose to participate in the study, and the data below includes 40 of those students (7 students were removed from the study for various reasons).  As all participants were theology majors planning a career as a preacher, the expectation was that all would have a similar disposition when it comes to helping behavior.  Each student was then shown a 5-minute presentation on the Good Samaritan, a parable in the Bible which emphasizes the importance of helping others.  After the presentation, the students were told they needed to give a talk on the Good Samaritan parable at a building across campus.  Half the students were told they were late for the presentation; the other half told they could take their time getting across campus (the condition was randomly assigned).  On the way between buildings, an actor pretending to be a homeless person in distress asked the student for help.  The researchers recorded whether the student helped the actor or not.  The results of the study are shown in the table below.  Do these data provide evidence that those in a hurry will be less likely to help people in need in this situation?  Use the order of subtraction hurry – no hurry.
+
+|                    | Hurry Condition | No Hurry Condition | Total |
+|--------------------|-----------------|--------------------|-------|
+| Helped Actor       |        2        |         11         |   13  |
+| Did Not Help Actor |        18       |          9         |   27  |
+| Total              |        20       |         20         |   40  |
+
+
+\newpage
+
+These counts can be found in `R` by using the `count()` function:
+
+```r
+# Read data set in
+good <- read.csv("data/goodsam.csv") 
+good %>% group_by(Behavior) %>% count(Condition)
+```
+
+```
+#> # A tibble: 4 x 3
+#> # Groups:   Behavior [2]
+#>   Behavior Condition     n
+#>   <chr>    <chr>     <int>
+#> 1 Help     Hurry         2
+#> 2 Help     No hurry     11
+#> 3 No help  Hurry        18
+#> 4 No help  No hurry      9
+```
+
+#### Vocabulary review. {-}
+
+1.  What is the name of the explanatory variable in the `R` output? What are its categories?
+
+\vspace{0.2in}
+
+2. What is the response variable in the `R` output? What are its categories?
+
+\vspace{0.2in}
+
+\setstretch{1.5}
+3. Fill in the blanks with one answer from each set of parentheses: This is an  
+________________ (experiment/observational study) because  
+______________ (Hurry/No hurry) _______ (was/was not)  
+randomly ____________ (assigned/selected).
+
+\vspace{0.1in}
+
+4.  Put an X in the box that represents the appropriate scope of inference for this study.
+
+|                    |                  |       Study Type      |                     |
+|:------------------:|:----------------:|:---------------------:|---------------------|
+|                    |                  | Randomized Experiment | Observational Study |
+| Selection of Cases | Random Sample    |                       |                     |
+|                    | No Random Sample |                       |                     |
+\setstretch{1}
+
+
+#### Ask a research question {-}
+
+The research question as stated above is: Do these data provide evidence that those in a hurry will be less likely to help people in need in this situation? In order to set up our hypotheses, we need to express this research question in terms of parameters. 
+
+Remember, we define the parameter for a single categorical variable as the true proportion of observational units that are labeled as a "success" in the response variable.  
+
+\newpage
+
+5. Write the two parameters of interest for this study.  Let 1 = hurry condition, 2 = no hurry condition. 
+\vspace{1mm}
+
+   $\pi_1$ --- 
+\vspace{0.5in}
+
+   $\pi_2$ ---
+\vspace{0.5in}
+
+When comparing two groups, we assume the two parameters are equal in the null hypothesis---there is no association between the variables.
+
+6.  Write the null hypothesis out in words using your answers to question 5.
+
+\vspace{0.8in}
+
+
+7. Based on the research question, fill in the appropriate sign for the alternative hypothesis ($<$, $>$, or $\neq$):
+\vspace{0.1in}
+
+|           $H_A: \pi_1 -\pi_2$ __________ 0
+
+
+ 
+#### Summarize and visualize the data {-}
+
+8. Using the two-way table given in the introduction, calculate the conditional proportion of students in the hurry condition who helped the actor.
+
+\vspace{.3in}
+
+9. Using the two-way table given in the introduction, calculate the conditional proportion of students in the no hurry condition who helped the actor.
+
+\vspace{.3in}
+
+10.  Calculate the summary statistic for this study.  Use Hurry - No hurry as the order of subtraction.
+
+\vspace{0.4in}
+
+
+11. What is the notation used for the value calculated in question 10?
+
+\vspace{0.1in}
+
+We will now simulate a **null distribution** of sample differences in proportions. The null distribution is created under the assumption the null hypothesis is true.  
+
+12.  First, let's think about how one simulation would be created on the null distribution using cards.  
+
+    How many cards would you need?
+\vspace{0.1in}
+
+    What would be written on each card?
+
+\vspace{0.5in}
+
+13. Next, we would mix the cards together and shuffle into two piles.  How many cards would be in each pile?  What would each pile represent?
+
+\vspace{0.8in}
+
+14. Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
+
+\vspace{0.8in}
+
+15.  Simulate one sample using the cards provided by your instructor.  
+
+\vspace{1in}
+
+To create the null distribution of differences in sample proportions, we will use the `two_proportion_test()` function in `R` (in the `catstats` package).  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `good`), the outcome for the explanatory variable that is first in subtraction, number of repetitions, the outcome for the response variable that is a success (what the numerator counts when calculating a sample proportion), and the direction of the alternative hypothesis.
+
+The response variable name is `Behavior` and the explanatory variable name is `Condition`.
+
+16.  What inputs should be entered for each of the following to create the simulation?
+
+\vspace{.2in}
+* First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"Hurry"` or `"No hurry"`):
+
+\vspace{.2in}
+* Number of repetitions:
+    
+\vspace{.2in}
+* Response value numerator (What is the outcome for the response variable that is considered a success? `"Help"` or `"No help"`):
+
+\vspace{.2in}
+* As extreme as (enter the value for the sample difference in proportions):
+    
+\vspace{.2in}
+* Direction (`"greater"`, `"less"`, or `"two-sided"`):
+
+\vspace{.2in}
+
+Using the `R` script file for this activity, enter your answers for question 17 in place of the `xx`'s to produce the null distribution with 1000 simulations; highlight and run lines 1--12 and then 33--39.
+
+
+```r
+two_proportion_test(formula = Behavior~Condition, # response ~ explanatory
+    data= good, # Name of data set
+    first_in_subtraction = "Hurry", # Order of subtraction: enter the name of Group 1
+    number_repetitions = 1000, # Always use a minimum of 1000 repetitions
+    response_value_numerator = "Help", # Define which outcome is a success 
+    as_extreme_as = -0.45, # Calculated observed statistic (difference in sample proportions)
+    direction="less") # Alternative hypothesis direction ("greater","less","two-sided")
+```
+
+17.  Sketch the null distribution created here.
+
+\vspace{1.5in}
+
+
+18. What value is the null distribution centered around?  Explain why this makes sense.
+
+\vspace{.8in}
+
+19.  What is the value of the p-value? *Remember*: This is the value given at the bottom of the null distribution.
+
+\vspace{0.2in}
+
+
+20.  Interpret the p-value in context of the study.
+
+\vspace{1in}
+
+21.  How much evidence does the p-value provide against the null hypothesis? *Hint*: Refer to the guidelines given in Activity 7a.
+
+\vspace{0.4in}
+
+22.  Write a conclusion to the test. 
+
+\vspace{1in}
+
+
+### Take-home messages
+
+1.	When comparing two groups, we are looking at the difference between two parameters.  In the null hypothesis, we assume the two parameters are equal, or that there is no difference between the two proportions.  
+
+2.  We use the same guidelines for the strength of evidence as we did in Activity 7a.  
+
+3.  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type 1 error. A Type 1 error occurs when we reject a true null hypothesis (false positive).
+
+5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance level), we could have a possible Type 2 error. A Type 2 error occurs when we fail to reject a false null hypothesis (false negative).
+
+6. To create one simulated sample on the null distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$, representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
+
+
+### Additional notes
+
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.

@@ -47,7 +47,8 @@ you would use in order to produce output or plots. These
 "code chunks" appear in gray. In the code chunk below, we
 demonstrate how to read the data set into `R` using the `read.csv()` function.  These lines of code read in the data set and name the data set `myopia`.  The `library()` function tells `R` which packages will be needed.
 
-```{r, echo=TRUE}
+
+```r
 # This will read in the data set
 myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv") 
 ```
@@ -57,7 +58,8 @@ myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSigh
 If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight`, for xx into the `ggplot` code below to create a bar plot.  Click the play button to run this code chunk.  Notice this is a **frequency** bar plot plotting counts (the number of children in each level of sight is displayed on the $y$-axis).  
 
 
-```{r, out.width="50%", echo=TRUE, eval = FALSE}
+
+```r
 myopia %>% # Data set piped into...
 ggplot(aes(y = xx)) +   # This specifies the variable
   geom_bar(stat = "count") +  # Tell it to make a bar plot
@@ -74,7 +76,8 @@ ggplot(aes(y = xx)) +   # This specifies the variable
 
 We could also choose to display the data as a proportion in a **relative frequency** bar plot. To find the relative frequency, divide the count in each level of myopia by the sample size.  These are sample proportions. Notice that in this code we told `R` to create a bar plot with proportions.  Again enter the variable name `Sight` for xx in the following code and run the following code chunk.
 
-```{r, out.width="50%", echo=TRUE, eval=FALSE}
+
+```r
 myopia %>% # Data set piped into...
 ggplot(aes(x = xx)) +   # This specifies the variable
   geom_bar(aes(y = ..prop.., group = 1)) +  # Tell it to make a bar plot with proportions
@@ -94,7 +97,8 @@ ggplot(aes(x = xx)) +   # This specifies the variable
 
 To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` (explanatory variable) for xx and the variable name, `Sight` (response variable) for yy in the code chunk below. Click the play button to run this code chunk. 
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 myopia %>% # Data set piped into...
 ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
   geom_bar(stat = "count", position = "fill") +  # Tell it to make a stacked bar plot
@@ -115,7 +119,8 @@ ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
 
 We could also plot the data using a mosaic plot.  Fill in the variable name, `Light` (explanatory variable) for xx and the variable name, `Sight` (response variable) for yy in the code chunk below. Click the play button to run this code chunk. 
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 myopia %>% # Data set piped into...
   ggplot() +   # This specifies the variables
   geom_mosaic(aes(x=product(xx), fill = yy)) +  # Tell it to make a mosaic plot
@@ -136,8 +141,23 @@ myopia %>% # Data set piped into...
 
 The following `R` code gives the counts for each combination of levels of variables.
 
-```{r, echo=TRUE, warning=FALSE, message=FALSE, collapse=FALSE}
+
+```r
 myopia %>% group_by(Sight) %>% count(Light)
+```
+
+```
+#> # A tibble: 9 x 3
+#> # Groups:   Sight [3]
+#>   Sight       Light          n
+#>   <chr>       <chr>      <int>
+#> 1 High Myopia Full Light     5
+#> 2 High Myopia Nightlight     9
+#> 3 High Myopia No Light       2
+#> 4 Myopia      Full Light    42
+#> 5 Myopia      Nightlight    65
+#> 6 Myopia      No Light      15
+#> # ... with 3 more rows
 ```
 
 8.  Fill in the following table with the values from the `R` output above.
