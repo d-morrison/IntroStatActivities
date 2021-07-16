@@ -1,4 +1,4 @@
-## Week 11 - Activity 17:  Construction Costs
+## Activity 12b:  Construction Costs
 
 \setstretch{1}
 
@@ -98,3 +98,5 @@ qt(0.995, df = 32, lower.tail=TRUE)
 6.  Explain why the theory-based and simulation confidence intervals are not quite the same.
 
 \vspace{1in}
+
+\newpage

@@ -477,3 +477,5 @@ $\sigma_d=$
 20. Interpret the interval calculated in the context of the problem.
 \rgs
 \rgs
+
+\newpage

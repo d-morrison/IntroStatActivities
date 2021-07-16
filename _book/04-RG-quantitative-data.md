@@ -190,3 +190,4 @@ Decision tree for determining an appropriate plot  given a number of variables a
 
 \begin{center}\includegraphics[width=0.7\linewidth]{04-RG-quantitative-data_files/figure-latex/decision-tree-plots-1} \end{center}
 
+\newpage

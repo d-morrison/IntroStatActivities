@@ -196,3 +196,5 @@ ggplot(aes(x = xx)) +   # Name variable to plot
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
+
+\newpage

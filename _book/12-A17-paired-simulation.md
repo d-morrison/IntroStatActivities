@@ -1,4 +1,4 @@
-## Week 12 - Activity 17:  COVID-19 and Air Pollution
+## Activity 12a:  COVID-19 and Air Pollution
 
 \setstretch{1}
 
@@ -238,3 +238,5 @@ paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+
+\newpage

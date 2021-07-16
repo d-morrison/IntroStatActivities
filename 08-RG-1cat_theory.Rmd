@@ -3,3 +3,6 @@
 ## Week 7 - Reading Guide: Categorical Inference
 
 ### Section 5.1 (Foundations of inference: Hypothesis tests) {-}
+
+
+\newpage

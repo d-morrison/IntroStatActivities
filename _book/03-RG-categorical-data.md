@@ -272,3 +272,5 @@ Total & & & 100,000 \\ \hline
 
 
 6.	Explain how the probability in #5 was calculated.
+
+\newpage

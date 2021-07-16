@@ -320,8 +320,6 @@ Fill in the blanks to correctly interpret:
 
 Look at the table of vocabulary terms.  If there are any you do not know, be sure to review the appropriate section of your text. 
 
-\newpage
-
 ### Section 4.1 (Gapminder world) {-}
 
 \setstretch{1}
@@ -424,3 +422,4 @@ To determine if the relationship between two quantitative variables differs acro
 
 Simpson’s Paradox: 
 
+\newpage

@@ -20,7 +20,7 @@ In today's activity, we will introduce simulation-based confidence intervals for
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-###Helper-Hinderer
+### Helper-Hinderer
 
 In the last class, we found very strong evidence that the true proportion of infants who will choose the helper character is greater than 0.5. But what is the true proportion of infants who will choose the helper character? We will
 use this same study to estimate this parameter of interest.
@@ -149,4 +149,6 @@ one_proportion_bootstrap_CI(sample_size = 16, # Sample size
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+
+\newpage
 

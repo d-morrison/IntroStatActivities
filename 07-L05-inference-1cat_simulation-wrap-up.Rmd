@@ -141,6 +141,4 @@ c) How many intervals out of 100 contain $\pi$, the null value of 0.25? *Hint*: 
 
 15.  Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?
 
-\vspace{1in}
-
-
+\newpage

@@ -1,4 +1,4 @@
-## Activity:  The Good Samaritan --- Estimation
+## Activity 9b:  The Good Samaritan --- Estimation
 
 \setstretch{1}
 
@@ -176,3 +176,5 @@ Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the 
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+
+\newpage

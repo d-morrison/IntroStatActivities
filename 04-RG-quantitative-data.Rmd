@@ -237,3 +237,4 @@ ggraph(mygraph, layout = 'dendrogram', circular = FALSE) +
            fontface = "bold", size = 4)
 ```
 
+\newpage

@@ -388,3 +388,5 @@ How are the confidence level and the significance level related (for a two-sided
 
 9.	Does the conclusion of the hypothesis test match the confidence interval?
 \rgs
+
+\newpage

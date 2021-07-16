@@ -252,20 +252,6 @@ When we write a conclusion we answer the research question by stating how much e
 
 \vspace{1in}
 
-**Put in the labs???** 28.  Write a paragraph summarizing the results as if you were writing a press release.  Be sure to describe:
-
-* Summary statistic
-
-* P-value and interpretation
-
-* Conclusion (written to answer the research question)
-
-* Generalization --- to what group do the results apply?
-
-\vspace{4in}
-
-\newpage
-
 ### Take-home messages
 
 1.	In a hypothesis test we have two competing hypotheses, the null hypothesis and the alternative hypothesis.  The null hypothesis represents either a skeptical perspective or a perspective of no difference or no effect. The alternative hypothesis represents a new perspective such as the possibility that there has been a change or that there is a treatment effect in an experiment.  
@@ -279,3 +265,5 @@ When we write a conclusion we answer the research question by stating how much e
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
+
+\newpage

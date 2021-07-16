@@ -239,3 +239,5 @@ two_proportion_test(formula = Behavior~Condition, # response ~ explanatory
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+
+\newpage

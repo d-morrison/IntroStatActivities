@@ -1,4 +1,4 @@
-## Activity:  Homeless Housing Stability
+## Activity 13b:  Homeless Housing Stability
 
 \setstretch{1}
 
@@ -144,3 +144,5 @@ qt(0.975, df = 511, lower.tail=TRUE)
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered
+
+\newpage

@@ -177,3 +177,5 @@ IPEDS %>%  # Data set piped into...
 17.  Which university size has the largest spread of retention rates?
 
 \vspace{0.5in}
+
+\newpage

@@ -168,8 +168,6 @@ Normal distribution (Also known as: normal curve, normal model, Gaussian distrib
 \rgi Notation:
 \rgs
 
-\newpage
-
 Standard normal distribution: 
 \rgs
 
@@ -499,9 +497,7 @@ $Z$ =
 12. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
-# Inference for a Single Categorical Variable: Confidence Intervals
-
-## Reading Guide: Categorical Inference
+## Reading Guide: Inference for a Single Categorical Variable: Confidence Intervals
 
 ### Section 5.1.4 (Foundations of inference: Confidence intervals) {-}
 
@@ -702,3 +698,5 @@ Margin of error of a confidence interval for a sample proportion:
 
 8. Are the results in this example statistically significant?  Justify your answer.
 \rgs
+
+\newpage

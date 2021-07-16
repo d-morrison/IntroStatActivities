@@ -1,4 +1,4 @@
-## Week 1 - Activity 1:  Martian Alphabet
+## Activity 1a:  Martian Alphabet
 
 \setstretch{1}
 
@@ -86,7 +86,6 @@ The proportion in question 6 is called a **summary statistic**---a single value 
 
 Looking at the data set and the summary statistic is only one way to display the data.  We will also want to create a visualization or picture of the data. A **frequency bar plot** is used to display categorical data as a count or frequency. Since our variable has two levels or outcomes, correct or incorrect, we will create two bars---one for each level.
 
-\newpage
 
 7. Plot the observed class data using a frequency bar plot. Be sure to add a scale to the $y$-axis.
 
@@ -179,22 +178,6 @@ include_graphics("images/relative_barplot_martian.png")
 \newpage
 
 
-### Out-of-class activity
-
-Since this class is taught in a blended format, we are only in class one day per week.  During class we will complete the in-class activity from the course pack.  Outside of class, students will read from the textbook, watch course videos, and complete an out-of-class activity on the other two days of class.  To become familiar with the course outline, read through the syllabus, [https://mtstateintrostats.github.io/Syllabus/](https://mtstateintrostats.github.io/Syllabus/), your day specific cohort calendar, and watch the Stat 216 Course Tour on D2L before answering the following questions.
-
-1. When are the case study discussion posts due on D2L each week?
-
-\vspace{0.3in}
-
-2.  For your cohort, what day and time are the weekly assignments due on Gradescope?
-
-\vspace{0.3in}
-
-3.  For your cohort, when is Exam 1? Exam 2?
-
-\vspace{0.3in}
-
 #### Introduction to `R`
 
 In Stat 216 we will use the statistical package `R` to analyze data through the IDE (integrated development environment) RStudio. Though it is possible to download `R` and RStudio on your own computer, we will use this program through the MSU RStudio server: [https://rstudio.math.montana.edu/](https://rstudio.math.montana.edu/). 
@@ -228,7 +211,7 @@ It is used by these authors to add comments to the `R` code and explain what eac
 
 In the Martian Alphabet `R` script file for the `one_proportion_test()` function arguments, enter your class size (Q3 from the in-class activity) for `sample_size` and the number of students who were correct in identifying Bumba (Q6 from the in-class activity) for `as_extreme_as` argument.  Highlight lines 3 -- 8 and click run.
 
-4.  Is the distribution created from this code similar to what you saw in class in Q14?
+Is the distribution created from this code similar to what you saw in class in Q14?
 
 \vspace{0.3in}
 

@@ -20,6 +20,7 @@ rmd_files: [
   "05-A07-EDA-two-quantitative-PartA.Rmd",
   "05-A08-EDA-two-quantitative-PartB.Rmd",
   "05-L04-EDA-two-quantitative-wrapup.Rmd",
+  "06-Exam1-Review.Rmd",
   "07-RG-1cat_simulation.Rmd",
   "07-A09-inference-1cat_test-simulation.Rmd",
   "07-A10-inference-1cat_CI-simulation.Rmd",
@@ -36,6 +37,7 @@ rmd_files: [
   "10-A15-inference-2cat_test-theory.Rmd",
   "10-A16-inference-2cat_CI-theory.Rmd",
   "10-L08-inference-2cat-theory-wrapup.Rmd",
+  "11-Exam2-Review.Rmd",
   "12-RG-paired.Rmd",
   "12-A17-paired-simulation.Rmd",
   "12-A18-paired-theory.Rmd",
@@ -48,5 +50,8 @@ rmd_files: [
   "14-A21-regression-simulation.Rmd",
   "14-A22-regression-theory.Rmd",
   "14-L11-regression-wrapup.Rmd",
+  "15-data-exploration.Rmd",
+  "15-Exam3-review.Rmd"
+  
    ]
 before_chapter_script: "_common.R"

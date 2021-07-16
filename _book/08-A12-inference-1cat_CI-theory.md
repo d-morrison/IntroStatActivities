@@ -118,8 +118,10 @@ c) How many intervals out of 100 contain $\pi$, the null value of 0.42? *Hint*: 
 \vspace{1in}
 
 
-
-\newpage
+### Take-home messages
 
 2.  In theory-based methods, we add and subtract a margin of error to the sample statistic.  The margin of error is calculated using a multiplier that corresponds to the level of confidence times the variability (standard error) of the statistic.
 
+
+
+\newpage

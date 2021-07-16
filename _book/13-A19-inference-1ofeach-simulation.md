@@ -250,5 +250,5 @@ two_mean_bootstrap_CI(RESPONSE ~ EXPLANATORY, data = DATASET,  # Variables and d
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered
 
-
+\newpage
 

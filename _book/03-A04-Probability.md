@@ -1,4 +1,4 @@
-## Week 3 - Activity 4:  What's the probability?
+## Activity 3a:  What's the probability?
 
 \setstretch{1}
 
@@ -25,7 +25,11 @@ To review these concepts, see Sections 2.1 and 2.2 in the textbook.
 
 ### Probability 
 
-1. Since the early 1980s, the rapid antigen detection test (RADT) of group A *streptococci* has been used to detect strep throat. A recent study of the accuracy of this test shows that the **sensitivity**, the probability of a positive RADT given the person has strep throat, is 86% in children, while the **specificity**, the probability of a negative RADT given the person does not have strep throat, is 92% in children.  The **prevalence**, the probability of having group A strep, is 37% in children. 
+1. Given the following two-way table answer the following questions.
+
+**add two-way table and questions**
+
+2. Since the early 1980s, the rapid antigen detection test (RADT) of group A *streptococci* has been used to detect strep throat. A recent study of the accuracy of this test shows that the **sensitivity**, the probability of a positive RADT given the person has strep throat, is 86% in children, while the **specificity**, the probability of a negative RADT given the person does not have strep throat, is 92% in children.  The **prevalence**, the probability of having group A strep, is 37% in children. 
 \vspace{1mm}
 
     Let $A$ = the event the child has strep throat, and $B$ = the event the child has a positive RADT.
@@ -66,7 +70,7 @@ To review these concepts, see Sections 2.1 and 2.2 in the textbook.
 
 \newpage
 
-2. In a computer store, 30% of the computers in stock are laptops and 70% are desktops.  Five percent of the laptops are on sale, while 10% of the desktops are on sale.
+3. In a computer store, 30% of the computers in stock are laptops and 70% are desktops.  Five percent of the laptops are on sale, while 10% of the desktops are on sale.
 \vspace{1mm}
 
     Let $L$ = the event the computer is a laptop, and $S$ = the event the computer is on sale.
@@ -122,10 +126,8 @@ Total & & & 100,000 \\ \hline
 
 3. To fill in the two-way table, always start with the unconditional variable in the total row or column and then use the conditional probabilities to fill in the interior cells.
 
-\newpage
-
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
-
+\newpage

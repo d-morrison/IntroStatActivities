@@ -1,4 +1,4 @@
-## Week 8 - Lab 6:  One-categorical Theory
+## Week 8 Lab:  One-categorical Theory
 
 \setstretch{1}
 
@@ -32,3 +32,5 @@ pnorm(xx, # Enter value of standardized statistic
 ```
 
 13. Why did you expect that the value of the p-value is similar between theory and simulation methods?
+
+\newpage

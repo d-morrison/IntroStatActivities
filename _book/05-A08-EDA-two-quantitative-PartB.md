@@ -1,4 +1,4 @@
-## Week 5 - Activity 8:  Movie Profits
+## Activity 5b:  Movie Profits
 
 \setstretch{1}
 
@@ -179,3 +179,5 @@ $$\widehat{\text{revenue}} = b_0 + b_1\times budget + b_2\times duration.$$
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
+
+\newpage

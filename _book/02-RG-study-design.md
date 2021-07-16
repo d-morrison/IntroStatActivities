@@ -165,4 +165,4 @@ True or False: If random sampling of the target population is used, and no other
 
 True or False: If random sampling of the target population is used, and no other types of bias are suspected, results from the sample can be inferred as a causal relationship between the explanatory and response variables.
 
-
+\newpage

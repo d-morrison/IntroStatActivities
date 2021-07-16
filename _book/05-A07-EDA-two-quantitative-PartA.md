@@ -1,4 +1,4 @@
-## Week 5 - Activity 7:  Movie Profits
+## Activity 5a:  Movie Profits
 
 \setstretch{1}
 
@@ -194,4 +194,4 @@ Another summary measure used to explain the linear relationship between two quan
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
-
+\newpage

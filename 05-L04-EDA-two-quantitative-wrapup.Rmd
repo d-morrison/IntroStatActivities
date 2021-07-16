@@ -1,4 +1,4 @@
-## Week 4 - Lab 3:  Tip Percentages
+## Week 4 Lab:  Penguins
 
 \setstretch{1}
 

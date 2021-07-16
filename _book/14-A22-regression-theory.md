@@ -1,4 +1,4 @@
-## Activity:  Moneyball
+## Activity 14b:  Moneyball
 
 \setstretch{1}
 
@@ -347,3 +347,5 @@ regression_bootstrap_CI(W ~ RD, # response ~ explanatory
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+
+\newpage

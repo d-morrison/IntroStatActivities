@@ -178,8 +178,8 @@ $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance level), we could have a possible Type 2 error. A Type 2 error occurs when we fail to reject a false null hypothesis (false negative).
 
 
-
-
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+
+\newpage

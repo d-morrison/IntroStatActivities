@@ -1,6 +1,6 @@
-# Basics of Data
+# Week 1 - Basics of Data
 
-## Week 1 - Reading Guide: Basics of Data
+## Reading Guide: Basics of Data
 
 ### Sections 1.1 (Case study) and 1.2 (Data basics) {-}
 
@@ -171,3 +171,5 @@ True or False: Observational studies can show a naturally occurring association 
 \rgs
 
 11.	This study reported finding evidence that stents *increase* the risk of stroke.  This conclusion implies a causal link between stents and an increased risk of stroke.  Is that conclusion valid?  Justify your answer.
+
+\newpage

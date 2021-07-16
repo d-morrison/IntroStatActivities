@@ -328,3 +328,5 @@ Margin of error of a confidence interval for a difference in proportions:
 \rgs
 
 *Note: A confidence interval interpretation and confidence level interpretation for this example can be found in the Reading Guide solutions for Sections 5.4.1--5.4.3.*
+
+\newpage
