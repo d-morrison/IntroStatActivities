@@ -14,14 +14,26 @@
 * Given a plot or set of plots, describe and compare the distribution(s)
   of a single quantitative variable
   (center, variability, shape, outliers).
+  
+* Get practice using `R` to create graphs of quantitative variables.
+
+### IPEDS
+
+Download and open the provided `R` script file for week 4 lab to answer the following questions.  
 
 These data are on a subset of institutions that met the following selection criteria:
-•	Degree granting 
-•	United States only
-•	Title IV participating
-•	Not for profit
-•	2-year or 4-year or above
-•	Has full-time first-time undergraduates
+
+*	Degree granting 
+
+* United States only
+
+* Title IV participating
+
+* Not for profit
+
+* 2-year or 4-year or above
+
+* Has full-time first-time undergraduates
 
 * Note that several variables have missing values for some institutions (denoted by “NA”).
 
@@ -30,7 +42,7 @@ These data are on a subset of institutions that met the following selection crit
 
 1. What are the observational units for this study?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 2. Using the above table, which variables are categorical?  
 
@@ -44,7 +56,7 @@ These data are on a subset of institutions that met the following selection crit
 
 \vspace{0.5in}
 
-Upload and import the data set IPEDS_Data_2018. Enter the name of the data set (see the environment tab) for `datasetname` in the `R` code chunk below.  We will look at the retention rates for the different institutions.  Enter the variable name `Retention` for `variable` in the `R` code chunk below.  Run this chunk of code by clicking on the green play arrow below. 
+Upload and import the data set IPEDS_Data_2018. Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in lines ...  We will look at the retention rates for the different institutions.  Enter the variable name `Retention` for `variable` in the `R` code chunk below.  Run this chunk of code by clicking on the green play arrow below. 
 
 
 ```r
@@ -117,10 +129,9 @@ In the next part of the activity we will compare retention rates for public and 
 Enter the name of the explanatory variable and the name of the response variable in the following `R` code to find the summary statistics and create the side by side boxplots of the data.
 
 
-```
-#>   Control min Q1 median Q3 max     mean       sd    n missing
-#> 1 Private   0 66     76 85 100 73.67244 16.72878 1212      55
-#> 2  Public  27 67     74 82 100 74.21322 11.32172  605      95
+```r
+IPEDS %>%  # Data set piped into...
+  summarise(favstats(Retention~Control)) # Apply favstats function to budget_mil and content rating
 ```
 
 

@@ -146,7 +146,7 @@ ggplot(aes(x = revenue_mil)) +   # Name variable to plot
 
 \vspace{0.8in}
 
-To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub`into Rstudio.  Enter the variable `revenue_mil` for xx in line 24 to summarize and create a boxplot of the data. Highlight and run lines 21 - 28.  
+To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub` into Rstudio.  Enter the variable `revenue_mil` for xx in line 24 to summarize and create a boxplot of the data. Highlight and run lines 21 - 28.  
 
 
 ```
@@ -164,11 +164,11 @@ ggplot(aes(x = revenue_mil)) +   # Name variable to plot
        y = "Frequency") # Label for y axis
 ```
 
-10. Report the two measures of center for this new data.
+10. Report the two measures of center for this new data set.
 
 \vspace{0.8in}
 
-11. Report the two measures of spread for this new data.
+11. Report the two measures of spread for this new data set.
 
 \vspace{0.8in}
 
@@ -176,7 +176,7 @@ ggplot(aes(x = revenue_mil)) +   # Name variable to plot
 
 \vspace{0.5in}
 
-13.  Which measure of spread is robust to outliers?
+13.  Which measure of spread is robust to outliers?  Explain your answer.
 
 \vspace{0.5in}
 

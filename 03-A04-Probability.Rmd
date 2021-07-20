@@ -25,9 +25,27 @@ To review these concepts, see Sections 2.1 and 2.2 in the textbook.
 
 ### Probability 
 
-1. Given the following two-way table answer the following questions.
+1. In a large general education class, 60\% are science majors and 40\% are liberal arts majors.  Twenty percent of the science majors are seniors, while 30\% of the liberal arts majors are seniors. Given the following two-way table answer the following questions.
 
-**add two-way table and questions**
+|              | Senior | Not a Senior |    Total   |
+|--------------|--------|--------------|------------|
+| Science      | 12,000 |       48,000 |     60,000 |
+| Liberal Arts | 12,000 |       28,000 |     40,000 |
+| Total        | 24,000 |       76,000 |    100,000 |
+
+
+a. What is the probability that a randomly selected senior is a science major?  Use appropriate probability notation.
+
+\vspace{0.5in}
+
+b. What is the probability that a randomly selected student is both a a senior and a science major.  Use appropriate probability notation.
+
+\vspace{0.5in}
+
+c. What is the probability that a randomly selected student is not a senior given they are a liberal arts major.  USe appropriate probability notation.
+
+\vspace{0.5in}
+
 
 2. Since the early 1980s, the rapid antigen detection test (RADT) of group A *streptococci* has been used to detect strep throat. A recent study of the accuracy of this test shows that the **sensitivity**, the probability of a positive RADT given the person has strep throat, is 86% in children, while the **specificity**, the probability of a negative RADT given the person does not have strep throat, is 92% in children.  The **prevalence**, the probability of having group A strep, is 37% in children. 
 \vspace{1mm}

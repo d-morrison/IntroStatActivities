@@ -48,8 +48,6 @@ We will work through a six-step process to complete a hypothesis test for a sing
 * **Revisit and look forward** to point out limitations of the study and suggest new studies that could be performed to build on the findings of the study.
 
 
-\newpage
-
 ### Helper-Hinderer
 
 Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Watch this short video to see how the experiment was run: https://youtu.be/anCaGBsBOxM. Researchers were hoping to assess: Are infants able to notice and react to helpful or hindering behavior observed in others?  In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.

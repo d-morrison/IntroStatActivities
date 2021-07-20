@@ -22,7 +22,7 @@ To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5
 
 ### Male Boxers
 
-Last class we found very strong evidence that the true proportion of male boxers that are left-handed is greater than 0.5.  In this activity we will use the same data set to find the theory-based 95\% confidence interval.
+Last class we found very strong evidence that the true proportion of male boxers that are left-handed is greater than 0.1.  In this activity we will use the same data set to find the theory-based 95\% confidence interval.
 
 Remember from the last activity: Left-handedness is a trait that is found in about 10\% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers, we want to see if there is an over-prevalence of left-handed fighters.  In the sample of 500 male boxers, 81 were left-handed.
 
@@ -73,7 +73,7 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 
 \vspace{0.1in}
 
-4.  What is the value of the multiplier needed to calculate the 95\% confidence interval for the true proportion of patients with COVID-19 that are vitamin D deficient?
+4.  What is the value of the multiplier needed to calculate the 95\% confidence interval for the true proportion of male boxers that are left-handed?
 
 \vspace{1in}
 
@@ -91,37 +91,28 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 
 8. Is the null value, 0.1, contained in the 95\% confidence interval?  Explain, based on the p-value from the last activity, why you expected this to be true.
 
-### What does *confidence* mean?
+### Effect of Sample Size
 
-In the interpretation of a 95\% confidence interval, we say that we are 95\% confident that the parameter is within the confidence interval.  Why are we able to make that claim?  What does it mean to say "we are 95\% confident"?
+Suppose in another sample of 230 male boxers we saw that 37 were left-handed.
 
-8.  Go to this website, [http://www.rossmanchance.com/ISIapplets.html](http://www.rossmanchance.com/ISIapplets.html) and choose 'Simulating Confidence Intervals'.  In the input on the left-hand side of the screen enter 0.1 for $\pi$, 197 for $n$, and 100 for 'Intervals'.  Click 'sample'.
-\vspace{1mm}
-
-a) In the graph on the bottom right, click on a green dot.  Write down the confidence interval for this sample given on the graph on the left.  Does this confidence interval contain the null value of 0.42?
-\vspace{0.5in}
-
-
-b) Now click on a red dot.  Write down the confidence interval for this sample.  Does this confidence interval contain the null value of 0.42.?
-\vspace{0.5in}
-
-
-c) How many intervals out of 100 contain $\pi$, the null value of 0.42? *Hint*:  This is given to the left of the graph of green and red intervals.
-\vspace{0.5in}
-
-9.  Click on 'sample' nine more times.  Write down the 'Running Total' for the proportion of intervals that contain $\pi$.  
+9.  Calculate the margin of error for a 95\% confidence interval using a multiplier $z^* = 1.96$ for this sample.  Is the margin of error larger or smaller than the margin of error for the original study?
 
 \vspace{0.5in}
 
-10.  Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?
+10.  Calculate the 95\% confidence interval for this new study using the margin of error from question 9.  
 
-\vspace{1in}
+\vspace{0.5in}
+
+11.  Is the confidence interval calculated in question 10 with the smaller sample size wider or smaller than the confidence interval in question 6?  Why?
 
 
 ### Take-home messages
 
-2.  In theory-based methods, we add and subtract a margin of error to the sample statistic.  The margin of error is calculated using a multiplier that corresponds to the level of confidence times the variability (standard error) of the statistic.
+1.  In theory-based methods, we add and subtract a margin of error to the sample statistic.  The margin of error is calculated using a multiplier that corresponds to the level of confidence times the variability (standard error) of the statistic.
 
+2. The confidence interval calculated using theory-based methods should be similar to the confidence interval found using simulation methods provided the success-failure condition is met.
+
+3.  A smaller sample size will increase the margin of error which results in a wided confidence interval. 
 
 
 \newpage

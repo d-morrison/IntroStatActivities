@@ -25,7 +25,7 @@ To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5
 In the last class, we found very strong evidence that the true proportion of infants who will choose the helper character is greater than 0.5. But what is the true proportion of infants who will choose the helper character? We will
 use this same study to estimate this parameter of interest.
 
-As a reminder: Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Watch this short video to see how the experiment was run:  Researchers were hoping to assess: Are infants able to notice and react to helpful or hindering behavior observed in others?  In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.
+As a reminder: Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Researchers were hoping to assess: Are infants able to notice and react to helpful or hindering behavior observed in others?  In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.
 
 A **point estimate** (our observed statistic) provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible *range* of values for the parameter. This plausible range of values for the population parameter is called an **interval estimate** or **confidence interval**. 
 
@@ -109,6 +109,7 @@ one_proportion_bootstrap_CI(sample_size = xx, # Sample size
 
 |    Explain how this indicates that the p-value provides strong evidence against the null.
 
+\newpage
 
 #### Effect of confidence level {-}
 

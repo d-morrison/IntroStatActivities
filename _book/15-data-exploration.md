@@ -1,10 +1,10 @@
-## Data Exploration: Concussions
+# Data Exploration: Concussions
 
 \setstretch{1}
 
-### Learning objectives
+## Learning objectives
 
-Read the abstract from this article. 
+1. Read the abstract from this article. 
 Petraglia AL, Plog BA, Dayawansa S, Chen M, Dashnaw ML, Czerniecka K, Walker CT, Viterise T, Hyrien O, Iliff JJ, Deane R, Nedergaard M, Huang JH. (2014). The spectrum of neurobehavioral consequences after repetitive
 mild traumatic brain injury: a novel mouse model of chronic traumatic encephalopathy."
 J Neurotrauma Jul 1; 31(13):1211-24.
@@ -16,10 +16,12 @@ Abstract
     There has been an increased focus on the neurological consequences of repetitive mild traumatic brain injury (TBI), particularly neurodegenerative syndromes, such as chronic traumatic encephalopathy (CTE); however, no animal model exists that captures the behavioral spectrum of this phenomenon. We sought to develop an animal model of CTE. Our novel model is a modification and fusion of two of the most popular models of TBI and allows for controlled closed-head impacts to unanesthetized mice. Two-hundred and eighty 12-week-old mice were divided into control, single mild TBI (mTBI), and repetitive mTBI groups. Repetitive mTBI mice received six concussive impacts daily for 7 days. Behavior was assessed at various time points. Neurological Severity Score (NSS) was computed and vestibulomotor function tested with the wire grip test (WGT). Cognitive function was assessed with the Morris water maze (MWM), anxiety/risk-taking behavior with the elevated plus maze, and depression-like behavior with the forced swim/tail suspension tests. Sleep electroencephalogram/electromyography studies were performed at 1 month. NSS was elevated, compared to controls, in both TBI groups and improved over time. Repetitive mTBI mice demonstrated transient vestibulomotor deficits on WGT. Repetitive mTBI mice also demonstrated deficits in MWM testing. Both mTBI groups demonstrated increased anxiety at 2 weeks, but repetitive mTBI mice developed increased risk-taking behaviors at 1 month that persist at 6 months. Repetitive mTBI mice exhibit depression-like behavior at 1 month.  Both groups demonstrate sleep disturbances. We describe the neurological consequenses of repetitive mTBI in a novel mouse model, which resemble several of the neuropsychiatric behaviors observed clinically in patients sustaining repetitive mild head injury.
     
 Be prepared to answer questions about
-(a) The questions researchers wanted to answer.
-(b) Who/what were the subjects?
-(c) Were treatments applied at random?
 
+(a) The questions researchers wanted to answer.
+
+(b) Who/what were the subjects?
+
+(c) Were treatments applied at random?
 
 
 2. And read this abstract:
@@ -48,8 +50,11 @@ CONCLUSIONS:
     A study of a small cohort of professional athletes, with a history of RBT and symptoms of chronic traumatic encephalopathy when compared with healthy controls using 2D L-COSY, showed elevations in brain glutamate/glutamine and choline as recorded previously for early traumatic brain injury. For the first time increases in phenylalanine and fucose are recorded in the brains of athletes with RBT. Larger studies utilizing the L-COSY method may over an in-life method of diagnosis and personalized approach for monitoring the acute effects of mild traumatic brain injury and the chronic effects of RBT.
     
 Be prepared to answer questions about
+
 (a) The questions researchers wanted to answer.
+
 (b) Who/what were the subjects?
+
 (c) Were treatments applied at random?
 
 3. Here's a quote from a news report in 2013:
@@ -62,11 +67,14 @@ Mielke and her colleagues did PET scans on 589 people who are participating in a
 http://www.npr.org/blogs/health/2013/12/27/257552665/concussions-may-increase-alzheimers-risk-but-only-for-some
 
 Be prepared to answer questions about
+
 (a) The questions researchers wanted to answer.
+
 (b) What were the subjects?
+
 (c) Were treatments applied at random?
 
-### Concussions in the News
+## Concussions in the News
 
 *  Chris Borland, age 24, retired from the 49ers after one year of NFL play, because he fears his brain might be permanently injured by concussions. 
 
@@ -77,7 +85,7 @@ a blow to the head.
 
 *  The Congressional Brain Injury Task Force is looking into the prevalence of brain trauma in troops deployed in recent wars and at how VA hospitals are treating the condition.
 
-### Applying What We've Learned
+## Applying What We've Learned
 
 Some have argued that blows to the head - for instance on the high school football field - are getting too much attention. They point out that of many kids taking similar hits, only a few show lasting decrease in cognitive abilities, and suggest that the effects are as much due to genetics as to the blow to the head.
 
@@ -95,26 +103,48 @@ timing of measurements.
 
 *  Is your study ethical in its treatment of subjects?
 
+\vspace{1in}
 
 2. Trade papers with another group and read their study over carefully. Address the bullet points above. Provide suggestions as to what might be improved.
 
 *  Subjects?
+
+\vspace{0.5in}
+
 *  Measurements?
+
+\vspace{0.5in}
+
 *  Observational? Experiment?
+
+\vspace{0.5in}
+
 *  Ethical issues?
+
+\vspace{0.5in}
 
 
 3. For today's class you read the abstract from this article.
 
 Petraglia AL, Plog BA, Dayawansa S, Chen M, Dashnaw ML, Czerniecka K, Walker CT, Viterise T, Hyrien O, Iliff JJ, Deane R, Nedergaard M, Huang JH. (2014). *The spectrum of neurobehavioral consequences after repetitive mild traumatic brain injury: a novel mouse model of chronic traumatic encephalopathy.*
 
-J Neurotrauma Jul 1; 31(13):1211-24. http://www.ncbi.
-nlm.nih.gov/pubmed/24766454
+J Neurotrauma Jul 1; 31(13):1211-24. http://www.ncbi.nlm.nih.gov/pubmed/24766454
 
 (a) What are the advantages of this study design?
+
+\vspace{0.5in}
+
 (b) Disadvantages?
+
+\vspace{0.5in}
+
 (c) Does the design allow us to make causal inferences? Explain.
+
+\vspace{0.5in}
+
 (d) Inferences to high school students? Explain.
+
+\vspace{0.5in}
 
 4. And you read this abstract:
 Lin, Ramadan, Stern, Box, Nowinski, Ross, Mountford. (2015). Changes in
@@ -125,18 +155,27 @@ using localized correlated spectroscopy." Alzheimers Research & Therapy.
 http://www.ncbi.nlm.nih.gov/pubmed/25780390
 
 (a) What are the advantages of this study design?
+
+\vspace{0.5in}
+
 (b) Disadvantages?
+
+\vspace{0.5in}
+
 (c) Does the design allow us to make causal inferences? Explain.
+
+\vspace{0.5in}
+
 (d) Inferences to high school students? Explain.
 
+\vspace{0.5in}
 
 5. Here's a quote from a news report in 2013:
-Mielke and her colleagues did PET scans on 589 people who are participating in
+"Mielke and her colleagues did PET scans on 589 people who are participating in
 a long-term study of aging and memory. That's a lot of people for a brain imaging
-study, which makes it more likely that the findings are accurate.
+study, which makes it more likely that the findings are accurate."
 
-http://www.npr.org/blogs/health/2013/12/27/257552665/concussions-may-increase-
-alzheimers-risk-but-only-for-some
+http://www.npr.org/blogs/health/2013/12/27/257552665/concussions-may-increase-alzheimers-risk-but-only-for-some
 
 Explain the last sentence. In what sense does a large sample increase accuracy?
 
@@ -155,6 +194,8 @@ that.
 the same for any test, and the null hypothesis is generally "No change", or "No
 effect".
 
-5.  What's not clear? Write your questions here.
+### Additional notes
+
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 \newpage

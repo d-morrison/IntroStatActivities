@@ -1,4 +1,4 @@
-## Week 2 - Activity 3: Sampling
+## Activity 2b: Sampling
 
 \setstretch{1}
 

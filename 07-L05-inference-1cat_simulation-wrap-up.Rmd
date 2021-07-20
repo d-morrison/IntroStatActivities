@@ -13,6 +13,7 @@
 
 * Interpret and evaluate a p-value for a simulation-based hypothesis test for a single proportion.
 
+### Comic Book Characters
 
 Among all comic book characters produced by the comic book publisher Marvel, 25\% are female. The comic book publisher DC Comics has taken note of this disparity in the number of female versus male characters, and is trying to diversify their offerings. In a random sample of recently published DC Comics books, 52 characters were included in the comics, of which 15 are female.
 
@@ -71,7 +72,7 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
           report_value = "proportion") # Reporting proportion or number of successes?
 ```
 
-7.  Interpret the p-value in context of the study.
+7.  Report the p-value.  Interpret the p-value in context of the study.
 
 \vspace{1in}
 
@@ -121,7 +122,7 @@ one_proportion_bootstrap_CI(sample_size = xx, # Sample size
 
 In the interpretation of a 95\% confidence interval, we say that we are 95\% confident that the parameter is within the confidence interval.  Why are we able to make that claim?  What does it mean to say "we are 95\% confident"?
 
-13.  Go to this website, [http://www.rossmanchance.com/ISIapplets.html](http://www.rossmanchance.com/ISIapplets.html) and choose 'Simulating Confidence Intervals'.  In the input on the left-hand side of the screen enter 0.25 for $\pi$, 52 for $n$, and 100 for 'Intervals'.  Click 'sample'.
+13.  Go to this website, [http://www.rossmanchance.com/ISIapplets.html](http://www.rossmanchance.com/ISIapplets.html) and choose 'Simulating Confidence Intervals'.  In the input on the left-hand side of the screen enter 0.25 for $\pi$, 52 for $n$, and 100 for 'Number of intervals'.  Click 'sample'.
 \vspace{1mm}
 
 a) In the graph on the bottom right, click on a green dot.  Write down the confidence interval for this sample given on the graph on the left.  Does this confidence interval contain the null value of 0.25?

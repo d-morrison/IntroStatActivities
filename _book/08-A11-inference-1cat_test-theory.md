@@ -29,7 +29,7 @@ In today's activity, we will introduce theory-based hypothesis testing for a sin
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-Week 7 activities covered simulation-based methods for hypothesis tests involving a single categorical variable. This activity covers theory-based methods for testing a single categorical variable.  
+Activity 7a covered simulation-based methods for hypothesis tests involving a single categorical variable. This activity covers theory-based methods for testing a single categorical variable.  
 
 Left-handedness is a trait that is found in about 10\% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers, we want to see if there is an over-prevalence of left-handed fighters.  In the sample of 500 male boxers, 81 were left-handed.
 
@@ -47,7 +47,7 @@ boxers %>% count(Stance)  # Count number in each Stance category
 #> 2 right-handed 419
 ```
 
-###Review of Summary Stats
+### Review of Summary Stats
 
 1.  Write out the parameter of interest for this study.  
 
@@ -57,7 +57,7 @@ boxers %>% count(Stance)  # Count number in each Stance category
 
 \vspace{0.3in}
 
-###Theory-based Methods
+### Theory-based Methods
 
 The sampling distribution of a single proportion --- how that proportion varies from sample to sample --- can be mathematically modeled using the normal distribution if certain conditions are met.
 
@@ -98,19 +98,18 @@ $$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$.
 
 \vspace{1in}
 
-\newpage
 
 The standardized statistic is used as a ruler to measure how far the sample statistic is from the null value.  Essentially, we are converting the sample proportion into a measure of standard errors to compare to the standard normal distribution.  
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.6\linewidth]{08-A11-inference-1cat_test-theory_files/figure-latex/simpleNormal-1} 
+{\centering \includegraphics[width=0.6\linewidth]{08-A11-inference-1cat_test-theory_files/figure-latex/simpleNormalcurve-1} 
 
 }
 
-\caption{A standard normal curve.}(\#fig:simpleNormal)
+\caption{A standard normal curve.}(\#fig:simpleNormalcurve)
 \end{figure}
-7.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in the percentages on the standard normal distribution displayed in Figure \@ref(fig:simpleNormal), and also mark the value of the standardized statistic calculated in question 6.
+7.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in the percentages on the standard normal distribution displayed in Figure \@ref(fig:simpleNormalcurve), and also mark the value of the standardized statistic calculated in question 6.
 
 \vspace{0.2in}
 
@@ -142,7 +141,7 @@ pnorm(xx, # Enter value of standardized statistic
 10.  Write a conclusion based on the value of the p-value.
 \vspace{0.8in}
 
-###Impacts on the P-value
+### Impacts on the P-value
 
 Suppose that we want to show that the true proportion of male boxers differs from that in the general population. 
 
@@ -206,11 +205,15 @@ c) Using a sample statistic closer to the null value.
 
 ### Take-home messages
 
-1.	In a hypothesis test we have two competing hypotheses, the null hypothesis and the alternative hypothesis.  The null hypothesis represents either a skeptical perspective or a perspective of no difference or no effect. The alternative hypothesis represents a new perspective such as the possibility that there has been a change or that there is a treatment effect in an experiment.  
+1.	Both simulation and theory-based methods can be used to find a p-value for a hypothesis test.  In order to use theory-based methods we need to check that both the independence and the success-failure conditions are met. 
 
-2.  The p-value is the probability of the observed statistic occurring or more extreme if the null hypothesis is true.  The farther in the tail of the distribution the observed statistic is, the smaller the probability is (smaller the p-value!).  The **smaller** the p-value, the **more** evidence the statistic provides **against** the null hypothesis. (Think carefully about why this makes sense!) 
+2.  The standardized statistic measures how many standard errors the statistic is from the null value. The larger the standardized statistic the more evidence there is against the null hypothesis.
 
-3.  A **decision** is a statement about strength of evidence against the null hypothesis: reject the null if the p-value is below a pre-set significance level, and fail to reject the null if the p-value is above a pre-set significance level. When writing a **conclusion** to a hypothesis test, on the other hand, we are answering the research question.  Thus, a conclusion is a statement about strength of evidence *for the alternative hypothesis*. Use the guidelines for the strength of evidence throughout this course to assess the evidence against the null hypothesis.  
+3.  The p-value for a two-sided test is approximately two times the value for a one-sided test.  A two-sided test provides less evidence against the null hypothesis.
+
+4.  The larger the sample size, the smaller the sample to sample variability.  This will result in a larger standardized statistic and more evidence against the null hypothesis.
+
+5.  The farther the statistic is from the null value, the larger the standardized statistic.  This will result in a smaller p-value and more evidence against the null hypothesis.
 
 
 ### Additional notes

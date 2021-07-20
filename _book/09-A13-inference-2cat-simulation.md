@@ -141,10 +141,10 @@ We will now simulate a **null distribution** of sample differences in proportion
 
 12.  First, let's think about how one simulation would be created on the null distribution using cards.  
 
-    How many cards would you need?
+\rgi How many cards would you need?
 \vspace{0.1in}
 
-    What would be written on each card?
+\rgi What would be written on each card?
 
 \vspace{0.5in}
 

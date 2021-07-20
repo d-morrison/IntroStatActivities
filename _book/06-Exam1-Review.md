@@ -20,45 +20,60 @@ Use the provided data set from the Islands to answer the following questions.  E
 
 5. Choose a single categorical variable. Use the Exam 1 Review `R` script file to find the appropriate summary statistic and graphical display of the data.
 
-    Summary Statistic:
+    Summary Statistic (with notation):
+    
+\vspace{0.3in}
     
     Type of Graph:
+
+\vspace{0.3in}
     
     Sketch of the graph:
     
-    \vspace{1.5in}
+\vspace{1.5in}
     
 6.  Choose two categorical variables.   Use the Exam 1 Review `R` script file to find the appropriate summary statistic and graphical display of the data.
 
-    Summary Statistic:
+    Summary Statistic (with notation):
+    
+\vspace{0.3in}
     
     Type of Graph:
+
+\vspace{0.3in}
     
     Sketch of the graph:
     
-    \vspace{1.5in}
+\vspace{1.5in}
 
 
 7. Choose one categorical variable and one quantitative variable.  Use the Exam 1 Review `R` script file to find the appropriate summary statistic and graphical display of the data.
 
-    Summary Statistic:
+    Summary Statistic (with notation):
+    
+\vspace{0.3in}
     
     Type of Graph:
+
+\vspace{0.3in}
     
     Sketch of the graph:
     
-    \vspace{1.5in}
+\vspace{1.5in}
     
     
 8.   Choose two quantitative variables.   Use the Exam 1 Review `R` script file to find the appropriate summary statistic and graphical display of the data.
 
-    Summary Statistic:
+    Summary Statistic (with notation):
+    
+\vspace{0.3in}
     
     Type of Graph:
+
+\vspace{0.3in}
     
     Sketch of the graph:
     
-    \vspace{1.5in}
-    
+\vspace{1.5in}
 
 \newpage

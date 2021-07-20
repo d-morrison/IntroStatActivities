@@ -1,4 +1,4 @@
-## Week 2 - Activity 2: Atrial Fibrillation (Study Design)
+## Activity 2a: Atrial Fibrillation (Study Design)
 
 \setstretch{1}
 

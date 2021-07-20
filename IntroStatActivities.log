@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.17)  19 JUL 2021 16:57
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.17)  20 JUL 2021 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -558,9 +558,6 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 
 LaTeX Warning: Label `fig:simpleNormal' multiply defined.
 
-
-LaTeX Warning: Label `fig:simpleNormal' multiply defined.
-
 )
 \openout1 = `IntroStatActivities.aux'.
 
@@ -970,11 +967,11 @@ ate University. []$[][][][][] [] [] [] [][][][][][][][][][][][][][][][][] [] []
 
 [1] (./IntroStatActivities.toc [2
 
-])
+] [3])
 \tf@toc=\write5
 \openout5 = `IntroStatActivities.toc'.
 
-[3] [1
+[4] [1
 
 ]
 Activity 1.
@@ -1021,7 +1018,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1660--1662
  []
 
 [30] [31] [32] [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1835--1836
+Underfull \hbox (badness 10000) in paragraph at lines 1873--1874
 
  []
 
@@ -1043,24 +1040,24 @@ File: images/IPEDS_Description.png Graphic file (type bmp)
 [57] [58] [59] [60] [61] [62]
 Activity 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3341--3343
+Underfull \hbox (badness 10000) in paragraph at lines 3392--3394
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3343--3345
+Underfull \hbox (badness 10000) in paragraph at lines 3394--3396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3345--3347
+Underfull \hbox (badness 10000) in paragraph at lines 3396--3398
 
  []
 
 [63
 
 ] [64] [65] [66] [67] [68]
-Underfull \hbox (badness 2197) in paragraph at lines 3702--3703
+Underfull \hbox (badness 2197) in paragraph at lines 3753--3754
 []\TU/lmr/m/n/10 If _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-, we predict the _-_-_-_-_-_-
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- to equal
  []
@@ -1084,16 +1081,16 @@ f>
 Activity 6.
 [86
 
-] [87]
+] [87] [88]
 Activity 7.
-[88
+[89
 
-] [89] [90] [91] [92]
+] [90] [91] [92] [93]
 File: 07-RG-1cat_simulation_files/figure-latex/normgt3-1.pdf Graphic file (type
  pdf)
 <use 07-RG-1cat_simulation_files/figure-latex/normgt3-1.pdf>
-[93] [94] [95] [96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [1
-07] [108] [109] [110] [111] [112]
+[94] [95] [96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [
+108] [109] [110] [111] [112]
 File: images/soe_gradient_grayscale.png Graphic file (type bmp)
 <images/soe_gradient_grayscale.png>
 [113] [114] [115] [116] [117]
@@ -1105,11 +1102,12 @@ df>
 Activity 8.
 [124
 
-] [125] [126] [127]
-File: 08-A11-inference-1cat_test-theory_files/figure-latex/simpleNormal-1.pdf G
-raphic file (type pdf)
-<use 08-A11-inference-1cat_test-theory_files/figure-latex/simpleNormal-1.pdf>
-[128] [129] [130] [131]
+] [125] [126]
+File: 08-A11-inference-1cat_test-theory_files/figure-latex/simpleNormalcurve-1.
+pdf Graphic file (type pdf)
+<use 08-A11-inference-1cat_test-theory_files/figure-latex/simpleNormalcurve-1.p
+df>
+[127] [128] [129] [130] [131]
 File: 08-A12-inference-1cat_CI-theory_files/figure-latex/simpleNormal-1.pdf Gra
 phic file (type pdf)
 <use 08-A12-inference-1cat_CI-theory_files/figure-latex/simpleNormal-1.pdf>
@@ -1118,24 +1116,19 @@ Activity 9.
 [136
 
 ] [137] [138] [139] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149]
-[150] [151]
-File: 09-A14-inference-2cat_CI-Simulation_files/figure-latex/unnamed-chunk-1-1.
-pdf Graphic file (type pdf)
-<use 09-A14-inference-2cat_CI-Simulation_files/figure-latex/unnamed-chunk-1-1.p
-df>
-[152] [153] [154] [155] [156] [157] [158] [159] [160]
+[150] [151] [152] [153] [154] [155] [156] [157] [158] [159]
 Activity 10.
-[161
+[160
 
-] [162] [163] [164] [165] [166] [167] [168] [169]
+] [161] [162] [163] [164] [165] [166] [167] [168]
 File: 10-A15-inference-2cat_test-theory_files/figure-latex/simpleNormal-1.pdf G
 raphic file (type pdf)
 <use 10-A15-inference-2cat_test-theory_files/figure-latex/simpleNormal-1.pdf>
-[170] [171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[169] [170] [171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181]
 Activity 11.
-[183
+[182
 
-] [184]
+] [183] [184]
 Activity 12.
 [185
 
@@ -1165,17 +1158,17 @@ le (type pdf)
 [226] [227] [228] [229]
 Activity 14.
 
-Underfull \hbox (badness 10000) in paragraph at lines 12417--12419
+Underfull \hbox (badness 10000) in paragraph at lines 12566--12568
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12419--12421
+Underfull \hbox (badness 10000) in paragraph at lines 12568--12570
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12421--12423
+Underfull \hbox (badness 10000) in paragraph at lines 12570--12572
 
  []
 
@@ -1186,7 +1179,7 @@ File: 14-A21-regression-simulation_files/figure-latex/unnamed-chunk-3-1.pdf Gra
 phic file (type pdf)
 <use 14-A21-regression-simulation_files/figure-latex/unnamed-chunk-3-1.pdf>
 [239] [240] [241]
-Underfull \hbox (badness 10000) in paragraph at lines 13042--13043
+Underfull \hbox (badness 10000) in paragraph at lines 13191--13192
 
  []
 
@@ -1195,12 +1188,14 @@ File: 14-A22-regression-theory_files/figure-latex/unnamed-chunk-3-1.pdf Graphic
  file (type pdf)
 <use 14-A22-regression-theory_files/figure-latex/unnamed-chunk-3-1.pdf>
 [249] [250] [251]
-Underfull \hbox (badness 10000) in paragraph at lines 13626--13627
+Underfull \hbox (badness 10000) in paragraph at lines 13775--13776
 
  []
 
 [252] [253] [254] [255] [256] [257]
-Overfull \hbox (9136.33987pt too wide) in paragraph at lines 13916--13916
+Activity 15.
+
+Overfull \hbox (9136.33987pt too wide) in paragraph at lines 14070--14070
 []\TU/lmtt/m/n/10 There has been an increased focus on the neurological consequ
 ences of repetitive mild traumatic brain injury (TBI), particularly neurodegene
 rative syndromes, such as chronic traumatic encephalopathy (CTE); however, no a
@@ -1228,7 +1223,7 @@ ining repetitive mild head injury.[]
  []
 
 
-Overfull \hbox (736.33987pt too wide) in paragraph at lines 13942--13942
+Overfull \hbox (736.33987pt too wide) in paragraph at lines 14103--14103
 []\TU/lmtt/m/n/10 The goal was to identify which neurochemicals differ in profe
 ssional athletes with repetitive brain trauma (RBT) when compared to healthy co
 ntrols using a relatively new technology, in vivo Localized COrrelated Spectros
@@ -1236,7 +1231,7 @@ copY (L-COSY).[]
  []
 
 
-Overfull \hbox (3293.08987pt too wide) in paragraph at lines 13948--13948
+Overfull \hbox (3293.08987pt too wide) in paragraph at lines 14109--14109
 []\TU/lmtt/m/n/10 To achieve this, L-COSY was used to examine five former profe
 ssional male athletes with 11 to 28 years of exposure to contact sports. Each a
 thlete who had had multiple symptomatic concussions and repetitive sub concussi
@@ -1250,7 +1245,7 @@ ith a 32 channel head coil.[]
  []
 
 
-Overfull \hbox (2894.08987pt too wide) in paragraph at lines 13954--13954
+Overfull \hbox (2894.08987pt too wide) in paragraph at lines 14115--14115
 []\TU/lmtt/m/n/10 The variation of the method was calculated by repeated examin
 ation of a healthy control and phantom and found to be 10% and 5%, respectively
 , or less. The L-COSY measured large and statistically significant differences 
@@ -1263,7 +1258,7 @@ ot statistically significance.[]
  []
 
 
-Overfull \hbox (2673.58987pt too wide) in paragraph at lines 13960--13960
+Overfull \hbox (2673.58987pt too wide) in paragraph at lines 14121--14121
 []\TU/lmtt/m/n/10 A study of a small cohort of professional athletes, with a hi
 story of RBT and symptoms of chronic traumatic encephalopathy when compared wit
 h healthy controls using 2D L-COSY, showed elevations in brain glutamate/glutam
@@ -1274,24 +1269,26 @@ life method of diagnosis and personalized approach for monitoring the acute eff
 ects of mild traumatic brain injury and the chronic effects of RBT.[] 
  []
 
+[258
 
-Underfull \hbox (badness 10000) in paragraph at lines 13980--13981
+]
+Underfull \hbox (badness 10000) in paragraph at lines 14148--14149
 [][]$[][][][] [] [] [] [][][] [] [][][] [] [][][] [] [][][][][] [] [][][][][][]
  [] [][][][] [] [][] [] [][] [] [][][][][][][][][] [] [][][][][][][][][][][] []
 [] [][][] [][] [][][][][][][][] [][] [][][][][][][][][][] [][] [][][][] [][] []
 [][] [][] [][][][] [][]
  []
 
-[258] [259]
-Overfull \hbox (32.97987pt too wide) in paragraph at lines 14113--14115
+[259] [260]
+Underfull \hbox (badness 10000) in paragraph at lines 14361--14362
 [][]$[][][][] [] [] [] [][][] [] [][][] [] [][][] [] [][][][][] [] [][][][][][]
  [] [][][][] [] [][] [] [][] [] [][][][][][][][][] [] [][][][][][][][][][][] []
-[] [][][] [][] [][][][][][][][] [][]$[] \TU/lmr/m/n/10 alzheimers-risk-but-only
--for-some 
+[] [][][] [][] [][][][][][][][] [][] [][][][][][][][][][] [][] [][][][] [][] []
+[][] [][] [][][][] [][]
  []
 
-[260] [261]
-Underfull \hbox (badness 10000) in paragraph at lines 14169--14171
+[261] [262] [263] [264] [265] [266]
+Underfull \hbox (badness 10000) in paragraph at lines 14627--14629
 []$[][][][][] [] [] [] [][][] [] [][][] [] [][][] [] [][][][][][][] [] [][][][]
 [] [][] [][][][][][] [][] [][] [][] [][][][][][][][][][] [] [][] [][] [][][] []
 [] [][][] [][] [][][][][][][][][] [][] [][][][] [][] [][][][][][] [][] [][][][]
@@ -1299,25 +1296,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 14169--14171
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 14175--14177
+Underfull \hbox (badness 1331) in paragraph at lines 14633--14635
 [][]\TU/lmr/m/n/10 Ramachandran, V. 2007. “3 Clues to Understanding Your Brain.
 ” []$[][][][][] [] [] [] [][][] [] [][][] [] [][][] [] [][][][][] [] [][] []
  []
 
-[262] (./IntroStatActivities.aux)
+[267] (./IntroStatActivities.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `IntroStatActivities.out' has not changed.
-(rerunfilecheck)             Checksum: E752BAB8EAE8A013CCB2558C698ED47E;18442.
+(rerunfilecheck)             Checksum: 9E4126ED606186B54CABBEF10165C7B3;18843.
  ) 
 Here is how much of TeX's memory you used:
  18119 strings out of 478476
- 337428 string characters out of 5857624
- 827820 words of memory out of 5000000
+ 336818 string characters out of 5857624
+ 827637 words of memory out of 5000000
  38131 multiletter control sequences out of 15000+600000
  409953 words of font info for 89 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 87i,9n,120p,1859b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,9n,120p,1859b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on IntroStatActivities.pdf (266 pages).
+Output written on IntroStatActivities.pdf (272 pages).

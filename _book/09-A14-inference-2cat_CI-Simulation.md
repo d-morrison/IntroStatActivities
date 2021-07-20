@@ -41,7 +41,17 @@ Researchers at the Princeton University wanted to investigate influences on beha
 Use the following code to create a segmented bar plot of those who helped others for those in the hurry condition and those in the no hurry condition.
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{09-A14-inference-2cat_CI-Simulation_files/figure-latex/unnamed-chunk-1-1} \end{center}
+```r
+samaritan <- read.csv("data/goodsam.csv")
+samaritan %>%
+        ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
+  geom_bar(stat = "count", position = "fill") +  # Tell it to make a stacked bar plot
+  labs(title = "Title"
+       # Make sure to title your plot 
+       x = "Condition",   # Label the x axis
+       y = "") +  # Remove y axis label
+    scale_fill_grey()  # Make figure black and white
+```
 
 2.  Sketch the segmented bar plot created here.  
 
@@ -51,7 +61,7 @@ Use the following code to create a segmented bar plot of those who helped others
 
 \vspace{1in}
 
-4.  Write out the conclusion you made in Activity 14.
+4.  Write out the conclusion you made in Activity 9a.
 
 \vspace{0.8in}
 
@@ -158,7 +168,7 @@ Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the 
 
 16.  Write this error in context of the problem.
 
-**Power questions?**
+\vspace{0.5in}
 
 ### Take-home messages
 
@@ -168,9 +178,7 @@ Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the 
 
 3.  In addition to estimating the difference in proportions for two categorical variables we can also find the relative risk, the ratio of conditional proportions.  
 
-4.  Increasing sample size will result in less sample-to-sample variability in statistics, which will result in a smaller standard error, and thus a narrower confidence interval.  
-
-5. To create one simulated sample on the bootstrap distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the outcomes for the original responses.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in the proportion of successes. 
+4. To create one simulated sample on the bootstrap distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the outcomes for the original responses.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in the proportion of successes. 
 
 
 ### Additional notes
