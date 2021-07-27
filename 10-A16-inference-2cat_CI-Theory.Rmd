@@ -1,4 +1,4 @@
-## Week 10 - Activity 16:  Winter Sports Helmet Use and Head Injuries --- Estimation using Theory-based methods
+## Week 10b:  Winter Sports Helmet Use and Head Injuries --- Estimation using Theory-based methods
 
 \setstretch{1}
 

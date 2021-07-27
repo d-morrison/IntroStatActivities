@@ -141,13 +141,13 @@ myopia %>% # Data set piped into...
 
 \vspace{0.8in}
 
-The following `R` code gives the counts for each combination of levels of variables.
+Fill in the name of the explanatory variable and the response variable in lines **...** in the `R` script file to get the counts for each combination of levels of variables.
 
 ```{r, echo=TRUE, warning=FALSE, message=FALSE, collapse=FALSE}
-myopia %>% group_by(Sight) %>% count(Light)
+myopia %>% group_by(response) %>% count(explanatory)
 ```
 
-10.  Fill in the following table with the values from the `R` output above.
+10.  Fill in the following table with the values from the `R` output.
 
 |             | Full Light | Nightlight | No Light | Total |
 |-------------|------------|------------|----------|-------|

@@ -3,7 +3,19 @@
 \setstretch{1}
 
 ### Learning objectives
-???
+
+* Identify and create appropriate summary statistics and plots
+  given a data set with two quantitative variables.
+  
+* Use scatterplots to assess the relationship between two quantitative variables.
+
+* Find the estimated line of regression using summary statistics and `R` linear model (`lm()`) output.
+
+* Interpret the slope coefficient in context of the problem.
+
+* Calculate and interpret $R^2$, the coefficient of determination, in context of the problem.
+
+* Find the correlation coefficient from `R` output or from $R^2$ and the sign of the slope.
 
 
 The Palmer Station Long Term Ecological Research Program sampled three penguin species on islands in the Palmer Archipelago in Antarctica. Researchers took various body measurements on the penguins, including flipper length and body mass. The researchers were interested in the relationship between flipper length and body mass and wondered if flipper length could be used to accurately predict the body mass of these three penguin species. 
@@ -97,3 +109,5 @@ penguins %>%
 ```
 
 10. Does adding the variable species affect the relationship between body mass and flipper length? Explain. 
+
+\vspace{1in}
