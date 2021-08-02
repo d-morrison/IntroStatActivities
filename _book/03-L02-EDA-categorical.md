@@ -27,7 +27,7 @@ To review these concepts, see Sections 2.1 and 2.2 in the textbook.
 
 For today's lab we will focus on using RStudio and the provided `R` script file to create graphs and calculate proportions from each group.  
 
-Download and open the provided `R` script file for week 3 lab to answer the following questions.  
+Download and open the provided `R` script file for week 3 lab to answer the following questions.  **Remember bolded questions will be turned in on Gradescope for your group.**
 
 #### Nightlight use and myopia
 In a study reported in Nature (1999, Vol. 399, pp. 113-114), a survey of 479 children found that those who had slept with a nightlight or in a fully lit room before the age of 2 had a higher incidence of nearsightedness (myopia) later in childhood.
@@ -45,7 +45,7 @@ An important part of understanding data is to create visual pictures of what the
 Throughout these activities, we will often include the `R` code
 you would use in order to produce output or plots. These
 "code chunks" appear in gray. In the code chunk below, we
-demonstrate how to read the data set into `R` using the `read.csv()` function.  These lines of code read in the data set and name the data set `myopia`.  The `library()` function tells `R` which packages will be needed.
+demonstrate how to read the data set into `R` using the `read.csv()` function.  These lines of code read in the data set and name the data set `myopia`.  The `library()` function tells `R` which packages will be needed.  Highlight and run line 5 in the `R` script file to laod the data.
 
 
 ```r
@@ -55,8 +55,7 @@ myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSigh
 
 #### Displaying a single categorical variable {-}
 
-If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight`, for xx into the `ggplot` code below to create a bar plot.  Highlight and run lines **..**.  Note: this is a **frequency** bar plot plotting counts (the number of children in each level of sight is displayed on the $y$-axis).  
-
+If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight`, for xx into the `ggplot` code at line 9 in the `R` script file.  Highlight and run lines 8 - 14 to create the plot.   Note: this is a **frequency** bar plot plotting counts (the number of children in each level of sight is displayed on the $y$-axis).  
 
 
 ```r
@@ -72,12 +71,11 @@ ggplot(aes(y = xx)) +   # This specifies the variable
 
 \vspace{2in}
 
-3. Using the bar chart created, estimate how many children have some level of myopia.
+**3. Using the bar chart created, estimate how many children have some level of myopia.**
 
 \vspace{0.3in}
 
-We could also choose to display the data as a proportion in a **relative frequency** bar plot. To find the relative frequency, divide the count in each level of myopia by the sample size.  These are sample proportions. Notice that in this code we told `R` to create a bar plot with proportions.  Notice
-that in this code we told R to create a bar plot with proportions.
+We could also choose to display the data as a proportion in a **relative frequency** bar plot. To find the relative frequency, divide the count in each level of myopia by the sample size.  These are sample proportions. Notice that in this code we told `R` to create a bar plot with proportions.  
 
 
 ```r
@@ -101,7 +99,7 @@ ggplot(aes(x = Sight)) +   # This specifies the variable
 
 #### Displaying two categorical variables {-}
 
-To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` (explanatory variable) for xx and the variable name, `Sight` (response variable) for yy in the 'R' script file in line **..**. Highlight and run lines **....**. 
+To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` (explanatory variable) for xx and the variable name, `Sight` (response variable) for yy in the 'R' script file in line 26. Highlight and run lines 25 - 32.
 
 
 ```r
@@ -115,7 +113,7 @@ ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
     scale_fill_grey()  # Make figure black and white
 ```
 
-5. Sketch the segmented bar plot created here. Be sure to label the axes.
+5. Sketch the segmented bar plot created here. Be sure to label the axes.  **Copy and upload the segmented bar plot to Gradescope.**
 
 \vspace{2in}
 
@@ -123,11 +121,11 @@ ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
 
 \vspace{0.5in}
 
-7. Which level of light has the highest proportion of `No Myopia`?
+**7. Which level of light has the highest proportion of `No Myopia`?**
 
 \vspace{0.5in}
 
-We could also plot the data using a mosaic plot.  Fill in the variable name, `Light` (explanatory variable) for xx and the variable name, `Sight` (response variable) for yy in lines **..** in the `R` script file. Highlight and run lines **....**
+We could also plot the data using a mosaic plot.  Fill in the variable name, `Light` (explanatory variable) for xx and the variable name, `Sight` (response variable) for yy in line 37 in the `R` script file. Highlight and run lines 35 - 42.
 
 
 ```r
@@ -141,7 +139,7 @@ myopia %>% # Data set piped into...
       scale_fill_grey()  # Make figure black and white
 ```
 
-8.  What is similar and what is different between the segmented bar chart and the mosaic bar chart.
+**8.  What is similar and what is different between the segmented bar chart and the mosaic bar chart.**
 
 \vspace{1in}
 
@@ -149,28 +147,14 @@ myopia %>% # Data set piped into...
 
 \vspace{0.8in}
 
-The following `R` code gives the counts for each combination of levels of variables.
+Fill in the name of the explanatory variable and the response variable in line 45 in the `R` script file, highlight and run line 45 to get the counts for each combination of levels of variables. 
 
 
 ```r
-myopia %>% group_by(Sight) %>% count(Light)
+myopia %>% group_by(response) %>% count(explanatory)
 ```
 
-```
-#> # A tibble: 9 x 3
-#> # Groups:   Sight [3]
-#>   Sight       Light          n
-#>   <chr>       <chr>      <int>
-#> 1 High Myopia Full Light     5
-#> 2 High Myopia Nightlight     9
-#> 3 High Myopia No Light       2
-#> 4 Myopia      Full Light    42
-#> 5 Myopia      Nightlight    65
-#> 6 Myopia      No Light      15
-#> # ... with 3 more rows
-```
-
-10.  Fill in the following table with the values from the `R` output above.
+10.  Fill in the following table with the values from the `R` output.
 
 |             | Full Light | Nightlight | No Light | Total |
 |-------------|------------|------------|----------|-------|
@@ -193,7 +177,7 @@ myopia %>% group_by(Sight) %>% count(Light)
 \vspace{0.3in}
 
 
-14.  Calculate the difference in proportion of children with high myopia for those that slept with full light minus those who slept with no light.  Give the appropriate notation.  Label group 1 as full light and group 2 as no light.
+**14.  Calculate the difference in proportion of children with high myopia for those that slept with full light minus those who slept with no light.  Give the appropriate notation.  Label group 1 as full light and group 2 as no light.**
 
 \vspace{0.3in}
 

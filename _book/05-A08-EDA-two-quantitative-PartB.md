@@ -1,4 +1,4 @@
-## Activity 5b:  Movie Profits
+## Activity 5b:  Movie Profits - Correlation and Coefficient of Determination
 
 \setstretch{1}
 
@@ -7,19 +7,17 @@
 * Identify and create appropriate summary statistics and plots
   given a data set with two quantitative variables.
   
-* Find the estimated line of regression using summary statistics and `R` linear model (`lm()`) output.
+* Calculate and interpret $R^2$, the coefficient of determination, in context of the problem.
 
-* Interpret the slope coefficient in context of the problem.
+* Find the correlation coefficient from `R` output or from $R^2$ and the sign of the slope.
 
 ### Terminology review
 
 In this week's activity, we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are:
 
-* Least-squares line of regression
+* Correlation ($r$ or $R$)
 
-* Slope and $y$-intercept
-
-* Residuals
+* Coefficient of determination ($r$-squared or $R^2$)
 
 To review these concepts, see Chapter 3 in the textbook.  
 
@@ -39,80 +37,76 @@ We will revisit the movie data set collected on Movies released in 2016 to furth
 
 
 
+#### Correlation  {-}
 
-```r
-movies %>% # Data set pipes into...
-ggplot(aes(x = budget_mil, y = revenue_mil))+  # Specify variables
-  geom_point() +  # Add scatterplot of points
-  labs(x = "Budget in Millions ($)",  # Label x-axis
-       y = "Revenue in Millions ($)",  # Label y-axis
-       title = "Revenue vs. Budget") + # Be sure to tile your plots
-  geom_smooth(method = "lm", se = FALSE)  # Add regression line
-```
+Correlation measures the strength and the direction of the linear relationship between two quantitative variables.  The closer the value of correlation to $+1$ or $-1$, the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  
 
-#### Slope {-}
-
-The linear model function in `R` (`lm()`) gives us the summary for the least squares regression line.  The estimate for `(Intercept)` is the $y$-intercept for the line of least squares, and the estimate for `budget_mil` (the $x$-variable name) is the value of $b_1$, the slope.
 
 
 ```r
-# Fit linear model: y ~ x
-revenueLM <- lm(revenue_mil ~ budget_mil, data=movies)
-summary(revenueLM)$coefficients # Display coefficient summary
+movies %>%  # Data set pipes into
+  select(c("budget_mil", "revenue_mil", 
+           "duration", "imdb_score", 
+           "movie_facebook_likes")) %>%
+  cor(use="pairwise.complete.obs") %>%
+  round(3)
 ```
 
 ```
-#>              Estimate Std. Error  t value     Pr(>|t|)
-#> (Intercept) 9.1693054  9.0175499 1.016829 3.119606e-01
-#> budget_mil  0.9460001  0.1056786 8.951670 4.339561e-14
+#>                      budget_mil revenue_mil duration imdb_score
+#> budget_mil                1.000       0.686    0.463      0.292
+#> revenue_mil               0.686       1.000    0.227      0.398
+#> duration                  0.463       0.227    1.000      0.261
+#> imdb_score                0.292       0.398    0.261      1.000
+#> movie_facebook_likes      0.678       0.723    0.438      0.309
+#>                      movie_facebook_likes
+#> budget_mil                          0.678
+#> revenue_mil                         0.723
+#> duration                            0.438
+#> imdb_score                          0.309
+#> movie_facebook_likes                1.000
 ```
 
-1.  Write out the least squares line using the summary statistics provided above in context of the problem.
+1.  Using the output above, which two variables have the *strongest* correlation? What is the value of this correlation?
 
-\vspace{.5in}
+\vspace{0.5in}
 
-You may remember from middle and high school that slope $=\frac{\mbox{rise}}{\mbox{run}}$.  
-
-Using $b_1$ to represent slope, we can write that as the fraction $\frac{b_1}{1}$. 
-
-Therefore, the slope predicts how much the line will *rise* for each *run* of +1. In other words, as the $x$ variable increases by 1 unit, the $y$ variable is predicted to change (increase/decrease) by the value of slope.
-
-
-2. Interpret the value of slope in context of the problem.
-
-\vspace{.8in}
-
-3. Using the least squares line from question 1, predict the revenue for a movie with a budget of 165 $MM.
-
-\vspace{.6in}
-
-4.  Predict the revenue for a movie with a budget of 500 $MM.  
-
-\vspace{0.8in}
-
-5. The prediction in Q4 is an example of what?
+2.  What is the value of correlation between budget and revenue?
 
 \vspace{0.3in}
 
-#### Residuals {-}
+3.  Based on the value of correlation found in question 2, what would the sign of the slope be? Positive or negative?  Explain.
 
-The model we are using assumes the relationship between the two variables follows a straight line. The residuals are the errors, or the variability in the response that hasn't been modeled by the line (model).
+\vspace{0.5in}
 
-\begin{center}
-Data = Model + Residual
+4.  Does your answer to question 3 match the direction you choose in question 4 in Activity 5a?
 
-$\implies$ Residual = Data $-$ Model
+\vspace{0.3in}
 
-$e_i=y_i-\hat{y}_i$
-\end{center}
+5.  Explain why the correlation values on the diagonal are equal to 1.
 
-6.  The movie *Independence Day: Resurgence* had a budget of 165 \$MM and revenue of 102.315 \$MM.  Find the residual for this movie.
+\vspace{0.8in}
 
-\vspace{.8in}
+#### Coefficient of determination (squared correlation) {-}
 
-7.  Did the line of regression overestimate or underestimate the revenue for this movie? 
+Another summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. The value of $r^2$ (a value between 0 and 1) represents the **proportion of variation in the response that is explained by the least squares line with the explanatory variable**.  There are two ways to calculate the coefficient of determination: 
 
-\vspace{.2in}
+|    Square the correlation coefficient:  $r^2 = (r)^2$
+
+|    Use the variances of the response and the residuals:  $r^2 = \dfrac{s_y^2 - s_{RES}^2}{s_y^2} = \dfrac{SST - SSE}{SST}$
+
+
+6.  Use the correlation, $r$, found in question 2 of the activity, to calculate the coefficient of determination between budget and revenue, $r^2$.
+
+\vspace{.4in}
+
+7.  The variance of the response variable, revenue in \$MM, is about $s_{revenue}^2 = 8024.261$ \$MM$^2$  and the variability in the residuals is about $s_{RES}^2 = 4244.832$ \$MM$^2$.  Use these values to calculate the coefficient of determination.  Verify that your answers to 6 and 7 are the same.
+
+\vspace{1in}
+
+8.  Write a sentence interpreting the coefficient of determination in context of the problem.
+
+\vspace{1in}
 
 #### Multivariable plots {-}
 What if we wanted to see if the relationship between movie budget and revenue differs if we add another variable into the picture?  The following plot visualizes three variables, creating a **multivariable** plot. 
@@ -133,13 +127,13 @@ movies %>% # Data set pipes into...
 
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{05-A08-EDA-two-quantitative-PartB_files/figure-latex/unnamed-chunk-4-1} \end{center}
+\begin{center}\includegraphics[width=0.7\linewidth]{05-A08-EDA-two-quantitative-PartB_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
-8.  Identify the three variables plotted in this graph.
+9.  Identify the three variables plotted in this graph.
 
 \vspace{0.5in}
 
-9. Does the *relationship* between movie budget and revenue differ among the different content ratings?  Explain.
+10. Does the *relationship* between movie budget and revenue differ among the different content ratings?  Explain.
 
 \vspace{1in}
 
@@ -159,22 +153,20 @@ summary(revenueLM)$coefficients # Display coefficient summary
 #> duration    -0.6054657  0.4505494 -1.343839 1.824165e-01
 ```
 
-10. Use the provided `R` output to write the linear regression model including both variables.  *Hint*: The estimated line of regression is of the form:
+11. Use the provided `R` output to write the linear regression model including both variables.  *Hint*: The estimated line of regression is of the form:
 
 $$\widehat{\text{revenue}} = b_0 + b_1\times budget + b_2\times duration.$$
 
 \vspace{1in}
 
-11. Using the fitted regression model above, predict the revenue for a movie in 2016 with a budget of 180 $MM and duration of 100 minutes.
-
+12. Using the fitted regression model above, predict the revenue for a movie in 2016 with a budget of 180 $MM and duration of 100 minutes.
 
 ### Take-home messages
 
-1.	Two quantitative variables are graphically displayed in a scatterplot.  The explanatory variable is on the $x$-axis and the response variable is on the $y$-axis.  When describing the relationship between two quantitative variables we look at the form (linear or non-linear), direction (positive or negative), strength, and for the presence of outliers. 
+1. The sign of correlation and the sign of the slope will always be the same.  The closer the value of correlation is to $-1$ or $+1$, the stronger the relationship between the explanatory and the response variable.  
 
-2.  There are three summary statistics used to summarize the relationship between two quantitative variables: correlation ($r$), slope of the regression line ($b_1$), and the coefficient of determination ($r^2$).  
+2.  The coefficient of determination multiplied by 100 ($r^2 \times 100$) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100%, the stronger the relationship.
 
-3.  We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable (reflect on why this is true.).  This is called **extrapolation**. 
 
 ### Additional notes
 

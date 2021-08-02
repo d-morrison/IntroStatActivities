@@ -1,4 +1,4 @@
-## Activity 5a:  Movie Profits
+## Activity 5a:  Movie Profits - Linear Regression
 
 \setstretch{1}
 
@@ -13,21 +13,11 @@
 
 * Interpret the slope coefficient in context of the problem.
 
-* Calculate and interpret $R^2$, the coefficient of determination, in context of the problem.
-
-* Find the correlation coefficient from `R` output or from $R^2$ and the sign of the slope.
-
-
-
 ### Terminology review
 
 In this week's activity, we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are:
 
 * Scatterplot
-
-* Correlation ($r$ or $R$)
-
-* Coefficient of determination ($r$-squared or $R^2$)
 
 * Least-squares line of regression
 
@@ -52,9 +42,7 @@ We will revisit the data set used last week collected on Movies released in 2016
 | `movie_facebook_likes` | Number of likes a movie receives on Facebook |
 
 
-#### Vocabulary review. Complete Q1--Q5 before class.{-}
-
-Note: You will need to use the provided `R` script file for Activity 5 to complete question 3.
+#### Vocabulary review. {-}
 
 
 
@@ -107,76 +95,69 @@ ggplot(aes(x = xx, y = yy))+  # Specify variables
 
 \newpage 
 
-#### Correlation  {-}
+#### Slope {-}
 
-Correlation measures the strength and the direction of the linear relationship between two quantitative variables.  The closer the value of correlation to $+1$ or $-1$, the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  
-
+The linear model function in `R` (`lm()`) gives us the summary for the least squares regression line.  The estimate for `(Intercept)` is the $y$-intercept for the line of least squares, and the estimate for `budget_mil` (the $x$-variable name) is the value of $b_1$, the slope.
 
 
 ```r
-movies %>%  # Data set pipes into
-  select(c("budget_mil", "revenue_mil", 
-           "duration", "imdb_score", 
-           "movie_facebook_likes")) %>%
-  cor(use="pairwise.complete.obs") %>%
-  round(3)
+# Fit linear model: y ~ x
+revenueLM <- lm(revenue_mil ~ budget_mil, data=movies)
+summary(revenueLM)$coefficients # Display coefficient summary
 ```
 
 ```
-#>                      budget_mil revenue_mil duration imdb_score
-#> budget_mil                1.000       0.686    0.463      0.292
-#> revenue_mil               0.686       1.000    0.227      0.398
-#> duration                  0.463       0.227    1.000      0.261
-#> imdb_score                0.292       0.398    0.261      1.000
-#> movie_facebook_likes      0.678       0.723    0.438      0.309
-#>                      movie_facebook_likes
-#> budget_mil                          0.678
-#> revenue_mil                         0.723
-#> duration                            0.438
-#> imdb_score                          0.309
-#> movie_facebook_likes                1.000
+#>              Estimate Std. Error  t value     Pr(>|t|)
+#> (Intercept) 9.1693054  9.0175499 1.016829 3.119606e-01
+#> budget_mil  0.9460001  0.1056786 8.951670 4.339561e-14
 ```
 
-6.  Using the output above, which two variables have the *strongest* correlation? What is the value of this correlation?
+6.  Write out the least squares line using the summary statistics provided above in context of the problem.
 
-\vspace{0.5in}
+\vspace{.5in}
 
-7.  What is the value of correlation between budget and revenue?
+You may remember from middle and high school that slope $=\frac{\mbox{rise}}{\mbox{run}}$.  
 
-\vspace{0.3in}
+Using $b_1$ to represent slope, we can write that as the fraction $\frac{b_1}{1}$. 
 
-8.  Based on the value of correlation found in question 7, what would the sign of the slope be? Positive or negative?  Explain.
+Therefore, the slope predicts how much the line will *rise* for each *run* of +1. In other words, as the $x$ variable increases by 1 unit, the $y$ variable is predicted to change (increase/decrease) by the value of slope.
 
-\vspace{0.5in}
 
-9.  Does your answer to question 8 match the direction you choose in question 4?
+7. Interpret the value of slope in context of the problem.
 
-\vspace{0.3in}
+\vspace{.8in}
 
-10.  Explain why the correlation values on the diagonal are equal to 1.
+8. Using the least squares line from question 6, predict the revenue for a movie with a budget of 165 $MM.
+
+\vspace{.6in}
+
+9.  Predict the revenue for a movie with a budget of 500 $MM.  
 
 \vspace{0.8in}
 
-#### Coefficient of determination (squared correlation) {-}
+10. The prediction in Q9 is an example of what?
 
-Another summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. The value of $r^2$ (a value between 0 and 1) represents the **proportion of variation in the response that is explained by the least squares line with the explanatory variable**.  There are two ways to calculate the coefficient of determination: 
+\vspace{0.3in}
 
-|    Square the correlation coefficient:  $r^2 = (r)^2$
+#### Residuals {-}
 
-|    Use the variances of the response and the residuals:  $r^2 = \dfrac{s_y^2 - s_{RES}^2}{s_y^2} = \dfrac{SST - SSE}{SST}$
+The model we are using assumes the relationship between the two variables follows a straight line. The residuals are the errors, or the variability in the response that hasn't been modeled by the line (model).
 
+\begin{center}
+Data = Model + Residual
 
-11.  Use the correlation, $r$, found in question 7 of the in-class activity, to calculate the coefficient of determination between budget and revenue, $r^2$.
+$\implies$ Residual = Data $-$ Model
 
-\vspace{.4in}
+$e_i=y_i-\hat{y}_i$
+\end{center}
 
-12.  The variance of the response variable, revenue in \$MM, is about $s_{revenue}^2 = 8024.261$ \$MM$^2$  and the variability in the residuals is about $s_{RES}^2 = 4244.832$ \$MM$^2$.  Use these values to calculate the coefficient of determination.  Verify that your answers to 1 and 2 are the same.
+11.  The movie *Independence Day: Resurgence* had a budget of 165 \$MM and revenue of 102.315 \$MM.  Find the residual for this movie.
 
-\vspace{1in}
+\vspace{.8in}
 
-13.  Write a sentence interpreting the coefficient of determination in context of the problem.
+12.  Did the line of regression overestimate or underestimate the revenue for this movie? 
 
-\vspace{1in}
+\vspace{.2in}
 
 ### Take-home messages
 
@@ -184,9 +165,7 @@ Another summary measure used to explain the linear relationship between two quan
 
 2.  There are three summary statistics used to summarize the relationship between two quantitative variables: correlation ($r$), slope of the regression line ($b_1$), and the coefficient of determination ($r^2$).  
 
-3. The sign of correlation and the sign of the slope will always be the same.  The closer the value of correlation is to $-1$ or $+1$, the stronger the relationship between the explanatory and the response variable.  
-
-4.  The coefficient of determination multiplied by 100 ($r^2 \times 100$) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100%, the stronger the relationship.
+3.  We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable (reflect on why this is true.).  This is called **extrapolation**. 
 
 \newpage
 

@@ -42,7 +42,7 @@ b. What is the probability that a randomly selected student is both a a senior a
 
 \vspace{0.5in}
 
-c. What is the probability that a randomly selected student is not a senior given they are a liberal arts major.  USe appropriate probability notation.
+c. What is the probability that a randomly selected student is not a senior given they are a liberal arts major.  Use appropriate probability notation.
 
 \vspace{0.5in}
 

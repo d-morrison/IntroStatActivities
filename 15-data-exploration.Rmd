@@ -2,7 +2,7 @@
 
 \setstretch{1}
 
-## Learning objectives
+### Learning objectives
 
 1. Read research articles and 
 
@@ -58,7 +58,7 @@ Mielke and her colleagues did PET scans on 589 people who are participating in a
 
 http://www.npr.org/blogs/health/2013/12/27/257552665/concussions-may-increase-alzheimers-risk-but-only-for-some
 
-## Concussions in the News
+### Concussions in the News
 
 *  Chris Borland, age 24, retired from the 49ers after one year of NFL play, because he fears his brain might be permanently injured by concussions. 
 
@@ -69,7 +69,7 @@ a blow to the head.
 
 *  The Congressional Brain Injury Task Force is looking into the prevalence of brain trauma in troops deployed in recent wars and at how VA hospitals are treating the condition.
 
-## Applying What We've Learned
+### Applying What We've Learned
 
 Some have argued that blows to the head - for instance on the high school football field - are getting too much attention. They point out that of many kids taking similar hits, only a few show lasting decrease in cognitive abilities, and suggest that the effects are as much due to genetics as to the blow to the head.
 
@@ -159,7 +159,7 @@ Explain the last sentence. In what sense does a large sample increase accuracy?
 
 \vspace{1in}
 
-#### Take Home Messages
+### Take Home Messages
 
 1. In reading a research article, carefully read what they say about selection of subjects (or units of study) so we know how far we can extend our inference.
 

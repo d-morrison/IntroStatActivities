@@ -3,22 +3,35 @@
 \setstretch{1}
 
 ### Learning objectives
-???
+
+* Identify and create appropriate summary statistics and plots
+  given a data set with two quantitative variables.
+  
+* Use scatterplots to assess the relationship between two quantitative variables.
+
+* Find the estimated line of regression using summary statistics and `R` linear model (`lm()`) output.
+
+* Interpret the slope coefficient in context of the problem.
+
+* Calculate and interpret $R^2$, the coefficient of determination, in context of the problem.
+
+* Find the correlation coefficient from `R` output or from $R^2$ and the sign of the slope.
 
 
 The Palmer Station Long Term Ecological Research Program sampled three penguin species on islands in the Palmer Archipelago in Antarctica. Researchers took various body measurements on the penguins, including flipper length and body mass. The researchers were interested in the relationship between flipper length and body mass and wondered if flipper length could be used to accurately predict the body mass of these three penguin species. 
 
-Upload and import the `penguins` csv file. Using the following `R` code chunk create a scatterplot of the flipper length and body mass.  Make sure to give your plot a descriptive title.
+Upload and import the `penguins` csv file. Using the following `R` code chunk create a scatterplot of the flipper length and body mass.  Make sure to give your plot a descriptive title.  Highlight and run lines 1 -- 11.  **Upload a copy of your scatterplot to Gradescope.**
 
 
+```r
+penguins %>%
+  ggplot(aes(x = flipper_length_mm, y = body_mass_g))+  # Specify variables
+  geom_point() +  # Add scatterplot of points
+  labs(x = "flipper length (mm)",  # Label x-axis
+       y = "body mass (g)",  # Label y-axis
+       title = "TITLE") + # Be sure to title your plots
+  geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
-#> Warning: Removed 2 rows containing non-finite values (stat_smooth).
-#> Warning: Removed 2 rows containing missing values (geom_point).
-```
-
-
-
-\begin{center}\includegraphics[width=0.7\linewidth]{05-L04-EDA-two-quantitative-wrapup_files/figure-latex/unnamed-chunk-1-1} \end{center}
 
 1. Assess the four features of the scatterplot that describe this relationship. Describe each feature using a complete sentence!
 
@@ -38,6 +51,8 @@ Upload and import the `penguins` csv file. Using the following `R` code chunk cr
 
 \vspace{.4in}
 
+Highlight and run lines 14 - 18 to get the correlation matrix.
+
 
 ```r
 penguins %>%  # Data set pipes into
@@ -47,44 +62,32 @@ penguins %>%  # Data set pipes into
   round(3)
 ```
 
-```
-#>                   bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
-#> bill_length_mm             1.000        -0.235             0.656       0.595
-#> bill_depth_mm             -0.235         1.000            -0.584      -0.472
-#> flipper_length_mm          0.656        -0.584             1.000       0.871
-#> body_mass_g                0.595        -0.472             0.871       1.000
-```
-
-2.  Using the output above, which two variables have the *strongest* correlation? What is the value of this correlation?
+2.  Using the `R` output, which two variables have the *strongest* correlation? What is the value of this correlation?
 
 \vspace{0.5in}
 
-3. Using the value of correlation, calculate the value of the coefficient of determination.
+3. Using the value of correlation found in question 2, calculate the value of the coefficient of determination.
 
 \vspace{0.5in}
 
-4. Interpret the coefficient of determination in context of the problem.
+**4. Interpret the coefficient of determination in context of the problem.**
 
 \vspace{1in}
+
+Enter the variable body_mass_g for yy and the variable name flipper_length_mm for xx in line 21 in the `R` script file.  Highlight and run lines 21 -- 22.
 
 
 ```r
 # Fit linear model: y ~ x
-penguinsLM <- lm(body_mass_g~flipper_length_mm, data=penguins)
+penguinsLM <- lm(yy~xx, data=penguins)
 summary(penguinsLM)$coefficients # Display coefficient summary
 ```
 
-```
-#>                      Estimate Std. Error   t value      Pr(>|t|)
-#> (Intercept)       -5780.83136 305.814504 -18.90306  5.587301e-55
-#> flipper_length_mm    49.68557   1.518404  32.72223 4.370681e-107
-```
-
-5.  Write out the least squares line using the summary statistics provided above in context of the problem.
+5.  Write out the least squares line using the summary statistics from the `R` output in context of the problem.
 
 \vspace{.5in}
 
-6. Interpret the value of slope in context of the problem.
+**6. Interpret the value of slope in context of the problem.**
 
 \vspace{.8in}
 
@@ -100,14 +103,25 @@ summary(penguinsLM)$coefficients # Display coefficient summary
 
 \vspace{0.5in}
 
+Highlight and run lines 25 -- 32 to get the multivariate plot.
 
+
+```r
+penguins %>%
+  ggplot(aes(x = flipper_length_mm, y = body_mass_g, color=species))+  # Specify variables
+  geom_point(aes(shape = species), size = 3) +  # Add scatterplot of points
+  labs(x = "flipper length (mm)",  # Label x-axis
+       y = "body mass (g)",  # Label y-axis
+       color = "species",
+       title = "TITLE") + # Be sure to tile your plots
+  geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
-#> Warning: Removed 2 rows containing non-finite values (stat_smooth).
-#> Warning: Removed 2 rows containing missing values (geom_point).
-```
+
+10.  What three variables are plotted on this plot?
+
+\vspace{0.3in}
 
 
+11. Does adding the variable species affect the relationship between body mass and flipper length? Explain. 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{05-L04-EDA-two-quantitative-wrapup_files/figure-latex/unnamed-chunk-4-1} \end{center}
-
-10. Does adding the variable species affect the relationship between body mass and flipper length? Explain. 
+\vspace{1in}

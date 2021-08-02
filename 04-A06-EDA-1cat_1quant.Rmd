@@ -1,4 +1,4 @@
-## Activity 4b:  IMDb Movie Reviews - Displaying two variables
+## Activity 4b:  Movie Budgets - Displaying two variables
 
 \setstretch{1}
 
@@ -119,7 +119,7 @@ movies %>% # Data set piped into...
   summarise(favstats(revenue_mil))
 ```
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+```{r, out.width="60%", echo=TRUE, eval=TRUE}
 movies %>% # Data set piped into...
 ggplot(aes(x = revenue_mil)) +   # Name variable to plot
   geom_boxplot() +  # Create histogram with specified binwidth
@@ -135,17 +135,16 @@ ggplot(aes(x = revenue_mil)) +   # Name variable to plot
 
 \vspace{0.8in}
 
-To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub` into Rstudio.  Enter the variable `revenue_mil` for xx in line 24 to summarize and create a boxplot of the data. Highlight and run lines 21 - 28.  
+To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub` into Rstudio.  Enter the variable `revenue_mil` for xx in line 34 to summarize and create a boxplot of the data. Highlight and run lines 31 - 38.  
 
-```{r}
-Movies2016_Sub <- read.csv("data/Movies2016_Sub.csv")
+```{r, out.width="60%", echo=TRUE, eval=FALSE}
 Movies2016_Sub %>% # Data set piped into...
   summarise(favstats(revenue_mil))
 ```
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
 Movies2016_Sub %>% # Data set piped into...
-ggplot(aes(x = revenue_mil)) +   # Name variable to plot
+ggplot(aes(x = xx)) +   # Name variable to plot
   geom_boxplot() +  # Create histogram with specified binwidth
   labs(title = "Histogram of Revenue of Movies in 2016", # Title for plot
        x = "Revenue (in Millions)", # Label for x axis

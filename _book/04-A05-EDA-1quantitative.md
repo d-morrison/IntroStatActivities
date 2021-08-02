@@ -104,11 +104,11 @@ ggplot(aes(x = imdb_score)) +   # Name variable to plot
        y = "Frequency") # Label for y axis
 ```
 
-8. Sketch the dotplot created here.
 
-\vspace{1.4in}
 
-9. What is the shape of the distribution of IMDb scores?
+\begin{center}\includegraphics[width=0.6\linewidth]{04-A05-EDA-1quantitative_files/figure-latex/unnamed-chunk-2-1} \end{center}
+
+8. What is the shape of the distribution of IMDb scores?
 
 \vspace{0.2in}
 
@@ -126,21 +126,20 @@ ggplot(aes(x = xx)) +   # Name variable to plot
        y = "Frequency") # Label for y axis
 ```
 
-
-10. Sketch the histogram created here.
+9. Sketch the histogram created here.
 
 \vspace{1.4in}
 
-11. Which range of IMDb scores have the highest frequency?
+10. Which range of IMDb scores have the highest frequency?
 
 \vspace{0.2in}
 
 
-12. Which five summary statistics are used in creating a box plot? *Hint*: Together they are called the **five-number summary** of the variable.
+11. Which five summary statistics are used in creating a box plot? *Hint*: Together they are called the **five-number summary** of the variable.
 
 \vspace{0.4in}
 
-13. Using the code below we see that the three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:  
+12. Using the code below we see that the three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:  
 
     
     ```r
@@ -174,7 +173,7 @@ ggplot(aes(x = xx)) +   # Name variable to plot
 
 \vspace{1.5in}
 
-14. Compare the three graphs of IMDb scores created above.
+13. Compare the three graphs of IMDb scores created above.
 
     Which graph is best used to show the shape of the distribution?
     

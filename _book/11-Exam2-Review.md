@@ -2,6 +2,8 @@
 
 Use the provided data set from the Islands to answer the following questions.  Each adult (>21) islander was selected at random from all the adult islanders.
 
+**Make Table**
+
 1.  Write a research question involving a single categorical variable that can be answered using the data set.  
 
 \vspace{0.8in}
@@ -35,8 +37,18 @@ Use the provided data set from the Islands to answer the following questions.  E
 \rgi Statistic:
     
 \vspace{0.3in}
+
+\rgi Conditions:
+
+\rgi \rgi Independence:
+
+\vspace{0.8in}
+
+\rgi \rgi Success-Failure:
+
+\vspace{0.8in}
     
-\rgi P-value:
+\rgi Simulation P-value:
     
 \vspace{0.3in}
        
@@ -52,13 +64,38 @@ Use the provided data set from the Islands to answer the following questions.  E
         
 \vspace{0.3in}
     
-\rgi Confidence Interval: 
+\rgi Simulation Confidence Interval: 
     
 \vspace{0.3in}
         
 \rgi \rgi Interpretation:
         
 \vspace{0.8in}
+
+\rgi Standardized Statistic:
+
+\vspace{0.3in}
+
+\rgi \rgi Interpretation:
+
+\vspace{0.8in}
+
+\rgi Theory-based p-value:
+
+\vspace{0.3in}
+
+\rgi Theory-based Confidence Interval:
+
+\vspace{0.3in}
+
+\rgi Does the theory-based p-value and CI match those found using simulation methods?
+
+\vspace{0.8in}
+
+\rgi To what group can the results be generalized?
+
+\vspace{0.8in}
+
         
 3.  Write a research question involving two categorical variables that can be answered using the data set.  
 
@@ -94,7 +131,17 @@ Use the provided data set from the Islands to answer the following questions.  E
     
 \vspace{0.3in}
     
-\rgi P-value:
+\rgi Conditions:
+
+\rgi \rgi Independence:
+
+\vspace{0.8in}
+
+\rgi \rgi Success-Failure:
+
+\vspace{0.8in}
+    
+\rgi Simulation P-value:
     
 \vspace{0.3in}
        
@@ -110,12 +157,36 @@ Use the provided data set from the Islands to answer the following questions.  E
         
 \vspace{0.3in}
     
-\rgi Confidence Interval: 
+\rgi Simulation Confidence Interval: 
     
 \vspace{0.3in}
         
 \rgi \rgi Interpretation:
         
+\vspace{0.8in}
+
+\rgi Standardized Statistic:
+
+\vspace{0.3in}
+
+\rgi \rgi Interpretation:
+
+\vspace{0.8in}
+
+\rgi Theory-based p-value:
+
+\vspace{0.3in}
+
+\rgi Theory-based Confidence Interval:
+
+\vspace{0.3in}
+
+\rgi Does the theory-based p-value and CI match those found using simulation methods?
+
+\vspace{0.8in}
+
+\rgi What is the scope of inference for this study?
+
 \vspace{0.8in}
 
 \newpage

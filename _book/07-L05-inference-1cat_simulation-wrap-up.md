@@ -6,8 +6,7 @@
 
 * Identify the two possible explanations (one assuming the null hypothesis, and one assuming the alternative hypothesis) for a relationship seen in sample data.
 
-* Given a research question involving a single categorical variable, construct the null and alternative hypotheses
-  in words and using appropriate statistical symbols.
+* Given a research question involving a single categorical variable, construct the null and alternative hypotheses in words and using appropriate statistical symbols.
   
 * Describe and perform a simulation-based hypothesis test for a single proportion.
 
@@ -73,15 +72,15 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
           report_value = "proportion") # Reporting proportion or number of successes?
 ```
 
-7.  Report the p-value.  Interpret the p-value in context of the study.
+8.  Report the p-value.  Interpret the p-value in context of the study.
 
 \vspace{1in}
 
-8. Write a conclusion in context of the study.
+9. Write a conclusion in context of the study.
 
 \vspace{1in}
 
-9. What values should be entered for each of the following into the simulation to create the bootstrap distribution of sample proportions to find a 95\% confidence interval?
+10. What values should be entered for each of the following into the simulation to create the bootstrap distribution of sample proportions to find a 95\% confidence interval?
 \vspace{1mm}
 
 * Sample size:
@@ -108,15 +107,15 @@ one_proportion_bootstrap_CI(sample_size = xx, # Sample size
                     confidence_level = 0.95) # Confidence level as a decimal
 ```
 
-10.  Report the 95\% confidence interval.
+11.  Report the 95\% confidence interval.
 
 \vspace{0.5in}
 
-11. Interpret the 95\% confidence interval.  
+12. Interpret the 95\% confidence interval.  
 
 \vspace{0.8in}
 
-12. Do the results of the confidence interval agree with the results of the hypothesis test?  Explain your answer.
+13. Do the results of the confidence interval agree with the results of the hypothesis test?  Explain your answer.
 
 \vspace{0.8in}
 
@@ -124,7 +123,7 @@ one_proportion_bootstrap_CI(sample_size = xx, # Sample size
 
 In the interpretation of a 95\% confidence interval, we say that we are 95\% confident that the parameter is within the confidence interval.  Why are we able to make that claim?  What does it mean to say "we are 95\% confident"?
 
-13.  Go to this website, [http://www.rossmanchance.com/ISIapplets.html](http://www.rossmanchance.com/ISIapplets.html) and choose 'Simulating Confidence Intervals'.  In the input on the left-hand side of the screen enter 0.25 for $\pi$, 52 for $n$, and 100 for 'Number of intervals'.  Click 'sample'.
+14.  Go to this website, [http://www.rossmanchance.com/ISIapplets.html](http://www.rossmanchance.com/ISIapplets.html) and choose 'Simulating Confidence Intervals'.  In the input on the left-hand side of the screen enter 0.25 for $\pi$, 52 for $n$, and 100 for 'Number of intervals'.  Click 'sample'.
 \vspace{1mm}
 
 a) In the graph on the bottom right, click on a green dot.  Write down the confidence interval for this sample given on the graph on the left.  Does this confidence interval contain the null value of 0.25?
@@ -138,10 +137,24 @@ b) Now click on a red dot.  Write down the confidence interval for this sample. 
 c) How many intervals out of 100 contain $\pi$, the null value of 0.25? *Hint*:  This is given to the left of the graph of green and red intervals.
 \vspace{0.5in}
 
-14.  Click on 'sample' nine more times.  Write down the 'Running Total' for the proportion of intervals that contain $\pi$.  
+15.  Click on 'sample' nine more times.  Write down the 'Running Total' for the proportion of intervals that contain $\pi$.  
 
 \vspace{0.5in}
 
-15.  Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?
+16.  Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?
+
+\vspace{0.8in}
+
+17. Write a paragraph summarizing the results of the study as if writing a press release.  Be sure to describe:
+
+* Summary statistic and interpretation
+
+* P-value and interpretation
+
+* Confidence interval and interpretation
+
+* Conclusion (written to answer the research question)
+
+* Scope of inference
 
 \newpage

@@ -1,4 +1,4 @@
-## Activity 4b:  IMDb Movie Reviews - Displaying two variables
+## Activity 4b:  Movie Budgets - Displaying two variables
 
 \setstretch{1}
 
@@ -138,6 +138,10 @@ ggplot(aes(x = revenue_mil)) +   # Name variable to plot
        x = "Revenue (in Millions)", # Label for x axis
        y = "Frequency") # Label for y axis
 ```
+
+
+
+\begin{center}\includegraphics[width=0.6\linewidth]{04-A06-EDA-1cat_1quant_files/figure-latex/unnamed-chunk-4-1} \end{center}
 8. Report the two measures of center for this data.
 
 \vspace{0.8in}
@@ -146,18 +150,18 @@ ggplot(aes(x = revenue_mil)) +   # Name variable to plot
 
 \vspace{0.8in}
 
-To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub` into Rstudio.  Enter the variable `revenue_mil` for xx in line 24 to summarize and create a boxplot of the data. Highlight and run lines 21 - 28.  
+To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub` into Rstudio.  Enter the variable `revenue_mil` for xx in line 34 to summarize and create a boxplot of the data. Highlight and run lines 31 - 38.  
 
 
-```
-#>   min       Q1   median       Q3      max    mean       sd  n missing
-#> 1   0 1.467318 33.02703 73.13457 307.1973 55.3516 68.79572 92       0
+```r
+Movies2016_Sub %>% # Data set piped into...
+  summarise(favstats(revenue_mil))
 ```
 
 
 ```r
 Movies2016_Sub %>% # Data set piped into...
-ggplot(aes(x = revenue_mil)) +   # Name variable to plot
+ggplot(aes(x = xx)) +   # Name variable to plot
   geom_boxplot() +  # Create histogram with specified binwidth
   labs(title = "Histogram of Revenue of Movies in 2016", # Title for plot
        x = "Revenue (in Millions)", # Label for x axis
