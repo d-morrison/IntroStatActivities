@@ -1,51 +1,51 @@
-Case,Island,City,Population,Name,Consent,Gender,Age,Married,Smoking_Status,Children,weight _kg,height_cm,Respitory_Rate_permin,Type_of_Music,Before_PuzzleCube_min,After_PuzzleCube,Education_Level,Balance_Test_EyesClosed_s,Blood_Glucose_before,Heart_Rate_before,Type_of_Drink,Heart_Rate_after,Blood_Glucose_after
-1,Tropical,Nidoma,1045,Sinead Regan,Declined,F,90,,,,,,,,,,,,,,,,
-2,Moderate,Reading,2479,Allison Macleod,Declined,F,31,,,,,,,,,,,,,,,,
-3,Tropical,Colmar,5382,Kamal Achari,Consented,M,30,yes,nonsmoker,yes,52.7,172,15,Classical,9.2,9.8,NA,48,90,88,EnergyDrink,89,102
-4,Cold,Helvig,1015,Summer Brown,Consented,F,27,yes,nonsmoker,yes,60.2,167.9,16,Heavy Metal,6.8,7.1,highschool,41,94,96,EnergyDrink,96,105
-5,Cold,Helvig,1015,Andrew Price,Declined,M,63,,,,,,,,,,,,,,,,
-6,Moderate,Akkeshi,682,Maya Suzuki,Declined,F,43,,,,,,,,,,,,,,,,
-7,Moderate,Kiyobico,1115,Sinead Collins,Consented,F,71,yes,nonsmoker,yes,57.4,178,16,Heavy Metal,6.7,7.3,university,39,91,92,Cola,90,108
-8,Cold,Hofn,2168,Viggo Clausen,Consented,M,57,yes,nonsmoker,no,63.7,171.9,16,Heavy Metal,7.1,8.8,university,30,91,96,Cola,98,96
-9,Moderate,Akkeshi,682,Mary Price,Consented,F,60,yes,nonsmoker,yes,50.5,157.8,16,Heavy Metal,8.4,18.5,highschool,25,88,86,Cola,85,103
-10,Cold,Vardo,1226,Maalai Joshi,Declined,F,19,,,,,,,,,,,,,,,,
-11,Moderate,Kiyobico,1115,Jeneve Ibsen,Consented,F,67,no,smoker,yes,66.5,166.5,11,Classical,7.5,7.3,university,34,92,74,EnergyDrink,72,102
-12,Tropical,Vaiku,687,Coralie Petit,Consented,F,88,yes,nonsmoker,yes,76.2,175.4,18,Classical,6.8,6.8,university,15,87,98,Cola,95,99
-13,Tropical,Gordes,488,Anthony Suzuki,Consented,M,64,yes,nonsmoker,yes,86.7,184.5,17,Heavy Metal,6.9,11.7,university,14,92,95,EnergyDrink,94,103
-14,Cold,Hofn,2168,Jessica Morris,Declined,F,35,,,,,,,,,,,,,,,,
-15,Tropical,Gordes,488,Lauren Yamada,Consented,F,67,yes,nonsmoker,yes,63.5,159,12,Classical,7.7,7.3,university,16,86,76,EnergyDrink,77,95
-16,Tropical,Maeva,845,Hannah Jensen,Consented,F,59,no,nonsmoker,yes,62.8,165.6,12,Classical,6.7,7.5,university,33,88,88,Cola,90,98
-17,Tropical,Talu,1074,Jimmy Maury,Consented,M,24,yes,smoker,yes,64.4,180.1,14,Classical,7.3,7.3,highschool,42,96,81,EnergyDrink,82,100
-18,Moderate,Takazaki,,Edgar Connolly,Consented,M,40,no,nonsmoker,yes,65.3,182.5,13,Classical,7.1,7,highschool,62,100,94,EnergyDrink,91,104
-19,Cold,Bjurholm,957,Namita Mangal,Consented,F,57,no,nonsmoker,yes,62,163.2,16,Classical,7.5,8.9,NA,22,89,100,Cola,98,99
-20,Cold,Helvig,1015,Jakob Lund,Consented,M,70,yes,nonsmoker,yes,58.6,166.6,21,Classical,7,6.9,highschool,22,94,116,Cola,112,105
-21,Cold,Helvig,1015,Anthony Collins,Consented,M,83,no,nonsmoker,yes,67.6,175.8,17,Heavy Metal,7,9.3,highschool,26,87,109,Cola,103,93
-22,Cold,Helluland,621,Emy Gagnon,Declined,F,69,,,,,,,,,,,,,,,,
-23,Tropical,Colmar,,Nadia Kulkarni,Consented,F,22,yes,nonsmoker,yes,55.7,163.3,14,Heavy Metal,7.1,9.7,highschool,44,90,90,Cola,82,105
-24,Tropical,Valais,523,Jamie Burke,Consented,M,85,yes,nonsmoker,yes,64.6,172.5,18,Classical,7.5,7.71,highschool,31,89,109,Cola,107,95
-25,Tropical,Gordes,488,Shauna Suzuki,Declined,F,37,,,,,,,,,,,,,,,,
-26,Cold,Hofn,2168,Arno Mayer,Declined,M,48,,,,,,,,,,,,,,,,
-27,Cold,Vardo,1226,Leif Carlsen,Consented,M,77,yes,smoker,no,85.6,179.3,24,Heavy Metal,7.3,8.7,highschool,21,93,106,Cola,103,104
-28,Cold,Bloundos,736,Shota Regan,Consented,M,71,no,nonsmoker,no,62.9,176.5,25,Heavy Metal,7.8,9.9,highschool,35,88,105,Cola,103,91
-29,Tropical,Mahuti,1609,Soren Carlsen,Consented,M,69,yes,nonsmoker,yes,64.4,171.1,,Heavy Metal,12.4,25.7,university,20,90,89,EnergyDrink,90,102
-30,Tropical,Maeva,846,Leonie Carlsen,Consented,F,91,no,nonsmoker,yes,52.3,168.6,19,Heavy Metal,7,9.3,university,41,91,78,EnergyDrink,97,104
-31,Cold,Hofn,2169,Hanne Eklund,Consented,F,23,yes,smoker,yes,70.8,164.5,19,Classical,7.5,7.9,highschool,26,88,112,EnergyDrink,105,97
-32,Cold,Bjurholm,957,Jeneve Bager,Consented,F,61,no,nonsmoker,yes,60.8,161.1,19,Classical,7.8,7.9,university,26,85,111,Cola,111,98
-33,Cold,Helvig,1016,Dahl Jensen,Consented,F,76,yes,nonsmoker,no,52.5,154.6,,Classical,10.7,8.6,highschool,28,85,96,EnergyDrink,98,107
-34,Moderate,Reading,2469,Jamie Wilson,Declined,M,93,,,,,,,,,,,,,,,,
-35,Moderate,Kiyobico,1116,Aaron Burke,Consented,M,47,yes,nonsmoker,yes,74.6,181.3,15,Heavy Metal,7.8,16.6,university,47,89,93,EnergyDrink,90,93
-36,Moderate,Takazaki,361,Andrew Kimura,Declined,M,69,,,,,,,,,,,,,,,,
-37,Moderate,Nelson,520,Berit Bager,Declined,F,40,,,,,,,,,,,,,,,,
-38,Moderate,Arcadia,3319,Dahl Blomgren,Consented,F,33,yes,nonsmoker,yes,41.2,153.4,12,Heavy Metal,8.5,21.1,university,41,86,87,EnergyDrink,59,96
-39,Cold,Bloundos,736,Mitchell Regan,Consented,M,39,yes,nonsmoker,yes,72.9,185.2,16,Heavy Metal,7.3,12.5,highschool,32,89,96,Cola,94,99
-40,Tropical,Eden,1956,Yui Hall,Consented,F,104,yes,nonsmoker,yes,50.8,163.7,14,Classical,6.8,6.9,university,61,93,90,Cola,88,100
-41,Cold,Helvig,1016,Minh Kimura,Consented,M,39,yes,nonsmoker,yes,69,175.6,16,Classical,7.1,7.8,university,69,94,96,EnergyDrink,95,102
-42,Cold,Hofn,2169,Anika Eklund,Consented,F,36,yes,nonsmoker,yes,67.4,173.9,19,Heavy Metal,6.9,8.3,highschool,76,95,99,Cola,71,95
-43,Tropical,Colmar,5400,Kimaya Sharma,Consented,F,31,yes,nonsmoker,no,59.3,167.3,13,Classical,6.7,7.1,university,71,92,59,Cola,59,102
-44,Cold,Helvig,1016,Paul Blomgrem,Consented,M,75,yes,nonsmoker,no,69.8,178.7,15,Classical,6.7,6.9,university,13,89,85,EnergyDrink,84,104
-45,Cold,Hofn,2169,Raum Sorensen,Consented,M,94,no,smoker,yes,62.3,171.2,17,Heavy Metal,7.3,9.7,university,17,87,103,EnergyDrink,101,100
-46,Tropical,Riroua,853,Esme Simon,Consented,F,74,no,nonsmoker,no,62.8,163.9,19,Heavy Metal,6.9,7.8,highschool,10,88,111,EnergyDrink,110,92
-47,Moderate,Akkeshi,683,Jessica Edwards,Consented,F,38,no,nonsmoker,no,42.5,155.4,17,Classical,7.3,7.5,highschool,32,94,100,Cola,103,105
-48,Moderate,Kiyobico,1116,Sanna Solberg,Consented,F,68,no,nonsmoker,no,53.2,157.3,12,Classical,7.5,7.4,university,51,89,84,EnergyDrink,83,108
-49,Cold,Hofn,2169,Takumi Brown,Consented,M,69,yes,nonsmoker,no,75.7,179.5,18,Heavy Metal,6.9,8.1,highschool,22,86,105,EnergyDrink,103,91
-50,Moderate,Hayarano,1314,Nils Sorensen,Consented,M,69,no,nonsmoker,yes,69.2,172.2,21,Classical,9.2,11.2,highschool,13,85,120,Cola,119,89
+Case,Island,City,Population,Name,Consent,Gender,Age,Married,Smoking_Status,Children,weight _kg,height_cm,respitory_rate,Type_of_Music,Before_PuzzleCube,After_PuzzleCube,Diff_PuzzleCube,Education_Level,Balance_Test,Blood_Glucose_before,Heart_Rate_before,Type_of_Drink,Heart_Rate_after,Blood_Glucose_after,Diff_Heart_Rate,Diff_Blood_Glucose
+1,Tropical,Nidoma,1045,Sinead Regan,Declined,F,90,,,,,,,,,,,,,,,,,,,
+2,Temperate,Reading,2479,Allison Macleod,Declined,F,31,,,,,,,,,,,,,,,,,,,
+3,Tropical,Colmar,5382,Kamal Achari,Consented,M,30,yes,nonsmoker,yes,52.7,172,15,Classical,9.2,9.8,-0.60,NA,48,90,88,EnergyDrink,89,102,-1,-12
+4,Polar,Helvig,1015,Summer Brown,Consented,F,27,yes,nonsmoker,yes,60.2,167.9,16,Heavy Metal,6.8,7.1,-0.30,highschool,41,94,96,EnergyDrink,96,105,0,-11
+5,Polar,Helvig,1015,Andrew Price,Declined,M,63,,,,,,,,,,,,,,,,,,,
+6,Temperate,Akkeshi,682,Maya Suzuki,Declined,F,43,,,,,,,,,,,,,,,,,,,
+7,Temperate,Kiyobico,1115,Sinead Collins,Consented,F,71,yes,nonsmoker,yes,57.4,178,16,Heavy Metal,6.7,7.3,-0.60,university,39,91,92,Cola,90,108,2,-17
+8,Polar,Hofn,2168,Viggo Clausen,Consented,M,57,yes,nonsmoker,no,63.7,171.9,16,Heavy Metal,7.1,8.8,-1.70,university,30,91,96,Cola,98,96,-2,-5
+9,Temperate,Akkeshi,682,Mary Price,Consented,F,60,yes,nonsmoker,yes,50.5,157.8,16,Heavy Metal,8.4,18.5,-10.10,highschool,25,88,86,Cola,85,103,1,-15
+10,Polar,Vardo,1226,Maalai Joshi,Declined,F,19,,,,,,,,,,,,,,,,,,,
+11,Temperate,Kiyobico,1115,Jeneve Ibsen,Consented,F,67,no,smoker,yes,66.5,166.5,11,Classical,7.5,7.3,0.20,university,34,92,74,EnergyDrink,72,102,2,-10
+12,Tropical,Vaiku,687,Coralie Petit,Consented,F,88,yes,nonsmoker,yes,76.2,175.4,18,Classical,6.8,6.8,0.00,university,15,87,98,Cola,95,99,3,-12
+13,Tropical,Gordes,488,Anthony Suzuki,Consented,M,64,yes,nonsmoker,yes,86.7,184.5,17,Heavy Metal,6.9,11.7,-4.80,university,14,92,95,EnergyDrink,94,103,1,-11
+14,Polar,Hofn,2168,Jessica Morris,Declined,F,35,,,,,,,,,,,,,,,,,,,
+15,Tropical,Gordes,488,Lauren Yamada,Consented,F,67,yes,nonsmoker,yes,63.5,159,12,Classical,7.7,7.3,0.40,university,16,86,76,EnergyDrink,77,95,-1,-9
+16,Tropical,Maeva,845,Hannah Jensen,Consented,F,59,no,nonsmoker,yes,62.8,165.6,12,Classical,6.7,7.5,-0.80,university,33,88,88,Cola,90,98,-2,-10
+17,Tropical,Talu,1074,Jimmy Maury,Consented,M,24,yes,smoker,yes,64.4,180.1,14,Classical,7.3,7.3,0.00,highschool,42,96,81,EnergyDrink,82,100,-1,-4
+18,Temperate,Takazaki,,Edgar Connolly,Consented,M,40,no,nonsmoker,yes,65.3,182.5,13,Classical,7.1,7,0.10,highschool,62,100,94,EnergyDrink,91,104,3,-4
+19,Polar,Bjurholm,957,Namita Mangal,Consented,F,57,no,nonsmoker,yes,62,163.2,16,Classical,7.5,8.9,-1.40,NA,22,89,100,Cola,98,99,2,-10
+20,Polar,Helvig,1015,Jakob Lund,Consented,M,70,yes,nonsmoker,yes,58.6,166.6,21,Classical,7,6.9,0.10,highschool,22,94,116,Cola,112,105,4,-11
+21,Polar,Helvig,1015,Anthony Collins,Consented,M,83,no,nonsmoker,yes,67.6,175.8,17,Heavy Metal,7,9.3,-2.30,highschool,26,87,109,Cola,103,93,6,-6
+22,Polar,Helluland,621,Emy Gagnon,Declined,F,69,,,,,,,,,,,,,,,,,,,
+23,Tropical,Colmar,,Nadia Kulkarni,Consented,F,22,yes,nonsmoker,yes,55.7,163.3,14,Heavy Metal,7.1,9.7,-2.60,highschool,44,90,90,Cola,82,105,8,-15
+24,Tropical,Valais,523,Jamie Burke,Consented,M,85,yes,nonsmoker,yes,64.6,172.5,18,Classical,7.5,7.71,-0.21,highschool,31,89,109,Cola,107,95,2,-6
+25,Tropical,Gordes,488,Shauna Suzuki,Declined,F,37,,,,,,,,,,,,,,,,,,,
+26,Polar,Hofn,2168,Arno Mayer,Declined,M,48,,,,,,,,,,,,,,,,,,,
+27,Polar,Vardo,1226,Leif Carlsen,Consented,M,77,yes,smoker,no,85.6,179.3,24,Heavy Metal,7.3,8.7,-1.40,highschool,21,93,106,Cola,103,104,3,-11
+28,Polar,Bloundos,736,Shota Regan,Consented,M,71,no,nonsmoker,no,62.9,176.5,25,Heavy Metal,7.8,9.9,-2.10,highschool,35,88,105,Cola,103,91,2,-3
+29,Tropical,Mahuti,1609,Soren Carlsen,Consented,M,69,yes,nonsmoker,yes,64.4,171.1,,Heavy Metal,12.4,25.7,-13.30,university,20,90,89,EnergyDrink,90,102,-1,-12
+30,Tropical,Maeva,846,Leonie Carlsen,Consented,F,91,no,nonsmoker,yes,52.3,168.6,19,Heavy Metal,7,9.3,-2.30,university,41,91,78,EnergyDrink,97,104,-19,-13
+31,Polar,Hofn,2169,Hanne Eklund,Consented,F,23,yes,smoker,yes,70.8,164.5,19,Classical,7.5,7.9,-0.40,highschool,26,88,112,EnergyDrink,105,97,7,-9
+32,Polar,Bjurholm,957,Jeneve Bager,Consented,F,61,no,nonsmoker,yes,60.8,161.1,19,Classical,7.8,7.9,-0.10,university,26,85,111,Cola,111,98,0,-13
+33,Polar,Helvig,1016,Dahl Jensen,Consented,F,76,yes,nonsmoker,no,52.5,154.6,,Classical,10.7,8.6,2.10,highschool,28,85,96,EnergyDrink,98,107,-2,-22
+34,Temperate,Reading,2469,Jamie Wilson,Declined,M,93,,,,,,,,,,,,,,,,,,,
+35,Temperate,Kiyobico,1116,Aaron Burke,Consented,M,47,yes,nonsmoker,yes,74.6,181.3,15,Heavy Metal,7.8,16.6,-8.80,university,47,89,93,EnergyDrink,90,93,3,-4
+36,Temperate,Takazaki,361,Andrew Kimura,Declined,M,69,,,,,,,,,,,,,,,,,,,
+37,Temperate,Nelson,520,Berit Bager,Declined,F,40,,,,,,,,,,,,,,,,,,,
+38,Temperate,Arcadia,3319,Dahl Blomgren,Consented,F,33,yes,nonsmoker,yes,41.2,153.4,12,Heavy Metal,8.5,21.1,-12.60,university,41,86,87,EnergyDrink,59,96,28,-10
+39,Polar,Bloundos,736,Mitchell Regan,Consented,M,39,yes,nonsmoker,yes,72.9,185.2,16,Heavy Metal,7.3,12.5,-5.20,highschool,32,89,96,Cola,94,99,2,-10
+40,Tropical,Eden,1956,Yui Hall,Consented,F,104,yes,nonsmoker,yes,50.8,163.7,14,Classical,6.8,6.9,-0.10,university,61,93,90,Cola,88,100,2,-7
+41,Polar,Helvig,1016,Minh Kimura,Consented,M,39,yes,nonsmoker,yes,69,175.6,16,Classical,7.1,7.8,-0.70,university,69,94,96,EnergyDrink,95,102,1,-8
+42,Polar,Hofn,2169,Anika Eklund,Consented,F,36,yes,nonsmoker,yes,67.4,173.9,19,Heavy Metal,6.9,8.3,-1.40,highschool,76,95,99,Cola,71,95,28,0
+43,Tropical,Colmar,5400,Kimaya Sharma,Consented,F,31,yes,nonsmoker,no,59.3,167.3,13,Classical,6.7,7.1,-0.40,university,71,92,59,Cola,59,102,0,-10
+44,Polar,Helvig,1016,Paul Blomgrem,Consented,M,75,yes,nonsmoker,no,69.8,178.7,15,Classical,6.7,6.9,-0.20,university,13,89,85,EnergyDrink,84,104,1,-15
+45,Polar,Hofn,2169,Raum Sorensen,Consented,M,94,no,smoker,yes,62.3,171.2,17,Heavy Metal,7.3,9.7,-2.40,university,17,87,103,EnergyDrink,101,100,2,-13
+46,Tropical,Riroua,853,Esme Simon,Consented,F,74,no,nonsmoker,no,62.8,163.9,19,Heavy Metal,6.9,7.8,-0.90,highschool,10,88,111,EnergyDrink,110,92,1,-4
+47,Temperate,Akkeshi,683,Jessica Edwards,Consented,F,38,no,nonsmoker,no,42.5,155.4,17,Classical,7.3,7.5,-0.20,highschool,32,94,100,Cola,103,105,-3,-11
+48,Temperate,Kiyobico,1116,Sanna Solberg,Consented,F,68,no,nonsmoker,no,53.2,157.3,12,Classical,7.5,7.4,0.10,university,51,89,84,EnergyDrink,83,108,1,-19
+49,Polar,Hofn,2169,Takumi Brown,Consented,M,69,yes,nonsmoker,no,75.7,179.5,18,Heavy Metal,6.9,8.1,-1.20,highschool,22,86,105,EnergyDrink,103,91,2,-5
+50,Temperate,Hayarano,1314,Nils Sorensen,Consented,M,69,no,nonsmoker,yes,69.2,172.2,21,Classical,9.2,11.2,-2.00,highschool,13,85,120,Cola,119,89,1,-4

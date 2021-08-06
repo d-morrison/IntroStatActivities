@@ -36,15 +36,15 @@ To review these concepts, see Sections 2.1 and 2.2 in the textbook.
 
 a. What is the probability that a randomly selected senior is a science major?  Use appropriate probability notation.
 
-\vspace{0.5in}
+\vspace{0.35in}
 
 b. What is the probability that a randomly selected student is both a a senior and a science major.  Use appropriate probability notation.
 
-\vspace{0.5in}
+\vspace{0.35in}
 
 c. What is the probability that a randomly selected student is not a senior given they are a liberal arts major.  Use appropriate probability notation.
 
-\vspace{0.5in}
+\vspace{0.35in}
 
 
 2. Since the early 1980s, the rapid antigen detection test (RADT) of group A *streptococci* has been used to detect strep throat. A recent study of the accuracy of this test shows that the **sensitivity**, the probability of a positive RADT given the person has strep throat, is 86% in children, while the **specificity**, the probability of a negative RADT given the person does not have strep throat, is 92% in children.  The **prevalence**, the probability of having group A strep, is 37% in children. 
@@ -65,7 +65,7 @@ c. What is the probability that a randomly selected student is not a senior give
         0.37 =  
 \vspace{.1in}
 
-    b. Create a hypothetical two-way table to represent the situation.  Recall that in a two-way table, the explanatory variable should be your column headers (similar to the $x$-axis in a segmented bar graph!) while the response variable becomes the row headers.
+    b. Create a hypothetical two-way table to represent the situation.  
 \begin{center}
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{cccc} \hline

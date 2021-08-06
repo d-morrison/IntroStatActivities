@@ -28,6 +28,7 @@ suppressMessages(library(RColorBrewer))
 suppressMessages(library(igraph))
 suppressMessages(library(ggraph))
 suppressMessages(library(openintro))
+suppressMessages(library(ggmosaic))
 
 
 # dplyr options ----------------------------------------------------------------
