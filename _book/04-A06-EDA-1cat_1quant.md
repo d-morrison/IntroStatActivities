@@ -1,4 +1,4 @@
-## Activity 4b:  Movie Budgets - Displaying two variables
+## Activity 4b:  Movie Budgets - Displaying Two Variables
 
 \setstretch{1}
 
@@ -25,6 +25,8 @@ In today's activity, we will review summary measures and plots for a single cate
 
 * Types of graphs: side-by-side: box plots, dot plots, histograms
 
+* Robust statistics
+
 To review these concepts, see Section 2.3 in the textbook.
 
 ### Movies released in 2016
@@ -39,15 +41,15 @@ We will again use the data set collected on movies released in 2016.  As a remin
 | `content_rating` | Rating of the movie (`G`, `PG`, `PG-13`, `R`, `Not Rated`)|
 | `imdb_score` | IMDb user rating score from 1 to 10 |
 | `genres` | Categories the movie falls into (e.g., Action, Drama, etc.) |
-| `movie_facebook_likes` | Number of likes a movie receives on Facebook |
+| `facebook_likes` | Number of likes a movie receives on Facebook |
 
 \newpage
 
-To use the `favstats()` function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.  This function will give the summary statistics for budget for each content rating.
+To use the `favstats()` function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.  This function will give the summary statistics for budget for each content rating.  Highlight and run lines 1 -- 9 in the provided `R` script file to load the data set and check that the summary statistics match those provided in the coursepack.
 
 
 ```r
-movies <- read.csv("https://math.montana.edu/courses/s216/data/Movies2016.csv")
+movies <- read.csv("data/Movies2016.csv")
 movies %>% # Data set piped into...
   filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
   summarise(favstats(budget_mil~content_rating)) # Apply favstats function to imdb_score
@@ -78,14 +80,13 @@ movies %>% # Data set piped into...
 
 #### Displaying a single categorical and single quantitative variable {-}
 
-The boxplot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for yy and the variable `content_rating` for xx at line 14, highlight and run code lines 1-18. This plot helps to compare the budget for different levels of content rating.
-
+The boxplot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for `response` and the variable `content_rating` for explanatory at line 14, highlight and run code lines 12--18. This plot helps to compare the budget for different levels of content rating.
 
 
 ```r
 movies %>%  # Data set piped into...
   filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
-  ggplot(aes(y = yy, x = xx))+  # Identify variables
+  ggplot(aes(y = response, x = explanatory))+  # Identify variables
   geom_boxplot()+  # Tell it to make a box plot
   labs(title = "Side by side box plot of budget by content rating",  # Title
        x = "Content Rating",    # x-axis label
@@ -150,18 +151,18 @@ ggplot(aes(x = revenue_mil)) +   # Name variable to plot
 
 \vspace{0.8in}
 
-To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub` into Rstudio.  Enter the variable `revenue_mil` for xx in line 34 to summarize and create a boxplot of the data. Highlight and run lines 31 - 38.  
+To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub` into Rstudio.  Enter the variable name `revenue_mil` for variable in line 32 and 34 to summarize and create a boxplot of the data. Highlight and run lines 31--38.  
 
 
 ```r
 Movies2016_Sub %>% # Data set piped into...
-  summarise(favstats(revenue_mil))
+  summarise(favstats(variable))
 ```
 
 
 ```r
 Movies2016_Sub %>% # Data set piped into...
-ggplot(aes(x = xx)) +   # Name variable to plot
+ggplot(aes(x = variable)) +   # Name variable to plot
   geom_boxplot() +  # Create histogram with specified binwidth
   labs(title = "Histogram of Revenue of Movies in 2016", # Title for plot
        x = "Revenue (in Millions)", # Label for x axis
@@ -176,7 +177,7 @@ ggplot(aes(x = xx)) +   # Name variable to plot
 
 \vspace{0.8in}
 
-12. Which measure of center is robust to outliers? 
+12. Which measure of center is robust to outliers? Explain your answer.
 
 \vspace{0.5in}
 

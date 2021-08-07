@@ -37,19 +37,19 @@ penguins %>%
 
 * Form (linear, non-linear)
 
-\vspace{.4in}
+\vspace{.2in}
 
 * Direction (positive, negative)
 
-\vspace{.4in}
+\vspace{.2in}
 
 * Strength
 
-\vspace{.4in}
+\vspace{.2in}
 
 * Unusual observations or outliers
 
-\vspace{.4in}
+\vspace{.2in}
 
 Highlight and run lines 14--18 to get the correlation matrix.
 

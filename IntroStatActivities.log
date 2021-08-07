@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.27)  2 AUG 2021 07:31
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.27)  6 AUG 2021 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,12 +974,12 @@ ate University. []$[][][][][] [] [] [] [][][][][][][][][][][][][][][][][] [] []
 [4] [1
 
 ]
-Overfull \hbox (348.39194pt too wide) in alignment at lines 267--270
+Overfull \hbox (348.39194pt too wide) in alignment at lines 265--268
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (348.39194pt too wide) in alignment at lines 270--318
+Overfull \hbox (348.39194pt too wide) in alignment at lines 268--316
  [] [] [] [] [] 
  []
 
@@ -999,7 +999,7 @@ File: images/relative_barplot_martian.png Graphic file (type bmp)
 <images/relative_barplot_martian.png>
 [10] [11] [12]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 801.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 799.
 [13] [14]
 Activity 2.
 [15
@@ -1014,23 +1014,28 @@ File: 02-A02-random_assignment_files/figure-latex/unnamed-chunk-2-1.pdf Graphic
 [25] [26] [27]
 Activity 3.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1443.
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1446.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1449.
 [28
 
 ] [29] [30] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1718--1720
+Underfull \hbox (badness 10000) in paragraph at lines 1721--1723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1720--1722
+Underfull \hbox (badness 10000) in paragraph at lines 1723--1725
 
  []
 
-[32] [33] [34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 1933--1934
+[32] [33] [34]
+Underfull \hbox (badness 10000) in paragraph at lines 1882--1883
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 1936--1937
 
  []
 
@@ -1057,173 +1062,199 @@ ile (type pdf)
 [56] [57] [58]
 File: images/IPEDS_Description.png Graphic file (type bmp)
 <images/IPEDS_Description.png>
-[59] [60] [61] [62] [63] [64]
+[59] [60] [61] [62] [63]
 Activity 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3409--3411
+Underfull \hbox (badness 10000) in paragraph at lines 3397--3399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3411--3413
+Underfull \hbox (badness 10000) in paragraph at lines 3399--3401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3413--3415
+Underfull \hbox (badness 10000) in paragraph at lines 3401--3403
 
  []
 
-[65
+[64
 
-] [66] [67] [68] [69] [70]
-Underfull \hbox (badness 2197) in paragraph at lines 3770--3771
+] [65] [66] [67] [68] [69]
+Underfull \hbox (badness 2197) in paragraph at lines 3758--3759
 []\TU/lmr/m/n/10 If _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-, we predict the _-_-_-_-_-_-
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- to equal
  []
 
-[71] [72] [73] [74] [75] [76] [77] [78] [79] [80]
+[70] [71] [72] [73] [74] [75] [76] [77] [78] [79]
 File: 05-A08-EDA-two-quantitative-PartB_files/figure-latex/unnamed-chunk-3-1.pd
 f Graphic file (type pdf)
 <use 05-A08-EDA-two-quantitative-PartB_files/figure-latex/unnamed-chunk-3-1.pdf
 >
-[81] [82] [83] [84] [85] [86]
+[80] [81] [82] [83] [84] [85]
 Activity 6.
-[87
+[86
 
-] [88] [89] [90] [91]
+] [87] [88] [89] [90] [91]
+Overfull \hbox (11.83987pt too wide) in paragraph at lines 4990--4990
+[]\TU/lmtt/m/n/10 a.  Identify what each numerical value given in the problem r
+epresents in probability notation.[] 
+ []
+
+
+Overfull \hbox (599.83987pt too wide) in paragraph at lines 5008--5008
+[]\TU/lmtt/m/n/10 c.  If a randomly selected participant was assigned to eat pe
+ppers, what is the probability they did not have lower cholesterol levels at th
+e end of the study? What is the notation used for this probability?[] 
+ []
+
+
+Overfull \hbox (473.83987pt too wide) in paragraph at lines 5014--5014
+[]\TU/lmtt/m/n/10 d. What is the probability that a randomly selected participa
+nt was not assigned to eat peppers and did have lower cholesterol levels?  What
+ is the notation used for this probability?[] 
+ []
+
+
+Overfull \hbox (59.08987pt too wide) in paragraph at lines 5020--5020
+[]\TU/lmtt/m/n/10 e.  Find the probability $P(A^C | B^C)$. What does this proba
+bility represent in context of the problem?[] 
+ []
+
+[92]
 Activity 7.
-[92
+[93
 
-] [93] [94] [95] [96]
+] [94] [95] [96] [97]
 File: 07-RG-1cat_simulation_files/figure-latex/normgt3-1.pdf Graphic file (type
  pdf)
 <use 07-RG-1cat_simulation_files/figure-latex/normgt3-1.pdf>
-[97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108] [109] [110
-] [111] [112] [113] [114] [115]
+[98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108] [109] [110] [11
+1] [112] [113] [114] [115] [116]
 File: images/soe_gradient_grayscale.png Graphic file (type bmp)
 <images/soe_gradient_grayscale.png>
-[116] [117] [118] [119] [120]
+[117] [118] [119] [120] [121]
 File: 07-A10-inference-1cat_CI-simulation_files/figure-latex/unnamed-chunk-2-1.
 pdf Graphic file (type pdf)
 <use 07-A10-inference-1cat_CI-simulation_files/figure-latex/unnamed-chunk-2-1.p
 df>
-[121] [122] [123] [124] [125] [126]
+[122] [123] [124] [125] [126] [127]
 Activity 8.
-[127
+[128
 
-] [128] [129]
+] [129] [130]
 File: 08-A11-inference-1cat_test-theory_files/figure-latex/simpleNormalcurve-1.
 pdf Graphic file (type pdf)
 <use 08-A11-inference-1cat_test-theory_files/figure-latex/simpleNormalcurve-1.p
 df>
-[130] [131] [132] [133] [134]
+[131] [132] [133] [134] [135]
 File: 08-A12-inference-1cat_CI-theory_files/figure-latex/simpleNormal-1.pdf Gra
 phic file (type pdf)
 <use 08-A12-inference-1cat_CI-theory_files/figure-latex/simpleNormal-1.pdf>
-[135] [136] [137] [138]
+[136] [137] [138] [139]
 Activity 9.
-[139
+[140
 
-] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151] [152]
-[153] [154] [155] [156] [157] [158] [159] [160] [161] [162]
+] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151] [152] [153]
+[154] [155] [156] [157] [158] [159] [160] [161] [162] [163] [164]
 Activity 10.
-[163
+[165
 
-] [164] [165] [166] [167] [168] [169] [170] [171]
+] [166] [167] [168] [169] [170] [171] [172] [173] [174]
 File: 10-A15-inference-2cat_test-theory_files/figure-latex/simpleNormal-1.pdf G
 raphic file (type pdf)
 <use 10-A15-inference-2cat_test-theory_files/figure-latex/simpleNormal-1.pdf>
-[172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182] [183] [184]
+[175] [176] [177] [178] [179] [180] [181] [182] [183] [184] [185] [186] [187]
 Activity 11.
-[185
+[188
 
-] [186] [187] [188]
+] [189] [190] [191]
 Activity 12.
-[189
+[192
 
-] [190] [191] [192] [193] [194] [195] [196] [197] [198]
+] [193] [194] [195] [196] [197] [198] [199] [200] [201]
 File: images/air_pollution_greyscale.png Graphic file (type bmp)
 <images/air_pollution_greyscale.png>
 File: 12-A17-paired-simulation_files/figure-latex/unnamed-chunk-2-1.pdf Graphic
  file (type pdf)
 <use 12-A17-paired-simulation_files/figure-latex/unnamed-chunk-2-1.pdf>
-[199] [200] [201] [202] [203] [204] [205] [206] [207] [208] [209] [210]
+[202] [203] [204] [205] [206] [207] [208] [209] [210] [211] [212] [213]
 Activity 13.
-[211
+[214
 
-] [212] [213] [214] [215] [216] [217] [218]
+] [215] [216] [217] [218] [219] [220] [221]
 File: 13-A19-inference-1ofeach-simulation_files/figure-latex/unnamed-chunk-2-1.
 pdf Graphic file (type pdf)
 <use 13-A19-inference-1ofeach-simulation_files/figure-latex/unnamed-chunk-2-1.p
 df>
-[219] [220] [221] [222] [223] [224] [225] [226]
+[222] [223] [224] [225] [226] [227] [228] [229]
 File: 13-A20-inference-1ofeach-theory_files/figure-latex/unnamed-chunk-1-1.pdf 
 Graphic file (type pdf)
 <use 13-A20-inference-1ofeach-theory_files/figure-latex/unnamed-chunk-1-1.pdf>
-[227] [228] [229]
+[230] [231] [232]
 File: 13-L10-1ofeach-wrapup_files/figure-latex/unnamed-chunk-1-1.pdf Graphic fi
 le (type pdf)
 <use 13-L10-1ofeach-wrapup_files/figure-latex/unnamed-chunk-1-1.pdf>
-[230] [231] [232] [233]
+[233] [234] [235] [236]
 Activity 14.
 
-Underfull \hbox (badness 10000) in paragraph at lines 12820--12822
+Underfull \hbox (badness 10000) in paragraph at lines 12858--12860
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12822--12824
+Underfull \hbox (badness 10000) in paragraph at lines 12860--12862
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12824--12826
+Underfull \hbox (badness 10000) in paragraph at lines 12862--12864
 
  []
 
-[234
+[237
 
-] [235] [236] [237] [238] [239] [240] [241] [242]
+] [238] [239] [240] [241] [242] [243] [244] [245]
 File: 14-A21-regression-simulation_files/figure-latex/unnamed-chunk-3-1.pdf Gra
 phic file (type pdf)
 <use 14-A21-regression-simulation_files/figure-latex/unnamed-chunk-3-1.pdf>
-[243] [244] [245]
-Underfull \hbox (badness 10000) in paragraph at lines 13445--13446
+[246] [247] [248]
+Underfull \hbox (badness 10000) in paragraph at lines 13483--13484
 
  []
 
-[246] [247] [248] [249] [250] [251] [252]
+[249] [250] [251] [252] [253] [254] [255]
 File: 14-A22-regression-theory_files/figure-latex/unnamed-chunk-3-1.pdf Graphic
  file (type pdf)
 <use 14-A22-regression-theory_files/figure-latex/unnamed-chunk-3-1.pdf>
-[253] [254] [255]
-Underfull \hbox (badness 10000) in paragraph at lines 14029--14030
+[256] [257] [258]
+Underfull \hbox (badness 10000) in paragraph at lines 14067--14068
 
  []
 
-[256] [257] [258] [259] [260] [261]
+[259] [260] [261] [262] [263] [264]
 Activity 15.
-[262
+[265
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 14384--14385
+Underfull \hbox (badness 10000) in paragraph at lines 14422--14423
 [][]$[][][][] [] [] [] [][][] [] [][][] [] [][][] [] [][][][][] [] [][][][][][]
  [] [][][][] [] [][] [] [][] [] [][][][][][][][][] [] [][][][][][][][][][][] []
 [] [][][] [][] [][][][][][][][] [][] [][][][][][][][][][] [][] [][][][] [][] []
 [][] [][] [][][][] [][]
  []
 
-[263] [264] [265]
-Underfull \hbox (badness 10000) in paragraph at lines 14579--14580
+[266] [267] [268]
+Underfull \hbox (badness 10000) in paragraph at lines 14617--14618
 [][]$[][][][] [] [] [] [][][] [] [][][] [] [][][] [] [][][][][] [] [][][][][][]
  [] [][][][] [] [][] [] [][] [] [][][][][][][][][] [] [][][][][][][][][][][] []
 [] [][][] [][] [][][][][][][][] [][] [][][][][][][][][][] [][] [][][][] [][] []
 [][] [][] [][][][] [][]
  []
 
-[266] [267] [268] [269] [270] [271] [272]
-Underfull \hbox (badness 10000) in paragraph at lines 14946--14948
+[269] [270] [271] [272] [273] [274] [275]
+Underfull \hbox (badness 10000) in paragraph at lines 14984--14986
 []$[][][][][] [] [] [] [][][] [] [][][] [] [][][] [] [][][][][][][] [] [][][][]
 [] [][] [][][][][][] [][] [][] [][] [][][][][][][][][][] [] [][] [][] [][][] []
 [] [][][] [][] [][][][][][][][][] [][] [][][][] [][] [][][][][][] [][] [][][][]
@@ -1231,25 +1262,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 14946--14948
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 14952--14954
+Underfull \hbox (badness 1331) in paragraph at lines 14990--14992
 [][]\TU/lmr/m/n/10 Ramachandran, V. 2007. “3 Clues to Understanding Your Brain.
 ” []$[][][][][] [] [] [] [][][] [] [][][] [] [][][] [] [][][][][] [] [][] []
  []
 
-[273] (./IntroStatActivities.aux)
+[276] (./IntroStatActivities.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `IntroStatActivities.out' has not changed.
-(rerunfilecheck)             Checksum: 3F103538DED8F9B3A77928715B425B1C;18851.
+(rerunfilecheck)             Checksum: 9A8363D32BB0E4C7618A070EA56560E2;18851.
  ) 
 Here is how much of TeX's memory you used:
- 18123 strings out of 478475
- 336739 string characters out of 5857611
- 823897 words of memory out of 5000000
- 38135 multiletter control sequences out of 15000+600000
+ 18125 strings out of 478475
+ 336754 string characters out of 5857611
+ 823977 words of memory out of 5000000
+ 38137 multiletter control sequences out of 15000+600000
  409953 words of font info for 89 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 87i,9n,120p,1877b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,9n,120p,1877b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on IntroStatActivities.pdf (278 pages).
+Output written on IntroStatActivities.pdf (281 pages).

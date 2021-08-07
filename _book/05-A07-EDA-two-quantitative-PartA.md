@@ -15,7 +15,7 @@
 
 ### Terminology review
 
-In this week's activity, we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are:
+In today's activity, we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are:
 
 * Scatterplot
 
@@ -39,7 +39,7 @@ We will revisit the data set used last week collected on Movies released in 2016
 | `content_rating` | Rating of the movie (`G`, `PG`, `PG-13`, `R`, `Not Rated`)|
 | `imdb_score` | IMDb user rating score from 1 to 10 |
 | `genres` | Categories the movie falls into (e.g., Action, Drama, etc.) |
-| `movie_facebook_likes` | Number of likes a movie receives on Facebook |
+| `facebook_likes` | Number of likes a movie receives on Facebook |
 
 
 #### Vocabulary review. {-}
@@ -54,12 +54,12 @@ We will revisit the data set used last week collected on Movies released in 2016
 
 \vspace{0.4in}
 
-We will look at the relationship between budget and revenue for movies released in 2016. Enter the variable name `budget_mil` for xx and `revenue_mil` for yy at line 7 in the `R` script file to create the scatterplot. (Note: both variables are measured in "millions of dollars", or $MM.)  Highlight and run lines 1--12.
+We will look at the relationship between budget and revenue for movies released in 2016. Enter the explanatory variable name, `budget_mil`, for `explanatory` and the response variable name, `revenue_mil`, for `response` at line 7 in the `R` script file to create the scatterplot. (Note: both variables are measured in "millions of dollars", or $MM.)  Highlight and run lines 1--12.
 
 
 ```r
 movies %>% # Data set pipes into...
-ggplot(aes(x = xx, y = yy))+  # Specify variables
+ggplot(aes(x = explanatory, y = response))+  # Specify variables
   geom_point() +  # Add scatterplot of points
   labs(x = "Budget in Millions ($)",  # Label x-axis
        y = "Revenue in Millions ($)",  # Label y-axis
@@ -74,19 +74,19 @@ ggplot(aes(x = xx, y = yy))+  # Specify variables
 
 * Form (linear, non-linear)
 
-\vspace{.4in}
+\vspace{.2in}
 
 * Direction (positive, negative)
 
-\vspace{.4in}
+\vspace{.2in}
 
 * Strength
 
-\vspace{.4in}
+\vspace{.2in}
 
 * Unusual observations or outliers
 
-\vspace{.4in}
+\vspace{.2in}
 
 
 5. Does there appear to be an association between budget and revenue? Explain.

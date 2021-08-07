@@ -17,10 +17,11 @@
 
 * Find the correlation coefficient from `R` output or from $R^2$ and the sign of the slope.
 
+### Penguins
 
 The Palmer Station Long Term Ecological Research Program sampled three penguin species on islands in the Palmer Archipelago in Antarctica. Researchers took various body measurements on the penguins, including flipper length and body mass. The researchers were interested in the relationship between flipper length and body mass and wondered if flipper length could be used to accurately predict the body mass of these three penguin species. 
 
-Upload and import the `penguins` csv file. Using the following `R` code chunk create a scatterplot of the flipper length and body mass.  Make sure to give your plot a descriptive title.  Highlight and run lines 1 -- 11.  **Upload a copy of your scatterplot to Gradescope.**
+Upload and import the `penguins` csv file and the provided `R` script file for week 5 lab. First We will create a scatterplot of the flipper length and body mass.  Notice that we are using flipper length to predict body mass.  This makes flipper length the explanatory variable. **Make sure to give your plot a descriptive title.** Highlight and run lines 1--11 in the `R` script file.  **Upload a copy of your scatterplot to Gradescope.**
 
 
 ```r
@@ -29,7 +30,7 @@ penguins %>%
   geom_point() +  # Add scatterplot of points
   labs(x = "flipper length (mm)",  # Label x-axis
        y = "body mass (g)",  # Label y-axis
-       title = "TITLE") + # Be sure to title your plots
+       title = "Title") + # Be sure to title your plots
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
 
@@ -37,21 +38,21 @@ penguins %>%
 
 * Form (linear, non-linear)
 
-\vspace{.4in}
+\vspace{.2in}
 
 * Direction (positive, negative)
 
-\vspace{.4in}
+\vspace{.2in}
 
 * Strength
 
-\vspace{.4in}
+\vspace{.2in}
 
 * Unusual observations or outliers
 
-\vspace{.4in}
+\vspace{.2in}
 
-Highlight and run lines 14 - 18 to get the correlation matrix.
+Highlight and run lines 14--18 to get the correlation matrix.
 
 
 ```r
@@ -74,12 +75,12 @@ penguins %>%  # Data set pipes into
 
 \vspace{1in}
 
-Enter the variable body_mass_g for yy and the variable name flipper_length_mm for xx in line 21 in the `R` script file.  Highlight and run lines 21 -- 22.
+Enter the variable `body_mass_g` for `response` and the variable name `flipper_length_mm` for `explanatory` in line 21 in the `R` script file.  Highlight and run lines 21--22.
 
 
 ```r
 # Fit linear model: y ~ x
-penguinsLM <- lm(yy~xx, data=penguins)
+penguinsLM <- lm(response~explanatory, data=penguins)
 summary(penguinsLM)$coefficients # Display coefficient summary
 ```
 
@@ -103,7 +104,7 @@ summary(penguinsLM)$coefficients # Display coefficient summary
 
 \vspace{0.5in}
 
-Highlight and run lines 25 -- 32 to get the multivariate plot.
+Highlight and run lines 25--32 to get the multivariate plot.
 
 
 ```r
@@ -123,5 +124,7 @@ penguins %>%
 
 
 11. Does adding the variable species affect the relationship between body mass and flipper length? Explain. 
+
+\newpage
 
 \vspace{1in}

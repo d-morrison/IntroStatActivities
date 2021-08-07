@@ -75,19 +75,19 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 * Form (linear, non-linear)
 
-\vspace{.4in}
+\vspace{.2in}
 
 * Direction (positive, negative)
 
-\vspace{.4in}
+\vspace{.2in}
 
 * Strength
 
-\vspace{.4in}
+\vspace{.2in}
 
 * Unusual observations or outliers
 
-\vspace{.4in}
+\vspace{.2in}
 
 
 5. Does there appear to be an association between budget and revenue? Explain.

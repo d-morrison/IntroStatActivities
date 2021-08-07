@@ -59,7 +59,7 @@ include_graphics("images/IPEDS_Description.png")
 
 Upload and import the data set IPEDS_Data_2018. Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in line 5.  We will look at the retention rates for the different institutions.  Enter the variable name `Retention` for `variable` in line 12.  Highlight and run lines 1 -- 12.
 
-```{r, echo=TRUE, collapse = FALSE}
+```{r, echo=TRUE, collapse = FALSE, eval=FALSE}
 datasetname -> IPEDS #Creates the object IPEDS 
 IPEDS <- IPEDS %>%
   filter(Sector != "Public 2-year") #Filters the data set to remove Public 2-year
@@ -157,9 +157,9 @@ IPEDS %>%  # Data set piped into...
 
 \vspace{0.8in}
 
-The following set of code will create side by side boxplots of retention rates by size of the university.
+The following set of code will create side by side boxplots of retention rates by size of the university.  Highlight and run lines 41--46 in the `R` script file.
 
-```{r, out.width="60%", echo=TRUE, eval=TRUE}
+```{r, out.width="60%", echo=TRUE, eval=FALSE}
 IPEDS %>%  # Data set piped into...
   ggplot(aes(y = Retention, x = Size))+  # Identify variables
   geom_boxplot()+  # Tell it to make a box plot

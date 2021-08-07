@@ -191,6 +191,9 @@ Read through the preliminaries chapter in the textbook and watch the video "Star
 The RStudio workflow operates best by the use of "Projects". You should create a separate project for each activity or assignment in this course that requires the use of `R`. To get started with this activity, follow these steps:
 
 * Log onto the RStudio server using your NetID and password: [https://rstudio.math.montana.edu/](https://rstudio.math.montana.edu/). 
+    
+    * Please note: Your netID password expires every 6 months. It is HIGHLY recommended that you reset your netID password BEFORE attempting to login to the Rstudio server. You can reset your netID password in the MSU password portal (https://pwreset.montana.edu/react/).
+    
 * In the top right corner, you will see a dropdown menu next to "Project" that currently says "(None)". Click on this menu and choose "New Project". (Alternatively, you can click the "File" menu in the top left and select "New Project".) 
     - A "New Project Wizard" window should pop up: click "New Directory", then click "New Project".
     - Give your project directory a name (e.g., Activity1). _Do not use spaces or other characters in the name._ 

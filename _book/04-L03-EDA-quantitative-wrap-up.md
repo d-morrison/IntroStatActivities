@@ -19,7 +19,7 @@
 
 ### IPEDS
 
-Download and open the provided `R` script file for week 4 lab to answer the following questions.  
+Download and open the provided `R` script file for week 4 lab to answer the following questions.  **Remember that bolded questions will be answered on Gradescope for your group.**
 
 These data are on a subset of institutions that met the following selection criteria:
 
@@ -56,25 +56,20 @@ These data are on a subset of institutions that met the following selection crit
 
 \vspace{0.5in}
 
-Upload and import the data set IPEDS_Data_2018. Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in lines ...  We will look at the retention rates for the different institutions.  Enter the variable name `Retention` for `variable` in the `R` code chunk below.  Run this chunk of code by clicking on the green play arrow below. 
+Upload and import the data set IPEDS_Data_2018. Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in line 5.  We will look at the retention rates for the different institutions.  Enter the variable name `Retention` for `variable` in line 12.  Highlight and run lines 1 -- 12.
 
 
 ```r
-IPEDS <- read.csv("data/IPEDS_Data_2018.csv")
+datasetname -> IPEDS #Creates the object IPEDS 
 IPEDS <- IPEDS %>%
-  filter(Sector != "Public 2-year") 
+  filter(Sector != "Public 2-year") #Filters the data set to remove Public 2-year
 IPEDS <- IPEDS %>%
-  filter(Sector != "Private 2-year")   
+  filter(Sector != "Private 2-year") #Filters the data set to remove Private 2-year
 IPEDS %>%
-  summarise(favstats(Retention)) #Gives the summary statistics
+  summarise(favstats(variable)) #Gives the summary statistics
 ```
 
-```
-#>   min Q1 median Q3 max    mean       sd    n missing
-#> 1   0 66     75 83 100 73.8525 15.14323 1817     150
-```
-
-5.  Report the value for quartile 3 and interpret this value in context of the study.
+**5.  Report the value for quartile 3 and interpret this value in context of the study.**
 
 \vspace{1in}
 
@@ -90,14 +85,14 @@ IPEDS %>%
 
 \vspace{0.8in}
 
-Next we will create both a histogram and a boxplot of the variable `Retention`.  Enter the name of the variable in both sets of `R` code chunks below for `variable`.  Give each plot a descriptive title.  Run the two chunks of code to give the histogram and boxplot.  **Define retention rates**
+Next we will create both a histogram and a boxplot of the variable `Retention`.  Enter the name of the variable in both line 16 and line 23 for `variable` in the `R` script file.  **Give each plot a descriptive title.**  Highlight and run lines 15 -- 27 to give the histogram and boxplot. **Export and upload both plots to Gradescope for your group.**
 
 
 ```r
 IPEDS %>% # Data set piped into...
-ggplot(aes(x = Retention)) +   # Name variable to plot
+ggplot(aes(x = variable)) +   # Name variable to plot
   geom_histogram(binwidth = 5) +  # Create dotplot
-  labs(title = "Histogram of Rentention Rate for Universities in 2018", # Title for plot
+  labs(title = "Title", # Title for plot
        x = "Rentention Rate", # Label for x axis
        y = "Frequency") # Label for y axis
 ```
@@ -105,9 +100,9 @@ ggplot(aes(x = Retention)) +   # Name variable to plot
 
 ```r
 IPEDS %>% # Data set piped into...
-ggplot(aes(x = Retention)) +   # Name variable to plot
+ggplot(aes(x = variable)) +   # Name variable to plot
   geom_boxplot() +  # Create dotplot
-  labs(title = "Boxplot of Rentention Rates for Universities in 2018", # Title for plot
+  labs(title = "Title", # Title for plot
        x = "Retention Rates", # Label for x axis
        y = "Frequency") # Label for y axis
 ```
@@ -120,29 +115,30 @@ ggplot(aes(x = Retention)) +   # Name variable to plot
 
 \vspace{0.3in}
 
-In the next part of the activity we will compare retention rates for public and private institutions.  Notice that this variable is `Control` in the data set.
+In the next part of the activity we will compare retention rates for public and private institutions.  Note that this variable is `Control` in the data set.
 
-11.  Which variable will we treat as the explanatory variable?  Response variable?
+**11.  Which variable will we treat as the explanatory variable?  Response variable?**
 
 \vspace{0.8in}
 
-Enter the name of the explanatory variable and the name of the response variable in the following `R` code to find the summary statistics and create the side by side boxplots of the data.
+Enter the name of the explanatory variable and the name of the response variable in lines 31 and 34 of the `R` script file.  Highlight and run lines 30 -- 38 to find the summary statistics and create side by side boxplots of the data.
 
 
 ```r
 IPEDS %>%  # Data set piped into...
-  summarise(favstats(Retention~Control)) # Apply favstats function to budget_mil and content rating
+  summarise(favstats(response~explanatory)) # Apply favstats function to budget_mil and content rating
 ```
 
 
 ```r
 IPEDS %>%  # Data set piped into...
-  ggplot(aes(y = Retention, x = Control))+  # Identify variables
+  ggplot(aes(y = response, x = explanatory))+  # Identify variables
   geom_boxplot()+  # Tell it to make a box plot
   labs(title = "Side by side box plot of retention rates control",  # Title
        x = "Control",    # x-axis label
        y = "Retention Rates")  # y-axis label
 ```
+
 12.  Compare the two boxplots.
     
      Which type of university has the highest center?
@@ -157,7 +153,7 @@ IPEDS %>%  # Data set piped into...
      Does either distribution have outliers?
      \vspace{0.3in}
      
-13. Report the difference in mean retention rates for private and public universities.  Use private minus public as the order of subtraction.  Use the appropriate notation.
+**13. Report the difference in mean retention rates for private and public universities.  Use private minus public as the order of subtraction.  Use the appropriate notation.**
 
 \vspace{0.8in}
 
@@ -165,7 +161,7 @@ IPEDS %>%  # Data set piped into...
 
 \vspace{0.8in}
 
-The following set of code will create side by side boxplots of retention rates by size of the university.
+The following set of code will create side by side boxplots of retention rates by size of the university.  Highlight and run lines 41--46 in the `R` script file.
 
 
 ```r

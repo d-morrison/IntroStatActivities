@@ -209,7 +209,7 @@ Videos assigned in the course calendar and other notes and review materials are 
 
 Each of the activities in this workbook is designed to target specific learning outcomes of the course, giving you practice with important statistical concepts in a group setting with instructor guidance. In addition to the in-class activities for the course, the coursepack includes reading guides to aid in taking notes while you complete the required readings and videos. Bring this workbook with you to class each class period, and take notes in the workbook as you would your own notes. A well-written completed workbook will provide an optimal study guide for exams!
 
-The activities in this coursepack will be completed during class time on Mondays and Wednesdays. The weekly labs will be completed in class with your group on Fridays. Parts of each lab will be turned in on Gradescope. To add in your understanding, read through the introduction for each activity before attending class each day.
+The activities in this coursepack will be completed during class time on Mondays and Wednesdays. The weekly labs will be completed in class with your group on Fridays. Parts of each lab will be turned in on Gradescope. To aid in your understanding, read through the introduction for each activity before attending class each day.
 
 STAT 216 is a 3-credit in-person course. Students will meet with their instructor and classmates three days per week for 50 minutes. In our experience, it takes six to nine hours per week outside of class to achieve a good grade in this class. By ``good'' we mean at least a C because a grade of D or below does not count toward fulfilling degree requirements. Many of you set your goals higher than just getting a C, and we fully support that. You need roughly nine hours per week to review past activities, read feedback on previous assignments, complete current assignments, and prepare for the next day's class. A typical week in the life of a STAT 216 student looks like:
 
@@ -225,7 +225,7 @@ STAT 216 is a 3-credit in-person course. Students will meet with their instructo
   \item
     Watch assigned videos on that week's content, pausing to take notes and answer video quiz questions.
   \item
-    Read through the introduction to the week's in-class activity
+    Read through the introduction to the day's in-class activity
   \item
     Read through the week's homework assignment and note any questions you may have on the content.
   \end{itemize}
@@ -235,7 +235,7 @@ STAT 216 is a 3-credit in-person course. Students will meet with their instructo
   \begin{itemize}
   \tightlist
   \item
-    Work through the in-class activity with your classmates and instructor, taking detailed notes on your answers to each question in the activity.
+    Work through the in-class activity or weekly lab with your classmates and instructor, taking detailed notes on your answers to each question in the activity.
   \end{itemize}
 \item
   \emph{After class meeting}:
@@ -248,8 +248,6 @@ STAT 216 is a 3-credit in-person course. Students will meet with their instructo
     Review the posted activity solutions and wrap-up videos, and take notes on key points.
   \item
     Finish watching any remaining assigned videos or readings for the week.
-  \item
-    \textbf{Read through the week's case study and post case study discussion posts on D2L.}
   \item
     Complete the week's homework assignment.
   \end{itemize}
@@ -807,9 +805,14 @@ Read through the preliminaries chapter in the textbook and watch the video ``Sta
 The RStudio workflow operates best by the use of ``Projects.'' You should create a separate project for each activity or assignment in this course that requires the use of \texttt{R}. To get started with this activity, follow these steps:
 
 \begin{itemize}
-\tightlist
 \item
   Log onto the RStudio server using your NetID and password: \url{https://rstudio.math.montana.edu/}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Please note: Your netID password expires every 6 months. It is HIGHLY recommended that you reset your netID password BEFORE attempting to login to the Rstudio server. You can reset your netID password in the MSU password portal (\url{https://pwreset.montana.edu/react/}).
+  \end{itemize}
 \item
   In the top right corner, you will see a dropdown menu next to ``Project'' that currently says ``(None).'' Click on this menu and choose ``New Project.'' (Alternatively, you can click the ``File'' menu in the top left and select ``New Project.'')
 
@@ -1829,7 +1832,7 @@ Total & 24,000 & 76,000 & 100,000 \\
   What is the probability that a randomly selected senior is a science major? Use appropriate probability notation.
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.35in}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -1839,7 +1842,7 @@ Total & 24,000 & 76,000 & 100,000 \\
   What is the probability that a randomly selected student is both a a senior and a science major. Use appropriate probability notation.
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.35in}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -1849,7 +1852,7 @@ Total & 24,000 & 76,000 & 100,000 \\
   What is the probability that a randomly selected student is not a senior given they are a liberal arts major. Use appropriate probability notation.
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.35in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1876,7 +1879,7 @@ Total & 24,000 & 76,000 & 100,000 \\
     0.37 =\\
     \vspace{.1in}
   \item
-    Create a hypothetical two-way table to represent the situation. Recall that in a two-way table, the explanatory variable should be your column headers (similar to the \(x\)-axis in a segmented bar graph!) while the response variable becomes the row headers.
+    Create a hypothetical two-way table to represent the situation.\\
 
     \begin{center}
      \renewcommand{\arraystretch}{1.5}
@@ -1997,7 +2000,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{terminology-review-6}{%
 \subsection{Terminology review}\label{terminology-review-6}}
 
-In today's activity, we will review summary measures and plots for categorical variables. Some terms covered in this activity are:
+In today's lab, we will review summary measures and plots for categorical variables. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
@@ -2014,7 +2017,7 @@ To review these concepts, see Sections 2.1 and 2.2 in the textbook.
 
 For today's lab we will focus on using RStudio and the provided \texttt{R} script file to create graphs and calculate proportions from each group.
 
-Download and open the provided \texttt{R} script file for week 3 lab to answer the following questions. \textbf{Remember bolded questions will be turned in on Gradescope for your group.}
+Download and open the provided \texttt{R} script file for week 3 lab to answer the following questions. \textbf{Remember bolded questions will be turned in on Gradescope for your group.} Highlight and run the first two lines of code to load the appropriate packages needed for this lab.
 
 \hypertarget{nightlight-use-and-myopia}{%
 \subsubsection{Nightlight use and myopia}\label{nightlight-use-and-myopia}}
@@ -2041,7 +2044,7 @@ An important part of understanding data is to create visual pictures of what the
 Throughout these activities, we will often include the \texttt{R} code
 you would use in order to produce output or plots. These
 ``code chunks'' appear in gray. In the code chunk below, we
-demonstrate how to read the data set into \texttt{R} using the \texttt{read.csv()} function. These lines of code read in the data set and name the data set \texttt{myopia}. The \texttt{library()} function tells \texttt{R} which packages will be needed. Highlight and run line 5 in the \texttt{R} script file to laod the data.
+demonstrate how to read the data set into \texttt{R} using the \texttt{read.csv()} function. These lines of code read in the data set and name the data set \texttt{myopia}. The \texttt{library()} function tells \texttt{R} which packages will be needed. Highlight and run line 6 in the \texttt{R} script file to load the data.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2054,12 +2057,12 @@ demonstrate how to read the data set into \texttt{R} using the \texttt{read.csv(
 \subsubsection*{Displaying a single categorical variable}\label{displaying-a-single-categorical-variable}}
 \addcontentsline{toc}{subsubsection}{Displaying a single categorical variable}
 
-If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable \texttt{Sight}. Enter the variable name, \texttt{Sight}, for xx into the \texttt{ggplot} code at line 9 in the \texttt{R} script file. Highlight and run lines 8 - 14 to create the plot. Note: this is a \textbf{frequency} bar plot plotting counts (the number of children in each level of sight is displayed on the \(y\)-axis).
+If we wanted to know how many children in our data set were in each level of myopia, we would create a frequency bar plot of the variable \texttt{Sight}. Enter the variable name, \texttt{Sight}, for \texttt{variable} into the \texttt{ggplot} code at line 10 in the \texttt{R} script file. Highlight and run lines 9--15 to create the plot. Note: this is a \textbf{frequency} bar plot plotting counts (the number of children in each level of sight is displayed on the \(y\)-axis).
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{myopia }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
-\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ xx)) }\SpecialCharTok{+}   \CommentTok{\# This specifies the variable}
+\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ variable)) }\SpecialCharTok{+}   \CommentTok{\# This specifies the variable}
   \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{stat =} \StringTok{"count"}\NormalTok{) }\SpecialCharTok{+}  \CommentTok{\# Tell it to make a bar plot}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Frequency Bar Plot of Level of Myopia"}\NormalTok{,  }\CommentTok{\# Give your plot a title}
        \AttributeTok{x =} \StringTok{"Frequency"}\NormalTok{,   }\CommentTok{\# Label the x axis}
@@ -2080,7 +2083,7 @@ If we wanted to know how many children in our data set were in each level of myo
 
 \textbf{3. Using the bar chart created, estimate how many children have some level of myopia.}
 
-\vspace{0.3in}
+\newpage
 
 We could also choose to display the data as a proportion in a \textbf{relative frequency} bar plot. To find the relative frequency, divide the count in each level of myopia by the sample size. These are sample proportions. Notice that in this code we told \texttt{R} to create a bar plot with proportions.
 
@@ -2113,12 +2116,12 @@ We could also choose to display the data as a proportion in a \textbf{relative f
 \subsubsection*{Displaying two categorical variables}\label{displaying-two-categorical-variables}}
 \addcontentsline{toc}{subsubsection}{Displaying two categorical variables}
 
-To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of \texttt{Light} segmented by \texttt{Sight}. To create the segmented bar plot enter the variable name, \texttt{Light} (explanatory variable) for xx and the variable name, \texttt{Sight} (response variable) for yy in the `R' script file in line 26. Highlight and run lines 25 - 32.
+To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of \texttt{Light} segmented by \texttt{Sight}. To create the segmented bar plot enter the variable name, \texttt{Light} for \texttt{explanatory} and the variable name, \texttt{Sight} for `response` in the 'R' script file in line 27. Highlight and run lines 26--33.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{myopia }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
-\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ xx, }\AttributeTok{fill =}\NormalTok{ yy)) }\SpecialCharTok{+}   \CommentTok{\# This specifies the variables}
+\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ explanatory, }\AttributeTok{fill =}\NormalTok{ response)) }\SpecialCharTok{+}   \CommentTok{\# This specifies the variables}
   \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{stat =} \StringTok{"count"}\NormalTok{, }\AttributeTok{position =} \StringTok{"fill"}\NormalTok{) }\SpecialCharTok{+}  \CommentTok{\# Tell it to make a stacked bar plot}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Segmented Bar Plot of Night Light Use by Level of Myopia"}\NormalTok{,  }
        \CommentTok{\# Make sure to title your plot }
@@ -2152,13 +2155,13 @@ To examine the differences in level of myopia for the level of light, we would c
 
 \vspace{0.5in}
 
-We could also plot the data using a mosaic plot. Fill in the variable name, \texttt{Light} (explanatory variable) for xx and the variable name, \texttt{Sight} (response variable) for yy in line 37 in the \texttt{R} script file. Highlight and run lines 35 - 42.
+We could also plot the data using a mosaic plot. Fill in the variable name, \texttt{Light} for \texttt{explanatory} and the variable name, \texttt{Sight} for \texttt{response} in line 38 in the \texttt{R} script file. Highlight and run lines 36--43.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{myopia }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
   \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}   \CommentTok{\# This specifies the variables}
-  \FunctionTok{geom\_mosaic}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\FunctionTok{product}\NormalTok{(xx), }\AttributeTok{fill =}\NormalTok{ yy)) }\SpecialCharTok{+}  \CommentTok{\# Tell it to make a mosaic plot}
+  \FunctionTok{geom\_mosaic}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\FunctionTok{product}\NormalTok{(explanatory), }\AttributeTok{fill =}\NormalTok{ response)) }\SpecialCharTok{+}  \CommentTok{\# Tell it to make a mosaic plot}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Mosaic Plot of Night Light Use by Level of Myopia"}\NormalTok{,  }
        \CommentTok{\# Make sure to title your plot }
        \AttributeTok{x =} \StringTok{"Level of Light"}\NormalTok{,   }\CommentTok{\# Label the x axis}
@@ -2181,7 +2184,7 @@ We could also plot the data using a mosaic plot. Fill in the variable name, \tex
 
 \vspace{0.8in}
 
-Fill in the name of the explanatory variable and the response variable in line 45 in the \texttt{R} script file, highlight and run line 45 to get the counts for each combination of levels of variables.
+Fill in the name of the explanatory variable and the response variable in line 46 in the \texttt{R} script file, highlight and run line 46 to get the counts for each combination of levels of variables.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2525,7 +2528,7 @@ A data set was collected on movies released in 2016. Here is a list of some of t
 \texttt{content\_rating} & Rating of the movie (\texttt{G}, \texttt{PG}, \texttt{PG-13}, \texttt{R}, \texttt{Not\ Rated}) \\
 \texttt{imdb\_score} & IMDb user rating score from 1 to 10 \\
 \texttt{genres} & Categories the movie falls into (e.g., Action, Drama, etc.) \\
-\texttt{movie\_facebook\_likes} & Number of likes a movie receives on Facebook \\
+\texttt{facebook\_likes} & Number of likes a movie receives on Facebook \\
 \bottomrule
 \end{longtable}
 
@@ -2567,12 +2570,12 @@ A data set was collected on movies released in 2016. Here is a list of some of t
 \subsubsection*{Summarizing a single quantitative variable}\label{summarizing-a-single-quantitative-variable}}
 \addcontentsline{toc}{subsubsection}{Summarizing a single quantitative variable}
 
-The \texttt{favstats()} function from the \texttt{mosaic} package gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable \texttt{imdb\_score}.
+The \texttt{favstats()} function from the \texttt{mosaic} package gives the summary statistics for a quantitative variable. Here we have the summary statistics for the variable \texttt{imdb\_score}. Highlight and run lines 1 -- 8 in the provided \texttt{R} script file to load the data set. Check that the summary statistics match that printed in the coursepack.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# Read in data set}
-\NormalTok{movies }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/Movies2016.csv"}\NormalTok{) }
+\NormalTok{movies }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/Movies2016.csv"}\NormalTok{) }
 \NormalTok{movies }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
   \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(imdb\_score)) }\CommentTok{\# Apply favstats function to imdb\_score}
 \end{Highlighting}
@@ -2609,7 +2612,7 @@ The \texttt{favstats()} function from the \texttt{mosaic} package gives the summ
 \tightlist
 \item
   Report the value of the standard deviation and interpret this value in context of the problem.
-  \vspace{1in}
+  \vspace{0.8in}
 \end{enumerate}
 
 \hypertarget{displaying-a-single-quantitative-variable}{%
@@ -2651,14 +2654,14 @@ A dotplot will plot a dot for each value in the data set. The following code wil
 
 \vspace{0.2in}
 
-To create a histogram of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{R} script file for xx at line 20, highlight and run lines 1 - 24. Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{R} script file for variable at line 20, highlight and run lines 19--24. Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the \textbf{bin width} is 0.5. For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75. It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{movies }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
-\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ xx)) }\SpecialCharTok{+}   \CommentTok{\# Name variable to plot}
+\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ variable)) }\SpecialCharTok{+}   \CommentTok{\# Name variable to plot}
   \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{binwidth =} \FloatTok{0.5}\NormalTok{) }\SpecialCharTok{+}  \CommentTok{\# Create histogram with specified binwidth}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Histogram of IMDb Score of Movies in 2016"}\NormalTok{, }\CommentTok{\# Title for plot}
        \AttributeTok{x =} \StringTok{"IMDb Score"}\NormalTok{, }\CommentTok{\# Label for x axis}
@@ -2773,7 +2776,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \newpage
 
 \hypertarget{activity-4b-movie-budgets---displaying-two-variables}{%
-\section{Activity 4b: Movie Budgets - Displaying two variables}\label{activity-4b-movie-budgets---displaying-two-variables}}
+\section{Activity 4b: Movie Budgets - Displaying Two Variables}\label{activity-4b-movie-budgets---displaying-two-variables}}
 
 \setstretch{1}
 
@@ -2806,6 +2809,8 @@ In today's activity, we will review summary measures and plots for a single cate
   Two measures of spread (variability): standard deviation, interquartile range (IQR)
 \item
   Types of graphs: side-by-side: box plots, dot plots, histograms
+\item
+  Robust statistics
 \end{itemize}
 
 To review these concepts, see Section 2.3 in the textbook.
@@ -2828,17 +2833,17 @@ We will again use the data set collected on movies released in 2016. As a remind
 \texttt{content\_rating} & Rating of the movie (\texttt{G}, \texttt{PG}, \texttt{PG-13}, \texttt{R}, \texttt{Not\ Rated}) \\
 \texttt{imdb\_score} & IMDb user rating score from 1 to 10 \\
 \texttt{genres} & Categories the movie falls into (e.g., Action, Drama, etc.) \\
-\texttt{movie\_facebook\_likes} & Number of likes a movie receives on Facebook \\
+\texttt{facebook\_likes} & Number of likes a movie receives on Facebook \\
 \bottomrule
 \end{longtable}
 
 \newpage
 
-To use the \texttt{favstats()} function in the mosaic package with two variables, we will enter the variables as a formula, response\textasciitilde explanatory. This function will give the summary statistics for budget for each content rating.
+To use the \texttt{favstats()} function in the mosaic package with two variables, we will enter the variables as a formula, response\textasciitilde explanatory. This function will give the summary statistics for budget for each content rating. Highlight and run lines 1 -- 9 in the provided \texttt{R} script file to load the data set and check that the summary statistics match those provided in the coursepack.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/Movies2016.csv"}\NormalTok{)}
+\NormalTok{movies }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/Movies2016.csv"}\NormalTok{)}
 \NormalTok{movies }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
   \FunctionTok{filter}\NormalTok{(content\_rating }\SpecialCharTok{!=} \StringTok{"Not Rated"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Remove Not Rated movies}
   \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(budget\_mil}\SpecialCharTok{\textasciitilde{}}\NormalTok{content\_rating)) }\CommentTok{\# Apply favstats function to imdb\_score}
@@ -2895,13 +2900,13 @@ To use the \texttt{favstats()} function in the mosaic package with two variables
 \subsubsection*{Displaying a single categorical and single quantitative variable}\label{displaying-a-single-categorical-and-single-quantitative-variable}}
 \addcontentsline{toc}{subsubsection}{Displaying a single categorical and single quantitative variable}
 
-The boxplot of movie budgets (in millions) by content rating is plotted using the code below. Enter the variable \texttt{budget\_mil} for yy and the variable \texttt{content\_rating} for xx at line 14, highlight and run code lines 1-18. This plot helps to compare the budget for different levels of content rating.
+The boxplot of movie budgets (in millions) by content rating is plotted using the code below. Enter the variable \texttt{budget\_mil} for \texttt{response} and the variable \texttt{content\_rating} for explanatory at line 14, highlight and run code lines 12--18. This plot helps to compare the budget for different levels of content rating.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{movies }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# Data set piped into...}
   \FunctionTok{filter}\NormalTok{(content\_rating }\SpecialCharTok{!=} \StringTok{"Not Rated"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Remove Not Rated movies}
-  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ yy, }\AttributeTok{x =}\NormalTok{ xx))}\SpecialCharTok{+}  \CommentTok{\# Identify variables}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ response, }\AttributeTok{x =}\NormalTok{ explanatory))}\SpecialCharTok{+}  \CommentTok{\# Identify variables}
   \FunctionTok{geom\_boxplot}\NormalTok{()}\SpecialCharTok{+}  \CommentTok{\# Tell it to make a box plot}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Side by side box plot of budget by content rating"}\NormalTok{,  }\CommentTok{\# Title}
        \AttributeTok{x =} \StringTok{"Content Rating"}\NormalTok{,    }\CommentTok{\# x{-}axis label}
@@ -2992,19 +2997,19 @@ Let's examine how the presence of outliers affect the values of center and sprea
 
 \vspace{0.8in}
 
-To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, \texttt{Movies2016\_Sub} into Rstudio. Enter the variable \texttt{revenue\_mil} for xx in line 34 to summarize and create a boxplot of the data. Highlight and run lines 31 - 38.
+To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, \texttt{Movies2016\_Sub} into Rstudio. Enter the variable name \texttt{revenue\_mil} for variable in line 32 and 34 to summarize and create a boxplot of the data. Highlight and run lines 31--38.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{Movies2016\_Sub }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
-  \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(revenue\_mil))}
+  \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(variable))}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{Movies2016\_Sub }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
-\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ xx)) }\SpecialCharTok{+}   \CommentTok{\# Name variable to plot}
+\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ variable)) }\SpecialCharTok{+}   \CommentTok{\# Name variable to plot}
   \FunctionTok{geom\_boxplot}\NormalTok{() }\SpecialCharTok{+}  \CommentTok{\# Create histogram with specified binwidth}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Histogram of Revenue of Movies in 2016"}\NormalTok{, }\CommentTok{\# Title for plot}
        \AttributeTok{x =} \StringTok{"Revenue (in Millions)"}\NormalTok{, }\CommentTok{\# Label for x axis}
@@ -3037,7 +3042,7 @@ To show the effect of outliers on the measures of center and spread, the largest
 \setcounter{enumi}{11}
 \tightlist
 \item
-  Which measure of center is robust to outliers?
+  Which measure of center is robust to outliers? Explain your answer.
 \end{enumerate}
 
 \vspace{0.5in}
@@ -3097,7 +3102,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{ipeds}{%
 \subsection{IPEDS}\label{ipeds}}
 
-Download and open the provided \texttt{R} script file for week 4 lab to answer the following questions.
+Download and open the provided \texttt{R} script file for week 4 lab to answer the following questions. \textbf{Remember that bolded questions will be answered on Gradescope for your group.}
 
 These data are on a subset of institutions that met the following selection criteria:
 
@@ -3159,32 +3164,21 @@ These data are on a subset of institutions that met the following selection crit
 
 \vspace{0.5in}
 
-Upload and import the data set IPEDS\_Data\_2018. Enter the name of the data set (see the environment tab) for \texttt{datasetname} in the \texttt{R} script file in lines \ldots{} We will look at the retention rates for the different institutions. Enter the variable name \texttt{Retention} for \texttt{variable} in the \texttt{R} code chunk below. Run this chunk of code by clicking on the green play arrow below.
+Upload and import the data set IPEDS\_Data\_2018. Enter the name of the data set (see the environment tab) for \texttt{datasetname} in the \texttt{R} script file in line 5. We will look at the retention rates for the different institutions. Enter the variable name \texttt{Retention} for \texttt{variable} in line 12. Highlight and run lines 1 -- 12.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{IPEDS }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/IPEDS\_Data\_2018.csv"}\NormalTok{)}
+\NormalTok{datasetname }\OtherTok{{-}\textgreater{}}\NormalTok{ IPEDS }\CommentTok{\#Creates the object IPEDS }
 \NormalTok{IPEDS }\OtherTok{\textless{}{-}}\NormalTok{ IPEDS }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{filter}\NormalTok{(Sector }\SpecialCharTok{!=} \StringTok{"Public 2{-}year"}\NormalTok{) }
+  \FunctionTok{filter}\NormalTok{(Sector }\SpecialCharTok{!=} \StringTok{"Public 2{-}year"}\NormalTok{) }\CommentTok{\#Filters the data set to remove Public 2{-}year}
 \NormalTok{IPEDS }\OtherTok{\textless{}{-}}\NormalTok{ IPEDS }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{filter}\NormalTok{(Sector }\SpecialCharTok{!=} \StringTok{"Private 2{-}year"}\NormalTok{)   }
+  \FunctionTok{filter}\NormalTok{(Sector }\SpecialCharTok{!=} \StringTok{"Private 2{-}year"}\NormalTok{) }\CommentTok{\#Filters the data set to remove Private 2{-}year}
 \NormalTok{IPEDS }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(Retention)) }\CommentTok{\#Gives the summary statistics}
+  \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(variable)) }\CommentTok{\#Gives the summary statistics}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-#>   min Q1 median Q3 max    mean       sd    n missing
-#> 1   0 66     75 83 100 73.8525 15.14323 1817     150
-\end{verbatim}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
-\tightlist
-\item
-  Report the value for quartile 3 and interpret this value in context of the study.
-\end{enumerate}
+\textbf{5. Report the value for quartile 3 and interpret this value in context of the study.}
 
 \vspace{1in}
 
@@ -3218,14 +3212,14 @@ Upload and import the data set IPEDS\_Data\_2018. Enter the name of the data set
 
 \vspace{0.8in}
 
-Next we will create both a histogram and a boxplot of the variable \texttt{Retention}. Enter the name of the variable in both sets of \texttt{R} code chunks below for \texttt{variable}. Give each plot a descriptive title. Run the two chunks of code to give the histogram and boxplot. \textbf{Define retention rates}
+Next we will create both a histogram and a boxplot of the variable \texttt{Retention}. Enter the name of the variable in both line 16 and line 23 for \texttt{variable} in the \texttt{R} script file. \textbf{Give each plot a descriptive title.} Highlight and run lines 15 -- 27 to give the histogram and boxplot. \textbf{Export and upload both plots to Gradescope for your group.}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{IPEDS }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
-\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Retention)) }\SpecialCharTok{+}   \CommentTok{\# Name variable to plot}
+\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ variable)) }\SpecialCharTok{+}   \CommentTok{\# Name variable to plot}
   \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{binwidth =} \DecValTok{5}\NormalTok{) }\SpecialCharTok{+}  \CommentTok{\# Create dotplot}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Histogram of Rentention Rate for Universities in 2018"}\NormalTok{, }\CommentTok{\# Title for plot}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Title"}\NormalTok{, }\CommentTok{\# Title for plot}
        \AttributeTok{x =} \StringTok{"Rentention Rate"}\NormalTok{, }\CommentTok{\# Label for x axis}
        \AttributeTok{y =} \StringTok{"Frequency"}\NormalTok{) }\CommentTok{\# Label for y axis}
 \end{Highlighting}
@@ -3234,9 +3228,9 @@ Next we will create both a histogram and a boxplot of the variable \texttt{Reten
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{IPEDS }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
-\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Retention)) }\SpecialCharTok{+}   \CommentTok{\# Name variable to plot}
+\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ variable)) }\SpecialCharTok{+}   \CommentTok{\# Name variable to plot}
   \FunctionTok{geom\_boxplot}\NormalTok{() }\SpecialCharTok{+}  \CommentTok{\# Create dotplot}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Boxplot of Rentention Rates for Universities in 2018"}\NormalTok{, }\CommentTok{\# Title for plot}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Title"}\NormalTok{, }\CommentTok{\# Title for plot}
        \AttributeTok{x =} \StringTok{"Retention Rates"}\NormalTok{, }\CommentTok{\# Label for x axis}
        \AttributeTok{y =} \StringTok{"Frequency"}\NormalTok{) }\CommentTok{\# Label for y axis}
 \end{Highlighting}
@@ -3262,31 +3256,25 @@ Next we will create both a histogram and a boxplot of the variable \texttt{Reten
 
 \vspace{0.3in}
 
-In the next part of the activity we will compare retention rates for public and private institutions. Notice that this variable is \texttt{Control} in the data set.
+In the next part of the activity we will compare retention rates for public and private institutions. Note that this variable is \texttt{Control} in the data set.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{10}
-\tightlist
-\item
-  Which variable will we treat as the explanatory variable? Response variable?
-\end{enumerate}
+\textbf{11. Which variable will we treat as the explanatory variable? Response variable?}
 
 \vspace{0.8in}
 
-Enter the name of the explanatory variable and the name of the response variable in the following \texttt{R} code to find the summary statistics and create the side by side boxplots of the data.
+Enter the name of the explanatory variable and the name of the response variable in lines 31 and 34 of the \texttt{R} script file. Highlight and run lines 30 -- 38 to find the summary statistics and create side by side boxplots of the data.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{IPEDS }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# Data set piped into...}
-  \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(Retention}\SpecialCharTok{\textasciitilde{}}\NormalTok{Control)) }\CommentTok{\# Apply favstats function to budget\_mil and content rating}
+  \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(response}\SpecialCharTok{\textasciitilde{}}\NormalTok{explanatory)) }\CommentTok{\# Apply favstats function to budget\_mil and content rating}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{IPEDS }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# Data set piped into...}
-  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ Retention, }\AttributeTok{x =}\NormalTok{ Control))}\SpecialCharTok{+}  \CommentTok{\# Identify variables}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ response, }\AttributeTok{x =}\NormalTok{ explanatory))}\SpecialCharTok{+}  \CommentTok{\# Identify variables}
   \FunctionTok{geom\_boxplot}\NormalTok{()}\SpecialCharTok{+}  \CommentTok{\# Tell it to make a box plot}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Side by side box plot of retention rates control"}\NormalTok{,  }\CommentTok{\# Title}
        \AttributeTok{x =} \StringTok{"Control"}\NormalTok{,    }\CommentTok{\# x{-}axis label}
@@ -3311,9 +3299,9 @@ Enter the name of the explanatory variable and the name of the response variable
 
   Does either distribution have outliers?
   \vspace{0.3in}
-\item
-  Report the difference in mean retention rates for private and public universities. Use private minus public as the order of subtraction. Use the appropriate notation.
 \end{enumerate}
+
+\textbf{13. Report the difference in mean retention rates for private and public universities. Use private minus public as the order of subtraction. Use the appropriate notation.}
 
 \vspace{0.8in}
 
@@ -3327,7 +3315,7 @@ Enter the name of the explanatory variable and the name of the response variable
 
 \vspace{0.8in}
 
-The following set of code will create side by side boxplots of retention rates by size of the university.
+The following set of code will create side by side boxplots of retention rates by size of the university. Highlight and run lines 41--46 in the \texttt{R} script file.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -3943,7 +3931,7 @@ Simpson's Paradox:
 \hypertarget{terminology-review-9}{%
 \subsection{Terminology review}\label{terminology-review-9}}
 
-In this week's activity, we will review summary measures and plots for two quantitative variables. Some terms covered in this activity are:
+In today's activity, we will review summary measures and plots for two quantitative variables. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
@@ -3976,7 +3964,7 @@ We will revisit the data set used last week collected on Movies released in 2016
 \texttt{content\_rating} & Rating of the movie (\texttt{G}, \texttt{PG}, \texttt{PG-13}, \texttt{R}, \texttt{Not\ Rated}) \\
 \texttt{imdb\_score} & IMDb user rating score from 1 to 10 \\
 \texttt{genres} & Categories the movie falls into (e.g., Action, Drama, etc.) \\
-\texttt{movie\_facebook\_likes} & Number of likes a movie receives on Facebook \\
+\texttt{facebook\_likes} & Number of likes a movie receives on Facebook \\
 \bottomrule
 \end{longtable}
 
@@ -4003,12 +3991,12 @@ We will revisit the data set used last week collected on Movies released in 2016
 
 \vspace{0.4in}
 
-We will look at the relationship between budget and revenue for movies released in 2016. Enter the variable name \texttt{budget\_mil} for xx and \texttt{revenue\_mil} for yy at line 7 in the \texttt{R} script file to create the scatterplot. (Note: both variables are measured in ``millions of dollars,'' or \$MM.) Highlight and run lines 1--12.
+We will look at the relationship between budget and revenue for movies released in 2016. Enter the explanatory variable name, \texttt{budget\_mil}, for \texttt{explanatory} and the response variable name, \texttt{revenue\_mil}, for \texttt{response} at line 7 in the \texttt{R} script file to create the scatterplot. (Note: both variables are measured in ``millions of dollars,'' or \$MM.) Highlight and run lines 1--12.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{movies }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set pipes into...}
-\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ xx, }\AttributeTok{y =}\NormalTok{ yy))}\SpecialCharTok{+}  \CommentTok{\# Specify variables}
+\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ explanatory, }\AttributeTok{y =}\NormalTok{ response))}\SpecialCharTok{+}  \CommentTok{\# Specify variables}
   \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}  \CommentTok{\# Add scatterplot of points}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
        \AttributeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
@@ -4041,7 +4029,7 @@ We will look at the relationship between budget and revenue for movies released 
   Form (linear, non-linear)
 \end{itemize}
 
-\vspace{.4in}
+\vspace{.2in}
 
 \begin{itemize}
 \tightlist
@@ -4049,7 +4037,7 @@ We will look at the relationship between budget and revenue for movies released 
   Direction (positive, negative)
 \end{itemize}
 
-\vspace{.4in}
+\vspace{.2in}
 
 \begin{itemize}
 \tightlist
@@ -4057,7 +4045,7 @@ We will look at the relationship between budget and revenue for movies released 
   Strength
 \end{itemize}
 
-\vspace{.4in}
+\vspace{.2in}
 
 \begin{itemize}
 \tightlist
@@ -4065,7 +4053,7 @@ We will look at the relationship between budget and revenue for movies released 
   Unusual observations or outliers
 \end{itemize}
 
-\vspace{.4in}
+\vspace{.2in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4261,40 +4249,40 @@ We will revisit the movie data set collected on Movies released in 2016 to furth
 \texttt{content\_rating} & Rating of the movie (\texttt{G}, \texttt{PG}, \texttt{PG-13}, \texttt{R}, \texttt{Not\ Rated}) \\
 \texttt{imdb\_score} & IMDb user rating score from 1 to 10 \\
 \texttt{genres} & Categories the movie falls into (e.g., Action, Drama, etc.) \\
-\texttt{movie\_facebook\_likes} & Number of likes a movie receives on Facebook \\
+\texttt{facebook\_likes} & Number of likes a movie receives on Facebook \\
 \bottomrule
 \end{longtable}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{movies }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/Movies2016.csv"}\NormalTok{) }\CommentTok{\# Reads in data set}
+\end{Highlighting}
+\end{Shaded}
 
 \hypertarget{correlation}{%
 \subsubsection*{Correlation}\label{correlation}}
 \addcontentsline{toc}{subsubsection}{Correlation}
 
-Correlation measures the strength and the direction of the linear relationship between two quantitative variables. The closer the value of correlation to \(+1\) or \(-1\), the stronger the linear relationship. Values close to zero indicate a very weak linear relationship between the two variables. The following output shows a correlation matrix between several pairs of quantitative variables.
+Correlation measures the strength and the direction of the linear relationship between two quantitative variables. The closer the value of correlation to \(+1\) or \(-1\), the stronger the linear relationship. Values close to zero indicate a very weak linear relationship between the two variables. The following output shows a correlation matrix between several pairs of quantitative variables. Highlight and run lines 1--12 to produce the same table as below.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{movies }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# Data set pipes into}
   \FunctionTok{select}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{"budget\_mil"}\NormalTok{, }\StringTok{"revenue\_mil"}\NormalTok{, }
            \StringTok{"duration"}\NormalTok{, }\StringTok{"imdb\_score"}\NormalTok{, }
-           \StringTok{"movie\_facebook\_likes"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
+           \StringTok{"facebook\_likes"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{cor}\NormalTok{(}\AttributeTok{use=}\StringTok{"pairwise.complete.obs"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{round}\NormalTok{(}\DecValTok{3}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-#>                      budget_mil revenue_mil duration imdb_score
-#> budget_mil                1.000       0.686    0.463      0.292
-#> revenue_mil               0.686       1.000    0.227      0.398
-#> duration                  0.463       0.227    1.000      0.261
-#> imdb_score                0.292       0.398    0.261      1.000
-#> movie_facebook_likes      0.678       0.723    0.438      0.309
-#>                      movie_facebook_likes
-#> budget_mil                          0.678
-#> revenue_mil                         0.723
-#> duration                            0.438
-#> imdb_score                          0.309
-#> movie_facebook_likes                1.000
+#>                budget_mil revenue_mil duration imdb_score facebook_likes
+#> budget_mil          1.000       0.686    0.463      0.292          0.678
+#> revenue_mil         0.686       1.000    0.227      0.398          0.723
+#> duration            0.463       0.227    1.000      0.261          0.438
+#> imdb_score          0.292       0.398    0.261      1.000          0.309
+#> facebook_likes      0.678       0.723    0.438      0.309          1.000
 \end{verbatim}
 
 \begin{enumerate}
@@ -4427,7 +4415,7 @@ What if we wanted to see if the relationship between movie budget and revenue di
   Does the \emph{relationship} between movie budget and revenue differ among the different content ratings? Explain.
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.8in}
 
 In order to see what other variables may have an impact on revenue for Movies released in 2016 we created a multivariate model. The following \texttt{R} code gives the estimates for the regression model with \texttt{budget\_mil} and \texttt{duration} included.
 
@@ -4465,6 +4453,8 @@ In order to see what other variables may have an impact on revenue for Movies re
 \item
   Using the fitted regression model above, predict the revenue for a movie in 2016 with a budget of 180 \$MM and duration of 100 minutes.
 \end{enumerate}
+
+\vspace{0.8in}
 
 \hypertarget{take-home-messages-8}{%
 \subsection{Take-home messages}\label{take-home-messages-8}}
@@ -4508,9 +4498,12 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Find the correlation coefficient from \texttt{R} output or from \(R^2\) and the sign of the slope.
 \end{itemize}
 
+\hypertarget{penguins}{%
+\subsection{Penguins}\label{penguins}}
+
 The Palmer Station Long Term Ecological Research Program sampled three penguin species on islands in the Palmer Archipelago in Antarctica. Researchers took various body measurements on the penguins, including flipper length and body mass. The researchers were interested in the relationship between flipper length and body mass and wondered if flipper length could be used to accurately predict the body mass of these three penguin species.
 
-Upload and import the \texttt{penguins} csv file. Using the following \texttt{R} code chunk create a scatterplot of the flipper length and body mass. Make sure to give your plot a descriptive title. Highlight and run lines 1 -- 11. \textbf{Upload a copy of your scatterplot to Gradescope.}
+Upload and import the \texttt{penguins} csv file and the provided \texttt{R} script file for week 5 lab. First We will create a scatterplot of the flipper length and body mass. Notice that we are using flipper length to predict body mass. This makes flipper length the explanatory variable. \textbf{Make sure to give your plot a descriptive title.} Highlight and run lines 1--11 in the \texttt{R} script file. \textbf{Upload a copy of your scatterplot to Gradescope.}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4519,7 +4512,7 @@ Upload and import the \texttt{penguins} csv file. Using the following \texttt{R}
   \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}  \CommentTok{\# Add scatterplot of points}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"flipper length (mm)"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
        \AttributeTok{y =} \StringTok{"body mass (g)"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
-       \AttributeTok{title =} \StringTok{"TITLE"}\NormalTok{) }\SpecialCharTok{+} \CommentTok{\# Be sure to title your plots}
+       \AttributeTok{title =} \StringTok{"Title"}\NormalTok{) }\SpecialCharTok{+} \CommentTok{\# Be sure to title your plots}
   \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{se =} \ConstantTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
 \end{Highlighting}
 \end{Shaded}
@@ -4537,7 +4530,7 @@ Upload and import the \texttt{penguins} csv file. Using the following \texttt{R}
   Form (linear, non-linear)
 \end{itemize}
 
-\vspace{.4in}
+\vspace{.2in}
 
 \begin{itemize}
 \tightlist
@@ -4545,7 +4538,7 @@ Upload and import the \texttt{penguins} csv file. Using the following \texttt{R}
   Direction (positive, negative)
 \end{itemize}
 
-\vspace{.4in}
+\vspace{.2in}
 
 \begin{itemize}
 \tightlist
@@ -4553,7 +4546,7 @@ Upload and import the \texttt{penguins} csv file. Using the following \texttt{R}
   Strength
 \end{itemize}
 
-\vspace{.4in}
+\vspace{.2in}
 
 \begin{itemize}
 \tightlist
@@ -4561,9 +4554,9 @@ Upload and import the \texttt{penguins} csv file. Using the following \texttt{R}
   Unusual observations or outliers
 \end{itemize}
 
-\vspace{.4in}
+\vspace{.2in}
 
-Highlight and run lines 14 - 18 to get the correlation matrix.
+Highlight and run lines 14--18 to get the correlation matrix.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4599,12 +4592,12 @@ Highlight and run lines 14 - 18 to get the correlation matrix.
 
 \vspace{1in}
 
-Enter the variable body\_mass\_g for yy and the variable name flipper\_length\_mm for xx in line 21 in the \texttt{R} script file. Highlight and run lines 21 -- 22.
+Enter the variable \texttt{body\_mass\_g} for \texttt{response} and the variable name \texttt{flipper\_length\_mm} for \texttt{explanatory} in line 21 in the \texttt{R} script file. Highlight and run lines 21--22.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# Fit linear model: y \textasciitilde{} x}
-\NormalTok{penguinsLM }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(yy}\SpecialCharTok{\textasciitilde{}}\NormalTok{xx, }\AttributeTok{data=}\NormalTok{penguins)}
+\NormalTok{penguinsLM }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(response}\SpecialCharTok{\textasciitilde{}}\NormalTok{explanatory, }\AttributeTok{data=}\NormalTok{penguins)}
 \FunctionTok{summary}\NormalTok{(penguinsLM)}\SpecialCharTok{$}\NormalTok{coefficients }\CommentTok{\# Display coefficient summary}
 \end{Highlighting}
 \end{Shaded}
@@ -4653,7 +4646,7 @@ Enter the variable body\_mass\_g for yy and the variable name flipper\_length\_m
 
 \vspace{0.5in}
 
-Highlight and run lines 25 -- 32 to get the multivariate plot.
+Highlight and run lines 25--32 to get the multivariate plot.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4686,14 +4679,50 @@ Highlight and run lines 25 -- 32 to get the multivariate plot.
   Does adding the variable species affect the relationship between body mass and flipper length? Explain.
 \end{enumerate}
 
+\newpage
+
 \vspace{1in}
 
 \hypertarget{exam-1-review}{%
 \chapter{Exam 1 Review}\label{exam-1-review}}
 
-Use the provided data set from the Islands to answer the following questions. Each adult (\textgreater21) islander was selected at random from all the adult islanders.
+Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 Review \texttt{R} script file to answer the following questions. Each adult (\textgreater21) islander was selected at random from all the adult islanders.
 
-\textbf{Make Table}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.24}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.76}}@{}}
+\toprule
+\textbf{Variable} & \textbf{Description} \\
+\midrule
+\endhead
+\texttt{Island} & Name of Island that the Islander resides on \\
+\texttt{City} & Name of City in which the Islander resides \\
+\texttt{Population} & Population of the City \\
+\texttt{Name} & Name of Islander \\
+\texttt{Consent} & Whether the Islander consented to be in the study \\
+\texttt{Gender} & Gender of Islander (M = male, F = Female) \\
+\texttt{Age} & Age of Islander \\
+\texttt{Married} & Marital status of Islander \\
+\texttt{Smoking\_Status} & Whether the Islander is a current smoker \\
+\texttt{Children} & Whether the Islander has children \\
+\texttt{weight\_kg} & Weight measured in kg \\
+\texttt{height\_cm} & Height measured in cm \\
+\texttt{respitory\_rate} & Breaths per minute \\
+\texttt{Type\_of\_Music} & Music type (Classical or Heavy Medal) Islander was randomly assigned to listen to \\
+\texttt{Before\_PuzzleCube} & Time to complete puzzle cube (minutes) before listening to assigned music \\
+\texttt{After\_PuzzleCube} & Time to complete puzzle cube (minutes) after listening to assigned music \\
+\texttt{Diff\_PuzzleCube} & Difference in time to complete puzzle cube (minutes) for Before - After listening to assigned music \\
+\texttt{Education\_Level} & Highest level of education completed (note: missing data depicted by missing) \\
+\texttt{Balance\_Test} & Time balanced measured in seconds with eyes closed \\
+\texttt{Blood\_Glucose\_before} & Level of blood glucose (mg/dL) before consuming assigned drink \\
+\texttt{Heart\_Rate\_before} & Heart rate (bpm) before consuming assigned drink \\
+\texttt{Type\_of\_Drink} & Type of drink (EnergyDrink or Cola) Islander was randomly assigned to drink \\
+\texttt{Heart\_Rate\_after} & Heart rate (bpm) after consuming assigned drink \\
+\texttt{Blood\_Glucose\_after} & Level of blood glucose (mg/dL) after consuming assigned drink \\
+\texttt{Diff\_Heart\_Rate} & Difference in heart rate (bpm) for Before - After consuming assigned drink \\
+\texttt{Diff\_Blood\_Glucose} & Difference in blood glucose (mg/dL) for Before - After consuming assigned drink \\
+\bottomrule
+\end{longtable}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4742,6 +4771,8 @@ Use the provided data set from the Islands to answer the following questions. Ea
   Choose a single categorical variable. Use the Exam 1 Review \texttt{R} script file to find the appropriate summary statistic and graphical display of the data.
 \end{enumerate}
 
+\rgi Variable:
+
 \rgi Summary Statistic (with notation):
 
 \rgi \rgi Interpretation:
@@ -4754,11 +4785,13 @@ Use the provided data set from the Islands to answer the following questions. Ea
 
 \rgi Sketch of the graph:
 
-\vspace{1.5in}
+\vspace{2in}
 
 \rgi To what group could the results of this study be applies to?
 
 \vspace{0.3in}
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4768,6 +4801,10 @@ Use the provided data set from the Islands to answer the following questions. Ea
   Choose two categorical variables. Use the Exam 1 Review \texttt{R} script file to find the appropriate summary statistic and graphical display of the data.
 \end{enumerate}
 
+\rgi Explanatory Variable:
+
+\rgi Response variable:
+
 \rgi Summary Statistic (with notation):
 
 \rgi \rgi Interpretation:
@@ -4780,9 +4817,9 @@ Use the provided data set from the Islands to answer the following questions. Ea
 
 \rgi Sketch of the graph:
 
-\vspace{1.5in}
+\vspace{2in}
 
-\rgi \rgi Based on the graph, does there appear to be an association between the two variables? Explain your answer.
+\rgi Based on the graph, does there appear to be an association between the two variables? Explain your answer.
 
 \vspace{0.5in}
 
@@ -4792,7 +4829,7 @@ Use the provided data set from the Islands to answer the following questions. Ea
 
 \rgi What is the scope of inference for this study?
 
-\vspace{0.3in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4801,6 +4838,10 @@ Use the provided data set from the Islands to answer the following questions. Ea
 \item
   Choose one categorical variable and one quantitative variable. Use the Exam 1 Review \texttt{R} script file to find the appropriate summary statistic and graphical display of the data.
 \end{enumerate}
+
+\rgi Explanatory Variable:
+
+\rgi Response Variable:
 
 \rgi Summary Statistic (with notation):
 
@@ -4816,11 +4857,11 @@ Use the provided data set from the Islands to answer the following questions. Ea
 
 \vspace{1.5in}
 
-\rgi \rgi Based on the graph, does there appear to be an association between the two variables? Explain your answer.
+\rgi Based on the graph, does there appear to be an association between the two variables? Explain your answer.
 
 \vspace{0.5in}
 
-\rgi \rgi Compare the two plots using the four characteristics to describe plots of quantitative variables.
+\rgi Compare the two plots using the four characteristics to describe plots of quantitative variables.
 
 \rgi \rgi Shape:
 
@@ -4844,7 +4885,7 @@ Use the provided data set from the Islands to answer the following questions. Ea
 
 \rgi What is the scope of inference for this study?
 
-\vspace{0.3in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4853,6 +4894,10 @@ Use the provided data set from the Islands to answer the following questions. Ea
 \item
   Choose two quantitative variables. Use the Exam 1 Review \texttt{R} script file to find the appropriate summary statistic and graphical display of the data.
 \end{enumerate}
+
+\rgi Explanatory Variable:
+
+\rgi Response Variable:
 
 \rgi Summary Statistic (with notation):
 
@@ -4886,13 +4931,13 @@ Use the provided data set from the Islands to answer the following questions. Ea
 
 \rgi Sketch of the graph:
 
-\vspace{1.5in}
+\vspace{2in}
 
-\rgi \rgi Based on the graph, does there appear to be an association between the two variables? Explain your answer.
+\rgi Based on the graph, does there appear to be an association between the two variables? Explain your answer.
 
 \vspace{0.5in}
 
-\rgi \rgi Compare the two plots using the four characteristics to describe scatterplots.
+\rgi Compare the two plots using the four characteristics to describe scatterplots.
 
 \rgi \rgi Form:
 
@@ -4916,7 +4961,7 @@ Use the provided data set from the Islands to answer the following questions. Ea
 
 \rgi What is the scope of inference for this study?
 
-\vspace{0.3in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4926,60 +4971,53 @@ Use the provided data set from the Islands to answer the following questions. Ea
   As far back as medieval times, peppers and other spices have been touted for their potential health benefits, as many possess antioxidant and anti-inflammatory properties. Chili peppers increase the body's ability to break down lipids, which in turn can reduce the risk of hypertension, Type II diabetes, and cardiovascular disease. Researchers randomly assigned US adult volunteers to either eat one red-hot chili pepper a day for one month or not. Before and at the end of the study the cholesterol level for each participant was measured. The researchers hoped to show that eating one red-hot chili pepper a day will reduce cholesterol levels. They found that of those who consumed at least one red-hot chili pepper a day, 33.6\% had lower cholesterol levels at the end of the study. Of those who did not eat a chili pepper, 21.6\% had lower cholesterol levels at the end of the study. Twenty-five percent of the participants were assigned to eat a red-hot chili pepper each day for one month.
 \end{enumerate}
 
-Define events:
+\rgi Define events:
 
-\rgi A = participant ate one red-hot chili pepper each day
+\rgi \rgi A = participant ate one red-hot chili pepper each day
 
-\rgi B = participant had lower cholesterol levels at the end of the study
+\rgi \rgi B = participant had lower cholesterol levels at the end of the study
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  Identify what each numerical value given in the problem represents in probability notation.
+\begin{verbatim}
+a.  Identify what each numerical value given in the problem represents in probability notation.
 
-  0.336 =
+0.336 = 
 
-  0.216 =
+0.216 =
 
-  0.25 =
-\item
-  Create a hypothetical two-way table to represent the situation.\\
-  \textbackslash begin\{center\}
+0.25 = 
 
-  \renewcommand{\arraystretch}{1.5}
-   \begin{tabular}{cccc} \hline
-   \hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ \hline
-   & & & \\ 
-   & & & \\ 
-   & & & \\ \hline
-   Total & & & 100,000 \\ \hline
-   \end{tabular}
+b. Create a hypothetical two-way table to represent the situation.  
+\end{verbatim}
 
-  \textbackslash end\{center\}
-  \vspace{.1in}
-\item
-  If a randomly selected participant was assigned to eat peppers, what is the probability they did not have lower cholesterol levels at the end of the study? What is the notation used for this probability?
-\end{enumerate}
+\textbackslash begin\{center\}
 
-\vspace{0.5in}
+\renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{cccc} \hline
+    \hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ \hline
+    & & & \\ 
+    & & & \\ 
+    & & & \\ \hline
+    Total & & & 100,000 \\ \hline
+    \end{tabular}
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  What is the probability that a randomly selected participant was not assigned to eat peppers and did have lower cholesterol levels? What is the notation used for this probability?
-\end{enumerate}
+\textbackslash end\{center\}
+\vspace{.1in}
+
+\begin{verbatim}
+c.  If a randomly selected participant was assigned to eat peppers, what is the probability they did not have lower cholesterol levels at the end of the study? What is the notation used for this probability?
+\end{verbatim}
 
 \vspace{0.5in}
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\setcounter{enumi}{4}
-\tightlist
-\item
-  Find the probability \(P(A^C | B^C)\). What does this probability represent in context of the problem?
-\end{enumerate}
+\begin{verbatim}
+d. What is the probability that a randomly selected participant was not assigned to eat peppers and did have lower cholesterol levels?  What is the notation used for this probability?
+\end{verbatim}
+
+\vspace{0.5in}
+
+\begin{verbatim}
+e.  Find the probability $P(A^C | B^C)$. What does this probability represent in context of the problem?
+\end{verbatim}
 
 \vspace{0.5in}
 

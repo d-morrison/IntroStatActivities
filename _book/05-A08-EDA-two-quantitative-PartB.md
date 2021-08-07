@@ -33,13 +33,16 @@ We will revisit the movie data set collected on Movies released in 2016 to furth
 | `content_rating` | Rating of the movie (`G`, `PG`, `PG-13`, `R`, `Not Rated`)|
 | `imdb_score` | IMDb user rating score from 1 to 10 |
 | `genres` | Categories the movie falls into (e.g., Action, Drama, etc.) |
-| `movie_facebook_likes` | Number of likes a movie receives on Facebook |
+| `facebook_likes` | Number of likes a movie receives on Facebook |
 
 
+```r
+movies <- read.csv("data/Movies2016.csv") # Reads in data set
+```
 
 #### Correlation  {-}
 
-Correlation measures the strength and the direction of the linear relationship between two quantitative variables.  The closer the value of correlation to $+1$ or $-1$, the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  
+Correlation measures the strength and the direction of the linear relationship between two quantitative variables.  The closer the value of correlation to $+1$ or $-1$, the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  Highlight and run lines 1--12 to produce the same table as below.
 
 
 
@@ -47,24 +50,18 @@ Correlation measures the strength and the direction of the linear relationship b
 movies %>%  # Data set pipes into
   select(c("budget_mil", "revenue_mil", 
            "duration", "imdb_score", 
-           "movie_facebook_likes")) %>%
+           "facebook_likes")) %>%
   cor(use="pairwise.complete.obs") %>%
   round(3)
 ```
 
 ```
-#>                      budget_mil revenue_mil duration imdb_score
-#> budget_mil                1.000       0.686    0.463      0.292
-#> revenue_mil               0.686       1.000    0.227      0.398
-#> duration                  0.463       0.227    1.000      0.261
-#> imdb_score                0.292       0.398    0.261      1.000
-#> movie_facebook_likes      0.678       0.723    0.438      0.309
-#>                      movie_facebook_likes
-#> budget_mil                          0.678
-#> revenue_mil                         0.723
-#> duration                            0.438
-#> imdb_score                          0.309
-#> movie_facebook_likes                1.000
+#>                budget_mil revenue_mil duration imdb_score facebook_likes
+#> budget_mil          1.000       0.686    0.463      0.292          0.678
+#> revenue_mil         0.686       1.000    0.227      0.398          0.723
+#> duration            0.463       0.227    1.000      0.261          0.438
+#> imdb_score          0.292       0.398    0.261      1.000          0.309
+#> facebook_likes      0.678       0.723    0.438      0.309          1.000
 ```
 
 1.  Using the output above, which two variables have the *strongest* correlation? What is the value of this correlation?
@@ -135,7 +132,7 @@ movies %>% # Data set pipes into...
 
 10. Does the *relationship* between movie budget and revenue differ among the different content ratings?  Explain.
 
-\vspace{1in}
+\vspace{0.8in}
 
 In order to see what other variables may have an impact on revenue for Movies released in 2016 we created a multivariate model.  The following `R` code gives the estimates for the regression model with `budget_mil` and `duration` included.
 
@@ -160,6 +157,8 @@ $$\widehat{\text{revenue}} = b_0 + b_1\times budget + b_2\times duration.$$
 \vspace{1in}
 
 12. Using the fitted regression model above, predict the revenue for a movie in 2016 with a budget of 180 $MM and duration of 100 minutes.
+
+\vspace{0.8in}
 
 ### Take-home messages
 
