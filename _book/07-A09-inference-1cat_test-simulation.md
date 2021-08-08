@@ -1,10 +1,10 @@
-## Activity 7a:  Helperer-Hinderer --- Testing using Simulation Methods
+## Activity 7a:  Helperer-Hinderer --- Simulation Test
 
 \setstretch{1}
 
 ### Learning objectives
 
-* Identify the two possible explanations (one assuming the null hypothesis, and one assuming the alternative hypothesis) for a relationship seen in sample data.
+* Identify the two possible explanations (one assuming the null hypothesis and one assuming the alternative hypothesis) for a relationship seen in sample data.
 
 * Given a research question involving a single categorical variable, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols.
@@ -57,17 +57,17 @@ Do young children know the difference between helpful and unhelpful behavior? A 
 
 1.  What are the observational units in this study?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 2.  What variable are we measuring on each observational unit?  Is it categorical or quantitative?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 #### Ask a research question {-}
 
 3. Identify the research question for this study.
 
-\vspace{1in}
+\vspace{0.6in}
 
 #### Design a study and collect data {-}
 
@@ -75,7 +75,7 @@ Before using statistical inference methods, we must check that the cases are ind
 
 4.  Are the cases independent? Justify your answer.
 
-\vspace{1in}
+\vspace{0.8in}
 
 \newpage 
 

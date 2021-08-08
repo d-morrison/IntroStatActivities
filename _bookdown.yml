@@ -53,6 +53,5 @@ rmd_files: [
   "14-L11-regression-wrapup.Rmd",
   "15-data-exploration.Rmd",
   "15-Exam3-review.Rmd"
-  
    ]
 before_chapter_script: "_common.R"

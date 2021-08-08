@@ -67,7 +67,7 @@ Do young children know the difference between helpful and unhelpful behavior? A 
 
 3. Identify the research question for this study.
 
-\vspace{1in}
+\vspace{0.6in}
 
 #### Design a study and collect data {-}
 
@@ -75,7 +75,7 @@ Before using statistical inference methods, we must check that the cases are ind
 
 4.  Are the cases independent? Justify your answer.
 
-\vspace{1in}
+\vspace{0.8in}
 
 \newpage 
 
@@ -115,7 +115,7 @@ The notation used for a population proportion (or probability, or true proportio
 
 10.  Why are we assuming a null value of 0.5 in this study? 
 
-\newpage
+\vspace{0.3in}
 
 The **alternative hypothesis** is the claim to be tested and the direction of the claim (less than, greater than, or not equal to) is based on the research question.  
 
@@ -147,7 +147,7 @@ Let's think about how to use cards to create one simulation of 16 infants under 
 
 \vspace{0.5in}
 
-15.  Next, we would mix the cards together and draw 1 card, write down if says helper or hinderer, and replace the card.  How many times would we need to repeat this process to simulate one sample?
+15.  Next, we would mix the cards together and draw 1 card, write down if the card says helper or hinderer, and replace the card.  How many times would we need to repeat this process to simulate one sample?
 
 \vspace{0.5in}
 
