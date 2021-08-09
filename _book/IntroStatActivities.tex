@@ -277,23 +277,23 @@ This calendar only lists the in-class activities, Rstudio labs and exams each we
 4& M& 9/13& IMDb Movie Reviews - One Quantitative Variable \\*
 4& W& 9/15& IMDb Movie Reviews - One of Each \\*
 4& F& 9/17& Week 4 Lab \\ \hline
-5& M& 9/20& Movie Profits \\*
-5& W& 9/22& Movie Profits \\*   
+5& M& 9/20& Movie Profits - Linear Regression \\*
+5& W& 9/22& Movie Profits - Correlation \\* 
 5& F& 9/24& Week 5 Lab \\ \hline
 6& M& 9/27& Exam 1 Review \\*
 6& W& 9/29& Midterm Exam 1 \\*  
 6& F& 10/1& Group Midterm Exam 1 \\ \hline
-7& M& 10/4& Helper Hinderer --- Simulation Testing \\*
-7& W& 10/6& Helper Hinderer --- Estimation using Simulation Methods \\*
+7& M& 10/4& Helper Hinderer --- Simulation HT \\*
+7& W& 10/6& Helper Hinderer --- Simulation CI \\*
 7& F& 10/8& Week 7 Lab \\ \hline
-8& M& 10/11& Handedness of Male Boxers --- Theory Test \\*
-8& W& 10/13& Handedness of Male Boxers --- Estimation using Theory-based Methods \\*    
+8& M& 10/11& Handedness of Male Boxers --- Theory HT \\*
+8& W& 10/13& Handedness of Male Boxers --- Theory CI \\*    
 8& F& 10/15& Week 8 Lab \\ \hline
-9& M& 10/18& Good Samaritan --- Simulation Testing \\*
-9& W& 10/20& Good Samaritan --- Estimation using Simulation \\* 
+9& M& 10/18& Good Samaritan --- Simulation HT \\*
+9& W& 10/20& Good Samaritan --- Simulation CI \\*   
 9& F& 10/22& Week 9 Lab \\ \hline
-10& M& 10/25& Winter Sports Helmet Use and Head Injuries --- Theory Test \\*
-10& W& 10/27& Winter Sports Helmet Use and Head Injuries --- Estimation using Theory-based Methods \\*
+10& M& 10/25& Helmet Use and Head Injuries --- Theory HT \\*
+10& W& 10/27& Helmet Use and Head Injuries --- Theory CI \\*
 10& F& 10/29& Week 10 Lab\\ \hline
 11& M& 11/1& Exam 2 Review \\*
 11& W& 11/3& Midterm Exam 2 \\* 
@@ -315,8 +315,8 @@ Finals& M--W& 12/13--12/15& Final Group Exam \\ \hline
 
 \end{longtable}
 
-\hypertarget{week-1---basics-of-data}{%
-\chapter{Week 1 - Basics of Data}\label{week-1---basics-of-data}}
+\hypertarget{basics-of-data}{%
+\chapter{Basics of Data}\label{basics-of-data}}
 
 \hypertarget{reading-guide-basics-of-data}{%
 \section{Reading Guide: Basics of Data}\label{reading-guide-basics-of-data}}
@@ -1120,8 +1120,26 @@ The two main study designs we will cover are \textbf{observational studies} and 
 
 \begin{center}\includegraphics[width=0.75\linewidth]{images/ScopeOfInferenceGreyscale} \end{center}
 
-\hypertarget{activity-study-design---part-a}{%
-\section{Activity: Study Design - Part A}\label{activity-study-design---part-a}}
+\hypertarget{take-home-messages-1}{%
+\subsection{Take-home messages}\label{take-home-messages-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The study design determines if we can draw causal inferences or not. If an association is detected, a randomized experiment allows us to conclude that there is a causal (cause-and-effect) relationship between the explanatory and response variable. Observational studies have potential confounding variables within the study that prevent us from inferring a causal relationship between the variables.
+\item
+  Confounding variables are variables not included in the study that are related to both the explanatory and the response variables. When there are potential confounding variables in the study we cannot draw causal inferences.
+\end{enumerate}
+
+\hypertarget{additional-notes-1}{%
+\subsection{Additional notes}\label{additional-notes-1}}
+
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
+
+\newpage
+
+\hypertarget{activity-2b-native-american-address}{%
+\section{Activity 2b: Native American Address}\label{activity-2b-native-american-address}}
 
 \setstretch{1}
 
@@ -1130,39 +1148,264 @@ The two main study designs we will cover are \textbf{observational studies} and 
 
 \begin{itemize}
 \item
-  Explain the purpose of random sampling and its effect on scope of inference.
+  Explain the purpose of random selection and its effect on scope of inference.
 \item
-  Identify the types of bias present in a study.
+  Select a simple random sample from a finite population using a random number generator.
+\item
+  Explain why a sampling method is unbiased or biased.
 \end{itemize}
 
 \hypertarget{terminology-review-2}{%
 \subsection{Terminology review}\label{terminology-review-2}}
 
-In this today's activity, we will examine different types of sampling bias and how to determine which population or sub-population the results apply to. Some terms covered in this activity are:
+In this week's activity, we will examine different types of sampling bias and study designs, confounding variables, and how to determine the scope of inference for a study. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
-  Population
+  Random sample
 \item
-  Sample
+  Unbiased vs biased methods of selection
 \item
-  Parameter \textbf{Introduce parameter of interest?}
-\item
-  Statistic
-\item
-  Selection bias
-\item
-  Response bias
-\item
-  Non-response bias
+  Generalization
 \end{itemize}
 
 To review these concepts, see Sections 1.3 through 1.6 in the textbook.
 
+\hypertarget{native-american-address}{%
+\subsection{Native American Address}\label{native-american-address}}
+
+For this activity, you will read a speech given by Jim Becenti, a member of the Navajo American Indian tribe, who spoke about the employment problems his people faced at an Office of Indian Affairs meeting in Phoenix, Arizona, on January 30, 1947. His speech is below:
+
+\textbf{It is hard for us to go outside the reservation where we meet strangers. I have been off the reservation ever since I was sixteen. Today I am sorry I quit the Santa Fe {[}Railroad{]}. I worked for them in 1912-13. You are enjoying life, liberty, and happiness on the soil the American Indian had, so it is your responsibility to give us a hand, brother. Take us out of distress. I have never been to vocational school. I have very little education. I look at the white man who is a skilled laborer. When I was a young man I worked for a man in Gallup as a carpenter's helper. He treated me as his own brother. I used his tools. Then he took his tools and gave me a list of tools I should buy and I started carpentering just from what I had seen. We have no alphabetical language. We see things with our eyes and can always remember it. I urge that we help my people to progress in skilled labor as well as common labor. The hope of my people is to change our ways and means in certain directions, so they can help you someday as taxpayers. If not, as you are going now, you will be burdened the rest of your life. The hope of my people is that you will continue to help so that we will be all over the United States and have a hand with you, and give us a brotherly hand so we will be happy as you are. Our reservation is awful small. We did not know the capacity of the range until the white man come and say ``you raise too much sheep, got to go somewhere else,'' resulting in reduction to a skeleton where the Indians can't make a living on it. For eighty years we have been confused by the general public, and what is the condition of the Navajo today? Starvation! We are starving for education. Education is the main thing and the only thing that is going to make us able to compete with you great men here talking to us.}
+
+\hypertarget{by-eye-selection}{%
+\subsubsection*{By eye selection}\label{by-eye-selection}}
+\addcontentsline{toc}{subsubsection}{By eye selection}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Circle ten words in Jim Becenti's speech which are a representative sample of the entire text. Describe your method for selecting this sample.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Fill in the table below with your selected words from the preview assignment and the length of each word (number of letters/digits in the word):
+  \vspace{1mm}
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/word_length} 
+
+}
+
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  Calculate the mean word length in your selected sample. Is this value a parameter or a statistic?\\
+  \vspace{0.3in}
+\item
+  Report your mean word length to your instructor. Your instructor will guide the class in creating a visualization of the distribution results generated by your class. Draw a picture of the plot here. Include a descriptive x-axis label.
+  \vspace{1.5in}
+\item
+  Based on the plot of sample mean word lengths in question 4, what is your best guess for the average word length of the population of all 359 words in the speech?
+  \vspace{0.3in}
+\item
+  The true mean word length of the population of all 359 words in the speech is 3.95 letters. Is this value a parameter or a statistic?\\
+  \vspace{0.2in}
+\end{enumerate}
+
+\rgi Where does the value of 3.95 fall in our plot above?
+\vspace{0.3in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\item
+  If your samples were truly representative, what proportion of sample means would you expect to be above 3.95?
+  \vspace{0.5in}
+\item
+  What proportion of students' computed sample means were larger than the true mean of 3.95 letters?
+  \vspace{0.5in}
+\end{enumerate}
+
+\hypertarget{random-selection}{%
+\subsubsection*{Random selection}\label{random-selection}}
+\addcontentsline{toc}{subsubsection}{Random selection}
+
+Suppose instead of selecting a representative sample by eye, each student used a random number generator to select a simple random sample of 10 words. A simple random sample relies on a random mechanism to choose a sample, without replacement, from the population, such that every sample of size 10 is equally likely to be chosen.
+
+To use a random number generator to select a simple random sample, you first need a numbered list of all the words in the population, called a sampling frame. You can then generate 10 random numbers from the numbers 1 to 359 (the number of words in the population), and the chosen random numbers correspond to the chosen words in your sample.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  Use the random number generator at \url{https://istats.shinyapps.io/RandomNumbers/} and the sampling frame provided to select a simple random sample from the population of all 359 words in the speech. Fill in the table below with the random numbers selected and each number's corresponding word and word length (number of letters/digits in the word):
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/word_length} 
+
+}
+
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\item
+  Calculate the mean word length in your selected sample in question 9. Is this value a parameter or a statistic?
+  \vspace{0.3in}
+\item
+  Report your mean word length to your instructor. Your instructor will guide the class in creating a visualization of the distribution results generated by your class. Draw a picture of the plot here. Include a descriptive x-axis label.
+  \vspace{1.5in}
+\item
+  Where does the value 3.95, the true mean word length, fall in the distribution created in question 11?
+  \vspace{0.3in}
+\item
+  How does the plot generated in question 11 compare to the plot generated in question 5?
+\end{enumerate}
+
+\rgi Which features are similar?\\
+\vspace{0.4in}
+
+\rgi Which features differ?
+
+\vspace{0.4in}
+
+\rgi Why didn't everyone get the same sample mean?
+\vspace{0.4in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{13}
+\tightlist
+\item
+  One set of randomly generated sample mean word lengths from a single class may not be large enough to visualize the distribution results. Let's have a computer generate 1,000 sample mean word lengths for us.
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Navigate to the ``Sampling Distribution of the Sample Mean (Continuous Population)'' Art of Stat web applet: \url{https://istats.shinyapps.io/sampdist_cont/}.
+\item
+  Under ``Select Population Distribution,'' select ``Build Your Own.''
+\item
+  Copy and paste the population of word lengths into the applet from the data set provided. \textbf{Only copy column 3 with NO header}.
+\item
+  Select 10 for the sample size.
+\item
+  Select 1,000 for the number of samples to simulate drawing from the population.
+\item
+  Click ``Draw Sample(s).''
+\end{itemize}
+
+The plot labeled ``Sampling Distribution of the Sample Mean'' displays the 1,000 randomly generated sample mean word lengths. Sketch this plot below.
+\vspace{1.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{14}
+\item
+  What is the center value of this distribution created in question 14?
+  \vspace{0.3in}
+\item
+  Explain why the sampling method of using a random number generator to generate a sample is a ``better'' method than choosing 10 words ``by eye.''
+  \vspace{0.8in}
+\item
+  Which method of selection, ``by eye'' or random selection, is an unbiased method of selection?
+  \vspace{0.5in}
+\item
+  Explain why the human sampling method of choosing 10 words by eye is biased? What is the direction of the bias, i.e., does the method tend to overestimate or underestimate the population mean word length?
+  \vspace{0.8in}
+\end{enumerate}
+
+\hypertarget{take-home-messages-2}{%
+\subsection{Take-home messages}\label{take-home-messages-2}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  When we use a biased method of selection, we will over or underestimate the population mean.
+\item
+  Random selection is an unbiased method of selection.
+\item
+  To see if a method is biased, we compare the distribution of the estimates
+  to the true value. We want our estimate to be on target or unbiased. When using unbiased methods of selection, the mean of the distribution matches our true parameter.
+\item
+  If the sampling method is biased, inferences made about the population based on a sample estimate will not be valid. Random sampling avoids this problem.
+\end{enumerate}
+
+\hypertarget{additional-notes-2}{%
+\subsection{Additional notes}\label{additional-notes-2}}
+
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
+
 \newpage
 
-\hypertarget{types-of-sampling-bias.-complete-q1-before-class---do-we-want-them-to-complete-questions-before-class.}{%
-\subsection{\texorpdfstring{Types of sampling bias. \textbf{Complete Q1 before class - do we want them to complete questions before class?}.}{Types of sampling bias. Complete Q1 before class - do we want them to complete questions before class?.}}\label{types-of-sampling-bias.-complete-q1-before-class---do-we-want-them-to-complete-questions-before-class.}}
+\hypertarget{week-2-lab-study-design}{%
+\section{Week 2 Lab: Study Design}\label{week-2-lab-study-design}}
+
+\setstretch{1}
+
+\hypertarget{learning-outcomes-3}{%
+\subsection{Learning outcomes}\label{learning-outcomes-3}}
+
+\begin{itemize}
+\item
+  Explain the purpose of random assignment and its effect on scope of inference.
+\item
+  Identify whether a study design is observational or an experiment.
+\item
+  Identify confounding variables in observational studies and explain why they are confounding.
+\item
+  Explain the effect of sample size on sampling variability
+\end{itemize}
+
+\hypertarget{terminology-review-3}{%
+\subsection{Terminology review}\label{terminology-review-3}}
+
+In this week's lab, we will examine different types of sampling bias and study designs, confounding variables, and how to determine the scope of inference for a study. Some terms covered in this activity are:
+
+\begin{itemize}
+\item
+  Scope of inference
+\item
+  Explanatory variable
+\item
+  Response variable
+\item
+  Confounding variable
+\item
+  Experiment
+\item
+  Observational study
+\item
+  Types of sampling bias
+\end{itemize}
+
+To review these concepts, see Sections 1.3 through 1.6 in the textbook.
+
+\hypertarget{study-design-2}{%
+\subsection{Study Design}\label{study-design-2}}
+
+Each Friday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Gradescope (one submission per group). The questions to be submitted on Gradescope are bolded in the lab. As you work through the lab with your group have the Gradescope lab assignment open so that you can answer those questions as you work through the activity.
+
+\hypertarget{types-of-sampling-bias.}{%
+\subsection*{Types of sampling bias.}\label{types-of-sampling-bias.}}
+\addcontentsline{toc}{subsection}{Types of sampling bias.}
 
 In today's activity, we will look at sampling and types of bias (selection, non-response, or response).
 
@@ -1185,28 +1428,6 @@ In these next questions, identify the target population, the sample selected, th
 
   Type(s) of bias:
   \vspace{0.3in}
-\item
-  \textbf{Recently, a survey was conducted to assess current presidential approval in the United States. A random sample of 6395 US adults was taken. One of the questions asked in the survey was, ``Do you agree or disagree with the President on many or nearly all of the top issues facing the country today?'' Of those surveyed, 42\% said they did agree.}
-  \vspace{0.25in}
-
-  Target population:
-  \vspace{0.3in}
-
-  Sample:
-  \vspace{0.3in}
-
-  Variable:
-  \vspace{0.3in}
-
-  Type(s) of bias:
-  \vspace{0.3in}
-\end{enumerate}
-
-\newpage
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
 \item
   A television station is interested in predicting whether or not a local referendum to legalize marijuana for adult use will pass. It asks its viewers to phone in and indicate whether they are in favor or opposed to the referendum. Of the 2241 viewers who phoned in, forty-five percent were opposed to legalizing marijuana.
   \vspace{0.1in}
@@ -1237,13 +1458,6 @@ In these next questions, identify the target population, the sample selected, th
 
   Type(s) of bias:
   \vspace{0.3in}
-\end{enumerate}
-
-\newpage
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
 \item
   The Bozeman school district is interested in surveying parents of students about their opinions on returning to in-person classes following the COVID-19 pandemic. They divided the school district into 10 divisions based on location and randomly surveyed 20 households within each division. Explain why selection bias would be present in this study design.
   \vspace{1in}
@@ -1253,22 +1467,17 @@ In these next questions, identify the target population, the sample selected, th
 
 \vspace{0.8in}
 
-\newpage
+\hypertarget{scope-of-inference}{%
+\subsection*{Scope of inference}\label{scope-of-inference}}
+\addcontentsline{toc}{subsection}{Scope of inference}
 
-\hypertarget{take-home-messages-1}{%
-\subsection{Take-home messages}\label{take-home-messages-1}}
+For the next exercises, identify the explanatory variable, the response variable, the study design (observational study or experiment), and the scope of inference (using the following chart).
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  If the sample is selected using a random and non-biased method of selection (i.e., a random sample of the target population with no response or non-response bias), then the results of the study can be generalized to the target population. When using biased methods of selection, the results only apply to the sample selected or similar observational units.
-\end{enumerate}
-
-For the next exercises, identify the explanatory variable, the response variable, the study design (observational study or experiment), and the scope of inference (using the above chart).
+\begin{center}\includegraphics[width=0.75\linewidth]{images/ScopeOfInferenceGreyscale} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
 \item
   The pharmaceutical company Moderna Therapeutics, working in conjunction with the National Institutes of Health, conducted Phase 3 clinical trials towards a vaccine for COVID-19 last fall. US clinical research sites enrolled 30,000 volunteers without COVID-19 to participate. Participants were randomly assigned to receive either the candidate vaccine or a saline placebo. They were then followed to assess whether or not they developed COVID-19. The trial was double-blind, so neither the investigators nor the participants knew who was assigned to which group.
   \vspace{0.1in}
@@ -1290,7 +1499,7 @@ For the next exercises, identify the explanatory variable, the response variable
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
+\setcounter{enumi}{6}
 \item
   In another study, a local health department randomly selected 1000 US adults without COVID-19 to participate in a health survey. Each participant was assessed at the beginning of the study and then followed for one year. They were interested to see which participants elected to receive a vaccination for COVID-19 and whether any participants developed COVID-19.
   \vspace{0.1in}
@@ -1321,13 +1530,13 @@ A \textbf{confounding variable} is a variable that is \emph{both}
 
 When both these conditions are met, if we observe an association between the explanatory variable and the response variable in the data, we cannot be sure if this association is due to the explanatory variable or the confounding variable---the explanatory and confounding variables are ``confounded.''
 
-\begin{center}\includegraphics[width=0.4\linewidth]{02-A02-random_assignment_files/figure-latex/unnamed-chunk-2-1} \end{center}
+\begin{center}\includegraphics[width=0.4\linewidth]{02-L01-study-design_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
+\setcounter{enumi}{7}
 \item
-  For each of the studies in questions 5 and 6, determine whether confounding variables could be an issue. If so, identify a potential confounding variable and explain how it meets the definition of a confounding variable.
+  For each of the studies in questions 6 and 7, determine whether confounding variables could be an issue. If so, identify a potential confounding variable and explain how it meets the definition of a confounding variable.
   \vspace{1.5in}
 \item
   A study published in 2007 by Christopher Johnson, professor of music education and music therapy at the University of Kansas, revealed that students in elementary schools with superior music education programs scored around 20 percent higher in math scores on standardized tests, compared to schools with low-quality music programs. Explain how school budget could be a potential confounding variable. Be sure to address how the confounding variable is related to both the explanatory and response variable.
@@ -1337,7 +1546,7 @@ When both these conditions are met, if we observe an association between the exp
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\setcounter{enumi}{9}
 \tightlist
 \item
   What is the purpose of random assignment of the cases in a study to the explanatory variable groups?
@@ -1345,99 +1554,66 @@ When both these conditions are met, if we observe an association between the exp
 
 \vspace{0.8in}
 
-\hypertarget{take-home-messages-2}{%
-\subsection{Take-home messages}\label{take-home-messages-2}}
+\hypertarget{effect-of-sample-size}{%
+\subsection*{Effect of sample size}\label{effect-of-sample-size}}
+\addcontentsline{toc}{subsection}{Effect of sample size}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
 \item
-  The study design determines if we can draw causal inferences or not. If an association is detected, a randomized experiment allows us to conclude that there is a causal (cause-and-effect) relationship between the explanatory and response variable. Observational studies have potential confounding variables within the study that prevent us from inferring a causal relationship between the variables.
-\item
-  Confounding variables are variables not included in the study that are related to both the explanatory and the response variables. When there are potential confounding variables in the study we cannot draw causal inferences.
+  Let's return to the Native American Address study. In today's activity we will select 20 words instead of 10 words at random.
 \end{enumerate}
 
-\hypertarget{additional-notes-1}{%
-\subsection{Additional notes}\label{additional-notes-1}}
-
-Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
-
-\hypertarget{activity-2b-sampling}{%
-\section{Activity 2b: Sampling}\label{activity-2b-sampling}}
-
-\setstretch{1}
-
-\hypertarget{learning-outcomes-3}{%
-\subsection{Learning outcomes}\label{learning-outcomes-3}}
-
 \begin{itemize}
 \item
-  Explain the purpose of random assignment and its effect on scope of inference.
+  Navigate to the ``Sampling Distribution of the Sample Mean (Continuous Population)'' Art of Stat web applet: \url{https://istats.shinyapps.io/sampdist_cont/}.
 \item
-  Identify whether a study design is observational or an experiment.
+  Under ``Select Population Distribution,'' select ``Build Your Own.''
 \item
-  Identify confounding variables in observational studies and explain why they are confounding.
+  Copy and paste the population of word lengths into the applet from the data set provided. \textbf{Only copy column 3 with NO header}.
+\item
+  Select 20 for the sample size.
+\item
+  Select 1,000 for the number of samples to simulate drawing from the population.
+\item
+  Click ``Draw Sample(s).''
 \end{itemize}
 
-\hypertarget{terminology-review-3}{%
-\subsection{Terminology review}\label{terminology-review-3}}
+The plot labeled ``Sampling Distribution of the Sample Mean'' displays the 1,000 randomly generated sample mean word lengths. Sketch this plot below.
+\vspace{1.5in}
 
-In this week's activity, we will examine different types of sampling bias and study designs, confounding variables, and how to determine the scope of inference for a study. Some terms covered in this activity are:
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\tightlist
+\item
+  Compare the distribution created in question 11 to the one created in question 14 in Activity 2a.
+\end{enumerate}
 
-\begin{itemize}
-\item
-  Scope of inference
-\item
-  Explanatory variable
-\item
-  Response variable
-\item
-  Confounding variable
-\item
-  Experiment
-\item
-  Observational study
-\end{itemize}
+\rgi Which features are similar?\\
+\vspace{0.4in}
 
-To review these concepts, see Sections 1.3 through 1.6 in the textbook.
+\rgi Which features differ?
 
-\hypertarget{week-2-lab-study-design}{%
-\section{Week 2 Lab: Study Design}\label{week-2-lab-study-design}}
+\vspace{0.4in}
 
-\setstretch{1}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\item
+  Compare the spreads of the plots in question 11 and in question 14 in Activity 2a. You should see that in one plot all sample means are closer to the population mean than in the other. Which plot shows this?
+  \vspace{0.4in}
+\item
+  Using the evidence from your simulations, answer the following research questions.
+\end{enumerate}
 
-\hypertarget{learning-outcomes-4}{%
-\subsection{Learning outcomes}\label{learning-outcomes-4}}
+\rgi Does changing the sample size impact whether the sample estimates are unbiased? Explain your answer.
+\vspace{0.5in}
 
-\begin{itemize}
-\item
-  Explain the purpose of random assignment and its effect on scope of inference.
-\item
-  Identify whether a study design is observational or an experiment.
-\item
-  Identify confounding variables in observational studies and explain why they are confounding.
-\end{itemize}
-
-\hypertarget{terminology-review-4}{%
-\subsection{Terminology review}\label{terminology-review-4}}
-
-In this week's lab, we will examine different types of sampling bias and study designs, confounding variables, and how to determine the scope of inference for a study. Some terms covered in this activity are:
-
-\begin{itemize}
-\item
-  Scope of inference
-\item
-  Explanatory variable
-\item
-  Response variable
-\item
-  Confounding variable
-\item
-  Experiment
-\item
-  Observational study
-\end{itemize}
-
-To review these concepts, see Sections 1.3 through 1.6 in the textbook.
+\rgi Does changing the sample size impact the variability of sample estimates? Explain your answer
+\vspace{0.5in}
 
 \hypertarget{exploring-categorical-data}{%
 \chapter{Exploring Categorical Data}\label{exploring-categorical-data}}
@@ -1776,8 +1952,8 @@ Total & & & 100,000 \\ \hline
 
 \setstretch{1}
 
-\hypertarget{learning-outcomes-5}{%
-\subsection{Learning outcomes}\label{learning-outcomes-5}}
+\hypertarget{learning-outcomes-4}{%
+\subsection{Learning outcomes}\label{learning-outcomes-4}}
 
 \begin{itemize}
 \item
@@ -1786,8 +1962,8 @@ Total & & & 100,000 \\ \hline
   Construct two-way tables to evaluate conditional probabilities.
 \end{itemize}
 
-\hypertarget{terminology-review-5}{%
-\subsection{Terminology review}\label{terminology-review-5}}
+\hypertarget{terminology-review-4}{%
+\subsection{Terminology review}\label{terminology-review-4}}
 
 In today's activity, we will cover two-way tables and probability. Some terms covered in this activity are:
 
@@ -1972,8 +2148,8 @@ Total & 24,000 & 76,000 & 100,000 \\
   To fill in the two-way table, always start with the unconditional variable in the total row or column and then use the conditional probabilities to fill in the interior cells.
 \end{enumerate}
 
-\hypertarget{additional-notes-2}{%
-\subsection{Additional notes}\label{additional-notes-2}}
+\hypertarget{additional-notes-3}{%
+\subsection{Additional notes}\label{additional-notes-3}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -1984,8 +2160,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \setstretch{1}
 
-\hypertarget{learning-outcomes-6}{%
-\subsection{Learning outcomes}\label{learning-outcomes-6}}
+\hypertarget{learning-outcomes-5}{%
+\subsection{Learning outcomes}\label{learning-outcomes-5}}
 
 \begin{itemize}
 \item
@@ -1997,8 +2173,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   segmented bar plot, mosaic plot.
 \end{itemize}
 
-\hypertarget{terminology-review-6}{%
-\subsection{Terminology review}\label{terminology-review-6}}
+\hypertarget{terminology-review-5}{%
+\subsection{Terminology review}\label{terminology-review-5}}
 
 In today's lab, we will review summary measures and plots for categorical variables. Some terms covered in this activity are:
 
@@ -2494,8 +2670,8 @@ Decision tree for determining an appropriate plot given a number of variables an
   (center, variability, shape, outliers).
 \end{itemize}
 
-\hypertarget{terminology-review-7}{%
-\subsection{Terminology review}\label{terminology-review-7}}
+\hypertarget{terminology-review-6}{%
+\subsection{Terminology review}\label{terminology-review-6}}
 
 In today's activity, we will review summary measures and plots for quantitative variables. Some terms covered in this activity are:
 
@@ -2768,8 +2944,8 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
   Data should be summarized numerically and displayed graphically to give us information about the study.
 \end{enumerate}
 
-\hypertarget{additional-notes-3}{%
-\subsection{Additional notes}\label{additional-notes-3}}
+\hypertarget{additional-notes-4}{%
+\subsection{Additional notes}\label{additional-notes-4}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -2797,8 +2973,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   (center, variability, shape, outliers).
 \end{itemize}
 
-\hypertarget{terminology-review-8}{%
-\subsection{Terminology review}\label{terminology-review-8}}
+\hypertarget{terminology-review-7}{%
+\subsection{Terminology review}\label{terminology-review-7}}
 
 In today's activity, we will review summary measures and plots for a single categorical and single quantitative variable. Some terms covered in this activity are:
 
@@ -3068,8 +3244,8 @@ To show the effect of outliers on the measures of center and spread, the largest
   The median and the interquartile range are robust statistics, meaning that they are not affected by very large or very small values. When we have a skewed distribution the best measure of center is the median and the best measure of spread is the IQR.
 \end{enumerate}
 
-\hypertarget{additional-notes-4}{%
-\subsection{Additional notes}\label{additional-notes-4}}
+\hypertarget{additional-notes-5}{%
+\subsection{Additional notes}\label{additional-notes-5}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -3928,8 +4104,8 @@ Simpson's Paradox:
   Interpret the slope coefficient in context of the problem.
 \end{itemize}
 
-\hypertarget{terminology-review-9}{%
-\subsection{Terminology review}\label{terminology-review-9}}
+\hypertarget{terminology-review-8}{%
+\subsection{Terminology review}\label{terminology-review-8}}
 
 In today's activity, we will review summary measures and plots for two quantitative variables. Some terms covered in this activity are:
 
@@ -4192,8 +4368,8 @@ $e_i=y_i-\hat{y}_i$
 
 \newpage
 
-\hypertarget{additional-notes-5}{%
-\subsection{Additional notes}\label{additional-notes-5}}
+\hypertarget{additional-notes-6}{%
+\subsection{Additional notes}\label{additional-notes-6}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -4217,8 +4393,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Find the correlation coefficient from \texttt{R} output or from \(R^2\) and the sign of the slope.
 \end{itemize}
 
-\hypertarget{terminology-review-10}{%
-\subsection{Terminology review}\label{terminology-review-10}}
+\hypertarget{terminology-review-9}{%
+\subsection{Terminology review}\label{terminology-review-9}}
 
 In this week's activity, we will review summary measures and plots for two quantitative variables. Some terms covered in this activity are:
 
@@ -4467,8 +4643,8 @@ In order to see what other variables may have an impact on revenue for Movies re
   The coefficient of determination multiplied by 100 (\(r^2 \times 100\)) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable. The closer the value of the coefficient of determination is to 100\%, the stronger the relationship.
 \end{enumerate}
 
-\hypertarget{additional-notes-6}{%
-\subsection{Additional notes}\label{additional-notes-6}}
+\hypertarget{additional-notes-7}{%
+\subsection{Additional notes}\label{additional-notes-7}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -5850,8 +6026,8 @@ Margin of error of a confidence interval for a sample proportion:
   Interpret and evaluate a p-value for a simulation-based hypothesis test for a single proportion.
 \end{itemize}
 
-\hypertarget{terminology-review-11}{%
-\subsection{Terminology review}\label{terminology-review-11}}
+\hypertarget{terminology-review-10}{%
+\subsection{Terminology review}\label{terminology-review-10}}
 
 In today's activity, we will introduce simulation-based hypothesis testing for a single categorical variable. Some terms covered in this activity are:
 
@@ -6311,8 +6487,8 @@ When we write a conclusion we answer the research question by stating how much e
   To create one simulated sample on the null distribution for a sample proportion, spin a spinner with probability equal to \(\pi_0\) (the null value), \(n\) times or draw with replacement \(n\) times from a deck of cards created to reflect \(\pi_0\) as the probability of success. Calculate and plot the proportion of successes from the simulated sample.
 \end{enumerate}
 
-\hypertarget{additional-notes-7}{%
-\subsection{Additional notes}\label{additional-notes-7}}
+\hypertarget{additional-notes-8}{%
+\subsection{Additional notes}\label{additional-notes-8}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -6333,8 +6509,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Interpret a confidence interval for a single proportion.
 \end{itemize}
 
-\hypertarget{terminology-review-12}{%
-\subsection{Terminology review}\label{terminology-review-12}}
+\hypertarget{terminology-review-11}{%
+\subsection{Terminology review}\label{terminology-review-11}}
 
 In today's activity, we will introduce simulation-based confidence intervals for a single proportion. Some terms covered in this activity are:
 
@@ -6603,8 +6779,8 @@ We will use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R}
   To create one simulated sample on the bootstrap distribution for a sample proportion, label \(n\) cards with the original responses. Draw with replacement \(n\) times. Calculate and plot the resampled proportion of successes.
 \end{enumerate}
 
-\hypertarget{additional-notes-8}{%
-\subsection{Additional notes}\label{additional-notes-8}}
+\hypertarget{additional-notes-9}{%
+\subsection{Additional notes}\label{additional-notes-9}}
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
@@ -6943,8 +7119,8 @@ In the interpretation of a 95\% confidence interval, we say that we are 95\% con
   Use the normal distribution to find the p-value.
 \end{itemize}
 
-\hypertarget{terminology-review-13}{%
-\subsection{Terminology review}\label{terminology-review-13}}
+\hypertarget{terminology-review-12}{%
+\subsection{Terminology review}\label{terminology-review-12}}
 
 In today's activity, we will introduce theory-based confidence intervals for a single categorical variable. Some terms covered in this activity are:
 
@@ -7285,8 +7461,8 @@ Use Rstudio find the p-value for this new sample.
   The farther the statistic is from the null value, the larger the standardized statistic. This will result in a smaller p-value and more evidence against the null hypothesis.
 \end{enumerate}
 
-\hypertarget{additional-notes-9}{%
-\subsection{Additional notes}\label{additional-notes-9}}
+\hypertarget{additional-notes-10}{%
+\subsection{Additional notes}\label{additional-notes-10}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -7311,8 +7487,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Use the normal distribution to find the multiplier needed for a confidence interval
 \end{itemize}
 
-\hypertarget{terminology-review-14}{%
-\subsection{Terminology review}\label{terminology-review-14}}
+\hypertarget{terminology-review-13}{%
+\subsection{Terminology review}\label{terminology-review-13}}
 
 In this activity, we will introduce simulation-based confidence intervals for a single proportion. Some terms covered in this activity are:
 
@@ -7485,8 +7661,8 @@ Use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R} to simu
 
 \vspace{0.8in}
 
-\hypertarget{effect-of-sample-size}{%
-\subsection{Effect of Sample Size}\label{effect-of-sample-size}}
+\hypertarget{effect-of-sample-size-1}{%
+\subsection{Effect of Sample Size}\label{effect-of-sample-size-1}}
 
 Suppose in another sample of 230 male boxers we saw that 37 were left-handed.
 
@@ -7532,8 +7708,8 @@ Suppose in another sample of 230 male boxers we saw that 37 were left-handed.
   A smaller sample size will increase the margin of error which results in a wider confidence interval.
 \end{enumerate}
 
-\hypertarget{additional-notes-10}{%
-\subsection{Additional notes}\label{additional-notes-10}}
+\hypertarget{additional-notes-11}{%
+\subsection{Additional notes}\label{additional-notes-11}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -8079,8 +8255,8 @@ How are the confidence level and the significance level related (for a two-sided
   Interpret and evaluate a p-value for a simulation-based hypothesis test for a difference in proportions.
 \end{itemize}
 
-\hypertarget{terminology-review-15}{%
-\subsection{Terminology review}\label{terminology-review-15}}
+\hypertarget{terminology-review-14}{%
+\subsection{Terminology review}\label{terminology-review-14}}
 
 In today's activity, we will use simulation-based methods to analyze two categorical variables. Some terms covered in this activity are:
 
@@ -8472,8 +8648,8 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
   To create one simulated sample on the null distribution for a difference in sample proportions, label \(n_1 + n_2\) cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes \(n_1\) and \(n_2\), representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
 \end{enumerate}
 
-\hypertarget{additional-notes-11}{%
-\subsection{Additional notes}\label{additional-notes-11}}
+\hypertarget{additional-notes-12}{%
+\subsection{Additional notes}\label{additional-notes-12}}
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
@@ -8494,8 +8670,8 @@ Use this space to summarize your thoughts and take additional notes on this week
   Create and interpret a simulation-based confidence interval for a difference in proportions.
 \end{itemize}
 
-\hypertarget{terminology-review-16}{%
-\subsection{Terminology review}\label{terminology-review-16}}
+\hypertarget{terminology-review-15}{%
+\subsection{Terminology review}\label{terminology-review-15}}
 
 In this week's activity, we will use simulation methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
@@ -8798,8 +8974,8 @@ Shown in Table \ref{tab:errors}, a \textbf{Type 1 Error} happens when we reject 
   If the null value is not contained in a 99\% confidence interval, then there is evidence against the null hypothesis and the p-value is less than the significance level of 0.01.
 \end{enumerate}
 
-\hypertarget{additional-notes-12}{%
-\subsection{Additional notes}\label{additional-notes-12}}
+\hypertarget{additional-notes-13}{%
+\subsection{Additional notes}\label{additional-notes-13}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -9468,8 +9644,8 @@ Margin of error of a confidence interval for a difference in proportions:
   Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a difference in proportions.
 \end{itemize}
 
-\hypertarget{terminology-review-17}{%
-\subsection{Terminology review}\label{terminology-review-17}}
+\hypertarget{terminology-review-16}{%
+\subsection{Terminology review}\label{terminology-review-16}}
 
 In this week's in-class activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
 
@@ -9726,8 +9902,8 @@ Another summary statistic that can be calculated for two categorical variables i
   Relative risk evaluates the percent increase or percent decrease in the response variable attributed to the explanatory variable. To find the percent increase or percent decrease we calculate the following \(\text{percent change}=(RR - 1)x100\%\). If relative risk is less than 1 there is a percent decrease. If relative risk is greater than 1 there is a percent increase.
 \end{enumerate}
 
-\hypertarget{additional-notes-13}{%
-\subsection{Additional notes}\label{additional-notes-13}}
+\hypertarget{additional-notes-14}{%
+\subsection{Additional notes}\label{additional-notes-14}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -9748,8 +9924,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Create and interpret a theory-based confidence interval for a difference in proportions.
 \end{itemize}
 
-\hypertarget{terminology-review-18}{%
-\subsection{Terminology review}\label{terminology-review-18}}
+\hypertarget{terminology-review-17}{%
+\subsection{Terminology review}\label{terminology-review-17}}
 
 In this week's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
@@ -9915,8 +10091,8 @@ Recall that the \(z^*\) multiplier is the percentile of a standard normal distri
   \vspace{0.5in}
 \end{enumerate}
 
-\hypertarget{effect-of-sample-size-1}{%
-\subsection{Effect of sample size}\label{effect-of-sample-size-1}}
+\hypertarget{effect-of-sample-size-2}{%
+\subsection{Effect of sample size}\label{effect-of-sample-size-2}}
 
 Suppose in another sample of skiers and snowboards involved in accidents we saw these results:
 
@@ -9976,8 +10152,8 @@ Total & 1056 & 3944 & 5000 \\
   To create one simulated sample on the bootstrap distribution for a difference in sample proportions, label \(n_1 + n_2\) cards with the outcomes for the original responses. Keep groups separate and randomly draw with replacement \(n_1\) times from group 1 and \(n_2\) times from group 2. Calculate and plot the resampled difference in the proportion of successes.
 \end{enumerate}
 
-\hypertarget{additional-notes-14}{%
-\subsection{Additional notes}\label{additional-notes-14}}
+\hypertarget{additional-notes-15}{%
+\subsection{Additional notes}\label{additional-notes-15}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -10959,8 +11135,8 @@ Confidence interval for a paired mean difference:
 
 \setstretch{1}
 
-\hypertarget{learning-outcomes-7}{%
-\subsection{Learning outcomes}\label{learning-outcomes-7}}
+\hypertarget{learning-outcomes-6}{%
+\subsection{Learning outcomes}\label{learning-outcomes-6}}
 
 \begin{itemize}
 \item
@@ -10978,8 +11154,8 @@ Confidence interval for a paired mean difference:
   Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
-\hypertarget{terminology-review-19}{%
-\subsection{Terminology review}\label{terminology-review-19}}
+\hypertarget{terminology-review-18}{%
+\subsection{Terminology review}\label{terminology-review-18}}
 
 In this week's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
 
@@ -11310,8 +11486,8 @@ We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the 
   To create one simulated sample on the bootstrap distribution for a sample mean or mean difference, label \(n\) cards with the original response values. Randomly draw with replacement \(n\) times. Calculate and plot the resampled mean or the resampled mean difference.
 \end{enumerate}
 
-\hypertarget{additional-notes-15}{%
-\subsection{Additional notes}\label{additional-notes-15}}
+\hypertarget{additional-notes-16}{%
+\subsection{Additional notes}\label{additional-notes-16}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -11322,8 +11498,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \setstretch{1}
 
-\hypertarget{learning-outcomes-8}{%
-\subsection{Learning outcomes}\label{learning-outcomes-8}}
+\hypertarget{learning-outcomes-7}{%
+\subsection{Learning outcomes}\label{learning-outcomes-7}}
 
 \begin{itemize}
 \item
@@ -11341,8 +11517,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
-\hypertarget{terminology-review-20}{%
-\subsection{Terminology review}\label{terminology-review-20}}
+\hypertarget{terminology-review-19}{%
+\subsection{Terminology review}\label{terminology-review-19}}
 
 In this week's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
 
@@ -11902,8 +12078,8 @@ Confidence interval for a difference in means:
   Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
-\hypertarget{terminology-review-21}{%
-\subsection{Terminology review}\label{terminology-review-21}}
+\hypertarget{terminology-review-20}{%
+\subsection{Terminology review}\label{terminology-review-20}}
 
 In today's activity, we will use simulation-based methods to analyze the association between one categorical explanatory variable and one quantitative response variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
 
@@ -12278,8 +12454,8 @@ We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in t
   To create one simulated sample on the bootstrap distribution for a difference in sample means, label \(n_1 + n_2\) cards with the original response values. Keep groups separate and randomly draw with replacement \(n_1\) times from group 1 and \(n_2\) times from group 2. Calculate and plot the resampled difference in means.
 \end{enumerate}
 
-\hypertarget{additional-notes-16}{%
-\subsection{Additional notes}\label{additional-notes-16}}
+\hypertarget{additional-notes-17}{%
+\subsection{Additional notes}\label{additional-notes-17}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered
 
@@ -12309,8 +12485,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
-\hypertarget{terminology-review-22}{%
-\subsection{Terminology review}\label{terminology-review-22}}
+\hypertarget{terminology-review-21}{%
+\subsection{Terminology review}\label{terminology-review-21}}
 
 In today's activity, we will use theory-based methods to analyze the association between one categorical explanatory variable and one quantitative response variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
 
@@ -12569,8 +12745,8 @@ Enter the appropriate percentile value (as a decimal) for xx and degrees of free
   To find a two-sided p-value using theory-based methods we need to multiply the p-value by 2.
 \end{enumerate}
 
-\hypertarget{additional-notes-17}{%
-\subsection{Additional notes}\label{additional-notes-17}}
+\hypertarget{additional-notes-18}{%
+\subsection{Additional notes}\label{additional-notes-18}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered
 
@@ -13182,8 +13358,387 @@ Confidence interval:
 
 \newpage
 
-\hypertarget{activity-14a-moneyball}{%
-\section{Activity 14a: Moneyball}\label{activity-14a-moneyball}}
+\hypertarget{activity-14a-real-estate}{%
+\section{Activity 14a: Real Estate}\label{activity-14a-real-estate}}
+
+\setstretch{1}
+
+\hypertarget{learning-outcomes-8}{%
+\subsection{Learning outcomes}\label{learning-outcomes-8}}
+
+\begin{itemize}
+\item
+  Given a research question involving two quantitative variables, construct the null and alternative hypotheses
+  in words and using appropriate statistical symbols.
+\item
+  Describe and perform a simulation-based hypothesis test for slope or correlation.
+\item
+  Interpret and evaluate a p-value for a simulation-based hypothesis test for a slope or correlation.
+\item
+  Use bootstrapping to find a confidence interval for the slope or correlation.
+\item
+  Interpret a confidence interval for a slope or correlation.
+\end{itemize}
+
+\hypertarget{terminology-review-22}{%
+\subsection{Terminology review}\label{terminology-review-22}}
+
+In today's activity, we will use simulation-based methods for hypothesis tests and confidence intervals for a linear regression slope or correlation. Some terms covered in this activity are:
+
+\begin{itemize}
+\item
+  Correlation
+\item
+  Slope
+\item
+  Regression line
+\end{itemize}
+
+To review these concepts, see Chapters 3 and 7 in the textbook.
+
+\hypertarget{real-estate}{%
+\subsection{Real Estate}\label{real-estate}}
+
+The government of Singapore took a random sample of 373 homes in Singapore to conduct a study on the relationship between the distance to the nearest train station (called MRT stations) and house prices. The house prices were measured in SGD (Singapore dollars) per meter squared and the distance was measured in meters. Does there appear to be a relationship between house prices in Singapore and distance to the nearest MRT station?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Read in data set}
+\NormalTok{realestate }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/Real\_Estate.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{vocabulary-review.-5}{%
+\subsubsection*{Vocabulary review.}\label{vocabulary-review.-5}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Explain why regression methods are appropriate to use to address the researchers' question. Make sure you clearly define the variables of interest in your explanation and their roles.
+\end{enumerate}
+
+\vspace{.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the distance to the nearest MRT station and house prices by filling in the variable names (\texttt{Distance} and \texttt{House\_Price}) for \texttt{explanatory} and `response`` in \textbf{line 17. Highlight and run lines 1--22}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{realestate }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Pipe data set into...}
+\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ explanatory, }\AttributeTok{y =}\NormalTok{ response))}\SpecialCharTok{+}  \CommentTok{\# Specify variables}
+  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}  \CommentTok{\# Add scatterplot of points}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Distance to MRT Station (m)"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
+       \AttributeTok{y =} \StringTok{"House Price (SGD/m\^{}2)"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
+       \AttributeTok{title =} \StringTok{"Scatterplot of House Prices by Distance to Train Station"}\NormalTok{) }\SpecialCharTok{+} 
+               \CommentTok{\# Be sure to tile your plots}
+  \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{se =} \ConstantTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Sketch the plot created below. Based on your plot, does it appear that there is a relationship between distance to the MRT station and house price? Note: \texttt{Distance} should be on the \(x\)-axis.
+\end{enumerate}
+
+\vspace{2in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Describe the features of the plot above, addressing all four characteristics of a scatterplot.
+\end{enumerate}
+
+\vspace{1in}
+
+~~~~~~~If you indicated there are potential outliers, which points are they?
+
+\vspace{0.5in}
+
+\hypertarget{ask-a-research-question-5}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question-5}}
+\addcontentsline{toc}{subsubsection}{Ask a research question}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Write out the null hypothesis in words.
+\end{enumerate}
+
+\vspace{1in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  Using the research question, write the alternative hypothesis in notation to test the slope.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\hypertarget{summarize-and-visualize-the-data-5}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-5}}
+\addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
+
+Using the provided \texttt{R} script file, enter the response variable name, \texttt{House\_Price}, into the \texttt{lm()} (linear model) function for \texttt{response} and the explanatory variable name, \texttt{Distance}, for \texttt{response} in line 32 to get the linear model output. Highlight and run lines 32--33.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{lm.realestate }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(response}\SpecialCharTok{\textasciitilde{}}\NormalTok{explanatory, }\AttributeTok{data=}\NormalTok{realestate) }\CommentTok{\# lm(response\textasciitilde{}explanatory)}
+\FunctionTok{round}\NormalTok{(}\FunctionTok{summary}\NormalTok{(lm.realestate)}\SpecialCharTok{$}\NormalTok{coefficients, }\DecValTok{5}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  Using the output from the evaluated \texttt{R} code above, write the equation of the regression line using appropriate statistical notation.
+\end{enumerate}
+
+\vspace{1in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  Interpret the estimated slope in context of the problem.
+\end{enumerate}
+
+\vspace{1in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  Using your estimated line of best fit, predict the house price for a distance of 480.6977 meters. Show all work.
+\end{enumerate}
+
+\vspace{1in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\tightlist
+\item
+  One home in Singapore was 480.6977 meters from the train station and had a price of \(38.8 \frac{SGD}{m^2}\). Calculate the residual associated with this observation using your estimated regression line from question 8.
+\end{enumerate}
+
+\vspace{1in}
+
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-4}{%
+\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-4}}
+\addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
+
+In this activity, we will focus on using simulation-based methods for inference in regression.
+
+\hypertarget{simulation-based-hypothesis-test}{%
+\subsubsection*{Simulation-based hypothesis test}\label{simulation-based-hypothesis-test}}
+\addcontentsline{toc}{subsubsection}{Simulation-based hypothesis test}
+
+First, let's think about how one simulation would be created on the null distribution using cards. First, we would write the values for the response variable, wins, on each card. Next, we would shuffle these \(y\) values while keeping the \(x\) values (explanatory variable) in the same order. Then, find the line of regression for the shuffled cards and calculate either the sample slope or sample correlation.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  Once we have one simulated sample, what would we calculate and plot on the null distribution? \emph{Hint}: What statistic are we calculating from the data?
+\end{enumerate}
+
+\vspace{1in}
+
+We will use the \texttt{regression\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample slopes (or sample correlations) and compute a p-value. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as \texttt{realestate}), the statistic for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
+
+The response variable name is \texttt{Houseing\_Price} and the explanatory variable name is \texttt{Distance}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\tightlist
+\item
+  What inputs should be entered for each of the following to create the simulation to test regression slope?
+\end{enumerate}
+
+\vspace{.5 mm}
+
+\begin{itemize}
+\tightlist
+\item
+  Direction (\texttt{"greater"}, \texttt{"less"}, or \texttt{"two-sided"}):
+\end{itemize}
+
+\vspace{.2in}
+
+\begin{itemize}
+\tightlist
+\item
+  Statistic (choose \texttt{"slope"} or \texttt{"correlation"}):
+\end{itemize}
+
+\vspace{.2in}
+
+\begin{itemize}
+\tightlist
+\item
+  As extreme as (enter the value for the sample slope):
+\end{itemize}
+
+\vspace{0.2in}
+
+\begin{itemize}
+\tightlist
+\item
+  Number of repetitions:
+\end{itemize}
+
+\vspace{.2in}
+
+Using the \texttt{R} script file for this activity, enter your answers for question 12 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 1--13 and then lines 44--49.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{regression\_test}\NormalTok{(House\_Price }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Distance, }\CommentTok{\# response \textasciitilde{} explanatory}
+               \AttributeTok{data =}\NormalTok{ realestate, }\CommentTok{\# Name of data set}
+               \AttributeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Sign in alternative ("greater", "less", "two{-}sided")}
+               \AttributeTok{statistic =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# "slope" or "correlation"}
+               \AttributeTok{as\_extreme\_as =}\NormalTok{ x, }\CommentTok{\# Observed slope or correlation}
+               \AttributeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{\# Number of simulated samples for null distribution}
+       
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\tightlist
+\item
+  Report the p-value from the \texttt{R} output.
+  \vspace{0.5in}
+\end{enumerate}
+
+\hypertarget{simulation-based-confidence-interval}{%
+\subsubsection*{Simulation-based confidence interval}\label{simulation-based-confidence-interval}}
+\addcontentsline{toc}{subsubsection}{Simulation-based confidence interval}
+
+We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the \texttt{xx}'s in the the provided \texttt{R} script file to find a 95\% confidence interval. Highlight and run lines 52--56.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{regression\_bootstrap\_CI}\NormalTok{(House\_Price}\SpecialCharTok{\textasciitilde{}}\NormalTok{Distance, }\CommentTok{\# response \textasciitilde{} explanatory}
+   \AttributeTok{data =}\NormalTok{ realestate, }\CommentTok{\# Name of data set}
+   \AttributeTok{confidence\_level =}\NormalTok{ xx, }\CommentTok{\# Confidence level as decimal}
+   \AttributeTok{statistic =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Slope or correlation}
+   \AttributeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{\# Number of simulated samples for bootstrap distribution}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{13}
+\tightlist
+\item
+  Report the bootstrap 95\% confidence interval in interval notation.\\
+  \vspace{0.5in}
+\end{enumerate}
+
+\hypertarget{communicate-the-results-and-answer-the-research-question-4}{%
+\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-4}}
+\addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{14}
+\tightlist
+\item
+  Based on the p-value, write a conclusion in context of the problem.
+\end{enumerate}
+
+\vspace{.8in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{15}
+\tightlist
+\item
+  Does the p-value agree with the 95\% confidence interval? What does each tell you about the null hypothesis?
+\end{enumerate}
+
+\vspace{.6in}
+
+\hypertarget{revisit-and-look-forward}{%
+\subsubsection*{Revisit and look forward}\label{revisit-and-look-forward}}
+\addcontentsline{toc}{subsubsection}{Revisit and look forward}
+
+In order to see what impact other variables may have on the house price we can look at a multiple linear model. The following \texttt{R} code gives the estimates for the regression model with two variables, \texttt{Distance} and \texttt{house\_age} included.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{lm.price }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(House\_Price }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Distance }\SpecialCharTok{+}\NormalTok{ house\_age, }\AttributeTok{data=}\NormalTok{realestate)}
+\FunctionTok{round}\NormalTok{(}\FunctionTok{summary}\NormalTok{(lm.price)}\SpecialCharTok{$}\NormalTok{coefficients, }\DecValTok{5}\NormalTok{)}
+\CommentTok{\#\textgreater{}             Estimate Std. Error   t value Pr(\textgreater{}|t|)}
+\CommentTok{\#\textgreater{} (Intercept) 49.88559    0.96776  51.54724        0}
+\CommentTok{\#\textgreater{} Distance    {-}0.00721    0.00038 {-}18.99701        0}
+\CommentTok{\#\textgreater{} house\_age   {-}0.23103    0.04204  {-}5.49562        0}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{16}
+\tightlist
+\item
+  Use the provided \texttt{R} output to write the linear regression model including all variables. \emph{Hint}: The estimated line of regression is of the form:
+\end{enumerate}
+
+\[\widehat{\text{house price}} = b_0 + b_1\times distance + b_2\times \text{house age}.\]
+
+\vspace{1in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{17}
+\tightlist
+\item
+  Using the fitted regression model above, predict the house price for a home in Singapore with a house age of 13 years and 279.1726 meters from the nearest train station.
+\end{enumerate}
+
+\vspace{1in}
+
+\hypertarget{take-home-messages-20}{%
+\subsection{Take-home messages}\label{take-home-messages-20}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The p-value for a test for correlation should be approximately the same as the p-value for the test of slope. In the simulation test, we just change the statistic type from slope to correlation and use the appropriate sample statistic value.
+\item
+  To interpret a confidence interval for the slope, think about how to interpret the sample slope and use that information in the confidence interval for slope.
+\item
+  To create one simulated sample on the null distribution for a sample slope or sample correlation, hold the \(x\) values constant and shuffle the \(y\) values to new \(x\) values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
+\item
+  To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label \(n\) cards with the original (response, explanatory) values. Randomly draw with replacement \(n\) times. Find the regression line for the resampled data and plot the resampled slope or correlation.
+\end{enumerate}
+
+\hypertarget{additional-notes-19}{%
+\subsection{Additional notes}\label{additional-notes-19}}
+
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
+
+\newpage
+
+\hypertarget{activity-14b-moneyball}{%
+\section{Activity 14b: Moneyball}\label{activity-14b-moneyball}}
 
 \setstretch{1}
 
@@ -13356,590 +13911,6 @@ When performing inference on a least squares line, the follow conditions are gen
 
 The scatterplot generated in question 2 and the residual plots shown below will be used to assess these conditions for approximating the data with the \(t\)-distribution.
 
-\begin{center}\includegraphics[width=0.7\linewidth]{14-A21-regression-simulation_files/figure-latex/unnamed-chunk-3-1} \end{center}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
-\tightlist
-\item
-  Are the conditions met to use the \(t\)-distribution to approximate the sampling distribution of the standardized statistic? Justify your answer.
-\end{enumerate}
-
-\vspace{1.5in}
-
-\hypertarget{ask-a-research-question-5}{%
-\subsubsection*{Ask a research question}\label{ask-a-research-question-5}}
-\addcontentsline{toc}{subsubsection}{Ask a research question}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
-\tightlist
-\item
-  Write out the null hypothesis in words.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
-\tightlist
-\item
-  Using the research question, write the alternative hypothesis in notation to test the slope.
-\end{enumerate}
-
-\vspace{0.5in}
-
-\hypertarget{summarize-and-visualize-the-data-5}{%
-\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-5}}
-\addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
-
-Using the provided \texttt{R} script file, enter the response variable name, \texttt{W}, into the \texttt{lm()} (linear model) function for \texttt{yy} and the explanatory variable name, \texttt{RD}, for \texttt{xx} in line 32 to get the linear model output. Highlight and run lines 32--33.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{lm.baseball }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(yy}\SpecialCharTok{\textasciitilde{}}\NormalTok{xx, }\AttributeTok{data=}\NormalTok{baseball) }\CommentTok{\# lm(response\textasciitilde{}explanatory)}
-\FunctionTok{round}\NormalTok{(}\FunctionTok{summary}\NormalTok{(lm.baseball)}\SpecialCharTok{$}\NormalTok{coefficients, }\DecValTok{5}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{7}
-\tightlist
-\item
-  Using the output from the evaluated \texttt{R} code above, write the equation of the regression line using appropriate statistical notation.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
-\tightlist
-\item
-  Interpret the estimated slope in context of the problem.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
-\tightlist
-\item
-  Using your estimated line of best fit, predict the number of wins for a run difference of 147. Show all work.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{10}
-\tightlist
-\item
-  In 2002, the Oakland A's had a run difference of 147 and 103 wins. Calculate the residual associated with the observation (147, 103) using your estimated regression line from question 8.
-\end{enumerate}
-
-\vspace{1in}
-
-\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-4}{%
-\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-4}}
-\addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
-
-\hypertarget{hypothesis-test-3}{%
-\paragraph*{Hypothesis test}\label{hypothesis-test-3}}
-\addcontentsline{toc}{paragraph}{Hypothesis test}
-
-To find the value of the standardized statistic to test the slope we will use,
-
-\[
-T = \frac{\mbox{slope estimate}}{SE} = \frac{b_1}{SE(b_1)}.
-\]
-
-We will use the linear model \texttt{R} output above to get the estimate for slope and the standard error of the slope.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{11}
-\tightlist
-\item
-  Calculate the standardized statistic for slope. Identify where this calculated value is in the linear model \texttt{R} output.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
-\tightlist
-\item
-  Interpret the standardized statistic in context of the problem.
-\end{enumerate}
-
-\vspace{0.8in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{13}
-\tightlist
-\item
-  Using the linear model \texttt{R} output, report the p-value for the test of significance for slope.
-\end{enumerate}
-
-\vspace{0.5in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{14}
-\tightlist
-\item
-  Based on the p-value, how much evidence is there against the null hypothesis?
-\end{enumerate}
-
-\vspace{0.5in}
-
-\hypertarget{confidence-interval-3}{%
-\paragraph*{Confidence interval}\label{confidence-interval-3}}
-\addcontentsline{toc}{paragraph}{Confidence interval}
-
-Recall that a confidence interval is calculated by adding and subtracting the margin of error to the point estimate.\\
-\[\mbox{point estimate}\pm t^*SE(\mbox{estimate}).\]
-When the point estimate is a regression slope, this formula becomes
-\[b_1 \pm t^* SE(b_1).\]
-
-The \(t^*\) multiplier comes from a \(t\)-distribution with \(n-2\) degrees of freedom. Recall for a 95\% confidence interval, we use the 97.5\% percentile (95\% of the distribution is in the middle, leaving 2.5\% in each tail). The sample size for this study is 902 so we will use the degrees of freedom 900 (\(n-2\)).
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{qt}\NormalTok{(}\FloatTok{0.95+0.025}\NormalTok{, }\DecValTok{900}\NormalTok{) }\CommentTok{\# 95\% t* multiplier }
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-#> [1] 1.962603
-\end{verbatim}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{15}
-\item
-  Calculate the 95\% confidence interval for the true slope.
-  \vspace{0.8in}
-\item
-  Interpret the 95\% confidence interval in context of the problem.
-\end{enumerate}
-
-\vspace{.8in}
-
-\hypertarget{communicate-the-results-and-answer-the-research-question-4}{%
-\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-4}}
-\addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{17}
-\tightlist
-\item
-  Based on the p-value, write a conclusion in context of the problem.
-\end{enumerate}
-
-\vspace{.8in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{18}
-\tightlist
-\item
-  Does the p-value agree with the 95\% confidence interval? What does each tell you about the null hypothesis?
-\end{enumerate}
-
-\vspace{.6in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{19}
-\tightlist
-\item
-  Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper. Be sure to describe:
-\end{enumerate}
-
-\begin{itemize}
-\item
-  Summary statistic
-\item
-  Test statistic and interpretation
-\item
-  P-value and interpretation
-\item
-  Confidence interval and interpretation
-\item
-  Conclusion (written to answer the research question)
-\item
-  Scope of inference
-\end{itemize}
-
-\vspace{3in}
-
-\newpage
-
-\hypertarget{revisit-and-look-forward}{%
-\subsubsection*{Revisit and look forward}\label{revisit-and-look-forward}}
-\addcontentsline{toc}{subsubsection}{Revisit and look forward}
-
-In order to see what team attributes would have the most impact on the number of runs scored, Beane and DePodesta created several prediction models. Using 2001 statistics, they looked at a prediction model using both the team's on-base percentage and slugging percentage to predict the number of runs scored. The following \texttt{R} code gives the estimates for the regression model with both of these variables included.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{lm.score }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(RS }\SpecialCharTok{\textasciitilde{}}\NormalTok{ OBP }\SpecialCharTok{+}\NormalTok{ SLG, }\AttributeTok{data=}\NormalTok{baseball)}
-\FunctionTok{round}\NormalTok{(}\FunctionTok{summary}\NormalTok{(lm.score)}\SpecialCharTok{$}\NormalTok{coefficients, }\DecValTok{5}\NormalTok{)}
-\CommentTok{\#\textgreater{}              Estimate Std. Error   t value Pr(\textgreater{}|t|)}
-\CommentTok{\#\textgreater{} (Intercept) {-}804.6271   18.92079 {-}42.52608        0}
-\CommentTok{\#\textgreater{} OBP         2737.7680   90.68455  30.19001        0}
-\CommentTok{\#\textgreater{} SLG         1584.9086   42.15559  37.59665        0}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{20}
-\tightlist
-\item
-  Use the provided \texttt{R} output to write the linear regression model including all variables. \emph{Hint}: The estimated line of regression is of the form:
-\end{enumerate}
-
-\[\widehat{\text{runs scored}} = b_0 + b_1\times OBP + b_2\times SLG.\]
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{21}
-\tightlist
-\item
-  Using the fitted regression model above, predict the number of runs for the Oakland A's in 2002 if the team OBP is 0.339 and the team SLPG is 0.430.
-\end{enumerate}
-
-\vspace{1in}
-
-\hypertarget{out-of-class-activity-1}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-1}}
-
-In the out-of-class activity, we will focus on using simulation-based methods for inference in regression. Use Section 7.1 in the textbook and the TwoQuantSim video to complete the following questions.
-
-\hypertarget{simulation-based-hypothesis-test}{%
-\subsubsection*{Simulation-based hypothesis test}\label{simulation-based-hypothesis-test}}
-\addcontentsline{toc}{subsubsection}{Simulation-based hypothesis test}
-
-First, let's think about how one simulation would be created on the null distribution using cards. First, we would write the values for the response variable, wins, on each card. Next, we would shuffle these \(y\) values while keeping the \(x\) values (explanatory variable) in the same order. Then, find the line of regression for the shuffled cards and calculate either the sample slope or sample correlation.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Once we have one simulated sample, what would we calculate and plot on the null distribution? \emph{Hint}: What statistic are we calculating from the data?
-\end{enumerate}
-
-\vspace{1in}
-
-We will use the \texttt{regression\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample slopes (or sample correlations) and compute a p-value. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as \texttt{baseball}), the statistic for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
-
-The response variable name is \texttt{W} (wins) and the explanatory variable name is \texttt{RD} (run difference).
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  What inputs should be entered for each of the following to create the simulation to test regression slope?
-\end{enumerate}
-
-\vspace{.5 mm}
-
-\begin{itemize}
-\tightlist
-\item
-  Direction (\texttt{"greater"}, \texttt{"less"}, or \texttt{"two-sided"}):
-\end{itemize}
-
-\vspace{.2in}
-
-\begin{itemize}
-\tightlist
-\item
-  Statistic (choose \texttt{"slope"} or \texttt{"correlation"}):
-\end{itemize}
-
-\vspace{.2in}
-
-\begin{itemize}
-\tightlist
-\item
-  As extreme as (enter the value for the sample slope):
-\end{itemize}
-
-\vspace{0.2in}
-
-\begin{itemize}
-\tightlist
-\item
-  Number of repetitions:
-\end{itemize}
-
-\vspace{.2in}
-
-Using the \texttt{R} script file for this activity, enter your answers for question 2 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 1--13 and then lines 44--49.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{regression\_test}\NormalTok{(W }\SpecialCharTok{\textasciitilde{}}\NormalTok{ RD, }\CommentTok{\# response \textasciitilde{} explanatory}
-               \AttributeTok{data =}\NormalTok{ baseball, }\CommentTok{\# Name of data set}
-               \AttributeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Sign in alternative ("greater", "less", "two{-}sided")}
-               \AttributeTok{statistic =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# "slope" or "correlation"}
-               \AttributeTok{as\_extreme\_as =}\NormalTok{ x, }\CommentTok{\# Observed slope or correlation}
-               \AttributeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{\# Number of simulated samples for null distribution}
-       
-\end{Highlighting}
-\end{Shaded}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  Report the p-value from the \texttt{R} output. Is this value similar to what was seen with the theory-based methods?
-\end{enumerate}
-
-\vspace{0.5in}
-
-\hypertarget{simulation-based-confidence-interval}{%
-\subsubsection*{Simulation-based confidence interval}\label{simulation-based-confidence-interval}}
-\addcontentsline{toc}{subsubsection}{Simulation-based confidence interval}
-
-We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the \texttt{xx}'s in the the provided \texttt{R} script file to find a 95\% confidence interval. Highlight and run lines 52--56.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{regression\_bootstrap\_CI}\NormalTok{(W }\SpecialCharTok{\textasciitilde{}}\NormalTok{ RD, }\CommentTok{\# response \textasciitilde{} explanatory}
-   \AttributeTok{data =}\NormalTok{ baseball, }\CommentTok{\# Name of data set}
-   \AttributeTok{confidence\_level =}\NormalTok{ xx, }\CommentTok{\# Confidence level as decimal}
-   \AttributeTok{statistic =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Slope or correlation}
-   \AttributeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{\# Number of simulated samples for bootstrap distribution}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\item
-  Report the bootstrap 95\% confidence interval in interval notation.\\
-  \vspace{0.5in}
-\item
-  Is the bootstrap 95\% confidence interval similar to what was found using theory-based methods? Why did you expect this to be true?
-\end{enumerate}
-
-\vspace{1in}
-
-\hypertarget{take-home-messages-20}{%
-\subsection{Take-home messages}\label{take-home-messages-20}}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  The p-value for a test for correlation should be approximately the same as the p-value for the test of slope. In the simulation test, we just change the statistic type from slope to correlation and use the appropriate sample statistic value.
-\item
-  To check the validity conditions for using theory-based methods we must use the residual diagnostic plots to check for normality of residuals and constant variability, and the scatterplot to check for linearity.
-\item
-  To interpret a confidence interval for the slope, think about how to interpret the sample slope and use that information in the confidence interval for slope.
-\item
-  To create one simulated sample on the null distribution for a sample slope or sample correlation, hold the \(x\) values constant and shuffle the \(y\) values to new \(x\) values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
-\item
-  To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label \(n\) cards with the original (response, explanatory) values. Randomly draw with replacement \(n\) times. Find the regression line for the resampled data and plot the resampled slope or correlation.
-\end{enumerate}
-
-\hypertarget{additional-notes-18}{%
-\subsection{Additional notes}\label{additional-notes-18}}
-
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
-
-\newpage
-
-\hypertarget{activity-14b-moneyball}{%
-\section{Activity 14b: Moneyball}\label{activity-14b-moneyball}}
-
-\setstretch{1}
-
-\hypertarget{learning-outcomes-10}{%
-\subsection{Learning outcomes}\label{learning-outcomes-10}}
-
-\begin{itemize}
-\item
-  Given a research question involving two quantitative variables, construct the null and alternative hypotheses
-  in words and using appropriate statistical symbols.
-\item
-  Assess the conditions to use the normal distribution model for a slope or correlation.
-\item
-  Find the T test statistic (T-score) for a slope or correlation based off of \texttt{lm()} output in \texttt{R}.
-\item
-  Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a slope or correlation.
-\item
-  Create and interpret a theory-based confidence interval for a slope or correlation.
-\item
-  Use a confidence interval to determine the conclusion of a hypothesis test.
-\end{itemize}
-
-\hypertarget{terminology-review-24}{%
-\subsection{Terminology review}\label{terminology-review-24}}
-
-In this week's in-class activity, we will use theory-based methods for hypothesis tests and confidence intervals for a linear regression slope or correlation. Some terms covered in this activity are:
-
-\begin{itemize}
-\item
-  Correlation
-\item
-  Slope
-\item
-  Regression line
-\end{itemize}
-
-To review these concepts, see Chapters 3 and 7 in the textbook.
-
-\hypertarget{moneyball-1}{%
-\subsection{Moneyball}\label{moneyball-1}}
-
-The goal of a Major League baseball team is to make the playoffs. In 2002, the manager of the Oakland A's, Billy Bean, with the help of Paul DePodesta began to use statistics to determine which players to choose for their season. Based on past data, DePodesta determined that to make it to the playoffs, the A's would need to win at least 95 games in the regular season. In order to win more games, they would need to score more runs than they allowed. The Oakland A's won 20 consecutive games and a total of 103 games for the season. The success of this use of sports analytics was portrayed by the 2011 movie, \emph{Moneyball}.
-
-In this study, we will see if there is evidence of a positive linear relationship between the difference in the number of runs scored minus the number of runs allowed and the number of wins for Major League baseball teams in the years before 2002.
-
-Some of the variables collected in the data set \texttt{baseball} consist of the following:
-
-\begin{longtable}[]{@{}ll@{}}
-\toprule
-\textbf{Variable} & \textbf{Description} \\
-\midrule
-\endhead
-\texttt{RA} & Runs allowed \\
-\texttt{RS} & Runs scored \\
-\texttt{OBP} & On-base percentage \\
-\texttt{SLG} & Slugging percentage \\
-\texttt{BA} & Batting average \\
-\texttt{OOBP} & Opponent's on-base percentage \\
-\texttt{OSLG} & Opponent's slugging percentage \\
-\texttt{W} & Number of wins in the season \\
-\texttt{RD} & Difference of runs scored minus runs allowed \\
-\bottomrule
-\end{longtable}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Read in data set}
-\NormalTok{baseball }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/baseball.csv"}\NormalTok{)}
-
-\NormalTok{baseball}\SpecialCharTok{$}\NormalTok{RD }\OtherTok{\textless{}{-}}\NormalTok{ baseball}\SpecialCharTok{$}\NormalTok{RS }\SpecialCharTok{{-}}\NormalTok{ baseball}\SpecialCharTok{$}\NormalTok{RA }\CommentTok{\# Create variable run difference}
-
-\NormalTok{baseball }\OtherTok{\textless{}{-}} \CommentTok{\# Write over original data with the following}
-\NormalTok{  baseball }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Pipe data set into}
-  \FunctionTok{subset}\NormalTok{(Year }\SpecialCharTok{\textless{}} \DecValTok{2002}\NormalTok{) }\CommentTok{\# Select only years before 2002}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{vocabulary-review.-complete-q1q4-before-class.-1}{%
-\subsubsection*{Vocabulary review. Complete Q1--Q4 before class.}\label{vocabulary-review.-complete-q1q4-before-class.-1}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review. Complete Q1--Q4 before class.}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Explain why regression methods are appropriate to use to address the researchers' question. Make sure you clearly define the variables of interest in your explanation and their roles.
-\end{enumerate}
-
-\vspace{.5in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\item
-  Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names (\texttt{RD} and \texttt{W}) for \texttt{xx} and \texttt{yy} in line 17. Highlight and run lines 1--22.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{baseball }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Pipe data set into...}
-\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ xx, }\AttributeTok{y =}\NormalTok{ yy))}\SpecialCharTok{+}  \CommentTok{\# Specify variables}
-  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}  \CommentTok{\# Add scatterplot of points}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Difference in number of runs"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
-       \AttributeTok{y =} \StringTok{"Number of wins"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
-       \AttributeTok{title =} \StringTok{"Scatterplot of Run Difference vs. Number of Wins"}\NormalTok{) }\SpecialCharTok{+} 
-               \CommentTok{\# Be sure to tile your plots}
-  \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{se =} \ConstantTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
-\end{Highlighting}
-\end{Shaded}
-\item
-  Sketch the plot created below. Based on your plot, does it appear that there is a relationship between run difference and wins? Note: \texttt{RD} should be on the \(x\)-axis.
-\end{enumerate}
-
-\vspace{2in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  Describe the features of the plot above, addressing all four characteristics of a scatterplot.
-\end{enumerate}
-
-\vspace{1in}
-
-~~~~~~~If you indicated there are potential outliers, which points are they?
-
-\vspace{0.5in}
-
-\hypertarget{conditions-for-the-least-squares-line-1}{%
-\subsubsection*{Conditions for the least squares line}\label{conditions-for-the-least-squares-line-1}}
-\addcontentsline{toc}{subsubsection}{Conditions for the least squares line}
-
-When performing inference on a least squares line, the follow conditions are generally required:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Independent observations} (for both simulation-based and theory-based methods): individual data points must be independent.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Check this assumption by investigating the sampling method and determining if the observational units are related in any way.
-  \end{itemize}
-\item
-  \emph{Linearity} (for both simulation-based and theory-based methods): the data should follow a linear trend.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Check this assumption by examining the scatterplot of the two variables, and a scatterplot of the residuals (on the \(y\)-axis) versus the fitted values (on the \(x\)-axis). The pattern in the residual plot should display a horizontal line.
-  \end{itemize}
-\item
-  \emph{Constant variability} (for theory-based methods only): the variability of points around the least squares line remains roughly constant
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Check this assumption by examining a scatterplot of the residuals (on the \(y\)-axis) versus the fitted values (on the \(x\)-axis). The variability in the residuals around zero should be approximately the same for all fitted values.
-  \end{itemize}
-\item
-  \emph{Nearly normal residuals} (for theory-based methods only: residuals must be nearly normal.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Check this assumption by examining a histogram of the residuals, which should appear approximately normal\footnote{A better plot for checking the normality assumption is called a \emph{normal quantile-quantile plot} (or QQ-plot). However, this type of plot will be covered in a future course}.
-  \end{itemize}
-\end{itemize}
-
-The scatterplot generated in question 2 and the residual plots shown below will be used to assess these conditions for approximating the data with the \(t\)-distribution.
-
 \begin{center}\includegraphics[width=0.7\linewidth]{14-A22-regression-theory_files/figure-latex/unnamed-chunk-3-1} \end{center}
 
 \begin{enumerate}
@@ -14033,8 +14004,8 @@ Using the provided \texttt{R} script file, enter the response variable name, \te
 \subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-5}}
 \addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
 
-\hypertarget{hypothesis-test-4}{%
-\paragraph*{Hypothesis test}\label{hypothesis-test-4}}
+\hypertarget{hypothesis-test-3}{%
+\paragraph*{Hypothesis test}\label{hypothesis-test-3}}
 \addcontentsline{toc}{paragraph}{Hypothesis test}
 
 To find the value of the standardized statistic to test the slope we will use,
@@ -14085,8 +14056,8 @@ We will use the linear model \texttt{R} output above to get the estimate for slo
 
 \vspace{0.5in}
 
-\hypertarget{confidence-interval-4}{%
-\paragraph*{Confidence interval}\label{confidence-interval-4}}
+\hypertarget{confidence-interval-3}{%
+\paragraph*{Confidence interval}\label{confidence-interval-3}}
 \addcontentsline{toc}{paragraph}{Confidence interval}
 
 Recall that a confidence interval is calculated by adding and subtracting the margin of error to the point estimate.\\
@@ -14142,102 +14113,198 @@ The \(t^*\) multiplier comes from a \(t\)-distribution with \(n-2\) degrees of f
 
 \vspace{.6in}
 
+\hypertarget{take-home-messages-21}{%
+\subsection{Take-home messages}\label{take-home-messages-21}}
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{19}
-\tightlist
 \item
-  Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper. Be sure to describe:
+  The p-value for a test for correlation should be approximately the same as the p-value for the test of slope. In the simulation test, we just change the statistic type from slope to correlation and use the appropriate sample statistic value.
+\item
+  To check the validity conditions for using theory-based methods we must use the residual diagnostic plots to check for normality of residuals and constant variability, and the scatterplot to check for linearity.
+\item
+  To interpret a confidence interval for the slope, think about how to interpret the sample slope and use that information in the confidence interval for slope.
+\item
+  To create one simulated sample on the null distribution for a sample slope or sample correlation, hold the \(x\) values constant and shuffle the \(y\) values to new \(x\) values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
+\item
+  To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label \(n\) cards with the original (response, explanatory) values. Randomly draw with replacement \(n\) times. Find the regression line for the resampled data and plot the resampled slope or correlation.
 \end{enumerate}
 
-\begin{itemize}
-\item
-  Summary statistic
-\item
-  Test statistic and interpretation
-\item
-  P-value and interpretation
-\item
-  Confidence interval and interpretation
-\item
-  Conclusion (written to answer the research question)
-\item
-  Scope of inference
-\end{itemize}
+\hypertarget{additional-notes-20}{%
+\subsection{Additional notes}\label{additional-notes-20}}
 
-\vspace{3in}
+Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
 \newpage
 
-\hypertarget{revisit-and-look-forward-1}{%
-\subsubsection*{Revisit and look forward}\label{revisit-and-look-forward-1}}
-\addcontentsline{toc}{subsubsection}{Revisit and look forward}
+\hypertarget{week-14-lab-black-bear-complaints}{%
+\section{Week 14 Lab: Black Bear Complaints}\label{week-14-lab-black-bear-complaints}}
 
-In order to see what team attributes would have the most impact on the number of runs scored, Beane and DePodesta created several prediction models. Using 2001 statistics, they looked at a prediction model using both the team's on-base percentage and slugging percentage to predict the number of runs scored. The following \texttt{R} code gives the estimates for the regression model with both of these variables included.
+\setstretch{1}
+
+\hypertarget{learning-objectives-22}{%
+\subsection{Learning objectives}\label{learning-objectives-22}}
+
+\begin{itemize}
+\item
+  Given a research question involving two quantitative variables, construct the null and alternative hypotheses
+  in words and using appropriate statistical symbols.
+\item
+  Assess the conditions to determine in theory or simulation-based methods should be used.
+\item
+  Find, interpret, and evaluate the p-value for a hypothesis test for a slope or correlation.
+\item
+  Create and interpret a confidence interval for a slope or correlation.
+\end{itemize}
+
+\hypertarget{black-bear-complaints}{%
+\subsection{Black Bear Complaints}\label{black-bear-complaints}}
+
+Black bears are notorious for human-wildlife conflicts. It is thought that hunting helps limit these interactions by acting as population control but there are other factors that play a role. In order to completely understand the relationship between population size and human-bear conflicts, a study in Minnesota looked at close to four decades of data. For each of 36 years, researchers recorded information about the number of complaints, food abundance rating, the number of bears removed from the population the previous year through hunter harvest or killing in conflict situations, estimated bear population size, whether the estimated population is over or under 15,000 bears, and whether a new or old policy regarding how complaints were dealt with was in effect (the new policy involved reducing site visits and eliminating translocations of bears in an effort to shift the responsibility for conflict resolution from the Minnesota Department of Natural Resources to homeowners and landowners). A goal of this study was to explore the effects of the previous variables on the number of complaints to provide improved guidance for managing harvests and conflicts in the future across the range of this species. Is there evidence that a higher food abundance rating is associated with a lower number of complaints?
+
+Some of the variables collected in the data set \texttt{Bear\_Data} consist of the following:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.19}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.81}}@{}}
+\toprule
+\textbf{Variable} & \textbf{Description} \\
+\midrule
+\endhead
+\texttt{Complaints} & number of complaints \\
+\texttt{Food} & food abundance rating \\
+\texttt{Prekill} & number of bears removed from the population the previous year \\
+\texttt{Pop} & estimated bear population size \\
+\texttt{Pop\_Level} & whether the estimated population is over or under 15,000 bears \\
+\texttt{Policy} & whether a new or old policy regarding how complaints were dealt with \\
+\texttt{Pop\_1000} & population per 1000 \\
+\bottomrule
+\end{longtable}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{lm.score }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(RS }\SpecialCharTok{\textasciitilde{}}\NormalTok{ OBP }\SpecialCharTok{+}\NormalTok{ SLG, }\AttributeTok{data=}\NormalTok{baseball)}
-\FunctionTok{round}\NormalTok{(}\FunctionTok{summary}\NormalTok{(lm.score)}\SpecialCharTok{$}\NormalTok{coefficients, }\DecValTok{5}\NormalTok{)}
-\CommentTok{\#\textgreater{}              Estimate Std. Error   t value Pr(\textgreater{}|t|)}
-\CommentTok{\#\textgreater{} (Intercept) {-}804.6271   18.92079 {-}42.52608        0}
-\CommentTok{\#\textgreater{} OBP         2737.7680   90.68455  30.19001        0}
-\CommentTok{\#\textgreater{} SLG         1584.9086   42.15559  37.59665        0}
+\CommentTok{\# Read in data set}
+\NormalTok{bears }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/Bear\_Data.csv"}\NormalTok{)}
+\NormalTok{bears }\OtherTok{\textless{}{-}} \FunctionTok{na.omit}\NormalTok{(bears)}
 \end{Highlighting}
 \end{Shaded}
 
+\hypertarget{summarize-and-visualize-the-data-7}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-7}}
+\addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
+
+\begin{verbatim}
+#>            Complaints   Food   Pop Prevkill
+#> Complaints      1.000 -0.376 0.458   -0.241
+#> Food           -0.376  1.000 0.084    0.482
+#> Pop             0.458  0.084 1.000    0.520
+#> Prevkill       -0.241  0.482 0.520    1.000
+\end{verbatim}
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{20}
-\tightlist
 \item
-  Use the provided \texttt{R} output to write the linear regression model including all variables. \emph{Hint}: The estimated line of regression is of the form:
+  Which two variables have the strongest value of correlation?
+  \vspace{0.3in}
+\item
+  Give the value of correlation between \texttt{Food} and \texttt{Complaints}.
+  \vspace{0.2in}
+\item
+  Calculate the value of the coefficient of determination between \texttt{Food} and \texttt{Complaints}.
+  \vspace{0.4in}
+\item
+  Interpret the value of the coefficient of determination in context of the problem.
+  \vspace{0.6in}
 \end{enumerate}
 
-\[\widehat{\text{runs scored}} = b_0 + b_1\times OBP + b_2\times SLG.\]
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Fit linear model: y \textasciitilde{} x}
+\NormalTok{bearsLM }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Complaints}\SpecialCharTok{\textasciitilde{}}\NormalTok{Food, }\AttributeTok{data=}\NormalTok{bears)}
+\FunctionTok{summary}\NormalTok{(bearsLM)}\SpecialCharTok{$}\NormalTok{coefficients }\CommentTok{\# Display coefficient summary}
+\end{Highlighting}
+\end{Shaded}
 
-\vspace{1in}
+\begin{verbatim}
+#>               Estimate Std. Error   t value    Pr(>|t|)
+#> (Intercept) 5434.17307  1604.1810  3.387506 0.001796525
+#> Food         -60.66982    25.6051 -2.369443 0.023633904
+\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{21}
+\setcounter{enumi}{4}
 \tightlist
 \item
-  Using the fitted regression model above, predict the number of runs for the Oakland A's in 2002 if the team OBP is 0.339 and the team SLPG is 0.430.
+  Give the value of the slope of the regression line. Interpret this value in context of the problem.
+  \vspace{0.6in}
 \end{enumerate}
 
-\vspace{1in}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{bears }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Pipe data set into...}
+\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Food, }\AttributeTok{y =}\NormalTok{ Complaints))}\SpecialCharTok{+}  \CommentTok{\# Specify variables}
+  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}  \CommentTok{\# Add scatterplot of points}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Food Abundance Rating"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
+       \AttributeTok{y =} \StringTok{"Number of Complaints"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
+       \AttributeTok{title =} \StringTok{"Scatterplot of Food Abundance Ratings and Bear Complaints"}\NormalTok{) }\SpecialCharTok{+} 
+               \CommentTok{\# Be sure to tile your plots}
+  \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{se =} \ConstantTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
+\end{Highlighting}
+\end{Shaded}
 
-\hypertarget{out-of-class-activity-2}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity-2}}
+\hypertarget{conditions-for-the-least-squares-line-1}{%
+\subsubsection*{Conditions for the least squares line}\label{conditions-for-the-least-squares-line-1}}
+\addcontentsline{toc}{subsubsection}{Conditions for the least squares line}
 
-In the out-of-class activity, we will focus on using simulation-based methods for inference in regression. Use Section 7.1 in the textbook and the TwoQuantSim video to complete the following questions.
+Use the provided scatterplot generated above and the residual plots shown below to assess the validity conditions for approximating the data with the \(t\)-distribution.
 
-\hypertarget{simulation-based-hypothesis-test-1}{%
-\subsubsection*{Simulation-based hypothesis test}\label{simulation-based-hypothesis-test-1}}
-\addcontentsline{toc}{subsubsection}{Simulation-based hypothesis test}
-
-First, let's think about how one simulation would be created on the null distribution using cards. First, we would write the values for the response variable, wins, on each card. Next, we would shuffle these \(y\) values while keeping the \(x\) values (explanatory variable) in the same order. Then, find the line of regression for the shuffled cards and calculate either the sample slope or sample correlation.
+\begin{center}\includegraphics[width=0.7\linewidth]{14-L11-regression-wrapup_files/figure-latex/unnamed-chunk-5-1} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
 \tightlist
 \item
-  Once we have one simulated sample, what would we calculate and plot on the null distribution? \emph{Hint}: What statistic are we calculating from the data?
+  Are the conditions met to use the \(t\)-distribution to approximate the sampling distribution of the standardized statistic? Justify your answer.
 \end{enumerate}
 
-\vspace{1in}
+\vspace{1.5in}
 
-We will use the \texttt{regression\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample slopes (or sample correlations) and compute a p-value. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as \texttt{baseball}), the statistic for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
-
-The response variable name is \texttt{W} (wins) and the explanatory variable name is \texttt{RD} (run difference).
+\hypertarget{ask-a-research-question-7}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question-7}}
+\addcontentsline{toc}{subsubsection}{Ask a research question}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
+\setcounter{enumi}{6}
 \tightlist
 \item
-  What inputs should be entered for each of the following to create the simulation to test regression slope?
+  Write out the null and alternative hypotheses in notation to test correlation between the food abundance rating and number of bear complaints.
+\end{enumerate}
+
+~~~\(H_O:\)
+
+~~~\(H_A:\)
+
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-6}{%
+\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-6}}
+\addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
+
+\hypertarget{hypothesis-test-4}{%
+\paragraph*{Hypothesis test}\label{hypothesis-test-4}}
+\addcontentsline{toc}{paragraph}{Hypothesis test}
+
+Use the \texttt{regression\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample correlations and compute a p-value. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as \texttt{bears}), the statistic for the test, number of repetitions, the sample statistic (value of correlation), and the direction of the alternative hypothesis.
+
+The response variable name is \texttt{Complaints} and the explanatory variable name is \texttt{Food}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  What inputs should be entered for each of the following to create the simulation to test correlation?
 \end{enumerate}
 
 \vspace{.5 mm}
@@ -14274,15 +14341,15 @@ The response variable name is \texttt{W} (wins) and the explanatory variable nam
 
 \vspace{.2in}
 
-Using the \texttt{R} script file for this activity, enter your answers for question 2 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 1--13 and then lines 44--49.
+Using the \texttt{R} script file for this activity, enter your answers for question 8 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 1--13 and then lines 44--49.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{regression\_test}\NormalTok{(W }\SpecialCharTok{\textasciitilde{}}\NormalTok{ RD, }\CommentTok{\# response \textasciitilde{} explanatory}
-               \AttributeTok{data =}\NormalTok{ baseball, }\CommentTok{\# Name of data set}
+\FunctionTok{regression\_test}\NormalTok{(Complaints }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Food, }\CommentTok{\# response \textasciitilde{} explanatory}
+               \AttributeTok{data =}\NormalTok{ bears, }\CommentTok{\# Name of data set}
                \AttributeTok{direction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Sign in alternative ("greater", "less", "two{-}sided")}
                \AttributeTok{statistic =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# "slope" or "correlation"}
-               \AttributeTok{as\_extreme\_as =}\NormalTok{ x, }\CommentTok{\# Observed slope or correlation}
+               \AttributeTok{as\_extreme\_as =}\NormalTok{ xx, }\CommentTok{\# Observed slope or correlation}
                \AttributeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{\# Number of simulated samples for null distribution}
        
 \end{Highlighting}
@@ -14290,24 +14357,25 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
+\setcounter{enumi}{8}
 \item
-  Report the p-value from the \texttt{R} output. Is this value similar to what was seen with the theory-based methods?
+  Report the p-value from the \texttt{R} output.
+  \vspace{0.3in}
+\item
+  Interpret the p-value in context of the problem.
+  \vspace{0.8in}
 \end{enumerate}
-
-\vspace{0.5in}
 
 \hypertarget{simulation-based-confidence-interval-1}{%
 \subsubsection*{Simulation-based confidence interval}\label{simulation-based-confidence-interval-1}}
 \addcontentsline{toc}{subsubsection}{Simulation-based confidence interval}
 
-We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the \texttt{xx}'s in the the provided \texttt{R} script file to find a 95\% confidence interval. Highlight and run lines 52--56.
+We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample correlations and calculate a confidence interval. Fill in the \texttt{xx}'s in the the provided \texttt{R} script file to find a 90\% confidence interval. Highlight and run lines 52--56.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{regression\_bootstrap\_CI}\NormalTok{(W }\SpecialCharTok{\textasciitilde{}}\NormalTok{ RD, }\CommentTok{\# response \textasciitilde{} explanatory}
-   \AttributeTok{data =}\NormalTok{ baseball, }\CommentTok{\# Name of data set}
+\FunctionTok{regression\_bootstrap\_CI}\NormalTok{(Complaints}\SpecialCharTok{\textasciitilde{}}\NormalTok{Food, }\CommentTok{\# response \textasciitilde{} explanatory}
+   \AttributeTok{data =}\NormalTok{ bears, }\CommentTok{\# Name of data set}
    \AttributeTok{confidence\_level =}\NormalTok{ xx, }\CommentTok{\# Confidence level as decimal}
    \AttributeTok{statistic =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Slope or correlation}
    \AttributeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{) }\CommentTok{\# Number of simulated samples for bootstrap distribution}
@@ -14316,49 +14384,61 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\setcounter{enumi}{10}
 \item
-  Report the bootstrap 95\% confidence interval in interval notation.\\
+  Report the bootstrap 90\% confidence interval in interval notation.\\
   \vspace{0.5in}
 \item
-  Is the bootstrap 95\% confidence interval similar to what was found using theory-based methods? Why did you expect this to be true?
+  Interpret the 90\% confidence interval in context of the problem.
+  \vspace{0.8in}
 \end{enumerate}
 
-\vspace{1in}
-
-\hypertarget{take-home-messages-21}{%
-\subsection{Take-home messages}\label{take-home-messages-21}}
+\hypertarget{communicate-the-results-and-answer-the-research-question-6}{%
+\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-6}}
+\addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\tightlist
 \item
-  The p-value for a test for correlation should be approximately the same as the p-value for the test of slope. In the simulation test, we just change the statistic type from slope to correlation and use the appropriate sample statistic value.
-\item
-  To check the validity conditions for using theory-based methods we must use the residual diagnostic plots to check for normality of residuals and constant variability, and the scatterplot to check for linearity.
-\item
-  To interpret a confidence interval for the slope, think about how to interpret the sample slope and use that information in the confidence interval for slope.
-\item
-  To create one simulated sample on the null distribution for a sample slope or sample correlation, hold the \(x\) values constant and shuffle the \(y\) values to new \(x\) values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
-\item
-  To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label \(n\) cards with the original (response, explanatory) values. Randomly draw with replacement \(n\) times. Find the regression line for the resampled data and plot the resampled slope or correlation.
+  Based on the p-value, write a conclusion in context of the problem.
 \end{enumerate}
 
-\hypertarget{additional-notes-19}{%
-\subsection{Additional notes}\label{additional-notes-19}}
+\vspace{.8in}
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{13}
+\item
+  Using a significance level of 0.1, what decision would you make?
+  \vspace{0.2in}
+\item
+  What type of error is possible?
+  \vspace{0.3in}
+\item
+  Write this error in context of the problem.
+  \vspace{0.8in}
+\item
+  Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper. Be sure to describe:
+\end{enumerate}
 
-\newpage
+\begin{itemize}
+\item
+  Summary statistic
+\item
+  Test statistic and interpretation
+\item
+  P-value and interpretation
+\item
+  Confidence interval and interpretation
+\item
+  Conclusion (written to answer the research question)
+\item
+  Scope of inference
+\end{itemize}
 
-\hypertarget{week-14-lab}{%
-\section{Week 14 Lab:}\label{week-14-lab}}
-
-\setstretch{1}
-
-\hypertarget{learning-objectives-22}{%
-\subsection{Learning objectives}\label{learning-objectives-22}}
-
-\newpage
+\vspace{3in}
 
 \hypertarget{semester-review}{%
 \chapter{Semester Review}\label{semester-review}}
@@ -14651,8 +14731,8 @@ Explain the last sentence. In what sense does a large sample increase accuracy?
   You might see names of tests we've not covered, but the idea of a p-value is the same for any test, and the null hypothesis is generally ``No change,'' or ``No effect.''
 \end{enumerate}
 
-\hypertarget{additional-notes-20}{%
-\subsection{Additional notes}\label{additional-notes-20}}
+\hypertarget{additional-notes-21}{%
+\subsection{Additional notes}\label{additional-notes-21}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 

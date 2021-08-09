@@ -1,4 +1,4 @@
-# Week 1 - Basics of Data
+# Basics of Data
 
 ## Reading Guide: Basics of Data
 

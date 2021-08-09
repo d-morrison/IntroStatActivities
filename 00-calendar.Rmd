@@ -19,23 +19,23 @@ This calendar only lists the in-class activities, Rstudio labs and exams each we
 4& M& 9/13& IMDb Movie Reviews - One Quantitative Variable \\*
 4& W& 9/15& IMDb Movie Reviews - One of Each \\*
 4& F& 9/17& Week 4 Lab \\ \hline
-5& M& 9/20& Movie Profits \\*
-5& W& 9/22& Movie Profits \\*	
+5& M& 9/20& Movie Profits - Linear Regression \\*
+5& W& 9/22& Movie Profits - Correlation \\*	
 5& F& 9/24& Week 5 Lab \\ \hline
 6& M& 9/27& Exam 1 Review \\*
 6& W& 9/29& Midterm Exam 1 \\*	
 6& F& 10/1& Group Midterm Exam 1 \\ \hline
-7& M& 10/4& Helper Hinderer --- Simulation Testing \\*
-7& W& 10/6& Helper Hinderer --- Estimation using Simulation Methods \\*
+7& M& 10/4& Helper Hinderer --- Simulation HT \\*
+7& W& 10/6& Helper Hinderer --- Simulation CI \\*
 7& F& 10/8& Week 7 Lab \\ \hline
-8& M& 10/11& Handedness of Male Boxers --- Theory Test \\*
-8& W& 10/13& Handedness of Male Boxers --- Estimation using Theory-based Methods \\*	
+8& M& 10/11& Handedness of Male Boxers --- Theory HT \\*
+8& W& 10/13& Handedness of Male Boxers --- Theory CI \\*	
 8& F& 10/15& Week 8 Lab \\ \hline
-9& M& 10/18& Good Samaritan --- Simulation Testing \\*
-9& W& 10/20& Good Samaritan --- Estimation using Simulation \\*	
+9& M& 10/18& Good Samaritan --- Simulation HT \\*
+9& W& 10/20& Good Samaritan --- Simulation CI \\*	
 9& F& 10/22& Week 9 Lab \\ \hline
-10& M& 10/25& Winter Sports Helmet Use and Head Injuries --- Theory Test \\*
-10& W& 10/27& Winter Sports Helmet Use and Head Injuries --- Estimation using Theory-based Methods \\*
+10& M& 10/25& Helmet Use and Head Injuries --- Theory HT \\*
+10& W& 10/27& Helmet Use and Head Injuries --- Theory CI \\*
 10& F& 10/29& Week 10 Lab\\ \hline
 11& M& 11/1& Exam 2 Review \\*
 11& W& 11/3& Midterm Exam 2 \\*	
