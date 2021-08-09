@@ -46,7 +46,7 @@ In today's activity, we will use bootstrapping to find a 95\% confidence interva
 
 #### Use statistical analysis methods to draw inferences from the data {-}
 
-4.  Write out the parameter of interest for this study in words.  **Hint: this is the same as question 7 in activity 7a.**
+4.  Write out the parameter of interest for this study in words.  **Hint: this is the same as question 7 in Activity 7a.**
 
 \vspace{0.5in}
 

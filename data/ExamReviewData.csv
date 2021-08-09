@@ -1,7 +1,7 @@
 Case,Island,City,Population,Name,Consent,Gender,Age,Married,Smoking_Status,Children,weight _kg,height_cm,respitory_rate,Type_of_Music,Before_PuzzleCube,After_PuzzleCube,Diff_PuzzleCube,Education_Level,Balance_Test,Blood_Glucose_before,Heart_Rate_before,Type_of_Drink,Heart_Rate_after,Blood_Glucose_after,Diff_Heart_Rate,Diff_Blood_Glucose
 1,Tropical,Nidoma,1045,Sinead Regan,Declined,F,90,,,,,,,,,,,,,,,,,,,
 2,Temperate,Reading,2479,Allison Macleod,Declined,F,31,,,,,,,,,,,,,,,,,,,
-3,Tropical,Colmar,5382,Kamal Achari,Consented,M,30,yes,nonsmoker,yes,52.7,172,15,Classical,9.2,9.8,-0.60,NA,48,90,88,EnergyDrink,89,102,-1,-12
+3,Tropical,Colmar,5382,Kamal Achari,Consented,M,30,yes,nonsmoker,yes,52.7,172,15,Classical,9.2,9.8,-0.60,missing,48,90,88,EnergyDrink,89,102,-1,-12
 4,Polar,Helvig,1015,Summer Brown,Consented,F,27,yes,nonsmoker,yes,60.2,167.9,16,Heavy Metal,6.8,7.1,-0.30,highschool,41,94,96,EnergyDrink,96,105,0,-11
 5,Polar,Helvig,1015,Andrew Price,Declined,M,63,,,,,,,,,,,,,,,,,,,
 6,Temperate,Akkeshi,682,Maya Suzuki,Declined,F,43,,,,,,,,,,,,,,,,,,,
@@ -17,7 +17,7 @@ Case,Island,City,Population,Name,Consent,Gender,Age,Married,Smoking_Status,Child
 16,Tropical,Maeva,845,Hannah Jensen,Consented,F,59,no,nonsmoker,yes,62.8,165.6,12,Classical,6.7,7.5,-0.80,university,33,88,88,Cola,90,98,-2,-10
 17,Tropical,Talu,1074,Jimmy Maury,Consented,M,24,yes,smoker,yes,64.4,180.1,14,Classical,7.3,7.3,0.00,highschool,42,96,81,EnergyDrink,82,100,-1,-4
 18,Temperate,Takazaki,,Edgar Connolly,Consented,M,40,no,nonsmoker,yes,65.3,182.5,13,Classical,7.1,7,0.10,highschool,62,100,94,EnergyDrink,91,104,3,-4
-19,Polar,Bjurholm,957,Namita Mangal,Consented,F,57,no,nonsmoker,yes,62,163.2,16,Classical,7.5,8.9,-1.40,NA,22,89,100,Cola,98,99,2,-10
+19,Polar,Bjurholm,957,Namita Mangal,Consented,F,57,no,nonsmoker,yes,62,163.2,16,Classical,7.5,8.9,-1.40,missing,22,89,100,Cola,98,99,2,-10
 20,Polar,Helvig,1015,Jakob Lund,Consented,M,70,yes,nonsmoker,yes,58.6,166.6,21,Classical,7,6.9,0.10,highschool,22,94,116,Cola,112,105,4,-11
 21,Polar,Helvig,1015,Anthony Collins,Consented,M,83,no,nonsmoker,yes,67.6,175.8,17,Heavy Metal,7,9.3,-2.30,highschool,26,87,109,Cola,103,93,6,-6
 22,Polar,Helluland,621,Emy Gagnon,Declined,F,69,,,,,,,,,,,,,,,,,,,

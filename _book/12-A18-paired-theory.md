@@ -7,11 +7,11 @@
 * Given a research question involving paired differences, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols.
   
-* Describe and perform a simulation-based hypothesis test for a paired mean difference.
+* Describe and perform a theory-based hypothesis test for a paired mean difference.
 
-* Interpret and evaluate a p-value for a simulation-based hypothesis test for a paired mean difference.
+* Interpret and evaluate a p-value for a theory-based hypothesis test for a paired mean difference.
 
-* Use bootstrapping to find a confidence interval for a paired mean difference.
+* Use theory-based methods to find a confidence interval for a paired mean difference.
 
 * Interpret a confidence interval for a paired mean difference.
 

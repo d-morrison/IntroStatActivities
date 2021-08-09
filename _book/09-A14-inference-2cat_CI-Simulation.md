@@ -8,14 +8,17 @@
 
 * Create and interpret a simulation-based confidence interval for a difference in proportions.
 
-* 
-
 ### Terminology review
-In this week's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
-* Standard normal distribution
+In this week's activity, we will use simulation methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
-* Independence and success-failure conditions
+* Parameter of interest
+
+* Bootstrapping
+
+* Confidence interval
+
+* Types of errors
 
 To review these concepts, see Chapter 5 in your textbook.
 
@@ -23,7 +26,7 @@ To review these concepts, see Chapter 5 in your textbook.
 
 In the last activity, we found a small p-value for the hypothesis test for a difference in proportions.  There was very strong evidence that those in a hurry will be less likely to help people in need.  In today's activity, we will estimate the true difference in proportion of people who will help others for those in the hurry condition and those not in the hurry condition by finding a confidence interval.  
 
-Researchers at the Princeton University wanted to investigate influences on behavior.  The researchers randomly select 67 students from the Princeton Theological Seminary to participate in a study.  Only 47 students chose to participate in the study, and the data below includes 40 of those students (7 students were removed from the study for various reasons).  As all participants were theology majors planning a career as a preacher, the expectation was that all would have a similar disposition when it comes to helping behavior.  Each student was then shown a 5-minute presentation on the Good Samaritan, a parable in the Bible which emphasizes the importance of helping others.  After the presentation, the students were told they needed to give a talk on the Good Samaritan parable at a building across campus.  Half the students were told they were late for the presentation; the other half told they could take their time getting across campus (the condition was randomly assigned).  On the way between buildings, an actor pretending to be a homeless person in distress asked the student for help.  The researchers recorded whether the student helped the actor or not.  The results of the study are shown in the table below.  Do these data provide evidence that those in a hurry will be less likely to help people in need in this situation?  Use the order of subtraction hurry – no hurry.
+Researchers at the Princeton University wanted to investigate influences on behavior.  The researchers randomly selected 67 students from the Princeton Theological Seminary to participate in a study.  Only 47 students chose to participate in the study, and the data below includes 40 of those students (7 students were removed from the study for various reasons).  As all participants were theology majors planning a career as a preacher, the expectation was that all would have a similar disposition when it comes to helping behavior.  Each student was then shown a 5-minute presentation on the Good Samaritan, a parable in the Bible which emphasizes the importance of helping others.  After the presentation, the students were told they needed to give a talk on the Good Samaritan parable at a building across campus.  Half the students were told they were late for the presentation; the other half told they could take their time getting across campus (the condition was randomly assigned).  On the way between buildings, an actor pretending to be a homeless person in distress asked the student for help.  The researchers recorded whether the student helped the actor or not.  The results of the study are shown in the table below.  Do these data provide evidence that those in a hurry will be less likely to help people in need in this situation?  Use the order of subtraction hurry – no hurry.
 
 |                    | Hurry Condition | No Hurry Condition | Total |
 |--------------------|-----------------|--------------------|-------|
@@ -38,16 +41,15 @@ Researchers at the Princeton University wanted to investigate influences on beha
 \vspace{0.4in}
 
 
-Use the following code to create a segmented bar plot of those who helped others for those in the hurry condition and those in the no hurry condition.
+Use the provided `R` script file to create a segmented bar plot of those who helped others for those in the hurry condition and those in the no hurry condition. Enter the name of the explanatory variable for `explanatory` and the name of the response variable for `response`.  Make sure to title your plot.  Highlight and run lines 1--13.
 
 
 ```r
 samaritan <- read.csv("data/goodsam.csv")
 samaritan %>%
-        ggplot(aes(x = xx, fill = yy)) +   # This specifies the variables
+        ggplot(aes(x = explanatory, fill = response)) +   # This specifies the variables
   geom_bar(stat = "count", position = "fill") +  # Tell it to make a stacked bar plot
-  labs(title = "Title"
-       # Make sure to title your plot 
+  labs(title = "Title",  # Make sure to title your plot 
        x = "Condition",   # Label the x axis
        y = "") +  # Remove y axis label
     scale_fill_grey()  # Make figure black and white
@@ -65,13 +67,13 @@ samaritan %>%
 
 \vspace{0.8in}
 
-5.  Do you expect the null value to be in the 99\% confidence interval?  Explain your answer.
+5.  Do you expect the null value to be in a 99\% confidence interval?  Explain your answer.
 
 \vspace{0.8in}
 
 #### Use statistical analysis methods to draw inferences from the data {-}
 
-6.  Write the parameter of interest in context of the study. Use proper notation.
+6.  Write the parameter of interest in context of the study. Use proper notation. 
 
 \vspace{1in}
 
@@ -95,16 +97,16 @@ The response variable name is `Behavior` and the explanatory variable name is `C
 
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 1--22.
+Using the `R` script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 16--21.
 
 
 ```r
 two_proportion_bootstrap_CI(formula = Behavior ~ Condition, 
         data=samaritan, # Name of data set
-        first_in_subtraction = "Hurry", # Order of subtraction: enter the name of Group 1
-        response_value_numerator = "Help", # Define which outcome is a success 
+        first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
+        response_value_numerator = "xx", # Define which outcome is a success 
         number_repetitions = 1000, # Always use a minimum of 1000 repetitions
-        confidence_level = 0.99) # Enter the level of confidence as a decimal
+        confidence_level = xx) # Enter the level of confidence as a decimal
 ```
 8.  Where is the bootstrap distribution centered?  Explain why.
 
@@ -158,7 +160,7 @@ Recall from a previous activity, hypothesis tests are not flawless. In a hypothe
 
 Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the null hypothesis when $H_0$ is actually true. A **Type 2 Error** happens when we fail to reject the null hypothesis when the alternative is actually true.
 
-14.  Using a significance level of 0.1, based on the question 11, what decision do you make in regards to the null hypothesis?
+14.  Using a significance level of 0.01 and your answer to question 13, what decision do you make in regards to the null hypothesis?
 
 \vspace{0.3in}
 
@@ -174,15 +176,13 @@ Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the 
 
 1. Simulation-based methods and theory-based methods should give the same results for a study *if the validity conditions are met*.  For both methods, observational units need to be independent. To use theory-based methods, additionally, the success-failure condition must be met. Check the validity conditions for each type of test to determine if theory-based methods can be used.
 
-2. When calculating the standard error for the difference in sample proportions when doing a hypothesis test, we use the pooled proportion of successes, the best estimate for calculating the variability *under the assumption the null hypothesis is true*.  For a confidence interval, we are not assuming a null hypothesis, so we use the values of the two conditional proportions to calculate the standard error.  Make note of the difference in these two formulas. 
+2. To create one simulated sample on the bootstrap distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the outcomes for the original responses.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in the proportion of successes. 
 
-3.  In addition to estimating the difference in proportions for two categorical variables we can also find the relative risk, the ratio of conditional proportions.  
-
-4. To create one simulated sample on the bootstrap distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the outcomes for the original responses.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in the proportion of successes. 
+3. If the null value is not contained in a 99\% confidence interval, then there is evidence against the null hypothesis and the p-value is less than the significance level of 0.01.
 
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 \newpage

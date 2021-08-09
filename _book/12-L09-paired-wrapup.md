@@ -5,3 +5,17 @@
 ### Learning objectives
 
 \newpage
+
+24.  Write a paragraph summarizes the results of this study as if you were describing the results to your roommate.  Be sure to describe:
+
+* Summary statistic
+
+* P-value and interpretation
+
+* Conclusion (written to answer the research question)
+
+* Confidence interval and interpretation
+
+* Scope of inference
+
+\vspace{2.6in}

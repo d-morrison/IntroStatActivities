@@ -32,15 +32,9 @@ In this week's in-class activity, we will use theory-based methods to analyze tw
 
 * Independence and success-failure conditions
 
-* Type 1 and Type 2 errors
-
-* Decision of a hypothesis test
-
 To review these concepts, see Chapter 5 in your textbook.
 
 ### Helmet use and head injuries
-
-For this activity we will again use the data set from the helmet use study.  See the information below.
 
 In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the *Journal of the American Medical Association*, Vol. 295, No. 8 (2006), we can see the summary results from a random sample of 3562 skiers and snowboarders involved in accidents in the two-way table below. Is there evidence that safety helmet use is associated with a reduced risk of head injury for skiers and snowboarders? 
 
@@ -50,6 +44,8 @@ In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by S
 | No Head Injury |     656    |      2330     |  2986 |
 | Total          |     752    |      2810     |  3562 |
 
+\newpage 
+
 1.  Write the null and alternative hypotheses in notation. 
 
 |    Ho: 
@@ -58,11 +54,20 @@ In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by S
 |    Ha:
 \vspace{0.2in}
 
-2.  Calculate the summary statistic for this study.  Use helmet use (`Yes`) minus no helmet use (`No`) as the order of subtraction.
+2.  Calculate the conditional proportion of those who wore helmets that had a head injury.  Use appropriate notation with clear subscripts.
+
+\vspace{0.3in}
+
+3. Calculate the conditional proportion of those who did not wearhelmets that had a head injury.  Use appropriate notation with clear subscripts.
+\vspace{0.3in}
+
+4. Calculate the summary statistic for this study.  Use helmet use (`Yes`) minus no helmet use (`No`) as the order of subtraction.
 
 \vspace{0.5in}
 
-`
+5. Interpret the difference in proportions in context of the study.
+\vspace{0.8in}
+
 #### Use statistical analysis methods to draw inferences from the data {-}
 
 To test the null hypothesis, we could use simulation-based methods as we did in Activity 9a. In this activity, we will focus on theory-based methods.  Like with a single proportion, the sampling distribution of a difference in sample proportions can be mathematically modeled using the normal distribution if certain conditions are met.
@@ -83,15 +88,13 @@ $$\hat{p}_{pool} \times n_2 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_2
 
 \vspace{.1in}
 
-3.  Is the independence condition met? Explain your answer.
+6.  Is the independence condition met? Explain your answer.
 
 \vspace{0.4in}
 
-4. Is the success-failure condition met for each group?  Show your work to verify your answer.
+7. Is the success-failure condition met for each group?  Show your work to verify your answer.
 
 \vspace{0.8in}
-
-\newpage
 
 To calculate the standardized statistic we use: 
 
@@ -106,11 +109,11 @@ SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})\left(\frac{1}{n
 $$
 
 
-5. Calculate $SE_0(\hat{p}_1-\hat{p}_2)$.
+8. Calculate $SE_0(\hat{p}_1-\hat{p}_2)$.
 
 \vspace{1in}
 
-6. Calculate the standardized statistic.
+9. Calculate the standardized statistic.
 
 \vspace{1in}
 
@@ -118,28 +121,28 @@ $$
 openintro::normTail(m = 0, s = 1)
 ```
 
-7. Mark the value of the standardized statistic on the standard normal distribution above and shade the area to find the p-value.
+10. Mark the value of the standardized statistic on the standard normal distribution above and shade the area to find the p-value.
 
 \vspace{0.1in}
 
-We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 6 at `xx` in line 27; highlight and run lines 27--29.
+We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 8 at `xx` in line 1; highlight and run lines 1--3.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
-      m=0, s=1 # Using the standard normal mean = 0, sd = 1
+      m=0, s=1, # Using the standard normal mean = 0, sd = 1
       lower.tail=TRUE) # Gives a p-value less than the standardized statistic
 ```
     
 
-8.  Report the p-value from the `R` output.
+11.  Report the p-value from the `R` output.
 \vspace{0.2in}
 
 
-9.  Interpret the p-value in context of the study.
+12.  Interpret the p-value in context of the study.
 
 \vspace{0.5in}
 
-10. Write a conclusion to the research question based on the p-value found.
+13. Write a conclusion to the research question based on the p-value found.
 
 \vspace{1in}
 
@@ -150,11 +153,11 @@ Another summary statistic that can be calculated for two categorical variables i
 
 $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 
-11.  Calculate the relative risk of helping for those who were assigned to the hurry condition compared to those who were not.
+14.  Calculate the relative risk of helping for those who were assigned to the hurry condition compared to those who were not.
 
 \vspace{.8in}
 
-12.  Interpret the relative risk in context of the problem.
+15.  Interpret the relative risk in context of the problem.
 
 \vspace{1in}
 
@@ -163,17 +166,12 @@ $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 
 1.	When comparing two groups, we are looking at the difference between two parameters.  In the null hypothesis, we assume the two parameters are equal, or that there is no difference between the two proportions.  
 
-2.  We use the same guidelines for the strength of evidence as we did in Activity __.  
+2.  The standardized statistic when the response variable is categorical is a Z-score and is compared to the standard normal distribution to find the p-value.  To find the standardized statistic, we take the value of the statistic minus the null value, divided by the null standard error of the statistic.  The standardized statistic measures the number of standard errors the statistic is from the null value. 
 
-3.  The standardized statistic when the response variable is categorical is a Z-score and is compared to the standard normal distribution to find the p-value.  To find the standardized statistic, we take the value of the statistic minus the null value, divided by the null standard error of the statistic.  The standardized statistic measures the number of standard errors the statistic is from the null value. 
-
-4.  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type 1 error. A Type 1 error occurs when we reject a true null hypothesis (false positive).
-
-5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance level), we could have a possible Type 2 error. A Type 2 error occurs when we fail to reject a false null hypothesis (false negative).
-
+3.  Relative risk evaluates the percent increase or percent decrease in the response variable attributed to the explanatory variable.  To find the percent increase or percent decrease we calculate the following $\text{percent change}=(RR - 1)x100\%$. If relative risk is less than 1 there is a percent decrease.  If relative risk is greater than 1 there is a percent increase.
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 \newpage

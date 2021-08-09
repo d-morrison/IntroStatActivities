@@ -1,16 +1,18 @@
-# Data Exploration: Concussions
+# Semester Review
 
 \setstretch{1}
+
+## Data Exploration: Concussions
 
 ### Learning objectives
 
 1. Read research articles and 
 
-2. 
+2. Evaluate scope of inference for studies.
 
-### Concussions
+### Articles on Concussions. {-}
 
-Read through the following abstracts before class and be prepared to discuss the following questions in your groups.
+**Read through the following abstracts before class and be prepared to discuss the following questions in your groups.**
 
 (a) The questions researchers wanted to answer.
 
@@ -58,18 +60,7 @@ Mielke and her colleagues did PET scans on 589 people who are participating in a
 
 http://www.npr.org/blogs/health/2013/12/27/257552665/concussions-may-increase-alzheimers-risk-but-only-for-some
 
-### Concussions in the News
-
-*  Chris Borland, age 24, retired from the 49ers after one year of NFL play, because he fears his brain might be permanently injured by concussions. 
-
-*  In 2013 the NFL agreed to pay $765 million to fund exams, research and for compensation of former players.
-
-*  High school coaches are now advised to make their players sit out if they sustain
-a blow to the head.
-
-*  The Congressional Brain Injury Task Force is looking into the prevalence of brain trauma in troops deployed in recent wars and at how VA hospitals are treating the condition.
-
-### Applying What We've Learned
+### Applying What We've Learned {-}
 
 Some have argued that blows to the head - for instance on the high school football field - are getting too much attention. They point out that of many kids taking similar hits, only a few show lasting decrease in cognitive abilities, and suggest that the effects are as much due to genetics as to the blow to the head.
 
@@ -112,19 +103,19 @@ Petraglia AL, Plog BA, Dayawansa S, Chen M, Dashnaw ML, Czerniecka K, Walker CT,
 
 http://www.ncbi.nlm.nih.gov/pubmed/24766454
 
-(a) What are the advantages of this study design?
+a) What are the advantages of this study design?
 
 \vspace{0.5in}
 
-(b) Disadvantages?
+b) Disadvantages?
 
 \vspace{0.5in}
 
-(c) Does the design allow us to make causal inferences? Explain.
+c) Does the design allow us to make causal inferences? Explain.
 
 \vspace{0.5in}
 
-(d) Inferences to high school students? Explain.
+d) Inferences to high school students? Explain.
 
 \vspace{0.5in}
 
@@ -134,19 +125,19 @@ Lin, Ramadan, Stern, Box, Nowinski, Ross, Mountford. (2015). *Changes in the neu
 
 http://www.ncbi.nlm.nih.gov/pubmed/25780390
 
-(a) What are the advantages of this study design?
+a) What are the advantages of this study design?
 
 \vspace{0.5in}
 
-(b) Disadvantages?
+b) Disadvantages?
 
 \vspace{0.5in}
 
-(c) Does the design allow us to make causal inferences? Explain.
+c) Does the design allow us to make causal inferences? Explain.
 
 \vspace{0.5in}
 
-(d) Inferences to high school students? Explain.
+d) Inferences to high school students? Explain.
 
 \vspace{0.5in}
 

@@ -70,7 +70,7 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 | Differences   | $\bar{x}_d$ = $-4.152$ | $s_d$ = 17.096     | $n_d$ = 33  |
 
 \newpage
-#### Vocabulary review.  Complete Q1--Q5 before class.{-}
+#### Vocabulary review.  {-}
 
 1. What is the sample size? 
 
@@ -80,7 +80,7 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 
 \vspace{.5in}
 
-3.  Are the differences in AQI scores independent for each case (US city)?  Explain.
+3. Are the differences in AQI scores independent for each case (US city)?  Explain.
 
 \vspace{0.5in}
 
@@ -92,25 +92,23 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 
 \vspace{0.5in}
 
-
-
 #### Ask a research question {-}
 
 6. What are the two competing possibilities to run a hypothesis test for this study?
 
-\vspace{1in}
+\vspace{0.8in}
 
 7. Write the null hypothesis in words.
 
-\vspace{1in}
+\vspace{0.8in}
 
 8. What is the research question?
 
-\vspace{1in}
+\vspace{0.8in}
 
 9. Write the alternative hypothesis in notation.
 
-\vspace{1in}
+\vspace{0.8in}
 
 #### Summarize and visualize the data  {-}
 
@@ -155,19 +153,15 @@ To simulate the null distribution of paired sample mean differences we will use 
 
 
 16. What proportion of samples are at or less than the observed sample mean difference in AQI scores for current scores minus 5 year median scores? What is the statistical term for this proportion?
-
 \vspace{.3in}
 
 17. Interpret the p-value in the context of the problem.
-
 \vspace{.8in}
 
 18. How much evidence does this provide for improved air quality in US cities?
-
 \vspace{.3in}
 
 19. If evidence was found for improved air quality in US cities, could we conclude that the stay-at-home directives *caused* the improvement in air quality? Explain.
-
 \vspace{.5in}
 
 ##### Confidence interval {-}
@@ -200,30 +194,6 @@ paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
 
 \vspace{.7in}
 
-\newpage
-
-24.  Write a paragraph summarizes the results of this study as if you were describing the results to your roommate.  Be sure to describe:
-
-* Summary statistic
-
-* P-value and interpretation
-
-* Conclusion (written to answer the research question)
-
-* Confidence interval and interpretation
-
-* Scope of inference
-
-\vspace{2.6in}
-
-#### Revisit and look forward {-}
-
-25. Would it be possible to design an experiment to determine if the changed human behavior due to the COVID-19 pandemic causes a decrease in air pollution? Explain. 
-\vspace{0.6in}
-
-
-
-
 
 ### Take-home messages
 
@@ -239,6 +209,6 @@ paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 \newpage

@@ -227,22 +227,25 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 \newpage
 
 9. As far back as medieval times, peppers and other spices have been touted for their potential health benefits, as many possess antioxidant and anti-inflammatory properties. Chili peppers increase the body’s ability to break down lipids, which in turn can reduce the risk of hypertension, Type II diabetes, and cardiovascular disease.   Researchers randomly assigned US adult volunteers to either eat one red-hot chili pepper a day for one month or not.  Before and at the end of the study the cholesterol level for each participant was measured.  The researchers hoped to show that eating one red-hot chili pepper a day will reduce cholesterol levels.  They found that of those who consumed at least one red-hot chili pepper a day, 33.6% had lower cholesterol levels at the end of the study.  Of those who did not eat a chili pepper, 21.6% had lower cholesterol levels at the end of the study.  Twenty-five percent of the participants were assigned to eat a red-hot chili pepper each day for one month.
+\vspace{1mm}
 
-\rgi Define events:     	
-
-\rgi \rgi A = participant ate one red-hot chili pepper each day 
-
-\rgi \rgi B = participant had lower cholesterol levels at the end of the study
+    Let $A$ = participant ate one red-hot chili pepper each day, and $B$ = participant had lower cholesterol levels at the end of the study
+\vspace{0.1in}
 
     a.	Identify what each numerical value given in the problem represents in probability notation.
+\vspace{0.1in}
 
-    0.336 = 
+        0.336 = 
+\vspace{0.1in}
     
-    0.216 =
+        0.216 =
+\vspace{0.1in}
     
-    0.25 = 
+        0.25 = 
+\vspace{0.1in}
 
     b. Create a hypothetical two-way table to represent the situation.  
+\vspace{0.1in}
 \begin{center}
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{cccc} \hline
@@ -252,19 +255,16 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
     & & & \\ \hline
     Total & & & 100,000 \\ \hline
     \end{tabular}
-    \end{center}
-\vspace{.1in}
+\end{center}
+\vspace{0.1in}
 
     c.  If a randomly selected participant was assigned to eat peppers, what is the probability they did not have lower cholesterol levels at the end of the study? What is the notation used for this probability?
-
 \vspace{0.5in}
 
     d. What is the probability that a randomly selected participant was not assigned to eat peppers and did have lower cholesterol levels?  What is the notation used for this probability?
-
 \vspace{0.5in}
 
     e.  Find the probability $P(A^C | B^C)$. What does this probability represent in context of the problem?
-
 \vspace{0.5in}
 
 \newpage

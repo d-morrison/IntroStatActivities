@@ -116,13 +116,13 @@ When performing a hypothesis test, we must first identify the null hypothesis.  
 
 The notation used for a population proportion (or probability, or true proportion) is $\pi$.  Since this summarizes a population, it is a parameter. When writing the **null hypothesis** in notation, we set the parameter equal to the null value, $H_0: \pi = \pi_0$.
 
-9. Write the null hypothesis in notation using the null value of 0.5 in place of $\pi_0$ in the equation given above.
+9. Write the null hypothesis in notation using the null value of 0.5 in place of $\pi_0$ in the equation given on the previous page.
 
 \vspace{0.5in}
 
 10.  Why are we assuming a null value of 0.5 in this study? 
 
-\newpage
+\vspace{0.3in}
 
 The **alternative hypothesis** is the claim to be tested and the direction of the claim (less than, greater than, or not equal to) is based on the research question.  
 
@@ -154,7 +154,7 @@ Let's think about how to use cards to create one simulation of 16 infants under 
 
 \vspace{0.5in}
 
-15.  Next, we would mix the cards together and draw 1 card, write down if says helper or hinderer, and replace the card.  How many times would we need to repeat this process to simulate one sample?
+15.  Next, we would mix the cards together and draw 1 card, write down if the card says helper or hinderer, and replace the card.  How many times would we need to repeat this process to simulate one sample?
 
 \vspace{0.5in}
 
@@ -197,7 +197,7 @@ To use the computer simulation, we will need to enter the
 
 \vspace{.2in}
 
-We will use the `one_proportion_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample proportions and compute a p-value. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 18 in the one proportion test to create a null distribution with 1000 simulations. Then highlight and run lines 1--14.
+We will use the `one_proportion_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample proportions and compute a p-value. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 18 in the one proportion test to create a null distribution with 1000 simulations. Then highlight and run lines 1--15.
 
 
 ```r
@@ -238,7 +238,7 @@ The value in question 23 is the **p-value**.  The smaller the p-value, the more 
 
 \begin{center}\includegraphics[width=0.9\linewidth]{images/soe_gradient_grayscale} \end{center}
 
-25.  What does the p-value measure?: Interpret the p-value in context of the problem.
+25.  What does the p-value measure? Interpret the p-value in context of the problem.
 
 \vspace{1in}
 

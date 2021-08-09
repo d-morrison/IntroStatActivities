@@ -139,7 +139,7 @@ We will use the `two_mean_test()` function in `R` (in the `catstats` package) to
 
 15.  When using the `two_mean_test()` function, we need to enter the name of the response variable, `Snowfall`, and the name of the explanatory variable, `WeatherPattern`, for the formula.  The name of the data set as shown above is `Snow`.  What values should be entered for each of the following to create 1000 simulated samples?
 
-\vspace{.2in}
+\vspace{1mm}
 * First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"El_Nino"` or `"La_Nina"`):
 
 \vspace{.2in}
@@ -190,25 +190,8 @@ two_mean_bootstrap_CI(RESPONSE ~ EXPLANATORY, data = DATASET,  # Variables and d
 
 \newpage
 
-#### Communicate the results and answer the research question {-}
 
-20.  Write a paragraph summarizing the results of the study as if you are reporting the results to your supervisor.  Be sure to describe:
-
-* Summary statistic
-
-* P-value and interpretation
-
-* Conclusion (written to answer the research question)
-
-* Confidence interval and interpretation
-
-* Scope of inference
-
-\vspace{3in}
-
-#### Revisit and look forward {-}
-
-21.  Would the results from a theory-based test match the results we saw with the simulation?  Explain why or why not.
+20.  Would the results from a theory-based test match the results we saw with the simulation?  Explain why or why not.
 
 \vspace{1in}
 
@@ -217,23 +200,18 @@ two_mean_bootstrap_CI(RESPONSE ~ EXPLANATORY, data = DATASET,  # Variables and d
 \vspace{1in}
 
 
-
-\newpage
-
 ### Take-home messages
 
-1.	This activity differs from Activity 10 because the responses are independent, not paired.  These data are analyzed as a difference in means, not a mean difference.  
+1.	This activity differs from Activities 12a and 12b because the responses are independent, not paired.  These data are analyzed as a difference in means, not a mean difference.  
 
-2. Review the take-home messages in Activity 6 and apply them to this context.
+2. To create one simulated sample on the null distribution for a difference in sample means, label cards with the response variable values from the original data.  Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$. Calculate and plot the difference in means. 
 
-3. To create one simulated sample on the null distribution for a difference in sample means, label cards with the response variable values from the original data.  Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$. Calculate and plot the difference in means. 
-
-4. To create one simulated sample on the bootstrap distribution for a difference in sample means, label $n_1 + n_2$ cards with the original response values.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in means.  
+3. To create one simulated sample on the bootstrap distribution for a difference in sample means, label $n_1 + n_2$ cards with the original response values.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in means.  
 
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered
 
 \newpage
 

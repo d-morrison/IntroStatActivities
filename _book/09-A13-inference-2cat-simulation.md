@@ -20,16 +20,12 @@ In today's activity, we will use simulation-based methods to analyze two categor
 
 * Alternative hypothesis
 
-* Type 1 and Type 2 errors
-
-* Decision of a hypothesis test
-
 To review these concepts, see Chapter 5 in your textbook.
 
 
 ### The Good Samaritan
 
-Researchers at the Princeton University wanted to investigate influences on behavior.  The researchers randomly select 67 students from the Princeton Theological Seminary to participate in a study.  Only 47 students chose to participate in the study, and the data below includes 40 of those students (7 students were removed from the study for various reasons).  As all participants were theology majors planning a career as a preacher, the expectation was that all would have a similar disposition when it comes to helping behavior.  Each student was then shown a 5-minute presentation on the Good Samaritan, a parable in the Bible which emphasizes the importance of helping others.  After the presentation, the students were told they needed to give a talk on the Good Samaritan parable at a building across campus.  Half the students were told they were late for the presentation; the other half told they could take their time getting across campus (the condition was randomly assigned).  On the way between buildings, an actor pretending to be a homeless person in distress asked the student for help.  The researchers recorded whether the student helped the actor or not.  The results of the study are shown in the table below.  Do these data provide evidence that those in a hurry will be less likely to help people in need in this situation?  Use the order of subtraction hurry – no hurry.
+Researchers at the Princeton University wanted to investigate influences on behavior.  The researchers randomly selected 67 students from the Princeton Theological Seminary to participate in a study.  Only 47 students chose to participate in the study, and the data below includes 40 of those students (7 students were removed from the study for various reasons).  As all participants were theology majors planning a career as a preacher, the expectation was that all would have a similar disposition when it comes to helping behavior.  Each student was then shown a 5-minute presentation on the Good Samaritan, a parable in the Bible which emphasizes the importance of helping others.  After the presentation, the students were told they needed to give a talk on the Good Samaritan parable at a building across campus.  Half the students were told they were late for the presentation; the other half told they could take their time getting across campus (the condition was randomly assigned).  On the way between buildings, an actor pretending to be a homeless person in distress asked the student for help.  The researchers recorded whether the student helped the actor or not.  The results of the study are shown in the table below.  Do these data provide evidence that those in a hurry will be less likely to help people in need in this situation?  Use the order of subtraction hurry – no hurry.
 
 |                    | Hurry Condition | No Hurry Condition | Total |
 |--------------------|-----------------|--------------------|-------|
@@ -135,7 +131,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 
 11. What is the notation used for the value calculated in question 10?
 
-\vspace{0.1in}
+\newpage
 
 We will now simulate a **null distribution** of sample differences in proportions. The null distribution is created under the assumption the null hypothesis is true.  
 
@@ -183,17 +179,17 @@ The response variable name is `Behavior` and the explanatory variable name is `C
 
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 17 in place of the `xx`'s to produce the null distribution with 1000 simulations; highlight and run lines 1--12 and then 33--39.
+Using the `R` script file for this activity, enter your answers for question 17 in place of the `xx`'s to produce the null distribution with 1000 simulations; highlight and run lines 1--16.
 
 
 ```r
 two_proportion_test(formula = Behavior~Condition, # response ~ explanatory
-    data= good, # Name of data set
-    first_in_subtraction = "Hurry", # Order of subtraction: enter the name of Group 1
+    data = good, # Name of data set
+    first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
     number_repetitions = 1000, # Always use a minimum of 1000 repetitions
-    response_value_numerator = "Help", # Define which outcome is a success 
-    as_extreme_as = -0.45, # Calculated observed statistic (difference in sample proportions)
-    direction="less") # Alternative hypothesis direction ("greater","less","two-sided")
+    response_value_numerator = "xx", # Define which outcome is a success 
+    as_extreme_as = xx, # Calculated observed statistic (difference in sample proportions)
+    direction="xx") # Alternative hypothesis direction ("greater","less","two-sided")
 ```
 
 17.  Sketch the null distribution created here.
@@ -229,11 +225,7 @@ two_proportion_test(formula = Behavior~Condition, # response ~ explanatory
 
 2.  We use the same guidelines for the strength of evidence as we did in Activity 7a.  
 
-3.  If we make the decision to reject the null hypothesis (the p-value is less than the significance level), we could have a possible Type 1 error. A Type 1 error occurs when we reject a true null hypothesis (false positive).
-
-5.  If we make the decision to fail to reject the null hypothesis (the p-value is greater than the significance level), we could have a possible Type 2 error. A Type 2 error occurs when we fail to reject a false null hypothesis (false negative).
-
-6. To create one simulated sample on the null distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$, representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
+3. To create one simulated sample on the null distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$, representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
 
 
 ### Additional notes

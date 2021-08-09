@@ -4,9 +4,13 @@
 
 ### Learning objectives
 
-* Use bootstrapping to find a confidence interval for a single proportion.
+* Calculate a theory-based confidence interval for a single proportion.
+
+* Check the appropriate conditions to find a theory-based confidence interval.
 
 * Interpret a confidence interval for a single proportion.
+
+* Use the normal distribution to find the multiplier needed for a confidence interval
 
 ### Terminology review
 
@@ -14,9 +18,9 @@ In this activity, we will introduce simulation-based confidence intervals for a 
 
 * Parameter of interest
 
-* Bootstrapping
+* Multiplier
 
-* Confidence interval
+* Normal distribution
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
@@ -43,6 +47,12 @@ Note that we do not include a "0" subscript, since we are not assuming a null hy
 
 \vspace{0.5in}
 
+Recall from earlier in the semester we learned that the sample standard deviation measures the average variability of the data values in the sample from the sample mean.  In other words, the sample standard deviation measures how far each data point is from the mean of the data, on average.  
+
+3.  Interpret the standard error of the sample proportion found in question 2 in context of the problem.
+
+\vspace{0.8in}
+
 
 To find the confidence interval, we will add and subtract the **margin of error** to the point estimate:
 
@@ -62,48 +72,69 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.6\linewidth]{08-A12-inference-1cat_CI-theory_files/figure-latex/simpleNormal-1} 
+{\centering \includegraphics[width=0.6\linewidth]{08-A12-inference-1cat_CI-theory_files/figure-latex/simpleNormaldist-1} 
 
 }
 
-\caption{A standard normal curve.}(\#fig:simpleNormal)
+\caption{A standard normal curve.}(\#fig:simpleNormaldist)
 \end{figure}
 
-3. Fill in the normal distribution above to show how `R` found the $z^*$ multiplier.
+4. Fill in the normal distribution above to show how `R` found the $z^*$ multiplier.
 
 \vspace{0.1in}
 
-4.  What is the value of the multiplier needed to calculate the 95\% confidence interval for the true proportion of male boxers that are left-handed?
+5.  What is the value of the multiplier needed to calculate the 95\% confidence interval for the true proportion of male boxers that are left-handed?
 
 \vspace{1in}
 
-5.  Calculate the margin of error for the 95\% confidence interval.
+6.  Calculate the margin of error for the 95\% confidence interval.
 
 \vspace{1in}
 
-6.  Calculate the 95\% confidence interval for the parameter of interest.
+7.  Calculate the 95\% confidence interval for the parameter of interest.
 
 \vspace{0.5in}
 
-7.  Interpret the 95\% confidence interval in the context of the problem.
+8.  Interpret the 95\% confidence interval in the context of the problem.
 
 \vspace{1in}
 
-8. Is the null value, 0.1, contained in the 95\% confidence interval?  Explain, based on the p-value from the last activity, why you expected this to be true.
+9. Is the null value, 0.1, contained in the 95\% confidence interval?  Explain, based on the p-value from the last activity, why you expected this to be true.
+\vspace{1in}
+
+### Simualtion Methods
+
+In question 1, we found that the success-failure condition was met to use theory-based methods.  Here we will use simulation methods to find a 95\% confidence interval for the parameter of interest.
+
+Use the `one_proportion_bootstrap_CI()` function in `R` to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided `R` script file, fill in the values/words for each `xx` in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. 
+
+
+```r
+one_proportion_bootstrap_CI(sample_size = xx, # Sample size
+                    number_successes = xx, # Observed number of successes
+                    number_repetitions = 1000, # Number of bootstrap samples to use
+                    confidence_level = 0.95) # Confidence level as a decimal
+```
+
+10. Report the simualtion 95\% confidence interval.  Is this confidence interval similar to the confidence interval calculated in question 7?
+
+\vspace{0.8in}
+
 
 ### Effect of Sample Size
 
 Suppose in another sample of 230 male boxers we saw that 37 were left-handed.
 
-9.  Calculate the margin of error for a 95\% confidence interval using a multiplier $z^* = 1.96$ for this sample.  Is the margin of error larger or smaller than the margin of error for the original study?
+11.  Calculate the margin of error for a 95\% confidence interval using a multiplier $z^* = 1.96$ for this sample.  Is the margin of error larger or smaller than the margin of error for the original study?
 
 \vspace{0.5in}
 
-10.  Calculate the 95\% confidence interval for this new study using the margin of error from question 9.  
+12.  Calculate the 95\% confidence interval for this new study using the margin of error from question 11.  
 
 \vspace{0.5in}
 
-11.  Is the confidence interval calculated in question 10 with the smaller sample size wider or smaller than the confidence interval in question 6?  Why?
+13.  Is the confidence interval calculated in question 11 with the smaller sample size wider or smaller than the confidence interval in question 6?  Explain your answer
+\vspace{1in}
 
 
 ### Take-home messages
@@ -112,7 +143,11 @@ Suppose in another sample of 230 male boxers we saw that 37 were left-handed.
 
 2. The confidence interval calculated using theory-based methods should be similar to the confidence interval found using simulation methods provided the success-failure condition is met.
 
-3.  A smaller sample size will increase the margin of error which results in a wided confidence interval. 
+3.  A smaller sample size will increase the margin of error which results in a wider confidence interval. 
+
+### Additional notes
+
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 
 \newpage

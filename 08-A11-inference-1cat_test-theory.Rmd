@@ -17,11 +17,11 @@
 
 ### Terminology review
 
-In today's activity, we will introduce theory-based hypothesis testing for a single categorical variable. Some terms covered in this activity are:
+In today's activity, we will introduce theory-based confidence intervals for a single categorical variable. Some terms covered in this activity are:
 
 * Parameter of interest
 
-* Standardized statistic
+* Standardized Statistic
 
 * Normal distribution
 
@@ -107,7 +107,7 @@ The standardized statistic measures the *number of standard errors the sample st
 
 \vspace{.8in}
 
-We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 6 at `xx` in line 18; highlight and run lines 18--20.  Notice that in line 20 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
+We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 6 at `xx` in line 7; highlight and run lines 7--9.  Notice that in line 9 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
 
 Notes:
 
@@ -117,7 +117,7 @@ Notes:
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
-      m=0, s=1 # Using the standard normal mean = 0, sd = 1
+      m=0, s=1, # Using the standard normal mean = 0, sd = 1
       lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
 ```
   
@@ -130,7 +130,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 ### Impacts on the P-value
 
-Suppose that we want to show that the true proportion of male boxers differs from that in the general population. 
+Suppose that we want to show that the true proportion of male boxers **differs** from that in the general population. 
 
 11.  Write out the alternative hypothesis in notation for this new research question.
 
@@ -148,11 +148,11 @@ Suppose that we want to show that the true proportion of male boxers differs fro
 
 \vspace{1in}
 
-Use Rstudio find the p-value for this new sample.  
+Use Rstudio find the p-value for this new sample.  Enter the value of the standardized statistic found in question 14 for xx in line 12.  Highlight and run lines 12--14.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
-      m=0, s=1 # Using the standard normal mean = 0, sd = 1
+      m=0, s=1, # Using the standard normal mean = 0, sd = 1
       lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
 ```
 
@@ -161,6 +161,8 @@ pnorm(xx, # Enter value of standardized statistic
 \vspace{0.3in}
 
 16. Suppose another sample of 500 male boxers was taken and 68 were found to be left-handed.  Calculate the standardized statistic for this new sample.
+
+\vspace{1in}
 
 Use Rstudio find the p-value for this new sample.  
 
