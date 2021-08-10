@@ -12,7 +12,7 @@
 
 ### Terminology review
 
-In this week's activity, we will examine different types of sampling bias and study designs, confounding variables, and how to determine the scope of inference for a study. Some terms covered in this activity are:
+In today's activity, we will examine unbiased and biased methods of sampling. Some terms covered in this activity are:
 
 
 * Random sample
@@ -56,6 +56,8 @@ For this activity, you will read a speech given by Jim Becenti, a member of the 
 5. Based on the plot of sample mean word lengths in question 4, what is your best guess for the average word length of the population of all 359 words in the speech? 
 \vspace{0.3in}
 
+\newpage
+
 6. The true mean word length of the population of all 359 words in the speech is 3.95 letters. Is this value a parameter or a statistic?   
 \vspace{0.2in}
 
@@ -78,7 +80,7 @@ To use a random number generator to select a simple random sample, you first nee
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{images/word_length} 
+{\centering \includegraphics[width=0.5\linewidth]{images/random_word_length} 
 
 }
 
@@ -104,6 +106,7 @@ To use a random number generator to select a simple random sample, you first nee
 
 \rgi Why didn’t everyone get the same sample mean?
 \vspace{0.4in}
+\newpage
 
 14. One set of randomly generated sample mean word lengths from a single class may not be large enough to visualize the distribution results. Let’s have a computer generate 1,000 sample mean word lengths for us.
 

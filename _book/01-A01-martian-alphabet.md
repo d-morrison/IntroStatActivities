@@ -232,4 +232,4 @@ Is the distribution created from this code similar to what you saw in class in Q
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered, and to write down the names and contact information of your teammates.
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered, and to write down the names and contact information of your teammates.

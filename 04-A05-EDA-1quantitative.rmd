@@ -1,4 +1,4 @@
-## Activity 4a:  IMDb Movie Reviews - Displaying One Quantitative Variable
+## Activity 4a:  IMDb Movie Reviews - Displaying One Variable
 
 \setstretch{1}
 
@@ -43,7 +43,7 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 \newpage
 
-#### Vocabulary review. 
+#### Vocabulary review. {-}
 
 1. What are the observational units in this data set?
 
@@ -101,7 +101,7 @@ ggplot(aes(x = imdb_score)) +   # Name variable to plot
 
 \vspace{0.2in}
 
-To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for variable at line 20, highlight and run lines 19--24.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for `variable` at line 20, highlight and run lines 19--24.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.  
 

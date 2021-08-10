@@ -151,7 +151,7 @@ ggplot(aes(x = revenue_mil)) +   # Name variable to plot
 
 \vspace{0.8in}
 
-To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub` into Rstudio.  Enter the variable name `revenue_mil` for variable in line 32 and 34 to summarize and create a boxplot of the data. Highlight and run lines 31--38.  
+To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub` into Rstudio.  Enter the variable name `revenue_mil` for `variable` in line 32 and 34 to summarize and create a boxplot of the data. Highlight and run lines 31--38.  
 
 
 ```r

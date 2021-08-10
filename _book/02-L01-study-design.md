@@ -35,7 +35,7 @@ To review these concepts, see Sections 1.3 through 1.6 in the textbook.
 
 ### Study Design
 
-Each Friday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Gradescope (one submission per group).  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab with your group have the Gradescope lab assignment open so that you can answer those questions as you work through the activity.
+Each Friday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Gradescope (one submission per group).  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab with your group have the Gradescope lab assignment open so that you can answer those questions as you go.
 
 ### Types of sampling bias. {-}
 
@@ -175,6 +175,8 @@ When both these conditions are met, if we observe an association between the exp
 
 The plot labeled “Sampling Distribution of the Sample Mean” displays the 1,000 randomly generated sample mean word lengths. Sketch this plot below.
 \vspace{1.5in}
+
+\newpage
 
 12.  Compare the distribution created in question 11 to the one created in question 14 in Activity 2a.  
 

@@ -1,4 +1,4 @@
-## Activity 7b:  Helper-Hinderer --- Estimation using Simulation Methods
+## Activity 7b:  Helper-Hinderer --- Simulation CI
 
 \setstretch{1}
 
@@ -149,7 +149,7 @@ one_proportion_bootstrap_CI(sample_size = 16, # Sample size
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 \newpage
 

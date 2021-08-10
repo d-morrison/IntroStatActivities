@@ -5,7 +5,7 @@ title: |
     | ![](images/msu-campus.jpg){width=5in}
 author: "Melinda Yager, Jade Schmidt, Dr. Stacey Hancock"
 subtitle: |
-    | Summer 2021
+    | Fall 2021
     | Montana State University
 output: 
     pdf_document:

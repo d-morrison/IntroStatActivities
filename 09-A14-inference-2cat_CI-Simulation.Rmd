@@ -1,4 +1,4 @@
-## Activity 9b:  The Good Samaritan --- Estimation
+## Activity 9b:  The Good Samaritan --- Simulation CI
 
 \setstretch{1}
 
@@ -10,7 +10,7 @@
 
 ### Terminology review
 
-In this week's activity, we will use simulation methods to estimate the difference in two proportions. Some terms covered in this activity are:
+In today's activity, we will use simulation methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
 * Parameter of interest
 
@@ -24,7 +24,7 @@ To review these concepts, see Chapter 5 in your textbook.
 
 ### The Good Samaritan
 
-In the last activity, we found a small p-value for the hypothesis test for a difference in proportions.  There was very strong evidence that those in a hurry will be less likely to help people in need.  In today's activity, we will estimate the true difference in proportion of people who will help others for those in the hurry condition and those not in the hurry condition by finding a confidence interval.  
+In the last activity, we found a small p-value for the hypothesis test for a difference in proportions.  There was very strong evidence that those in a hurry will be less likely to help people in need.  In today's activity, we will estimate the difference in true proportion of people who will help others for those in the hurry condition and those not in the hurry condition by finding a confidence interval.  
 
 Researchers at the Princeton University wanted to investigate influences on behavior.  The researchers randomly selected 67 students from the Princeton Theological Seminary to participate in a study.  Only 47 students chose to participate in the study, and the data below includes 40 of those students (7 students were removed from the study for various reasons).  As all participants were theology majors planning a career as a preacher, the expectation was that all would have a similar disposition when it comes to helping behavior.  Each student was then shown a 5-minute presentation on the Good Samaritan, a parable in the Bible which emphasizes the importance of helping others.  After the presentation, the students were told they needed to give a talk on the Good Samaritan parable at a building across campus.  Half the students were told they were late for the presentation; the other half told they could take their time getting across campus (the condition was randomly assigned).  On the way between buildings, an actor pretending to be a homeless person in distress asked the student for help.  The researchers recorded whether the student helped the actor or not.  The results of the study are shown in the table below.  Do these data provide evidence that those in a hurry will be less likely to help people in need in this situation?  Use the order of subtraction hurry – no hurry.
 
@@ -81,20 +81,20 @@ We will use the `two_proportion_bootstrap_CI()` function in `R` (in the `catstat
 The response variable name is `Behavior` and the explanatory variable name is `Condition`.
 
 7. What values should be entered for each of the following into the simulation to create a 99\% confidence interval?
-
 \vspace{.5mm}
+
 * First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"Hurry"` or `"No hurry"`):
 
-\vspace{.2in}
+\vspace{.15in}
 * Response value numerator (What is the outcome for the response variable that is considered a success? `"Help"` or `"No help"`):
 
-\vspace{.2in}
+\vspace{.15in}
 * Number of repetitions:
 
-\vspace{.2in}
+\vspace{.15in}
 * Confidence level (entered as a decimal):
 
-\vspace{.2in}
+\vspace{.15in}
 
 Using the `R` script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 16--21.
 
@@ -106,6 +106,8 @@ two_proportion_bootstrap_CI(formula = Behavior ~ Condition,
         number_repetitions = 1000, # Always use a minimum of 1000 repetitions
         confidence_level = xx) # Enter the level of confidence as a decimal
 ```
+\newpage 
+
 8.  Where is the bootstrap distribution centered?  Explain why.
 
 \vspace{0.8in}
@@ -129,6 +131,8 @@ two_proportion_bootstrap_CI(formula = Behavior ~ Condition,
 13.  Is the null value in the 99\% confidence interval? 
 
 \vspace{0.8in}
+
+\newpage
 
 #### Types of errors {-}
 
@@ -172,11 +176,9 @@ Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the 
 
 ### Take-home messages
 
-1. Simulation-based methods and theory-based methods should give the same results for a study *if the validity conditions are met*.  For both methods, observational units need to be independent. To use theory-based methods, additionally, the success-failure condition must be met. Check the validity conditions for each type of test to determine if theory-based methods can be used.
+1. To create one simulated sample on the bootstrap distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the outcomes for the original responses.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in the proportion of successes. 
 
-2. To create one simulated sample on the bootstrap distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the outcomes for the original responses.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in the proportion of successes. 
-
-3. If the null value is not contained in a 99\% confidence interval, then there is evidence against the null hypothesis and the p-value is less than the significance level of 0.01.
+2. If the null value is not contained in a 99\% confidence interval, then there is evidence against the null hypothesis and the p-value is less than the significance level of 0.01.
 
 
 ### Additional notes

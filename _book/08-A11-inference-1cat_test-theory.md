@@ -1,4 +1,4 @@
-## Activity 8a:  Handedness of Male Boxers --- Testing using Theory-based Methods
+## Activity 8a:  Handedness of Male Boxers --- Theory HT
 
 \setstretch{1}
 
@@ -90,6 +90,8 @@ where the standard error is calculated using the null value:
 $$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$.
 \vspace{0.5mm}
 
+\newpage
+
 5.  Calculate the null standard error of the sample proportion.
 
 \vspace{1in}
@@ -118,6 +120,8 @@ The standardized statistic measures the *number of standard errors the sample st
 8.  Interpret the standardized sample proportion from question 6 in context of the problem.
 
 \vspace{.8in}
+
+\newpage
 
 We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 6 at `xx` in line 7; highlight and run lines 7--9.  Notice that in line 9 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
 

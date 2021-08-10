@@ -16,7 +16,7 @@ This calendar only lists the in-class activities, Rstudio labs and exams each we
 3& M& 9/6& (\textit{No class}) \\*
 3& W& 9/8& What's the Probability? \\*
 3& F& 9/10& Week 3 Lab \\ \hline
-4& M& 9/13& IMDb Movie Reviews - One Quantitative Variable \\*
+4& M& 9/13& IMDb Movie Reviews - One Quant Variable \\*
 4& W& 9/15& IMDb Movie Reviews - One of Each \\*
 4& F& 9/17& Week 4 Lab \\ \hline
 5& M& 9/20& Movie Profits - Linear Regression \\*
@@ -46,9 +46,9 @@ This calendar only lists the in-class activities, Rstudio labs and exams each we
 13& M& 11/15& Weather Patterns and Snowfall \\*
 13& W& 11/17& Homeless Housing Stability \\*
 13& F& 11/19& Week 13 Lab \\ \hline
-Holiday& ---& M--F& 11/22--11/26& \textbf{No Class --- Thanksgiving Break} \\ \hline
+Holiday& M--F& 11/22--11/26& \textbf{No Class --- Fall Break} \\ \hline
 14& M& 11/29& Real Estate \\*
-14& W& 12/1& Bears \\*
+14& W& 12/1& Bear Complaints \\*
 14& F& 12/3& Week 14 Lab \\ \hline
 15& M& 12/6& Data Exploration \\*
 15& W& 12/8& Final Exam Review \\*

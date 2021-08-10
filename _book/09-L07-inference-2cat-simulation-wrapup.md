@@ -73,6 +73,7 @@ ggplot(aes(x = explanatory, fill = response)) +   # This specifies the variables
 8.  Write the null hypothesis for this study in notation.
 
 \vspace{0.5in}
+\newpage
 
 **9.  Using the research question, write the alternative hypothesis in words.**
 
@@ -91,7 +92,7 @@ two_proportion_test(formula = response~explanatory, # response ~ explanatory
     direction="xx") # Alternative hypothesis direction ("greater","less","two-sided")
 ```
 
-**10.  Interpret the p-value in context of the problem.**
+**10.  Report and interpret the p-value in context of the problem.**
 
 \vspace{0.8in}
 
@@ -123,11 +124,11 @@ two_proportion_bootstrap_CI(formula = response~explanatory,
 
 \vspace{0.2in}
 
-|    Interpret this error in context of the study.
+15. Interpret this error in context of the study.
 
 \vspace{0.8in}
 
-15.  Write a paragraph summarizing the results of the study as if writing a press release.  **Upload a copy of your group's summary paragraph to Gradescope.** Be sure to describe:
+16.  Write a paragraph summarizing the results of the study as if writing a press release.  **Upload a copy of your group's summary paragraph to Gradescope.** Be sure to describe:
 
 * Summary statistic and interpretation
 

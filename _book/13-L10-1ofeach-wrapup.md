@@ -15,7 +15,7 @@
 
 * Interpret a confidence interval for a difference in means.
 
-###The triple crown 
+### The triple crown 
 
 The Triple Crown of "Thru" hiking consists of hiking the Appalachian Trail, the Pacific Crest Trail (PCT), and the Continental Divide Trail (CDT). Each year halfwayanywhere.com conducts a survey to better understand the people who hike these trails. One variable which is queried in the survey is the pre-hike "base weight" of a hiker's pack which is the total weight of gear without food, water, and worn gear. The 131 hikers surveyed who completed the CDT had a mean base weight of 15.266 lbs (sd = 5.128 lbs).  The 484 hikers surveyed who completed the PCT had a mean base weight of 17.837 lbs (sd = 7.823 lbs). Is there a difference in average base weight for PCT hikers and CDT hikers?  Use order of subtraction CDT - PCT.  
 
@@ -64,13 +64,14 @@ hikes %>%
 
 \vspace{1in}
 
-#### Use statistical inferential methods to draw inferences from the data {-}
+### Use statistical inferential methods to draw inferences from the data {-}
 
 **8.  Using the provided graphs and summary statistics, determine if it would make the most sense to use theory-based methods or simulation methods.  Explain your reasoning.**
 
 \vspace{0.8in}
 
-##### Hypothesis test {-}
+### Hypothesis test {-}
+
 Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that there is no association between the two variables.  This means that the base weight observed in the data set would have been the same regardless of the type of trails.
 
 We will use the `two_mean_test()` function in `R` (in the `catstats` package) to simulate the null distribution of differences in sample means and compute a p-value. 
@@ -106,16 +107,18 @@ two_mean_test(Baseweight~Trail,
 |        Sketch the null distribution created using the code above.
 \vspace{1.5in}
 
-#### Communicate the results and answer the research question {-}
+### Communicate the results and answer the research question {-}
 
 **11.  Report the p-value. Based off of this p-value, write a conclusion to the hypothesis test.**
 
+\vspace{0.8in}
 
 12. Do you expect the 95\% confidence interval to contain the null value of zero?  Explain.
 
 \vspace{0.8in}
 
-##### Confidence interval {-}
+### Confidence interval {-}
+
 We will use the `two_mean_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval. 
 
 13. Using bootstrapping find a 95\% confidence interval. Using the provided `R` script file, enter the variable names and data set name as in the `two_mean_test()` function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 28--32. Report the 95\% confidence interval in interval notation.
@@ -134,15 +137,10 @@ two_mean_bootstrap_CI(RESPONSE ~ EXPLANATORY,
 
 \vspace{0.8in}
 
-
-**15.  Would theory-based methods result in a similar p-value and confidence interval?  Explain your reasoning.**
-
-\vspace{0.8in}
-
-16.  What type of error may be possible?
+15.  What type of error may be possible?
 \vspace{0.2in}
 
-17.  Write a paragraph summarizing the results of the study as if you are reporting the results to your supervisor.  **Upload a copy of your paragraph to Gradescope for your group.**  Be sure to describe:
+16.  Write a paragraph summarizing the results of the study as if you are reporting the results to your supervisor.  **Upload a copy of your paragraph to Gradescope for your group.**  Be sure to describe:
 
 * Summary statistic
 

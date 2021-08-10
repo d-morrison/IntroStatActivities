@@ -370,8 +370,6 @@ Simpson’s Paradox: when the relationship between the explanatory and response 
 
 True or false: Simpson’s Paradox can only occur when the explanatory, response, and confounding variables are all categorical.
 
-\newpage
-
 #### Example: SAT scores {-}
 
 1.	What are the observational units?  

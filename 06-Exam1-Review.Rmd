@@ -66,7 +66,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \vspace{2in}
 
-\rgi To what group could the results of this study be applies to?
+\rgi To what group could the results of this study be applied to?
 
 \vspace{0.3in}
 
@@ -246,7 +246,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
     b. Create a hypothetical two-way table to represent the situation.  
 \vspace{0.1in}
-\begin{center}
+
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{cccc} \hline
     \hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ \hline
@@ -255,7 +255,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
     & & & \\ \hline
     Total & & & 100,000 \\ \hline
     \end{tabular}
-\end{center}
+
 \vspace{0.1in}
 
     c.  If a randomly selected participant was assigned to eat peppers, what is the probability they did not have lower cholesterol levels at the end of the study? What is the notation used for this probability?

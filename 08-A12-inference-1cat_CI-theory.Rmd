@@ -1,4 +1,4 @@
-## Activity 8b:  Male Boxers --- Estimation using Theory-based Methods
+## Activity 8b:  Male Boxers --- Theory CI
 
 \setstretch{1}
 
@@ -37,6 +37,7 @@ To check the success-failure condition to use theory-based methods for confidenc
 1.  Verify that the success-failure condition is met to use theory based methods to find a 95\% confidence interval.  
 
 \vspace{0.5in}
+\newpage
 
 To calculate a theory-based 95\% confidence interval for $\pi$, we will first find the **standard error** of $\hat{p}$ by plugging in the value of $\hat{p}$ for $\pi$ in $SD(\hat{p})$:
 
@@ -96,7 +97,7 @@ abline(h=-0.002)
 9. Is the null value, 0.1, contained in the 95\% confidence interval?  Explain, based on the p-value from the last activity, why you expected this to be true.
 \vspace{1in}
 
-### Simualtion Methods
+### Simulation Methods {-}
 
 In question 1, we found that the success-failure condition was met to use theory-based methods.  Here we will use simulation methods to find a 95\% confidence interval for the parameter of interest.
 
@@ -109,12 +110,12 @@ one_proportion_bootstrap_CI(sample_size = xx, # Sample size
                     confidence_level = 0.95) # Confidence level as a decimal
 ```
 
-10. Report the simualtion 95\% confidence interval.  Is this confidence interval similar to the confidence interval calculated in question 7?
+10. Report the simulation 95\% confidence interval.  Is this confidence interval similar to the confidence interval calculated in question 7?
 
 \vspace{0.8in}
 
 
-### Effect of Sample Size
+### Effect of Sample Size {-}
 
 Suppose in another sample of 230 male boxers we saw that 37 were left-handed.
 

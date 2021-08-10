@@ -135,7 +135,7 @@ Therefore, the slope predicts how much the line will *rise* for each *run* of +1
 
 \vspace{0.8in}
 
-10. The prediction in Q9 is an example of what?
+10. The prediction in question 9 is an example of what?
 
 \vspace{0.3in}
 
@@ -166,8 +166,6 @@ $e_i=y_i-\hat{y}_i$
 2.  There are three summary statistics used to summarize the relationship between two quantitative variables: correlation ($r$), slope of the regression line ($b_1$), and the coefficient of determination ($r^2$).  
 
 3.  We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable (reflect on why this is true.).  This is called **extrapolation**. 
-
-\newpage
 
 ### Additional notes
 

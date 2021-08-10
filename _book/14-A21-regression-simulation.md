@@ -120,7 +120,7 @@ First, let's think about how one simulation would be created on the null distrib
 
 We will use the `regression_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample slopes (or sample correlations) and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `realestate`), the statistic for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
 
-The response variable name is `Houseing_Price` and the explanatory variable name is `Distance`.
+The response variable name is `House_Price` and the explanatory variable name is `Distance`.
 
 12. What inputs should be entered for each of the following to create the simulation to test regression slope?
 

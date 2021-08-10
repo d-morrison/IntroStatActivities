@@ -139,6 +139,7 @@ To simulate the null distribution of paired sample mean differences we will use 
             which_first = 1)  # Not needed when using calculated differences
 ```
     
+\newpage
 
 14. Sketch the null distribution created in question 13 here.
 

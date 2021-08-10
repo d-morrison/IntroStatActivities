@@ -177,7 +177,7 @@
   \apptocmd{\@title}{\par {\large #1 \par}}{}{}
 }
 \makeatother
-\subtitle{Summer 2021\\
+\subtitle{Fall 2021\\
 Montana State University}
 \author{Melinda Yager, Jade Schmidt, Dr.~Stacey Hancock}
 \date{}
@@ -274,7 +274,7 @@ This calendar only lists the in-class activities, Rstudio labs and exams each we
 3& M& 9/6& (\textit{No class}) \\*
 3& W& 9/8& What's the Probability? \\*
 3& F& 9/10& Week 3 Lab \\ \hline
-4& M& 9/13& IMDb Movie Reviews - One Quantitative Variable \\*
+4& M& 9/13& IMDb Movie Reviews - One Quant Variable \\*
 4& W& 9/15& IMDb Movie Reviews - One of Each \\*
 4& F& 9/17& Week 4 Lab \\ \hline
 5& M& 9/20& Movie Profits - Linear Regression \\*
@@ -304,9 +304,9 @@ This calendar only lists the in-class activities, Rstudio labs and exams each we
 13& M& 11/15& Weather Patterns and Snowfall \\*
 13& W& 11/17& Homeless Housing Stability \\*
 13& F& 11/19& Week 13 Lab \\ \hline
-Holiday& ---& M--F& 11/22--11/26& \textbf{No Class --- Thanksgiving Break} \\ \hline
+Holiday& M--F& 11/22--11/26& \textbf{No Class --- Fall Break} \\ \hline
 14& M& 11/29& Real Estate \\*
-14& W& 12/1& Bears \\*
+14& W& 12/1& Bear Complaints \\*
 14& F& 12/3& Week 14 Lab \\ \hline
 15& M& 12/6& Data Exploration \\*
 15& W& 12/8& Final Exam Review \\*
@@ -875,7 +875,7 @@ Is the distribution created from this code similar to what you saw in class in Q
 \hypertarget{additional-notes}{%
 \subsection{Additional notes}\label{additional-notes}}
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered, and to write down the names and contact information of your teammates.
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered, and to write down the names and contact information of your teammates.
 
 \hypertarget{study-design}{%
 \chapter{Study Design}\label{study-design}}
@@ -1158,7 +1158,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{terminology-review-2}{%
 \subsection{Terminology review}\label{terminology-review-2}}
 
-In this week's activity, we will examine different types of sampling bias and study designs, confounding variables, and how to determine the scope of inference for a study. Some terms covered in this activity are:
+In today's activity, we will examine unbiased and biased methods of sampling. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
@@ -1220,6 +1220,14 @@ For this activity, you will read a speech given by Jim Becenti, a member of the 
 \item
   Based on the plot of sample mean word lengths in question 4, what is your best guess for the average word length of the population of all 359 words in the speech?
   \vspace{0.3in}
+\end{enumerate}
+
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
 \item
   The true mean word length of the population of all 359 words in the speech is 3.95 letters. Is this value a parameter or a statistic?\\
   \vspace{0.2in}
@@ -1257,7 +1265,7 @@ To use a random number generator to select a simple random sample, you first nee
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{images/word_length} 
+{\centering \includegraphics[width=0.5\linewidth]{images/random_word_length} 
 
 }
 
@@ -1288,6 +1296,7 @@ To use a random number generator to select a simple random sample, you first nee
 
 \rgi Why didn't everyone get the same sample mean?
 \vspace{0.4in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1401,7 +1410,7 @@ To review these concepts, see Sections 1.3 through 1.6 in the textbook.
 \hypertarget{study-design-2}{%
 \subsection{Study Design}\label{study-design-2}}
 
-Each Friday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Gradescope (one submission per group). The questions to be submitted on Gradescope are bolded in the lab. As you work through the lab with your group have the Gradescope lab assignment open so that you can answer those questions as you work through the activity.
+Each Friday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Gradescope (one submission per group). The questions to be submitted on Gradescope are bolded in the lab. As you work through the lab with your group have the Gradescope lab assignment open so that you can answer those questions as you go.
 
 \hypertarget{types-of-sampling-bias.}{%
 \subsection*{Types of sampling bias.}\label{types-of-sampling-bias.}}
@@ -1583,6 +1592,8 @@ When both these conditions are met, if we observe an association between the exp
 
 The plot labeled ``Sampling Distribution of the Sample Mean'' displays the 1,000 randomly generated sample mean word lengths. Sketch this plot below.
 \vspace{1.5in}
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2195,8 +2206,12 @@ For today's lab we will focus on using RStudio and the provided \texttt{R} scrip
 
 Download and open the provided \texttt{R} script file for week 3 lab to answer the following questions. \textbf{Remember bolded questions will be turned in on Gradescope for your group.} Highlight and run the first two lines of code to load the appropriate packages needed for this lab.
 
+\hypertarget{graphing-categorical-variables}{%
+\subsection{Graphing Categorical Variables}\label{graphing-categorical-variables}}
+
 \hypertarget{nightlight-use-and-myopia}{%
-\subsubsection{Nightlight use and myopia}\label{nightlight-use-and-myopia}}
+\subsection*{Nightlight use and myopia}\label{nightlight-use-and-myopia}}
+\addcontentsline{toc}{subsection}{Nightlight use and myopia}
 
 In a study reported in Nature (1999, Vol. 399, pp.~113-114), a survey of 479 children found that those who had slept with a nightlight or in a fully lit room before the age of 2 had a higher incidence of nearsightedness (myopia) later in childhood.
 
@@ -2284,15 +2299,13 @@ We could also choose to display the data as a proportion in a \textbf{relative f
   Which features in the relative frequency bar plot are the same as the frequency bar plot? Which are different?
 \end{enumerate}
 
-\vspace{1in}
-
 \newpage
 
 \hypertarget{displaying-two-categorical-variables}{%
 \subsubsection*{Displaying two categorical variables}\label{displaying-two-categorical-variables}}
 \addcontentsline{toc}{subsubsection}{Displaying two categorical variables}
 
-To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of \texttt{Light} segmented by \texttt{Sight}. To create the segmented bar plot enter the variable name, \texttt{Light} for \texttt{explanatory} and the variable name, \texttt{Sight} for `response` in the 'R' script file in line 27. Highlight and run lines 26--33.
+To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of \texttt{Light} segmented by \texttt{Sight}. To create the segmented bar plot enter the variable name, \texttt{Light} for \texttt{explanatory} and the variable name, \texttt{Sight} for \texttt{response} in the \texttt{R} script file in line 27. Highlight and run lines 26--33.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2648,8 +2661,8 @@ Decision tree for determining an appropriate plot given a number of variables an
 
 \newpage
 
-\hypertarget{activity-4a-imdb-movie-reviews---displaying-one-quantitative-variable}{%
-\section{Activity 4a: IMDb Movie Reviews - Displaying One Quantitative Variable}\label{activity-4a-imdb-movie-reviews---displaying-one-quantitative-variable}}
+\hypertarget{activity-4a-imdb-movie-reviews---displaying-one-variable}{%
+\section{Activity 4a: IMDb Movie Reviews - Displaying One Variable}\label{activity-4a-imdb-movie-reviews---displaying-one-variable}}
 
 \setstretch{1}
 
@@ -2711,7 +2724,8 @@ A data set was collected on movies released in 2016. Here is a list of some of t
 \newpage
 
 \hypertarget{vocabulary-review.}{%
-\subsubsection{Vocabulary review.}\label{vocabulary-review.}}
+\subsubsection*{Vocabulary review.}\label{vocabulary-review.}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review.}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2830,7 +2844,7 @@ A dotplot will plot a dot for each value in the data set. The following code wil
 
 \vspace{0.2in}
 
-To create a histogram of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{R} script file for variable at line 20, highlight and run lines 19--24. Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{R} script file for \texttt{variable} at line 20, highlight and run lines 19--24. Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the \textbf{bin width} is 0.5. For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75. It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.
 
@@ -3173,7 +3187,7 @@ Let's examine how the presence of outliers affect the values of center and sprea
 
 \vspace{0.8in}
 
-To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, \texttt{Movies2016\_Sub} into Rstudio. Enter the variable name \texttt{revenue\_mil} for variable in line 32 and 34 to summarize and create a boxplot of the data. Highlight and run lines 31--38.
+To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, \texttt{Movies2016\_Sub} into Rstudio. Enter the variable name \texttt{revenue\_mil} for \texttt{variable} in line 32 and 34 to summarize and create a boxplot of the data. Highlight and run lines 31--38.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -3340,7 +3354,7 @@ These data are on a subset of institutions that met the following selection crit
 
 \vspace{0.5in}
 
-Upload and import the data set IPEDS\_Data\_2018. Enter the name of the data set (see the environment tab) for \texttt{datasetname} in the \texttt{R} script file in line 5. We will look at the retention rates for the different institutions. Enter the variable name \texttt{Retention} for \texttt{variable} in line 12. Highlight and run lines 1 -- 12.
+Upload and import the data set \texttt{IPEDS\_Data\_2018}. Enter the name of the data set (see the environment tab) for \texttt{datasetname} in the \texttt{R} script file in line 5. We will look at the retention rates for the different institutions. Enter the variable name \texttt{Retention} for \texttt{variable} in line 12. Highlight and run lines 1 -- 12.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4011,8 +4025,6 @@ Simpson's Paradox: when the relationship between the explanatory and response va
 
 True or false: Simpson's Paradox can only occur when the explanatory, response, and confounding variables are all categorical.
 
-\newpage
-
 \hypertarget{example-sat-scores}{%
 \subsubsection*{Example: SAT scores}\label{example-sat-scores}}
 \addcontentsline{toc}{subsubsection}{Example: SAT scores}
@@ -4314,7 +4326,7 @@ Therefore, the slope predicts how much the line will \emph{rise} for each \emph{
 \setcounter{enumi}{9}
 \tightlist
 \item
-  The prediction in Q9 is an example of what?
+  The prediction in question 9 is an example of what?
 \end{enumerate}
 
 \vspace{0.3in}
@@ -4366,8 +4378,6 @@ $e_i=y_i-\hat{y}_i$
   We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable (reflect on why this is true.). This is called \textbf{extrapolation}.
 \end{enumerate}
 
-\newpage
-
 \hypertarget{additional-notes-6}{%
 \subsection{Additional notes}\label{additional-notes-6}}
 
@@ -4396,7 +4406,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{terminology-review-9}{%
 \subsection{Terminology review}\label{terminology-review-9}}
 
-In this week's activity, we will review summary measures and plots for two quantitative variables. Some terms covered in this activity are:
+In today's activity, we will review summary measures and plots for two quantitative variables. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
@@ -4593,7 +4603,7 @@ What if we wanted to see if the relationship between movie budget and revenue di
 
 \vspace{0.8in}
 
-In order to see what other variables may have an impact on revenue for Movies released in 2016 we created a multivariate model. The following \texttt{R} code gives the estimates for the regression model with \texttt{budget\_mil} and \texttt{duration} included.
+In order to see what other variables may have an impact on revenue for movies released in 2016 we created a multivariate model. The following \texttt{R} code gives the estimates for the regression model with \texttt{budget\_mil} and \texttt{duration} included.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4679,7 +4689,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 The Palmer Station Long Term Ecological Research Program sampled three penguin species on islands in the Palmer Archipelago in Antarctica. Researchers took various body measurements on the penguins, including flipper length and body mass. The researchers were interested in the relationship between flipper length and body mass and wondered if flipper length could be used to accurately predict the body mass of these three penguin species.
 
-Upload and import the \texttt{penguins} csv file and the provided \texttt{R} script file for week 5 lab. First We will create a scatterplot of the flipper length and body mass. Notice that we are using flipper length to predict body mass. This makes flipper length the explanatory variable. \textbf{Make sure to give your plot a descriptive title.} Highlight and run lines 1--11 in the \texttt{R} script file. \textbf{Upload a copy of your scatterplot to Gradescope.}
+Upload and import the \texttt{penguins} csv file and the provided \texttt{R} script file for week 5 lab. First we will create a scatterplot of the flipper length and body mass. Notice that we are using flipper length to predict body mass. This makes flipper length the explanatory variable. \textbf{Make sure to give your plot a descriptive title.} Highlight and run lines 1--11 in the \texttt{R} script file. \textbf{Upload a copy of your scatterplot to Gradescope.}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4698,6 +4708,7 @@ Upload and import the \texttt{penguins} csv file and the provided \texttt{R} scr
 \tightlist
 \item
   Assess the four features of the scatterplot that describe this relationship. Describe each feature using a complete sentence!
+  \vspace{1mm}
 \end{enumerate}
 
 \begin{itemize}
@@ -4706,7 +4717,7 @@ Upload and import the \texttt{penguins} csv file and the provided \texttt{R} scr
   Form (linear, non-linear)
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
 \begin{itemize}
 \tightlist
@@ -4714,7 +4725,7 @@ Upload and import the \texttt{penguins} csv file and the provided \texttt{R} scr
   Direction (positive, negative)
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
 \begin{itemize}
 \tightlist
@@ -4722,7 +4733,7 @@ Upload and import the \texttt{penguins} csv file and the provided \texttt{R} scr
   Strength
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
 \begin{itemize}
 \tightlist
@@ -4730,9 +4741,9 @@ Upload and import the \texttt{penguins} csv file and the provided \texttt{R} scr
   Unusual observations or outliers
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
-Highlight and run lines 14--18 to get the correlation matrix.
+Highlight and run lines 14--18 to get the correlation matrix in the \texttt{R} script file.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4963,7 +4974,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \vspace{2in}
 
-\rgi To what group could the results of this study be applies to?
+\rgi To what group could the results of this study be applied to?
 
 \vspace{0.3in}
 
@@ -5166,30 +5177,37 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
   \item
     Create a hypothetical two-way table to represent the situation.\\
     \vspace{0.1in}
-    \textbackslash begin\{center\}
-
-    \renewcommand{\arraystretch}{1.5}
-     \begin{tabular}{cccc} \hline
-     \hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ \hline
-     & & & \\ 
-     & & & \\ 
-     & & & \\ \hline
-     Total & & & 100,000 \\ \hline
-     \end{tabular}
-
-    \textbackslash end\{center\}
-    \vspace{0.1in}
-  \item
-    If a randomly selected participant was assigned to eat peppers, what is the probability they did not have lower cholesterol levels at the end of the study? What is the notation used for this probability?
-    \vspace{0.5in}
-  \item
-    What is the probability that a randomly selected participant was not assigned to eat peppers and did have lower cholesterol levels? What is the notation used for this probability?
-    \vspace{0.5in}
-  \item
-    Find the probability \(P(A^C | B^C)\). What does this probability represent in context of the problem?
-    \vspace{0.5in}
   \end{enumerate}
+
+  \renewcommand{\arraystretch}{1.5}
+   \begin{tabular}{cccc} \hline
+   \hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ \hline
+   & & & \\ 
+   & & & \\ 
+   & & & \\ \hline
+   Total & & & 100,000 \\ \hline
+   \end{tabular}
 \end{enumerate}
+
+\vspace{0.1in}
+
+\begin{verbatim}
+c.  If a randomly selected participant was assigned to eat peppers, what is the probability they did not have lower cholesterol levels at the end of the study? What is the notation used for this probability?
+\end{verbatim}
+
+\vspace{0.5in}
+
+\begin{verbatim}
+d. What is the probability that a randomly selected participant was not assigned to eat peppers and did have lower cholesterol levels?  What is the notation used for this probability?
+\end{verbatim}
+
+\vspace{0.5in}
+
+\begin{verbatim}
+e.  Find the probability $P(A^C | B^C)$. What does this probability represent in context of the problem?
+\end{verbatim}
+
+\vspace{0.5in}
 
 \newpage
 
@@ -6006,8 +6024,8 @@ Margin of error of a confidence interval for a sample proportion:
 
 \newpage
 
-\hypertarget{activity-7a-helperer-hinderer-simulation-test}{%
-\section{Activity 7a: Helperer-Hinderer --- Simulation Test}\label{activity-7a-helperer-hinderer-simulation-test}}
+\hypertarget{activity-7a-helperer-hinderer-simulation-ht}{%
+\section{Activity 7a: Helperer-Hinderer --- Simulation HT}\label{activity-7a-helperer-hinderer-simulation-ht}}
 
 \setstretch{1}
 
@@ -6494,8 +6512,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \newpage
 
-\hypertarget{activity-7b-helper-hinderer-estimation-using-simulation-methods}{%
-\section{Activity 7b: Helper-Hinderer --- Estimation using Simulation Methods}\label{activity-7b-helper-hinderer-estimation-using-simulation-methods}}
+\hypertarget{activity-7b-helper-hinderer-simulation-ci}{%
+\section{Activity 7b: Helper-Hinderer --- Simulation CI}\label{activity-7b-helper-hinderer-simulation-ci}}
 
 \setstretch{1}
 
@@ -6782,7 +6800,7 @@ We will use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R}
 \hypertarget{additional-notes-9}{%
 \subsection{Additional notes}\label{additional-notes-9}}
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 \newpage
 
@@ -7098,8 +7116,8 @@ In the interpretation of a 95\% confidence interval, we say that we are 95\% con
 
 \newpage
 
-\hypertarget{activity-8a-handedness-of-male-boxers-testing-using-theory-based-methods}{%
-\section{Activity 8a: Handedness of Male Boxers --- Testing using Theory-based Methods}\label{activity-8a-handedness-of-male-boxers-testing-using-theory-based-methods}}
+\hypertarget{activity-8a-handedness-of-male-boxers-theory-ht}{%
+\section{Activity 8a: Handedness of Male Boxers --- Theory HT}\label{activity-8a-handedness-of-male-boxers-theory-ht}}
 
 \setstretch{1}
 
@@ -7226,6 +7244,8 @@ where the standard error is calculated using the null value:
 \[SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}\].
 \vspace{0.5mm}
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{4}
@@ -7278,6 +7298,8 @@ The standardized statistic measures the \emph{number of standard errors the samp
 \end{enumerate}
 
 \vspace{.8in}
+
+\newpage
 
 We will use the \texttt{pnorm()} function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic calculated in question 6 at \texttt{xx} in line 7; highlight and run lines 7--9. Notice that in line 9 it says \texttt{lower.tail\ =\ FALSE}. \texttt{R} will calculate the p-value \emph{greater} than the value of the standardized statistic.
 
@@ -7468,8 +7490,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \newpage
 
-\hypertarget{activity-8b-male-boxers-estimation-using-theory-based-methods}{%
-\section{Activity 8b: Male Boxers --- Estimation using Theory-based Methods}\label{activity-8b-male-boxers-estimation-using-theory-based-methods}}
+\hypertarget{activity-8b-male-boxers-theory-ci}{%
+\section{Activity 8b: Male Boxers --- Theory CI}\label{activity-8b-male-boxers-theory-ci}}
 
 \setstretch{1}
 
@@ -7522,6 +7544,7 @@ To check the success-failure condition to use theory-based methods for confidenc
 \end{enumerate}
 
 \vspace{0.5in}
+\newpage
 
 To calculate a theory-based 95\% confidence interval for \(\pi\), we will first find the \textbf{standard error} of \(\hat{p}\) by plugging in the value of \(\hat{p}\) for \(\pi\) in \(SD(\hat{p})\):
 
@@ -7635,8 +7658,9 @@ The \(z^*\) multiplier is the percentile of a standard normal distribution that 
   \vspace{1in}
 \end{enumerate}
 
-\hypertarget{simualtion-methods}{%
-\subsection{Simualtion Methods}\label{simualtion-methods}}
+\hypertarget{simulation-methods}{%
+\subsection*{Simulation Methods}\label{simulation-methods}}
+\addcontentsline{toc}{subsection}{Simulation Methods}
 
 In question 1, we found that the success-failure condition was met to use theory-based methods. Here we will use simulation methods to find a 95\% confidence interval for the parameter of interest.
 
@@ -7656,13 +7680,14 @@ Use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R} to simu
 \setcounter{enumi}{9}
 \tightlist
 \item
-  Report the simualtion 95\% confidence interval. Is this confidence interval similar to the confidence interval calculated in question 7?
+  Report the simulation 95\% confidence interval. Is this confidence interval similar to the confidence interval calculated in question 7?
 \end{enumerate}
 
 \vspace{0.8in}
 
 \hypertarget{effect-of-sample-size-1}{%
-\subsection{Effect of Sample Size}\label{effect-of-sample-size-1}}
+\subsection*{Effect of Sample Size}\label{effect-of-sample-size-1}}
+\addcontentsline{toc}{subsection}{Effect of Sample Size}
 
 Suppose in another sample of 230 male boxers we saw that 37 were left-handed.
 
@@ -8237,8 +8262,8 @@ How are the confidence level and the significance level related (for a two-sided
 
 \newpage
 
-\hypertarget{activity-9a-good-samaritan-testing}{%
-\section{Activity 9a: Good Samaritan --- Testing}\label{activity-9a-good-samaritan-testing}}
+\hypertarget{activity-9a-the-good-samaritan-simulation-ht}{%
+\section{Activity 9a: The Good Samaritan --- Simulation HT}\label{activity-9a-the-good-samaritan-simulation-ht}}
 
 \setstretch{1}
 
@@ -8342,7 +8367,7 @@ These counts can be found in \texttt{R} by using the \texttt{count()} function:
 \item
   Fill in the blanks with one answer from each set of parentheses: This is an\\
   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ (experiment/observational study) because\\
-  \_\_\_\_\_\_\_\_\_\_\_\_\_\_ (Hurry/No hurry) \_\_\_\_\_\_\_ (was/was not)\\
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_ (hurry or no hurry/help or no help) \_\_\_\_\_\_\_ (was/was not)\\
   randomly \_\_\_\_\_\_\_\_\_\_\_\_ (assigned/selected).
 \end{enumerate}
 
@@ -8517,9 +8542,8 @@ The response variable name is \texttt{Behavior} and the explanatory variable nam
 \tightlist
 \item
   What inputs should be entered for each of the following to create the simulation?
+  \vspace{1mm}
 \end{enumerate}
-
-\vspace{.2in}
 
 \begin{itemize}
 \tightlist
@@ -8527,7 +8551,7 @@ The response variable name is \texttt{Behavior} and the explanatory variable nam
   First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? \texttt{"Hurry"} or \texttt{"No\ hurry"}):
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
 \begin{itemize}
 \tightlist
@@ -8535,7 +8559,7 @@ The response variable name is \texttt{Behavior} and the explanatory variable nam
   Number of repetitions:
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
 \begin{itemize}
 \tightlist
@@ -8543,7 +8567,7 @@ The response variable name is \texttt{Behavior} and the explanatory variable nam
   Response value numerator (What is the outcome for the response variable that is considered a success? \texttt{"Help"} or \texttt{"No\ help"}):
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
 \begin{itemize}
 \tightlist
@@ -8551,7 +8575,7 @@ The response variable name is \texttt{Behavior} and the explanatory variable nam
   As extreme as (enter the value for the sample difference in proportions):
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
 \begin{itemize}
 \tightlist
@@ -8559,7 +8583,7 @@ The response variable name is \texttt{Behavior} and the explanatory variable nam
   Direction (\texttt{"greater"}, \texttt{"less"}, or \texttt{"two-sided"}):
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
 Using the \texttt{R} script file for this activity, enter your answers for question 17 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations; highlight and run lines 1--16.
 
@@ -8604,6 +8628,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \end{enumerate}
 
 \vspace{0.2in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8655,8 +8680,8 @@ Use this space to summarize your thoughts and take additional notes on this week
 
 \newpage
 
-\hypertarget{activity-9b-the-good-samaritan-estimation}{%
-\section{Activity 9b: The Good Samaritan --- Estimation}\label{activity-9b-the-good-samaritan-estimation}}
+\hypertarget{activity-9b-the-good-samaritan-simulation-ci}{%
+\section{Activity 9b: The Good Samaritan --- Simulation CI}\label{activity-9b-the-good-samaritan-simulation-ci}}
 
 \setstretch{1}
 
@@ -8673,7 +8698,7 @@ Use this space to summarize your thoughts and take additional notes on this week
 \hypertarget{terminology-review-15}{%
 \subsection{Terminology review}\label{terminology-review-15}}
 
-In this week's activity, we will use simulation methods to estimate the difference in two proportions. Some terms covered in this activity are:
+In today's activity, we will use simulation methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
@@ -8691,7 +8716,7 @@ To review these concepts, see Chapter 5 in your textbook.
 \hypertarget{the-good-samaritan-1}{%
 \subsection{The Good Samaritan}\label{the-good-samaritan-1}}
 
-In the last activity, we found a small p-value for the hypothesis test for a difference in proportions. There was very strong evidence that those in a hurry will be less likely to help people in need. In today's activity, we will estimate the true difference in proportion of people who will help others for those in the hurry condition and those not in the hurry condition by finding a confidence interval.
+In the last activity, we found a small p-value for the hypothesis test for a difference in proportions. There was very strong evidence that those in a hurry will be less likely to help people in need. In today's activity, we will estimate the difference in true proportion of people who will help others for those in the hurry condition and those not in the hurry condition by finding a confidence interval.
 
 Researchers at the Princeton University wanted to investigate influences on behavior. The researchers randomly selected 67 students from the Princeton Theological Seminary to participate in a study. Only 47 students chose to participate in the study, and the data below includes 40 of those students (7 students were removed from the study for various reasons). As all participants were theology majors planning a career as a preacher, the expectation was that all would have a similar disposition when it comes to helping behavior. Each student was then shown a 5-minute presentation on the Good Samaritan, a parable in the Bible which emphasizes the importance of helping others. After the presentation, the students were told they needed to give a talk on the Good Samaritan parable at a building across campus. Half the students were told they were late for the presentation; the other half told they could take their time getting across campus (the condition was randomly assigned). On the way between buildings, an actor pretending to be a homeless person in distress asked the student for help. The researchers recorded whether the student helped the actor or not. The results of the study are shown in the table below. Do these data provide evidence that those in a hurry will be less likely to help people in need in this situation? Use the order of subtraction hurry -- no hurry.
 
@@ -8798,9 +8823,8 @@ The response variable name is \texttt{Behavior} and the explanatory variable nam
 \tightlist
 \item
   What values should be entered for each of the following into the simulation to create a 99\% confidence interval?
+  \vspace{.5mm}
 \end{enumerate}
-
-\vspace{.5mm}
 
 \begin{itemize}
 \tightlist
@@ -8808,7 +8832,7 @@ The response variable name is \texttt{Behavior} and the explanatory variable nam
   First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? \texttt{"Hurry"} or \texttt{"No\ hurry"}):
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
 \begin{itemize}
 \tightlist
@@ -8816,7 +8840,7 @@ The response variable name is \texttt{Behavior} and the explanatory variable nam
   Response value numerator (What is the outcome for the response variable that is considered a success? \texttt{"Help"} or \texttt{"No\ help"}):
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
 \begin{itemize}
 \tightlist
@@ -8824,7 +8848,7 @@ The response variable name is \texttt{Behavior} and the explanatory variable nam
   Number of repetitions:
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
 \begin{itemize}
 \tightlist
@@ -8832,7 +8856,7 @@ The response variable name is \texttt{Behavior} and the explanatory variable nam
   Confidence level (entered as a decimal):
 \end{itemize}
 
-\vspace{.2in}
+\vspace{.15in}
 
 Using the \texttt{R} script file for this activity, enter your answers for question 7 in place of the \texttt{xx}'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 16--21.
 
@@ -8846,6 +8870,8 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
         \AttributeTok{confidence\_level =}\NormalTok{ xx) }\CommentTok{\# Enter the level of confidence as a decimal}
 \end{Highlighting}
 \end{Shaded}
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8907,6 +8933,8 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 
 \vspace{0.8in}
 
+\newpage
+
 \hypertarget{types-of-errors}{%
 \subsubsection*{Types of errors}\label{types-of-errors}}
 \addcontentsline{toc}{subsubsection}{Types of errors}
@@ -8966,8 +8994,6 @@ Shown in Table \ref{tab:errors}, a \textbf{Type 1 Error} happens when we reject 
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\item
-  Simulation-based methods and theory-based methods should give the same results for a study \emph{if the validity conditions are met}. For both methods, observational units need to be independent. To use theory-based methods, additionally, the success-failure condition must be met. Check the validity conditions for each type of test to determine if theory-based methods can be used.
 \item
   To create one simulated sample on the bootstrap distribution for a difference in sample proportions, label \(n_1 + n_2\) cards with the outcomes for the original responses. Keep groups separate and randomly draw with replacement \(n_1\) times from group 1 and \(n_2\) times from group 2. Calculate and plot the resampled difference in the proportion of successes.
 \item
@@ -9111,6 +9137,7 @@ Use the provided \texttt{R} script file to create a segmented bar plot of the da
 \end{enumerate}
 
 \vspace{0.5in}
+\newpage
 
 \textbf{9. Using the research question, write the alternative hypothesis in words.}
 
@@ -9130,7 +9157,7 @@ Fill in the missing values/names in the \texttt{R} script file in the two-propor
 \end{Highlighting}
 \end{Shaded}
 
-\textbf{10. Interpret the p-value in context of the problem.}
+\textbf{10. Report and interpret the p-value in context of the problem.}
 
 \vspace{0.8in}
 
@@ -9181,13 +9208,19 @@ Fill in the missing values/names in the \texttt{R} script file in the two-propor
 
 \vspace{0.2in}
 
-~~~Interpret this error in context of the study.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{14}
+\tightlist
+\item
+  Interpret this error in context of the study.
+\end{enumerate}
 
 \vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{14}
+\setcounter{enumi}{15}
 \tightlist
 \item
   Write a paragraph summarizing the results of the study as if writing a press release. \textbf{Upload a copy of your group's summary paragraph to Gradescope.} Be sure to describe:
@@ -9624,8 +9657,8 @@ Margin of error of a confidence interval for a difference in proportions:
 
 \newpage
 
-\hypertarget{activity-10a-winter-sports-helmet-use-and-head-injuries-testing-using-theory-based-methods}{%
-\section{Activity 10a: Winter Sports Helmet Use and Head Injuries --- Testing using Theory-based Methods}\label{activity-10a-winter-sports-helmet-use-and-head-injuries-testing-using-theory-based-methods}}
+\hypertarget{activity-10a-winter-sports-helmet-use-and-head-injuries-theory-ht}{%
+\section{Activity 10a: Winter Sports Helmet Use and Head Injuries --- Theory HT}\label{activity-10a-winter-sports-helmet-use-and-head-injuries-theory-ht}}
 
 \setstretch{1}
 
@@ -9717,7 +9750,7 @@ Total & 752 & 2810 & 3562 \\
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
 \item
-  Calculate the conditional proportion of those who did not wearhelmets that had a head injury. Use appropriate notation with clear subscripts.
+  Calculate the conditional proportion of those who did not wear helmets that had a head injury. Use appropriate notation with clear subscripts.
   \vspace{0.3in}
 \item
   Calculate the summary statistic for this study. Use helmet use (\texttt{Yes}) minus no helmet use (\texttt{No}) as the order of subtraction.
@@ -9752,6 +9785,8 @@ Conditions for the sampling distribution of \(\hat{p}_1-\hat{p}_2\) to follow an
 \[
 \hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
 \]
+\newpage
+
 We then check that all four of the following inequalities hold:
 
 \[\hat{p}_{pool} \times n_1 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_1 \geq 10,\]
@@ -9811,6 +9846,8 @@ SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})\left(\frac{1}{n
 
 \vspace{1in}
 
+\newpage
+
 \begin{figure}
 
 {\centering \includegraphics[width=0.6\linewidth]{10-A15-inference-2cat_test-theory_files/figure-latex/simpleNormal-1} 
@@ -9862,8 +9899,11 @@ We will use the \texttt{pnorm()} function in \texttt{R} to find the p-value. Use
 
 \vspace{1in}
 
+\newpage
+
 \hypertarget{relative-risk}{%
-\subsubsection{Relative Risk}\label{relative-risk}}
+\subsubsection*{Relative Risk}\label{relative-risk}}
+\addcontentsline{toc}{subsubsection}{Relative Risk}
 
 Another summary statistic that can be calculated for two categorical variables is the relative risk. The relative risk is calculated as the ratio of the conditional proportions:
 
@@ -9909,8 +9949,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \newpage
 
-\hypertarget{week-10b-winter-sports-helmet-use-and-head-injuries-estimation-using-theory-based-methods}{%
-\section{Week 10b: Winter Sports Helmet Use and Head Injuries --- Estimation using Theory-based methods}\label{week-10b-winter-sports-helmet-use-and-head-injuries-estimation-using-theory-based-methods}}
+\hypertarget{week-10b-winter-sports-helmet-use-and-head-injuries-theory-ci}{%
+\section{Week 10b: Winter Sports Helmet Use and Head Injuries --- Theory CI}\label{week-10b-winter-sports-helmet-use-and-head-injuries-theory-ci}}
 
 \setstretch{1}
 
@@ -9998,7 +10038,7 @@ To find a confidence interval for the difference in proportions we will add and 
 \[\hat{p}_1-\hat{p}_2\pm z^*SE(\hat{p}_1-\hat{p}_2), \hspace{.2cm} \text{where}\]
 \[SE(\hat{p}_1-\hat{p}_2) = \sqrt{\frac{\hat{p}_1 (1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2 (1-\hat{p}_2)}{n_2}}\]
 
-Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in Activity 19! Here, we use the sample proportions for each group to calculate the standard error for the difference in proportions since we are not assuming that the true difference is zero.
+Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in Activity 10a! Here, we use the sample proportions for each group to calculate the standard error for the difference in proportions since we are not assuming that the true difference is zero.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10019,6 +10059,7 @@ Note that the formula changes when calculating the variability around the statis
 \end{enumerate}
 
 \vspace{1in}
+\newpage
 
 Recall that the \(z^*\) multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 90\%, we find the Z values that encompass the middle 90\% of the standard normal distribution. If 90\% of the standard normal distribution should be in the middle, that leaves 10\% in the tails, or 5\% in each tail. The \texttt{qnorm()} function in \texttt{R} will tell us the \(z^*\) value for the desired percentile (in this case, 90\% + 5\% = 95\% percentile).
 
@@ -10148,8 +10189,6 @@ Total & 1056 & 3944 & 5000 \\
   When calculating the standard error for the difference in sample proportions when doing a hypothesis test, we use the pooled proportion of successes, the best estimate for calculating the variability \emph{under the assumption the null hypothesis is true}. For a confidence interval, we are not assuming a null hypothesis, so we use the values of the two conditional proportions to calculate the standard error. Make note of the difference in these two formulas.
 \item
   Increasing sample size will result in less sample-to-sample variability in statistics, which will result in a smaller standard error, and thus a narrower confidence interval.
-\item
-  To create one simulated sample on the bootstrap distribution for a difference in sample proportions, label \(n_1 + n_2\) cards with the outcomes for the original responses. Keep groups separate and randomly draw with replacement \(n_1\) times from group 1 and \(n_2\) times from group 2. Calculate and plot the resampled difference in the proportion of successes.
 \end{enumerate}
 
 \hypertarget{additional-notes-15}{%
@@ -11373,6 +11412,8 @@ To simulate the null distribution of paired sample mean differences we will use 
 \end{Highlighting}
 \end{Shaded}
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{13}
@@ -12318,7 +12359,7 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
   When using the \texttt{two\_mean\_test()} function, we need to enter the name of the response variable, \texttt{Snowfall}, and the name of the explanatory variable, \texttt{WeatherPattern}, for the formula. The name of the data set as shown above is \texttt{Snow}. What values should be entered for each of the following to create 1000 simulated samples?
 \end{enumerate}
 
-\vspace{1mm}
+\newpage
 
 \begin{itemize}
 \tightlist
@@ -12384,6 +12425,8 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
 
 \vspace{0.9in}
 
+\newpage
+
 \hypertarget{confidence-interval-1}{%
 \paragraph*{Confidence interval}\label{confidence-interval-1}}
 \addcontentsline{toc}{paragraph}{Confidence interval}
@@ -12418,8 +12461,6 @@ We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in t
 \end{enumerate}
 
 \vspace{1in}
-
-\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12622,6 +12663,7 @@ where the standard error of the difference in means is calculated using:
 \end{enumerate}
 
 \vspace{0.5in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12656,6 +12698,8 @@ where the standard error of the difference in means is calculated using:
 \DecValTok{2}\SpecialCharTok{*}\FunctionTok{pt}\NormalTok{(xx, }\AttributeTok{df=}\NormalTok{yy, }\AttributeTok{lower.tail=}\ConstantTok{TRUE}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
+
+\vspace{0.2in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12774,7 +12818,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Interpret a confidence interval for a difference in means.
 \end{itemize}
 
-\#\#\#The triple crown
+\hypertarget{the-triple-crown}{%
+\subsection{The triple crown}\label{the-triple-crown}}
 
 The Triple Crown of ``Thru'' hiking consists of hiking the Appalachian Trail, the Pacific Crest Trail (PCT), and the Continental Divide Trail (CDT). Each year halfwayanywhere.com conducts a survey to better understand the people who hike these trails. One variable which is queried in the survey is the pre-hike ``base weight'' of a hiker's pack which is the total weight of gear without food, water, and worn gear. The 131 hikers surveyed who completed the CDT had a mean base weight of 15.266 lbs (sd = 5.128 lbs). The 484 hikers surveyed who completed the PCT had a mean base weight of 17.837 lbs (sd = 7.823 lbs). Is there a difference in average base weight for PCT hikers and CDT hikers? Use order of subtraction CDT - PCT.
 
@@ -12849,16 +12894,16 @@ Enter the name of the explanatory variable for \texttt{explanatory} and the name
 \vspace{1in}
 
 \hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-3}{%
-\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-3}}
-\addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
+\subsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-3}}
+\addcontentsline{toc}{subsection}{Use statistical inferential methods to draw inferences from the data}
 
 \textbf{8. Using the provided graphs and summary statistics, determine if it would make the most sense to use theory-based methods or simulation methods. Explain your reasoning.}
 
 \vspace{0.8in}
 
 \hypertarget{hypothesis-test-2}{%
-\paragraph*{Hypothesis test}\label{hypothesis-test-2}}
-\addcontentsline{toc}{paragraph}{Hypothesis test}
+\subsection*{Hypothesis test}\label{hypothesis-test-2}}
+\addcontentsline{toc}{subsection}{Hypothesis test}
 
 Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that there is no association between the two variables. This means that the base weight observed in the data set would have been the same regardless of the type of trails.
 
@@ -12930,10 +12975,12 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
 \vspace{1.5in}
 
 \hypertarget{communicate-the-results-and-answer-the-research-question-3}{%
-\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-3}}
-\addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
+\subsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-3}}
+\addcontentsline{toc}{subsection}{Communicate the results and answer the research question}
 
 \textbf{11. Report the p-value. Based off of this p-value, write a conclusion to the hypothesis test.}
+
+\vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12946,8 +12993,8 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
 \vspace{0.8in}
 
 \hypertarget{confidence-interval-2}{%
-\paragraph*{Confidence interval}\label{confidence-interval-2}}
-\addcontentsline{toc}{paragraph}{Confidence interval}
+\subsection*{Confidence interval}\label{confidence-interval-2}}
+\addcontentsline{toc}{subsection}{Confidence interval}
 
 We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval.
 
@@ -12981,13 +13028,9 @@ We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in t
 
 \vspace{0.8in}
 
-\textbf{15. Would theory-based methods result in a similar p-value and confidence interval? Explain your reasoning.}
-
-\vspace{0.8in}
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{15}
+\setcounter{enumi}{14}
 \item
   What type of error may be possible?
   \vspace{0.2in}
@@ -13560,7 +13603,7 @@ First, let's think about how one simulation would be created on the null distrib
 
 We will use the \texttt{regression\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample slopes (or sample correlations) and compute a p-value. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as \texttt{realestate}), the statistic for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
 
-The response variable name is \texttt{Houseing\_Price} and the explanatory variable name is \texttt{Distance}.
+The response variable name is \texttt{House\_Price} and the explanatory variable name is \texttt{Distance}.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14439,6 +14482,21 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 \end{itemize}
 
 \vspace{3in}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{bears }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Food, }\AttributeTok{y =}\NormalTok{ Complaints, }\AttributeTok{color=}\NormalTok{Pop\_Level))}\SpecialCharTok{+}  \CommentTok{\# Specify variables}
+  \FunctionTok{geom\_point}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{shape =}\NormalTok{ Pop\_Level), }\AttributeTok{size =} \DecValTok{3}\NormalTok{) }\SpecialCharTok{+}  \CommentTok{\# Add scatterplot of points}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"flipper length (mm)"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
+       \AttributeTok{y =} \StringTok{"body mass (g)"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
+       \AttributeTok{color =} \StringTok{"species"}\NormalTok{,}
+       \AttributeTok{title =} \StringTok{"TITLE"}\NormalTok{) }\SpecialCharTok{+} \CommentTok{\# Be sure to tile your plots}
+  \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{se =} \ConstantTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics[width=0.6\linewidth]{14-L11-regression-wrapup_files/figure-latex/unnamed-chunk-8-1} \end{center}
 
 \hypertarget{semester-review}{%
 \chapter{Semester Review}\label{semester-review}}

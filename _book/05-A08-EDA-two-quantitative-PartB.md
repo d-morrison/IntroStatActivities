@@ -13,7 +13,7 @@
 
 ### Terminology review
 
-In this week's activity, we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are:
+In today's activity, we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are:
 
 * Correlation ($r$ or $R$)
 
@@ -134,7 +134,7 @@ movies %>% # Data set pipes into...
 
 \vspace{0.8in}
 
-In order to see what other variables may have an impact on revenue for Movies released in 2016 we created a multivariate model.  The following `R` code gives the estimates for the regression model with `budget_mil` and `duration` included.
+In order to see what other variables may have an impact on revenue for movies released in 2016 we created a multivariate model.  The following `R` code gives the estimates for the regression model with `budget_mil` and `duration` included.
 
 
 ```r

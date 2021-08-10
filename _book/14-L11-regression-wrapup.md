@@ -203,3 +203,19 @@ regression_bootstrap_CI(Complaints~Food, # response ~ explanatory
 * Scope of inference
 
 \vspace{3in}
+
+
+```r
+bears %>%
+  ggplot(aes(x = Food, y = Complaints, color=Pop_Level))+  # Specify variables
+  geom_point(aes(shape = Pop_Level), size = 3) +  # Add scatterplot of points
+  labs(x = "flipper length (mm)",  # Label x-axis
+       y = "body mass (g)",  # Label y-axis
+       color = "species",
+       title = "TITLE") + # Be sure to tile your plots
+  geom_smooth(method = "lm", se = FALSE)  # Add regression line
+```
+
+
+
+\begin{center}\includegraphics[width=0.6\linewidth]{14-L11-regression-wrapup_files/figure-latex/unnamed-chunk-8-1} \end{center}

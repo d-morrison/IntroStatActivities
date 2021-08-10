@@ -1,4 +1,4 @@
-## Activity 9a:  Good Samaritan --- Testing
+## Activity 9a:  The Good Samaritan --- Simulation HT
 
 \setstretch{1}
 
@@ -56,7 +56,7 @@ good %>% group_by(Behavior) %>% count(Condition)
 \setstretch{1.5}
 3. Fill in the blanks with one answer from each set of parentheses: This is an  
 ________________ (experiment/observational study) because  
-______________ (Hurry/No hurry) _______ (was/was not)  
+______________ (hurry or no hurry/help or no help) _______ (was/was not)  
 randomly ____________ (assigned/selected).
 
 \vspace{0.1in}
@@ -149,23 +149,23 @@ To create the null distribution of differences in sample proportions, we will us
 The response variable name is `Behavior` and the explanatory variable name is `Condition`.
 
 16.  What inputs should be entered for each of the following to create the simulation?
+\vspace{1mm}
 
-\vspace{.2in}
 * First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"Hurry"` or `"No hurry"`):
 
-\vspace{.2in}
+\vspace{.15in}
 * Number of repetitions:
     
-\vspace{.2in}
+\vspace{.15in}
 * Response value numerator (What is the outcome for the response variable that is considered a success? `"Help"` or `"No help"`):
 
-\vspace{.2in}
+\vspace{.15in}
 * As extreme as (enter the value for the sample difference in proportions):
     
-\vspace{.2in}
+\vspace{.15in}
 * Direction (`"greater"`, `"less"`, or `"two-sided"`):
 
-\vspace{.2in}
+\vspace{.15in}
 
 Using the `R` script file for this activity, enter your answers for question 17 in place of the `xx`'s to produce the null distribution with 1000 simulations; highlight and run lines 1--16.
 
@@ -191,7 +191,7 @@ two_proportion_test(formula = Behavior~Condition, # response ~ explanatory
 19.  What is the value of the p-value? *Remember*: This is the value given at the bottom of the null distribution.
 
 \vspace{0.2in}
-
+\newpage
 
 20.  Interpret the p-value in context of the study.
 

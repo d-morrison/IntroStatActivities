@@ -29,7 +29,10 @@ For today's lab we will focus on using RStudio and the provided `R` script file 
 
 Download and open the provided `R` script file for week 3 lab to answer the following questions.  **Remember bolded questions will be turned in on Gradescope for your group.**  Highlight and run the first two lines of code to load the appropriate packages needed for this lab.
 
-#### Nightlight use and myopia
+### Graphing Categorical Variables
+
+### Nightlight use and myopia {-}
+
 In a study reported in Nature (1999, Vol. 399, pp. 113-114), a survey of 479 children found that those who had slept with a nightlight or in a fully lit room before the age of 2 had a higher incidence of nearsightedness (myopia) later in childhood.
 
 In this study, there are two variables studied: `Light`: level of light in room at night (no light, nightlight, full light) and `Sight`: level of myopia developed later in childhood (high myopia, myopia, no myopia).
@@ -87,13 +90,11 @@ ggplot(aes(x = Sight)) +   # This specifies the variable
 
 4.  Which features in the relative frequency bar plot are the same as the frequency bar plot?  Which are different?
 
-\vspace{1in}
-
 \newpage
 
 #### Displaying two categorical variables {-}
 
-To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` for `explanatory` and the variable name, `Sight` for 'response` in the 'R' script file in line 27. Highlight and run lines 26--33.
+To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` for `explanatory` and the variable name, `Sight` for `response` in the `R` script file in line 27. Highlight and run lines 26--33.
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
 myopia %>% # Data set piped into...

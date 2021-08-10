@@ -1,4 +1,4 @@
-## Activity 7a:  Helperer-Hinderer --- Simulation Test
+## Activity 7a:  Helperer-Hinderer --- Simulation HT
 
 \setstretch{1}
 

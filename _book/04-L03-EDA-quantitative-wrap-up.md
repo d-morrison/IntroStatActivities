@@ -56,7 +56,7 @@ These data are on a subset of institutions that met the following selection crit
 
 \vspace{0.5in}
 
-Upload and import the data set IPEDS_Data_2018. Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in line 5.  We will look at the retention rates for the different institutions.  Enter the variable name `Retention` for `variable` in line 12.  Highlight and run lines 1 -- 12.
+Upload and import the data set `IPEDS_Data_2018`. Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in line 5.  We will look at the retention rates for the different institutions.  Enter the variable name `Retention` for `variable` in line 12.  Highlight and run lines 1 -- 12.
 
 
 ```r

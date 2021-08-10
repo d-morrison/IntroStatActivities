@@ -111,6 +111,7 @@ Snow %>%
 #### Use statistical inferential methods to draw inferences from the data {-}
 
 ##### Hypothesis test {-}
+
 Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that there is no association between the two variables.  This means that the snowfall values observed in the data set would have been the same regardless of the weather pattern that year.
 
 To demonstrate this simulation, your instructor will use cards to represent the sample.  
@@ -139,7 +140,8 @@ We will use the `two_mean_test()` function in `R` (in the `catstats` package) to
 
 15.  When using the `two_mean_test()` function, we need to enter the name of the response variable, `Snowfall`, and the name of the explanatory variable, `WeatherPattern`, for the formula.  The name of the data set as shown above is `Snow`.  What values should be entered for each of the following to create 1000 simulated samples?
 
-\vspace{1mm}
+\newpage
+
 * First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"El_Nino"` or `"La_Nina"`):
 
 \vspace{.2in}
@@ -171,7 +173,10 @@ two_mean_test(Snowfall ~ WeatherPattern, data = Snow,  # Variables and data
 
 \vspace{0.9in}
 
+\newpage
+
 ##### Confidence interval {-}
+
 We will use the `two_mean_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval. 
 
 18. Using bootstrapping find a 95\% confidence interval. Using the provided `R` script file, enter the variable names and data set name as in the `two_mean_test()` function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 32--35. Report the 95\% confidence interval in interval notation.
@@ -187,8 +192,6 @@ two_mean_bootstrap_CI(RESPONSE ~ EXPLANATORY, data = DATASET,  # Variables and d
 19. Interpret the interval you calculated in question 18. 
 
 \vspace{1in}
-
-\newpage
 
 
 20.  Would the results from a theory-based test match the results we saw with the simulation?  Explain why or why not.

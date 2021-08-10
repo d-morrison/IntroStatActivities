@@ -110,6 +110,7 @@ $$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}.$$
 6.  Calculate the standard error for the difference in sample means.
 
 \vspace{0.5in}
+\newpage
 
 7.  Calculate the standardized statistic for the difference in sample means.
 
@@ -125,6 +126,7 @@ $$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}.$$
 ```r
 2*pt(xx, df=yy, lower.tail=TRUE)
 ```
+\vspace{0.2in}
 
 10. Explain why we multiplied by 2 in the code above.
 \vspace{0.3in}

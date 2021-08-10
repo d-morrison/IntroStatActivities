@@ -1,4 +1,4 @@
-## Activity 10a:  Winter Sports Helmet Use and Head Injuries --- Testing using Theory-based Methods
+## Activity 10a:  Winter Sports Helmet Use and Head Injuries --- Theory HT
 
 \setstretch{1}
 
@@ -58,7 +58,7 @@ In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by S
 
 \vspace{0.3in}
 
-3. Calculate the conditional proportion of those who did not wearhelmets that had a head injury.  Use appropriate notation with clear subscripts.
+3. Calculate the conditional proportion of those who did not wear helmets that had a head injury.  Use appropriate notation with clear subscripts.
 \vspace{0.3in}
 
 4. Calculate the summary statistic for this study.  Use helmet use (`Yes`) minus no helmet use (`No`) as the order of subtraction.
@@ -81,6 +81,8 @@ Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an a
 $$
 \hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
 $$
+\newpage
+
 We then check that all four of the following inequalities hold:
 
 $$\hat{p}_{pool} \times n_1 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_1 \geq 10,$$
@@ -117,6 +119,8 @@ $$
 
 \vspace{1in}
 
+\newpage
+
 \begin{figure}
 
 {\centering \includegraphics[width=0.6\linewidth]{10-A15-inference-2cat_test-theory_files/figure-latex/simpleNormal-1} 
@@ -152,7 +156,9 @@ pnorm(xx, # Enter value of standardized statistic
 
 \vspace{1in}
 
-#### Relative Risk
+\newpage
+
+#### Relative Risk {-}
 
 Another summary statistic that can be calculated for two categorical variables is the relative risk.  The relative risk is calculated as the ratio of the conditional proportions:
 

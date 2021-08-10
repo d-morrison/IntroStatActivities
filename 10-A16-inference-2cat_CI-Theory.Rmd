@@ -1,4 +1,4 @@
-## Week 10b:  Winter Sports Helmet Use and Head Injuries --- Estimation using Theory-based methods
+## Week 10b:  Winter Sports Helmet Use and Head Injuries --- Theory CI
 
 \setstretch{1}
 
@@ -52,7 +52,7 @@ To find a confidence interval for the difference in proportions we will add and 
  $$\hat{p}_1-\hat{p}_2\pm z^*SE(\hat{p}_1-\hat{p}_2), \hspace{.2cm} \text{where}$$
  $$SE(\hat{p}_1-\hat{p}_2) = \sqrt{\frac{\hat{p}_1 (1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2 (1-\hat{p}_2)}{n_2}}$$
  
-Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in Activity 19!  Here, we use the sample proportions for each group to calculate the standard error for the difference in proportions since we are not assuming that the true difference is zero.
+Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in Activity 10a!  Here, we use the sample proportions for each group to calculate the standard error for the difference in proportions since we are not assuming that the true difference is zero.
 
 
 4. Calculate the standard error for a difference in proportions to create a 90\% confidence interval.  
@@ -62,6 +62,7 @@ Note that the formula changes when calculating the variability around the statis
 5. Interpret the value calculated in question 4 in context of the problem.
 
 \vspace{1in}
+\newpage
 
 Recall that the $z^*$ multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 90\%, we find the Z values that encompass the middle 90\% of the standard normal distribution. If 90\% of the standard normal distribution should be in the middle, that leaves 10\% in the tails, or 5\% in each tail.  The `qnorm()` function in `R` will tell us the $z^*$ value for the desired percentile (in this case, 90\% + 5\% = 95\% percentile). 
 
@@ -121,9 +122,6 @@ Suppose in another sample of skiers and snowboards involved in accidents we saw 
 2. When calculating the standard error for the difference in sample proportions when doing a hypothesis test, we use the pooled proportion of successes, the best estimate for calculating the variability *under the assumption the null hypothesis is true*.  For a confidence interval, we are not assuming a null hypothesis, so we use the values of the two conditional proportions to calculate the standard error.  Make note of the difference in these two formulas. 
 
 3.  Increasing sample size will result in less sample-to-sample variability in statistics, which will result in a smaller standard error, and thus a narrower confidence interval.  
-
-4. To create one simulated sample on the bootstrap distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the outcomes for the original responses.  Keep groups separate and randomly draw with replacement $n_1$  times from group 1 and $n_2$ times from group 2.  Calculate and plot the resampled difference in the proportion of successes. 
-
 
 ### Additional notes
 
