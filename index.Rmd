@@ -15,7 +15,7 @@ biblio-style: apalike
 nocite: '@*'
 site: bookdown::bookdown_site
 documentclass: report
-description: This is the coursepack of in-class activities for STAT 216 Summer 2021.
+description: This is the coursepack of in-class activities for STAT 216 Fall 2021.
 location: Montana State University
 ---
 

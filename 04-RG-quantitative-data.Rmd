@@ -6,6 +6,10 @@
 
 ### Section 2.3 (Exploring quantitative data) {-}
 
+**Videos**  
+
+* 5.3
+
 ### Type of Plots {-}
 
 Scatterplot:

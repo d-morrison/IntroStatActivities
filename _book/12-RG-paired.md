@@ -7,7 +7,6 @@
 **Videos**  
 
 * 6.1
-* OneMeanTheory
 
 \setstretch{1.25}
 

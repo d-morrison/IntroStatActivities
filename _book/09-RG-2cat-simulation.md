@@ -1,13 +1,14 @@
-# Inference for Two Categorical Variables: Hypothesis Testing
+# Inference for Two Categorical Variables: Simulation-based Methods
 
 ## Week 9 - Reading Guide: Hypothesis Testing for a Difference in Proportions
 
-### Sections 5.4.1 and 5.4.2 (Simulation tests for a difference in proportions; Two-sided hypotheses)  {-}
+### Section 5.5 (Simulation-based fnference for a difference in proportions)  {-}
+
+You may skip section 5.5.3, which will be covered next week.
 
 **Videos**  
 
-* 5.4
-* TwoPropSim
+* 5.5SimInf
 
 \setstretch{1.25}
 
@@ -47,8 +48,6 @@ Hypothesis test: a process to determine how strong the evidence of an effect is.
 
 Simulation-based method: Simulate lots of samples of size $n$ under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
 
-Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
-
 Null hypothesis ($H_0$): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**.
 
 Alternative hypothesis ($H_A$): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**.
@@ -69,6 +68,17 @@ Significance level ($\alpha$): a threshold used to determine if a p-value provid
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter. Also called ‘estimation’.
+
+Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval.
+
+Bootstrapping: the process of drawing with replacement $n$ times from the original sample.
+
+Bootstrapped resample: a random sample of size $n$ from the original sample, selected with replacement.
+
+Bootstrapped statistic: the statistic recorded from the bootstrapped resample.
+
+Confidence level: how confident we are that the confidence interval will capture the parameter.
 
 #### Vocabulary {-}
 
@@ -78,11 +88,6 @@ Randomization test:
 Relative risk: 
 \rgs
 
-One-sided hypothesis test: 
-\rgs
-
-Two-sided hypothesis test: 
-\rgs
 
 #### Notes {-}
 
@@ -104,7 +109,21 @@ Interpreting relative risk ($RR = \frac{\hat{p_1}}{\hat{p_2}}$)
 Write the null hypothesis in notation for a test of relative risk.
 \rgs
 
-How does the p-value in a two-sided test compare to the p-value in a one-sided test?
+To create a single bootstrap resample for two categorical variables, how many cards will you need and how will the cards be labeled?
+\rgs
+
+What is done with the cards once they are labeled?
+\rgs
+
+Interpretations of confidence level must include:
+\rgs
+\rgs
+
+How do you determine if the results of a hypothesis test agree with a confidence interval?
+\rgs
+\rgs
+
+How are the confidence level and the significance level related (for a two-sided test)?
 \rgs
 
 #### Formulas {-}
@@ -291,102 +310,27 @@ Population proportion of group 2:
 16. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
-### Section 5.4.3 (Bootstrap confidence interval for a difference in proportions)  {-}
 
-**Videos**  
-
-* 5.4
-
-\setstretch{1.25}
-
-#### Reminders from previous sections {-}
-
-Sample size of group 1: $n_1$
-
-Sample size of group 2: $n_2$
-
-Sample proportion of group 1:  $\hat{p_1}$
-
-Sample proportion of group 2: $\hat{p_2}$
-
-Population proportion of group 1: $\pi_1$
-
-Population proportion of group 2: $\pi_2$
-
-Parameter: a value summarizing a variable(s) for a population.
-
-Statistic: a value summarizing a variable(s) for a sample.
-
-Point estimate: another name for a statistic from a sample; our best guess for the parameter of interest.
-
-Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
-
-Standard deviation of a statistic: the variability of statistics from 1000s of samples; how far, on average, each statistic is from the true value of the parameter.
-
-Standard error of a statistic: estimated standard deviation of a statistic.
-
-Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter. Also called ‘estimation’.
-
-Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval.
-
-Bootstrapping: the process of drawing with replacement $n$ times from the original sample.
-
-Bootstrapped resample: a random sample of size $n$ from the original sample, selected with replacement.
-
-Bootstrapped statistic: the statistic recorded from the bootstrapped resample.
-
-Confidence level: how confident we are that the confidence interval will capture the parameter.
-
-
-#### Notes {-}
-To create a single bootstrap resample for two categorical variables, how many cards will you need and how will the cards be labeled?
-\rgs
-
-What is done with the cards once they are labeled?
-\rgs
-
-Interpretations of confidence level must include:
-\rgs
-\rgs
-
-How do you determine if the results of a hypothesis test agree with a confidence interval?
-\rgs
-\rgs
-
-How are the confidence level and the significance level related (for a two-sided test)?
-\rgs
-
-#### Example: CPR and blood thinner {-}
-1.	What is the research question?
-\rgs
-
-2.	What is the sample difference in proportions presented in this example?  What notation would be used to represent this value?
-\rgs
-
-3.	What is the parameter (using a difference in proportion) representing in the context of this problem?  What notation would be used to represent this parameter?
-\rgs
-\rgs
-
-4.	How could we use cards to simulate **one** bootstrap resample?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+15.	How could we use cards to simulate **one** bootstrap resample?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
 \rgs
 
-5.	How can we calculate a 90% confidence interval from the bootstrap distribution for this example?
+16.	How can we calculate a 90% confidence interval from the bootstrap distribution for this example?
 \rgs
 
-6.	What was the 90% confidence interval? 
+17.	What was the 90% confidence interval? 
 \rgs
 
-7.	Interpret the confidence *interval* in the context of the problem.
-\rgs
-\rgs
-
-8.	Interpret the confidence *level* in the context of the problem.
+18.	Interpret the confidence *interval* in the context of the problem.
 \rgs
 \rgs
 
-9.	Does the conclusion of the hypothesis test match the confidence interval?
+19.	Interpret the confidence *level* in the context of the problem.
+\rgs
+\rgs
+
+20.	Does the conclusion of the hypothesis test match the confidence interval?
 \rgs
 
 \newpage

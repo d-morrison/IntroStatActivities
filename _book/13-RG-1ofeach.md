@@ -7,7 +7,6 @@
 **Videos**  
 
 * 6.3
-* TwoMeanRand
 
 \setstretch{1.25}
 #### Reminders from previous sections {-}

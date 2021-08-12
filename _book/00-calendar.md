@@ -48,7 +48,7 @@ This calendar only lists the in-class activities, Rstudio labs and exams each we
 13& F& 11/19& Week 13 Lab \\ \hline
 Holiday& M--F& 11/22--11/26& \textbf{No Class --- Fall Break} \\ \hline
 14& M& 11/29& Real Estate \\*
-14& W& 12/1& Bear Complaints \\*
+14& W& 12/1& Moneyball \\*
 14& F& 12/3& Week 14 Lab \\ \hline
 15& M& 12/6& Data Exploration \\*
 15& W& 12/8& Final Exam Review \\*

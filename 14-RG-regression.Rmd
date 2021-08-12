@@ -7,7 +7,6 @@
 **Videos**  
 
 * 7.1and7.2
-* RegressionSim
 
 \setstretch{1.25}
 
