@@ -168,12 +168,6 @@ include_graphics("images/relative_barplot_martian.png")
 
 \vspace{1in}
 
-**Step 6**: The final step of any statistical investigation is to *revisit and look ahead*. 
-
-19. Can you think of any limitations of our study?  Can you think of a new topic that might be of interest based on the results of our study?
-
-\vspace{1in}
-
 
 \newpage
 
