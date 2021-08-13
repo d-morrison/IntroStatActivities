@@ -173,8 +173,6 @@ Margin of error:
 
 You may skip Section 5.3.4, which will be covered next week.
 
-\newpage
-
 **Videos**  
 
 * 5.3SimInf
@@ -274,7 +272,8 @@ Bootstrapped statistic:
 Which hypothesis must we assume is true in order to simulate a null distribution?
 \rgs
 
-Explain the differences between a one-sided and two-sided hypothesis test:
+Explain the differences between a one-sided and two-sided hypothesis test.
+
 \rgi How will the research questions differ?
 \rgs
 

@@ -126,7 +126,7 @@ Changing to `lower.tail = FALSE` will give the value which has `x` area of the d
 We would recommend you work through each of the examples in Section 5.2.4 using `R`.
 
 
-### Section 5.3.4 Theory-based inferential methods for $\pi$ {-}
+### Section 5.3.4 (Theory-based inferential methods for $\pi$) {-}
 
 \setstretch{1}
 
@@ -339,7 +339,7 @@ Margin of error of a confidence interval for a sample proportion:
 \rgs
 
 
-### Section 5.5 (Errors, power, and practical importance) {-}
+### Section 5.4 (Errors, power, and practical importance) {-}
 
 \setstretch{1}
 
