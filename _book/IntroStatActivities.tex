@@ -6,8 +6,8 @@
 ]{report}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{iftex}
-\ifPDFTeX
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -144,7 +144,7 @@
 [\vspace{1.5ex}%
 \titlerule]
 \titlespacing*{\chapter}{0pt}{-40pt}{20pt}
-\ifLuaTeX
+\ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \newlength{\cslhangindent}
@@ -547,7 +547,7 @@ For more on these concepts, read Sections 1.2 and 2.1 in the textbook.
 \hypertarget{can-you-read-martian}{%
 \subsection{Can you read ``Martian?''}\label{can-you-read-martian}}
 
-How well can humans distinguish one ``Martian'' letter from another? In this week's activity, we'll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or on the right.
+How well can humans distinguish one ``Martian'' letter from another? In today's activity, we'll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or on the right.
 \vspace{2mm}
 
 \begin{enumerate}
@@ -781,22 +781,11 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
 
 \vspace{1in}
 
-\textbf{Step 6}: The final step of any statistical investigation is to \emph{revisit and look ahead}.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{18}
-\tightlist
-\item
-  Can you think of any limitations of our study? Can you think of a new topic that might be of interest based on the results of our study?
-\end{enumerate}
-
-\vspace{1in}
-
 \newpage
 
 \hypertarget{introduction-to-r}{%
-\subsubsection{\texorpdfstring{Introduction to \texttt{R}}{Introduction to R}}\label{introduction-to-r}}
+\subsubsection*{\texorpdfstring{Introduction to \texttt{R}}{Introduction to R}}\label{introduction-to-r}}
+\addcontentsline{toc}{subsubsection}{Introduction to \texttt{R}}
 
 In Stat 216 we will use the statistical package \texttt{R} to analyze data through the IDE (integrated development environment) RStudio. Though it is possible to download \texttt{R} and RStudio on your own computer, we will use this program through the MSU RStudio server: \url{https://rstudio.math.montana.edu/}.
 
@@ -1176,7 +1165,9 @@ To review these concepts, see Sections 1.3 through 1.6 in the textbook.
 
 For this activity, you will read a speech given by Jim Becenti, a member of the Navajo American Indian tribe, who spoke about the employment problems his people faced at an Office of Indian Affairs meeting in Phoenix, Arizona, on January 30, 1947. His speech is below:
 
-\textbf{It is hard for us to go outside the reservation where we meet strangers. I have been off the reservation ever since I was sixteen. Today I am sorry I quit the Santa Fe {[}Railroad{]}. I worked for them in 1912-13. You are enjoying life, liberty, and happiness on the soil the American Indian had, so it is your responsibility to give us a hand, brother. Take us out of distress. I have never been to vocational school. I have very little education. I look at the white man who is a skilled laborer. When I was a young man I worked for a man in Gallup as a carpenter's helper. He treated me as his own brother. I used his tools. Then he took his tools and gave me a list of tools I should buy and I started carpentering just from what I had seen. We have no alphabetical language. We see things with our eyes and can always remember it. I urge that we help my people to progress in skilled labor as well as common labor. The hope of my people is to change our ways and means in certain directions, so they can help you someday as taxpayers. If not, as you are going now, you will be burdened the rest of your life. The hope of my people is that you will continue to help so that we will be all over the United States and have a hand with you, and give us a brotherly hand so we will be happy as you are. Our reservation is awful small. We did not know the capacity of the range until the white man come and say ``you raise too much sheep, got to go somewhere else,'' resulting in reduction to a skeleton where the Indians can't make a living on it. For eighty years we have been confused by the general public, and what is the condition of the Navajo today? Starvation! We are starving for education. Education is the main thing and the only thing that is going to make us able to compete with you great men here talking to us.}
+\textbf{It is hard for us to go outside the reservation where we meet strangers. I have been off the reservation ever since I was sixteen. Today I am sorry I quit the Santa Fe {[}Railroad{]}. I worked for them in 1912-13. You are enjoying life, liberty, and happiness on the soil the American Indian had, so it is your responsibility to give us a hand, brother. Take us out of distress. I have never been to vocational school. I have very little education. I look at the white man who is a skilled laborer. When I was a young man I worked for a man in Gallup as a carpenter's helper. He treated me as his own brother. I used his tools. Then he took his tools and gave me a list of tools I should buy and I started carpentering just from what I had seen. We have no alphabetical language.}
+
+\textbf{We see things with our eyes and can always remember it. I urge that we help my people to progress in skilled labor as well as common labor. The hope of my people is to change our ways and means in certain directions, so they can help you someday as taxpayers. If not, as you are going now, you will be burdened the rest of your life. The hope of my people is that you will continue to help so that we will be all over the United States and have a hand with you, and give us a brotherly hand so we will be happy as you are. Our reservation is awful small. We did not know the capacity of the range until the white man come and say ``you raise too much sheep, got to go somewhere else,'' resulting in reduction to a skeleton where the Indians can't make a living on it. For eighty years we have been confused by the general public, and what is the condition of the Navajo today? Starvation! We are starving for education. Education is the main thing and the only thing that is going to make us able to compete with you great men here talking to us.}
 
 \hypertarget{by-eye-selection}{%
 \subsubsection*{By eye selection}\label{by-eye-selection}}
@@ -1186,7 +1177,7 @@ For this activity, you will read a speech given by Jim Becenti, a member of the 
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Circle ten words in Jim Becenti's speech which are a representative sample of the entire text. Describe your method for selecting this sample.
+  Circle ten words in Jim Becenti's speech which are a representative sample of the length of words in the entire text. Describe your method for selecting this sample.
 \end{enumerate}
 
 \vspace{0.5in}
@@ -2204,7 +2195,7 @@ To review these concepts, see Sections 2.1 and 2.2 in the textbook.
 
 For today's lab we will focus on using RStudio and the provided \texttt{R} script file to create graphs and calculate proportions from each group.
 
-Download and open the provided \texttt{R} script file for week 3 lab to answer the following questions. \textbf{Remember bolded questions will be turned in on Gradescope for your group.} Highlight and run the first two lines of code to load the appropriate packages needed for this lab.
+Download and open the provided \texttt{R} script file for week 3 lab to answer the following questions. \textbf{Remember bolded questions will be turned in on Gradescope for your group.} Highlight and run the first three lines of code to load the appropriate packages needed for this lab.
 
 \hypertarget{graphing-categorical-variables}{%
 \subsection{Graphing Categorical Variables}\label{graphing-categorical-variables}}
@@ -2235,7 +2226,7 @@ An important part of understanding data is to create visual pictures of what the
 Throughout these activities, we will often include the \texttt{R} code
 you would use in order to produce output or plots. These
 ``code chunks'' appear in gray. In the code chunk below, we
-demonstrate how to read the data set into \texttt{R} using the \texttt{read.csv()} function. These lines of code read in the data set and name the data set \texttt{myopia}. The \texttt{library()} function tells \texttt{R} which packages will be needed. Highlight and run line 6 in the \texttt{R} script file to load the data.
+demonstrate how to read the data set into \texttt{R} using the \texttt{read.csv()} function. These lines of code read in the data set and name the data set \texttt{myopia}. Highlight and run line 6 in the \texttt{R} script file to load the data.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2272,7 +2263,13 @@ If we wanted to know how many children in our data set were in each level of myo
 
 \vspace{2in}
 
-\textbf{3. Using the bar chart created, estimate how many children have some level of myopia.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \textbf{Using the bar chart created, estimate how many children have some level of myopia.}
+\end{enumerate}
 
 \newpage
 
@@ -2340,7 +2337,13 @@ To examine the differences in level of myopia for the level of light, we would c
 
 \vspace{0.5in}
 
-\textbf{7. Which level of light has the highest proportion of \texttt{No\ Myopia}?}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  \textbf{Which level of light has the highest proportion of \texttt{No\ Myopia}?}
+\end{enumerate}
 
 \vspace{0.5in}
 
@@ -2359,7 +2362,13 @@ We could also plot the data using a mosaic plot. Fill in the variable name, \tex
 \end{Highlighting}
 \end{Shaded}
 
-\textbf{8. What is similar and what is different between the segmented bar chart and the mosaic bar chart.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  \textbf{What is similar and what is different between the segmented bar chart and the mosaic bar chart.}
+\end{enumerate}
 
 \vspace{1in}
 
@@ -2431,24 +2440,15 @@ Total & & & & \\
 
 \vspace{0.3in}
 
-\textbf{14. Calculate the difference in proportion of children with high myopia for those that slept with full light minus those who slept with no light. Give the appropriate notation. Label group 1 as full light and group 2 as no light.}
-
-\vspace{0.3in}
-
-\hypertarget{take-home-messages-4}{%
-\subsection{Take-home messages}\label{take-home-messages-4}}
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{13}
+\tightlist
 \item
-  Bar charts can be used to graphically display a single categorical variable either as counts or proportions. Segmented bar charts and mosaic plots are used to display two categorical variables.
-\item
-  Segmented bar charts always have a scale from 0 - 100\%. The bars represent the outcomes of the explanatory variable. Each bar is segmented by the response variable. If the heights of each segment are the same for each bar there is no association between variables.
-\item
-  Mosaic plots are similar to segmented bar charts but the widths of the bars also show the number of observations within each outcome.
+  \textbf{Calculate the difference in proportion of children with high myopia for those that slept with full light minus those who slept with no light. Give the appropriate notation. Label group 1 as full light and group 2 as no light.}
 \end{enumerate}
 
-\newpage
+\vspace{0.3in}
 
 \hypertarget{exploring-quantitative-data}{%
 \chapter{Exploring Quantitative Data}\label{exploring-quantitative-data}}
@@ -2685,10 +2685,6 @@ Decision tree for determining an appropriate plot given a number of variables an
   Interpret the following summary statistics in context:
   median, lower quartile, upper quartile,
   standard deviation, interquartile range.
-\item
-  Given a plot or set of plots, describe and compare the distribution(s)
-  of a single quantitative variable
-  (center, variability, shape, outliers).
 \end{itemize}
 
 \hypertarget{terminology-review-6}{%
@@ -2773,7 +2769,7 @@ The \texttt{favstats()} function from the \texttt{mosaic} package gives the summ
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# Read in data set}
-\NormalTok{movies }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/Movies2016.csv"}\NormalTok{) }
+\NormalTok{movies }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/Movies2016.csv"}\NormalTok{) }
 \NormalTok{movies }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
   \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(imdb\_score)) }\CommentTok{\# Apply favstats function to imdb\_score}
 \end{Highlighting}
@@ -2827,7 +2823,7 @@ The \texttt{favstats()} function from the \texttt{mosaic} package gives the summ
 
 \newpage
 
-A dotplot will plot a dot for each value in the data set. The following code will create a dotplot of IMDb scores. Notice that we put in the variable name \texttt{imdb\_score} for x = in the ggplot function.
+A dotplot will plot a dot for each value in the data set. The following code will create a dotplot of IMDb scores. Notice that we put in the variable name \texttt{imdb\_score} for \texttt{x\ =} in the ggplot function.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2953,15 +2949,15 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
   \vspace{0.5in}
 \end{enumerate}
 
-\hypertarget{take-home-messages-5}{%
-\subsection{Take-home messages}\label{take-home-messages-5}}
+\hypertarget{take-home-messages-4}{%
+\subsection{Take-home messages}\label{take-home-messages-4}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Histograms, box plots, and dot plots can all be used to graphically display quantitative variables. When we have a single categorical variable and a single quantitative variable we will display the data in side-by-side plots.
+  Histograms, box plots, and dot plots can all be used to graphically display a single quantitative variables.
 \item
-  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value. Values in the data set that are less than \(Q_1 - 1.5*IQR\) and greater than \(Q_3 + 1.5*IQR\) are considering outliers and are graphically represented by a dot outside of the whiskers on the box plot.
+  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value. Values in the data set that are less than \(Q_1 - 1.5*IQR\) and greater than \(Q_3 + 1.5*IQR\) are considered outliers and are graphically represented by a dot outside of the whiskers on the box plot.
 \item
   Data should be summarized numerically and displayed graphically to give us information about the study.
 \end{enumerate}
@@ -2984,7 +2980,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \begin{itemize}
 \item
   Identify and create appropriate summary statistics and plots
-  given a data set or research question for quantitative data.
+  given a data set or research question for a single categorical and a single quantitative variable.
 \item
   Interpret the following summary statistics in context:
   median, lower quartile, upper quartile,
@@ -2993,6 +2989,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Given a plot or set of plots, describe and compare the distribution(s)
   of a single quantitative variable
   (center, variability, shape, outliers).
+\item
+  Identify which summary statistics are robust to outliers.
 \end{itemize}
 
 \hypertarget{terminology-review-7}{%
@@ -3037,11 +3035,15 @@ We will again use the data set collected on movies released in 2016. As a remind
 
 \newpage
 
+\hypertarget{summary-statistics}{%
+\subsubsection*{Summary statistics}\label{summary-statistics}}
+\addcontentsline{toc}{subsubsection}{Summary statistics}
+
 To use the \texttt{favstats()} function in the mosaic package with two variables, we will enter the variables as a formula, response\textasciitilde explanatory. This function will give the summary statistics for budget for each content rating. Highlight and run lines 1 -- 9 in the provided \texttt{R} script file to load the data set and check that the summary statistics match those provided in the coursepack.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movies }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/Movies2016.csv"}\NormalTok{)}
+\NormalTok{movies }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/Movies2016.csv"}\NormalTok{)}
 \NormalTok{movies }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
   \FunctionTok{filter}\NormalTok{(content\_rating }\SpecialCharTok{!=} \StringTok{"Not Rated"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Remove Not Rated movies}
   \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(budget\_mil}\SpecialCharTok{\textasciitilde{}}\NormalTok{content\_rating)) }\CommentTok{\# Apply favstats function to imdb\_score}
@@ -3153,7 +3155,8 @@ The boxplot of movie budgets (in millions) by content rating is plotted using th
 \vspace{0.4in}
 
 \hypertarget{robust-statistics}{%
-\subsubsection{Robust Statistics}\label{robust-statistics}}
+\subsubsection*{Robust Statistics}\label{robust-statistics}}
+\addcontentsline{toc}{subsubsection}{Robust Statistics}
 
 Let's examine how the presence of outliers affect the values of center and spread. For this part of the activity we will look at the variable \texttt{revenue} in the movies data set.
 
@@ -3255,8 +3258,8 @@ To show the effect of outliers on the measures of center and spread, the largest
 
 \vspace{0.5in}
 
-\hypertarget{take-home-messages-6}{%
-\subsection{Take-home messages}\label{take-home-messages-6}}
+\hypertarget{take-home-messages-5}{%
+\subsection{Take-home messages}\label{take-home-messages-5}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3294,7 +3297,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
   of a single quantitative variable
   (center, variability, shape, outliers).
 \item
-  Get practice using \texttt{R} to create graphs of quantitative variables.
+  Use \texttt{R} to create graphs of quantitative variables.
 \end{itemize}
 
 \hypertarget{ipeds}{%
@@ -3362,7 +3365,7 @@ These data are on a subset of institutions that met the following selection crit
 
 \vspace{0.5in}
 
-Upload and import the data set \texttt{IPEDS\_Data\_2018}. Enter the name of the data set (see the environment tab) for \texttt{datasetname} in the \texttt{R} script file in line 5. We will look at the retention rates for the different institutions. Enter the variable name \texttt{Retention} for \texttt{variable} in line 12. Highlight and run lines 1 -- 12.
+Upload and import the data set \texttt{IPEDS\_Data\_2018}. Enter the name of the data set (see the environment tab) for \texttt{datasetname} in the \texttt{R} script file in line 6. We will look at the retention rates for the different institutions. Enter the variable name \texttt{Retention} for \texttt{variable} in line 12. Highlight and run lines 1 -- 12.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -3376,7 +3379,13 @@ Upload and import the data set \texttt{IPEDS\_Data\_2018}. Enter the name of the
 \end{Highlighting}
 \end{Shaded}
 
-\textbf{5. Report the value for quartile 3 and interpret this value in context of the study.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  \textbf{Report the value for quartile 3 and interpret this value in context of the study.}
+\end{enumerate}
 
 \vspace{1in}
 
@@ -3454,9 +3463,15 @@ Next we will create both a histogram and a boxplot of the variable \texttt{Reten
 
 \vspace{0.3in}
 
-In the next part of the activity we will compare retention rates for public and private institutions. Note that this variable is \texttt{Control} in the data set.
+In the next part of the activity we will compare retention rates for public and private institutions. Note that this variable (public or private) is \texttt{Control} in the data set.
 
-\textbf{11. Which variable will we treat as the explanatory variable? Response variable?}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  \textbf{Which variable will we treat as the explanatory variable? Response variable?}
+\end{enumerate}
 
 \vspace{0.8in}
 
@@ -3484,7 +3499,7 @@ Enter the name of the explanatory variable and the name of the response variable
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{11}
 \item
-  Compare the two boxplots.
+  \textbf{Compare the two boxplots.}
 
   Which type of university has the highest center?
   \vspace{0.3in}
@@ -3497,9 +3512,9 @@ Enter the name of the explanatory variable and the name of the response variable
 
   Does either distribution have outliers?
   \vspace{0.3in}
+\item
+  Report the difference in mean retention rates for private and public universities. Use private minus public as the order of subtraction. Use the appropriate notation.
 \end{enumerate}
-
-\textbf{13. Report the difference in mean retention rates for private and public universities. Use private minus public as the order of subtraction. Use the appropriate notation.}
 
 \vspace{0.8in}
 
@@ -3551,7 +3566,7 @@ The following set of code will create side by side boxplots of retention rates b
 \setcounter{enumi}{16}
 \tightlist
 \item
-  Which university size has the largest spread of retention rates?
+  \textbf{Which university size has the largest spread of retention rates?}
 \end{enumerate}
 
 \vspace{0.5in}
@@ -4373,8 +4388,8 @@ $e_i=y_i-\hat{y}_i$
 
 \vspace{.2in}
 
-\hypertarget{take-home-messages-7}{%
-\subsection{Take-home messages}\label{take-home-messages-7}}
+\hypertarget{take-home-messages-6}{%
+\subsection{Take-home messages}\label{take-home-messages-6}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4446,12 +4461,6 @@ We will revisit the movie data set collected on Movies released in 2016 to furth
 \texttt{facebook\_likes} & Number of likes a movie receives on Facebook \\
 \bottomrule
 \end{longtable}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{movies }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/Movies2016.csv"}\NormalTok{) }\CommentTok{\# Reads in data set}
-\end{Highlighting}
-\end{Shaded}
 
 \hypertarget{correlation}{%
 \subsubsection*{Correlation}\label{correlation}}
@@ -4611,6 +4620,12 @@ What if we wanted to see if the relationship between movie budget and revenue di
 
 \vspace{0.8in}
 
+\newpage
+
+\hypertarget{multiple-linear-regression}{%
+\subsubsection*{Multiple Linear Regression}\label{multiple-linear-regression}}
+\addcontentsline{toc}{subsubsection}{Multiple Linear Regression}
+
 In order to see what other variables may have an impact on revenue for movies released in 2016 we created a multivariate model. The following \texttt{R} code gives the estimates for the regression model with \texttt{budget\_mil} and \texttt{duration} included.
 
 \begin{Shaded}
@@ -4650,8 +4665,8 @@ In order to see what other variables may have an impact on revenue for movies re
 
 \vspace{0.8in}
 
-\hypertarget{take-home-messages-8}{%
-\subsection{Take-home messages}\label{take-home-messages-8}}
+\hypertarget{take-home-messages-7}{%
+\subsection{Take-home messages}\label{take-home-messages-7}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4659,6 +4674,8 @@ In order to see what other variables may have an impact on revenue for movies re
   The sign of correlation and the sign of the slope will always be the same. The closer the value of correlation is to \(-1\) or \(+1\), the stronger the relationship between the explanatory and the response variable.
 \item
   The coefficient of determination multiplied by 100 (\(r^2 \times 100\)) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable. The closer the value of the coefficient of determination is to 100\%, the stronger the relationship.
+\item
+  A multiple linear regression model includes more than one variable as a predictor for the response variable.
 \end{enumerate}
 
 \hypertarget{additional-notes-7}{%
@@ -4783,7 +4800,13 @@ Highlight and run lines 14--18 to get the correlation matrix in the \texttt{R} s
 
 \vspace{0.5in}
 
-\textbf{4. Interpret the coefficient of determination in context of the problem.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  \textbf{Interpret the coefficient of determination in context of the problem.}
+\end{enumerate}
 
 \vspace{1in}
 
@@ -4807,7 +4830,13 @@ Enter the variable \texttt{body\_mass\_g} for \texttt{response} and the variable
 
 \vspace{.5in}
 
-\textbf{6. Interpret the value of slope in context of the problem.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  \textbf{Interpret the value of slope in context of the problem.}
+\end{enumerate}
 
 \vspace{.8in}
 
@@ -4816,7 +4845,7 @@ Enter the variable \texttt{body\_mass\_g} for \texttt{response} and the variable
 \setcounter{enumi}{6}
 \tightlist
 \item
-  Using the least squares line from question 5, predict the body mass for a penguin for a flipper length of 181 mm.
+  \textbf{Using the least squares line from question 5, predict the body mass for a penguin for a flipper length of 181 mm.}
 \end{enumerate}
 
 \vspace{.6in}
@@ -4871,12 +4900,10 @@ Highlight and run lines 25--32 to get the multivariate plot.
 \setcounter{enumi}{10}
 \tightlist
 \item
-  Does adding the variable species affect the relationship between body mass and flipper length? Explain.
+  \textbf{Does adding the variable species affect the relationship between body mass and flipper length? Explain.}
 \end{enumerate}
 
 \newpage
-
-\vspace{1in}
 
 \hypertarget{exam-1-review}{%
 \chapter{Exam 1 Review}\label{exam-1-review}}
@@ -5199,22 +5226,13 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \vspace{0.1in}
 
-\begin{verbatim}
-c.  If a randomly selected participant was assigned to eat peppers, what is the probability they did not have lower cholesterol levels at the end of the study? What is the notation used for this probability?
-\end{verbatim}
-
+\rgi c.~If a randomly selected participant was assigned to eat peppers, what is the probability they did not have lower cholesterol levels at the end of the study? What is the notation used for this probability?
 \vspace{0.5in}
 
-\begin{verbatim}
-d. What is the probability that a randomly selected participant was not assigned to eat peppers and did have lower cholesterol levels?  What is the notation used for this probability?
-\end{verbatim}
-
+\rgi d.~What is the probability that a randomly selected participant was not assigned to eat peppers and did have lower cholesterol levels? What is the notation used for this probability?
 \vspace{0.5in}
 
-\begin{verbatim}
-e.  Find the probability $P(A^C | B^C)$. What does this probability represent in context of the problem?
-\end{verbatim}
-
+\rgi e. Find the probability \(P(A^C | B^C)\). What does this probability represent in context of the problem?
 \vspace{0.5in}
 
 \newpage
@@ -5424,8 +5442,6 @@ You may skip Section 5.3.4, which will be covered next week.
   Bootstrapping
 \end{itemize}
 
-\setstretch{1.25}
-
 \hypertarget{reminders-from-previous-sections}{%
 \subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
@@ -5527,6 +5543,7 @@ Which hypothesis must we assume is true in order to simulate a null distribution
 \rgs
 
 Explain the differences between a one-sided and two-sided hypothesis test.
+\vspace{1mm}
 
 \rgi How will the research questions differ?
 \rgs
@@ -5673,7 +5690,7 @@ To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5
 \hypertarget{steps-of-the-statistical-investigation-process-1}{%
 \subsection{Steps of the statistical investigation process}\label{steps-of-the-statistical-investigation-process-1}}
 
-We will work through a six-step process to complete a hypothesis test for a single proportion, first introduced in the Martian Alphabet Activity in week 1.
+We will work through a five-step process to complete a hypothesis test for a single proportion, first introduced in the Martian Alphabet Activity in week 1.
 
 \begin{itemize}
 \item
@@ -5686,14 +5703,14 @@ We will work through a six-step process to complete a hypothesis test for a sing
   \textbf{Use statistical analysis methods to draw inferences from the data}. Choose a statistical inference method appropriate for the data and identify the p-value and/or confidence interval after checking assumptions. In this study, we will focus on using randomization to generate a simulated p-value.
 \item
   \textbf{Communicate the results and answer the research question}. Using the p-value and confidence interval from the analysis, determine whether the data provide statistical evidence against the null hypothesis. Write a conclusion that addresses the research question.
-\item
-  \textbf{Revisit and look forward} to point out limitations of the study and suggest new studies that could be performed to build on the findings of the study.
 \end{itemize}
+
+\newpage
 
 \hypertarget{helper-hinderer}{%
 \subsection{Helper-Hinderer}\label{helper-hinderer}}
 
-Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Watch this short video to see how the experiment was run: \url{https://youtu.be/anCaGBsBOxM}. Researchers were hoping to assess: Are infants able to notice and react to helpful or hindering behavior observed in others? In the study, of the 16 infants age 6 to 10 months, 14 chose the \emph{helper} toy and 2 chose the \emph{hinderer} toy.
+Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. As a class we will watch this short video to see how the experiment was run: \url{https://youtu.be/anCaGBsBOxM}. Researchers were hoping to assess: Are infants able to notice and react to helpful or hindering behavior observed in others? In the study, of the 16 infants age 6 to 10 months, 14 chose the \emph{helper} toy and 2 chose the \emph{hinderer} toy.
 
 \hypertarget{summary-statistics-review.}{%
 \subsubsection*{Summary statistics review.}\label{summary-statistics-review.}}
@@ -5757,7 +5774,7 @@ Before using statistical inference methods, we must check that the cases are ind
 \begin{Shaded}
 \begin{Highlighting}[]
  \CommentTok{\# Read in data set}
-\NormalTok{infants }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/infantchoice.csv"}\NormalTok{)}
+\NormalTok{infants }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/infantchoice.csv"}\NormalTok{)}
 \NormalTok{infants }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{count}\NormalTok{(choice)  }\CommentTok{\# Count number in each choice category}
 \end{Highlighting}
 \end{Shaded}
@@ -6094,8 +6111,8 @@ When we write a conclusion we answer the research question by stating how much e
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-9}{%
-\subsection{Take-home messages}\label{take-home-messages-9}}
+\hypertarget{take-home-messages-8}{%
+\subsection{Take-home messages}\label{take-home-messages-8}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6180,7 +6197,7 @@ A \textbf{point estimate} (our observed statistic) provides a single plausible v
 
 \vspace{0.5in}
 
-In today's activity, we will use bootstrapping to find a 95\% confidence interval for \(\pi\), the parameter of interest. See Section 5.3.2 to review bootstrapping.
+In today's activity, we will use bootstrapping to find a 95\% confidence interval for \(\pi\), the parameter of interest. See Section 5.3.3 to review bootstrapping.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6260,7 +6277,7 @@ To use the computer simulation to create a bootstrap distribution, we will need 
 
 \vspace{.1in}
 
-We will use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided \texttt{R} script file, fill in the values/words for each \texttt{xx} with your answers from question 5 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 1--11.
+We will use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided \texttt{R} script file, fill in the values/words for each \texttt{xx} with your answers from question 5 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 1--7.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6383,9 +6400,10 @@ We will use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R}
 \end{enumerate}
 
 \vspace{0.5in}
+\newpage
 
-\hypertarget{take-home-messages-10}{%
-\subsection{Take-home messages}\label{take-home-messages-10}}
+\hypertarget{take-home-messages-9}{%
+\subsection{Take-home messages}\label{take-home-messages-9}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6457,7 +6475,13 @@ Among all comic book characters produced by the comic book publisher Marvel, 25\
 
 \vspace{0.3in}
 
-\textbf{3. Write the parameter of interest in context of the problem.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \textbf{Write the parameter of interest in context of the problem.}
+\end{enumerate}
 
 \vspace{0.8in}
 
@@ -6541,7 +6565,7 @@ Among all comic book characters produced by the comic book publisher Marvel, 25\
 
 \vspace{.2in}
 
-We will use the \texttt{one\_proportion\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample proportions and compute a p-value. Using the provided \texttt{R} script file, fill in the values/words for each \texttt{xx} with your answers from question 7 in the one proportion test to create a null distribution with 1000 simulations. Then highlight and run lines 1--10. \textbf{Upload a copy of the created null distribution showing your p-value to Gradescope.}
+We will use the \texttt{one\_proportion\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample proportions and compute a p-value. Using the provided \texttt{R} script file, fill in the values/words for each \texttt{xx} with your answers from question 7 in the one proportion test to create a null distribution with 1000 simulations. Then highlight and run lines 1--9. \textbf{Upload a copy of the created null distribution showing your p-value to Gradescope.}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6554,7 +6578,13 @@ We will use the \texttt{one\_proportion\_test()} function in \texttt{R} (in the 
 \end{Highlighting}
 \end{Shaded}
 
-\textbf{8. Report the p-value. Interpret the p-value in context of the study.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  \textbf{Report the p-value. Interpret the p-value in context of the study.}
+\end{enumerate}
 
 \vspace{1in}
 
@@ -6609,7 +6639,7 @@ We will use the \texttt{one\_proportion\_test()} function in \texttt{R} (in the 
 
 \vspace{.1in}
 
-We will use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided \texttt{R} script file, fill in the values/words for each \texttt{xx} with your answers from question 10 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 13--16.
+We will use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided \texttt{R} script file, fill in the values/words for each \texttt{xx} with your answers from question 10 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 12--15.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6630,7 +6660,13 @@ We will use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R}
 
 \vspace{0.5in}
 
-\textbf{12. Interpret the 95\% confidence interval.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\tightlist
+\item
+  \textbf{Interpret the 95\% confidence interval.}
+\end{enumerate}
 
 \vspace{0.8in}
 
@@ -6645,7 +6681,8 @@ We will use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R}
 \vspace{0.8in}
 
 \hypertarget{what-does-confidence-mean}{%
-\subsection{\texorpdfstring{What does \emph{confidence} mean?}{What does confidence mean?}}\label{what-does-confidence-mean}}
+\subsection*{\texorpdfstring{What does \emph{confidence} mean?}{What does confidence mean?}}\label{what-does-confidence-mean}}
+\addcontentsline{toc}{subsection}{What does \emph{confidence} mean?}
 
 In the interpretation of a 95\% confidence interval, we say that we are 95\% confident that the parameter is within the confidence interval. Why are we able to make that claim? What does it mean to say ``we are 95\% confident?''
 
@@ -6681,7 +6718,13 @@ In the interpretation of a 95\% confidence interval, we say that we are 95\% con
 
 \vspace{0.5in}
 
-\textbf{16. Interpret the level of confidence. \emph{Hint}: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{15}
+\tightlist
+\item
+  \textbf{Interpret the level of confidence. \emph{Hint}: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?}
+\end{enumerate}
 
 \vspace{0.8in}
 
@@ -6711,8 +6754,8 @@ In the interpretation of a 95\% confidence interval, we say that we are 95\% con
 \hypertarget{inference-for-a-single-categorical-variable-theory-based-methods-errors-and-power}{%
 \chapter{Inference for a Single Categorical Variable: Theory-based Methods + Errors and Power}\label{inference-for-a-single-categorical-variable-theory-based-methods-errors-and-power}}
 
-\hypertarget{week-7---reading-guide-categorical-inference-1}{%
-\section{Week 7 - Reading Guide: Categorical Inference}\label{week-7---reading-guide-categorical-inference-1}}
+\hypertarget{week-8---reading-guide-categorical-inference}{%
+\section{Week 8 - Reading Guide: Categorical Inference}\label{week-8---reading-guide-categorical-inference}}
 
 \hypertarget{section-5.1-foundations-of-inference-hypothesis-tests-1}{%
 \subsection*{Section 5.1 (Foundations of inference: Hypothesis tests)}\label{section-5.1-foundations-of-inference-hypothesis-tests-1}}
@@ -7348,6 +7391,9 @@ To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5
 
 Activity 7a covered simulation-based methods for hypothesis tests involving a single categorical variable. This activity covers theory-based methods for testing a single categorical variable.
 
+\hypertarget{handedness-of-male-boxers}{%
+\subsection{Handedness of Male Boxers}\label{handedness-of-male-boxers}}
+
 Left-handedness is a trait that is found in about 10\% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition. In this random sample of 500 male professional boxers, we want to see if there is an over-prevalence of left-handed fighters. In the sample of 500 male boxers, 81 were left-handed.
 
 \begin{Shaded}
@@ -7365,7 +7411,8 @@ Left-handedness is a trait that is found in about 10\% of the general population
 \end{verbatim}
 
 \hypertarget{review-of-summary-stats}{%
-\subsection{Review of Summary Stats}\label{review-of-summary-stats}}
+\subsection*{Review of Summary Stats}\label{review-of-summary-stats}}
+\addcontentsline{toc}{subsection}{Review of Summary Stats}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7379,7 +7426,12 @@ Left-handedness is a trait that is found in about 10\% of the general population
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
-\tightlist
+\item
+  Write out the null hypothesis in words.
+  \vspace{0.8in}
+\item
+  Write out the alternative hypothesis in notation.
+  \vspace{0.3in}
 \item
   Give the value of the summary statistic for this study. Use proper notation.
 \end{enumerate}
@@ -7387,7 +7439,8 @@ Left-handedness is a trait that is found in about 10\% of the general population
 \vspace{0.3in}
 
 \hypertarget{theory-based-methods}{%
-\subsection{Theory-based Methods}\label{theory-based-methods}}
+\subsection*{Theory-based Methods}\label{theory-based-methods}}
+\addcontentsline{toc}{subsection}{Theory-based Methods}
 
 The sampling distribution of a single proportion --- how that proportion varies from sample to sample --- can be mathematically modeled using the normal distribution if certain conditions are met.
 
@@ -7402,7 +7455,7 @@ Conditions for the sampling distribution of \(\hat{p}\) to follow an approximate
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
+\setcounter{enumi}{4}
 \tightlist
 \item
   Verify that the independence condition is satisfied.
@@ -7412,7 +7465,7 @@ Conditions for the sampling distribution of \(\hat{p}\) to follow an approximate
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\setcounter{enumi}{5}
 \tightlist
 \item
   Is the success-failure condition met to model the data with the normal distribution? Show your work to support your answer. Hint: We don't know the true value of the parameter, \(\pi\), so we use the null value, \(\pi_0\), to check the success-failure condition.
@@ -7439,7 +7492,7 @@ where the standard error is calculated using the null value:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
+\setcounter{enumi}{6}
 \tightlist
 \item
   Calculate the null standard error of the sample proportion.
@@ -7449,7 +7502,7 @@ where the standard error is calculated using the null value:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
+\setcounter{enumi}{7}
 \tightlist
 \item
   Calculate the standardized sample proportion.
@@ -7470,10 +7523,10 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
+\setcounter{enumi}{8}
 \tightlist
 \item
-  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in the percentages on the standard normal distribution displayed in Figure \ref{fig:simpleNormalcurve}, and also mark the value of the standardized statistic calculated in question 6.
+  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in the percentages on the standard normal distribution displayed in Figure \ref{fig:simpleNormalcurve}, and also mark the value of the standardized statistic calculated in question 8.
 \end{enumerate}
 
 \vspace{0.2in}
@@ -7482,17 +7535,17 @@ The standardized statistic measures the \emph{number of standard errors the samp
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{7}
+\setcounter{enumi}{9}
 \tightlist
 \item
-  Interpret the standardized sample proportion from question 6 in context of the problem.
+  Interpret the standardized sample proportion from question 8 in context of the problem.
 \end{enumerate}
 
 \vspace{.8in}
 
 \newpage
 
-We will use the \texttt{pnorm()} function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic calculated in question 6 at \texttt{xx} in line 7; highlight and run lines 7--9. Notice that in line 9 it says \texttt{lower.tail\ =\ FALSE}. \texttt{R} will calculate the p-value \emph{greater} than the value of the standardized statistic.
+We will use the \texttt{pnorm()} function in \texttt{R} to find the p-value. Use the provided \texttt{R} script file and enter the value of the standardized statistic calculated in question 8 at \texttt{xx} in line 7; highlight and run lines 7--9. Notice that in line 9 it says \texttt{lower.tail\ =\ FALSE}. \texttt{R} will calculate the p-value \emph{greater} than the value of the standardized statistic.
 
 Notes:
 
@@ -7516,7 +7569,7 @@ Notes:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
+\setcounter{enumi}{10}
 \item
   Report the p-value obtained from the \texttt{R} output.
   \vspace{0.2in}
@@ -7526,13 +7579,14 @@ Notes:
 \end{enumerate}
 
 \hypertarget{impacts-on-the-p-value}{%
-\subsection{Impacts on the P-value}\label{impacts-on-the-p-value}}
+\subsection*{Impacts on the P-value}\label{impacts-on-the-p-value}}
+\addcontentsline{toc}{subsection}{Impacts on the P-value}
 
 Suppose that we want to show that the true proportion of male boxers \textbf{differs} from that in the general population.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{10}
+\setcounter{enumi}{12}
 \tightlist
 \item
   Write out the alternative hypothesis in notation for this new research question.
@@ -7542,7 +7596,7 @@ Suppose that we want to show that the true proportion of male boxers \textbf{dif
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{11}
+\setcounter{enumi}{13}
 \tightlist
 \item
   How would this impact the p-value?
@@ -7552,7 +7606,7 @@ Suppose that we want to show that the true proportion of male boxers \textbf{dif
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
+\setcounter{enumi}{14}
 \tightlist
 \item
   How much evidence would this p-value provide against the null hypothesis?
@@ -7562,7 +7616,7 @@ Suppose that we want to show that the true proportion of male boxers \textbf{dif
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{13}
+\setcounter{enumi}{15}
 \tightlist
 \item
   Suppose instead of 500 male boxers the researchers only took a sample of 300 male boxers and found the same proportion of male boxers that are left-handed. Calculate the standardized statistic for this new sample.
@@ -7582,7 +7636,7 @@ Use Rstudio find the p-value for this new sample. Enter the value of the standar
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{14}
+\setcounter{enumi}{16}
 \tightlist
 \item
   How does the decrease in sample size affect the p-value?
@@ -7592,7 +7646,7 @@ Use Rstudio find the p-value for this new sample. Enter the value of the standar
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{15}
+\setcounter{enumi}{17}
 \tightlist
 \item
   Suppose another sample of 500 male boxers was taken and 68 were found to be left-handed. Calculate the standardized statistic for this new sample.
@@ -7612,7 +7666,7 @@ Use Rstudio find the p-value for this new sample.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{16}
+\setcounter{enumi}{18}
 \tightlist
 \item
   How does a statistic closer to the null value affect the p-value?
@@ -7622,7 +7676,7 @@ Use Rstudio find the p-value for this new sample.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{17}
+\setcounter{enumi}{19}
 \tightlist
 \item
   Summarize how each of the following affected the p-value?
@@ -7657,8 +7711,8 @@ Use Rstudio find the p-value for this new sample.
 
 \vspace{0.5in}
 
-\hypertarget{take-home-messages-11}{%
-\subsection{Take-home messages}\label{take-home-messages-11}}
+\hypertarget{take-home-messages-10}{%
+\subsection{Take-home messages}\label{take-home-messages-10}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7681,8 +7735,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \newpage
 
-\hypertarget{activity-8b-male-boxers-theory-ci}{%
-\section{Activity 8b: Male Boxers --- Theory CI}\label{activity-8b-male-boxers-theory-ci}}
+\hypertarget{activity-8b-handedness-of-male-boxers-theory-ci}{%
+\section{Activity 8b: Handedness of Male Boxers --- Theory CI}\label{activity-8b-handedness-of-male-boxers-theory-ci}}
 
 \setstretch{1}
 
@@ -7716,14 +7770,18 @@ In this activity, we will introduce simulation-based confidence intervals for a 
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-\hypertarget{male-boxers}{%
-\subsection{Male Boxers}\label{male-boxers}}
+\hypertarget{handedness-of-male-boxers-1}{%
+\subsection{Handedness of Male Boxers}\label{handedness-of-male-boxers-1}}
 
 Last class we found very strong evidence that the true proportion of male boxers that are left-handed is greater than 0.1. In this activity we will use the same data set to find the theory-based 95\% confidence interval.
 
 Remember from the last activity: Left-handedness is a trait that is found in about 10\% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition. In this random sample of 500 male professional boxers, we want to see if there is an over-prevalence of left-handed fighters. In the sample of 500 male boxers, 81 were left-handed.
 
 Recall that to use theory-based methods we must check the conditions to approximate the sampling distribution with the normal distribution. From the previous activity, we saw that independence was satisfied as the researchers took a random sample.
+
+\hypertarget{validity-conditions}{%
+\subsubsection*{Validity conditions}\label{validity-conditions}}
+\addcontentsline{toc}{subsubsection}{Validity conditions}
 
 To check the success-failure condition to use theory-based methods for confidence intervals, we use \(\hat{p}\) in the calculations since we are not assuming a value for \(\pi\). That is, check that we have at least 10 successes and 10 failures in our \textbf{sample}: \(n\hat{p} \geq 0\) and \(n(1-\hat{p}) \geq 10\).
 
@@ -7769,7 +7827,27 @@ To find the confidence interval, we will add and subtract the \textbf{margin of 
 \[\text{point estimate}\pm\text{margin of error}\]
 \[\hat{p}\pm z^* SE(\hat{p})\]
 
-The \(z^*\) multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 95\%, we find the Z values that encompass the middle 95\% of the standard normal distribution. If 95\% of the standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail. The \texttt{qnorm()} function in \texttt{R} will tell us the \(z^*\) value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile).
+The \(z^*\) multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 95\%, we find the Z values that encompass the middle 95\% of the standard normal distribution. If 95\% of the standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Fill in the normal distribution shown in figure 8.2 to show how \texttt{R} found the \(z^*\) multiplier.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{08-A12-inference-1cat_CI-theory_files/figure-latex/simpleNormaldist-1} 
+
+}
+
+\caption{A standard normal curve.}\label{fig:simpleNormaldist}
+\end{figure}
+\vspace{0.1in}
+
+The \texttt{qnorm()} function in \texttt{R} will tell us the \(z^*\) value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -7780,25 +7858,6 @@ The \(z^*\) multiplier is the percentile of a standard normal distribution that 
 \begin{verbatim}
 #> [1] 1.959964
 \end{verbatim}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.6\linewidth]{08-A12-inference-1cat_CI-theory_files/figure-latex/simpleNormaldist-1} 
-
-}
-
-\caption{A standard normal curve.}\label{fig:simpleNormaldist}
-\end{figure}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  Fill in the normal distribution above to show how \texttt{R} found the \(z^*\) multiplier.
-\end{enumerate}
-
-\vspace{0.1in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7850,12 +7909,12 @@ The \(z^*\) multiplier is the percentile of a standard normal distribution that 
 \end{enumerate}
 
 \hypertarget{simulation-methods}{%
-\subsection*{Simulation Methods}\label{simulation-methods}}
-\addcontentsline{toc}{subsection}{Simulation Methods}
+\subsubsection*{Simulation Methods}\label{simulation-methods}}
+\addcontentsline{toc}{subsubsection}{Simulation Methods}
 
 In question 1, we found that the success-failure condition was met to use theory-based methods. Here we will use simulation methods to find a 95\% confidence interval for the parameter of interest.
 
-Use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R} to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided \texttt{R} script file, fill in the values/words for each \texttt{xx} in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations.
+Use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R} to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided \texttt{R} script file, fill in the values/words for each \texttt{xx} in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Make sure to run the library(catstats) function before running the one\_proportion\_bootstrap\_CI function.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -7877,8 +7936,8 @@ Use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R} to simu
 \vspace{0.8in}
 
 \hypertarget{effect-of-sample-size-1}{%
-\subsection*{Effect of Sample Size}\label{effect-of-sample-size-1}}
-\addcontentsline{toc}{subsection}{Effect of Sample Size}
+\subsubsection*{Effect of Sample Size}\label{effect-of-sample-size-1}}
+\addcontentsline{toc}{subsubsection}{Effect of Sample Size}
 
 Suppose in another sample of 230 male boxers we saw that 37 were left-handed.
 
@@ -7911,8 +7970,8 @@ Suppose in another sample of 230 male boxers we saw that 37 were left-handed.
   \vspace{1in}
 \end{enumerate}
 
-\hypertarget{take-home-messages-12}{%
-\subsection{Take-home messages}\label{take-home-messages-12}}
+\hypertarget{take-home-messages-11}{%
+\subsection{Take-home messages}\label{take-home-messages-11}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8435,7 +8494,7 @@ These counts can be found in \texttt{R} by using the \texttt{count()} function:
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# Read data set in}
-\NormalTok{good }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/goodsam.csv"}\NormalTok{) }
+\NormalTok{good }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/goodsam.csv"}\NormalTok{) }
 \NormalTok{good }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{group\_by}\NormalTok{(Behavior) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{count}\NormalTok{(Condition)}
 \end{Highlighting}
 \end{Shaded}
@@ -8776,8 +8835,8 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-13}{%
-\subsection{Take-home messages}\label{take-home-messages-13}}
+\hypertarget{take-home-messages-12}{%
+\subsection{Take-home messages}\label{take-home-messages-12}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8792,7 +8851,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \hypertarget{additional-notes-12}{%
 \subsection{Additional notes}\label{additional-notes-12}}
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 \newpage
 
@@ -8860,12 +8919,12 @@ Total & 20 & 20 & 40 \\
 
 \vspace{0.4in}
 
-Use the provided \texttt{R} script file to create a segmented bar plot of those who helped others for those in the hurry condition and those in the no hurry condition. Enter the name of the explanatory variable for \texttt{explanatory} and the name of the response variable for \texttt{response}. Make sure to title your plot. Highlight and run lines 1--13.
+Use the provided \texttt{R} script file to create a segmented bar plot of those who helped others for those in the hurry condition and those in the no hurry condition. Enter the name of the explanatory variable for \texttt{explanatory} and the name of the response variable for \texttt{response}. \textbf{Make sure to title your plot}. Highlight and run lines 1--13.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{samaritan }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/goodsam.csv"}\NormalTok{)}
-\NormalTok{samaritan }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{good }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/goodsam.csv"}\NormalTok{)}
+\NormalTok{good }\SpecialCharTok{\%\textgreater{}\%}
         \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ explanatory, }\AttributeTok{fill =}\NormalTok{ response)) }\SpecialCharTok{+}   \CommentTok{\# This specifies the variables}
   \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{stat =} \StringTok{"count"}\NormalTok{, }\AttributeTok{position =} \StringTok{"fill"}\NormalTok{) }\SpecialCharTok{+}  \CommentTok{\# Tell it to make a stacked bar plot}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Title"}\NormalTok{,  }\CommentTok{\# Make sure to title your plot }
@@ -8929,7 +8988,7 @@ Use the provided \texttt{R} script file to create a segmented bar plot of those 
 
 \vspace{1in}
 
-We will use the \texttt{two\_proportion\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of differences in sample proportions and calculate a confidence interval. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as \texttt{samaritan}), the outcome for the explanatory variable that is first in subtraction, number of repetitions, the outcome for the response variable that is a success (what the numerator counts when calculating a sample proportion), and the confidence level as a decimal.
+We will use the \texttt{two\_proportion\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of differences in sample proportions and calculate a confidence interval. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as \texttt{good}), the outcome for the explanatory variable that is first in subtraction, number of repetitions, the outcome for the response variable that is a success (what the numerator counts when calculating a sample proportion), and the confidence level as a decimal.
 
 The response variable name is \texttt{Behavior} and the explanatory variable name is \texttt{Condition}.
 
@@ -8979,7 +9038,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{two\_proportion\_bootstrap\_CI}\NormalTok{(}\AttributeTok{formula =}\NormalTok{ Behavior }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Condition, }
-        \AttributeTok{data=}\NormalTok{samaritan, }\CommentTok{\# Name of data set}
+        \AttributeTok{data=}\NormalTok{good, }\CommentTok{\# Name of data set}
         \AttributeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Order of subtraction: enter the name of Group 1}
         \AttributeTok{response\_value\_numerator =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# Define which outcome is a success }
         \AttributeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Always use a minimum of 1000 repetitions}
@@ -9105,8 +9164,8 @@ Shown in Table \ref{tab:errors}, a \textbf{Type 1 Error} happens when we reject 
 
 \vspace{0.5in}
 
-\hypertarget{take-home-messages-14}{%
-\subsection{Take-home messages}\label{take-home-messages-14}}
+\hypertarget{take-home-messages-13}{%
+\subsection{Take-home messages}\label{take-home-messages-13}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9216,7 +9275,13 @@ Total & & & \\
 
 \vspace{1in}
 
-\textbf{6. Calculate the difference in proportion of counties with a lower than the national average of cases for those with a high and low vaccination rate. Use high - low for the order of subtraction. Use appropriate notation.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  \textbf{Calculate the difference in proportion of counties with a lower than the national average of cases for those with a high and low vaccination rate. Use high - low for the order of subtraction. Use appropriate notation.}
+\end{enumerate}
 
 \vspace{0.8in}
 
@@ -9255,7 +9320,13 @@ Use the provided \texttt{R} script file to create a segmented bar plot of the da
 \vspace{0.5in}
 \newpage
 
-\textbf{9. Using the research question, write the alternative hypothesis in words.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  \textbf{Using the research question, write the alternative hypothesis in words.}
+\end{enumerate}
 
 \vspace{1in}
 
@@ -9273,7 +9344,13 @@ Fill in the missing values/names in the \texttt{R} script file in the two-propor
 \end{Highlighting}
 \end{Shaded}
 
-\textbf{10. Report and interpret the p-value in context of the problem.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\tightlist
+\item
+  \textbf{Report and interpret the p-value in context of the problem.}
+\end{enumerate}
 
 \vspace{0.8in}
 
@@ -9320,7 +9397,13 @@ Fill in the missing values/names in the \texttt{R} script file in the two-propor
 
 \vspace{0.8in}
 
-\textbf{14. What type of error could have occurred?}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{13}
+\tightlist
+\item
+  \textbf{What type of error could have occurred?}
+\end{enumerate}
 
 \vspace{0.2in}
 
@@ -9589,7 +9672,7 @@ Overall (pooled) proportion of successes:
 \hypertarget{terminology-review-16}{%
 \subsection{Terminology review}\label{terminology-review-16}}
 
-In this week's in-class activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
+In today's activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
@@ -9608,6 +9691,8 @@ In this week's in-class activity, we will use theory-based methods to analyze tw
   Standard normal distribution
 \item
   Independence and success-failure conditions
+\item
+  Relative risk
 \end{itemize}
 
 To review these concepts, see Chapter 5 in your textbook.
@@ -9838,8 +9923,8 @@ Another summary statistic that can be calculated for two categorical variables i
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-15}{%
-\subsection{Take-home messages}\label{take-home-messages-15}}
+\hypertarget{take-home-messages-14}{%
+\subsection{Take-home messages}\label{take-home-messages-14}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9876,7 +9961,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{terminology-review-17}{%
 \subsection{Terminology review}\label{terminology-review-17}}
 
-In this week's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
+In today's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
@@ -9886,6 +9971,9 @@ In this week's activity, we will use theory-based methods to estimate the differ
 \end{itemize}
 
 To review these concepts, see Chapter 5 in your textbook.
+
+\hypertarget{winter-sports-helmet-use-and-head-injury}{%
+\subsection{Winter sports helmet use and head injury}\label{winter-sports-helmet-use-and-head-injury}}
 
 In this activity we will focus on theory-based methods to calculate a confidence interval. Like with a single proportion, the sampling distribution of a difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
@@ -10010,7 +10098,7 @@ Recall that the \(z^*\) multiplier is the percentile of a standard normal distri
   Calculate the 90\% confidence interval for the parameter of interest.
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10020,7 +10108,7 @@ Recall that the \(z^*\) multiplier is the percentile of a standard normal distri
   Interpret the confidence interval found in question 8 in context of the problem.
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10087,8 +10175,8 @@ Total & 1056 & 3944 & 5000 \\
 
 \vspace{.8in}
 
-\hypertarget{take-home-messages-16}{%
-\subsection{Take-home messages}\label{take-home-messages-16}}
+\hypertarget{take-home-messages-15}{%
+\subsection{Take-home messages}\label{take-home-messages-15}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10408,7 +10496,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \rgi Theory-based Confidence Interval:
 
-\vspace{0.3in}
+\vspace{0.5in}
 
 \rgi Does the theory-based p-value and CI match those found using simulation methods?
 
@@ -10431,11 +10519,12 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{3}
+\tightlist
 \item
   Use the provided Exam 2 Review \texttt{R} script file and analyze this research question.
-
-  \rgi Parameter of Interest:
 \end{enumerate}
+
+\rgi Parameter of Interest:
 
 \vspace{0.3in}
 
@@ -10511,7 +10600,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \rgi Theory-based Confidence Interval:
 
-\vspace{0.3in}
+\vspace{0.5in}
 
 \rgi Does the theory-based p-value and CI match those found using simulation methods?
 
@@ -11103,7 +11192,7 @@ Confidence interval for a paired mean difference:
 \hypertarget{terminology-review-18}{%
 \subsection{Terminology review}\label{terminology-review-18}}
 
-In this week's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
+In today's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
@@ -11373,6 +11462,7 @@ We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the 
 \end{enumerate}
 
 \vspace{.6in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -11417,8 +11507,8 @@ We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the 
 
 \vspace{.7in}
 
-\hypertarget{take-home-messages-17}{%
-\subsection{Take-home messages}\label{take-home-messages-17}}
+\hypertarget{take-home-messages-16}{%
+\subsection{Take-home messages}\label{take-home-messages-16}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12202,7 +12292,7 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that there is no association between the two variables. This means that the snowfall values observed in the data set would have been the same regardless of the weather pattern that year.
 
-To demonstrate this simulation, your instructor will use cards to represent the sample.
+To demonstrate this simulation, your instructor will provide cards to for you to use to simulate a sample.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12377,18 +12467,10 @@ We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in t
 
 \vspace{1in}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{21}
-\tightlist
-\item
-  If we had data on 45 La Ni\latexcode{\~{n}}a years and 47 El Ni\latexcode{\~{n}}o years and found a similar-valued summary statistic, what would happen to the p-value? The width of the confidence interval? The power of the test?
-\end{enumerate}
+\newpage
 
-\vspace{1in}
-
-\hypertarget{take-home-messages-18}{%
-\subsection{Take-home messages}\label{take-home-messages-18}}
+\hypertarget{take-home-messages-17}{%
+\subsection{Take-home messages}\label{take-home-messages-17}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12497,11 +12579,11 @@ Conditions for the sampling distribution of \(\bar{x}_1-\bar{x}_2\) to follow an
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{SUD }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/SUD.csv"}\NormalTok{)}
+\NormalTok{SUD }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/SUD.csv"}\NormalTok{)}
 \NormalTok{SUD }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# Data set piped into...}
   \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ stay, }\AttributeTok{x =}\NormalTok{ group))}\SpecialCharTok{+}  \CommentTok{\# Identify variables}
   \FunctionTok{geom\_boxplot}\NormalTok{()}\SpecialCharTok{+}  \CommentTok{\# Tell it to make a box plot}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Length of Stay for those who did and did not Undergo SUD Treatment"}\NormalTok{,  }\CommentTok{\# Title}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Length of Stay with and without SUD Treatment"}\NormalTok{,  }\CommentTok{\# Title}
        \AttributeTok{x =} \StringTok{"Group"}\NormalTok{,    }\CommentTok{\# x{-}axis label}
        \AttributeTok{y =} \StringTok{"Length of Stay (days)"}\NormalTok{)  }\CommentTok{\# y{-}axis label}
 \end{Highlighting}
@@ -12642,7 +12724,7 @@ Enter the appropriate percentile value (as a decimal) for xx and degrees of free
   Report the \(t^*\) multiplier for the 95\% confidence interval.
 \end{enumerate}
 
-\vspace{0.2in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12683,8 +12765,8 @@ Enter the appropriate percentile value (as a decimal) for xx and degrees of free
   \vspace{0.8in}
 \end{enumerate}
 
-\hypertarget{take-home-messages-19}{%
-\subsection{Take-home messages}\label{take-home-messages-19}}
+\hypertarget{take-home-messages-18}{%
+\subsection{Take-home messages}\label{take-home-messages-18}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12736,9 +12818,9 @@ The Triple Crown of ``Thru'' hiking consists of hiking the Appalachian Trail, th
 \item
   What is the response variable for this study?
   \vspace{0.2in}
+\item
+  \textbf{Write out the parameter of interest for this study.}
 \end{enumerate}
-
-\textbf{3. Write out the parameter of interest for this study.}
 
 \vspace{0.8in}
 
@@ -12762,7 +12844,7 @@ The Triple Crown of ``Thru'' hiking consists of hiking the Appalachian Trail, th
 
 \vspace{0.8in}
 
-Upload and open the \texttt{R} script file for Week 13 lab. Upload and import the csv file, \texttt{Baseweight}. Enter the name of the data set (see the environment tab) for datasetname in the \texttt{R} script file in line 6. Write a title for the boxplots in line 11. Highlight and run lines 1--13 to load the data and create plots of the data.
+Upload and open the \texttt{R} script file for Week 13 lab. Upload and import the csv file, \texttt{Baseweight}. Enter the name of the data set (see the environment tab) for datasetname in the \texttt{R} script file in line 7. Write a title for the boxplots in line 11. Highlight and run lines 1--13 to load the data and create plots of the data.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -12794,7 +12876,13 @@ Enter the name of the explanatory variable for \texttt{explanatory} and the name
 \end{Highlighting}
 \end{Shaded}
 
-\textbf{7. Calculate the summary statistic for this study. Use appropriate notation.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  \textbf{Calculate the summary statistic for this study. Use appropriate notation.}
+\end{enumerate}
 
 \vspace{1in}
 
@@ -12802,7 +12890,13 @@ Enter the name of the explanatory variable for \texttt{explanatory} and the name
 \subsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-3}}
 \addcontentsline{toc}{subsection}{Use statistical inferential methods to draw inferences from the data}
 
-\textbf{8. Using the provided graphs and summary statistics, determine if it would make the most sense to use theory-based methods or simulation methods. Explain your reasoning.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  \textbf{Using the provided graphs and summary statistics, determine if it would make the most sense to use theory-based methods or simulation methods. Explain your reasoning.}
+\end{enumerate}
 
 \vspace{0.8in}
 
@@ -12883,7 +12977,13 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
 \subsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-3}}
 \addcontentsline{toc}{subsection}{Communicate the results and answer the research question}
 
-\textbf{11. Report the p-value. Based off of this p-value, write a conclusion to the hypothesis test.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  \textbf{Report the p-value. Based off of this p-value, write a conclusion to the hypothesis test.}
+\end{enumerate}
 
 \vspace{0.8in}
 
@@ -13138,8 +13238,6 @@ To create a \textbf{bootstrap distribution} of sample slopes or sample correlati
   \rgs
 \end{enumerate}
 
-\newpage
-
 Conditions to use the CLT for testing slope (or correlation):
 
 \rgi Linearity:
@@ -13350,7 +13448,7 @@ The government of Singapore took a random sample of 373 homes in Singapore to co
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# Read in data set}
-\NormalTok{realestate }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/Real\_Estate.csv"}\NormalTok{)}
+\NormalTok{realestate }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/Real\_estate.csv"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -13661,8 +13759,8 @@ In order to see what impact other variables may have on the house price we can l
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-20}{%
-\subsection{Take-home messages}\label{take-home-messages-20}}
+\hypertarget{take-home-messages-19}{%
+\subsection{Take-home messages}\label{take-home-messages-19}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14059,8 +14157,8 @@ The \(t^*\) multiplier comes from a \(t\)-distribution with \(n-2\) degrees of f
 
 \vspace{.6in}
 
-\hypertarget{take-home-messages-21}{%
-\subsection{Take-home messages}\label{take-home-messages-21}}
+\hypertarget{take-home-messages-20}{%
+\subsection{Take-home messages}\label{take-home-messages-20}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14559,6 +14657,7 @@ Some have argued that blows to the head - for instance on the high school footba
 \end{itemize}
 
 \vspace{0.5in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14677,8 +14776,8 @@ Explain the last sentence. In what sense does a large sample increase accuracy?
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-22}{%
-\subsection{Take Home Messages}\label{take-home-messages-22}}
+\hypertarget{take-home-messages-21}{%
+\subsection{Take Home Messages}\label{take-home-messages-21}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14835,7 +14934,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \rgi Theory-based Confidence Interval:
 
-\vspace{0.3in}
+\vspace{0.5in}
 
 \rgi Does the theory-based p-value and CI match those found using simulation methods?
 
@@ -14939,7 +15038,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \rgi Theory-based Confidence Interval:
 
-\vspace{0.3in}
+\vspace{0.5in}
 
 \rgi Does the theory-based p-value and CI match those found using simulation methods?
 
@@ -15043,7 +15142,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \rgi Theory-based Confidence Interval:
 
-\vspace{0.3in}
+\vspace{0.5in}
 
 \rgi Does the theory-based p-value and CI match those found using simulation methods?
 
@@ -15057,40 +15156,40 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-banerjee2018}{}}%
+\leavevmode\hypertarget{ref-banerjee2018}{}%
 Banerjee, S. 2018. {``Linear Regression: Moneyball -- Part 1.''} \emph{Medium}. \url{https://towardsdatascience.com/linear-regression-moneyball-part-1-b93b3b9f5b53}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-imdb}{}}%
+\leavevmode\hypertarget{ref-imdb}{}%
 {``{IMDb} Movies Extensive Dataset.''} n.d. \url{https://kaggle.com/stefanoleone992/imdb-extensive-dataset}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-johnson2006}{}}%
+\leavevmode\hypertarget{ref-johnson2006}{}%
 Johnson, C. M.., and J. E. Memmott. 2006. {``Examination of Relationships Between Participation in School Music Programs of Differing Quality and Standardized Test Results.''} \emph{Journal of Research in Music Education} 54 (4): 293--307. \url{https://doi.org/10.1177/002242940605400403}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-moneyball}{}}%
+\leavevmode\hypertarget{ref-moneyball}{}%
 {``Moneyball Dataset.''} n.d. \url{https://kaggle.com/wduckett/moneyball-mlb-stats-19622012}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-weather}{}}%
+\leavevmode\hypertarget{ref-weather}{}%
 National Weather Service Corporate Image Web Team. n.d. {``National Weather Service -- {NWS} Billings.''} \url{https://w2.weather.gov/climate/xmacis.php?wfo=byz}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-ohair2017}{}}%
+\leavevmode\hypertarget{ref-ohair2017}{}%
 O'Hair, A. 2017. {``Video 4: Using the Model to Make Predictions.''} {MIT}: {MIT Open Courseware}. \url{https://ocw.mit.edu/courses/sloan-school-of-management/15-071-the-analytics-edge-spring-2017/linear-regression/moneyball-the-power-of-sports-analytics/video-4-using-the-models-to-make-predictions/}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-quinn1999}{}}%
+\leavevmode\hypertarget{ref-quinn1999}{}%
 Quinn, G. E., C. H. Shin, M. G. Maguire, and R. A. Stone. 1999. {``Myopia and Ambient Lighting at Night.''} \emph{Nature} 399 (6732): 113--14. \url{https://doi.org/10.1038/20094}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-ramachandran2007}{}}%
+\leavevmode\hypertarget{ref-ramachandran2007}{}%
 Ramachandran, V. 2007. {``3 Clues to Understanding Your Brain.''} \url{https://www.ted.com/talks/vs_ramachandran_3_clues_to_understanding_your_brain}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-richardson2019}{}}%
+\leavevmode\hypertarget{ref-richardson2019}{}%
 Richardson, T., and R. T. Gilman. 2019. {``Left-Handedness Is Associated with Greater Fighting Success in Humans.''} \emph{Scientific Reports} 9 (1): 15402. \url{https://doi.org/10.1038/s41598-019-51975-3}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-stewart2014}{}}%
+\leavevmode\hypertarget{ref-stewart2014}{}%
 Stewart, E. H., B. Davis, B. L. Clemans-Taylor, B. Littenberg, C. A. Estrada, and R. M. Centor. 2014. {``Rapid Antigen Group a Streptococcus Test to Diagnose Pharyngitis: A Systematic Review and Meta-Analysis''} 9 (11). \url{https://doi.org/10.1371/journal.pone.0111727}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-sulheim2017}{}}%
+\leavevmode\hypertarget{ref-sulheim2017}{}%
 Sulheim, S., A. Ekeland, I. Holme, and R. Bahr. 2017. {``Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders: Changes After an Interval of One Decade''} 51 (1): 44--50. \url{https://doi.org/10.1136/bjsports-2015-095798}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-usepa2020}{}}%
+\leavevmode\hypertarget{ref-usepa2020}{}%
 US Environmental Protection Agency. n.d. {``Air Data -- Daily Air Quality Tracker.''} \url{https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker}.
 
 \end{CSLReferences}

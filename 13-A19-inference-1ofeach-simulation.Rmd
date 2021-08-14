@@ -114,7 +114,7 @@ Snow %>%
 
 Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that there is no association between the two variables.  This means that the snowfall values observed in the data set would have been the same regardless of the weather pattern that year.
 
-To demonstrate this simulation, your instructor will use cards to represent the sample.  
+To demonstrate this simulation, your instructor will provide cards to for you to use to simulate a sample.  
 
 10.  How many cards will we start with?
 
@@ -198,10 +198,7 @@ two_mean_bootstrap_CI(RESPONSE ~ EXPLANATORY, data = DATASET,  # Variables and d
 
 \vspace{1in}
 
-22. If we had data on 45 La Ni\latexcode{\~{n}}a years and 47 El Ni\latexcode{\~{n}}o years and found a similar-valued summary statistic, what would happen to the p-value?  The width of the confidence interval?  The power of the test?
-
-\vspace{1in}
-
+\newpage
 
 ### Take-home messages
 

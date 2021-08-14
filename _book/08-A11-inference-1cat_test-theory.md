@@ -31,6 +31,8 @@ To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5
 
 Activity 7a covered simulation-based methods for hypothesis tests involving a single categorical variable. This activity covers theory-based methods for testing a single categorical variable.  
 
+### Handedness of Male Boxers
+
 Left-handedness is a trait that is found in about 10\% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers, we want to see if there is an over-prevalence of left-handed fighters.  In the sample of 500 male boxers, 81 were left-handed.
 
 
@@ -47,17 +49,23 @@ boxers %>% count(Stance)  # Count number in each Stance category
 #> 2 right-handed 419
 ```
 
-### Review of Summary Stats
+### Review of Summary Stats {-}
 
 1.  Write out the parameter of interest for this study.  
 
 \vspace{0.8in}
 
-2. Give the value of the summary statistic for this study.  Use proper notation.
+2.  Write out the null hypothesis in words.
+\vspace{0.8in}
+
+3. Write out the alternative hypothesis in notation.
+\vspace{0.3in}
+
+4. Give the value of the summary statistic for this study.  Use proper notation.
 
 \vspace{0.3in}
 
-### Theory-based Methods
+### Theory-based Methods {-}
 
 The sampling distribution of a single proportion --- how that proportion varies from sample to sample --- can be mathematically modeled using the normal distribution if certain conditions are met.
 
@@ -67,11 +75,11 @@ Conditions for the sampling distribution of $\hat{p}$ to follow an approximate n
 
 * **Success-failure condition**: We *expect* to see at least 10 successes and 10 failures in the sample, $n\pi≥10$  and $n(1-\pi)≥10$.
 
-3. Verify that the independence condition is satisfied.
+5. Verify that the independence condition is satisfied.
 
 \vspace{0.5in}
 
-4. Is the success-failure condition met to model the data with the normal distribution?  Show your work to support your answer. Hint: We don't know the true value of the parameter, $\pi$, so we use the null value, $\pi_0$, to check the success-failure condition.
+6. Is the success-failure condition met to model the data with the normal distribution?  Show your work to support your answer. Hint: We don't know the true value of the parameter, $\pi$, so we use the null value, $\pi_0$, to check the success-failure condition.
 
 \vspace{1in}
 
@@ -92,11 +100,11 @@ $$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$.
 
 \newpage
 
-5.  Calculate the null standard error of the sample proportion.
+7.  Calculate the null standard error of the sample proportion.
 
 \vspace{1in}
 
-6.  Calculate the standardized sample proportion.  
+8.  Calculate the standardized sample proportion.  
 
 \vspace{1in}
 
@@ -111,19 +119,19 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 
 \caption{A standard normal curve.}(\#fig:simpleNormalcurve)
 \end{figure}
-7.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in the percentages on the standard normal distribution displayed in Figure \@ref(fig:simpleNormalcurve), and also mark the value of the standardized statistic calculated in question 6.
+9.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in the percentages on the standard normal distribution displayed in Figure \@ref(fig:simpleNormalcurve), and also mark the value of the standardized statistic calculated in question 8.
 
 \vspace{0.2in}
 
 The standardized statistic measures the *number of standard errors the sample statistic is from the null value*.
 
-8.  Interpret the standardized sample proportion from question 6 in context of the problem.
+10.  Interpret the standardized sample proportion from question 8 in context of the problem.
 
 \vspace{.8in}
 
 \newpage
 
-We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 6 at `xx` in line 7; highlight and run lines 7--9.  Notice that in line 9 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
+We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 8 at `xx` in line 7; highlight and run lines 7--9.  Notice that in line 9 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
 
 Notes:
 
@@ -139,29 +147,29 @@ pnorm(xx, # Enter value of standardized statistic
 ```
   
   
-9.  Report the p-value obtained from the `R` output.
+11.  Report the p-value obtained from the `R` output.
 \vspace{0.2in}
 
-10.  Write a conclusion based on the value of the p-value.
+12.  Write a conclusion based on the value of the p-value.
 \vspace{0.8in}
 
-### Impacts on the P-value
+### Impacts on the P-value {-}
 
 Suppose that we want to show that the true proportion of male boxers **differs** from that in the general population. 
 
-11.  Write out the alternative hypothesis in notation for this new research question.
+13.  Write out the alternative hypothesis in notation for this new research question.
 
 \vspace{0.5in}
 
-12.  How would this impact the p-value?  
+14.  How would this impact the p-value?  
 
 \vspace{0.2in}
 
-13.  How much evidence would this p-value provide against the null hypothesis?
+15.  How much evidence would this p-value provide against the null hypothesis?
 
 \vspace{0.3in}
 
-14. Suppose instead of 500 male boxers the researchers only took a sample of 300 male boxers and found the same proportion of male boxers that are left-handed.  Calculate the standardized statistic for this new sample.
+16. Suppose instead of 500 male boxers the researchers only took a sample of 300 male boxers and found the same proportion of male boxers that are left-handed.  Calculate the standardized statistic for this new sample.
 
 \vspace{1in}
 
@@ -174,11 +182,11 @@ pnorm(xx, # Enter value of standardized statistic
       lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
 ```
 
-15.  How does the decrease in sample size affect the p-value?
+17.  How does the decrease in sample size affect the p-value?
 
 \vspace{0.3in}
 
-16. Suppose another sample of 500 male boxers was taken and 68 were found to be left-handed.  Calculate the standardized statistic for this new sample.
+18. Suppose another sample of 500 male boxers was taken and 68 were found to be left-handed.  Calculate the standardized statistic for this new sample.
 
 \vspace{1in}
 
@@ -191,11 +199,11 @@ pnorm(xx, # Enter value of standardized statistic
       lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
 ```
 
-17.  How does a statistic closer to the null value affect the p-value?  
+19.  How does a statistic closer to the null value affect the p-value?  
 
 \vspace{0.3in}
 
-18.  Summarize how each of the following affected the p-value?
+20.  Summarize how each of the following affected the p-value?
 
 a) Switching to a two-sided test.
 

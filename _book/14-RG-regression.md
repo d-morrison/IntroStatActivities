@@ -140,7 +140,6 @@ To create a **bootstrap distribution** of sample slopes or sample correlations,
 3. After shuffling, what value will be plotted on the bootstrap distribution?
 \rgs
 
-\newpage
 
 Conditions to use the CLT for testing slope (or correlation):
 

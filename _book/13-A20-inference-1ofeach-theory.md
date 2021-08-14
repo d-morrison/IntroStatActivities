@@ -59,11 +59,11 @@ Conditions for the sampling distribution of $\bar{x}_1-\bar{x}_2$ to follow an a
     
 
 ```r
-SUD <- read.csv("data/SUD.csv")
+SUD <- read.csv("https://math.montana.edu/courses/s216/data/SUD.csv")
 SUD %>%  # Data set piped into...
   ggplot(aes(y = stay, x = group))+  # Identify variables
   geom_boxplot()+  # Tell it to make a box plot
-  labs(title = "Length of Stay for those who did and did not Undergo SUD Treatment",  # Title
+  labs(title = "Length of Stay with and without SUD Treatment",  # Title
        x = "Group",    # x-axis label
        y = "Length of Stay (days)")  # y-axis label
 ```
@@ -152,7 +152,7 @@ qt(xx, df = yy, lower.tail=TRUE)
 ```
 13. Report the $t^*$ multiplier for the 95\% confidence interval.
 
-\vspace{0.2in}
+\newpage
 
 14.  Calculate the 95\% confidence interval using theory-based methods.
 

@@ -27,7 +27,7 @@ To review these concepts, see Sections 2.1 and 2.2 in the textbook.
 
 For today's lab we will focus on using RStudio and the provided `R` script file to create graphs and calculate proportions from each group.  
 
-Download and open the provided `R` script file for week 3 lab to answer the following questions.  **Remember bolded questions will be turned in on Gradescope for your group.**  Highlight and run the first two lines of code to load the appropriate packages needed for this lab.
+Download and open the provided `R` script file for week 3 lab to answer the following questions.  **Remember bolded questions will be turned in on Gradescope for your group.**  Highlight and run the first three lines of code to load the appropriate packages needed for this lab.
 
 ### Graphing Categorical Variables
 
@@ -48,7 +48,7 @@ An important part of understanding data is to create visual pictures of what the
 Throughout these activities, we will often include the `R` code
 you would use in order to produce output or plots. These
 "code chunks" appear in gray. In the code chunk below, we
-demonstrate how to read the data set into `R` using the `read.csv()` function.  These lines of code read in the data set and name the data set `myopia`.  The `library()` function tells `R` which packages will be needed.  Highlight and run line 6 in the `R` script file to load the data.
+demonstrate how to read the data set into `R` using the `read.csv()` function.  These lines of code read in the data set and name the data set `myopia`.  Highlight and run line 6 in the `R` script file to load the data.
 
 ```{r, echo=TRUE}
 # This will read in the data set
@@ -72,7 +72,7 @@ ggplot(aes(y = variable)) +   # This specifies the variable
 
 \vspace{2in}
 
-**3. Using the bar chart created, estimate how many children have some level of myopia.**
+3. **Using the bar chart created, estimate how many children have some level of myopia.**
 
 \newpage
 
@@ -115,7 +115,7 @@ ggplot(aes(x = explanatory, fill = response)) +   # This specifies the variables
 
 \vspace{0.5in}
 
-**7. Which level of light has the highest proportion of `No Myopia`?**
+7. **Which level of light has the highest proportion of `No Myopia`?**
 
 \vspace{0.5in}
 
@@ -132,7 +132,7 @@ myopia %>% # Data set piped into...
       scale_fill_grey()  # Make figure black and white
 ```
 
-**8.  What is similar and what is different between the segmented bar chart and the mosaic bar chart.**
+8.  **What is similar and what is different between the segmented bar chart and the mosaic bar chart.**
 
 \vspace{1in}
 
@@ -169,16 +169,7 @@ myopia %>% group_by(response) %>% count(explanatory)
 \vspace{0.3in}
 
 
-**14.  Calculate the difference in proportion of children with high myopia for those that slept with full light minus those who slept with no light.  Give the appropriate notation.  Label group 1 as full light and group 2 as no light.**
+14.  **Calculate the difference in proportion of children with high myopia for those that slept with full light minus those who slept with no light.  Give the appropriate notation.  Label group 1 as full light and group 2 as no light.**
 
 \vspace{0.3in}
 
-### Take-home messages
-
-1.	Bar charts can be used to graphically display a single categorical variable either as counts or proportions.  Segmented bar charts and mosaic plots are used to display two categorical variables. 
-
-2.  Segmented bar charts always have a scale from 0 - 100%.  The bars represent the outcomes of the explanatory variable.  Each bar is segmented by the response variable. If the heights of each segment are the same for each bar there is no association between variables. 
-
-3.  Mosaic plots are similar to segmented bar charts but the widths of the bars also show the number of observations within each outcome.  
-
-\newpage

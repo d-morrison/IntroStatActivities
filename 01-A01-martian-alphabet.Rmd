@@ -25,7 +25,7 @@ For more on these concepts, read Sections 1.2 and 2.1 in the textbook.
 
 ### Can you read "Martian"?
 
-How well can humans distinguish one “Martian” letter from another? In this week’s activity, we’ll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or on the right.
+How well can humans distinguish one “Martian” letter from another? In today’s activity, we’ll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or on the right.
 \vspace{2mm}
 
 1.	Were you correct or incorrect in identifying Bumba?
@@ -172,7 +172,7 @@ include_graphics("images/relative_barplot_martian.png")
 \newpage
 
 
-#### Introduction to `R`
+#### Introduction to `R` {-}
 
 In Stat 216 we will use the statistical package `R` to analyze data through the IDE (integrated development environment) RStudio. Though it is possible to download `R` and RStudio on your own computer, we will use this program through the MSU RStudio server: [https://rstudio.math.montana.edu/](https://rstudio.math.montana.edu/). 
 

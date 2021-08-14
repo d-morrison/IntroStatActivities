@@ -72,7 +72,7 @@ penguins %>%  # Data set pipes into
 
 \vspace{0.5in}
 
-**4. Interpret the coefficient of determination in context of the problem.**
+4. **Interpret the coefficient of determination in context of the problem.**
 
 \vspace{1in}
 
@@ -89,11 +89,11 @@ summary(penguinsLM)$coefficients # Display coefficient summary
 
 \vspace{.5in}
 
-**6. Interpret the value of slope in context of the problem.**
+6. **Interpret the value of slope in context of the problem.**
 
 \vspace{.8in}
 
-7. Using the least squares line from question 5, predict the body mass for a penguin for a flipper length of 181 mm.
+7. **Using the least squares line from question 5, predict the body mass for a penguin for a flipper length of 181 mm.**
 
 \vspace{.6in}
 
@@ -124,8 +124,7 @@ penguins %>%
 \vspace{0.3in}
 
 
-11. Does adding the variable species affect the relationship between body mass and flipper length? Explain. 
+11. **Does adding the variable species affect the relationship between body mass and flipper length? Explain.**
 
 \newpage
 
-\vspace{1in}

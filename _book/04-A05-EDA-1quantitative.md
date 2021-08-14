@@ -11,10 +11,6 @@
   median, lower quartile, upper quartile,
   standard deviation, interquartile range.
 
-* Given a plot or set of plots, describe and compare the distribution(s)
-  of a single quantitative variable
-  (center, variability, shape, outliers).
-
 ### Terminology review
 
 In today's activity, we will review summary measures and plots for quantitative variables.  Some terms covered in this activity are:
@@ -64,7 +60,7 @@ The `favstats()` function from the `mosaic` package gives the summary statistics
 
 ```r
 # Read in data set
-movies <- read.csv("data/Movies2016.csv") 
+movies <- read.csv("https://math.montana.edu/courses/s216/data/Movies2016.csv") 
 movies %>% # Data set piped into...
   summarise(favstats(imdb_score)) # Apply favstats function to imdb_score
 ```
@@ -92,7 +88,7 @@ movies %>% # Data set piped into...
 
 \newpage
 
-A dotplot will plot a dot for each value in the data set.  The following code will create a dotplot of IMDb scores.  Notice that we put in the variable name `imdb_score` for x = in the ggplot function.
+A dotplot will plot a dot for each value in the data set.  The following code will create a dotplot of IMDb scores.  Notice that we put in the variable name `imdb_score` for `x =` in the ggplot function.
 
 
 ```r
@@ -185,9 +181,9 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 
 ### Take-home messages
 
-1.	Histograms, box plots, and dot plots can all be used to graphically display quantitative variables.  When we have a single categorical variable and a single quantitative variable we will display the data in side-by-side plots.
+1.	Histograms, box plots, and dot plots can all be used to graphically display a single quantitative variables.  
 
-2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5*IQR$ and greater than $Q_3 + 1.5*IQR$ are considering outliers and are graphically represented by a dot outside of the whiskers on the box plot.
+2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5*IQR$ and greater than $Q_3 + 1.5*IQR$ are considered outliers and are graphically represented by a dot outside of the whiskers on the box plot.
 
 3.  Data should be summarized numerically and displayed graphically to give us information about the study.
 

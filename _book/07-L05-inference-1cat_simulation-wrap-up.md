@@ -31,7 +31,7 @@ Among all comic book characters produced by the comic book publisher Marvel, 25\
 
 \vspace{0.3in}
 
-**3. Write the parameter of interest in context of the problem.**
+3. **Write the parameter of interest in context of the problem.**
 
 \vspace{0.8in}
 
@@ -67,7 +67,7 @@ Among all comic book characters produced by the comic book publisher Marvel, 25\
 
 \vspace{.2in}
 
-We will use the `one_proportion_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample proportions and compute a p-value. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 7 in the one proportion test to create a null distribution with 1000 simulations. Then highlight and run lines 1--10.  **Upload a copy of the created null distribution showing your p-value to Gradescope.**
+We will use the `one_proportion_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample proportions and compute a p-value. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 7 in the one proportion test to create a null distribution with 1000 simulations. Then highlight and run lines 1--9.  **Upload a copy of the created null distribution showing your p-value to Gradescope.**
 
 
 ```r
@@ -79,7 +79,7 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
           report_value = "proportion") # Reporting proportion or number of successes?
 ```
 
-**8.  Report the p-value.  Interpret the p-value in context of the study.**
+8.  **Report the p-value.  Interpret the p-value in context of the study.**
 
 \vspace{1in}
 
@@ -104,7 +104,7 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
     
 \vspace{.1in}
 
-We will use the `one_proportion_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 10 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 13--16.
+We will use the `one_proportion_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 10 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 12--15.
 
 
 ```r
@@ -118,7 +118,7 @@ one_proportion_bootstrap_CI(sample_size = xx, # Sample size
 
 \vspace{0.5in}
 
-**12. Interpret the 95\% confidence interval.**
+12. **Interpret the 95\% confidence interval.**
 
 \vspace{0.8in}
 
@@ -126,7 +126,7 @@ one_proportion_bootstrap_CI(sample_size = xx, # Sample size
 
 \vspace{0.8in}
 
-### What does *confidence* mean?
+### What does *confidence* mean? {-}
 
 In the interpretation of a 95\% confidence interval, we say that we are 95\% confident that the parameter is within the confidence interval.  Why are we able to make that claim?  What does it mean to say "we are 95\% confident"?
 
@@ -148,7 +148,7 @@ c. How many intervals out of 100 contain $\pi$, the null value of 0.25? *Hint*: 
 
 \vspace{0.5in}
 
-**16.  Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?**
+16.  **Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?**
 
 \vspace{0.8in}
 

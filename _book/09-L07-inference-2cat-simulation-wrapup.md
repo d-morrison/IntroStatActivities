@@ -50,7 +50,7 @@ covid %>% group_by(vaccination_rate) %>% count(cases)
 
 \vspace{1in}
 
-**6. Calculate the difference in proportion of counties with a lower than the national average of cases for those with a high and low vaccination rate.  Use high - low for the order of subtraction.  Use appropriate notation.**
+6. **Calculate the difference in proportion of counties with a lower than the national average of cases for those with a high and low vaccination rate.  Use high - low for the order of subtraction.  Use appropriate notation.**
 
 \vspace{0.8in}
 
@@ -75,7 +75,7 @@ ggplot(aes(x = explanatory, fill = response)) +   # This specifies the variables
 \vspace{0.5in}
 \newpage
 
-**9.  Using the research question, write the alternative hypothesis in words.**
+9.  **Using the research question, write the alternative hypothesis in words.**
 
 \vspace{1in}
 
@@ -92,7 +92,7 @@ two_proportion_test(formula = response~explanatory, # response ~ explanatory
     direction="xx") # Alternative hypothesis direction ("greater","less","two-sided")
 ```
 
-**10.  Report and interpret the p-value in context of the problem.**
+10.  **Report and interpret the p-value in context of the problem.**
 
 \vspace{0.8in}
 
@@ -120,7 +120,7 @@ two_proportion_bootstrap_CI(formula = response~explanatory,
 
 \vspace{0.8in}
 
-**14.  What type of error could have occurred?**
+14.  **What type of error could have occurred?**
 
 \vspace{0.2in}
 

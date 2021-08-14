@@ -34,7 +34,7 @@ The government of Singapore took a random sample of 373 homes in Singapore to co
 
 ```r
 # Read in data set
-realestate <- read.csv("data/Real_Estate.csv")
+realestate <- read.csv("https://math.montana.edu/courses/s216/data/Real_estate.csv")
 ```
 
 #### Vocabulary review. {-}

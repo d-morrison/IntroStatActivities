@@ -25,7 +25,7 @@ The Triple Crown of "Thru" hiking consists of hiking the Appalachian Trail, the 
 2. What is the response variable for this study?
 \vspace{0.2in}
 
-**3. Write out the parameter of interest for this study.**
+3. **Write out the parameter of interest for this study.**
 
 \vspace{0.8in}
 
@@ -37,7 +37,7 @@ The Triple Crown of "Thru" hiking consists of hiking the Appalachian Trail, the 
 
 \vspace{0.8in}
 
-Upload and open the `R` script file for Week 13 lab. Upload and import the csv file, `Baseweight`. Enter the name of the data set (see the environment tab) for datasetname in the `R` script file in line 6. Write a title for the boxplots in line 11. Highlight and run lines 1--13 to load the data and create plots of the data.
+Upload and open the `R` script file for Week 13 lab. Upload and import the csv file, `Baseweight`. Enter the name of the data set (see the environment tab) for datasetname in the `R` script file in line 7. Write a title for the boxplots in line 11. Highlight and run lines 1--13 to load the data and create plots of the data.
 
 ```{r, echo=TRUE, eval=FALSE}
 datasetname <- hikes 
@@ -58,13 +58,13 @@ Enter the name of the explanatory variable for `explanatory` and the name of the
 hikes %>%
   summarize(favstats(response~explanatory))
 ```
-**7. Calculate the summary statistic for this study.  Use appropriate notation.**
+7. **Calculate the summary statistic for this study.  Use appropriate notation.**
 
 \vspace{1in}
 
 ### Use statistical inferential methods to draw inferences from the data {-}
 
-**8.  Using the provided graphs and summary statistics, determine if it would make the most sense to use theory-based methods or simulation methods.  Explain your reasoning.**
+8.  **Using the provided graphs and summary statistics, determine if it would make the most sense to use theory-based methods or simulation methods.  Explain your reasoning.**
 
 \vspace{0.8in}
 
@@ -106,7 +106,7 @@ two_mean_test(Baseweight~Trail,
 
 ### Communicate the results and answer the research question {-}
 
-**11.  Report the p-value. Based off of this p-value, write a conclusion to the hypothesis test.**
+11.  **Report the p-value. Based off of this p-value, write a conclusion to the hypothesis test.**
 
 \vspace{0.8in}
 

@@ -9,13 +9,15 @@
 * Create and interpret a theory-based confidence interval for a difference in proportions.
 
 ### Terminology review
-In this week's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
+In today's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
 * Standard normal distribution
 
 * Independence and success-failure conditions
 
 To review these concepts, see Chapter 5 in your textbook.
+
+### Winter sports helmet use and head injury 
 
 In this activity we will focus on theory-based methods to calculate a confidence interval.  Like with a single proportion, the sampling distribution of a difference in proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
@@ -85,11 +87,11 @@ qnorm(0.95) # Multiplier for 90% confidence interval
 
 8. Calculate the 90\% confidence interval for the parameter of interest. 
 
-\vspace{1in}
+\vspace{0.8in}
 
 9. Interpret the confidence interval found in question 8 in context of the problem.
 
-\vspace{1in}
+\vspace{0.8in}
 
 10.  Interpret the level of confidence in context of the problem.  What does it mean to be 90% confident in the confidence interval?
 

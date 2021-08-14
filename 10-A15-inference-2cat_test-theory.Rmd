@@ -14,7 +14,7 @@
 * Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a difference in proportions.
 
 ### Terminology review
-In this week's in-class activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
+In today's activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
 
 * Conditional proportion
 
@@ -31,6 +31,8 @@ In this week's in-class activity, we will use theory-based methods to analyze tw
 * Standard normal distribution
 
 * Independence and success-failure conditions
+
+* Relative risk
 
 To review these concepts, see Chapter 5 in your textbook.
 

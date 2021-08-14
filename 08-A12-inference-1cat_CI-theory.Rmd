@@ -1,4 +1,4 @@
-## Activity 8b:  Male Boxers --- Theory CI
+## Activity 8b:  Handedness of Male Boxers --- Theory CI
 
 \setstretch{1}
 
@@ -24,13 +24,15 @@ In this activity, we will introduce simulation-based confidence intervals for a 
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-### Male Boxers
+### Handedness of Male Boxers
 
 Last class we found very strong evidence that the true proportion of male boxers that are left-handed is greater than 0.1.  In this activity we will use the same data set to find the theory-based 95\% confidence interval.
 
 Remember from the last activity: Left-handedness is a trait that is found in about 10\% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers, we want to see if there is an over-prevalence of left-handed fighters.  In the sample of 500 male boxers, 81 were left-handed.
 
 Recall that to use theory-based methods we must check the conditions to approximate the sampling distribution with the normal distribution.  From the previous activity, we saw that independence was satisfied as the researchers took a random sample.
+
+#### Validity conditions {-}
 
 To check the success-failure condition to use theory-based methods for confidence intervals, we use $\hat{p}$ in the calculations since we are not assuming a value for $\pi$. That is, check that we have at least 10 successes and 10 failures in our **sample**:  $n\hat{p} \geq 0$  and $n(1-\hat{p}) \geq 10$.
 
@@ -60,11 +62,9 @@ To find the confidence interval, we will add and subtract the **margin of error*
 $$\text{point estimate}\pm\text{margin of error}$$
 $$\hat{p}\pm z^* SE(\hat{p})$$
 
-The $z^*$ multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 95\%, we find the Z values that encompass the middle 95\% of the standard normal distribution.  If 95\% of the standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail.  The `qnorm()` function in `R` will tell us the $z^*$ value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile). 
+The $z^*$ multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 95\%, we find the Z values that encompass the middle 95\% of the standard normal distribution.  If 95\% of the standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail.  
 
-```{r, echo=TRUE, collapse=FALSE}
-qnorm(0.975) # Multiplier for 95% confidence interval
-```
+4. Fill in the normal distribution shown in figure 8.2 to show how `R` found the $z^*$ multiplier.
 
 ```{r simpleNormaldist, fig.cap="A standard normal curve.", warning=FALSE, out.width="60%"}
 X <- seq(-5,5,0.01)
@@ -73,10 +73,13 @@ plot(X, Y, type='l', axes=F, xlim=c(-4,4), lwd=2, ylab="", xlab="Z")
 #axis(1, at=-3:3)
 abline(h=-0.002)
 ```
-
-4. Fill in the normal distribution above to show how `R` found the $z^*$ multiplier.
-
 \vspace{0.1in}
+
+The `qnorm()` function in `R` will tell us the $z^*$ value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile). 
+
+```{r, echo=TRUE, collapse=FALSE}
+qnorm(0.975) # Multiplier for 95% confidence interval
+```
 
 5.  What is the value of the multiplier needed to calculate the 95\% confidence interval for the true proportion of male boxers that are left-handed?
 
@@ -97,11 +100,11 @@ abline(h=-0.002)
 9. Is the null value, 0.1, contained in the 95\% confidence interval?  Explain, based on the p-value from the last activity, why you expected this to be true.
 \vspace{1in}
 
-### Simulation Methods {-}
+#### Simulation Methods {-}
 
 In question 1, we found that the success-failure condition was met to use theory-based methods.  Here we will use simulation methods to find a 95\% confidence interval for the parameter of interest.
 
-Use the `one_proportion_bootstrap_CI()` function in `R` to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided `R` script file, fill in the values/words for each `xx` in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. 
+Use the `one_proportion_bootstrap_CI()` function in `R` to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided `R` script file, fill in the values/words for each `xx` in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Make sure to run the library(catstats) function before running the one_proportion_bootstrap_CI function.
 
 ```{r, echo=TRUE, eval=FALSE}
 one_proportion_bootstrap_CI(sample_size = xx, # Sample size
@@ -115,7 +118,7 @@ one_proportion_bootstrap_CI(sample_size = xx, # Sample size
 \vspace{0.8in}
 
 
-### Effect of Sample Size {-}
+#### Effect of Sample Size {-}
 
 Suppose in another sample of 230 male boxers we saw that 37 were left-handed.
 

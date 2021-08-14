@@ -39,7 +39,7 @@ A **point estimate** (our observed statistic) provides a single plausible value 
 
 \vspace{0.5in}
 
-In today's activity, we will use bootstrapping to find a 95\% confidence interval for $\pi$, the parameter of interest.  See Section 5.3.2 to review bootstrapping.
+In today's activity, we will use bootstrapping to find a 95\% confidence interval for $\pi$, the parameter of interest.  See Section 5.3.3 to review bootstrapping.
 
 3.  In your own words, explain the bootstrapping process.
 \vspace{0.5in}
@@ -74,7 +74,7 @@ To use the computer simulation to create a bootstrap distribution, we will need 
     
 \vspace{.1in}
 
-We will use the `one_proportion_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 5 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 1--11.
+We will use the `one_proportion_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 5 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 1--7.
 
 ```{r, echo=TRUE, eval=FALSE}
 one_proportion_bootstrap_CI(sample_size = xx, # Sample size
@@ -134,6 +134,7 @@ one_proportion_bootstrap_CI(sample_size = 16, # Sample size
 15.  Explain why the upper value of the confidence interval is truncated at 1.
 
 \vspace{0.5in}
+\newpage
 
 ### Take-home messages
 

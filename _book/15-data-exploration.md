@@ -95,7 +95,7 @@ a plan for your study. Include:
 *  Ethical issues?
 
 \vspace{0.5in}
-
+\newpage
 
 3. For today's class you read the abstract from this article.
 

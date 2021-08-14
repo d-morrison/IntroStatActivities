@@ -19,7 +19,7 @@
 
 ### Terminology review
 
-In this week's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
+In today's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
 
 * Mean difference
 
@@ -171,6 +171,7 @@ We will use the `paired_bootstrap_CI()` function in `R` (in the `catstats` packa
 20. Write out the parameter of interest in context of the study.
 
 \vspace{.6in}
+\newpage
 
 21. Using the provided `R` script file, fill in the missing value at `xx` to find a 99\% bootstrap confidence interval; highlight and run lines 24--27.  Report the confidence interval in interval notation.
 

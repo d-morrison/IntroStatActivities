@@ -178,9 +178,6 @@ You may skip Section 5.3.4, which will be covered next week.
 * 5.3SimInf
 * Bootstrapping
 
-
-\setstretch{1.25}
-
 #### Reminders from previous sections {-}
 
 $n$ = sample size
@@ -273,6 +270,7 @@ Which hypothesis must we assume is true in order to simulate a null distribution
 \rgs
 
 Explain the differences between a one-sided and two-sided hypothesis test.
+\vspace{1mm}
 
 \rgi How will the research questions differ?
 \rgs

@@ -113,7 +113,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \rgi Theory-based Confidence Interval:
 
-\vspace{0.3in}
+\vspace{0.5in}
 
 \rgi Does the theory-based p-value and CI match those found using simulation methods?
 
@@ -130,7 +130,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 4. Use the provided Exam 2 Review `R` script file and analyze this research question.
 
-    \rgi Parameter of Interest:
+\rgi Parameter of Interest:
     
 \vspace{0.3in}
     
@@ -206,7 +206,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \rgi Theory-based Confidence Interval:
 
-\vspace{0.3in}
+\vspace{0.5in}
 
 \rgi Does the theory-based p-value and CI match those found using simulation methods?
 

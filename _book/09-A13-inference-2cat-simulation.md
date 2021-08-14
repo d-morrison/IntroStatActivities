@@ -40,7 +40,7 @@ These counts can be found in `R` by using the `count()` function:
 
 ```r
 # Read data set in
-good <- read.csv("data/goodsam.csv") 
+good <- read.csv("https://math.montana.edu/courses/s216/data/goodsam.csv") 
 good %>% group_by(Behavior) %>% count(Condition)
 ```
 
@@ -230,6 +230,6 @@ two_proportion_test(formula = Behavior~Condition, # response ~ explanatory
 
 ### Additional notes
 
-Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 \newpage

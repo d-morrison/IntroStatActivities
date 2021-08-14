@@ -36,9 +36,6 @@ We will revisit the movie data set collected on Movies released in 2016 to furth
 | `facebook_likes` | Number of likes a movie receives on Facebook |
 
 
-```r
-movies <- read.csv("data/Movies2016.csv") # Reads in data set
-```
 
 #### Correlation  {-}
 
@@ -134,6 +131,9 @@ movies %>% # Data set pipes into...
 
 \vspace{0.8in}
 
+\newpage
+#### Multiple Linear Regression {-}
+
 In order to see what other variables may have an impact on revenue for movies released in 2016 we created a multivariate model.  The following `R` code gives the estimates for the regression model with `budget_mil` and `duration` included.
 
 
@@ -165,6 +165,8 @@ $$\widehat{\text{revenue}} = b_0 + b_1\times budget + b_2\times duration.$$
 1. The sign of correlation and the sign of the slope will always be the same.  The closer the value of correlation is to $-1$ or $+1$, the stronger the relationship between the explanatory and the response variable.  
 
 2.  The coefficient of determination multiplied by 100 ($r^2 \times 100$) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100%, the stronger the relationship.
+
+3. A multiple linear regression model includes more than one variable as a predictor for the response variable.
 
 
 ### Additional notes
