@@ -11,7 +11,7 @@ This calendar only lists the in-class activities, Rstudio labs and exams each we
 1& W& 8/25& Syllabus Review \\*
 1& F& 8/27& Martian Alphabet \\ \hline
 2& M& 8/30& Atrial Fibrillation \\*
-2& W& 9/1& Native American Address \\* 
+2& W& 9/1& American Indian Address \\* 
 2& F& 9/3& Week 2 Lab \\ \hline
 3& M& 9/6& (\textit{No class}) \\*
 3& W& 9/8& What's the Probability? \\*
@@ -53,7 +53,7 @@ Holiday& M--F& 11/22--11/26& \textbf{No Class --- Fall Break} \\ \hline
 15& M& 12/6& Data Exploration \\*
 15& W& 12/8& Final Exam Review \\*
 15& F& 12/10& Final Exam \\ \hline
-Finals& M--W& 12/13--12/15& Final Group Exam \\ \hline
+Finals& TBD & TBD & Final Group Exam \\ \hline
 
 \end{longtable}
 
