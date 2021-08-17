@@ -130,7 +130,7 @@ IPEDS %>%  # Data set piped into...
 IPEDS %>%  # Data set piped into...
   ggplot(aes(y = response, x = explanatory))+  # Identify variables
   geom_boxplot()+  # Tell it to make a box plot
-  labs(title = "Side by side box plot of retention rates control",  # Title
+  labs(title = "Side by side box plot of retention rates by control",  # Title
        x = "Control",    # x-axis label
        y = "Retention Rates")  # y-axis label
 ```
