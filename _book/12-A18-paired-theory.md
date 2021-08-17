@@ -63,7 +63,7 @@ The sampling distribution for $\bar{x}$ based on a sample of size $n$ from a pop
 
 Conditions for the sampling distribution of $\bar{x}$ to follow an approximate Normal distribution:
 
-* **Independence**: The sample’s observations are independent.  That is, one pair of observations has no influence on another pair of observations.
+* **Independence**: The sample’s observations are independent.  For paired data, that means each pairwise difference should be independent.
 
 * **Normality**: The data should be approximately normal or the sample size should be large.
 
@@ -71,8 +71,6 @@ Conditions for the sampling distribution of $\bar{x}$ to follow an approximate N
 
     - $n \geq 30$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
     
-Like we saw in Chapter 5, we will not know the values of the parameters and must use the sample data to estimate them.  Unlike with proportions, in which we only needed to estimate $\pi$, the quantitative sample data must be used to estimate both $\mu$ and $\sigma$. This additional uncertainty will require us to use a theoretical distribution that is just a bit wider than the Normal distribution.  Enter the **$t$-distribution**!
-
 \begin{figure}
 
 {\centering \includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/tdist-1} 
@@ -81,7 +79,11 @@ Like we saw in Chapter 5, we will not know the values of the parameters and must
 
 \caption{Comparison of the standard Normal vs t-distribution with various degrees of freedom}(\#fig:tdist)
 \end{figure}
-As you can seen from \@ref(fig:tdist), the $t$-distributions (solid lines) are centered at 0 just like a standard Normal distribution (dashed line), but are slightly wider.  The variability of a $t$-distribution depends on the degrees of freedom, which is calculated from the sample size of a study.  Recall from previous classes that larger sample sizes tend to result in narrower sampling distributions?  We see that here as well.  The larger the sample size, the larger the degrees of freedom, the narrower the $t$-distribution.  (In fact, a $t$-distribution with infinite degrees of freedom actually IS the standard Normal distribution!)
+    
+Like we saw in Chapter 5, we will not know the values of the parameters and must use the sample data to estimate them.  Unlike with proportions, in which we only needed to estimate $\pi$, quantitative sample data must be used to estimate both $\mu$ and $\sigma$. This additional uncertainty will require us to use a theoretical distribution that is just a bit wider than the Normal distribution.  Enter the **$t$-distribution**!
+
+
+As you can seen from Figure \@ref(fig:tdist) on the following page, the $t$-distributions (dashed and dotted lines) are centered at 0 just like a standard Normal distribution (solid line), but are slightly wider.  The variability of a $t$-distribution depends on the degrees of freedom, which is calculated from the sample size of a study.  Recall from previous classes that larger sample sizes tend to result in narrower sampling distributions?  We see that here as well.  The larger the sample size, the larger the degrees of freedom, the narrower the $t$-distribution.  (In fact, a $t$-distribution with infinite degrees of freedom actually IS the standard Normal distribution!)
 
 
 #### Summarize and visualize the data {-}
@@ -90,15 +92,15 @@ The following code plots each construction project's estimated (bottom) and actu
 
 
 ```r
-costs <- read.csv("https://math.montana.edu/courses/s216/data/swearing.csv")
+costs <- read.csv("https://math.montana.edu/courses/s216/data/ConstructionCosts.csv")
 paired_observed_plot(costs)
 
-costs_diff <- costs %>% #create a new dataset called datasetname2 (not the same dataset name)
-  mutate(differences = Swear - Neutral)
+costs_diff <- costs %>% 
+  mutate(differences = Actual - Estimate)
 costs_diff %>%
   ggplot(aes(x = differences))+
   geom_boxplot()+
-  labs(title="Boxplot of the pairwise differences between the estimate and actual construction costs",
+  labs(title="Boxplot of the pairwise differences",
        x = "Differences in construction cost (actual - estimated)")
 ```
 
@@ -112,8 +114,8 @@ The following code gives the summary statistics for the pairwise differences.
 ```r
 costs_diff %>% 
   summarise(favstats(differences))
-#>     min   Q1 median Q3  max     mean       sd  n missing
-#> 1 -44.3 -0.8    5.7 18 57.2 7.673494 19.47094 83       0
+#>   min Q1 median  Q3 max     mean       sd   n missing
+#> 1 -25 20     60 100 600 69.52957 62.01345 372       0
 ```
 
 #### Check theoretical conditions
@@ -132,7 +134,7 @@ costs_diff %>%
 To find the standardized statistic for the paired differences we will use the following formula:
 
 $$T = \frac{\bar{x}_d}{SE(\bar{x}_d)},$$
-
+\newpage
 where the standard error of the sample mean difference is:
 
 $$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.$$
@@ -141,49 +143,60 @@ $$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.$$
 
 \vspace{0.5in}
 
-8.  Calculate the standardized statistic.
+8.  How many standard errors is the observed mean difference from the null mean difference?
 
 \vspace{0.5in}
 
-Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function.  For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size.  You should therefore use `df` = $n_d-1 = 372 - 1 = 371$ and `lower.tail = TRUE` to find the p-value.  Highlight and run line 31.  
+Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function.  For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size.  You should therefore use `df` = $n_d-1 = 372 - 1 = 371$ and `lower.tail = FALSE` to find the p-value.  Highlight and run line 31.  
 
 
 ```r
-2*pt(xx, df=371, lower.tail=TRUE)
+2*pt(xx, df=371, lower.tail=FALSE)
 ```
 9. Explain why we multiplied by 2 in the code above.
 \vspace{0.3in}
 
-11.  Interpret the p-value in context of the study.
+10. Explain why we found the area above the T-score using `lower.tail = FALSE` in the code above.
+\vspace{0.3in}
+
+11.  What does this p-value mean, in the context of the study?  It is the probability of what...assuming what?
 \vspace{0.8in}
 
 
-12.  Do you expect the 95\% confidence interval to contain the null value of zero?  Explain your answer.
-\vspace{0.8in}
-
-4.  Is the p-value found using theory-based methods similar to the simulation p-value found in the in-class activity?
-
-\vspace{0.5in}
-
-
-To calculate the 99\% theory-based confidence interval for the paired mean difference, use the following formula:
+To calculate a theory-based confidence interval for the paired mean difference, use the following formula:
 
 $$\bar{x}_d\pm t^* SE(\bar{x}_d).$$
 
-We will need to find the $t^*$ multiplier using the function `qt()`. For a 99\% confidence level, we are finding the $t^*$ value at the 99.5th percentile with `df` = $n_d - 1 = 33 - 1 = 32$.
+We will need to find the $t^*$ multiplier using the function `qt()`. The code below will return the 95th percentile of the $t$ distribution with `df` = $n_d - 1 = 372 - 1 = 371$. 
 
 
 ```r
-qt(0.995, df = 32, lower.tail=TRUE)
-#> [1] 2.738481
+qt(0.95, df = 371, lower.tail=TRUE)
+#> [1] 1.648971
 ```
 
-5.  Calculate the 99\% confidence interval for the paired mean difference using theory-based methods.
+\begin{figure}
 
-\vspace{1in}
+{\centering \includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/tstar-1} 
+
+}
+
+\caption{t-distribution with 371 degrees of freedom}(\#fig:tstar)
+\end{figure}
+13.  In Figure @\ref(fig:tstar), you see a t-distribution with 371 degrees of freedom. Label $t^\star$ and $-t^\star$ on that distribution.  Write on the plot the percent of the $t_{371}$-distribution that is below $-t^\star$, between $-t^\star$ and $t^\star$, and above $t^\star$.  Then use your plot to determine the confidence level associated with the $t^\star$ value obtained.
+\vspace{0.3in}
 
 
-15.  Interpret the 95\% confidence interval in context of the study.
+14.  Calculate the margin of error for the true paired mean difference using theory-based methods.
+
+\vspace{0.8in}
+
+15.  Calculate the confidence interval for the true paired mean difference using theory-based methods.
+
+\vspace{0.8in}
+
+
+15.  Interpret the confidence interval in context of the study.
 
 \vspace{1in}
 
