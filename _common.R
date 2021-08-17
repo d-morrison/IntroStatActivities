@@ -30,7 +30,6 @@ suppressMessages(library(ggraph))
 suppressMessages(library(openintro))
 suppressMessages(library(ggmosaic))
 
-
 # dplyr options ----------------------------------------------------------------
 
 options(dplyr.print_min = 6, dplyr.print_max = 6)
