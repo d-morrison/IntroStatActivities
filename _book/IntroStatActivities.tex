@@ -8137,73 +8137,63 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \newpage
 
-\hypertarget{week-8-lab-one-categorical-theory}{%
-\section{Week 8 Lab: One-categorical Theory}\label{week-8-lab-one-categorical-theory}}
+\hypertarget{week-8-lab-errors-and-power}{%
+\section{Week 8 Lab: Errors and Power}\label{week-8-lab-errors-and-power}}
 
 \setstretch{1}
 
 \hypertarget{learning-objectives-11}{%
 \subsection{Learning objectives}\label{learning-objectives-11}}
 
-???
+\begin{itemize}
+\item
+  Explain type 1 and type 2 errors in the context of a study.
+\item
+  Explain the power of a test in the context of a study.
+\item
+  Understand how changes in sample size, significance level, and the difference between the null value and the parameter value impact the power of a test.
+\item
+  Understand how significance level impacts the probability of a type 1 error.
+\item
+  Understand the relationship between the probability of a type 2 error and power.
+\item
+  Be able to distinguish between practical importance and statistical significance.
+\end{itemize}
+
+\hypertarget{take-home-messages-13}{%
+\subsection{Take-home messages}\label{take-home-messages-13}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
 \tightlist
 \item
-  Is the validity condition met to use theory-based methods to analyze? Explain.
+  The following will increase the power in a hypothesis test:
 \end{enumerate}
 
-\vspace{0.8in}
+\begin{itemize}
+\item
+  Increase the sample size
+\item
+  Increase the significance level
+\item
+  Increase the distance between the hypothesized null value and the true parameter value
+\end{itemize}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
-\tightlist
+\setcounter{enumi}{1}
 \item
-  Calculate the standardized statistic.
+  The significance level of a test is the maximum probability of making a type 1 error.
+\item
+  Very large sample sizes will have very small p-values (your results will be statistically significant), even if the actual difference between the true parameter and the null hypothesis value is very small (the effect is not practically important).
+\item
+  Very small samples sizes can have large p-values (your results will not be statistically significant), but because of low power, it is possible the actual effect is practically important, you were just unable to detect it.
 \end{enumerate}
 
-\vspace{0.8in}
+\hypertarget{additional-notes-13}{%
+\subsection{Additional notes}\label{additional-notes-13}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{10}
-\tightlist
-\item
-  Interpret the standardized statistic.
-\end{enumerate}
-
-\vspace{0.8in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{11}
-\tightlist
-\item
-  Sketch a graph of the normal distribution and how to find the p-value for the theory-based test.
-\end{enumerate}
-
-\vspace{1.4in}
-
-Use the following code to find the theory-based p-value.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{pnorm}\NormalTok{(xx, }\CommentTok{\# Enter value of standardized statistic}
-      \AttributeTok{m=}\DecValTok{0}\NormalTok{, }\AttributeTok{s=}\DecValTok{1} \CommentTok{\# Using the standard normal mean = 0, sd = 1}
-      \AttributeTok{lower.tail=}\ConstantTok{FALSE}\NormalTok{) }\CommentTok{\# Gives a p{-}value greater than the standardized statistic}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
-\tightlist
-\item
-  Why did you expect that the value of the p-value is similar between theory and simulation methods?
-\end{enumerate}
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 \newpage
 
@@ -8982,8 +8972,8 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-13}{%
-\subsection{Take-home messages}\label{take-home-messages-13}}
+\hypertarget{take-home-messages-14}{%
+\subsection{Take-home messages}\label{take-home-messages-14}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8995,8 +8985,8 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
   To create one simulated sample on the null distribution for a difference in sample proportions, label \(n_1 + n_2\) cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes \(n_1\) and \(n_2\), representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
 \end{enumerate}
 
-\hypertarget{additional-notes-13}{%
-\subsection{Additional notes}\label{additional-notes-13}}
+\hypertarget{additional-notes-14}{%
+\subsection{Additional notes}\label{additional-notes-14}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -9311,8 +9301,8 @@ Shown in Table \ref{tab:errors}, a \textbf{Type 1 Error} happens when we reject 
 
 \vspace{0.5in}
 
-\hypertarget{take-home-messages-14}{%
-\subsection{Take-home messages}\label{take-home-messages-14}}
+\hypertarget{take-home-messages-15}{%
+\subsection{Take-home messages}\label{take-home-messages-15}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9322,8 +9312,8 @@ Shown in Table \ref{tab:errors}, a \textbf{Type 1 Error} happens when we reject 
   If the null value is not contained in a 99\% confidence interval, then there is evidence against the null hypothesis and the p-value is less than the significance level of 0.01.
 \end{enumerate}
 
-\hypertarget{additional-notes-14}{%
-\subsection{Additional notes}\label{additional-notes-14}}
+\hypertarget{additional-notes-15}{%
+\subsection{Additional notes}\label{additional-notes-15}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -10070,8 +10060,8 @@ Another summary statistic that can be calculated for two categorical variables i
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-15}{%
-\subsection{Take-home messages}\label{take-home-messages-15}}
+\hypertarget{take-home-messages-16}{%
+\subsection{Take-home messages}\label{take-home-messages-16}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10083,8 +10073,8 @@ Another summary statistic that can be calculated for two categorical variables i
   Relative risk evaluates the percent increase or percent decrease in the response variable attributed to the explanatory variable. To find the percent increase or percent decrease we calculate the following \(\text{percent change}=(RR - 1)x100\%\). If relative risk is less than 1 there is a percent decrease. If relative risk is greater than 1 there is a percent increase.
 \end{enumerate}
 
-\hypertarget{additional-notes-15}{%
-\subsection{Additional notes}\label{additional-notes-15}}
+\hypertarget{additional-notes-16}{%
+\subsection{Additional notes}\label{additional-notes-16}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -10322,8 +10312,8 @@ Total & 1056 & 3944 & 5000 \\
 
 \vspace{.8in}
 
-\hypertarget{take-home-messages-16}{%
-\subsection{Take-home messages}\label{take-home-messages-16}}
+\hypertarget{take-home-messages-17}{%
+\subsection{Take-home messages}\label{take-home-messages-17}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10335,8 +10325,8 @@ Total & 1056 & 3944 & 5000 \\
   Increasing sample size will result in less sample-to-sample variability in statistics, which will result in a smaller standard error, and thus a narrower confidence interval.
 \end{enumerate}
 
-\hypertarget{additional-notes-16}{%
-\subsection{Additional notes}\label{additional-notes-16}}
+\hypertarget{additional-notes-17}{%
+\subsection{Additional notes}\label{additional-notes-17}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -11654,8 +11644,8 @@ We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the 
 
 \vspace{.7in}
 
-\hypertarget{take-home-messages-17}{%
-\subsection{Take-home messages}\label{take-home-messages-17}}
+\hypertarget{take-home-messages-18}{%
+\subsection{Take-home messages}\label{take-home-messages-18}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -11671,8 +11661,8 @@ We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the 
   To create one simulated sample on the bootstrap distribution for a sample mean or mean difference, label \(n\) cards with the original response values. Randomly draw with replacement \(n\) times. Calculate and plot the resampled mean or the resampled mean difference.
 \end{enumerate}
 
-\hypertarget{additional-notes-17}{%
-\subsection{Additional notes}\label{additional-notes-17}}
+\hypertarget{additional-notes-18}{%
+\subsection{Additional notes}\label{additional-notes-18}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -12616,8 +12606,8 @@ We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in t
 
 \newpage
 
-\hypertarget{take-home-messages-18}{%
-\subsection{Take-home messages}\label{take-home-messages-18}}
+\hypertarget{take-home-messages-19}{%
+\subsection{Take-home messages}\label{take-home-messages-19}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12629,8 +12619,8 @@ We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in t
   To create one simulated sample on the bootstrap distribution for a difference in sample means, label \(n_1 + n_2\) cards with the original response values. Keep groups separate and randomly draw with replacement \(n_1\) times from group 1 and \(n_2\) times from group 2. Calculate and plot the resampled difference in means.
 \end{enumerate}
 
-\hypertarget{additional-notes-18}{%
-\subsection{Additional notes}\label{additional-notes-18}}
+\hypertarget{additional-notes-19}{%
+\subsection{Additional notes}\label{additional-notes-19}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered
 
@@ -12912,8 +12902,8 @@ Enter the appropriate percentile value (as a decimal) for xx and degrees of free
   \vspace{0.8in}
 \end{enumerate}
 
-\hypertarget{take-home-messages-19}{%
-\subsection{Take-home messages}\label{take-home-messages-19}}
+\hypertarget{take-home-messages-20}{%
+\subsection{Take-home messages}\label{take-home-messages-20}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12923,8 +12913,8 @@ Enter the appropriate percentile value (as a decimal) for xx and degrees of free
   To find a two-sided p-value using theory-based methods we need to multiply the p-value by 2.
 \end{enumerate}
 
-\hypertarget{additional-notes-19}{%
-\subsection{Additional notes}\label{additional-notes-19}}
+\hypertarget{additional-notes-20}{%
+\subsection{Additional notes}\label{additional-notes-20}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered
 
@@ -13906,8 +13896,8 @@ In order to see what impact other variables may have on the house price we can l
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-20}{%
-\subsection{Take-home messages}\label{take-home-messages-20}}
+\hypertarget{take-home-messages-21}{%
+\subsection{Take-home messages}\label{take-home-messages-21}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -13921,8 +13911,8 @@ In order to see what impact other variables may have on the house price we can l
   To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label \(n\) cards with the original (response, explanatory) values. Randomly draw with replacement \(n\) times. Find the regression line for the resampled data and plot the resampled slope or correlation.
 \end{enumerate}
 
-\hypertarget{additional-notes-20}{%
-\subsection{Additional notes}\label{additional-notes-20}}
+\hypertarget{additional-notes-21}{%
+\subsection{Additional notes}\label{additional-notes-21}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -14304,8 +14294,8 @@ The \(t^*\) multiplier comes from a \(t\)-distribution with \(n-2\) degrees of f
 
 \vspace{.6in}
 
-\hypertarget{take-home-messages-21}{%
-\subsection{Take-home messages}\label{take-home-messages-21}}
+\hypertarget{take-home-messages-22}{%
+\subsection{Take-home messages}\label{take-home-messages-22}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14321,8 +14311,8 @@ The \(t^*\) multiplier comes from a \(t\)-distribution with \(n-2\) degrees of f
   To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label \(n\) cards with the original (response, explanatory) values. Randomly draw with replacement \(n\) times. Find the regression line for the resampled data and plot the resampled slope or correlation.
 \end{enumerate}
 
-\hypertarget{additional-notes-21}{%
-\subsection{Additional notes}\label{additional-notes-21}}
+\hypertarget{additional-notes-22}{%
+\subsection{Additional notes}\label{additional-notes-22}}
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
@@ -14923,8 +14913,8 @@ Explain the last sentence. In what sense does a large sample increase accuracy?
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-22}{%
-\subsection{Take Home Messages}\label{take-home-messages-22}}
+\hypertarget{take-home-messages-23}{%
+\subsection{Take Home Messages}\label{take-home-messages-23}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14938,8 +14928,8 @@ Explain the last sentence. In what sense does a large sample increase accuracy?
   You might see names of tests we've not covered, but the idea of a p-value is the same for any test, and the null hypothesis is generally ``No change,'' or ``No effect.''
 \end{enumerate}
 
-\hypertarget{additional-notes-22}{%
-\subsection{Additional notes}\label{additional-notes-22}}
+\hypertarget{additional-notes-23}{%
+\subsection{Additional notes}\label{additional-notes-23}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 

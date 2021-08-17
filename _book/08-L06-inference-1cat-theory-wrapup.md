@@ -1,36 +1,42 @@
-## Week 8 Lab:  One-categorical Theory
+## Week 8 Lab:  Errors and Power
 
 \setstretch{1}
 
 ### Learning objectives
-???
 
-9. Is the validity condition met to use theory-based methods to analyze?  Explain.
+* Explain type 1 and type 2 errors in the context of a study.
 
-\vspace{0.8in}
+* Explain the power of a test in the context of a study.
 
-10. Calculate the standardized statistic.
+* Understand how changes in sample size, significance level, and the difference between the null value and the parameter value impact the power of a test.
 
-\vspace{0.8in}
+* Understand how significance level impacts the probability of a type 1 error.
 
-11. Interpret the standardized statistic.
+* Understand the relationship between the probability of a type 2 error and power.
 
-\vspace{0.8in}
+* Be able to distinguish between practical importance and statistical significance.
+
+### Take-home messages
+
+1. The following will increase the power in a hypothesis test:
+
+*   Increase the sample size
+
+*   Increase the significance level
+
+*  Increase the distance between the hypothesized null value and the true parameter value
+
+2.  The significance level of a test is the maximum probability of making a type 1 error.
 
 
-12.  Sketch a graph of the normal distribution and how to find the p-value for the theory-based test.
-
-\vspace{1.4in}
-
-Use the following code to find the theory-based p-value.
+3.  Very large sample sizes will have very small p-values (your results will be statistically significant), even if the actual difference between the true parameter and the null hypothesis value is very small (the effect is not practically important).
 
 
-```r
-pnorm(xx, # Enter value of standardized statistic
-      m=0, s=1 # Using the standard normal mean = 0, sd = 1
-      lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
-```
+4.  Very small samples sizes can have large p-values (your results will not be statistically significant), but because of low power, it is possible the actual effect is practically important, you were just unable to detect it.
 
-13. Why did you expect that the value of the p-value is similar between theory and simulation methods?
+
+### Additional notes
+
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 \newpage
