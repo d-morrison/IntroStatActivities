@@ -5,6 +5,8 @@
 
 ### Learning objectives
 
+* Identify whether a study is a paired design or independent groups
+
 * Given a research question involving paired data, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols.
 
@@ -16,15 +18,23 @@
 
 * Interpret a confidence interval for a mean difference.
 
+### Type of samples
+
+For each of the following scenarios, determine whether the samples are paired or independent.
+
+1.
+
+2. **GS **
+
 ### Swearing
 
 Profanity (language considered obscene or taboo) and society's attitude about its acceptableness is a highly debated topic, but does swearing serve a physiological purpose or function? Previous research has shown that swearing produces increased heart rates and higher levels of skin conductivity. It is theorized that since swearing provokes intense emotional responses, it acts as a distracter, allowing a person to withstand higher levels of pain. To explore the relationship between swearing and increased pain tolerance, researchers from Keele University (Staffordshire, UK) recruited 83 native English-speaking participants. Each volunteer performed two trials holding a hand in an ice-water bath, once while repeating the “f-word” every three seconds, and once while repeating a neutral word (“table”). The order of the word to repeat was randomly assigned. Researchers recorded the length of time, in seconds, from the moment the participant indicated they were in pain until they removed their hand from the ice water for each trial. They hope to find evidence that pain tolerance is greater (longer times) when a person swears compared to when they say a neutral word, on average. Use Swear – Neutral as the order of subtraction.
 
-1. **What does $\mu_d$ represent in the context of this study?**
+4. What does $\mu_d$ represent in the context of this study?
 
 \vspace{0.8in}
 
-4.  Write out the null hypothesis in words for this study.  
+5.  Write out the null hypothesis in words for this study.  
 
 \vspace{0.8in}
 

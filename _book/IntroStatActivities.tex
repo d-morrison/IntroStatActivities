@@ -11907,7 +11907,20 @@ To review these concepts, see Sections 6.1 and 6.2 in the textbook.
 \hypertarget{constructions-costs}{%
 \subsection{Constructions costs}\label{constructions-costs}}
 
-The year 2021 has seen massive fluctuations in construction costs. Lumber futures alone soared from roughly 700 USD/1,000 board feet in January to a peak of 1711 USD/1,000 board feet in May, only to plummet back to 500 USD/1,000 board feet by August. Researchers would like to determine how these wildly variable costs have impacted the accuracy of construction cost estimates. They collect a random sample of 372 construction projects from 20 different U.S. zip codes to investigate if current construction cost estimates (in 1,000 U.S. Dollars) match, on average, the actual construction cost (in 1,000 U.S. dollars).
+The year 2021 has seen massive fluctuations in construction costs. Lumber futures alone soared from roughly 700 USD/1,000 board feet in January to a peak of 1711 USD/1,000 board feet in May, only to plummet back to 500 USD/1,000 board feet by August. Researchers would like to determine how these wildly variable costs have impacted the accuracy of construction cost estimates. They collect a random sample of 372 construction projects from 20 randomly selected U.S. zip codes to investigate if current construction cost estimates (in 1,000 U.S. Dollars) match, on average, the actual construction cost (in 1,000 U.S. dollars).
+
+\hypertarget{identify-the-scenario}{%
+\subsubsection{Identify the scenario}\label{identify-the-scenario}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Should these observations be considered paired or independent? Explain your answer.
+  \vspace{0.5in}
+\item
+  Determine the appropriate summary measure to be used to analyze these data.
+  \vspace{0.25in}
+\end{enumerate}
 
 \hypertarget{ask-a-research-question-3}{%
 \subsubsection*{Ask a research question}\label{ask-a-research-question-3}}
@@ -11915,30 +11928,31 @@ The year 2021 has seen massive fluctuations in construction costs. Lumber future
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
 \tightlist
 \item
-  Write out the null hypothesis in notation for this study. Be sure to clearly identify the subscripts.
-\end{enumerate}
-
-\vspace{0.5in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  Write out the alternative hypothesis in words for this study.
+  Write out the null hypothesis in words, in the context of this study.
 \end{enumerate}
 
 \vspace{0.8in}
 
-The sampling distribution for \(\bar{x}\) based on a sample of size \(n\) from a population with a true mean \(\mu\) and true standard deviation \(\sigma\) can be modeled using a normal distribution when certain conditions are met.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Write out the alternative hypothesis in proper notation for this study.
+\end{enumerate}
 
-Conditions for the sampling distribution of \(\bar{x}\) to follow an approximate normal distribution:
+\vspace{0.5in}
+
+The sampling distribution for \(\bar{x}\) based on a sample of size \(n\) from a population with a true mean \(\mu\) and true standard deviation \(\sigma\) can be modeled using a Normal distribution when certain conditions are met.
+
+Conditions for the sampling distribution of \(\bar{x}\) to follow an approximate Normal distribution:
 
 \begin{itemize}
 \item
-  \textbf{Independence}: The sample's observations are independent
+  \textbf{Independence}: The sample's observations are independent. That is, one pair of observations has no influence on another pair of observations.
 \item
   \textbf{Normality}: The data should be approximately normal or the sample size should be large.
 
@@ -11948,57 +11962,68 @@ Conditions for the sampling distribution of \(\bar{x}\) to follow an approximate
   \item
     \(n \geq 30\): If the sample size \(n\) is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of \(\bar{x}\) is nearly normal, even if the underlying distribution of individual observations is not.
   \end{itemize}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{SUD }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/SUD.csv"}\NormalTok{)}
-\NormalTok{SUD }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# Data set piped into...}
-  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ stay, }\AttributeTok{x =}\NormalTok{ group))}\SpecialCharTok{+}  \CommentTok{\# Identify variables}
-  \FunctionTok{geom\_boxplot}\NormalTok{()}\SpecialCharTok{+}  \CommentTok{\# Tell it to make a box plot}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Length of Stay with and without SUD Treatment"}\NormalTok{,  }\CommentTok{\# Title}
-   \AttributeTok{x =} \StringTok{"Group"}\NormalTok{,    }\CommentTok{\# x{-}axis label}
-   \AttributeTok{y =} \StringTok{"Length of Stay (days)"}\NormalTok{)  }\CommentTok{\# y{-}axis label}
-\end{Highlighting}
-\end{Shaded}
-
-  \begin{center}\includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/unnamed-chunk-1-1} \end{center}
 \end{itemize}
 
-The following code gives the summary statistics for the data.
+Like we saw in Chapter 5, we will not know the values of the parameters and must use the sample data to estimate them. Unlike with proportions, in which we only needed to estimate \(\pi\), the quantitative sample data must be used to estimate both \(\mu\) and \(\sigma\). This additional uncertainty will require us to use a theoretical distribution that is just a bit wider than the Normal distribution. Enter the \textbf{\(t\)-distribution}!
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{SUD }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{summarize}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(stay }\SpecialCharTok{\textasciitilde{}}\NormalTok{ group))}
-\CommentTok{\#\textgreater{}       group min     Q1 median      Q3  max     mean       sd    n missing}
-\CommentTok{\#\textgreater{} 1   treated  20 904.00   1140 1401.00 2360 1144.948 365.7267 1425       0}
-\CommentTok{\#\textgreater{} 2 untreated  23 827.75   1016 1274.25 2226 1043.355 350.1818  512       0}
-\end{Highlighting}
-\end{Shaded}
+\begin{figure}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Verify that the independence condition was satisfied.\\
-  \vspace{0.8in}
-\item
-  Is the normality condition met to use the theory-based methods for analysis? Explain your answer.
-  \vspace{1in}
-\end{enumerate}
+{\centering \includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/tdist-1} 
+
+}
+
+\caption{Comparison of the standard Normal vs t-distribution with various degrees of freedom}\label{fig:tdist}
+\end{figure}
+
+As you can seen from \ref{fig:tdist}, the \(t\)-distributions (solid lines) are centered at 0 just like a standard Normal distribution (dashed line), but are slightly wider. The variability of a \(t\)-distribution depends on the degrees of freedom, which is calculated from the sample size of a study. Recall from previous classes that larger sample sizes tend to result in narrower sampling distributions? We see that here as well. The larger the sample size, the larger the degrees of freedom, the narrower the \(t\)-distribution. (In fact, a \(t\)-distribution with infinite degrees of freedom actually IS the standard Normal distribution!)
 
 \hypertarget{summarize-and-visualize-the-data-3}{%
 \subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-3}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
+The following code plots each construction project's estimated (bottom) and actual (top) cost connected by a grey line and also creates a boxplot displaying the pair-wise differences in costs (actual - estimated).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{costs }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/swearing.csv"}\NormalTok{)}
+\FunctionTok{paired\_observed\_plot}\NormalTok{(costs)}
+
+\NormalTok{costs\_diff }\OtherTok{\textless{}{-}}\NormalTok{ costs }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\#create a new dataset called datasetname2 (not the same dataset name)}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{differences =}\NormalTok{ Swear }\SpecialCharTok{{-}}\NormalTok{ Neutral)}
+\NormalTok{costs\_diff }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ differences))}\SpecialCharTok{+}
+  \FunctionTok{geom\_boxplot}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Boxplot of the pairwise differences between the estimate and actual construction costs"}\NormalTok{,}
+       \AttributeTok{x =} \StringTok{"Differences in construction cost (actual {-} estimated)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/unnamed-chunk-1-1} \includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/unnamed-chunk-1-2} \end{center}
+
+The following code gives the summary statistics for the pairwise differences.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{costs\_diff }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(differences))}
+\CommentTok{\#\textgreater{}     min   Q1 median Q3  max     mean       sd  n missing}
+\CommentTok{\#\textgreater{} 1 {-}44.3 {-}0.8    5.7 18 57.2 7.673494 19.47094 83       0}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{check-theoretical-conditions}{%
+\subsubsection{Check theoretical conditions}\label{check-theoretical-conditions}}
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{4}
-\tightlist
 \item
-  Calculate the summary statistic for this study. Use treated minus untreated as the order of subtraction. Give the appropriate notation with cleary defined subscripts.
+  How do you know the independence condition is met for these data?
+  \vspace{0.8in}
+\item
+  Is the normality condition met to use the theory-based methods for analysis? Explain your answer.
+  \vspace{1in}
 \end{enumerate}
-
-\vspace{0.8in}
 
 \hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}{%
 \subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}}
@@ -12014,7 +12039,7 @@ where the standard error of the sample mean difference is:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
+\setcounter{enumi}{6}
 \tightlist
 \item
   Calculate the standard error of the sample mean difference.
@@ -12024,7 +12049,7 @@ where the standard error of the sample mean difference is:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
+\setcounter{enumi}{7}
 \tightlist
 \item
   Calculate the standardized statistic.
@@ -12032,17 +12057,17 @@ where the standard error of the sample mean difference is:
 
 \vspace{0.5in}
 
-Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) into the \texttt{pt()} function using a \texttt{df} = \(n_d-1 = 33 - 1 = 32\), and \texttt{lower.tail\ =\ TRUE} to find the p-value. Highlight and run line 31.
+Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) into the \texttt{pt()} function. For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size. You should therefore use \texttt{df} = \(n_d-1 = 372 - 1 = 371\) and \texttt{lower.tail\ =\ TRUE} to find the p-value. Highlight and run line 31.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{pt}\NormalTok{(xx, }\AttributeTok{df=}\DecValTok{32}\NormalTok{, }\AttributeTok{lower.tail=}\ConstantTok{TRUE}\NormalTok{)}
+\DecValTok{2}\SpecialCharTok{*}\FunctionTok{pt}\NormalTok{(xx, }\AttributeTok{df=}\DecValTok{371}\NormalTok{, }\AttributeTok{lower.tail=}\ConstantTok{TRUE}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
+\setcounter{enumi}{8}
 \item
   Explain why we multiplied by 2 in the code above.
   \vspace{0.3in}
@@ -12140,6 +12165,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \begin{itemize}
 \item
+  Identify whether a study is a paired design or independent groups
+\item
   Given a research question involving paired data, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols.
 \item
@@ -12152,6 +12179,19 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Interpret a confidence interval for a mean difference.
 \end{itemize}
 
+\hypertarget{type-of-samples}{%
+\subsection{Type of samples}\label{type-of-samples}}
+
+For each of the following scenarios, determine whether the samples are paired or independent.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+\item
+  \textbf{GS }
+\end{enumerate}
+
 \hypertarget{swearing}{%
 \subsection{Swearing}\label{swearing}}
 
@@ -12159,16 +12199,17 @@ Profanity (language considered obscene or taboo) and society's attitude about it
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
 \tightlist
 \item
-  \textbf{What does \(\mu_d\) represent in the context of this study?}
+  What does \(\mu_d\) represent in the context of this study?
 \end{enumerate}
 
 \vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\setcounter{enumi}{4}
 \tightlist
 \item
   Write out the null hypothesis in words for this study.

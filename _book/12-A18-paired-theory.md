@@ -39,23 +39,31 @@ To review these concepts, see Sections 6.1 and 6.2 in the textbook.
 
 ### Constructions costs
 
-The year 2021 has seen massive fluctuations in construction costs.  Lumber futures alone soared from roughly 700 USD/1,000 board feet in January to a peak of 1711 USD/1,000 board feet in May, only to plummet back to 500 USD/1,000 board feet by August. Researchers would like to determine how these wildly variable costs have impacted the accuracy of construction cost estimates.  They collect a random sample of 372 construction projects from 20 different U.S. zip codes to investigate if current construction cost estimates (in 1,000 U.S. Dollars) match, on average, the actual construction cost (in 1,000 U.S. dollars). 
+The year 2021 has seen massive fluctuations in construction costs.  Lumber futures alone soared from roughly 700 USD/1,000 board feet in January to a peak of 1711 USD/1,000 board feet in May, only to plummet back to 500 USD/1,000 board feet by August. Researchers would like to determine how these wildly variable costs have impacted the accuracy of construction cost estimates.  They collect a random sample of 372 construction projects from 20 randomly selected U.S. zip codes to investigate if current construction cost estimates (in 1,000 U.S. Dollars) match, on average, the actual construction cost (in 1,000 U.S. dollars). 
+
+#### Identify the scenario
+
+1. Should these observations be considered paired or independent?  Explain your answer.
+\vspace{0.5in}
+
+2.  Determine the appropriate summary measure to be used to analyze these data.
+\vspace{0.25in}
 
 #### Ask a research question {-}
 
-1. Write out the null hypothesis in notation for this study.  Be sure to clearly identify the subscripts.
-
-\vspace{0.5in}
-
-2. Write out the alternative hypothesis in words for this study.
+3. Write out the null hypothesis in words, in the context of this study.  
 
 \vspace{0.8in}
 
-The sampling distribution for $\bar{x}$ based on a sample of size $n$ from a population with a true mean $\mu$ and true standard deviation $\sigma$ can be modeled using a normal distribution when certain conditions are met.
+4. Write out the alternative hypothesis in proper notation for this study.
 
-Conditions for the sampling distribution of $\bar{x}$ to follow an approximate normal distribution:
+\vspace{0.5in}
 
-* **Independence**: The sample’s observations are independent
+The sampling distribution for $\bar{x}$ based on a sample of size $n$ from a population with a true mean $\mu$ and true standard deviation $\sigma$ can be modeled using a Normal distribution when certain conditions are met.
+
+Conditions for the sampling distribution of $\bar{x}$ to follow an approximate Normal distribution:
+
+* **Independence**: The sample’s observations are independent.  That is, one pair of observations has no influence on another pair of observations.
 
 * **Normality**: The data should be approximately normal or the sample size should be large.
 
@@ -63,45 +71,60 @@ Conditions for the sampling distribution of $\bar{x}$ to follow an approximate n
 
     - $n \geq 30$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
     
-    
-    ```r
-    SUD <- read.csv("https://math.montana.edu/courses/s216/data/SUD.csv")
-    SUD %>%  # Data set piped into...
-      ggplot(aes(y = stay, x = group))+  # Identify variables
-      geom_boxplot()+  # Tell it to make a box plot
-      labs(title = "Length of Stay with and without SUD Treatment",  # Title
-       x = "Group",    # x-axis label
-       y = "Length of Stay (days)")  # y-axis label
-    ```
-    
-    
-    
-    \begin{center}\includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/unnamed-chunk-1-1} \end{center}
-    
+Like we saw in Chapter 5, we will not know the values of the parameters and must use the sample data to estimate them.  Unlike with proportions, in which we only needed to estimate $\pi$, the quantitative sample data must be used to estimate both $\mu$ and $\sigma$. This additional uncertainty will require us to use a theoretical distribution that is just a bit wider than the Normal distribution.  Enter the **$t$-distribution**!
 
-The following code gives the summary statistics for the data.
+\begin{figure}
 
+{\centering \includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/tdist-1} 
 
-```r
-SUD %>%
-  summarize(favstats(stay ~ group))
-#>       group min     Q1 median      Q3  max     mean       sd    n missing
-#> 1   treated  20 904.00   1140 1401.00 2360 1144.948 365.7267 1425       0
-#> 2 untreated  23 827.75   1016 1274.25 2226 1043.355 350.1818  512       0
-```
+}
 
-1.  Verify that the independence condition was satisfied.  
-\vspace{0.8in}
-
-2. Is the normality condition met to use the theory-based methods for analysis?  Explain your answer.
-\vspace{1in}
+\caption{Comparison of the standard Normal vs t-distribution with various degrees of freedom}(\#fig:tdist)
+\end{figure}
+As you can seen from \@ref(fig:tdist), the $t$-distributions (solid lines) are centered at 0 just like a standard Normal distribution (dashed line), but are slightly wider.  The variability of a $t$-distribution depends on the degrees of freedom, which is calculated from the sample size of a study.  Recall from previous classes that larger sample sizes tend to result in narrower sampling distributions?  We see that here as well.  The larger the sample size, the larger the degrees of freedom, the narrower the $t$-distribution.  (In fact, a $t$-distribution with infinite degrees of freedom actually IS the standard Normal distribution!)
 
 
 #### Summarize and visualize the data {-}
 
-5. Calculate the summary statistic for this study.  Use treated minus untreated as the order of subtraction.  Give the appropriate notation with cleary defined subscripts.
+The following code plots each construction project's estimated (bottom) and actual (top) cost connected by a grey line and also creates a boxplot displaying the pair-wise differences in costs (actual - estimated).
 
+
+```r
+costs <- read.csv("https://math.montana.edu/courses/s216/data/swearing.csv")
+paired_observed_plot(costs)
+
+costs_diff <- costs %>% #create a new dataset called datasetname2 (not the same dataset name)
+  mutate(differences = Swear - Neutral)
+costs_diff %>%
+  ggplot(aes(x = differences))+
+  geom_boxplot()+
+  labs(title="Boxplot of the pairwise differences between the estimate and actual construction costs",
+       x = "Differences in construction cost (actual - estimated)")
+```
+
+
+
+\begin{center}\includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/unnamed-chunk-1-1} \includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/unnamed-chunk-1-2} \end{center}
+
+The following code gives the summary statistics for the pairwise differences.
+
+
+```r
+costs_diff %>% 
+  summarise(favstats(differences))
+#>     min   Q1 median Q3  max     mean       sd  n missing
+#> 1 -44.3 -0.8    5.7 18 57.2 7.673494 19.47094 83       0
+```
+
+#### Check theoretical conditions
+
+5.  How do you know the independence condition is met for these data?
 \vspace{0.8in}
+
+6. Is the normality condition met to use the theory-based methods for analysis?  Explain your answer.
+\vspace{1in}
+
+
 
 #### Use statistical inferential methods to draw inferences from the data {-}
 
@@ -114,21 +137,21 @@ where the standard error of the sample mean difference is:
 
 $$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.$$
 
-2.  Calculate the standard error of the sample mean difference.
+7.  Calculate the standard error of the sample mean difference.
 
 \vspace{0.5in}
 
-3.  Calculate the standardized statistic.
+8.  Calculate the standardized statistic.
 
 \vspace{0.5in}
 
-Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function using a `df` = $n_d-1 = 33 - 1 = 32$, and `lower.tail = TRUE` to find the p-value.  Highlight and run line 31.  
+Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function.  For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size.  You should therefore use `df` = $n_d-1 = 372 - 1 = 371$ and `lower.tail = TRUE` to find the p-value.  Highlight and run line 31.  
 
 
 ```r
-pt(xx, df=32, lower.tail=TRUE)
+2*pt(xx, df=371, lower.tail=TRUE)
 ```
-10. Explain why we multiplied by 2 in the code above.
+9. Explain why we multiplied by 2 in the code above.
 \vspace{0.3in}
 
 11.  Interpret the p-value in context of the study.
