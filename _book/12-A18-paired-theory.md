@@ -21,19 +21,35 @@
 
 In this week's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
 
-* Mean difference
-
 * Paired data
 
-* Independent groups
+* Mean difference
 
-* Shifted bootstrap (null) distribution
+* Independent observational units
 
-To review these concepts, see Section 6.2 in the textbook.
+* Normality
 
-### Out-of-class activity
+* $t$-distribution
 
-The remaining questions cover theory-based methods for testing and estimating a paired mean difference (or single mean).  Use Section 6.2.3 in the textbook and the OneMeanTheory video to complete the following questions.
+* Degrees of freedom
+
+* T-score
+
+To review these concepts, see Sections 6.1 and 6.2 in the textbook.
+
+### Constructions costs
+
+The year 2021 has seen massive fluctuations in construction costs.  Lumber futures alone soared from roughly 700 USD/1,000 board feet in January to a peak of 1711 USD/1,000 board feet in May, only to plummet back to 500 USD/1,000 board feet by August. Researchers would like to determine how these wildly variable costs have impacted the accuracy of construction cost estimates.  They collect a random sample of 372 construction projects from 20 different U.S. zip codes to investigate if current construction cost estimates (in 1,000 U.S. Dollars) match, on average, the actual construction cost (in 1,000 U.S. dollars). 
+
+#### Ask a research question {-}
+
+1. Write out the null hypothesis in notation for this study.  Be sure to clearly identify the subscripts.
+
+\vspace{0.5in}
+
+2. Write out the alternative hypothesis in words for this study.
+
+\vspace{0.8in}
 
 The sampling distribution for $\bar{x}$ based on a sample of size $n$ from a population with a true mean $\mu$ and true standard deviation $\sigma$ can be modeled using a normal distribution when certain conditions are met.
 
@@ -46,10 +62,49 @@ Conditions for the sampling distribution of $\bar{x}$ to follow an approximate n
     - $n < 30$: If the sample size $n$ is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
 
     - $n \geq 30$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
+    
+    
+    ```r
+    SUD <- read.csv("https://math.montana.edu/courses/s216/data/SUD.csv")
+    SUD %>%  # Data set piped into...
+      ggplot(aes(y = stay, x = group))+  # Identify variables
+      geom_boxplot()+  # Tell it to make a box plot
+      labs(title = "Length of Stay with and without SUD Treatment",  # Title
+       x = "Group",    # x-axis label
+       y = "Length of Stay (days)")  # y-axis label
+    ```
+    
+    
+    
+    \begin{center}\includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/unnamed-chunk-1-1} \end{center}
+    
 
-1.  In the in-class activity, we verified that the independence condition was satisfied.  Is the normality condition met to use the theory-based methods for analysis?  Explain your answer.
+The following code gives the summary statistics for the data.
 
+
+```r
+SUD %>%
+  summarize(favstats(stay ~ group))
+#>       group min     Q1 median      Q3  max     mean       sd    n missing
+#> 1   treated  20 904.00   1140 1401.00 2360 1144.948 365.7267 1425       0
+#> 2 untreated  23 827.75   1016 1274.25 2226 1043.355 350.1818  512       0
+```
+
+1.  Verify that the independence condition was satisfied.  
+\vspace{0.8in}
+
+2. Is the normality condition met to use the theory-based methods for analysis?  Explain your answer.
 \vspace{1in}
+
+
+#### Summarize and visualize the data {-}
+
+5. Calculate the summary statistic for this study.  Use treated minus untreated as the order of subtraction.  Give the appropriate notation with cleary defined subscripts.
+
+\vspace{0.8in}
+
+#### Use statistical inferential methods to draw inferences from the data {-}
+
 
 To find the standardized statistic for the paired differences we will use the following formula:
 
@@ -73,6 +128,15 @@ Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()`
 ```r
 pt(xx, df=32, lower.tail=TRUE)
 ```
+10. Explain why we multiplied by 2 in the code above.
+\vspace{0.3in}
+
+11.  Interpret the p-value in context of the study.
+\vspace{0.8in}
+
+
+12.  Do you expect the 95\% confidence interval to contain the null value of zero?  Explain your answer.
+\vspace{0.8in}
 
 4.  Is the p-value found using theory-based methods similar to the simulation p-value found in the in-class activity?
 
@@ -95,8 +159,29 @@ qt(0.995, df = 32, lower.tail=TRUE)
 
 \vspace{1in}
 
-6.  Explain why the theory-based and simulation confidence intervals are not quite the same.
+
+15.  Interpret the 95\% confidence interval in context of the study.
 
 \vspace{1in}
+
+16.  Do the results of the CI agree with the p-value?  Explain your answer.
+
+\vspace{0.5in}
+
+17.  Write a conclusion to the test in context of the study.
+\vspace{0.8in}
+
+### Take-home messages
+
+1.  In order to use theory-based methods for dependent groups (paired data), the independent observational units and normality conditions must be met.  
+
+2.  A T-score is compared to a $t$-distribution with $n - 1$ df in order to calculate a one-sided p-value. To find a two-sided p-value using theory-based methods we need to multiply the one-sided p-value by 2.  
+
+3.  A $t^*$ multiplier is found by obtaining the bounds of the middle X% (X being the desired confidence level) of a $t$-distribution with $n - 1$ df.
+
+
+### Additional notes
+
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered
 
 \newpage

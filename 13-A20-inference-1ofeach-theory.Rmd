@@ -21,11 +21,9 @@
 
 In today's activity, we will use theory-based methods to analyze the association between one categorical explanatory variable and one quantitative response variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
 
-* Independent groups
-
 * Difference in means
 
-* Independence
+* Independence within and between groups
 
 * Normality
 
@@ -84,7 +82,7 @@ SUD %>%
 
 #### Summarize and visualize the data {-}
 
-5. Calculate the summary statistic for this study.  Use treated minus untreated as the order of subtraction.  Give the appropriate notation with cleary defined subscripts.
+5. Calculate the summary statistic for this study.  Use treated minus untreated as the order of subtraction.  Give the appropriate notation with clearly defined subscripts.
 
 \vspace{0.8in}
 

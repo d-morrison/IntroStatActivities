@@ -8160,6 +8160,196 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Be able to distinguish between practical importance and statistical significance.
 \end{itemize}
 
+\hypertarget{terminology-review-14}{%
+\subsection{Terminology review}\label{terminology-review-14}}
+
+In this activity, we will examine the possible errors that can be made based on the decision in a hypothesis test as well as factors influencing the power of the test. Some terms covered in this activity are:
+
+\begin{itemize}
+\item
+  Significance level
+\item
+  Type 1 error
+\item
+  Type 2 error
+\item
+  Power
+\end{itemize}
+
+To review these concepts, see Sections 5.1, 5.2, and 5.4 in the textbook.
+
+\hypertarget{acl-recovery}{%
+\subsection{ACL Recovery}\label{acl-recovery}}
+
+It is widely reported that the median recovery time for athletes who undergo surgery to repair a torn anterior cruciate ligament (ACL) is 8 months, indicating that 50\% of athletes return to their sport within 8 months after an ACL surgery. Suppose a local physical therapy company hopes to advertise that their rehabilitation program can increase this percentage.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Write the parameter of interest (\(\pi\)) in words, in the context of this problem.
+  \vspace{0.5in}
+\item
+  \textbf{Use proper notation to write the null and alternative hypothesis the company would need to test in order to check their advertisement claim.}
+  \vspace{0.5in}
+\end{enumerate}
+
+After determining hypotheses and prior to collecting data, researchers should set a \textbf{significance level} for a hypothesis test. The significance level, represented by \(\alpha\) and most commonly 0.01, 0.05, or 0.10, is a cut-off for determining whether a p-value is small or not. The \emph{smaller} the p-value, the \emph{stronger} the evidence against the null hypothesis, so a p-value that is smaller than or equal to the significance level is strong enough evidence to \emph{reject the null hypothesis}. Similarly, the \emph{larger} the p-value, the \emph{weaker} the evidence against the null hypothesis, so a p-value that is larger than the significance level does not provide enough evidence against the null hypothesis and the researcher would \emph{fail to reject the null hypothesis}. Rejecting the null hypothesis or failing to reject the null hypothesis are the two \textbf{decisions} that can be made based on the data collected.
+
+As you have already learned in this course, sample size of a study is extremely important. Often times, researchers will conduct what is called a power analysis to determine the appropriate sample size based on the goals of their research, including a desired \textbf{power} of their test. Power is the probability of correctly rejecting the null hypothesis, or the probability of the data providing strong evidence against the null hypothesis \emph{when the null hypothesis is false}.
+
+The remainder of this lab will be spent investigating how different factors influence the power of a test, after which you will complete a power analysis for this physical therapy company.
+
+\begin{itemize}
+\item
+  Navigate to \url{https://istats.shinyapps.io/power/}. \emph{Please note that this applet uses \(p_0\) to represent the null value rather than \(\pi_0\).}
+\item
+  Use the scale under ``Null Hypothesis value \(p_0\)'' to change the value to your null value from question 2.
+\item
+  Change the ``Alternative Hypothesis'' to the direction you wrote in question 2.
+\item
+  Leave all boxes un-checked. Do not change the scales under ``True value of \(p_0\),'' ``Sample size n,'' or ``Type I Error \(\alpha\)''
+\end{itemize}
+
+The red distribution you see is the scaled-Normal distribution representing the null distribution for this hypothesis test, if the sample size was 50 and the significance level was 0.05. This means the red distribution is showing the probability of each possible sample proportion of athletes who returned to their sport within 8 months (\(\hat{p}\)) if we assume the null hypothesis is true.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  Based off this distribution and your alternative hypothesis, give one possible sample proportion which you think would lead to rejecting the null hypothesis. Explain how you decided on your value.
+  \vspace{0.25in}
+\item
+  Check the box for ``Show Critical Value(s) and Rejection Region(s).'' You will now see a vertical line on the plot indicating the \emph{minimum} sample proportion which would lead to reject the null hypothesis. What is this value?\\
+  \vspace{0.25in}
+\item
+  Notice that there are some sample proportions under the red line (when the null hypothesis is true) which would lead us to reject the null hypothesis. Give the range of sample proportions would lead to rejecting the null hypothesis when the null hypothesis is true? What is the statistical name for this mistake?
+  \vspace{0.4in}
+\end{enumerate}
+
+Check the ``Type I Error'' box under \textbf{Display}. This should verify (or correct) your answer to question 5! The area shaded in red represents the probability of making a \textbf{type 1 error} in our hypothesis test. Recall that a type I error is when we reject the null hypothesis even though the null hypothesis is true. To reject the null hypothesis, the p-value, which was found assuming the null hypothesis is true, must be less than or equal to the significance level. Therefore the significance level is the maximum probability of rejecting the null hypothesis when the null hypothesis is true, so the significance level IS the probability of making a type 1 error in a hypothesis test!
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  \textbf{Based on the current applet settings, What percent of the null distribution is shaded red (what is the probability of making a type 1 error)?}
+  \vspace{0.25in}
+\end{enumerate}
+
+Let's say this physical therapist company believes their program can get 70\% of athletes back to their sport within 8 months of an ACL surgery. In the applet, set the scale under ``True value of \(p\)'' to 0.7.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  Where is the blue distribution centered?
+  \vspace{0.25in}
+\end{enumerate}
+
+The blue distribution that appears represents what the company believes, that 0.7 (not 0.5) is the true proportion of it's clients who return to their sport within 8 months of ACL surgery. This blue distribution represents the idea that the \textbf{null hypothesis is false}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  Consider the definition of power provided earlier in this lab. Do you believe the power of the test will be an area within the blue distribution or red distribution? How do you know? What about the probability of making a type 2 error?
+  \vspace{1in}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Check the ``Type II Error'' and ``Power'' boxes under \textbf{Display}. This should verify (or correct) your answers to question 8! The area shaded in blue represents the probability of making a \textbf{type 2 error} in our hypothesis test (failing to reject the null hypothesis even though the null hypothesis is false). The area shaded in green represents the power of the test. Notice that the type 1 and type 2 errors rates and the power of the test are provided above the distribution.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  \textbf{Complete the following equation: Power + Type 2 Error Rate = . Explain why that equation makes sense.} \emph{Hint: Consider what power and type 2 error are conditional on.}
+  \vspace{0.8in}
+\end{enumerate}
+
+Now let's investigate how changes in different factors influences the power of a test.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\item
+  Using the same sample size and significance level, change the ``True value of \(p\)'' to see the effect on Power.
+  \setlength\tabcolsep{0.5cm}
+
+  \begin{longtable}{|l|c|c|c|c|c|}
+  \hline
+  \textbf{True value of $p$}& 0.60 & 0.65 & 0.70 & 0.75 & 0.80 \\ \hline
+  \textbf{Power} & & & & &  \\ \hline
+  \end{longtable}
+\item
+  What is changing about the simulated distributions pictured as you change the ``True value of \(p\)?''
+  \vspace{0.5in}
+\item
+  \textbf{How does increasing the distance between the null and believed true probability of success affect the power of the test?}
+  \vspace{0.5in}
+\item
+  Using the same significance level, set the ``True value of \(p\)'' to 0.7 and change the sample size to see the effect on Power.
+\end{enumerate}
+
+\setlength\tabcolsep{0.6cm}
+\begin{longtable}{|l|c|c|c|c|c|}
+\hline
+\textbf{Sample Size}& 20 & 40 & 50 & 60 & 80 \\ \hline
+\textbf{Power} & & & & &  \\ \hline
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{13}
+\item
+  What is changing about the simulated distributions pictured as you change the sample size?
+  \vspace{0.5in}
+\item
+  \textbf{How does increasing the sample size affect the power of the test?}
+  \vspace{0.5in}
+\item
+  Using the same ``True value of \(p\),'' set the sample size to 50 and change the "Type I Error \(\alpha\) to see the effect on Power.
+\end{enumerate}
+
+\setlength\tabcolsep{0.5cm}
+\begin{longtable}{|l|c|c|c|c|c|}
+\hline
+\textbf{Type I Error $\alpha$}& 0.01 & 0.03 & 0.05 & 0.10 & 0.15 \\ \hline
+\textbf{Power} & & & & &  \\ \hline
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{16}
+\item
+  What is changing about the simulated distributions pictured as you change the significance level?
+  \vspace{0.5in}
+\item
+  \textbf{How does increasing the significance level affect the power of the test?}
+  \vspace{0.5in}
+\item
+  \textbf{Complete the power analysis for this physical therapy company. The company believes 70\% of their patients will return to either sport within 8 months of ACL surgery. They want to limit the probability of a type 1 error to 10\% and the probability of a type 2 error to 15\%. What is the minimum number of athletes the company will need to collect data from in order to meet these goals? Use the applet to answer this question, then download your image created and upload the file to Gradescope.}
+  \vspace{0.25in}
+\item
+  Based on the goals outlined in question 19, which mistake below is the company more concerned about? Explain your answer.
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Not being able to advertise their ACL recovery program is better than average when their program really is better.
+\item
+  Advertising their ACL recovery program is better even though it is not.
+\end{itemize}
+
+\vspace{0.8in}
+
 \hypertarget{take-home-messages-13}{%
 \subsection{Take-home messages}\label{take-home-messages-13}}
 
@@ -8185,9 +8375,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \item
   The significance level of a test is the maximum probability of making a type 1 error.
 \item
-  Very large sample sizes will have very small p-values (your results will be statistically significant), even if the actual difference between the true parameter and the null hypothesis value is very small (the effect is not practically important).
-\item
-  Very small samples sizes can have large p-values (your results will not be statistically significant), but because of low power, it is possible the actual effect is practically important, you were just unable to detect it.
+  Power + type 2 error rate = 1.
 \end{enumerate}
 
 \hypertarget{additional-notes-13}{%
@@ -8592,8 +8780,8 @@ Population proportion of group 2:
   Interpret and evaluate a p-value for a simulation-based hypothesis test for a difference in proportions.
 \end{itemize}
 
-\hypertarget{terminology-review-14}{%
-\subsection{Terminology review}\label{terminology-review-14}}
+\hypertarget{terminology-review-15}{%
+\subsection{Terminology review}\label{terminology-review-15}}
 
 In today's activity, we will use simulation-based methods to analyze two categorical variables. Some terms covered in this activity are:
 
@@ -9007,8 +9195,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Create and interpret a simulation-based confidence interval for a difference in proportions.
 \end{itemize}
 
-\hypertarget{terminology-review-15}{%
-\subsection{Terminology review}\label{terminology-review-15}}
+\hypertarget{terminology-review-16}{%
+\subsection{Terminology review}\label{terminology-review-16}}
 
 In today's activity, we will use simulation methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
@@ -9806,8 +9994,8 @@ Overall (pooled) proportion of successes:
   Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a difference in proportions.
 \end{itemize}
 
-\hypertarget{terminology-review-16}{%
-\subsection{Terminology review}\label{terminology-review-16}}
+\hypertarget{terminology-review-17}{%
+\subsection{Terminology review}\label{terminology-review-17}}
 
 In today's activity, we will use theory-based methods to analyze two categorical variables. Some terms covered in this activity are:
 
@@ -10095,8 +10283,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Create and interpret a theory-based confidence interval for a difference in proportions.
 \end{itemize}
 
-\hypertarget{terminology-review-17}{%
-\subsection{Terminology review}\label{terminology-review-17}}
+\hypertarget{terminology-review-18}{%
+\subsection{Terminology review}\label{terminology-review-18}}
 
 In today's activity, we will use theory-based methods to estimate the difference in two proportions. Some terms covered in this activity are:
 
@@ -11326,8 +11514,8 @@ Confidence interval for a paired mean difference:
   Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
-\hypertarget{terminology-review-18}{%
-\subsection{Terminology review}\label{terminology-review-18}}
+\hypertarget{terminology-review-19}{%
+\subsection{Terminology review}\label{terminology-review-19}}
 
 In today's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
 
@@ -11692,28 +11880,57 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
-\hypertarget{terminology-review-19}{%
-\subsection{Terminology review}\label{terminology-review-19}}
+\hypertarget{terminology-review-20}{%
+\subsection{Terminology review}\label{terminology-review-20}}
 
 In this week's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
-  Mean difference
-\item
   Paired data
 \item
-  Independent groups
+  Mean difference
 \item
-  Shifted bootstrap (null) distribution
+  Independent observational units
+\item
+  Normality
+\item
+  \(t\)-distribution
+\item
+  Degrees of freedom
+\item
+  T-score
 \end{itemize}
 
-To review these concepts, see Section 6.2 in the textbook.
+To review these concepts, see Sections 6.1 and 6.2 in the textbook.
 
-\hypertarget{out-of-class-activity}{%
-\subsection{Out-of-class activity}\label{out-of-class-activity}}
+\hypertarget{constructions-costs}{%
+\subsection{Constructions costs}\label{constructions-costs}}
 
-The remaining questions cover theory-based methods for testing and estimating a paired mean difference (or single mean). Use Section 6.2.3 in the textbook and the OneMeanTheory video to complete the following questions.
+The year 2021 has seen massive fluctuations in construction costs. Lumber futures alone soared from roughly 700 USD/1,000 board feet in January to a peak of 1711 USD/1,000 board feet in May, only to plummet back to 500 USD/1,000 board feet by August. Researchers would like to determine how these wildly variable costs have impacted the accuracy of construction cost estimates. They collect a random sample of 372 construction projects from 20 different U.S. zip codes to investigate if current construction cost estimates (in 1,000 U.S. Dollars) match, on average, the actual construction cost (in 1,000 U.S. dollars).
+
+\hypertarget{ask-a-research-question-3}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question-3}}
+\addcontentsline{toc}{subsubsection}{Ask a research question}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Write out the null hypothesis in notation for this study. Be sure to clearly identify the subscripts.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Write out the alternative hypothesis in words for this study.
+\end{enumerate}
+
+\vspace{0.8in}
 
 The sampling distribution for \(\bar{x}\) based on a sample of size \(n\) from a population with a true mean \(\mu\) and true standard deviation \(\sigma\) can be modeled using a normal distribution when certain conditions are met.
 
@@ -11731,16 +11948,61 @@ Conditions for the sampling distribution of \(\bar{x}\) to follow an approximate
   \item
     \(n \geq 30\): If the sample size \(n\) is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of \(\bar{x}\) is nearly normal, even if the underlying distribution of individual observations is not.
   \end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{SUD }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/SUD.csv"}\NormalTok{)}
+\NormalTok{SUD }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# Data set piped into...}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ stay, }\AttributeTok{x =}\NormalTok{ group))}\SpecialCharTok{+}  \CommentTok{\# Identify variables}
+  \FunctionTok{geom\_boxplot}\NormalTok{()}\SpecialCharTok{+}  \CommentTok{\# Tell it to make a box plot}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Length of Stay with and without SUD Treatment"}\NormalTok{,  }\CommentTok{\# Title}
+   \AttributeTok{x =} \StringTok{"Group"}\NormalTok{,    }\CommentTok{\# x{-}axis label}
+   \AttributeTok{y =} \StringTok{"Length of Stay (days)"}\NormalTok{)  }\CommentTok{\# y{-}axis label}
+\end{Highlighting}
+\end{Shaded}
+
+  \begin{center}\includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/unnamed-chunk-1-1} \end{center}
 \end{itemize}
+
+The following code gives the summary statistics for the data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{SUD }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarize}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(stay }\SpecialCharTok{\textasciitilde{}}\NormalTok{ group))}
+\CommentTok{\#\textgreater{}       group min     Q1 median      Q3  max     mean       sd    n missing}
+\CommentTok{\#\textgreater{} 1   treated  20 904.00   1140 1401.00 2360 1144.948 365.7267 1425       0}
+\CommentTok{\#\textgreater{} 2 untreated  23 827.75   1016 1274.25 2226 1043.355 350.1818  512       0}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
-  In the in-class activity, we verified that the independence condition was satisfied. Is the normality condition met to use the theory-based methods for analysis? Explain your answer.
+  Verify that the independence condition was satisfied.\\
+  \vspace{0.8in}
+\item
+  Is the normality condition met to use the theory-based methods for analysis? Explain your answer.
+  \vspace{1in}
 \end{enumerate}
 
-\vspace{1in}
+\hypertarget{summarize-and-visualize-the-data-3}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-3}}
+\addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Calculate the summary statistic for this study. Use treated minus untreated as the order of subtraction. Give the appropriate notation with cleary defined subscripts.
+\end{enumerate}
+
+\vspace{0.8in}
+
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}{%
+\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}}
+\addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
 
 To find the standardized statistic for the paired differences we will use the following formula:
 
@@ -11780,8 +12042,16 @@ Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) i
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
+\setcounter{enumi}{9}
+\item
+  Explain why we multiplied by 2 in the code above.
+  \vspace{0.3in}
+\item
+  Interpret the p-value in context of the study.
+  \vspace{0.8in}
+\item
+  Do you expect the 95\% confidence interval to contain the null value of zero? Explain your answer.
+  \vspace{0.8in}
 \item
   Is the p-value found using theory-based methods similar to the simulation p-value found in the in-class activity?
 \end{enumerate}
@@ -11813,13 +12083,50 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Fo
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
+\setcounter{enumi}{14}
 \tightlist
 \item
-  Explain why the theory-based and simulation confidence intervals are not quite the same.
+  Interpret the 95\% confidence interval in context of the study.
 \end{enumerate}
 
 \vspace{1in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{15}
+\tightlist
+\item
+  Do the results of the CI agree with the p-value? Explain your answer.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{16}
+\tightlist
+\item
+  Write a conclusion to the test in context of the study.
+  \vspace{0.8in}
+\end{enumerate}
+
+\hypertarget{take-home-messages-19}{%
+\subsection{Take-home messages}\label{take-home-messages-19}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  In order to use theory-based methods for dependent groups (paired data), the independent observational units and normality conditions must be met.
+\item
+  A T-score is compared to a \(t\)-distribution with \(n - 1\) df in order to calculate a one-sided p-value. To find a two-sided p-value using theory-based methods we need to multiply the one-sided p-value by 2.
+\item
+  A \(t^*\) multiplier is found by obtaining the bounds of the middle X\% (X being the desired confidence level) of a \(t\)-distribution with \(n - 1\) df.
+\end{enumerate}
+
+\hypertarget{additional-notes-19}{%
+\subsection{Additional notes}\label{additional-notes-19}}
+
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered
 
 \newpage
 
@@ -11831,7 +12138,242 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Fo
 \hypertarget{learning-objectives-18}{%
 \subsection{Learning objectives}\label{learning-objectives-18}}
 
-\newpage
+\begin{itemize}
+\item
+  Given a research question involving paired data, construct the null and alternative hypotheses
+  in words and using appropriate statistical symbols.
+\item
+  Describe and perform a simulation-based hypothesis test for a mean difference.
+\item
+  Interpret and evaluate a p-value for a hypothesis test for a mean difference.
+\item
+  Use bootstrapping methods to find a confidence interval for a mean difference.
+\item
+  Interpret a confidence interval for a mean difference.
+\end{itemize}
+
+\hypertarget{swearing}{%
+\subsection{Swearing}\label{swearing}}
+
+Profanity (language considered obscene or taboo) and society's attitude about its acceptableness is a highly debated topic, but does swearing serve a physiological purpose or function? Previous research has shown that swearing produces increased heart rates and higher levels of skin conductivity. It is theorized that since swearing provokes intense emotional responses, it acts as a distracter, allowing a person to withstand higher levels of pain. To explore the relationship between swearing and increased pain tolerance, researchers from Keele University (Staffordshire, UK) recruited 83 native English-speaking participants. Each volunteer performed two trials holding a hand in an ice-water bath, once while repeating the ``f-word'' every three seconds, and once while repeating a neutral word (``table''). The order of the word to repeat was randomly assigned. Researchers recorded the length of time, in seconds, from the moment the participant indicated they were in pain until they removed their hand from the ice water for each trial. They hope to find evidence that pain tolerance is greater (longer times) when a person swears compared to when they say a neutral word, on average. Use Swear -- Neutral as the order of subtraction.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{What does \(\mu_d\) represent in the context of this study?}
+\end{enumerate}
+
+\vspace{0.8in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Write out the null hypothesis in words for this study.
+\end{enumerate}
+
+\vspace{0.8in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Write out the alternative hypothesis in proper notation for this study.
+\end{enumerate}
+
+\vspace{0.5in}
+
+Upload and open the \texttt{R} script file for Week 12 lab. Upload and import the csv file, \texttt{swearing}. Enter the name of the data set (see the environment tab) for datasetname in the \texttt{R} script file in line 7. Write a title for the boxplots in line 11. Highlight and run lines 1--13 to load the data and create plots of the data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{datasetname }\OtherTok{\textless{}{-}}\NormalTok{ swearing }
+\NormalTok{swearing }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# Data set piped into...}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ Baseweight, }\AttributeTok{x =}\NormalTok{ Trail))}\SpecialCharTok{+}  \CommentTok{\# Identify variables}
+  \FunctionTok{geom\_boxplot}\NormalTok{()}\SpecialCharTok{+}  \CommentTok{\# Tell it to make a box plot}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"xx"}\NormalTok{,  }\CommentTok{\# Title}
+       \AttributeTok{x =} \StringTok{"Trail"}\NormalTok{,    }\CommentTok{\# x{-}axis label}
+       \AttributeTok{y =} \StringTok{"Baseweight(lbs)"}\NormalTok{)  }\CommentTok{\# y{-}axis label}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  Based on the plots, which trail has the highest median baseweight?
+  \vspace{0.2in}
+\end{enumerate}
+
+Enter the name of the explanatory variable for \texttt{explanatory} and the name of the response variable for \texttt{response} in line 17. Highlight and run lines 16--17 to get the summary statistics for the data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{hikes }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarize}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(response}\SpecialCharTok{\textasciitilde{}}\NormalTok{explanatory))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  \textbf{Calculate the summary statistic for this study. Use appropriate notation.}
+\end{enumerate}
+
+\vspace{1in}
+
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-2}{%
+\subsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-2}}
+\addcontentsline{toc}{subsection}{Use statistical inferential methods to draw inferences from the data}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  \textbf{Using the provided graphs and summary statistics, determine if it would make the most sense to use theory-based methods or simulation methods. Explain your reasoning.}
+\end{enumerate}
+
+\vspace{0.8in}
+
+\hypertarget{hypothesis-test-1}{%
+\subsection*{Hypothesis test}\label{hypothesis-test-1}}
+\addcontentsline{toc}{subsection}{Hypothesis test}
+
+Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that there is no association between the two variables. This means that the base weight observed in the data set would have been the same regardless of the type of trails.
+
+We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of differences in sample means and compute a p-value.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  When using the \texttt{two\_mean\_test()} function, we need to enter the name of the response variable, \texttt{Baseweight}, and the name of the explanatory variable, \texttt{Trail}, for the formula. The name of the data set as shown above is \texttt{hikes}. What values should be entered for each of the following to create 1000 simulated samples?
+\end{enumerate}
+
+\vspace{1mm}
+
+\begin{itemize}
+\tightlist
+\item
+  First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? \texttt{"CDT"} or \texttt{"PCT"}):
+\end{itemize}
+
+\vspace{.2in}
+
+\begin{itemize}
+\tightlist
+\item
+  Number of repetitions:
+\end{itemize}
+
+\vspace{.2in}
+
+\begin{itemize}
+\tightlist
+\item
+  As extreme as:
+\end{itemize}
+
+\vspace{.2in}
+
+\begin{itemize}
+\tightlist
+\item
+  Direction (\texttt{"greater"}, \texttt{"less"}, or \texttt{"two-sided"}):
+\end{itemize}
+
+\vspace{.2in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\tightlist
+\item
+  Simulate a null distribution and compute the p-value. Using the \texttt{R} script file for this activity, enter your answers for question 9 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 20--25. \textbf{Upload a copy of the null distribution created to Gradescope for your group.}
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{two\_mean\_test}\NormalTok{(Baseweight}\SpecialCharTok{\textasciitilde{}}\NormalTok{Trail, }
+         \AttributeTok{data =}\NormalTok{ hikes,  }\CommentTok{\# Variables and data}
+         \AttributeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# First outcome in order of subtraction}
+         \AttributeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\# Number of simulations}
+         \AttributeTok{as\_extreme\_as =}\NormalTok{ xx,  }\CommentTok{\# Observed statistic}
+         \AttributeTok{direction =} \StringTok{"xx"}\NormalTok{)  }\CommentTok{\# Direction of alternative: "greater", "less", or "two{-}sided"}
+\end{Highlighting}
+\end{Shaded}
+
+~~~~~~~Sketch the null distribution created using the code above.
+
+\vspace{1.5in}
+
+\hypertarget{communicate-the-results-and-answer-the-research-question-3}{%
+\subsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-3}}
+\addcontentsline{toc}{subsection}{Communicate the results and answer the research question}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  \textbf{Report the p-value. Based off of this p-value, write a conclusion to the hypothesis test.}
+\end{enumerate}
+
+\vspace{0.8in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\tightlist
+\item
+  Do you expect the 95\% confidence interval to contain the null value of zero? Explain.
+\end{enumerate}
+
+\vspace{0.8in}
+
+\hypertarget{confidence-interval-1}{%
+\subsection*{Confidence interval}\label{confidence-interval-1}}
+\addcontentsline{toc}{subsection}{Confidence interval}
+
+We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\tightlist
+\item
+  Using bootstrapping find a 95\% confidence interval. Using the provided \texttt{R} script file, enter the variable names and data set name as in the \texttt{two\_mean\_test()} function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal. Highlight and run lines 28--32. Report the 95\% confidence interval in interval notation.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{two\_mean\_bootstrap\_CI}\NormalTok{(RESPONSE }\SpecialCharTok{\textasciitilde{}}\NormalTok{ EXPLANATORY, }
+                      \AttributeTok{data =}\NormalTok{ DATASET,  }\CommentTok{\# Variables and data}
+                      \AttributeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# First value in order of subtraction}
+                      \AttributeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\# Number of simulations}
+                      \AttributeTok{confidence\_level =}\NormalTok{ xx)}
+\end{Highlighting}
+\end{Shaded}
+
+\vspace{0.3in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{13}
+\tightlist
+\item
+  Interpret the interval you calculated in question 13.
+\end{enumerate}
+
+\vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -11855,6 +12397,8 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Fo
 \end{itemize}
 
 \vspace{2.6in}
+
+\newpage
 
 \hypertarget{inference-for-a-quantitative-response-with-independent-samples}{%
 \chapter{Inference for a Quantitative Response with Independent Samples}\label{inference-for-a-quantitative-response-with-independent-samples}}
@@ -12251,8 +12795,8 @@ Confidence interval for a difference in means:
   Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
-\hypertarget{terminology-review-20}{%
-\subsection{Terminology review}\label{terminology-review-20}}
+\hypertarget{terminology-review-21}{%
+\subsection{Terminology review}\label{terminology-review-21}}
 
 In today's activity, we will use simulation-based methods to analyze the association between one categorical explanatory variable and one quantitative response variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
 
@@ -12369,8 +12913,8 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \vspace{1in}
 
-\hypertarget{ask-a-research-question-3}{%
-\subsubsection*{Ask a research question}\label{ask-a-research-question-3}}
+\hypertarget{ask-a-research-question-4}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question-4}}
 \addcontentsline{toc}{subsubsection}{Ask a research question}
 
 \begin{enumerate}
@@ -12403,8 +12947,8 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \vspace{1in}
 
-\hypertarget{summarize-and-visualize-the-data-3}{%
-\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-3}}
+\hypertarget{summarize-and-visualize-the-data-4}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-4}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
 \begin{enumerate}
@@ -12419,12 +12963,12 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 
 \newpage
 
-\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}{%
-\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-1}}
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-3}{%
+\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-3}}
 \addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
 
-\hypertarget{hypothesis-test-1}{%
-\paragraph*{Hypothesis test}\label{hypothesis-test-1}}
+\hypertarget{hypothesis-test-2}{%
+\paragraph*{Hypothesis test}\label{hypothesis-test-2}}
 \addcontentsline{toc}{paragraph}{Hypothesis test}
 
 Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that there is no association between the two variables. This means that the snowfall values observed in the data set would have been the same regardless of the weather pattern that year.
@@ -12559,8 +13103,8 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
 
 \newpage
 
-\hypertarget{confidence-interval-1}{%
-\paragraph*{Confidence interval}\label{confidence-interval-1}}
+\hypertarget{confidence-interval-2}{%
+\paragraph*{Confidence interval}\label{confidence-interval-2}}
 \addcontentsline{toc}{paragraph}{Confidence interval}
 
 We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval.
@@ -12606,8 +13150,8 @@ We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in t
 
 \newpage
 
-\hypertarget{take-home-messages-19}{%
-\subsection{Take-home messages}\label{take-home-messages-19}}
+\hypertarget{take-home-messages-20}{%
+\subsection{Take-home messages}\label{take-home-messages-20}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12619,8 +13163,8 @@ We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in t
   To create one simulated sample on the bootstrap distribution for a difference in sample means, label \(n_1 + n_2\) cards with the original response values. Keep groups separate and randomly draw with replacement \(n_1\) times from group 1 and \(n_2\) times from group 2. Calculate and plot the resampled difference in means.
 \end{enumerate}
 
-\hypertarget{additional-notes-19}{%
-\subsection{Additional notes}\label{additional-notes-19}}
+\hypertarget{additional-notes-20}{%
+\subsection{Additional notes}\label{additional-notes-20}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered
 
@@ -12650,18 +13194,16 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
-\hypertarget{terminology-review-21}{%
-\subsection{Terminology review}\label{terminology-review-21}}
+\hypertarget{terminology-review-22}{%
+\subsection{Terminology review}\label{terminology-review-22}}
 
 In today's activity, we will use theory-based methods to analyze the association between one categorical explanatory variable and one quantitative response variable, where the groups formed by the categorical variable are independent. Some terms covered in this activity are:
 
 \begin{itemize}
 \item
-  Independent groups
-\item
   Difference in means
 \item
-  Independence
+  Independence within and between groups
 \item
   Normality
 \end{itemize}
@@ -12673,8 +13215,8 @@ To review these concepts, see Section 6.3 in the textbook.
 
 Homeless people with substance abuse disorders (SUD) have high disease risk, poor access to health care, and are frequent users of Medicaid and other social services. Low-demand supportive housing with no prerequisites for treatment or sobriety has been shown to improve housing stability and decrease public service use for chronically homeless people with serious mental illness. Researchers in New York investigated if low-demand housing would also prove beneficial to chronic homeless people with SUD who do not suffer from serious mental illness or if pre-housing SUD treatments were required to improve outcomes. Between 2007 and 2012, 1937 chronic homeless people with SUD and without serious mental illness applying for low-demand housing were recruited to participate in the study. Researchers randomly assigned 1425 participants to receive SUD treatment prior to obtaining housing, the other 512 did not undergo SUD treatment. One of several outcomes measured was the length of stay in supportive housing used as a measure of housing stability. The length of stay for treatment groups is summarized in the \texttt{R} output provided. Is there evidence that SUD treatment affects the length of stay in supportive housing?
 
-\hypertarget{ask-a-research-question-4}{%
-\subsubsection*{Ask a research question}\label{ask-a-research-question-4}}
+\hypertarget{ask-a-research-question-5}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question-5}}
 \addcontentsline{toc}{subsubsection}{Ask a research question}
 
 \begin{enumerate}
@@ -12752,8 +13294,8 @@ The following code gives the summary statistics for the data.
 
 \vspace{0.8in}
 
-\hypertarget{summarize-and-visualize-the-data-4}{%
-\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-4}}
+\hypertarget{summarize-and-visualize-the-data-5}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-5}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
 \begin{enumerate}
@@ -12761,13 +13303,13 @@ The following code gives the summary statistics for the data.
 \setcounter{enumi}{4}
 \tightlist
 \item
-  Calculate the summary statistic for this study. Use treated minus untreated as the order of subtraction. Give the appropriate notation with cleary defined subscripts.
+  Calculate the summary statistic for this study. Use treated minus untreated as the order of subtraction. Give the appropriate notation with clearly defined subscripts.
 \end{enumerate}
 
 \vspace{0.8in}
 
-\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-2}{%
-\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-2}}
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-4}{%
+\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-4}}
 \addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
 
 To find the standardized statistic for the difference in means we will calculate:
@@ -12902,8 +13444,8 @@ Enter the appropriate percentile value (as a decimal) for xx and degrees of free
   \vspace{0.8in}
 \end{enumerate}
 
-\hypertarget{take-home-messages-20}{%
-\subsection{Take-home messages}\label{take-home-messages-20}}
+\hypertarget{take-home-messages-21}{%
+\subsection{Take-home messages}\label{take-home-messages-21}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12913,8 +13455,8 @@ Enter the appropriate percentile value (as a decimal) for xx and degrees of free
   To find a two-sided p-value using theory-based methods we need to multiply the p-value by 2.
 \end{enumerate}
 
-\hypertarget{additional-notes-20}{%
-\subsection{Additional notes}\label{additional-notes-20}}
+\hypertarget{additional-notes-21}{%
+\subsection{Additional notes}\label{additional-notes-21}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered
 
@@ -13023,8 +13565,8 @@ Enter the name of the explanatory variable for \texttt{explanatory} and the name
 
 \vspace{1in}
 
-\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-3}{%
-\subsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-3}}
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-5}{%
+\subsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-5}}
 \addcontentsline{toc}{subsection}{Use statistical inferential methods to draw inferences from the data}
 
 \begin{enumerate}
@@ -13037,8 +13579,8 @@ Enter the name of the explanatory variable for \texttt{explanatory} and the name
 
 \vspace{0.8in}
 
-\hypertarget{hypothesis-test-2}{%
-\subsection*{Hypothesis test}\label{hypothesis-test-2}}
+\hypertarget{hypothesis-test-3}{%
+\subsection*{Hypothesis test}\label{hypothesis-test-3}}
 \addcontentsline{toc}{subsection}{Hypothesis test}
 
 Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that there is no association between the two variables. This means that the base weight observed in the data set would have been the same regardless of the type of trails.
@@ -13110,8 +13652,8 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
 
 \vspace{1.5in}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question-3}{%
-\subsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-3}}
+\hypertarget{communicate-the-results-and-answer-the-research-question-4}{%
+\subsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-4}}
 \addcontentsline{toc}{subsection}{Communicate the results and answer the research question}
 
 \begin{enumerate}
@@ -13134,8 +13676,8 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
 
 \vspace{0.8in}
 
-\hypertarget{confidence-interval-2}{%
-\subsection*{Confidence interval}\label{confidence-interval-2}}
+\hypertarget{confidence-interval-3}{%
+\subsection*{Confidence interval}\label{confidence-interval-3}}
 \addcontentsline{toc}{subsection}{Confidence interval}
 
 We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval.
@@ -13561,8 +14103,8 @@ Confidence interval:
   Interpret a confidence interval for a slope or correlation.
 \end{itemize}
 
-\hypertarget{terminology-review-22}{%
-\subsection{Terminology review}\label{terminology-review-22}}
+\hypertarget{terminology-review-23}{%
+\subsection{Terminology review}\label{terminology-review-23}}
 
 In today's activity, we will use simulation-based methods for hypothesis tests and confidence intervals for a linear regression slope or correlation. Some terms covered in this activity are:
 
@@ -13640,8 +14182,8 @@ The government of Singapore took a random sample of 373 homes in Singapore to co
 
 \vspace{0.5in}
 
-\hypertarget{ask-a-research-question-5}{%
-\subsubsection*{Ask a research question}\label{ask-a-research-question-5}}
+\hypertarget{ask-a-research-question-6}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question-6}}
 \addcontentsline{toc}{subsubsection}{Ask a research question}
 
 \begin{enumerate}
@@ -13664,8 +14206,8 @@ The government of Singapore took a random sample of 373 homes in Singapore to co
 
 \vspace{0.5in}
 
-\hypertarget{summarize-and-visualize-the-data-5}{%
-\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-5}}
+\hypertarget{summarize-and-visualize-the-data-6}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-6}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
 Using the provided \texttt{R} script file, enter the response variable name, \texttt{House\_Price}, into the \texttt{lm()} (linear model) function for \texttt{response} and the explanatory variable name, \texttt{Distance}, for \texttt{response} in line 32 to get the linear model output. Highlight and run lines 32--33.
@@ -13717,8 +14259,8 @@ Using the provided \texttt{R} script file, enter the response variable name, \te
 
 \vspace{1in}
 
-\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-4}{%
-\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-4}}
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-6}{%
+\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-6}}
 \addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
 
 In this activity, we will focus on using simulation-based methods for inference in regression.
@@ -13833,8 +14375,8 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
   \vspace{0.5in}
 \end{enumerate}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question-4}{%
-\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-4}}
+\hypertarget{communicate-the-results-and-answer-the-research-question-5}{%
+\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-5}}
 \addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
 
 \begin{enumerate}
@@ -13896,8 +14438,8 @@ In order to see what impact other variables may have on the house price we can l
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-21}{%
-\subsection{Take-home messages}\label{take-home-messages-21}}
+\hypertarget{take-home-messages-22}{%
+\subsection{Take-home messages}\label{take-home-messages-22}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -13911,8 +14453,8 @@ In order to see what impact other variables may have on the house price we can l
   To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label \(n\) cards with the original (response, explanatory) values. Randomly draw with replacement \(n\) times. Find the regression line for the resampled data and plot the resampled slope or correlation.
 \end{enumerate}
 
-\hypertarget{additional-notes-21}{%
-\subsection{Additional notes}\label{additional-notes-21}}
+\hypertarget{additional-notes-22}{%
+\subsection{Additional notes}\label{additional-notes-22}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -13942,8 +14484,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Use a confidence interval to determine the conclusion of a hypothesis test.
 \end{itemize}
 
-\hypertarget{terminology-review-23}{%
-\subsection{Terminology review}\label{terminology-review-23}}
+\hypertarget{terminology-review-24}{%
+\subsection{Terminology review}\label{terminology-review-24}}
 
 In this week's in-class activity, we will use theory-based methods for hypothesis tests and confidence intervals for a linear regression slope or correlation. Some terms covered in this activity are:
 
@@ -14104,8 +14646,8 @@ The scatterplot generated in question 2 and the residual plots shown below will 
 
 \vspace{1.5in}
 
-\hypertarget{ask-a-research-question-6}{%
-\subsubsection*{Ask a research question}\label{ask-a-research-question-6}}
+\hypertarget{ask-a-research-question-7}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question-7}}
 \addcontentsline{toc}{subsubsection}{Ask a research question}
 
 \begin{enumerate}
@@ -14128,8 +14670,8 @@ The scatterplot generated in question 2 and the residual plots shown below will 
 
 \vspace{0.5in}
 
-\hypertarget{summarize-and-visualize-the-data-6}{%
-\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-6}}
+\hypertarget{summarize-and-visualize-the-data-7}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-7}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
 Using the provided \texttt{R} script file, enter the response variable name, \texttt{W}, into the \texttt{lm()} (linear model) function for \texttt{yy} and the explanatory variable name, \texttt{RD}, for \texttt{xx} in line 32 to get the linear model output. Highlight and run lines 32--33.
@@ -14181,12 +14723,12 @@ Using the provided \texttt{R} script file, enter the response variable name, \te
 
 \vspace{1in}
 
-\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-5}{%
-\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-5}}
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-7}{%
+\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-7}}
 \addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
 
-\hypertarget{hypothesis-test-3}{%
-\paragraph*{Hypothesis test}\label{hypothesis-test-3}}
+\hypertarget{hypothesis-test-4}{%
+\paragraph*{Hypothesis test}\label{hypothesis-test-4}}
 \addcontentsline{toc}{paragraph}{Hypothesis test}
 
 To find the value of the standardized statistic to test the slope we will use,
@@ -14237,8 +14779,8 @@ We will use the linear model \texttt{R} output above to get the estimate for slo
 
 \vspace{0.5in}
 
-\hypertarget{confidence-interval-3}{%
-\paragraph*{Confidence interval}\label{confidence-interval-3}}
+\hypertarget{confidence-interval-4}{%
+\paragraph*{Confidence interval}\label{confidence-interval-4}}
 \addcontentsline{toc}{paragraph}{Confidence interval}
 
 Recall that a confidence interval is calculated by adding and subtracting the margin of error to the point estimate.\\
@@ -14270,8 +14812,8 @@ The \(t^*\) multiplier comes from a \(t\)-distribution with \(n-2\) degrees of f
 
 \vspace{.8in}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question-5}{%
-\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-5}}
+\hypertarget{communicate-the-results-and-answer-the-research-question-6}{%
+\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-6}}
 \addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
 
 \begin{enumerate}
@@ -14294,8 +14836,8 @@ The \(t^*\) multiplier comes from a \(t\)-distribution with \(n-2\) degrees of f
 
 \vspace{.6in}
 
-\hypertarget{take-home-messages-22}{%
-\subsection{Take-home messages}\label{take-home-messages-22}}
+\hypertarget{take-home-messages-23}{%
+\subsection{Take-home messages}\label{take-home-messages-23}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14311,8 +14853,8 @@ The \(t^*\) multiplier comes from a \(t\)-distribution with \(n-2\) degrees of f
   To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label \(n\) cards with the original (response, explanatory) values. Randomly draw with replacement \(n\) times. Find the regression line for the resampled data and plot the resampled slope or correlation.
 \end{enumerate}
 
-\hypertarget{additional-notes-22}{%
-\subsection{Additional notes}\label{additional-notes-22}}
+\hypertarget{additional-notes-23}{%
+\subsection{Additional notes}\label{additional-notes-23}}
 
 Use this space to summarize your thoughts and take additional notes on this week's activity and material covered.
 
@@ -14370,8 +14912,8 @@ Some of the variables collected in the data set \texttt{Bear\_Data} consist of t
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{summarize-and-visualize-the-data-7}{%
-\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-7}}
+\hypertarget{summarize-and-visualize-the-data-8}{%
+\subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-8}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
 \begin{verbatim}
@@ -14452,8 +14994,8 @@ Use the provided scatterplot generated above and the residual plots shown below 
 
 \vspace{1.5in}
 
-\hypertarget{ask-a-research-question-7}{%
-\subsubsection*{Ask a research question}\label{ask-a-research-question-7}}
+\hypertarget{ask-a-research-question-8}{%
+\subsubsection*{Ask a research question}\label{ask-a-research-question-8}}
 \addcontentsline{toc}{subsubsection}{Ask a research question}
 
 \begin{enumerate}
@@ -14468,12 +15010,12 @@ Use the provided scatterplot generated above and the residual plots shown below 
 
 ~~~\(H_A:\)
 
-\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-6}{%
-\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-6}}
+\hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-8}{%
+\subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-8}}
 \addcontentsline{toc}{subsubsection}{Use statistical inferential methods to draw inferences from the data}
 
-\hypertarget{hypothesis-test-4}{%
-\paragraph*{Hypothesis test}\label{hypothesis-test-4}}
+\hypertarget{hypothesis-test-5}{%
+\paragraph*{Hypothesis test}\label{hypothesis-test-5}}
 \addcontentsline{toc}{paragraph}{Hypothesis test}
 
 Use the \texttt{regression\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample correlations and compute a p-value. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as \texttt{bears}), the statistic for the test, number of repetitions, the sample statistic (value of correlation), and the direction of the alternative hypothesis.
@@ -14574,8 +15116,8 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
   \vspace{0.8in}
 \end{enumerate}
 
-\hypertarget{communicate-the-results-and-answer-the-research-question-6}{%
-\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-6}}
+\hypertarget{communicate-the-results-and-answer-the-research-question-7}{%
+\subsubsection*{Communicate the results and answer the research question}\label{communicate-the-results-and-answer-the-research-question-7}}
 \addcontentsline{toc}{subsubsection}{Communicate the results and answer the research question}
 
 \begin{enumerate}
@@ -14913,8 +15455,8 @@ Explain the last sentence. In what sense does a large sample increase accuracy?
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-23}{%
-\subsection{Take Home Messages}\label{take-home-messages-23}}
+\hypertarget{take-home-messages-24}{%
+\subsection{Take Home Messages}\label{take-home-messages-24}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14928,8 +15470,8 @@ Explain the last sentence. In what sense does a large sample increase accuracy?
   You might see names of tests we've not covered, but the idea of a p-value is the same for any test, and the null hypothesis is generally ``No change,'' or ``No effect.''
 \end{enumerate}
 
-\hypertarget{additional-notes-23}{%
-\subsection{Additional notes}\label{additional-notes-23}}
+\hypertarget{additional-notes-24}{%
+\subsection{Additional notes}\label{additional-notes-24}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
