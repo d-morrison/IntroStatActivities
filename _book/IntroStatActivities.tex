@@ -11952,7 +11952,7 @@ Conditions for the sampling distribution of \(\bar{x}\) to follow an approximate
 
 \begin{itemize}
 \item
-  \textbf{Independence}: The sample's observations are independent. That is, one pair of observations has no influence on another pair of observations.
+  \textbf{Independence}: The sample's observations are independent. For paired data, that means each pairwise difference should be independent.
 \item
   \textbf{Normality}: The data should be approximately normal or the sample size should be large.
 
@@ -11964,8 +11964,6 @@ Conditions for the sampling distribution of \(\bar{x}\) to follow an approximate
   \end{itemize}
 \end{itemize}
 
-Like we saw in Chapter 5, we will not know the values of the parameters and must use the sample data to estimate them. Unlike with proportions, in which we only needed to estimate \(\pi\), the quantitative sample data must be used to estimate both \(\mu\) and \(\sigma\). This additional uncertainty will require us to use a theoretical distribution that is just a bit wider than the Normal distribution. Enter the \textbf{\(t\)-distribution}!
-
 \begin{figure}
 
 {\centering \includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/tdist-1} 
@@ -11975,7 +11973,9 @@ Like we saw in Chapter 5, we will not know the values of the parameters and must
 \caption{Comparison of the standard Normal vs t-distribution with various degrees of freedom}\label{fig:tdist}
 \end{figure}
 
-As you can seen from \ref{fig:tdist}, the \(t\)-distributions (solid lines) are centered at 0 just like a standard Normal distribution (dashed line), but are slightly wider. The variability of a \(t\)-distribution depends on the degrees of freedom, which is calculated from the sample size of a study. Recall from previous classes that larger sample sizes tend to result in narrower sampling distributions? We see that here as well. The larger the sample size, the larger the degrees of freedom, the narrower the \(t\)-distribution. (In fact, a \(t\)-distribution with infinite degrees of freedom actually IS the standard Normal distribution!)
+Like we saw in Chapter 5, we will not know the values of the parameters and must use the sample data to estimate them. Unlike with proportions, in which we only needed to estimate \(\pi\), quantitative sample data must be used to estimate both \(\mu\) and \(\sigma\). This additional uncertainty will require us to use a theoretical distribution that is just a bit wider than the Normal distribution. Enter the \textbf{\(t\)-distribution}!
+
+As you can seen from Figure \ref{fig:tdist} on the following page, the \(t\)-distributions (dashed and dotted lines) are centered at 0 just like a standard Normal distribution (solid line), but are slightly wider. The variability of a \(t\)-distribution depends on the degrees of freedom, which is calculated from the sample size of a study. Recall from previous classes that larger sample sizes tend to result in narrower sampling distributions? We see that here as well. The larger the sample size, the larger the degrees of freedom, the narrower the \(t\)-distribution. (In fact, a \(t\)-distribution with infinite degrees of freedom actually IS the standard Normal distribution!)
 
 \hypertarget{summarize-and-visualize-the-data-3}{%
 \subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-3}}
@@ -11985,15 +11985,15 @@ The following code plots each construction project's estimated (bottom) and actu
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{costs }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/swearing.csv"}\NormalTok{)}
+\NormalTok{costs }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/ConstructionCosts.csv"}\NormalTok{)}
 \FunctionTok{paired\_observed\_plot}\NormalTok{(costs)}
 
-\NormalTok{costs\_diff }\OtherTok{\textless{}{-}}\NormalTok{ costs }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\#create a new dataset called datasetname2 (not the same dataset name)}
-  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{differences =}\NormalTok{ Swear }\SpecialCharTok{{-}}\NormalTok{ Neutral)}
+\NormalTok{costs\_diff }\OtherTok{\textless{}{-}}\NormalTok{ costs }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{differences =}\NormalTok{ Actual }\SpecialCharTok{{-}}\NormalTok{ Estimate)}
 \NormalTok{costs\_diff }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ differences))}\SpecialCharTok{+}
   \FunctionTok{geom\_boxplot}\NormalTok{()}\SpecialCharTok{+}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Boxplot of the pairwise differences between the estimate and actual construction costs"}\NormalTok{,}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Boxplot of the pairwise differences"}\NormalTok{,}
        \AttributeTok{x =} \StringTok{"Differences in construction cost (actual {-} estimated)"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
@@ -12006,8 +12006,8 @@ The following code gives the summary statistics for the pairwise differences.
 \begin{Highlighting}[]
 \NormalTok{costs\_diff }\SpecialCharTok{\%\textgreater{}\%} 
   \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(differences))}
-\CommentTok{\#\textgreater{}     min   Q1 median Q3  max     mean       sd  n missing}
-\CommentTok{\#\textgreater{} 1 {-}44.3 {-}0.8    5.7 18 57.2 7.673494 19.47094 83       0}
+\CommentTok{\#\textgreater{}   min Q1 median  Q3 max     mean       sd   n missing}
+\CommentTok{\#\textgreater{} 1 {-}25 20     60 100 600 69.52957 62.01345 372       0}
 \end{Highlighting}
 \end{Shaded}
 
@@ -12032,7 +12032,7 @@ The following code gives the summary statistics for the pairwise differences.
 To find the standardized statistic for the paired differences we will use the following formula:
 
 \[T = \frac{\bar{x}_d}{SE(\bar{x}_d)},\]
-
+\newpage
 where the standard error of the sample mean difference is:
 
 \[SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.\]
@@ -12052,16 +12052,16 @@ where the standard error of the sample mean difference is:
 \setcounter{enumi}{7}
 \tightlist
 \item
-  Calculate the standardized statistic.
+  How many standard errors is the observed mean difference from the null mean difference?
 \end{enumerate}
 
 \vspace{0.5in}
 
-Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) into the \texttt{pt()} function. For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size. You should therefore use \texttt{df} = \(n_d-1 = 372 - 1 = 371\) and \texttt{lower.tail\ =\ TRUE} to find the p-value. Highlight and run line 31.
+Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) into the \texttt{pt()} function. For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size. You should therefore use \texttt{df} = \(n_d-1 = 372 - 1 = 371\) and \texttt{lower.tail\ =\ FALSE} to find the p-value. Highlight and run line 31.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\DecValTok{2}\SpecialCharTok{*}\FunctionTok{pt}\NormalTok{(xx, }\AttributeTok{df=}\DecValTok{371}\NormalTok{, }\AttributeTok{lower.tail=}\ConstantTok{TRUE}\NormalTok{)}
+\DecValTok{2}\SpecialCharTok{*}\FunctionTok{pt}\NormalTok{(xx, }\AttributeTok{df=}\DecValTok{371}\NormalTok{, }\AttributeTok{lower.tail=}\ConstantTok{FALSE}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -12072,46 +12072,63 @@ Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) i
   Explain why we multiplied by 2 in the code above.
   \vspace{0.3in}
 \item
-  Interpret the p-value in context of the study.
-  \vspace{0.8in}
+  Explain why we found the area above the T-score using \texttt{lower.tail\ =\ FALSE} in the code above.
+  \vspace{0.3in}
 \item
-  Do you expect the 95\% confidence interval to contain the null value of zero? Explain your answer.
+  What does this p-value mean, in the context of the study? It is the probability of what\ldots assuming what?
   \vspace{0.8in}
-\item
-  Is the p-value found using theory-based methods similar to the simulation p-value found in the in-class activity?
 \end{enumerate}
 
-\vspace{0.5in}
-
-To calculate the 99\% theory-based confidence interval for the paired mean difference, use the following formula:
+To calculate a theory-based confidence interval for the paired mean difference, use the following formula:
 
 \[\bar{x}_d\pm t^* SE(\bar{x}_d).\]
 
-We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. For a 99\% confidence level, we are finding the \(t^*\) value at the 99.5th percentile with \texttt{df} = \(n_d - 1 = 33 - 1 = 32\).
+We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. The code below will return the 95th percentile of the \(t\) distribution with \texttt{df} = \(n_d - 1 = 372 - 1 = 371\).
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{qt}\NormalTok{(}\FloatTok{0.995}\NormalTok{, }\AttributeTok{df =} \DecValTok{32}\NormalTok{, }\AttributeTok{lower.tail=}\ConstantTok{TRUE}\NormalTok{)}
-\CommentTok{\#\textgreater{} [1] 2.738481}
+\FunctionTok{qt}\NormalTok{(}\FloatTok{0.95}\NormalTok{, }\AttributeTok{df =} \DecValTok{371}\NormalTok{, }\AttributeTok{lower.tail=}\ConstantTok{TRUE}\NormalTok{)}
+\CommentTok{\#\textgreater{} [1] 1.648971}
 \end{Highlighting}
 \end{Shaded}
 
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/tstar-1} 
+
+}
+
+\caption{t-distribution with 371 degrees of freedom}\label{fig:tstar}
+\end{figure}
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
-\tightlist
+\setcounter{enumi}{12}
 \item
-  Calculate the 99\% confidence interval for the paired mean difference using theory-based methods.
+  In Figure @\ref(fig:tstar), you see a t-distribution with 371 degrees of freedom. Label \(t^\star\) and \(-t^\star\) on that distribution. Write on the plot the percent of the \(t_{371}\)-distribution that is below \(-t^\star\), between \(-t^\star\) and \(t^\star\), and above \(t^\star\). Then use your plot to determine the confidence level associated with the \(t^\star\) value obtained.
+  \vspace{0.3in}
+\item
+  Calculate the margin of error for the true paired mean difference using theory-based methods.
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{14}
 \tightlist
 \item
-  Interpret the 95\% confidence interval in context of the study.
+  Calculate the confidence interval for the true paired mean difference using theory-based methods.
+\end{enumerate}
+
+\vspace{0.8in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{14}
+\tightlist
+\item
+  Interpret the confidence interval in context of the study.
 \end{enumerate}
 
 \vspace{1in}
@@ -12186,10 +12203,15 @@ For each of the following scenarios, determine whether the samples are paired or
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
+  Researchers interested in studying the effect of a medical treatment on insulin rate measured insulin rates of 30 patients before and after the medical treatment.
+  \vspace{0.3in}
 \item
-  \textbf{GS }
+  \textbf{A university is planning to bring emotional support animals to campus during finals week and wants to determine which type of animals are more effective at calming students. Anxiety levels will be measured before and after each student interacts with either a dog or a cat. The university will then compare change in anxiety levels between the `dog' people and the `cat' people.}
+  \vspace{0.3in}
+\item
+  An industry leader is investigating a possible wage gap between male and non-male employees. Twenty companies within the industry are randomly selected and the average salary for all males and non-males in mid-management positions is recorded for each company.
+  \vspace{0.3in}
 \end{enumerate}
 
 \hypertarget{swearing}{%
@@ -12212,32 +12234,35 @@ Profanity (language considered obscene or taboo) and society's attitude about it
 \setcounter{enumi}{4}
 \tightlist
 \item
-  Write out the null hypothesis in words for this study.
+  Write out the null hypothesis in proper notation for this study.
 \end{enumerate}
 
 \vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
+\setcounter{enumi}{5}
 \tightlist
 \item
-  Write out the alternative hypothesis in proper notation for this study.
+  What sign (\(<\), \(>\), or \(\neq\)) would you use in the alternative hypothesis for this study? Explain your choice.
 \end{enumerate}
 
 \vspace{0.5in}
 
-Upload and open the \texttt{R} script file for Week 12 lab. Upload and import the csv file, \texttt{swearing}. Enter the name of the data set (see the environment tab) for datasetname in the \texttt{R} script file in line 7. Write a title for the boxplots in line 11. Highlight and run lines 1--13 to load the data and create plots of the data.
+Upload and open the \texttt{R} script file for Week 12 lab. Upload and import the csv file, \texttt{swearing}. Enter the name of the data set (see the environment tab) for datasetname in the \texttt{R} script file in line 7. Write a title for the boxplots in line 11. Highlight and run lines 1--13 to load the data and create plots of the data. You may use the arrows on the plots tab to view both graphical representations of the data.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{datasetname }\OtherTok{\textless{}{-}}\NormalTok{ swearing }
-\NormalTok{swearing }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# Data set piped into...}
-  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ Baseweight, }\AttributeTok{x =}\NormalTok{ Trail))}\SpecialCharTok{+}  \CommentTok{\# Identify variables}
-  \FunctionTok{geom\_boxplot}\NormalTok{()}\SpecialCharTok{+}  \CommentTok{\# Tell it to make a box plot}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"xx"}\NormalTok{,  }\CommentTok{\# Title}
-       \AttributeTok{x =} \StringTok{"Trail"}\NormalTok{,    }\CommentTok{\# x{-}axis label}
-       \AttributeTok{y =} \StringTok{"Baseweight(lbs)"}\NormalTok{)  }\CommentTok{\# y{-}axis label}
+\FunctionTok{paired\_observed\_plot}\NormalTok{(swearing)}
+
+\NormalTok{swearing\_diff }\OtherTok{\textless{}{-}}\NormalTok{ swearing }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{differences =}\NormalTok{ Swear }\SpecialCharTok{{-}}\NormalTok{ Neutral)}
+\NormalTok{swearing\_diff }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ differences))}\SpecialCharTok{+}
+  \FunctionTok{geom\_boxplot}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Boxplot of the pairwise differences"}\NormalTok{,}
+       \AttributeTok{x =} \StringTok{"Differences in pain tolerance (swearing condition {-} neutral condition)"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -12246,28 +12271,30 @@ Upload and open the \texttt{R} script file for Week 12 lab. Upload and import th
 \setcounter{enumi}{5}
 \tightlist
 \item
-  Based on the plots, which trail has the highest median baseweight?
-  \vspace{0.2in}
+  Based on the plots, does there appear to be some evidence in favor of the alternative hypothesis? How do you know?
+  \vspace{0.4in}
 \end{enumerate}
 
-Enter the name of the explanatory variable for \texttt{explanatory} and the name of the response variable for \texttt{response} in line 17. Highlight and run lines 16--17 to get the summary statistics for the data.
+Highlight and run lines 15--16 to get the summary statistics for the data.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{hikes }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{summarize}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(response}\SpecialCharTok{\textasciitilde{}}\NormalTok{explanatory))}
+\NormalTok{swearing\_diff }\SpecialCharTok{\%\textgreater{}\%} 
+    \FunctionTok{summarise}\NormalTok{(}\FunctionTok{favstats}\NormalTok{(differences))}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{6}
-\tightlist
 \item
-  \textbf{Calculate the summary statistic for this study. Use appropriate notation.}
+  What is the value of \(\overline{x_d}\)? What is the sample size?
+  \vspace{0.25in}
+\item
+  \textbf{How far, on average, is each difference in pain tolerance from the mean of the differences in pain tolerance? What is the appropriate notation for this value?}
 \end{enumerate}
 
-\vspace{1in}
+\vspace{0.5in}
 
 \hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-2}{%
 \subsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-2}}
@@ -12275,10 +12302,10 @@ Enter the name of the explanatory variable for \texttt{explanatory} and the name
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{7}
+\setcounter{enumi}{8}
 \tightlist
 \item
-  \textbf{Using the provided graphs and summary statistics, determine if it would make the most sense to use theory-based methods or simulation methods. Explain your reasoning.}
+  Using the provided graphs and summary statistics, determine if it would make the most sense to use theory-based methods or simulation methods. Explain your reasoning.
 \end{enumerate}
 
 \vspace{0.8in}
@@ -12287,16 +12314,16 @@ Enter the name of the explanatory variable for \texttt{explanatory} and the name
 \subsection*{Hypothesis test}\label{hypothesis-test-1}}
 \addcontentsline{toc}{subsection}{Hypothesis test}
 
-Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that there is no association between the two variables. This means that the base weight observed in the data set would have been the same regardless of the type of trails.
+Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that swearing does not effect pain tolerance, or that the length of time a subject kept their hand in the water would be the same whether the patient was swearing or not.
 
-We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of differences in sample means and compute a p-value.
+We will use the \texttt{paired\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample means differences and compute a p-value.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
+\setcounter{enumi}{9}
 \tightlist
 \item
-  When using the \texttt{two\_mean\_test()} function, we need to enter the name of the response variable, \texttt{Baseweight}, and the name of the explanatory variable, \texttt{Trail}, for the formula. The name of the data set as shown above is \texttt{hikes}. What values should be entered for each of the following to create 1000 simulated samples?
+  When using the \texttt{paired\_test()} function, we need to enter the name of the data set, either the order of subtraction (if the data set has both measurements) or the name of the differences (if the data set contains them). We will also need to provide \texttt{R} with the observed mean difference, the direction of the alternative hypothesis, and the shift required in order to force the null hypothesis to be true. The name of the data set as shown above is \texttt{swearing\_diff} and the column of differences is called \texttt{differences}. What values should be entered for each of the following to create 1000 simulated samples?
 \end{enumerate}
 
 \vspace{1mm}
@@ -12304,15 +12331,7 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
 \begin{itemize}
 \tightlist
 \item
-  First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? \texttt{"CDT"} or \texttt{"PCT"}):
-\end{itemize}
-
-\vspace{.2in}
-
-\begin{itemize}
-\tightlist
-\item
-  Number of repetitions:
+  shift:
 \end{itemize}
 
 \vspace{.2in}
@@ -12333,22 +12352,31 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
 
 \vspace{.2in}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
+\begin{itemize}
 \tightlist
 \item
-  Simulate a null distribution and compute the p-value. Using the \texttt{R} script file for this activity, enter your answers for question 9 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 20--25. \textbf{Upload a copy of the null distribution created to Gradescope for your group.}
+  Number of repetitions:
+\end{itemize}
+
+\vspace{.2in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  Simulate a null distribution and compute the p-value. Using the \texttt{R} script file for this lab, enter your answers for question 10 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 19--25.
 \end{enumerate}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{two\_mean\_test}\NormalTok{(Baseweight}\SpecialCharTok{\textasciitilde{}}\NormalTok{Trail, }
-         \AttributeTok{data =}\NormalTok{ hikes,  }\CommentTok{\# Variables and data}
-         \AttributeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# First outcome in order of subtraction}
-         \AttributeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\# Number of simulations}
-         \AttributeTok{as\_extreme\_as =}\NormalTok{ xx,  }\CommentTok{\# Observed statistic}
-         \AttributeTok{direction =} \StringTok{"xx"}\NormalTok{)  }\CommentTok{\# Direction of alternative: "greater", "less", or "two{-}sided"}
+\FunctionTok{paired\_test}\NormalTok{(}\AttributeTok{data =}\NormalTok{ swearing\_diff}\SpecialCharTok{$}\NormalTok{differences,   }\CommentTok{\# Vector of differences }
+                                 \CommentTok{\# or data set with column for each group}
+        \AttributeTok{shift =}\NormalTok{ xx,   }\CommentTok{\# Shift needed for bootstrap hypothesis test}
+        \AttributeTok{as\_extreme\_as =}\NormalTok{ xx,  }\CommentTok{\# Observed statistic}
+        \AttributeTok{direction =} \StringTok{"xx"}\NormalTok{,  }\CommentTok{\# Direction of alternative}
+        \AttributeTok{number\_repetitions =}\NormalTok{ xx,  }\CommentTok{\# Number of simulated samples for null distribution}
+        \AttributeTok{which\_first =} \DecValTok{1}\NormalTok{)  }\CommentTok{\# Not needed when using calculated differences}
 \end{Highlighting}
 \end{Shaded}
 
@@ -12362,20 +12390,20 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{10}
-\tightlist
-\item
-  \textbf{Report the p-value. Based off of this p-value, write a conclusion to the hypothesis test.}
-\end{enumerate}
-
-\vspace{0.8in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{11}
 \tightlist
 \item
-  Do you expect the 95\% confidence interval to contain the null value of zero? Explain.
+  \textbf{Report the p-value. Based off of this p-value and a 1\% significance level, what decision would you make about the null hypothesis? What potential error might you be making based on that decision?}
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\tightlist
+\item
+  Do you expect the 98\% confidence interval to contain the null value of zero? Explain.
 \end{enumerate}
 
 \vspace{0.8in}
@@ -12384,41 +12412,42 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
 \subsection*{Confidence interval}\label{confidence-interval-1}}
 \addcontentsline{toc}{subsection}{Confidence interval}
 
-We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
-\tightlist
-\item
-  Using bootstrapping find a 95\% confidence interval. Using the provided \texttt{R} script file, enter the variable names and data set name as in the \texttt{two\_mean\_test()} function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal. Highlight and run lines 28--32. Report the 95\% confidence interval in interval notation.
-\end{enumerate}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{two\_mean\_bootstrap\_CI}\NormalTok{(RESPONSE }\SpecialCharTok{\textasciitilde{}}\NormalTok{ EXPLANATORY, }
-                      \AttributeTok{data =}\NormalTok{ DATASET,  }\CommentTok{\# Variables and data}
-                      \AttributeTok{first\_in\_subtraction =} \StringTok{"xx"}\NormalTok{, }\CommentTok{\# First value in order of subtraction}
-                      \AttributeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{,  }\CommentTok{\# Number of simulations}
-                      \AttributeTok{confidence\_level =}\NormalTok{ xx)}
-\end{Highlighting}
-\end{Shaded}
-
-\vspace{0.3in}
+We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample mean differences and calculate a confidence interval.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{13}
 \tightlist
 \item
-  Interpret the interval you calculated in question 13.
+  Using bootstrapping find a 98\% confidence interval. Using the provided \texttt{R} script file, enter the variable names and data set name as in the \texttt{paired\_bootstrap\_CI()} function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal. Highlight and run lines 28--31. \textbf{Upload a copy of the bootstrap distribution created to Gradescope for your group.}
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{paired\_bootstrap\_CI}\NormalTok{(}\AttributeTok{data =}\NormalTok{ swearing\_diff}\SpecialCharTok{$}\NormalTok{differences, }\CommentTok{\# Enter vector of differences}
+                    \AttributeTok{number\_repetitions =} \DecValTok{1000}\NormalTok{, }\CommentTok{\# Number of bootstrap samples for CI}
+                    \AttributeTok{confidence\_level =}\NormalTok{ xx,  }\CommentTok{\# Confidence level in decimal form}
+                    \AttributeTok{which\_first =} \DecValTok{1}\NormalTok{)  }\CommentTok{\# Not needed when entering vector of differences}
+\end{Highlighting}
+\end{Shaded}
+
+~~~~~~~Sketch the bootstrap distribution created using the code above. Report the 98\% confidence interval in interval notation.
+
+\vspace{1.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{14}
+\tightlist
+\item
+  Interpret the \emph{confidence level} of the in you interval calculated in question 14.
 \end{enumerate}
 
 \vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{23}
+\setcounter{enumi}{15}
 \tightlist
 \item
   Write a paragraph summarizes the results of this study as if you were describing the results to your roommate. Be sure to describe:
