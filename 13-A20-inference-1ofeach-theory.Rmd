@@ -65,6 +65,7 @@ SUD %>%  # Data set piped into...
        y = "Length of Stay (days)")  # y-axis label
 ```
     
+\newpage
 
 The following code gives the summary statistics for the data.
 

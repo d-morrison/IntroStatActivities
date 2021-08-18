@@ -88,18 +88,15 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 
 5.  What is the value of the multiplier needed to calculate the 95\% confidence interval for the true proportion of male boxers that are left-handed?
 
-\vspace{1in}
+\vspace{0.3in}
 
 6.  Calculate the margin of error for the 95\% confidence interval.
-
 \vspace{1in}
 
 7.  Calculate the 95\% confidence interval for the parameter of interest.
-
 \vspace{0.5in}
 
 8.  Interpret the 95\% confidence interval in the context of the problem.
-
 \vspace{1in}
 
 9. Is the null value, 0.1, contained in the 95\% confidence interval?  Explain, based on the p-value from the last activity, why you expected this to be true.
@@ -147,6 +144,8 @@ Suppose in another sample of 230 male boxers we saw that 37 were left-handed.
 2. The confidence interval calculated using theory-based methods should be similar to the confidence interval found using simulation methods provided the success-failure condition is met.
 
 3.  A smaller sample size will increase the margin of error which results in a wider confidence interval. 
+
+\newpage 
 
 ### Additional notes
 

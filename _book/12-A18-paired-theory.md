@@ -19,7 +19,7 @@
 
 ### Terminology review
 
-In this week's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
+In today's activity, we will analyze paired quantitative data using theory-based methods. Some terms covered in this activity are:
 
 * Paired data
 
@@ -41,7 +41,7 @@ To review these concepts, see Sections 6.1 and 6.2 in the textbook.
 
 The year 2021 has seen massive fluctuations in construction costs.  Lumber futures alone soared from roughly 700 USD/1,000 board feet in January to a peak of 1711 USD/1,000 board feet in May, only to plummet back to 500 USD/1,000 board feet by August. Researchers would like to determine how these wildly variable costs have impacted the accuracy of construction cost estimates.  They collect a random sample of 372 construction projects from 20 randomly selected U.S. zip codes to investigate if current construction cost estimates (in 1,000 U.S. Dollars) match, on average, the actual construction cost (in 1,000 U.S. dollars). 
 
-#### Identify the scenario
+#### Identify the scenario {-}
 
 1. Should these observations be considered paired or independent?  Explain your answer.
 \vspace{0.5in}

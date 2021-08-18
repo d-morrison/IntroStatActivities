@@ -168,7 +168,7 @@ Suppose that we want to show that the true proportion of male boxers **differs**
 
 16. Suppose instead of 500 male boxers the researchers only took a sample of 300 male boxers and found the same proportion of male boxers that are left-handed.  Calculate the standardized statistic for this new sample.
 
-\vspace{1in}
+\vspace{0.8in}
 
 Use Rstudio find the p-value for this new sample.  Enter the value of the standardized statistic found in question 14 for xx in line 12.  Highlight and run lines 12--14.
 
@@ -185,7 +185,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 18. Suppose another sample of 500 male boxers was taken and 68 were found to be left-handed.  Calculate the standardized statistic for this new sample.
 
-\vspace{1in}
+\vspace{0.8in}
 
 Use Rstudio find the p-value for this new sample.  
 
@@ -204,15 +204,15 @@ pnorm(xx, # Enter value of standardized statistic
 
 a) Switching to a two-sided test.
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 b) Using a smaller sample size.
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 c) Using a sample statistic closer to the null value.
 
-\vspace{0.5in}
+\vspace{0.4in}
 
 ### Take-home messages
 

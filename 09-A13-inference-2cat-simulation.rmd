@@ -132,9 +132,13 @@ We will now simulate a **null distribution** of sample differences in proportion
 
 \vspace{0.5in}
 
-13. Next, we would mix the cards together and shuffle into two piles.  How many cards would be in each pile?  What would each pile represent?
+13. Next, we would mix the cards together and shuffle into two piles.  
 
-\vspace{0.8in}
+\rgi How many cards would be in each pile?  
+\vspace{0.1in}
+
+\rgi What would each pile represent?
+\vspace{0.5in}
 
 14. Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
 
@@ -147,6 +151,8 @@ We will now simulate a **null distribution** of sample differences in proportion
 To create the null distribution of differences in sample proportions, we will use the `two_proportion_test()` function in `R` (in the `catstats` package).  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `good`), the outcome for the explanatory variable that is first in subtraction, number of repetitions, the outcome for the response variable that is a success (what the numerator counts when calculating a sample proportion), and the direction of the alternative hypothesis.
 
 The response variable name is `Behavior` and the explanatory variable name is `Condition`.
+
+\newpage 
 
 16.  What inputs should be entered for each of the following to create the simulation?
 \vspace{1mm}

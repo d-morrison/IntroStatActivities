@@ -121,7 +121,7 @@ paired_test(data = swearing_diff$differences,   # Vector of differences
         number_repetitions = xx,  # Number of simulated samples for null distribution
         which_first = 1)  # Not needed when using calculated differences
 ```
-|        Sketch the null distribution created using the code above.
+|        Sketch the null distribution created using the `paired_test` code.
 
 \vspace{1.5in}
 
@@ -139,7 +139,7 @@ paired_test(data = swearing_diff$differences,   # Vector of differences
 
 We will use the `paired_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample mean differences and calculate a confidence interval. 
 
-14. Using bootstrapping find a 98\% confidence interval. Using the provided `R` script file, enter the variable names and data set name as in the `paired_bootstrap_CI()` function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 28--31. **Upload a copy of the bootstrap distribution created to Gradescope for your group.** 
+14. Using bootstrapping and the provided `R` script file, find a 98\% confidence interval. Enter the variable names and data set name as in the `paired_bootstrap_CI()` function, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 28--31. **Upload a copy of the bootstrap distribution created to Gradescope for your group.** 
 
 ```r
 paired_bootstrap_CI(data = swearing_diff$differences, # Enter vector of differences
@@ -156,7 +156,7 @@ paired_bootstrap_CI(data = swearing_diff$differences, # Enter vector of differen
 
 \vspace{0.8in}
 
-16.  Write a paragraph summarizing the results of this study as if you were describing the results to your roommate.  Be sure to describe:
+16.  Write a paragraph summarizing the results of this study as if you were describing the results to your roommate.  **Upload a copy of group's paragraph to Gradescope.** Be sure to describe:
 
 * Summary statistic
 

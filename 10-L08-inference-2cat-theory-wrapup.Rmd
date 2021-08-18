@@ -46,7 +46,7 @@ diabetes %>% group_by(treatment) %>% count(outcome)
 5. Using the research question, write the alternative hypothesis in notation.
 \vspace{0.3in}
 
-6. Calculate the summary statistic.  Use appropriate notation.
+6. **Calculate the summary statistic.  Use appropriate notation.**
 \vspace{0.3in}
 
 Fill in the missing values/names in the `R` script file in the two-proportion_test function to create the null distribution and find the simulation p-value for the test.
@@ -71,18 +71,17 @@ two_proportion_test(formula = outcome~treatment, # response ~ explanatory
 \vspace{0.8in}
 
 10.  **Will a 95\% simulation confidence interval contain the null value of zero? Explain your answer.**
+\vspace{0.8in}
 
 11. Calculate the standard error for a difference in proportions to create a 95\% confidence interval.  
-
 \vspace{1in}
 
-12.  Using the multiplier of $z^*$ = 1.96 and the standard error found in question 11, calculate a 95\% confidence interval for the parameter of interest.
-
-\vspace{0.5in}
+12.  Use the multiplier of $z^*$ = 1.96 and the standard error found in question 11 to calculate a 95\% confidence interval for the parameter of interest.
+\vspace{1in}
 
 13. Interpret the confidence interval found in question 12 in context of the problem.
 
-\vspace{1in}
+\vspace{0.8in}
 
 14. Write a conclusion to the research question. 
 \vspace{0.8in}

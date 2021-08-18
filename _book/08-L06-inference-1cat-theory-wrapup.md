@@ -62,7 +62,7 @@ The red distribution you see is the scaled-Normal distribution representing the 
 4. Check the box for "Show Critical Value(s) and Rejection Region(s)".  You will now see a vertical line on the plot indicating the *minimum* sample proportion which would lead to reject the null hypothesis.  What is this value?  
 \vspace{0.25in}
 
-5. Notice that there are some sample proportions under the red line (when the null hypothesis is true) which would lead us to reject the null hypothesis.  Give the range of sample proportions would lead to rejecting the null hypothesis when the null hypothesis is true?  What is the statistical name for this mistake?
+5. Notice that there are some sample proportions under the red line (when the null hypothesis is true) which would lead us to reject the null hypothesis.  Give the range of sample proportions which would lead to rejecting the null hypothesis when the null hypothesis is true?  What is the statistical name for this mistake?
 \vspace{0.4in}
 
 Check the "Type I Error" box under **Display**.  This should verify (or correct) your answer to question 5!  The area shaded in red represents the probability of making a **type 1 error** in our hypothesis test.  Recall that a type 1 error is when we reject the null hypothesis even though the null hypothesis is true.  To reject the null hypothesis, the p-value, which was found assuming the null hypothesis is true, must be less than or equal to the significance level.  Therefore the significance level is the maximum probability of rejecting the null hypothesis when the null hypothesis is true, so the significance level IS the probability of making a type 1 error in a hypothesis test!
@@ -85,7 +85,7 @@ The blue distribution that appears represents what the company believes, that 0.
 9.  **Complete the following equation: Power + Type 2 Error Rate =  .  Explain why that equation makes sense.** *Hint: Consider what power and type 2 error are conditional on.*
 \vspace{0.8in}
 
-Now let's investigate how changes in different factors influences the power of a test.
+Now let's investigate how changes in different factors influence the power of a test.
 
 10. Using the same sample size and significance level, change the “True value of $p$” to see the effect on Power.
 \setlength\tabcolsep{0.5cm}
@@ -138,6 +138,8 @@ Now let's investigate how changes in different factors influences the power of a
 19.  **Complete the power analysis for this physical therapy company.  The company believes 70% of their patients will return to their sport within 8 months of ACL surgery.  They want to limit the probability of a type 1 error to 10% and the probability of a type 2 error to 15%.  What is the minimum number of athletes the company will need to collect data from in order to meet these goals?  Use the applet to answer this question, then download your image created and upload the file to Gradescope.**
 \vspace{0.25in}
 
+\newpage
+
 20.  Based on the goals outlined in question 19, which mistake below is the company more concerned about?  Explain your answer.
 
 * Not being able to advertise their ACL recovery program is better than average when their program really is better.
@@ -146,24 +148,5 @@ Now let's investigate how changes in different factors influences the power of a
 
 \vspace{0.8in}
 
-
-### Take-home messages
-
-1. The following will increase the power in a hypothesis test:
-
-* Increase the sample size
-
-* Increase the significance level
-
-* Increase the distance between the hypothesized null value and the true parameter value
-
-2.  The significance level of a test is the maximum probability of making a type 1 error.
-
-
-3.  Power + type 2 error rate = 1.
-
-### Additional notes
-
-Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 \newpage

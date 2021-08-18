@@ -34,6 +34,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 1.  Write a research question involving a single categorical variable that can be answered using the data set.  
 
 \vspace{0.8in}
+\newpage
 
 2. Use the provided Exam 2 Review `R` script file and analyze this research question.
 

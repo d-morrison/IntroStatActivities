@@ -70,6 +70,7 @@ SUD %>%  # Data set piped into...
 
 \begin{center}\includegraphics[width=0.7\linewidth]{13-A20-inference-1ofeach-theory_files/figure-latex/unnamed-chunk-1-1} \end{center}
     
+\newpage
 
 The following code gives the summary statistics for the data.
 
