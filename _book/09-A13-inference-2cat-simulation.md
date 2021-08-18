@@ -55,7 +55,7 @@ good %>% group_by(Behavior) %>% count(Condition)
 #> 4 No help  No hurry      9
 ```
 
-#### Vocabulary review. {-}
+#### Vocabulary review {-}
 
 1.  What is the name of the explanatory variable in the `R` output? What are its categories?
 

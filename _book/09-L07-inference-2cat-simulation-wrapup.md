@@ -15,7 +15,7 @@
 
 ### COVID Infection and Vaccination Rates
 
-According to the *Washington Post* "States with higher vaccination rates now have markedly fewer coronavirus cases, as infections are dropping in places where most residents have been immunized and are rising in many places people have not."  In this article they found that there are differences in infection rates for different counties within a specific state.  To check this claim, a random sample of 125 counties from different states was assessed.  Vaccination rates were found for each county and broken up into groups, high and low, based on a vaccination rate of 40\%.  Those counties with a vaccination rate of greater than 40\% was considered a high vaccination rate.  The 2nd variable measured on these counties was whether the number of cases per 100,000 residents was less than or greater than 4.25, the national rate at that time.  Researchers want to assess if counties with a high vaccination rate are more likely to have lower coronavirus cases.
+According to the *Washington Post* "States with higher vaccination rates now have markedly fewer coronavirus cases, as infections are dropping in places where most residents have been immunized and are rising in many places people have not."  In this article they found that there are differences in infection rates for different counties within a specific state.  To check this claim, a random sample of 125 counties from different states was assessed.  Vaccination rates were found for each county and broken up into groups, high and low, based on a threshold vaccination rate of 40\%.  Those counties with a vaccination rate of greater than 40\% were considered high vaccination rate.  The 2nd variable measured on these counties was whether the number of cases per 100,000 residents was less than or greater than 4.25, the national rate at that time.  Researchers want to assess if counties with a high vaccination rate are more likely to have lower coronavirus case rates.
 
 Upload and open the `R` script file for Week 9 lab. Upload and import the csv file, `covid_vaccinations`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 6. Highlight and run lines 1--7 to get the counts for each combination of categories.
 
@@ -50,7 +50,7 @@ covid %>% group_by(vaccination_rate) %>% count(cases)
 
 \vspace{1in}
 
-6. **Calculate the difference in proportion of counties with a lower than the national average of cases for those with a high and low vaccination rate.  Use high - low for the order of subtraction.  Use appropriate notation.**
+6. **Calculate the difference in proportion of counties with a lower than the national average rate of cases for those with high and low vaccination rates.  Use high - low for the order of subtraction.  Use appropriate notation.**
 
 \vspace{0.8in}
 
@@ -66,7 +66,7 @@ ggplot(aes(x = explanatory, fill = response)) +   # This specifies the variables
        y = "") +  # Remove y axis label
     scale_fill_grey()  # Make figure black and white
 ```
-7.  Does there appear to be an association between variables based on the plot?  Explain your answer.
+7.  Does there appear to be an association between the variables based on the plot?  Explain your answer.
 
 \vspace{1in}
 

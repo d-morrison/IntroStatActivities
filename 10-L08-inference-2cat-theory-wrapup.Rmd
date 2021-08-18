@@ -1,4 +1,4 @@
-## Week 10 - Lab 8:  Diabetes
+## Week 10 Lab:  Diabetes
 
 \setstretch{1}
 
@@ -17,7 +17,7 @@
 
 ### Glycemic Control in Diabetic Adolescents
 
-Researchers compared the efficacy of two treatment regimens to achieve durable glycemic control in children and adolescents with recent-onset type 2 diabetes.  A convenience sample of patients 10 to 17 years of age with recent-onset type 2 diabetes were randomly assigned to either a medication (rosiglitazone) or a lifestyle-intervention program focusing on weight loss through eating and activity.  Researchers measured whether the patient still needs insulin (failure) or had glycemic control (success).  Of the 233 children who received the Rosiglitazone treatment,143 had glycemic control, while of the 234 who went through the lifestyle-intervention program, 125 had glycemic control. Is there evidence that there is difference in proportion of patients that achieve durable glycemic control between the two treatments?  Use Rosiglitazone – Lifestyle as the order of subtraction.
+Researchers compared the efficacy of two treatment regimens to achieve durable glycemic control in children and adolescents with recent-onset type 2 diabetes.  A convenience sample of patients 10 to 17 years of age with recent-onset type 2 diabetes were randomly assigned to either a medication (rosiglitazone) or a lifestyle-intervention program focusing on weight loss through eating and activity.  Researchers measured whether the patient still needs insulin (failure) or had glycemic control (success).  Of the 233 children who received the Rosiglitazone treatment, 143 had glycemic control, while of the 234 who went through the lifestyle-intervention program, 125 had glycemic control. Is there evidence that there is difference in proportion of patients that achieve durable glycemic control between the two treatments?  Use Rosiglitazone – Lifestyle as the order of subtraction.
 
 Upload and open the `R` script file for Week 10 lab. Upload and import the csv file, `diabetes`. Enter the name of the data set (see the environment tab) for `datasetname` in the R script file in line 4. Highlight and run lines 1--5 to get the counts for each combination of categories.
 
@@ -41,7 +41,7 @@ diabetes %>% group_by(treatment) %>% count(outcome)
 
 \vspace{0.8in}
 
-3. Is the success-failure condition to use theory-based methods for a hypothesis test met for each group.  Explain your answer.
+3. Is the success-failure condition to use theory-based methods for a hypothesis test met for each group?  Explain your answer.
 \vspace{1in}
 
 4.  Is the success-failure condition to find the theory-based confidence interval met for each group?  Explain your answer.
@@ -57,14 +57,14 @@ To find a confidence interval for the difference in proportions we will add and 
  $$\hat{p}_1-\hat{p}_2\pm z^*SE(\hat{p}_1-\hat{p}_2), \hspace{.2cm} \text{where}$$
  $$SE(\hat{p}_1-\hat{p}_2) = \sqrt{\frac{\hat{p}_1 (1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2 (1-\hat{p}_2)}{n_2}}$$
  
-Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in Activity 19!  Here, we use the sample proportions for each group to calculate the standard error for the difference in proportions since we are not assuming that the true difference is zero.
+Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in Activity 10a!  Here, we use the sample proportions for each group to calculate the standard error for the difference in proportions since we are not assuming that the true difference is zero.
 
 
 6. Calculate the standard error for a difference in proportions to create a 95\% confidence interval.  
 
 \vspace{1in}
 
-7. Interpret the value calculated in question 5 in context of the problem.
+7. Interpret the value calculated in question 6 in context of the problem.
 
 \vspace{1in}
 
@@ -83,7 +83,7 @@ qnorm(0.95) # Multiplier for 90% confidence interval
 
 \vspace{0.5in}
 
-10. Calculate the 90\% confidence interval for the difference in true proportion of . 
+10. Calculate the 90\% confidence interval for the difference in true proportion of children achieving glycemic control. Use Rosiglitazone – Lifestyle as the order of subtraction 
 
 \vspace{1in}
 

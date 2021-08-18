@@ -110,7 +110,7 @@ ggplot(aes(x = imdb_score)) +   # Name variable to plot
 
 To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for `variable` at line 20, highlight and run lines 19--24.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
-Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.76 would be counted in the bin 4.75--5.25.  
+Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.75 would be counted in the bin 4.75--5.25.  
 
 
 ```r
@@ -181,7 +181,7 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 
 ### Take-home messages
 
-1.	Histograms, box plots, and dot plots can all be used to graphically display a single quantitative variables.  
+1.	Histograms, box plots, and dot plots can all be used to graphically display a single quantitative variable.  
 
 2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5*IQR$ and greater than $Q_3 + 1.5*IQR$ are considered outliers and are graphically represented by a dot outside of the whiskers on the box plot.
 

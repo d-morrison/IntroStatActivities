@@ -41,7 +41,7 @@ Upload and open the `R` script file for Week 13 lab. Upload and import the csv f
 
 
 ```r
-datasetname <- hikes 
+datasetname -> hikes 
 hikes %>%  # Data set piped into...
   ggplot(aes(y = Baseweight, x = Trail))+  # Identify variables
   geom_boxplot()+  # Tell it to make a box plot
@@ -72,7 +72,7 @@ hikes %>%
 
 ### Hypothesis test {-}
 
-Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that there is no association between the two variables.  This means that the base weight observed in the data set would have been the same regardless of the type of trails.
+Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that there is no association between the two variables.  This means that the base weight observed in the data set would have been the same regardless of the trail hiked.
 
 We will use the `two_mean_test()` function in `R` (in the `catstats` package) to simulate the null distribution of differences in sample means and compute a p-value. 
 

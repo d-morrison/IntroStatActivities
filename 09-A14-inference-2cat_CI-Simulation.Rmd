@@ -34,7 +34,7 @@ Researchers at the Princeton University wanted to investigate influences on beha
 | Did Not Help Actor |        18       |          9         |   27  |
 | Total              |        20       |         20         |   40  |
 
-#### Vocabulary review. {-}
+#### Vocabulary review {-}
 
 1.  Report the point estimate for this study.  
 

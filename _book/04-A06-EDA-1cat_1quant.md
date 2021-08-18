@@ -147,15 +147,15 @@ ggplot(aes(x = revenue_mil)) +   # Name variable to plot
 
 
 \begin{center}\includegraphics[width=0.6\linewidth]{04-A06-EDA-1cat_1quant_files/figure-latex/unnamed-chunk-4-1} \end{center}
-8. Report the two measures of center for this data.
+8. Report the two measures of center for these data.
 
 \vspace{0.8in}
 
-9.  Report the two measures of spread for this data.
+9.  Report the two measures of spread for these data.
 
 \vspace{0.8in}
 
-To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub` into Rstudio.  Enter the variable name `revenue_mil` for `variable` in line 32 and 34 to summarize and create a boxplot of the data. Highlight and run lines 31--38.  
+To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub` into RStudio.  Enter the variable name `revenue_mil` for `variable` in line 32 and 34 to summarize and create a boxplot of the data. Highlight and run lines 31--38.  
 
 
 ```r

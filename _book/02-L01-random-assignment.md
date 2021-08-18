@@ -40,7 +40,7 @@ For the next exercises, identify the explanatory variable, the response variable
 
 \newpage
 
-1. The pharmaceutical company Moderna Therapeutics,  working in conjunction with the National Institutes of Health, conducted Phase 3 clinical trials towards a vaccine for COVID-19 last fall.  US clinical research sites enrolled 30,000 volunteers without COVID-19 to participate. Participants were randomly assigned to receive either the candidate vaccine or a saline placebo.  They were then followed to assess whether or not they developed COVID-19. The trial was double-blind, so neither the investigators nor the participants knew who was assigned to which group.
+1. The pharmaceutical company Moderna Therapeutics,  working in conjunction with the National Institutes of Health, conducted Phase 3 clinical trials of a vaccine for COVID-19 last fall.  US clinical research sites enrolled 30,000 volunteers without COVID-19 to participate. Participants were randomly assigned to receive either the candidate vaccine or a saline placebo.  They were then followed to assess whether or not they developed COVID-19. The trial was double-blind, so neither the investigators nor the participants knew who was assigned to which group.
 \vspace{0.1in}
     
     Explanatory variable:
@@ -124,7 +124,7 @@ When both these conditions are met, if we observe an association between the exp
 In this random assignment, what proportion of males are in group 1 (the placebo group?  What proportion of males are in group 2 (the drug group)?  What is the difference in proportion of males between the two groups (placebo - drug)?
 \vspace{0.25in}
 
-11.  Notice the difference in the two proportions is shown as a dot in the plot at the bottom of the web site.  Un-check the box for Animate under "Simulation" and click Randomize again.  Did you get the same difference in proportion of men between the placebo and drug groups?
+11.  Notice the difference in the two proportions is shown as a dot in the plot at the bottom of the web site.  Un-check the box for Animate under "Simulation" and click Randomize again.  Did you get the same difference in proportion of males between the placebo and drug groups?
 \vspace{0.25in}
 
 12.  Change Repetitions under "Simulation" to 998 (for 1000 total).  Copy the plot of the distribution of difference in proportions from each of the 1000 random assignments here.  Be sure to include a descriptive $x$-axis label. 
@@ -147,7 +147,7 @@ The diagram below summarizes these ideas about confounding variables and random 
 
 \begin{center}\includegraphics[width=0.4\linewidth]{02-L01-random-assignment_files/figure-latex/unnamed-chunk-1-1} \end{center}
 
-16.  **What is the purpose of random assignment of the cases in a study to the explanatory variable groups?**
+16.  **What is the purpose of random assignment of the subjects in a study to the explanatory variable groups?**
 \vspace{0.8in}
 
 17. Suppose the scientists here did randomly assign groups and found that the drug group has a higher proportion of subjects whose heart rates stabilized than the placebo group.  Can the scientists conclude the new drug *caused* the increased chance of stabilization?  Explain your answer.

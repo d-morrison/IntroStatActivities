@@ -1,8 +1,8 @@
 # Fall 2021 Calendar of In-Class Activities {-}
 
 
-This calendar only lists the in-class activities, Rstudio labs and exams each week. For required readings and videos as well as due dates for assignments, refer to the calendar at:  
-[https://mtstateintrostats.github.io/Syllabus/#Course_calendar](new calendar)
+This calendar only lists the in-class activities, RStudio labs and exams each week. For required readings and videos as well as due dates for assignments, refer to the calendar at:  
+[https://mtstateintrostats.github.io/Syllabus/#Course_calendar](https://mtstateintrostats.github.io/Syllabus/#Course_calendar)
 
 \begin{longtable}{|l|l|l|l|p{.55\textwidth}|}
 \hline
@@ -10,8 +10,8 @@ This calendar only lists the in-class activities, Rstudio labs and exams each we
 \endhead
 1& W& 8/25& Syllabus Review \\*
 1& F& 8/27& Martian Alphabet \\ \hline
-2& M& 8/30& Atrial Fibrillation \\*
-2& W& 9/1& American Indian Address \\* 
+2& M& 8/30& American Indian Address Part A \\*
+2& W& 9/1& American Indian Address Part B \\* 
 2& F& 9/3& Week 2 Lab \\ \hline
 3& M& 9/6& (\textit{No class}) \\*
 3& W& 9/8& What's the Probability? \\*

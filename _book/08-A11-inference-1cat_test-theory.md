@@ -203,7 +203,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 \vspace{0.3in}
 
-20.  Summarize how each of the following affected the p-value?
+20.  Summarize how each of the following affected the p-value:
 
 a) Switching to a two-sided test.
 

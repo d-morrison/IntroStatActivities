@@ -43,7 +43,7 @@ good <- read.csv("https://math.montana.edu/courses/s216/data/goodsam.csv")
 good %>% group_by(Behavior) %>% count(Condition)
 ```
 
-#### Vocabulary review. {-}
+#### Vocabulary review {-}
 
 1.  What is the name of the explanatory variable in the `R` output? What are its categories?
 

@@ -132,7 +132,7 @@ Overall (pooled) proportion of successes:
 4. What is the sample difference in proportions presented in this example?  What notation would be used to represent this value?
 \rgs
 
-5. What is the parameter (using a difference in proportion) representing in the context of this problem?  What notation would be used to represent this parameter?
+5. What is the parameter (using a difference in proportions) representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
 
 6. Write the null and the alternative hypotheses in words.
@@ -154,7 +154,7 @@ Overall (pooled) proportion of successes:
 \rgs
 \rgs
 
-11.	Calculate the standardized statistic
+11.	Calculate the standardized statistic.
 \rgs
 \rgs
 

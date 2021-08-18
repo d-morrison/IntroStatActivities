@@ -32,7 +32,7 @@ Some of the variables collected in the data set `Bear_Data` consist of the follo
 
 ```{r, echo = TRUE, fig.width=7,fig.height=6, collapse=FALSE}
 # Read in data set
-bears <- read.csv("data/Bear_Data.csv")
+bears <- read.csv("https://math.montana.edu/courses/s216/data/Bear_Data.csv")
 bears <- na.omit(bears)
 ```
 
@@ -201,9 +201,9 @@ regression_bootstrap_CI(Complaints~Food, # response ~ explanatory
 bears %>%
   ggplot(aes(x = Food, y = Complaints, color=Pop_Level))+  # Specify variables
   geom_point(aes(shape = Pop_Level), size = 3) +  # Add scatterplot of points
-  labs(x = "flipper length (mm)",  # Label x-axis
-       y = "body mass (g)",  # Label y-axis
-       color = "species",
-       title = "TITLE") + # Be sure to tile your plots
+  labs(x = "Food abundance rating",  # Label x-axis
+       y = "Number of complaints",  # Label y-axis
+       color = "Population level", shape = "Population level",
+       title = "TITLE") + # Be sure to title your plots
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```

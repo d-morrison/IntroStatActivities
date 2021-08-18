@@ -42,7 +42,7 @@ Correlation:
 
 #### Notes {-}
 
-General equation of a linear regression for a *population*: $y= \beta_0+ \beta_1 x+\epsilon$, where
+General equation of a linear model for a *population*: $y= \beta_0+ \beta_1 x+\epsilon$, where
 	
 \rgi $x$ represents 
 \rgs
@@ -132,7 +132,7 @@ True or false: A positive residual indicates the data point is above the regress
 4.	Calculate the predicted head length for a possum with a 76.0 cm total length.
 \rgs
 
-5.	One of the possums in the data set has a total length of 76.0 cm and a head length of 85.1 cm.  Calculate the residual for this possum.  Does this possum lie above or below the regression line?
+5.	One of the possums in the data set has a total length of 76.0 cm and a head length of 85.1 mm.  Calculate the residual for this possum.  Does this possum lie above or below the regression line?
 \rgs
 
 ###  Section 3.2 (Least squares regression) {-}
@@ -167,8 +167,7 @@ $y$-intercept:
 \rgs
 
 Extrapolation: 
-
-\rgi Assumes the pattern seen in the data extends beyond the data collected!
+\rgs 
 
 Coefficient of determination: 
 
@@ -284,10 +283,10 @@ Section 3.4 presents five tutorials on analyzing two quantitative variables in `
 
 #### Notes {-}
 
-Statistics summarize 
+Statistics summarize: 
 \rgs
 
-Parameters summarize 
+Parameters summarize: 
 \rgs
  
 What are the two ways to calculate the coefficient of determination?
@@ -332,7 +331,7 @@ Look at the table of vocabulary terms.  If there are any you do not know, be sur
 
 #### Reminder from Section 3.1 {-} 
 
-Use color and a legend to add a third variable to a scatterplot. E.g., Color the dots to represent different levels of a categorical variable or shading to represent different values of a quantitative variable.
+Use color and a legend to add a third variable to a scatterplot. E.g., Color the dots to represent different levels of a categorical variable or use shading of the dots to represent different values of a quantitative variable.
 
 #### Vocabulary {-} 
 
@@ -344,7 +343,7 @@ Aesthetic:
 
 #### Notes {-}
 
-If the response and one predictor are quantitative and the other predictor categorical, we fit a regression line for each level of the categorical predictor.  
+If the response and one predictor are quantitative and the other predictor is categorical, we fit a regression line for each level of the categorical predictor.  
 
 * Parallel slopes would indicate that that the two predictors ___________________ in explaining the response.
 

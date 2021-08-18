@@ -164,7 +164,7 @@ Margin of error:
 \rgs
 \rgs
 
-9. The formula for the interval is 34/38 $\pm$ (2$\times$0.08) = 0.89 $\pm$ 0.16.  Calculating that, you should get (0.73, 1.05).  Why was the interval shown in the textbook (0.73, 1) instead of (0.73, 1.05)?
+9. The formula for the interval is $34/38 \pm (2 \times 0.08) = 0.89 \pm 0.16$.  Calculating that, you should get (0.73, 1.05).  Why was the interval shown in the textbook (0.73, 1) instead of (0.73, 1.05)?
 \rgs
 
 ### Section 5.3 (Inference for one proportion) {-}
