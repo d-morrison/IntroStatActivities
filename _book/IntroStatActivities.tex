@@ -4873,6 +4873,8 @@ In order to see what other variables may have an impact on revenue for movies re
   A multiple linear regression model includes more than one variable as a predictor for the response variable.
 \end{enumerate}
 
+\newpage
+
 \hypertarget{additional-notes-8}{%
 \subsection{Additional notes}\label{additional-notes-8}}
 
@@ -5421,21 +5423,15 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \vspace{0.1in}
 
-\begin{verbatim}
-c.  If a randomly selected participant was assigned to eat peppers, what is the probability they did not have lower cholesterol levels at the end of the study? What is the notation used for this probability?
-\end{verbatim}
+~~~c.~If a randomly selected participant was assigned to eat peppers, what is the probability they did not have lower cholesterol levels at the end of the study? What is the notation used for this probability?
 
 \vspace{0.5in}
 
-\begin{verbatim}
-d. What is the probability that a randomly selected participant was not assigned to eat peppers and did have lower cholesterol levels?  What is the notation used for this probability?
-\end{verbatim}
+~~~d.~What is the probability that a randomly selected participant was not assigned to eat peppers and did have lower cholesterol levels? What is the notation used for this probability?
 
 \vspace{0.5in}
 
-\begin{verbatim}
-e.  Find the probability $P(A^C | B^C)$. What does this probability represent in context of the problem?
-\end{verbatim}
+~~~e. Find the probability \(P(A^C | B^C)\). What does this probability represent in context of the problem?
 
 \vspace{0.5in}
 
@@ -6931,6 +6927,7 @@ In the interpretation of a 95\% confidence interval, we say that we are 95\% con
 \end{enumerate}
 
 \vspace{0.8in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7549,7 +7546,6 @@ Results are unlikely to be statistically significant (but may be practically imp
 \rgs
 
 \rgi d.~Interpret that error in the context of the problem.
-\rgs
 \rgs
 
 \newpage
@@ -10826,6 +10822,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 \end{enumerate}
 
 \vspace{0.8in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -11999,7 +11996,8 @@ The following code gives the summary statistics for the pairwise differences.
 \end{Shaded}
 
 \hypertarget{check-theoretical-conditions}{%
-\subsubsection{Check theoretical conditions}\label{check-theoretical-conditions}}
+\subsubsection*{Check theoretical conditions}\label{check-theoretical-conditions}}
+\addcontentsline{toc}{subsubsection}{Check theoretical conditions}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12087,10 +12085,11 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Th
 
 \caption{t-distribution with 371 degrees of freedom}\label{fig:tstar}
 \end{figure}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
+\setcounter{enumi}{11}
 \item
   In Figure \ref{fig:tstar}, you see a t-distribution with 371 degrees of freedom. Label \(t^\star\) and \(-t^\star\) on that distribution. Write on the plot the percent of the \(t_{371}\)-distribution that is below \(-t^\star\), between \(-t^\star\) and \(t^\star\), and above \(t^\star\). Then use your plot to determine the confidence level associated with the \(t^\star\) value obtained.
   \vspace{0.3in}
@@ -12098,17 +12097,17 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Th
   Calculate the margin of error for the true paired mean difference using theory-based methods.
 \end{enumerate}
 
-\vspace{0.8in}
+\vspace{0.6in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{14}
+\setcounter{enumi}{13}
 \tightlist
 \item
   Calculate the confidence interval for the true paired mean difference using theory-based methods.
 \end{enumerate}
 
-\vspace{0.8in}
+\vspace{0.6in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12136,7 +12135,7 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Th
 \tightlist
 \item
   Write a conclusion to the test in context of the study.
-  \vspace{0.8in}
+  \vspace{0.6in}
 \end{enumerate}
 
 \hypertarget{take-home-messages-18}{%
@@ -12255,7 +12254,7 @@ Upload and open the \texttt{R} script file for Week 12 lab. Upload and import th
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
+\setcounter{enumi}{6}
 \tightlist
 \item
   Based on the plots, does there appear to be some evidence in favor of the alternative hypothesis? How do you know?
@@ -12273,7 +12272,7 @@ Highlight and run lines 15--16 to get the summary statistics for the data.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
+\setcounter{enumi}{7}
 \item
   What is the value of \(\overline{x_d}\)? What is the sample size?
   \vspace{0.25in}
@@ -12289,7 +12288,7 @@ Highlight and run lines 15--16 to get the summary statistics for the data.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
+\setcounter{enumi}{9}
 \tightlist
 \item
   Using the provided graphs and summary statistics, determine if it would make the most sense to use theory-based methods or simulation methods. Explain your reasoning.
@@ -12307,7 +12306,7 @@ We will use the \texttt{paired\_test()} function in \texttt{R} (in the \texttt{c
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
+\setcounter{enumi}{10}
 \tightlist
 \item
   When using the \texttt{paired\_test()} function, we need to enter the name of the data set, either the order of subtraction (if the data set has both measurements) or the name of the differences (if the data set contains them). We will also need to provide \texttt{R} with the observed mean difference, the direction of the alternative hypothesis, and the shift required in order to force the null hypothesis to be true. The name of the data set as shown above is \texttt{swearing\_diff} and the column of differences is called \texttt{differences}. What values should be entered for each of the following to create 1000 simulated samples?
@@ -12349,7 +12348,7 @@ We will use the \texttt{paired\_test()} function in \texttt{R} (in the \texttt{c
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{10}
+\setcounter{enumi}{11}
 \tightlist
 \item
   Simulate a null distribution and compute the p-value. Using the \texttt{R} script file for this lab, enter your answers for question 10 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 19--25.
@@ -12377,7 +12376,7 @@ We will use the \texttt{paired\_test()} function in \texttt{R} (in the \texttt{c
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{11}
+\setcounter{enumi}{12}
 \tightlist
 \item
   \textbf{Report the p-value. Based off of this p-value and a 1\% significance level, what decision would you make about the null hypothesis? What potential error might you be making based on that decision?}
@@ -12387,7 +12386,7 @@ We will use the \texttt{paired\_test()} function in \texttt{R} (in the \texttt{c
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
+\setcounter{enumi}{13}
 \tightlist
 \item
   Do you expect the 98\% confidence interval to contain the null value of zero? Explain.
@@ -12403,7 +12402,7 @@ We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the 
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{13}
+\setcounter{enumi}{14}
 \tightlist
 \item
   Using bootstrapping and the provided \texttt{R} script file, find a 98\% confidence interval. Enter the variable names and data set name as in the \texttt{paired\_bootstrap\_CI()} function, number of repetitions, and the confidence level as a decimal. Highlight and run lines 28--31. \textbf{Upload a copy of the bootstrap distribution created to Gradescope for your group.}
@@ -12418,13 +12417,15 @@ We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the 
 \end{Highlighting}
 \end{Shaded}
 
+\newpage
+
 ~~~~~~~Sketch the bootstrap distribution created using the code above. Report the 98\% confidence interval in interval notation.
 
 \vspace{1.5in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{14}
+\setcounter{enumi}{15}
 \tightlist
 \item
   Interpret the \emph{confidence level} of the interval you calculated in question 14.
@@ -12434,7 +12435,7 @@ We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the 
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{15}
+\setcounter{enumi}{16}
 \tightlist
 \item
   Write a paragraph summarizing the results of this study as if you were describing the results to your roommate. \textbf{Upload a copy of group's paragraph to Gradescope.} Be sure to describe:
@@ -13084,6 +13085,8 @@ To demonstrate this simulation, your instructor will provide cards to for you to
 
 We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of differences in sample means and compute a p-value.
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{14}
@@ -13091,8 +13094,6 @@ We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \textt
 \item
   When using the \texttt{two\_mean\_test()} function, we need to enter the name of the response variable, \texttt{Snowfall}, and the name of the explanatory variable, \texttt{WeatherPattern}, for the formula. The name of the data set as shown above is \texttt{Snow}. What values should be entered for each of the following to create 1000 simulated samples?
 \end{enumerate}
-
-\newpage
 
 \begin{itemize}
 \tightlist
@@ -13646,6 +13647,8 @@ Remember that the null distribution is created based on the assumption the null 
 
 We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of differences in sample means and compute a p-value.
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{8}
@@ -13774,9 +13777,18 @@ We will use the \texttt{two\_mean\_bootstrap\_CI()} function in \texttt{R} (in t
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{14}
+\tightlist
 \item
   What type of error may be possible?
   \vspace{0.2in}
+\end{enumerate}
+
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{15}
+\tightlist
 \item
   Write a paragraph summarizing the results of the study as if you are reporting the results to your supervisor. \textbf{Upload a copy of your paragraph to Gradescope for your group.} Be sure to describe:
 \end{enumerate}
@@ -14207,7 +14219,7 @@ The government of Singapore took a random sample of 373 homes in Singapore to co
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
 \item
-  Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the distance to the nearest MRT station and house prices by filling in the variable names (\texttt{Distance} and \texttt{House\_Price}) for \texttt{explanatory} and \texttt{response} in \textbf{line 17. Highlight and run lines 1--22}.
+  Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the distance to the nearest MRT station and house prices by filling in the variable names (\texttt{Distance} and \texttt{House\_Price}) for \texttt{explanatory} and \texttt{response} in line 9. Highlight and run lines 1--15.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -14269,7 +14281,7 @@ The government of Singapore took a random sample of 373 homes in Singapore to co
 \subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-6}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
-Using the provided \texttt{R} script file, enter the response variable name, \texttt{House\_Price}, into the \texttt{lm()} (linear model) function for \texttt{response} and the explanatory variable name, \texttt{Distance}, for \texttt{response} in line 32 to get the linear model output. Highlight and run lines 32--33.
+Using the provided \texttt{R} script file, enter the response variable name, \texttt{House\_Price}, into the \texttt{lm()} (linear model) function for \texttt{response} and the explanatory variable name, \texttt{Distance}, for \texttt{response} in line 18 to get the linear model output. Highlight and run lines 18--19.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -14281,37 +14293,15 @@ Using the provided \texttt{R} script file, enter the response variable name, \te
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{6}
-\tightlist
 \item
   Using the output from the evaluated \texttt{R} code above, write the equation of the regression line using appropriate statistical notation.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{7}
-\tightlist
+  \vspace{1in}
 \item
   Interpret the estimated slope in context of the problem.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
-\tightlist
+  \vspace{1in}
 \item
   Using your estimated line of best fit, predict the house price for a distance of 480.6977 meters. Show all work.
-\end{enumerate}
-
-\vspace{1in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
-\tightlist
+  \vspace{1in}
 \item
   One home in Singapore was 480.6977 meters from the train station and had a price of \(38.8 \frac{SGD}{m^2}\). Calculate the residual associated with this observation using your estimated regression line from question 8.
 \end{enumerate}
@@ -14386,7 +14376,7 @@ The response variable name is \texttt{House\_Price} and the explanatory variable
 
 \vspace{.2in}
 
-Using the \texttt{R} script file for this activity, enter your answers for question 12 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 1--13 and then lines 44--49.
+Using the \texttt{R} script file for this activity, enter your answers for question 12 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 22--27.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -14413,7 +14403,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \subsubsection*{Simulation-based confidence interval}\label{simulation-based-confidence-interval}}
 \addcontentsline{toc}{subsubsection}{Simulation-based confidence interval}
 
-We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the \texttt{xx}'s in the the provided \texttt{R} script file to find a 95\% confidence interval. Highlight and run lines 52--56.
+We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the \texttt{xx}'s in the the provided \texttt{R} script file to find a 95\% confidence interval. Highlight and run lines 30--34.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -14475,6 +14465,8 @@ In order to see what impact other variables may have on the house price we can l
 \end{Highlighting}
 \end{Shaded}
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{16}
@@ -14511,6 +14503,8 @@ In order to see what impact other variables may have on the house price we can l
 \item
   To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label \(n\) cards with the original (response, explanatory) values. Randomly draw with replacement \(n\) times. Find the regression line for the resampled data and plot the resampled slope or correlation.
 \end{enumerate}
+
+\newpage
 
 \hypertarget{additional-notes-21}{%
 \subsection{Additional notes}\label{additional-notes-21}}
@@ -14615,7 +14609,7 @@ Some of the variables collected in the data set \texttt{baseball} consist of the
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
 \item
-  Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names (\texttt{RD} and \texttt{W}) for \texttt{xx} and \texttt{yy} in line 17. Highlight and run lines 1--22.
+  Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names (\texttt{RD} and \texttt{W}) for \texttt{xx} and \texttt{yy} in line 17. Highlight and run lines 1--21.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -14733,7 +14727,7 @@ The scatterplot generated in question 2 and the residual plots shown below will 
 \subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-7}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
-Using the provided \texttt{R} script file, enter the response variable name, \texttt{W}, into the \texttt{lm()} (linear model) function for \texttt{yy} and the explanatory variable name, \texttt{RD}, for \texttt{xx} in line 32 to get the linear model output. Highlight and run lines 32--33.
+Using the provided \texttt{R} script file, enter the response variable name, \texttt{W}, into the \texttt{lm()} (linear model) function for \texttt{yy} and the explanatory variable name, \texttt{RD}, for \texttt{xx} in line 32 to get the linear model output. Highlight and run lines 31--32.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -14798,6 +14792,8 @@ T = \frac{\mbox{slope estimate}}{SE} = \frac{b_1}{SE(b_1)}.
 
 We will use the linear model \texttt{R} output above to get the estimate for slope and the standard error of the slope.
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{11}
@@ -14851,7 +14847,7 @@ The \(t^*\) multiplier comes from a \(t\)-distribution with \(n-2\) degrees of f
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{qt}\NormalTok{(}\FloatTok{0.95+0.025}\NormalTok{, }\DecValTok{900}\NormalTok{) }\CommentTok{\# 95\% t* multiplier }
+\FunctionTok{qt}\NormalTok{(}\FloatTok{0.975}\NormalTok{, }\DecValTok{900}\NormalTok{) }\CommentTok{\# 95\% t* multiplier }
 \end{Highlighting}
 \end{Shaded}
 
@@ -14963,10 +14959,12 @@ Some of the variables collected in the data set \texttt{Bear\_Data} consist of t
 \bottomrule
 \end{longtable}
 
+Upload and open the \texttt{R} script file for Week 14 lab. Upload and import the csv file, \texttt{Bear\_Data}. Enter the name of the data set (see the environment tab) for datasetname in the \texttt{R} script file in line 7. Highlight and run lines 1--8 to load the data.
+
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# Read in data set}
-\NormalTok{bears }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/Bear\_Data.csv"}\NormalTok{)}
+\CommentTok{\# Read in data set and remove NAs}
+\NormalTok{datasetname }\OtherTok{{-}\textgreater{}}\NormalTok{ bears}
 \NormalTok{bears }\OtherTok{\textless{}{-}} \FunctionTok{na.omit}\NormalTok{(bears)}
 \end{Highlighting}
 \end{Shaded}
@@ -14975,13 +14973,17 @@ Some of the variables collected in the data set \texttt{Bear\_Data} consist of t
 \subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-8}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
 
-\begin{verbatim}
-#>            Complaints   Food   Pop Prevkill
-#> Complaints      1.000 -0.376 0.458   -0.241
-#> Food           -0.376  1.000 0.084    0.482
-#> Pop             0.458  0.084 1.000    0.520
-#> Prevkill       -0.241  0.482 0.520    1.000
-\end{verbatim}
+To create the correlation matrix for the variables, \texttt{Complaints}, \texttt{Food}, \texttt{Pop}, and \texttt{Prevkill} highlight and run lines 11--15 in the \texttt{R} script file.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{bears }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# Data set pipes into}
+  \FunctionTok{select}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{"Complaints"}\NormalTok{, }\StringTok{"Food"}\NormalTok{, }
+           \StringTok{"Pop"}\NormalTok{, }\StringTok{"Prevkill"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{cor}\NormalTok{(}\AttributeTok{use=}\StringTok{"pairwise.complete.obs"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{round}\NormalTok{(}\DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14992,26 +14994,22 @@ Some of the variables collected in the data set \texttt{Bear\_Data} consist of t
   Give the value of correlation between \texttt{Food} and \texttt{Complaints}.
   \vspace{0.2in}
 \item
-  Calculate the value of the coefficient of determination between \texttt{Food} and \texttt{Complaints}.
+  \textbf{Calculate the value of the coefficient of determination between \texttt{Food} and \texttt{Complaints}.}
   \vspace{0.4in}
 \item
   Interpret the value of the coefficient of determination in context of the problem.
   \vspace{0.6in}
 \end{enumerate}
 
+In the next part of the activity we will assess the linear model between bear complaints and food abundance. Enter the variable \texttt{Complaints} for \texttt{response} and the variable \texttt{Food} for \texttt{explanatory} in line 19. Highlight and run lines 19--20 to get the linear model output.
+
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# Fit linear model: y \textasciitilde{} x}
-\NormalTok{bearsLM }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Complaints}\SpecialCharTok{\textasciitilde{}}\NormalTok{Food, }\AttributeTok{data=}\NormalTok{bears)}
+\NormalTok{bearsLM }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(response}\SpecialCharTok{\textasciitilde{}}\NormalTok{explanatory, }\AttributeTok{data=}\NormalTok{bears)}
 \FunctionTok{summary}\NormalTok{(bearsLM)}\SpecialCharTok{$}\NormalTok{coefficients }\CommentTok{\# Display coefficient summary}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-#>               Estimate Std. Error   t value    Pr(>|t|)
-#> (Intercept) 5434.17307  1604.1810  3.387506 0.001796525
-#> Food         -60.66982    25.6051 -2.369443 0.023633904
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -15021,6 +15019,8 @@ Some of the variables collected in the data set \texttt{Bear\_Data} consist of t
   Give the value of the slope of the regression line. Interpret this value in context of the problem.
   \vspace{0.6in}
 \end{enumerate}
+
+Highlight and run lines 23--36 to produce the diagnostic plots needed to assess conditions to use theory-based methods.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -15039,16 +15039,24 @@ Some of the variables collected in the data set \texttt{Bear\_Data} consist of t
 \subsubsection*{Conditions for the least squares line}\label{conditions-for-the-least-squares-line-1}}
 \addcontentsline{toc}{subsubsection}{Conditions for the least squares line}
 
-Use the provided scatterplot generated above and the residual plots shown below to assess the validity conditions for approximating the data with the \(t\)-distribution.
+Use the scatterplot and the residual plots to assess the validity conditions for approximating the data with the \(t\)-distribution.
 
-\begin{center}\includegraphics[width=0.7\linewidth]{14-L11-regression-wrapup_files/figure-latex/unnamed-chunk-5-1} \end{center}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{lm.bears }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Complaints}\SpecialCharTok{\textasciitilde{}}\NormalTok{Food, }\AttributeTok{data =}\NormalTok{ bears) }\CommentTok{\# Fit linear regression model}
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{)) }\CommentTok{\# Set graphics parameters to plot 2 plots in 1 row}
+\FunctionTok{plot}\NormalTok{(lm.bears, }\AttributeTok{which=}\DecValTok{1}\NormalTok{) }\CommentTok{\# Residual vs fitted values}
+\FunctionTok{hist}\NormalTok{(lm.bears}\SpecialCharTok{$}\NormalTok{resid, }\AttributeTok{xlab=}\StringTok{"Residuals"}\NormalTok{, }\AttributeTok{ylab=}\StringTok{"Frequency"}\NormalTok{,}
+     \AttributeTok{main =} \StringTok{"Histogram of Residuals"}\NormalTok{) }\CommentTok{\# Histogram of residuals}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{5}
 \tightlist
 \item
-  Are the conditions met to use the \(t\)-distribution to approximate the sampling distribution of the standardized statistic? Justify your answer.
+  \textbf{Are the conditions met to use the \(t\)-distribution to approximate the sampling distribution of the standardized statistic? Justify your answer.}
 \end{enumerate}
 
 \vspace{1.5in}
@@ -15077,7 +15085,7 @@ Use the provided scatterplot generated above and the residual plots shown below 
 \paragraph*{Hypothesis test}\label{hypothesis-test-5}}
 \addcontentsline{toc}{paragraph}{Hypothesis test}
 
-Use the \texttt{regression\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample correlations and compute a p-value. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as \texttt{bears}), the statistic for the test, number of repetitions, the sample statistic (value of correlation), and the direction of the alternative hypothesis.
+Use the \texttt{regression\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample \textbf{correlations} and compute a p-value. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as \texttt{bears}), the statistic for the test, number of repetitions, the sample statistic (value of correlation), and the direction of the alternative hypothesis.
 
 The response variable name is \texttt{Complaints} and the explanatory variable name is \texttt{Food}.
 
@@ -15123,7 +15131,7 @@ The response variable name is \texttt{Complaints} and the explanatory variable n
 
 \vspace{.2in}
 
-Using the \texttt{R} script file for this activity, enter your answers for question 8 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 1--13 and then lines 44--49.
+Using the \texttt{R} script file for this activity, enter your answers for question 8 in place of the \texttt{xx}'s to produce the null distribution with 1000 simulations. Highlight and run lines 39--44. \textbf{Upload a copy of your plot showing the p-value to Gradescope for your group.}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -15152,7 +15160,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \subsubsection*{Simulation-based confidence interval}\label{simulation-based-confidence-interval-1}}
 \addcontentsline{toc}{subsubsection}{Simulation-based confidence interval}
 
-We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample correlations and calculate a confidence interval. Fill in the \texttt{xx}'s in the the provided \texttt{R} script file to find a 90\% confidence interval. Highlight and run lines 52--56.
+We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the bootstrap distribution of sample \textbf{correlations} and calculate a confidence interval. Fill in the \texttt{xx}'s in the the provided \texttt{R} script file to find a 90\% confidence interval. Highlight and run lines 52--56.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -15171,7 +15179,7 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
   Report the bootstrap 90\% confidence interval in interval notation.\\
   \vspace{0.5in}
 \item
-  Interpret the 90\% confidence interval in context of the problem.
+  \textbf{Interpret the 90\% confidence interval in context of the problem.}
   \vspace{0.8in}
 \end{enumerate}
 
@@ -15202,7 +15210,7 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
   Write this error in context of the problem.
   \vspace{0.8in}
 \item
-  Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper. Be sure to describe:
+  Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper. \textbf{Upload a copy of your paragraph to Gradescope for your group.} Be sure to describe:
 \end{enumerate}
 
 \begin{itemize}
@@ -15222,6 +15230,12 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 
 \vspace{3in}
 
+\hypertarget{multivariate-plots}{%
+\subsection*{Multivariate plots}\label{multivariate-plots}}
+\addcontentsline{toc}{subsection}{Multivariate plots}
+
+Another variable that may affect the amount of bear complaints is the population. The variable \texttt{Pop\_Level} measures whether the estimated population of bears is over or under 15,000 bears. We will look at how this variable may change the relationship between food abundance and number of bear complaints. Highlight and run lines 54--61 to produce the multivariate plot.
+
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{bears }\SpecialCharTok{\%\textgreater{}\%}
@@ -15235,7 +15249,18 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics[width=0.6\linewidth]{14-L11-regression-wrapup_files/figure-latex/unnamed-chunk-8-1} \end{center}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{17}
+\item
+  Does the association between food abundance rating and number of bear complaints change based on population level? Explain your answer.
+  \vspace{1in}
+\item
+  \textbf{Explain how the variable \texttt{Pop\_Level} acts as a confounding variable in this study.}
+  \vspace{1in}
+\end{enumerate}
+
+\newpage
 
 \hypertarget{semester-review}{%
 \chapter{Semester Review}\label{semester-review}}
@@ -15478,6 +15503,7 @@ Petraglia AL, Plog BA, Dayawansa S, Chen M, Dashnaw ML, Czerniecka K, Walker CT,
 \end{enumerate}
 
 \vspace{0.5in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
@@ -15798,7 +15824,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\setcounter{enumi}{5}
 \tightlist
 \item
   Use the provided Final Exam Review \texttt{R} script file and analyze this research question.
@@ -15893,6 +15919,10 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 \newpage
 
 \includepdf{goldenticket.pdf}
+
+\hypertarget{references}{%
+\chapter*{References}\label{references}}
+\addcontentsline{toc}{chapter}{References}
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}

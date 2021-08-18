@@ -497,6 +497,5 @@ Results are unlikely to be statistically significant (but may be practically imp
 
 \rgi d. Interpret that error in the context of the problem.
 \rgs
-\rgs
 
 \newpage

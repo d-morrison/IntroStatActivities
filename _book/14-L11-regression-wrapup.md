@@ -30,22 +30,26 @@ Some of the variables collected in the data set `Bear_Data` consist of the follo
 | `Policy` | whether a new or old policy regarding how complaints were dealt with |
 | `Pop_1000` | population per 1000 |
 
+Upload and open the `R` script file for Week 14 lab. Upload and import the csv file, `Bear_Data`. Enter the name of the data set (see the environment tab) for datasetname in the `R` script file in line 7. Highlight and run lines 1--8 to load the data.
+
 
 ```r
-# Read in data set
-bears <- read.csv("https://math.montana.edu/courses/s216/data/Bear_Data.csv")
+# Read in data set and remove NAs
+datasetname -> bears
 bears <- na.omit(bears)
 ```
 
 #### Summarize and visualize the data {-} 
 
+To create the correlation matrix for the variables, `Complaints`, `Food`, `Pop`, and `Prevkill` highlight and run lines 11--15 in the `R` script file.
 
-```
-#>            Complaints   Food   Pop Prevkill
-#> Complaints      1.000 -0.376 0.458   -0.241
-#> Food           -0.376  1.000 0.084    0.482
-#> Pop             0.458  0.084 1.000    0.520
-#> Prevkill       -0.241  0.482 0.520    1.000
+
+```r
+bears %>%  # Data set pipes into
+  select(c("Complaints", "Food", 
+           "Pop", "Prevkill")) %>%
+  cor(use="pairwise.complete.obs") %>%
+  round(3)
 ```
 
 1. Which two variables have the strongest value of correlation?
@@ -54,27 +58,25 @@ bears <- na.omit(bears)
 2. Give the value of correlation between `Food` and `Complaints`. 
 \vspace{0.2in}
 
-3. Calculate the value of the coefficient of determination between `Food` and `Complaints`. 
+3. **Calculate the value of the coefficient of determination between `Food` and `Complaints`.** 
 \vspace{0.4in}
 
 4. Interpret the value of the coefficient of determination in context of the problem.
 \vspace{0.6in}
 
+In the next part of the activity we will assess the linear model between bear complaints and food abundance.  Enter the variable `Complaints` for `response` and the variable `Food` for `explanatory` in line 19.  Highlight and run lines 19--20 to get the linear model output. 
+
 
 ```r
 # Fit linear model: y ~ x
-bearsLM <- lm(Complaints~Food, data=bears)
+bearsLM <- lm(response~explanatory, data=bears)
 summary(bearsLM)$coefficients # Display coefficient summary
-```
-
-```
-#>               Estimate Std. Error   t value    Pr(>|t|)
-#> (Intercept) 5434.17307  1604.1810  3.387506 0.001796525
-#> Food         -60.66982    25.6051 -2.369443 0.023633904
 ```
 
 5. Give the value of the slope of the regression line.  Interpret this value in context of the problem.
 \vspace{0.6in}
+
+Highlight and run lines 23--36 to produce the diagnostic plots needed to assess conditions to use theory-based methods.
 
 
 ```r
@@ -92,12 +94,18 @@ ggplot(aes(x = Food, y = Complaints))+  # Specify variables
 
 #### Conditions for the least squares line {-}
 
-Use the provided scatterplot generated above and the residual plots shown below to assess the validity conditions for approximating the data with the $t$-distribution.
+Use the scatterplot and the residual plots to assess the validity conditions for approximating the data with the $t$-distribution.
 
 
-\begin{center}\includegraphics[width=0.7\linewidth]{14-L11-regression-wrapup_files/figure-latex/unnamed-chunk-5-1} \end{center}
+```r
+lm.bears <- lm(Complaints~Food, data = bears) # Fit linear regression model
+par(mfrow=c(1,2)) # Set graphics parameters to plot 2 plots in 1 row
+plot(lm.bears, which=1) # Residual vs fitted values
+hist(lm.bears$resid, xlab="Residuals", ylab="Frequency",
+     main = "Histogram of Residuals") # Histogram of residuals
+```
 
-6. Are the conditions met to use the $t$-distribution to approximate the sampling distribution of the standardized statistic? Justify your answer.
+6. **Are the conditions met to use the $t$-distribution to approximate the sampling distribution of the standardized statistic? Justify your answer.**
 
 \vspace{1.5in}
 
@@ -113,7 +121,7 @@ Use the provided scatterplot generated above and the residual plots shown below 
 
 ##### Hypothesis test {-}
 
-Use the `regression_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample correlations and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `bears`), the statistic for the test, number of repetitions, the sample statistic (value of correlation), and the direction of the alternative hypothesis.
+Use the `regression_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample **correlations** and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `bears`), the statistic for the test, number of repetitions, the sample statistic (value of correlation), and the direction of the alternative hypothesis.
 
 The response variable name is `Complaints` and the explanatory variable name is `Food`.
 
@@ -136,7 +144,7 @@ The response variable name is `Complaints` and the explanatory variable name is 
     
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 8 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 1--13 and then lines 44--49.
+Using the `R` script file for this activity, enter your answers for question 8 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 39--44.  **Upload a copy of your plot showing the p-value to Gradescope for your group.**
 
 
 ```r
@@ -157,7 +165,7 @@ regression_test(Complaints ~ Food, # response ~ explanatory
 
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample correlations and calculate a confidence interval. Fill in the `xx`'s in the the provided `R` script file to find a 90\% confidence interval. Highlight and run lines 52--56. 
+We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided `R` script file to find a 90\% confidence interval. Highlight and run lines 52--56. 
 
 
 ```r
@@ -170,7 +178,7 @@ regression_bootstrap_CI(Complaints~Food, # response ~ explanatory
 11.  Report the bootstrap 90\% confidence interval in interval notation.  
 \vspace{0.5in}
 
-12. Interpret the 90\% confidence interval in context of the problem.
+12. **Interpret the 90\% confidence interval in context of the problem.**
 \vspace{0.8in}
    
 #### Communicate the results and answer the research question {-}
@@ -188,7 +196,7 @@ regression_bootstrap_CI(Complaints~Food, # response ~ explanatory
 16. Write this error in context of the problem.
 \vspace{0.8in}
 
-17. Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper.  Be sure to describe:
+17. Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper.  **Upload a copy of your paragraph to Gradescope for your group.**  Be sure to describe:
 
 * Summary statistic
 
@@ -204,6 +212,10 @@ regression_bootstrap_CI(Complaints~Food, # response ~ explanatory
 
 \vspace{3in}
 
+### Multivariate plots {-}
+
+Another variable that may affect the amount of bear complaints is the population.  The variable `Pop_Level` measures whether the estimated population of bears is over or under 15,000 bears.  We will look at how this variable may change the relationship between food abundance and number of bear complaints. Highlight and run lines 54--61 to produce the multivariate plot. 
+
 
 ```r
 bears %>%
@@ -216,6 +228,10 @@ bears %>%
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
 
+18. Does the association between food abundance rating and number of bear complaints change based on population level?  Explain your answer.
+\vspace{1in}
 
+19.  **Explain how the variable `Pop_Level` acts as a confounding variable in this study.**
+\vspace{1in}
 
-\begin{center}\includegraphics[width=0.6\linewidth]{14-L11-regression-wrapup_files/figure-latex/unnamed-chunk-8-1} \end{center}
+\newpage

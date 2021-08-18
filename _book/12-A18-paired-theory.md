@@ -119,7 +119,7 @@ costs_diff %>%
 #> 1 -25 20     60 100 600 69.52957 62.01345 372       0
 ```
 
-#### Check theoretical conditions
+#### Check theoretical conditions {-}
 
 5.  How do you know the independence condition is met for these data?
 \vspace{0.8in}
@@ -184,17 +184,19 @@ qt(0.95, df = 371, lower.tail=TRUE)
 
 \caption{t-distribution with 371 degrees of freedom}(\#fig:tstar)
 \end{figure}
-13.  In Figure \@ref(fig:tstar), you see a t-distribution with 371 degrees of freedom. Label $t^\star$ and $-t^\star$ on that distribution.  Write on the plot the percent of the $t_{371}$-distribution that is below $-t^\star$, between $-t^\star$ and $t^\star$, and above $t^\star$.  Then use your plot to determine the confidence level associated with the $t^\star$ value obtained.
+\newpage
+
+12.  In Figure \@ref(fig:tstar), you see a t-distribution with 371 degrees of freedom. Label $t^\star$ and $-t^\star$ on that distribution.  Write on the plot the percent of the $t_{371}$-distribution that is below $-t^\star$, between $-t^\star$ and $t^\star$, and above $t^\star$.  Then use your plot to determine the confidence level associated with the $t^\star$ value obtained.
 \vspace{0.3in}
 
 
-14.  Calculate the margin of error for the true paired mean difference using theory-based methods.
+13.  Calculate the margin of error for the true paired mean difference using theory-based methods.
 
-\vspace{0.8in}
+\vspace{0.6in}
 
-15.  Calculate the confidence interval for the true paired mean difference using theory-based methods.
+14.  Calculate the confidence interval for the true paired mean difference using theory-based methods.
 
-\vspace{0.8in}
+\vspace{0.6in}
 
 
 15.  Interpret the confidence interval in context of the study.
@@ -206,7 +208,7 @@ qt(0.95, df = 371, lower.tail=TRUE)
 \vspace{0.5in}
 
 17.  Write a conclusion to the test in context of the study.
-\vspace{0.8in}
+\vspace{0.6in}
 
 ### Take-home messages
 

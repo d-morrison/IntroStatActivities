@@ -53,7 +53,8 @@ rmd_files: [
   "14-L11-regression-wrapup.Rmd",
   "15-data-exploration.Rmd",
   "15-Exam3-review.Rmd",
-  "goldenticket.Rmd"
+  "16-goldenticket.Rmd",
+  "17-references.Rmd"
    ]
 before_chapter_script: "_common.R"
 

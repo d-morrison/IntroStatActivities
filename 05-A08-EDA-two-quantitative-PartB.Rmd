@@ -150,6 +150,7 @@ $$\widehat{\text{revenue}} = b_0 + b_1\times budget + b_2\times duration.$$
 
 3. A multiple linear regression model includes more than one variable as a predictor for the response variable.
 
+\newpage
 
 ### Additional notes
 

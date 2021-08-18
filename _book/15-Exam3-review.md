@@ -221,7 +221,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \vspace{0.8in}
 
-4. Use the provided Final Exam Review `R` script file and analyze this research question.
+6. Use the provided Final Exam Review `R` script file and analyze this research question.
 
 \rgi Parameter of Interest:
     

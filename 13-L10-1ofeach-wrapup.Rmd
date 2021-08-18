@@ -74,6 +74,8 @@ Remember that the null distribution is created based on the assumption the null 
 
 We will use the `two_mean_test()` function in `R` (in the `catstats` package) to simulate the null distribution of differences in sample means and compute a p-value. 
 
+\newpage
+
 9.  When using the `two_mean_test()` function, we need to enter the name of the response variable, `Baseweight`, and the name of the explanatory variable, `Trail`, for the formula.  The name of the data set as shown above is `hikes`.  What values should be entered for each of the following to create 1000 simulated samples?
 
 \vspace{1mm}
@@ -135,6 +137,8 @@ two_mean_bootstrap_CI(RESPONSE ~ EXPLANATORY,
 
 15.  What type of error may be possible?
 \vspace{0.2in}
+
+\newpage
 
 16.  Write a paragraph summarizing the results of the study as if you are reporting the results to your supervisor.  **Upload a copy of your paragraph to Gradescope for your group.**  Be sure to describe:
 

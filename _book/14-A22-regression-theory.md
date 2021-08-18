@@ -69,7 +69,7 @@ baseball <- # Write over original data with the following
 \vspace{.5in}
 
 
-2. Use the provided `R` script file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names (`RD` and `W`) for `xx` and `yy` in line 17.  Highlight and run lines 1--22. 
+2. Use the provided `R` script file to create a scatterplot to examine the relationship between the difference in number of runs scored minus number of runs allowed and the number of wins by filling in the variable names (`RD` and `W`) for `xx` and `yy` in line 17.  Highlight and run lines 1--21. 
  
     
     ```r
@@ -134,7 +134,7 @@ The scatterplot generated in question 2 and the residual plots shown below will 
 
 #### Summarize and visualize the data {-}
 
-Using the provided `R` script file, enter the response variable name, `W`, into the `lm()` (linear model) function for `yy` and the explanatory variable name, `RD`, for `xx` in line 32 to get the linear model output.  Highlight and run lines 32--33.
+Using the provided `R` script file, enter the response variable name, `W`, into the `lm()` (linear model) function for `yy` and the explanatory variable name, `RD`, for `xx` in line 32 to get the linear model output.  Highlight and run lines 31--32.
 
 
 ```r
@@ -169,6 +169,8 @@ $$
  
 We will use the linear model `R` output above to get the estimate for slope and the standard error of the slope.
 
+\newpage
+
 12.  Calculate the standardized statistic for slope.  Identify where this calculated value is in the linear model `R` output.
 
 \vspace{1in}
@@ -194,7 +196,7 @@ The $t^*$ multiplier comes from a $t$-distribution with $n-2$ degrees of freedom
 
 
 ```r
-qt(0.95+0.025, 900) # 95% t* multiplier 
+qt(0.975, 900) # 95% t* multiplier 
 ```
 
 ```

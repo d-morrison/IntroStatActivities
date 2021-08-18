@@ -128,6 +128,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 3.  Write a research question involving two categorical variables that can be answered using the data set.  
 
 \vspace{0.8in}
+\newpage
 
 4. Use the provided Exam 2 Review `R` script file and analyze this research question.
 

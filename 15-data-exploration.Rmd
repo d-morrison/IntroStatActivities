@@ -132,6 +132,7 @@ a) What are the advantages of this study design?
 b) Disadvantages?
 
 \vspace{0.5in}
+\newpage
 
 c) Does the design allow us to make causal inferences? Explain.
 

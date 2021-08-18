@@ -149,6 +149,7 @@ c. How many intervals out of 100 contain $\pi$, the null value of 0.25? *Hint*: 
 16.  **Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?**
 
 \vspace{0.8in}
+\newpage
 
 17. Write a paragraph summarizing the results of the study as if writing a press release.  **Upload your group's paragraph to Gradescope.** Be sure to describe:
 

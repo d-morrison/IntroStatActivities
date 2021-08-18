@@ -44,7 +44,7 @@ realestate <- read.csv("https://math.montana.edu/courses/s216/data/Real_estate.c
 \vspace{.5in}
 
 
-2. Use the provided `R` script file to create a scatterplot to examine the relationship between the distance to the nearest MRT station and house prices by filling in the variable names (`Distance` and `House_Price`) for `explanatory` and `response` in **line 17.  Highlight and run lines 1--22**. 
+2. Use the provided `R` script file to create a scatterplot to examine the relationship between the distance to the nearest MRT station and house prices by filling in the variable names (`Distance` and `House_Price`) for `explanatory` and `response` in line 9.  Highlight and run lines 1--15. 
  
     
     ```r
@@ -82,7 +82,7 @@ realestate <- read.csv("https://math.montana.edu/courses/s216/data/Real_estate.c
 
 #### Summarize and visualize the data {-}
 
-Using the provided `R` script file, enter the response variable name, `House_Price`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Distance`, for `response` in line 32 to get the linear model output.  Highlight and run lines 32--33.
+Using the provided `R` script file, enter the response variable name, `House_Price`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Distance`, for `response` in line 18 to get the linear model output.  Highlight and run lines 18--19.
 
 
 ```r
@@ -91,15 +91,12 @@ round(summary(lm.realestate)$coefficients, 5)
 ```
 
 7.  Using the output from the evaluated `R` code above, write the equation of the regression line using appropriate statistical notation.
-
 \vspace{1in}
 
 8.  Interpret the estimated slope in context of the problem.
-
 \vspace{1in}
 
 9. Using your estimated line of best fit, predict the house price for a distance of 480.6977 meters. Show all work.
-
 \vspace{1in}
 
 10. One home in Singapore was 480.6977 meters from the train station and had a price of $38.8 \frac{SGD}{m^2}$. Calculate the residual associated with this observation using your estimated regression line from question 8. 
@@ -141,7 +138,7 @@ The response variable name is `House_Price` and the explanatory variable name is
     
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 12 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 1--13 and then lines 44--49.
+Using the `R` script file for this activity, enter your answers for question 12 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 22--27.
 
 
 ```r
@@ -159,7 +156,7 @@ regression_test(House_Price ~ Distance, # response ~ explanatory
 
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the `xx`'s in the the provided `R` script file to find a 95\% confidence interval. Highlight and run lines 52--56. 
+We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the `xx`'s in the the provided `R` script file to find a 95\% confidence interval. Highlight and run lines 30--34. 
 
 
 ```r
@@ -195,6 +192,8 @@ round(summary(lm.price)$coefficients, 5)
 #> Distance    -0.00721    0.00038 -18.99701        0
 #> house_age   -0.23103    0.04204  -5.49562        0
 ```
+\newpage
+
 17. Use the provided `R` output to write the linear regression model including all variables.  *Hint*: The estimated line of regression is of the form:
 
 $$\widehat{\text{house price}} = b_0 + b_1\times distance + b_2\times \text{house age}.$$
@@ -216,6 +215,7 @@ $$\widehat{\text{house price}} = b_0 + b_1\times distance + b_2\times \text{hous
 
 4. To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label $n$ cards with the original (response, explanatory) values.  Randomly draw with replacement $n$ times.  Find the regression line for the resampled data and plot the resampled slope or correlation. 
 
+\newpage
 
 ### Additional notes
 

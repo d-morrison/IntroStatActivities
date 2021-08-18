@@ -151,9 +151,9 @@ To demonstrate this simulation, your instructor will provide cards to for you to
 
 We will use the `two_mean_test()` function in `R` (in the `catstats` package) to simulate the null distribution of differences in sample means and compute a p-value. 
 
-15.  When using the `two_mean_test()` function, we need to enter the name of the response variable, `Snowfall`, and the name of the explanatory variable, `WeatherPattern`, for the formula.  The name of the data set as shown above is `Snow`.  What values should be entered for each of the following to create 1000 simulated samples?
+\newpage 
 
-\newpage
+15.  When using the `two_mean_test()` function, we need to enter the name of the response variable, `Snowfall`, and the name of the explanatory variable, `WeatherPattern`, for the formula.  The name of the data set as shown above is `Snow`.  What values should be entered for each of the following to create 1000 simulated samples?
 
 * First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"El_Nino"` or `"La_Nina"`):
 

@@ -258,13 +258,13 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \vspace{0.1in}
 
-    c.  If a randomly selected participant was assigned to eat peppers, what is the probability they did not have lower cholesterol levels at the end of the study? What is the notation used for this probability?
+|    c.  If a randomly selected participant was assigned to eat peppers, what is the probability they did not have lower cholesterol levels at the end of the study? What is the notation used for this probability?
 \vspace{0.5in}
 
-    d. What is the probability that a randomly selected participant was not assigned to eat peppers and did have lower cholesterol levels?  What is the notation used for this probability?
+|    d. What is the probability that a randomly selected participant was not assigned to eat peppers and did have lower cholesterol levels?  What is the notation used for this probability?
 \vspace{0.5in}
 
-    e.  Find the probability $P(A^C | B^C)$. What does this probability represent in context of the problem?
+|    e.  Find the probability $P(A^C | B^C)$. What does this probability represent in context of the problem?
 \vspace{0.5in}
 
 \newpage
