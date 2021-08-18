@@ -167,7 +167,7 @@ Another summary statistic that can be calculated for two categorical variables i
 
 $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 
-14.  Calculate the relative risk of helping for those who were assigned to the hurry condition compared to those who were not.
+14.  Calculate the relative risk of head injury for those who wore a helmet compared to those who did not.
 
 \vspace{.8in}
 
@@ -182,7 +182,7 @@ $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 
 2.  The standardized statistic when the response variable is categorical is a Z-score and is compared to the standard normal distribution to find the p-value.  To find the standardized statistic, we take the value of the statistic minus the null value, divided by the null standard error of the statistic.  The standardized statistic measures the number of standard errors the statistic is from the null value. 
 
-3.  Relative risk evaluates the percent increase or percent decrease in the response variable attributed to the explanatory variable.  To find the percent increase or percent decrease we calculate the following $\text{percent change}=(RR - 1)x100\%$. If relative risk is less than 1 there is a percent decrease.  If relative risk is greater than 1 there is a percent increase.
+3.  Relative risk evaluates the percent increase or percent decrease in the response variable attributed to the explanatory variable.  To find the percent increase or percent decrease we calculate the following $\text{percent change}=(RR - 1)\times 100\%$. If relative risk is less than 1 there is a percent decrease.  If relative risk is greater than 1 there is a percent increase.
 
 ### Additional notes
 

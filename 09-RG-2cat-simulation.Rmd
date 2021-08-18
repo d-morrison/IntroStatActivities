@@ -2,7 +2,7 @@
 
 ## Week 9 - Reading Guide: Hypothesis Testing for a Difference in Proportions
 
-### Section 5.5 (Simulation-based fnference for a difference in proportions)  {-}
+### Section 5.5 (Simulation-based inference for a difference in proportions)  {-}
 
 You may skip section 5.5.3, which will be covered next week.
 
@@ -177,7 +177,7 @@ Population proportion of group 2:
 8. Write the null and the alternative hypotheses in notation.
 \rgs
 
-9. How could we use cards to simulate **ome** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+9. How could we use cards to simulate **one** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
 \rgs
@@ -273,7 +273,7 @@ Population proportion of group 2:
 \rgs
 \rgs
 
-7. What is the parameter (using a difference in proportion) representing in the context of this problem?  What notation would be used to represent this parameter?
+7. What is the parameter (using a difference in proportions) representing in the context of this problem?  What notation would be used to represent this parameter?
 \rgs
 \rgs
 

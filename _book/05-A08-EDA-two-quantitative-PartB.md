@@ -91,12 +91,12 @@ movies %>%  # Data set pipes into
 
 Another summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. The value of $r^2$ (a value between 0 and 1) represents the **proportion of variation in the response that is explained by the least squares line with the explanatory variable**.  There are two ways to calculate the coefficient of determination: 
 
-|    Square the correlation coefficient:  $r^2 = (r)^2$
+|    Square the correlation coefficient:  $R^2 = (R)^2$
 
-|    Use the variances of the response and the residuals:  $r^2 = \dfrac{s_y^2 - s_{RES}^2}{s_y^2} = \dfrac{SST - SSE}{SST}$
+|    Use the variances of the response and the residuals:  $R^2 = \dfrac{s_y^2 - s_{RES}^2}{s_y^2} = \dfrac{SST - SSE}{SST}$
 
 
-6.  Use the correlation, $r$, found in question 2 of the activity, to calculate the coefficient of determination between budget and revenue, $r^2$.
+6.  Use the correlation, $R$, found in question 2 of the activity, to calculate the coefficient of determination between budget and revenue, $R^2$.
 
 \vspace{.4in}
 
@@ -169,7 +169,7 @@ $$\widehat{\text{revenue}} = b_0 + b_1\times budget + b_2\times duration.$$
 
 1. The sign of correlation and the sign of the slope will always be the same.  The closer the value of correlation is to $-1$ or $+1$, the stronger the relationship between the explanatory and the response variable.  
 
-2.  The coefficient of determination multiplied by 100 ($r^2 \times 100$) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100%, the stronger the relationship.
+2.  The coefficient of determination multiplied by 100 ($R^2 \times 100$) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100%, the stronger the relationship.
 
 3. A multiple linear regression model includes more than one variable as a predictor for the response variable.
 

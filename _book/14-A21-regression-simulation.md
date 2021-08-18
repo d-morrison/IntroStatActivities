@@ -37,14 +37,14 @@ The government of Singapore took a random sample of 373 homes in Singapore to co
 realestate <- read.csv("https://math.montana.edu/courses/s216/data/Real_estate.csv")
 ```
 
-#### Vocabulary review. {-}
+#### Vocabulary review {-}
 
 1. Explain why regression methods are appropriate to use to address the researchers' question. Make sure you clearly define the variables of interest in your explanation and their roles.
 
 \vspace{.5in}
 
 
-2. Use the provided `R` script file to create a scatterplot to examine the relationship between the distance to the nearest MRT station and house prices by filling in the variable names (`Distance` and `House_Price`) for `explanatory` and `response`` in **line 17.  Highlight and run lines 1--22**. 
+2. Use the provided `R` script file to create a scatterplot to examine the relationship between the distance to the nearest MRT station and house prices by filling in the variable names (`Distance` and `House_Price`) for `explanatory` and `response` in **line 17.  Highlight and run lines 1--22**. 
  
     
     ```r
@@ -54,7 +54,7 @@ realestate <- read.csv("https://math.montana.edu/courses/s216/data/Real_estate.c
       labs(x = "Distance to MRT Station (m)",  # Label x-axis
            y = "House Price (SGD/m^2)",  # Label y-axis
            title = "Scatterplot of House Prices by Distance to Train Station") + 
-                   # Be sure to tile your plots
+                   # Be sure to title your plots
       geom_smooth(method = "lm", se = FALSE)  # Add regression line
     ```
 
@@ -112,7 +112,7 @@ In this activity, we will focus on using simulation-based methods for inference 
 
 #### Simulation-based hypothesis test {-}
 
-First, let's think about how one simulation would be created on the null distribution using cards.  First, we would write the values for the response variable, wins, on each card.  Next, we would shuffle these $y$ values while keeping the $x$ values (explanatory variable) in the same order.  Then, find the line of regression for the shuffled cards and calculate either the sample slope or sample correlation.  
+First, let's think about how one simulation would be created on the null distribution using cards.  First, we would write the values for the response variable, house price, on each card.  Next, we would shuffle these $y$ values while keeping the $x$ values (explanatory variable) in the same order.  Then, find the line of regression for the shuffled cards and calculate either the sample slope or sample correlation.  
 
 11. Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
 

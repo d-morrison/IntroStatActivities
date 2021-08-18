@@ -124,16 +124,12 @@ movies %>%  # Data set piped into...
 
 \vspace{0.4in}
 
-\newpage
-
 #### Robust Statistics {-}
 
 Let's examine how the presence of outliers affect the values of center and spread. For this part of the activity we will look at the variable `revenue` in the movies data set. 
 
 
-```r
-movies %>% # Data set piped into...
-  summarise(favstats(revenue_mil))
+```
 #>   min       Q1   median       Q3      max     mean       sd  n missing
 #> 1   0 1.467318 33.02703 73.13457 407.1973 61.87334 89.57824 92       0
 ```
@@ -158,8 +154,6 @@ ggplot(aes(x = revenue_mil)) +   # Name variable to plot
 9.  Report the two measures of spread for these data.
 
 \vspace{0.8in}
-
-\newpage
 
 To show the effect of outliers on the measures of center and spread, the largest values in the data set were reduced by 100 \$MM. Upload and import the data set, `Movies2016_Sub` into RStudio.  Enter the variable name `revenue_mil` for `variable` in line 32 and 34 to summarize and create a boxplot of the data. Highlight and run lines 31--38.  
 

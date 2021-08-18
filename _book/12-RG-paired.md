@@ -178,7 +178,7 @@ $\mu_0$ represents
 \rgs 
 \rgs 
 
-6. Based on Figure 6.3, give the confidence interval for each of the following confidence levels.
+6. Based on Figure 6.3, give the confidence interval for the true mean for each of the following confidence levels.
 
 \rgi 90\% confidence interval = 
 \rgs 
@@ -321,10 +321,10 @@ For each of the following scenarios, determine if the two sets of observations a
 1.	To test whether the IQ is related to genetics, researchers measured the IQ of two biological parents and the IQ of their first-born child.  The average parent IQ was compared to the IQ of the first born child.
 \rgs
 
-2.	Hoping to see how exercise is related to heart rates, researchers asked a group of 30 volunteers to do either bicycle kicks or jumping jacks for 30 seconds.  Volunteer’s heart rate was measured at the end of 30 seconds, then the volunteers sat for a 5 minute rest period.  At the end of the rest period, the volunteer performed the other activity and their heart rate was measured again.  Which activity was done first was randomly assigned.
+2.	Hoping to see how exercise is related to heart rates, researchers asked a group of 30 volunteers to do either bicycle kicks or jumping jacks for 30 seconds.  Each volunteer’s heart rate was measured at the end of 30 seconds, then the volunteer sat for a 5 minute rest period.  At the end of the rest period, the volunteer performed the other activity and their heart rate was measured again.  Which activity was done first was randomly assigned.
 \rgs
 
-3.	Researchers hoping to look into the effectiveness of blended learning gathered two random samples of 50 8th graders (one at Belgrade Middle School which has 5 full-day instruction currently, the other from Chief Joseph Middle School which utilizes a 2-day on, 3-day off blended learning structure).  All 8th graders were given the same lessons and same homework, then asked to take the same end-of-unit test.
+3.	Researchers hoping to look into the effectiveness of blended learning gathered two random samples of 50 8th graders (one at Belgrade Middle School which had 5 full-day instruction at the time of the study, the other from Chief Joseph Middle School which utilized a 2-day on, 3-day off blended learning structure).  All 8th graders were given the same lessons and same homework, then asked to take the same end-of-unit test.
 \rgs
 
 Conditions to use the CLT for paired mean difference:

@@ -65,7 +65,7 @@ The red distribution you see is the scaled-Normal distribution representing the 
 5. Notice that there are some sample proportions under the red line (when the null hypothesis is true) which would lead us to reject the null hypothesis.  Give the range of sample proportions would lead to rejecting the null hypothesis when the null hypothesis is true?  What is the statistical name for this mistake?
 \vspace{0.4in}
 
-Check the "Type I Error" box under **Display**.  This should verify (or correct) your answer to question 5!  The area shaded in red represents the probability of making a **type 1 error** in our hypothesis test.  Recall that a type I error is when we reject the null hypothesis even though the null hypothesis is true.  To reject the null hypothesis, the p-value, which was found assuming the null hypothesis is true, must be less than or equal to the significance level.  Therefore the significance level is the maximum probability of rejecting the null hypothesis when the null hypothesis is true, so the significance level IS the probability of making a type 1 error in a hypothesis test!
+Check the "Type I Error" box under **Display**.  This should verify (or correct) your answer to question 5!  The area shaded in red represents the probability of making a **type 1 error** in our hypothesis test.  Recall that a type 1 error is when we reject the null hypothesis even though the null hypothesis is true.  To reject the null hypothesis, the p-value, which was found assuming the null hypothesis is true, must be less than or equal to the significance level.  Therefore the significance level is the maximum probability of rejecting the null hypothesis when the null hypothesis is true, so the significance level IS the probability of making a type 1 error in a hypothesis test!
 
 6.  **Based on the current applet settings, What percent of the null distribution is shaded red (what is the probability of making a type 1 error)?**
 \vspace{0.25in}
@@ -75,7 +75,7 @@ Let's say this physical therapist company believes their program can get 70% of 
 7.  Where is the blue distribution centered?
 \vspace{0.25in}
 
-The blue distribution that appears represents what the company believes, that 0.7 (not 0.5) is the true proportion of it's clients who return to their sport within 8 months of ACL surgery.  This blue distribution represents the idea that the **null hypothesis is false**.
+The blue distribution that appears represents what the company believes, that 0.7 (not 0.5) is the true proportion of its clients who return to their sport within 8 months of ACL surgery.  This blue distribution represents the idea that the **null hypothesis is false**.
 
 8.  Consider the definition of power provided earlier in this lab.  Do you believe the power of the test will be an area within the blue distribution or red distribution? How do you know?  What about the probability of making a type 2 error?
 \vspace{1in}
@@ -118,7 +118,7 @@ Now let's investigate how changes in different factors influences the power of a
 15. **How does increasing the sample size affect the power of the test?**
 \vspace{0.5in}
 
-16. Using the same “True value of $p$”, set the sample size to 50 and change the "Type I Error $\alpha$ to see the effect on Power.
+16. Using the same “True value of $p$”, set the sample size to 50 and change the "Type I Error $\alpha$" to see the effect on Power.
 
 \setlength\tabcolsep{0.5cm}
 \begin{longtable}{|l|c|c|c|c|c|}
@@ -135,7 +135,7 @@ Now let's investigate how changes in different factors influences the power of a
 \vspace{0.5in}
 
 
-19.  **Complete the power analysis for this physical therapy company.  The company believes 70% of their patients will return to either sport within 8 months of ACL surgery.  They want to limit the probability of a type 1 error to 10% and the probability of a type 2 error to 15%.  What is the minimum number of athletes the company will need to collect data from in order to meet these goals?  Use the applet to answer this question, then download your image created and upload the file to Gradescope.**
+19.  **Complete the power analysis for this physical therapy company.  The company believes 70% of their patients will return to their sport within 8 months of ACL surgery.  They want to limit the probability of a type 1 error to 10% and the probability of a type 2 error to 15%.  What is the minimum number of athletes the company will need to collect data from in order to meet these goals?  Use the applet to answer this question, then download your image created and upload the file to Gradescope.**
 \vspace{0.25in}
 
 20.  Based on the goals outlined in question 19, which mistake below is the company more concerned about?  Explain your answer.

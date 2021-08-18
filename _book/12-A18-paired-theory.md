@@ -70,7 +70,7 @@ Conditions for the sampling distribution of $\bar{x}$ to follow an approximate N
     - $n < 30$: If the sample size $n$ is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
 
     - $n \geq 30$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
-    
+ 
 \begin{figure}
 
 {\centering \includegraphics[width=0.7\linewidth]{12-A18-paired-theory_files/figure-latex/tdist-1} 
@@ -80,10 +80,11 @@ Conditions for the sampling distribution of $\bar{x}$ to follow an approximate N
 \caption{Comparison of the standard Normal vs t-distribution with various degrees of freedom}(\#fig:tdist)
 \end{figure}
     
+ 
 Like we saw in Chapter 5, we will not know the values of the parameters and must use the sample data to estimate them.  Unlike with proportions, in which we only needed to estimate $\pi$, quantitative sample data must be used to estimate both $\mu$ and $\sigma$. This additional uncertainty will require us to use a theoretical distribution that is just a bit wider than the Normal distribution.  Enter the **$t$-distribution**!
 
 
-As you can seen from Figure \@ref(fig:tdist) on the following page, the $t$-distributions (dashed and dotted lines) are centered at 0 just like a standard Normal distribution (solid line), but are slightly wider.  The variability of a $t$-distribution depends on the degrees of freedom, which is calculated from the sample size of a study.  Recall from previous classes that larger sample sizes tend to result in narrower sampling distributions?  We see that here as well.  The larger the sample size, the larger the degrees of freedom, the narrower the $t$-distribution.  (In fact, a $t$-distribution with infinite degrees of freedom actually IS the standard Normal distribution!)
+As you can seen from Figure \@ref(fig:tdist) on the previous page, the $t$-distributions (dashed and dotted lines) are centered at 0 just like a standard Normal distribution (solid line), but are slightly wider.  The variability of a $t$-distribution depends on the degrees of freedom, which is calculated from the sample size of a study.  Recall from previous classes that larger sample sizes tend to result in narrower sampling distributions?  We see that here as well.  The larger the sample size, the larger the degrees of freedom, the narrower the $t$-distribution.  (In fact, a $t$-distribution with infinite degrees of freedom actually IS the standard Normal distribution!)
 
 
 #### Summarize and visualize the data {-}
@@ -183,7 +184,7 @@ qt(0.95, df = 371, lower.tail=TRUE)
 
 \caption{t-distribution with 371 degrees of freedom}(\#fig:tstar)
 \end{figure}
-13.  In Figure @\ref(fig:tstar), you see a t-distribution with 371 degrees of freedom. Label $t^\star$ and $-t^\star$ on that distribution.  Write on the plot the percent of the $t_{371}$-distribution that is below $-t^\star$, between $-t^\star$ and $t^\star$, and above $t^\star$.  Then use your plot to determine the confidence level associated with the $t^\star$ value obtained.
+13.  In Figure \@ref(fig:tstar), you see a t-distribution with 371 degrees of freedom. Label $t^\star$ and $-t^\star$ on that distribution.  Write on the plot the percent of the $t_{371}$-distribution that is below $-t^\star$, between $-t^\star$ and $t^\star$, and above $t^\star$.  Then use your plot to determine the confidence level associated with the $t^\star$ value obtained.
 \vspace{0.3in}
 
 

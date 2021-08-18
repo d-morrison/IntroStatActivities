@@ -89,7 +89,7 @@ swearing_diff %>%
 
 ### Hypothesis test {-}
 
-Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that swearing does not effect pain tolerance, or that the length of time a subject kept their hand in the water would be the same whether the patient was swearing or not.
+Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that swearing does not affect pain tolerance, or that the length of time a subject kept their hand in the water would be the same whether the patient was swearing or not.
 
 We will use the `paired_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample means differences and compute a p-value. 
 
@@ -152,11 +152,11 @@ paired_bootstrap_CI(data = swearing_diff$differences, # Enter vector of differen
 
 \vspace{1.5in}
 
-15. Interpret the *confidence level* of the in you interval calculated in question 14. 
+15. Interpret the *confidence level* of the interval you calculated in question 14. 
 
 \vspace{0.8in}
 
-16.  Write a paragraph summarizes the results of this study as if you were describing the results to your roommate.  Be sure to describe:
+16.  Write a paragraph summarizing the results of this study as if you were describing the results to your roommate.  Be sure to describe:
 
 * Summary statistic
 
