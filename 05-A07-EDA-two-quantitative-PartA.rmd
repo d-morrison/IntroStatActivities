@@ -42,7 +42,7 @@ We will revisit the data set used last week collected on Movies released in 2016
 | `facebook_likes` | Number of likes a movie receives on Facebook |
 
 
-#### Vocabulary review. {-}
+#### Vocabulary review {-}
 
 ```{r}
 movies <- read.csv("https://math.montana.edu/courses/s216/data/Movies2016.csv") # Reads in data set
@@ -64,7 +64,7 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
   geom_point() +  # Add scatterplot of points
   labs(x = "Budget in Millions ($)",  # Label x-axis
        y = "Revenue in Millions ($)",  # Label y-axis
-       title = "Revenue vs. Budget") + # Be sure to tile your plots
+       title = "Revenue vs. Budget") + # Be sure to title your plots
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
 3. Sketch the scatterplot created from the code.
@@ -157,7 +157,7 @@ $e_i=y_i-\hat{y}_i$
 
 1.	Two quantitative variables are graphically displayed in a scatterplot.  The explanatory variable is on the $x$-axis and the response variable is on the $y$-axis.  When describing the relationship between two quantitative variables we look at the form (linear or non-linear), direction (positive or negative), strength, and for the presence of outliers. 
 
-2.  There are three summary statistics used to summarize the relationship between two quantitative variables: correlation ($r$), slope of the regression line ($b_1$), and the coefficient of determination ($r^2$).  
+2.  There are three summary statistics used to summarize the relationship between two quantitative variables: correlation ($R$), slope of the regression line ($b_1$), and the coefficient of determination ($R^2$).  
 
 3.  We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable (reflect on why this is true.).  This is called **extrapolation**. 
 

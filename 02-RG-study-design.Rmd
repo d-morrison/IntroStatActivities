@@ -71,7 +71,7 @@ True or False: Random sampling helps to resolve selection bias, but has no impac
 
 **Videos**  
 
-* 1.4 to 1.6
+* 1.4to1.6
 
 \setstretch{1.25}
 

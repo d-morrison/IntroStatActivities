@@ -90,7 +90,7 @@ summary(penguinsLM)$coefficients # Display coefficient summary
 
 \vspace{.8in}
 
-7. **Using the least squares line from question 5, predict the body mass for a penguin for a flipper length of 181 mm.**
+7. **Using the least squares line from question 5, predict the body mass for a penguin with a flipper length of 181 mm.**
 
 \vspace{.6in}
 
