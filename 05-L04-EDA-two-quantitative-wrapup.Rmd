@@ -1,4 +1,4 @@
-## Week 4 Lab:  Penguins
+## Week 5 Lab:  Penguins
 
 \setstretch{1}
 

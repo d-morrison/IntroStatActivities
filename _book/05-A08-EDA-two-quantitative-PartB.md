@@ -36,6 +36,11 @@ We will revisit the movie data set collected on Movies released in 2016 to furth
 | `facebook_likes` | Number of likes a movie receives on Facebook |
 
 
+```r
+movies <- read.csv("https://math.montana.edu/courses/s216/data/Movies2016.csv") # Reads in data set
+```
+
+\newpage
 
 #### Correlation  {-}
 
@@ -80,6 +85,7 @@ movies %>%  # Data set pipes into
 5.  Explain why the correlation values on the diagonal are equal to 1.
 
 \vspace{0.8in}
+\newpage
 
 #### Coefficient of determination (squared correlation) {-}
 
@@ -100,7 +106,7 @@ Another summary measure used to explain the linear relationship between two quan
 
 8.  Write a sentence interpreting the coefficient of determination in context of the problem.
 
-\vspace{1in}
+\newpage
 
 #### Multivariable plots {-}
 What if we wanted to see if the relationship between movie budget and revenue differs if we add another variable into the picture?  The following plot visualizes three variables, creating a **multivariable** plot. 
@@ -131,7 +137,6 @@ movies %>% # Data set pipes into...
 
 \vspace{0.8in}
 
-\newpage
 #### Multiple Linear Regression {-}
 
 In order to see what other variables may have an impact on revenue for movies released in 2016 we created a multivariate model.  The following `R` code gives the estimates for the regression model with `budget_mil` and `duration` included.

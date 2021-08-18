@@ -40,7 +40,7 @@ For the next exercises, identify the explanatory variable, the response variable
 
 \newpage
 
-1. The pharmaceutical company Moderna Therapeutics,  working in conjunction with the National Institutes of Health, conducted Phase 3 clinical trials towards a vaccine for COVID-19 last fall.  US clinical research sites enrolled 30,000 volunteers without COVID-19 to participate. Participants were randomly assigned to receive either the candidate vaccine or a saline placebo.  They were then followed to assess whether or not they developed COVID-19. The trial was double-blind, so neither the investigators nor the participants knew who was assigned to which group.
+1. The pharmaceutical company Moderna Therapeutics,  working in conjunction with the National Institutes of Health, conducted Phase 3 clinical trials of a vaccine for COVID-19 last fall.  US clinical research sites enrolled 30,000 volunteers without COVID-19 to participate. Participants were randomly assigned to receive either the candidate vaccine or a saline placebo.  They were then followed to assess whether or not they developed COVID-19. The trial was double-blind, so neither the investigators nor the participants knew who was assigned to which group.
 \vspace{0.1in}
     
     Explanatory variable:
@@ -89,20 +89,31 @@ Non-males: An, Nailah, Jasmine, Ka Nong, Keyaina, Mary, Adah, Sassandra
 4. Is this a simple random sample or a convenience sample?  How do you know?
 \vspace{0.5in}
 
-5. To what population should the results of this study be generalized, based on the sampling method?
+5. Based on the sampling method, to what population should the results of this study be generalized?
 \vspace{0.5in}
 
 6. One way to separate into two groups would be give all the males the placebo and all the non-males the new drug.  Would this be a reasonable strategy?  Explain your answer.
 \vspace{1in}
 
-7. Could the scientists fix the problem with the strategy presented in question 6 by putting four males into the drug group so that the drug group has 8 non-males and 4 females and the placebo group has 12 males?  Explain your answer.
+7. Could the scientists fix the problem with the strategy presented in question 6 by putting four males into the drug group so that the drug group has 8 non-males and 4 males and the placebo group has 12 males?  Explain your answer.
 \vspace{0.5in}
 
-8. A third strategy would be to **block** on sex.  In this type of study, the scientists would assign 4 non-males and 8 males to each group.  Say they put the four tallest non-males and eight tallest males into the placebo group and the remaining subjects into the control group.  Using this strategy, how many males are in each group?  What is the sample size of each group?  Is the proportion of males the same in the drug and placebo groups?
+8. A third strategy would be to **block** on sex.  In this type of study, the scientists would assign 4 non-males and 8 males to each group.  Say they put the four tallest non-males and eight tallest males into the placebo group and the remaining subjects into the control group.  
+
+    a. Using this strategy, how many males are in each group?  
+\vspace{0.3in}
+    
+    b. What is the sample size of each group?  
+\vspace{0.3in}
+
+    c. Is the proportion of males the same in the drug and placebo groups?
+\vspace{0.3in}
+
+9. **Assume the scientists used the strategy in question 8 and found that the proportion of patients whose heart rate stabilized is higher in the drug group than the placebo group.**  Could that difference be due to the sex of the subjects?  Explain your answer.
 \vspace{0.5in}
 
-9. **Assume the scientists used the strategy in question 8 and found that the proportion of patients whose heart rate stabilized is higher in the drug group than the placebo group.  Could that difference be due to the sex of the subjects?  Explain your answer.  Could it be due to other variables?  Explain your answer.**
-\vspace{1in}
+    b. Could it be due to other variables?  Explain your answer.
+\vspace{0.5in}
 
 \newpage
 
@@ -124,10 +135,10 @@ When both these conditions are met, if we observe an association between the exp
 In this random assignment, what proportion of males are in group 1 (the placebo group?  What proportion of males are in group 2 (the drug group)?  What is the difference in proportion of males between the two groups (placebo - drug)?
 \vspace{0.25in}
 
-11.  Notice the difference in the two proportions is shown as a dot in the plot at the bottom of the web site.  Un-check the box for Animate under "Simulation" and click Randomize again.  Did you get the same difference in proportion of men between the placebo and drug groups?
+11.  Notice the difference in the two proportions is shown as a dot in the plot at the bottom of the web site.  Un-check the box for Animate under "Simulation" and click Randomize again.  Did you get the same difference in proportion of males between the placebo and drug groups?
 \vspace{0.25in}
 
-12.  Change Repetitions under "Simulation" to 998 (for 1000 total).  Copy the plot of the distribution of difference in proportions from each of the 1000 random assignments here.  Be sure to include a descriptive $x$-axis label. 
+12.  Change Repetitions under "Simulation" to 998 (for 1000 total).  Sketch the plot of the distribution of difference in proportions from each of the 1000 random assignments here.  Be sure to include a descriptive $x$-axis label. 
 \vspace{1.25in}
 
 13.  **Does random assignment *always* balance the placebo and drug groups based on the sex of the participants?  Does random assignment *tend* to make the placebo and drug groups *roughly* the same with respect to the distribution of sex?  Use your plot from question 12 to justify your answers.**
@@ -147,15 +158,15 @@ The diagram below summarizes these ideas about confounding variables and random 
 
 \begin{center}\includegraphics[width=0.4\linewidth]{02-L01-random-assignment_files/figure-latex/unnamed-chunk-1-1} \end{center}
 
-16.  **What is the purpose of random assignment of the cases in a study to the explanatory variable groups?**
+16.  **What is the purpose of random assignment of the subjects in a study to the explanatory variable groups?**
 \vspace{0.8in}
 
-17. Suppose the scientists here did randomly assign groups and found that the drug group has a higher proportion of subjects whose heart rates stabilized than the placebo group.  Can the scientists conclude the new drug *caused* the increased chance of stabilization?  Explain your answer.
+17. Suppose in this study on atrial fibrillation, the scientists did randomly assign groups and found that the drug group has a higher proportion of subjects whose heart rates stabilized than the placebo group.  Can the scientists conclude the new drug *caused* the increased chance of stabilization?  Explain your answer.
 \vspace{0.5in}
 
 \newpage
 
-18. **Both the sampling method (which we covered earlier this week) and the study design will help to determine the *scope of inference* for a study: To *whom* can we generalize, and can we conclude *causation or only association*? Use the table below to determine the scope of inference of this trial study.**
+18. **Both the sampling method (which we covered earlier this week) and the study design will help to determine the *scope of inference* for a study: To *whom* can we generalize, and can we conclude *causation or only association*? Use the table below to determine the scope of inference of this trial study described in question 17.**
 \vspace{0.3in}
 
 

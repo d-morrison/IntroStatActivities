@@ -114,7 +114,7 @@ ggplot(aes(x = explanatory, fill = response)) +   # This specifies the variables
     scale_fill_grey()  # Make figure black and white
 ```
 
-5. Sketch the segmented bar plot created here. Be sure to label the axes.  **Copy and upload the segmented bar plot to Gradescope.**
+5. Sketch the segmented bar plot created here. Be sure to label the axes.  **Copy and upload the segmented bar plot to Gradescope.  To copy the plot, click on "Export-Save as Image in the bottom right hand frame of the screen on the "Plots" tab.  Be sure to save the image as a png.**
 
 \vspace{2in}
 

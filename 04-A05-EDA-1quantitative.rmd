@@ -45,11 +45,11 @@ A data set was collected on movies released in 2016.  Here is a list of some of 
 
 \vspace{0.1in}
 
-2. Which of the above listed variables are categorical?
+2. Which of the listed variables are categorical?
 
 \vspace{.5in}
 
-3. Which of the above listed variables are quantitative?
+3. Which of the listed variables are quantitative?
 
 \vspace{.5in}
 
@@ -137,7 +137,7 @@ movies %>% # Data set pipes into...
   slice_max(imdb_score, n = 3)  # Show 3 largest values
 ```
 
-    Using the summary statistics above, and the smallest and largest values of the variable to check for outliers, sketch a box plot of IMDb Score.  Be sure to label the axes.
+    Using the summary statistics given in the `R` output before question 4, and the smallest and largest values of the variable to check for outliers, sketch a box plot of IMDb Score.  Be sure to label the axes.
 
 \vspace{1.5in}
 

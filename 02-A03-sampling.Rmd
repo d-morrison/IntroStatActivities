@@ -43,7 +43,7 @@ To use a random number generator to select a simple random sample, you first nee
 
 * Set "How many numbers do you want to generate?" to 10 and ensure the No option is selected under "Sample with Replacement?" 
 
-Fill in the table below with the random numbers selected and each use the Becenti.csv data file found on D2L to determine each number’s corresponding word and word length (number of letters/digits in the word):
+Fill in the table below with the random numbers selected and use the Becenti.csv data file found on D2L to determine each number’s corresponding word and word length (number of letters/digits in the word):
 
 ```{r, fig.align = "center", out.width="50%", fig.cap=""}
 include_graphics("images/random_word_length.png")
@@ -99,7 +99,7 @@ One set of randomly generated sample mean word lengths from a single class may n
 9. Explain why the sampling method of using a random number generator to generate a sample is a "better" method than choosing 10 words “by eye”.
 \vspace{0.8in}
 
-10.  Is random selection an unbiased method of selection?  Explain how you know, being sure to reference your plot from question 7.
+10.  Is random selection an unbiased method of selection?  Explain your answer. Be sure to reference your plot from question 7.
 \vspace{0.5in}
 
 

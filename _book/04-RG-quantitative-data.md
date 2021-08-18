@@ -8,7 +8,7 @@
 
 **Videos**  
 
-* 5.3
+* 2.3
 
 ### Type of Plots {-}
 
@@ -88,8 +88,6 @@ Five number summary:
 $X^{th}$ percentile:
 \rgs
 
-    e.g. if the value 6 is at the 10th percentile, then 10% of the data have values 6 or below.
-
 Interquartile range (IQR):
 \rgs
 
@@ -139,8 +137,7 @@ Section 2.4 presents four tutorials on analyzing quantitative data in `R`.  We r
 
 #### Notes {-}
 
-Statistics summarize _____________ .
-
+Statistics summarize _____________ .  
 Parameters summarize _____________.
 
 Fill in the following table with the appropriate notation for each summary measure.
