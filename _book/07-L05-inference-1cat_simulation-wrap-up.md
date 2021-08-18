@@ -53,19 +53,19 @@ Among all comic book characters produced by the comic book publisher Marvel, 25\
 
 * Probability of success:
 
-\vspace{.2in}
+\vspace{.1in}
 * Sample size:
     
-\vspace{.2in}
+\vspace{.1in}
 * Number of repetitions:
     
-\vspace{.2in}
+\vspace{.1in}
 * As extreme as:
     
-\vspace{.2in}
+\vspace{.1in}
 * Direction (`"greater"`, `"less"`, or `"two-sided"`):
 
-\vspace{.2in}
+\vspace{.1in}
 
 We will use the `one_proportion_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample proportions and compute a p-value. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 7 in the one proportion test to create a null distribution with 1000 simulations. Then highlight and run lines 1--9.  **Upload a copy of the created null distribution showing your p-value to Gradescope.**
 
@@ -81,7 +81,7 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
 
 8.  **Report the p-value.  Interpret the p-value in context of the study.**
 
-\vspace{1in}
+\vspace{0.8in}
 
 9. Write a conclusion in context of the study.
 
@@ -137,7 +137,7 @@ a. In the graph on the bottom right, click on a green dot.  Write down the confi
 \vspace{0.5in}
 
 
-b. Now click on a red dot.  Write down the confidence interval for this sample.  Does this confidence interval contain the null value of 0.25.?
+b. Now click on a red dot.  Write down the confidence interval for this sample.  Does this confidence interval contain the null value of 0.25?
 \vspace{0.5in}
 
 

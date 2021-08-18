@@ -201,6 +201,7 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 
 2. The median and the interquartile range are robust statistics, meaning that they are not affected by very large or very small values.  When we have a skewed distribution the best measure of center is the median and the best measure of spread is the IQR.
 
+\newpage
 
 ### Additional notes
 

@@ -96,14 +96,14 @@ For this activity, you will read a speech given by Jim Becenti, a member of the 
 
 5. Circle ten words in Jim Becenti's speech which are a representative sample of the length of words in the entire text.  Describe your method for selecting this sample.
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 6. Fill in the table below with your selected words from the previous question and the length of each word (number of letters/digits in the word):
 \vspace{1mm}
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{images/word_length} 
+{\centering \includegraphics[width=0.65\linewidth]{images/word_length} 
 
 }
 
@@ -128,7 +128,7 @@ For this activity, you will read a speech given by Jim Becenti, a member of the 
 11. If your samples were truly representative, what proportion of sample means would you expect to be below 3.95?
 \vspace{0.5in}
 
-12.  What proportion of students’ computed sample means were lower than the true mean of 3.95 letters? 
+12.  What proportion of students' computed sample means were lower than the true mean of 3.95 letters? 
 \vspace{0.5in}
 
 13.  Based on your answers to questions 11 and 12, would you say the sampling method used by the class is biased or unbiased?  Justify your answer.  

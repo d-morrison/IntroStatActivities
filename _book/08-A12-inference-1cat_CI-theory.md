@@ -54,7 +54,7 @@ Recall from earlier in the semester we learned that the sample standard deviatio
 
 3.  Interpret the standard error of the sample proportion found in question 2 in context of the problem.
 
-\vspace{0.8in}
+\vspace{0.6in}
 
 
 To find the confidence interval, we will add and subtract the **margin of error** to the point estimate:
@@ -68,13 +68,12 @@ The $z^*$ multiplier is the percentile of a standard normal distribution that co
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.6\linewidth]{08-A12-inference-1cat_CI-theory_files/figure-latex/simpleNormaldist-1} 
+{\centering \includegraphics[width=0.5\linewidth]{08-A12-inference-1cat_CI-theory_files/figure-latex/simpleNormaldist-1} 
 
 }
 
 \caption{A standard normal curve.}(\#fig:simpleNormaldist)
 \end{figure}
-\vspace{0.1in}
 
 The `qnorm()` function in `R` will tell us the $z^*$ value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile). 
 

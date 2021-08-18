@@ -45,7 +45,7 @@ To use a random number generator to select a simple random sample, you first nee
 
 Fill in the table below with the random numbers selected and use the Becenti.csv data file found on D2L to determine each number’s corresponding word and word length (number of letters/digits in the word):
 
-```{r, fig.align = "center", out.width="50%", fig.cap=""}
+```{r, fig.align = "center", out.width="65%", fig.cap=""}
 include_graphics("images/random_word_length.png")
 ```
 

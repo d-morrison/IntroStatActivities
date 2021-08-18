@@ -136,6 +136,7 @@ movies %>% # Data set pipes into...
 10. Does the *relationship* between movie budget and revenue differ among the different content ratings?  Explain.
 
 \vspace{0.8in}
+\newpage
 
 #### Multiple Linear Regression {-}
 

@@ -148,11 +148,11 @@ Let's think about how to use cards to create one simulation of 16 infants under 
 
 15.  Next, we would mix the cards together and draw 1 card, write down if the card says helper or hinderer, and replace the card.  How many times would we need to repeat this process to simulate one sample?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 16.  Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
 
-\vspace{0.8in}
+\vspace{0.5in}
 
 17.  Create one simulation using the cards provided.  Report your results to your instructor.  Sketch the distribution of simulated results created by your class below.
 

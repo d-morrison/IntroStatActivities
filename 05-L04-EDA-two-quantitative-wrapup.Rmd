@@ -33,24 +33,24 @@ penguins %>%
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
 
-1. Assess the four features of the scatterplot that describe this relationship. Describe each feature using a complete sentence!
+1. Assess the four features of the scatterplot that describe this relationship.
 \vspace{1mm}
 
 * Form (linear, non-linear)
 
-\vspace{.15in}
+\vspace{.1in}
 
 * Direction (positive, negative)
 
-\vspace{.15in}
+\vspace{.1in}
 
 * Strength
 
-\vspace{.15in}
+\vspace{.1in}
 
 * Unusual observations or outliers
 
-\vspace{.15in}
+\vspace{.1in}
 
 Highlight and run lines 14--18 to get the correlation matrix in the `R` script file.
 

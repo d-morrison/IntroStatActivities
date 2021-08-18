@@ -22,7 +22,7 @@ To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5
 
 ### Helper-Hinderer
 
-In the last class, we found very strong evidence that the true proportion of infants who will choose the helper character is greater than 0.5. But what is the true proportion of infants who will choose the helper character? We will
+In the last class, we found very strong evidence that the true proportion of infants who will choose the helper character is greater than 0.5. But what *is* the true proportion of infants who will choose the helper character? We will
 use this same study to estimate this parameter of interest.
 
 As a reminder: Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Researchers were hoping to assess: Are infants able to notice and react to helpful or hindering behavior observed in others?  In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.

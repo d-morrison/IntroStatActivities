@@ -47,7 +47,7 @@ Fill in the table below with the random numbers selected and use the Becenti.csv
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{images/random_word_length} 
+{\centering \includegraphics[width=0.65\linewidth]{images/random_word_length} 
 
 }
 

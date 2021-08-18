@@ -100,19 +100,21 @@ Non-males: An, Nailah, Jasmine, Ka Nong, Keyaina, Mary, Adah, Sassandra
 
 8. A third strategy would be to **block** on sex.  In this type of study, the scientists would assign 4 non-males and 8 males to each group.  Say they put the four tallest non-males and eight tallest males into the placebo group and the remaining subjects into the control group.  
 
-    a. Using this strategy, how many males are in each group?  
-\vspace{0.3in}
+|    Using this strategy, how many males are in each group?  
+\vspace{0.1in}
     
-    b. What is the sample size of each group?  
-\vspace{0.3in}
+|    What is the sample size of each group?  
+\vspace{0.1in}
 
-    c. Is the proportion of males the same in the drug and placebo groups?
-\vspace{0.3in}
+|    Is the proportion of males the same in the drug and placebo groups?
+\vspace{0.1in}
 
-9. **Assume the scientists used the strategy in question 8 and found that the proportion of patients whose heart rate stabilized is higher in the drug group than the placebo group.**  Could that difference be due to the sex of the subjects?  Explain your answer.
+9. **Assume the scientists used the strategy in question 8 and found that the proportion of patients whose heart rate stabilized is higher in the drug group than the placebo group.**  
+
+|    Could that difference be due to the sex of the subjects?  Explain your answer.
 \vspace{0.5in}
 
-    b. Could it be due to other variables?  Explain your answer.
+|    Could it be due to other variables?  Explain your answer.
 \vspace{0.5in}
 
 \newpage
@@ -132,8 +134,14 @@ When both these conditions are met, if we observe an association between the exp
 
 * Click "Randomize".  
 
-In this random assignment, what proportion of males are in group 1 (the placebo group?  What proportion of males are in group 2 (the drug group)?  What is the difference in proportion of males between the two groups (placebo - drug)?
-\vspace{0.25in}
+|    In this random assignment, what proportion of males are in group 1 (the placebo group)?  
+\vspace{0.1in}
+
+|    What proportion of males are in group 2 (the drug group)?  
+\vspace{0.1in}
+
+|    What is the difference in proportion of males between the two groups (placebo - drug)?
+\vspace{0.1in}
 
 11.  Notice the difference in the two proportions is shown as a dot in the plot at the bottom of the web site.  Un-check the box for Animate under "Simulation" and click Randomize again.  Did you get the same difference in proportion of males between the placebo and drug groups?
 \vspace{0.25in}

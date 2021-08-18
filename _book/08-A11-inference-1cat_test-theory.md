@@ -82,6 +82,7 @@ Conditions for the sampling distribution of $\hat{p}$ to follow an approximate n
 6. Is the success-failure condition met to model the data with the normal distribution?  Show your work to support your answer. Hint: We don't know the true value of the parameter, $\pi$, so we use the null value, $\pi_0$, to check the success-failure condition.
 
 \vspace{1in}
+\newpage
 
 To calculate the standardized statistic we use the general formula 
 
@@ -96,40 +97,36 @@ $$
 where the standard error is calculated using the null value:
 
 $$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$.
-\vspace{0.5mm}
-
-\newpage
 
 7.  Calculate the null standard error of the sample proportion.
 
-\vspace{1in}
+\vspace{0.6in}
 
 8.  Calculate the standardized sample proportion.  
 
-\vspace{1in}
+\vspace{0.6in}
 
 
 The standardized statistic is used as a ruler to measure how far the sample statistic is from the null value.  Essentially, we are converting the sample proportion into a measure of standard errors to compare to the standard normal distribution.  
 
+9.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in the percentages on the standard normal distribution displayed in Figure \@ref(fig:simpleNormalcurve), and also mark the value of the standardized statistic calculated in question 8.
+
 \begin{figure}
 
-{\centering \includegraphics[width=0.6\linewidth]{08-A11-inference-1cat_test-theory_files/figure-latex/simpleNormalcurve-1} 
+{\centering \includegraphics[width=0.5\linewidth]{08-A11-inference-1cat_test-theory_files/figure-latex/simpleNormalcurve-1} 
 
 }
 
 \caption{A standard normal curve.}(\#fig:simpleNormalcurve)
 \end{figure}
-9.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in the percentages on the standard normal distribution displayed in Figure \@ref(fig:simpleNormalcurve), and also mark the value of the standardized statistic calculated in question 8.
 
-\vspace{0.2in}
+\newpage
 
 The standardized statistic measures the *number of standard errors the sample statistic is from the null value*.
 
 10.  Interpret the standardized sample proportion from question 8 in context of the problem.
 
 \vspace{.8in}
-
-\newpage
 
 We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 8 at `xx` in line 7; highlight and run lines 7--9.  Notice that in line 9 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
 

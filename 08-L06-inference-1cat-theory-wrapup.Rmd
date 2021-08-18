@@ -138,6 +138,8 @@ Now let's investigate how changes in different factors influences the power of a
 19.  **Complete the power analysis for this physical therapy company.  The company believes 70% of their patients will return to their sport within 8 months of ACL surgery.  They want to limit the probability of a type 1 error to 10% and the probability of a type 2 error to 15%.  What is the minimum number of athletes the company will need to collect data from in order to meet these goals?  Use the applet to answer this question, then download your image created and upload the file to Gradescope.**
 \vspace{0.25in}
 
+\newpage
+
 20.  Based on the goals outlined in question 19, which mistake below is the company more concerned about?  Explain your answer.
 
 * Not being able to advertise their ACL recovery program is better than average when their program really is better.
@@ -146,24 +148,5 @@ Now let's investigate how changes in different factors influences the power of a
 
 \vspace{0.8in}
 
-
-### Take-home messages
-
-1. The following will increase the power in a hypothesis test:
-
-* Increase the sample size
-
-* Increase the significance level
-
-* Increase the distance between the hypothesized null value and the true parameter value
-
-2.  The significance level of a test is the maximum probability of making a type 1 error.
-
-
-3.  Power + type 2 error rate = 1.
-
-### Additional notes
-
-Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
 \newpage

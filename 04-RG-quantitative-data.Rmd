@@ -186,6 +186,8 @@ Two quantitative variables  & \\
 \end{center}
 
 \rgs
+\newpage 
+
 Decision tree for determining an appropriate plot  given a number of variables and their types from Chapter 2 review:
 
 ```{r decision-tree-plots, fig.fullwidth=TRUE}
