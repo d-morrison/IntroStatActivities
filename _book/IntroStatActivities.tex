@@ -960,7 +960,7 @@ True or False: Random sampling helps to resolve selection bias, but has no impac
 \begin{itemize}
 \tightlist
 \item
-  1.4 to 1.6
+  1.4to1.6
 \end{itemize}
 
 \setstretch{1.25}
@@ -3811,7 +3811,7 @@ Correlation:
 \subsubsection*{Notes}\label{notes-8}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
-General equation of a linear regression for a \emph{population}: \(y= \beta_0+ \beta_1 x+\epsilon\), where
+General equation of a linear model for a \emph{population}: \(y= \beta_0+ \beta_1 x+\epsilon\), where
 
 \rgi \(x\) represents
 \rgs
@@ -3912,7 +3912,7 @@ True or false: A positive residual indicates the data point is above the regress
   Calculate the predicted head length for a possum with a 76.0 cm total length.
   \rgs
 \item
-  One of the possums in the data set has a total length of 76.0 cm and a head length of 85.1 cm. Calculate the residual for this possum. Does this possum lie above or below the regression line?
+  One of the possums in the data set has a total length of 76.0 cm and a head length of 85.1 mm. Calculate the residual for this possum. Does this possum lie above or below the regression line?
   \rgs
 \end{enumerate}
 
@@ -3956,8 +3956,7 @@ slope:
 \rgs
 
 Extrapolation:
-
-\rgi Assumes the pattern seen in the data extends beyond the data collected!
+\rgs 
 
 Coefficient of determination:
 
@@ -4103,10 +4102,10 @@ Section 3.4 presents five tutorials on analyzing two quantitative variables in \
 \subsubsection*{Notes}\label{notes-11}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
-Statistics summarize
+Statistics summarize:
 \rgs
 
-Parameters summarize
+Parameters summarize:
 \rgs
 
 What are the two ways to calculate the coefficient of determination?
@@ -4166,7 +4165,7 @@ Look at the table of vocabulary terms. If there are any you do not know, be sure
 \subsubsection*{Reminder from Section 3.1}\label{reminder-from-section-3.1}}
 \addcontentsline{toc}{subsubsection}{Reminder from Section 3.1}
 
-Use color and a legend to add a third variable to a scatterplot. E.g., Color the dots to represent different levels of a categorical variable or shading to represent different values of a quantitative variable.
+Use color and a legend to add a third variable to a scatterplot. E.g., Color the dots to represent different levels of a categorical variable or use shading of the dots to represent different values of a quantitative variable.
 
 \hypertarget{vocabulary-9}{%
 \subsubsection*{Vocabulary}\label{vocabulary-9}}
@@ -4182,7 +4181,7 @@ Aesthetic:
 \subsubsection*{Notes}\label{notes-12}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
-If the response and one predictor are quantitative and the other predictor categorical, we fit a regression line for each level of the categorical predictor.
+If the response and one predictor are quantitative and the other predictor is categorical, we fit a regression line for each level of the categorical predictor.
 
 \begin{itemize}
 \item
@@ -4352,9 +4351,9 @@ We will revisit the data set used last week collected on Movies released in 2016
 \bottomrule
 \end{longtable}
 
-\hypertarget{vocabulary-review.-1}{%
-\subsubsection*{Vocabulary review.}\label{vocabulary-review.-1}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review.}
+\hypertarget{vocabulary-review}{%
+\subsubsection*{Vocabulary review}\label{vocabulary-review}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4384,7 +4383,7 @@ We will look at the relationship between budget and revenue for movies released 
   \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}  \CommentTok{\# Add scatterplot of points}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Budget in Millions ($)"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
        \AttributeTok{y =} \StringTok{"Revenue in Millions ($)"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
-       \AttributeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\SpecialCharTok{+} \CommentTok{\# Be sure to tile your plots}
+       \AttributeTok{title =} \StringTok{"Revenue vs. Budget"}\NormalTok{) }\SpecialCharTok{+} \CommentTok{\# Be sure to title your plots}
   \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{se =} \ConstantTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
 \end{Highlighting}
 \end{Shaded}
@@ -4569,7 +4568,7 @@ $e_i=y_i-\hat{y}_i$
 \item
   Two quantitative variables are graphically displayed in a scatterplot. The explanatory variable is on the \(x\)-axis and the response variable is on the \(y\)-axis. When describing the relationship between two quantitative variables we look at the form (linear or non-linear), direction (positive or negative), strength, and for the presence of outliers.
 \item
-  There are three summary statistics used to summarize the relationship between two quantitative variables: correlation (\(r\)), slope of the regression line (\(b_1\)), and the coefficient of determination (\(r^2\)).
+  There are three summary statistics used to summarize the relationship between two quantitative variables: correlation (\(R\)), slope of the regression line (\(b_1\)), and the coefficient of determination (\(R^2\)).
 \item
   We can use the line of regression to predict values of the response variable for values of the explanatory variable. Do not use values of the explanatory variable that are outside of the range of values in the data set to predict values of the response variable (reflect on why this is true.). This is called \textbf{extrapolation}.
 \end{enumerate}
@@ -4725,16 +4724,16 @@ Correlation measures the strength and the direction of the linear relationship b
 
 Another summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination (\(r^2\)). The coefficient of determination, \(r^2\), can also be used to describe the strength of the linear relationship between two quantitative variables. The value of \(r^2\) (a value between 0 and 1) represents the \textbf{proportion of variation in the response that is explained by the least squares line with the explanatory variable}. There are two ways to calculate the coefficient of determination:
 
-~~~Square the correlation coefficient: \(r^2 = (r)^2\)
+~~~Square the correlation coefficient: \(R^2 = (R)^2\)
 
-~~~Use the variances of the response and the residuals: \(r^2 = \dfrac{s_y^2 - s_{RES}^2}{s_y^2} = \dfrac{SST - SSE}{SST}\)
+~~~Use the variances of the response and the residuals: \(R^2 = \dfrac{s_y^2 - s_{RES}^2}{s_y^2} = \dfrac{SST - SSE}{SST}\)
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{5}
 \tightlist
 \item
-  Use the correlation, \(r\), found in question 2 of the activity, to calculate the coefficient of determination between budget and revenue, \(r^2\).
+  Use the correlation, \(R\), found in question 2 of the activity, to calculate the coefficient of determination between budget and revenue, \(R^2\).
 \end{enumerate}
 
 \vspace{.4in}
@@ -4853,7 +4852,7 @@ In order to see what other variables may have an impact on revenue for movies re
 \item
   The sign of correlation and the sign of the slope will always be the same. The closer the value of correlation is to \(-1\) or \(+1\), the stronger the relationship between the explanatory and the response variable.
 \item
-  The coefficient of determination multiplied by 100 (\(r^2 \times 100\)) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable. The closer the value of the coefficient of determination is to 100\%, the stronger the relationship.
+  The coefficient of determination multiplied by 100 (\(R^2 \times 100\)) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable. The closer the value of the coefficient of determination is to 100\%, the stronger the relationship.
 \item
   A multiple linear regression model includes more than one variable as a predictor for the response variable.
 \end{enumerate}
@@ -5025,7 +5024,7 @@ Enter the variable \texttt{body\_mass\_g} for \texttt{response} and the variable
 \setcounter{enumi}{6}
 \tightlist
 \item
-  \textbf{Using the least squares line from question 5, predict the body mass for a penguin for a flipper length of 181 mm.}
+  \textbf{Using the least squares line from question 5, predict the body mass for a penguin with a flipper length of 181 mm.}
 \end{enumerate}
 
 \vspace{.6in}
@@ -5609,7 +5608,7 @@ Margin of error:
   \rgs
   \rgs
 \item
-  The formula for the interval is 34/38 \(\pm\) (2\$\times\$0.08) = 0.89 \(\pm\) 0.16. Calculating that, you should get (0.73, 1.05). Why was the interval shown in the textbook (0.73, 1) instead of (0.73, 1.05)?
+  The formula for the interval is \(34/38 \pm (2 \times 0.08) = 0.89 \pm 0.16\). Calculating that, you should get (0.73, 1.05). Why was the interval shown in the textbook (0.73, 1) instead of (0.73, 1.05)?
   \rgs
 \end{enumerate}
 
@@ -6310,7 +6309,7 @@ When we write a conclusion we answer the research question by stating how much e
 \item
   In a simulation-based test, we create a distribution of possible simulated statistics for our sample if the null hypothesis is true. Then we see if the calculated observed statistic from the data is likely or unlikely to occur when compared to the null distribution.
 \item
-  The p-value is the probability of the observed statistic occurring or more extreme if the null hypothesis is true. The farther in the tail of the distribution the observed statistic is, the smaller the probability is (smaller the p-value!). The \textbf{smaller} the p-value, the \textbf{more} evidence the statistic provides \textbf{against} the null hypothesis. (Think carefully about why this makes sense!)
+  The p-value is the probability of the observed statistic or a more extreme statistic occurring if the null hypothesis is true. The farther in the tail of the distribution the observed statistic is, the smaller the probability is (smaller the p-value!). The \textbf{smaller} the p-value, the \textbf{more} evidence the statistic provides \textbf{against} the null hypothesis. (Think carefully about why this makes sense!)
 \item
   To create one simulated sample on the null distribution for a sample proportion, spin a spinner with probability equal to \(\pi_0\) (the null value), \(n\) times or draw with replacement \(n\) times from a deck of cards created to reflect \(\pi_0\) as the probability of success. Calculate and plot the proportion of successes from the simulated sample.
 \end{enumerate}
@@ -6363,9 +6362,9 @@ As a reminder: Do young children know the difference between helpful and unhelpf
 
 A \textbf{point estimate} (our observed statistic) provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible \emph{range} of values for the parameter. This plausible range of values for the population parameter is called an \textbf{interval estimate} or \textbf{confidence interval}.
 
-\hypertarget{activity-intro.}{%
-\subsubsection*{Activity intro.}\label{activity-intro.}}
-\addcontentsline{toc}{subsubsection}{Activity intro.}
+\hypertarget{activity-intro}{%
+\subsubsection*{Activity intro}\label{activity-intro}}
+\addcontentsline{toc}{subsubsection}{Activity intro}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6601,7 +6600,7 @@ We will use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R}
 \item
   A confidence interval is built around the point estimate or observed calculated statistic from the sample. This means that the sample statistic is always the center of the confidence interval. A confidence interval includes a measure of sample to sample variability represented by the \textbf{margin of error}.
 \item
-  In simulation-based methods (bootstrapping), a simulated distribution of possible sample statistics is created showing the possible sample to sample variability. Then we find the middle percent of the distribution around the sample statistic using the percentile method to give the range of values for the confidence interval. This shows us that we are \(X\)\% confident that the parameter is within these values, where \(X\) represents the level of confidence.
+  In simulation-based methods (bootstrapping), a simulated distribution of possible sample statistics is created showing the possible sample-to-sample variability. Then we find the middle \(X\) percent of the distribution around the sample statistic using the percentile method to give the range of values for the confidence interval. This shows us that we are \(X\)\% confident that the parameter is within this range, where \(X\) represents the level of confidence.
 \item
   When the null value is within the confidence interval, it is a plausible value for the parameter of interest; thus, we would find a larger p-value for a hypothesis test of that null value. Conversely, if the null value is NOT within the confidence interval, we would find a small p-value for the hypothesis test and strong evidence against this null hypothesis.
 \item
@@ -7868,7 +7867,7 @@ Use Rstudio find the p-value for this new sample.
 \setcounter{enumi}{19}
 \tightlist
 \item
-  Summarize how each of the following affected the p-value?
+  Summarize how each of the following affected the p-value:
 \end{enumerate}
 
 \begin{enumerate}
@@ -8268,7 +8267,7 @@ The red distribution you see is the scaled-Normal distribution representing the 
   \vspace{0.4in}
 \end{enumerate}
 
-Check the ``Type I Error'' box under \textbf{Display}. This should verify (or correct) your answer to question 5! The area shaded in red represents the probability of making a \textbf{type 1 error} in our hypothesis test. Recall that a type I error is when we reject the null hypothesis even though the null hypothesis is true. To reject the null hypothesis, the p-value, which was found assuming the null hypothesis is true, must be less than or equal to the significance level. Therefore the significance level is the maximum probability of rejecting the null hypothesis when the null hypothesis is true, so the significance level IS the probability of making a type 1 error in a hypothesis test!
+Check the ``Type I Error'' box under \textbf{Display}. This should verify (or correct) your answer to question 5! The area shaded in red represents the probability of making a \textbf{type 1 error} in our hypothesis test. Recall that a type 1 error is when we reject the null hypothesis even though the null hypothesis is true. To reject the null hypothesis, the p-value, which was found assuming the null hypothesis is true, must be less than or equal to the significance level. Therefore the significance level is the maximum probability of rejecting the null hypothesis when the null hypothesis is true, so the significance level IS the probability of making a type 1 error in a hypothesis test!
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8290,7 +8289,7 @@ Let's say this physical therapist company believes their program can get 70\% of
   \vspace{0.25in}
 \end{enumerate}
 
-The blue distribution that appears represents what the company believes, that 0.7 (not 0.5) is the true proportion of it's clients who return to their sport within 8 months of ACL surgery. This blue distribution represents the idea that the \textbf{null hypothesis is false}.
+The blue distribution that appears represents what the company believes, that 0.7 (not 0.5) is the true proportion of its clients who return to their sport within 8 months of ACL surgery. This blue distribution represents the idea that the \textbf{null hypothesis is false}.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8357,7 +8356,7 @@ Now let's investigate how changes in different factors influences the power of a
   \textbf{How does increasing the sample size affect the power of the test?}
   \vspace{0.5in}
 \item
-  Using the same ``True value of \(p\),'' set the sample size to 50 and change the "Type I Error \(\alpha\) to see the effect on Power.
+  Using the same ``True value of \(p\),'' set the sample size to 50 and change the ``Type I Error \(\alpha\)'' to see the effect on Power.
 \end{enumerate}
 
 \setlength\tabcolsep{0.5cm}
@@ -8377,7 +8376,7 @@ Now let's investigate how changes in different factors influences the power of a
   \textbf{How does increasing the significance level affect the power of the test?}
   \vspace{0.5in}
 \item
-  \textbf{Complete the power analysis for this physical therapy company. The company believes 70\% of their patients will return to either sport within 8 months of ACL surgery. They want to limit the probability of a type 1 error to 10\% and the probability of a type 2 error to 15\%. What is the minimum number of athletes the company will need to collect data from in order to meet these goals? Use the applet to answer this question, then download your image created and upload the file to Gradescope.}
+  \textbf{Complete the power analysis for this physical therapy company. The company believes 70\% of their patients will return to their sport within 8 months of ACL surgery. They want to limit the probability of a type 1 error to 10\% and the probability of a type 2 error to 15\%. What is the minimum number of athletes the company will need to collect data from in order to meet these goals? Use the applet to answer this question, then download your image created and upload the file to Gradescope.}
   \vspace{0.25in}
 \item
   Based on the goals outlined in question 19, which mistake below is the company more concerned about? Explain your answer.
@@ -8433,9 +8432,9 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{week-9---reading-guide-hypothesis-testing-for-a-difference-in-proportions}{%
 \section{Week 9 - Reading Guide: Hypothesis Testing for a Difference in Proportions}\label{week-9---reading-guide-hypothesis-testing-for-a-difference-in-proportions}}
 
-\hypertarget{section-5.5-simulation-based-fnference-for-a-difference-in-proportions}{%
-\subsection*{Section 5.5 (Simulation-based fnference for a difference in proportions)}\label{section-5.5-simulation-based-fnference-for-a-difference-in-proportions}}
-\addcontentsline{toc}{subsection}{Section 5.5 (Simulation-based fnference for a difference in proportions)}
+\hypertarget{section-5.5-simulation-based-inference-for-a-difference-in-proportions}{%
+\subsection*{Section 5.5 (Simulation-based inference for a difference in proportions)}\label{section-5.5-simulation-based-inference-for-a-difference-in-proportions}}
+\addcontentsline{toc}{subsection}{Section 5.5 (Simulation-based inference for a difference in proportions)}
 
 You may skip section 5.5.3, which will be covered next week.
 
@@ -8634,7 +8633,7 @@ Population proportion of group 2:
   Write the null and the alternative hypotheses in notation.
   \rgs
 \item
-  How could we use cards to simulate \textbf{ome} sample \emph{which assumes the null hypothesis is true}? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{one} sample \emph{which assumes the null hypothesis is true}? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
   \rgs
   \rgs
   \rgs
@@ -8742,7 +8741,7 @@ Population proportion of group 2:
   \rgs
   \rgs
 \item
-  What is the parameter (using a difference in proportion) representing in the context of this problem? What notation would be used to represent this parameter?
+  What is the parameter (using a difference in proportions) representing in the context of this problem? What notation would be used to represent this parameter?
   \rgs
   \rgs
 \item
@@ -8877,9 +8876,9 @@ These counts can be found in \texttt{R} by using the \texttt{count()} function:
 #> 4 No help  No hurry      9
 \end{verbatim}
 
-\hypertarget{vocabulary-review.-2}{%
-\subsubsection*{Vocabulary review.}\label{vocabulary-review.-2}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review.}
+\hypertarget{vocabulary-review-1}{%
+\subsubsection*{Vocabulary review}\label{vocabulary-review-1}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9273,9 +9272,9 @@ Total & 20 & 20 & 40 \\
 \bottomrule
 \end{longtable}
 
-\hypertarget{vocabulary-review.-3}{%
-\subsubsection*{Vocabulary review.}\label{vocabulary-review.-3}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review.}
+\hypertarget{vocabulary-review-2}{%
+\subsubsection*{Vocabulary review}\label{vocabulary-review-2}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9572,7 +9571,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{covid-infection-and-vaccination-rates}{%
 \subsection{COVID Infection and Vaccination Rates}\label{covid-infection-and-vaccination-rates}}
 
-According to the \emph{Washington Post} ``States with higher vaccination rates now have markedly fewer coronavirus cases, as infections are dropping in places where most residents have been immunized and are rising in many places people have not.'' In this article they found that there are differences in infection rates for different counties within a specific state. To check this claim, a random sample of 125 counties from different states was assessed. Vaccination rates were found for each county and broken up into groups, high and low, based on a vaccination rate of 40\%. Those counties with a vaccination rate of greater than 40\% was considered a high vaccination rate. The 2nd variable measured on these counties was whether the number of cases per 100,000 residents was less than or greater than 4.25, the national rate at that time. Researchers want to assess if counties with a high vaccination rate are more likely to have lower coronavirus cases.
+According to the \emph{Washington Post} ``States with higher vaccination rates now have markedly fewer coronavirus cases, as infections are dropping in places where most residents have been immunized and are rising in many places people have not.'' In this article they found that there are differences in infection rates for different counties within a specific state. To check this claim, a random sample of 125 counties from different states was assessed. Vaccination rates were found for each county and broken up into groups, high and low, based on a threshold vaccination rate of 40\%. Those counties with a vaccination rate of greater than 40\% were considered high vaccination rate. The 2nd variable measured on these counties was whether the number of cases per 100,000 residents was less than or greater than 4.25, the national rate at that time. Researchers want to assess if counties with a high vaccination rate are more likely to have lower coronavirus case rates.
 
 Upload and open the \texttt{R} script file for Week 9 lab. Upload and import the csv file, \texttt{covid\_vaccinations}. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 6. Highlight and run lines 1--7 to get the counts for each combination of categories.
 
@@ -9647,7 +9646,7 @@ Total & & & \\
 \setcounter{enumi}{5}
 \tightlist
 \item
-  \textbf{Calculate the difference in proportion of counties with a lower than the national average of cases for those with a high and low vaccination rate. Use high - low for the order of subtraction. Use appropriate notation.}
+  \textbf{Calculate the difference in proportion of counties with a lower than the national average rate of cases for those with high and low vaccination rates. Use high - low for the order of subtraction. Use appropriate notation.}
 \end{enumerate}
 
 \vspace{0.8in}
@@ -9671,7 +9670,7 @@ Use the provided \texttt{R} script file to create a segmented bar plot of the da
 \setcounter{enumi}{6}
 \tightlist
 \item
-  Does there appear to be an association between variables based on the plot? Explain your answer.
+  Does there appear to be an association between the variables based on the plot? Explain your answer.
 \end{enumerate}
 
 \vspace{1in}
@@ -9966,7 +9965,7 @@ Overall (pooled) proportion of successes:
   What is the sample difference in proportions presented in this example? What notation would be used to represent this value?
   \rgs
 \item
-  What is the parameter (using a difference in proportion) representing in the context of this problem? What notation would be used to represent this parameter?
+  What is the parameter (using a difference in proportions) representing in the context of this problem? What notation would be used to represent this parameter?
   \rgs
 \item
   Write the null and the alternative hypotheses in words.
@@ -9988,7 +9987,7 @@ Overall (pooled) proportion of successes:
   \rgs
   \rgs
 \item
-  Calculate the standardized statistic
+  Calculate the standardized statistic.
   \rgs
   \rgs
 \item
@@ -10275,7 +10274,7 @@ Another summary statistic that can be calculated for two categorical variables i
 \setcounter{enumi}{13}
 \tightlist
 \item
-  Calculate the relative risk of helping for those who were assigned to the hurry condition compared to those who were not.
+  Calculate the relative risk of head injury for those who wore a helmet compared to those who did not.
 \end{enumerate}
 
 \vspace{.8in}
@@ -10300,7 +10299,7 @@ Another summary statistic that can be calculated for two categorical variables i
 \item
   The standardized statistic when the response variable is categorical is a Z-score and is compared to the standard normal distribution to find the p-value. To find the standardized statistic, we take the value of the statistic minus the null value, divided by the null standard error of the statistic. The standardized statistic measures the number of standard errors the statistic is from the null value.
 \item
-  Relative risk evaluates the percent increase or percent decrease in the response variable attributed to the explanatory variable. To find the percent increase or percent decrease we calculate the following \(\text{percent change}=(RR - 1)x100\%\). If relative risk is less than 1 there is a percent decrease. If relative risk is greater than 1 there is a percent increase.
+  Relative risk evaluates the percent increase or percent decrease in the response variable attributed to the explanatory variable. To find the percent increase or percent decrease we calculate the following \(\text{percent change}=(RR - 1)\times 100\%\). If relative risk is less than 1 there is a percent decrease. If relative risk is greater than 1 there is a percent increase.
 \end{enumerate}
 
 \hypertarget{additional-notes-16}{%
@@ -10562,8 +10561,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \newpage
 
-\hypertarget{week-10---lab-8-diabetes}{%
-\section{Week 10 - Lab 8: Diabetes}\label{week-10---lab-8-diabetes}}
+\hypertarget{week-10-lab-diabetes}{%
+\section{Week 10 Lab: Diabetes}\label{week-10-lab-diabetes}}
 
 \setstretch{1}
 
@@ -10587,7 +10586,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{glycemic-control-in-diabetic-adolescents}{%
 \subsection{Glycemic Control in Diabetic Adolescents}\label{glycemic-control-in-diabetic-adolescents}}
 
-Researchers compared the efficacy of two treatment regimens to achieve durable glycemic control in children and adolescents with recent-onset type 2 diabetes. A convenience sample of patients 10 to 17 years of age with recent-onset type 2 diabetes were randomly assigned to either a medication (rosiglitazone) or a lifestyle-intervention program focusing on weight loss through eating and activity. Researchers measured whether the patient still needs insulin (failure) or had glycemic control (success). Of the 233 children who received the Rosiglitazone treatment,143 had glycemic control, while of the 234 who went through the lifestyle-intervention program, 125 had glycemic control. Is there evidence that there is difference in proportion of patients that achieve durable glycemic control between the two treatments? Use Rosiglitazone -- Lifestyle as the order of subtraction.
+Researchers compared the efficacy of two treatment regimens to achieve durable glycemic control in children and adolescents with recent-onset type 2 diabetes. A convenience sample of patients 10 to 17 years of age with recent-onset type 2 diabetes were randomly assigned to either a medication (rosiglitazone) or a lifestyle-intervention program focusing on weight loss through eating and activity. Researchers measured whether the patient still needs insulin (failure) or had glycemic control (success). Of the 233 children who received the Rosiglitazone treatment, 143 had glycemic control, while of the 234 who went through the lifestyle-intervention program, 125 had glycemic control. Is there evidence that there is difference in proportion of patients that achieve durable glycemic control between the two treatments? Use Rosiglitazone -- Lifestyle as the order of subtraction.
 
 Upload and open the \texttt{R} script file for Week 10 lab. Upload and import the csv file, \texttt{diabetes}. Enter the name of the data set (see the environment tab) for \texttt{datasetname} in the R script file in line 4. Highlight and run lines 1--5 to get the counts for each combination of categories.
 
@@ -10630,7 +10629,7 @@ Total & & & \\
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
 \item
-  Is the success-failure condition to use theory-based methods for a hypothesis test met for each group. Explain your answer.
+  Is the success-failure condition to use theory-based methods for a hypothesis test met for each group? Explain your answer.
   \vspace{1in}
 \item
   Is the success-failure condition to find the theory-based confidence interval met for each group? Explain your answer.
@@ -10653,7 +10652,7 @@ To find a confidence interval for the difference in proportions we will add and 
 \[\hat{p}_1-\hat{p}_2\pm z^*SE(\hat{p}_1-\hat{p}_2), \hspace{.2cm} \text{where}\]
 \[SE(\hat{p}_1-\hat{p}_2) = \sqrt{\frac{\hat{p}_1 (1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2 (1-\hat{p}_2)}{n_2}}\]
 
-Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in Activity 19! Here, we use the sample proportions for each group to calculate the standard error for the difference in proportions since we are not assuming that the true difference is zero.
+Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in Activity 10a! Here, we use the sample proportions for each group to calculate the standard error for the difference in proportions since we are not assuming that the true difference is zero.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10670,7 +10669,7 @@ Note that the formula changes when calculating the variability around the statis
 \setcounter{enumi}{6}
 \tightlist
 \item
-  Interpret the value calculated in question 5 in context of the problem.
+  Interpret the value calculated in question 6 in context of the problem.
 \end{enumerate}
 
 \vspace{1in}
@@ -10714,7 +10713,7 @@ The \(z^*\) multiplier is the percentile of a standard normal distribution that 
 \setcounter{enumi}{9}
 \tightlist
 \item
-  Calculate the 90\% confidence interval for the difference in true proportion of .
+  Calculate the 90\% confidence interval for the difference in true proportion of children achieving glycemic control. Use Rosiglitazone -- Lifestyle as the order of subtraction
 \end{enumerate}
 
 \vspace{1in}
@@ -11190,7 +11189,7 @@ Confidence interval for a mean:
   \rgs 
   \rgs 
 \item
-  Based on Figure 6.3, give the confidence interval for each of the following confidence levels.
+  Based on Figure 6.3, give the confidence interval for the true mean for each of the following confidence levels.
 \end{enumerate}
 
 \rgi 90\% confidence interval =
@@ -11361,10 +11360,10 @@ For each of the following scenarios, determine if the two sets of observations a
   To test whether the IQ is related to genetics, researchers measured the IQ of two biological parents and the IQ of their first-born child. The average parent IQ was compared to the IQ of the first born child.
   \rgs
 \item
-  Hoping to see how exercise is related to heart rates, researchers asked a group of 30 volunteers to do either bicycle kicks or jumping jacks for 30 seconds. Volunteer's heart rate was measured at the end of 30 seconds, then the volunteers sat for a 5 minute rest period. At the end of the rest period, the volunteer performed the other activity and their heart rate was measured again. Which activity was done first was randomly assigned.
+  Hoping to see how exercise is related to heart rates, researchers asked a group of 30 volunteers to do either bicycle kicks or jumping jacks for 30 seconds. Each volunteer's heart rate was measured at the end of 30 seconds, then the volunteer sat for a 5 minute rest period. At the end of the rest period, the volunteer performed the other activity and their heart rate was measured again. Which activity was done first was randomly assigned.
   \rgs
 \item
-  Researchers hoping to look into the effectiveness of blended learning gathered two random samples of 50 8th graders (one at Belgrade Middle School which has 5 full-day instruction currently, the other from Chief Joseph Middle School which utilizes a 2-day on, 3-day off blended learning structure). All 8th graders were given the same lessons and same homework, then asked to take the same end-of-unit test.
+  Researchers hoping to look into the effectiveness of blended learning gathered two random samples of 50 8th graders (one at Belgrade Middle School which had 5 full-day instruction at the time of the study, the other from Chief Joseph Middle School which utilized a 2-day on, 3-day off blended learning structure). All 8th graders were given the same lessons and same homework, then asked to take the same end-of-unit test.
   \rgs
 \end{enumerate}
 
@@ -11614,8 +11613,8 @@ Differences & \(\bar{x}_d\) = \(-4.152\) & \(s_d\) = 17.096 & \(n_d\) = 33 \\
 
 \newpage
 
-\hypertarget{vocabulary-review.-4}{%
-\subsubsection*{Vocabulary review.}\label{vocabulary-review.-4}}
+\hypertarget{vocabulary-review.-1}{%
+\subsubsection*{Vocabulary review.}\label{vocabulary-review.-1}}
 \addcontentsline{toc}{subsubsection}{Vocabulary review.}
 
 \begin{enumerate}
@@ -12017,7 +12016,7 @@ Conditions for the sampling distribution of \(\bar{x}\) to follow an approximate
 
 Like we saw in Chapter 5, we will not know the values of the parameters and must use the sample data to estimate them. Unlike with proportions, in which we only needed to estimate \(\pi\), quantitative sample data must be used to estimate both \(\mu\) and \(\sigma\). This additional uncertainty will require us to use a theoretical distribution that is just a bit wider than the Normal distribution. Enter the \textbf{\(t\)-distribution}!
 
-As you can seen from Figure \ref{fig:tdist} on the following page, the \(t\)-distributions (dashed and dotted lines) are centered at 0 just like a standard Normal distribution (solid line), but are slightly wider. The variability of a \(t\)-distribution depends on the degrees of freedom, which is calculated from the sample size of a study. Recall from previous classes that larger sample sizes tend to result in narrower sampling distributions? We see that here as well. The larger the sample size, the larger the degrees of freedom, the narrower the \(t\)-distribution. (In fact, a \(t\)-distribution with infinite degrees of freedom actually IS the standard Normal distribution!)
+As you can seen from Figure \ref{fig:tdist} on the previous page, the \(t\)-distributions (dashed and dotted lines) are centered at 0 just like a standard Normal distribution (solid line), but are slightly wider. The variability of a \(t\)-distribution depends on the degrees of freedom, which is calculated from the sample size of a study. Recall from previous classes that larger sample sizes tend to result in narrower sampling distributions? We see that here as well. The larger the sample size, the larger the degrees of freedom, the narrower the \(t\)-distribution. (In fact, a \(t\)-distribution with infinite degrees of freedom actually IS the standard Normal distribution!)
 
 \hypertarget{summarize-and-visualize-the-data-3}{%
 \subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data-3}}
@@ -12147,7 +12146,7 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Th
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{12}
 \item
-  In Figure @\ref(fig:tstar), you see a t-distribution with 371 degrees of freedom. Label \(t^\star\) and \(-t^\star\) on that distribution. Write on the plot the percent of the \(t_{371}\)-distribution that is below \(-t^\star\), between \(-t^\star\) and \(t^\star\), and above \(t^\star\). Then use your plot to determine the confidence level associated with the \(t^\star\) value obtained.
+  In Figure \ref{fig:tstar}, you see a t-distribution with 371 degrees of freedom. Label \(t^\star\) and \(-t^\star\) on that distribution. Write on the plot the percent of the \(t_{371}\)-distribution that is below \(-t^\star\), between \(-t^\star\) and \(t^\star\), and above \(t^\star\). Then use your plot to determine the confidence level associated with the \(t^\star\) value obtained.
   \vspace{0.3in}
 \item
   Calculate the margin of error for the true paired mean difference using theory-based methods.
@@ -12356,7 +12355,7 @@ Highlight and run lines 15--16 to get the summary statistics for the data.
 \subsection*{Hypothesis test}\label{hypothesis-test-1}}
 \addcontentsline{toc}{subsection}{Hypothesis test}
 
-Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that swearing does not effect pain tolerance, or that the length of time a subject kept their hand in the water would be the same whether the patient was swearing or not.
+Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that swearing does not affect pain tolerance, or that the length of time a subject kept their hand in the water would be the same whether the patient was swearing or not.
 
 We will use the \texttt{paired\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample means differences and compute a p-value.
 
@@ -12482,7 +12481,7 @@ We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the 
 \setcounter{enumi}{14}
 \tightlist
 \item
-  Interpret the \emph{confidence level} of the in you interval calculated in question 14.
+  Interpret the \emph{confidence level} of the interval you calculated in question 14.
 \end{enumerate}
 
 \vspace{0.8in}
@@ -12492,7 +12491,7 @@ We will use the \texttt{paired\_bootstrap\_CI()} function in \texttt{R} (in the 
 \setcounter{enumi}{15}
 \tightlist
 \item
-  Write a paragraph summarizes the results of this study as if you were describing the results to your roommate. Be sure to describe:
+  Write a paragraph summarizing the results of this study as if you were describing the results to your roommate. Be sure to describe:
 \end{enumerate}
 
 \begin{itemize}
@@ -12970,9 +12969,9 @@ Notice from the \texttt{R} code that the name of the data set is \texttt{Snow}.
 #> 2        La_Nina 44.5 51.4   60.9 70.3 107.2 63.13333 15.48626 21       0
 \end{verbatim}
 
-\hypertarget{quantitative-variables-review.}{%
-\subsubsection*{Quantitative variables review.}\label{quantitative-variables-review.}}
-\addcontentsline{toc}{subsubsection}{Quantitative variables review.}
+\hypertarget{quantitative-variables-review}{%
+\subsubsection*{Quantitative variables review}\label{quantitative-variables-review}}
+\addcontentsline{toc}{subsubsection}{Quantitative variables review}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -13468,7 +13467,7 @@ where the standard error of the difference in means is calculated using:
 \setcounter{enumi}{8}
 \tightlist
 \item
-  Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) and the \texttt{df} calculated in question 8 for yy into the \texttt{pt()} function to find the p-value. Highlight and run line 20. Report the p-value calculated.
+  Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) and the \texttt{df} calculated in question 8 for \texttt{yy} into the \texttt{pt()} function to find the p-value. Highlight and run line 20. Report the p-value calculated.
 \end{enumerate}
 
 \begin{Shaded}
@@ -13499,7 +13498,7 @@ To calculate a theory-based 95\% confidence interval for a difference in means, 
 
 We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. For a 95\% confidence level, we are finding the \(t^*\) value at the 97.5th percentile with \texttt{df} = minimum(\(n_1 - 1, n_2 - 1\)).
 
-Enter the appropriate percentile value (as a decimal) for xx and degrees of freedom for yy into the \texttt{qt()} function at line 23 to find the appropriate \(t^*\) multiplier
+Enter the appropriate percentile value (as a decimal) for \texttt{xx} and degrees of freedom for \texttt{yy} into the \texttt{qt()} function at line 23 to find the appropriate \(t^*\) multiplier
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -13639,7 +13638,7 @@ Upload and open the \texttt{R} script file for Week 13 lab. Upload and import th
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{datasetname }\OtherTok{\textless{}{-}}\NormalTok{ hikes }
+\NormalTok{datasetname }\OtherTok{{-}\textgreater{}}\NormalTok{ hikes }
 \NormalTok{hikes }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# Data set piped into...}
   \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ Baseweight, }\AttributeTok{x =}\NormalTok{ Trail))}\SpecialCharTok{+}  \CommentTok{\# Identify variables}
   \FunctionTok{geom\_boxplot}\NormalTok{()}\SpecialCharTok{+}  \CommentTok{\# Tell it to make a box plot}
@@ -13695,7 +13694,7 @@ Enter the name of the explanatory variable for \texttt{explanatory} and the name
 \subsection*{Hypothesis test}\label{hypothesis-test-3}}
 \addcontentsline{toc}{subsection}{Hypothesis test}
 
-Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that there is no association between the two variables. This means that the base weight observed in the data set would have been the same regardless of the type of trails.
+Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that there is no association between the two variables. This means that the base weight observed in the data set would have been the same regardless of the trail hiked.
 
 We will use the \texttt{two\_mean\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of differences in sample means and compute a p-value.
 
@@ -14243,9 +14242,9 @@ The government of Singapore took a random sample of 373 homes in Singapore to co
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{vocabulary-review.-5}{%
-\subsubsection*{Vocabulary review.}\label{vocabulary-review.-5}}
-\addcontentsline{toc}{subsubsection}{Vocabulary review.}
+\hypertarget{vocabulary-review-3}{%
+\subsubsection*{Vocabulary review}\label{vocabulary-review-3}}
+\addcontentsline{toc}{subsubsection}{Vocabulary review}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14260,7 +14259,7 @@ The government of Singapore took a random sample of 373 homes in Singapore to co
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
 \item
-  Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the distance to the nearest MRT station and house prices by filling in the variable names (\texttt{Distance} and \texttt{House\_Price}) for \texttt{explanatory} and `response`` in \textbf{line 17. Highlight and run lines 1--22}.
+  Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the distance to the nearest MRT station and house prices by filling in the variable names (\texttt{Distance} and \texttt{House\_Price}) for \texttt{explanatory} and \texttt{response} in \textbf{line 17. Highlight and run lines 1--22}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -14270,7 +14269,7 @@ The government of Singapore took a random sample of 373 homes in Singapore to co
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Distance to MRT Station (m)"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
        \AttributeTok{y =} \StringTok{"House Price (SGD/m\^{}2)"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
        \AttributeTok{title =} \StringTok{"Scatterplot of House Prices by Distance to Train Station"}\NormalTok{) }\SpecialCharTok{+} 
-               \CommentTok{\# Be sure to tile your plots}
+               \CommentTok{\# Be sure to title your plots}
   \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{se =} \ConstantTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
 \end{Highlighting}
 \end{Shaded}
@@ -14381,7 +14380,7 @@ In this activity, we will focus on using simulation-based methods for inference 
 \subsubsection*{Simulation-based hypothesis test}\label{simulation-based-hypothesis-test}}
 \addcontentsline{toc}{subsubsection}{Simulation-based hypothesis test}
 
-First, let's think about how one simulation would be created on the null distribution using cards. First, we would write the values for the response variable, wins, on each card. Next, we would shuffle these \(y\) values while keeping the \(x\) values (explanatory variable) in the same order. Then, find the line of regression for the shuffled cards and calculate either the sample slope or sample correlation.
+First, let's think about how one simulation would be created on the null distribution using cards. First, we would write the values for the response variable, house price, on each card. Next, we would shuffle these \(y\) values while keeping the \(x\) values (explanatory variable) in the same order. Then, find the line of regression for the shuffled cards and calculate either the sample slope or sample correlation.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -15019,7 +15018,7 @@ Some of the variables collected in the data set \texttt{Bear\_Data} consist of t
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# Read in data set}
-\NormalTok{bears }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/Bear\_Data.csv"}\NormalTok{)}
+\NormalTok{bears }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/Bear\_Data.csv"}\NormalTok{)}
 \NormalTok{bears }\OtherTok{\textless{}{-}} \FunctionTok{na.omit}\NormalTok{(bears)}
 \end{Highlighting}
 \end{Shaded}
@@ -15280,10 +15279,10 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 \NormalTok{bears }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Food, }\AttributeTok{y =}\NormalTok{ Complaints, }\AttributeTok{color=}\NormalTok{Pop\_Level))}\SpecialCharTok{+}  \CommentTok{\# Specify variables}
   \FunctionTok{geom\_point}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{shape =}\NormalTok{ Pop\_Level), }\AttributeTok{size =} \DecValTok{3}\NormalTok{) }\SpecialCharTok{+}  \CommentTok{\# Add scatterplot of points}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"flipper length (mm)"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
-       \AttributeTok{y =} \StringTok{"body mass (g)"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
-       \AttributeTok{color =} \StringTok{"species"}\NormalTok{,}
-       \AttributeTok{title =} \StringTok{"TITLE"}\NormalTok{) }\SpecialCharTok{+} \CommentTok{\# Be sure to tile your plots}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Food abundance rating"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
+       \AttributeTok{y =} \StringTok{"Number of complaints"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
+       \AttributeTok{color =} \StringTok{"Population level"}\NormalTok{, }\AttributeTok{shape =} \StringTok{"Population level"}\NormalTok{,}
+       \AttributeTok{title =} \StringTok{"TITLE"}\NormalTok{) }\SpecialCharTok{+} \CommentTok{\# Be sure to title your plots}
   \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{se =} \ConstantTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
 \end{Highlighting}
 \end{Shaded}
