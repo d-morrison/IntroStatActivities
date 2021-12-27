@@ -1,4 +1,4 @@
-## Activity 9b:  The Good Samaritan --- Simulation CI
+## Activity 8b:  The Good Samaritan --- Simulation CI
 
 \setstretch{1}
 
@@ -62,7 +62,7 @@ good %>%
 
 \vspace{1in}
 
-4.  Write out the conclusion you made in Activity 9a.
+4.  Write out the conclusion you made in Activity 8a.
 
 \vspace{0.8in}
 

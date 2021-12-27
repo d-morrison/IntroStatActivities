@@ -82,7 +82,7 @@ $\hat{p} = \frac{\mbox{number of successes}}{\mbox{total number of observational
 
 \vspace{1.5in}
 
-5.  plot and summary statistic....
+We cannot assess whether infants are more likely to choose the helper toy based on the statistic and plot alone.  The next step is to analyze the data by using a hypothesis test to discover if there is evidence against the null hypothesis.
 
 #### Use statistical analysis methods to draw inferences from the data {-}
 
@@ -92,19 +92,19 @@ When performing a hypothesis test, we must first identify the null hypothesis.  
 
 \vspace{0.8in}
 
-6.  Using the parameter of interest in question 5, write out the null hypothesis in words.  That is, what do we assume to be true about the parameter of interest when we perform our simulation?
+6.  If the children are just randomly choosing the toy, what proportion of infants would choose the helper toy?  This is the null value for our study.
+
+\vspace{0.3in}
+
+7.  Using the parameter of interest in question 5, write out the null hypothesis in words.  That is, what do we assume to be true about the parameter of interest when we perform our simulation?
 
 \vspace{0.8in}
 
 The notation used for a population proportion (or probability, or true proportion) is $\pi$.  Since this summarizes a population, it is a parameter. When writing the **null hypothesis** in notation, we set the parameter equal to the null value, $H_0: \pi = \pi_0$.
 
-7. Write the null hypothesis in notation using the null value of 0.5 in place of $\pi_0$ in the equation given on the previous page.
+8. Write the null hypothesis in notation using the null value of 0.5 in place of $\pi_0$ in the equation given on the previous page.
 
 \vspace{0.5in}
-
-8.  Why are we assuming a null value of 0.5 in this study? 
-
-\vspace{0.3in}
 
 The **alternative hypothesis** is the claim to be tested and the direction of the claim (less than, greater than, or not equal to) is based on the research question.  
 
@@ -146,10 +146,21 @@ Let's think about how to use cards to create one simulation of 16 infants under 
 
 15.  Create one simulation using the cards provided.  Write down your simulated sample proportion.  This is one simulation created under the assumption the null hypothesis is true.  Is this value closer to 0.5 the null value or closer to the sample proportion (0.875)?  Compare your simulated value to the other group's at your table.
 
+\vspace{0.8in}
+
+16.  Report your simulated sample proportion to your instructor.  Sketch the distribution created by your class below.
+
 \vspace{1.5in}
 
-16.  Report your simulated sample proportion to your instructor.  Sketch the distribution created....
+17. Circle the observed statistic (value from question ) on the distribution you drew in question 16.  Where does this statistic fall in this distribution: Is it near the center of the distribution (near 0.5) or in one of the tails of the distribution?  
 
+\vspace{1in}
+
+18. Is the observed statistic likely to happen or unlikely to happen if the true proportion of infants who choose the helper is 0.5?  Explain your answer using the plot.
+
+\vspace{0.8in}
+
+In the next class, we will continue to assess the strength of evidence against the null hypothesis by using a computer to simulate 1000 samples when we assume the null hypothesis is true.
 
 
 ### Take-home messages
@@ -158,9 +169,7 @@ Let's think about how to use cards to create one simulation of 16 infants under 
 
 2.  In a simulation-based test, we create a distribution of possible simulated statistics for our sample if the null hypothesis is true.  Then we see if the calculated observed statistic from the data is likely or unlikely to occur when compared to the null distribution.  
 
-3.  The p-value is the probability of the observed statistic or a more extreme statistic occurring if the null hypothesis is true.  The farther in the tail of the distribution the observed statistic is, the smaller the probability is (smaller the p-value!).  The **smaller** the p-value, the **more** evidence the statistic provides **against** the null hypothesis. (Think carefully about why this makes sense!) 
-
-4.  To create one simulated sample on the null distribution for a sample proportion, spin a spinner with probability equal to $\pi_0$ (the null value), $n$ times or draw with replacement $n$ times from a deck of cards created to reflect $\pi_0$ as the probability of success. Calculate and plot the proportion of successes from the simulated sample. 
+3.  To create one simulated sample on the null distribution for a sample proportion, spin a spinner with probability equal to $\pi_0$ (the null value), $n$ times or draw with replacement $n$ times from a deck of cards created to reflect $\pi_0$ as the probability of success. Calculate and plot the proportion of successes from the simulated sample. 
 
 ### Additional notes
 

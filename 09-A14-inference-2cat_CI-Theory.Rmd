@@ -1,4 +1,4 @@
-## Week 10b:  Winter Sports Helmet Use and Head Injuries --- Theory CI
+## Week 9b:  Winter Sports Helmet Use and Head Injuries --- Theory CI
 
 \setstretch{1}
 

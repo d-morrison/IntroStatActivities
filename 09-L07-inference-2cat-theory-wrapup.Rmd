@@ -1,4 +1,4 @@
-## Week 10 Lab:  Diabetes
+## Week 9 Lab:  Diabetes
 
 \setstretch{1}
 
@@ -86,7 +86,7 @@ two_proportion_test(formula = outcome~treatment, # response ~ explanatory
 14. Write a conclusion to the research question. 
 \vspace{0.8in}
 
-15. Write a paragraph summarizing the results of the study.  **Upload a copy of your group's summary paragraph to Gradescope.** Be sure to describe:
+15. Write a paragraph summarizing the results of the study.  Be sure to describe:
 
 * Summary statistic and interpretation
 
@@ -97,5 +97,7 @@ two_proportion_test(formula = outcome~treatment, # response ~ explanatory
 * Conclusion (written to answer the research question)
 
 * Scope of inference
+
+**Upload a copy of your group's confidence interval and scope of inference to Gradescope.** 
 
 \newpage

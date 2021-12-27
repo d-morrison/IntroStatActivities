@@ -1,4 +1,4 @@
-## Activity 12b:  Construction Costs
+## Activity 11b:  Color Interference
 
 \setstretch{1}
 
@@ -37,16 +37,16 @@ In today's activity, we will analyze paired quantitative data using theory-based
 
 To review these concepts, see Sections 6.1 and 6.2 in the textbook.
 
-### Constructions costs
+### Color Interference
 
-The year 2021 has seen massive fluctuations in construction costs.  Lumber futures alone soared from roughly 700 USD/1,000 board feet in January to a peak of 1711 USD/1,000 board feet in May, only to plummet back to 500 USD/1,000 board feet by August. Researchers would like to determine how these wildly variable costs have impacted the accuracy of construction cost estimates.  They collect a random sample of 372 construction projects from 20 randomly selected U.S. zip codes to investigate if current construction cost estimates (in 1,000 U.S. Dollars) match, on average, the actual construction cost (in 1,000 U.S. dollars). 
+In this study pairs of conflicting stimuli, both being inherent aspects of the same symbols, were presented simultaneously (a name of one color printed in the ink of another color—a word stimulus and a color stimulus). Seventy college undergraduates were used as subjects in this study.  Subjects were given a form with 100 names of colors written either in black ink or in ink of another color (i.e. the word purple written in green ink).  The difference in time for reading the words printed in colors and the same words printed in black is the measure of the interference of color stimuli upon reading words. The order in which the forms (black or color) were given was randomized to the subjects.  Does printing the name of colors in a difference color increase the time it takes to read the words?
 
 #### Identify the scenario {-}
 
 1. Should these observations be considered paired or independent?  Explain your answer.
 \vspace{0.5in}
 
-2.  Determine the appropriate summary measure to be used to analyze these data.
+2.  Based on your answer to question 1, is the appropriate summary measure to be used to analyze these data the difference in means or the mean difference?
 \vspace{0.25in}
 
 #### Ask a research question {-}
@@ -103,15 +103,17 @@ As you can seen from Figure \@ref(fig:tdist) on the previous page, the $t$-distr
 
 #### Summarize and visualize the data {-}
 
-The following code plots each construction project's estimated (bottom) and actual (top) cost connected by a grey line and also creates a boxplot displaying the pair-wise differences in costs (actual - estimated).
+The following code plots each subject's time to read the black words (above) and time to read the colored words (below) connected by a grey line and also creates a boxplot displaying the pair-wise differences in time (color - black).
 
 ```{r, echo=TRUE}
 costs <- read.csv("https://math.montana.edu/courses/s216/data/ConstructionCosts.csv")
-paired_observed_plot(costs)
+paired_observed_plot(interference)
 
-costs_diff <- costs %>% 
-  mutate(differences = Actual - Estimate)
-costs_diff %>%
+color <- interference
+
+color_diff <- color %>% 
+  mutate(differences = DiffCol - Black)
+color_diff %>%
   ggplot(aes(x = differences))+
   geom_boxplot()+
   labs(title="Boxplot of the pairwise differences",
@@ -121,7 +123,7 @@ costs_diff %>%
 The following code gives the summary statistics for the pairwise differences.
 
 ```{r, echo=TRUE}
-costs_diff %>% 
+color_diff %>% 
   summarise(favstats(differences))
 ```
 
@@ -157,15 +159,12 @@ $$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.$$
 Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function.  For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size.  You should therefore use `df` = $n_d-1 = 372 - 1 = 371$ and `lower.tail = FALSE` to find the p-value.  Highlight and run line 31.  
 
 ```{r, echo=TRUE, eval=FALSE}
-2*pt(xx, df=371, lower.tail=FALSE)
+pt(xx, df=371, lower.tail=TRUE)
 ```
-9. Explain why we multiplied by 2 in the code above.
+9. Explain why we found the area above the T-score using `lower.tail = TRUE` in the code above.
 \vspace{0.3in}
 
-10. Explain why we found the area above the T-score using `lower.tail = FALSE` in the code above.
-\vspace{0.3in}
-
-11.  What does this p-value mean, in the context of the study?  It is the probability of what...assuming what?
+10.  What does this p-value mean, in the context of the study?  It is the probability of what...assuming what?
 \vspace{0.8in}
 
 
@@ -173,46 +172,46 @@ To calculate a theory-based confidence interval for the paired mean difference, 
 
 $$\bar{x}_d\pm t^* SE(\bar{x}_d).$$
 
-We will need to find the $t^*$ multiplier using the function `qt()`. The code below will return the 95th percentile of the $t$ distribution with `df` = $n_d - 1 = 372 - 1 = 371$. 
+We will need to find the $t^*$ multiplier using the function `qt()`. The code below will return the 95th percentile of the $t$ distribution with `df` = $n_d - 1 = 70 - 1 = 69$. 
 
 ```{r, echo=TRUE}
 qt(0.95, df = 371, lower.tail=TRUE)
 ```
 
-```{r tstar, echo = F, fig.cap = "t-distribution with 371 degrees of freedom"}
+```{r tstar, echo = F, fig.cap = "t-distribution with 69 degrees of freedom"}
 
 x <- seq(-4, 4, length=100)
-hx<-dt(x, 371)
-degf <- 371
+hx<-dt(x, 69)
+degf <- 69
 
 plot(x, hx, type="l", lty=1, lwd=3, xlab="x value",
-  ylab="Density", main="t Distribution with 371 df")
+  ylab="Density", main="t Distribution with 69 df")
 
 ```
 \newpage
 
-12.  In Figure \@ref(fig:tstar), you see a t-distribution with 371 degrees of freedom. Label $t^\star$ and $-t^\star$ on that distribution.  Write on the plot the percent of the $t_{371}$-distribution that is below $-t^\star$, between $-t^\star$ and $t^\star$, and above $t^\star$.  Then use your plot to determine the confidence level associated with the $t^\star$ value obtained.
+11.  In Figure \@ref(fig:tstar), you see a t-distribution with 69 degrees of freedom. Label $t^\star$ and $-t^\star$ on that distribution.  Write on the plot the percent of the $t_{69}$-distribution that is below $-t^\star$, between $-t^\star$ and $t^\star$, and above $t^\star$.  Then use your plot to determine the confidence level associated with the $t^\star$ value obtained.
 \vspace{0.3in}
 
 
-13.  Calculate the margin of error for the true paired mean difference using theory-based methods.
+12.  Calculate the margin of error for the true paired mean difference using theory-based methods.
 
 \vspace{0.6in}
 
-14.  Calculate the confidence interval for the true paired mean difference using theory-based methods.
+13.  Calculate the confidence interval for the true paired mean difference using theory-based methods.
 
 \vspace{0.6in}
 
 
-15.  Interpret the confidence interval in context of the study.
+14.  Interpret the confidence interval in context of the study.
 
 \vspace{1in}
 
-16.  Do the results of the CI agree with the p-value?  Explain your answer.
+15.  Do the results of the CI agree with the p-value?  Explain your answer.
 
 \vspace{0.5in}
 
-17.  Write a conclusion to the test in context of the study.
+16.  Write a conclusion to the test in context of the study.
 \vspace{0.6in}
 
 ### Take-home messages

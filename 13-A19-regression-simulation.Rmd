@@ -1,4 +1,4 @@
-## Activity 14a:  Real Estate
+## Activity 14a:  Diving Penguins
 
 \setstretch{1}
 
@@ -27,13 +27,13 @@ In today's activity, we will use simulation-based methods for hypothesis tests a
 To review these concepts, see Chapters 3 and 7 in the textbook.
 
 
-### Real Estate
+### Diving Penguins
 
-The government of Singapore took a random sample of 373 homes in Singapore to conduct a study on the relationship between the distance to the nearest train station (called MRT stations) and house prices. The house prices were measured in SGD (Singapore dollars) per meter squared and the distance was measured in meters. Does there appear to be a relationship between house prices in Singapore and distance to the nearest MRT station?
+Emperor penguins are the most accomplished divers among birds, making routine dives of 5–12 minutes, with the longest recorded dive over 27 minutes. These birds can also dive to depths of over 500 meters! Since air-breathing animals like penguins must hold their breath while submerged, the duration of any given dive depends on how much oxygen is in the bird’s body at the beginning of the dive, how quickly that oxygen gets used, and the lowest level of oxygen the bird can tolerate. The rate of oxygen depletion is primarily determined by the penguin’s heart rate. Consequently, studies of heart rates during dives can help us understand how these animals regulate their oxygen consumption in order to make such impressive dives.The  researchers equipped emperor penguins with devices that record their heart rates during dives. The data set reports Dive Heart Rate (beats per minute), the Duration (minutes) of dives, and other related variables.
 
 ```{r, echo = TRUE, fig.width=7,fig.height=6, collapse=FALSE}
 # Read in data set
-realestate <- read.csv("https://math.montana.edu/courses/s216/data/Real_estate.csv")
+diving <- read.csv("https://math.montana.edu/courses/s216/data/Real_estate.csv")
 ```
 
 #### Vocabulary review {-}
@@ -46,12 +46,12 @@ realestate <- read.csv("https://math.montana.edu/courses/s216/data/Real_estate.c
 2. Use the provided `R` script file to create a scatterplot to examine the relationship between the distance to the nearest MRT station and house prices by filling in the variable names (`Distance` and `House_Price`) for `explanatory` and `response` in line 9.  Highlight and run lines 1--15. 
  
 ```{r, echo=TRUE, eval=FALSE, indent = "    "}
-realestate %>% # Pipe data set into...
-ggplot(aes(x = explanatory, y = response))+  # Specify variables
+Diving_Penguins %>% # Pipe data set into...
+ggplot(aes(x = Dive.Heart.Rate, y = Duration.min.))+  # Specify variables
   geom_point() +  # Add scatterplot of points
-  labs(x = "Distance to MRT Station (m)",  # Label x-axis
-       y = "House Price (SGD/m^2)",  # Label y-axis
-       title = "Scatterplot of House Prices by Distance to Train Station") + 
+  labs(x = "Heart Rate (bpm)",  # Label x-axis
+       y = "Dive Duration (min)",  # Label y-axis
+       title = "Scatterplot of Emperor Penguins Diving Heart Rate vs. Dive Duration") + 
                # Be sure to title your plots
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
@@ -83,8 +83,8 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 Using the provided `R` script file, enter the response variable name, `House_Price`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Distance`, for `response` in line 18 to get the linear model output.  Highlight and run lines 18--19.
 
 ```{r, echo=TRUE, eval =FALSE}
-lm.realestate <- lm(response~explanatory, data=realestate) # lm(response~explanatory)
-round(summary(lm.realestate)$coefficients, 5)
+lm.diving <- lm(Duration.min.~Dive.Heart.Rate, data=Diving_Penguins) # lm(response~explanatory)
+round(summary(lm.diving)$coefficients, 5)
 ```
 
 7.  Using the output from the evaluated `R` code above, write the equation of the regression line using appropriate statistical notation.

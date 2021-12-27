@@ -93,7 +93,29 @@ Another summary measure used to explain the linear relationship between two quan
 
 \vspace{1in}
 
-8.  Write a sentence interpreting the coefficient of determination in context of the problem.
+In the next part of the activity we will explore what the coefficient of determination measures.  Go to the website www.rossmanchance.com/ISIapplets.html and click on Corr/Regresssion under Quantitative Response.  Click `Clear` below the box containing the sample data. Download and open the csv file "Movie2016" from D2L.  Copy the two columns containing `budget_mil` and `revenue_mil` and paste into the sample data box.  Click 'Use Data`.
+
+8.  Click on `Show Moveable Line`.  Write down the equation of the line given.  Why is the slope zero for this line?
+
+\vspace{1in}
+
+9.  Click on `Show Squared Residuals`.  Write down the value for SSE.  Since this is the sum of squared errors (SSE) for the horizontal line we call this the total sum of squares (SST).
+
+\vspace{0.5in}
+
+10. Click on `Show Regression Line`.  Write down the equation of the line given.  Does this match the least squares line found in Activity 4a question 6?
+
+\vspace{1in}
+
+11. Click on `Show Squared Residuals`.  Write down the value for SSE.
+
+\vspace{0.5in}
+
+12.  Calculate the value for $R^2$ using the values found for SST and SSE.  
+
+\vspace{1in}
+
+13.  Write a sentence interpreting the coefficient of determination in context of the problem.
 
 \newpage
 
@@ -113,42 +135,22 @@ movies %>% # Data set pipes into...
   scale_color_grey() # Make black and white
 ```
 
-9.  Identify the three variables plotted in this graph.
+14.  Identify the three variables plotted in this graph.
 
 \vspace{0.5in}
 
-10. Does the *relationship* between movie budget and revenue differ among the different content ratings?  Explain.
+15. Does the *relationship* between movie budget and revenue differ among the different content ratings?  Explain.
 
 \vspace{0.8in}
 \newpage
 
-#### Multiple Linear Regression {-}
 
-In order to see what other variables may have an impact on revenue for movies released in 2016 we created a multivariate model.  The following `R` code gives the estimates for the regression model with `budget_mil` and `duration` included.
-
-```{r, echo=TRUE, collapse = FALSE}
-# Fit linear model: y ~ x
-revenueLM <- lm(revenue_mil ~ budget_mil+duration, data=movies)
-summary(revenueLM)$coefficients # Display coefficient summary
-```
-
-11. Use the provided `R` output to write the linear regression model including both variables.  *Hint*: The estimated line of regression is of the form:
-
-$$\widehat{\text{revenue}} = b_0 + b_1\times budget + b_2\times duration.$$
-
-\vspace{1in}
-
-12. Using the fitted regression model above, predict the revenue for a movie in 2016 with a budget of 180 $MM and duration of 100 minutes.
-
-\vspace{0.8in}
 
 ### Take-home messages
 
 1. The sign of correlation and the sign of the slope will always be the same.  The closer the value of correlation is to $-1$ or $+1$, the stronger the relationship between the explanatory and the response variable.  
 
 2.  The coefficient of determination multiplied by 100 ($R^2 \times 100$) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100%, the stronger the relationship.
-
-3. A multiple linear regression model includes more than one variable as a predictor for the response variable.
 
 \newpage
 

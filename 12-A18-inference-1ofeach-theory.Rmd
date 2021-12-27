@@ -1,4 +1,4 @@
-## Activity 13b:  Homeless Housing Stability
+## Activity 12b:  Homeless Housing Stability
 
 \setstretch{1}
 

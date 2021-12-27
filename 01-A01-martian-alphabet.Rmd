@@ -23,6 +23,10 @@ Statistics is the study of how best to collect, analyze, and draw conclusions fr
 
 For more on these concepts, read Sections 1.2 and 2.1 in the textbook.
 
+### General information on Friday labs
+
+Each Friday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Gradescope (one submission per group).  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab with your group have the Gradescope lab assignment open so that you can answer those questions as you go.  
+
 ### Can you read "Martian"?
 
 How well can humans distinguish one “Martian” letter from another? In today’s activity, we’ll find out. When shown the two Martian letters, Kiki and Bumba, write down whether you think Bumba is on the left or on the right.
@@ -51,7 +55,7 @@ How well can humans distinguish one “Martian” letter from another? In today�
 
 A **variable** is information collected or measured on each observational unit or case. Each column in a data set will represent a different variable. Today we are only measuring one variable on each observational unit.
 
-4. Identify the variable we are collecting on each observational unit in this study, i.e., what are we measuring on each student?  *Hint*: Your answer to question 1 is the outcome for the variable measured on one observational unit.
+4. **Identify the variable we are collecting on each observational unit in this study, i.e., what are we measuring on each student?**  *Hint*: Your answer to question 1 is the outcome for the variable measured on one observational unit.
 
 \vspace{.8in}
 
@@ -133,7 +137,7 @@ include_graphics("images/relative_barplot_martian.png")
 \vspace{1.2in}
 
 
-13.	We still only have a couple of simulations to compare our class data to.  It would be much better to be able to see how our class compared to hundreds or thousands of “just-guessing” classes.  Since we don’t want to flip coins all class period, your instructor will use a computer simulation to get 1000 trials. Fill in the following blanks to describe how we would create a simulation of random guessing with 1000 trials (repetitions).
+13.	**We still only have a couple of simulations to compare our class data to.  It would be much better to be able to see how our class compared to hundreds or thousands of “just-guessing” classes.  Since we don’t want to flip coins all class period, your instructor will use a computer simulation to get 1000 trials. Fill in the following blanks to describe how we would create a simulation of random guessing with 1000 trials (repetitions).**
 
 |           Probability of correct guesses: _____
 \vspace{0.05in}
@@ -150,6 +154,10 @@ include_graphics("images/relative_barplot_martian.png")
 
 \vspace{1.5in}
 
+|  **What does one dot on the plot above represent in context of the problem?**
+
+\vspace{1in}
+
 15. Is your class particularly good or bad at Martian?  Use the plot in question 14 to explain your answer. 
 
 \vspace{.5in}
@@ -158,7 +166,7 @@ include_graphics("images/relative_barplot_martian.png")
 
 \vspace{.5in}
 
-17.	Is it *likely* that we could see our class results just by chance if everyone was just guessing?  Explain your reasoning.
+**17.	Is it *likely* that we could see our class results just by chance if everyone was just guessing?  Explain your reasoning.**
 
 \vspace{.5in}
 
@@ -173,6 +181,8 @@ include_graphics("images/relative_barplot_martian.png")
 
 
 #### Introduction to `R` {-}
+
+**Once you work through the Introduction to `R` export the plot created as a png image file adn upload this plot to Gradescope.  In the plots tab in the lower right hand corner, click on "Export"
 
 In Stat 216 we will use the statistical package `R` to analyze data through the IDE (integrated development environment) RStudio. Though it is possible to download `R` and RStudio on your own computer, we will use this program through the MSU RStudio server: [https://rstudio.math.montana.edu/](https://rstudio.math.montana.edu/). 
 

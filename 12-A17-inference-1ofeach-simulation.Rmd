@@ -1,4 +1,4 @@
-## Week 13 - Activity 13a:  Weather Patterns and Record Snowfall
+## Activity 12a:  Weather Patterns and Record Snowfall
 
 \setstretch{1}
 
@@ -202,7 +202,7 @@ two_mean_bootstrap_CI(RESPONSE ~ EXPLANATORY, data = DATASET,  # Variables and d
 
 ### Take-home messages
 
-1.	This activity differs from Activities 12a and 12b because the responses are independent, not paired.  These data are analyzed as a difference in means, not a mean difference.  
+1.	This activity differs from Activities 11a and 11b because the responses are independent, not paired.  These data are analyzed as a difference in means, not a mean difference.  
 
 2. To create one simulated sample on the null distribution for a difference in sample means, label cards with the response variable values from the original data.  Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$. Calculate and plot the difference in means. 
 

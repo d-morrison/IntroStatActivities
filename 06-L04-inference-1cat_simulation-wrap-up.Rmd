@@ -96,7 +96,7 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
 
 \vspace{1in}
 
-7. Is the observed statistic likely to happen or unlikely to happen if the true proportion of infants who choose the helper is 0.5?  Explain your answer using the plot.
+7. **Is the observed statistic likely to happen or unlikely to happen if the true proportion of infants who choose the helper is 0.5?  Explain your answer using the plot.**
 
 \vspace{1in}
 
@@ -108,7 +108,7 @@ The value in question 8 is the **p-value**.  The smaller the p-value, the more e
 
 \vspace{0.5in}
 
-9. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one of the five descriptions.)
+9. **Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one of the five descriptions.)**
 
 ```{r, out.width="90%"}
 include_graphics("images/soe_gradient_grayscale.png")
@@ -121,29 +121,38 @@ The p-value measures the probability that we observe a sample proportion as extr
 
 10.  What did we assume to create the null distribution?
 
+\vpace{1in}
 
-11.  What value did we compare to the null distribution?
+
+11.  What value did we compare to the null distribution to find the p-value?
+
+\vspace{0.3in}
 
 
 12.  What direction did we count simulations from the statistic?
+\vspace{0.3in}
 
+\setstretch{1.5}
 
 13.  Fill in the blanks below to interpret the p-value.
 
-We would observe a sample proportion of (value of the sample proportion) ______________________ or (greater, less, more extreme) _____________________ with a probability of (value of p-value)_____________________ IF we assume (Ho in context)______________________________________________________________________________________________________________________________________________________________________________.
+**We would observe a sample proportion of (value of the sample proportion) ______________________ or (greater, less, more extreme) _____________________ with a probability of (value of p-value)_____________________ IF we assume (Ho in context)______________________________________________________________________________________________________________________________________________________________________________.**
+\setstretch{1}
 
 #### Communicate the results and answer the research question {-}
 
 When we write a conclusion we answer the research question by stating how much evidence there is for the alternative hypothesis.
 
-14. Write a conclusion in context of the study. How much evidence does the data provide in support of the alternative hypothesis?
+14. **Write a conclusion in context of the study. How much evidence does the data provide in support of the alternative hypothesis?**
 
 \vspace{1in}
 
+\setstretch{1.5}
 
 15. Fill in the blanks below to Write a paragraph summarizing the results of the study as if writing a press release.  **Upload your group's paragraph to Gradescope.** Be sure to describe:
 
 Researchers were interested if infants observe social cues and would be more likely to choose the helper toy over the hinderer toy.  In a sample of (sample  size) _____________infants, (number of successs) _______________chose the helper toy.  A simulation null distribution with 1000 simulations was created in RStudio.  The p-value was found by calculating the proportion of simulations in the null distribution at the sample statistic of 0.875 and greater.  This resulted in a p-value of (value of p-value)_______________.  We would observe a sample proportion of (value of the sample proportion) ______________________ or (greater, less, more extreme) _____________________ with a probability of (value of p-value)_____________________ IF we assume (Ho in context)______________________________________________________________________________________________________________________________________________________________________________.
 Based on this p-value, there is (very strong/little to no) ______________________ evidence that the (sample/true)_____________________ proportion of infants age 6 to 10 months who will choose the helper toy is (greater than, less than, not equal to) _____________________ 0.5.  The results of this study can be generalized to (all infants age 6 to 10 months/infants similar to those in this study)____________________________________________ as the researchers (did/did not)_____________________ select a random sample.
 
+\setstretch{1}
 \newpage
