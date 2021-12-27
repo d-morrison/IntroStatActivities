@@ -22,7 +22,7 @@ Researchers compared the efficacy of two treatment regimens to achieve durable g
 Upload and open the `R` script file for Week 10 lab. Upload and import the csv file, `diabetes`. Enter the name of the data set (see the environment tab) for `datasetname` in the R script file in line 5. Highlight and run lines 1--6 to get the counts for each combination of categories.
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
-datasetname -> diabetes
+diabetes <- datasetname
 diabetes %>% group_by(treatment) %>% count(outcome)
 ```
 

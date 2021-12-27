@@ -31,26 +31,20 @@ To review these concepts, see Chapters 3 and 7 in the textbook.
 
 ### Golf Driving Distance
 
-In golf the goal is to complete a hole with as few strokes as possible.  A golfer desires to have a good driving distance to start a hole in order to minimize the strokes necessary to complete the hole.  This data was collecting on PGA and LGPA players in 2008.  For each player, the average driving distance (yards), fairway accuracy (percentage), and sex was measured.  Use this data to assess, "Does a PGA golfer give up accuracy when they hit the ball farther?"
+In golf the goal is to complete a hole with as few strokes as possible.  A golfer desires to have a good driving distance to start a hole in order to minimize the strokes necessary to complete the hole.  This data was collecting on 354 PGA and LGPA players in 2008.  For each player, the average driving distance (yards), fairway accuracy (percentage), and sex was measured.  Use this data to assess, "Does a PGA golfer give up accuracy when they hit the ball farther?"
 
 ```{r, echo = TRUE, fig.width=7,fig.height=6, collapse=FALSE}
 # Read in data set
-golf <- read.csv("https://math.montana.edu/courses/s216/data/baseball.csv")
-
+golf <- read.csv("https://math.montana.edu/courses/s216/data/golf.csv")
 ```
 
-#### Vocabulary review. Complete Q1--Q4 before class. {-}
+#### Plot review. {-}
 
-1. Explain why regression methods are appropriate to use to address the researchers' question. Make sure you clearly define the variables of interest in your explanation and their roles.
-
-\vspace{.5in}
-
-
-2. Use the provided `R` script file to create a scatterplot to examine the relationship between the driving distance and percent accuracy by filling in the variable names (`Driving_Distance` and `Percent_Accuracy`) for `xx` and `yy` in line 17.  Highlight and run lines 1--21. 
+Use the provided `R` script file to create a scatterplot to examine the relationship between the driving distance and percent accuracy by filling in the variable names (`Driving_Distance` and `Percent_Accuracy`) for `xx` and `yy` in line 10.  Highlight and run lines 1--16. 
  
 ```{r, echo=TRUE, eval=FALSE, indent = "    "}
 golf %>% # Pipe data set into...
-ggplot(aes(x = Driving_Distance, y = Percent_Accuracy))+  # Specify variables
+ggplot(aes(x = xx, y = yy))+  # Specify variables
   geom_point() +  # Add scatterplot of points
   labs(x = "Driving Distance",  # Label x-axis
        y = "Percent Accuracy",  # Label y-axis
@@ -59,17 +53,9 @@ ggplot(aes(x = Driving_Distance, y = Percent_Accuracy))+  # Specify variables
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
 
-3. Sketch the plot created below. Based on your plot, does it appear that there is a relationship between driving distance and percent accuracy? Note: `Driving Distance` should be on the $x$-axis.
+1. Sketch the plot created below. Based on your plot, does it appear that there is a relationship between driving distance and percent accuracy? Note: `Driving Distance` should be on the $x$-axis.
 
 \vspace{2in}
-
-4. Describe the features of the plot above, addressing all four characteristics of a scatterplot.  
-
-\vspace{1in}
-
-|        If you indicated there are potential outliers, which points are they?
-
-\vspace{0.5in}
 
 #### Conditions for the least squares line {-}
 
@@ -88,7 +74,7 @@ When performing inference on a least squares line, the follow conditions are gen
     - Check this assumption by examining a histogram of the residuals, which should appear approximately normal^[A better plot for checking the normality assumption is called a *normal quantile-quantile plot* (or QQ-plot). However, this type of plot will be covered in a future course].
 
 
-The scatterplot generated in question 2 and the residual plots shown below will be used to assess these conditions for approximating the data with the $t$-distribution.
+The scatterplot generated in question 1 and the residual plots shown below will be used to assess these conditions for approximating the data with the $t$-distribution.
 
 ```{r}
 lm.golf <- lm(Percent_Accuracy~Driving_Distance, data = golf) # Fit linear regression model
@@ -97,36 +83,35 @@ plot(lm.golf, which=1) # Residual vs fitted values
 hist(lm.golf$resid, xlab="Residuals", ylab="Frequency",
      main = "Histogram of Residuals") # Histogram of residuals
 ```
-
-5. Are the conditions met to use the $t$-distribution to approximate the sampling distribution of the standardized statistic? Justify your answer.
+2. Are the conditions met to use the $t$-distribution to approximate the sampling distribution of the standardized statistic? Justify your answer.
 
 \vspace{1.5in}
 
 
 #### Ask a research question {-}
 
-6. Write out the null hypothesis in words.
+3. Write out the null hypothesis in words.
 
 \vspace{1in}
 
-7. Using the research question, write the alternative hypothesis in notation to test the slope.
+4. Using the research question, write the alternative hypothesis in notation to test the slope.
 
 \vspace{0.5in}
 
 #### Summarize and visualize the data {-}
 
-Using the provided `R` script file, enter the response variable name, `Percent_Accuracy`, into the `lm()` (linear model) function for `yy` and the explanatory variable name, `Driving_Distance`, for `xx` in line 32 to get the linear model output.  Highlight and run lines 31--32.
+Using the provided `R` script file, enter the response variable name, `Percent_Accuracy`, into the `lm()` (linear model) function for `yy` and the explanatory variable name, `Driving_Distance`, for `xx` in line 26 to get the linear model output.  Highlight and run lines 26--27.
 
 ```{r, echo=TRUE, eval =FALSE}
-lm.golf <- lm(Percent_Accuracy~Driving_Distance, data=golf) # lm(response~explanatory)
+lm.golf <- lm(yy~xx, data=golf) # lm(response~explanatory)
 round(summary(lm.golf)$coefficients, 5)
 ```
 
-8.  Using the output from the evaluated `R` code above, write the equation of the regression line using appropriate statistical notation.
+5.  Using the output from the evaluated `R` code above, write the equation of the regression line using appropriate statistical notation.
 
 \vspace{1in}
 
-9.  Interpret the estimated slope in context of the problem.
+6.  Interpret the estimated slope in context of the problem.
 
 \vspace{1in}
 
@@ -143,19 +128,19 @@ We will use the linear model `R` output above to get the estimate for slope and 
 
 \newpage
 
-10.  Calculate the standardized statistic for slope.  Identify where this calculated value is in the linear model `R` output.
+7.  Calculate the standardized statistic for slope.  Identify where this calculated value is in the linear model `R` output.
 
 \vspace{1in}
 
-11.  Interpret the standardized statistic in context of the problem.
+8.  Interpret the standardized statistic in context of the problem.
 
 \vspace{0.8in}
 
-12.  Using the linear model `R` output, report the p-value for the test of significance for slope.
+9.  Using the linear model `R` output, report the p-value for the test of significance for slope.
 
 \vspace{0.5in}
 
-13. Based on the p-value, how much evidence is there against the null hypothesis?
+10. Based on the p-value, how much evidence is there against the null hypothesis?
 
 \vspace{0.5in}
 
@@ -165,28 +150,49 @@ $$\mbox{point estimate}\pm t^*SE(\mbox{estimate}).$$
 When the point estimate is a regression slope, this formula becomes 
 $$b_1 \pm t^* SE(b_1).$$
  
-The $t^*$ multiplier comes from a $t$-distribution with $n-2$ degrees of freedom.  Recall for a 95\% confidence interval, we use the 97.5\% percentile (95\% of the distribution is in the middle, leaving 2.5\% in each tail).  The sample size for this study is 902 so we will use the degrees of freedom 900 ($n-2$).
+The $t^*$ multiplier comes from a $t$-distribution with $n-2$ degrees of freedom.  Recall for a 95\% confidence interval, we use the 97.5\% percentile (95\% of the distribution is in the middle, leaving 2.5\% in each tail).  The sample size for this study is 354 so we will use the degrees of freedom 352 ($n-2$).
 
 ```{r, echo=TRUE, collapse=FALSE}
-qt(0.975, 900) # 95% t* multiplier 
+qt(0.975, 352) # 95% t* multiplier 
 ```
 
-14. Calculate the 95\% confidence interval for the true slope.
+11. Calculate the 95\% confidence interval for the true slope.
 \vspace{0.8in}
 
-15. Interpret the 95\% confidence interval in context of the problem.
+12. Interpret the 95\% confidence interval in context of the problem.
 
 \vspace{.8in}
 
 #### Communicate the results and answer the research question {-}
 
-16. Based on the p-value, write a conclusion in context of the problem.
+13. Based on the p-value, write a conclusion in context of the problem.
 
 \vspace{.8in}
 
-17. Does the p-value agree with the 95\% confidence interval?  What does each tell you about the null hypothesis?
+14. Does the p-value agree with the 95\% confidence interval?  What does each tell you about the null hypothesis?
 
 \vspace{.6in}
+
+### Multivariate plots {-}
+
+Another variable that may affect the percent accuracy is the sex of the golfer. We will look at how this variable may change the relationship between driving distance and percent accuracy. Highlight and run lines 33--39 to produce the multivariate plot. 
+
+```{r, out.width="60%", echo=TRUE, eval=FALSE}
+golf %>%
+  ggplot(aes(x = Driving_Distance, y = Percent_Accuracy, color=Gender))+  # Specify variables
+  geom_point(aes(shape = Gender), size = 3) +  # Add scatterplot of points
+  labs(x = "Driving Distance (m)",  # Label x-axis
+       y = "Percent Accuracy",  # Label y-axis
+       color = "Sex", shape = "Gender",
+       title = "Scatterplot of Golf Driving Distance and Percent Accuracy by Sex") + # Be sure to title your plots
+  geom_smooth(method = "lm", se = FALSE)  # Add regression line
+```
+
+15. Does the association between driving distance and percent accuracy change dependent on sex of the golfer?  Explain your answer.
+\vspace{1in}
+
+16.  **Explain the impact sex has on the two variables.**
+\vspace{1in}
 
 ### Take-home messages
 

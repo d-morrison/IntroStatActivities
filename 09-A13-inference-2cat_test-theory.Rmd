@@ -171,12 +171,12 @@ Suppose in another sample of skiers and snowboarders involved in accidents we sa
 
 \vspace{0.8in}
 
-Use Rstudio find the p-value for this new sample.  **Enter the value of the standardized statistic found in question 14 for xx in line 12.**  Highlight and run lines 12--14.
+Use Rstudio find the p-value for this new sample.  Enter the value of the standardized statistic found in question 14 for xx in line 7.  Highlight and run lines 7--9.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
       m=0, s=1, # Using the standard normal mean = 0, sd = 1
-      lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
+      lower.tail=TRUE) # Gives a p-value greater than the standardized statistic
 ```
 
 15.  How does the increase in sample size affect the p-value?
@@ -187,12 +187,12 @@ pnorm(xx, # Enter value of standardized statistic
 
 \vspace{0.8in}
 
-Use Rstudio find the p-value for this new sample.  
+Use Rstudio find the p-value for this new sample.  Enter the value of the standardized statistic found in question 16 for xx in line 12.  Highlight and run lines 12--14.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
       m=0, s=1 # Using the standard normal mean = 0, sd = 1
-      lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
+      lower.tail=TRUE) # Gives a p-value greater than the standardized statistic
 ```
 
 17.  How does a statistic closer to the null value affect the p-value?  

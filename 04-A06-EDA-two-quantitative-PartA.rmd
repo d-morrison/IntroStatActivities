@@ -1,4 +1,4 @@
-## Activity 5a:  Movie Profits - Linear Regression
+## Activity 4a:  Movie Profits - Linear Regression
 
 \setstretch{1}
 

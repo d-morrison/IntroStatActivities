@@ -121,7 +121,7 @@ The p-value measures the probability that we observe a sample proportion as extr
 
 10.  What did we assume to create the null distribution?
 
-\vpace{1in}
+\vspace{1in}
 
 
 11.  What value did we compare to the null distribution to find the p-value?

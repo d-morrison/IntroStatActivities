@@ -106,10 +106,8 @@ As you can seen from Figure \@ref(fig:tdist) on the previous page, the $t$-distr
 The following code plots each subject's time to read the black words (above) and time to read the colored words (below) connected by a grey line and also creates a boxplot displaying the pair-wise differences in time (color - black).
 
 ```{r, echo=TRUE}
-costs <- read.csv("https://math.montana.edu/courses/s216/data/ConstructionCosts.csv")
-paired_observed_plot(interference)
-
-color <- interference
+color <- read.csv("https://math.montana.edu/courses/s216/data/interference.csv")
+paired_observed_plot(color)
 
 color_diff <- color %>% 
   mutate(differences = DiffCol - Black)
@@ -135,8 +133,6 @@ color_diff %>%
 6. Is the normality condition met to use the theory-based methods for analysis?  Explain your answer.
 \vspace{1in}
 
-
-
 #### Use statistical inferential methods to draw inferences from the data {-}
 
 
@@ -156,10 +152,10 @@ $$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.$$
 
 \vspace{0.5in}
 
-Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function.  For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size.  You should therefore use `df` = $n_d-1 = 372 - 1 = 371$ and `lower.tail = FALSE` to find the p-value.  Highlight and run line 31.  
+Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function.  For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size.  You should therefore use `df` = $n_d-1 = 70 - 1 = 69$ and `lower.tail = FALSE` to find the p-value.  Highlight and run line 31.  
 
 ```{r, echo=TRUE, eval=FALSE}
-pt(xx, df=371, lower.tail=TRUE)
+pt(xx, df=69, lower.tail=TRUE)
 ```
 9. Explain why we found the area above the T-score using `lower.tail = TRUE` in the code above.
 \vspace{0.3in}
@@ -175,7 +171,7 @@ $$\bar{x}_d\pm t^* SE(\bar{x}_d).$$
 We will need to find the $t^*$ multiplier using the function `qt()`. The code below will return the 95th percentile of the $t$ distribution with `df` = $n_d - 1 = 70 - 1 = 69$. 
 
 ```{r, echo=TRUE}
-qt(0.95, df = 371, lower.tail=TRUE)
+qt(0.95, df = 69, lower.tail=TRUE)
 ```
 
 ```{r tstar, echo = F, fig.cap = "t-distribution with 69 degrees of freedom"}

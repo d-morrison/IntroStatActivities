@@ -1,4 +1,4 @@
-## Activity 5b:  Movie Profits - Correlation and Coefficient of Determination
+## Activity 4b:  Movie Profits - Correlation and Coefficient of Determination
 
 \setstretch{1}
 
