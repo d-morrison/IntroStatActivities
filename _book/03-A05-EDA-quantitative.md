@@ -209,6 +209,8 @@ movies %>% # Data set piped into...
 
 \vspace{0.8in}
 
+\newpage
+
 #### Displaying a single categorical and single quantitative variable {-}
 
 The boxplot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for `response` and the variable `content_rating` for explanatory at line 44, highlight and run code lines 42--48. This plot compares the budget for different levels of content rating.
@@ -251,6 +253,7 @@ movies %>%  # Data set piped into...
 
 \vspace{0.4in}
 
+\newpage
 
 ### Take-home messages
 

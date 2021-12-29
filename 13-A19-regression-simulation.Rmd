@@ -43,7 +43,7 @@ diving <- read.csv("https://math.montana.edu/courses/s216/data/Diving_Penguins.c
 \vspace{.5in}
 
 
-2. Use the provided `R` script file to create a scatterplot to examine the relationship between the diving heart rate and duration of the dive by filling in the variable names (`Dive_HeartRate` and `Duration`) for `explanatory` and `response` in line 9.  Highlight and run lines 1--15. 
+Use the provided `R` script file to create a scatterplot to examine the relationship between the diving heart rate and duration of the dive by filling in the variable names (`Dive_HeartRate` and `Duration`) for `explanatory` and `response` in line 9.  Highlight and run lines 1--15. 
  
 ```{r, echo=TRUE, eval=FALSE, indent = "    "}
 diving %>% # Pipe data set into...
@@ -56,11 +56,11 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
 
-3. Sketch the plot created below. Based on your plot, does it appear that there is a relationship between dive heart rate and duration of the dive? Note: `Dive_HeartRate` should be on the $x$-axis.
+2. Sketch the plot created below. Based on your plot, does it appear that there is a relationship between dive heart rate and duration of the dive? Note: `Dive_HeartRate` should be on the $x$-axis.
 
 \vspace{2in}
 
-4. Describe the features of the plot above, addressing all four characteristics of a scatterplot.  
+3. Describe the features of the plot above, addressing all four characteristics of a scatterplot.  
 
 \vspace{1in}
 
@@ -70,11 +70,11 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 #### Ask a research question {-}
 
-5. Write out the null hypothesis in words.
+4. Write out the null hypothesis in words.
 
 \vspace{1in}
 
-6. Using the research question, write the alternative hypothesis in notation to test the slope.
+5. Using the research question, write the alternative hypothesis in notation to test the slope.
 
 \vspace{0.5in}
 
@@ -87,12 +87,10 @@ lm.diving <- lm(response~explanatory, data=diving) # lm(response~explanatory)
 round(summary(lm.diving)$coefficients, 5)
 ```
 
-7.  Using the output from the evaluated `R` code above, write the equation of the regression line using appropriate statistical notation.
+6.  Using the output from the evaluated `R` code above, write the equation of the regression line using appropriate statistical notation.
 \vspace{1in}
 
-8.  Interpret the estimated slope in context of the problem.
-\vspace{1in}
-
+7.  Interpret the estimated slope in context of the problem.
 \vspace{1in}
 
 #### Use statistical inferential methods to draw inferences from the data {-}
@@ -103,15 +101,11 @@ In this activity, we will focus on using simulation-based methods for inference 
 
 First, let's think about how one simulation would be created on the null distribution using cards.  First, we would write the values for the response variable, Duration, on each card.  Next, we would shuffle these $y$ values while keeping the $x$ values (explanatory variable) in the same order.  Then, find the line of regression for the shuffled cards and calculate either the sample slope or sample correlation.  
 
-9. Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
-
-\vspace{1in}
-
 We will use the `regression_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample slopes (or sample correlations) and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `diving`), the statistic for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
 
 The response variable name is `Duration` and the explanatory variable name is `Dive_HeartRate`.
 
-10. What inputs should be entered for each of the following to create the simulation to test regression slope?
+8. What inputs should be entered for each of the following to create the simulation to test regression slope?
 
 \vspace{.5 mm}
 
@@ -141,7 +135,7 @@ regression_test(response ~ explanatory, # response ~ explanatory
                number_repetitions = 1000) # Number of simulated samples for null distribution
 ```
 
-11.  Report the p-value from the `R` output. 
+9.  Report the p-value from the `R` output. 
 \vspace{0.5in}
 
 #### Simulation-based confidence interval {-}
@@ -155,16 +149,16 @@ regression_bootstrap_CI(response~explanatory, # response ~ explanatory
    statistic = "xx", # Slope or correlation
    number_repetitions = 1000) # Number of simulated samples for bootstrap distribution
 ```
-12.  Report the bootstrap 95\% confidence interval in interval notation.  
+10.  Report the bootstrap 95\% confidence interval in interval notation.  
 \vspace{0.5in}
    
 #### Communicate the results and answer the research question {-}
 
-13. Based on the p-value, write a conclusion in context of the problem.
+11. Based on the p-value, write a conclusion in context of the problem.
 
 \vspace{.8in}
 
-14. Does the p-value agree with the 95\% confidence interval?  What does each tell you about the null hypothesis?
+12. Does the p-value agree with the 95\% confidence interval?  What does each tell you about the null hypothesis?
 
 \vspace{.6in}
 

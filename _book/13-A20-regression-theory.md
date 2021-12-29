@@ -1,4 +1,4 @@
-## Activity 14b:  Golf Driving Distance
+## Activity 13b:  Golf Driving Distance
 
 \setstretch{1}
 
@@ -43,17 +43,17 @@ golf <- read.csv("https://math.montana.edu/courses/s216/data/golf.csv")
 
 Use the provided `R` script file to create a scatterplot to examine the relationship between the driving distance and percent accuracy by filling in the variable names (`Driving_Distance` and `Percent_Accuracy`) for `xx` and `yy` in line 10.  Highlight and run lines 1--16. 
  
-    
-    ```r
-    golf %>% # Pipe data set into...
-    ggplot(aes(x = xx, y = yy))+  # Specify variables
-      geom_point() +  # Add scatterplot of points
-      labs(x = "Driving Distance",  # Label x-axis
-           y = "Percent Accuracy",  # Label y-axis
-           title = "Scatterplot of Driving Distance by Percent Accuracy") + 
-                   # Be sure to tile your plots
-      geom_smooth(method = "lm", se = FALSE)  # Add regression line
-    ```
+
+```r
+golf %>% # Pipe data set into...
+ggplot(aes(x = xx, y = yy))+  # Specify variables
+  geom_point() +  # Add scatterplot of points
+  labs(x = "Driving Distance",  # Label x-axis
+       y = "Percent Accuracy",  # Label y-axis
+       title = "Scatterplot of Driving Distance by Percent Accuracy") + 
+               # Be sure to tile your plots
+  geom_smooth(method = "lm", se = FALSE)  # Add regression line
+```
 
 1. Sketch the plot created below. Based on your plot, does it appear that there is a relationship between driving distance and percent accuracy? Note: `Driving Distance` should be on the $x$-axis.
 
@@ -124,11 +124,9 @@ $$
  
 We will use the linear model `R` output above to get the estimate for slope and the standard error of the slope.
 
-\newpage
-
 7.  Calculate the standardized statistic for slope.  Identify where this calculated value is in the linear model `R` output.
 
-\vspace{1in}
+\newpage
 
 8.  Interpret the standardized statistic in context of the problem.
 

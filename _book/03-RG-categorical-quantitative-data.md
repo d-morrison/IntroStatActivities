@@ -275,7 +275,7 @@ Total & & & 100,000 \\ \hline
 
 \newpage
 
-# Exploring Quantitative Data
+## Exploring Quantitative Data
 
 ## Week 4 - Reading Guide: Quantitative Data
 

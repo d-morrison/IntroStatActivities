@@ -1,6 +1,6 @@
 # Exam 1 Review
 
-Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 Review `R` script file to answer the following questions.  Each adult (>21) islander was selected at random from all the adult islanders.  
+Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 Review `R` script file to answer the following questions.  Each adult (>21) islander was selected at random from all the adult islanders.  Variables and their descriptions are listed below.  Music type (classical or heavy metal) was randomly assigned to the Islanders.  Time to complete the puzzle cube was measure before listening to the music and then after listening to music for each Islander.  Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
@@ -20,14 +20,12 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 | `Type_of_Music` | Music type (Classical or Heavy Medal) Islander was randomly assigned to listen to |
 | `Before_PuzzleCube` | Time to complete puzzle cube (minutes) before listening to assigned music |
 | `After_PuzzleCube` | Time to complete puzzle cube (minutes) after listening to assigned music |
-| `Diff_PuzzleCube` | Difference in time to complete puzzle cube (minutes) for Before - After listening to assigned music |
 | `Education_Level` | Highest level of education completed (note: missing data depicted by missing) |
 | `Balance_Test` | Time balanced measured in seconds with eyes closed |
 | `Blood_Glucose_before` | Level of blood glucose (mg/dL) before consuming assigned drink |
 | `Heart_Rate_before` | Heart rate (bpm) before consuming assigned drink |
-| `Type_of_Drink` | Type of drink (EnergyDrink or Cola) Islander was randomly assigned to drink |
-| `Heart_Rate_after` | Heart rate (bpm) after consuming assigned drink |
 | `Blood_Glucose_after` | Level of blood glucose (mg/dL) after consuming assigned drink |
+| `Heart_Rate_after` | Heart rate (bpm) after consuming assigned drink |
 | `Diff_Heart_Rate` | Difference in heart rate (bpm) for Before - After consuming assigned drink |
 | `Diff_Blood_Glucose` | Difference in blood glucose (mg/dL) for Before - After consuming assigned drink |
 
@@ -105,7 +103,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 \newpage
 
 
-7. Use the Exam 1 Review `R` script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: "Does cola increase blood glucose levels more than energy drinks, on average?"
+7. Use the Exam 1 Review `R` script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: "Is there a difference in time to complete the puzzle cube for those that listened to classical and those that listened to heavy metal music?"
 
 \rgi Explanatory Variable:
 

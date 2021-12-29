@@ -151,8 +151,6 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 |           Number of repetitions: _____
 \vspace{0.05in}
 
-\newpage
-
 14. Sketch the distribution displayed by your instructor here.  Label each axis appropriately. 
 
 \vspace{1.5in}
@@ -173,14 +171,13 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 \vspace{.5in}
 
+\newpage
+
 **Step 5**: The next step in the statistical investigation process is to *communicate the results and answer the research question*.
 
 18.	Does this activity provide strong evidence that students were not just guessing at random? If so, what do you think is going on here?  Can we as a class read Martian?^[Reference for “Martian alphabet” is a TED talk given by Vilayanur Ramachandran in 2007. The synesthesia part begins at roughly 17:30 minutes: `http://www.ted.com/talks/vilayanur_ramachandran_on_your_mind`.]  
 
 \vspace{1in}
-
-
-\newpage
 
 
 #### Introduction to `R` {-}

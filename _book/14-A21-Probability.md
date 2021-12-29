@@ -1,3 +1,5 @@
+# Special Topics
+
 ## Activity 14a:  What's the probability?
 
 \setstretch{1}

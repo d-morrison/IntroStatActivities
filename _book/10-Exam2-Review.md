@@ -1,6 +1,6 @@
 # Exam 2 Review
 
-Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 Review `R` script file to answer the following questions.  Each adult (>21) islander was selected at random from all the adult islanders.  
+Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 Review `R` script file to answer the following questions.  Each adult (>21) islander was selected at random from all the adult islanders.  Variables and their descriptions are listed below.  Music type (classical or heavy metal) was randomly assigned to the Islanders.  Time to complete the puzzle cube was measure before listening to the music and then after listening to music for each Islander.  Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
@@ -20,23 +20,18 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 | `Type_of_Music` | Music type (Classical or Heavy Medal) Islander was randomly assigned to listen to |
 | `Before_PuzzleCube` | Time to complete puzzle cube (minutes) before listening to assigned music |
 | `After_PuzzleCube` | Time to complete puzzle cube (minutes) after listening to assigned music |
-| `Diff_PuzzleCube` | Difference in time to complete puzzle cube (minutes) for Before - After listening to assigned music |
 | `Education_Level` | Highest level of education completed (note: missing data depicted by missing) |
 | `Balance_Test` | Time balanced measured in seconds with eyes closed |
 | `Blood_Glucose_before` | Level of blood glucose (mg/dL) before consuming assigned drink |
 | `Heart_Rate_before` | Heart rate (bpm) before consuming assigned drink |
-| `Type_of_Drink` | Type of drink (EnergyDrink or Cola) Islander was randomly assigned to drink |
-| `Heart_Rate_after` | Heart rate (bpm) after consuming assigned drink |
 | `Blood_Glucose_after` | Level of blood glucose (mg/dL) after consuming assigned drink |
+| `Heart_Rate_after` | Heart rate (bpm) after consuming assigned drink |
 | `Diff_Heart_Rate` | Difference in heart rate (bpm) for Before - After consuming assigned drink |
 | `Diff_Blood_Glucose` | Difference in blood glucose (mg/dL) for Before - After consuming assigned drink |
 
-1.  Write a research question involving a single categorical variable that can be answered using the data set.  
-
-\vspace{0.8in}
 \newpage
 
-2. Use the provided Exam 2 Review `R` script file and analyze this research question.
+1. Use the provided Exam 2 Review `R` script file and analyze the following research question: The proportion of university graduates in the US is 42%.  "Is there evidence that the proportion of university graduates in the Islands differs from the proportion in the US?"
 
 \rgi Parameter of Interest:
     
@@ -125,12 +120,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 \vspace{0.8in}
 
         
-3.  Write a research question involving two categorical variables that can be answered using the data set.  
-
-\vspace{0.8in}
-\newpage
-
-4. Use the provided Exam 2 Review `R` script file and analyze this research question.
+2. Use the provided Exam 2 Review `R` script file and analyze the following research question: "Is there evidence that those with a higher education level are less likely to smoke?"
 
 \rgi Parameter of Interest:
     

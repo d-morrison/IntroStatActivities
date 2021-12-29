@@ -1,4 +1,4 @@
-# Fall 2021 Calendar of In-Class Activities {-}
+# Spring 2022 Calendar of In-Class Activities {-}
 
 
 This calendar only lists the in-class activities, RStudio labs and exams each week. For required readings and videos as well as due dates for assignments, refer to the calendar at:  
@@ -8,51 +8,52 @@ This calendar only lists the in-class activities, RStudio labs and exams each we
 \hline
 \textbf{Week}& \textbf{Day}& \textbf{Date}& \textbf{Activity} \\ \hline
 \endhead
-1& W& 8/25& Syllabus Review \\*
-1& F& 8/27& Martian Alphabet \\ \hline
-2& M& 8/30& American Indian Address Part A \\*
-2& W& 9/1& American Indian Address Part B \\* 
-2& F& 9/3& Week 2 Lab \\ \hline
-3& M& 9/6& (\textit{No class}) \\*
-3& W& 9/8& What's the Probability? \\*
-3& F& 9/10& Week 3 Lab \\ \hline
-4& M& 9/13& IMDb Movie Reviews - One Quant Variable \\*
-4& W& 9/15& IMDb Movie Reviews - One of Each \\*
-4& F& 9/17& Week 4 Lab \\ \hline
-5& M& 9/20& Movie Profits - Linear Regression \\*
-5& W& 9/22& Movie Profits - Correlation \\*	
-5& F& 9/24& Week 5 Lab \\ \hline
-6& M& 9/27& Exam 1 Review \\*
-6& W& 9/29& Midterm Exam 1 \\*	
-6& F& 10/1& Group Midterm Exam 1 \\ \hline
-7& M& 10/4& Helper Hinderer --- Simulation HT \\*
-7& W& 10/6& Helper Hinderer --- Simulation CI \\*
-7& F& 10/8& Week 7 Lab \\ \hline
-8& M& 10/11& Handedness of Male Boxers --- Theory HT \\*
-8& W& 10/13& Handedness of Male Boxers --- Theory CI \\*	
-8& F& 10/15& Week 8 Lab \\ \hline
-9& M& 10/18& Good Samaritan --- Simulation HT \\*
-9& W& 10/20& Good Samaritan --- Simulation CI \\*	
-9& F& 10/22& Week 9 Lab \\ \hline
-10& M& 10/25& Helmet Use and Head Injuries --- Theory HT \\*
-10& W& 10/27& Helmet Use and Head Injuries --- Theory CI \\*
-10& F& 10/29& Week 10 Lab\\ \hline
-11& M& 11/1& Exam 2 Review \\*
-11& W& 11/3& Midterm Exam 2 \\*	
-11& F& 11/5& Group Midterm Exam 2 \\ \hline
-12& M& 11/8& COVID and Air Pollution \\*
-12& W& 11/10& Construction Costs \\*
-12& F& 11/12& Week 12 Lab \\ \hline
-13& M& 11/15& Weather Patterns and Snowfall \\*
-13& W& 11/17& Homeless Housing Stability \\*
-13& F& 11/19& Week 13 Lab \\ \hline
-Holiday& M--F& 11/22--11/26& \textbf{No Class --- Fall Break} \\ \hline
-14& M& 11/29& Real Estate \\*
-14& W& 12/1& Moneyball \\*
-14& F& 12/3& Week 14 Lab \\ \hline
-15& M& 12/6& Data Exploration \\*
-15& W& 12/8& Final Exam Review \\*
-15& F& 12/10& Final Group Exam \\ \hline
+1& W& 1/19& Syllabus Review \\*
+1& F& 1/21& Martian Alphabet \\ \hline
+2& M& 1/24& American Indian Address Part A \\*
+2& W& 1/26& American Indian Address Part B \\* 
+2& F& 1/28& Week 2 Lab \\ \hline
+3& M& 1/31& Myopia and Nightlights \\*
+3& W& 2/2& IMDb Movie Reviews \\*
+3& F& 2/4& Week 3 Lab \\ \hline
+4& M& 2/7& Movie Profits - Linear Regression \\*
+4& W& 2/9& Movie Profits - Correlation \\*
+4& F& 2/11& Week 4 Lab \\ \hline
+5& M& 2/14& Exam 1 Review \\*
+5& W& 2/16& Group Midterm Exam 1 \\*	
+5& F& 2/18& Midterm Exam 1 \\ \hline
+6& M& 2/21& (\textit{No class}) \\*
+6& W& 2/23& Helper Hinderer --- Simulation HT \\*	
+6& F& 2/25& Week 6 Lab \\ \hline
+7& M& 2/28& Helper Hinderer --- Simulation CI \\*
+7& W& 3/2&  Handedness of Male Boxers --- Theory\\*
+7& F& 3/4& Week 7 Lab \\ \hline
+8& M& 3/7& Good Samaritan --- Simulation HT \\*
+8& W& 3/9& Good Samaritan --- Simulation CI \\*	
+8& F& 3/11& Week 8 Lab \\ \hline
+Holiday& M--F& 3/14--3/18& \textbf{No Class --- Spring Break} \\ \hline
+9& M& 3/21& Helmet Use and Head Injuries --- Theory HT \\*
+9& W& 3/23& Helmet Use and Head Injuries --- Theory CI \\*	
+9& F& 3/25& Week 9 Lab \\ \hline
+10& M& 3/28& Exam 2 Review \\*
+10& W& 3/30& Group Midterm Exam 2 \\*
+10& F& 4/1& Midterm Exam 2\\ \hline
+11& M& 4/4& COVID and Air Pollution \\*
+11& W& 4/6& Color Interference \\*	
+11& F& 4/8& Week 11 Lab \\ \hline
+12& M& 4/11& Weather Patterns and Snowfall \\*
+12& W& 4/13& Week 12 Lab \\*
+12& F& 4/15& (\textit{No class}) \\ \hline
+13& M& 4/18& Diving Penguins  \\*
+13& W& 4/20& Golf Driving Distances \\*
+13& F& 4/22& Week 13 Lab \\ \hline
+
+14& M& 4/25& What's the probability? \\*
+14& W& 4/27& Relative Risk \\*
+14& F& 4/29& Week 14 Lab \\ \hline
+15& M& 5/2 Data Exploration \\*
+15& W& 5/4& Final Exam Review \\*
+15& F& 5/6& Final Group Exam \\ \hline
 Finals& TBD & TBD & Final Exam \\ \hline
 
 \end{longtable}

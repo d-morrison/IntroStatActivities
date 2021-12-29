@@ -39,7 +39,7 @@ To review these concepts, see Sections 6.1 and 6.2 in the textbook.
 
 ### Color Interference
 
-In this study pairs of conflicting stimuli, both being inherent aspects of the same symbols, were presented simultaneously (a name of one color printed in the ink of another color—a word stimulus and a color stimulus). Seventy college undergraduates were used as subjects in this study.  Subjects were given a form with 100 names of colors written either in black ink or in ink of another color (i.e. the word purple written in green ink).  The difference in time for reading the words printed in colors and the same words printed in black is the measure of the interference of color stimuli upon reading words. The order in which the forms (black or color) were given was randomized to the subjects.  Does printing the name of colors in a difference color increase the time it takes to read the words?
+In this study pairs of conflicting stimuli, both being inherent aspects of the same symbols, were presented simultaneously (a name of one color printed in the ink of another color—a word stimulus and a color stimulus). Seventy college undergraduates were used as subjects in this study.  Subjects were given a form with 100 names of colors written either in black ink or in ink of another color (i.e. the word purple written in green ink).  The difference in time for reading the words printed in colors and the same words printed in black is the measure of the interference of color stimuli upon reading words. The order in which the forms (black or color) were given was randomized to the subjects.  Does printing the name of colors in a different color increase the time it takes to read the words?
 
 #### Identify the scenario {-}
 
@@ -102,7 +102,7 @@ color_diff %>%
   ggplot(aes(x = differences))+
   geom_boxplot()+
   labs(title="Boxplot of the pairwise differences",
-       x = "Differences in construction cost (actual - estimated)")
+       x = "Differences in time to read words (Color - Black)")
 ```
 
 
@@ -133,7 +133,6 @@ color_diff %>%
 To find the standardized statistic for the paired differences we will use the following formula:
 
 $$T = \frac{\bar{x}_d}{SE(\bar{x}_d)},$$
-\newpage
 where the standard error of the sample mean difference is:
 
 $$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.$$
@@ -146,7 +145,7 @@ $$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.$$
 
 \vspace{0.5in}
 
-Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function.  For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size.  You should therefore use `df` = $n_d-1 = 70 - 1 = 69$ and `lower.tail = FALSE` to find the p-value.  Highlight and run line 31.  
+Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function.  For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size.  You should therefore use `df` = $n_d-1 = 70 - 1 = 69$ and `lower.tail = TRUE` to find the p-value.  Highlight and run line 31.  
 
 
 ```r
@@ -162,6 +161,7 @@ pt(xx, df=69, lower.tail=TRUE)
 To calculate a theory-based confidence interval for the paired mean difference, use the following formula:
 
 $$\bar{x}_d\pm t^* SE(\bar{x}_d).$$
+\newpage
 
 We will need to find the $t^*$ multiplier using the function `qt()`. The code below will return the 95th percentile of the $t$ distribution with `df` = $n_d - 1 = 70 - 1 = 69$. 
 
@@ -179,7 +179,6 @@ qt(0.95, df = 69, lower.tail=TRUE)
 
 \caption{t-distribution with 69 degrees of freedom}(\#fig:tstar)
 \end{figure}
-\newpage
 
 11.  In Figure \@ref(fig:tstar), you see a t-distribution with 69 degrees of freedom. Label $t^\star$ and $-t^\star$ on that distribution.  Write on the plot the percent of the $t_{69}$-distribution that is below $-t^\star$, between $-t^\star$ and $t^\star$, and above $t^\star$.  Then use your plot to determine the confidence level associated with the $t^\star$ value obtained.
 \vspace{0.3in}

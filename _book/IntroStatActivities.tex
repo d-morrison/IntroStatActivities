@@ -4,10 +4,24 @@
 %
 \documentclass[
 ]{report}
+\title{\textbf{STAT 216 Coursepack}\\
+\strut \\
+\includegraphics[width=5in,height=\textheight]{images/msu-campus.jpg}}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Spring 2022\\
+Montana State University}
+\author{Melinda Yager, Jade Schmidt, Dr.~Stacey Hancock}
+\date{}
+
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -107,6 +121,29 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \usepackage{booktabs}
 \usepackage{geometry}
 \usepackage[none]{hyphenat}
@@ -145,43 +182,9 @@
 [\vspace{1.5ex}%
 \titlerule]
 \titlespacing*{\chapter}{0pt}{-40pt}{20pt}
-\ifluatex
+\ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
-  % set entry spacing
-  \ifnum #2 > 0
-  \setlength{\parskip}{#2\baselineskip}
-  \fi
- }%
- {}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
-
-\title{\textbf{STAT 216 Coursepack}\\
-~\\
-\includegraphics[width=5in,height=\textheight]{images/msu-campus.jpg}}
-\usepackage{etoolbox}
-\makeatletter
-\providecommand{\subtitle}[1]{% add subtitle to \maketitle
-  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
-}
-\makeatother
-\subtitle{Fall 2021\\
-Montana State University}
-\author{Melinda Yager, Jade Schmidt, Dr.~Stacey Hancock}
-\date{}
 
 \begin{document}
 \maketitle
@@ -256,9 +259,9 @@ STAT 216 is a 3-credit in-person course. Students will meet with their instructo
 
 \nocite{*}
 
-\hypertarget{fall-2021-calendar-of-in-class-activities}{%
-\chapter*{Fall 2021 Calendar of In-Class Activities}\label{fall-2021-calendar-of-in-class-activities}}
-\addcontentsline{toc}{chapter}{Fall 2021 Calendar of In-Class Activities}
+\hypertarget{spring-2022-calendar-of-in-class-activities}{%
+\chapter*{Spring 2022 Calendar of In-Class Activities}\label{spring-2022-calendar-of-in-class-activities}}
+\addcontentsline{toc}{chapter}{Spring 2022 Calendar of In-Class Activities}
 
 This calendar only lists the in-class activities, RStudio labs and exams each week. For required readings and videos as well as due dates for assignments, refer to the calendar at:\\
 \url{https://mtstateintrostats.github.io/Syllabus/\#Course_calendar}
@@ -267,51 +270,52 @@ This calendar only lists the in-class activities, RStudio labs and exams each we
 \hline
 \textbf{Week}& \textbf{Day}& \textbf{Date}& \textbf{Activity} \\ \hline
 \endhead
-1& W& 8/25& Syllabus Review \\*
-1& F& 8/27& Martian Alphabet \\ \hline
-2& M& 8/30& American Indian Address Part A \\*
-2& W& 9/1& American Indian Address Part B \\* 
-2& F& 9/3& Week 2 Lab \\ \hline
-3& M& 9/6& (\textit{No class}) \\*
-3& W& 9/8& What's the Probability? \\*
-3& F& 9/10& Week 3 Lab \\ \hline
-4& M& 9/13& IMDb Movie Reviews - One Quant Variable \\*
-4& W& 9/15& IMDb Movie Reviews - One of Each \\*
-4& F& 9/17& Week 4 Lab \\ \hline
-5& M& 9/20& Movie Profits - Linear Regression \\*
-5& W& 9/22& Movie Profits - Correlation \\* 
-5& F& 9/24& Week 5 Lab \\ \hline
-6& M& 9/27& Exam 1 Review \\*
-6& W& 9/29& Midterm Exam 1 \\*  
-6& F& 10/1& Group Midterm Exam 1 \\ \hline
-7& M& 10/4& Helper Hinderer --- Simulation HT \\*
-7& W& 10/6& Helper Hinderer --- Simulation CI \\*
-7& F& 10/8& Week 7 Lab \\ \hline
-8& M& 10/11& Handedness of Male Boxers --- Theory HT \\*
-8& W& 10/13& Handedness of Male Boxers --- Theory CI \\*    
-8& F& 10/15& Week 8 Lab \\ \hline
-9& M& 10/18& Good Samaritan --- Simulation HT \\*
-9& W& 10/20& Good Samaritan --- Simulation CI \\*   
-9& F& 10/22& Week 9 Lab \\ \hline
-10& M& 10/25& Helmet Use and Head Injuries --- Theory HT \\*
-10& W& 10/27& Helmet Use and Head Injuries --- Theory CI \\*
-10& F& 10/29& Week 10 Lab\\ \hline
-11& M& 11/1& Exam 2 Review \\*
-11& W& 11/3& Midterm Exam 2 \\* 
-11& F& 11/5& Group Midterm Exam 2 \\ \hline
-12& M& 11/8& COVID and Air Pollution \\*
-12& W& 11/10& Construction Costs \\*
-12& F& 11/12& Week 12 Lab \\ \hline
-13& M& 11/15& Weather Patterns and Snowfall \\*
-13& W& 11/17& Homeless Housing Stability \\*
-13& F& 11/19& Week 13 Lab \\ \hline
-Holiday& M--F& 11/22--11/26& \textbf{No Class --- Fall Break} \\ \hline
-14& M& 11/29& Real Estate \\*
-14& W& 12/1& Moneyball \\*
-14& F& 12/3& Week 14 Lab \\ \hline
-15& M& 12/6& Data Exploration \\*
-15& W& 12/8& Final Exam Review \\*
-15& F& 12/10& Final Group Exam \\ \hline
+1& W& 1/19& Syllabus Review \\*
+1& F& 1/21& Martian Alphabet \\ \hline
+2& M& 1/24& American Indian Address Part A \\*
+2& W& 1/26& American Indian Address Part B \\* 
+2& F& 1/28& Week 2 Lab \\ \hline
+3& M& 1/31& Myopia and Nightlights \\*
+3& W& 2/2& IMDb Movie Reviews \\*
+3& F& 2/4& Week 3 Lab \\ \hline
+4& M& 2/7& Movie Profits - Linear Regression \\*
+4& W& 2/9& Movie Profits - Correlation \\*
+4& F& 2/11& Week 4 Lab \\ \hline
+5& M& 2/14& Exam 1 Review \\*
+5& W& 2/16& Group Midterm Exam 1 \\*    
+5& F& 2/18& Midterm Exam 1 \\ \hline
+6& M& 2/21& (\textit{No class}) \\*
+6& W& 2/23& Helper Hinderer --- Simulation HT \\*   
+6& F& 2/25& Week 6 Lab \\ \hline
+7& M& 2/28& Helper Hinderer --- Simulation CI \\*
+7& W& 3/2&  Handedness of Male Boxers --- Theory\\*
+7& F& 3/4& Week 7 Lab \\ \hline
+8& M& 3/7& Good Samaritan --- Simulation HT \\*
+8& W& 3/9& Good Samaritan --- Simulation CI \\* 
+8& F& 3/11& Week 8 Lab \\ \hline
+Holiday& M--F& 3/14--3/18& \textbf{No Class --- Spring Break} \\ \hline
+9& M& 3/21& Helmet Use and Head Injuries --- Theory HT \\*
+9& W& 3/23& Helmet Use and Head Injuries --- Theory CI \\*  
+9& F& 3/25& Week 9 Lab \\ \hline
+10& M& 3/28& Exam 2 Review \\*
+10& W& 3/30& Group Midterm Exam 2 \\*
+10& F& 4/1& Midterm Exam 2\\ \hline
+11& M& 4/4& COVID and Air Pollution \\*
+11& W& 4/6& Color Interference \\*  
+11& F& 4/8& Week 11 Lab \\ \hline
+12& M& 4/11& Weather Patterns and Snowfall \\*
+12& W& 4/13& Week 12 Lab \\*
+12& F& 4/15& (\textit{No class}) \\ \hline
+13& M& 4/18& Diving Penguins  \\*
+13& W& 4/20& Golf Driving Distances \\*
+13& F& 4/22& Week 13 Lab \\ \hline
+
+14& M& 4/25& What's the probability? \\*
+14& W& 4/27& Relative Risk \\*
+14& F& 4/29& Week 14 Lab \\ \hline
+15& M& 5/2 Data Exploration \\*
+15& W& 5/4& Final Exam Review \\*
+15& F& 5/6& Final Group Exam \\ \hline
 Finals& TBD & TBD & Final Exam \\ \hline
 
 \end{longtable}
@@ -733,8 +737,6 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
 
 \vspace{0.05in}
 
-\newpage
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{13}
@@ -773,6 +775,8 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
 
 \vspace{.5in}
 
+\newpage
+
 \textbf{Step 5}: The next step in the statistical investigation process is to \emph{communicate the results and answer the research question}.
 
 \begin{enumerate}
@@ -784,8 +788,6 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
 \end{enumerate}
 
 \vspace{1in}
-
-\newpage
 
 \hypertarget{introduction-to-r}{%
 \subsubsection*{\texorpdfstring{Introduction to \texttt{R}}{Introduction to R}}\label{introduction-to-r}}
@@ -2137,7 +2139,7 @@ Total & & & 100,000 \\ \hline
 \newpage
 
 \hypertarget{exploring-quantitative-data}{%
-\chapter{Exploring Quantitative Data}\label{exploring-quantitative-data}}
+\section{Exploring Quantitative Data}\label{exploring-quantitative-data}}
 
 \hypertarget{week-4---reading-guide-quantitative-data}{%
 \section{Week 4 - Reading Guide: Quantitative Data}\label{week-4---reading-guide-quantitative-data}}
@@ -2710,7 +2712,11 @@ A data set was collected on movies released in 2016. Here is a list of some of t
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.24}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.76}}@{}}
 \toprule
-\textbf{Variable} & \textbf{Description} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Variable}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Description}
+\end{minipage} \\
 \midrule
 \endhead
 \texttt{budget\_mil} & Amount of money (in US \$ millions) budgeted for the production of the movie \\
@@ -2974,6 +2980,8 @@ Is there an association between content rating and budget for movies in 2016? To
 
 \vspace{0.8in}
 
+\newpage
+
 \hypertarget{displaying-a-single-categorical-and-single-quantitative-variable}{%
 \subsubsection*{Displaying a single categorical and single quantitative variable}\label{displaying-a-single-categorical-and-single-quantitative-variable}}
 \addcontentsline{toc}{subsubsection}{Displaying a single categorical and single quantitative variable}
@@ -3038,6 +3046,8 @@ The boxplot of movie budgets (in millions) by content rating is plotted using th
 \end{enumerate}
 
 \vspace{0.4in}
+
+\newpage
 
 \hypertarget{take-home-messages-5}{%
 \subsection{Take-home messages}\label{take-home-messages-5}}
@@ -3131,7 +3141,7 @@ These data are on a subset of institutions that met the following selection crit
   Identify in the chart above which variables are categorical (C) and which variables are quantitative (Q).
 \end{enumerate}
 
-\vspace{0.2in}
+\newpage
 
 Upload the data set \texttt{IPEDS\_Data\_2018} Click on Import Dataset in the Environment tab in the upper right hand corner. Choose \texttt{From\ Text(base)} and select the correct csv file. Be sure that \texttt{Yes} is selected next to \texttt{Heading} in the pop-up screen. Click \texttt{Import}.
 
@@ -3301,7 +3311,13 @@ To show the effect of outliers on the measures of center and spread, the smalles
 
 \vspace{0.8in}
 
-\textbf{13. Which measure of center is robust to outliers? Explain your answer.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\tightlist
+\item
+  \textbf{Which measure of center is robust to outliers? Explain your answer.}
+\end{enumerate}
 
 \vspace{0.5in}
 
@@ -3381,7 +3397,7 @@ Enter the name of the explanatory variable and the name of the response variable
   Does there appear to be an association between retention rates and type of university? Explain.
 \end{enumerate}
 
-\vspace{0.8in}
+\newpage
 
 \hypertarget{summarizing-two-categorical-variables}{%
 \subsubsection{Summarizing two categorical variables}\label{summarizing-two-categorical-variables}}
@@ -4003,7 +4019,11 @@ We will revisit the data set used last week collected on Movies released in 2016
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.24}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.76}}@{}}
 \toprule
-\textbf{Variable} & \textbf{Description} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Variable}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Description}
+\end{minipage} \\
 \midrule
 \endhead
 \texttt{budget\_mil} & Amount of money (in US \$ millions) budgeted for the production of the movie \\
@@ -4286,7 +4306,11 @@ We will revisit the movie data set collected on Movies released in 2016 to furth
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.24}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.76}}@{}}
 \toprule
-\textbf{Variable} & \textbf{Description} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Variable}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Description}
+\end{minipage} \\
 \midrule
 \endhead
 \texttt{budget\_mil} & Amount of money (in US \$ millions) budgeted for the production of the movie \\
@@ -4433,7 +4457,7 @@ In the next part of the activity we will explore what the coefficient of determi
   Click on \texttt{Show\ Squared\ Residuals}. Write down the value for SSE. Since this is the sum of squared errors (SSE) for the horizontal line we call this the total sum of squares (SST).
 \end{enumerate}
 
-\vspace{0.5in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4529,8 +4553,6 @@ What if we wanted to see if the relationship between movie budget and revenue di
 \item
   The coefficient of determination multiplied by 100 (\(R^2 \times 100\)) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable. The closer the value of the coefficient of determination is to 100\%, the stronger the relationship.
 \end{enumerate}
-
-\newpage
 
 \hypertarget{additional-notes-7}{%
 \subsection{Additional notes}\label{additional-notes-7}}
@@ -4764,13 +4786,17 @@ Highlight and run lines 27--34 to get the multivariate plot.
 \hypertarget{exam-1-review}{%
 \chapter{Exam 1 Review}\label{exam-1-review}}
 
-Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 Review \texttt{R} script file to answer the following questions. Each adult (\textgreater21) islander was selected at random from all the adult islanders.
+Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 Review \texttt{R} script file to answer the following questions. Each adult (\textgreater21) islander was selected at random from all the adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measure before listening to the music and then after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.24}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.76}}@{}}
 \toprule
-\textbf{Variable} & \textbf{Description} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Variable}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Description}
+\end{minipage} \\
 \midrule
 \endhead
 \texttt{Island} & Name of Island that the Islander resides on \\
@@ -4789,14 +4815,12 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 \texttt{Type\_of\_Music} & Music type (Classical or Heavy Medal) Islander was randomly assigned to listen to \\
 \texttt{Before\_PuzzleCube} & Time to complete puzzle cube (minutes) before listening to assigned music \\
 \texttt{After\_PuzzleCube} & Time to complete puzzle cube (minutes) after listening to assigned music \\
-\texttt{Diff\_PuzzleCube} & Difference in time to complete puzzle cube (minutes) for Before - After listening to assigned music \\
 \texttt{Education\_Level} & Highest level of education completed (note: missing data depicted by missing) \\
 \texttt{Balance\_Test} & Time balanced measured in seconds with eyes closed \\
 \texttt{Blood\_Glucose\_before} & Level of blood glucose (mg/dL) before consuming assigned drink \\
 \texttt{Heart\_Rate\_before} & Heart rate (bpm) before consuming assigned drink \\
-\texttt{Type\_of\_Drink} & Type of drink (EnergyDrink or Cola) Islander was randomly assigned to drink \\
-\texttt{Heart\_Rate\_after} & Heart rate (bpm) after consuming assigned drink \\
 \texttt{Blood\_Glucose\_after} & Level of blood glucose (mg/dL) after consuming assigned drink \\
+\texttt{Heart\_Rate\_after} & Heart rate (bpm) after consuming assigned drink \\
 \texttt{Diff\_Heart\_Rate} & Difference in heart rate (bpm) for Before - After consuming assigned drink \\
 \texttt{Diff\_Blood\_Glucose} & Difference in blood glucose (mg/dL) for Before - After consuming assigned drink \\
 \bottomrule
@@ -4914,7 +4938,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 \setcounter{enumi}{6}
 \tightlist
 \item
-  Use the Exam 1 Review \texttt{R} script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: ``Does cola increase blood glucose levels more than energy drinks, on average?''
+  Use the Exam 1 Review \texttt{R} script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: ``Is there a difference in time to complete the puzzle cube for those that listened to classical and those that listened to heavy metal music?''
 \end{enumerate}
 
 \rgi Explanatory Variable:
@@ -5541,8 +5565,6 @@ Before using statistical inference methods, we must check that the cases are ind
 
 \vspace{0.8in}
 
-\newpage
-
 \hypertarget{summarize-and-visualize-the-data}{%
 \subsubsection*{Summarize and visualize the data}\label{summarize-and-visualize-the-data}}
 \addcontentsline{toc}{subsubsection}{Summarize and visualize the data}
@@ -5561,14 +5583,15 @@ Before using statistical inference methods, we must check that the cases are ind
 #> 2 hinderer  2
 \end{verbatim}
 
-\(\hat{p} = \frac{\mbox{number of successes}}{\mbox{total number of observational units}}\)
+\[\hat{p} = \frac{\mbox{number of successes}}{\mbox{total number of observational units}}\]
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
 \tightlist
 \item
-  Using the output above, calculate the summary statistic (sample proportion) to represent the research question. Recall that \texttt{choosing\ the\ helper\ toy} is a considered a success. Use appropriate notation.
+  Using the \texttt{R} output, calculate the summary statistic (sample proportion) to represent the research question. Recall that \texttt{choosing\ the\ helper\ toy} is a considered a success. Use appropriate notation.
 \end{enumerate}
 
 \vspace{0.5in}
@@ -5622,6 +5645,8 @@ When performing a hypothesis test, we must first identify the null hypothesis. T
 \vspace{0.8in}
 
 The notation used for a population proportion (or probability, or true proportion) is \(\pi\). Since this summarizes a population, it is a parameter. When writing the \textbf{null hypothesis} in notation, we set the parameter equal to the null value, \(H_0: \pi = \pi_0\).
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5807,8 +5832,6 @@ We will work through a five-step process to complete a hypothesis test for a sin
   \textbf{Communicate the results and answer the research question}. Using the p-value and confidence interval from the analysis, determine whether the data provide statistical evidence against the null hypothesis. Write a conclusion that addresses the research question.
 \end{itemize}
 
-\newpage
-
 In today's lab we will continue with steps 4 and 5 in the statistical investigaion process. We will continue to assess the Helper-Hinderer study from last class.
 
 \hypertarget{helper-hinderer-1}{%
@@ -5823,7 +5846,7 @@ Do young children know the difference between helpful and unhelpful behavior? A 
   Report the sample proportion calculated in activity 6a.
 \end{enumerate}
 
-\vspace{0.5in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5918,6 +5941,8 @@ We will use the \texttt{one\_proportion\_test()} function in \texttt{R} (in the 
 \end{Highlighting}
 \end{Shaded}
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{3}
@@ -5970,7 +5995,7 @@ We will use the \texttt{one\_proportion\_test()} function in \texttt{R} (in the 
 
 The value in question 8 is the \textbf{p-value}. The smaller the p-value, the more evidence we have against the null hypothesis. Explain why this makes sense?
 
-\vspace{0.5in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6026,7 +6051,7 @@ The p-value measures the probability that we observe a sample proportion as extr
   Fill in the blanks below to interpret the p-value.
 \end{enumerate}
 
-\textbf{We would observe a sample proportion of (value of the sample proportion) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ or (greater, less, more extreme) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ with a probability of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ IF we assume (Ho in context)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.}
+\textbf{We would observe a sample proportion of (value of the sample proportion) \_\_\_\_\_\_\_\_\_\_\_\_\_ or (greater, less, more extreme) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ with a probability of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ IF we assume (Ho in context)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.}
 \setstretch{1}
 
 \hypertarget{communicate-the-results-and-answer-the-research-question}{%
@@ -6055,7 +6080,7 @@ When we write a conclusion we answer the research question by stating how much e
   Fill in the blanks below to Write a paragraph summarizing the results of the study as if writing a press release. \textbf{Upload your group's paragraph to Gradescope.} Be sure to describe:
 \end{enumerate}
 
-Researchers were interested if infants observe social cues and would be more likely to choose the helper toy over the hinderer toy. In a sample of (sample size) \_\_\_\_\_\_\_\_\_\_\_\_\_infants, (number of successs) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_chose the helper toy. A simulation null distribution with 1000 simulations was created in RStudio. The p-value was found by calculating the proportion of simulations in the null distribution at the sample statistic of 0.875 and greater. This resulted in a p-value of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_. We would observe a sample proportion of (value of the sample proportion) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ or (greater, less, more extreme) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ with a probability of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ IF we assume (Ho in context)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+Researchers were interested if infants observe social cues and would be more likely to choose the helper toy over the hinderer toy. In a sample of (sample size) \_\_\_\_\_\_\_\_\_\_\_\_\_infants, (number of successs) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_chose the helper toy. A simulation null distribution with 1000 simulations was created in RStudio. The p-value was found by calculating the proportion of simulations in the null distribution at the sample statistic of 0.875 and greater. This resulted in a p-value of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_. We would observe a sample proportion of (value of the sample proportion) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ or (greater, less, more extreme) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ with a probability of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ IF we assume (Ho in context)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
 Based on this p-value, there is (very strong/little to no) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ evidence that the (sample/true)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ proportion of infants age 6 to 10 months who will choose the helper toy is (greater than, less than, not equal to) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 0.5. The results of this study can be generalized to (all infants age 6 to 10 months/infants similar to those in this study)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ as the researchers (did/did not)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ select a random sample.
 
 \setstretch{1}
@@ -9333,7 +9358,7 @@ We will use the \texttt{pnorm()} function in \texttt{R} to find the p-value. Use
   Interpret the p-value in context of the study.
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{1in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9343,7 +9368,7 @@ We will use the \texttt{pnorm()} function in \texttt{R} to find the p-value. Use
   Write a conclusion to the research question based on the p-value found.
 \end{enumerate}
 
-\vspace{1in}
+\newpage
 
 \hypertarget{impacts-on-the-p-value}{%
 \subsection*{Impacts on the P-value}\label{impacts-on-the-p-value}}
@@ -9903,13 +9928,17 @@ Fill in the missing values/names in the \texttt{R} script file in the two-propor
 \hypertarget{exam-2-review}{%
 \chapter{Exam 2 Review}\label{exam-2-review}}
 
-Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 Review \texttt{R} script file to answer the following questions. Each adult (\textgreater21) islander was selected at random from all the adult islanders.
+Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 Review \texttt{R} script file to answer the following questions. Each adult (\textgreater21) islander was selected at random from all the adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measure before listening to the music and then after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.24}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.76}}@{}}
 \toprule
-\textbf{Variable} & \textbf{Description} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Variable}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Description}
+\end{minipage} \\
 \midrule
 \endhead
 \texttt{Island} & Name of Island that the Islander resides on \\
@@ -9928,35 +9957,24 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 \texttt{Type\_of\_Music} & Music type (Classical or Heavy Medal) Islander was randomly assigned to listen to \\
 \texttt{Before\_PuzzleCube} & Time to complete puzzle cube (minutes) before listening to assigned music \\
 \texttt{After\_PuzzleCube} & Time to complete puzzle cube (minutes) after listening to assigned music \\
-\texttt{Diff\_PuzzleCube} & Difference in time to complete puzzle cube (minutes) for Before - After listening to assigned music \\
 \texttt{Education\_Level} & Highest level of education completed (note: missing data depicted by missing) \\
 \texttt{Balance\_Test} & Time balanced measured in seconds with eyes closed \\
 \texttt{Blood\_Glucose\_before} & Level of blood glucose (mg/dL) before consuming assigned drink \\
 \texttt{Heart\_Rate\_before} & Heart rate (bpm) before consuming assigned drink \\
-\texttt{Type\_of\_Drink} & Type of drink (EnergyDrink or Cola) Islander was randomly assigned to drink \\
-\texttt{Heart\_Rate\_after} & Heart rate (bpm) after consuming assigned drink \\
 \texttt{Blood\_Glucose\_after} & Level of blood glucose (mg/dL) after consuming assigned drink \\
+\texttt{Heart\_Rate\_after} & Heart rate (bpm) after consuming assigned drink \\
 \texttt{Diff\_Heart\_Rate} & Difference in heart rate (bpm) for Before - After consuming assigned drink \\
 \texttt{Diff\_Blood\_Glucose} & Difference in blood glucose (mg/dL) for Before - After consuming assigned drink \\
 \bottomrule
 \end{longtable}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Write a research question involving a single categorical variable that can be answered using the data set.
-\end{enumerate}
-
-\vspace{0.8in}
 \newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
 \tightlist
 \item
-  Use the provided Exam 2 Review \texttt{R} script file and analyze this research question.
+  Use the provided Exam 2 Review \texttt{R} script file and analyze the following research question: The proportion of university graduates in the US is 42\%. ``Is there evidence that the proportion of university graduates in the Islands differs from the proportion in the US?''
 \end{enumerate}
 
 \rgi Parameter of Interest:
@@ -10047,21 +10065,10 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
+\setcounter{enumi}{1}
 \tightlist
 \item
-  Write a research question involving two categorical variables that can be answered using the data set.
-\end{enumerate}
-
-\vspace{0.8in}
-\newpage
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  Use the provided Exam 2 Review \texttt{R} script file and analyze this research question.
+  Use the provided Exam 2 Review \texttt{R} script file and analyze the following research question: ``Is there evidence that those with a higher education level are less likely to smoke?''
 \end{enumerate}
 
 \rgi Parameter of Interest:
@@ -11122,7 +11129,7 @@ To review these concepts, see Sections 6.1 and 6.2 in the textbook.
 \hypertarget{color-interference}{%
 \subsection{Color Interference}\label{color-interference}}
 
-In this study pairs of conflicting stimuli, both being inherent aspects of the same symbols, were presented simultaneously (a name of one color printed in the ink of another color---a word stimulus and a color stimulus). Seventy college undergraduates were used as subjects in this study. Subjects were given a form with 100 names of colors written either in black ink or in ink of another color (i.e.~the word purple written in green ink). The difference in time for reading the words printed in colors and the same words printed in black is the measure of the interference of color stimuli upon reading words. The order in which the forms (black or color) were given was randomized to the subjects. Does printing the name of colors in a difference color increase the time it takes to read the words?
+In this study pairs of conflicting stimuli, both being inherent aspects of the same symbols, were presented simultaneously (a name of one color printed in the ink of another color---a word stimulus and a color stimulus). Seventy college undergraduates were used as subjects in this study. Subjects were given a form with 100 names of colors written either in black ink or in ink of another color (i.e.~the word purple written in green ink). The difference in time for reading the words printed in colors and the same words printed in black is the measure of the interference of color stimuli upon reading words. The order in which the forms (black or color) were given was randomized to the subjects. Does printing the name of colors in a different color increase the time it takes to read the words?
 
 \hypertarget{identify-the-scenario}{%
 \subsubsection*{Identify the scenario}\label{identify-the-scenario}}
@@ -11210,7 +11217,7 @@ The following code plots each subject's time to read the black words (above) and
   \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ differences))}\SpecialCharTok{+}
   \FunctionTok{geom\_boxplot}\NormalTok{()}\SpecialCharTok{+}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Boxplot of the pairwise differences"}\NormalTok{,}
-       \AttributeTok{x =} \StringTok{"Differences in construction cost (actual {-} estimated)"}\NormalTok{)}
+       \AttributeTok{x =} \StringTok{"Differences in time to read words (Color {-} Black)"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -11249,7 +11256,6 @@ The following code gives the summary statistics for the pairwise differences.
 To find the standardized statistic for the paired differences we will use the following formula:
 
 \[T = \frac{\bar{x}_d}{SE(\bar{x}_d)},\]
-\newpage
 where the standard error of the sample mean difference is:
 
 \[SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.\]
@@ -11274,7 +11280,7 @@ where the standard error of the sample mean difference is:
 
 \vspace{0.5in}
 
-Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) into the \texttt{pt()} function. For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size. You should therefore use \texttt{df} = \(n_d-1 = 70 - 1 = 69\) and \texttt{lower.tail\ =\ FALSE} to find the p-value. Highlight and run line 31.
+Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) into the \texttt{pt()} function. For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size. You should therefore use \texttt{df} = \(n_d-1 = 70 - 1 = 69\) and \texttt{lower.tail\ =\ TRUE} to find the p-value. Highlight and run line 31.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -11296,6 +11302,7 @@ Using the provided \texttt{R} script file, enter the T-score (for \texttt{xx}) i
 To calculate a theory-based confidence interval for the paired mean difference, use the following formula:
 
 \[\bar{x}_d\pm t^* SE(\bar{x}_d).\]
+\newpage
 
 We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. The code below will return the 95th percentile of the \(t\) distribution with \texttt{df} = \(n_d - 1 = 70 - 1 = 69\).
 
@@ -11314,7 +11321,6 @@ We will need to find the \(t^*\) multiplier using the function \texttt{qt()}. Th
 
 \caption{t-distribution with 69 degrees of freedom}\label{fig:tstar}
 \end{figure}
-\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12579,12 +12585,14 @@ Enter the name of the explanatory variable for \texttt{explanatory} and the name
 \end{Highlighting}
 \end{Shaded}
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{5}
 \tightlist
 \item
-  \textbf{Calculate the summary statistic for this study. Use appropriate notation with clearly defined subscripts.}
+  \textbf{Calculate the summary statistic (difference in means) for this study. Use appropriate notation with clearly defined subscripts.}
 \end{enumerate}
 
 \vspace{1in}
@@ -12610,7 +12618,6 @@ where the standard error of the difference in means is calculated using:
 \end{enumerate}
 
 \vspace{0.5in}
-\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12684,7 +12691,7 @@ Enter the appropriate percentile value (as a decimal) for \texttt{xx} and degree
   Report the \(t^*\) multiplier for the 95\% confidence interval.
 \end{enumerate}
 
-\newpage
+\vspace{0.3in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -13159,24 +13166,25 @@ Emperor penguins are the most accomplished divers among birds, making routine di
 
 \vspace{.5in}
 
+Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the diving heart rate and duration of the dive by filling in the variable names (\texttt{Dive\_HeartRate} and \texttt{Duration}) for \texttt{explanatory} and \texttt{response} in line 9. Highlight and run lines 1--15.
+
+\begin{verbatim}
+```r
+diving %>% # Pipe data set into...
+ggplot(aes(x = explanatory, y = response))+  # Specify variables
+  geom_point() +  # Add scatterplot of points
+  labs(x = "Heart Rate (bpm)",  # Label x-axis
+       y = "Dive Duration (min)",  # Label y-axis
+       title = "Scatterplot of Emperor Penguins Diving Heart Rate vs. Dive Duration") + 
+               # Be sure to title your plots
+  geom_smooth(method = "lm", se = FALSE)  # Add regression line
+```
+\end{verbatim}
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
-\item
-  Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the diving heart rate and duration of the dive by filling in the variable names (\texttt{Dive\_HeartRate} and \texttt{Duration}) for \texttt{explanatory} and \texttt{response} in line 9. Highlight and run lines 1--15.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{diving }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Pipe data set into...}
-\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ explanatory, }\AttributeTok{y =}\NormalTok{ response))}\SpecialCharTok{+}  \CommentTok{\# Specify variables}
-  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}  \CommentTok{\# Add scatterplot of points}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Heart Rate (bpm)"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
-       \AttributeTok{y =} \StringTok{"Dive Duration (min)"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
-       \AttributeTok{title =} \StringTok{"Scatterplot of Emperor Penguins Diving Heart Rate vs. Dive Duration"}\NormalTok{) }\SpecialCharTok{+} 
-               \CommentTok{\# Be sure to title your plots}
-  \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{se =} \ConstantTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
-\end{Highlighting}
-\end{Shaded}
+\tightlist
 \item
   Sketch the plot created below. Based on your plot, does it appear that there is a relationship between dive heart rate and duration of the dive? Note: \texttt{Dive\_HeartRate} should be on the \(x\)-axis.
 \end{enumerate}
@@ -13185,7 +13193,7 @@ Emperor penguins are the most accomplished divers among birds, making routine di
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\setcounter{enumi}{2}
 \tightlist
 \item
   Describe the features of the plot above, addressing all four characteristics of a scatterplot.
@@ -13203,7 +13211,7 @@ Emperor penguins are the most accomplished divers among birds, making routine di
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
+\setcounter{enumi}{3}
 \tightlist
 \item
   Write out the null hypothesis in words.
@@ -13213,7 +13221,7 @@ Emperor penguins are the most accomplished divers among birds, making routine di
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
+\setcounter{enumi}{4}
 \tightlist
 \item
   Using the research question, write the alternative hypothesis in notation to test the slope.
@@ -13236,7 +13244,7 @@ Using the provided \texttt{R} script file, enter the response variable name, \te
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
+\setcounter{enumi}{5}
 \item
   Using the output from the evaluated \texttt{R} code above, write the equation of the regression line using appropriate statistical notation.
   \vspace{1in}
@@ -13244,8 +13252,6 @@ Using the provided \texttt{R} script file, enter the response variable name, \te
   Interpret the estimated slope in context of the problem.
   \vspace{1in}
 \end{enumerate}
-
-\vspace{1in}
 
 \hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-5}{%
 \subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-5}}
@@ -13259,23 +13265,13 @@ In this activity, we will focus on using simulation-based methods for inference 
 
 First, let's think about how one simulation would be created on the null distribution using cards. First, we would write the values for the response variable, Duration, on each card. Next, we would shuffle these \(y\) values while keeping the \(x\) values (explanatory variable) in the same order. Then, find the line of regression for the shuffled cards and calculate either the sample slope or sample correlation.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
-\tightlist
-\item
-  Once we have one simulated sample, what would we calculate and plot on the null distribution? \emph{Hint}: What statistic are we calculating from the data?
-\end{enumerate}
-
-\vspace{1in}
-
 We will use the \texttt{regression\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample slopes (or sample correlations) and compute a p-value. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as \texttt{diving}), the statistic for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
 
 The response variable name is \texttt{Duration} and the explanatory variable name is \texttt{Dive\_HeartRate}.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
+\setcounter{enumi}{7}
 \tightlist
 \item
   What inputs should be entered for each of the following to create the simulation to test regression slope?
@@ -13330,7 +13326,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{10}
+\setcounter{enumi}{8}
 \tightlist
 \item
   Report the p-value from the \texttt{R} output.
@@ -13355,7 +13351,7 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{11}
+\setcounter{enumi}{9}
 \tightlist
 \item
   Report the bootstrap 95\% confidence interval in interval notation.\\
@@ -13368,7 +13364,7 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
+\setcounter{enumi}{10}
 \tightlist
 \item
   Based on the p-value, write a conclusion in context of the problem.
@@ -13378,7 +13374,7 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{13}
+\setcounter{enumi}{11}
 \tightlist
 \item
   Does the p-value agree with the 95\% confidence interval? What does each tell you about the null hypothesis?
@@ -13410,8 +13406,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \newpage
 
-\hypertarget{activity-14b-golf-driving-distance}{%
-\section{Activity 14b: Golf Driving Distance}\label{activity-14b-golf-driving-distance}}
+\hypertarget{activity-13b-golf-driving-distance}{%
+\section{Activity 13b: Golf Driving Distance}\label{activity-13b-golf-driving-distance}}
 
 \setstretch{1}
 
@@ -13468,18 +13464,18 @@ In golf the goal is to complete a hole with as few strokes as possible. A golfer
 
 Use the provided \texttt{R} script file to create a scatterplot to examine the relationship between the driving distance and percent accuracy by filling in the variable names (\texttt{Driving\_Distance} and \texttt{Percent\_Accuracy}) for \texttt{xx} and \texttt{yy} in line 10. Highlight and run lines 1--16.
 
-\begin{verbatim}
-```r
-golf %>% # Pipe data set into...
-ggplot(aes(x = xx, y = yy))+  # Specify variables
-  geom_point() +  # Add scatterplot of points
-  labs(x = "Driving Distance",  # Label x-axis
-       y = "Percent Accuracy",  # Label y-axis
-       title = "Scatterplot of Driving Distance by Percent Accuracy") + 
-               # Be sure to tile your plots
-  geom_smooth(method = "lm", se = FALSE)  # Add regression line
-```
-\end{verbatim}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{golf }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Pipe data set into...}
+\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ xx, }\AttributeTok{y =}\NormalTok{ yy))}\SpecialCharTok{+}  \CommentTok{\# Specify variables}
+  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}  \CommentTok{\# Add scatterplot of points}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Driving Distance"}\NormalTok{,  }\CommentTok{\# Label x{-}axis}
+       \AttributeTok{y =} \StringTok{"Percent Accuracy"}\NormalTok{,  }\CommentTok{\# Label y{-}axis}
+       \AttributeTok{title =} \StringTok{"Scatterplot of Driving Distance by Percent Accuracy"}\NormalTok{) }\SpecialCharTok{+} 
+               \CommentTok{\# Be sure to tile your plots}
+  \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{se =} \ConstantTok{FALSE}\NormalTok{)  }\CommentTok{\# Add regression line}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -13619,8 +13615,6 @@ T = \frac{\mbox{slope estimate}}{SE} = \frac{b_1}{SE(b_1)}.
 
 We will use the linear model \texttt{R} output above to get the estimate for slope and the standard error of the slope.
 
-\newpage
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{6}
@@ -13629,7 +13623,7 @@ We will use the linear model \texttt{R} output above to get the estimate for slo
   Calculate the standardized statistic for slope. Identify where this calculated value is in the linear model \texttt{R} output.
 \end{enumerate}
 
-\vspace{1in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -13846,7 +13840,7 @@ In the next part of the activity we will assess the linear model between percent
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
+\setcounter{enumi}{3}
 \tightlist
 \item
   Give the value of the slope of the regression line. Interpret this value in context of the problem.
@@ -13886,7 +13880,7 @@ Use the scatterplot and the residual plots to assess the validity conditions for
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
+\setcounter{enumi}{4}
 \tightlist
 \item
   \textbf{Are the conditions met to use the \(t\)-distribution to approximate the sampling distribution of the standardized statistic? Justify your answer.}
@@ -13900,7 +13894,7 @@ Use the scatterplot and the residual plots to assess the validity conditions for
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
+\setcounter{enumi}{5}
 \tightlist
 \item
   Write out the null and alternative hypotheses in notation to test correlation between the percent immunized in US counties and the infection rate.
@@ -13924,7 +13918,7 @@ The response variable name is \texttt{Complaints} and the explanatory variable n
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{7}
+\setcounter{enumi}{6}
 \tightlist
 \item
   What inputs should be entered for each of the following to create the simulation to test correlation?
@@ -13980,7 +13974,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
+\setcounter{enumi}{7}
 \item
   Report the p-value from the \texttt{R} output.
   \vspace{0.3in}
@@ -14007,7 +14001,7 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{10}
+\setcounter{enumi}{9}
 \item
   Report the bootstrap 90\% confidence interval in interval notation.\\
   \vspace{0.5in}
@@ -14022,7 +14016,7 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
+\setcounter{enumi}{11}
 \tightlist
 \item
   Based on the p-value, write a conclusion in context of the problem.
@@ -14032,7 +14026,7 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{13}
+\setcounter{enumi}{12}
 \item
   Using a significance level of 0.1, what decision would you make?
   \vspace{0.2in}
@@ -14064,6 +14058,9 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in \texttt{R} (in 
 \vspace{3in}
 
 \newpage
+
+\hypertarget{special-topics}{%
+\chapter{Special Topics}\label{special-topics}}
 
 \hypertarget{activity-14a-whats-the-probability}{%
 \section{Activity 14a: What's the probability?}\label{activity-14a-whats-the-probability}}
@@ -14273,6 +14270,325 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \newpage
 
+\hypertarget{activity-14b-titanic-survivors---relative-risk}{%
+\section{Activity 14b: Titanic Survivors - Relative Risk}\label{activity-14b-titanic-survivors---relative-risk}}
+
+\setstretch{1}
+
+\hypertarget{learning-objectives-20}{%
+\subsection{Learning objectives}\label{learning-objectives-20}}
+
+\begin{itemize}
+\tightlist
+\item
+  Evaluate two categorical variables using relative risk.
+\end{itemize}
+
+\hypertarget{terminology-review-23}{%
+\subsection{Terminology review}\label{terminology-review-23}}
+
+In today's activity, we will look another summary. Some terms covered in this activity are:
+
+\begin{itemize}
+\item
+  Conditional proportion
+\item
+  Relative risk
+\end{itemize}
+
+To review these concepts, see Chapter 5 in your textbook.
+
+\hypertarget{percent-increase-or-percent-decrease}{%
+\subsection{Percent increase or percent decrease?}\label{percent-increase-or-percent-decrease}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Last season's skis are 30\% off original sale price at REI. You want to buy a pair of skis that were originally \$100. How much will you pay?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  What about a pair of skis that were originally \$593 at REI?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  The same pair of skis are selling for \$650 at Chalet Sports. What percent higher is this price compared to the \$593 at REI?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  You're on vacation in Spokane and decide to buy a \$450 pair of skis. The sales tax is 6.5\%. How much do you pay?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\hypertarget{titanic-survivors}{%
+\subsection{Titanic Survivors}\label{titanic-survivors}}
+
+A complete data set exists listing all those aboard HMS Titanic and including related facts about them including age, how much they paid for their ticket, which boat they survived in (if they survived), and their job if they were crew members. Stories, biographies and pictures can be found on the site: www.encyclopedia-titanica.org/. Did all passengers aboard the Titanic have the same chance of survival? Was the risk of death higher among 3rd class passengers compared to 1st class passengers?
+
+These counts can be found in \texttt{R} by using the \texttt{count()} function:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Read data set in}
+\NormalTok{survive }\OtherTok{\textless{}{-}}\NormalTok{ Titanic }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(Class\_Dept }\SpecialCharTok{==} \StringTok{"1st Class Passenger"} \SpecialCharTok{|}\NormalTok{ Class\_Dept }\SpecialCharTok{==} \StringTok{"3rd Class Passenger"}\NormalTok{)}
+\NormalTok{survive }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{group\_by}\NormalTok{(Class\_Dept) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{count}\NormalTok{(Survived)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{data-exploration}{%
+\subsubsection*{Data Exploration}\label{data-exploration}}
+\addcontentsline{toc}{subsubsection}{Data Exploration}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Fill in the data from the \texttt{R} output to complete the two-way table.
+\end{enumerate}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+& 1st Class Passenger & 3rd Class Passenger & Total \\
+\midrule
+\endhead
+Dead & & & \\
+Alive & & & \\
+Total & & & \\
+\bottomrule
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  Calculate the conditional proportion of 1st class passengers that died.
+\end{enumerate}
+
+\vspace{0.8in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  Calculate the conditional proportion of 3rd class passengers that died.
+\end{enumerate}
+
+\vspace{0.8in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  Calculate the difference in conditional proportions of death for 3rd and 1st class passengers. Use 3rd - 1st as the order of subtraction.
+\end{enumerate}
+
+\vspace{0.8in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  Interpret the difference in proportions in context of the problem.
+\end{enumerate}
+
+\vspace{0.8in}
+
+\hypertarget{relative-risk}{%
+\subsubsection*{Relative Risk}\label{relative-risk}}
+\addcontentsline{toc}{subsubsection}{Relative Risk}
+
+Another summary statistic that can be calculated for two categorical variables is the relative risk. The relative risk is calculated as the ratio of the conditional proportions:
+
+\[\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.\]
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\tightlist
+\item
+  Calculate the relative risk of death for 3rd class passengers compared to 1st class passengers.
+\end{enumerate}
+
+\vspace{0.8in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  Interpret the value of relative risk in context of the problem.
+\end{enumerate}
+
+\vspace{0.8in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\tightlist
+\item
+  Calculate the percent increase or percent decrease in death.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\tightlist
+\item
+  Interpret the value of relative risk as a percent increase or percent decrease in death.
+\end{enumerate}
+
+\hypertarget{take-home-messages-21}{%
+\subsection{Take-home messages}\label{take-home-messages-21}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Relative risk evaluates the percent increase or percent decrease in the response variable attributed to the explanatory variable. To find the percent increase or percent decrease we calculate the following \(\text{percent change}=(RR - 1)\times 100\%\). If relative risk is less than 1 there is a percent decrease. If relative risk is greater than 1 there is a percent increase.
+\end{enumerate}
+
+\hypertarget{additional-notes-21}{%
+\subsection{Additional notes}\label{additional-notes-21}}
+
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
+
+\newpage
+
+\hypertarget{week-14-lab-efficacy-of-the-covid-vaccination}{%
+\section{Week 14 Lab: Efficacy of the COVID Vaccination}\label{week-14-lab-efficacy-of-the-covid-vaccination}}
+
+\setstretch{1}
+
+\hypertarget{learning-objectives-21}{%
+\subsection{Learning objectives}\label{learning-objectives-21}}
+
+\begin{itemize}
+\tightlist
+\item
+\end{itemize}
+
+\hypertarget{efficacy-of-the-covid-vaccination}{%
+\subsection{Efficacy of the COVID Vaccination}\label{efficacy-of-the-covid-vaccination}}
+
+In November 2021, it was estimated that 59.1\% of US adults (\(\ge\) 18 years old) were fully vaccinated against COVID-19. One factor of vaccination results in lower hospitalization rates. The following two-way table was created based on CDC data on vaccination results in the US.
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+& Vaccinated & Not Vaccinated & Total \\
+\midrule
+\endhead
+Hospitalized & 2.309 & 27.7302 & 30.0392 \\
+Not hospitalized & 59,097.6951 & 40,872.2698 & 99,96949 \\
+Total & 59,100 & 40,900 & 100,000 \\
+\bottomrule
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  What is the probability that a US adult is both hospitalized and vaccinated?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  What is the probability that a US adult hospitalized with a COVID infection is vaccinated?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  What is the probability that a US adult is hospitalized with a COVID infection in November 2021?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  What is the probability that a vaccinated US adult is hospitalized?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  What is the probability that a un-vaccinated US adult is hospitalized?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  Calculate the relative risk for hospitalization in the November 2021 for US adults fully vaccinated compared US adults not vaccinated.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  Calculate the percent increase (or decrease) in hospitalization rate for US adults fully vaccinated compared to US adults not vaccinated.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  Interpret the relative risk as a percent increase/decrease in context of the problem.
+  \newpage
+\end{enumerate}
+
 \hypertarget{semester-review}{%
 \chapter{Semester Review}\label{semester-review}}
 
@@ -14281,8 +14597,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{data-exploration-concussions}{%
 \section{Data Exploration: Concussions}\label{data-exploration-concussions}}
 
-\hypertarget{learning-objectives-20}{%
-\subsection{Learning objectives}\label{learning-objectives-20}}
+\hypertarget{learning-objectives-22}{%
+\subsection{Learning objectives}\label{learning-objectives-22}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14356,7 +14672,7 @@ A study of a small cohort of professional athletes, with a history of RBT and sy
 \tightlist
 \item
   Here's a quote from a news report in 2013:
-  ``We need to figure out what's making some people more vulnerable than others,'' says Michelle Mielke, an Alzheimer's researcher at the Mayo Clinic who led the study. It was published online Thursday in the journal Neurology. Just because you have a head trauma doesn't mean you're going to develop memory problems or significant amyloid levels," Mielke told Shots. And it doesn't
+  ``We need to figure out what's making some people more vulnerable than others,'' says Michelle Mielke, an Alzheimer's researcher at the Mayo Clinic who led the study. It was published online Thursday in the journal Neurology. Just because you have a head trauma doesn't mean you're going to develop memory problems or significant amyloid levels,'' Mielke told Shots. And it doesn't
   mean you're going to get Alzheimer's. ``But it does suggest to us that there's a mechanism with head trauma that does increase your risk.''
 \end{enumerate}
 
@@ -14551,8 +14867,8 @@ Explain the last sentence. In what sense does a large sample increase accuracy?
 
 \vspace{1in}
 
-\hypertarget{take-home-messages-21}{%
-\subsection{Take Home Messages}\label{take-home-messages-21}}
+\hypertarget{take-home-messages-22}{%
+\subsection{Take Home Messages}\label{take-home-messages-22}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14566,8 +14882,8 @@ Explain the last sentence. In what sense does a large sample increase accuracy?
   You might see names of tests we've not covered, but the idea of a p-value is the same for any test, and the null hypothesis is generally ``No change,'' or ``No effect.''
 \end{enumerate}
 
-\hypertarget{additional-notes-21}{%
-\subsection{Additional notes}\label{additional-notes-21}}
+\hypertarget{additional-notes-22}{%
+\subsection{Additional notes}\label{additional-notes-22}}
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
 
@@ -14578,13 +14894,17 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \setstretch{1}
 
-Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 Review \texttt{R} script file to answer the following questions. Each adult (\textgreater21) islander was selected at random from all the adult islanders.
+Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 Review \texttt{R} script file to answer the following questions. Each adult (\textgreater21) islander was selected at random from all the adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measure before listening to the music and then after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.24}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.76}}@{}}
 \toprule
-\textbf{Variable} & \textbf{Description} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Variable}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Description}
+\end{minipage} \\
 \midrule
 \endhead
 \texttt{Island} & Name of Island that the Islander resides on \\
@@ -14603,25 +14923,109 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 \texttt{Type\_of\_Music} & Music type (Classical or Heavy Medal) Islander was randomly assigned to listen to \\
 \texttt{Before\_PuzzleCube} & Time to complete puzzle cube (minutes) before listening to assigned music \\
 \texttt{After\_PuzzleCube} & Time to complete puzzle cube (minutes) after listening to assigned music \\
-\texttt{Diff\_PuzzleCube} & Difference in time to complete puzzle cube (minutes) for Before - After listening to assigned music \\
 \texttt{Education\_Level} & Highest level of education completed (note: missing data depicted by missing) \\
 \texttt{Balance\_Test} & Time balanced measured in seconds with eyes closed \\
 \texttt{Blood\_Glucose\_before} & Level of blood glucose (mg/dL) before consuming assigned drink \\
 \texttt{Heart\_Rate\_before} & Heart rate (bpm) before consuming assigned drink \\
-\texttt{Type\_of\_Drink} & Type of drink (EnergyDrink or Cola) Islander was randomly assigned to drink \\
-\texttt{Heart\_Rate\_after} & Heart rate (bpm) after consuming assigned drink \\
 \texttt{Blood\_Glucose\_after} & Level of blood glucose (mg/dL) after consuming assigned drink \\
+\texttt{Heart\_Rate\_after} & Heart rate (bpm) after consuming assigned drink \\
 \texttt{Diff\_Heart\_Rate} & Difference in heart rate (bpm) for Before - After consuming assigned drink \\
 \texttt{Diff\_Blood\_Glucose} & Difference in blood glucose (mg/dL) for Before - After consuming assigned drink \\
 \bottomrule
 \end{longtable}
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Write a research question involving a paired quantitative variable that can be answered using the data set.
+  Use the provided Final Exam Review \texttt{R} script file and analyze the following research question, ``Does drinking a caffeinated drink increase blood glucose levels, on average?'' Use before -- after as the order of subtraction.
 \end{enumerate}
+
+\rgi Parameter of Interest:
+
+\vspace{0.3in}
+
+\rgi Null Hypothesis:
+
+\rgi \rgi Notation:
+
+\vspace{0.3in}
+
+\rgi \rgi Words:
+
+\vspace{0.5in}
+
+\rgi Alternative Hypothesis:
+
+\rgi \rgi Notation:
+
+\vspace{0.3in}
+
+\rgi \rgi Words:
+
+\vspace{0.5in}
+
+\rgi Statistic:
+
+\vspace{0.3in}
+
+\rgi Conditions:
+
+\rgi \rgi Independence:
+
+\vspace{0.8in}
+
+\rgi \rgi Normality:
+
+\vspace{0.8in}
+
+\rgi Simulation P-value:
+
+\vspace{0.3in}
+
+\rgi \rgi Interpretation:
+
+\vspace{0.8in}
+
+\rgi \rgi Conclusion:
+
+\vspace{0.8in}
+
+\rgi \rgi Decision:
+
+\vspace{0.3in}
+
+\rgi Simulation Confidence Interval:
+
+\vspace{0.3in}
+
+\rgi \rgi Interpretation:
+
+\vspace{0.8in}
+
+\rgi Standardized Statistic:
+
+\vspace{0.3in}
+
+\rgi \rgi Interpretation:
+
+\vspace{0.8in}
+
+\rgi Theory-based p-value:
+
+\vspace{0.3in}
+
+\rgi Theory-based Confidence Interval:
+
+\vspace{0.5in}
+
+\rgi Does the theory-based p-value and CI match those found using simulation methods?
+
+\vspace{0.8in}
+
+\rgi What is the scope of inference for this study?
 
 \vspace{0.8in}
 
@@ -14630,7 +15034,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 \setcounter{enumi}{1}
 \tightlist
 \item
-  Use the provided Final Exam Review \texttt{R} script file and analyze this research question.
+  Use the provided Final Exam Review \texttt{R} script file and analyze the following research question: ``Does listening to classical music decrease the time it takes to complete the puzzle cube compared to heavy metal music?''
 \end{enumerate}
 
 \rgi Parameter of Interest:
@@ -14724,121 +15128,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 \setcounter{enumi}{2}
 \tightlist
 \item
-  Write a research question involving a single categorical variable and a single quantitative variable that can be answered using the data set.
-\end{enumerate}
-
-\vspace{0.8in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  Use the provided Final Exam Review \texttt{R} script file and analyze this research question.
-\end{enumerate}
-
-\rgi Parameter of Interest:
-
-\vspace{0.3in}
-
-\rgi Null Hypothesis:
-
-\rgi \rgi Notation:
-
-\vspace{0.3in}
-
-\rgi \rgi Words:
-
-\vspace{0.5in}
-
-\rgi Alternative Hypothesis:
-
-\rgi \rgi Notation:
-
-\vspace{0.3in}
-
-\rgi \rgi Words:
-
-\vspace{0.5in}
-
-\rgi Statistic:
-
-\vspace{0.3in}
-
-\rgi Conditions:
-
-\rgi \rgi Independence:
-
-\vspace{0.8in}
-
-\rgi \rgi Normality:
-
-\vspace{0.8in}
-
-\rgi Simulation P-value:
-
-\vspace{0.3in}
-
-\rgi \rgi Interpretation:
-
-\vspace{0.8in}
-
-\rgi \rgi Conclusion:
-
-\vspace{0.8in}
-
-\rgi \rgi Decision:
-
-\vspace{0.3in}
-
-\rgi Simulation Confidence Interval:
-
-\vspace{0.3in}
-
-\rgi \rgi Interpretation:
-
-\vspace{0.8in}
-
-\rgi Standardized Statistic:
-
-\vspace{0.3in}
-
-\rgi \rgi Interpretation:
-
-\vspace{0.8in}
-
-\rgi Theory-based p-value:
-
-\vspace{0.3in}
-
-\rgi Theory-based Confidence Interval:
-
-\vspace{0.5in}
-
-\rgi Does the theory-based p-value and CI match those found using simulation methods?
-
-\vspace{0.8in}
-
-\rgi What is the scope of inference for this study?
-
-\vspace{0.8in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
-\tightlist
-\item
-  Write a research question involving a two quantitative variables that can be answered using the data set.
-\end{enumerate}
-
-\vspace{0.8in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
-\tightlist
-\item
-  Use the provided Final Exam Review \texttt{R} script file and analyze this research question.
+  Use the provided Final Exam Review \texttt{R} script file and analyze the following research question: ``Is there an assocation between height and balance time?''
 \end{enumerate}
 
 \rgi Parameter of Interest:
@@ -14929,7 +15219,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \newpage
 
-\includepdf{goldenticket.pdf}
+\includepdf{GoldenTicket_F21.pdf}
 
 \hypertarget{references}{%
 \chapter*{References}\label{references}}
@@ -14937,40 +15227,40 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
-\leavevmode\hypertarget{ref-banerjee2018}{}%
+\leavevmode\vadjust pre{\hypertarget{ref-banerjee2018}{}}%
 Banerjee, S. 2018. {``Linear Regression: Moneyball -- Part 1.''} \emph{Medium}. \url{https://towardsdatascience.com/linear-regression-moneyball-part-1-b93b3b9f5b53}.
 
-\leavevmode\hypertarget{ref-imdb}{}%
+\leavevmode\vadjust pre{\hypertarget{ref-imdb}{}}%
 {``{IMDb} Movies Extensive Dataset.''} n.d. \url{https://kaggle.com/stefanoleone992/imdb-extensive-dataset}.
 
-\leavevmode\hypertarget{ref-johnson2006}{}%
+\leavevmode\vadjust pre{\hypertarget{ref-johnson2006}{}}%
 Johnson, C. M.., and J. E. Memmott. 2006. {``Examination of Relationships Between Participation in School Music Programs of Differing Quality and Standardized Test Results.''} \emph{Journal of Research in Music Education} 54 (4): 293--307. \url{https://doi.org/10.1177/002242940605400403}.
 
-\leavevmode\hypertarget{ref-moneyball}{}%
+\leavevmode\vadjust pre{\hypertarget{ref-moneyball}{}}%
 {``Moneyball Dataset.''} n.d. \url{https://kaggle.com/wduckett/moneyball-mlb-stats-19622012}.
 
-\leavevmode\hypertarget{ref-weather}{}%
+\leavevmode\vadjust pre{\hypertarget{ref-weather}{}}%
 National Weather Service Corporate Image Web Team. n.d. {``National Weather Service -- {NWS} Billings.''} \url{https://w2.weather.gov/climate/xmacis.php?wfo=byz}.
 
-\leavevmode\hypertarget{ref-ohair2017}{}%
+\leavevmode\vadjust pre{\hypertarget{ref-ohair2017}{}}%
 O'Hair, A. 2017. {``Video 4: Using the Model to Make Predictions.''} {MIT}: {MIT Open Courseware}. \url{https://ocw.mit.edu/courses/sloan-school-of-management/15-071-the-analytics-edge-spring-2017/linear-regression/moneyball-the-power-of-sports-analytics/video-4-using-the-models-to-make-predictions/}.
 
-\leavevmode\hypertarget{ref-quinn1999}{}%
+\leavevmode\vadjust pre{\hypertarget{ref-quinn1999}{}}%
 Quinn, G. E., C. H. Shin, M. G. Maguire, and R. A. Stone. 1999. {``Myopia and Ambient Lighting at Night.''} \emph{Nature} 399 (6732): 113--14. \url{https://doi.org/10.1038/20094}.
 
-\leavevmode\hypertarget{ref-ramachandran2007}{}%
+\leavevmode\vadjust pre{\hypertarget{ref-ramachandran2007}{}}%
 Ramachandran, V. 2007. {``3 Clues to Understanding Your Brain.''} \url{https://www.ted.com/talks/vs_ramachandran_3_clues_to_understanding_your_brain}.
 
-\leavevmode\hypertarget{ref-richardson2019}{}%
+\leavevmode\vadjust pre{\hypertarget{ref-richardson2019}{}}%
 Richardson, T., and R. T. Gilman. 2019. {``Left-Handedness Is Associated with Greater Fighting Success in Humans.''} \emph{Scientific Reports} 9 (1): 15402. \url{https://doi.org/10.1038/s41598-019-51975-3}.
 
-\leavevmode\hypertarget{ref-stewart2014}{}%
+\leavevmode\vadjust pre{\hypertarget{ref-stewart2014}{}}%
 Stewart, E. H., B. Davis, B. L. Clemans-Taylor, B. Littenberg, C. A. Estrada, and R. M. Centor. 2014. {``Rapid Antigen Group a Streptococcus Test to Diagnose Pharyngitis: A Systematic Review and Meta-Analysis''} 9 (11). \url{https://doi.org/10.1371/journal.pone.0111727}.
 
-\leavevmode\hypertarget{ref-sulheim2017}{}%
+\leavevmode\vadjust pre{\hypertarget{ref-sulheim2017}{}}%
 Sulheim, S., A. Ekeland, I. Holme, and R. Bahr. 2017. {``Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders: Changes After an Interval of One Decade''} 51 (1): 44--50. \url{https://doi.org/10.1136/bjsports-2015-095798}.
 
-\leavevmode\hypertarget{ref-usepa2020}{}%
+\leavevmode\vadjust pre{\hypertarget{ref-usepa2020}{}}%
 US Environmental Protection Agency. n.d. {``Air Data -- Daily Air Quality Tracker.''} \url{https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker}.
 
 \end{CSLReferences}

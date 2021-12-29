@@ -57,7 +57,7 @@ covidLM <- lm(response~explanatory, data=covid)
 summary(covidLM)$coefficients # Display coefficient summary
 ```
 
-5. Give the value of the slope of the regression line.  Interpret this value in context of the problem.
+4. Give the value of the slope of the regression line.  Interpret this value in context of the problem.
 \vspace{0.6in}
 
 Highlight and run lines 23--36 to produce the diagnostic plots needed to assess conditions to use theory-based methods.
@@ -89,13 +89,13 @@ hist(covidLM$resid, xlab="Residuals", ylab="Frequency",
      main = "Histogram of Residuals") # Histogram of residuals
 ```
 
-6. **Are the conditions met to use the $t$-distribution to approximate the sampling distribution of the standardized statistic? Justify your answer.**
+5. **Are the conditions met to use the $t$-distribution to approximate the sampling distribution of the standardized statistic? Justify your answer.**
 
 \vspace{1.5in}
 
 #### Ask a research question {-}
 
-7. Write out the null and alternative hypotheses in notation to test correlation between the percent immunized in US counties and the infection rate.
+6. Write out the null and alternative hypotheses in notation to test correlation between the percent immunized in US counties and the infection rate.
 
 |    $H_O:$
 
@@ -109,7 +109,7 @@ Use the `regression_test()` function in `R` (in the `catstats` package) to simul
 
 The response variable name is `Complaints` and the explanatory variable name is `Food`.
 
-8. What inputs should be entered for each of the following to create the simulation to test correlation?
+7. What inputs should be entered for each of the following to create the simulation to test correlation?
 
 \vspace{.5 mm}
 
@@ -141,10 +141,10 @@ regression_test(Case_per_100K~PercentImmunized, # response ~ explanatory
        
 ```
 
-9.  Report the p-value from the `R` output. 
+8.  Report the p-value from the `R` output. 
 \vspace{0.3in}
 
-10. Interpret the p-value in context of the problem.
+9. Interpret the p-value in context of the problem.
 \vspace{0.8in}
 
 #### Simulation-based confidence interval {-}
@@ -159,28 +159,28 @@ regression_bootstrap_CI(Case_per_100K~PercentImmunized, # response ~ explanatory
    statistic = "xx", # Slope or correlation
    number_repetitions = 1000) # Number of simulated samples for bootstrap distribution
 ```
-11.  Report the bootstrap 90\% confidence interval in interval notation.  
+10.  Report the bootstrap 90\% confidence interval in interval notation.  
 \vspace{0.5in}
 
-12. **Interpret the 90\% confidence interval in context of the problem.**
+11. **Interpret the 90\% confidence interval in context of the problem.**
 \vspace{0.8in}
    
 #### Communicate the results and answer the research question {-}
 
-13. Based on the p-value, write a conclusion in context of the problem.
+12. Based on the p-value, write a conclusion in context of the problem.
 
 \vspace{.8in}
 
-14. Using a significance level of 0.1, what decision would you make?
+13. Using a significance level of 0.1, what decision would you make?
 \vspace{0.2in}
 
-15. What type of error is possible?
+14. What type of error is possible?
 \vspace{0.3in}
 
-16. Write this error in context of the problem.
+15. Write this error in context of the problem.
 \vspace{0.8in}
 
-17. Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper.  **Upload a copy of your paragraph to Gradescope for your group.**  Be sure to describe:
+16. Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper.  **Upload a copy of your paragraph to Gradescope for your group.**  Be sure to describe:
 
 * Summary statistic
 

@@ -112,7 +112,7 @@ In the next part of the activity we will explore what the coefficient of determi
 
 9.  Click on `Show Squared Residuals`.  Write down the value for SSE.  Since this is the sum of squared errors (SSE) for the horizontal line we call this the total sum of squares (SST).
 
-\vspace{0.5in}
+\newpage
 
 10. Click on `Show Regression Line`.  Write down the equation of the line given.  Does this match the least squares line found in Activity 4a question 6?
 
@@ -167,8 +167,6 @@ movies %>% # Data set pipes into...
 1. The sign of correlation and the sign of the slope will always be the same.  The closer the value of correlation is to $-1$ or $+1$, the stronger the relationship between the explanatory and the response variable.  
 
 2.  The coefficient of determination multiplied by 100 ($R^2 \times 100$) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100%, the stronger the relationship.
-
-\newpage
 
 ### Additional notes
 

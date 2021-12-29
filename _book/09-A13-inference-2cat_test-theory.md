@@ -147,11 +147,11 @@ pnorm(xx, # Enter value of standardized statistic
 
 10.  Interpret the p-value in context of the study.
 
-\vspace{0.5in}
+\vspace{1in}
 
 11. Write a conclusion to the research question based on the p-value found.
 
-\vspace{1in}
+\newpage
 
 ### Impacts on the P-value {-}
 

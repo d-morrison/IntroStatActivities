@@ -62,8 +62,6 @@ Before using statistical inference methods, we must check that the cases are ind
 
 \vspace{0.8in}
 
-\newpage 
-
 #### Summarize and visualize the data {-}
 
 ```{r, echo=TRUE, collapse=FALSE, message=FALSE, warning=FALSE}
@@ -72,9 +70,10 @@ infants <- read.csv("https://math.montana.edu/courses/s216/data/infantchoice.csv
 infants %>% count(choice)  # Count number in each choice category
 ```
 
-$\hat{p} = \frac{\mbox{number of successes}}{\mbox{total number of observational units}}$
+$$\hat{p} = \frac{\mbox{number of successes}}{\mbox{total number of observational units}}$$
+\newpage
 
-3.  Using the output above, calculate the summary statistic (sample proportion) to represent the research question.  Recall that `choosing the helper toy` is a considered a success.  Use appropriate notation.
+3.  Using the `R` output, calculate the summary statistic (sample proportion) to represent the research question.  Recall that `choosing the helper toy` is a considered a success.  Use appropriate notation.
 
 \vspace{0.5in}
 
@@ -101,6 +100,8 @@ When performing a hypothesis test, we must first identify the null hypothesis.  
 \vspace{0.8in}
 
 The notation used for a population proportion (or probability, or true proportion) is $\pi$.  Since this summarizes a population, it is a parameter. When writing the **null hypothesis** in notation, we set the parameter equal to the null value, $H_0: \pi = \pi_0$.
+
+\newpage 
 
 8. Write the null hypothesis in notation using the null value of 0.5 in place of $\pi_0$ in the equation given on the previous page.
 

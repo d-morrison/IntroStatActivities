@@ -83,7 +83,10 @@ Enter the name of the explanatory variable for `explanatory` and the name of the
 hikes %>%
   summarize(favstats(response~explanatory))
 ```
-6. **Calculate the summary statistic for this study.  Use appropriate notation with clearly defined subscripts.**
+
+\newpage
+
+6. **Calculate the summary statistic (difference in means) for this study.  Use appropriate notation with clearly defined subscripts.**
 
 \vspace{1in}
 
@@ -100,7 +103,6 @@ $$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}.$$
 7.  Calculate the standard error for the difference in sample means.
 
 \vspace{0.5in}
-\newpage
 
 8.  **Calculate the standardized statistic for the difference in sample means.**
 
@@ -140,7 +142,7 @@ qt(xx, df = yy, lower.tail=TRUE)
 ```
 14. Report the $t^*$ multiplier for the 95\% confidence interval.
 
-\newpage
+\vspace{0.3in}
 
 15.  Calculate the 95\% confidence interval using theory-based methods.
 

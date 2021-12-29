@@ -48,7 +48,7 @@ These data are on a subset of institutions that met the following selection crit
 
 2. Identify in the chart above which variables are categorical (C) and which variables are quantitative (Q).
 
-\vspace{0.2in}
+\newpage
 
 Upload the data set `IPEDS_Data_2018` Click on Import Dataset in the Environment tab in the upper right hand corner.  Choose `From Text(base)` and select the correct csv file.  Be sure that `Yes` is selected next to `Heading` in the pop-up screen.  Click `Import`.
 
@@ -151,7 +151,7 @@ IPEDS %>% # Data set piped into...
 
 \vspace{0.8in}
 
-**13. Which measure of center is robust to outliers? Explain your answer.**
+13. **Which measure of center is robust to outliers? Explain your answer.**
 
 \vspace{0.5in}
 
@@ -205,7 +205,7 @@ IPEDS %>%  # Data set piped into...
 
 18.  Does there appear to be an association between retention rates and type of university?  Explain.
 
-\vspace{0.8in}
+\newpage
 
 ####  Summarizing two categorical variables
 
