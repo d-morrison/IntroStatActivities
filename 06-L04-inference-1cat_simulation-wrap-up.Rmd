@@ -82,8 +82,6 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
           report_value = "proportion") # Reporting proportion or number of successes?
 ```
 
-\newpage
-
 4. Sketch the null distribution created from the `R` code here.
 
 \vspace{1.8in}
@@ -149,7 +147,7 @@ When we write a conclusion we answer the research question by stating how much e
 
 \setstretch{1.5}
 
-15. Fill in the blanks below to Write a paragraph summarizing the results of the study as if writing a press release.  **Upload your group's paragraph to Gradescope.** Be sure to describe:
+15. Fill in the blanks below to Write a paragraph summarizing the results of the study as if writing a press release.  **Complete your group's paragraph on Gradescope.** 
 
 Researchers were interested if infants observe social cues and would be more likely to choose the helper toy over the hinderer toy.  In a sample of (sample  size) _____________infants, (number of successs) _______________chose the helper toy.  A simulation null distribution with 1000 simulations was created in RStudio.  The p-value was found by calculating the proportion of simulations in the null distribution at the sample statistic of 0.875 and greater.  This resulted in a p-value of (value of p-value)_______________.  We would observe a sample proportion of (value of the sample proportion) ______________________ or (greater, less, more extreme) _____________________ with a probability of (value of p-value)_____________________ IF we assume (Ho in context)_____________________     _____________________________________________.
 Based on this p-value, there is (very strong/little to no) ______________________ evidence that the (sample/true)_____________________ proportion of infants age 6 to 10 months who will choose the helper toy is (greater than, less than, not equal to) _____________________ 0.5.  The results of this study can be generalized to (all infants age 6 to 10 months/infants similar to those in this study)____________________________________________ as the researchers (did/did not)_____________________ select a random sample.

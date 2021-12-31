@@ -46,7 +46,7 @@ diabetes %>% group_by(treatment) %>% count(outcome)
 5. Using the research question, write the alternative hypothesis in notation.
 \vspace{0.3in}
 
-6. **Calculate the summary statistic.  Use appropriate notation.**
+6. **Calculate the summary statistic (difference in proportions).  Use appropriate notation.**
 \vspace{0.3in}
 
 Fill in the missing values/names in the `R` script file in the two-proportion_test function to create the null distribution and find the simulation p-value for the test.
@@ -98,6 +98,6 @@ two_proportion_test(formula = outcome~treatment, # response ~ explanatory
 
 * Scope of inference
 
-**Upload a copy of your group's confidence interval and scope of inference to Gradescope.** 
+**Upload a copy of your group's p-value interpretation and scope of inference to Gradescope.** 
 
 \newpage

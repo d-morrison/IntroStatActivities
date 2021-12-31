@@ -1,6 +1,6 @@
 # Inference for Two Categorical Variables: Simulation-based Methods
 
-## Week 9 - Reading Guide: Hypothesis Testing for a Difference in Proportions
+## Week 8 - Reading Guide: Hypothesis Testing for a Difference in Proportions
 
 ### Section 5.5 (Simulation-based inference for a difference in proportions)  {-}
 

@@ -1,6 +1,6 @@
 # Inference for a Quantitative Response with Paired Samples
 
-## Reading Guide: Inference for a Single Mean or Paired Mean Difference 
+## Week 11 Reading Guide: Inference for a Single Mean or Paired Mean Difference 
 
 ### Section 6.1 (Inference for one mean) {-}
 

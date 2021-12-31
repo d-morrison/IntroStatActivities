@@ -157,7 +157,7 @@ paired_bootstrap_CI(data = swearing_diff$differences, # Enter vector of differen
 
 \vspace{0.8in}
 
-17.  Write a paragraph summarizing the results of this study as if you were describing the results to your roommate.  **Upload a copy of group's paragraph to Gradescope.** Be sure to describe:
+17.  Write a paragraph summarizing the results of this study as if you were describing the results to your roommate.  **Upload a copy of your group's paragraph to Gradescope.** Be sure to describe:
 
 * Summary statistic
 

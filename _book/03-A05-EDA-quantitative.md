@@ -8,7 +8,7 @@
   given a data set or research question for quantitative data.
 
 * Interpret the following summary statistics in context:
-  median, lower quartile, upper quartile,
+  median, lower quartile, upper quartile, 
   standard deviation, interquartile range.
 
 ### Terminology review
@@ -91,7 +91,7 @@ A dotplot will plot a dot for each value in the data set.  The following code wi
 ```r
 movies %>% # Data set piped into...
 ggplot(aes(x = imdb_score)) +   # Name variable to plot
-  geom_dotplot() +  # Create histogram with specified binwidth
+  geom_dotplot() +  # Create dotplot
   labs(title = "Dotplot of IMDb Score of Movies in 2016", # Title for plot
        x = "IMDb Score", # Label for x axis
        y = "Frequency") # Label for y axis
@@ -183,7 +183,7 @@ Is there an association between content rating and budget for movies in 2016?  T
 ```r
 movies %>% # Data set piped into...
   filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
-  summarise(favstats(budget_mil~content_rating)) # Apply favstats function to imdb_score
+  summarise(favstats(budget_mil~content_rating)) # Find the summary measures for each content rating
 ```
 
 ```
@@ -197,15 +197,15 @@ movies %>% # Data set piped into...
 
 \vspace{0.8in}
 
-12.  Report the mean budget amount for the PG rating.
+12.  Report the mean budget amount for the PG rating.  Use appropriate notation.
 
 \vspace{0.3in}
 
-13.  Report the mean budget amount for the R rating.
+13.  Report the mean budget amount for the R rating.  Use appropriate notation.
 
 \vspace{0.3in}
 
-14. Calculate the difference in mean budget amount for movies in 2016 with a PG rating minus those with a R rating.  Use appropriate notation.  Label group 1 as PG rating and group 2 as R rating.
+14. Calculate the difference in mean budget amount for movies in 2016 with a PG rating minus those with a R rating.  Use appropriate notation with informative subscripts.
 
 \vspace{0.8in}
 

@@ -1,6 +1,6 @@
 # Inference for Two Quantitative Variables
 
-## Reading Guide: Inference for Slope and Correlation
+## Week 13 Reading Guide: Inference for Slope and Correlation
 
 ### Sections 7.1 and 7.2 (Inference for regression and model conditions) {-}
 

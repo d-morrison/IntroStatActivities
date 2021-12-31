@@ -46,17 +46,18 @@ diving <- read.csv("https://math.montana.edu/courses/s216/data/Diving_Penguins.c
 
 Use the provided `R` script file to create a scatterplot to examine the relationship between the diving heart rate and duration of the dive by filling in the variable names (`Dive_HeartRate` and `Duration`) for `explanatory` and `response` in line 9.  Highlight and run lines 1--15. 
  
-    
-    ```r
-    diving %>% # Pipe data set into...
-    ggplot(aes(x = explanatory, y = response))+  # Specify variables
-      geom_point() +  # Add scatterplot of points
-      labs(x = "Heart Rate (bpm)",  # Label x-axis
-           y = "Dive Duration (min)",  # Label y-axis
-           title = "Scatterplot of Emperor Penguins Diving Heart Rate vs. Dive Duration") + 
-                   # Be sure to title your plots
-      geom_smooth(method = "lm", se = FALSE)  # Add regression line
-    ```
+
+```r
+diving %>% # Pipe data set into...
+ggplot(aes(x = explanatory, y = response))+  # Specify variables
+  geom_point() +  # Add scatterplot of points
+  labs(x = "Heart Rate (bpm)",  # Label x-axis
+       y = "Dive Duration (min)",  # Label y-axis
+       title = "Scatterplot of Emperor Penguins Diving Heart Rate vs. Dive Duration") + 
+               # Be sure to title your plots
+  geom_smooth(method = "lm", se = FALSE)  # Add regression line
+
+```
 
 2. Sketch the plot created below. Based on your plot, does it appear that there is a relationship between dive heart rate and duration of the dive? Note: `Dive_HeartRate` should be on the $x$-axis.
 
@@ -131,7 +132,7 @@ Using the `R` script file for this activity, enter your answers for question 12 
 
 
 ```r
-regression_test(response ~ explanatory, # response ~ explanatory
+regression_test(Duration ~ Dive_Heartrate, # response ~ explanatory
                data = diving, # Name of data set
                direction = "xx", # Sign in alternative ("greater", "less", "two-sided")
                statistic = "xx", # "slope" or "correlation"
@@ -148,7 +149,7 @@ We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` p
 
 
 ```r
-regression_bootstrap_CI(response~explanatory, # response ~ explanatory
+regression_bootstrap_CI(Duration ~ Dive_Heartrate, # response ~ explanatory
    data = diving, # Name of data set
    confidence_level = xx, # Confidence level as decimal
    statistic = "xx", # Slope or correlation
@@ -176,8 +177,6 @@ regression_bootstrap_CI(response~explanatory, # response ~ explanatory
 3. To create one simulated sample on the null distribution for a sample slope or sample correlation, hold the $x$ values constant and shuffle the $y$ values to new $x$ values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
 
 4. To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label $n$ cards with the original (response, explanatory) values.  Randomly draw with replacement $n$ times.  Find the regression line for the resampled data and plot the resampled slope or correlation. 
-
-\newpage
 
 ### Additional notes
 

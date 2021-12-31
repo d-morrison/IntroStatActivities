@@ -26,6 +26,7 @@ Upload and import the `penguins` csv file and the provided `R` script file for w
 First we will create a scatterplot of the flipper length and body mass.  Notice that we are using flipper length to predict body mass.  This makes flipper length the explanatory variable. **Make sure to give your plot a descriptive title.** Highlight and run lines 1--13 in the `R` script file.  **Upload a copy of your scatterplot to Gradescope.**
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
+penguins <- datasetname #Creates the object penguins
 penguins %>%
   ggplot(aes(x = flipper_length_mm, y = body_mass_g))+  # Specify variables
   geom_point() +  # Add scatterplot of points

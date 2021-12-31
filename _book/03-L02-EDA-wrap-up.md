@@ -87,7 +87,7 @@ Next we will create both a histogram and a boxplot of the variable `Retention`. 
 ```r
 IPEDS %>% # Data set piped into...
 ggplot(aes(x = variable)) +   # Name variable to plot
-  geom_histogram(binwidth = 5) +  # Create dotplot
+  geom_histogram(binwidth = 5) +  # Create histogram with specified binwidth 
   labs(title = "Title", # Title for plot
        x = "Rentention Rate", # Label for x axis
        y = "Frequency") # Label for y axis
@@ -97,7 +97,7 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 ```r
 IPEDS %>% # Data set piped into...
 ggplot(aes(x = variable)) +   # Name variable to plot
-  geom_boxplot() +  # Create dotplot
+  geom_boxplot() +  # Create boxplot 
   labs(title = "Title", # Title for plot
        x = "Retention Rates", # Label for x axis
        y = "Frequency") # Label for y axis
@@ -137,8 +137,8 @@ IPEDS %>% # Data set piped into...
 ```r
 IPEDS %>% # Data set piped into...
   ggplot(aes(x = Retention_Inc)) +   # Name variable to plot
-  geom_boxplot() +  # Create histogram with specified binwidth
-  labs(title = "Histogram of Revenue of Movies in 2016", # Title for plot
+  geom_boxplot() +  # Create boxplot
+  labs(title = "Boxplot of Adjusted Revenue of Movies in 2016", # Title for plot
        x = "Revenue (in Millions)", # Label for x axis
        y = "Frequency") # Label for y axis
 ```
@@ -179,7 +179,7 @@ IPEDS %>%  # Data set piped into...
 ```r
 IPEDS %>%  # Data set piped into...
   ggplot(aes(y = response, x = explanatory))+  # Identify variables
-  geom_boxplot()+  # Tell it to make a box plot
+  geom_boxplot()+  # Create box plot
   labs(title = "Side by side box plot of retention rates by control",  # Title
        x = "Control",    # x-axis label
        y = "Retention Rates")  # y-axis label
@@ -214,11 +214,11 @@ Are private 4-year institutions smaller than public one? The following set of co
 
 ```r
 IPEDS %>%
-  ggplot(aes(x=explanatory, fill = response)) +
-  geom_bar(stat = "count", position = "fill") + 
-  labs(title = "Segmented Bar Plot of Sector by Size",
-       x = "Sector",
-       y = "") +
+  ggplot(aes(x=explanatory, fill = response)) + # Enter the explanatory and response variables
+  geom_bar(stat = "count", position = "fill") + # Create a segmented bar plot
+  labs(title = "Segmented Bar Plot of Sector by Size", # Title
+       x = "Sector", # x-axis label
+       y = "") + # remove y-axis label
   scale_fill_grey()
 ```
 

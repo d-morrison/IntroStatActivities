@@ -140,7 +140,7 @@ two_proportion_bootstrap_CI(formula = response~explanatory,
 
 * Scope of inference
 
-**Upload your group's p-value interpretation and conclusion to Gradescope.** 
+**Upload your group's confidence interval interpretation and conclusion to Gradescope.** 
 
-\vspace{2in}
+\newpage
 

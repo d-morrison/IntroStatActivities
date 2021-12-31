@@ -94,6 +94,8 @@ $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 
 13. Interpret the value of relative risk as a percent increase or percent decrease in death.
 
+\newpage
+
 
 ### Take-home messages
 

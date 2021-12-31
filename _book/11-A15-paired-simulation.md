@@ -108,7 +108,7 @@ Table: Summary statistics for current AQI scores, median AQI scores from 2015--2
 
 #### Summarize and visualize the data  {-}
 
-10. Report the summary statistic of interest for the data.  
+10. Report the summary statistic of interest (mean difference) for the data.  
 
 \vspace{0.3in}
 

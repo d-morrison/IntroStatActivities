@@ -182,8 +182,6 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 #### Introduction to `R` {-}
 
-**Once you work through the Introduction to `R` export the plot created as a png image file adn upload this plot to Gradescope.  In the plots tab in the lower right hand corner, click on "Export"
-
 In Stat 216 we will use the statistical package `R` to analyze data through the IDE (integrated development environment) RStudio. Though it is possible to download `R` and RStudio on your own computer, we will use this program through the MSU RStudio server: [https://rstudio.math.montana.edu/](https://rstudio.math.montana.edu/). 
 
 Read through the preliminaries chapter in the textbook and watch the video "Starting with `R`" before completing the following questions.
@@ -234,3 +232,5 @@ Is the distribution created from this code similar to what you saw in class in Q
 ### Additional notes
 
 Use this space to summarize your thoughts and take additional notes on today's activity and material covered, and to write down the names and contact information of your teammates.
+
+\newpage

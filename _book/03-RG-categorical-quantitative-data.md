@@ -275,9 +275,8 @@ Total & & & 100,000 \\ \hline
 
 \newpage
 
-## Exploring Quantitative Data
 
-## Week 4 - Reading Guide: Quantitative Data
+## Reading Guide: Exploring Quantitative Data
 
 \setstretch{1.25}
 

@@ -166,8 +166,6 @@ qt(xx, df = yy, lower.tail=TRUE)
 19.  What type of error may be possible?
 \vspace{0.2in}
 
-\newpage
-
 20.  Write a paragraph summarizing the results of the study as if you are reporting the results to your supervisor.  **Upload a copy of your paragraph to Gradescope for your group.**  Be sure to describe:
 
 * Summary statistic
@@ -181,6 +179,6 @@ qt(xx, df = yy, lower.tail=TRUE)
 * Scope of inference
 
 \vspace{3in}
-
+\newpage
 
 

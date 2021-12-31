@@ -27,6 +27,7 @@ First we will create a scatterplot of the flipper length and body mass.  Notice 
 
 
 ```r
+penguins <- datasetname #Creates the object penguins
 penguins %>%
   ggplot(aes(x = flipper_length_mm, y = body_mass_g))+  # Specify variables
   geom_point() +  # Add scatterplot of points

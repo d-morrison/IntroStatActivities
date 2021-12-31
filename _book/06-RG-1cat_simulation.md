@@ -1,6 +1,6 @@
 # Inference for a Single Categorical Variable: Simulation-based methods
 
-## Week 7 - Reading Guide: Categorical Inference
+## Week 6 - Reading Guide: Categorical Inference
 
 ### Section 5.1 (Foundations of inference: Hypothesis tests) {-}
 

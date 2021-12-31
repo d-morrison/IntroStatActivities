@@ -78,7 +78,7 @@ movies %>%  # Data set pipes into
 
 \vspace{0.5in}
 
-4.  Does your answer to question 3 match the direction you choose in question 4 in Activity 5a?
+4.  Does your answer to question 3 match the direction you choose in question 4 in Activity 4a?
 
 \vspace{0.3in}
 
@@ -104,7 +104,7 @@ Another summary measure used to explain the linear relationship between two quan
 
 \vspace{1in}
 
-In the next part of the activity we will explore what the coefficient of determination measures.  Go to the website www.rossmanchance.com/ISIapplets.html and click on Corr/Regresssion under Quantitative Response.  Click `Clear` below the box containing the sample data. Download and open the csv file "Movie2016" from D2L.  Copy the two columns containing `budget_mil` and `revenue_mil` and paste into the sample data box.  Click 'Use Data`.
+In the next part of the activity we will explore what the coefficient of determination measures.  Go to the website www.rossmanchance.com/ISIapplets.html and click on Corr/Regresssion under Quantitative Response.  Click `Clear` below the box containing the sample data. Download and open the csv file "Movie2016" from D2L.  Copy the two columns containing `budget_mil` and `revenue_mil` including the headers and paste into the sample data box.  Click 'Use Data`.
 
 8.  Click on `Show Moveable Line`.  Write down the equation of the line given.  Why is the slope zero for this line?
 

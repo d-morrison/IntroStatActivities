@@ -30,7 +30,7 @@ To review these concepts, see Sections 1.2 through 1.6 in the textbook.
 
 ### General information on Friday labs
 
-Each Friday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Gradescope (one submission per group).  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab with your group have the Gradescope lab assignment open so that you can answer those questions as you go.
+Remember that each Friday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Gradescope (one submission per group).  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab with your group have the Gradescope lab assignment open so that you can answer those questions as you go.
 
 ### Study design
 The two main study designs we will cover are **observational studies** and **experiments**.  In observational studies, researchers have no influence over which subjects are in each group being compared (though they can control other variables in the study).  An experiment is defined by assignment of the treatment groups of the *explanatory variable*, typically via random assignment.   

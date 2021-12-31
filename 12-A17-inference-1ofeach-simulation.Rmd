@@ -87,13 +87,13 @@ Snow %>%
 
 \vspace{1in}
 
-7.  What are the two competing possibilities we will evaluate in this study?
+7.  Write out the null hypothesis in words.
 
 \vspace{1in}
 
-8.  Identify which of your answers in question 7 is the null hypothesis and which is the alternative hypothesis. 
+8.  Write the alternative hypothesis in notation. 
 
-\vspace{1in}
+\vspace(0.5in}
 
 #### Summarize and visualize the data {-}
 

@@ -27,7 +27,7 @@ Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an a
 
 * **Success-failure condition**: The success-failure condition holds for each group. Since we are not assuming a null hypothesis, we do not use the pooled sample proportion to check this condition as we did in Activity 8. Instead, we use the individual sample proportions $\hat{p}_1$ and $\hat{p}_2$. Equivalently, we check that all cells in the table have at least 10 observations.
 
-1.  Explain why a theory-based confidence interval for the data set in Activities 9a and 9b would not be similar to the bootstrap interval created.
+1.  Explain why a theory-based confidence interval for the data set in Activities 8a and 8b would not be similar to the bootstrap interval created.
 
 \vspace{1in}
 
