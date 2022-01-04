@@ -21,7 +21,7 @@
 
 The Palmer Station Long Term Ecological Research Program sampled three penguin species on islands in the Palmer Archipelago in Antarctica. Researchers took various body measurements on the penguins, including flipper length and body mass. The researchers were interested in the relationship between flipper length and body mass and wondered if flipper length could be used to accurately predict the body mass of these three penguin species. 
 
-Upload and import the `penguins` csv file and the provided `R` script file for week 5 lab. Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in line 4.
+Upload and import the `penguins` csv file and the provided `R` script file for week 4 lab. Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in line 4.
 
 First we will create a scatterplot of the flipper length and body mass.  Notice that we are using flipper length to predict body mass.  This makes flipper length the explanatory variable. **Make sure to give your plot a descriptive title.** Highlight and run lines 1--13 in the `R` script file.  **Upload a copy of your scatterplot to Gradescope.**
 
