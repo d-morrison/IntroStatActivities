@@ -167,7 +167,7 @@ We can also visualize the data as a proportion in a **relative frequency bar plo
 
 \vspace{.5in}
 
-**17.	Is it *likely* that we could see our class results just by chance if everyone was just guessing?  Explain your reasoning.**
+17.	**Is it *likely* that we could see our class results just by chance if everyone was just guessing?  Explain your reasoning.**
 
 \vspace{.5in}
 

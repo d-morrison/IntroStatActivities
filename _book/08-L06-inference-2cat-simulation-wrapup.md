@@ -69,7 +69,7 @@ ggplot(aes(x = Injury.Site, fill = Lethal)) +   # This specifies the variables
        y = "") +  # Remove y axis label
     scale_fill_grey()  # Make figure black and white
 ```
-7.  Does there appear to be an association between the variables based on the plot?  Explain your answer.
+7.  Based on the plot does there appear to be an association between the variables?  Explain your answer.
 
 \vspace{1in}
 

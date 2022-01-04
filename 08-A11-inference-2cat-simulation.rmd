@@ -144,7 +144,7 @@ We will now simulate a **null distribution** of sample differences in proportion
 
 \vspace{0.8in}
 
-15.  Simulate one sample using the cards provided by your instructor.  
+15.  Simulate one sample using the cards provided by your instructor.  Write down the value of the simulated statistic.
 
 \vspace{1in}
 
@@ -216,7 +216,7 @@ two_proportion_test(formula = Behavior~Condition, # response ~ explanatory
 
 1.	When comparing two groups, we are looking at the difference between two parameters.  In the null hypothesis, we assume the two parameters are equal, or that there is no difference between the two proportions.  
 
-2.  We use the same guidelines for the strength of evidence as we did in Activity 7a.  
+2.  We use the same guidelines for the strength of evidence as we did in Activity 6a.  
 
 3. To create one simulated sample on the null distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$, representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
 

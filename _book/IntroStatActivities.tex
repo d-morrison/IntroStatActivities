@@ -771,7 +771,13 @@ We can also visualize the data as a proportion in a \textbf{relative frequency b
 
 \vspace{.5in}
 
-\textbf{17. Is it \emph{likely} that we could see our class results just by chance if everyone was just guessing? Explain your reasoning.}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{16}
+\tightlist
+\item
+  \textbf{Is it \emph{likely} that we could see our class results just by chance if everyone was just guessing? Explain your reasoning.}
+\end{enumerate}
 
 \vspace{.5in}
 
@@ -3119,7 +3125,8 @@ These data are on a subset of institutions that met the following selection crit
 \begin{center}\includegraphics[width=0.75\linewidth]{images/IPEDS_Description} \end{center}
 
 \hypertarget{summarizing-a-single-quantitative-variable-1}{%
-\subsubsection{Summarizing a single quantitative variable}\label{summarizing-a-single-quantitative-variable-1}}
+\subsubsection*{Summarizing a single quantitative variable}\label{summarizing-a-single-quantitative-variable-1}}
+\addcontentsline{toc}{subsubsection}{Summarizing a single quantitative variable}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3251,7 +3258,7 @@ Let's examine how the presence of outliers affect the values of center and sprea
 \setcounter{enumi}{8}
 \tightlist
 \item
-  Report the two measures of center for retention given in the \texttt{R} output.
+  Report the two measures of center for retention given in the \texttt{R} output above question 3.
 \end{enumerate}
 
 \vspace{0.8in}
@@ -3261,7 +3268,7 @@ Let's examine how the presence of outliers affect the values of center and sprea
 \setcounter{enumi}{9}
 \tightlist
 \item
-  Report the two measures of spread for retention.
+  Report the two measures of spread for retention given in the \texttt{R} output above question 3.
 \end{enumerate}
 
 \vspace{0.8in}
@@ -3328,8 +3335,9 @@ To show the effect of outliers on the measures of center and spread, the smalles
 
 \vspace{0.5in}
 
-\hypertarget{summarizing-a-single-categorical-and-single-quantitative-varible}{%
-\subsubsection{Summarizing a single categorical and single quantitative varible}\label{summarizing-a-single-categorical-and-single-quantitative-varible}}
+\hypertarget{summarizing-a-single-categorical-and-single-quantitative-variable}{%
+\subsubsection*{Summarizing a single categorical and single quantitative variable}\label{summarizing-a-single-categorical-and-single-quantitative-variable}}
+\addcontentsline{toc}{subsubsection}{Summarizing a single categorical and single quantitative variable}
 
 Is there a difference in retention rates for public and private 4-year institutions? In the next part of the activity we will compare retention rates for public and private 4-year institutions. Note that this variable (public or private) is \texttt{Control} in the data set.
 
@@ -3397,7 +3405,8 @@ Enter the name of the explanatory variable and the name of the response variable
 \newpage
 
 \hypertarget{summarizing-two-categorical-variables}{%
-\subsubsection{Summarizing two categorical variables}\label{summarizing-two-categorical-variables}}
+\subsubsection*{Summarizing two categorical variables}\label{summarizing-two-categorical-variables}}
+\addcontentsline{toc}{subsubsection}{Summarizing two categorical variables}
 
 Are private 4-year institutions smaller than public one? The following set of code will create a segmented bar plot of size of the institution by sector. Enter the variable \texttt{Sector} for explanatory and \texttt{Size} for response in line 64. Highlight and run lines 63--69 in the \texttt{R} script file.
 
@@ -5808,9 +5817,9 @@ Use this space to summarize your thoughts and take additional notes on today's a
   Describe and perform a simulation-based hypothesis test for a single proportion.
 \item
   Interpret and evaluate a p-value for a simulation-based hypothesis test for a single proportion.
+\item
+  Explore what a p-value represents
 \end{itemize}
-
-*Explore what a p-value represents
 
 \hypertarget{steps-of-the-statistical-investigation-process-2}{%
 \subsection{Steps of the statistical investigation process}\label{steps-of-the-statistical-investigation-process-2}}
@@ -5924,7 +5933,7 @@ To use the computer simulation, we will need to enter the
   Direction (\texttt{"greater"}, \texttt{"less"}, or \texttt{"two-sided"}):
 \end{itemize}
 
-\vspace{.2in}
+\newpage
 
 We will use the \texttt{one\_proportion\_test()} function in \texttt{R} (in the \texttt{catstats} package) to simulate the null distribution of sample proportions and compute a p-value. Using the provided \texttt{R} script file, fill in the values/words for each \texttt{xx} with your answers from question 18 in the one proportion test to create a null distribution with 1000 simulations. Then highlight and run lines 1--15.
 
@@ -5977,7 +5986,7 @@ We will use the \texttt{one\_proportion\_test()} function in \texttt{R} (in the 
   \textbf{Is the observed statistic likely to happen or unlikely to happen if the true proportion of infants who choose the helper is 0.5? Explain your answer using the plot.}
 \end{enumerate}
 
-\vspace{1in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5991,8 +6000,6 @@ We will use the \texttt{one\_proportion\_test()} function in \texttt{R} (in the 
 
 The value in question 8 is the \textbf{p-value}. The smaller the p-value, the more evidence we have against the null hypothesis. Explain why this makes sense?
 
-\newpage
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{8}
@@ -6004,7 +6011,8 @@ The value in question 8 is the \textbf{p-value}. The smaller the p-value, the mo
 \begin{center}\includegraphics[width=0.9\linewidth]{images/soe_gradient_grayscale} \end{center}
 
 \hypertarget{interpret-the-p-value}{%
-\subsubsection{Interpret the p-value}\label{interpret-the-p-value}}
+\subsubsection*{Interpret the p-value}\label{interpret-the-p-value}}
+\addcontentsline{toc}{subsubsection}{Interpret the p-value}
 
 The p-value measures the probability that we observe a sample proportion as extreme as what was seen in the data or more extreme (matching the direction of the Ha) IF the null hypothesis is true.
 
@@ -6047,7 +6055,7 @@ The p-value measures the probability that we observe a sample proportion as extr
   Fill in the blanks below to interpret the p-value.
 \end{enumerate}
 
-\textbf{We would observe a sample proportion of (value of the sample proportion) \_\_\_\_\_\_\_\_\_\_\_\_\_ or (greater, less, more extreme) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ with a probability of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ IF we assume (Ho in context)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.}
+\textbf{We would observe a sample proportion of (value of the sample proportion) \_\_\_\_\_\_\_\_\_\_\_\_\_ or (greater, less, more extreme) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ with a probability of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ IF we assume (Ho in context)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.}
 \setstretch{1}
 
 \hypertarget{communicate-the-results-and-answer-the-research-question}{%
@@ -6076,7 +6084,8 @@ When we write a conclusion we answer the research question by stating how much e
   Fill in the blanks below to Write a paragraph summarizing the results of the study as if writing a press release. \textbf{Complete your group's paragraph on Gradescope.}
 \end{enumerate}
 
-Researchers were interested if infants observe social cues and would be more likely to choose the helper toy over the hinderer toy. In a sample of (sample size) \_\_\_\_\_\_\_\_\_\_\_\_\_infants, (number of successs) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_chose the helper toy. A simulation null distribution with 1000 simulations was created in RStudio. The p-value was found by calculating the proportion of simulations in the null distribution at the sample statistic of 0.875 and greater. This resulted in a p-value of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_. We would observe a sample proportion of (value of the sample proportion) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ or (greater, less, more extreme) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ with a probability of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ IF we assume (Ho in context)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+Researchers were interested if infants observe social cues and would be more likely to choose the helper toy over the hinderer toy. In a sample of (sample size) \_\_\_\_\_\_\_\_\_\_\_\_\_infants, (number of successs) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_chose the helper toy. A simulation null distribution with 1000 simulations was created in RStudio. The p-value was found by calculating the proportion of simulations in the null distribution at the sample statistic of 0.875 and greater. This resulted in a p-value of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_. We would observe a sample proportion of (value of the sample proportion) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ or (greater, less, more extreme) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ with a probability of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ IF we assume (Ho in context)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
 Based on this p-value, there is (very strong/little to no) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ evidence that the (sample/true)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ proportion of infants age 6 to 10 months who will choose the helper toy is (greater than, less than, not equal to) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 0.5. The results of this study can be generalized to (all infants age 6 to 10 months/infants similar to those in this study)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ as the researchers (did/did not)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ select a random sample.
 
 \setstretch{1}
@@ -8178,7 +8187,7 @@ We will now simulate a \textbf{null distribution} of sample differences in propo
 \setcounter{enumi}{14}
 \tightlist
 \item
-  Simulate one sample using the cards provided by your instructor.
+  Simulate one sample using the cards provided by your instructor. Write down the value of the simulated statistic.
 \end{enumerate}
 
 \vspace{1in}
@@ -8321,7 +8330,7 @@ Using the \texttt{R} script file for this activity, enter your answers for quest
 \item
   When comparing two groups, we are looking at the difference between two parameters. In the null hypothesis, we assume the two parameters are equal, or that there is no difference between the two proportions.
 \item
-  We use the same guidelines for the strength of evidence as we did in Activity 7a.
+  We use the same guidelines for the strength of evidence as we did in Activity 6a.
 \item
   To create one simulated sample on the null distribution for a difference in sample proportions, label \(n_1 + n_2\) cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes \(n_1\) and \(n_2\), representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
 \end{enumerate}
@@ -8785,7 +8794,7 @@ Use the provided \texttt{R} script file to create a segmented bar plot of the da
 \setcounter{enumi}{6}
 \tightlist
 \item
-  Does there appear to be an association between the variables based on the plot? Explain your answer.
+  Based on the plot does there appear to be an association between the variables? Explain your answer.
 \end{enumerate}
 
 \vspace{1in}
@@ -9252,14 +9261,13 @@ Conditions for the sampling distribution of \(\hat{p}_1-\hat{p}_2\) to follow an
 \[
 \hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
 \]
-\newpage
 
 We then check that all four of the following inequalities hold:
 
 \[\hat{p}_{pool} \times n_1 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_1 \geq 10,\]
 \[\hat{p}_{pool} \times n_2 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_2 \geq 10\]
 
-\vspace{.1in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9440,7 +9448,7 @@ Use Rstudio find the p-value for this new sample. Enter the value of the standar
 \setcounter{enumi}{15}
 \tightlist
 \item
-  Suppose another sample of 3562 skiers and snowboarders was taken. In this new sample a difference in proportions of head injuries was found to be -0.009, \(\hat{p}_h - \hat{p}_n = -0.009\) with \(SE(\hat{p}_h - \hat{p}_n) = 0.015\). Calculate the standardized statistic for this new sample.
+  Suppose another sample of 3562 skiers and snowboarders was taken. In this new sample a difference in proportions of head injuries was found to be -0.009, (\(\hat{p}_h - \hat{p}_n = -0.009\)) and \(SE(\hat{p}_h - \hat{p}_n) = 0.015\). Calculate the standardized statistic for this new sample.
 \end{enumerate}
 
 \vspace{0.8in}
@@ -9807,7 +9815,7 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 Researchers compared the efficacy of two treatment regimens to achieve durable glycemic control in children and adolescents with recent-onset type 2 diabetes. A convenience sample of patients 10 to 17 years of age with recent-onset type 2 diabetes were randomly assigned to either a medication (rosiglitazone) or a lifestyle-intervention program focusing on weight loss through eating and activity. Researchers measured whether the patient still needs insulin (failure) or had glycemic control (success). Of the 233 children who received the Rosiglitazone treatment, 143 had glycemic control, while of the 234 who went through the lifestyle-intervention program, 125 had glycemic control. Is there evidence that there is difference in proportion of patients that achieve durable glycemic control between the two treatments? Use Rosiglitazone -- Lifestyle as the order of subtraction.
 
-Upload and open the \texttt{R} script file for Week 10 lab. Upload and import the csv file, \texttt{diabetes}. Enter the name of the data set (see the environment tab) for \texttt{datasetname} in the R script file in line 5. Highlight and run lines 1--6 to get the counts for each combination of categories.
+Upload and open the \texttt{R} script file for Week 9 lab. Upload and import the csv file, \texttt{diabetes}. Enter the name of the data set (see the environment tab) for \texttt{datasetname} in the R script file in line 5. Highlight and run lines 1--6 to get the counts for each combination of categories.
 
 \begin{Shaded}
 \begin{Highlighting}[]
