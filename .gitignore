@@ -3,7 +3,6 @@
 .RData
 .Ruserdata
 .DS_Store
-IntroStatActivities.pdf
-_bookdown_files
 _book
-.rds
+_bookdown_files
+*.rds
