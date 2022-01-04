@@ -40,7 +40,7 @@ These data are on a subset of institutions that met the following selection crit
 
 \begin{center}\includegraphics[width=0.75\linewidth]{images/IPEDS_Description} \end{center}
 
-#### Summarizing a single quantitative variable
+#### Summarizing a single quantitative variable {-}
 
 1. What are the observational units for this study?
 
@@ -115,11 +115,11 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 
 Let's examine how the presence of outliers affect the values of center and spread. 
 
-9.  Report the two measures of center for retention given in the `R` output.
+9.  Report the two measures of center for retention given in the `R` output above question 3.
 
 \vspace{0.8in}
 
-10.  Report the two measures of spread for retention.
+10.  Report the two measures of spread for retention given in the `R` output above question 3.
 
 \vspace{0.8in}
 
@@ -159,7 +159,7 @@ IPEDS %>% # Data set piped into...
 
 \vspace{0.5in}
 
-#### Summarizing a single categorical and single quantitative varible
+#### Summarizing a single categorical and single quantitative variable {-}
 
 Is there a difference in retention rates for public and private 4-year institutions?  In the next part of the activity we will compare retention rates for public and private 4-year institutions.  Note that this variable (public or private) is `Control` in the data set.
 
@@ -207,7 +207,7 @@ IPEDS %>%  # Data set piped into...
 
 \newpage
 
-####  Summarizing two categorical variables
+####  Summarizing two categorical variables {-}
 
 Are private 4-year institutions smaller than public one? The following set of code will create a segmented bar plot of size of the institution by sector.  Enter the variable `Sector` for explanatory and `Size` for response in line 64. Highlight and run lines 63--69 in the `R` script file.
 

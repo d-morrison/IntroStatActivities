@@ -78,14 +78,13 @@ Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an a
 $$
 \hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
 $$
-\newpage
 
 We then check that all four of the following inequalities hold:
 
 $$\hat{p}_{pool} \times n_1 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_1 \geq 10,$$
 $$\hat{p}_{pool} \times n_2 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_2 \geq 10$$
 
-\vspace{.1in}
+\newpage
 
 4.  Is the independence condition met? Explain your answer.
 
@@ -190,7 +189,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 \vspace{0.3in}
 
-16. Suppose another sample of 3562 skiers and snowboarders was taken.  In this new sample a difference in proportions of head injuries was found to be -0.009, $\hat{p}_h - \hat{p}_n = -0.009$ with $SE(\hat{p}_h - \hat{p}_n) = 0.015$.  Calculate the standardized statistic for this new sample.
+16. Suppose another sample of 3562 skiers and snowboarders was taken.  In this new sample a difference in proportions of head injuries was found to be -0.009, ($\hat{p}_h - \hat{p}_n = -0.009$) and  $SE(\hat{p}_h - \hat{p}_n) = 0.015$.  Calculate the standardized statistic for this new sample.
 
 \vspace{0.8in}
 
