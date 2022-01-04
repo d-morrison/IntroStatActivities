@@ -17,8 +17,8 @@ This calendar only lists the in-class activities, RStudio labs and exams each we
 3& M& 1/31& Myopia and Nightlights \\*
 3& W& 2/2& IMDb Movie Reviews \\*
 3& F& 2/4& Week 3 Lab \\ \hline
-4& M& 2/7& Movie Profits - Linear Regression \\*
-4& W& 2/9& Movie Profits - Correlation \\*
+4& M& 2/7& Movie Profits --- Linear Regression \\*
+4& W& 2/9& Movie Profits --- Correlation \\*
 4& F& 2/11& Week 4 Lab \\ \hline
 5& M& 2/14& Exam 1 Review \\*
 5& W& 2/16& Group Midterm Exam 1 \\*	
@@ -54,8 +54,10 @@ Holiday& M--F& 3/14--3/18& \textbf{No Class --- Spring Break} \\ \hline
 15& M& 5/2& Data Exploration \\*
 15& W& 5/4& Final Exam Review \\*
 15& F& 5/6& Final Group Exam \\ \hline
-Finals& TBD & TBD & Final Exam \\ \hline
+Finals& TBD & TBD & Group Common Final Exam \\
+&  &  & See \url{www.montana.edu/registrar/Schedules.html} \\ \hline
 
 \end{longtable}
 
+\nocite{*}
 
