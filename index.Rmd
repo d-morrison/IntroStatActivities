@@ -8,8 +8,6 @@ subtitle: |
     | Spring 2022
     | Montana State University
 output: 
-    bookdown::pdf_book:
-        citation_package: biblatex
     pdf_document:
         citation_package: biblatex
 bibliography: references.bib
