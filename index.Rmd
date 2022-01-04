@@ -3,11 +3,13 @@ title: |
     | **STAT 216 Coursepack**
     | 
     | ![](images/msu-campus.jpg){width=5in}
-author: "Melinda Yager, Jade Schmidt, Dr. Stacey Hancock"
+author: "Melinda Yager, Jade Schmidt, Stacey Hancock"
 subtitle: |
     | Spring 2022
     | Montana State University
 output: 
+    bookdown::pdf_book:
+        citation_package: biblatex
     pdf_document:
         citation_package: biblatex
 bibliography: references.bib
