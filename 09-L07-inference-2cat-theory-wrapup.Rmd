@@ -31,11 +31,20 @@ diabetes %>% group_by(treatment) %>% count(outcome)
 
 2. Complete the following two-way table using the `R` output.
 
-|                         |     Rosiglitazone    |     Lifestyle    |     Total    |
-|-------------------------|----------------------|------------------|--------------|
-|     Glycemic Control    |                      |                  |              |
-|     Insulin Required    |                      |                  |              |
-|     Total               |                      |                  |              |
+\begin{center}
+\begingroup
+\setlength{\tabcolsep}{14pt} % Default value: 6pt
+\renewcommand{\arraystretch}{2} % Default value: 1
+\begin{tabular}{|c|c|c|c|}
+\hline
+ & \multicolumn{2}{|c|}{\textbf{Treatment}} & \\ \hline
+\textbf{Outcome} & Rosiglitazone & Lifestyle & Total \\ \hline
+ Glycemic Control & & & \\ \hline
+ Insulin Required & & & \\ \hline
+ Total & & &  \\ \hline  
+\end{tabular}
+\endgroup
+\end{center}
 
 3. Is the independence condition met for this study? Explain your answer.
 \vspace{0.6in}

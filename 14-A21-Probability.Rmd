@@ -69,15 +69,18 @@ c. What is the probability that a randomly selected student is not a senior give
 
     b. Create a hypothetical two-way table to represent the situation.  
 \begin{center}
-    \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{cccc} \hline
-    \hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ \hline
-    & & & \\ 
-    & & & \\ 
-    & & & \\ \hline
-    Total & & & 100,000 \\ \hline
-    \end{tabular}
-    \end{center}
+\begingroup
+\setlength{\tabcolsep}{15pt} % Default value: 6pt
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|c|c|c|c|} \hline
+\hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ \hline
+& & & \\ \hline
+& & & \\ \hline
+& & & \\ \hline
+Total & & & 100,000 \\ \hline
+\end{tabular}
+\endgroup
+\end{center}
 \vspace{.1in}
 
     c. Find $P(A \mbox{ and } B)$. What does this probability represent in the context of the problem?
@@ -112,15 +115,18 @@ c. What is the probability that a randomly selected student is not a senior give
 \vspace{.1in}
 
     b. Create a hypothetical two-way table to represent the situation.  
-\renewcommand{\arraystretch}{1.5}
 \begin{center}
-\begin{tabular}{cccc} \hline
+\begingroup
+\setlength{\tabcolsep}{15pt} % Default value: 6pt
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|c|c|c|c|} \hline
 \hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ \hline
-& & & \\ 
-& & & \\ 
+& & & \\ \hline
+& & & \\ \hline
 & & & \\ \hline
 Total & & & 100,000 \\ \hline
 \end{tabular}
+\endgroup
 \end{center}
 \vspace{.1in}
 

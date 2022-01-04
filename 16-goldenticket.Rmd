@@ -1,2 +1,2 @@
-\includepdf{GoldenTicket_F21.pdf}
+\includepdf[landscape=true]{GoldenTicket_F21.pdf}
 

@@ -141,12 +141,21 @@ myopia %>% group_by(response) %>% count(explanatory)
 
 10.  Fill in the following table with the values from the `R` output.
 
-|             | Full Light | Nightlight | No Light | Total |
-|-------------|------------|------------|----------|-------|
-| High Myopia |            |            |          |       |
-| Myopia      |            |            |          |       |
-| No Myopia   |            |            |          |       |
-| Total       |            |            |          |       |
+\begin{center}
+\begingroup
+\setlength{\tabcolsep}{14pt} % Default value: 6pt
+\renewcommand{\arraystretch}{2} % Default value: 1
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+ & \multicolumn{3}{|c|}{\textbf{Light Level}} & \\ \hline
+\textbf{Myopia Level} & Full Light & Nightlight & No Light & Total \\ \hline
+ High Myopia & & & & \\ \hline
+ Myopia & & & & \\ \hline
+ No Myopia & & & & \\ \hline
+ Total & & & & \\ \hline  
+\end{tabular}
+\endgroup
+\end{center}
 
 11.  Calculate the proportion of children with high myopia.  Use appropriate notation.
 
