@@ -1,2 +1,0 @@
-\includepdf{goldenticket.pdf}
-
