@@ -8,6 +8,7 @@ This calendar only lists the in-class activities, RStudio labs and exams each we
 \hline
 \textbf{Week}& \textbf{Day}& \textbf{Date}& \textbf{Activity} \\ \hline
 \endhead
+
 1& W& 1/19& Syllabus Review \\*
 1& F& 1/21& Martian Alphabet \\ \hline
 2& M& 1/24& American Indian Address Part A \\*
@@ -47,11 +48,10 @@ Holiday& M--F& 3/14--3/18& \textbf{No Class --- Spring Break} \\ \hline
 13& M& 4/18& Diving Penguins  \\*
 13& W& 4/20& Golf Driving Distances \\*
 13& F& 4/22& Week 13 Lab \\ \hline
-
 14& M& 4/25& What's the probability? \\*
 14& W& 4/27& Relative Risk \\*
 14& F& 4/29& Week 14 Lab \\ \hline
-15& M& 5/2 Data Exploration \\*
+15& M& 5/2& Data Exploration \\*
 15& W& 5/4& Final Exam Review \\*
 15& F& 5/6& Final Group Exam \\ \hline
 Finals& TBD & TBD & Final Exam \\ \hline

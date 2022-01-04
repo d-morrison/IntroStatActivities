@@ -49,7 +49,6 @@ rmd_files: [
   "14-A21-Probability.Rmd",
   "14-A22-relative_risk.Rmd",
   "14-L11-special_topic-wrapup.Rmd",
-  "15-data-exploration.Rmd",
   "15-Exam3-review.Rmd",
   "16-goldenticket.Rmd",
   "17-references.Rmd"

@@ -275,7 +275,6 @@ Total & & & 100,000 \\ \hline
 
 \newpage
 
-
 ## Reading Guide: Exploring Quantitative Data
 
 \setstretch{1.25}

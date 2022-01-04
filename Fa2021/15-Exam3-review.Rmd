@@ -1,4 +1,4 @@
-## Final Exam Review
+# Final Exam Review
 
 \setstretch{1}
 

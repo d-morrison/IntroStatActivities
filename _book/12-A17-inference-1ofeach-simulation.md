@@ -106,7 +106,7 @@ Snow %>%
 
 8.  Write the alternative hypothesis in notation. 
 
-\vspace(0.5in}
+\vspace{0.5in}
 
 #### Summarize and visualize the data {-}
 
