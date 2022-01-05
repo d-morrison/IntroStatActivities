@@ -3,7 +3,7 @@
 \setstretch{1}
 
 
-### Learning objectives
+### Learning outcomes
 
 * Identify whether a study is a paired design or independent groups
 

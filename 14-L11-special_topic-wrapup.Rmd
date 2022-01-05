@@ -2,11 +2,11 @@
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * 
 
-### Efficacy of the COVID Vaccination
+### Efficacy of the COVID vaccination
 
 In November 2021, it was estimated that 59.1\% of US adults ($\ge$ 18 years old) were fully vaccinated against COVID-19.   One factor of vaccination results in lower hospitalization rates. The following two-way table was created based on CDC data on vaccination results in the US.
 

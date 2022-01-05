@@ -1,4 +1,4 @@
-## Activity 13a:  Diving Penguins
+## Activity 13A:  Diving Penguins
 
 \setstretch{1}
 

@@ -46,6 +46,7 @@ rmd_files: [
   "13-A19-regression-simulation.Rmd",
   "13-A20-regression-theory.Rmd",
   "13-L10-regression-wrapup.Rmd",
+  "14-RG-probability-RR.Rmd",
   "14-A21-Probability.Rmd",
   "14-A22-relative_risk.Rmd",
   "14-L11-special_topic-wrapup.Rmd",

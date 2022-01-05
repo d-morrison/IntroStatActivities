@@ -90,7 +90,8 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \vspace{2in}
 
-\rgi Based on the graph, does there appear to be an association between the two variables?  Explain your answer.
+\rgi Based on the graph, does there appear to be an association between the two variables?  
+\rgi Explain your answer.
 
 \vspace{0.5in}
 
@@ -123,7 +124,8 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \vspace{1.5in}
 
-\rgi Based on the graph, does there appear to be an association between the two variables?  Explain your answer.
+\rgi Based on the graph, does there appear to be an association between the two variables?  
+\rgi Explain your answer.
 
 \vspace{0.5in}
 
@@ -194,7 +196,8 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \vspace{2in}
 
-\rgi Based on the graph, does there appear to be an association between the two variables?  Explain your answer.
+\rgi Based on the graph, does there appear to be an association between the two variables?  
+\rgi Explain your answer.
 
 \vspace{0.5in}
 

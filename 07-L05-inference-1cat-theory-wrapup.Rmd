@@ -2,7 +2,7 @@
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * Explain type 1 and type 2 errors in the context of a study.
 
@@ -30,7 +30,7 @@ In this activity, we will examine the possible errors that can be made based on 
 
 To review these concepts, see Sections 5.1, 5.2, and 5.4 in the textbook.  
 
-### ACL Recovery
+### ACL recovery
 
 It is widely reported that the median recovery time for athletes who undergo surgery to repair a torn anterior cruciate ligament (ACL) is 8 months, indicating that 50% of athletes return to their sport within 8 months after an ACL surgery.  Suppose a local physical therapy company hopes to advertise that their rehabilitation program can increase this percentage.  
 

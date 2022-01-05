@@ -2,7 +2,7 @@
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * Identify and create appropriate summary statistics and plots
   given a data set with two quantitative variables.

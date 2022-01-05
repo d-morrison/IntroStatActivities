@@ -1,4 +1,4 @@
-## Activity 1a:  Martian Alphabet
+## Activity 1:  Martian Alphabet
 
 \setstretch{1}
 

@@ -1,8 +1,8 @@
-## Activity 3b:  IMDb Movie Reviews - Displaying Quantitative Variables
+## Activity 3B:  IMDb Movie Reviews --- Displaying Quantitative Variables
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * Identify and create appropriate summary statistics and plots
   given a data set or research question for quantitative data.

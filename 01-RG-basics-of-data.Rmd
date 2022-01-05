@@ -1,6 +1,6 @@
 # Basics of Data
 
-## Reading Guide: Basics of Data
+## Week 1 Reading Guide: Basics of Data
 
 ### Sections 1.1 (Case study) and 1.2 (Data basics) {-}
 
@@ -117,7 +117,7 @@ True or False: If a study does have an explanatory and a response variable, that
 
 True or False: Observational studies can show a naturally occurring association between variables.  
 
-#### Example (Section 1.1 - Case study: Using stents to prevent strokes) {-}
+#### Example (Section 1.1 --- Case study: Using stents to prevent strokes) {-}
 
 1.	What is the principle question the researchers hope to answer?  (We call this the **research question**.)
 \rgs

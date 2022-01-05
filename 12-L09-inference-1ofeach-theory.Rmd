@@ -1,8 +1,8 @@
-## Week 12 Lab :  The Triple Crown
+## Week 12 Lab:  The Triple Crown
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * Given a research question involving one categorical explanatory variable and one quantitative response variable, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols.

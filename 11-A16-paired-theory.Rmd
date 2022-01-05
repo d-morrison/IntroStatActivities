@@ -1,4 +1,4 @@
-## Activity 11b:  Color Interference
+## Activity 11B:  Color Interference
 
 \setstretch{1}
 

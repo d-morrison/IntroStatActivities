@@ -1,8 +1,8 @@
-## Activity 9a:  Winter Sports Helmet Use and Head Injuries --- Theory HT
+## Activity 9A:  Winter Sports Helmet Use and Head Injuries --- Theory-based Hypothesis Test
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * Given a research question involving two categorical variables, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols.

@@ -1,8 +1,8 @@
-## Activity 6a:  Helperer-Hinderer --- Simulation HT
+## Activity 6:  Helperer-Hinderer --- Simulation-based Hypothesis Test
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * Identify the two possible explanations (one assuming the null hypothesis and one assuming the alternative hypothesis) for a relationship seen in sample data.
 

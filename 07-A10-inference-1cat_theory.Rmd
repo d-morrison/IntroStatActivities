@@ -1,8 +1,8 @@
-## Activity 7b:  Handedness of Male Boxers --- Theory-based Methods
+## Activity 7B:  Handedness of Male Boxers --- Theory-based Methods
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * Describe and perform a theory-based hypothesis test for a single proportion.
 
@@ -31,7 +31,7 @@ To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5
 
 Activity 6a and the Week 6 Lab covered simulation-based methods for hypothesis tests involving a single categorical variable. This activity covers theory-based methods for testing a single categorical variable.  
 
-### Handedness of Male Boxers
+### Handedness of male boxers
 
 Left-handedness is a trait that is found in about 10\% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers, we want to see if there is an over-prevalence of left-handed fighters.  In the sample of 500 male boxers, 81 were left-handed.
 
@@ -42,7 +42,7 @@ boxers <- read.csv("https://math.montana.edu/courses/s216/data/Male_boxers_sampl
 boxers %>% count(Stance)  # Count number in each Stance category
 ```
 
-### Review of Summary Stats {-}
+### Review of summary statistics {-}
 
 1.  Write out the parameter of interest for this study.  
 
@@ -58,7 +58,7 @@ boxers %>% count(Stance)  # Count number in each Stance category
 
 \vspace{0.3in}
 
-### Theory-based Methods {-}
+### Theory-based methods {-}
 
 The sampling distribution of a single proportion --- how that proportion varies from sample to sample --- can be mathematically modeled using the normal distribution if certain conditions are met.
 

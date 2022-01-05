@@ -1,6 +1,6 @@
 # Inference for a Single Categorical Variable: Theory-based Methods + Errors and Power
 
-## Week 7 - Reading Guide: Categorical Inference
+## Week 7 Reading Guide: Categorical Inference
 
 ### Section 5.1 (Foundations of inference: Hypothesis tests) {-}
 

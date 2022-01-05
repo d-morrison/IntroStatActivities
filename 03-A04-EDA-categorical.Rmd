@@ -1,4 +1,4 @@
-## Activity 3a:  Graphing Categorical Variables
+## Activity 3A:  Graphing Categorical Variables
 
 \setstretch{1}
 
@@ -25,7 +25,7 @@ In today's activity, we will review summary measures and plots for categorical v
 
 To review these concepts, see Sections 2.1 and 2.2 in the textbook.  
 
-### Graphing Categorical Variables
+### Graphing categorical variables
 
 ### Nightlight use and myopia {-}
 

@@ -2,7 +2,7 @@
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * Given a research question involving two categorical variables, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols.
@@ -15,7 +15,7 @@
 
 * Create and interpret a theory-based confidence interval for a difference in proportions.
 
-### Glycemic Control in Diabetic Adolescents
+### Glycemic control in diabetic adolescents
 
 Researchers compared the efficacy of two treatment regimens to achieve durable glycemic control in children and adolescents with recent-onset type 2 diabetes.  A convenience sample of patients 10 to 17 years of age with recent-onset type 2 diabetes were randomly assigned to either a medication (rosiglitazone) or a lifestyle-intervention program focusing on weight loss through eating and activity.  Researchers measured whether the patient still needs insulin (failure) or had glycemic control (success).  Of the 233 children who received the Rosiglitazone treatment, 143 had glycemic control, while of the 234 who went through the lifestyle-intervention program, 125 had glycemic control. Is there evidence that there is difference in proportion of patients that achieve durable glycemic control between the two treatments?  Use Rosiglitazone – Lifestyle as the order of subtraction.
 
@@ -62,12 +62,12 @@ Fill in the missing values/names in the `R` script file in the two-proportion_te
 
 ```{r, echo=TRUE, eval=FALSE}
 two_proportion_test(formula = outcome~treatment, # response ~ explanatory
-                    data= diabetes, # Name of data set
-                    first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
-                    number_repetitions = 1000, # Always use a minimum of 1000 repetitions
-                    response_value_numerator = "xx", # Define which outcome is a success 
-                    as_extreme_as = xx, # Calculated observed statistic (difference in sample proportions)
-                    direction="xx") # Alternative hypothesis direction ("greater","less","two-sided")
+         data= diabetes, # Name of data set
+         first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
+         number_repetitions = 1000, # Always use a minimum of 1000 repetitions
+         response_value_numerator = "xx", # Define which outcome is a success 
+         as_extreme_as = xx, # Calculated observed statistic (difference in sample proportions)
+         direction="xx") # Alternative hypothesis direction ("greater","less","two-sided")
 ```
 
 7. Report the p-value. How much evidence does the p-value provide against the null hypothesis?

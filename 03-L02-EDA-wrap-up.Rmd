@@ -2,7 +2,7 @@
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * Identify and create appropriate summary statistics and plots
   given a data set or research question for data.
@@ -17,7 +17,7 @@
   
 * Use `R` to create graphs of variables.
 
-### IPEDS
+### The Integrated Postsecondary Education Data System (IPEDS)
 
 Download and open the provided `R` script file for the week 3 lab to answer the following questions.  **Remember that bolded questions will be answered on Gradescope for your group.**
 

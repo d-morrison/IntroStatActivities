@@ -65,7 +65,7 @@ For the next exercises, identify the explanatory variable, the response variable
 \vspace{0.25in}
 
 
-### Atrial Fibrillation
+### Atrial fibrillation
 
 Atrial fibrillation is an irregular and often elevated heart rate. In some people, atrial fibrillation will come and go on its own, but others will experience this condition on a permanent basis.  When atrial fibrillation is constant, medications are required to stabilize the patient's heart rate and to help prevent blood clots from forming.  Pharmaceutical scientists at a large pharmaceutical company believe they have developed a new medication that effectively stabilizes heart rates in people with permanent atrial fibrillation.  They set out to conduct a trial study to investigate the new drug.  The scientists will need to compare the proportion of patients whose heart rate is stabilized between two groups of subjects, one of whom is given a placebo and the other given the new medication. 
 

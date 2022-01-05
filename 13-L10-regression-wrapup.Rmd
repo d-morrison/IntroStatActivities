@@ -2,7 +2,7 @@
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * Given a research question involving two quantitative variables, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols.
@@ -14,7 +14,7 @@
 * Create and interpret a confidence interval for a slope or correlation.
 
 
-### COVID Immunization and Infection Rates
+### COVID immunization and infection rates
 
 According to the *Washington Post* "States with higher vaccination rates now have markedly fewer coronavirus cases, as infections are dropping in places where most residents have been immunized and are rising in many places people have not."  In this article they found that there are differences in infection rates for different counties within a specific state.  To check this claim, a random sample of 125 counties from different states was assessed.  Vaccination rates and number of cases per 100,000 residents were found for each county.  Researchers want to assess if counties with a high vaccination rate tend to have lower coronavirus case rates.
 
@@ -65,8 +65,8 @@ covid %>% # Pipe data set into...
   geom_point() +  # Add scatterplot of points
   labs(x = "Percent Immunized",  # Label x-axis
        y = "Number of cases per 100K",  # Label y-axis
+       # Be sure to tile your plots
        title = "Scatterplot of Percent Immunized vs. Infection Rate of COVID in US Counties") + 
-               # Be sure to tile your plots
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
 

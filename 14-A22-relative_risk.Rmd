@@ -1,10 +1,12 @@
-## Activity 14b:  Titanic Survivors - Relative Risk
+## Activity 14B:  Titanic Survivors --- Relative Risk
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
-* Evaluate two categorical variables using relative risk.
+* Interpret the value of relative risk in terms of a percent increase or decrease.
+
+* Evaluate the association between two categorical variables using relative risk.
 
 ### Terminology review
 In today's activity, we will look another summary. Some terms covered in this activity are:
@@ -29,7 +31,7 @@ To review these concepts, see Chapter 5 in your textbook.
 
 \vspace{0.5in}
 
-4.  You’re on vacation in Spokane and decide to buy a \$450 pair of skis. The sales tax is 6.5\%. How much do you pay?
+4.  You’re on vacation in Spokane and decide to buy a \$450 pair of skis. The sales tax is 6.5\%. How much do you pay in total?
 
 \vspace{0.5in}
 
@@ -49,11 +51,21 @@ survive %>% group_by(Class_Dept) %>% count(Survived)
 
 5.  Fill in the data from the `R` output to complete the two-way table.
 
-|       	| 1st Class Passenger 	| 3rd Class Passenger 	| Total 	|
-|-------	|---------------------	|---------------------	|-------	|
-| Dead  	|                     	|                     	|       	|
-| Alive 	|                     	|                     	|       	|
-| Total 	|                     	|                     	|       	|
+\begin{center}
+\begingroup
+\setlength{\tabcolsep}{14pt} % Default value: 6pt
+\renewcommand{\arraystretch}{2} % Default value: 1
+\begin{tabular}{|c|c|c|c|}
+\hline
+ & \multicolumn{2}{|c|}{\textbf{Class}} & \\ \hline
+\textbf{Outcome} & 1st Class Passenger & 3rd Class Passenger & Total \\ \hline
+ Dead & & &  \\ \hline
+ Alive & & &  \\ \hline
+ Total & & &  \\ \hline  
+\end{tabular}
+\endgroup
+\end{center}
+
 
 6.  Calculate the conditional proportion of 1st class passengers that died.
 
@@ -63,7 +75,7 @@ survive %>% group_by(Class_Dept) %>% count(Survived)
 
 \vspace{0.8in}
 
-8. Calculate the difference in conditional proportions of death for 3rd and 1st class passengers.  Use 3rd - 1st as the order of subtraction.
+8. Calculate the difference in conditional proportions of death for 3rd and 1st class passengers.  Use 3rd $-$ 1st as the order of subtraction.
 
 \vspace{0.8in}
 

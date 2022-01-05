@@ -1,4 +1,4 @@
-## Activity 13b:  Golf Driving Distance
+## Activity 13B:  Golf Driving Distance
 
 \setstretch{1}
 
@@ -29,7 +29,7 @@ In this week's in-class activity, we will use theory-based methods for hypothesi
 To review these concepts, see Chapters 3 and 7 in the textbook.
 
 
-### Golf Driving Distance
+### Golf driving distance
 
 In golf the goal is to complete a hole with as few strokes as possible.  A golfer desires to have a good driving distance to start a hole in order to minimize the strokes necessary to complete the hole.  This data was collecting on 354 PGA and LGPA players in 2008.  For each player, the average driving distance (yards), fairway accuracy (percentage), and sex was measured.  Use this data to assess, "Does a PGA golfer give up accuracy when they hit the ball farther?"
 
@@ -182,7 +182,8 @@ golf %>%
   labs(x = "Driving Distance (m)",  # Label x-axis
        y = "Percent Accuracy",  # Label y-axis
        color = "Sex", shape = "Gender",
-       title = "Scatterplot of Golf Driving Distance and Percent Accuracy by Sex") + # Be sure to title your plots
+       # Be sure to title your plots
+       title = "Scatterplot of Golf Driving Distance and Percent Accuracy by Sex") + 
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
 

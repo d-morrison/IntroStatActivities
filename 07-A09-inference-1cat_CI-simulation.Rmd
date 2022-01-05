@@ -1,8 +1,8 @@
-## Activity 7a:  Helper-Hinderer --- Simulation CI
+## Activity 7A:  Helper-Hinderer --- Simulation-based Confidence Interval
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * Use bootstrapping to find a confidence interval for a single proportion.
 

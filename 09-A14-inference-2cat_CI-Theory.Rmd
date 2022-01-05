@@ -1,8 +1,8 @@
-## Week 9b:  Winter Sports Helmet Use and Head Injuries --- Theory CI
+## Week 9B:  Winter Sports Helmet Use and Head Injuries --- Theory-based Confidence Interval
 
 \setstretch{1}
 
-### Learning objectives
+### Learning outcomes
 
 * Assess the conditions to use the normal distribution model for a difference in proportions.
 
