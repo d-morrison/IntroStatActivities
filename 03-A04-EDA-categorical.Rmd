@@ -135,7 +135,7 @@ myopia %>% # Data set piped into...
 
 Fill in the name of the explanatory variable and the response variable in line 46 in the `R` script file, highlight and run line 46 to get the counts for each combination of levels of variables. 
 
-```{r, echo=TRUE, warning=FALSE, message=FALSE, collapse=FALSE, eval=FALSE}
+```{r, echo=TRUE, eval=FALSE}
 myopia %>% group_by(response) %>% count(explanatory)
 ```
 
@@ -156,6 +156,7 @@ myopia %>% group_by(response) %>% count(explanatory)
 \end{tabular}
 \endgroup
 \end{center}
+
 
 11.  Calculate the proportion of children with high myopia.  Use appropriate notation.
 
