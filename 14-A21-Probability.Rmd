@@ -69,11 +69,11 @@ c. What is the probability that a randomly selected student is not a senior give
     
 \begin{center}
 \begin{tabular}{|c|c|c|c|} \hline
-\hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ 
+\hspace{1in} & $A = $\hspace{1in} & $A^c = $\hspace{1in} & Total \\ 
 & & & \\ \hline
-& & & \\ 
+$B = $& & & \\ 
 & & & \\ \hline
-& & & \\ 
+$B^c = $& & & \\ 
 & & & \\ \hline
 Total & & & 100,000 \\ 
 & & & \\ \hline
@@ -116,11 +116,11 @@ Total & & & 100,000 \\
     
 \begin{center}
 \begin{tabular}{|c|c|c|c|} \hline
-\hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ 
+\hspace{1in} & $L = $\hspace{1in} & $L^c = $\hspace{1in} & Total \\ 
 & & & \\ \hline
-& & & \\ 
+$S = $ & & & \\ 
 & & & \\ \hline
-& & & \\
+$S^c = $ & & & \\
 & & & \\ \hline
 Total & & & 100,000 \\ 
 & & & \\ \hline

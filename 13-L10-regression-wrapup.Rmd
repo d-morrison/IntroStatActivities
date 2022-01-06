@@ -90,7 +90,7 @@ hist(covidLM$resid, xlab="Residuals", ylab="Frequency",
 
 #### Ask a research question {-}
 
-6. Write out the null and alternative hypotheses in notation to test correlation between the percent immunized in US counties and the infection rate.
+6. Write out the null and alternative hypotheses in notation to test *correlation* between the percent immunized in US counties and the infection rate.
 
 |    $H_O:$
 
@@ -100,7 +100,7 @@ hist(covidLM$resid, xlab="Residuals", ylab="Frequency",
 
 ##### Hypothesis test {-}
 
-Use the `regression_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample **correlations** and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `bears`), the statistic for the test, number of repetitions, the sample statistic (value of correlation), and the direction of the alternative hypothesis.
+Use the `regression_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample **correlations** and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `covid`), the summary measure used for the test, number of repetitions, the sample statistic (value of correlation), and the direction of the alternative hypothesis.
 
 The response variable name is `Case_per_100K` and the explanatory variable name is `PercentImmunized`.
 
@@ -170,7 +170,7 @@ regression_bootstrap_CI(Case_per_100K~PercentImmunized, # response ~ explanatory
 14. What type of error is possible?
 \vspace{0.3in}
 
-15. Write this error in context of the problem.
+15. Interpret this error in context of the problem.
 \vspace{0.8in}
 
 16. Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper.  **Upload a copy of your paragraph to Gradescope for your group.**  Be sure to describe:

@@ -37,7 +37,7 @@ To review these concepts, see Chapter 5 in your textbook.
 
 ### Titanic Survivors
 
-A complete data set exists listing all those aboard HMS Titanic and including related facts about them including age, how much they paid for their ticket, which boat they survived in (if they survived), and their job if they were crew members. Stories, biographies and pictures can be found on the site: www.encyclopedia-titanica.org/.  Did all passengers aboard the Titanic have the same chance of survival?  Was the risk of death higher among 3rd class passengers compared to 1st class passengers?
+A complete data set exists listing all those aboard HMS Titanic and includes related facts about each person including age, how much they paid for their ticket, which boat they survived in (if they survived), and their job if they were crew members. Stories, biographies and pictures can be found on the site: www.encyclopedia-titanica.org/.  Did all passengers aboard the Titanic have the same chance of survival?  Was the risk of death higher among 3rd class passengers compared to 1st class passengers?
 
 These counts can be found in `R` by using the `count()` function:
 ```{r, echo=TRUE, warning=FALSE, message=FALSE, collapse=FALSE}
@@ -106,6 +106,30 @@ $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 13. Interpret the value of relative risk as a percent increase or percent decrease in death.
 
 \newpage
+
+### Risk in the News
+
+14.  Find a recent news article discussing 'risk'.  Summarize the article below by answering the following questions.
+
+* What is the article discussing the risk of?  (This is the a *success* for the study.)
+
+\vspace{0.5in}
+
+* What two groups are being compared?  (These are the two levels of the *explanatory* variable.)
+
+\vspace{0.5in}
+
+* What is the percent increase/decrease in risk reported?  What is the relative risk comparing the two groups?
+
+\vspace{0.5in}
+
+* Does the news report appear to indicate that the reported difference in the groups is statistically significant?  Do you agree with the report?  If so, explain why.  If not, what further information would you need to assess statistical significance?
+
+\vspace{1in}
+
+* Does the news report appear to indicate a causal relationship exists based on the reported relative risk?  Do you agree with the report?  Justify your answer.
+
+\vspace{1in}
 
 
 ### Take-home messages
