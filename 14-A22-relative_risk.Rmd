@@ -40,9 +40,10 @@ To review these concepts, see Chapter 5 in your textbook.
 A complete data set exists listing all those aboard HMS Titanic and including related facts about them including age, how much they paid for their ticket, which boat they survived in (if they survived), and their job if they were crew members. Stories, biographies and pictures can be found on the site: www.encyclopedia-titanica.org/.  Did all passengers aboard the Titanic have the same chance of survival?  Was the risk of death higher among 3rd class passengers compared to 1st class passengers?
 
 These counts can be found in `R` by using the `count()` function:
-```{r, echo=TRUE, warning=FALSE, message=FALSE, collapse=FALSE, eval=FALSE}
+```{r, echo=TRUE, warning=FALSE, message=FALSE, collapse=FALSE}
 # Read data set in
-survive <- Titanic %>%
+survive <- read.csv("https://math.montana.edu/courses/s216/data/Titanic.csv")
+survive <- survive %>%
   filter(Class_Dept == "1st Class Passenger" | Class_Dept == "3rd Class Passenger")
 survive %>% group_by(Class_Dept) %>% count(Survived)
 ```
