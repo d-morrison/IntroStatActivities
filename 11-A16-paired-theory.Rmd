@@ -80,7 +80,7 @@ Conditions for the sampling distribution of $\bar{x}$ to follow an approximate N
 
     - $n \geq 30$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers in the data, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
     
-    - $ \geq 100$: If the sample size $n$ is at least 100 (regardless of the presence of skew or outliers), we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
+    - $n \geq 100$: If the sample size $n$ is at least 100 (regardless of the presence of skew or outliers), we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
  
 ```{r tdist, echo = F, fig.cap = "Comparison of the standard Normal vs t-distribution with various degrees of freedom"}
 # Display the Student's t distributions with various
