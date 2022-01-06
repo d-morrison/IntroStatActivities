@@ -102,8 +102,6 @@ True or false: To calculate a predicted $y$-value from a given $x$-value, just l
 
 True or false: A positive residual indicates the data point is above the regression line.
 
-\newpage 
-
 #### Example: Brushtail possums {-}
 
 1.	What are the observational units?  

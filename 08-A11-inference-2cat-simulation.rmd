@@ -66,7 +66,8 @@ randomly ____________ (assigned/selected).
 \begin{center}
 \begin{tabular}{|c|c|c|c|}\hline
 & & Study Type & \\ \hline
-Selection of Cases & Random Sample & Randomized Experiment & Observational Study \\ \hline
+& & Randomized Experiment & Observational Study \\ \hline
+Selection of Cases & Random Sample &  &  \\ \hline
 & No Random Sample & & \\ \hline
 \end{tabular}
 \end{center}

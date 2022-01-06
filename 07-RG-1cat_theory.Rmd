@@ -80,8 +80,6 @@ Example: `pnorm(mean = 5, sd = 2, q = 3, lower.tail = TRUE)` will give us the pr
 pnorm(mean = 5, sd = 2, q = 3, lower.tail = TRUE)
 ```
 
-\newpage
-
 Changing to `lower.tail = FALSE` will give the proportion of the distribution which is *above* the value `x`.
 
 ```{r, echo=TRUE, eval=TRUE}
