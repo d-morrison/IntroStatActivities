@@ -112,7 +112,7 @@ The response variable name is `Complaints` and the explanatory variable name is 
 
 \vspace{.2in}
 
-* Statistic (choose `"slope"` or `"correlation"`):
+* Summary measure (choose `"slope"` or `"correlation"`):
 
 \vspace{.2in}
 * As extreme as (enter the value for the sample slope):
@@ -129,7 +129,7 @@ Using the `R` script file for this activity, enter your answers for question 8 i
 regression_test(Case_per_100K~PercentImmunized, # response ~ explanatory
                data = covid, # Name of data set
                direction = "xx", # Sign in alternative ("greater", "less", "two-sided")
-               statistic = "xx", # "slope" or "correlation"
+               summary_measure  = "xx", # "slope" or "correlation"
                as_extreme_as = xx, # Observed slope or correlation
                number_repetitions = 1000) # Number of simulated samples for null distribution
        
@@ -149,7 +149,7 @@ We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` p
 regression_bootstrap_CI(Case_per_100K~PercentImmunized, # response ~ explanatory
    data = covid, # Name of data set
    confidence_level = xx, # Confidence level as decimal
-   statistic = "xx", # Slope or correlation
+   summary_measure = "xx", # Slope or correlation
    number_repetitions = 1000) # Number of simulated samples for bootstrap distribution
 ```
 10.  Report the bootstrap 90\% confidence interval in interval notation.  

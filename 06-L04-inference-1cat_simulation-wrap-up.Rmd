@@ -79,7 +79,7 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
           number_repetitions = 1000, # Enter number of simulations
           as_extreme_as = xx, # Observed statistic
           direction = "xx", # Specify direction of alternative hypothesis
-          report_value = "proportion") # Reporting proportion or number of successes?
+          summary_measure = "proportion") # Reporting proportion or number of successes?
 ```
 
 4. Sketch the null distribution created from the `R` code here.
