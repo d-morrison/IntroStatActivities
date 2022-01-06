@@ -52,18 +52,17 @@ survive %>% group_by(Class_Dept) %>% count(Survived)
 5.  Fill in the data from the `R` output to complete the two-way table.
 
 \begin{center}
-\begingroup
-\setlength{\tabcolsep}{14pt} % Default value: 6pt
-\renewcommand{\arraystretch}{2} % Default value: 1
 \begin{tabular}{|c|c|c|c|}
 \hline
  & \multicolumn{2}{|c|}{\textbf{Class}} & \\ \hline
 \textbf{Outcome} & 1st Class Passenger & 3rd Class Passenger & Total \\ \hline
- Dead & & &  \\ \hline
- Alive & & &  \\ \hline
- Total & & &  \\ \hline  
+ Dead & & &  \\ 
+ & & & \\ \hline
+ Alive & & &  \\ 
+ & & & \\ \hline
+ Total & & &  \\ 
+ & & & \\ \hline  
 \end{tabular}
-\endgroup
 \end{center}
 
 
@@ -110,7 +109,9 @@ $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 
 ### Take-home messages
 
-1.  Relative risk evaluates the percent increase or percent decrease in the response variable attributed to the explanatory variable.  To find the percent increase or percent decrease we calculate the following $\text{percent change}=(RR - 1)\times 100\%$. If relative risk is less than 1 there is a percent decrease.  If relative risk is greater than 1 there is a percent increase.
+1. Relative risk calculates the ratio of the proportion of successes in group 1 compared to the proportion of successes in group 2.
+
+2. Relative risk evaluates the percent increase or percent decrease in the response variable attributed to the explanatory variable.  To find the percent increase or percent decrease we calculate the following $\text{percent change}=(RR - 1)\times 100\%$. If relative risk is less than 1 there is a percent decrease.  If relative risk is greater than 1 there is a percent increase.
 
 ### Additional notes
 

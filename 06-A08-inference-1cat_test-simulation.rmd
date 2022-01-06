@@ -95,7 +95,7 @@ When performing a hypothesis test, we must first identify the null hypothesis.  
 
 \vspace{0.3in}
 
-7.  Using the parameter of interest in question 5, write out the null hypothesis in words.  That is, what do we assume to be true about the parameter of interest when we perform our simulation?
+7.  Using the parameter of interest in question 5, write out the null hypothesis in words.  That is, what do we assume to be true about the parameter of interest when we perform our simulation? 
 
 \vspace{0.8in}
 
@@ -153,7 +153,7 @@ Let's think about how to use cards to create one simulation of 16 infants under 
 
 \vspace{1.5in}
 
-17. Circle the observed statistic (value from question ) on the distribution you drew in question 16.  Where does this statistic fall in this distribution: Is it near the center of the distribution (near 0.5) or in one of the tails of the distribution?  
+17. Circle the observed statistic (value from question 3) on the distribution you drew in question 16.  Where does this statistic fall in this distribution: Is it near the center of the distribution (near 0.5) or in one of the tails of the distribution?  
 
 \vspace{1in}
 

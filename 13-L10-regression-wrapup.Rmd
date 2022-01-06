@@ -102,7 +102,7 @@ hist(covidLM$resid, xlab="Residuals", ylab="Frequency",
 
 Use the `regression_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample **correlations** and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `bears`), the statistic for the test, number of repetitions, the sample statistic (value of correlation), and the direction of the alternative hypothesis.
 
-The response variable name is `Complaints` and the explanatory variable name is `Food`.
+The response variable name is `Case_per_100K` and the explanatory variable name is `PercentImmunized`.
 
 7. What inputs should be entered for each of the following to create the simulation to test correlation?
 

@@ -104,7 +104,6 @@ Method for creating a hypothetical two-way table:
 \rgi Finally,
 \rgs
 
-\newpage
 \rgi Hypothetical two-way table:
 
 \begin{center}

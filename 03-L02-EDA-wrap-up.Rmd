@@ -197,7 +197,7 @@ IPEDS %>%  # Data set piped into...
 
 \vspace{0.8in}
 
-18.  Does there appear to be an association between retention rates and type of university?  Explain.
+18.  Does there appear to be an association between retention rates and type of university?  Explain your answer.
 
 \newpage
 
@@ -216,7 +216,7 @@ IPEDS %>%
 ```
 
 
-19.  **Does there appear to be an association between sector and size of 4-year institutions?** 
+19.  **Does there appear to be an association between sector and size of 4-year institutions?  Explain your answer using the plot.** 
 \vspace{0.5in}
 
 

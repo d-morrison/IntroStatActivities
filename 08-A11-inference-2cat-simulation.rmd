@@ -177,7 +177,7 @@ The response variable name is `Behavior` and the explanatory variable name is `C
 
 \vspace{.15in}
 
-Using the `R` script file for this activity, enter your answers for question 17 in place of the `xx`'s to produce the null distribution with 1000 simulations; highlight and run lines 1--16.
+Using the `R` script file for this activity, enter your answers for question 16 in place of the `xx`'s to produce the null distribution with 1000 simulations; highlight and run lines 1--16.
 
 ```{r, echo=TRUE, eval=FALSE}
 two_proportion_test(formula = Behavior~Condition, # response ~ explanatory

@@ -106,6 +106,8 @@ We will use the `regression_test()` function in `R` (in the `catstats` package) 
 
 The response variable name is `Duration` and the explanatory variable name is `Dive_HeartRate`.
 
+\newpage
+
 8. What inputs should be entered for each of the following to create the simulation to test regression slope?
 
 \vspace{.5 mm}

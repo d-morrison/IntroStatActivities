@@ -106,7 +106,7 @@ revenueLM <- lm(revenue_mil ~ budget_mil, data=movies)
 summary(revenueLM)$coefficients # Display coefficient summary
 ```
 
-6.  Write out the least squares line using the summary statistics provided above in context of the problem.
+6.  Write out the least squares regression line using the summary statistics provided above in context of the problem.
 
 \vspace{.5in}
 

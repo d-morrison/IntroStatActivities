@@ -86,8 +86,6 @@ hikes %>%
   summarize(favstats(response~explanatory))
 ```
 
-\newpage
-
 6. **Calculate the summary statistic (difference in means) for this study.  Use appropriate notation with clearly defined subscripts.**
 
 \vspace{1in}

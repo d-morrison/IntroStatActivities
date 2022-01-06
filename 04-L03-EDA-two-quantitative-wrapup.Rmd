@@ -85,7 +85,7 @@ penguinsLM <- lm(response~explanatory, data=penguins)
 summary(penguinsLM)$coefficients # Display coefficient summary
 ```
 
-5.  Write out the least squares line using the summary statistics from the `R` output in context of the problem.
+5.  Write out the least squares regression line using the summary statistics from the `R` output in context of the problem.
 
 \vspace{.5in}
 
@@ -93,7 +93,7 @@ summary(penguinsLM)$coefficients # Display coefficient summary
 
 \vspace{.8in}
 
-7. **Using the least squares line from question 5, predict the body mass for a penguin with a flipper length of 181 mm.**
+7. **Using the least squares regression line from question 5, predict the body mass for a penguin with a flipper length of 181 mm.**
 
 \vspace{.6in}
 

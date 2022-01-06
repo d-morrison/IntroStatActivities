@@ -4,7 +4,13 @@
 
 ### Learning outcomes
 
-* 
+* Recognize and simulate probabilities as long-run frequencies.
+
+* Use two-way tables to calculate conditional probabilities.
+
+* Interpret the value of relative risk in terms of a percent increase or decrease.
+
+* Evaluate the association between two categorical variables using relative risk.
 
 ### Efficacy of the COVID vaccination
 
