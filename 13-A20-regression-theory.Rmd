@@ -7,13 +7,13 @@
 * Given a research question involving two quantitative variables, construct the null and alternative hypotheses
   in words and using appropriate statistical symbols.
   
-* Assess the conditions to use the normal distribution model for a slope or correlation.
+* Assess the conditions to use the normal distribution model for a slope.
 
-* Find the T test statistic (T-score) for a slope or correlation based off of `lm()` output in `R`.
+* Find the T test statistic (T-score) for a slope based off of `lm()` output in `R`.
 
-* Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a slope or correlation.
+* Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a slope.
 
-* Create and interpret a theory-based confidence interval for a slope or correlation.
+* Create and interpret a theory-based confidence interval for a slope.
 
 * Use a confidence interval to determine the conclusion of a hypothesis test.
 
@@ -31,7 +31,7 @@ To review these concepts, see Chapters 3 and 7 in the textbook.
 
 ### Golf driving distance
 
-In golf the goal is to complete a hole with as few strokes as possible.  A golfer desires to have a good driving distance to start a hole in order to minimize the strokes necessary to complete the hole.  This data was collecting on 354 PGA and LGPA players in 2008 [@pga].  For each player, the average driving distance (yards), fairway accuracy (percentage), and sex was measured.  Use this data to assess, "Does a PGA golfer give up accuracy when they hit the ball farther?"
+In golf the goal is to complete a hole with as few strokes as possible.  A long driving distance to start a hole can help minimize the strokes necessary to complete the hole, as long as that drive stays on the fairway.  Data was collecting on 354 PGA and LGPA players in 2008 [@pga].  For each player, the average driving distance (yards), fairway accuracy (percentage), and sex was measured.  Use this data to assess, "Does a professional golfer give up accuracy when they hit the ball farther?"
 
 ```{r, echo = TRUE, collapse=FALSE}
 # Read in data set
@@ -107,7 +107,7 @@ lm.golf <- lm(response~explanatory, data=golf) # lm(response~explanatory)
 round(summary(lm.golf)$coefficients, 5)
 ```
 
-5.  Using the output from the evaluated `R` code above, write the equation of the regression line using appropriate statistical notation.
+5.  Using the output from the evaluated `R` code above, write the equation of the regression line in the context of the problem using appropriate statistical notation.
 
 \vspace{1in}
 
@@ -126,19 +126,22 @@ $$
  
 We will use the linear model `R` output above to get the estimate for slope and the standard error of the slope.
 
-7.  Calculate the standardized statistic for slope.  Identify where this calculated value is in the linear model `R` output.
+7.  What are the values of $b_1$ and $SE(b_1)$?  Where in the linear model `R` output can you find these values?
+\vspace{0.5in}
+
+8.  Calculate the standardized statistic for slope.  Identify where this calculated value is in the linear model `R` output.
 
 \newpage
 
-8.  Interpret the standardized statistic in context of the problem.
+9.  Interpret the standardized statistic in context of the problem.
 
 \vspace{0.8in}
 
-9.  Using the linear model `R` output, report the p-value for the test of significance for slope.
+10.  Using the linear model `R` output, report the p-value for the test of significance for slope.
 
 \vspace{0.5in}
 
-10. Based on the p-value, how much evidence is there against the null hypothesis?
+11. Based on the p-value, how much evidence is there against the null hypothesis?
 
 \vspace{0.5in}
 
@@ -154,20 +157,20 @@ The $t^*$ multiplier comes from a $t$-distribution with $n-2$ degrees of freedom
 qt(0.975, 352) # 95% t* multiplier 
 ```
 
-11. Calculate the 95\% confidence interval for the true slope.
+12. Calculate the 95\% confidence interval for the true slope.
 \vspace{0.8in}
 
-12. Interpret the 95\% confidence interval in context of the problem.
+13. Interpret the 95\% confidence interval in context of the problem.
 
 \vspace{.8in}
 
 #### Communicate the results and answer the research question {-}
 
-13. Based on the p-value, write a conclusion in context of the problem.
+14. Based on the p-value, write a conclusion in context of the problem.
 
 \vspace{.8in}
 
-14. Does the p-value agree with the 95\% confidence interval?  What does each tell you about the null hypothesis?
+15. Does the p-value agree with the 95\% confidence interval?  What does each tell you about the null hypothesis?
 
 \vspace{.6in}
 
@@ -190,20 +193,21 @@ golf %>%
 15. Does the association between driving distance and percent accuracy change dependent on sex of the golfer?  Explain your answer.
 \vspace{1in}
 
-16.  **Explain the impact sex has on the two variables.**
+16.  Explain the impact sex has on the two variables.
 \vspace{1in}
 
 ### Take-home messages
 
-1.	The p-value for a test for correlation should be approximately the same as the p-value for the test of slope.  In the simulation test, we just change the statistic type from slope to correlation and use the appropriate sample statistic value.  
 
-2. To check the validity conditions for using theory-based methods we must use the residual diagnostic plots to check for normality of residuals and constant variability, and the scatterplot to check for linearity.  
+1. To check the validity conditions for using theory-based methods we must use the residual diagnostic plots to check for normality of residuals and constant variability, and the scatterplot to check for linearity.  
 
-3. To interpret a confidence interval for the slope, think about how to interpret the sample slope and use that information in the confidence interval for slope.  
+2. To interpret a confidence interval for the slope, think about how to interpret the sample slope and use that information in the confidence interval interpretation for slope.  
 
-4. To create one simulated sample on the null distribution for a sample slope or sample correlation, hold the $x$ values constant and shuffle the $y$ values to new $x$ values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
+3. Use the explanatory variable row in the linear model `R` output to obtain the slope estimate (`estimate` column) and standard error of the slope (`Std. Error` column) to calculate the standardized slope, or T-score.  The calculated T-score should match the `t value` column in the explanatory variable row. The standardized slope tells the number of standard errors the observed slope is above or below 0.
 
-5. To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label $n$ cards with the original (response, explanatory) values.  Randomly draw with replacement $n$ times.  Find the regression line for the resampled data and plot the resampled slope or correlation. 
+4. The explanatory variable row in the linear model `R` output provides a **two-sided** p-value under the `Pr(>|t|)` column.
+
+5. The standardized slope is compared to a $t$-distribution with $n-2$ degrees of freedom in order to obtain a p-value.  The $t$-distribution with $n-2$ degrees of freedom is also used to find the appropriate multiplier for a given confidence level.
 
 
 ### Additional notes

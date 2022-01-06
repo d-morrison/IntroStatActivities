@@ -75,7 +75,7 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 \vspace{1in}
 
-5. Using the research question, write the alternative hypothesis in notation to test the slope.
+5. Using the research question, write the alternative hypothesis in notation using slope as the summary measure.
 
 \vspace{0.5in}
 
@@ -88,7 +88,7 @@ lm.diving <- lm(response~explanatory, data=diving) # lm(response~explanatory)
 round(summary(lm.diving)$coefficients, 5)
 ```
 
-6.  Using the output from the evaluated `R` code above, write the equation of the regression line using appropriate statistical notation.
+6.  Using the output from the evaluated `R` code above, write the equation of the regression line in the context of the problem using appropriate statistical notation.
 \vspace{1in}
 
 7.  Interpret the estimated slope in context of the problem.
@@ -100,11 +100,11 @@ In this activity, we will focus on using simulation-based methods for inference 
 
 #### Simulation-based hypothesis test {-}
 
-First, let's think about how one simulation would be created on the null distribution using cards.  First, we would write the values for the response variable, Duration, on each card.  Next, we would shuffle these $y$ values while keeping the $x$ values (explanatory variable) in the same order.  Then, find the line of regression for the shuffled cards and calculate either the sample slope or sample correlation.  
+Let's start by thinking about how one simulation would be created on the null distribution using cards.  First, we would write the values for the response variable, Duration, on each card.  Next, we would shuffle these $y$ values while keeping the $x$ values (explanatory variable) in the same order.  Then, find the line of regression for the shuffled $(x, y)$ pairs and calculate either the slope or correlation of the shuffled sample.  
 
-We will use the `regression_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample slopes (or sample correlations) and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `diving`), the statistic for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
+We will use the `regression_test()` function in `R` (in the `catstats` package) to simulate the null distribution of shuffled slopes (or shuffled correlations) and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `diving`), the summary measure for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
 
-The response variable name is `Duration` and the explanatory variable name is `Dive_HeartRate`.
+The response variable name is `Duration` and the explanatory variable name is `Dive_HeartRate` for these data.
 
 \newpage
 
@@ -141,6 +141,15 @@ regression_test(Duration ~ Dive_Heartrate, # response ~ explanatory
 9.  Report the p-value from the `R` output. 
 \vspace{0.5in}
 
+10.  Suppose you needed to complete the simulation test using correlation as the summary measure, instead of slope.  Which two inputs in #8 would need to be changed to test for correlation?  What inputs should you use instead?
+\vspace{0.75in}
+
+11.  Change the inputs in lines 22-27 to test for correlation instead of slope.  Highlight and run those lines, then report the new p-value of the test.
+\vspace{0.5in}
+
+12.  The p-values from the test of slope (#9) and the test of correlation (#11) should be similar.  Explain why the two p-values should match. *Hint: think about the relationship between slope and correlation!*
+\vspace{1in}
+
 #### Simulation-based confidence interval {-}
 
 We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the `xx`'s in the the provided `R` script file to find a 95\% confidence interval. Highlight and run lines 30--34. 
@@ -152,16 +161,16 @@ regression_bootstrap_CI(Duration ~ Dive_Heartrate, # response ~ explanatory
    summary_measure = "xx", # Slope or correlation
    number_repetitions = 1000) # Number of simulated samples for bootstrap distribution
 ```
-10.  Report the bootstrap 95\% confidence interval in interval notation.  
+13.  Report the bootstrap 95\% confidence interval in interval notation.  
 \vspace{0.5in}
    
 #### Communicate the results and answer the research question {-}
 
-11. Based on the p-value, write a conclusion in context of the problem.
+14. Based on the p-value, write a conclusion in context of the problem.
 
 \vspace{.8in}
 
-12. Does the p-value agree with the 95\% confidence interval?  What does each tell you about the null hypothesis?
+15. Does the p-value agree with the 95\% confidence interval?  What does each tell you about the null hypothesis?
 
 \vspace{.6in}
 
@@ -169,11 +178,11 @@ regression_bootstrap_CI(Duration ~ Dive_Heartrate, # response ~ explanatory
 
 1.	The p-value for a test for correlation should be approximately the same as the p-value for the test of slope.  In the simulation test, we just change the statistic type from slope to correlation and use the appropriate sample statistic value.  
 
-2. To interpret a confidence interval for the slope, think about how to interpret the sample slope and use that information in the confidence interval for slope.  
+2. To interpret a confidence interval for the slope, think about how to interpret the sample slope and use that information in the confidence interval interpretation for slope.  
 
-3. To create one simulated sample on the null distribution for a sample slope or sample correlation, hold the $x$ values constant and shuffle the $y$ values to new $x$ values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
+3. To create one simulated sample on the null distribution when testing for a relationship between two quantitative variables, hold the $x$ values constant and shuffle the $y$ values to new $x$ values. Find the regression line for the shuffled data and plot the slope or the correlation for the shuffled data.
 
-4. To create one simulated sample on the bootstrap distribution for a sample slope or sample correlation, label $n$ cards with the original (response, explanatory) values.  Randomly draw with replacement $n$ times.  Find the regression line for the resampled data and plot the resampled slope or correlation. 
+4. To create one simulated sample on the bootstrap distribution when assessing two quantitative variables, label $n$ cards with the original (response, explanatory) values.  Randomly draw with replacement $n$ times.  Find the regression line for the resampled data and plot the resampled slope or correlation. 
 
 ### Additional notes
 
