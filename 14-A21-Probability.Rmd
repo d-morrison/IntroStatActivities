@@ -66,28 +66,28 @@ c. What is the probability that a randomly selected student is not a senior give
 \vspace{.1in}
 
     b. Create a hypothetical two-way table to represent the situation.  
+    
 \begin{center}
-\begingroup
-\setlength{\tabcolsep}{15pt} % Default value: 6pt
-\renewcommand{\arraystretch}{2}
 \begin{tabular}{|c|c|c|c|} \hline
-\hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ \hline
+\hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ 
 & & & \\ \hline
+& & & \\ 
 & & & \\ \hline
+& & & \\ 
 & & & \\ \hline
-Total & & & 100,000 \\ \hline
+Total & & & 100,000 \\ 
+& & & \\ \hline
 \end{tabular}
-\endgroup
 \end{center}
 \vspace{.1in}
 
-    c. Find $P(A \mbox{ and } B)$. What does this probability represent in the context of the problem?
+   c. Find $P(A \mbox{ and } B)$. What does this probability represent in the context of the problem?
 \vspace{.8in}
 
-    d. Find the probability that a child with a positive RADT actually has strep throat. What is the notation used for this probability?
+   d. Find the probability that a child with a positive RADT actually has strep throat. What is the notation used for this probability?
 \vspace{.8in}
 
-    e.  What is the probability that a child does not have strep given that they have a positive RADT?  What is the notation used for this probability?
+   e.  What is the probability that a child does not have strep given that they have a positive RADT?  What is the notation used for this probability?
 
 \newpage
 
@@ -113,29 +113,29 @@ Total & & & 100,000 \\ \hline
 \vspace{.1in}
 
     b. Create a hypothetical two-way table to represent the situation.  
+    
 \begin{center}
-\begingroup
-\setlength{\tabcolsep}{15pt} % Default value: 6pt
-\renewcommand{\arraystretch}{2}
 \begin{tabular}{|c|c|c|c|} \hline
-\hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ \hline
+\hspace{1in} & \hspace{1in} & \hspace{1in} & Total \\ 
 & & & \\ \hline
+& & & \\ 
 & & & \\ \hline
+& & & \\
 & & & \\ \hline
-Total & & & 100,000 \\ \hline
+Total & & & 100,000 \\ 
+& & & \\ \hline
 \end{tabular}
-\endgroup
 \end{center}
 \vspace{.1in}
 
-    c. Calculate the probability that a randomly selected computer will be a desktop, given that the computer is on sale. What is the notation used for this probability?
+   c. Calculate the probability that a randomly selected computer will be a desktop, given that the computer is on sale. What is the notation used for this probability?
 \vspace{.8in}
 
 
-    d. Find $P(S^C | L^C)$. What does this probability represent in context of the problem?
+   d. Find $P(S^C | L^C)$. What does this probability represent in context of the problem?
 \vspace{1in}
 
-    e. What is the probability a randomly selected computer is both a laptop and on sale?  Give the appropriate probability notation.
+   e. What is the probability a randomly selected computer is both a laptop and on sale?  Give the appropriate probability notation.
 
 
 \newpage 

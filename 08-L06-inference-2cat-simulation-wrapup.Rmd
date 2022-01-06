@@ -42,16 +42,18 @@ iliad %>% group_by(Injury.Site) %>% count(Lethal) #finds the counts in each grou
 
 4. Fill in the following two-way table using the `R` output.
 
-\setlength{\tabcolsep}{14pt} 
-\renewcommand{\arraystretch}{2} 
-\begin{tabular}{|c|c|c|c|}
-\hline
- & \multicolumn{2}{|c|}{\textbf{Injury Site}} & \\ \hline
+\begin{center}
+\begin{tabular}{|c|c|c|c|}\hline
+& \multicolumn{2}{|c|}{\textbf{Injury Site}} & \\ \hline
 \textbf{Outcome} & Body & Limb & Total \\ \hline
- Fatal & & &  \\ \hline
- Non-fatal & & &  \\ \hline
- Total & & &  \\ \hline  
+ Fatal & & & \\ 
+ & & & \\ \hline
+ Non-fatal & & & \\ 
+ & & & \\ \hline
+ Total & & & \\ 
+ & & & \\ \hline
 \end{tabular}
+\end{center}
 
 5. Write the parameter of interest for this study.
 

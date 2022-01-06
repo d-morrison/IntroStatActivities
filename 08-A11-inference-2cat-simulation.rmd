@@ -63,11 +63,14 @@ randomly ____________ (assigned/selected).
 
 4.  Put an X in the box that represents the appropriate scope of inference for this study.
 
-|                    |                  |       Study Type      |                     |
-|:------------------:|:----------------:|:---------------------:|---------------------|
-|                    |                  | Randomized Experiment | Observational Study |
-| Selection of Cases | Random Sample    |                       |                     |
-|                    | No Random Sample |                       |                     |
+\begin{center}
+\begin{tabular}{|c|c|c|c|}\hline
+& & Study Type & \\ \hline
+Selection of Cases & Random Sample & Randomized Experiment & Observational Study \\ \hline
+& No Random Sample & & \\ \hline
+\end{tabular}
+\end{center}
+
 \setstretch{1}
 
 
