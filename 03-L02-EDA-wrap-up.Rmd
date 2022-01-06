@@ -21,7 +21,7 @@
 
 Download and open the provided `R` script file for the week 3 lab to answer the following questions.  **Remember that bolded questions will be answered on Gradescope for your group.**
 
-These data are on a subset of institutions that met the following selection criteria:
+These data are on a subset of institutions that met the following selection criteria [@ipeds]:
 
 *	Degree granting 
 

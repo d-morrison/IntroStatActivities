@@ -29,7 +29,7 @@ To review these concepts, see Chapter 3 in the textbook.
 
 ### Movies released in 2016
 
-We will revisit the data set used last week collected on Movies released in 2016. Here is a reminder of the variables collected on these movies.
+We will revisit the data set used last week collected on Movies released in 2016 [@imdb]. Here is a reminder of the variables collected on these movies.
 
 | **Variable** 	| **Description** |
 |----	|-------------	|

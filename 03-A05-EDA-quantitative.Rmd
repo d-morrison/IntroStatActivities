@@ -36,7 +36,7 @@ To review these concepts, see Section 2.3 in the textbook.
 
 ### Movies released in 2016
 
-A data set was collected on movies released in 2016.  Here is a list of some of the variables collected on the observational units, movies released in 2016.  
+A data set was collected on movies released in 2016 [@imdb].  Here is a list of some of the variables collected on the observational units, movies released in 2016.  
 
 | **Variable** 	| **Description** |
 |----	|-------------	|

@@ -15,7 +15,7 @@
 
 ### Fatal Injuries in the Iliad
 
-Homer’s Iliad is an epic poem, compiled around 800 BCE, that describes several weeks of the last year of the 10-year siege of Troy (Ilion) by the Achaeans. The story centers on the rage of the great warrior Achilles. But it includes many details of injuries and outcomes, and is thus the oldest record of Greek medicine. The data report 146 recorded injuries for which both injury site and outcome are provided in the Illiad. For this activity we will focus on comparing injuries to the body and injuries to a limb and whether the injury resulted in a fatality.  Are injuries to the body more lethal than injuries to a limb?
+Homer’s Iliad is an epic poem, compiled around 800 BCE, that describes several weeks of the last year of the 10-year siege of Troy (Ilion) by the Achaeans. The story centers on the rage of the great warrior Achilles. But it includes many details of injuries and outcomes, and is thus the oldest record of Greek medicine. The data report 146 recorded injuries for which both injury site and outcome are provided in the Illiad [@hutchison2013]. For this activity we will focus on comparing injuries to the body and injuries to a limb and whether the injury resulted in a fatality.  Are injuries to the body more lethal than injuries to a limb?
 
 Upload and open the `R` script file for Week 8 lab. Upload and import the csv file, `iliad`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 5. Highlight and run lines 1--10 to get the counts for each combination of categories.
 

@@ -31,7 +31,7 @@ To review these concepts, see Chapters 3 and 7 in the textbook.
 
 ### Golf driving distance
 
-In golf the goal is to complete a hole with as few strokes as possible.  A golfer desires to have a good driving distance to start a hole in order to minimize the strokes necessary to complete the hole.  This data was collecting on 354 PGA and LGPA players in 2008.  For each player, the average driving distance (yards), fairway accuracy (percentage), and sex was measured.  Use this data to assess, "Does a PGA golfer give up accuracy when they hit the ball farther?"
+In golf the goal is to complete a hole with as few strokes as possible.  A golfer desires to have a good driving distance to start a hole in order to minimize the strokes necessary to complete the hole.  This data was collecting on 354 PGA and LGPA players in 2008 [@pga].  For each player, the average driving distance (yards), fairway accuracy (percentage), and sex was measured.  Use this data to assess, "Does a PGA golfer give up accuracy when they hit the ball farther?"
 
 ```{r, echo = TRUE, collapse=FALSE}
 # Read in data set

@@ -16,7 +16,7 @@
 
 ### COVID immunization and infection rates
 
-According to the *Washington Post* "States with higher vaccination rates now have markedly fewer coronavirus cases, as infections are dropping in places where most residents have been immunized and are rising in many places people have not."  In this article they found that there are differences in infection rates for different counties within a specific state.  To check this claim, a random sample of 125 counties from different states was assessed.  Vaccination rates and number of cases per 100,000 residents were found for each county.  Researchers want to assess if counties with a high vaccination rate tend to have lower coronavirus case rates.
+According to the *Washington Post* "States with higher vaccination rates now have markedly fewer coronavirus cases, as infections are dropping in places where most residents have been immunized and are rising in many places people have not." [@keating2021] In this article they found that there are differences in infection rates for different counties within a specific state.  To check this claim, a random sample of 125 counties from different states was assessed.  Vaccination rates and number of cases per 100,000 residents were found for each county.  Researchers want to assess if counties with a high vaccination rate tend to have lower coronavirus case rates.
 
 
 Upload and open the `R` script file for Week 13 lab. Upload and import the csv file, `covid_vaccinations`. Enter the name of the data set (see the environment tab) for datasetname in the `R` script file in line 7. Highlight and run lines 1--8 to load the data.

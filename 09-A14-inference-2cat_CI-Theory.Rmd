@@ -33,7 +33,7 @@ Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an a
 
 For this activity we will again use the Helmet Use and Head Injury data set. In Activity 10a we saw that there was evidence that helmet use is assoicated with a reduced risk of head injury.  Today we will estimate the difference in proportion of head injuries for those who wore helmets and those who did not.
 
-In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., in the *Journal of the American Medical Association*, Vol. 295, No. 8 (2006), we can see the summary results from a random sample of 3562 skiers and snowboarders involved in accidents in the two-way table below. 
+In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., [@sulheim2017], we can see the summary results from a random sample of 3562 skiers and snowboarders involved in accidents in the two-way table below. 
 
 |                | Helmet Use | No Helmet Use | Total |
 |:--------------:|:----------:|:-------------:|:-----:|

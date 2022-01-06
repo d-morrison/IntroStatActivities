@@ -23,7 +23,7 @@ To review these concepts, see Chapter 3 in the textbook.
 
 ### Movies released in 2016
 
-We will revisit the movie data set collected on Movies released in 2016 to further explore the relationship between budget and revenue. Here is a reminder of the variables collected on these movies.
+We will revisit the movie data set collected on Movies released in 2016 [@imdb] to further explore the relationship between budget and revenue. Here is a reminder of the variables collected on these movies.
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
