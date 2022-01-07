@@ -102,7 +102,7 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
 
 \vspace{1in}
 
-The value in question 8 is the **p-value**.  The smaller the p-value, the more evidence we have against the null hypothesis. Explain why this makes sense?
+The value in question 8 is the **p-value**.  The smaller the p-value, the more evidence we have against the null hypothesis. 
 
 
 9. **Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one of the five descriptions.)**

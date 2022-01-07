@@ -148,7 +148,7 @@ We will now simulate a **null distribution** of sample differences in proportion
 
 \vspace{0.8in}
 
-15.  Simulate one sample using the cards provided by your instructor.  Write down the value of the simulated statistic.
+15.  Simulate one sample using the cards provided by your instructor.  Write down the value of the simulated statistic.  How does the value of your group's simulated statistic compare to the other groups at your table?  Are the simulated values closer to the null value of zero than the actual calculated difference in proportions?
 
 \vspace{1in}
 

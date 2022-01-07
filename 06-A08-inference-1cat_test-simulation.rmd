@@ -46,7 +46,7 @@ We will work through a five-step process to complete a hypothesis test for a sin
 Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature [@hamblin2007] was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. As a class we will watch this short video to see how the experiment was run: https://youtu.be/anCaGBsBOxM. Researchers were hoping to assess: Are infants more likely to choose the helper toy?  In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.
 
 
-In this study, the observational units are the infants ages 6 to 10 months.  The variable measured on each observational unit (infant) is whether they chose the helper or the hinderer toy.  The is a categorical variable so we will be assessing the proportion of infants ages 6 to 10 months that choose the helper toy.  Choosing the helper toy in this study will be considered a success.
+In this study, the observational units are the infants ages 6 to 10 months.  The variable measured on each observational unit (infant) is whether they chose the helper or the hinderer toy.  This is a categorical variable so we will be assessing the proportion of infants ages 6 to 10 months that choose the helper toy.  Choosing the helper toy in this study will be considered a success.
 
 #### Ask a research question {-}
 

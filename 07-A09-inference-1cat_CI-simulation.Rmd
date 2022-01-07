@@ -38,7 +38,7 @@ A **point estimate** (our observed statistic) provides a single plausible value 
 
 \vspace{0.5in}
 
-In today's activity, we will use bootstrapping to find a 95\% confidence interval for $\pi$, the parameter of interest.  See Section 5.3.3 to review bootstrapping.
+In today's activity, we will use bootstrapping to find a 95\% confidence interval for $\pi$, the parameter of interest.  See Section 5.3.3 in your textbook to review bootstrapping.
 
 3.  In your own words, explain the bootstrapping process.
 \vspace{0.5in}

@@ -191,7 +191,7 @@ qnorm(0.975) # Multiplier for 95% confidence interval
 19.  Interpret the 95\% confidence interval in the context of the problem.
 \vspace{1in}
 
-20. Is the null value, 0.1, contained in the 95\% confidence interval?  Explain, based on the p-value, why you expected this to be true.
+20. Is the null value, 0.1, contained in the 95\% confidence interval?  Explain, based on your conclusion in question 12, why you expected this to be true.
 \vspace{1in}
 
 

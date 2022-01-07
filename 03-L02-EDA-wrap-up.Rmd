@@ -113,11 +113,11 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 
 Let's examine how the presence of outliers affect the values of center and spread. 
 
-9.  Report the two measures of center for retention given in the `R` output above question 3.
+9.  Report the two measures of center for retention given in the `R` output.
 
 \vspace{0.8in}
 
-10.  Report the two measures of spread for retention given in the `R` output above question 3.
+10.  Report the two measures of spread for retention given in the `R` output.
 
 \vspace{0.8in}
 
