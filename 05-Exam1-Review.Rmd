@@ -50,7 +50,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \rgi Variable: 
 
-\rgi Summary Statistic (with notation):
+\rgi Value of Summary Statistic (with notation):
 
 \rgi \rgi Interpretation:
     
@@ -76,7 +76,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \rgi Response variable:
 
-\rgi Summary Statistic (with notation):
+\rgi Value of Summary Statistic (with notation):
 
 \rgi \rgi Interpretation:
     
@@ -110,7 +110,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \rgi Response Variable:
 
-\rgi Summary Statistic (with notation):
+\rgi Value of Summary Statistic (with notation):
 
 \rgi \rgi Interpretation:
     
@@ -162,7 +162,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \rgi Response Variable:
 
-\rgi Summary Statistic (with notation):
+\rgi Value of Summary Statistic (with notation):
 
 \rgi Slope:
 

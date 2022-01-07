@@ -19,11 +19,11 @@
 According to the *Washington Post* "States with higher vaccination rates now have markedly fewer coronavirus cases, as infections are dropping in places where most residents have been immunized and are rising in many places people have not." [@keating2021] In this article they found that there are differences in infection rates for different counties within a specific state.  To check this claim, a random sample of 125 counties from different states was assessed.  Vaccination rates and number of cases per 100,000 residents were found for each county.  Researchers want to assess if counties with a high vaccination rate tend to have lower coronavirus case rates.
 
 
-Upload and open the `R` script file for Week 13 lab. Upload and import the csv file, `covid_vaccinations`. Enter the name of the data set (see the environment tab) for datasetname in the `R` script file in line 7. Highlight and run lines 1--8 to load the data.
+Upload and open the `R` script file for Week 13 lab. Upload and import the csv file, `covid_vaccinations`. Enter the name of the data set (see the environment tab) for datasetname in the `R` script file in line 7. Highlight and run lines 1--7 to load the data.
 
 ```{r, echo = TRUE, fig.width=7,fig.height=6, collapse=FALSE, eval=FALSE}
 # Read in data set and remove NAs
-covid <- covid_vaccinations
+covid <- datasetname
 ```
 
 #### Summarize and visualize the data {-} 
@@ -57,9 +57,12 @@ summary(covidLM)$coefficients # Display coefficient summary
 4. Give the value of the slope of the regression line.  Interpret this value in context of the problem.
 \vspace{0.6in}
 
-Highlight and run lines 23--36 to produce the diagnostic plots needed to assess conditions to use theory-based methods.
+#### Conditions for the least squares line {-}
+
+Highlight and run lines 21--34 to produce the diagnostic plots needed to assess conditions to use theory-based methods.  Use the scatterplot and the residual plots to assess the validity conditions for approximating the data with the $t$-distribution.
 
 ```{r, echo=TRUE, eval=FALSE, warning=FALSE}
+#Scatterplot
 covid %>% # Pipe data set into...
   ggplot(aes(x = PercentImmunized, y = Case_per_100K))+  # Specify variables
   geom_point() +  # Add scatterplot of points
@@ -68,15 +71,8 @@ covid %>% # Pipe data set into...
        # Be sure to tile your plots
        title = "Scatterplot of Percent Immunized vs. Infection Rate of COVID in US Counties") + 
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
-```
 
-
-
-#### Conditions for the least squares line {-}
-
-Use the scatterplot and the residual plots to assess the validity conditions for approximating the data with the $t$-distribution.
-
-```{r, echo=TRUE, eval=FALSE, warning=FALSE}
+#Diagnostic plots
 covidLM <- lm(Case_per_100K~PercentImmunized, data = covid) # Fit linear regression model
 par(mfrow=c(1,2)) # Set graphics parameters to plot 2 plots in 1 row
 plot(covidLM, which=1) # Residual vs fitted values
@@ -92,9 +88,9 @@ hist(covidLM$resid, xlab="Residuals", ylab="Frequency",
 
 6. Write out the null and alternative hypotheses in notation to test *correlation* between the percent immunized in US counties and the infection rate.
 
-|    $H_O:$
+|    $H_0:$
 
-|    $H_A:$
+|    $H_a:$
 
 #### Use statistical inferential methods to draw inferences from the data {-}
 
@@ -123,7 +119,7 @@ The response variable name is `Case_per_100K` and the explanatory variable name 
     
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 8 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 39--44.  **Upload a copy of your plot showing the p-value to Gradescope for your group.**
+Using the `R` script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 37--42.  **Upload a copy of your plot showing the p-value to Gradescope for your group.**
 
 ```{r, echo=TRUE, eval=FALSE}
 regression_test(Case_per_100K~PercentImmunized, # response ~ explanatory
@@ -143,7 +139,7 @@ regression_test(Case_per_100K~PercentImmunized, # response ~ explanatory
 
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided `R` script file to find a 90\% confidence interval. Highlight and run lines 52--56. 
+We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided `R` script file to find a 90\% confidence interval. Highlight and run lines 45--49. 
 
 ```{r, echo=TRUE, eval=FALSE}
 regression_bootstrap_CI(Case_per_100K~PercentImmunized, # response ~ explanatory
@@ -155,7 +151,7 @@ regression_bootstrap_CI(Case_per_100K~PercentImmunized, # response ~ explanatory
 10.  Report the bootstrap 90\% confidence interval in interval notation.  
 \vspace{0.5in}
 
-11. **Interpret the 90\% confidence interval in context of the problem.**
+11. Interpret the 90\% confidence interval in context of the problem.
 \vspace{0.8in}
    
 #### Communicate the results and answer the research question {-}

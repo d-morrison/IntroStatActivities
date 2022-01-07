@@ -18,9 +18,7 @@
 * Use a confidence interval to determine the conclusion of a hypothesis test.
 
 ### Terminology review
-In this week's in-class activity, we will use theory-based methods for hypothesis tests and confidence intervals for a linear regression slope or correlation. Some terms covered in this activity are:
-
-* Correlation
+In this week's in-class activity, we will use theory-based methods for hypothesis tests and confidence intervals for a linear regression slope. Some terms covered in this activity are:
 
 * Slope 
 
@@ -31,7 +29,7 @@ To review these concepts, see Chapters 3 and 7 in the textbook.
 
 ### Golf driving distance
 
-In golf the goal is to complete a hole with as few strokes as possible.  A long driving distance to start a hole can help minimize the strokes necessary to complete the hole, as long as that drive stays on the fairway.  Data was collecting on 354 PGA and LGPA players in 2008 [@pga].  For each player, the average driving distance (yards), fairway accuracy (percentage), and sex was measured.  Use this data to assess, "Does a professional golfer give up accuracy when they hit the ball farther?"
+In golf the goal is to complete a hole with as few strokes as possible.  A long driving distance to start a hole can help minimize the strokes necessary to complete the hole, as long as that drive stays on the fairway.  Data was collecting on 354 PGA and LGPA players in 2008 [@pga].  For each player, the average driving distance (yards), fairway accuracy (percentage), and sex was measured.  Use these data to assess, "Does a professional golfer give up accuracy when they hit the ball farther?"
 
 ```{r, echo = TRUE, collapse=FALSE}
 # Read in data set
@@ -73,6 +71,7 @@ When performing inference on a least squares line, the follow conditions are gen
 * *Nearly normal residuals* (for theory-based methods only: residuals must be nearly normal.
     - Check this assumption by examining a histogram of the residuals, which should appear approximately normal^[A better plot for checking the normality assumption is called a *normal quantile-quantile plot* (or QQ-plot). However, this type of plot will be covered in a future course].
 
+\newpage 
 
 The scatterplot generated in question 1 and the residual plots shown below will be used to assess these conditions for approximating the data with the $t$-distribution.
 
@@ -96,7 +95,7 @@ hist(lm.golf$resid, xlab="Residuals", ylab="Frequency",
 
 4. Using the research question, write the alternative hypothesis in notation to test the slope.
 
-\vspace{0.5in}
+\newpage
 
 #### Summarize and visualize the data {-}
 
@@ -137,7 +136,7 @@ We will use the linear model `R` output above to get the estimate for slope and 
 
 \vspace{0.8in}
 
-10.  Using the linear model `R` output, report the p-value for the test of significance for slope.
+10.  The p-value in linear model `R` output is the two-sided p-value for the test of significance for slope.  Report the p-value to answer the research question.  
 
 \vspace{0.5in}
 
@@ -166,13 +165,9 @@ qt(0.975, 352) # 95% t* multiplier
 
 #### Communicate the results and answer the research question {-}
 
-14. Based on the p-value, write a conclusion in context of the problem.
+14. Write a conclusion to answer the research question in context of the problem.
 
 \vspace{.8in}
-
-15. Does the p-value agree with the 95\% confidence interval?  What does each tell you about the null hypothesis?
-
-\vspace{.6in}
 
 ### Multivariate plots {-}
 
@@ -194,7 +189,7 @@ golf %>%
 \vspace{1in}
 
 16.  Explain the impact sex has on the two variables.
-\vspace{1in}
+\newpage
 
 ### Take-home messages
 

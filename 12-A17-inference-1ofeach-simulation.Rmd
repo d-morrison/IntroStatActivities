@@ -61,15 +61,15 @@ Snow %>%
 
 1. The two variables assessed in this study are the type of weather pattern and snowfall.  Identify the role for each variable (explanatory or response).
 
-\vspace{.6in}
+\vspace{.4in}
 
 2. Which group (El Ni\latexcode{\~{n}}o or La Ni\latexcode{\~{n}}a) has the highest center in the distributions of snowfall? Explain which measure of center you are using.
 
-\vspace{.6in}
+\vspace{.4in}
 
 3.  Using the side-by-side box plots, which group has the largest spread in snowfall?  How did you make that choice?
 
-\vspace{.6in}
+\vspace{.4in}
 
 \newpage
 

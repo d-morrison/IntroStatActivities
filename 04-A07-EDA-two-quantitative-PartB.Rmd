@@ -67,7 +67,7 @@ movies %>%  # Data set pipes into
 
 \vspace{0.5in}
 
-4.  Does your answer to question 3 match the direction you choose in question 4 in Activity 4a?
+4.  Does your answer to question 3 match the direction you choose in question 4 in Activity 4A?
 
 \vspace{0.3in}
 
@@ -103,7 +103,7 @@ In the next part of the activity we will explore what the coefficient of determi
 
 \newpage
 
-10. Click on `Show Regression Line`.  Write down the equation of the line given.  Does this match the least squares line found in Activity 4a question 6?
+10. Click on `Show Regression Line`.  Write down the equation of the line given.  Does this match the least squares line found in Activity 4A question 6?
 
 \vspace{1in}
 

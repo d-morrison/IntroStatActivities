@@ -62,7 +62,7 @@ good %>%
 
 \vspace{1in}
 
-4.  Write out the conclusion you made in Activity 8a.
+4.  Write out the conclusion you made in Activity 8A.
 
 \vspace{0.8in}
 
@@ -173,6 +173,8 @@ Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the 
 16.  Write this error in context of the problem.
 
 \vspace{0.5in}
+
+\newpage
 
 ### Take-home messages
 

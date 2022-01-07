@@ -29,7 +29,7 @@ In today's activity, we will introduce theory-based confidence intervals for a s
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-Activity 6a and the Week 6 Lab covered simulation-based methods for hypothesis tests involving a single categorical variable. This activity covers theory-based methods for testing a single categorical variable.  
+Activity 6 and the Week 6 Lab covered simulation-based methods for hypothesis tests involving a single categorical variable. This activity covers theory-based methods for testing a single categorical variable.  
 
 ### Handedness of male boxers
 

@@ -57,7 +57,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
         
 \vspace{0.5in}
    
-\rgi Statistic:
+\rgi Value of Statistic with Notation:
     
 \vspace{0.3in}
 
@@ -146,7 +146,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
         
 \vspace{0.5in}
    
-\rgi Statistic:
+\rgi Value of Statistic with Notation:
     
 \vspace{0.3in}
     

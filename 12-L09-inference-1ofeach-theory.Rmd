@@ -73,11 +73,13 @@ hikes %>%  # Data set piped into...
 ```
 
 4.  Is the independence condition met?  Explain your answer.
-\vspace{0.4in}
+\vspace{0.8in}
 
 5. Check that the normality condition is met to use theory-based methods to analyze these data.
 
 \vspace{0.8in}
+
+\newpage
 
 Enter the name of the explanatory variable for `explanatory` and the name of the response variable for `response` in line 17.  Highlight and run lines 16--17 to get the summary statistics for the data.
 
@@ -111,6 +113,7 @@ $$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}.$$
 9.  When we are comparing two quantitative variables to find the degrees of freedom to use for the t-distribution, we need to use the group with the smallest sample size and subtract 1.  (`df` = minimum of $n_1 - 1$ or  $n_2 - 1$).  Calculate the `df` for this study.
 
 \vspace{0.2in}
+\newpage
 
 10. Using the provided `R` script file, enter the T-score (for `xx`) and the `df` calculated in question 9 for `yy` into the `pt()` function to find the p-value.  Highlight and run line 20.  Report the p-value calculated. 
 
@@ -156,7 +159,7 @@ qt(xx, df = yy, lower.tail=TRUE)
 
 \vspace{0.5in}
 
-18.  **Write a conclusion to the test in context of the study.**
+18.  Write a conclusion to the test in context of the study.
 \vspace{0.8in}
 
 19.  What type of error may be possible?

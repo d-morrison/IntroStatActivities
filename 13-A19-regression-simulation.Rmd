@@ -127,7 +127,7 @@ The response variable name is `Duration` and the explanatory variable name is `D
     
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 12 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 22--27.
+Using the `R` script file for this activity, enter your answers for question 8 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 22--27.
 
 ```{r, echo=TRUE, eval=FALSE}
 regression_test(Duration ~ Dive_Heartrate, # response ~ explanatory
@@ -141,7 +141,7 @@ regression_test(Duration ~ Dive_Heartrate, # response ~ explanatory
 9.  Report the p-value from the `R` output. 
 \vspace{0.5in}
 
-10.  Suppose you needed to complete the simulation test using correlation as the summary measure, instead of slope.  Which two inputs in #8 would need to be changed to test for correlation?  What inputs should you use instead?
+10.  Suppose we wanted to complete the simulation test using correlation as the summary measure, instead of slope.  Which two inputs in #8 would need to be changed to test for correlation?  What inputs should you use instead?
 \vspace{0.75in}
 
 11.  Change the inputs in lines 22-27 to test for correlation instead of slope.  Highlight and run those lines, then report the new p-value of the test.
@@ -163,16 +163,21 @@ regression_bootstrap_CI(Duration ~ Dive_Heartrate, # response ~ explanatory
 ```
 13.  Report the bootstrap 95\% confidence interval in interval notation.  
 \vspace{0.5in}
+
+14.  Interpret the interval in question 13 in context of the problem.  *Hint: use the interpretation of slope in your confidence interval interpretation.*
+
+\vspace{0.8in}
    
 #### Communicate the results and answer the research question {-}
 
-14. Based on the p-value, write a conclusion in context of the problem.
+15. Based on the p-value, write a conclusion in context of the problem.
 
 \vspace{.8in}
 
-15. Does the p-value agree with the 95\% confidence interval?  What does each tell you about the null hypothesis?
+16. Does the conclusion based on the p-value agree with the results of the 95\% confidence interval?  What does each tell you about the null hypothesis?
 
 \vspace{.6in}
+\newpage
 
 ### Take-home messages
 

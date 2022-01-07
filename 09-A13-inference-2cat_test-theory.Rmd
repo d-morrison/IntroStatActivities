@@ -67,7 +67,7 @@ For this study the observational units are skiers and snowboarders involved in a
 
 #### Use statistical analysis methods to draw inferences from the data {-}
 
-To test the null hypothesis, we could use simulation-based methods as we did in Activity 9a. In this activity, we will focus on theory-based methods.  Like with a single proportion, the sampling distribution of a difference in sample proportions can be mathematically modeled using the normal distribution if certain conditions are met.
+To test the null hypothesis, we could use simulation-based methods as we did in Activity 8A. In this activity, we will focus on theory-based methods.  Like with a single proportion, the sampling distribution of a difference in sample proportions can be mathematically modeled using the normal distribution if certain conditions are met.
 
 Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an approximate normal distribution:
 
@@ -166,7 +166,7 @@ Suppose in another sample of skiers and snowboarders involved in accidents we sa
 | No Head Injury |     921    |      3270     |  4191 |
 |      Total     |    1056    |      3944     |  5000 |
 
-14. The standard error for the difference in proportions is 0.013 $SE(\hat{p}_h - \hat{p}_n) = 0.013$.  Calculate the standardized statistic for this new sample.
+14. The standard error for the difference in proportions is 0.013 ($SE(\hat{p}_h - \hat{p}_n) = 0.013$).  Calculate the standardized statistic for this new sample.
 
 \vspace{0.8in}
 
@@ -180,11 +180,11 @@ pnorm(xx, # Enter value of standardized statistic
 
 15.  How does the increase in sample size affect the p-value?
 
-\vspace{0.3in}
+\vspace{0.4in}
 
 16. Suppose another sample of 3562 skiers and snowboarders was taken.  In this new sample a difference in proportions of head injuries was found to be -0.009, ($\hat{p}_h - \hat{p}_n = -0.009$) with a standard error for the difference in proportions of 0.015, ($SE(\hat{p}_h - \hat{p}_n) = 0.015$).  Calculate the standardized statistic for this new sample.
 
-\vspace{0.8in}
+\newpage
 
 Use Rstudio find the p-value for this new sample.  Enter the value of the standardized statistic found in question 16 for xx in line 12.  Highlight and run lines 12--14.
 

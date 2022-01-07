@@ -25,13 +25,13 @@ Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an a
 
 * **Independence**: The data are independent within and between the two groups. (*Remember*: This also must be true to use simulation methods!)
 
-* **Success-failure condition**: The success-failure condition holds for each group. Since we are not assuming a null hypothesis, we do not use the pooled sample proportion to check this condition as we did in Activity 8. Instead, we use the individual sample proportions $\hat{p}_1$ and $\hat{p}_2$. Equivalently, we check that all cells in the table have at least 10 observations.
+* **Success-failure condition**: The success-failure condition holds for each group. Since we are not assuming a null hypothesis, we do not use the pooled sample proportion to check this condition as we did in Activity 9A. Instead, we use the individual sample proportions $\hat{p}_1$ and $\hat{p}_2$. Equivalently, we check that all cells in the table have at least 10 observations.
 
-1.  Explain why a theory-based confidence interval for the data set in Activities 8a and 8b would not be similar to the bootstrap interval created.
+1.  Explain why a theory-based confidence interval for the data set in Activities 8A and 8B would not be similar to the bootstrap interval created.
 
 \vspace{1in}
 
-For this activity we will again use the Helmet Use and Head Injury data set. In Activity 10a we saw that there was evidence that helmet use is assoicated with a reduced risk of head injury.  Today we will estimate the difference in proportion of head injuries for those who wore helmets and those who did not.
+For this activity we will again use the Helmet Use and Head Injury data set. In Activity 9A we saw that there was evidence that helmet use is assoicated with a reduced risk of head injury.  Today we will estimate the difference in proportion of head injuries for those who wore helmets and those who did not.
 
 In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., [@sulheim2017], we can see the summary results from a random sample of 3562 skiers and snowboarders involved in accidents in the two-way table below. 
 
@@ -54,7 +54,7 @@ To find a confidence interval for the difference in proportions we will add and 
  $$\hat{p}_1-\hat{p}_2\pm z^*SE(\hat{p}_1-\hat{p}_2), \hspace{.2cm} \text{where}$$
  $$SE(\hat{p}_1-\hat{p}_2) = \sqrt{\frac{\hat{p}_1 (1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2 (1-\hat{p}_2)}{n_2}}$$
  
-Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in Activity 10a!  Here, we use the sample proportions for each group to calculate the standard error for the difference in proportions since we are not assuming that the true difference is zero.
+Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in Activity 9A!  Here, we use the sample proportions for each group to calculate the standard error for the difference in proportions since we are not assuming that the true difference is zero.
 
 
 4. Calculate the standard error for a difference in proportions to create a 90\% confidence interval.  
@@ -113,7 +113,7 @@ Suppose in another sample of skiers and snowboards involved in accidents we saw 
 
 \vspace{.8in}
 
-14.  Is the confidence interval calculated in question 13 with the smaller sample size wider or smaller than the confidence interval in question 8? Why?
+14.  Is the confidence interval calculated in question 13 with the smaller sample size wider or narrower than the confidence interval in question 8? Why?
 
 \vspace{.8in}
 
