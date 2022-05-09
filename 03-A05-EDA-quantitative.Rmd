@@ -226,7 +226,7 @@ movies %>%  # Data set piped into...
 
 3.  Data should be summarized numerically and displayed graphically to give us information about the study.
 
-4.  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers.  There are two measures of center: mean and the median and two measures of spread: standard deviation and the interquartile range, IQR = Q1- Q3. 
+4.  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers.  There are two measures of center: mean and the median and two measures of spread: standard deviation and the interquartile range, IQR = Q3 - Q1. 
 
 
 ### Additional notes

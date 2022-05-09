@@ -16,7 +16,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 | `Children` | Whether the Islander has children |
 | `weight_kg` | Weight measured in kg |
 | `height_cm` | Height measured in cm |
-| `respitory_rate` | Breaths per minute |
+| `respiratory_rate` | Breaths per minute |
 | `Type_of_Music` | Music type (Classical or Heavy Medal) Islander was randomly assigned to listen to |
 | `Before_PuzzleCube` | Time to complete puzzle cube (minutes) before listening to assigned music |
 | `After_PuzzleCube` | Time to complete puzzle cube (minutes) after listening to assigned music |
@@ -70,7 +70,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \newpage
 
-6.  Use the Exam 1 Review `R` script file to find the appropriate summary statistic and graphical display of the data to assess the following research question, "Are Islanders more likely to have children if they only completed high school than if they completed university?"
+6.  Use the Exam 1 Review `R` script file to find the appropriate summary statistic and graphical display of the data to assess the following research question, "Is there a difference in proportion of Islanders who have children for those who completed high school and those that completed university?" Use high school - university as the order of subtraction.
 
 \rgi Explanatory Variable:
 
@@ -104,7 +104,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 \newpage
 
 
-7. Use the Exam 1 Review `R` script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: "Is there a difference in time to complete the puzzle cube for those that listened to classical and those that listened to heavy metal music?"
+7. Use the Exam 1 Review `R` script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: "Do Islanders who listen to classical music take less time to complete the puzzle cube after listening to the music than for Islanders that listen to heavy metal music?" Use - classical - heavy metal as the order of subtraction.
 
 \rgi Explanatory Variable:
 
@@ -156,7 +156,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 \newpage
     
     
-8.   Use the Exam 1 Review `R` script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: "Do Islanders that weigh more tend to have lower respiratory rates?"
+8.   Use the Exam 1 Review `R` script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: "Do Islanders who are heavier tend to take more breathes per minute?"
 
 \rgi Explanatory Variable:
 

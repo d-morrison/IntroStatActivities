@@ -38,7 +38,7 @@ golf <- read.csv("https://math.montana.edu/courses/s216/data/golf.csv")
 
 #### Plot review. {-}
 
-Use the provided `R` script file to create a scatterplot to examine the relationship between the driving distance and percent accuracy by filling in the variable names (`Driving_Distance` and `Percent_Accuracy`) for `xx` and `yy` in line 10.  Highlight and run lines 1--16. 
+Use the provided `R` script file to create a scatterplot to examine the relationship between the driving distance and percent accuracy by filling in the variable names (`Driving_Distance` and `Percent_Accuracy`) for `xx` and `yy` in line 9.  Highlight and run lines 1--15. 
  
 ```{r, echo=TRUE, eval=FALSE}
 golf %>% # Pipe data set into...
@@ -89,7 +89,7 @@ hist(lm.golf$resid, xlab="Residuals", ylab="Frequency",
 
 #### Ask a research question {-}
 
-3. Write out the null hypothesis in words.
+3. Write out the null hypothesis in words to test the slope.
 
 \vspace{1in}
 
@@ -175,11 +175,11 @@ Another variable that may affect the percent accuracy is the sex of the golfer. 
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
 golf %>%
-  ggplot(aes(x = Driving_Distance, y = Percent_Accuracy, color=Gender))+  # Specify variables
-  geom_point(aes(shape = Gender), size = 3) +  # Add scatterplot of points
+  ggplot(aes(x = Driving_Distance, y = Percent_Accuracy, color=Sex))+  # Specify variables
+  geom_point(aes(shape = Sex), size = 3) +  # Add scatterplot of points
   labs(x = "Driving Distance (m)",  # Label x-axis
        y = "Percent Accuracy",  # Label y-axis
-       color = "Sex", shape = "Gender",
+       color = "Sex", shape = "Sex",
        # Be sure to title your plots
        title = "Scatterplot of Golf Driving Distance and Percent Accuracy by Sex") + 
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
@@ -188,7 +188,7 @@ golf %>%
 15. Does the association between driving distance and percent accuracy change dependent on sex of the golfer?  Explain your answer.
 \vspace{1in}
 
-16.  Explain the impact sex has on the two variables.
+16.  Explain the association between sex and each of the other two variables.
 \newpage
 
 ### Take-home messages

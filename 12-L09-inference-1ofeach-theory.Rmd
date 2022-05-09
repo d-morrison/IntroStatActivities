@@ -60,7 +60,7 @@ Conditions for the sampling distribution of $\bar{x}_1-\bar{x}_2$ to follow an a
     
      - $n \geq 100$: If the sample size $n$ is at least 100 (regardless of the presence of skew or outliers), we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
     
-Upload and open the `R` script file for Week 12 lab. Upload and import the csv file, `Baseweight`. Enter the name of the data set (see the environment tab) for datasetname in the `R` script file in line 7. Write a title for the boxplots in line 11. Highlight and run lines 1--13 to load the data and create plots of the data.
+Upload and open the `R` script file for Week 12 lab. Upload and import the csv file, `Trail_Weight`. Enter the name of the data set (see the environment tab) for datasetname in the `R` script file in line 7. Write a title for the boxplots in line 11. Highlight and run lines 1--13 to load the data and create plots of the data.
 
 ```{r, echo=TRUE, eval=FALSE}
 hikes <- datasetname

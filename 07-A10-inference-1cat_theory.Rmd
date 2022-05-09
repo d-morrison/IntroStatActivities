@@ -139,7 +139,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 #### Validity conditions for a confidence interval {-}
 
-To check the success-failure condition to use theory-based methods for confidence intervals, we use $\hat{p}$ in the calculations since we are not assuming a value for $\pi$. That is, check that we have at least 10 successes and 10 failures in our **sample**:  $n\hat{p} \geq 0$  and $n(1-\hat{p}) \geq 10$.
+To check the success-failure condition to use theory-based methods for confidence intervals, we use $\hat{p}$ in the calculations since we are not assuming a value for $\pi$. That is, check that we have at least 10 successes and 10 failures in our **sample**:  $n\hat{p} \geq 10$  and $n(1-\hat{p}) \geq 10$.
 
 13.  Verify that the success-failure condition is met to use theory based methods to find a 95\% confidence interval.  
 

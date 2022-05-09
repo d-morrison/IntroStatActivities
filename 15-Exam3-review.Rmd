@@ -123,7 +123,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \vspace{0.8in}
         
-2. Use the provided Final Exam Review `R` script file and analyze the following research question: "Does listening to classical music decrease the time it takes to complete the puzzle cube compared to heavy metal music?"
+2. Use the provided Final Exam Review `R` script file and analyze the following research question: "Do Islanders who listen to classical music take less time to complete the puzzle cube after listening to the music than for Islanders that listen to heavy metal music?" Use - classical - heavy metal as the order of subtraction.
 
 \rgi Parameter of Interest:
     
@@ -211,7 +211,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \vspace{0.8in}
 
-3. Use the provided Final Exam Review `R` script file and analyze the following research question: "Is there an assocation between height and balance time?"
+3. Use the provided Final Exam Review `R` script file and analyze the following research question: "Is there an association between height and balance time for Islanders?"
 
 \rgi Parameter of Interest:
     
@@ -247,7 +247,15 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \vspace{0.8in}
 
-\rgi \rgi Normality:
+\rgi \rgi Linearity:
+
+\vspace{0.8in}
+
+\rgi \rgi Constant Variance:
+
+\vspace{0.8in}
+
+\rgi \rgi Normality of Residuals:
 
 \vspace{0.8in}
     
