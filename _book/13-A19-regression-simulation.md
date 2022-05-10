@@ -29,7 +29,7 @@ To review these concepts, see Chapters 3 and 7 in the textbook.
 
 ### Diving Penguins
 
-Emperor penguins are the most accomplished divers among birds, making routine dives of 5–12 minutes, with the longest recorded dive over 27 minutes. These birds can also dive to depths of over 500 meters! Since air-breathing animals like penguins must hold their breath while submerged, the duration of any given dive depends on how much oxygen is in the bird’s body at the beginning of the dive, how quickly that oxygen gets used, and the lowest level of oxygen the bird can tolerate. The rate of oxygen depletion is primarily determined by the penguin’s heart rate. Consequently, studies of heart rates during dives can help us understand how these animals regulate their oxygen consumption in order to make such impressive dives. The researchers equipped emperor penguins with devices that record their heart rates during dives. The data set reports Dive Heart Rate (beats per minute), the Duration (minutes) of dives, and other related variables.  Is there an association between dive heart rate and the duration of the dive?
+Emperor penguins are the most accomplished divers among birds, making routine dives of 5–12 minutes, with the longest recorded dive over 27 minutes. These birds can also dive to depths of over 500 meters! Since air-breathing animals like penguins must hold their breath while submerged, the duration of any given dive depends on how much oxygen is in the bird’s body at the beginning of the dive, how quickly that oxygen gets used, and the lowest level of oxygen the bird can tolerate. The rate of oxygen depletion is primarily determined by the penguin’s heart rate. Consequently, studies of heart rates during dives can help us understand how these animals regulate their oxygen consumption in order to make such impressive dives. The researchers equipped emperor penguins with devices that record their heart rates during dives. The data set reports Dive Heart Rate (beats per minute), the Duration (minutes) of dives, and other related variables.  Can the dive heart rate be used to predict the duration of the dive for Emperor Penguins?
 
 
 ```r
@@ -73,7 +73,7 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 #### Ask a research question {-}
 
-4. Write out the null hypothesis in words.
+4. Write out the null hypothesis in words to test slope.
 
 \vspace{1in}
 
@@ -83,19 +83,25 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 #### Summarize and visualize the data {-}
 
-Using the provided `R` script file, enter the response variable name, `Duration`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Dive_HeartRate`, for `response` in line 18 to get the linear model output.  Highlight and run lines 18--19.
+Using the provided `R` script file, enter the response variable name, `Duration`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Dive_HeartRate`, for `explanatory` in line 18 to get the linear model output and value for the correlation coefficient.  Highlight and run lines 18--19.
 
 
 ```r
 lm.diving <- lm(response~explanatory, data=diving) # lm(response~explanatory)
 round(summary(lm.diving)$coefficients, 5)
+cor(diving$Duration, diving$Dive_HeartRate)
 ```
 
 6.  Using the output from the evaluated `R` code above, write the equation of the regression line in the context of the problem using appropriate statistical notation.
 \vspace{1in}
 
 7.  Interpret the estimated slope in context of the problem.
+
 \vspace{1in}
+
+8.  Report the value of correlation between the diving heart rate and the duration of the dive. 
+
+\vspace{0.3in}
 
 #### Use statistical inferential methods to draw inferences from the data {-}
 
@@ -109,9 +115,7 @@ We will use the `regression_test()` function in `R` (in the `catstats` package) 
 
 The response variable name is `Duration` and the explanatory variable name is `Dive_HeartRate` for these data.
 
-\newpage
-
-8. What inputs should be entered for each of the following to create the simulation to test regression slope?
+9. What inputs should be entered for each of the following to create the simulation to test regression slope?
 
 \vspace{.5 mm}
 
@@ -130,7 +134,7 @@ The response variable name is `Duration` and the explanatory variable name is `D
     
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 8 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 22--27.
+Using the `R` script file for this activity, enter your answers for question 9 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 23--28.
 
 
 ```r
@@ -142,21 +146,21 @@ regression_test(Duration ~ Dive_Heartrate, # response ~ explanatory
                number_repetitions = 1000) # Number of simulated samples for null distribution
 ```
 
-9.  Report the p-value from the `R` output. 
+10.  Report the p-value from the `R` output. 
 \vspace{0.5in}
 
-10.  Suppose we wanted to complete the simulation test using correlation as the summary measure, instead of slope.  Which two inputs in #8 would need to be changed to test for correlation?  What inputs should you use instead?
+11.  Suppose we wanted to complete the simulation test using correlation as the summary measure, instead of slope.  Which two inputs in #8 would need to be changed to test for correlation?  What inputs should you use instead?
 \vspace{0.75in}
 
-11.  Change the inputs in lines 22-27 to test for correlation instead of slope.  Highlight and run those lines, then report the new p-value of the test.
+12.  Change the inputs in lines 23--28 to test for correlation instead of slope.  Highlight and run those lines, then report the new p-value of the test.
 \vspace{0.5in}
 
-12.  The p-values from the test of slope (#9) and the test of correlation (#11) should be similar.  Explain why the two p-values should match. *Hint: think about the relationship between slope and correlation!*
+13.  The p-values from the test of slope (#10) and the test of correlation (#12) should be similar.  Explain why the two p-values should match. *Hint: think about the relationship between slope and correlation!*
 \vspace{1in}
 
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the `xx`'s in the the provided `R` script file to find a 95\% confidence interval. Highlight and run lines 30--34. 
+We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the `xx`'s in the the provided `R` script file to find a 95\% confidence interval for slope. Highlight and run lines 31--35. 
 
 
 ```r
@@ -166,20 +170,20 @@ regression_bootstrap_CI(Duration ~ Dive_Heartrate, # response ~ explanatory
    summary_measure = "xx", # Slope or correlation
    number_repetitions = 1000) # Number of simulated samples for bootstrap distribution
 ```
-13.  Report the bootstrap 95\% confidence interval in interval notation.  
+14.  Report the bootstrap 95\% confidence interval in interval notation.  
 \vspace{0.5in}
 
-14.  Interpret the interval in question 13 in context of the problem.  *Hint: use the interpretation of slope in your confidence interval interpretation.*
+15.  Interpret the interval in question 14 in context of the problem.  *Hint: use the interpretation of slope in your confidence interval interpretation.*
 
 \vspace{0.8in}
    
 #### Communicate the results and answer the research question {-}
 
-15. Based on the p-value, write a conclusion in context of the problem.
+16. Based on the p-value, write a conclusion in context of the problem.
 
 \vspace{.8in}
 
-16. Does the conclusion based on the p-value agree with the results of the 95\% confidence interval?  What does each tell you about the null hypothesis?
+17. Does the conclusion based on the p-value agree with the results of the 95\% confidence interval?  What does each tell you about the null hypothesis?
 
 \vspace{.6in}
 \newpage

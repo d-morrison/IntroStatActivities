@@ -1,6 +1,6 @@
 # Study Design
 
-## Week 2 Reading Guide: Sampling, Experimental Design, and Scope of Inference
+## Module 2 Reading Guide: Sampling, Experimental Design, and Scope of Inference
 
 ### Section 1.3 (Sampling principles and strategies) {-}
 

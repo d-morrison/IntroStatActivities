@@ -1,10 +1,10 @@
 # Inference for Two Categorical Variables: Simulation-based Methods
 
-## Week 8 Reading Guide: Hypothesis Testing for a Difference in Proportions
+## Module 8 Reading Guide: Hypothesis Testing for a Difference in Proportions
 
 ### Section 5.5 (Simulation-based inference for a difference in proportions)  {-}
 
-You may skip section 5.5.3, which will be covered next week, as well as the material on relative risk in section 5.5.1, which will be covered in Week 14.
+You may skip section 5.5.3, which will be covered in the next module, as well as the material on relative risk in section 5.5.1, which will be covered in module 14.
 
 **Videos**  
 

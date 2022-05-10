@@ -1,4 +1,4 @@
-## Week 8 Lab:  Fatal Injuries in the Iliad - Solutions and Tips
+## Module 8 Lab:  Fatal Injuries in the Iliad 
 
 \setstretch{1}
 
@@ -91,7 +91,7 @@ Fill in the missing values/names in the `R` script file in the `two-proportion_t
 
 ```{r, echo=TRUE, eval=FALSE}
 two_proportion_test(formula = response~explanatory, # response ~ explanatory
-    data= iliad, # Name of data set
+    data= injuries, # Name of data set
     first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
     number_repetitions = 1000, # Always use a minimum of 1000 repetitions
     response_value_numerator = "xx", # Define which outcome is a success 
@@ -111,7 +111,7 @@ Fill in the missing values/names in the `R` script file in the two-proportion_bo
 
 ```{r, echo=TRUE, eval=FALSE}
 two_proportion_bootstrap_CI(formula = response~explanatory, 
-         data=iliad, # Name of data set
+         data=injuries, # Name of data set
          first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
          response_value_numerator = "xx", # Define which outcome is a success 
          number_repetitions = 1000, # Always use a minimum of 1000 repetitions

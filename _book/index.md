@@ -8,7 +8,7 @@ author: |
     | Jade Schmidt
     | Stacey Hancock
 subtitle: |
-    | Spring 2022
+    | Summer 2022
     | Montana State University
 output: 
     pdf_document:
@@ -18,7 +18,7 @@ biblio-style: apalike
 nocite: '@*'
 site: bookdown::bookdown_site
 documentclass: report
-description: This is the coursepack of in-class activities for STAT 216 Spring 2022.
+description: This is the coursepack of in-class activities for STAT 216 Summer 2022.
 location: Montana State University
 ---
 
@@ -59,9 +59,9 @@ Videos assigned in the course calendar and other notes and review materials are 
 
 Each of the activities in this workbook is designed to target specific learning outcomes of the course, giving you practice with important statistical concepts in a group setting with instructor guidance. In addition to the in-class activities for the course, the coursepack includes reading guides to aid in taking notes while you complete the required readings and videos. Bring this workbook with you to class each class period, and take notes in the workbook as you would your own notes. A well-written completed workbook will provide an optimal study guide for exams!  
 
-The activities in this coursepack will be completed during class time on Mondays and Wednesdays.  The weekly labs will be completed in class with your group on Fridays.  Parts of each lab will be turned in on Gradescope. To aid in your understanding, read through the introduction for each activity before attending class each day.  
+The activities and labs in this coursepack will be completed during class time.  Parts of each lab will be turned in on Gradescope. To aid in your understanding, read through the introduction for each activity before attending class each day.  
 
-STAT 216 is a 3-credit in-person course.  Students will meet with their instructor and classmates three days per week for 50 minutes. In our experience, it takes six to nine hours per week outside of class to achieve a good grade in this class.  By “good” we mean at least a C because a grade of D or below does not count toward fulfilling degree requirements. Many of you set your goals higher than just getting a C, and we fully support that. You need roughly nine hours per week to review past activities, read feedback on previous assignments, complete current assignments, and prepare for the next day's class. A typical week in the life of a STAT 216 student looks like:
+STAT 216 is a 3-credit in-person course.  In our experience, it takes six to nine hours per week outside of class to achieve a good grade in this class.  By “good” we mean at least a C because a grade of D or below does not count toward fulfilling degree requirements. Many of you set your goals higher than just getting a C, and we fully support that. You need roughly nine hours per week to review past activities, read feedback on previous assignments, complete current assignments, and prepare for the next day's class. A typical week in the life of a STAT 216 student looks like:
 
 * _Prior to class meeting_:
     - Read assigned sections of the textbook, using the provided reading guides to take notes on the material.

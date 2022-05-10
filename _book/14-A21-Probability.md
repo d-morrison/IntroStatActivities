@@ -38,7 +38,7 @@ a. What is the probability that a randomly selected senior is a science major?  
 
 \vspace{0.35in}
 
-b. What is the probability that a randomly selected student is both a a senior and a science major.  Use appropriate probability notation.
+b. What is the probability that a randomly selected student is both a senior and a science major.  Use appropriate probability notation.
 
 \vspace{0.35in}
 

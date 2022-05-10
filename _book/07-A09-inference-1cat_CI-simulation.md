@@ -139,6 +139,35 @@ one_proportion_bootstrap_CI(sample_size = 16, # Sample size
 15.  Explain why the upper value of the confidence interval is truncated at 1.
 
 \vspace{0.5in}
+
+\newpage
+
+### What does *confidence* mean? {-}
+
+In the interpretation of a 95\% confidence interval, we say that we are 95\% confident that the parameter is within the confidence interval.  Why are we able to make that claim?  What does it mean to say "we are 95\% confident"?
+
+For this part of the activity we will assume that the the true proportion of infants that choose the helper toy is 0.75. *Note: we are making assumptions about the population here. This is not based on our calculated data, but we will use this applet to better understand what happens when we take many, many samples from this believed population.* 
+
+16.  Go to this website, [http://www.rossmanchance.com/ISIapplets.html](http://www.rossmanchance.com/ISIapplets.html) and choose 'Simulating Confidence Intervals'.  In the input on the left-hand side of the screen enter 0.75 for $\pi$ (the true value), 16 for $n$, and 100 for 'Number of intervals'.  Click 'sample'.
+\vspace{1mm}
+
+a. In the graph on the bottom right, click on a green dot.  Write down the confidence interval for this sample given on the graph on the left.  Does this confidence interval contain the true value of 0.75?
+\vspace{0.5in}
+
+
+b. Now click on a red dot.  Write down the confidence interval for this sample.  Does this confidence interval contain the true value of 0.75?
+\vspace{0.5in}
+
+c. How many intervals out of 100 contain $\pi$, the true value of 0.75? *Hint*:  This is given to the left of the graph of green and red intervals.
+\vspace{0.5in}
+
+17.  Click on 'sample' nine more times.  Write down the 'Running Total' for the proportion of intervals that contain $\pi$.  
+
+\vspace{0.5in}
+
+18.  **Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?**
+
+
 \newpage
 
 ### Take-home messages

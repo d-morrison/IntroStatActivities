@@ -130,7 +130,7 @@ $$
 
 \vspace{0.1in}
 
-We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 8 at `xx` in line 1; highlight and run lines 1--3.
+We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 8 at `xx` in line 2; highlight and run lines 2--4.
 
 
 ```r

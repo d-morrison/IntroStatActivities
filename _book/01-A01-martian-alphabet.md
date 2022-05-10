@@ -23,9 +23,9 @@ Statistics is the study of how best to collect, analyze, and draw conclusions fr
 
 For more on these concepts, read Sections 1.2 and 2.1 in the textbook.
 
-### General information on Friday labs
+### General information labs
 
-Each Friday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Gradescope (one submission per group).  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab with your group have the Gradescope lab assignment open so that you can answer those questions as you go.  Today's activity is Lab 0 in Gradescope for practice submitting as a group.
+For each module you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.  Today's activity is Lab 0 in Gradescope for practice submitting.
 
 ### Can you read "Martian"?
 

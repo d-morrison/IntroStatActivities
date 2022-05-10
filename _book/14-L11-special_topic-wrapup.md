@@ -1,4 +1,4 @@
-## Week 14 Lab: Efficacy of the COVID Vaccination
+## Module 14 Lab: Efficacy of the COVID Vaccination
 
 \setstretch{1}
 
@@ -18,11 +18,11 @@ In November 2021, it was estimated that 59.1\% of all US adults ($\ge$ 18 years 
 
 Let $A$ = the event the US adult is vaccinated, and $B$ = the event the US adult is hospitalized with COVID. 
 
-|                             |  Vaccinated | Not Vaccinated |    Total   |
-|-----------------------------|-------------|----------------|------------|
-| Hospitalized with COVID     |     2.309   |      27.7302   |    30.0392 |
-| Not hospitalized with COVID | 59,097.6951 |   40,872.2698  |   99,96949 |
-| Total                       |   59,100    |      40,900    |    100,000 |
+|                             |  Vaccinated | Not Vaccinated |     Total   |
+|-----------------------------|-------------|----------------|-------------|
+| Hospitalized with COVID     |    2.3049   |      27.7302   |     30.0351 |
+| Not hospitalized with COVID | 59,097.6951 |   40,872.2698  | 99,969.9649 |
+| Total                       |   59,100    |      40,900    |     100,000 |
 
 
 1.  What is the probability that a US adult is both hospitalized with COVID-19 and vaccinated? Use proper probability notation.

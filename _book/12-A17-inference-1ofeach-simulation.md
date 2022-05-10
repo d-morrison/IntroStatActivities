@@ -48,8 +48,7 @@ Snow %>%
 ggplot(aes(x = WeatherPattern, y = Snowfall)) +
     geom_boxplot() + 
     labs(title = "Snowfall by weather pattern",
-         x = "Weather pattern") +
-    coord_flip()
+         x = "Weather pattern") 
 ```
 
 
@@ -171,11 +170,12 @@ We will use the `two_mean_test()` function in `R` (in the `catstats` package) to
 
 
 ```r
-two_mean_test(Snowfall ~ WeatherPattern, data = Snow,  # Variables and data
-         first_in_subtraction = "xx", # First outcome in order of subtraction
-         number_repetitions = 1000,  # Number of simulations
-         as_extreme_as = xx,  # Observed statistic
-         direction = "xx")  # Direction of alternative: "greater", "less", or "two-sided"
+two_mean_test(Snowfall ~ WeatherPattern, #Enter the names of the variables
+              data = Snow,  # Enter the name of the dataset
+              first_in_subtraction = "xx", # First outcome in order of subtraction
+              number_repetitions = 1000,  # Number of simulations
+              as_extreme_as = xx,  # Observed statistic
+              direction = "xx")  # Direction of alternative: "greater", "less", or "two-sided"
 ```
 
 |        Sketch the null distribution created using the code above.
@@ -192,10 +192,11 @@ two_mean_test(Snowfall ~ WeatherPattern, data = Snow,  # Variables and data
 
 We will use the `two_mean_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval. 
 
-19. Using bootstrapping find a 95\% confidence interval. Using the provided `R` script file, enter the variable names and data set name as in the `two_mean_test()` function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 32--35. Report the 95\% confidence interval in interval notation.
+19. Using bootstrapping find a 95\% confidence interval. Using the provided `R` script file, enter the variable names as in the `two_mean_test()` function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 32--36. Report the 95\% confidence interval in interval notation.
 
 ```r
-two_mean_bootstrap_CI(RESPONSE ~ EXPLANATORY, data = DATASET,  # Variables and data
+two_mean_bootstrap_CI(response ~ explanatory, #Enter the name of the variables
+                      data = Snow,  # Enter the name of the data set
                       first_in_subtraction = "xx", # First value in order of subtraction
                       number_repetitions = 1000,  # Number of simulations
                       confidence_level = xx)

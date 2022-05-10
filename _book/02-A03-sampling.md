@@ -64,7 +64,7 @@ Fill in the table below with the random numbers selected and use the Becenti.csv
 
 \newpage
 
-6. How does the plot generated in question 4 compare to the plot generated in question 8 from Activity 2a? 
+6. How does the plot generated in question 4 compare to the plot generated in question 8 from Activity 2A? 
 
 \rgi Which features are similar?  
 \vspace{0.4in}
@@ -111,7 +111,7 @@ One set of randomly generated sample mean word lengths from a single class may n
 
 We will now consider the impact of sample size.
 
-11. First, consider if each student had selected 20 words, instead of 10, by eye. Do you think this would make the plot from question 8 in Activity 2a centered on 3.95 (the true mean word length)?  Explain your answer.
+11. First, consider if each student had selected 20 words, instead of 10, by eye. Do you think this would make the plot from question 8 in Activity 2A centered on 3.95 (the true mean word length)?  Explain your answer.
 \vspace{0.4in}
 
 12. Now we will select 20 words instead of 10 words at random.

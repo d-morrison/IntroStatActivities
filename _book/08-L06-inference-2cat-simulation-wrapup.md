@@ -1,4 +1,4 @@
-## Week 8 Lab:  Fatal Injuries in the Iliad
+## Module 8 Lab:  Fatal Injuries in the Iliad 
 
 \setstretch{1}
 
@@ -11,22 +11,22 @@
 
 * Interpret and evaluate a p-value for a simulation-based hypothesis test for a difference in proportions.
 
-* Interpret and evaluate a confidence interval for a simualtion-based confidence interval for a difference in proportions.
+* Interpret and evaluate a confidence interval for a simulation-based confidence interval for a difference in proportions.
 
 ### Fatal Injuries in the Iliad
 
 Homer’s Iliad is an epic poem, compiled around 800 BCE, that describes several weeks of the last year of the 10-year siege of Troy (Ilion) by the Achaeans. The story centers on the rage of the great warrior Achilles. But it includes many details of injuries and outcomes, and is thus the oldest record of Greek medicine. The data report 146 recorded injuries for which both injury site and outcome are provided in the Illiad [@hutchison2013]. For this activity we will focus on comparing injuries to the body and injuries to a limb and whether the injury resulted in a fatality.  Are injuries to the body more lethal than injuries to a limb?
 
-Upload and open the `R` script file for Week 8 lab. Upload and import the csv file, `iliad`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 5. Highlight and run lines 1--10 to get the counts for each combination of categories.
+Upload and open the `R` script file for Week 8 lab. Upload and import the csv file, `iliad`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 6. Highlight and run lines 1--11 to get the counts for each combination of categories.
 
 
 ```r
-iliad <- datasetname# Read data set in
-iliad <- iliad %>%
+injuries<- datasetname# Read data set in
+injuries <- injuries %>%
   filter(Injury.Site != "Head/neck") #Removes the injuries to head and neck
-iliad <- iliad %>%
+injuries <- injuries%>%
   filter(Location != "Unknown") #Removes the unknown locations of injuries
-iliad %>% group_by(Injury.Site) %>% count(Lethal) #finds the counts in each group
+injuries %>% group_by(Injury.Site) %>% count(Lethal) #finds the counts in each group
 ```
 
 1. What is the explanatory variable?
@@ -64,11 +64,11 @@ iliad %>% group_by(Injury.Site) %>% count(Lethal) #finds the counts in each grou
 
 \vspace{0.8in}
 
-Use the provided `R` script file to create a segmented bar plot of the data.  Highlight and run lines 12--18.
+Use the provided `R` script file to create a segmented bar plot of the data.  Make sure to title your plot.  Highlight and run lines 14--20.
 
 
 ```r
-iliad %>% # Data set piped into...
+injuries %>% # Data set piped into...
   ggplot(aes(x = Injury.Site, fill = Lethal)) +   # This specifies the variables
   geom_bar(stat = "count", position = "fill") +  # Tell it to make a stacked bar plot
   labs(title = "Title",  # Make sure to title your plot 
@@ -94,7 +94,7 @@ Fill in the missing values/names in the `R` script file in the `two-proportion_t
 
 ```r
 two_proportion_test(formula = response~explanatory, # response ~ explanatory
-    data= iliad, # Name of data set
+    data= injuries, # Name of data set
     first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
     number_repetitions = 1000, # Always use a minimum of 1000 repetitions
     response_value_numerator = "xx", # Define which outcome is a success 
@@ -115,7 +115,7 @@ Fill in the missing values/names in the `R` script file in the two-proportion_bo
 
 ```r
 two_proportion_bootstrap_CI(formula = response~explanatory, 
-         data=iliad, # Name of data set
+         data=injuries, # Name of data set
          first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
          response_value_numerator = "xx", # Define which outcome is a success 
          number_repetitions = 1000, # Always use a minimum of 1000 repetitions

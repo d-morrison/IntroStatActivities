@@ -3,7 +3,6 @@ delete_merged_file: true
 new_session: yes
 rmd_files: [
   "index.Rmd", 
-  "00-calendar.Rmd",
   "01-RG-basics-of-data.Rmd",
   "01-A01-martian-alphabet.Rmd",
   "02-RG-study-design.Rmd",

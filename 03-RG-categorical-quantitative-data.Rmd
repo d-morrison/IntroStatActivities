@@ -1,6 +1,6 @@
 # Exploring Categorical and Quantitative Data
 
-## Week 3 Reading Guide: Introduction to `R`, Categorical Variables, and a Single Quantitative Variable
+## Module 3 Reading Guide: Introduction to `R`, Categorical Variables, and a Single Quantitative Variable
 
 ### Section 1.7 (Data in `R`) {-}
 

@@ -1,4 +1,4 @@
-## Week 9 Lab:  Diabetes
+## Module 9 Lab:  Diabetes
 
 \setstretch{1}
 
@@ -25,8 +25,8 @@ Upload and open the `R` script file for Week 9 lab. Upload and import the csv fi
 
 
 ```r
-diabetes <- datasetname
-diabetes %>% group_by(treatment) %>% count(outcome)
+rosi <- datasetname
+rosi %>% group_by(treatment) %>% count(outcome)
 ```
 
 1. Is this an experiment or an observational study?
@@ -64,7 +64,7 @@ Fill in the missing values/names in the `R` script file in the two-proportion_te
 
 ```r
 two_proportion_test(formula = outcome~treatment, # response ~ explanatory
-         data= diabetes, # Name of data set
+         data= rosi, # Name of data set
          first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
          number_repetitions = 1000, # Always use a minimum of 1000 repetitions
          response_value_numerator = "xx", # Define which outcome is a success 

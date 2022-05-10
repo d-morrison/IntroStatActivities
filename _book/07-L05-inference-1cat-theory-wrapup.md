@@ -1,4 +1,4 @@
-## Week 7 Lab:  Errors and Power
+## Module 7 Lab:  Errors and Power
 
 \setstretch{1}
 
@@ -140,7 +140,7 @@ Now let's investigate how changes in different factors influence the power of a 
 
 \newpage
 
-20.  Based on the goals outlined in question 19, which mistake below is the company more concerned about?  Explain your answer.
+20.  Based on the goals outlined in question 19, which mistake below is the company more concerned about?  In other words, which error were the researchers trying to minimize.  Explain your answer.
 
 * Not being able to advertise their ACL recovery program is better than average when their program really is better.
 

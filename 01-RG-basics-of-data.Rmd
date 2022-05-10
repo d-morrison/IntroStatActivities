@@ -1,6 +1,6 @@
 # Basics of Data
 
-## Week 1 Reading Guide: Basics of Data
+## Module 1 Reading Guide: Basics of Data
 
 ### Sections 1.1 (Case study) and 1.2 (Data basics) {-}
 

@@ -1,6 +1,6 @@
 # Inference for a Quantitative Response with Independent Samples
 
-## Week 12 Reading Guide: Inference for a Difference in Two Means
+## Module 12 Reading Guide: Inference for a Difference in Two Means
 
 ### Section 6.3 (Inference for a difference in two means) {-}
 

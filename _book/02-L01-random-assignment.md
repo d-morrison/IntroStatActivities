@@ -1,4 +1,4 @@
-## Week 2 Lab: Study Design
+## Module 2 Lab: Study Design
 
 \setstretch{1}
 
@@ -28,9 +28,9 @@ In this activity, we will examine different study designs, confounding variables
 
 To review these concepts, see Sections 1.2 through 1.6 in the textbook.  
 
-### General information on Friday labs
+### General information labs
 
-Remember that each Friday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Gradescope (one submission per group).  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab with your group have the Gradescope lab assignment open so that you can answer those questions as you go.
+Remember that for each module you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.
 
 ### Study design
 The two main study designs we will cover are **observational studies** and **experiments**.  In observational studies, researchers have no influence over which subjects are in each group being compared (though they can control other variables in the study).  An experiment is defined by assignment of the treatment groups of the *explanatory variable*, typically via random assignment.   
@@ -69,12 +69,12 @@ For the next exercises, identify the explanatory variable, the response variable
 
 Atrial fibrillation is an irregular and often elevated heart rate. In some people, atrial fibrillation will come and go on its own, but others will experience this condition on a permanent basis.  When atrial fibrillation is constant, medications are required to stabilize the patient's heart rate and to help prevent blood clots from forming.  Pharmaceutical scientists at a large pharmaceutical company believe they have developed a new medication that effectively stabilizes heart rates in people with permanent atrial fibrillation.  They set out to conduct a trial study to investigate the new drug.  The scientists will need to compare the proportion of patients whose heart rate is stabilized between two groups of subjects, one of whom is given a placebo and the other given the new medication. 
 
-3. Identify the response and explanatory variable in this trial study.
-
-    Response variable:
-\vspace{0.25in}
+3. Identify the explanatory and response variable in this trial study.
 
     Explanatory variable:
+\vspace{0.25in}
+
+    Response variable:
 \vspace{0.25in}
 
 \newpage
@@ -94,10 +94,10 @@ Non-males: An, Nailah, Jasmine, Ka Nong, Keyaina, Mary, Adah, Sassandra
 6. One way to separate into two groups would be give all the males the placebo and all the non-males the new drug.  Would this be a reasonable strategy?  Explain your answer.
 \vspace{1in}
 
-7. Could the scientists fix the problem with the strategy presented in question 6 by putting four males into the drug group so that the drug group has 8 non-males and 4 males and the placebo group has 12 males?  Explain your answer.
+7. Could the scientists fix the problem with the strategy presented in question 6 by creating equal sized groups by putting 4 males and 8 non-males into the drug group and the remaining 12 males in the placebo group?  Explain your answer.
 \vspace{0.5in}
 
-8. A third strategy would be to **block** on sex.  In this type of study, the scientists would assign 4 non-males and 8 males to each group.  Say they put the four tallest non-males and eight tallest males into the placebo group and the remaining subjects into the control group.  
+8. A third strategy would be to **block** on sex.  In this type of study, the scientists would assign 4 non-males and 8 males to each group.    
 
 |    Using this strategy, how many males are in each group?  
 \vspace{0.1in}
@@ -108,7 +108,7 @@ Non-males: An, Nailah, Jasmine, Ka Nong, Keyaina, Mary, Adah, Sassandra
 |    Is the proportion of males the same in the drug and placebo groups?
 \vspace{0.1in}
 
-9. **Assume the scientists used the strategy in question 8 and found that the proportion of patients whose heart rate stabilized is higher in the drug group than the placebo group.**  
+9. **Assume the scientists used the strategy in question 8, but they put the four tallest non-males and eight tallest males into the placebo group and the remaining subjects into the control group. They found that the proportion of patients whose heart rate stabilized is higher in the drug group than the placebo group.**  
 
 |    Could that difference be due to the sex of the subjects?  Explain your answer.
 \vspace{0.5in}
@@ -118,7 +118,7 @@ Non-males: An, Nailah, Jasmine, Ka Nong, Keyaina, Mary, Adah, Sassandra
 
 \newpage
 
-While the strategy presented in question 8 controlled for the sex of the subject, there are more potential **confounding variables** in the study.  A confounding variable is a variable that is _both_
+While the strategy presented in question 9 controlled for the sex of the subject, there are more potential **confounding variables** in the study.  A confounding variable is a variable that is _both_
 
 1. associated with the explanatory variable, _and_
 2. associated with the response variable.
@@ -142,7 +142,7 @@ When both these conditions are met, if we observe an association between the exp
 |    What is the difference in proportion of males between the two groups (placebo - drug)?
 \vspace{0.1in}
 
-11.  Notice the difference in the two proportions is shown as a dot in the plot at the bottom of the web site.  Un-check the box for Animate under "Simulation" and click Randomize again.  Did you get the same difference in proportion of males between the placebo and drug groups?
+11.  Notice the difference in the two proportions is shown as a dot in the plot at the bottom of the web page.  Un-check the box for Animate under "Simulation" and click Randomize again.  Did you get the same difference in proportion of males between the placebo and drug groups?
 \vspace{0.25in}
 
 12.  Change Repetitions under "Simulation" to 998 (for 1000 total).  Sketch the plot of the distribution of difference in proportions from each of the 1000 random assignments here.  Be sure to include a descriptive $x$-axis label. 

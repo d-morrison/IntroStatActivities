@@ -1,4 +1,4 @@
-## Week 3 Lab:  IPEDs
+## Module 3 Lab:  IPEDs
 
 \setstretch{1}
 
@@ -50,7 +50,7 @@ These data are on a subset of institutions that met the following selection crit
 
 \newpage
 
-Upload the data set `IPEDS_Data_2018` Click on Import Dataset in the Environment tab in the upper right hand corner.  Choose `From Text(base)` and select the correct csv file.  Be sure that `Yes` is selected next to `Heading` in the pop-up screen.  Click `Import`.
+Upload the data set `IPEDS_Data_2018` to the `R` Studio server.  Click on Import Dataset in the Environment tab in the upper right hand corner.  Choose `From Text(base)` and select the correct csv file.  Be sure that `Yes` is selected next to `Heading` in the pop-up screen.  Click `Import`.
 
 Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in line 6.  We will look at the retention rates for the 4-year institutions.  Enter the variable name `Retention` for `variable` in line 12.  Highlight and run lines 1 -- 12.  Note that the two lines of code (lines 8 and 10) are filtering to remove the 2-year institutions so we are only assessing Public 4-year and Private 4-year institutions.  
 
@@ -167,7 +167,7 @@ Is there a difference in retention rates for public and private 4-year instituti
 
 \vspace{0.8in}
 
-Enter the name of the explanatory variable and the name of the response variable in lines 53 and 56 of the `R` script file.  Highlight and run lines 52 -- 60 to find the summary statistics and create side by side boxplots of the data.
+Enter the name of the explanatory variable and the name of the response variable in lines 42 and 45 of the `R` script file.  Highlight and run lines 41 -- 49 to find the summary statistics and create side by side boxplots of the data.
 
 
 ```r
@@ -209,7 +209,7 @@ IPEDS %>%  # Data set piped into...
 
 ####  Summarizing two categorical variables {-}
 
-Are private 4-year institutions smaller than public one? The following set of code will create a segmented bar plot of size of the institution by sector.  Enter the variable `Sector` for explanatory and `Size` for response in line 64. Highlight and run lines 63--69 in the `R` script file.
+Are private 4-year institutions smaller than public one? The following set of code will create a segmented bar plot of size of the institution by sector.  Enter the variable `Sector` for explanatory and `Size` for response in line 53. Highlight and run lines 52 -- 58 in the `R` script file.
 
 
 ```r

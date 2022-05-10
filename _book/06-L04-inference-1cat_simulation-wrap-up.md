@@ -1,4 +1,4 @@
-## Week 6 Lab:  Helper-Hinderer (continued)
+## Module 6 Lab:  Helper-Hinderer (continued)
 
 \setstretch{1}
 

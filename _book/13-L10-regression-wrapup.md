@@ -1,4 +1,4 @@
-## Week 13 Lab: COVID Immunization and Infection Rates
+## Module 13 Lab: COVID Immunization and Infection Rates
 
 \setstretch{1}
 
@@ -115,7 +115,7 @@ The response variable name is `Case_per_100K` and the explanatory variable name 
 * Summary measure (choose `"slope"` or `"correlation"`):
 
 \vspace{.2in}
-* As extreme as (enter the value for the sample slope):
+* As extreme as (enter the value for the sample correlation):
 
 \vspace{0.2in}
 
@@ -178,8 +178,6 @@ regression_bootstrap_CI(Case_per_100K~PercentImmunized, # response ~ explanatory
 16. Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper.  **Upload a copy of your paragraph to Gradescope for your group.**  Be sure to describe:
 
 * Summary statistic
-
-* Test statistic and interpretation
 
 * P-value and interpretation
 

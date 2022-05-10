@@ -1,4 +1,4 @@
-## Week 13 Lab: COVID Immunization and Infection Rates
+## Module 13 Lab: COVID Immunization and Infection Rates
 
 \setstretch{1}
 

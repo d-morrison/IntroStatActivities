@@ -48,7 +48,7 @@ The abstract of the article "Studies of interference in serial verbal reactions"
 > The difference in time for reading the words printed in colors and the same words printed in black is the measure of interference of color stimuli upon reading words. ...
 > The interference of conflicting color stimuli upon the time for reading 100 words (each word naming a color unlike the ink-color of its print) caused an increase of 2.3 seconds or 5.6% over the normal time for reading the same words printed in black.
 
-The article reports on the results of a study in which seventy college undergraduates were given forms with 100 names of colors written in black ink, and the same 100 names of colors written in another color (i.e., the word purple written in green ink).  The total time (in seconds) for reading the 100 words printed in black, and the total time (in seconds) for reading the 100 words printed in different colors were recorded for each subject. The order in which the forms (black or color) were given was randomized to the subjects. Does printing the name of colors in a different color increase the time it takes to read the words?
+The article reports on the results of a study in which seventy college undergraduates were given forms with 100 names of colors written in black ink, and the same 100 names of colors written in another color (i.e., the word purple written in green ink).  The total time (in seconds) for reading the 100 words printed in black, and the total time (in seconds) for reading the 100 words printed in different colors were recorded for each subject. The order in which the forms (black or color) were given was randomized to the subjects. Does printing the name of colors in a different color increase the time it takes to read the words?  Use color - black as the order of subtraction.
 
 #### Identify the scenario {-}
 
@@ -148,7 +148,7 @@ color_diff %>%
 
 To find the standardized statistic for the paired differences we will use the following formula:
 
-$$T = \frac{\bar{x}_d - \mu_d}{SE(\bar{x}_d)},$$
+$$T = \frac{\bar{x}_d - \mu_0}{SE(\bar{x}_d)},$$
 where the standard error of the sample mean difference is:
 
 $$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.$$
@@ -161,24 +161,23 @@ $$SE(\bar{x}_d)=\frac{s_d}{\sqrt{n}}.$$
 
 \vspace{0.5in}
 
-Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function.  For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size.  You should therefore use `df` = $n_d-1 = 70 - 1 = 69$ and `lower.tail = TRUE` to find the p-value.  Highlight and run line 31.  
+Using the provided `R` script file, enter the T-score (for `xx`) into the `pt()` function.  For single sample or paired data, degrees of freedom are found by subtracting 1 from the sample size.  You should therefore use `df` = $n_d-1 = 70 - 1 = 69$ and `lower.tail = FALSE` to find the p-value.  Highlight and run line 23.  
 
 
 ```r
-pt(xx, df=69, lower.tail=TRUE)
+pt(xx, df=69, lower.tail=FALSE)
 ```
-9. Explain why we found the area above the T-score using `lower.tail = TRUE` in the code above.
+9. Explain why we found the area above the T-score using `lower.tail = FALSE` in the code above.
 \vspace{0.3in}
 
 10.  What does this p-value mean, in the context of the study?  Hint: it is the probability of what...assuming what?
 \vspace{0.8in}
 
+\newpage
 
 To calculate a theory-based confidence interval for the paired mean difference, use the following formula:
 
 $$\bar{x}_d\pm t^* SE(\bar{x}_d).$$
-\newpage
-
 We will need to find the $t^*$ multiplier using the function `qt()`. The code below will return the 95th percentile of the $t$ distribution with `df` = $n_d - 1 = 70 - 1 = 69$. 
 
 

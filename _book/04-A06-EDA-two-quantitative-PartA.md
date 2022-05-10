@@ -54,7 +54,7 @@ We will revisit the data set used last week collected on Movies released in 2016
 
 \vspace{0.4in}
 
-We will look at the relationship between budget and revenue for movies released in 2016. Enter the explanatory variable name, `budget_mil`, for `explanatory` and the response variable name, `revenue_mil`, for `response` at line 7 in the `R` script file to create the scatterplot. (Note: both variables are measured in "millions of dollars", or $MM.)  Highlight and run lines 1--12.
+We will look at the relationship between budget and revenue for movies released in 2016. Enter the explanatory variable name, `budget_mil`, for `explanatory` and the response variable name, `revenue_mil`, for `response` at line 7 in the `R` script file to create the scatterplot. (Note: both variables are measured in "millions of dollars" ($MM).)  Highlight and run lines 1--12.
 
 
 ```r
