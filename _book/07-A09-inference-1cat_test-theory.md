@@ -1,4 +1,4 @@
-## Activity 7B:  Handedness of Male Boxers --- Theory-based Methods
+## Activity 7A:  Handedness of Male Boxers --- Theory-based Methods
 
 \setstretch{1}
 
@@ -29,17 +29,24 @@ In today's activity, we will introduce theory-based confidence intervals for a s
 
 To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
 
-Activity 6 and the Week 6 Lab covered simulation-based methods for hypothesis tests involving a single categorical variable. This activity covers theory-based methods for testing a single categorical variable.  
+Activities 6A, 6B, and the Week 6 Lab covered simulation-based methods for hypothesis tests involving a single categorical variable. This activity covers theory-based methods for testing a single categorical variable.  
 
 ### Handedness of male boxers
 
 Left-handedness is a trait that is found in about 10\% of the general population. Past studies have shown that left-handed men are over-represented among professional boxers [@richardson2019]. The fighting claim states that left-handed men have an advantage in competition.  In this random sample of 500 male professional boxers, we want to see if there is an over-prevalence of left-handed fighters.  In the sample of 500 male boxers, 81 were left-handed.
 
 
-```{r, echo=TRUE, collapse=FALSE, message=FALSE, warning=FALSE}
+
+```r
  # Read in data set
 boxers <- read.csv("https://math.montana.edu/courses/s216/data/Male_boxers_sample.csv")
 boxers %>% count(Stance)  # Count number in each Stance category
+```
+
+```
+#>         Stance   n
+#> 1  left-handed  81
+#> 2 right-handed 419
 ```
 
 ### Review of summary statistics {-}
@@ -66,13 +73,13 @@ Conditions for the sampling distribution of $\hat{p}$ to follow an approximate n
 
 * **Independence**: The sample’s observations are independent, e.g., are from a simple random sample. (*Remember*: This also must be true to use simulation methods!)
 
-* **Success-failure condition**: We *expect* to see at least 10 successes and 10 failures in the sample, $n\pi≥10$  and $n(1-\pi)≥10$.
+* **Success-failure condition**: We *expect* to see at least 10 successes and 10 failures in the sample, $n\hat{p}≥10$  and $n(1-\hat{p})≥10$.
 
 5. Verify that the independence condition is satisfied.
 
 \vspace{0.5in}
 
-6. Is the success-failure condition met to model the data with the normal distribution?  Show your work to support your answer. Hint: We don't know the true value of the parameter, $\pi$, so we use the null value, $\pi_0$, to check the success-failure condition.
+6. Is the success-failure condition met to model the data with the normal distribution?  Show your work to support your answer.
 
 \vspace{1in}
 \newpage
@@ -91,11 +98,15 @@ where the standard error is calculated using the null value:
 
 $$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$.
 
-7.  Calculate the null standard error of the sample proportion.
+The standard error of the sample proportion measures the variability of possible sample proportions from the actual proportion.  In other words, how far each possible sample proportion is from the actual proportion on average.  For this study, the null standard error of the sample proportion is calculated using the null value, 0.1.
+
+$$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{500}} = 0.013$$.
+
+7.  Interpret the null standard error of the sample proportion in context of the problem.
 
 \vspace{0.6in}
 
-8.  Calculate the standardized sample proportion.  
+8.  Using the null standard error of the sample proportion, calculate the standardized sample proportion.  
 
 \vspace{0.6in}
 
@@ -103,9 +114,14 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 
 9.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in the percentages on the standard normal distribution displayed in Figure \@ref(fig:simpleNormalcurve), and also mark the value of the standardized statistic calculated in question 8.
 
-```{r simpleNormalcurve, fig.cap="A standard normal curve.", warning=FALSE, out.width="50%"}
-openintro::normTail(m = 0, s = 1)
-```
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{07-A09-inference-1cat_test-theory_files/figure-latex/simpleNormalcurve-1} 
+
+}
+
+\caption{A standard normal curve.}(\#fig:simpleNormalcurve)
+\end{figure}
 
 \newpage
 
@@ -123,7 +139,8 @@ Notes:
 * Use `lower.tail = FALSE` when doing a right-sided test.
 * To find a two-sided p-value, use a left-sided test for negative Z or a right-sided test for positive Z, then multiply the value found by 2 to get the p-value.
 
-```{r, echo=TRUE, eval=FALSE}
+
+```r
 pnorm(xx, # Enter value of standardized statistic
       m=0, s=1, # Using the standard normal mean = 0, sd = 1
       lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
@@ -131,75 +148,94 @@ pnorm(xx, # Enter value of standardized statistic
   
   
 11.  Report the p-value obtained from the `R` output.
-\vspace{0.2in}
+\vspace{0.3in}
 
 12.  Write a conclusion based on the value of the p-value.
-\vspace{0.8in}
-
-
-#### Validity conditions for a confidence interval {-}
-
-To check the success-failure condition to use theory-based methods for confidence intervals, we use $\hat{p}$ in the calculations since we are not assuming a value for $\pi$. That is, check that we have at least 10 successes and 10 failures in our **sample**:  $n\hat{p} \geq 10$  and $n(1-\hat{p}) \geq 10$.
-
-13.  Verify that the success-failure condition is met to use theory based methods to find a 95\% confidence interval.  
-
-\vspace{0.5in}
 \newpage
 
-To calculate a theory-based 95\% confidence interval for $\pi$, we will first find the **standard error** of $\hat{p}$ by plugging in the value of $\hat{p}$ for $\pi$ in $SD(\hat{p})$:
+### Impacts on the P-value {-}
 
-$$SE(\hat{p}) = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}.$$
+Suppose that we want to show that the true proportion of male boxers **differs** from that in the general population. 
 
-Note that we do not include a "0" subscript, since we are not assuming a null hypothesis. 
-
-14.  Calculate the standard error of the sample proportion to find a 95\% confidence interval.
+13.  Write out the alternative hypothesis in notation for this new research question.
 
 \vspace{0.5in}
 
-To find the confidence interval, we will add and subtract the **margin of error** to the point estimate:
+14.  How would this impact the p-value?  
 
-$$\text{point estimate}\pm\text{margin of error}$$
-$$\hat{p}\pm z^* SE(\hat{p})$$
-The $z^*$ multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 95\%, we find the Z values that encompass the middle 95\% of the standard normal distribution.  If 95\% of the standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail.  
+\vspace{0.2in}
 
-15. Fill in the normal distribution shown in figure 7.2 to show how `R` found the $z^*$ multiplier.
-
-```{r simpleNormaldist, fig.cap="A standard normal curve.", warning=FALSE, out.width="50%"}
-X <- seq(-5,5,0.01)
-Y <- dnorm(X)
-plot(X, Y, type='l', axes=F, xlim=c(-4,4), lwd=2, ylab="", xlab="Z")
-#axis(1, at=-3:3)
-abline(h=-0.002)
-```
-
-The `qnorm()` function in `R` will tell us the $z^*$ value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile). 
-
-```{r, echo=TRUE, collapse=FALSE}
-qnorm(0.975) # Multiplier for 95% confidence interval
-```
-
-16.  What is the value of the multiplier needed to calculate the 95\% confidence interval for the true proportion of male boxers that are left-handed?
+15.  How much evidence would this p-value provide against the null hypothesis?
 
 \vspace{0.3in}
 
-17.  Calculate the margin of error for the 95\% confidence interval.
-\vspace{1in}
+16. Suppose instead of 500 male boxers the researchers only took a sample of 300 male boxers and found the same proportion ($\hat{p}=0.182$) of male boxers that are left-handed.  Since we are still assuming the same null value, 0.1, the standard error would be calculated as below:
 
-18.  Calculate the 95\% confidence interval for the parameter of interest.
-\vspace{0.5in}
+$$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{300}} = 0.017$$.
 
-19.  Interpret the 95\% confidence interval in the context of the problem.
-\vspace{1in}
+Calculate the standardized statistic for this new sample.
 
-20. Is the null value, 0.1, contained in the 95\% confidence interval?  Explain, based on your conclusion in question 12, why you expected this to be true.
-\vspace{1in}
+\vspace{0.8in}
 
+Use Rstudio to find the p-value for this new sample.  Enter the value of the standardized statistic found in question 14 for xx in line 12.  Highlight and run lines 12--14.
+
+
+```r
+pnorm(xx, # Enter value of standardized statistic
+      m=0, s=1, # Using the standard normal mean = 0, sd = 1
+      lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
+```
+
+17.  How does the decrease in sample size affect the p-value?
+
+\vspace{0.3in}
+
+18. Suppose another sample of 500 male boxers was taken and 68 were found to be left-handed.  Since we are still assuming the same null value, 0.1, the standard error would be calculated as before:
+
+$$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{500}} = 0.013$$.Calculate the standardized statistic for this new sample.
+
+\vspace{0.8in}
+
+Use Rstudio to find the p-value for this new sample.  
+
+
+```r
+pnorm(xx, # Enter value of standardized statistic
+      m=0, s=1 # Using the standard normal mean = 0, sd = 1
+      lower.tail=FALSE) # Gives a p-value greater than the standardized statistic
+```
+
+19.  How does a statistic closer to the null value affect the p-value?  
+
+\vspace{0.3in}
+
+20.  Summarize how each of the following affected the p-value:
+
+a) Switching to a two-sided test.
+
+\vspace{0.4in}
+
+b) Using a smaller sample size.
+
+\vspace{0.4in}
+
+c) Using a sample statistic closer to the null value.
+
+\vspace{0.4in}
 
 ### Take-home messages
 
 1.	Both simulation and theory-based methods can be used to find a p-value for a hypothesis test.  In order to use theory-based methods we need to check that both the independence and the success-failure conditions are met. 
 
 2.  The standardized statistic measures how many standard errors the statistic is from the null value. The larger the standardized statistic the more evidence there is against the null hypothesis.
+
+3.  The p-value for a two-sided test is approximately two times the value for a one-sided test.  A two-sided test provides less evidence against the null hypothesis.
+
+4.  The larger the sample size, the smaller the sample to sample variability.  This will result in a larger standardized statistic and more evidence against the null hypothesis.
+
+5.  The farther the statistic is from the null value, the larger the standardized statistic.  This will result in a smaller p-value and more evidence against the null hypothesis.
+
+\newpage
 
 ### Additional notes
 

@@ -29,7 +29,7 @@ To review these concepts, see Chapter 3 in the textbook.
 
 ### Movies released in 2016
 
-We will revisit the data set used last week collected on Movies released in 2016 [@imdb]. Here is a reminder of the variables collected on these movies.
+A data set was collected on movies released in 2016 [@imdb].  Here is a list of some of the variables collected on the observational units, movies released in 2016.  
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
@@ -42,17 +42,14 @@ We will revisit the data set used last week collected on Movies released in 2016
 | `facebook_likes` | Number of likes a movie receives on Facebook |
 
 
+```r
+movies <- read.csv("https://math.montana.edu/courses/s216/data/Movies2016.csv") # Reads in data set 
+```
+
+
 #### Vocabulary review {-}
 
-
-
-1.  What type of plot should be used to display the relationship between `budget_mil` and `revenue_mil`?
-
-\vspace{0.2in}
-
-2.  What three summary statistics could be used to describe the relationship between two quantitative variables?
-
-\vspace{0.4in}
+To look at the relationship between two quantitative variables we will create a scatterplot with the explanatory variable on the x-axis and the response variable on the y-axis.  We can also find three summary measures for the linear relationship between the two variables: regression slope, correlation and the coefficient of determination. 
 
 We will look at the relationship between budget and revenue for movies released in 2016. Enter the explanatory variable name, `budget_mil`, for `explanatory` and the response variable name, `revenue_mil`, for `response` at line 7 in the `R` script file to create the scatterplot. (Note: both variables are measured in "millions of dollars" ($MM).)  Highlight and run lines 1--12.
 
@@ -66,11 +63,12 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
        title = "Revenue vs. Budget") + # Be sure to title your plots
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
 ```
-3. Sketch the scatterplot created from the code.
+
+1. Sketch the scatterplot created from the code.
 
 \vspace{2in}
 
-4. Assess the four features of the scatterplot that describe this relationship. Describe each feature using a complete sentence!
+2. Assess the four features of the scatterplot that describe this relationship. Describe each feature using a complete sentence!
 
 * Form (linear, non-linear)
 
@@ -89,11 +87,9 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 \vspace{.2in}
 
 
-5. Does there appear to be an association between budget and revenue? Explain.
+3. Does there appear to be an association between budget and revenue? Explain.
 
 \vspace{1in}
-
-\newpage 
 
 #### Slope {-}
 
@@ -112,7 +108,7 @@ summary(revenueLM)$coefficients # Display coefficient summary
 #> budget_mil  0.9460001  0.1056786 8.951670 4.339561e-14
 ```
 
-6.  Write out the least squares regression line using the summary statistics provided above in context of the problem.
+4.  Write out the least squares regression line using the summary statistics provided above in context of the problem.
 
 \vspace{.5in}
 
@@ -123,19 +119,19 @@ Using $b_1$ to represent slope, we can write that as the fraction $\frac{b_1}{1}
 Therefore, the slope predicts how much the line will *rise* for each *run* of +1. In other words, as the $x$ variable increases by 1 unit, the $y$ variable is predicted to change (increase/decrease) by the value of slope.
 
 
-7. Interpret the value of slope in context of the problem.
+5. Interpret the value of slope in context of the problem.
 
 \vspace{.8in}
 
-8. Using the least squares line from question 6, predict the revenue for a movie with a budget of 165 $MM.
+6. Using the least squares line from question 4, predict the revenue for a movie with a budget of 165 $MM.
 
 \vspace{.6in}
 
-9.  Predict the revenue for a movie with a budget of 500 $MM.  
+7.  Predict the revenue for a movie with a budget of 500 $MM.  
 
 \vspace{0.8in}
 
-10. The prediction in question 9 is an example of what?
+8. The prediction in question 7 is an example of what?
 
 \vspace{0.3in}
 
@@ -151,13 +147,42 @@ $\implies$ Residual = Data $-$ Model
 $e_i=y_i-\hat{y}_i$
 \end{center}
 
-11.  The movie *Independence Day: Resurgence* had a budget of 165 \$MM and revenue of 102.315 \$MM.  Find the residual for this movie.
+9.  The movie *Independence Day: Resurgence* had a budget of 165 \$MM and revenue of 102.315 \$MM.  Find the residual for this movie.
 
 \vspace{.8in}
 
-12.  Did the line of regression overestimate or underestimate the revenue for this movie? 
+10.  Did the line of regression overestimate or underestimate the revenue for this movie? 
 
 \vspace{.2in}
+
+#### Multivariable plots {-}
+What if we wanted to see if the relationship between movie budget and revenue differs if we add another variable into the picture?  The following plot visualizes three variables, creating a **multivariable** plot. 
+
+
+```r
+movies %>% # Data set pipes into...
+  filter(content_rating != "Not Rated") %>% # Remove Not Rated movies
+  ggplot(aes(x = budget_mil, y = revenue_mil, color = content_rating)) +  # Specify variables
+  geom_point(aes(shape = content_rating), size = 3) +  # Add scatterplot of points
+  labs(x = "Budget in Millions ($)",  # Label x-axis
+       y = "Revenue in Millions ($)",  # Label y-axis
+       color = "Content Rating",  # Label legend
+       title = "Revenue vs. Budget") + # Be sure to tile your plots
+  geom_smooth(method = "lm", se = FALSE, lwd = 2) + # Add regression lines
+  scale_color_grey() # Make black and white
+```
+
+
+
+\begin{center}\includegraphics[width=0.7\linewidth]{04-A06-EDA-two-quantitative-PartA_files/figure-latex/unnamed-chunk-4-1} \end{center}
+
+11  Identify the three variables plotted in this graph.
+
+\vspace{0.5in}
+
+12. Does the *relationship* between movie budget and revenue differ among the different content ratings?  Explain.
+
+\vspace{0.8in}
 
 ### Take-home messages
 

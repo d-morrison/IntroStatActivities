@@ -126,7 +126,7 @@ color <- read.csv("https://math.montana.edu/courses/s216/data/interference.csv")
 paired_observed_plot(color)
 
 color_diff <- color %>% 
-  mutate(differences = DiffCol - Black)
+  mutate(differences = DiffCol-Black)
 color_diff %>%
   ggplot(aes(x = differences))+
   geom_boxplot()+
@@ -210,7 +210,7 @@ plot(x, hx, type="l", lty=1, lwd=3, xlab="x value",
 
 13.  Calculate the confidence interval for the true paired mean difference using theory-based methods.
 
-\vspace{0.6in}
+\newpage
 
 
 14.  Interpret the confidence interval in context of the study.

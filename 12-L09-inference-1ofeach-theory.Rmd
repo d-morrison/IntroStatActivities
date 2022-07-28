@@ -149,7 +149,7 @@ qt(xx, df = yy, lower.tail=TRUE)
 
 15.  Calculate the 95\% confidence interval using theory-based methods.
 
-\vspace{1in}
+\newpage
 
 16.  Interpret the 95\% confidence interval in context of the study.
 

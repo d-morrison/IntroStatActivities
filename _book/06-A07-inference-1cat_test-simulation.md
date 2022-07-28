@@ -1,4 +1,4 @@
-## Activity 6:  Helperer-Hinderer --- Simulation-based Hypothesis Test
+## Activity 6A:  Helperer-Hinderer --- Simulation-based Hypothesis Test
 
 \setstretch{1}
 
@@ -27,7 +27,7 @@ To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5
 
 ### Steps of the statistical investigation process
 
-We will work through a five-step process to complete a hypothesis test for a single proportion, first introduced in the Martian Alphabet Activity in week 1.
+We will work through a five-step process to complete a hypothesis test for a single proportion, first introduced in the activity in week 1.
 
 * **Ask a research question** that can be addressed by collecting data. What are the researchers trying to show?
 
@@ -64,20 +64,29 @@ Before using statistical inference methods, we must check that the cases are ind
 
 #### Summarize and visualize the data {-}
 
-```{r, echo=TRUE, collapse=FALSE, message=FALSE, warning=FALSE}
+The following code reads in the data set and gives the number of infants in each level of the variable, whether the infant chose the helper or the hinderer.  Remember to visually display this data we can use either a frequency bar plot or a relative frequency bar plot.  
+
+
+```r
  # Read in data set
 infants <- read.csv("https://math.montana.edu/courses/s216/data/infantchoice.csv")
 infants %>% count(choice)  # Count number in each choice category
 ```
 
+```
+#>     choice  n
+#> 1   helper 14
+#> 2 hinderer  2
+```
+
 $$\hat{p} = \frac{\mbox{number of successes}}{\mbox{total number of observational units}}$$
 \newpage
 
-3.  Using the `R` output, calculate the summary statistic (sample proportion) to represent the research question.  Recall that `choosing the helper toy` is a considered a success.  Use appropriate notation.
+3.  Using the `R` output and the formula given, calculate the summary statistic (sample proportion) to represent the research question.  Recall that `choosing the helper toy` is a considered a success.  Use appropriate notation.
 
 \vspace{0.5in}
 
-4.  What type of plot should be used to represent these data? Sketch this plot.
+4.  Sketch a relative frequency bar plot of these data.
 
 \vspace{1.5in}
 
@@ -85,39 +94,36 @@ We cannot assess whether infants are more likely to choose the helper toy based 
 
 #### Use statistical analysis methods to draw inferences from the data {-}
 
-When performing a hypothesis test, we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the value that summarizes the variable in the population.  *For example, in the Martian Alphabet Activity, the parameter of interest is the true proportion of statistic students who would correctly identify Bumba.*
+When performing a hypothesis test, we must first identify the null hypothesis.  The null hypothesis is written about the parameter of interest, or the value that summarizes the variable in the population.  
 
-5.  Write out the parameter of interest for this study. 
+For this study, the parameter of interest is the **true or population proportion of infants ages 6--10 months who will choose the helper toy**.
 
-\vspace{0.8in}
-
-6.  If the children are just randomly choosing the toy, what proportion of infants would choose the helper toy?  This is the null value for our study.
+5.  If the children are just randomly choosing the toy, what proportion of infants would choose the helper toy?  This is the null value for our study.
 
 \vspace{0.3in}
 
-7.  Using the parameter of interest in question 5, write out the null hypothesis in words.  That is, what do we assume to be true about the parameter of interest when we perform our simulation? 
-
+6.  Using the parameter of interest given above, write out the null hypothesis in words.  That is, what do we assume to be true about the parameter of interest when we perform our simulation? 
 \vspace{0.8in}
 
 The notation used for a population proportion (or probability, or true proportion) is $\pi$.  Since this summarizes a population, it is a parameter. When writing the **null hypothesis** in notation, we set the parameter equal to the null value, $H_0: \pi = \pi_0$.
 
 \newpage 
 
-8. Write the null hypothesis in notation using the null value of 0.5 in place of $\pi_0$ in the equation given on the previous page.
+7. Write the null hypothesis in notation using the null value of 0.5 in place of $\pi_0$ in the equation given on the previous page.
 
 \vspace{0.5in}
 
 The **alternative hypothesis** is the claim to be tested and the direction of the claim (less than, greater than, or not equal to) is based on the research question.  
 
-9.  Based on the research question from question 1, are we testing that the parameter is greater than 0.5, less than 0.5 or different than 0.5? 
+8.  Based on the research question from question 1, are we testing that the parameter is greater than 0.5, less than 0.5 or different than 0.5? 
 
 \vspace{0.4in}
 
-10. Write out the alternative hypothesis in words.
+9. Write out the alternative hypothesis in words.
 
 \vspace{1in}
 
-11.  Write out the alternative hypothesis in notation.
+10.  Write out the alternative hypothesis in notation.
 
 \vspace{0.5in}
 
@@ -133,31 +139,31 @@ We will now simulate a **null distribution** of sample proportions. The null dis
 
 Let's think about how to use cards to create one simulation of 16 infants under the assumption the null hypothesis is true.  We will write the response variable outcomes on each card to represent the null hypothesis.
 
-12.  How many cards total do we need?  On how many cards will we write **helper**?  On how many cards will we write **hinderer**?
+11.  How many cards total do we need?  On how many cards will we write **helper**?  On how many cards will we write **hinderer**?  Remember this should represent the null hypothesis.
 
 \vspace{0.5in}
 
-13.  Next, we would mix the cards together and draw 1 card, write down if the card says helper or hinderer, and replace the card.  How many times would we need to repeat this process to simulate one sample?
+12.  Next, we would mix the cards together and draw 1 card, write down if the card says helper or hinderer, and replace the card.  How many times would we need to repeat this process to simulate one sample?
 
 \vspace{0.3in}
 
-14.  Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
+13.  Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
 
 \vspace{0.5in}
 
-15.  Create one simulation using the cards provided.  Write down your simulated sample proportion.  This is one simulation created under the assumption the null hypothesis is true.  Is this value closer to 0.5 the null value or closer to the sample proportion (0.875)?  Compare your simulated value to the other group's at your table.
+14.  Create one simulation using the cards provided.  Write down your simulated sample proportion.  This is one simulation created under the assumption the null hypothesis is true.  Is this value closer to 0.5, the null value, or closer to the sample proportion, 0.875?  Compare your simulated value to the other groups at your table.
 
 \vspace{0.8in}
 
-16.  Report your simulated sample proportion to your instructor.  Sketch the distribution created by your class below.
+15.  Report your simulated sample proportion to your instructor.  Sketch the distribution created by your class below.
 
 \vspace{1.5in}
 
-17. Circle the observed statistic (value from question 3) on the distribution you drew in question 16.  Where does this statistic fall in this distribution: Is it near the center of the distribution (near 0.5) or in one of the tails of the distribution?  
+16. Circle the observed statistic (value from question 3) on the distribution you drew in question 15.  Where does this statistic fall in this distribution: Is it near the center of the distribution (near 0.5) or in one of the tails of the distribution?  
 
 \vspace{1in}
 
-18. Is the observed statistic likely to happen or unlikely to happen if the true proportion of infants who choose the helper is 0.5?  Explain your answer using the plot.
+17. Is the observed statistic likely to happen or unlikely to happen if the true proportion of infants who choose the helper is 0.5?  Explain your answer using the plot.
 
 \vspace{0.8in}
 

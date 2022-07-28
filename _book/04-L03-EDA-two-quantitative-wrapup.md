@@ -79,7 +79,7 @@ penguins %>%  # Data set pipes into
 
 \vspace{1in}
 
-Enter the variable `body_mass_g` for `response` and the variable name `flipper_length_mm` for `explanatory` in line 23 in the `R` script file.  Highlight and run lines 23--24.
+Enter the variable `body_mass_g` for `response` and the variable name `flipper_length_mm` for `explanatory` in line 23 in the `R` script file.  Highlight and run lines 23--24 to get the linear model output.
 
 
 ```r
@@ -127,7 +127,7 @@ penguins %>%
 \vspace{0.3in}
 
 
-11. **Does adding the variable species affect the relationship between body mass and flipper length? Explain.**
+11. **Does adding the variable species affect the relationship between body mass and flipper length? Explain your answer.**
 
 \newpage
 

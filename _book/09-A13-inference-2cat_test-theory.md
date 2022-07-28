@@ -62,7 +62,7 @@ For this study the observational units are skiers and snowboarders involved in a
 
 \vspace{0.5in}
 
-3. Interpret the difference in proportions in context of the study.
+3. Interpret the difference in sample proportions in context of the study.
 \vspace{0.8in}
 
 #### Use statistical analysis methods to draw inferences from the data {-}
@@ -73,18 +73,7 @@ Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an a
 
 * **Independence**: The data are independent within and between the two groups. (*Remember*: This also must be true to use simulation methods!)
 
-* **Success-failure condition**: The success-failure condition holds for each group.  Under the null hypothesis, the proportions $\pi_1$ and $\pi_2$ are equal, so we check the success-failure condition with our best estimate of these values under $H_0$, the pooled proportion from the two samples,
-
-$$
-\hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{\hat{p}_1 n_1+\hat{p}_2 n_2}{n_1+n_2}
-$$
-
-We then check that all four of the following inequalities hold:
-
-$$\hat{p}_{pool} \times n_1 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_1 \geq 10,$$
-$$\hat{p}_{pool} \times n_2 \ge 10, \hspace{1cm} (1 - \hat{p}_{pool}) \times n_2 \geq 10$$
-
-\newpage
+* **Success-failure condition**: This condition is met if we have at least 10 successes and 10 failures in each sample. Equivalently, we check that all cells in the table have at least 10 observations. 
 
 4.  Is the independence condition met? Explain your answer.
 
@@ -106,16 +95,19 @@ $$
 SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}.
 $$
 
+For this study we would first calculate the pooled proportion of successes.
 
-6. Calculate $SE_0(\hat{p}_1-\hat{p}_2)$.
+$$\hat{p}_{pool} = \frac{\text{number of "successes"}}{\text{number of cases}} = \frac{576}{3562} = 0.162$$
+We use the value for the pooled proportion of successes to calculate the $SE_0(\hat{p}_1 - \hat{p}_2)$.
+
+
+$$
+SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{0.162(1-0.162)\left(\frac{1}{752}+\frac{1}{2810}\right)} = 0.015
+$$
+
+6. Use the value of the null standard error to calculate the standardized statistic (standardized difference in proportion).
 
 \vspace{1in}
-
-7. Calculate the standardized statistic.
-
-\vspace{1in}
-
-\newpage
 
 \begin{figure}
 
@@ -126,7 +118,7 @@ $$
 \caption{A standard normal curve.}(\#fig:simpleNormal)
 \end{figure}
 
-8. Mark the value of the standardized statistic on the standard normal distribution above and shade the area to find the p-value.
+7. Mark the value of the standardized statistic on the standard normal distribution above and shade the area to find the p-value.
 
 \vspace{0.1in}
 
@@ -140,85 +132,83 @@ pnorm(xx, # Enter value of standardized statistic
 ```
     
 
-9.  Report the p-value from the `R` output.
+8.  Report the p-value from the `R` output.
 \vspace{0.2in}
 
 
-10.  Interpret the p-value in context of the study.
+9.  Interpret the p-value in context of the study.
 
 \vspace{1in}
 
-11. Write a conclusion to the research question based on the p-value found.
+10. Write a conclusion to the research question based on the p-value found.
 
 \newpage
 
-### Impacts on the P-value {-}
+<!-- ### Impacts on the P-value {-} -->
 
-Suppose that we want to show that there is a **difference** in true proportion of head injuries for those that wear helmets and those that do not. 
+<!-- Suppose that we want to show that there is a **difference** in true proportion of head injuries for those that wear helmets and those that do not.  -->
 
-12.  Write out the alternative hypothesis in notation for this new research question.
+<!-- 12.  Write out the alternative hypothesis in notation for this new research question. -->
 
-\vspace{0.5in}
+<!-- \vspace{0.5in} -->
 
-13.  How would this impact the p-value?  
+<!-- 13.  How would this impact the p-value?   -->
 
-\vspace{0.2in}
+<!-- \vspace{0.2in} -->
 
-Suppose in another sample of skiers and snowboarders involved in accidents we saw these results:
+<!-- Suppose in another sample of skiers and snowboarders involved in accidents we saw these results: -->
 
-|                | Helmet Use | No Helmet Use | Total |
-|:--------------:|:----------:|:-------------:|:-----:|
-|   Head Injury  |     135    |      674      |  809  |
-| No Head Injury |     921    |      3270     |  4191 |
-|      Total     |    1056    |      3944     |  5000 |
+<!-- |                | Helmet Use | No Helmet Use | Total | -->
+<!-- |:--------------:|:----------:|:-------------:|:-----:| -->
+<!-- |   Head Injury  |     135    |      674      |  809  | -->
+<!-- | No Head Injury |     921    |      3270     |  4191 | -->
+<!-- |      Total     |    1056    |      3944     |  5000 | -->
 
-14. The standard error for the difference in proportions is 0.013 ($SE(\hat{p}_h - \hat{p}_n) = 0.013$).  Calculate the standardized statistic for this new sample.
+<!-- 14. The standard error for the difference in proportions is 0.013 ($SE(\hat{p}_h - \hat{p}_n) = 0.013$).  Calculate the standardized statistic for this new sample. -->
 
-\vspace{0.8in}
+<!-- \vspace{0.8in} -->
 
-Use Rstudio find the p-value for this new sample.  Enter the value of the standardized statistic found in question 14 for xx in line 7.  Highlight and run lines 7--9.
+<!-- Use Rstudio find the p-value for this new sample.  Enter the value of the standardized statistic found in question 14 for xx in line 7.  Highlight and run lines 7--9. -->
 
+<!-- ```{r, echo=TRUE, eval=FALSE} -->
+<!-- pnorm(xx, # Enter value of standardized statistic -->
+<!--       m=0, s=1, # Using the standard normal mean = 0, sd = 1 -->
+<!--       lower.tail=TRUE) # Gives a p-value greater than the standardized statistic -->
+<!-- ``` -->
 
-```r
-pnorm(xx, # Enter value of standardized statistic
-      m=0, s=1, # Using the standard normal mean = 0, sd = 1
-      lower.tail=TRUE) # Gives a p-value greater than the standardized statistic
-```
+<!-- 15.  How does the increase in sample size affect the p-value? -->
 
-15.  How does the increase in sample size affect the p-value?
+<!-- \vspace{0.4in} -->
 
-\vspace{0.4in}
+<!-- 16. Suppose another sample of 3562 skiers and snowboarders was taken.  In this new sample a difference in proportions of head injuries was found to be -0.009, ($\hat{p}_h - \hat{p}_n = -0.009$) with a standard error for the difference in proportions of 0.015, ($SE(\hat{p}_h - \hat{p}_n) = 0.015$).  Calculate the standardized statistic for this new sample. -->
 
-16. Suppose another sample of 3562 skiers and snowboarders was taken.  In this new sample a difference in proportions of head injuries was found to be -0.009, ($\hat{p}_h - \hat{p}_n = -0.009$) with a standard error for the difference in proportions of 0.015, ($SE(\hat{p}_h - \hat{p}_n) = 0.015$).  Calculate the standardized statistic for this new sample.
+<!-- \newpage -->
 
-\newpage
+<!-- Use Rstudio find the p-value for this new sample.  Enter the value of the standardized statistic found in question 16 for xx in line 12.  Highlight and run lines 12--14. -->
 
-Use Rstudio find the p-value for this new sample.  Enter the value of the standardized statistic found in question 16 for xx in line 12.  Highlight and run lines 12--14.
+<!-- ```{r, echo=TRUE, eval=FALSE} -->
+<!-- pnorm(xx, # Enter value of standardized statistic -->
+<!--       m=0, s=1 # Using the standard normal mean = 0, sd = 1 -->
+<!--       lower.tail=TRUE) # Gives a p-value greater than the standardized statistic -->
+<!-- ``` -->
 
+<!-- 17.  How does a statistic closer to the null value affect the p-value?   -->
 
-```r
-pnorm(xx, # Enter value of standardized statistic
-      m=0, s=1 # Using the standard normal mean = 0, sd = 1
-      lower.tail=TRUE) # Gives a p-value greater than the standardized statistic
-```
+<!-- \vspace{0.3in} -->
 
-17.  How does a statistic closer to the null value affect the p-value?  
+<!-- 18.  Summarize how each of the following affected the p-value: -->
 
-\vspace{0.3in}
+<!-- a) Switching to a two-sided test. -->
 
-18.  Summarize how each of the following affected the p-value:
+<!-- \vspace{0.4in} -->
 
-a) Switching to a two-sided test.
+<!-- b) Using a smaller sample size. -->
 
-\vspace{0.4in}
+<!-- \vspace{0.4in} -->
 
-b) Using a smaller sample size.
+<!-- c) Using a sample statistic closer to the null value. -->
 
-\vspace{0.4in}
-
-c) Using a sample statistic closer to the null value.
-
-\vspace{0.4in}
+<!-- \vspace{0.4in} -->
 
 
 \newpage
@@ -229,11 +219,11 @@ c) Using a sample statistic closer to the null value.
 
 2.  The standardized statistic when the response variable is categorical is a Z-score and is compared to the standard normal distribution to find the p-value.  To find the standardized statistic, we take the value of the statistic minus the null value, divided by the null standard error of the statistic.  The standardized statistic measures the number of standard errors the statistic is from the null value. 
 
-3.  The p-value for a two-sided test is approximately two times the value for a one-sided test.  A two-sided test provides less evidence against the null hypothesis.
+<!-- 3.  The p-value for a two-sided test is approximately two times the value for a one-sided test.  A two-sided test provides less evidence against the null hypothesis. -->
 
-4.  The larger the sample size, the smaller the sample to sample variability.  This will result in a larger standardized statistic and more evidence against the null hypothesis.
+<!-- 4.  The larger the sample size, the smaller the sample to sample variability.  This will result in a larger standardized statistic and more evidence against the null hypothesis. -->
 
-5.  The farther the statistic is from the null value, the larger the standardized statistic.  This will result in a smaller p-value and more evidence against the null hypothesis.
+<!-- 5.  The farther the statistic is from the null value, the larger the standardized statistic.  This will result in a smaller p-value and more evidence against the null hypothesis. -->
 
 ### Additional notes
 

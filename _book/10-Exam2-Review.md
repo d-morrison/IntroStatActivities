@@ -1,6 +1,6 @@
 # Exam 2 Review
 
-Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 Review `R` script file to answer the following questions.  Each adult (>21) islander was selected at random from all the adult islanders.  Variables and their descriptions are listed below.  Music type (classical or heavy metal) was randomly assigned to the Islanders.  Time to complete the puzzle cube was measure before listening to the music and then after listening to music for each Islander.  Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
+Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 Review `R` script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
@@ -16,11 +16,10 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 | `Children` | Whether the Islander has children |
 | `weight_kg` | Weight measured in kg |
 | `height_cm` | Height measured in cm |
-| `respitory_rate` | Breaths per minute |
+| `respiratory_rate` | Breaths per minute |
 | `Type_of_Music` | Music type (Classical or Heavy Medal) Islander was randomly assigned to listen to |
-| `Before_PuzzleCube` | Time to complete puzzle cube (minutes) before listening to assigned music |
 | `After_PuzzleCube` | Time to complete puzzle cube (minutes) after listening to assigned music |
-| `Education_Level` | Highest level of education completed (note: missing data depicted by missing) |
+| `Education_Level` | Highest level of education completed |
 | `Balance_Test` | Time balanced measured in seconds with eyes closed |
 | `Blood_Glucose_before` | Level of blood glucose (mg/dL) before consuming assigned drink |
 | `Heart_Rate_before` | Heart rate (bpm) before consuming assigned drink |
@@ -33,179 +32,188 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 1. Use the provided Exam 2 Review `R` script file and analyze the following research question: The proportion of university graduates in the US is 42%.  "Is there evidence that the proportion of university graduates in the Islands differs from the proportion in the US?"
 
-\rgi Parameter of Interest:
-    
+a. Parameter of Interest:
 \vspace{0.3in}
     
-\rgi Null Hypothesis:
+b. Null Hypothesis:
         
-\rgi \rgi Notation:
-    
+    Notation:
 \vspace{0.3in}
     
-\rgi \rgi Words:
-        
+    Words:
 \vspace{0.5in}
     
-\rgi Alternative Hypothesis:
+c. Alternative Hypothesis:
     
-\rgi \rgi Notation:
-    
+    Notation:
 \vspace{0.3in}
     
-\rgi \rgi Words:
-        
+    Words:
 \vspace{0.5in}
    
-\rgi Value of Statistic with Notation:
-    
+d. Use the `R` script file to get the counts for each level of the variable. Fill in the following table using the values from the `R` output:
+
+\begingroup
+\begin{center}
+\setlength{\tabcolsep}{14pt} 
+\renewcommand{\arraystretch}{2} 
+\begin{tabular}{|p{2in}|p{2in}|}
+\hline
+ {\textbf{Variable}} & {\textbf{Counts}} \\ 
+ & \\ \hline
+ Success & \\ 
+ &  \\ \hline
+ Failure & \\ 
+ &  \\ \hline
+ Total &  \\ 
+ & \\ \hline  
+\end{tabular}
+\end{center}
+\endgroup
+e. Calculate the value of summary statistic to answer the research question. Give appropriate notation.
 \vspace{0.3in}
 
-\rgi Conditions:
+f. Interpret the value of the summary statistic in context of the problem:
+\vspace{0.3in}
 
-\rgi \rgi Independence:
+g. Assess if the following conditions are met:
 
+    Independence (needed for both simulation and theory-based methods):
 \vspace{0.8in}
 
-\rgi \rgi Success-Failure:
-
+    Success-Failure (must be met to use theory-based methods):
 \vspace{0.8in}
     
-\rgi Simulation P-value:
-    
+h. Use the provided `R` script file to find the simulation p-value to assess the research question.  Report the p-value.
 \vspace{0.3in}
        
-\rgi \rgi Interpretation:
-        
+i.  Interpret the p-value in the context of the problem.
 \vspace{0.8in}
         
-\rgi \rgi Conclusion:
-        
+j.  Write a conclusion to the research question based on the p-value.
 \vspace{0.8in}
         
-\rgi \rgi Decision:
-        
+k. Write a decision based on the p-value.
 \vspace{0.3in}
     
-\rgi Simulation Confidence Interval: 
-    
+l. Use the provided `R` script file to find a 90\% confidence interval.
 \vspace{0.3in}
         
-\rgi \rgi Interpretation:
-        
+m. Interpret the 90\% confidence interval in context of the problem.
 \vspace{0.8in}
 
-\rgi Standardized Statistic:
+n. Regardless to your answer in part g, calculate the standardized statistic.
+\vspace{0.4in}
 
-\vspace{0.3in}
-
-\rgi \rgi Interpretation:
-
+o. Interpret the value of the standardized statistic in context of the problem.
 \vspace{0.8in}
 
-\rgi Theory-based p-value:
-
+p. Use the provided `R` script file to find the theory-based p-value. 
 \vspace{0.3in}
 
-\rgi Theory-based Confidence Interval:
-
+q. Use the provided `R` script file to find the appropriate z* multiplier and calculate the theory-based confidence interval. 
 \vspace{0.5in}
 
-\rgi Does the theory-based p-value and CI match those found using simulation methods?
-
+r. Does the theory-based p-value and CI match those found using simulation methods?  Explain why or why not.
 \vspace{0.8in}
 
-\rgi To what group can the results be generalized?
-
+s. To what group can the results be generalized?
 \vspace{0.8in}
 
         
 2. Use the provided Exam 2 Review `R` script file and analyze the following research question: "Is there evidence that those with a higher education level are less likely to smoke?"
 
-\rgi Parameter of Interest:
-    
+a. Parameter of Interest:
 \vspace{0.3in}
     
-\rgi Null Hypothesis:
+b. Null Hypothesis:
         
-\rgi \rgi Notation:
-    
+    Notation:
 \vspace{0.3in}
     
-\rgi \rgi Words:
-        
+    Words:
 \vspace{0.5in}
     
-\rgi Alternative Hypothesis:
+c. Alternative Hypothesis:
     
-\rgi \rgi Notation:
-    
+    Notation:
 \vspace{0.3in}
     
-\rgi \rgi Words:
-        
+    Words:
 \vspace{0.5in}
    
-\rgi Value of Statistic with Notation:
-    
-\vspace{0.3in}
-    
-\rgi Conditions:
+d. Use the `R` script file to get the counts for each level and combination of variables. Fill in the following table using the values from the `R` output:
 
-\rgi \rgi Independence:
+\begingroup
+\setlength{\tabcolsep}{14pt}
+\renewcommand{\arraystretch}{2}
+\begin{center}
+\begin{tabular}{|c|p{1in}|p{1in}|p{1in}|}
+\hline
+ & \multicolumn{2}{|c|}{\textbf{Explanatory Variable}} & \\ 
+ & \multicolumn{2}{|c|}{ } & \\ \hline
+\textbf{Response variable} & Group 1 & Group 2 & Total \\
+ & & & \\ \hline
+ Success & & & \\
+ & & & \\ \hline
+ Failure & & & \\
+ & & & \\ \hline
+ Total & & & \\
+ & & & \\ \hline
+\end{tabular}
+\end{center}
+\endgroup
 
+d. Calculate the value of summary statistic to answer the research question. Give appropriate notation.
+
+\vspace{0.4in}
+
+e. Interpret the value of the summary statistic in context of the problem:
+    
+\vspace{0.4in}
+    
+g. Assess if the following conditions are met:
+
+    Independence (needed for both simulation and theory-based methods):
 \vspace{0.8in}
 
-\rgi \rgi Success-Failure:
-
+    Success-Failure (must be met to use theory-based methods):
 \vspace{0.8in}
     
-\rgi Simulation P-value:
-    
+h. Use the provided `R` script file to find the simulation p-value to assess the research question.  Report the p-value.
 \vspace{0.3in}
        
-\rgi \rgi Interpretation:
-        
+i.  Interpret the p-value in the context of the problem.
 \vspace{0.8in}
         
-\rgi \rgi Conclusion:
-        
+j.  Write a conclusion to the research question based on the p-value.
 \vspace{0.8in}
         
-\rgi \rgi Decision:
-        
+k. Write a decision based on the p-value.
 \vspace{0.3in}
     
-\rgi Simulation Confidence Interval: 
-    
+l. Use the provided `R` script file to find a 95\% confidence interval.
 \vspace{0.3in}
         
-\rgi \rgi Interpretation:
-        
+m. Interpret the 95\% confidence interval in context of the problem.
 \vspace{0.8in}
 
-\rgi Standardized Statistic:
+n. Regardless to your answer in part g, calculate the standardized statistic.
+\vspace{0.4in}
 
-\vspace{0.3in}
-
-\rgi \rgi Interpretation:
-
+o. Interpret the value of the standardized statistic in context of the problem.
 \vspace{0.8in}
 
-\rgi Theory-based p-value:
-
+p. Use the provided `R` script file to find the theory-based p-value. 
 \vspace{0.3in}
 
-\rgi Theory-based Confidence Interval:
-
+q. Use the provided `R` script file to find the appropriate z* multiplier and calculate the theory-based confidence interval. 
 \vspace{0.5in}
 
-\rgi Does the theory-based p-value and CI match those found using simulation methods?
-
+r. Does the theory-based p-value and CI match those found using simulation methods?  Explain why or why not.
 \vspace{0.8in}
 
-\rgi What is the scope of inference for this study?
-
+s. What is the scope of inference for this study?
 \vspace{0.8in}
 
 \newpage

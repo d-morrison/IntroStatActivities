@@ -41,23 +41,23 @@ These counts can be found in `R` by using the `count()` function:
 ```r
 # Read data set in
 good <- read.csv("https://math.montana.edu/courses/s216/data/goodsam.csv") 
-good %>% group_by(Behavior) %>% count(Condition)
+good %>% group_by(Condition) %>% count(Behavior)
 ```
 
 ```
 #> # A tibble: 4 x 3
-#> # Groups:   Behavior [2]
-#>   Behavior Condition     n
-#>   <chr>    <chr>     <int>
-#> 1 Help     Hurry         2
-#> 2 Help     No hurry     11
-#> 3 No help  Hurry        18
-#> 4 No help  No hurry      9
+#> # Groups:   Condition [2]
+#>   Condition Behavior     n
+#>   <chr>     <chr>    <int>
+#> 1 Hurry     Help         2
+#> 2 Hurry     No help     18
+#> 3 No hurry  Help        11
+#> 4 No hurry  No help      9
 ```
 
 #### Vocabulary review {-}
 
-1.  What is the name of the explanatory variable in the `R` output? What are its categories?
+1.  What is the name of the explanatory variable as it is written in the `R` output? What are its categories?
 
 \vspace{0.2in}
 
@@ -220,7 +220,7 @@ two_proportion_test(formula = Behavior~Condition, # response ~ explanatory
 
 \vspace{1in}
 
-21.  How much evidence does the p-value provide against the null hypothesis? *Hint*: Refer to the guidelines given in Activity 6.
+21.  How much evidence does the p-value provide against the null hypothesis? *Hint*: Refer to the guidelines given in Activity 6A.
 
 \vspace{0.4in}
 
@@ -233,7 +233,7 @@ two_proportion_test(formula = Behavior~Condition, # response ~ explanatory
 
 1.	When comparing two groups, we are looking at the difference between two parameters.  In the null hypothesis, we assume the two parameters are equal, or that there is no difference between the two proportions.  
 
-2.  We use the same guidelines for the strength of evidence as we did in Activity 6.  
+2.  We use the same guidelines for the strength of evidence as we did in Activity 6A.  
 
 3. To create one simulated sample on the null distribution for a difference in sample proportions, label $n_1 + n_2$ cards with the response variable outcomes from the original data. Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$, representing the explanatory variable groups. Calculate and plot the difference in proportion of successes.
 

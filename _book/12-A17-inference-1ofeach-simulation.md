@@ -1,4 +1,4 @@
-## Activity 12:  Weather Patterns and Record Snowfall
+## Activity 12:  Does behavior impact performance?
 
 \setstretch{1}
 
@@ -27,16 +27,14 @@ In today's activity, we will use simulation-based methods to analyze the associa
 
 To review these concepts, see Section 6.3 in the textbook.
 
-### Weather patterns and record snowfall
+### Behavior and Performance
 
-In the winter of 2018--2019, Bozeman had a record snowfall which resulted in the collapse of two flat-roofed buildings on the MSU campus.  A writer for the *Washington Post* predicted the heavy snowfall for 2018--2019 due to the El Ni\latexcode{\~{n}}o weather pattern that occurred in that season. A meteorologist in Montana wanted to see if the weather pattern really was associated with total snowfall. She obtained historical data from 44 years on the weather pattern (El Ni\latexcode{\~{n}}o or La Ni\latexcode{\~{n}}a) and snowfall (in inches) at the Billings Weather Station [@weather].  Side-by-side boxplots and summary statistics for each group are shown on the following page.
-
-Notice from the `R` code that the name of the data set is `Snow`.
+A study in the Academy of Management Journal [@porath2017] investigated how rude behaviors influence a victim’s task performance. Randomly selected college students enrolled in a management course were randomly assigned to one of two experimental conditions: rudeness condition (45 students) and control group (53 students). Each student was asked to write down as many uses for a brick as possible in five minutes; this value (total number of uses) was used as a performance measure for each student, where higher values indicate better performance. During this time another individual showed up late for class. For those students in the rudeness condition, the facilitator displayed rudeness by berating the students in general for being irresponsible and unprofessional (due to the late-arriving person). No comments were made about the late-arriving person for students in the control group. Is there evidence that the average performance score for students in the rudeness condition is lower than for students in the control group? Use the order of subtraction of rudeness – control.
 
 
 ```r
 # Read in data set
-Snow <- read.csv("https://math.montana.edu/courses/s216/data/SnowfallByWeatherPattern.csv")
+behavior <- read.csv("https://math.montana.edu/courses/s216/data/rude.csv")
 ```
 
 \newpage
@@ -44,11 +42,11 @@ Snow <- read.csv("https://math.montana.edu/courses/s216/data/SnowfallByWeatherPa
 
 ```r
 # Side-by-side box plots
-Snow %>%
-ggplot(aes(x = WeatherPattern, y = Snowfall)) +
+behavior %>%
+ggplot(aes(x = condition, y = number_of_uses)) +
     geom_boxplot() + 
-    labs(title = "Snowfall by weather pattern",
-         x = "Weather pattern") 
+    labs(title = "Number of Uses for a Brick based on Behavior Condition",
+         x = "Behavior") 
 ```
 
 
@@ -58,28 +56,28 @@ ggplot(aes(x = WeatherPattern, y = Snowfall)) +
 
 ```r
 # Summary statistics
-Snow %>% 
-     summarize(favstats(Snowfall ~ WeatherPattern))
+behavior %>% 
+     summarize(favstats(number_of_uses ~ condition))
 ```
 
 ```
-#>   WeatherPattern  min   Q1 median   Q3   max     mean       sd  n missing
-#> 1        El_Nino 31.9 46.4   57.7 64.3  87.9 56.23043 13.00823 23       0
-#> 2        La_Nina 44.5 51.4   60.9 70.3 107.2 63.13333 15.48626 21       0
+#>   condition min Q1 median Q3 max      mean       sd  n missing
+#> 1   control   0  6     12 17  30 11.811321 7.382559 53       0
+#> 2  rudeness   0  6      9 11  18  8.511111 3.992164 45       0
 ```
 
 
 #### Quantitative variables review  {-}
 
-1. The two variables assessed in this study are the type of weather pattern and snowfall.  Identify the role for each variable (explanatory or response).
+1. The two variables assessed in this study are behavior and number of uses for a brick.  Identify the role for each variable (explanatory or response).
 
 \vspace{.4in}
 
-2. Which group (El Ni\latexcode{\~{n}}o or La Ni\latexcode{\~{n}}a) has the highest center in the distributions of snowfall? Explain which measure of center you are using.
+2. Which group (control or rudeness) has the highest center in the distributions of number of uses for a brick? Explain which measure of center you are using. 
 
 \vspace{.4in}
 
-3.  Using the side-by-side box plots, which group has the largest spread in snowfall?  How did you make that choice?
+3.  Using the side-by-side box plots, which group has the largest spread in number of uses for a brick?  How did you make that choice?
 
 \vspace{.4in}
 
@@ -95,7 +93,7 @@ Snow %>%
 
 #### Ask a research question {-}
 
-6.  Write out the parameter of interest in context of the study.  Use proper notation and be sure to define your subscripts.  Use El Ni\latexcode{\~{n}}o minus La Ni\latexcode{\~{n}}a as the order of subtraction.
+6.  Write out the parameter of interest in context of the study.  Use proper notation and be sure to define your subscripts.  
 
 \vspace{1in}
 
@@ -109,7 +107,7 @@ Snow %>%
 
 #### Summarize and visualize the data {-}
 
-9. Calculate the summary statistic of interest (difference in means).  Use El Ni\latexcode{\~{n}}o minus La Ni\latexcode{\~{n}}a as the order of subtraction. What is the appropriate notation for this statistic?
+9. Calculate the summary statistic of interest (difference in means). What is the appropriate notation for this statistic?
 
 \vspace{0.5in}
 
@@ -119,9 +117,9 @@ Snow %>%
 
 ##### Hypothesis test {-}
 
-Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that there is no association between the two variables.  This means that the snowfall values observed in the data set would have been the same regardless of the weather pattern that year.
+Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that there is no association between the two variables.  This means that the values observed in the data set would have been the same regardless of the behavior condition.
 
-To demonstrate this simulation, your instructor will provide cards to for you to use to simulate a sample.  
+To demonstrate this simulation, we could create cards to simulate a sample.  
 
 10.  How many cards will we start with?
 
@@ -139,7 +137,7 @@ To demonstrate this simulation, your instructor will provide cards to for you to
 
 \vspace{0.3in}
 
-14.  Create one simulation using the cards provided.  Is your simulated statistic closer to the null value of zero than the difference in means calculated from the sample?  Explain why this makes sense.
+14.  Would you expect your simulated statistic to be closer to the null value of zero than the difference in means calculated from the sample?  Explain why this makes sense.
 
 \vspace{0.8in}
 
@@ -151,9 +149,9 @@ We will use the `two_mean_test()` function in `R` (in the `catstats` package) to
 
 \newpage 
 
-16.  When using the `two_mean_test()` function, we need to enter the name of the response variable, `Snowfall`, and the name of the explanatory variable, `WeatherPattern`, for the formula.  The name of the data set as shown above is `Snow`.  What values should be entered for each of the following to create 1000 simulated samples?
+16.  When using the `two_mean_test()` function, we need to enter the name of the response variable, `number_of_uses`, and the name of the explanatory variable, `condition`, for the formula.  The name of the data set as shown above is `rude``.  What values should be entered for each of the following to create 1000 simulated samples?
 
-* First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"El_Nino"` or `"La_Nina"`):
+* First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"control"` or `"rudeness"`):
 
 \vspace{.2in}
 * Number of repetitions:
@@ -170,8 +168,8 @@ We will use the `two_mean_test()` function in `R` (in the `catstats` package) to
 
 
 ```r
-two_mean_test(Snowfall ~ WeatherPattern, #Enter the names of the variables
-              data = Snow,  # Enter the name of the dataset
+two_mean_test(response~explanatory, #Enter the names of the variables
+              data = rude,  # Enter the name of the dataset
               first_in_subtraction = "xx", # First outcome in order of subtraction
               number_repetitions = 1000,  # Number of simulations
               as_extreme_as = xx,  # Observed statistic
@@ -196,7 +194,7 @@ We will use the `two_mean_bootstrap_CI()` function in `R` (in the `catstats` pac
 
 ```r
 two_mean_bootstrap_CI(response ~ explanatory, #Enter the name of the variables
-                      data = Snow,  # Enter the name of the data set
+                      data = rude,  # Enter the name of the data set
                       first_in_subtraction = "xx", # First value in order of subtraction
                       number_repetitions = 1000,  # Number of simulations
                       confidence_level = xx)

@@ -10,5 +10,5 @@ In this course, we have covered descriptive (summary statistics and plots) and i
 
 The "golden ticket" shown on the next page presents a visual summary of the similarities and differences across these five scenarios.
 
-\includepdf[landscape=true]{GoldenTicket_F21.pdf}
+\includepdf[landscape=true]{GoldenTicket_F22.pdf}
 
