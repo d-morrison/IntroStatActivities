@@ -563,7 +563,7 @@ For more on these concepts, read Sections 1.2 and 1.3 in the textbook.
 \hypertarget{general-information-on-labs}{%
 \subsection{General information on labs}\label{general-information-on-labs}}
 
-For each module you will complete a lab. Questions are selected from each lab to be turned in on Gradescope. The questions to be submitted on Gradescope are bolded in the lab. As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go. Today's activity is Lab 0 in Gradescope for practice submitting as a group.
+On Friday of each week you will complete a lab. Questions are selected from each lab to be turned in on Gradescope. The questions to be submitted on Gradescope are bolded in the lab. As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go. Today's activity is Lab 0 in Gradescope for practice submitting as a group.
 
 \hypertarget{steps-of-the-statistical-investigation-process}{%
 \subsubsection*{Steps of the statistical investigation process}\label{steps-of-the-statistical-investigation-process}}
@@ -680,7 +680,7 @@ In the next few weeks we will look at how to summarize the data both numerically
   Response bias: survey participant gives an untruthful or misleading response
 \end{itemize}
 
-To help determine the type of bias present, it is helpful to think about the observational units, the sample and the target population represented by the problem. The \textbf{target population} is the group of cases that makes up the population the researcher is interested in. If sampling bias is present, than the sample taken will not be representative of the actually target population. In these next questions, identify the target population, the sample selected, the variable collected and its type (categorical or quantitative), and the type of bias present.
+To help determine the type of bias present, it is helpful to think about the observational units, the sample and the target population represented by the problem. The \textbf{target population} is the group of cases that makes up the population the researcher is interested in. If sampling bias is present, than the sample taken will not be representative of the actual target population. In these next questions, identify the target population, the sample selected, the variable collected and its type (categorical or quantitative), and the type of bias present.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1354,7 +1354,7 @@ To review these concepts, see Sections 1.2 through 1.6 in the textbook.
 \hypertarget{general-information-labs}{%
 \subsection{General information labs}\label{general-information-labs}}
 
-Remember that for each module you will complete a lab. Questions are selected from each lab to be turned in on Gradescope. The questions to be submitted on Gradescope are bolded in the lab. As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.
+Remember that each Friday you will complete a lab. Questions are selected from each lab to be turned in on Gradescope. The questions to be submitted on Gradescope are bolded in the lab. As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.
 
 \hypertarget{study-design-1}{%
 \subsection*{Study design}\label{study-design-1}}
@@ -2343,7 +2343,7 @@ To review these concepts, see Section 2.3 in the textbook.
 \hypertarget{the-integrated-postsecondary-education-data-system-ipeds}{%
 \subsection{The Integrated Postsecondary Education Data System (IPEDS)}\label{the-integrated-postsecondary-education-data-system-ipeds}}
 
-Download and open the provided \texttt{R} script file for the week 3 lab to answer the following questions. \textbf{Remember bolded questions will be answered on Gradescope for your group.}
+Upload and open the provided \texttt{R} script file for the week 3 lab to answer the following questions. \textbf{Remember bolded questions will be answered on Gradescope for your group.}
 
 These data are on a subset of institutions that met the following selection criteria (Education Statistics 2018):
 
@@ -2396,7 +2396,7 @@ In Wednesday's activity, the code was provided to import the data set needed dir
   To view the data set, click on the data set name (\texttt{IPEDS\_Data\_2018}). Verify that that column names match the first column in the chart on the previous page. If the columns are named V1, V2, V3\ldots etc, you did not select ``Yes'' for ``Heading''.
 \end{itemize}
 
-Enter the name of the data set (see the environment tab) for \texttt{datasetname} in the \texttt{R} script file in line 6. We will look at the retention rates for the 4-year institutions only. Enter the variable name \texttt{Retention} for \texttt{variable} in line 12. Highlight and run lines 1 -- 12. \textbf{Note that the two lines of code (lines 8 and 10) are filtering to remove the 2-year institutions so we are only assessing Public 4-year and Private 4-year institutions.} The \texttt{favstats()} function from the \texttt{mosaic} package gives the summary statistics for a quantitative variable. The summary statistics give the two measures of center and two measures of spread for IMDb score.
+Enter the name of the data set (see the environment tab) for \texttt{datasetname} in the \texttt{R} script file in line 6. We will look at the retention rates for the 4-year institutions only. Enter the variable name \texttt{Retention} for \texttt{variable} in line 12. Highlight and run lines 1 -- 12. \textbf{Note that the two lines of code (lines 8 and 10) are filtering to remove the 2-year institutions so we are only assessing Public 4-year and Private 4-year institutions.} The \texttt{favstats()} function from the \texttt{mosaic} package gives the summary statistics for a quantitative variable. The summary statistics give the two measures of center and two measures of spread for retention rate.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2454,9 +2454,9 @@ Enter the name of the data set (see the environment tab) for \texttt{datasetname
 \subsubsection*{Displaying a single quantitative variable}\label{displaying-a-single-quantitative-variable}}
 \addcontentsline{toc}{subsubsection}{Displaying a single quantitative variable}
 
-There are three type of plots used to plot a single quantitative variable: a dotplot, a histogram or a boxplot. A dotplot of retention rate would plot a dot for the retention rate for each 4-year institution
+There are three type of plots used to plot a single quantitative variable: a dotplot, a histogram or a boxplot. A dotplot of retention rates would plot a dot for the retention rate for each 4-year institution
 
-We will create both a histogram and a boxplot of the variable \texttt{Retention}. Enter the name of the variable in both line 16 and line 23 for \texttt{variable} in the \texttt{R} script file. \textbf{Give each plot a descriptive title.} Highlight and run lines 15 -- 27 to give the histogram and boxplot. Notice that the \textbf{bin width} for the histogram is 10. For example the first bin consists of the number of 4-year institutions in the data set with a retention rate of 0 to 10\%. It is important to note that a 4-year institution with a retention rate on the boundary of a bin will fall into the bin above it; for example, 10 would be counted in the bin 10--20.
+We will create both a histogram and a boxplot of the variable \texttt{Retention}. Enter the name of the variable in both line 16 and line 23 for \texttt{variable} in the \texttt{R} script file. \textbf{Give each plot a descriptive title.} Highlight and run lines 15 -- 27 to give the histogram and boxplot. Notice that the \textbf{bin width} for the histogram is 10. For example, the first bin consists of the number of 4-year institutions in the data set with a retention rate of 0 to 10\%. It is important to note that a 4-year institution with a retention rate on the boundary of a bin will fall into the bin above it; for example, 10 would be counted in the bin 10--20.
 
 \textbf{Export and upload both plots to Gradescope for your group.}
 
@@ -3309,7 +3309,7 @@ A data set was collected on movies released in 2016 ({``{IMDb} Movies Extensive 
 
 To look at the relationship between two quantitative variables we will create a scatterplot with the explanatory variable on the x-axis and the response variable on the y-axis. We can also find three summary measures for the linear relationship between the two variables: regression slope, correlation and the coefficient of determination.
 
-We will look at the relationship between budget and revenue for movies released in 2016. Enter the explanatory variable name, \texttt{budget\_mil}, for \texttt{explanatory} and the response variable name, \texttt{revenue\_mil}, for \texttt{response} at line 7 in the \texttt{R} script file to create the scatterplot. (Note: both variables are measured in ``millions of dollars'' (\$MM).) Highlight and run lines 1--12.
+We will look at the relationship between budget and revenue for movies released in 2016. Enter the explanatory variable name, \texttt{budget\_mil}, for \texttt{explanatory} and the response variable name, \texttt{revenue\_mil}, for \texttt{response} at line 7 in the \texttt{R} script file to create the scatterplot. (Note: both variables are measured in ``millions of dollars'' (\$MM).) Upload and open the Movie Profits Activity 4A F22 Code \texttt{R} script file. Highlight and run lines 1--12.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -3619,7 +3619,7 @@ We will revisit the movie data set collected on Movies released in 2016 ({``{IMD
 \subsubsection*{Correlation}\label{correlation}}
 \addcontentsline{toc}{subsubsection}{Correlation}
 
-Correlation measures the strength and the direction of the linear relationship between two quantitative variables. The closer the value of correlation to \(+1\) or \(-1\), the stronger the linear relationship. Values close to zero indicate a very weak linear relationship between the two variables. The following output shows a correlation matrix between several pairs of quantitative variables. Highlight and run lines 1--12 to produce the same table as below.
+Correlation measures the strength and the direction of the linear relationship between two quantitative variables. The closer the value of correlation to \(+1\) or \(-1\), the stronger the linear relationship. Values close to zero indicate a very weak linear relationship between the two variables. The following output shows a correlation matrix between several pairs of quantitative variables. Upload and open the Movie Profits Activity 4B F22 Code \texttt{R} script file. Highlight and run lines 1--12 to produce the same table as below.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5353,7 +5353,7 @@ In today's activity we will continue with steps 4 and 5 in the statistical inves
 \hypertarget{helper-hinderer-1}{%
 \subsection{Helper-Hinderer}\label{helper-hinderer-1}}
 
-Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature (Hamblin, Wynn, and Bloom 2007) was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. As a class we will watch this short video to see how the experiment was run: \url{https://youtu.be/anCaGBsBOxM}. Researchers were hoping to assess: Are infants more likely to preferentially choose the helper toy over the hinderer toy? In the study, of the 16 infants age 6 to 10 months, 14 chose the \emph{helper} toy and 2 chose the \emph{hinderer} toy.
+Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature (Hamblin, Wynn, and Bloom 2007) was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Researchers were hoping to assess: Are infants more likely to preferentially choose the helper toy over the hinderer toy? In the study, of the 16 infants age 6 to 10 months, 14 chose the \emph{helper} toy and 2 chose the \emph{hinderer} toy.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5882,8 +5882,8 @@ We will use the \texttt{one\_proportion\_bootstrap\_CI()} function in \texttt{R}
 \item
   Fill in the blanks below to write a paragraph summarizing the results of the study as if writing a press release. \textbf{Complete your group's paragraph on Gradescope.}\\
   Researchers were interested if infants observe social cues and would be more likely to choose the helper toy over the hinderer toy. In a sample of (sample size) \_\_\_\_\_\_\_\_\_\_\_\_\_infants, (number of successes) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_chose the helper toy. A simulation null distribution with 1000 simulations was created in RStudio. The p-value was found by calculating the proportion of simulations in the null distribution at the sample statistic of 0.875 and greater. This resulted in a p-value of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_. We would observe a sample proportion of (value of the sample proportion) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ or (greater, less, more extreme) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ with a probability of (value of p-value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\
-  IF we assume (\(H_0\) in context) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
-  Based on this p-value, there is (very strong/little to no) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ evidence that the (sample/true)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ proportion of infants age 6 to 10 months who will choose the helper toy is (greater than, less than, not equal to) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 0.5. In addition a 95\% confidence interval was found for the parameter of interest. We are 95\% confident that the (true/sample)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ proportion of infants age 6 to 10 months who will choose the helper toy is between (lower value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ and (upper value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_. The results of this study can be generalized to (all infants age 6 to 10 months/infants similar to those in this study)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ as the researchers (did/did not)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ select a random sample.
+  IF we assume (\(H_0\) in context) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+  Based on this p-value, there is (very strong/little to no) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ evidence that the (sample/true)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ proportion of infants age 6 to 10 months who will choose the helper toy is (greater than, less than, not equal to) \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 0.5. In addition, a 95\% confidence interval was found for the parameter of interest. We are 95\% confident that the (true/sample)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ proportion of infants age 6 to 10 months who will choose the helper toy is between (lower value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ and (upper value)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_. The results of this study can be generalized to (all infants age 6 to 10 months/infants similar to those in this study)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ as the researchers (did/did not)\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ select a random sample.
 \end{enumerate}
 
 \setstretch{1}
@@ -6901,8 +6901,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \newpage
 
-\hypertarget{activity-7b-handedness-of-male-boxers-theory-ci}{%
-\section{Activity 7B: Handedness of Male Boxers --- Theory CI}\label{activity-7b-handedness-of-male-boxers-theory-ci}}
+\hypertarget{activity-7-handedness-of-male-boxers-theory-ci}{%
+\section{Activity 7: Handedness of Male Boxers --- Theory CI}\label{activity-7-handedness-of-male-boxers-theory-ci}}
 
 \setstretch{1}
 
@@ -8599,7 +8599,7 @@ Fill in the missing values/names in the \texttt{R} script file in the \texttt{tw
 
 \vspace{0.8in}
 
-Fill in the missing values/names in the \texttt{R} script file in the two-proportion\_bootstrap\_CI function to create a simulation 90\% confidence interval. \textbf{Upload a copy of the bootstrap distribution to Gradescope.}
+Fill in the missing values/names in the \texttt{R} script file in the two\_proportion\_bootstrap\_CI function to create a simulation 90\% confidence interval. \textbf{Upload a copy of the bootstrap distribution to Gradescope.}
 
 \begin{Shaded}
 \begin{Highlighting}[]

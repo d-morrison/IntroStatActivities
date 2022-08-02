@@ -30,7 +30,7 @@ To review these concepts, see Sections 1.2 through 1.6 in the textbook.
 
 ### General information labs
 
-Remember that for each module you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.
+Remember that each Friday you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.
 
 ### Study design {-}
 

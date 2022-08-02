@@ -36,7 +36,7 @@ To review these concepts, see Section 2.3 in the textbook.
 
 ### The Integrated Postsecondary Education Data System (IPEDS)
 
-Download and open the provided `R` script file for the week 3 lab to answer the following questions.  **Remember bolded questions will be answered on Gradescope for your group.**
+Upload and open the provided `R` script file for the week 3 lab to answer the following questions.  **Remember bolded questions will be answered on Gradescope for your group.**
 
 These data are on a subset of institutions that met the following selection criteria [@ipeds]:
 
@@ -78,7 +78,7 @@ In Wednesday's activity, the code was provided to import the data set needed dir
 
 * To view the data set, click on the data set name (`IPEDS_Data_2018`).  Verify that that column names match the first column in the chart on the previous page.  If the columns are named V1, V2, V3...etc, you did not select "Yes" for "Heading".
 
-Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in line 6.  We will look at the retention rates for the 4-year institutions only.  Enter the variable name `Retention` for `variable` in line 12.  Highlight and run lines 1 -- 12.  **Note that the two lines of code (lines 8 and 10) are filtering to remove the 2-year institutions so we are only assessing Public 4-year and Private 4-year institutions.**  The `favstats()` function from the `mosaic` package gives the summary statistics for a quantitative variable. The summary statistics give the two measures of center and two measures of spread for IMDb score. 
+Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in line 6.  We will look at the retention rates for the 4-year institutions only.  Enter the variable name `Retention` for `variable` in line 12.  Highlight and run lines 1 -- 12.  **Note that the two lines of code (lines 8 and 10) are filtering to remove the 2-year institutions so we are only assessing Public 4-year and Private 4-year institutions.**  The `favstats()` function from the `mosaic` package gives the summary statistics for a quantitative variable. The summary statistics give the two measures of center and two measures of spread for retention rate.
 
 ```{r, echo=TRUE, collapse = FALSE, eval=FALSE}
 IPEDS <- datasetname #Creates the object IPEDS 
@@ -108,9 +108,9 @@ IPEDS %>%
 
 #### Displaying a single quantitative variable {-}
 
-There are three type of plots used to plot a single quantitative variable: a dotplot, a histogram or a boxplot.  A dotplot of retention rate would plot a dot for the retention rate for each 4-year institution 
+There are three type of plots used to plot a single quantitative variable: a dotplot, a histogram or a boxplot.  A dotplot of retention rates would plot a dot for the retention rate for each 4-year institution 
 
-We will create both a histogram and a boxplot of the variable `Retention`.  Enter the name of the variable in both line 16 and line 23 for `variable` in the `R` script file.  **Give each plot a descriptive title.**  Highlight and run lines 15 -- 27 to give the histogram and boxplot. Notice that the **bin width** for the histogram is 10.  For example the first bin consists of the number of 4-year institutions in the data set with a retention rate of 0 to 10\%.  It is important to note that a 4-year institution with a retention rate on the boundary of a bin will fall into the bin above it; for example, 10 would be counted in the bin 10--20. 
+We will create both a histogram and a boxplot of the variable `Retention`.  Enter the name of the variable in both line 16 and line 23 for `variable` in the `R` script file.  **Give each plot a descriptive title.**  Highlight and run lines 15 -- 27 to give the histogram and boxplot. Notice that the **bin width** for the histogram is 10.  For example, the first bin consists of the number of 4-year institutions in the data set with a retention rate of 0 to 10\%.  It is important to note that a 4-year institution with a retention rate on the boundary of a bin will fall into the bin above it; for example, 10 would be counted in the bin 10--20. 
 
 **Export and upload both plots to Gradescope for your group.**  
 

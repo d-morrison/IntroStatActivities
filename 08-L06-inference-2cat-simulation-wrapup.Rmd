@@ -103,7 +103,7 @@ two_proportion_test(formula = response~explanatory, # response ~ explanatory
 
 \vspace{0.8in}
 
-Fill in the missing values/names in the `R` script file in the two-proportion_bootstrap_CI function to create a simulation 90\% confidence interval.  **Upload a copy of the bootstrap distribution to Gradescope.**
+Fill in the missing values/names in the `R` script file in the two_proportion_bootstrap_CI function to create a simulation 90\% confidence interval.  **Upload a copy of the bootstrap distribution to Gradescope.**
 
 ```{r, echo=TRUE, eval=FALSE}
 two_proportion_bootstrap_CI(formula = response~explanatory, 
