@@ -41,7 +41,7 @@ Researchers at the Princeton University wanted to investigate influences on beha
 \vspace{0.4in}
 
 
-Use the provided `R` script file to create a segmented bar plot of those who helped others for those in the hurry condition and those in the no hurry condition. Enter the name of the explanatory variable for `explanatory` and the name of the response variable for `response`.  **Make sure to title your plot**.  Highlight and run lines 1--13.
+Use the provided R script file to create a segmented bar plot of those who helped others for those in the hurry condition and those in the no hurry condition. Enter the name of the explanatory variable for `explanatory` and the name of the response variable for `response`.  **Make sure to title your plot**.  Highlight and run lines 1--13.
 
 
 ```r
@@ -77,7 +77,7 @@ good %>%
 
 \vspace{1in}
 
-We will use the `two_proportion_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of differences in sample proportions and calculate a confidence interval. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `good`), the outcome for the explanatory variable that is first in subtraction, number of repetitions, the outcome for the response variable that is a success (what the numerator counts when calculating a sample proportion), and the confidence level as a decimal.
+We will use the `two_proportion_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of differences in sample proportions and calculate a confidence interval. We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `good`), the outcome for the explanatory variable that is first in subtraction, number of repetitions, the outcome for the response variable that is a success (what the numerator counts when calculating a sample proportion), and the confidence level as a decimal.
 
 The response variable name is `Behavior` and the explanatory variable name is `Condition`.
 
@@ -97,7 +97,7 @@ The response variable name is `Behavior` and the explanatory variable name is `C
 
 \vspace{.15in}
 
-Using the `R` script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 16--21.
+Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 16--21.
 
 
 ```r

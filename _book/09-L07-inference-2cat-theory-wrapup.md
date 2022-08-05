@@ -1,4 +1,4 @@
-## Module 9 Lab:  Diabetes
+## Week 9 Lab:  Diabetes
 
 \setstretch{1}
 
@@ -21,7 +21,7 @@
 
 Researchers compared the efficacy of two treatment regimens to achieve durable glycemic control in children and adolescents with recent-onset type 2 diabetes [@zeitler2012].  A convenience sample of patients 10 to 17 years of age with recent-onset type 2 diabetes were randomly assigned to either a medication (rosiglitazone) or a lifestyle-intervention program focusing on weight loss through eating and activity.  Researchers measured whether the patient still needs insulin (failure) or had glycemic control (success).  Of the 233 children who received the Rosiglitazone treatment, 143 had glycemic control, while of the 234 who went through the lifestyle-intervention program, 125 had glycemic control. Is there evidence that there is difference in proportion of patients that achieve durable glycemic control between the two treatments?  Use Rosiglitazone – Lifestyle as the order of subtraction.
 
-Upload and open the `R` script file for Week 9 lab. Upload and import the csv file, `diabetes`. Enter the name of the data set (see the environment tab) for `datasetname` in the R script file in line 5. Highlight and run lines 1--6 to get the counts for each combination of categories.
+Upload and open the R script file for Week 9 lab. Upload and import the csv file, `diabetes`. Enter the name of the data set (see the environment tab) for `datasetname` in the R script file in line 5. Highlight and run lines 1--6 to get the counts for each combination of categories.
 
 
 ```r
@@ -32,7 +32,7 @@ rosi %>% group_by(treatment) %>% count(outcome)
 1. Is this an experiment or an observational study?
 \vspace{0.2in}
 
-2. Complete the following two-way table using the `R` output.
+2. Complete the following two-way table using the R output.
 
 \begin{center}
 \begin{tabular}{|c|c|c|c|}\hline
@@ -59,7 +59,7 @@ rosi %>% group_by(treatment) %>% count(outcome)
 6. **Calculate the summary statistic (difference in proportions).  Use appropriate notation.**
 \vspace{0.3in}
 
-Fill in the missing values/names in the `R` script file in the two-proportion_test function to create the null distribution and find the simulation p-value for the test.
+Fill in the missing values/names in the R script file in the two-proportion_test function to create the null distribution and find the simulation p-value for the test.
 
 
 ```r

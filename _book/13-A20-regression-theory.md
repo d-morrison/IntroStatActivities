@@ -9,7 +9,7 @@
   
 * Assess the conditions to use the normal distribution model for a slope.
 
-* Find the T test statistic (T-score) for a slope based off of `lm()` output in `R`.
+* Find the T test statistic (T-score) for a slope based off of `lm()` output in R.
 
 * Find, interpret, and evaluate the p-value for a theory-based hypothesis test for a slope.
 
@@ -39,7 +39,7 @@ golf <- read.csv("https://math.montana.edu/courses/s216/data/golf.csv")
 
 #### Plot review. {-}
 
-Use the provided `R` script file to create a scatterplot to examine the relationship between the driving distance and percent accuracy by filling in the variable names (`Driving_Distance` and `Percent_Accuracy`) for `xx` and `yy` in line 9.  Highlight and run lines 1--15. 
+Use the provided R script file to create a scatterplot to examine the relationship between the driving distance and percent accuracy by filling in the variable names (`Driving_Distance` and `Percent_Accuracy`) for `xx` and `yy` in line 9.  Highlight and run lines 1--15. 
  
 
 ```r
@@ -96,7 +96,7 @@ The scatterplot generated in question 1 and the residual plots shown below will 
 
 #### Summarize and visualize the data {-}
 
-Using the provided `R` script file, enter the response variable name, `Percent_Accuracy`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Driving_Distance`, for `explanatory` in line 26 to get the linear model output.  Highlight and run lines 26--27.
+Using the provided R script file, enter the response variable name, `Percent_Accuracy`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Driving_Distance`, for `explanatory` in line 26 to get the linear model output.  Highlight and run lines 26--27.
 
 
 ```r
@@ -104,7 +104,7 @@ lm.golf <- lm(response~explanatory, data=golf) # lm(response~explanatory)
 round(summary(lm.golf)$coefficients, 5)
 ```
 
-5.  Using the output from the evaluated `R` code above, write the equation of the regression line in the context of the problem using appropriate statistical notation.
+5.  Using the output from the evaluated R code above, write the equation of the regression line in the context of the problem using appropriate statistical notation.
 
 \vspace{1in}
 
@@ -121,12 +121,12 @@ $$
 T = \frac{\mbox{slope estimate}}{SE} = \frac{b_1}{SE(b_1)}.
 $$
  
-We will use the linear model `R` output above to get the estimate for slope and the standard error of the slope.
+We will use the linear model R output above to get the estimate for slope and the standard error of the slope.
 
-7.  What are the values of $b_1$ and $SE(b_1)$?  Where in the linear model `R` output can you find these values?
+7.  What are the values of $b_1$ and $SE(b_1)$?  Where in the linear model R output can you find these values?
 \vspace{0.5in}
 
-8.  Calculate the standardized statistic for slope.  Identify where this calculated value is in the linear model `R` output.
+8.  Calculate the standardized statistic for slope.  Identify where this calculated value is in the linear model R output.
 
 \newpage
 
@@ -134,7 +134,7 @@ We will use the linear model `R` output above to get the estimate for slope and 
 
 \vspace{0.8in}
 
-10.  The p-value in linear model `R` output is the two-sided p-value for the test of significance for slope.  Report the p-value to answer the research question.  
+10.  The p-value in linear model R output is the two-sided p-value for the test of significance for slope.  Report the p-value to answer the research question.  
 
 \vspace{0.5in}
 
@@ -202,9 +202,9 @@ golf %>%
 
 2. To interpret a confidence interval for the slope, think about how to interpret the sample slope and use that information in the confidence interval interpretation for slope.  
 
-3. Use the explanatory variable row in the linear model `R` output to obtain the slope estimate (`estimate` column) and standard error of the slope (`Std. Error` column) to calculate the standardized slope, or T-score.  The calculated T-score should match the `t value` column in the explanatory variable row. The standardized slope tells the number of standard errors the observed slope is above or below 0.
+3. Use the explanatory variable row in the linear model R output to obtain the slope estimate (`estimate` column) and standard error of the slope (`Std. Error` column) to calculate the standardized slope, or T-score.  The calculated T-score should match the `t value` column in the explanatory variable row. The standardized slope tells the number of standard errors the observed slope is above or below 0.
 
-4. The explanatory variable row in the linear model `R` output provides a **two-sided** p-value under the `Pr(>|t|)` column.
+4. The explanatory variable row in the linear model R output provides a **two-sided** p-value under the `Pr(>|t|)` column.
 
 5. The standardized slope is compared to a $t$-distribution with $n-2$ degrees of freedom in order to obtain a p-value.  The $t$-distribution with $n-2$ degrees of freedom is also used to find the appropriate multiplier for a given confidence level.
 

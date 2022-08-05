@@ -1,4 +1,4 @@
-## Module 13 Lab: Big Mac Index
+## Week 13 Lab: Big Mac Index
 
 \setstretch{1}
 
@@ -18,16 +18,16 @@
 
 Can the relative cost of a Big Mac across different countries be used to predict the Gross Domestic Product (GDP) per person for that country?  The GDP per person and the adjusted dollar equivalent to purchase a Big Mac was found on a random sample of 55 countries in January of 2022.  The cost of a Big Mac in each country was adjusted to US dollars based on current exchange rates.  Is there evidence of a positive relationship between Big Mac cost and the GDP per person?
 
-Upload and open the `R` script file for Week 13 lab. Upload and import the csv file, `big_mac_adjusted_index_S22.csv`. Enter the name of the data set (see the environment tab) for datasetname in the `R` script file in line 7. Highlight and run lines 1--7 to load the data.
+Upload and open the R script file for Week 13 lab. Upload and import the csv file, `big_mac_adjusted_index_S22.csv`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 7. Highlight and run lines 1--7 to load the data.
 
 ```{r, echo = TRUE, fig.width=7,fig.height=6, collapse=FALSE, eval=FALSE}
-# Read in data set and remove NAs
+# Read in data set 
 mac <- datasetname
 ```
 
 #### Summarize and visualize the data {-} 
 
-To find the correlation between the variables, `GDP_dollar` and `dollar_price` highlight and run lines 10--13 in the `R` script file.
+To find the correlation between the variables, `GDP_dollar` and `dollar_price` highlight and run lines 10--13 in the R script file.
 
 ```{r, echo=TRUE, eval=FALSE}
 mac %>% 
@@ -49,7 +49,7 @@ In the next part of the activity we will assess the linear model between Big Mac
 
 ```{r, echo=TRUE, collapse = FALSE, eval=FALSE}
 # Fit linear model: y ~ x
-bigmacLM <- lm(response~explanatory, data=covid)
+bigmacLM <- lm(response~explanatory, data=mac)
 summary(bigmacLM)$coefficients # Display coefficient summary
 ```
 
@@ -95,9 +95,9 @@ hist(covidLM$resid, xlab="Residuals", ylab="Frequency",
 
 #### Use statistical inferential methods to draw inferences from the data {-}
 
-##### Hypothesis test {-}
+#### Hypothesis test {-}
 
-Use the `regression_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample **correlations** and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `mac`), the summary measure used for the test, number of repetitions, the sample statistic (value of correlation), and the direction of the alternative hypothesis.
+Use the `regression_test()` function in R (in the `catstats` package) to simulate the null distribution of sample **correlations** and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `mac`), the summary measure used for the test, number of repetitions, the sample statistic (value of correlation), and the direction of the alternative hypothesis.
 
 The response variable name is `GDP_dollar` and the explanatory variable name is `dollar_price`.
 
@@ -120,7 +120,7 @@ The response variable name is `GDP_dollar` and the explanatory variable name is 
     
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 37--42.  **Upload a copy of your plot showing the p-value to Gradescope for your group.**
+Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 37--42.  **Upload a copy of your plot showing the p-value to Gradescope for your group.**
 
 ```{r, echo=TRUE, eval=FALSE}
 regression_test(GDP_dollar~dollar_price, # response ~ explanatory
@@ -132,7 +132,7 @@ regression_test(GDP_dollar~dollar_price, # response ~ explanatory
        
 ```
 
-8.  Report the p-value from the `R` output. 
+8.  Report the p-value from the R output. 
 \vspace{0.3in}
 
 9. Interpret the p-value in context of the problem.
@@ -140,7 +140,7 @@ regression_test(GDP_dollar~dollar_price, # response ~ explanatory
 
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided `R` script file to find a 90\% confidence interval. Highlight and run lines 45--49. 
+We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 90\% confidence interval. Highlight and run lines 45--49. 
 
 ```{r, echo=TRUE, eval=FALSE}
 regression_bootstrap_CI(GDP_dollar~dollar_price, # response ~ explanatory

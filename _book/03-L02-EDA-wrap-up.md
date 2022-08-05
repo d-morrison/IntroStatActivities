@@ -1,4 +1,4 @@
-## Module 3 Lab:  IPEDs
+## Week 3 Lab:  IPEDs
 
 \setstretch{1}
 
@@ -36,7 +36,7 @@ To review these concepts, see Section 2.3 in the textbook.
 
 ### The Integrated Postsecondary Education Data System (IPEDS)
 
-Upload and open the provided `R` script file for the week 3 lab to answer the following questions.  **Remember bolded questions will be answered on Gradescope for your group.**
+Upload and open the provided R script file for the week 3 lab to answer the following questions.  **Remember bolded questions will be answered on Gradescope for your group.**
 
 These data are on a subset of institutions that met the following selection criteria [@ipeds]:
 
@@ -59,7 +59,7 @@ These data are on a subset of institutions that met the following selection crit
 
 #### Summary statistics for a single quantitative variable {-}
 
-Look through the provided chart.  The UnitID and Name are identifiers for each observational unit, *US degree granting institutions in 2018*.  
+Look through the provided chart above showing the description of variables measured.  The UnitID and Name are identifiers for each observational unit, *US degree granting institutions in 2018*.  
 
 1. Identify in the chart above which variables collected on the US institutions are categorical (C) and which variables are quantitative (Q).
 
@@ -67,7 +67,9 @@ Look through the provided chart.  The UnitID and Name are identifiers for each o
 
 In Wednesday's activity, the code was provided to import the data set needed directly from the Stat 216 website.  Follow these steps to upload and import the data set for today's lab.
 
-* Upload the data set `IPEDS_Data_2018` to the `R` Studio server using the same steps used to upload the `R` script file.  
+* Download the provided data set `IPED_Data_2018` from D2L
+
+* Upload the data set `IPEDS_Data_2018` to the RStudio server using the same steps used to upload the R script file.  
 
 * Click on "Import Dataset" in the Environment tab in the upper right hand corner.  
 
@@ -77,7 +79,7 @@ In Wednesday's activity, the code was provided to import the data set needed dir
 
 * To view the data set, click on the data set name (`IPEDS_Data_2018`).  Verify that that column names match the first column in the chart on the previous page.  If the columns are named V1, V2, V3...etc, you did not select "Yes" for "Heading".
 
-Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in line 6.  We will look at the retention rates for the 4-year institutions only.  Enter the variable name `Retention` for `variable` in line 12.  Highlight and run lines 1 -- 12.  **Note that the two lines of code (lines 8 and 10) are filtering to remove the 2-year institutions so we are only assessing Public 4-year and Private 4-year institutions.**  The `favstats()` function from the `mosaic` package gives the summary statistics for a quantitative variable. The summary statistics give the two measures of center and two measures of spread for retention rate.
+Enter the name of the data set (see the environment tab) for `datasetname` in the R script file in line 6.  We will look at the retention rates for the 4-year institutions only.  Enter the variable name `Retention` for `variable` in line 12.  Highlight and run lines 1 -- 12.  **Note that the two lines of code (lines 8 and 10) are filtering to remove the 2-year institutions so we are only assessing Public 4-year and Private 4-year institutions.**  The `favstats()` function from the `mosaic` package gives the summary statistics for a quantitative variable. The summary statistics give the two measures of center and two measures of spread for retention rate.
 
 
 ```r
@@ -110,7 +112,7 @@ IPEDS %>%
 
 There are three type of plots used to plot a single quantitative variable: a dotplot, a histogram or a boxplot.  A dotplot of retention rates would plot a dot for the retention rate for each 4-year institution 
 
-We will create both a histogram and a boxplot of the variable `Retention`.  Enter the name of the variable in both line 16 and line 23 for `variable` in the `R` script file.  **Give each plot a descriptive title.**  Highlight and run lines 15 -- 27 to give the histogram and boxplot. Notice that the **bin width** for the histogram is 10.  For example, the first bin consists of the number of 4-year institutions in the data set with a retention rate of 0 to 10\%.  It is important to note that a 4-year institution with a retention rate on the boundary of a bin will fall into the bin above it; for example, 10 would be counted in the bin 10--20. 
+We will create both a histogram and a boxplot of the variable `Retention`.  Enter the name of the variable in both line 16 and line 23 for `variable` in the R script file.  **Give each plot a descriptive title.**  Highlight and run lines 15 -- 27 to give the histogram and boxplot. Notice that the **bin width** for the histogram is 10.  For example, the first bin consists of the number of 4-year institutions in the data set with a retention rate of 0 to 10\%.  It is important to note that a 4-year institution with a retention rate on the boundary of a bin will fall into the bin above it; for example, 10 would be counted in the bin 10--20. 
 
 **Export and upload both plots to Gradescope for your group.**  
 
@@ -155,11 +157,11 @@ $$\text{Upper Fence: values} \ge Q3 + 1.5*IQR$$
 
 Let's examine how the presence of outliers affect the values of center and spread. 
 
-8.  Report the two measures of center (mean and median) for retention given in the `R` output.
+8.  Report the two measures of center (mean and median) for retention given in the R output.
 
 \vspace{0.8in}
 
-9.  Report the two measures of spread (standard deviation and IQR) for retention given in the `R` output.
+9.  Report the two measures of spread (standard deviation and IQR) for retention given in the R output.
 
 \vspace{0.8in}
 
@@ -207,7 +209,7 @@ Is there a difference in retention rates for public and private 4-year instituti
 
 \vspace{0.8in}
 
-Enter the name of the explanatory variable and the name of the response variable in lines 42 and 45 of the `R` script file.  Remember that the variable name must be typed in EXACTLY as it is written in the data set. Highlight and run lines 41 -- 49 to find the summary statistics and create side by side boxplots of the data.
+Enter the name of the explanatory variable and the name of the response variable in lines 42 and 45 of the R script file.  Remember that the variable name must be typed in EXACTLY as it is written in the data set. Highlight and run lines 41 -- 49 to find the summary statistics and create side by side boxplots of the data.
 
 
 ```r

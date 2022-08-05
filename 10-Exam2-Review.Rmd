@@ -1,6 +1,6 @@
 # Exam 2 Review
 
-Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 Review `R` script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
+Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 Review R script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
@@ -30,7 +30,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \newpage
 
-1. Use the provided Exam 2 Review `R` script file and analyze the following research question: The proportion of university graduates in the US is 42%.  "Is there evidence that the proportion of university graduates in the Islands differs from the proportion in the US?"
+1. Use the provided Exam 2 Review R script file and analyze the following research question: The proportion of university graduates in the US is 42%.  "Is there evidence that the proportion of university graduates in the Islands differs from the proportion in the US?"
 
 a. Parameter of Interest:
 \vspace{0.3in}
@@ -51,7 +51,7 @@ c. Alternative Hypothesis:
     Words:
 \vspace{0.5in}
    
-d. Use the `R` script file to get the counts for each level of the variable. Fill in the following table using the values from the `R` output:
+d. Use the R script file to get the counts for each level of the variable. Fill in the following table with the success, failure, variable name, and counts using the values from the R output.
 
 \begingroup
 \begin{center}
@@ -84,7 +84,7 @@ g. Assess if the following conditions are met:
     Success-Failure (must be met to use theory-based methods):
 \vspace{0.8in}
     
-h. Use the provided `R` script file to find the simulation p-value to assess the research question.  Report the p-value.
+h. Use the provided R script file to find the simulation p-value to assess the research question.  Report the p-value.
 \vspace{0.3in}
        
 i.  Interpret the p-value in the context of the problem.
@@ -96,7 +96,7 @@ j.  Write a conclusion to the research question based on the p-value.
 k. Write a decision based on the p-value.
 \vspace{0.3in}
     
-l. Use the provided `R` script file to find a 90\% confidence interval.
+l. Use the provided R script file to find a 90\% confidence interval.
 \vspace{0.3in}
         
 m. Interpret the 90\% confidence interval in context of the problem.
@@ -108,10 +108,10 @@ n. Regardless to your answer in part g, calculate the standardized statistic.
 o. Interpret the value of the standardized statistic in context of the problem.
 \vspace{0.8in}
 
-p. Use the provided `R` script file to find the theory-based p-value. 
+p. Use the provided R script file to find the theory-based p-value. 
 \vspace{0.3in}
 
-q. Use the provided `R` script file to find the appropriate z* multiplier and calculate the theory-based confidence interval. 
+q. Use the provided R script file to find the appropriate z* multiplier and calculate the theory-based confidence interval. 
 \vspace{0.5in}
 
 r. Does the theory-based p-value and CI match those found using simulation methods?  Explain why or why not.
@@ -121,7 +121,7 @@ s. To what group can the results be generalized?
 \vspace{0.8in}
 
         
-2. Use the provided Exam 2 Review `R` script file and analyze the following research question: "Is there evidence that those with a higher education level are less likely to smoke?"
+2. Use the provided Exam 2 Review R script file and analyze the following research question: "Is there evidence that those with a higher education level are less likely to smoke?"
 
 a. Parameter of Interest:
 \vspace{0.3in}
@@ -142,7 +142,7 @@ c. Alternative Hypothesis:
     Words:
 \vspace{0.5in}
    
-d. Use the `R` script file to get the counts for each level and combination of variables. Fill in the following table using the values from the `R` output:
+d. Use the R script file to get the counts for each level and combination of variables. Fill in the following table with the variable names, levels of each variable, and counts using the values from the R output.
 
 \begingroup
 \setlength{\tabcolsep}{14pt}
@@ -180,7 +180,7 @@ g. Assess if the following conditions are met:
     Success-Failure (must be met to use theory-based methods):
 \vspace{0.8in}
     
-h. Use the provided `R` script file to find the simulation p-value to assess the research question.  Report the p-value.
+h. Use the provided R script file to find the simulation p-value to assess the research question.  Report the p-value.
 \vspace{0.3in}
        
 i.  Interpret the p-value in the context of the problem.
@@ -192,7 +192,7 @@ j.  Write a conclusion to the research question based on the p-value.
 k. Write a decision based on the p-value.
 \vspace{0.3in}
     
-l. Use the provided `R` script file to find a 95\% confidence interval.
+l. Use the provided R script file to find a 95\% confidence interval.
 \vspace{0.3in}
         
 m. Interpret the 95\% confidence interval in context of the problem.
@@ -204,10 +204,10 @@ n. Regardless to your answer in part g, calculate the standardized statistic.
 o. Interpret the value of the standardized statistic in context of the problem.
 \vspace{0.8in}
 
-p. Use the provided `R` script file to find the theory-based p-value. 
+p. Use the provided R script file to find the theory-based p-value. 
 \vspace{0.3in}
 
-q. Use the provided `R` script file to find the appropriate z* multiplier and calculate the theory-based confidence interval. 
+q. Use the provided R script file to find the appropriate z* multiplier and calculate the theory-based confidence interval. 
 \vspace{0.5in}
 
 r. Does the theory-based p-value and CI match those found using simulation methods?  Explain why or why not.

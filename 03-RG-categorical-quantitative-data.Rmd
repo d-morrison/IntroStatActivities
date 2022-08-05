@@ -1,8 +1,8 @@
 # Exploring Categorical and Quantitative Data
 
-## Module 3 Reading Guide: Introduction to `R`, Categorical Variables, and a Single Quantitative Variable
+## Week 3 Reading Guide: Introduction to R, Categorical Variables, and a Single Quantitative Variable
 
-### Section 1.7 (Data in `R`) {-}
+### Section 1.7 (Data in R) {-}
 
 **Videos**  
 
@@ -12,9 +12,9 @@
 
 #### Notes {-}
 
-`R` is case sensitive, meaning it reads `data` differently from `Data`.  If you get an error message, check that your capitalization is correct.
+R is case sensitive, meaning it reads `data` differently from `Data`.  If you get an error message, check that your capitalization is correct.
 
-`R` does not like spaces or special characters  This means the column and row headers in the data set should not have spaces, periods, commas, etc.  Instead of titling the variable `column header`, use `column_header` or `ColumnHeader`.
+R does not like spaces or special characters  This means the column and row headers in the data set should not have spaces, periods, commas, etc.  Instead of titling the variable `column header`, use `column_header` or `ColumnHeader`.
 
 **Tidy data**:  Data frames with
 
@@ -32,7 +32,7 @@ We would not expect you to know the coding right now, especially for things like
 	
 #### Functions {-}
 
-State what these introductory functions do in `R`:
+State what these introductory functions do in R:
 
 `glimpse(data_set_name)`
 
@@ -276,9 +276,9 @@ How are outliers denoted on a box plot?  How can you mathematically determine if
 \rgs
 
 
-### Section 2.4 (`R`: Exploratory data analysis) and Section 2.5 (Chapter 2 review) {-}
+### Section 2.4 (R: Exploratory data analysis) and Section 2.5 (Chapter 2 review) {-}
 
-Section 2.4 presents four tutorials on analyzing quantitative data in `R`.  We recommend you complete all four.
+Section 2.4 presents four tutorials on analyzing quantitative data in R.  We recommend you complete all four.
 
 #### Notes {-}
 

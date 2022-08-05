@@ -1,6 +1,6 @@
 # Inference for Two Categorical Variables: Theory-based Methods
 
-## Module 9 Reading Guide: Hypothesis Testing for a Difference in Proportions
+## Week 9 Reading Guide: Hypothesis Testing for a Difference in Proportions
 
 ### Section 5.5.3 (Theory-based methods for a difference in proportions)  {-}
 

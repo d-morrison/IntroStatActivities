@@ -1,6 +1,6 @@
 # Inference for Two Quantitative Variables
 
-## Module 13 Reading Guide: Inference for Slope and Correlation
+## Week 13 Reading Guide: Inference for Slope and Correlation
 
 ### Sections 7.1 and 7.2 (Inference for regression and model conditions) {-}
 
@@ -36,7 +36,7 @@ Four characteristics of a scatterplot:
 
 \setstretch{1.25}
 
-Least squares regression line: $\hat{y} = b_0+b_1x$ , where $b_0$ is the sample $y$-intercept (the estimate for the `(Intercept)` row in the `R` regression output), and $b_1$ is the sample slope (the estimate for the `x-variable_name` row in the `R`).
+Least squares regression line: $\hat{y} = b_0+b_1x$ , where $b_0$ is the sample $y$-intercept (the estimate for the `(Intercept)` row in the R regression output), and $b_1$ is the sample slope (the estimate for the `x-variable_name` row in the R).
 
 Sample slope interpretation: a 1 unit increase in the *x* variable is associated with a $|b_1 |$ unit *predicted* increase/decrease in the *y*-variable.
 
@@ -173,7 +173,7 @@ In a theory-based test of slope or correlation, how are the degrees of freedom d
 Explain why testing for slope is equivalent to testing for correlation.
 \rgs
 
-Where in the `R` output can $SE(b_1)$ be found?
+Where in the R output can $SE(b_1)$ be found?
 \rgs
 
 #### Formulas {-}
@@ -265,7 +265,7 @@ Confidence interval:
 9.	Write the least squares regression line for these data in appropriate notation.
 \rgs
 
-10. From the `R` output, what is the standard error of the slope estimate?
+10. From the R output, what is the standard error of the slope estimate?
 \rgs
 
 11. Calculate the T-score (the standardized statistic for the slope).

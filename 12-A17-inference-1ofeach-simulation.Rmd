@@ -108,19 +108,19 @@ Remember that the null distribution is created based on the assumption the null 
 
 To demonstrate this simulation, we could create cards to simulate a sample.  
 
-10.  How many cards will we start with?
+10.  How many cards would we start with?
 
 \vspace{0.3in}
 
-11.  What will we write on each card?
+11.  What would we write on each card?
 
 \vspace{0.3in}
 
-12.  Next, we will mix the cards together and shuffle into two piles.  How many cards will go into each pile?  What should we label the piles?
+12.  Next, we would mix the cards together and shuffle into two piles.  How many cards will go into each pile?  What should we label the piles?
 
 \vspace{.8in}
 
-13.  What value is calculated from the cards and plotted on the null distribution?  *Hint*: What statistic are we calculating from the data?
+13.  What value would be calculated from the cards and plotted on the null distribution?  *Hint*: What statistic are we calculating from the data?
 
 \vspace{0.3in}
 
@@ -128,15 +128,11 @@ To demonstrate this simulation, we could create cards to simulate a sample.
 
 \vspace{0.8in}
 
-15.  Once we create a null distribution of 1000 simulations, at what value do you expect the distribution to be centered?  Explain your reasoning.
-
-\vspace{.8in}
-
-We will use the `two_mean_test()` function in `R` (in the `catstats` package) to simulate the null distribution of differences in sample means and compute a p-value. 
+We will use the `two_mean_test()` function in R (in the `catstats` package) to simulate the null distribution of differences in sample means and compute a p-value. 
 
 \newpage 
 
-16.  When using the `two_mean_test()` function, we need to enter the name of the response variable, `number_of_uses`, and the name of the explanatory variable, `condition`, for the formula.  The name of the data set as shown above is `rude``.  What values should be entered for each of the following to create 1000 simulated samples?
+15.  When using the `two_mean_test()` function, we need to enter the name of the response variable, `number_of_uses`, and the name of the explanatory variable, `condition`, for the formula.  The name of the data set as shown above is `rude`.  What values should be entered for each of the following to create 1000 simulated samples?
 
 * First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"control"` or `"rudeness"`):
 
@@ -151,7 +147,7 @@ We will use the `two_mean_test()` function in `R` (in the `catstats` package) to
 
 \vspace{.2in}
 
-17.  Simulate a null distribution and compute the p-value. Using the `R` script file for this activity, enter your answers for question 16 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 1--29.
+16.  Simulate a null distribution and compute the p-value. Using the R script file for this activity, enter your answers for question 14 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 1--29.
 
 ```{r, echo = TRUE, eval = FALSE}
 two_mean_test(response~explanatory, #Enter the names of the variables
@@ -166,7 +162,7 @@ two_mean_test(response~explanatory, #Enter the names of the variables
 \vspace{1.5in}
 
 
-18.  Report the p-value. Based off of this p-value, write a conclusion to the hypothesis test.
+17.  Report the p-value. Based off of this p-value, write a conclusion to the hypothesis test.
 
 \vspace{0.9in}
 
@@ -174,9 +170,9 @@ two_mean_test(response~explanatory, #Enter the names of the variables
 
 ##### Confidence interval {-}
 
-We will use the `two_mean_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval. 
+We will use the `two_mean_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval. 
 
-19. Using bootstrapping find a 95\% confidence interval. Using the provided `R` script file, enter the variable names as in the `two_mean_test()` function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 32--36. Report the 95\% confidence interval in interval notation.
+18. Using bootstrapping find a 95\% confidence interval. Using the provided R script file, enter the variable names as in the `two_mean_test()` function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 32--36. Report the 95\% confidence interval in interval notation.
 ```{r, echo = TRUE, eval = FALSE}
 two_mean_bootstrap_CI(response ~ explanatory, #Enter the name of the variables
                       data = rude,  # Enter the name of the data set
@@ -187,12 +183,12 @@ two_mean_bootstrap_CI(response ~ explanatory, #Enter the name of the variables
 
 \vspace{0.3in}
 
-20. Interpret the interval you calculated in question 19. 
+19. Interpret the interval you calculated in question 18. 
 
 \vspace{1in}
 
 
-21.  Would the results from a theory-based test match the results we saw with the simulation?  Explain why or why not.
+20.  Would the results from a theory-based test match the results we saw with the simulation?  Explain why or why not.
 
 \vspace{1in}
 

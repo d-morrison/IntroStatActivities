@@ -1,4 +1,4 @@
-## Module 14 Lab: Efficacy of the COVID Vaccination
+## Week 14 Lab: Efficacy of the COVID Vaccination
 
 \setstretch{1}
 
@@ -51,7 +51,7 @@ Let $A$ = the event the US adult is vaccinated, and $B$ = the event the US adult
 
 \vspace{0.5in}
 
-7.  **Calculate the relative risk for hospitalization with COVID in November 2021 for US adults fully vaccinated compared US adults not vaccinated.**
+7.  **Calculate the relative risk for hospitalization with COVID in November 2021 for US adults fully vaccinated compared to US adults not vaccinated.**
 
 \vspace{0.5in}
 

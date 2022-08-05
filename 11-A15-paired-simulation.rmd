@@ -118,7 +118,7 @@ To simulate the null distribution of paired sample mean differences we will use 
 
 \vspace{.7in}
 
-We will use the `paired_test()` function in `R` (in the `catstats` package) to simulate the shifted bootstrap (null) distribution of sample mean differences and compute a p-value. Use the provided `R` script file and enter the calculated value from question 10 for `xx` to simulate the null distribution and enter the summary statistic from question 8 for `yy` to find the p-value.  Highlight and run lines 1--21.
+We will use the `paired_test()` function in R (in the `catstats` package) to simulate the shifted bootstrap (null) distribution of sample mean differences and compute a p-value. Use the provided R script file and enter the calculated value from question 9 for `xx` to simulate the null distribution and enter the summary statistic from question 7 for `yy` to find the p-value.  Highlight and run lines 1--21.
 
 ```{r, echo=TRUE, eval=FALSE, warning = FALSE}
     paired_test(data = Air$Difference,   # Vector of differences 
@@ -130,7 +130,7 @@ We will use the `paired_test()` function in `R` (in the `catstats` package) to s
             which_first = 1)  # Not needed when using calculated differences
 ```
     
-10. Sketch the null distribution created using the `R` output here.
+10. Sketch the null distribution created using the R output here.
 
 \vspace{1.8in}
 
@@ -152,14 +152,14 @@ We will use the `paired_test()` function in `R` (in the `catstats` package) to s
 \vspace{.5in}
 
 ##### Confidence interval {-}
-We will use the `paired_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample mean differences and calculate a confidence interval. 
+We will use the `paired_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample mean differences and calculate a confidence interval. 
 
 16. Write out the parameter of interest in context of the study.
 
 \vspace{0.8in}
 
 
-17. Using the provided `R` script file, fill in the missing value at `xx` to find a 99\% bootstrap confidence interval; highlight and run lines 24--27.  Report the confidence interval in interval notation.
+17. Using the provided R script file, fill in the missing value at `xx` to find a 99\% bootstrap confidence interval; highlight and run lines 24--27.  Report the confidence interval in interval notation.
 
 ```{r, echo=TRUE, eval=FALSE, warning = FALSE}
 paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
@@ -189,7 +189,7 @@ paired_bootstrap_CI(data = Air$Difference, # Enter vector of differences
 
 2.  When using bootstrapping to create a null distribution centered at the null value for both paired data and a single quantitative variable, we first need to shift the data by the difference $\mu_0 - \bar{x}_d$, and then sample with replacement from the shifted data. 
 
-3. When analyzing paired data, the summary statistic is the 'mean difference' NOT the 'difference in means'^[Technically, if we calculate the differences and then take the mean (mean difference), and we calculate the two means and then take the difference (difference in means), the value will be the same. However, the *sampling variability* of the two statistics will differ, as we will see in Activity 11.].  This terminology will be *very* important in interpretations.
+3. When analyzing paired data, the summary statistic is the 'mean difference' NOT the 'difference in means'^[Technically, if we calculate the differences and then take the mean (mean difference), and we calculate the two means and then take the difference (difference in means), the value will be the same. However, the *sampling variability* of the two statistics will differ, as we will see in Week 12.].  This terminology will be *very* important in interpretations.
 
 4. To create one simulated sample on the null distribution for a sample mean or mean difference, shift the original data by adding $(\mu_0 - \bar{x})$ or $(0 - \bar{x}_d)$. Sample with replacement from the shifted data $n$ times. Calculate and plot the sample mean or the sample mean difference.
 

@@ -1,4 +1,4 @@
-## Module 4 Lab:  Penguins
+## Week 4 Lab:  Penguins
 
 \setstretch{1}
 
@@ -9,21 +9,21 @@
   
 * Use scatterplots to assess the relationship between two quantitative variables.
 
-* Find the estimated line of regression using summary statistics and `R` linear model (`lm()`) output.
+* Find the estimated line of regression using summary statistics and R linear model (`lm()`) output.
 
 * Interpret the slope coefficient in context of the problem.
 
 * Calculate and interpret $R^2$, the coefficient of determination, in context of the problem.
 
-* Find the correlation coefficient from `R` output or from $R^2$ and the sign of the slope.
+* Find the correlation coefficient from R output or from $R^2$ and the sign of the slope.
 
 ### Penguins
 
 The Palmer Station Long Term Ecological Research Program sampled three penguin species on islands in the Palmer Archipelago in Antarctica. Researchers took various body measurements on the penguins, including flipper length and body mass. The researchers were interested in the relationship between flipper length and body mass and wondered if flipper length could be used to accurately predict the body mass of these three penguin species. 
 
-Upload and import the `Antarctica_Penguins` csv file and the provided `R` script file for week 4 lab. Enter the name of the data set (see the environment tab) for `datasetname` in the `R` script file in line 4.
+Upload and import the `Antarctica_Penguins` csv file and the provided R script file for week 4 lab. Enter the name of the data set (see the environment tab) for `datasetname` in the R script file in line 4.
 
-First we will create a scatterplot of the flipper length and body mass.  Notice that we are using flipper length to predict body mass.  This makes flipper length the explanatory variable. **Make sure to give your plot a descriptive title.** Highlight and run lines 1--13 in the `R` script file.  **Upload a copy of your scatterplot to Gradescope.**
+First we will create a scatterplot of the flipper length and body mass.  Notice that we are using flipper length to predict body mass.  This makes flipper length the explanatory variable. **Make sure to give your plot a descriptive title.** Highlight and run lines 1--13 in the R script file.  **Upload a copy of your scatterplot to Gradescope.**
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
 penguins <- datasetname #Creates the object penguins
@@ -55,7 +55,7 @@ penguins %>%
 
 \vspace{.1in}
 
-Highlight and run lines 16--20 to get the correlation matrix in the `R` script file.
+Highlight and run lines 16--20 to get the correlation matrix in the R script file.
 
 ```{r, echo=TRUE, collapse = FALSE, eval=FALSE}
 penguins %>%  # Data set pipes into
@@ -65,7 +65,7 @@ penguins %>%  # Data set pipes into
   round(3)
 ```
 
-2.  Using the `R` output, which two variables have the *strongest* correlation? What is the value of this correlation?
+2.  Using the R output, which two variables have the *strongest* correlation? What is the value of this correlation?
 
 \vspace{0.5in}
 
@@ -77,7 +77,7 @@ penguins %>%  # Data set pipes into
 
 \vspace{1in}
 
-Enter the variable `body_mass_g` for `response` and the variable name `flipper_length_mm` for `explanatory` in line 23 in the `R` script file.  Highlight and run lines 23--24 to get the linear model output.
+Enter the variable `body_mass_g` for `response` and the variable name `flipper_length_mm` for `explanatory` in line 23 in the R script file.  Highlight and run lines 23--24 to get the linear model output.
 
 ```{r, echo=TRUE, collapse = FALSE, eval=FALSE}
 # Fit linear model: y ~ x
@@ -85,7 +85,7 @@ penguinsLM <- lm(response~explanatory, data=penguins)
 summary(penguinsLM)$coefficients # Display coefficient summary
 ```
 
-5.  Write out the least squares regression line using the summary statistics from the `R` output in context of the problem.
+5.  Write out the least squares regression line using the summary statistics from the R output in context of the problem.
 
 \vspace{.5in}
 

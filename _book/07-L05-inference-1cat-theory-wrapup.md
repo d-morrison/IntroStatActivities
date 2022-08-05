@@ -1,4 +1,4 @@
-## Module 7 Lab:  Errors and Power
+## Week 7 Lab:  Errors and Power
 
 \setstretch{1}
 

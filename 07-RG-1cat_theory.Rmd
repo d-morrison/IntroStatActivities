@@ -1,6 +1,6 @@
 # Inference for a Single Categorical Variable: Theory-based Methods + Errors and Power
 
-## Module 7 Reading Guide: Categorical Inference
+## Week 7 Reading Guide: Categorical Inference
 
 ### Section 5.1 (Foundations of inference: Hypothesis tests) {-}
 
@@ -62,11 +62,11 @@ Approximately what percent of a normal distribution is in the interval
 Z =
 \rgs
 
-### `R` coding {-}
+### R coding {-}
 
 ##### Calculating normal probabilities {-}
 
-When using the `pnorm()` `R` function, you will need to enter values for the arguments `mean`, `sd`, and `q` to match the question.
+When using the `pnorm()` R function, you will need to enter values for the arguments `mean`, `sd`, and `q` to match the question.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(mean = mu, sd = sigma, q = x, lower.tail = TRUE)
@@ -88,7 +88,7 @@ pnorm(mean = 5, sd = 2, q = 3, lower.tail = FALSE)
 
 ##### Displaying normal probabilities {-} 
 
-When using the `normTail()` `R` function, you will need to enter values for the arguments `m`, `s`, and `L` (or `U`) to match the question.
+When using the `normTail()` R function, you will need to enter values for the arguments `m`, `s`, and `L` (or `U`) to match the question.
 
 ```{r, echo=TRUE, eval=FALSE}
 normTail(m = mu, s = sigma, L = x)
@@ -109,7 +109,7 @@ Example: `normTail(m = 5, s = 2, U = 3)` plots a N(5,2) distribution with the ar
 
 ##### Calculating normal percentiles {-}
 
-When using the `qnorm()` `R` function, you will need to enter values for the arguments `mean`, `sd`, and `p` to match the question.
+When using the `qnorm()` R function, you will need to enter values for the arguments `mean`, `sd`, and `p` to match the question.
 
 ```{r, echo=TRUE, eval=FALSE}
 qnorm(mean = mu, sd = sigma, p = x, lower.tail = TRUE)
@@ -117,11 +117,11 @@ qnorm(mean = mu, sd = sigma, p = x, lower.tail = TRUE)
 
 This function will return the value on the N(`mu`, `sigma`) distribution which has `x` area of the distribution *below* it.
 
-Example:  `qnorm(mean = 5, sd = 2, p = 0.159, lower.tail = TRUE)` will give us the value on a N(5,2) distribution which has 0.159 (15.9%) of the distribution below it, which equals 3 (from the `R` output above).
+Example:  `qnorm(mean = 5, sd = 2, p = 0.159, lower.tail = TRUE)` will give us the value on a N(5,2) distribution which has 0.159 (15.9%) of the distribution below it, which equals 3 (from the R output above).
 
 Changing to `lower.tail = FALSE` will give the value which has `x` area of the distribution *above* it.
 
-We would recommend you work through each of the examples in Section 5.2.4 using `R`.
+We would recommend you work through each of the examples in Section 5.2.4 using R.
 
 
 ### Section 5.3.4 (Theory-based inferential methods for $\pi$) {-}
@@ -223,7 +223,7 @@ Conditions for the Central Limit Theorem to apply (for the sampling distribution
 How can we determine the value of $z^⋆$ to use as the multiplier in a confidence interval?
 \rgs
 
-\rgi In `R`, use `qnorm(mean = __, sd = __, p = __)`.
+\rgi In R, use `qnorm(mean = __, sd = __, p = __)`.
 
 Select one answer in each set of parentheses: The higher the confidence level, the (larger/smaller) the multiplier, meaning the confidence interval will be (wider/narrower).
 

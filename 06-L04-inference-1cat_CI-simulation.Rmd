@@ -1,4 +1,4 @@
-## Module 6 Lab:  Helper-Hinderer --- Simulation-based Confidence Interval
+## Week 6 Lab:  Helper-Hinderer --- Simulation-based Confidence Interval
 
 \setstretch{1}
 
@@ -73,7 +73,7 @@ To use the computer simulation to create a bootstrap distribution, we will need 
     
 \vspace{.1in}
 
-We will use the `one_proportion_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 5 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 1--7.
+We will use the `one_proportion_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided R script file, fill in the values/words for each `xx` with your answers from question 5 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 1--7.
 
 ```{r, echo=TRUE, eval=FALSE}
 one_proportion_bootstrap_CI(sample_size = xx, # Sample size
@@ -119,7 +119,7 @@ one_proportion_bootstrap_CI(sample_size = xx, # Sample size
 
 \vspace{0.4in}
 
-13.  The following `R` code produced the bootstrap distribution with 1000 simulations that follows.  Circle the value that changed in the code. 
+13.  The following R code produced the bootstrap distribution with 1000 simulations that follows.  Circle the value that changed in the code. 
 
 ```{r, echo=TRUE}
 one_proportion_bootstrap_CI(sample_size = 16, # Sample size
@@ -143,7 +143,7 @@ one_proportion_bootstrap_CI(sample_size = 16, # Sample size
 
 16. Fill in the blanks below to write a paragraph summarizing the results of the study as if writing a press release.  **Complete your group's paragraph on Gradescope.**  
 Researchers were interested if infants observe social cues and would be more likely to choose the helper toy over the hinderer toy.  In a sample of (sample  size) _____________infants, (number of successes) _______________chose the helper toy.  A simulation null distribution with 1000 simulations was created in RStudio.  The p-value was found by calculating the proportion of simulations in the null distribution at the sample statistic of 0.875 and greater.  This resulted in a p-value of (value of p-value)_______________.  We would observe a sample proportion of (value of the sample proportion) ______________________ or (greater, less, more extreme) _____________________ with a probability of (value of p-value)___________________  
-IF we assume ($H_0$ in context) __________________________________________________.
+IF we assume ($H_0$ in context) ____________________________________________.
 Based on this p-value, there is (very strong/little to no) ______________________ evidence that the (sample/true)_____________________ proportion of infants age 6 to 10 months who will choose the helper toy is (greater than, less than, not equal to) _____________________ 0.5.  In addition, a 95\% confidence interval was found for the parameter of interest.  We are 95\% confident that the (true/sample)_________________________ proportion of infants age 6 to 10 months who will choose the helper toy is between (lower value)________________ and (upper value)____________________. The results of this study can be generalized to (all infants age 6 to 10 months/infants similar to those in this study)___________________________ as the researchers (did/did not)_____________________ select a random sample.
 
 \setstretch{1}

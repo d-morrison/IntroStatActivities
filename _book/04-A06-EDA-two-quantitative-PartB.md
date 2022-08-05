@@ -9,7 +9,7 @@
   
 * Calculate and interpret $R^2$, the coefficient of determination, in context of the problem.
 
-* Find the correlation coefficient from `R` output or from $R^2$ and the sign of the slope.
+* Find the correlation coefficient from R output or from $R^2$ and the sign of the slope.
 
 ### Terminology review
 
@@ -30,7 +30,7 @@ We will revisit the movie data set collected on Movies released in 2016 [@imdb] 
 | `budget_mil` | Amount of money (in US $ millions) budgeted for the production of the movie |
 | `revenue_mil` | Amount of money (in US $ millions) the movie made after release|
 | `duration` | Length of the movie (in minutes)|
-| `content_rating` | Rating of the movie (`G`, `PG`, `PG-13`, `R`, `Not Rated`)|
+| `content_rating` | Rating of the movie (`G`, `PG`, `PG-13`, R, `Not Rated`)|
 | `imdb_score` | IMDb user rating score from 1 to 10 |
 | `genres` | Categories the movie falls into (e.g., Action, Drama, etc.) |
 | `facebook_likes` | Number of likes a movie receives on Facebook |
@@ -39,7 +39,7 @@ We will revisit the movie data set collected on Movies released in 2016 [@imdb] 
 
 #### Correlation  {-}
 
-Correlation measures the strength and the direction of the linear relationship between two quantitative variables.  The closer the value of correlation to $+1$ or $-1$, the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  Upload and open the Movie Profits Activity 4B F22 Code `R` script file. Highlight and run lines 1--12 to produce the same table as below.
+Correlation measures the strength and the direction of the linear relationship between two quantitative variables.  The closer the value of correlation to $+1$ or $-1$, the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  Upload and open the Movie Profits Activity 4B F22 Code R script file. Highlight and run lines 1--12 to produce the same table as below.
 
 
 

@@ -44,7 +44,7 @@ diving <- read.csv("https://math.montana.edu/courses/s216/data/Diving_Penguins.c
 \vspace{.5in}
 
 
-Use the provided `R` script file to create a scatterplot to examine the relationship between the diving heart rate and duration of the dive by filling in the variable names (`Dive_HeartRate` and `Duration`) for `explanatory` and `response` in line 9.  Highlight and run lines 1--15. 
+Use the provided R script file to create a scatterplot to examine the relationship between the diving heart rate and duration of the dive by filling in the variable names (`Dive_HeartRate` and `Duration`) for `explanatory` and `response` in line 9.  Highlight and run lines 1--15. 
  
 
 ```r
@@ -83,7 +83,7 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 #### Summarize and visualize the data {-}
 
-Using the provided `R` script file, enter the response variable name, `Duration`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Dive_HeartRate`, for `explanatory` in line 18 to get the linear model output and value for the correlation coefficient.  Highlight and run lines 18--19.
+Using the provided R script file, enter the response variable name, `Duration`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Dive_HeartRate`, for `explanatory` in line 18 to get the linear model output and value for the correlation coefficient.  Highlight and run lines 18--19.
 
 
 ```r
@@ -92,7 +92,7 @@ round(summary(lm.diving)$coefficients, 5)
 cor(diving$Duration, diving$Dive_HeartRate)
 ```
 
-6.  Using the output from the evaluated `R` code above, write the equation of the regression line in the context of the problem using appropriate statistical notation.
+6.  Using the output from the evaluated R code above, write the equation of the regression line in the context of the problem using appropriate statistical notation.
 \vspace{1in}
 
 7.  Interpret the estimated slope in context of the problem.
@@ -111,7 +111,7 @@ In this activity, we will focus on using simulation-based methods for inference 
 
 Let's start by thinking about how one simulation would be created on the null distribution using cards.  First, we would write the values for the response variable, Duration, on each card.  Next, we would shuffle these $y$ values while keeping the $x$ values (explanatory variable) in the same order.  Then, find the line of regression for the shuffled $(x, y)$ pairs and calculate either the slope or correlation of the shuffled sample.  
 
-We will use the `regression_test()` function in `R` (in the `catstats` package) to simulate the null distribution of shuffled slopes (or shuffled correlations) and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `diving`), the summary measure for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
+We will use the `regression_test()` function in R (in the `catstats` package) to simulate the null distribution of shuffled slopes (or shuffled correlations) and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `diving`), the summary measure for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
 
 The response variable name is `Duration` and the explanatory variable name is `Dive_HeartRate` for these data.
 
@@ -134,7 +134,7 @@ The response variable name is `Duration` and the explanatory variable name is `D
     
 \vspace{.2in}
 
-Using the `R` script file for this activity, enter your answers for question 9 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 23--28.
+Using the R script file for this activity, enter your answers for question 9 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 23--28.
 
 
 ```r
@@ -146,7 +146,7 @@ regression_test(Duration ~ Dive_Heartrate, # response ~ explanatory
                number_repetitions = 1000) # Number of simulated samples for null distribution
 ```
 
-10.  Report the p-value from the `R` output. 
+10.  Report the p-value from the R output. 
 \vspace{0.5in}
 
 11.  Suppose we wanted to complete the simulation test using correlation as the summary measure, instead of slope.  Which two inputs in #8 would need to be changed to test for correlation?  What inputs should you use instead?
@@ -160,7 +160,7 @@ regression_test(Duration ~ Dive_Heartrate, # response ~ explanatory
 
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the `xx`'s in the the provided `R` script file to find a 95\% confidence interval for slope. Highlight and run lines 31--35. 
+We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 95\% confidence interval for slope. Highlight and run lines 31--35. 
 
 
 ```r

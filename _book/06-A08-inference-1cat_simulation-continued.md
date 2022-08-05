@@ -69,7 +69,7 @@ To use the computer simulation, we will need to enter the
 
 \newpage
 
-We will use the `one_proportion_test()` function in `R` (in the `catstats` package) to simulate the null distribution of sample proportions and compute a p-value. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 3 in the one proportion test to create a null distribution with 1000 simulations. Then highlight and run lines 1--15.
+We will use the `one_proportion_test()` function in R (in the `catstats` package) to simulate the null distribution of sample proportions and compute a p-value. Using the provided R script file, fill in the values/words for each `xx` with your answers from question 3 in the one proportion test to create a null distribution with 1000 simulations. Then highlight and run lines 1--15.
 
 
 ```r
@@ -81,7 +81,7 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
           summary_measure = "proportion") # Reporting proportion or number of successes?
 ```
 
-4. Sketch the null distribution created from the `R` code here.
+4. Sketch the null distribution created from the R code here.
 
 \vspace{1.8in}
 

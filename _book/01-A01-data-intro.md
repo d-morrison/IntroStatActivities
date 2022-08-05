@@ -57,7 +57,7 @@ Today we will focus on the first two steps.
 
 A **variable** is information collected or measured on each observational unit or case. Each column in a data set will represent a different variable. 
 
-One person from each group at each table, open the Google sheet linked in D2L and fill in the responses for the following questions for each group member.  When creating a data set for use in `R` it is important to use single words or an underscore between words.  Each outcome must be written the same way each time.  Make sure to use all lowercase letters to create this data set to have consistency between responses.  Do not give units of measure with the numerical values for the length of forearm.  For `Residency` use in_state or out_state as the two outcomes.
+One person from each group at each table, open the Google sheet linked in D2L and fill in the responses for the following questions for each group member.  When creating a data set for use in R it is important to use single words or an underscore between words.  Each outcome must be written the same way each time.  Make sure to use all lowercase letters to create this data set to have consistency between responses.  Do not give units of measure with the numerical values for the length of forearm.  For `Residency` use in_state or out_state as the two outcomes.
 
 * Major: what is your declared major?
 * Residency: do you have in-state or out-of-state residency?

@@ -117,7 +117,7 @@ openintro::normTail(m = 0, s = 1)
 
 \vspace{0.1in}
 
-We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic found in question 8 at `xx` in line 2; highlight and run lines 2--4.
+We will use the `pnorm()` function in R to find the p-value. Use the provided R script file and enter the value of the standardized statistic found in question 8 at `xx` in line 2; highlight and run lines 2--4.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
@@ -126,7 +126,7 @@ pnorm(xx, # Enter value of standardized statistic
 ```
     
 
-8.  Report the p-value from the `R` output.
+8.  Report the p-value from the R output.
 \vspace{0.2in}
 
 
@@ -136,7 +136,16 @@ pnorm(xx, # Enter value of standardized statistic
 
 10. Write a conclusion to the research question based on the p-value found.
 
+\vspace{0.8in}
+
+11. Would a 90\% confidence interval contain the null value of zero?  Explain your answer.
+
+\vspace{0.8in}
+
+12. What is the scope of inference for this study?
+
 \newpage
+
 
 <!-- ### Impacts on the P-value {-} -->
 

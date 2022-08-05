@@ -27,17 +27,17 @@ To review these concepts, see Sections 2.1 and 2.2 in the textbook.
 
 ### Graphing categorical variables
 
-For today's activity we will begin to use the statistical package `R` to analyze data through the IDE (integrated development environment) RStudio.  For almost all activities and labs it will be necessary to upload the provided `R` script file from D2L for that day.  Follow these steps to upload the necessary `R` script file for today's activity: 
+For today's activity we will begin to use the statistical package R to analyze data through the IDE (integrated development environment) RStudio.  For almost all activities and labs it will be necessary to upload the provided R script file from D2L for that day.  Follow these steps to upload the necessary R script file for today's activity: 
 
-* Download the Myopia Activity `R` script file from D2L.
-* Click "Upload" in the "Files" tab in the bottom right window of RStudio. In the pop-up window, click "Choose File", and navigate to the folder where the Myopia Activity `R` script file is saved (most likely in your downloads folder). Click "Open"; then click "Ok". 
+* Download the Myopia Activity R script file from D2L.
+* Click "Upload" in the "Files" tab in the bottom right window of RStudio. In the pop-up window, click "Choose File", and navigate to the folder where the Myopia Activity R script file is saved (most likely in your downloads folder). Click "Open"; then click "Ok". 
 * You should see the uploaded file appear in the list of files in the bottom right window.
 * Click on the file name to open the file in the Editor window (upper left window).
 
-Notice that the first three lines of code contain a prompt called, `library`.  Packages needed to run functions in `R` are stored in directories called libraries.  When using the MSU `R`Studio server, all the packages needed for the class are already installed.  We simply must tell `R` which packages we need for each `R` script file.  We use the prompt `library` to load each **package** (or library) needed for each activity. Note, these `library` lines MUST be run each time you open a `R` script file in order for the functions in `R` to work. Before class today you should have worked through an `R` tutorial to prepare for class and to make sure you can login to the `R`Studio server.  This tutorial will be a great resource as you begin to use `R`.
+Notice that the first three lines of code contain a prompt called, `library`.  Packages needed to run functions in R are stored in directories called libraries.  When using the MSU RStudio server, all the packages needed for the class are already installed.  We simply must tell R which packages we need for each R script file.  We use the prompt `library` to load each **package** (or library) needed for each activity. Note, these `library` lines MUST be run each time you open a R script file in order for the functions in R to work. Before class today you should have worked through an R tutorial to prepare for class and to make sure you can login to the RStudio server.  This tutorial will be a great resource as you begin to use R.
 
-Highlight and run lines 1--3 to load the packages needed for today's activity. Notice the use of the \# symbol in the `R` script file.  The \# sign is not part of the `R` code. It is used by these authors to add comments to the `R` code and explain what each call is telling the program to do.
-`R` will ignore everything after a \# sign when executing the code. Refer to the instructions following the \# sign to understand what you need to enter in the code.
+Highlight and run lines 1--3 to load the packages needed for today's activity. Notice the use of the \# symbol in the R script file.  The \# sign is not part of the R code. It is used by these authors to add comments to the R code and explain what each call is telling the program to do.
+R will ignore everything after a \# sign when executing the code. Refer to the instructions following the \# sign to understand what you need to enter in the code.
 
 ### Nightlight use and myopia {-}
 
@@ -51,9 +51,9 @@ In this study, there are two variables studied: `Light`: level of light in room 
 
 An important part of understanding data is to create visual pictures of what the data represent.  In this activity, we will create graphical representations of categorical data.  
 
-#### `R` code {-}
+#### R code {-}
 
-Throughout these activities, we will often include the `R` code you would use in order to produce output or plots. These "code chunks" appear in gray. In the code chunk below, we demonstrate how to read the data set into `R` using the `read.csv()` function.  The line of code shown below (line 6 in the `R` script file) reads in the data set and names the data set (object) `myopia`.  Highlight and run line 6 in the `R` script file to load the data from the Stat 216 webpage.
+Throughout these activities, we will often include the R code you would use in order to produce output or plots. These "code chunks" appear in gray. In the code chunk below, we demonstrate how to read the data set into R using the `read.csv()` function.  The line of code shown below (line 6 in the R script file) reads in the data set and names the data set (object) `myopia`.  Highlight and run line 6 in the R script file to load the data from the Stat 216 webpage.
 
 
 ```r
@@ -61,13 +61,13 @@ Throughout these activities, we will often include the `R` code you would use in
 myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv") 
 ```
 
-2.  Click on the data set name (`Myopia`) in the Environment tab (upper right window).  This will open the data set in a 2nd tab in the Editor window (upper left window).  `R` is case sensitive, which means that you must always type the name of a variable EXACTLY as it is written in the data set including upper and lower case letters and without misspellings!  Write down the name of each variable (column names) as it is written in the data set.  
+2.  Click on the data set name (`Myopia`) in the Environment tab (upper right window).  This will open the data set in a 2nd tab in the Editor window (upper left window).  R is case sensitive, which means that you must always type the name of a variable EXACTLY as it is written in the data set including upper and lower case letters and without misspellings!  Write down the name of each variable (column names) as it is written in the data set.  
 
 \vspace{0.3in}
 
 #### Displaying a single categorical variable {-}
 
-If we wanted to know how many children in our data set were in each level of myopia, we could create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight` (*note the capital S*), for `variable` into the `ggplot` code at line 10 in the `R` script file.  Highlight and run lines 9--15 to create the plot.   Note: this is a **frequency** bar plot plotting counts (the number of children in each level of sight is displayed on the $y$-axis).  
+If we wanted to know how many children in our data set were in each level of myopia, we could create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight` (*note the capital S*), for `variable` into the `ggplot` code at line 10 in the R script file.  Highlight and run lines 9--15 to create the plot.   Note: this is a **frequency** bar plot plotting counts (the number of children in each level of sight is displayed on the $y$-axis).  
 
 
 ```r
@@ -87,7 +87,7 @@ ggplot(aes(y = variable)) +   # This specifies the variable
 
 \vspace{0.2in}
 
-We could also choose to display the data as a proportion in a **relative frequency** bar plot. To find the relative frequency, divide the count in each level of myopia by the sample size.  These are sample proportions. Notice that in this code we told `R` to create a bar plot with proportions.  
+We could also choose to display the data as a proportion in a **relative frequency** bar plot. To find the relative frequency, divide the count in each level of myopia by the sample size.  These are sample proportions. Notice that in this code we told R to create a bar plot with proportions.  
 
 
 ```r
@@ -109,7 +109,7 @@ ggplot(aes(x = Sight)) +   # This specifies the variable
 
 #### Displaying two categorical variables {-}
 
-Is there an association between the level of light in a room and the development of myopia?  To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` for `explanatory` and the variable name, `Sight` for `response` in the `R` script file in line 27. Highlight and run lines 26--33.
+Is there an association between the level of light in a room and the development of myopia?  To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` for `explanatory` and the variable name, `Sight` for `response` in the R script file in line 27. Highlight and run lines 26--33.
 
 
 ```r
@@ -135,7 +135,7 @@ ggplot(aes(x = explanatory, fill = response)) +   # This specifies the variables
 
 \vspace{0.5in}
 
-We could also plot the data using a mosaic plot.  Fill in the variable name, `Light` for `explanatory` and the variable name, `Sight` for `response` in line 38 in the `R` script file. Highlight and run lines 36--43.
+We could also plot the data using a mosaic plot.  Fill in the variable name, `Light` for `explanatory` and the variable name, `Sight` for `response` in line 38 in the R script file. Highlight and run lines 36--43.
 
 
 ```r
@@ -157,14 +157,14 @@ myopia %>% # Data set piped into...
 
 \vspace{0.8in}
 
-Fill in the name of the explanatory variable and the response variable in line 46 in the `R` script file, highlight and run line 46 to get the counts for each combination of levels of variables. 
+Fill in the name of the explanatory variable and the response variable in line 46 in the R script file, highlight and run line 46 to get the counts for each combination of levels of variables. 
 
 
 ```r
 myopia %>% group_by(response) %>% count(explanatory)
 ```
 
-11.  Fill in the following table with the values from the `R` output.
+11.  Fill in the following table with the values from the R output.
 
 \begin{center}
 \begingroup
@@ -188,11 +188,11 @@ myopia %>% group_by(response) %>% count(explanatory)
 
 \vspace{0.3in}
 
-13.  Calculate the proportion of children that slept with full light that have high myopia. Use appropriate notation.
+13.  Calculate the proportion of children with high myopia among those that slept with full light. Use appropriate notation.
 
 \vspace{0.3in}
 
-14.  Calculate the proportion of children that slept with no light that have high myopia.  Use appropriate notation.
+14.  Calculate the proportion of children with high myopia among those that slept with no light.  Use appropriate notation.
 
 \vspace{0.3in}
 

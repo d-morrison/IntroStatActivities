@@ -1,6 +1,6 @@
 # Exploring Multivariable Data
 
-## Module 4 Reading Guide: Two Quantitative Variables and Multivariable Concepts
+## Week 4 Reading Guide: Two Quantitative Variables and Multivariable Concepts
 
 ### Section 3.1 (Fitting a line, residuals, and correlation) {-}
 
@@ -153,7 +153,7 @@ Least squares criterion:
 Least squares line: 
 \rgs
 
-`lm()` `R` function: 
+`lm()` R function: 
 \rgi `name_of_model <- lm(response ~ explanatory, data = data_set_name)`
 
 \rgs
@@ -277,7 +277,7 @@ True or false: An outlier is considered high leverage if it is extreme in its $x
 
 \setstretch{1.25}
 
-Section 3.4 presents five tutorials on analyzing two quantitative variables in `R`.  We recommend you complete all five. 
+Section 3.4 presents five tutorials on analyzing two quantitative variables in R.  We recommend you complete all five. 
 
 #### Notes {-}
 
@@ -402,7 +402,7 @@ True or false: Simpson’s Paradox can only occur when the explanatory, response
 
 \setstretch{1}
 
-Section 4.3 discusses multiple regression and presents five tutorials on analyzing multiple variables in `R`.  This section is a special topic, meaning you are not required to read or complete these tutorials.
+Section 4.3 discusses multiple regression and presents five tutorials on analyzing multiple variables in R.  This section is a special topic, meaning you are not required to read or complete these tutorials.
 
 **Videos**  
 

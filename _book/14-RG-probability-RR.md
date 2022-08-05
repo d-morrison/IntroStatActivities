@@ -1,6 +1,6 @@
 # Probability and Relative Risk
 
-## Module 14 Reading Guide: Special Topics
+## Week 14 Reading Guide: Special Topics
 
 ### Section 2.2 (Probability with tables) {-}
 

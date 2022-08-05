@@ -131,7 +131,7 @@ The standardized statistic measures the *number of standard errors the sample st
 
 \vspace{.8in}
 
-We will use the `pnorm()` function in `R` to find the p-value. Use the provided `R` script file and enter the value of the standardized statistic calculated in question 8 at `xx` in line 7; highlight and run lines 7--9.  Notice that in line 9 it says `lower.tail = FALSE`.  `R` will calculate the p-value *greater* than the value of the standardized statistic.  
+We will use the `pnorm()` function in R to find the p-value. Use the provided R script file and enter the value of the standardized statistic calculated in question 8 at `xx` in line 7; highlight and run lines 7--9.  Notice that in line 9 it says `lower.tail = FALSE`.  R will calculate the p-value *greater* than the value of the standardized statistic.  
 
 Notes:
 
@@ -147,7 +147,7 @@ pnorm(xx, # Enter value of standardized statistic
 ```
   
   
-11.  Report the p-value obtained from the `R` output.
+11.  Report the p-value obtained from the R output.
 \vspace{0.3in}
 
 12.  Write a conclusion based on the value of the p-value.
