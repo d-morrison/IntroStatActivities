@@ -125,7 +125,11 @@ To help determine the type of bias present, it is helpful to think about the obs
     Variable:
 \vspace{0.3in}
 
-    Circle one:  categorical              quantitative
+    Type of Variable:
+\vspace{1mm}
+
+    Circle one:  \hspace{1mm}  categorical \hspace{0.2in} quantitative
+\vspace{1mm}
 
     Type(s) of bias:
 \vspace{0.3in}
@@ -148,7 +152,11 @@ To help determine the type of bias present, it is helpful to think about the obs
     Variable:
 \vspace{0.3in}
 
-    Circle one:  categorical              quantitative
+    Type of Variable:
+\vspace{1mm}
+
+    Circle one:  \hspace{1mm}  categorical \hspace{0.2in} quantitative
+\vspace{1mm}
 
     Type(s) of bias:
 \vspace{0.3in}
@@ -171,7 +179,11 @@ To help determine the type of bias present, it is helpful to think about the obs
     Variable:
 \vspace{0.3in}
 
-    Circle one:  categorical              quantitative
+    Type of Variable:
+\vspace{1mm}
+
+    Circle one:  \hspace{1mm}  categorical \hspace{0.2in} quantitative
+\vspace{1mm}
 
     Type(s) of bias:
 \vspace{0.3in}

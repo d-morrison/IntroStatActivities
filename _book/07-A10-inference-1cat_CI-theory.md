@@ -1,4 +1,4 @@
-## Activity 7:  Handedness of Male Boxers --- Theory CI
+## Activity 7B:  Handedness of Male Boxers --- Theory CI
 
 \setstretch{1}
 
