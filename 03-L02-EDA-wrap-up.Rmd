@@ -32,7 +32,7 @@ In today's lab, we will review summary measures and plots for quantitative varia
   (center, variability, shape, outliers).
   
 
-To review these concepts, see Section 2.3 in the textbook.
+To review these concepts, see Chapter 5 in the textbook.
 
 ### The Integrated Postsecondary Education Data System (IPEDS)
 
@@ -70,7 +70,7 @@ In Wednesday's activity, the code was provided to import the data set needed dir
 
 * Download the provided data set `IPED_Data_2018` from D2L
 
-* Upload the data set `IPEDS_Data_2018` to the RStudio server using the same steps used to upload the R script file.  
+* Upload the data set `IPEDS_Data_2018` to the RStudio server using the same steps to upload the R script file.  
 
 * Click on "Import Dataset" in the Environment tab in the upper right hand corner.  
 
@@ -110,7 +110,7 @@ IPEDS %>%
 
 #### Displaying a single quantitative variable {-}
 
-There are three type of plots used to plot a single quantitative variable: a dotplot, a histogram or a boxplot.  A dotplot of retention rates would plot a dot for the retention rate for each 4-year institution 
+There are three type of plots used to plot a single quantitative variable: a dotplot, a histogram or a boxplot.  A dotplot of retention rates would plot a dot for the retention rate for each 4-year institution.
 
 We will create both a histogram and a boxplot of the variable `Retention`.  Enter the name of the variable in both line 16 and line 23 for `variable` in the R script file.  **Give each plot a descriptive title.**  Highlight and run lines 15 -- 27 to give the histogram and boxplot. Notice that the **bin width** for the histogram is 10.  For example, the first bin consists of the number of 4-year institutions in the data set with a retention rate of 0 to 10\%.  It is important to note that a 4-year institution with a retention rate on the boundary of a bin will fall into the bin above it; for example, 10 would be counted in the bin 10--20. 
 
@@ -146,9 +146,9 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 
 7.  Sketch the boxplot created and identify the values of the 5-number summary (minimum value, Q1, median, Q3, maximum value) on the plot.  Use the following formulas to find the invisible fence on both ends of the distribution.  Draw a dotted line at the invisible fence to show how the outliers were found.
 
-$$\text{Lower Fence: values} \le Q1 - 1.5*IQR$$
+$$\text{Lower Fence: values} \le \text{Q}1 - 1.5\text{x}\text{IQR}$$
 
-$$\text{Upper Fence: values} \ge Q3 + 1.5*IQR$$
+$$\text{Upper Fence: values} \ge \text{Q}3 + 1.5\text{x}\text{IQR}$$
 \vspace{1.5in}
 
 #### Robust Statistics {-}
@@ -247,11 +247,11 @@ IPEDS %>%  # Data set piped into...
 
 1.	Histograms, box plots, and dot plots can all be used to graphically display a single quantitative variable.  
 
-2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5*IQR$ and greater than $Q_3 + 1.5*IQR$ are considered outliers and are graphically represented by a dot outside of the whiskers on the box plot.
+2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $\text{Q}_1 - 1.5\text{xIQR}$ and greater than $\text{Q}_3 + 1.5\text{xIQR}$ are considered outliers and are graphically represented by a dot outside of the whiskers on the box plot.
 
 3.  Data should be summarized numerically and displayed graphically to give us information about the study.
 
-4.  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers.  There are two measures of center: mean and the median and two measures of spread: standard deviation and the interquartile range, IQR = Q1- Q3. 
+4.  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers.  There are two measures of center: mean and the median and two measures of spread: standard deviation and the interquartile range, IQR = Q3 - Q1. 
 
 5. The median and the interquartile range are robust statistics, meaning that they are not affected by very large or very small values.  When we have a skewed distribution the best measure of center is the median and the best measure of spread is the IQR.
 

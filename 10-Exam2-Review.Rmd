@@ -1,6 +1,6 @@
 # Exam 2 Review
 
-Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 Review R script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
+Use the provided data set from the Islands (ExamReviewData.csv) and the appropriate Exam 2 Review R script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
@@ -30,7 +30,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 2 R
 
 \newpage
 
-1. Use the provided Exam 2 Review R script file and analyze the following research question: The proportion of university graduates in the US is 42%.  "Is there evidence that the proportion of university graduates in the Islands differs from the proportion in the US?"
+1. Use the appropriate Exam 2 Review R script file and analyze the following research question: The proportion of university graduates in the US is 42%.  "Is there evidence that the proportion of university graduates in the Islands differs from the proportion in the US?"
 
 a. Parameter of Interest:
 \vspace{0.3in}
@@ -121,7 +121,7 @@ s. To what group can the results be generalized?
 \vspace{0.8in}
 
         
-2. Use the provided Exam 2 Review R script file and analyze the following research question: "Is there evidence that those with a higher education level are less likely to smoke?"
+2. Use the appropriate Exam 2 Review R script file and analyze the following research question: "Is there evidence that those with a higher education level are less likely to smoke?"
 
 a. Parameter of Interest:
 \vspace{0.3in}

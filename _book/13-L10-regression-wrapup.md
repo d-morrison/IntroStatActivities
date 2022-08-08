@@ -61,7 +61,7 @@ summary(bigmacLM)$coefficients # Display coefficient summary
 
 #### Conditions for the least squares line {-}
 
-Highlight and run lines 21--34 to produce the diagnostic plots needed to assess conditions to use theory-based methods.  Use the scatterplot and the residual plots to assess the validity conditions for approximating the data with the $t$-distribution.
+Highlight and run lines 22--35 to produce the diagnostic plots needed to assess conditions to use theory-based methods.  Use the scatterplot and the residual plots to assess the validity conditions for approximating the data with the $t$-distribution.
 
 
 ```r
@@ -77,8 +77,8 @@ mac %>% # Pipe data set into...
 #Diagnostic plots
 bigmacLM <- lm(GDP_dollar~dollar_price, data = mac) # Fit linear regression model
 par(mfrow=c(1,2)) # Set graphics parameters to plot 2 plots in 1 row
-plot(covidLM, which=1) # Residual vs fitted values
-hist(covidLM$resid, xlab="Residuals", ylab="Frequency",
+plot(bigmacLM, which=1) # Residual vs fitted values
+hist(bigmacLM$resid, xlab="Residuals", ylab="Frequency",
      main = "Histogram of Residuals") # Histogram of residuals
 ```
 
@@ -124,7 +124,7 @@ The response variable name is `GDP_dollar` and the explanatory variable name is 
     
 \vspace{.2in}
 
-Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 37--42.  **Upload a copy of your plot showing the p-value to Gradescope for your group.**
+Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 38--43. **Upload a copy of your plot showing the p-value to Gradescope for your group.**
 
 
 ```r
@@ -134,7 +134,6 @@ regression_test(GDP_dollar~dollar_price, # response ~ explanatory
                summary_measure  = "xx", # "slope" or "correlation"
                as_extreme_as = xx, # Observed slope or correlation
                number_repetitions = 1000) # Number of simulated samples for null distribution
-       
 ```
 
 8.  Report the p-value from the R output. 
@@ -145,7 +144,7 @@ regression_test(GDP_dollar~dollar_price, # response ~ explanatory
 
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 90\% confidence interval. Highlight and run lines 45--49. 
+We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 90\% confidence interval. Highlight and run lines 46--50. 
 
 
 ```r
@@ -175,8 +174,6 @@ regression_bootstrap_CI(GDP_dollar~dollar_price, # response ~ explanatory
 
 15. Interpret this error in context of the problem.
 \vspace{0.8in}
-
-\newpage
 
 16. Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper.  **Upload a copy of your paragraph to Gradescope for your group.**  Be sure to describe:
 

@@ -25,7 +25,9 @@ In today's activity, we will review summary measures and plots for two quantitat
 
 * Residuals
 
-To review these concepts, see Chapter 3 in the textbook.  
+* Multivariable plots
+
+To review these concepts, see Chapter 6 & 7 in the textbook.  
 
 ### Movies released in 2016
 
@@ -91,7 +93,7 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 #### Slope {-}
 
-The linear model function in R (`lm()`) gives us the summary for the least squares regression line.  The estimate for `(Intercept)` is the $y$-intercept for the line of least squares, and the estimate for `budget_mil` (the $x$-variable name) is the value of $b_1$, the slope.  Run lines 16 -- 19 in the R script file to reproduce the linear model output found in the coursepack.
+The linear model function in R (`lm()`) gives us the summary for the least squares regression line.  The estimate for `(Intercept)` is the $y$-intercept for the line of least squares, and the estimate for `budget_mil` (the $x$-variable name) is the value of $b_1$, the slope.  Run lines 16 -- 17 in the R script file to reproduce the linear model output found in the coursepack.
 
 ```{r, echo=TRUE, collapse = FALSE}
 # Fit linear model: y ~ x

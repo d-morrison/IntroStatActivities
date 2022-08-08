@@ -28,7 +28,7 @@ In this activity, we will examine the possible errors that can be made based on 
 
 * Power
 
-To review these concepts, see Sections 5.1, 5.2, and 5.4 in the textbook.  
+To review these concepts, see Chapter 12 in the textbook.  
 
 ### ACL recovery
 

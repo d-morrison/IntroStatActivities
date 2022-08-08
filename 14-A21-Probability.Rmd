@@ -20,7 +20,7 @@ In today's activity, we will cover two-way tables and probability.  Some terms c
 
 * Two-way tables
 
-To review these concepts, see Sections 2.1 and 2.2 in the textbook.  
+To review these concepts, see Chapter 23 in the textbook.  
 
 
 ### Probability 

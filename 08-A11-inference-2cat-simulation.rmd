@@ -20,7 +20,7 @@ In today's activity, we will use simulation-based methods to analyze two categor
 
 * Alternative hypothesis
 
-To review these concepts, see Chapter 5 in your textbook.
+To review these concepts, see Chapter 15 in your textbook.
 
 
 ### The Good Samaritan

@@ -17,7 +17,7 @@
 
 ### Terminology review
 
-In today's activity, we will introduce theory-based confidence intervals for a single categorical variable. Some terms covered in this activity are:
+In today's activity, we will introduce theory-based hypothesis tests for a single categorical variable. Some terms covered in this activity are:
 
 * Parameter of interest
 
@@ -27,7 +27,7 @@ In today's activity, we will introduce theory-based confidence intervals for a s
 
 * p-value
 
-To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
+To review these concepts, see Chapters 11 & 14 in your textbook.
 
 Activities 6A, 6B, and the Week 6 Lab covered simulation-based methods for hypothesis tests involving a single categorical variable. This activity covers theory-based methods for testing a single categorical variable.  
 

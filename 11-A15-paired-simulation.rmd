@@ -29,7 +29,7 @@ In today's activity, we will analyze paired quantitative data using simulation-b
 
 * Shifted bootstrap (null) distribution
 
-To review these concepts, see Section 6.2 in the textbook.
+To review these concepts, see Section 18 in the textbook.
 
 ### COVID-19 and air pollution
 

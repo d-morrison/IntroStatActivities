@@ -23,7 +23,7 @@ In today's activity, we will review summary measures and plots for categorical v
 
 * Mosaic plots
 
-To review these concepts, see Sections 2.1 and 2.2 in the textbook.  
+To review these concepts, see Chapter 4 in the textbook.  
 
 ### Graphing categorical variables
 
@@ -152,7 +152,7 @@ myopia %>% # Data set piped into...
 Fill in the name of the explanatory variable and the response variable in line 46 in the R script file, highlight and run line 46 to get the counts for each combination of levels of variables. 
 
 ```{r, echo=TRUE, eval=FALSE}
-myopia %>% group_by(response) %>% count(explanatory)
+myopia %>% group_by(explanatory) %>% count(response)
 ```
 
 11.  Fill in the following table with the values from the R output.

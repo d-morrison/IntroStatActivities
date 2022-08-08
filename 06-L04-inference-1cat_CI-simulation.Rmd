@@ -18,7 +18,7 @@ In today's activity, we will introduce simulation-based confidence intervals for
 
 * Confidence interval
 
-To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
+To review these concepts, see Chapters 10 & 14 in your textbook.
 
 ### Helper-Hinderer
 
@@ -38,7 +38,7 @@ A **point estimate** (our observed statistic) provides a single plausible value 
 
 \vspace{0.5in}
 
-In today's activity, we will use bootstrapping to find a 95\% confidence interval for $\pi$, the parameter of interest.  See Section 5.3.3 in your textbook to review bootstrapping.
+In today's activity, we will use bootstrapping to find a 95\% confidence interval for $\pi$, the parameter of interest.  
 
 3.  In your own words, explain the bootstrapping process.
 \vspace{0.5in}

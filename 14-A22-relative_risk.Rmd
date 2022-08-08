@@ -15,7 +15,7 @@ In today's activity, we will look another summary. Some terms covered in this ac
 
 * Relative risk
 
-To review these concepts, see Chapter 5 in your textbook.
+To review these concepts, see Chapter 15 in your textbook.
 
 ### Percent increase or percent decrease?
 

@@ -26,7 +26,7 @@ In this activity, we will examine different study designs, confounding variables
 
 * Observational study
 
-To review these concepts, see Sections 1.2 through 1.6 in the textbook.  
+To review these concepts, see Sections 2.2 through 2.5 in the textbook.  
 
 ### General information labs
 
@@ -82,9 +82,9 @@ Atrial fibrillation is an irregular and often elevated heart rate. In some peopl
 
 Suppose 24 subjects with permanent atrial fibrillation have volunteered to participate in this study:
 
-Self-identified Males: Paul, Antonio, Davieon, Chao, Aryan, Jabari, Tong, Andres, John, Liu, Lucas, Rashidi, Shiwoo, Jihoon, Alejandro, Daniel
+Self-identified males: Paul, Antonio, Davieon, Chao, Aryan, Jabari, Tong, Andres, John, Liu, Lucas, Rashidi, Shiwoo, Jihoon, Alejandro, Daniel
 
-Self-identified Females: An, Nailah, Jasmine, Ka Nong, Keyaina, Mary, Adah, Sassandra
+Self-identified females: An, Nailah, Jasmine, Ka Nong, Keyaina, Mary, Adah, Sassandra
 
 4. Is this a simple random sample or a convenience sample?  How do you know?
 \vspace{0.5in}

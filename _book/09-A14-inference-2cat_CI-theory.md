@@ -15,7 +15,7 @@ In today's activity, we will use theory-based methods to estimate the difference
 
 * Independence and success-failure conditions
 
-To review these concepts, see Chapter 5 in your textbook.
+To review these concepts, see Chapter 15 in your textbook.
 
 ### Winter sports helmet use and head injury 
 
@@ -57,7 +57,6 @@ to calculate the standard error for a difference in proportions to create a 90\%
 $$n_1 = 752, n_2 = 2810, \hat{p}_1 = \frac{96}{752} = 0.128, \hat{p}_2 = \frac{480}{2810} = 0.171$$
  
  $$SE(\hat{p}_1-\hat{p}_2) = \sqrt{\frac{0.128 (1-0.128)}{752}+\frac{0.171 (1-0.171)}{2810}} = 0.014$$
-\newpage
 
 Recall that the $z^*$ multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 90\%, we find the Z values that encompass the middle 90\% of the standard normal distribution. If 90\% of the standard normal distribution should be in the middle, that leaves 10\% in the tails, or 5\% in each tail.  The `qnorm()` function in R will tell us the $z^*$ value for the desired percentile (in this case, 90\% + 5\% = 95\% percentile). 
 
@@ -69,6 +68,8 @@ qnorm(0.95) # Multiplier for 90% confidence interval
 ```
 #> [1] 1.644854
 ```
+
+\newpage
 
 3. Sketch a graph of the standard normal distribution and use the graph to explain how the R code above is used to find the $z^*$ multiplier.  
 
@@ -97,6 +98,7 @@ $$ME = z^*SE(\hat{p}_1 - \hat{p}_2)$$
 
 8.  What decision would you make based on your confidence interval?  Explain your answer.
 \vspace{0.5in}
+\newpage
 
 ### Effect of sample size 
 
@@ -124,6 +126,8 @@ $$\hat{p}_1 = \frac{135}{1056}=0.127, \hat{p}_2 = \frac{674}{3944}=0.171$$
 
 12.  Is the confidence interval calculated in question 11 with the smaller sample size wider or narrower than the confidence interval in question 7? Why?
 \vspace{.8in}
+
+\newpage
 
 ### Take-home messages
 

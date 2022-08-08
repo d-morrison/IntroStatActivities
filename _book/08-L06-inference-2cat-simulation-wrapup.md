@@ -17,19 +17,19 @@
 
 Wild mushrooms, such as chanterelles or morels, are delicious, but eating wild mushrooms carries the risk of accidental poisoning. Even a single bite of the wrong mushroom can be enough to cause fatal poisoning. An amateur mushroom hunter is interested in finding an easy rule to differentiate poisonous and edible mushrooms. They think that the mushroom’s gills (the part which holds and releases spores) might be related to a mushroom’s edibility. They used a data set of 8124 mushrooms and their descriptions. For each mushroom, the data set includes whether it is edible (e) or poisonous (p) and the spacing of the gills (Broad (b) or Narrow (n)).  Is there evidence gill size is associated with whether a mushroom is poisonous?  PLEASE NOTE: According to The Audubon Society Field Guide to North American Mushrooms, there is no simple rule for determining the edibility of a mushroom; no rule like "leaflets three, let it be'' for Poisonous Oak and Ivy. 
 
-Upload and open the R script file for Week 8 lab. Upload and import the csv file, `mushrooms`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 6. Highlight and run lines 1--11 to get the counts for each combination of categories.
+Upload and open the R script file for Week 8 lab. Upload and import the csv file, `mushrooms`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 6. Highlight and run lines 1--7 to get the counts for each combination of categories.
 
 
 ```r
-poisonous <- mushrooms # Read data set in
+poisonous <- datasetname # Read data set in
 poisonous %>% group_by(gill.size) %>% count(class) #finds the counts in each group
 ```
 
-1. What is the explanatory variable?
+1. What is the explanatory variable?  How are the two levels of the explanatory variable written in the data set?
 
 \vspace{0.5in}
 
-2. What is the response variable?
+2. What is the response variable? How are the two levels of the response variable written in the data set?
 
 \vspace{0.5in}
 
@@ -77,14 +77,14 @@ Edible & & & \\
 
 6.  Write the null hypothesis for this study in notation.
 
-\vspace{0.5in}
-\newpage
+\vspace{0.25in}
 
 7.  **Using the research question, write the alternative hypothesis in words.**
 
 \vspace{1in}
+\newpage
 
-Fill in the missing values/names in the R script file in the `two-proportion_test` function to create the null distribution and find the p-value for the test.
+Fill in the missing values/names in the R script file for the `two-proportion_test` function to create the null distribution and find the p-value for the test.
 
 
 ```r

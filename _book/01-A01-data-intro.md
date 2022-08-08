@@ -17,7 +17,7 @@ Statistics is the study of how best to collect, analyze, and draw conclusions fr
 
 * Types of sampling bias 
 
-For more on these concepts, read Sections 1.2 and 1.3 in the textbook.
+For more on these concepts, read Chapter 1 and Section 2.1 in the textbook.
 
 ### General information on labs
 
@@ -97,7 +97,7 @@ Num Credits & & \\
 \end{tabular}
 \end{center}
 
-In the next few weeks we will look at how to summarize the data both numerically and graphically.  For now we will focus on sampling methods and the type of sampling bias that may be present.  
+In the next few weeks we will look at how to summarize data both numerically and graphically.  For now we will focus on sampling methods and the type of sampling bias that may be present.  
 
 * Sampling bias: a part of the target population is not included or underrepresented in the sample
 
@@ -125,11 +125,9 @@ To help determine the type of bias present, it is helpful to think about the obs
     Variable:
 \vspace{0.3in}
 
-    Type of Variable:
+    Type of Variable: \hspace{1mm}  categorical \hspace{0.2in} quantitative
 \vspace{1mm}
 
-    Circle one:  \hspace{1mm}  categorical \hspace{0.2in} quantitative
-\vspace{1mm}
 
     Type(s) of bias:
 \vspace{0.3in}
@@ -152,11 +150,9 @@ To help determine the type of bias present, it is helpful to think about the obs
     Variable:
 \vspace{0.3in}
 
-    Type of Variable:
+    Type of Variable: \hspace{1mm}  categorical \hspace{0.2in} quantitative
 \vspace{1mm}
 
-    Circle one:  \hspace{1mm}  categorical \hspace{0.2in} quantitative
-\vspace{1mm}
 
     Type(s) of bias:
 \vspace{0.3in}
@@ -179,10 +175,7 @@ To help determine the type of bias present, it is helpful to think about the obs
     Variable:
 \vspace{0.3in}
 
-    Type of Variable:
-\vspace{1mm}
-
-    Circle one:  \hspace{1mm}  categorical \hspace{0.2in} quantitative
+    Type of Variable: \hspace{1mm}  categorical \hspace{0.2in} quantitative
 \vspace{1mm}
 
     Type(s) of bias:
@@ -196,9 +189,11 @@ To help determine the type of bias present, it is helpful to think about the obs
 
 ### Take-home messages
 
-1. When creating a data set, each row will represent single observational unit or cases. Each column represents a variable collected.
+1. When creating a data set, each row will represent a single observational unit or case. Each column represents a variable collected. It is important to write each variable as a single word or use an underscore between words.
 
-2. There are three types of bias to be aware of when designing a sampling method: selection bias, non-response bias, and response bias.
+2. There are two types of variables: categorical (groups) and quantitative (numerical measures).
+
+3. There are three types of bias to be aware of when designing a sampling method: selection bias, non-response bias, and response bias.
 
 ### Additional notes
 

@@ -14,7 +14,7 @@
 
 ### Terminology review
 
-In this activity, we will introduce simulation-based confidence intervals for a single proportion. Some terms covered in this activity are:
+In this activity, we will introduce theory-based confidence intervals for a single proportion. Some terms covered in this activity are:
 
 * Parameter of interest
 
@@ -22,7 +22,7 @@ In this activity, we will introduce simulation-based confidence intervals for a 
 
 * Normal distribution
 
-To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
+To review these concepts, see Chapters 11 & 14 in your textbook.
 
 ### Handedness of Male Boxers
 
@@ -65,15 +65,11 @@ The $z^*$ multiplier is the percentile of a standard normal distribution that co
 \caption{A standard normal curve.}(\#fig:simpleNormaldist)
 \end{figure}
 
-The `qnorm()` function in R will tell us the $z^*$ value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile). 
+The `qnorm()` function in R will tell us the $z^*$ value for the desired percentile (in this case, 95\% + 2.5\% = 97.5\% percentile). Enter the value of 0.975 for xx in the provided R script file. This will give the value of the multiplier for a 95\% confidence interval.
 
 
 ```r
-qnorm(0.975) # Multiplier for 95% confidence interval
-```
-
-```
-#> [1] 1.959964
+qnorm(xx) # Multiplier for 95% confidence interval
 ```
 
 3. Report the value of the multiplier needed to calculate the 95\% confidence interval for the true proportion of male boxers that are left-handed?

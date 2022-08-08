@@ -19,7 +19,7 @@ In today's activity, we will review summary measures and plots for two quantitat
 
 * Coefficient of determination ($r$-squared or $R^2$)
 
-To review these concepts, see Chapter 3 in the textbook.  
+To review these concepts, see Chapter 6 in the textbook.  
 
 ### Movies released in 2016
 

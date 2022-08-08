@@ -38,7 +38,7 @@ In today's activity, we will analyze paired quantitative data using theory-based
 
 * T-score
 
-To review these concepts, see Sections 6.1 and 6.2 in the textbook.
+To review these concepts, see Chapter 18 in the textbook.
 
 ### Color Interference
 

@@ -25,7 +25,7 @@ In today's activity, we will use simulation-based methods to analyze the associa
 
 * Difference in means
 
-To review these concepts, see Section 6.3 in the textbook.
+To review these concepts, see Chapter 21 in the textbook.
 
 ### Behavior and Performance
 
@@ -34,7 +34,7 @@ A study in the Academy of Management Journal [@porath2017] investigated how rude
 
 ```r
 # Read in data set
-behavior <- read.csv("https://math.montana.edu/courses/s216/data/rude.csv")
+rude <- read.csv("https://math.montana.edu/courses/s216/data/rude.csv")
 ```
 
 \newpage
@@ -42,7 +42,7 @@ behavior <- read.csv("https://math.montana.edu/courses/s216/data/rude.csv")
 
 ```r
 # Side-by-side box plots
-behavior %>%
+rude %>%
 ggplot(aes(x = condition, y = number_of_uses)) +
     geom_boxplot() + 
     labs(title = "Number of Uses for a Brick based on Behavior Condition",
@@ -56,7 +56,7 @@ ggplot(aes(x = condition, y = number_of_uses)) +
 
 ```r
 # Summary statistics
-behavior %>% 
+rude %>% 
      summarize(favstats(number_of_uses ~ condition))
 ```
 
@@ -160,7 +160,7 @@ We will use the `two_mean_test()` function in R (in the `catstats` package) to s
 
 \vspace{.2in}
 
-16.  Simulate a null distribution and compute the p-value. Using the R script file for this activity, enter your answers for question 14 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 1--29.
+16.  Simulate a null distribution and compute the p-value. Using the R script file for this activity, enter your answers for question 15 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 1--25.
 
 
 ```r
@@ -186,7 +186,7 @@ two_mean_test(response~explanatory, #Enter the names of the variables
 
 We will use the `two_mean_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval. 
 
-18. Using bootstrapping find a 95\% confidence interval. Using the provided R script file, enter the variable names as in the `two_mean_test()` function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 32--36. Report the 95\% confidence interval in interval notation.
+18. Using bootstrapping find a 95\% confidence interval. Using the provided R script file, enter the variable names as in the `two_mean_test()` function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 28--32. Report the 95\% confidence interval in interval notation.
 
 ```r
 two_mean_bootstrap_CI(response ~ explanatory, #Enter the name of the variables
@@ -211,7 +211,7 @@ two_mean_bootstrap_CI(response ~ explanatory, #Enter the name of the variables
 
 ### Take-home messages
 
-1.	This activity differs from Activities 11a and 11b because the responses are independent, not paired.  These data are analyzed as a difference in means, not a mean difference.  
+1.	This activity differs from Activities 11A and 11B because the responses are independent, not paired.  These data are analyzed as a difference in means, not a mean difference.  
 
 2. To create one simulated sample on the null distribution for a difference in sample means, label cards with the response variable values from the original data.  Mix cards together and shuffle into two new groups of sizes $n_1$ and $n_2$. Calculate and plot the difference in means. 
 

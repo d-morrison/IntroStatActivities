@@ -22,7 +22,7 @@ In today's activity, we will examine unbiased and biased methods of sampling. So
 * Generalization
 
 
-To review these concepts, see Section 1.3 in the textbook. 
+To review these concepts, see Section 2.1 in the textbook. 
 
 ### American Indian Address
 

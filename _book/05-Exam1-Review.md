@@ -1,6 +1,6 @@
 # Exam 1 Review
 
-Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 Review R script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
+Use the provided data set from the Islands (ExamReviewData.csv) and the appropriate Exam 1 Review R script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
@@ -41,7 +41,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Exam 1 R
 
 \vspace{0.5in}
 
-4. Use the Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question, "Is the proportion of married Islanders greater than 50\%?"
+4. Use the appropriate Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question, "Is the proportion of married Islanders greater than 50\%?"
 
 a. What is the name of the variable to be assessed in this research question? 
 
@@ -89,7 +89,7 @@ h. To what group could the results of this study be applied to?
 
 \vspace{0.2in}
 
-5.  Use the Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question, "Is there a difference in proportion of Islanders who have children for those who completed high school and those that completed university?" Use high school - university as the order of subtraction.
+5.  Use the appropriate Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question, "Is there a difference in proportion of Islanders who have children for those who completed high school and those that completed university?" Use high school - university as the order of subtraction.
 
 a. What is the name of the explanatory variable to be assessed in this research question?
 \vspace{0.3in}
@@ -154,7 +154,7 @@ j. What is the scope of inference for this study?
 \newpage
 
 
-6. Use the Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: "Do Islanders who listen to classical music take less time to complete the puzzle cube after listening to the music than for Islanders that listen to heavy metal music?" Use classical - heavy metal as the order of subtraction.
+6. Use the appropriate Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: "Do Islanders who listen to classical music take less time to complete the puzzle cube after listening to the music than for Islanders that listen to heavy metal music?" Use classical - heavy metal as the order of subtraction.
 
 a. What is the name of the explanatory variable to be assessed in this research question?
 \vspace{0.3in}
@@ -232,7 +232,7 @@ k. What is the scope of inference for this study?
 \newpage
 
 
-7. Use the Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: "Do Islanders who are heavier tend to take more breaths per minute?"
+7. Use the appropriate Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: "Do Islanders who are heavier tend to take more breaths per minute?"
 
 a. What is the name of the explanatory variable to be assessed in this research question?
 \vspace{0.3in}

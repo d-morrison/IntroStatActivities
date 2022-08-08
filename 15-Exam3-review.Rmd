@@ -4,7 +4,7 @@
 
 \setstretch{1}
 
-Use the provided data set from the Islands (ExamReviewData.csv) and the Final Exam Review R script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
+Use the provided data set from the Islands (ExamReviewData.csv) and the appropriate Final Exam Review R script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
@@ -34,7 +34,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the Final Ex
 
 \newpage
 
-1. Use the provided Final Exam Review R script file and analyze the following research question, "Does drinking a caffeinated drink increase blood glucose levels, on average?" Use before – after as the order of subtraction.
+1. Use the appropriate Final Exam Review R script file and analyze the following research question, "Does drinking a caffeinated drink increase blood glucose levels, on average?" Use before – after as the order of subtraction.
 
 a. Parameter of Interest:
 \vspace{0.3in}
@@ -123,7 +123,7 @@ r. Does the theory-based p-value and CI match those found using simulation metho
 s. What is the scope of inference for this study?
 \vspace{0.8in}
 
-2. Use the provided Final Exam Review R script file and analyze the following research question: "Do Islanders who listen to classical music take less time to complete the puzzle cube after listening to the music than for Islanders that listen to heavy metal music?" Use - classical - heavy metal as the order of subtraction.
+2. Use the appropriate Final Exam Review R script file and analyze the following research question: "Do Islanders who listen to classical music take less time to complete the puzzle cube after listening to the music than for Islanders that listen to heavy metal music?" Use - classical - heavy metal as the order of subtraction.
 
 a. Parameter of Interest:
 \vspace{0.3in}
@@ -214,7 +214,7 @@ r. Does the theory-based p-value and CI match those found using simulation metho
 s. What is the scope of inference for this study?
 \vspace{0.8in}
 
-3. Use the provided Final Exam Review R script file and analyze the following research question: "Is there an association between height and balance time for Islanders?"
+3. Use the appropriate Final Exam Review R script file and analyze the following research question: "Is there an association between height and balance time for Islanders?"
 
 a. Parameter of Interest:
 \vspace{0.3in}

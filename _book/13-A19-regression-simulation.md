@@ -24,7 +24,7 @@ In today's activity, we will use simulation-based methods for hypothesis tests a
 
 * Regression line
 
-To review these concepts, see Chapters 3 and 7 in the textbook.
+To review these concepts, see Chapter 21 in the textbook.
 
 
 ### Diving Penguins
@@ -83,7 +83,7 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 #### Summarize and visualize the data {-}
 
-Using the provided R script file, enter the response variable name, `Duration`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Dive_HeartRate`, for `explanatory` in line 18 to get the linear model output and value for the correlation coefficient.  Highlight and run lines 18--19.
+Using the provided R script file, enter the response variable name, `Duration`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Dive_HeartRate`, for `explanatory` in line 18 to get the linear model output and value for the correlation coefficient.  Highlight and run lines 18--20.
 
 
 ```r
@@ -149,7 +149,7 @@ regression_test(Duration ~ Dive_Heartrate, # response ~ explanatory
 10.  Report the p-value from the R output. 
 \vspace{0.5in}
 
-11.  Suppose we wanted to complete the simulation test using correlation as the summary measure, instead of slope.  Which two inputs in #8 would need to be changed to test for correlation?  What inputs should you use instead?
+11.  Suppose we wanted to complete the simulation test using correlation as the summary measure, instead of slope.  Which two inputs in #9 would need to be changed to test for correlation?  What inputs should you use instead?
 \vspace{0.75in}
 
 12.  Change the inputs in lines 23--28 to test for correlation instead of slope.  Highlight and run those lines, then report the new p-value of the test.
