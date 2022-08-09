@@ -130,13 +130,13 @@ Notice that these two competing possibilities represent the null and alternative
   
 We will now simulate a **null distribution** of sample proportions. The null distribution is created under the assumption the null hypothesis is true.  In this case, we assume the true proportion of infants who choose the helper is 0.5, so we will create 1000 (or more) different simulations of 16 infants under this assumption.
 
-Let's think about how to use cards to create one simulation of 16 infants under the assumption the null hypothesis is true.  We will write the response variable outcomes on each card to represent the null hypothesis.
+Let's think about how to use a coin to create one simulation of 16 infants under the assumption the null hypothesis is true.  Let heads equal infant chose the helper toy and tails equal infant chose the hinderer toy.
 
-11.  How many cards total do we need?  On how many cards will we write **helper**?  On how many cards will we write **hinderer**?  Remember this should represent the null hypothesis.
+11. How many times would you flip a coin to simulate the sample of infants?
 
-\vspace{0.5in}
+\vspace{0.2in}
 
-12.  Next, we would mix the cards together and draw 1 card, write down if the card says helper or hinderer, and replace the card.  How many times would we need to repeat this process to simulate one sample?
+12. Flip a coin 16 times recording the number of times the coin lands on heads.  This represents one simulated sample of 16 infants randomly choosing the toy.
 
 \vspace{0.3in}
 
@@ -144,7 +144,7 @@ Let's think about how to use cards to create one simulation of 16 infants under 
 
 \vspace{0.5in}
 
-14.  Create one simulation using the cards provided.  Write down your simulated sample proportion.  This is one simulation created under the assumption the null hypothesis is true.  Is this value closer to 0.5, the null value, or closer to the sample proportion, 0.875?  Compare your simulated value to the other groups at your table.
+14.  Each group create one simulation using the coin provided.  Write down your simulated sample proportion.  This is one simulation created under the assumption the null hypothesis is true.  Is this value closer to 0.5, the null value, or closer to the sample proportion, 0.875?  Compare your simulated value to the other groups at your table.
 
 \vspace{0.8in}
 
