@@ -1671,9 +1671,9 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{week-3-reading-guide-introduction-to-r-categorical-variables-and-a-single-quantitative-variable}{%
 \section{Week 3 Reading Guide: Introduction to R, Categorical Variables, and a Single Quantitative Variable}\label{week-3-reading-guide-introduction-to-r-categorical-variables-and-a-single-quantitative-variable}}
 
-\hypertarget{section-1.7-data-in-r}{%
-\subsection*{Section 1.7 (Data in R)}\label{section-1.7-data-in-r}}
-\addcontentsline{toc}{subsection}{Section 1.7 (Data in R)}
+\hypertarget{chapter-3-applications-data}{%
+\subsection*{Chapter 3 (Applications: Data)}\label{chapter-3-applications-data}}
+\addcontentsline{toc}{subsection}{Chapter 3 (Applications: Data)}
 
 \textbf{Videos}
 
@@ -1691,21 +1691,17 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 R is case sensitive, meaning it reads \texttt{data} differently from \texttt{Data}. If you get an error message, check that your capitalization is correct.
 
-R does not like spaces or special characters This means the column and row headers in the data set should not have spaces, periods, commas, etc. Instead of titling the variable \texttt{column\ header}, use \texttt{column\_header} or \texttt{ColumnHeader}.
+R does not like spaces or special characters. This means the column and row headers in the data set should not have spaces, periods, commas, etc. Instead of titling the variable \texttt{column\ header}, use \texttt{column\_header} or \texttt{ColumnHeader}.
 
-\textbf{Tidy data}: Data frames with
+\textbf{Tidy data}: Data frames should have
 
 \rgi 1 row per \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_,
 
 \rgi 1 column per \_\_\_\_\_\_\_\_\_\_\_\_.
 
-We highly recommend completing Tutorial 1 at the end of Chapter 1 (all four lessons) to give you practice with R/RStudio AND to help reflect on the content of Chapter 1: basics of data, sampling, study design, and scope of inference. These tutorials have some content questions and some places for you to practice using R online with some guidance.
+We highly recommend completing the R/RStudio tutorials in section 3 to help understand R better.
 
-\rgi \_\_ indicate spots you need to type in functions, data sets, or variable names.
-
-\rgi There are Hint and Solution buttons on the R code box to help you.
-
-We would not expect you to know the coding right now, especially for things like mutations or creating new variables in the data set. But seeing some initial coding for these more difficult functions will only make you more comfortable using the functions needed for this course!
+We will not expect you to be able to write full code independently for this course. For Stat 216, you will need to understand types (categorical or quantitative) and roles (explanatory or response) of variables, as well as the structure of data, in order to fill in a few blanks in provided code to graph or analyze data.
 
 \hypertarget{functions}{%
 \subsubsection*{Functions}\label{functions}}
@@ -1719,13 +1715,13 @@ State what these introductory functions do in R:
 
 \texttt{data\_set\_name\$variable\_name}
 
-\texttt{\%\textgreater{}\%}
-
 \texttt{\textless{}-}
 
-\hypertarget{section-2.1-exploring-categorical-data}{%
-\subsection*{Section 2.1 (Exploring categorical data)}\label{section-2.1-exploring-categorical-data}}
-\addcontentsline{toc}{subsection}{Section 2.1 (Exploring categorical data)}
+\texttt{\%\textgreater{}\%}
+
+\hypertarget{chapter-4-exploring-categorical-data}{%
+\subsection*{Chapter 4 (Exploring categorical data)}\label{chapter-4-exploring-categorical-data}}
+\addcontentsline{toc}{subsection}{Chapter 4 (Exploring categorical data)}
 
 \setstretch{1}
 
@@ -1734,9 +1730,11 @@ State what these introductory functions do in R:
 \begin{itemize}
 \tightlist
 \item
-  2.1
+  4.1
 \item
-  MosaicPlots
+  4.2
+\item
+  4.4
 \end{itemize}
 
 \setstretch{1.25}
@@ -1752,6 +1750,9 @@ Relative frequency table:
 \rgs
 
 Contingency or two-way table:
+\rgs
+
+Association (between two variables):
 \rgs
 
 Unconditional proportion:
@@ -1790,6 +1791,9 @@ Bar plot:
 Segmented bar plot:
 \rgs
 
+Mosaic plot:
+\rgs
+
 Simpson's Paradox:
 \rgs
 
@@ -1822,13 +1826,13 @@ True or false: When a segmented bar plot has segments that sum to 1 (or 100\%), 
 \subsubsection*{Review of Simpson's Paradox}\label{review-of-simpsons-paradox}}
 \addcontentsline{toc}{subsubsection}{Review of Simpson's Paradox}
 
-Based on the segmented bar plot in Figure 2.6, which race of defendant was more likely to have the death penalty invoked?
+Based on the segmented bar plot in Figure 4.6, which race of defendant was more likely to have the death penalty invoked?
 \rgs
 
-Based on the segmented bar plot in Figure 2.7 and Table 2.9, which race of defendant was more likely to have the death penalty invoked when the victim was Caucasian?
+Based on the segmented bar plot in Figure 4.7 and Table 4.9, which race of defendant was more likely to have the death penalty invoked when the victim was Caucasian?
 \rgs
 
-Based on the segmented bar plot in Figure 2.7 and Table 2.9, which race of defendant was more likely to have the death penalty invoked when the victim was African American?
+Based on the segmented bar plot in Figure 4.7 and Table 4.9, which race of defendant was more likely to have the death penalty invoked when the victim was African American?
 \rgs
 
 The direction of the relationship between the \_\_\_\_\_\_\_\_\_\_\_\_\_\_
@@ -1836,16 +1840,20 @@ and \_\_\_\_\_\_\_\_\_\_\_\_\_\_ variables is \textbf{reversed} when accounting 
 a \_\_\_\_\_\_\_\_\_\_\_\_\_\_ variable.
 \rgs
 
-\hypertarget{section-2.3-exploring-quantitative-data}{%
-\subsection*{Section 2.3 (Exploring quantitative data)}\label{section-2.3-exploring-quantitative-data}}
-\addcontentsline{toc}{subsection}{Section 2.3 (Exploring quantitative data)}
+\hypertarget{chapter-5-exploring-quantitative-data}{%
+\subsection*{Chapter 5 (Exploring quantitative data)}\label{chapter-5-exploring-quantitative-data}}
+\addcontentsline{toc}{subsection}{Chapter 5 (Exploring quantitative data)}
 
 \textbf{Videos}
 
 \begin{itemize}
 \tightlist
 \item
-  2.3
+  5.2to5.4
+\item
+  5.5to5.6
+\item
+  5.7
 \end{itemize}
 
 \hypertarget{type-of-plots}{%
@@ -1885,21 +1893,6 @@ Four characteristics of a scatterplot:
 \rgi Unusual observations or outliers:
 \rgs
 
-Data density:
-\rgs
-
-Tail:
-\rgs
-
-Skew:
-\rgs
-
-Symmetric:
-\rgs
-
-Modality:
-\rgs
-
 Distribution (of a variable):
 \rgs
 
@@ -1920,10 +1913,43 @@ Distribution (of a variable):
 Point estimate:
 \rgs
 
+Histogram:
+\rgs
+
+Data density:
+\rgs
+
+Tail:
+\rgs
+
+Skew:
+\rgs
+
+Symmetric:
+\rgs
+
+Modality:
+\rgs
+
+Density plot:
+\rgs 
+
 Deviation:
 \rgs
 
+Variance:
+\rgs
+
+Standard deviation:
+\rgs
+
+Boxplot:
+\rgs
+
 Five number summary:
+\rgs
+
+Median:
 \rgs
 
 \(X^{th}\) percentile:
@@ -1974,11 +2000,10 @@ Standard deviation & & \\
 How are outliers denoted on a box plot? How can you mathematically determine if a data set has outliers?
 \rgs
 
-\hypertarget{section-2.4-r-exploratory-data-analysis-and-section-2.5-chapter-2-review}{%
-\subsection*{Section 2.4 (R: Exploratory data analysis) and Section 2.5 (Chapter 2 review)}\label{section-2.4-r-exploratory-data-analysis-and-section-2.5-chapter-2-review}}
-\addcontentsline{toc}{subsection}{Section 2.4 (R: Exploratory data analysis) and Section 2.5 (Chapter 2 review)}
+\hypertarget{summarizing-chapters-4-and-5}{%
+\subsection{Summarizing Chapters 4 and 5}\label{summarizing-chapters-4-and-5}}
 
-Section 2.4 presents four tutorials on analyzing quantitative data in R. We recommend you complete all four.
+Look at the table of vocabulary terms in the final section of each chapter. If there are any you do not know, be sure to review the appropriate section of your text.
 
 \hypertarget{notes-6}{%
 \subsubsection*{Notes}\label{notes-6}}
@@ -2010,8 +2035,6 @@ two quantitative variables)& & \\ \hline
 \end{tabular}
 \end{center}
 
-Look at the table of vocabulary terms. If there are any you do not know, be sure to review the appropriate section of your text.
-
 \hypertarget{data-visualization-summary}{%
 \subsubsection*{Data visualization summary}\label{data-visualization-summary}}
 \addcontentsline{toc}{subsubsection}{Data visualization summary}
@@ -2035,11 +2058,6 @@ Two quantitative variables  & \\
 \end{center}
 
 \rgs
-\newpage
-
-Decision tree for determining an appropriate plot given a number of variables and their types from Chapter 2 review:
-
-\begin{center}\includegraphics[width=0.7\linewidth]{03-RG-categorical-quantitative-data_files/figure-latex/decision-tree-plots-1} \end{center}
 
 \newpage
 
@@ -2784,9 +2802,9 @@ Enter the name of the explanatory variable and the name of the response variable
 \hypertarget{week-4-reading-guide-two-quantitative-variables-and-multivariable-concepts}{%
 \section{Week 4 Reading Guide: Two Quantitative Variables and Multivariable Concepts}\label{week-4-reading-guide-two-quantitative-variables-and-multivariable-concepts}}
 
-\hypertarget{section-3.1-fitting-a-line-residuals-and-correlation}{%
-\subsection*{Section 3.1 (Fitting a line, residuals, and correlation)}\label{section-3.1-fitting-a-line-residuals-and-correlation}}
-\addcontentsline{toc}{subsection}{Section 3.1 (Fitting a line, residuals, and correlation)}
+\hypertarget{section-6.1-fitting-a-line-residuals-and-correlation}{%
+\subsection*{Section 6.1 (Fitting a line, residuals, and correlation)}\label{section-6.1-fitting-a-line-residuals-and-correlation}}
+\addcontentsline{toc}{subsection}{Section 6.1 (Fitting a line, residuals, and correlation)}
 
 \setstretch{1}
 
@@ -2795,14 +2813,14 @@ Enter the name of the explanatory variable and the name of the response variable
 \begin{itemize}
 \tightlist
 \item
-  Chapter3
+  6.1
 \end{itemize}
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-section-2.3}{%
-\subsubsection*{Reminders from Section 2.3}\label{reminders-from-section-2.3}}
-\addcontentsline{toc}{subsubsection}{Reminders from Section 2.3}
+\hypertarget{reminders-from-section-5.1}{%
+\subsubsection*{Reminders from Section 5.1}\label{reminders-from-section-5.1}}
+\addcontentsline{toc}{subsubsection}{Reminders from Section 5.1}
 
 Scatterplot: displays two quantitative variables; one dot = two measurements (\(x\), \(y\)) on one observational unit.
 
@@ -2826,6 +2844,9 @@ Four characteristics of a scatterplot:
 \hypertarget{vocabulary-5}{%
 \subsubsection*{Vocabulary}\label{vocabulary-5}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
+
+Predictor:
+\rgs
 
 Residual:
 \rgs
@@ -2914,7 +2935,7 @@ True or false: A positive residual indicates the data point is above the regress
   What are the observational units?\\
   \rgs
 \item
-  Look at the scatterplot in Figure 3.5.
+  Look at the scatterplot in Figure 6.5.
 \end{enumerate}
 
 \rgi a) What is the explanatory variable? The response variable? What type is each?
@@ -2946,20 +2967,20 @@ True or false: A positive residual indicates the data point is above the regress
   \rgs
 \end{enumerate}
 
-\hypertarget{section-3.2-least-squares-regression}{%
-\subsection*{Section 3.2 (Least squares regression)}\label{section-3.2-least-squares-regression}}
-\addcontentsline{toc}{subsection}{Section 3.2 (Least squares regression)}
+\hypertarget{section-6.2-least-squares-regression}{%
+\subsection*{Section 6.2 (Least squares regression)}\label{section-6.2-least-squares-regression}}
+\addcontentsline{toc}{subsection}{Section 6.2 (Least squares regression)}
 
 \setstretch{1}
 
-You may skip the special topic Sections 3.2.3.1 and 3.2.6.
+You may skip the special topic sections (6.2.7)
 
 \textbf{Videos}
 
 \begin{itemize}
 \tightlist
 \item
-  Chapter3
+  6.2
 \end{itemize}
 
 \setstretch{1.25}
@@ -3030,7 +3051,7 @@ True or false: The coefficient of determination is just the square of the correl
   What are the observational units?\\
   \rgs
 \item
-  Look at the scatterplot in Figure 3.13.
+  Look at the scatterplot in Figure 6.13.
 \end{enumerate}
 
 \rgi a) What is the explanatory variable? The response variable?\\
@@ -3063,7 +3084,7 @@ True or false: The coefficient of determination is just the square of the correl
   \rgs
   \rgs
 \item
-  Is your interpretation in question 5 an example of extrapolation?
+  Is your interpretation in question 5 an example of extrapolation? Justify your answer.
   \rgs
 \item
   Give and interpret, in context, the value of the coefficient of determination.
@@ -3071,9 +3092,9 @@ True or false: The coefficient of determination is just the square of the correl
   \rgs
 \end{enumerate}
 
-\hypertarget{section-3.3-outliers-in-linear-regression}{%
-\subsection*{Section 3.3 (Outliers in linear regression)}\label{section-3.3-outliers-in-linear-regression}}
-\addcontentsline{toc}{subsection}{Section 3.3 (Outliers in linear regression)}
+\hypertarget{section-6.3-outliers-in-linear-regression}{%
+\subsection*{Section 6.3 (Outliers in linear regression)}\label{section-6.3-outliers-in-linear-regression}}
+\addcontentsline{toc}{subsection}{Section 6.3 (Outliers in linear regression)}
 
 \setstretch{1}
 
@@ -3082,7 +3103,7 @@ True or false: The coefficient of determination is just the square of the correl
 \begin{itemize}
 \tightlist
 \item
-  Chapter3
+  6.3
 \end{itemize}
 
 \setstretch{1.25}
@@ -3097,7 +3118,7 @@ Outlier:
 Leverage:
 \rgs
 
-Influential:
+Influential point:
 \rgs
 
 \hypertarget{notes-9}{%
@@ -3110,23 +3131,13 @@ True or false: All high leverage outliers are influential.
 
 True or false: An outlier is considered high leverage if it is extreme in its \(x\)-value.
 
-\hypertarget{section-3.4-r-correlation-and-regression-and-section-3.5-chapter-3-review}{%
-\subsection*{Section 3.4 (R: Correlation and regression) and Section 3.5 (Chapter 3 review)}\label{section-3.4-r-correlation-and-regression-and-section-3.5-chapter-3-review}}
-\addcontentsline{toc}{subsection}{Section 3.4 (R: Correlation and regression) and Section 3.5 (Chapter 3 review)}
+\hypertarget{section-6.4-chapter-6-review}{%
+\subsection*{Section 6.4 (Chapter 6 review)}\label{section-6.4-chapter-6-review}}
+\addcontentsline{toc}{subsection}{Section 6.4 (Chapter 6 review)}
 
 \setstretch{1}
 
-\textbf{Videos}
-
-\begin{itemize}
-\tightlist
-\item
-  Chapter3
-\end{itemize}
-
-\setstretch{1.25}
-
-Section 3.4 presents five tutorials on analyzing two quantitative variables in R. We recommend you complete all five.
+Look at the table of vocabulary terms in the final section of each chapter. If there are any you do not know, be sure to review the appropriate section of your text.
 
 \hypertarget{notes-10}{%
 \subsubsection*{Notes}\label{notes-10}}
@@ -3136,12 +3147,6 @@ Statistics summarize:
 \rgs
 
 Parameters summarize:
-\rgs
-
-What are the two ways to calculate the coefficient of determination?
-\rgs
-
-What is the formula for calculating a residual?
 \rgs
 
 Determine whether each of the following statements about the correlation coefficient are true or false:
@@ -3173,11 +3178,13 @@ Fill in the blanks to correctly interpret:
   If \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, we predict the \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ to equal \_\_\_\_\_\_\_\_\_\_.
 \end{itemize}
 
-Look at the table of vocabulary terms. If there are any you do not know, be sure to review the appropriate section of your text.
+Decision tree for determining an appropriate plot given a number of variables and their types from Chapter review:
 
-\hypertarget{section-4.1-gapminder-world}{%
-\subsection*{Section 4.1 (Gapminder world)}\label{section-4.1-gapminder-world}}
-\addcontentsline{toc}{subsection}{Section 4.1 (Gapminder world)}
+\begin{center}\includegraphics[width=0.7\linewidth]{04-RG-multivariate_files/figure-latex/decision-tree-plots-1} \end{center}
+
+\hypertarget{section-7.1-gapminder-world}{%
+\subsection*{Section 7.1 (Gapminder world)}\label{section-7.1-gapminder-world}}
+\addcontentsline{toc}{subsection}{Section 7.1 (Gapminder world)}
 
 \setstretch{1}
 
@@ -3186,16 +3193,10 @@ Look at the table of vocabulary terms. If there are any you do not know, be sure
 \begin{itemize}
 \tightlist
 \item
-  Chapter4
+  Chapter7
 \end{itemize}
 
 \setstretch{1.25}
-
-\hypertarget{reminder-from-section-3.1}{%
-\subsubsection*{Reminder from Section 3.1}\label{reminder-from-section-3.1}}
-\addcontentsline{toc}{subsubsection}{Reminder from Section 3.1}
-
-Use color and a legend to add a third variable to a scatterplot. E.g., Color the dots to represent different levels of a categorical variable or use shading of the dots to represent different values of a quantitative variable.
 
 \hypertarget{vocabulary-8}{%
 \subsubsection*{Vocabulary}\label{vocabulary-8}}
@@ -3211,6 +3212,8 @@ Aesthetic:
 \subsubsection*{Notes}\label{notes-11}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
+Use color and a legend to add a third variable to a scatterplot. E.g., Color the dots to represent different levels of a categorical variable or use shading of the dots to represent different values of a quantitative variable.
+
 If the response and one predictor are quantitative and the other predictor is categorical, we fit a regression line for each level of the categorical predictor.
 
 \begin{itemize}
@@ -3222,9 +3225,9 @@ If the response and one predictor are quantitative and the other predictor is ca
 
 True or false: Scatterplots can only display two variables at a time.
 
-\hypertarget{section-4.2-simpsons-paradox-revisited}{%
-\subsection*{Section 4.2 (Simpson's Paradox, revisited)}\label{section-4.2-simpsons-paradox-revisited}}
-\addcontentsline{toc}{subsection}{Section 4.2 (Simpson's Paradox, revisited)}
+\hypertarget{section-7.2-simpsons-paradox-revisited}{%
+\subsection*{Section 7.2 (Simpson's Paradox, revisited)}\label{section-7.2-simpsons-paradox-revisited}}
+\addcontentsline{toc}{subsection}{Section 7.2 (Simpson's Paradox, revisited)}
 
 \setstretch{1}
 
@@ -3233,14 +3236,14 @@ True or false: Scatterplots can only display two variables at a time.
 \begin{itemize}
 \tightlist
 \item
-  Chapter4
+  Chapter7
 \end{itemize}
 
 \setstretch{1.25}
 
-\hypertarget{reminder-from-section-2.1}{%
-\subsubsection*{Reminder from Section 2.1}\label{reminder-from-section-2.1}}
-\addcontentsline{toc}{subsubsection}{Reminder from Section 2.1}
+\hypertarget{reminder-from-section-4.4}{%
+\subsubsection*{Reminder from Section 4.4}\label{reminder-from-section-4.4}}
+\addcontentsline{toc}{subsubsection}{Reminder from Section 4.4}
 
 Simpson's Paradox: when the relationship between the explanatory and response variable is reversed when looking at the relationship within different levels of a confounding variable.
 
@@ -3260,7 +3263,7 @@ True or false: Simpson's Paradox can only occur when the explanatory, response, 
   What are the observational units?\\
   \rgs
 \item
-  Look at the scatterplot in Figure 4.5.
+  Look at the scatterplot in Figure 7.5.
 \end{enumerate}
 
 \rgi a) What is the explanatory variable? The response variable?
@@ -3285,39 +3288,12 @@ True or false: Simpson's Paradox can only occur when the explanatory, response, 
   What would need to be done to the study design in order to eliminate the confounding variable: percent of eligible students taking the SAT?
   \rgs
 \item
-  What features of the scatterplots in Figure 4.6 demonstrate that the percent of eligible students taking the SAT is a confounding variable?
+  What features of the scatterplots in Figure 7.6 demonstrate that the percent of eligible students taking the SAT is a confounding variable?
   \rgs
 \item
-  How does Figure 4.7 demonstrate Simpson's Paradox?
+  How does Figure 7.7 demonstrate Simpson's Paradox?
   \rgs
 \end{enumerate}
-
-\hypertarget{section-4.4-chapter-4-review}{%
-\subsection*{Section 4.4 (Chapter 4 review)}\label{section-4.4-chapter-4-review}}
-\addcontentsline{toc}{subsection}{Section 4.4 (Chapter 4 review)}
-
-\setstretch{1}
-
-Section 4.3 discusses multiple regression and presents five tutorials on analyzing multiple variables in R. This section is a special topic, meaning you are not required to read or complete these tutorials.
-
-\textbf{Videos}
-
-\begin{itemize}
-\tightlist
-\item
-  Chapter4
-\end{itemize}
-
-\setstretch{1.25}
-
-\hypertarget{notes-13}{%
-\subsubsection*{Notes}\label{notes-13}}
-\addcontentsline{toc}{subsubsection}{Notes}
-
-To determine if the relationship between two quantitative variables differs across levels of a categorical variable, you should compare
-\rgs
-
-Simpson's Paradox:
 
 \newpage
 
@@ -4762,8 +4738,8 @@ Confidence interval:
 Margin of error:
 \rgs
 
-\hypertarget{notes-14}{%
-\subsubsection*{Notes}\label{notes-14}}
+\hypertarget{notes-13}{%
+\subsubsection*{Notes}\label{notes-13}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 What `theory' is behind the theory-based methods of analysis?
@@ -4978,8 +4954,8 @@ Bootstrapped resample:
 Bootstrapped statistic:
 \rgs
 
-\hypertarget{notes-15}{%
-\subsubsection*{Notes}\label{notes-15}}
+\hypertarget{notes-14}{%
+\subsubsection*{Notes}\label{notes-14}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Which hypothesis must we assume is true in order to simulate a null distribution?
@@ -6055,8 +6031,8 @@ Z-score:
 68-95-99.7 rule:
 \rgs
 
-\hypertarget{notes-16}{%
-\subsubsection*{Notes}\label{notes-16}}
+\hypertarget{notes-15}{%
+\subsubsection*{Notes}\label{notes-15}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Interpretation of a Z-score:
@@ -6260,8 +6236,8 @@ Standardized statistic:
 Confidence level:
 \rgs
 
-\hypertarget{notes-17}{%
-\subsubsection*{Notes}\label{notes-17}}
+\hypertarget{notes-16}{%
+\subsubsection*{Notes}\label{notes-16}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Conditions for the Central Limit Theorem to apply (for the sampling distribution of \(\hat{p}\) to be approximately normal)
@@ -6459,8 +6435,8 @@ Power:
 Practical importance:
 \rgs
 
-\hypertarget{notes-18}{%
-\subsubsection*{Notes}\label{notes-18}}
+\hypertarget{notes-17}{%
+\subsubsection*{Notes}\label{notes-17}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Fill in the following table with whether the decision was correct or not, and if not, what type of error was made.
@@ -7530,8 +7506,8 @@ Confidence level: how confident we are that the confidence interval will capture
 Randomization test:
 \rgs
 
-\hypertarget{notes-19}{%
-\subsubsection*{Notes}\label{notes-19}}
+\hypertarget{notes-18}{%
+\subsubsection*{Notes}\label{notes-18}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 In a randomization test involving two categorical variables, how many cards will you need and how will the cards be labeled?
@@ -8833,8 +8809,8 @@ Margin of error: the value that is added to and subtracted from the sample stati
 
 Confidence level: how confident we are that the confidence interval will capture the parameter.
 
-\hypertarget{notes-20}{%
-\subsubsection*{Notes}\label{notes-20}}
+\hypertarget{notes-19}{%
+\subsubsection*{Notes}\label{notes-19}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Conditions for the CLT to apply for a difference in proportions
@@ -10012,8 +9988,8 @@ Degrees of freedom (df):
 T-score:
 \rgs 
 
-\hypertarget{notes-21}{%
-\subsubsection*{Notes}\label{notes-21}}
+\hypertarget{notes-20}{%
+\subsubsection*{Notes}\label{notes-20}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 To create a bootstrap distribution test, how many cards will you need and how will the cards be labeled?
@@ -10253,8 +10229,8 @@ Paired data:
 \rgi Paired with matching:
 \rgs
 
-\hypertarget{notes-22}{%
-\subsubsection*{Notes}\label{notes-22}}
+\hypertarget{notes-21}{%
+\subsubsection*{Notes}\label{notes-21}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 For each of the following scenarios, determine if the two sets of observations are paired or independent.
@@ -11529,8 +11505,8 @@ Degrees of freedom (df): describes the variability of the \(t\)-distribution.
 
 T-score: the name for a standardized statistic which is compared to a \(t\)-distribution.
 
-\hypertarget{notes-23}{%
-\subsubsection*{Notes}\label{notes-23}}
+\hypertarget{notes-22}{%
+\subsubsection*{Notes}\label{notes-22}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 To create a \textbf{simulated null distribution} of differences in sample means,
@@ -12611,8 +12587,8 @@ Degrees of freedom (df): describes the variability of the \(t\)-distribution.
 
 T-score: the name for a standardized statistic which is compared to a \(t\)-distribution.
 
-\hypertarget{notes-24}{%
-\subsubsection*{Notes}\label{notes-24}}
+\hypertarget{notes-23}{%
+\subsubsection*{Notes}\label{notes-23}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 To create a \textbf{simulated null distribution} of sample slopes or sample correlations,
@@ -13842,8 +13818,8 @@ Specificity:
 Prevalence:
 \rgs
 
-\hypertarget{notes-25}{%
-\subsubsection*{Notes}\label{notes-25}}
+\hypertarget{notes-24}{%
+\subsubsection*{Notes}\label{notes-24}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Method for creating a hypothetical two-way table:
@@ -13950,8 +13926,8 @@ Total & & & 100,000 \\ \hline
 Relative risk:
 \rgs
 
-\hypertarget{notes-26}{%
-\subsubsection*{Notes}\label{notes-26}}
+\hypertarget{notes-25}{%
+\subsubsection*{Notes}\label{notes-25}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Interpreting relative risk (\(RR = \frac{\hat{p_1}}{\hat{p_2}}\))
