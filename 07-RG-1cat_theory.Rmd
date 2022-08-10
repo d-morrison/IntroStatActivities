@@ -403,6 +403,24 @@ How are the significance level and type I error rate related?
 How are the significance level and type II error rate related?
 \rgs
 
+Explain the differences between a one-sided and two-sided hypothesis test.
+\vspace{1mm}
+
+\rgi How will the research questions differ?
+\rgs
+
+\rgi How will the notation in the alternative hypothesis differ?
+\rgs
+
+\rgi How does the p-value calculation differ?
+\rgs
+
+How does the p-value in a two-sided test compare to the p-value in a one-sided test?
+\rgs
+
+Should the default in research be a one-sided or two-sided hypothesis test?  Explain why.
+\rgs
+\rgs
 
 After collecting data, a researcher decides to change from a two-sided test to a one-sided test.  Why is this a bad idea?
 

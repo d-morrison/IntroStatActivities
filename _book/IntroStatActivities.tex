@@ -4662,21 +4662,29 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the appropri
 \hypertarget{week-6-reading-guide-categorical-inference}{%
 \section{Week 6 Reading Guide: Categorical Inference}\label{week-6-reading-guide-categorical-inference}}
 
-\hypertarget{section-5.1-foundations-of-inference-hypothesis-tests}{%
-\subsection*{Section 5.1 (Foundations of inference: Hypothesis tests)}\label{section-5.1-foundations-of-inference-hypothesis-tests}}
-\addcontentsline{toc}{subsection}{Section 5.1 (Foundations of inference: Hypothesis tests)}
-
-Please note that Theory-based inference will be covered next week.
+\hypertarget{chapter-9-hypothesis-testing-with-randomization}{%
+\subsection*{Chapter 9 (Hypothesis testing with randomization)}\label{chapter-9-hypothesis-testing-with-randomization}}
+\addcontentsline{toc}{subsection}{Chapter 9 (Hypothesis testing with randomization)}
 
 \textbf{Videos}
 
 \begin{itemize}
 \tightlist
 \item
-  5.1
+  Chapter9
 \end{itemize}
 
 \setstretch{1.25}
+
+\hypertarget{reminders-from-previous-sections}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections}}
+\addcontentsline{toc}{subsubsection}{Reminders from previous sections}
+
+\(n\) = sample size
+
+\(\hat{p}\) = sample proportion
+
+\(\pi\) = population proportion
 
 \hypertarget{vocabulary-9}{%
 \subsubsection*{Vocabulary}\label{vocabulary-9}}
@@ -4694,18 +4702,17 @@ Simulation-based method:
 \rgs
 
 Theory-based method:
+
+\rgi This will be discussed in detail next week.
 \rgs
 
-Central Limit Theorem:
+Observed statistic:
 \rgs
 
-Sampling distribution:
+Null statistics:
 \rgs
 
-Standard deviation of a statistic:
-\rgs
-
-Standard error of a statistic:
+Point estimate:
 \rgs
 
 Null hypothesis (\(H_0\)):
@@ -4714,36 +4721,24 @@ Null hypothesis (\(H_0\)):
 Alternative hypothesis (\(H_A\)):
 \rgs
 
-P-value:
-\rgs
-
-Point estimate:
-\rgs
-
 Test statistic:
 \rgs
 
-Decision:
+P-value:
+\rgs
+
+Statistically significant:
 \rgs
 
 Significance level (\(\alpha\)):
 \rgs 
 
-Statistically significant:
-\rgs
-
-Confidence interval:
-\rgs
-
-Margin of error:
+Sampling variability (found in the chapter 9 review):
 \rgs
 
 \hypertarget{notes-13}{%
 \subsubsection*{Notes}\label{notes-13}}
 \addcontentsline{toc}{subsubsection}{Notes}
-
-What `theory' is behind the theory-based methods of analysis?
-\rgs
 
 Consider the US judicial system:
 
@@ -4766,46 +4761,34 @@ Consider the US judicial system:
 To create a simulation, which hypothesis (null or alternative) do we assume is true?
 \rgs
 
-More on p-values:
-
-\rgi Lower the p-value:
-\rgs
-
-\rgi Interpretations require:
+Lower p-values indicate (stronger or weaker?) evidence (for or against?) the null hypothesis.
 \rgs
 
 General steps of a hypothesis test:
 \rgs
 
-Conclusions should include:
+Explain the differences between a one-sided and two-sided hypothesis test.
+\vspace{1mm}
+
+\rgi How will the research questions differ?
 \rgs
 
-Decision:
-
-\rgi If p-value \(\leq \alpha\), the decision is to:
-
-\rgi If p-value \(> \alpha\), the decision is to:
-
-True or False: If the p-value is above 0.10, that means the null hypothesis is true.
-
-True or False: When conducting a simulation-based hypothesis test, the null hypothesis is assumed to be true to create the simulation.
-
-\hypertarget{formulas}{%
-\subsubsection*{Formulas}\label{formulas}}
-\addcontentsline{toc}{subsubsection}{Formulas}
-
-\(SD(\hat{p})\) =
+\rgi How will the notation in the alternative hypothesis differ?
 \rgs
 
-General form of a theory-based confidence interval:
+\rgi How does the p-value calculation differ?
 \rgs
 
-Margin of error:
+How does the p-value in a two-sided test compare to the p-value in a one-sided test?
 \rgs
 
-\hypertarget{example-martian-alphabet}{%
-\subsubsection*{Example: Martian alphabet}\label{example-martian-alphabet}}
-\addcontentsline{toc}{subsubsection}{Example: Martian alphabet}
+Should the default in research be a one-sided or two-sided hypothesis test? Explain why.
+\rgs
+\rgs
+
+\hypertarget{example-from-section-9.1-martian-alphabet}{%
+\subsubsection*{Example from section 9.1: Martian alphabet}\label{example-from-section-9.1-martian-alphabet}}
+\addcontentsline{toc}{subsubsection}{Example from section 9.1: Martian alphabet}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4828,41 +4811,129 @@ Margin of error:
   How can we use the simulation to determine which of the two possibilities is more believable?
   \rgs
   \rgs
+\end{enumerate}
+
+\hypertarget{example-from-section-9.2-sex-discrimination}{%
+\subsubsection*{Example from section 9.2: Sex discrimination}\label{example-from-section-9.2-sex-discrimination}}
+\addcontentsline{toc}{subsubsection}{Example from section 9.2: Sex discrimination}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
 \item
-  What decision should be made at an \(\alpha = 0.05\) significance level? Justify your answer.
+  Identify the explanatory and response variables in this study.
   \rgs
 \item
-  Are the results in this example statistically significant? Justify your answer.
+  Is this a randomized experiment or an observation study? Justify your answer.
   \rgs
 \item
-  Interpret the 95\% confidence interval provided in the textbook.
+  What is the sample statistic presented in this example?\\
+  \rgs
+\item
+  What are the null and alternative hypotheses?
   \rgs
   \rgs
 \item
-  The formula for the interval is \(34/38 \pm (2 \times 0.08) = 0.89 \pm 0.16\). Calculating that, you should get (0.73, 1.05). Why was the interval shown in the textbook (0.73, 1) instead of (0.73, 1.05)?
+  Based on the simulation pictured in Figure 9.6, which hypothesis seems more believable? Justify your answer, being sure to reference (and explain the meaning of) the p-value.
+  \rgs
   \rgs
 \end{enumerate}
 
-\hypertarget{section-5.3-inference-for-one-proportion}{%
-\subsection*{Section 5.3 (Inference for one proportion)}\label{section-5.3-inference-for-one-proportion}}
-\addcontentsline{toc}{subsection}{Section 5.3 (Inference for one proportion)}
+\hypertarget{chapter-10-confidence-intervals-with-bootstrapping}{%
+\subsection*{Chapter 10 (Confidence intervals with bootstrapping)}\label{chapter-10-confidence-intervals-with-bootstrapping}}
+\addcontentsline{toc}{subsection}{Chapter 10 (Confidence intervals with bootstrapping)}
 
 \setstretch{1}
-
-You may skip Section 5.3.4, which will be covered next week.
 
 \textbf{Videos}
 
 \begin{itemize}
 \tightlist
 \item
-  5.3SimInf
-\item
   Bootstrapping
+\item
+  Chapter10
 \end{itemize}
 
-\hypertarget{reminders-from-previous-sections}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections}}
+\hypertarget{reminders-from-previous-sections-1}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-1}}
+\addcontentsline{toc}{subsubsection}{Reminders from previous sections}
+
+Parameter: a value summarizing a variable(s) for a population.
+
+Statistic: a value summarizing a variable(s) for a sample. Also called a \textbf{point estimate}.
+
+\hypertarget{vocabulary-10}{%
+\subsubsection*{Vocabulary}\label{vocabulary-10}}
+\addcontentsline{toc}{subsubsection}{Vocabulary}
+
+Confidence interval:
+\rgs
+
+Bootstrapping:
+\rgs
+
+Bootstrapped resample:
+\rgs
+
+Bootstrapped statistic:
+\rgs
+
+Bootstrap percentile confidence interval:
+\rgs
+
+\hypertarget{notes-14}{%
+\subsubsection*{Notes}\label{notes-14}}
+\addcontentsline{toc}{subsubsection}{Notes}
+
+What is the purpose of bootstrapping:
+\rgs
+
+How is bootstrapping used?\\
+\rgs
+
+If we want to find a 90\% confidence interval, what percentiles of the bootstrap distribution would we need?\\
+\rgs
+
+\hypertarget{example-medical-consultant}{%
+\subsubsection*{Example: Medical consultant}\label{example-medical-consultant}}
+\addcontentsline{toc}{subsubsection}{Example: Medical consultant}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  What is the sample statistic presented in this example? What notation would be used to represent this value?
+  \rgs
+\item
+  What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
+  \rgs
+  \rgs
+\item
+  How could we use cards to simulate \textbf{one} bootstrapped resample? How many blue cards --- to represent what? How many red cards --- to represent what? How many times would we draw a card and replace it back in the deck? What would you record once you completed the draw-with-replacement process?
+  \rgs
+  \rgs
+  \rgs
+\item
+  Provide and interpret the 95\% confidence interval provided in the textbook.
+  \rgs
+  \rgs
+\end{enumerate}
+
+\hypertarget{section-14.1-simulation-based-test-for-a-single-proportion}{%
+\subsection*{Section 14.1 (Simulation-based test for a single proportion)}\label{section-14.1-simulation-based-test-for-a-single-proportion}}
+\addcontentsline{toc}{subsection}{Section 14.1 (Simulation-based test for a single proportion)}
+
+\setstretch{1}
+
+\textbf{Videos}
+
+\begin{itemize}
+\tightlist
+\item
+  14.1
+\end{itemize}
+
+\hypertarget{reminders-from-previous-sections-2}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-2}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n\) = sample size
@@ -4882,7 +4953,7 @@ General steps of a hypothesis test:
 \item
   Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
 \item
-  Compare the observed test statistic to the null distribution to calculate a p-value.
+  Compare the observed test (standardized) statistic to the null distribution to calculate a p-value.
 \item
   Make a conclusion based on the p-value and write the conclusion in context.
 \end{enumerate}
@@ -4892,10 +4963,6 @@ Parameter: a value summarizing a variable(s) for a population.
 Statistic: a value summarizing a variable(s) for a sample.
 
 Sampling distribution: plot of statistics from 1000s of samples of the same size taken from the same population.
-
-Standard deviation of a statistic: the variability of statistics from 1000s of samples; how far, on average, each statistic is from the true value of the parameter.
-
-Standard error of a statistic: estimated standard deviation of a statistic.
 
 Hypothesis test: a process to determine how strong the evidence of an effect is.
 
@@ -4911,27 +4978,15 @@ P-value: probability of seeing the observed sample data, or something more extre
 
 \(\implies\) Lower the p-value the stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis.
 
-Decision: a determination of whether to `reject' or `fail to reject' a null hypothesis based on a p-value and a pre-set level of significance.
-
 Significance level (\(\alpha\)): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
 
 \rgi Common levels of \(\alpha\) include 0.01, 0.05, and 0.10.
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter; also called `estimation'.
-
-Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval.
-
-\hypertarget{vocabulary-10}{%
-\subsubsection*{Vocabulary}\label{vocabulary-10}}
+\hypertarget{vocabulary-11}{%
+\subsubsection*{Vocabulary}\label{vocabulary-11}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
-
-Point estimate:
-\rgs
-
-Test statistic:
-\rgs
 
 Null value:
 \rgs
@@ -4939,75 +4994,37 @@ Null value:
 Null distribution:
 \rgs
 
-One-sided hypothesis test:
-\rgs
-
-Two-sided hypothesis test:
-\rgs
-
-Bootstrapping:
-\rgs
-
-Bootstrapped resample:
-\rgs
-
-Bootstrapped statistic:
-\rgs
-
-\hypertarget{notes-14}{%
-\subsubsection*{Notes}\label{notes-14}}
+\hypertarget{notes-15}{%
+\subsubsection*{Notes}\label{notes-15}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Which hypothesis must we assume is true in order to simulate a null distribution?
 \rgs
 
-Explain the differences between a one-sided and two-sided hypothesis test.
-\vspace{1mm}
-
-\rgi How will the research questions differ?
-\rgs
-
-\rgi How will the notation in the alternative hypothesis differ?
-\rgs
-
-\rgi How does the p-value calculation differ?
-\rgs
-
-How does the p-value in a two-sided test compare to the p-value in a one-sided test?
-\rgs
-
-Should the default in research be a one-sided or two-sided hypothesis test? Explain why.
+How is a p-value calculated in a simulation-based hypothesis test?
 \rgs
 \rgs
 
-Purpose of bootstrapping:
+How is a null distribution created in a simulation-based hypothesis test for a single proportion?
+\rgs
 \rgs
 
-How is bootstrapping used?\\
-\rgs
+True or false: The sign in the alternative hypothesis is based off of the researcher's question.
 
-If we want to find a 90\% confidence interval, what percentiles of the bootstrap distribution would we need?\\
-\rgs
+\hypertarget{example-medical-consultant-1}{%
+\subsubsection*{Example: Medical consultant}\label{example-medical-consultant-1}}
+\addcontentsline{toc}{subsubsection}{Example: Medical consultant}
 
-\hypertarget{example-organ-donations}{%
-\subsubsection*{Example: Organ donations}\label{example-organ-donations}}
-\addcontentsline{toc}{subsubsection}{Example: Organ donations}
+As a reminder from section 10.1, \[\hat{p} = 0.048\].
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  What is the sample statistic presented in this example? What notation would be used to represent this value?
-  \rgs
-\item
-  What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
+  Write the null and alternative hypotheses in words.
   \rgs
   \rgs
 \item
-  Write the null and alternative hypotheses in words, using the example in 5.3.1.
-  \rgs
-  \rgs
-\item
-  Write the null and alternative hypotheses in notation, using the example in 5.3.1.
+  Write the null and alternative hypotheses in notation.
   \rgs
 \item
   To simulate the null distribution, we would not be able to use coins. Why not?
@@ -5019,14 +5036,11 @@ If we want to find a 90\% confidence interval, what percentiles of the bootstrap
   \rgs
   \rgs
 \item
-  How can we calculate a p-value from the simulated null distribution for this example in 5.3.1?
+  How can we calculate a p-value from the simulated null distribution for this example in figure 14.1?
   \rgs
   \rgs
 \item
-  What was the p-value of the test from the example in 5.3.1?
-  \rgs
-\item
-  At the 5\% significance level, what decision would you make based on the p-value above?
+  What was the p-value of the test?
   \rgs
 \item
   What conclusion should the researcher make?
@@ -5037,28 +5051,57 @@ If we want to find a 90\% confidence interval, what percentiles of the bootstrap
   \rgs
   \rgs
 \item
-  How does the alternative hypothesis change, both in words and in notation, when the example changes to a two-sided hypothesis test in 5.3.2?\\
+  To what population can we generalize the results of this study? Justify your answer.
   \rgs
+\end{enumerate}
+
+\hypertarget{section-14.2-bootstrap-for-a-single-proportion}{%
+\subsection*{Section 14.2 (Bootstrap for a single proportion)}\label{section-14.2-bootstrap-for-a-single-proportion}}
+\addcontentsline{toc}{subsection}{Section 14.2 (Bootstrap for a single proportion)}
+
+\setstretch{1}
+
+\textbf{Videos}
+
+\begin{itemize}
+\tightlist
+\item
+  14.2
+\end{itemize}
+
+\hypertarget{reminders-from-previous-sections-3}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-3}}
+\addcontentsline{toc}{subsubsection}{Reminders from previous sections}
+
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter. Also called `estimation'.
+
+Bootstrapping: the process of drawing with replacement \(n\) times from the original sample.
+
+Bootstrapped resample: a random sample of size \(n\) from the original sample, selected with replacement.
+
+Bootstrapped statistic: the statistic recorded from the bootstrapped resample.
+
+Bootstrap percentile confidence interval: An X\% confidence interval made by finding the bounds of the middle X\% of bootstrap statistics.
+
+\hypertarget{notes-16}{%
+\subsubsection*{Notes}\label{notes-16}}
+\addcontentsline{toc}{subsubsection}{Notes}
+
+Explain how to use a confidence interval to test a null hypothesis.
+\rgs
+\rgs
+
+\hypertarget{example-medical-consultant-2}{%
+\subsubsection*{Example: Medical consultant}\label{example-medical-consultant-2}}
+\addcontentsline{toc}{subsubsection}{Example: Medical consultant}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  What is the 95\% confidence interval for the parameter of interest, based on the bootstrap distribution shown in figure 10.6?
   \rgs
 \item
-  Explain how the p-value calculation changes between the example in 5.3.1 (one-sided hypothesis test) and the example in 5.3.2 (two-sided hypothesis test).
-  \rgs
-  \rgs
-\item
-  Why does doubling the p-value from the one-sided hypothesis test (your answer to question 8) not match the two-sided p-value calculated in Figure 5.12?
-  \rgs
-  \rgs
-\item
-  How could we use cards to simulate \textbf{one} bootstrapped resample? How many blue cards --- to represent what? How many red cards --- to represent what? How many times would we draw a card and replace it back in the deck? What would you record once you completed the draw-with-replacement process?
-  \rgs
-  \rgs
-  \rgs
-\item
-  Interpret the 95\% confidence interval provided in the textbook.
-  \rgs
-  \rgs
-\item
-  Are the results in this example statistically significant? Justify your answer.
+  What the 95\% confidence interval indicate the consults has a lower rate of complications than the national average (10\%)? Justify your answer.
   \rgs
 \end{enumerate}
 
@@ -5984,8 +6027,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{week-7-reading-guide-categorical-inference}{%
 \section{Week 7 Reading Guide: Categorical Inference}\label{week-7-reading-guide-categorical-inference}}
 
-\hypertarget{section-5.1-foundations-of-inference-hypothesis-tests-1}{%
-\subsection*{Section 5.1 (Foundations of inference: Hypothesis tests)}\label{section-5.1-foundations-of-inference-hypothesis-tests-1}}
+\hypertarget{section-5.1-foundations-of-inference-hypothesis-tests}{%
+\subsection*{Section 5.1 (Foundations of inference: Hypothesis tests)}\label{section-5.1-foundations-of-inference-hypothesis-tests}}
 \addcontentsline{toc}{subsection}{Section 5.1 (Foundations of inference: Hypothesis tests)}
 
 Review section 5.1.2, specifically the notes about the theory-based approach and the Central Limit Theorem.
@@ -6006,8 +6049,8 @@ Review section 5.1.2, specifically the notes about the theory-based approach and
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-11}{%
-\subsubsection*{Vocabulary}\label{vocabulary-11}}
+\hypertarget{vocabulary-12}{%
+\subsubsection*{Vocabulary}\label{vocabulary-12}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Normal distribution (Also known as: normal curve, normal model, Gaussian distribution):
@@ -6031,8 +6074,8 @@ Z-score:
 68-95-99.7 rule:
 \rgs
 
-\hypertarget{notes-15}{%
-\subsubsection*{Notes}\label{notes-15}}
+\hypertarget{notes-17}{%
+\subsubsection*{Notes}\label{notes-17}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Interpretation of a Z-score:
@@ -6051,8 +6094,8 @@ Approximately what percent of a normal distribution is in the interval
 \rgi (mean -- 3\(\times\)(standard deviation), mean + 3\(\times\)(standard deviation)):
 \rgs
 
-\hypertarget{formulas-1}{%
-\subsubsection*{Formulas}\label{formulas-1}}
+\hypertarget{formulas}{%
+\subsubsection*{Formulas}\label{formulas}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 Z =
@@ -6158,12 +6201,12 @@ We would recommend you work through each of the examples in Section 5.2.4 using 
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-12}{%
-\subsubsection*{Vocabulary}\label{vocabulary-12}}
+\hypertarget{vocabulary-13}{%
+\subsubsection*{Vocabulary}\label{vocabulary-13}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
-\hypertarget{reminders-from-previous-sections-1}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-1}}
+\hypertarget{reminders-from-previous-sections-4}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-4}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n\) = sample size
@@ -6226,8 +6269,8 @@ Confidence interval: a process to determine how large an effect is; a range of p
 
 Margin of error: the value that is added to and subtracted from the sample statistic to create a confidence interval; half the width of a confidence interval.
 
-\hypertarget{vocabulary-13}{%
-\subsubsection*{Vocabulary}\label{vocabulary-13}}
+\hypertarget{vocabulary-14}{%
+\subsubsection*{Vocabulary}\label{vocabulary-14}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Standardized statistic:
@@ -6236,8 +6279,8 @@ Standardized statistic:
 Confidence level:
 \rgs
 
-\hypertarget{notes-16}{%
-\subsubsection*{Notes}\label{notes-16}}
+\hypertarget{notes-18}{%
+\subsubsection*{Notes}\label{notes-18}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Conditions for the Central Limit Theorem to apply (for the sampling distribution of \(\hat{p}\) to be approximately normal)
@@ -6265,8 +6308,8 @@ If the success-failure condition for the Central Limit Theorem is not met, what 
 \rgi A. Theory-based approach
 \rgi B. Simulation based approach.
 
-\hypertarget{formulas-2}{%
-\subsubsection*{Formulas}\label{formulas-2}}
+\hypertarget{formulas-1}{%
+\subsubsection*{Formulas}\label{formulas-1}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(SD(\hat{p})\) =
@@ -6293,8 +6336,8 @@ Theory-based confidence interval for a sample proportion:
 Margin of error of a confidence interval for a sample proportion:
 \rgs
 
-\hypertarget{example-organ-donations-1}{%
-\subsubsection*{Example: Organ donations}\label{example-organ-donations-1}}
+\hypertarget{example-organ-donations}{%
+\subsubsection*{Example: Organ donations}\label{example-organ-donations}}
 \addcontentsline{toc}{subsubsection}{Example: Organ donations}
 
 \begin{enumerate}
@@ -6397,8 +6440,8 @@ Margin of error of a confidence interval for a sample proportion:
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-2}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-2}}
+\hypertarget{reminders-from-previous-sections-5}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-5}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance.
@@ -6416,8 +6459,8 @@ Significance level (\(\alpha\)): a threshold used to determine if a p-value prov
 
 Statistically significant: results are considered statistically significant if the p-value is below the significance level.
 
-\hypertarget{vocabulary-14}{%
-\subsubsection*{Vocabulary}\label{vocabulary-14}}
+\hypertarget{vocabulary-15}{%
+\subsubsection*{Vocabulary}\label{vocabulary-15}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Type 1 error:
@@ -6435,8 +6478,8 @@ Power:
 Practical importance:
 \rgs
 
-\hypertarget{notes-17}{%
-\subsubsection*{Notes}\label{notes-17}}
+\hypertarget{notes-19}{%
+\subsubsection*{Notes}\label{notes-19}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Fill in the following table with whether the decision was correct or not, and if not, what type of error was made.
@@ -7425,8 +7468,8 @@ You may skip section 5.5.3, which will be covered in the next module, as well as
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-3}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-3}}
+\hypertarget{reminders-from-previous-sections-6}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-6}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n\) = sample size
@@ -7499,15 +7542,15 @@ Bootstrapped statistic: the statistic recorded from the bootstrapped resample.
 
 Confidence level: how confident we are that the confidence interval will capture the parameter.
 
-\hypertarget{vocabulary-15}{%
-\subsubsection*{Vocabulary}\label{vocabulary-15}}
+\hypertarget{vocabulary-16}{%
+\subsubsection*{Vocabulary}\label{vocabulary-16}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Randomization test:
 \rgs
 
-\hypertarget{notes-18}{%
-\subsubsection*{Notes}\label{notes-18}}
+\hypertarget{notes-20}{%
+\subsubsection*{Notes}\label{notes-20}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 In a randomization test involving two categorical variables, how many cards will you need and how will the cards be labeled?
@@ -8741,8 +8784,8 @@ Fill in the missing values/names in the R script file in the two\_proportion\_bo
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-4}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-4}}
+\hypertarget{reminders-from-previous-sections-7}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-7}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n\) = sample size
@@ -8809,8 +8852,8 @@ Margin of error: the value that is added to and subtracted from the sample stati
 
 Confidence level: how confident we are that the confidence interval will capture the parameter.
 
-\hypertarget{notes-19}{%
-\subsubsection*{Notes}\label{notes-19}}
+\hypertarget{notes-21}{%
+\subsubsection*{Notes}\label{notes-21}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Conditions for the CLT to apply for a difference in proportions
@@ -8827,8 +8870,8 @@ Conditions for the CLT to apply for a difference in proportions
 \rgi \rgi Checked by:
 \rgs
 
-\hypertarget{formulas-3}{%
-\subsubsection*{Formulas}\label{formulas-3}}
+\hypertarget{formulas-2}{%
+\subsubsection*{Formulas}\label{formulas-2}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(SD(\hat{p_1} - \hat{p_2})=\)
@@ -9879,8 +9922,8 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the appropri
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-5}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-5}}
+\hypertarget{reminders-from-previous-sections-8}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-8}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n\) = sample size
@@ -9968,8 +10011,8 @@ Bootstrap \(X\)\% confidence interval: (\((\frac{(1-X)}{2})^{th}\) percentile, \
 
 Central Limit Theorem: For large sample sizes, the sampling distribution of a sample mean (or proportion) will be approximately normal (bell-shaped and symmetric).
 
-\hypertarget{vocabulary-16}{%
-\subsubsection*{Vocabulary}\label{vocabulary-16}}
+\hypertarget{vocabulary-17}{%
+\subsubsection*{Vocabulary}\label{vocabulary-17}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 \(t\)-distribution:
@@ -9988,8 +10031,8 @@ Degrees of freedom (df):
 T-score:
 \rgs 
 
-\hypertarget{notes-20}{%
-\subsubsection*{Notes}\label{notes-20}}
+\hypertarget{notes-22}{%
+\subsubsection*{Notes}\label{notes-22}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 To create a bootstrap distribution test, how many cards will you need and how will the cards be labeled?
@@ -10024,8 +10067,8 @@ Conditions to use the CLT for means:
 \rgi \rgi Checked by:
 \rgs 
 
-\hypertarget{formulas-4}{%
-\subsubsection*{Formulas}\label{formulas-4}}
+\hypertarget{formulas-3}{%
+\subsubsection*{Formulas}\label{formulas-3}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(SE(\overline{x})=\)
@@ -10216,8 +10259,8 @@ Confidence interval for a mean:
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-17}{%
-\subsubsection*{Vocabulary}\label{vocabulary-17}}
+\hypertarget{vocabulary-18}{%
+\subsubsection*{Vocabulary}\label{vocabulary-18}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Paired data:
@@ -10229,8 +10272,8 @@ Paired data:
 \rgi Paired with matching:
 \rgs
 
-\hypertarget{notes-21}{%
-\subsubsection*{Notes}\label{notes-21}}
+\hypertarget{notes-23}{%
+\subsubsection*{Notes}\label{notes-23}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 For each of the following scenarios, determine if the two sets of observations are paired or independent.
@@ -10262,8 +10305,8 @@ Conditions to use the CLT for paired mean difference:
 \rgi \rgi Checked by:
 \rgs
 
-\hypertarget{formulas-5}{%
-\subsubsection*{Formulas}\label{formulas-5}}
+\hypertarget{formulas-4}{%
+\subsubsection*{Formulas}\label{formulas-4}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(SE(\overline{x_d})=\)
@@ -11400,8 +11443,8 @@ We will use the \texttt{paired\_bootstrap\_CI()} function in R (in the \texttt{c
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-6}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-6}}
+\hypertarget{reminders-from-previous-sections-9}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-9}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n_1\)= sample size of group 1
@@ -11505,8 +11548,8 @@ Degrees of freedom (df): describes the variability of the \(t\)-distribution.
 
 T-score: the name for a standardized statistic which is compared to a \(t\)-distribution.
 
-\hypertarget{notes-22}{%
-\subsubsection*{Notes}\label{notes-22}}
+\hypertarget{notes-24}{%
+\subsubsection*{Notes}\label{notes-24}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 To create a \textbf{simulated null distribution} of differences in sample means,
@@ -11559,8 +11602,8 @@ In a two-sample \(t\)-test, how are the degrees of freedom determined?
 True or false: A large p-value indicates that the null hypothesis is true.
 \rgs
 
-\hypertarget{formulas-6}{%
-\subsubsection*{Formulas}\label{formulas-6}}
+\hypertarget{formulas-5}{%
+\subsubsection*{Formulas}\label{formulas-5}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(SE(\overline{x_1} - \overline{x_2})=\)
@@ -12461,8 +12504,8 @@ Enter the appropriate percentile value (as a decimal) for \texttt{xx} and degree
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-7}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-7}}
+\hypertarget{reminders-from-previous-sections-10}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-10}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(\beta_0\): population \(y\)-intercept
@@ -12587,8 +12630,8 @@ Degrees of freedom (df): describes the variability of the \(t\)-distribution.
 
 T-score: the name for a standardized statistic which is compared to a \(t\)-distribution.
 
-\hypertarget{notes-23}{%
-\subsubsection*{Notes}\label{notes-23}}
+\hypertarget{notes-25}{%
+\subsubsection*{Notes}\label{notes-25}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 To create a \textbf{simulated null distribution} of sample slopes or sample correlations,
@@ -12656,8 +12699,8 @@ Explain why testing for slope is equivalent to testing for correlation.
 Where in the R output can \(SE(b_1)\) be found?
 \rgs
 
-\hypertarget{formulas-7}{%
-\subsubsection*{Formulas}\label{formulas-7}}
+\hypertarget{formulas-6}{%
+\subsubsection*{Formulas}\label{formulas-6}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 \(T=\)
@@ -13772,8 +13815,8 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in R (in the \text
 
 \setstretch{1.25}
 
-\hypertarget{vocabulary-18}{%
-\subsubsection*{Vocabulary}\label{vocabulary-18}}
+\hypertarget{vocabulary-19}{%
+\subsubsection*{Vocabulary}\label{vocabulary-19}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Random process:
@@ -13818,8 +13861,8 @@ Specificity:
 Prevalence:
 \rgs
 
-\hypertarget{notes-24}{%
-\subsubsection*{Notes}\label{notes-24}}
+\hypertarget{notes-26}{%
+\subsubsection*{Notes}\label{notes-26}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Method for creating a hypothetical two-way table:
@@ -13919,15 +13962,15 @@ Total & & & 100,000 \\ \hline
 \subsection*{Section 5.5 revisited (Simulation-based inference for a relative risk)}\label{section-5.5-revisited-simulation-based-inference-for-a-relative-risk}}
 \addcontentsline{toc}{subsection}{Section 5.5 revisited (Simulation-based inference for a relative risk)}
 
-\hypertarget{vocabulary-19}{%
-\subsubsection*{Vocabulary}\label{vocabulary-19}}
+\hypertarget{vocabulary-20}{%
+\subsubsection*{Vocabulary}\label{vocabulary-20}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
 Relative risk:
 \rgs
 
-\hypertarget{notes-25}{%
-\subsubsection*{Notes}\label{notes-25}}
+\hypertarget{notes-27}{%
+\subsubsection*{Notes}\label{notes-27}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
 Interpreting relative risk (\(RR = \frac{\hat{p_1}}{\hat{p_2}}\))
@@ -13939,8 +13982,8 @@ Interpreting relative risk (\(RR = \frac{\hat{p_1}}{\hat{p_2}}\))
 Write the null hypothesis in notation for a test of relative risk.
 \rgs
 
-\hypertarget{formulas-8}{%
-\subsubsection*{Formulas}\label{formulas-8}}
+\hypertarget{formulas-7}{%
+\subsubsection*{Formulas}\label{formulas-7}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 Relative risk =
