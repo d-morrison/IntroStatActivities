@@ -2,13 +2,13 @@
 
 ## Week 2 Reading Guide: Sampling, Experimental Design, and Scope of Inference
 
-### Sections 1.4 (Observational studies), 1.5 (Experiments), and 1.6 (Scope of inference) {-}
+### Sections 2.2 (Observational studies), 2.3 (Experiments), and 2.4 (Scope of inference) {-}
 
 \setstretch{1}
 
 **Videos**  
 
-* 1.4to1.6
+* 2.2to2.4
 
 \setstretch{1.25}
 
@@ -50,22 +50,22 @@ Experiment:
 \rgi Control group:
 \rgs
 
+\rgi Blinding:
+\rgs
+
 \rgi Placebo:
 \rgs
 
 \rgi Placebo effect:
 \rgs
 
-\rgi Blinding:
-\rgs
-
 Scope of inference:
 \rgs
 
-Generalizability:
+\rgi Generalizability:
 \rgs
 
-Causation:
+\rgi Causation:
 \rgs
 
 #### Notes {-}
