@@ -8,8 +8,8 @@
 
 * Stat 216 Course_Tour
 * Instructor bio
-* 1.2.1_1.2.2
-* 1.2.3_1.2.4_1.2.5
+* 1.2.1and1.2.2
+* 1.2.3to1.2.5
 
 \setstretch{1.25}
 
@@ -18,7 +18,7 @@
 Data:
 \rgs
 
-Summary statistic:
+Sample size:
 \rgs
 
 Case/Observational unit:
@@ -42,8 +42,10 @@ Variable:
 \rgi \rgi Examples of continuous variables using the `County` data: 
 \rgs
 
-Example of a number which is NOT a numerical variable: 
+Example of a number which is NOT a numerical (quantitative) variable: 
 \rgs
+
+\newpage
 
 Categorical variable:
 \rgs
@@ -66,6 +68,9 @@ Categorical variable:
 Data frame:
 \rgs
 
+Summary statistics:
+\rgs
+
 Scatterplot:
 \rgs
 	
@@ -75,7 +80,7 @@ Scatterplot:
 
 \rgi Negative association:   
 
-Association or Dependent variables:
+Associated or Dependent variables:
 \rgs
 
 Independent variables:
@@ -90,11 +95,13 @@ Response variable:
 Observational study:
 \rgs
 
-Experiment:
+Randomized Experiment:
 \rgs
 
 Placebo:
 \rgs
+
+\newpage
 
 #### Notes {-}
 
@@ -133,7 +140,7 @@ True or False: Observational studies can show a naturally occurring association 
 \rgs
 
 
-4.	Is there a clear explanatory and response variable?  If so, name the variable in each role and determine the type of variable (discrete, continuous, nominal, or ordinal).
+4.	Is there a clear explanatory and response variable?  If so, name the variable in each role and determine the type of variable (categorical or quantitative).
 \rgs
 \rgs
 
@@ -143,23 +150,21 @@ True or False: Observational studies can show a naturally occurring association 
 \rgs
 
 
-6.	Is this an example of an observational study or an experiment?  How do you know?
+6.	Is this an example of an observational study or a randomized experiment?  How do you know?
 \rgs
 \rgs
 
-
+\newpage
 
 7.	Consider Tables 1.1 and 1.2.  Which table is more helpful in answering the research question?  Justify your answer.
 \rgs
 \rgs
 
 
-8.	Describe in words what is shown in Figure 1.1.  Specifically, compare the proportion of patients who had a stroke between the treatment and control groups after 30 days as well as after 365 days.
+8.	Describe in words what is shown in Figure 1.2.  Specifically, compare the proportion of patients who had a stroke between the treatment and control groups after 30 days as well as after 365 days.
 \rgs
 \rgs
 
-
-\newpage
 
 9.	Given the notion that the larger the difference between the two groups (for a given sample size), the less believable it is that the difference was due to chance, which measurement period (30 days or 365 days) provide stronger evidence that there is an association between stents and strokes, or that the differences are not due to random chance?
 \rgs
@@ -171,13 +176,15 @@ True or False: Observational studies can show a naturally occurring association 
 \rgs
 
 11.	This study reported finding evidence that stents *increase* the risk of stroke.  This conclusion implies a causal link between stents and an increased risk of stroke.  Is that conclusion valid?  Justify your answer.
+\rgs
+\rgs
 
 
-### Section 1.3 (Sampling principles and strategies) {-}
+### Section 2.1 (Sampling principles and strategies) {-}
 
 **Videos**  
 
-* 1.3
+* 2.1
 
 \setstretch{1.25}
 
@@ -189,8 +196,16 @@ True or False: Observational studies can show a naturally occurring association 
 Sample:
 \rgs
 
+Statistic:
+\rgs
+
+Parameter:
+\rgs
+
 Anecdotal evidence:
 \rgs
+
+\newpage
 
 Bias:
 \rgs
@@ -218,14 +233,14 @@ Representative:
 
 #### Notes {-}
 
-Ideally, how should we sample cases from our target population?  Using what sampling method? 
+Ideally, how should we sample cases from our target population?  What sampling method should be used? 
 \rgs
 
 ##### Notes on types of sampling bias {-}
 
 * Someone must first be _chosen_ to be in a study and refuse to participate in order to have **non-response bias**.
 
-* There must be a valid reason for someone to lie or be untruthful to justify saying **response bias** is present.  Yes, anyone could lie at any time to any question.  Response bias is when those lies are predictable and systematic based on outside influences.
+* There must be a valid reason for someone to lie or be untruthful to justify saying **response bias** is present.  Yes, anyone could lie at any time to any question.  Response bias is when those lies are *predictable and systematic* based on outside influences.
 \rgs
 
 
