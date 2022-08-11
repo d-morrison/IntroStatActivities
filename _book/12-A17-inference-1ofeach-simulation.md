@@ -25,7 +25,7 @@ In today's activity, we will use simulation-based methods to analyze the associa
 
 * Difference in means
 
-To review these concepts, see Chapter 21 in the textbook.
+To review these concepts, see Chapter 19 in the textbook.
 
 ### Behavior and Performance
 

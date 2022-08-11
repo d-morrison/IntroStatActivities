@@ -27,7 +27,7 @@ In today's activity, we will use theory-based methods to analyze the association
 
 * Normality
 
-To review these concepts, see Chapter 21 in the textbook.
+To review these concepts, see Chapter 19 in the textbook.
 
 
 ### The triple crown 
