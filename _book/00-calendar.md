@@ -1,4 +1,4 @@
-# Fall 2022 Calendar of In-Class Activities Flipped {-}
+# Fall 2022 Calendar of In-Class Activities {-}
 
 
 This calendar only lists the in-class activities, RStudio labs and exams each week. For required readings and videos as well as due dates for assignments, refer to the calendar at:  

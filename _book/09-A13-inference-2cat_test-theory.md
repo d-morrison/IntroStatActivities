@@ -61,14 +61,12 @@ injury %>% group_by(Helmet) %>% count(Outcome)
 #> 4 Yes    No Head Injury   656
 ```
 
-\newpage 
-
 1. Fill in the following two-way table using the R output.
 
 \begin{center}
 \begin{tabular}{|c|c|c|c|}\hline
 & \multicolumn{2}{|c|}{\textbf{Helmet Use}} & \\ \hline
-\textbf{Head Injury} & Yes & No \\ \hline
+\textbf{Head Injury} & Yes & No & Total \\ \hline
 Head Injury & & & \\ 
  & & & \\ \hline
 No Head Injury & & & \\ 
@@ -110,7 +108,6 @@ Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an a
 6. Is the success-failure condition met for each group?  Show your work to verify your answer.
 
 \vspace{0.8in}
-\newpage
 
 To calculate the standardized statistic we use: 
 
