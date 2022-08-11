@@ -201,7 +201,7 @@ If we want to find a 90% confidence interval, what percentiles of the bootstrap 
 \rgs
 
 
-### Section 14.1 (Simulation-based test for a single proportion) {-}
+### Section 14.1 (Simulation-based test for $H_0:\pi = \pi_0$) {-}
 
 \setstretch{1}
 
@@ -280,7 +280,7 @@ True or false:  The sign in the alternative hypothesis is based off of the resea
 
 #### Example: Medical consultant {-}
 
-As a reminder from section 10.1, $$\hat{p} = 0.048$$.
+As a reminder from section 10.1, $\hat{p} = 0.048$.
 
 1. Write the null and alternative hypotheses in words.
 \rgs
@@ -318,7 +318,7 @@ As a reminder from section 10.1, $$\hat{p} = 0.048$$.
 9. To what population can we generalize the results of this study? Justify your answer.
 \rgs
 
-### Section 14.2 (Bootstrap for a single proportion) {-}
+### Section 14.2 (Bootstrap confidence interval for $\pi$) {-}
 
 \setstretch{1}
 

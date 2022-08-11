@@ -2,11 +2,14 @@
 
 ## Week 12 Reading Guide: Inference for a Difference in Two Means
 
-### Section 6.3 (Inference for a difference in two means) {-}
+### Chapter 19 (Inference for comparing two independent means) {-}
 
 **Videos**  
 
-* 6.3
+* 19.1
+* 19.2
+* 19.3Tests
+* 19.3Intervals
 
 \setstretch{1.25}
 #### Reminders from previous sections {-}
@@ -103,30 +106,30 @@ T-score: the name for a standardized statistic which is compared to a $t$-distri
 
 #### Notes {-}
 
-To create a **simulated null distribution** of differences in sample means, 
+To create a **simulated null distribution** of differences in independent sample means, 
 
-1. How many cards will you need and how will the cards be labeled?
+\rgi How many cards will you need and how will the cards be labeled?
 \rgs
 
-2. What do you do with the cards after labeling them?
+\rgi What do you do with the cards after labeling them?
 \rgs
 
-3. After shuffling, what value will be plotted on the simulated null distribution?
+\rgi After shuffling, what value will be plotted on the simulated null distribution?
 \rgs
 
-To create a **bootstrap distribution** of differences in sample means, 
+To create a **bootstrap distribution** of differences in independent sample means, 
 
-1. How many cards will you need and how will the cards be labeled?
+\rgi How many cards will you need and how will the cards be labeled?
 \rgs
 
-2. What do you do with the cards after labeling them?
+\rgi What do you do with the cards after labeling them?
 \rgs
 
-3. After shuffling, what value will be plotted on the bootstrap distribution?
+\rgi After shuffling, what value will be plotted on the bootstrap distribution?
 \rgs
 
 
-Conditions to use the CLT for a difference in two means:
+Conditions to use the CLT for a difference in independent sample means:
 
 \rgi Independence: 
 \rgs
@@ -154,7 +157,7 @@ $SE(\overline{x_1} - \overline{x_2})=$
 $T=$
 \rgs
 
-Confidence interval for a difference in means: 
+Confidence interval for a difference in independent sample means: 
 \rgs
 
 #### Notation {-}
@@ -183,7 +186,7 @@ $s_1$ represents
 $s_2$ represents 
 \rgs
 
-#### Example: Test scores {-}
+#### Example from section 19.1: Test scores {-}
 
 1.	What are the observational units?
 \rgs
@@ -224,7 +227,7 @@ $s_2$ represents
 \rgs
 \rgs
 
-#### Example: ESC and heart attacks {-}
+#### Example from section 19.2: ESC and heart attacks {-}
 
 1.	What is the research question?
 \rgs
@@ -256,7 +259,7 @@ $s_2$ represents
 \rgs
 \rgs
 
-#### Example: NC births {-}
+#### Example from section 19.3: North Carolina births {-}
 
 1. What is the research question?
 \rgs

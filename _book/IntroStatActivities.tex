@@ -4767,25 +4767,6 @@ Lower p-values indicate (stronger or weaker?) evidence (for or against?) the nul
 General steps of a hypothesis test:
 \rgs
 
-Explain the differences between a one-sided and two-sided hypothesis test.
-\vspace{1mm}
-
-\rgi How will the research questions differ?
-\rgs
-
-\rgi How will the notation in the alternative hypothesis differ?
-\rgs
-
-\rgi How does the p-value calculation differ?
-\rgs
-
-How does the p-value in a two-sided test compare to the p-value in a one-sided test?
-\rgs
-
-Should the default in research be a one-sided or two-sided hypothesis test? Explain why.
-\rgs
-\rgs
-
 \hypertarget{example-from-section-9.1-martian-alphabet}{%
 \subsubsection*{Example from section 9.1: Martian alphabet}\label{example-from-section-9.1-martian-alphabet}}
 \addcontentsline{toc}{subsubsection}{Example from section 9.1: Martian alphabet}
@@ -4918,9 +4899,9 @@ If we want to find a 90\% confidence interval, what percentiles of the bootstrap
   \rgs
 \end{enumerate}
 
-\hypertarget{section-14.1-simulation-based-test-for-a-single-proportion}{%
-\subsection*{Section 14.1 (Simulation-based test for a single proportion)}\label{section-14.1-simulation-based-test-for-a-single-proportion}}
-\addcontentsline{toc}{subsection}{Section 14.1 (Simulation-based test for a single proportion)}
+\hypertarget{section-14.1-simulation-based-test-for-h_0pi-pi_0}{%
+\subsection*{\texorpdfstring{Section 14.1 (Simulation-based test for \(H_0:\pi = \pi_0\))}{Section 14.1 (Simulation-based test for H\_0:\textbackslash pi = \textbackslash pi\_0)}}\label{section-14.1-simulation-based-test-for-h_0pi-pi_0}}
+\addcontentsline{toc}{subsection}{Section 14.1 (Simulation-based test for \(H_0:\pi = \pi_0\))}
 
 \setstretch{1}
 
@@ -5015,7 +4996,7 @@ True or false: The sign in the alternative hypothesis is based off of the resear
 \subsubsection*{Example: Medical consultant}\label{example-medical-consultant-1}}
 \addcontentsline{toc}{subsubsection}{Example: Medical consultant}
 
-As a reminder from section 10.1, \[\hat{p} = 0.048\].
+As a reminder from section 10.1, \(\hat{p} = 0.048\).
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5055,9 +5036,9 @@ As a reminder from section 10.1, \[\hat{p} = 0.048\].
   \rgs
 \end{enumerate}
 
-\hypertarget{section-14.2-bootstrap-for-a-single-proportion}{%
-\subsection*{Section 14.2 (Bootstrap for a single proportion)}\label{section-14.2-bootstrap-for-a-single-proportion}}
-\addcontentsline{toc}{subsection}{Section 14.2 (Bootstrap for a single proportion)}
+\hypertarget{section-14.2-bootstrap-confidence-interval-for-pi}{%
+\subsection*{\texorpdfstring{Section 14.2 (Bootstrap confidence interval for \(\pi\))}{Section 14.2 (Bootstrap confidence interval for \textbackslash pi)}}\label{section-14.2-bootstrap-confidence-interval-for-pi}}
+\addcontentsline{toc}{subsection}{Section 14.2 (Bootstrap confidence interval for \(\pi\))}
 
 \setstretch{1}
 
@@ -6027,15 +6008,9 @@ Use this space to summarize your thoughts and take additional notes on today's a
 \hypertarget{week-7-reading-guide-categorical-inference}{%
 \section{Week 7 Reading Guide: Categorical Inference}\label{week-7-reading-guide-categorical-inference}}
 
-\hypertarget{section-5.1-foundations-of-inference-hypothesis-tests}{%
-\subsection*{Section 5.1 (Foundations of inference: Hypothesis tests)}\label{section-5.1-foundations-of-inference-hypothesis-tests}}
-\addcontentsline{toc}{subsection}{Section 5.1 (Foundations of inference: Hypothesis tests)}
-
-Review section 5.1.2, specifically the notes about the theory-based approach and the Central Limit Theorem.
-
-\hypertarget{section-5.2-the-normal-distribution}{%
-\subsection*{Section 5.2 (The normal distribution)}\label{section-5.2-the-normal-distribution}}
-\addcontentsline{toc}{subsection}{Section 5.2 (The normal distribution)}
+\hypertarget{chapter-11-inference-with-mathematical-models}{%
+\subsection*{Chapter 11 (Inference with mathematical models)}\label{chapter-11-inference-with-mathematical-models}}
+\addcontentsline{toc}{subsection}{Chapter 11 (Inference with mathematical models)}
 
 \setstretch{1}
 
@@ -6044,14 +6019,80 @@ Review section 5.1.2, specifically the notes about the theory-based approach and
 \begin{itemize}
 \tightlist
 \item
-  5.2
+  Chapter11
 \end{itemize}
 
 \setstretch{1.25}
 
+\hypertarget{reminders-from-previous-sections-4}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-4}}
+\addcontentsline{toc}{subsubsection}{Reminders from previous sections}
+
+\(n_1\)= sample size of group 1
+
+\(n_2\) = sample size of group 2
+
+\(\overline{x}\) = sample mean
+
+\(s\) = sample standard deviation
+
+\(\mu\) = population mean
+
+\(\sigma\) = population standard deviation
+
+General steps of a hypothesis test:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Frame the research question in terms of hypotheses.
+\item
+  Collect and summarize data using a test statistic.
+\item
+  Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
+\item
+  Compare the observed test statistic to the null distribution to calculate a p-value.
+\item
+  Make a conclusion based on the p-value and write the conclusion in context.
+\end{enumerate}
+
+Parameter: a value summarizing a variable(s) for a population.
+
+Statistic: a value summarizing a variable(s) for a sample.
+
+Hypothesis test: a process to determine how strong the evidence of an effect is. Also called a `significance test'.
+
+Simulation-based method: Simulate lots of samples of size \(n\) under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
+
+Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
+
+Null hypothesis (\(H_0\)): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is \textbf{wrong}.
+
+Alternative hypothesis (\(H_A\)): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is \textbf{correct}.
+
+Null value: the value of the parameter when we assume the null hypothesis is true (labeled as \(parameter_0\)).
+
+P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true.
+
+\(\implies\) Lower the p-value the stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis.
+
+Significance level (\(\alpha\)): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
+
+\rgi Common levels of \(\alpha\) include 0.01, 0.05, and 0.10.
+
+Statistically significant: results are considered statistically significant if the p-value is below the significance level.
+
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter. Also called `estimation'.
+
 \hypertarget{vocabulary-12}{%
 \subsubsection*{Vocabulary}\label{vocabulary-12}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
+
+Central Limit Theorem:
+\rgs
+
+Sampling distribution:
+\rgs
 
 Normal distribution (Also known as: normal curve, normal model, Gaussian distribution):
 \rgs
@@ -6074,9 +6115,26 @@ Z-score:
 68-95-99.7 rule:
 \rgs
 
+Standard error of a statistic:
+\rgs
+
+Standard deviation of a statistic:
+\rgs
+
+Margin of error:
+\rgs
+
 \hypertarget{notes-17}{%
 \subsubsection*{Notes}\label{notes-17}}
 \addcontentsline{toc}{subsubsection}{Notes}
+
+The two general conditions for the sampling distribution for a sample proportion (or difference in sample proportions) to be approximately normally distributed are:
+
+\rgi 1)
+\rgs
+
+\rgi 2)
+\rgs
 
 Interpretation of a Z-score:
 \rgs
@@ -6094,11 +6152,32 @@ Approximately what percent of a normal distribution is in the interval
 \rgi (mean -- 3\(\times\)(standard deviation), mean + 3\(\times\)(standard deviation)):
 \rgs
 
+Given a mean and standard deviation, what function in R would help us find the percent of the normal distribution above (or below) a specific value?
+\rgs
+
+Given a mean and standard deviation, what function in R would help us find the value at a given percentile?
+\rgs
+
+How is the standard deviation of a statistic (\(SD(statistic)\)) different from the standard error of a statistic (\(SE(statistic)\))?
+\rgs
+
+How is the standard deviation of a statistic (\(SD(statistic)\)) different from the standard deviation of a sample (\(s\))?
+\rgs
+
 \hypertarget{formulas}{%
 \subsubsection*{Formulas}\label{formulas}}
 \addcontentsline{toc}{subsubsection}{Formulas}
 
 Z =
+\rgs
+
+\(SD(\hat{p})\) =
+\rgs
+
+General form of a theory-based confidence interval =
+\rgs
+
+General form for margin of error =
 \rgs
 
 \hypertarget{r-coding}{%
@@ -6185,9 +6264,9 @@ Changing to \texttt{lower.tail\ =\ FALSE} will give the value which has \texttt{
 
 We would recommend you work through each of the examples in Section 5.2.4 using R.
 
-\hypertarget{section-5.3.4-theory-based-inferential-methods-for-pi}{%
-\subsection*{\texorpdfstring{Section 5.3.4 (Theory-based inferential methods for \(\pi\))}{Section 5.3.4 (Theory-based inferential methods for \textbackslash pi)}}\label{section-5.3.4-theory-based-inferential-methods-for-pi}}
-\addcontentsline{toc}{subsection}{Section 5.3.4 (Theory-based inferential methods for \(\pi\))}
+\hypertarget{section-14.3-theory-based-inferential-methods-for-pi}{%
+\subsection*{\texorpdfstring{Section 14.3 (Theory-based inferential methods for \(\pi\))}{Section 14.3 (Theory-based inferential methods for \textbackslash pi)}}\label{section-14.3-theory-based-inferential-methods-for-pi}}
+\addcontentsline{toc}{subsection}{Section 14.3 (Theory-based inferential methods for \(\pi\))}
 
 \setstretch{1}
 
@@ -6196,7 +6275,9 @@ We would recommend you work through each of the examples in Section 5.2.4 using 
 \begin{itemize}
 \tightlist
 \item
-  5.3TheoryInf
+  14.3TheoryTests
+\item
+  14.3TheoryIntervals
 \end{itemize}
 
 \setstretch{1.25}
@@ -6205,8 +6286,8 @@ We would recommend you work through each of the examples in Section 5.2.4 using 
 \subsubsection*{Vocabulary}\label{vocabulary-13}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
-\hypertarget{reminders-from-previous-sections-4}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-4}}
+\hypertarget{reminders-from-previous-sections-5}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-5}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n\) = sample size
@@ -6273,6 +6354,9 @@ Margin of error: the value that is added to and subtracted from the sample stati
 \subsubsection*{Vocabulary}\label{vocabulary-14}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
+Null standard error:
+\rgs
+
 Standardized statistic:
 \rgs
 
@@ -6336,24 +6420,6 @@ Theory-based confidence interval for a sample proportion:
 Margin of error of a confidence interval for a sample proportion:
 \rgs
 
-\hypertarget{example-organ-donations}{%
-\subsubsection*{Example: Organ donations}\label{example-organ-donations}}
-\addcontentsline{toc}{subsubsection}{Example: Organ donations}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  What is the sample statistic presented in this example? What notation would be used to represent this value?
-  \rgs
-\item
-  What is the sample size in this example?
-  \rgs
-\item
-  Are the conditions met to use theoretical methods to analyze these data? Show your calculations to justify your answer.
-  \rgs
-  \rgs
-\end{enumerate}
-
 \hypertarget{example-payday-loans}{%
 \subsubsection*{Example: Payday loans}\label{example-payday-loans}}
 \addcontentsline{toc}{subsubsection}{Example: Payday loans}
@@ -6383,7 +6449,7 @@ Margin of error of a confidence interval for a sample proportion:
   What is the sample statistic presented in this example? What notation would be used to represent this value?
   \rgs
 \item
-  Calculate the standardized sample proportion.
+  Calculate the standardized sample proportion (standardized statistic).
   \rgs
   \rgs
 \item
@@ -6392,9 +6458,6 @@ Margin of error of a confidence interval for a sample proportion:
   \rgs
 \item
   What was the p-value of the test?
-  \rgs
-\item
-  At the 5\% significance level, what decision would you make?
   \rgs
 \item
   What conclusion should the researcher make?
@@ -6420,13 +6483,13 @@ Margin of error of a confidence interval for a sample proportion:
   \rgs
   \rgs
 \item
-  Are the results in this example statistically significant? Justify your answer.
+  Does the 95\% confidence interval support the same conclusion as the p-value from the hypothesis test? Justify your answer.
   \rgs
 \end{enumerate}
 
-\hypertarget{section-5.4-errors-power-and-practical-importance}{%
-\subsection*{Section 5.4 (Errors, power, and practical importance)}\label{section-5.4-errors-power-and-practical-importance}}
-\addcontentsline{toc}{subsection}{Section 5.4 (Errors, power, and practical importance)}
+\hypertarget{chapter-12-errors-power-and-practical-importance}{%
+\subsection*{Chapter 12 (Errors, power, and practical importance)}\label{chapter-12-errors-power-and-practical-importance}}
+\addcontentsline{toc}{subsection}{Chapter 12 (Errors, power, and practical importance)}
 
 \setstretch{1}
 
@@ -6435,23 +6498,14 @@ Margin of error of a confidence interval for a sample proportion:
 \begin{itemize}
 \tightlist
 \item
-  5.4
+  Chapter12
 \end{itemize}
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-5}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-5}}
+\hypertarget{reminders-from-previous-sections-6}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-6}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
-
-Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance.
-
-\begin{itemize}
-\item
-  If p-value \(\leq \alpha\), then reject \(H_0\).
-\item
-  If p-value \(> \alpha\), then fail to reject \(H_0\).
-\end{itemize}
 
 Significance level (\(\alpha\)): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
 
@@ -6463,6 +6517,17 @@ Statistically significant: results are considered statistically significant if t
 \subsubsection*{Vocabulary}\label{vocabulary-15}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
+Decision:
+
+\rgs
+
+\begin{itemize}
+\item
+  If the p-value is small (less than or equal to the significance level), the decision will be to \_\_\_\_\_\_\_\_\_\_ the null hypothesis.
+\item
+  If the p-value is large (greater than the significance level), the decision will be to \_\_\_\_\_\_\_\_\_\_ the null hypothesis.
+\end{itemize}
+
 Type 1 error:
 \rgs
 
@@ -6470,6 +6535,12 @@ Type 2 error:
 \rgs
 
 Confirmation bias:
+\rgs
+
+One-sided hypothesis tests:
+\rgs
+
+Two-sided hypothesis tests:
 \rgs
 
 Power:
@@ -6504,6 +6575,25 @@ How are the significance level and type I error rate related?
 \rgs
 
 How are the significance level and type II error rate related?
+\rgs
+
+Explain the differences between a one-sided and two-sided hypothesis test.
+\vspace{1mm}
+
+\rgi How will the research questions differ?
+\rgs
+
+\rgi How will the notation in the alternative hypothesis differ?
+\rgs
+
+\rgi How does the p-value calculation differ?
+\rgs
+
+How does the p-value in a two-sided test compare to the p-value in a one-sided test?
+\rgs
+
+Should the default in research be a one-sided or two-sided hypothesis test? Explain why.
+\rgs
 \rgs
 
 After collecting data, a researcher decides to change from a two-sided test to a one-sided test. Why is this a bad idea?
@@ -6558,7 +6648,7 @@ Results are unlikely to be statistically significant (but may be practically imp
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  In the Martian Alphabet study in the textbook and presented as an example in Reading Guide 5.1,
+  In the Martian Alphabet study section 9.1 of the textbook,
 \end{enumerate}
 
 \rgi a. What was the p-value of the test?
@@ -6579,7 +6669,7 @@ Results are unlikely to be statistically significant (but may be practically imp
 \setcounter{enumi}{1}
 \tightlist
 \item
-  In the Medical Consultant study in the textbook and presented as an example in the reading guide for sections 5.3.1--5.3.3,
+  In the Medical Consultant study in section 10.1 of the textbook,
 \end{enumerate}
 
 \rgi a. What was the p-value of the test?
@@ -6600,7 +6690,7 @@ Results are unlikely to be statistically significant (but may be practically imp
 \setcounter{enumi}{2}
 \tightlist
 \item
-  In the Payday Loans study in the textbook and presented as an example in the reading guide for section 5.3.4,
+  In the Payday Loans study section 14.3 of the textbook,
 \end{enumerate}
 
 \rgi a. What was the p-value of the test?
@@ -7452,24 +7542,26 @@ Now let's investigate how changes in different factors influence the power of a 
 \hypertarget{week-8-reading-guide-hypothesis-testing-for-a-difference-in-proportions}{%
 \section{Week 8 Reading Guide: Hypothesis Testing for a Difference in Proportions}\label{week-8-reading-guide-hypothesis-testing-for-a-difference-in-proportions}}
 
-\hypertarget{section-5.5-simulation-based-inference-for-a-difference-in-proportions}{%
-\subsection*{Section 5.5 (Simulation-based inference for a difference in proportions)}\label{section-5.5-simulation-based-inference-for-a-difference-in-proportions}}
-\addcontentsline{toc}{subsection}{Section 5.5 (Simulation-based inference for a difference in proportions)}
+\hypertarget{section-15.1-randomization-test-for-h_0-pi_1---pi_2-0-and-section-15.2-bootstrap-confidence-interval-for-pi_1---pi_2}{%
+\subsection*{\texorpdfstring{Section 15.1 (Randomization test for \(H_0: \pi_1 - \pi_2 = 0\)) and Section 15.2 (Bootstrap confidence interval for \(\pi_1 - \pi_2\))}{Section 15.1 (Randomization test for H\_0: \textbackslash pi\_1 - \textbackslash pi\_2 = 0) and Section 15.2 (Bootstrap confidence interval for \textbackslash pi\_1 - \textbackslash pi\_2)}}\label{section-15.1-randomization-test-for-h_0-pi_1---pi_2-0-and-section-15.2-bootstrap-confidence-interval-for-pi_1---pi_2}}
+\addcontentsline{toc}{subsection}{Section 15.1 (Randomization test for \(H_0: \pi_1 - \pi_2 = 0\)) and Section 15.2 (Bootstrap confidence interval for \(\pi_1 - \pi_2\))}
 
-You may skip section 5.5.3, which will be covered in the next module, as well as the material on relative risk in section 5.5.1, which will be covered in module 14.
+You may skip example 15.1.4, which discussed hypothesis testing for \textbf{relative risk}. We will discuss relative risk in Week 14.
 
 \textbf{Videos}
 
 \begin{itemize}
 \tightlist
 \item
-  5.5SimInf
+  15.1
+\item
+  15.2
 \end{itemize}
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-6}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-6}}
+\hypertarget{reminders-from-previous-sections-7}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-7}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n\) = sample size
@@ -7553,19 +7645,23 @@ Randomization test:
 \subsubsection*{Notes}\label{notes-20}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
-In a randomization test involving two categorical variables, how many cards will you need and how will the cards be labeled?
+In a randomization test involving two categorical variables,
+
+\rgi how many cards will you need and how will the cards be labeled?
 \rgs
 
-Why, in the randomization test, are the cards all shuffled together and randomly dealt into two new groups?
+\rgi Why, in the randomization test, are the cards all shuffled together and randomly dealt into two new groups?
 \rgs
 
-After shuffling, how many cards are dealt into each pile?
+\rgi After shuffling, how many cards are dealt into each pile?
 \rgs
 
-To create a single bootstrap resample for two categorical variables, how many cards will you need and how will the cards be labeled?
+To create a single bootstrap resample for two categorical variables,
+
+\rgi how many cards will you need and how will the cards be labeled?
 \rgs
 
-What is done with the cards once they are labeled?
+\rgi What is done with the cards once they are labeled?
 \rgs
 
 Interpretations of confidence level must include:
@@ -7716,9 +7812,9 @@ Population proportion of group 2:
   \rgs
 \end{enumerate}
 
-\hypertarget{example-cpr-and-blood-thinner}{%
-\subsubsection*{Example: CPR and blood thinner}\label{example-cpr-and-blood-thinner}}
-\addcontentsline{toc}{subsubsection}{Example: CPR and blood thinner}
+\hypertarget{example-cpr-and-blood-thinners}{%
+\subsubsection*{Example: CPR and blood thinners}\label{example-cpr-and-blood-thinners}}
+\addcontentsline{toc}{subsubsection}{Example: CPR and blood thinners}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7786,11 +7882,11 @@ Population proportion of group 2:
   What was the 90\% confidence interval?
   \rgs
 \item
-  Interpret the confidence \emph{interval} in the context of the problem.
+  Interpret the confidence \emph{interval} ((-0.03, 0.28)) in the context of the problem.
   \rgs
   \rgs
 \item
-  Interpret the confidence \emph{level} in the context of the problem.
+  Interpret the confidence \emph{level} (90\%) in the context of the problem.
   \rgs
   \rgs
 \item
@@ -8765,12 +8861,11 @@ Fill in the missing values/names in the R script file in the two\_proportion\_bo
 \hypertarget{inference-for-two-categorical-variables-theory-based-methods}{%
 \chapter{Inference for Two Categorical Variables: Theory-based Methods}\label{inference-for-two-categorical-variables-theory-based-methods}}
 
-\hypertarget{week-9-reading-guide-hypothesis-testing-for-a-difference-in-proportions}{%
-\section{Week 9 Reading Guide: Hypothesis Testing for a Difference in Proportions}\label{week-9-reading-guide-hypothesis-testing-for-a-difference-in-proportions}}
+\hypertarget{week-9-reading-guide-theory-based-inference-for-a-difference-in-proportions}{%
+\section{Week 9 Reading Guide: Theory-based Inference for a Difference in Proportions}\label{week-9-reading-guide-theory-based-inference-for-a-difference-in-proportions}}
 
-\hypertarget{section-5.5.3-theory-based-methods-for-a-difference-in-proportions}{%
-\subsection*{Section 5.5.3 (Theory-based methods for a difference in proportions)}\label{section-5.5.3-theory-based-methods-for-a-difference-in-proportions}}
-\addcontentsline{toc}{subsection}{Section 5.5.3 (Theory-based methods for a difference in proportions)}
+\hypertarget{section-15.3-theory-based-inferential-methods-for-pi_1---pi_2}{%
+\subsection{\texorpdfstring{Section 15.3 (Theory-based inferential methods for \(\pi_1 - \pi_2\))}{Section 15.3 (Theory-based inferential methods for \textbackslash pi\_1 - \textbackslash pi\_2)}}\label{section-15.3-theory-based-inferential-methods-for-pi_1---pi_2}}
 
 \setstretch{1}
 
@@ -8779,13 +8874,15 @@ Fill in the missing values/names in the R script file in the two\_proportion\_bo
 \begin{itemize}
 \tightlist
 \item
-  5.5TheoryInf
+  15.3Tests
+\item
+  15.3Intervals
 \end{itemize}
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-7}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-7}}
+\hypertarget{reminders-from-previous-sections-8}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-8}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n\) = sample size
@@ -8856,7 +8953,7 @@ Confidence level: how confident we are that the confidence interval will capture
 \subsubsection*{Notes}\label{notes-21}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
-Conditions for the CLT to apply for a difference in proportions
+Conditions for the Central Limit Theorem to apply for a difference in proportions
 
 \rgi Independence:
 \rgs
@@ -8881,7 +8978,7 @@ Null standard error of the difference in sample proportions:
 \(SE_0(\hat{p_1} - \hat{p_2})=\)
 \rgs
 
-Standardized statistic/standardized difference in sample proportions:
+Standardized statistic (or standardized difference in sample proportions):
 \(Z=\)
 \rgs
 
@@ -8902,9 +8999,46 @@ Margin of error of a confidence interval for a difference in proportions:
 Overall (pooled) proportion of successes:
 \rgs
 
-\hypertarget{example-cpr-and-blood-thinner-1}{%
-\subsubsection*{Example: CPR and blood thinner}\label{example-cpr-and-blood-thinner-1}}
-\addcontentsline{toc}{subsubsection}{Example: CPR and blood thinner}
+\hypertarget{example-cpr-and-blood-thinners-1}{%
+\subsubsection*{Example: CPR and blood thinners}\label{example-cpr-and-blood-thinners-1}}
+\addcontentsline{toc}{subsubsection}{Example: CPR and blood thinners}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  What are the observational units?
+  \rgs
+\item
+  What type of study design was used? Justify your answer.
+  \rgs
+\item
+  What is the appropriate scope of inference for these data?
+  \rgs
+\item
+  What is the sample difference in proportions presented in this example? What notation would be used to represent this value?
+  \rgs
+\item
+  What is the parameter (using a difference in proportions) representing in the context of this problem? What notation would be used to represent this parameter?
+  \rgs
+\item
+  Is it valid to use theory-based methods to analyze these data?
+  \rgs
+  \rgs
+\item
+  Calculate the standard error of the difference in sample proportions without assuming a null hypothesis.
+  \rgs
+  \rgs
+\item
+  Calculate the 90\% confidence interval using \(z^*=1.65\) as the multiplier.
+  \rgs
+  \rgs
+\end{enumerate}
+
+\emph{Note: A confidence interval interpretation and confidence level interpretation for this example can be found in the Reading Guide solutions for Sections 15.1 and 15.2.}
+
+\hypertarget{example-mammograms}{%
+\subsubsection*{Example: Mammograms}\label{example-mammograms}}
+\addcontentsline{toc}{subsubsection}{Example: Mammograms}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8950,24 +9084,21 @@ Overall (pooled) proportion of successes:
   Interpret the standardized statistic in the context of the problem.
   \rgs
   \rgs
-\end{enumerate}
-
-\emph{Note: a p-value, p-value interpretation, decision, and conclusion for this example can be found in the Reading Guide solutions for Sections 5.5.1--5.5.2.}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
 \item
-  Calculate the standard error of the difference in sample proportions without assuming a null hypothesis.
+  Explain how the p-value for this test was calculated.
+  \rgs
+\item
+  Interpret the p-value in the context of the study.
   \rgs
   \rgs
 \item
-  Calculate the 90\% confidence interval using \(z^*=1.65\) as the multiplier.
+  At the 10\% significance level, what decision should be made?
+  \rgs
+\item
+  Write a conclusion for the research question.
   \rgs
   \rgs
 \end{enumerate}
-
-\emph{Note: A confidence interval interpretation and confidence level interpretation for this example can be found in the Reading Guide solutions for Sections 5.5.1--5.5.2.}
 
 \newpage
 
@@ -9908,22 +10039,28 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the appropri
 \hypertarget{week-11-reading-guide-inference-for-a-single-mean-or-paired-mean-difference}{%
 \section{Week 11 Reading Guide: Inference for a Single Mean or Paired Mean Difference}\label{week-11-reading-guide-inference-for-a-single-mean-or-paired-mean-difference}}
 
-\hypertarget{section-6.1-inference-for-one-mean}{%
-\subsection*{Section 6.1 (Inference for one mean)}\label{section-6.1-inference-for-one-mean}}
-\addcontentsline{toc}{subsection}{Section 6.1 (Inference for one mean)}
+\hypertarget{chapter-17-inference-for-a-single-mean}{%
+\subsection*{Chapter 17 (Inference for a single mean)}\label{chapter-17-inference-for-a-single-mean}}
+\addcontentsline{toc}{subsection}{Chapter 17 (Inference for a single mean)}
 
 \textbf{Videos}
 
 \begin{itemize}
 \tightlist
 \item
-  6.1
+  17.1
+\item
+  17.2
+\item
+  17.3Tests
+\item
+  17.4Intervals
 \end{itemize}
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-8}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-8}}
+\hypertarget{reminders-from-previous-sections-9}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-9}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n\) = sample size
@@ -10015,6 +10152,9 @@ Central Limit Theorem: For large sample sizes, the sampling distribution of a sa
 \subsubsection*{Vocabulary}\label{vocabulary-17}}
 \addcontentsline{toc}{subsubsection}{Vocabulary}
 
+Shifted bootstrap test:
+\rgs
+
 \(t\)-distribution:
 \rgs 
 
@@ -10035,13 +10175,18 @@ T-score:
 \subsubsection*{Notes}\label{notes-22}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
-To create a bootstrap distribution test, how many cards will you need and how will the cards be labeled?
+To create a shifted bootstrap distribution test,
+
+\rgi How many cards will you need and how will the cards be labeled?
 \rgs 
 
-What do you do with the cards after labeling them?
+\rgi Why are the data values shifted prior to being written on the cards?
+\rgs
+
+\rgi What do you do with the cards after labeling them?
 \rgs 
 
-After resampling, what value will be plotted on the bootstrap distribution?
+\rgi After resampling, what value will be plotted on the bootstrap distribution?
 \rgs 
 
 True or false: Bootstrapping can only be used if the sample size is small.
@@ -10077,7 +10222,7 @@ Conditions to use the CLT for means:
 \(T=\)
 \rgs 
 
-Confidence interval for a mean:
+Confidence interval for a single mean:
 \rgs 
 
 \hypertarget{notation-2}{%
@@ -10087,9 +10232,9 @@ Confidence interval for a mean:
 \(\mu_0\) represents
 \rgs 
 
-\hypertarget{example-edinburgh-rentals}{%
-\subsubsection*{Example: Edinburgh rentals}\label{example-edinburgh-rentals}}
-\addcontentsline{toc}{subsubsection}{Example: Edinburgh rentals}
+\hypertarget{example-from-section-17.1-edinburgh-rentals}{%
+\subsubsection*{Example from section 17.1: Edinburgh rentals}\label{example-from-section-17.1-edinburgh-rentals}}
+\addcontentsline{toc}{subsubsection}{Example from section 17.1: Edinburgh rentals}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10113,7 +10258,7 @@ Confidence interval for a mean:
   \rgs 
   \rgs 
 \item
-  Based on Figure 6.3, give the confidence interval for the true mean for each of the following confidence levels.
+  Based on Figure 17.3, give the confidence interval for the true mean for each of the following confidence levels.
 \end{enumerate}
 
 \rgi 90\% confidence interval =
@@ -10128,18 +10273,69 @@ Confidence interval for a mean:
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{6}
+\tightlist
 \item
   Interpret your 99\% confidence interval in the context of the problem.
   \rgs 
   \rgs 
-\item
-  Use Figure 6.4 to determine a 90\% confidence interval for the true standard deviation for three bedroom flats in Edinburgh.
-  \rgs 
 \end{enumerate}
 
-\hypertarget{example-mercury-content-of-dolphin-muscle}{%
-\subsubsection*{Example: Mercury content of dolphin muscle}\label{example-mercury-content-of-dolphin-muscle}}
-\addcontentsline{toc}{subsubsection}{Example: Mercury content of dolphin muscle}
+\hypertarget{example-from-section-17.2-sleep-times-of-msu-students}{%
+\subsubsection*{Example from section 17.2: Sleep times of MSU students}\label{example-from-section-17.2-sleep-times-of-msu-students}}
+\addcontentsline{toc}{subsubsection}{Example from section 17.2: Sleep times of MSU students}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  What is the research question?
+  \rgs
+\item
+  What are the observational units?
+  \rgs
+\item
+  Can the results of this study be generalized to a larger population? Why or why not?
+  \rgs
+\item
+  What are the sample statistics presented in this example? What notation would be used to represent each value?
+  \rgs
+\item
+  What is the parameter representing in the context of this problem? What notation would be used to represent this parameter?
+  \rgs
+  \rgs
+\item
+  Write the null and the alternative hypotheses in words.
+  \rgs
+  \rgs
+\item
+  Write the null and the alternative hypotheses in notation.
+  \rgs
+\item
+  How could we use cards to simulate \textbf{one} shifted bootstrap resample \emph{which assumes the null hypothesis is true}? How many cards? What is written on the cards (be sure to include the amount and direction of the shift)? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs 
+  \rgs 
+  \rgs 
+\item
+  What was the p-value of the test?
+  \rgs
+\item
+  Interpret the p-value in the context of the problem.
+  \rgs
+  \rgs
+\item
+  At the 5\% significance level, what decision would you make? What type of error might that be?
+  \rgs
+\item
+  What conclusion should the researcher make?
+  \rgs
+  \rgs
+\item
+  Are the results in this example statistically significant? Justify your answer.
+  \rgs
+\end{enumerate}
+
+\hypertarget{example-from-section-17.3-mercury-content-of-dolphin-muscle}{%
+\subsubsection*{Example from section 17.3: Mercury content of dolphin muscle}\label{example-from-section-17.3-mercury-content-of-dolphin-muscle}}
+\addcontentsline{toc}{subsubsection}{Example from section 17.3: Mercury content of dolphin muscle}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10180,9 +10376,9 @@ Confidence interval for a mean:
   \rgs 
 \end{enumerate}
 
-\hypertarget{example-cherry-blossom-race}{%
-\subsubsection*{Example: Cherry Blossom Race}\label{example-cherry-blossom-race}}
-\addcontentsline{toc}{subsubsection}{Example: Cherry Blossom Race}
+\hypertarget{example-from-section-17.3-cherry-blossom-race}{%
+\subsubsection*{Example from section 17.3: Cherry Blossom Race}\label{example-from-section-17.3-cherry-blossom-race}}
+\addcontentsline{toc}{subsubsection}{Example from section 17.3: Cherry Blossom Race}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10243,9 +10439,9 @@ Confidence interval for a mean:
   \rgs
 \end{enumerate}
 
-\hypertarget{section-6.2-inference-for-paired-mean-difference}{%
-\subsection*{Section 6.2 (Inference for paired mean difference)}\label{section-6.2-inference-for-paired-mean-difference}}
-\addcontentsline{toc}{subsection}{Section 6.2 (Inference for paired mean difference)}
+\hypertarget{chapter-18-inference-for-paired-mean-difference}{%
+\subsection*{Chapter 18 (Inference for paired mean difference)}\label{chapter-18-inference-for-paired-mean-difference}}
+\addcontentsline{toc}{subsection}{Chapter 18 (Inference for paired mean difference)}
 
 \setstretch{1}
 
@@ -10254,7 +10450,11 @@ Confidence interval for a mean:
 \begin{itemize}
 \tightlist
 \item
-  6.2
+  Paired\_Data
+\item
+  18.1and18.2
+\item
+  18.3
 \end{itemize}
 
 \setstretch{1.25}
@@ -10334,9 +10534,9 @@ Confidence interval for a paired mean difference:
 \(\sigma_d=\)
 \rgs
 
-\hypertarget{example-tires}{%
-\subsubsection*{Example: Tires}\label{example-tires}}
-\addcontentsline{toc}{subsubsection}{Example: Tires}
+\hypertarget{example-from-section-18.1-tires}{%
+\subsubsection*{Example from section 18.1: Tires}\label{example-from-section-18.1-tires}}
+\addcontentsline{toc}{subsubsection}{Example from section 18.1: Tires}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -10357,7 +10557,7 @@ Confidence interval for a paired mean difference:
   Write the null and alternative hypotheses in appropriate notation.
   \rgs
 \item
-  How could we use cards to simulate \textbf{one} bootstrap resample \emph{which assumes the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
+  How could we use cards to simulate \textbf{one} shifted bootstrap resample \emph{which assumes the null hypothesis is true}? How many cards? What is written on the cards? What would we do with the cards? What would you record once you have a simulated sample?
   \rgs
   \rgs
   \rgs
@@ -10373,9 +10573,9 @@ Confidence interval for a paired mean difference:
   \rgs
 \end{enumerate}
 
-\hypertarget{example-college-textbook-prices}{%
-\subsubsection*{Example: College textbook prices}\label{example-college-textbook-prices}}
-\addcontentsline{toc}{subsubsection}{Example: College textbook prices}
+\hypertarget{example-from-sections-18.2-and-18.3-ucla-textbook-prices}{%
+\subsubsection*{Example from sections 18.2 and 18.3: UCLA textbook prices}\label{example-from-sections-18.2-and-18.3-ucla-textbook-prices}}
+\addcontentsline{toc}{subsubsection}{Example from sections 18.2 and 18.3: UCLA textbook prices}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -11429,22 +11629,28 @@ We will use the \texttt{paired\_bootstrap\_CI()} function in R (in the \texttt{c
 \hypertarget{week-12-reading-guide-inference-for-a-difference-in-two-means}{%
 \section{Week 12 Reading Guide: Inference for a Difference in Two Means}\label{week-12-reading-guide-inference-for-a-difference-in-two-means}}
 
-\hypertarget{section-6.3-inference-for-a-difference-in-two-means}{%
-\subsection*{Section 6.3 (Inference for a difference in two means)}\label{section-6.3-inference-for-a-difference-in-two-means}}
-\addcontentsline{toc}{subsection}{Section 6.3 (Inference for a difference in two means)}
+\hypertarget{chapter-19-inference-for-comparing-two-independent-means}{%
+\subsection*{Chapter 19 (Inference for comparing two independent means)}\label{chapter-19-inference-for-comparing-two-independent-means}}
+\addcontentsline{toc}{subsection}{Chapter 19 (Inference for comparing two independent means)}
 
 \textbf{Videos}
 
 \begin{itemize}
 \tightlist
 \item
-  6.3
+  19.1
+\item
+  19.2
+\item
+  19.3Tests
+\item
+  19.3Intervals
 \end{itemize}
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-9}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-9}}
+\hypertarget{reminders-from-previous-sections-10}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-10}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(n_1\)= sample size of group 1
@@ -11552,37 +11758,29 @@ T-score: the name for a standardized statistic which is compared to a \(t\)-dist
 \subsubsection*{Notes}\label{notes-24}}
 \addcontentsline{toc}{subsubsection}{Notes}
 
-To create a \textbf{simulated null distribution} of differences in sample means,
+To create a \textbf{simulated null distribution} of differences in independent sample means,
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  How many cards will you need and how will the cards be labeled?
-  \rgs
-\item
-  What do you do with the cards after labeling them?
-  \rgs
-\item
-  After shuffling, what value will be plotted on the simulated null distribution?
-  \rgs
-\end{enumerate}
+\rgi How many cards will you need and how will the cards be labeled?
+\rgs
 
-To create a \textbf{bootstrap distribution} of differences in sample means,
+\rgi What do you do with the cards after labeling them?
+\rgs
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  How many cards will you need and how will the cards be labeled?
-  \rgs
-\item
-  What do you do with the cards after labeling them?
-  \rgs
-\item
-  After shuffling, what value will be plotted on the bootstrap distribution?
-  \rgs
-\end{enumerate}
+\rgi After shuffling, what value will be plotted on the simulated null distribution?
+\rgs
 
-Conditions to use the CLT for a difference in two means:
+To create a \textbf{bootstrap distribution} of differences in independent sample means,
+
+\rgi How many cards will you need and how will the cards be labeled?
+\rgs
+
+\rgi What do you do with the cards after labeling them?
+\rgs
+
+\rgi After shuffling, what value will be plotted on the bootstrap distribution?
+\rgs
+
+Conditions to use the CLT for a difference in independent sample means:
 
 \rgi Independence:
 \rgs
@@ -11612,7 +11810,7 @@ True or false: A large p-value indicates that the null hypothesis is true.
 \(T=\)
 \rgs
 
-Confidence interval for a difference in means:
+Confidence interval for a difference in independent sample means:
 \rgs
 
 \hypertarget{notation-4}{%
@@ -11643,9 +11841,9 @@ Confidence interval for a difference in means:
 \(s_2\) represents
 \rgs
 
-\hypertarget{example-test-scores}{%
-\subsubsection*{Example: Test scores}\label{example-test-scores}}
-\addcontentsline{toc}{subsubsection}{Example: Test scores}
+\hypertarget{example-from-section-19.1-test-scores}{%
+\subsubsection*{Example from section 19.1: Test scores}\label{example-from-section-19.1-test-scores}}
+\addcontentsline{toc}{subsubsection}{Example from section 19.1: Test scores}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -11690,9 +11888,9 @@ Confidence interval for a difference in means:
   \rgs
 \end{enumerate}
 
-\hypertarget{example-esc-and-heart-attacks}{%
-\subsubsection*{Example: ESC and heart attacks}\label{example-esc-and-heart-attacks}}
-\addcontentsline{toc}{subsubsection}{Example: ESC and heart attacks}
+\hypertarget{example-from-section-19.2-esc-and-heart-attacks}{%
+\subsubsection*{Example from section 19.2: ESC and heart attacks}\label{example-from-section-19.2-esc-and-heart-attacks}}
+\addcontentsline{toc}{subsubsection}{Example from section 19.2: ESC and heart attacks}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -11728,9 +11926,9 @@ Confidence interval for a difference in means:
   \rgs
 \end{enumerate}
 
-\hypertarget{example-nc-births}{%
-\subsubsection*{Example: NC births}\label{example-nc-births}}
-\addcontentsline{toc}{subsubsection}{Example: NC births}
+\hypertarget{example-from-section-19.3-north-carolina-births}{%
+\subsubsection*{Example from section 19.3: North Carolina births}\label{example-from-section-19.3-north-carolina-births}}
+\addcontentsline{toc}{subsubsection}{Example from section 19.3: North Carolina births}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12490,22 +12688,28 @@ Enter the appropriate percentile value (as a decimal) for \texttt{xx} and degree
 \hypertarget{week-13-reading-guide-inference-for-slope-and-correlation}{%
 \section{Week 13 Reading Guide: Inference for Slope and Correlation}\label{week-13-reading-guide-inference-for-slope-and-correlation}}
 
-\hypertarget{sections-7.1-and-7.2-inference-for-regression-and-model-conditions}{%
-\subsection*{Sections 7.1 and 7.2 (Inference for regression and model conditions)}\label{sections-7.1-and-7.2-inference-for-regression-and-model-conditions}}
-\addcontentsline{toc}{subsection}{Sections 7.1 and 7.2 (Inference for regression and model conditions)}
+\hypertarget{chapter-21-inference-for-regression-and-model-conditions}{%
+\subsection*{Chapter 21 (Inference for regression and model conditions)}\label{chapter-21-inference-for-regression-and-model-conditions}}
+\addcontentsline{toc}{subsection}{Chapter 21 (Inference for regression and model conditions)}
 
 \textbf{Videos}
 
 \begin{itemize}
 \tightlist
 \item
-  7.1and7.2
+  21.2
+\item
+  21.3
+\item
+  21.4to21.5Tests
+\item
+  21.4to21.5Intervals
 \end{itemize}
 
 \setstretch{1.25}
 
-\hypertarget{reminders-from-previous-sections-10}{%
-\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-10}}
+\hypertarget{reminders-from-previous-sections-11}{%
+\subsubsection*{Reminders from previous sections}\label{reminders-from-previous-sections-11}}
 \addcontentsline{toc}{subsubsection}{Reminders from previous sections}
 
 \(\beta_0\): population \(y\)-intercept
@@ -12636,33 +12840,25 @@ T-score: the name for a standardized statistic which is compared to a \(t\)-dist
 
 To create a \textbf{simulated null distribution} of sample slopes or sample correlations,
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  How many cards will you need and how will the cards be labeled?
-  \rgs
-\item
-  What do you do with the cards after labeling them?
-  \rgs
-\item
-  After shuffling, what value will be plotted on the simulated null distribution?
-  \rgs
-\end{enumerate}
+\rgi How many cards will you need and how will the cards be labeled?
+\rgs
+
+\rgi What do you do with the cards after labeling them?
+\rgs
+
+\rgi After shuffling, what value will be plotted on the simulated null distribution?
+\rgs
 
 To create a \textbf{bootstrap distribution} of sample slopes or sample correlations,
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  How many cards will you need and how will the cards be labeled?
-  \rgs
-\item
-  What do you do with the cards after labeling them?
-  \rgs
-\item
-  After shuffling, what value will be plotted on the bootstrap distribution?
-  \rgs
-\end{enumerate}
+\rgi How many cards will you need and how will the cards be labeled?
+\rgs
+
+\rgi What do you do with the cards after labeling them?
+\rgs
+
+\rgi After shuffling, what value will be plotted on the bootstrap distribution?
+\rgs
 
 Conditions to use the CLT for testing slope (or correlation):
 
@@ -12709,9 +12905,9 @@ Where in the R output can \(SE(b_1)\) be found?
 Confidence interval:
 \rgs
 
-\hypertarget{example-crop-yields}{%
-\subsubsection*{Example: Crop yields}\label{example-crop-yields}}
-\addcontentsline{toc}{subsubsection}{Example: Crop yields}
+\hypertarget{example-from-sections-21.2-and-21.3-crop-yields}{%
+\subsubsection*{Example from sections 21.2 and 21.3: Crop yields}\label{example-from-sections-21.2-and-21.3-crop-yields}}
+\addcontentsline{toc}{subsubsection}{Example from sections 21.2 and 21.3: Crop yields}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12764,9 +12960,9 @@ Confidence interval:
   \rgs
 \end{enumerate}
 
-\hypertarget{example-midterm-elections-and-unemployment}{%
-\subsubsection*{Example: Midterm elections and unemployment}\label{example-midterm-elections-and-unemployment}}
-\addcontentsline{toc}{subsubsection}{Example: Midterm elections and unemployment}
+\hypertarget{example-from-section-21.4-midterm-elections-and-unemployment}{%
+\subsubsection*{Example from section 21.4: Midterm elections and unemployment}\label{example-from-section-21.4-midterm-elections-and-unemployment}}
+\addcontentsline{toc}{subsubsection}{Example from section 21.4: Midterm elections and unemployment}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -12800,7 +12996,7 @@ Confidence interval:
   Write the least squares regression line for these data in appropriate notation.
   \rgs
 \item
-  From the R output, what is the standard error of the slope estimate?
+  From the R output provided in table 21.2, what is the standard error of the slope estimate?
   \rgs
 \item
   Calculate the T-score (the standardized statistic for the slope).
@@ -13799,9 +13995,9 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in R (in the \text
 \hypertarget{week-14-reading-guide-special-topics}{%
 \section{Week 14 Reading Guide: Special Topics}\label{week-14-reading-guide-special-topics}}
 
-\hypertarget{section-2.2-probability-with-tables}{%
-\subsection*{Section 2.2 (Probability with tables)}\label{section-2.2-probability-with-tables}}
-\addcontentsline{toc}{subsection}{Section 2.2 (Probability with tables)}
+\hypertarget{chapter-23-probability-with-tables}{%
+\subsection*{Chapter 23 (Probability with tables)}\label{chapter-23-probability-with-tables}}
+\addcontentsline{toc}{subsection}{Chapter 23 (Probability with tables)}
 
 \setstretch{1}
 
@@ -13810,7 +14006,7 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in R (in the \text
 \begin{itemize}
 \tightlist
 \item
-  2.2
+  Chapter23
 \end{itemize}
 
 \setstretch{1.25}
@@ -13888,9 +14084,9 @@ Method for creating a hypothetical two-way table:
 \rgi \rgi To find conditional probabilities from the table,
 \rgs
 
-\hypertarget{example-baby-jeff}{%
-\subsubsection*{Example: Baby Jeff}\label{example-baby-jeff}}
-\addcontentsline{toc}{subsubsection}{Example: Baby Jeff}
+\hypertarget{example-from-section-23.4-baby-jeff}{%
+\subsubsection*{Example from section 23.4: Baby Jeff}\label{example-from-section-23.4-baby-jeff}}
+\addcontentsline{toc}{subsubsection}{Example from section 23.4: Baby Jeff}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -13958,9 +14154,9 @@ Total & & & 100,000 \\ \hline
 
 \newpage
 
-\hypertarget{section-5.5-revisited-simulation-based-inference-for-a-relative-risk}{%
-\subsection*{Section 5.5 revisited (Simulation-based inference for a relative risk)}\label{section-5.5-revisited-simulation-based-inference-for-a-relative-risk}}
-\addcontentsline{toc}{subsection}{Section 5.5 revisited (Simulation-based inference for a relative risk)}
+\hypertarget{section-15.1.4-revisited-simulation-based-inference-for-a-relative-risk}{%
+\subsection*{Section 15.1.4 revisited (Simulation-based inference for a relative risk)}\label{section-15.1.4-revisited-simulation-based-inference-for-a-relative-risk}}
+\addcontentsline{toc}{subsection}{Section 15.1.4 revisited (Simulation-based inference for a relative risk)}
 
 \hypertarget{vocabulary-20}{%
 \subsubsection*{Vocabulary}\label{vocabulary-20}}
@@ -13989,16 +14185,64 @@ Write the null hypothesis in notation for a test of relative risk.
 Relative risk =
 \rgs
 
-\hypertarget{example-cpr-and-blood-thinner-2}{%
-\subsubsection*{Example: CPR and blood thinner}\label{example-cpr-and-blood-thinner-2}}
-\addcontentsline{toc}{subsubsection}{Example: CPR and blood thinner}
+\hypertarget{example-malaria-vaccine}{%
+\subsubsection*{Example: Malaria Vaccine}\label{example-malaria-vaccine}}
+\addcontentsline{toc}{subsubsection}{Example: Malaria Vaccine}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
+\item
+  What is the research question?
+  \rgs
+\item
+  What are the observational units?
+  \rgs
+\item
+  What type of study design was used? Justify your answer.
+  \rgs
+\item
+  What is the appropriate scope of inference for these data?
+  \rgs
 \item
   What is the sample relative risk? Interpret the value in the context of the study.
   \rgs
+  \rgs
+\item
+  What is the parameter (using relative risk) representing in the context of this problem? What notation would be used to represent this parameter?
+  \rgs
+  \rgs
+\item
+  Write the null and the alternative hypotheses in words.
+  \rgs
+  \rgs
+\item
+  Write the null and the alternative hypotheses in notation.
+  \rgs
+\item
+  How could we use cards to simulate \textbf{one} sample \emph{which assumes the null hypothesis is true}? How many blue cards --- to represent what? How many red cards --- to represent what? What would we do with the cards? What would you record once you have a simulated sample?
+  \rgs
+  \rgs
+  \rgs
+\item
+  How can we calculate a p-value from the simulated null distribution for this example?
+  \rgs
+  \rgs
+\item
+  What was the p-value of the test?
+  \rgs
+\item
+  Interpret the p-value in the context of the problem.
+  \rgs
+  \rgs
+\item
+  At the 5\% significance level, what decision would you make?
+  \rgs
+\item
+  What conclusion should the researcher make?
+  \rgs
+  \rgs
+\item
+  Are the results in this example statistically significant? Justify your answer.
   \rgs
 \end{enumerate}
 

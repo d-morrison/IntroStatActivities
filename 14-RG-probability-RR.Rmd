@@ -2,13 +2,13 @@
 
 ## Week 14 Reading Guide: Special Topics
 
-### Section 2.2 (Probability with tables) {-}
+### Chapter 23 (Probability with tables) {-}
 
 \setstretch{1}
 
 **Videos**
 
-* 2.2
+* Chapter23
 
 \setstretch{1.25}
 
@@ -77,7 +77,7 @@ Method for creating a hypothetical two-way table:
 \rgi \rgi To find conditional probabilities from the table,
 \rgs
 
-#### Example: Baby Jeff {-}
+#### Example from section 23.4: Baby Jeff {-}
 
 1.	Let $D$ be the event a child has CPK.  What does $D^C$ represent?
 \rgs
@@ -129,7 +129,7 @@ Total & & & 100,000 \\ \hline
 
 \newpage
 
-### Section 5.5 revisited (Simulation-based inference for a relative risk)  {-}
+### Section 15.1.4 revisited (Simulation-based inference for a relative risk)  {-}
 
 #### Vocabulary {-}
 
@@ -153,10 +153,61 @@ Write the null hypothesis in notation for a test of relative risk.
 Relative risk = 
 \rgs
 
-#### Example: CPR and blood thinner {-}
+#### Example: Malaria Vaccine {-}
 
-1. What is the sample relative risk?  Interpret the value in the context of the study.
+1. What is the research question?
+\rgs
+
+2. What are the observational units?
+\rgs
+
+3. What type of study design was used?  Justify your answer.
+\rgs
+
+4. What is the appropriate scope of inference for these data?
+\rgs
+
+5. What is the sample relative risk?  Interpret the value in the context of the study.
 \rgs
 \rgs
+
+6. What is the parameter (using relative risk) representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+\rgs
+
+7. Write the null and the alternative hypotheses in words.
+\rgs
+\rgs
+
+8. Write the null and the alternative hypotheses in notation.
+\rgs
+
+9. How could we use cards to simulate **one** sample *which assumes the null hypothesis is true*?  How many blue cards --- to represent what?  How many red cards --- to represent what?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs
+\rgs
+\rgs
+
+10. How can we calculate a p-value from the simulated null distribution for this example?
+\rgs
+\rgs
+
+11. What was the p-value of the test? 
+\rgs
+
+12. Interpret the p-value in the context of the problem.
+\rgs
+\rgs
+
+13. At the 5% significance level, what decision would you make?
+\rgs
+
+14. What conclusion should the researcher make?
+\rgs
+\rgs
+
+15. Are the results in this example statistically significant?  Justify your answer.
+\rgs
+
+
 
 \newpage

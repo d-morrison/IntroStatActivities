@@ -2,13 +2,14 @@
 
 ## Week 8 Reading Guide: Hypothesis Testing for a Difference in Proportions
 
-### Section 5.5 (Simulation-based inference for a difference in proportions)  {-}
+### Section 15.1 (Randomization test for $H_0: \pi_1 - \pi_2 = 0$) and Section 15.2 (Bootstrap confidence interval for $\pi_1 - \pi_2$) {-}
 
-You may skip section 5.5.3, which will be covered in the next module, as well as the material on relative risk in section 5.5.1, which will be covered in module 14.
+You may skip example 15.1.4, which discussed hypothesis testing for **relative risk**.  We will discuss relative risk in Week 14.
 
 **Videos**  
 
-* 5.5SimInf
+* 15.1
+* 15.2
 
 \setstretch{1.25}
 
@@ -88,19 +89,23 @@ Randomization test:
 
 #### Notes {-}
 
-In a randomization test involving two categorical variables, how many cards will you need and how will the cards be labeled?
+In a randomization test involving two categorical variables, 
+
+\rgi how many cards will you need and how will the cards be labeled?
 \rgs
 
-Why, in the randomization test, are the cards all shuffled together and randomly dealt into two new groups?
+\rgi Why, in the randomization test, are the cards all shuffled together and randomly dealt into two new groups?
 \rgs
 
-After shuffling, how many cards are dealt into each pile?
+\rgi After shuffling, how many cards are dealt into each pile?
 \rgs
 
-To create a single bootstrap resample for two categorical variables, how many cards will you need and how will the cards be labeled?
+To create a single bootstrap resample for two categorical variables, 
+
+\rgi how many cards will you need and how will the cards be labeled?
 \rgs
 
-What is done with the cards once they are labeled?
+\rgi What is done with the cards once they are labeled?
 \rgs
 
 Interpretations of confidence level must include:
@@ -236,7 +241,7 @@ Population proportion of group 2:
 15. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
-#### Example: CPR and blood thinner {-}
+#### Example: CPR and blood thinners {-}
 
 1. What is the research question?
 \rgs
@@ -303,11 +308,11 @@ Population proportion of group 2:
 18.	What was the 90% confidence interval? 
 \rgs
 
-19.	Interpret the confidence *interval* in the context of the problem.
+19.	Interpret the confidence *interval* ((-0.03, 0.28)) in the context of the problem.
 \rgs
 \rgs
 
-20.	Interpret the confidence *level* in the context of the problem.
+20.	Interpret the confidence *level* (90%) in the context of the problem.
 \rgs
 \rgs
 

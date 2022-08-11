@@ -2,11 +2,14 @@
 
 ## Week 11 Reading Guide: Inference for a Single Mean or Paired Mean Difference 
 
-### Section 6.1 (Inference for one mean) {-}
+### Chapter 17 (Inference for a single mean) {-}
 
 **Videos**  
 
-* 6.1
+* 17.1
+* 17.2
+* 17.3Tests
+* 17.4Intervals
 
 \setstretch{1.25}
 
@@ -93,6 +96,9 @@ Central Limit Theorem: For large sample sizes, the sampling distribution of a sa
 
 #### Vocabulary {-}
 
+Shifted bootstrap test:
+\rgs
+
 $t$-distribution: 
 \rgs 
 
@@ -108,13 +114,18 @@ T-score:
 
 #### Notes {-}
 
-To create a bootstrap distribution test, how many cards will you need and how will the cards be labeled?
+To create a shifted bootstrap distribution test, 
+
+\rgi How many cards will you need and how will the cards be labeled?
 \rgs 
 
-What do you do with the cards after labeling them?
+\rgi Why are the data values shifted prior to being written on the cards?
+\rgs
+
+\rgi What do you do with the cards after labeling them?
 \rgs 
 
-After resampling, what value will be plotted on the bootstrap distribution?
+\rgi After resampling, what value will be plotted on the bootstrap distribution?
 \rgs 
 
 True or false: Bootstrapping can only be used if the sample size is small.
@@ -148,7 +159,7 @@ $SE(\overline{x})=$
 $T=$
 \rgs 
 
-Confidence interval for a mean: 
+Confidence interval for a single mean: 
 \rgs 
 
 #### Notation {-}
@@ -157,7 +168,7 @@ $\mu_0$ represents
 \rgs 
 
 
-#### Example: Edinburgh rentals {-}
+#### Example from section 17.1: Edinburgh rentals {-}
 
 1. What are the observational units?
 \rgs 
@@ -178,7 +189,7 @@ $\mu_0$ represents
 \rgs 
 \rgs 
 
-6. Based on Figure 6.3, give the confidence interval for the true mean for each of the following confidence levels.
+6. Based on Figure 17.3, give the confidence interval for the true mean for each of the following confidence levels.
 
 \rgi 90\% confidence interval = 
 \rgs 
@@ -193,11 +204,55 @@ $\mu_0$ represents
 \rgs 
 \rgs 
 
-8. Use Figure 6.4 to determine a 90\% confidence interval for the true standard deviation for three bedroom flats in Edinburgh.
+
+#### Example from section 17.2: Sleep times of MSU students {-}
+
+1.	What is the research question?
+\rgs
+
+2.	What are the observational units?
+\rgs
+
+3.	Can the results of this study be generalized to a larger population? Why or why not?
+\rgs
+
+4.	What are the sample statistics presented in this example?  What notation would be used to represent each value?
+\rgs
+
+5.	What is the parameter representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+\rgs
+
+6.	Write the null and the alternative hypotheses in words.
+\rgs
+\rgs
+
+7.	Write the null and  the alternative hypotheses in notation.
+\rgs
+
+8. How could we use cards to simulate **one** shifted bootstrap resample *which assumes the null hypothesis is true*?  How many cards?  What is written on the cards (be sure to include the amount and direction of the shift)?  What would we do with the cards?  What would you record once you have a simulated sample?
+\rgs 
+\rgs 
 \rgs 
 
+9.	What was the p-value of the test? 
+\rgs
 
-#### Example: Mercury content of dolphin muscle {-}
+10.	Interpret the p-value in the context of the problem.
+\rgs
+\rgs
+
+11.	At the 5% significance level, what decision would you make?  What type of error might that be?
+\rgs
+
+12.	What conclusion should the researcher make?
+\rgs
+\rgs
+
+13.	Are the results in this example statistically significant?  Justify your answer.
+\rgs
+
+#### Example from section 17.3: Mercury content of dolphin muscle {-}
 
 1. What is the research question?
 \rgs 
@@ -235,7 +290,7 @@ $\mu_0$ represents
 \rgs 
 \rgs 
 
-#### Example: Cherry Blossom Race {-}
+#### Example from section 17.3: Cherry Blossom Race {-}
 
 1.	What is the research question?
 \rgs
@@ -293,13 +348,15 @@ $\mu_0$ represents
 \rgs
 
 
-### Section 6.2 (Inference for paired mean difference)  {-}
+### Chapter 18 (Inference for paired mean difference)  {-}
 
 \setstretch{1}
 
 **Videos**  
 
-* 6.2
+* Paired_Data
+* 18.1and18.2
+* 18.3
 
 \setstretch{1.25}
 
@@ -366,7 +423,7 @@ $\mu_d=$
 $\sigma_d=$ 
 \rgs
 
-#### Example: Tires {-}
+#### Example from section 18.1: Tires {-}
 
 1.	What are the observational units?
 \rgs
@@ -386,7 +443,7 @@ $\sigma_d=$
 \rgs
 
 
-6.	How could we use cards to simulate **one** bootstrap resample *which assumes the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
+6.	How could we use cards to simulate **one** shifted bootstrap resample *which assumes the null hypothesis is true*?  How many cards?  What is written on the cards?  What would we do with the cards?  What would you record once you have a simulated sample?
 \rgs
 \rgs
 \rgs
@@ -403,7 +460,7 @@ $\sigma_d=$
 \rgs
 
 
-#### Example: College textbook prices {-}
+#### Example from sections 18.2 and 18.3: UCLA textbook prices {-}
 
 1. What is the research question?
 \rgs

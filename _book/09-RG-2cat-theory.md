@@ -1,14 +1,14 @@
 # Inference for Two Categorical Variables: Theory-based Methods
 
-## Week 9 Reading Guide: Hypothesis Testing for a Difference in Proportions
+## Week 9 Reading Guide: Theory-based Inference for a Difference in Proportions
 
-### Section 5.5.3 (Theory-based methods for a difference in proportions)  {-}
-
+### Section 15.3 (Theory-based inferential methods for $\pi_1 - \pi_2$)
 \setstretch{1}
 
 **Videos**  
 
-* 5.5TheoryInf
+* 15.3Tests
+* 15.3Intervals
 
 \setstretch{1.25}
 
@@ -77,7 +77,7 @@ Confidence level: how confident we are that the confidence interval will capture
 
 #### Notes {-}
 
-Conditions for the CLT to apply for a difference in proportions
+Conditions for the Central Limit Theorem to apply for a difference in proportions
 
 \rgi Independence: 
 \rgs
@@ -100,7 +100,7 @@ Null standard error of the difference in sample proportions:
 $SE_0(\hat{p_1} - \hat{p_2})=$
 \rgs
 
-Standardized statistic/standardized difference in sample proportions:
+Standardized statistic (or standardized difference in sample proportions):
 $Z=$
 \rgs
 
@@ -118,7 +118,38 @@ Margin of error of a confidence interval for a difference in proportions:
 Overall (pooled) proportion of successes:
 \rgs
 
-#### Example: CPR and blood thinner {-}
+#### Example: CPR and blood thinners {-}
+
+1. What are the observational units?
+\rgs
+
+2. What type of study design was used?  Justify your answer.
+\rgs
+
+3. What is the appropriate scope of inference for these data?
+\rgs
+
+4. What is the sample difference in proportions presented in this example?  What notation would be used to represent this value?
+\rgs
+
+5. What is the parameter (using a difference in proportions) representing in the context of this problem?  What notation would be used to represent this parameter?
+\rgs
+
+6. Is it valid to use theory-based methods to analyze these data?
+\rgs
+\rgs
+
+6. Calculate the standard error of the difference in sample proportions without assuming a null hypothesis.
+\rgs
+\rgs
+
+8. Calculate the 90% confidence interval using $z^*=1.65$ as the multiplier.
+\rgs
+\rgs
+
+*Note: A confidence interval interpretation and confidence level interpretation for this example can be found in the Reading Guide solutions for Sections 15.1 and 15.2.*
+
+#### Example: Mammograms {-}
 
 1. What are the observational units?
 \rgs
@@ -162,17 +193,19 @@ Overall (pooled) proportion of successes:
 \rgs
 \rgs
 
-*Note: a p-value, p-value interpretation, decision, and conclusion for this example can be found in the Reading Guide solutions for Sections 5.5.1--5.5.2.*
-
-13. Calculate the standard error of the difference in sample proportions without assuming a null hypothesis.
-\rgs
+13. Explain how the p-value for this test was calculated.
 \rgs
 
-14. Calculate the 90% confidence interval using $z^*=1.65$ as the multiplier.
+14. Interpret the p-value in the context of the study.
 \rgs
 \rgs
 
-*Note: A confidence interval interpretation and confidence level interpretation for this example can be found in the Reading Guide solutions for Sections 5.5.1--5.5.2.*
+15. At the 10% significance level, what decision should be made?
+\rgs
+
+16. Write a conclusion for the research question.
+\rgs
+\rgs
 
 
 \newpage

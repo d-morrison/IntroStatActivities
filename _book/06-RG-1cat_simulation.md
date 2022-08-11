@@ -94,24 +94,6 @@ Lower p-values indicate (stronger or weaker?) evidence (for or against?) the nul
 General steps of a hypothesis test:
 \rgs
 
-Explain the differences between a one-sided and two-sided hypothesis test.
-\vspace{1mm}
-
-\rgi How will the research questions differ?
-\rgs
-
-\rgi How will the notation in the alternative hypothesis differ?
-\rgs
-
-\rgi How does the p-value calculation differ?
-\rgs
-
-How does the p-value in a two-sided test compare to the p-value in a one-sided test?
-\rgs
-
-Should the default in research be a one-sided or two-sided hypothesis test?  Explain why.
-\rgs
-\rgs
 
 #### Example from section 9.1: Martian alphabet {-} 
 
@@ -219,7 +201,7 @@ If we want to find a 90% confidence interval, what percentiles of the bootstrap 
 \rgs
 
 
-### Section 14.1 (Simulation-based test for a single proportion) {-}
+### Section 14.1 (Simulation-based test for $H_0:\pi = \pi_0$) {-}
 
 \setstretch{1}
 
@@ -298,7 +280,7 @@ True or false:  The sign in the alternative hypothesis is based off of the resea
 
 #### Example: Medical consultant {-}
 
-As a reminder from section 10.1, $$\hat{p} = 0.048$$.
+As a reminder from section 10.1, $\hat{p} = 0.048$.
 
 1. Write the null and alternative hypotheses in words.
 \rgs
@@ -336,7 +318,7 @@ As a reminder from section 10.1, $$\hat{p} = 0.048$$.
 9. To what population can we generalize the results of this study? Justify your answer.
 \rgs
 
-### Section 14.2 (Bootstrap for a single proportion) {-}
+### Section 14.2 (Bootstrap confidence interval for $\pi$) {-}
 
 \setstretch{1}
 

@@ -2,21 +2,77 @@
 
 ## Week 7 Reading Guide: Categorical Inference
 
-### Section 5.1 (Foundations of inference: Hypothesis tests) {-}
-
-Review section 5.1.2, specifically the notes about the theory-based approach and the Central Limit Theorem.
-
-### Section 5.2 (The normal distribution) {-}
+### Chapter 11 (Inference with mathematical models) {-}
 
 \setstretch{1}
 
 **Videos**  
 
-* 5.2
+* Chapter11
 
 \setstretch{1.25}
 
+#### Reminders from previous sections {-}
+
+$n_1$= sample size of group 1
+
+$n_2$ = sample size of group 2
+
+$\overline{x}$ = sample mean
+
+$s$ = sample standard deviation
+
+$\mu$ = population mean
+
+$\sigma$ = population standard deviation
+
+General steps of a hypothesis test:
+
+1. Frame the research question in terms of hypotheses.
+
+2. Collect and summarize data using a test statistic.
+	
+3. Assume the null hypothesis is true, and simulate or mathematically model a null distribution for the test statistic.
+
+4. Compare the observed test statistic to the null distribution to calculate a p-value.
+
+5. Make a conclusion based on the p-value and write the conclusion in context.
+
+Parameter: a value summarizing a variable(s) for a population.
+
+Statistic: a value summarizing a variable(s) for a sample.
+
+Hypothesis test: a process to determine how strong the evidence of an effect is. Also called a ‘significance test’.
+
+Simulation-based method: Simulate lots of samples of size $n$ under assumption of the null hypothesis, then find the proportion of the simulations that are at least as extreme as the observed sample statistic.
+
+Theory-based method: Develop a mathematical model for the sampling distribution of the statistic under the null hypothesis and use the model to calculate the probability of the observed sample statistic (or one more extreme) occurring.
+
+Null hypothesis ($H_0$): the skeptical perspective; no difference; no change; no effect; random chance; what the researcher hopes to prove is **wrong**.
+
+Alternative hypothesis ($H_A$): the new perspective; a difference/increase/decrease; an effect; not random chance; what the researcher hopes to prove is **correct**.
+
+Null value: the value of the parameter when we assume the null hypothesis is true (labeled as $parameter_0$).
+
+P-value: probability of seeing the observed sample data, or something more extreme, assuming the null hypothesis is true.
+
+$\implies$ Lower the p-value the stronger the evidence AGAINST the null hypothesis and FOR the alternative hypothesis.
+
+Significance level ($\alpha$): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
+
+\rgi Common levels of $\alpha$ include 0.01, 0.05, and 0.10.
+
+Statistically significant: results are considered statistically significant if the p-value is below the significance level.
+
+Confidence interval: a process to determine how large an effect is; a range of plausible values for the parameter. Also called 'estimation'.
+
 #### Vocabulary {-}
+
+Central Limit Theorem:
+\rgs
+
+Sampling distribution:
+\rgs
 
 Normal distribution (Also known as: normal curve, normal model, Gaussian distribution): 
 \rgs
@@ -39,7 +95,25 @@ $X$th percentile:
 68-95-99.7 rule: 
 \rgs
 
+Standard error of a statistic:
+\rgs
+
+Standard deviation of a statistic:
+\rgs
+
+Margin of error:
+\rgs
+
 #### Notes {-}
+
+The two general conditions for the sampling distribution for a sample proportion (or difference in sample proportions) to be approximately normally distributed are:
+
+\rgi 1)
+\rgs
+
+\rgi 2)
+\rgs
+
 
 Interpretation of a Z-score: 
 \rgs
@@ -57,9 +131,30 @@ Approximately what percent of a normal distribution is in the interval
 \rgi (mean – 3$\times$(standard deviation), mean + 3$\times$(standard deviation)):
 \rgs
 
+Given a mean and standard deviation, what function in R would help us find the percent of the normal distribution above (or below) a specific value?
+\rgs
+
+Given a mean and standard deviation, what function in R would help us find the value at a given percentile?
+\rgs
+
+How is the standard deviation of a statistic ($SD(statistic)$) different from the standard error of a statistic ($SE(statistic)$)?
+\rgs
+
+How is the standard deviation of a statistic ($SD(statistic)$) different from the standard deviation of a sample ($s$)?
+\rgs
+
 #### Formulas {-}
 
 Z =
+\rgs
+
+$SD(\hat{p})$ = 
+\rgs
+
+General form of a theory-based confidence interval =
+\rgs
+
+General form for margin of error = 
 \rgs
 
 ### R coding {-}
@@ -134,13 +229,14 @@ Changing to `lower.tail = FALSE` will give the value which has `x` area of the d
 We would recommend you work through each of the examples in Section 5.2.4 using R.
 
 
-### Section 5.3.4 (Theory-based inferential methods for $\pi$) {-}
+### Section 14.3 (Theory-based inferential methods for $\pi$) {-}
 
 \setstretch{1}
 
 **Videos**  
 
-* 5.3TheoryInf
+* 14.3TheoryTests
+* 14.3TheoryIntervals
 
 \setstretch{1.25}
 
@@ -206,6 +302,8 @@ Margin of error: the value that is added to and subtracted from the sample stati
 
 #### Vocabulary {-}
 
+Null standard error:
+\rgs
 
 Standardized statistic:
 \rgs
@@ -269,18 +367,6 @@ Theory-based confidence interval for a sample proportion:
 Margin of error of a confidence interval for a sample proportion: 
 \rgs
 
-#### Example: Organ donations {-}
-
-1. What is the sample statistic presented in this example?  What notation would be used to represent this value?
-\rgs
-
-2. What is the sample size in this example?
-\rgs
-
-12.	Are the conditions met to use theoretical methods to analyze these data?  Show your calculations to justify your answer.
-\rgs
-\rgs
-
 
 #### Example: Payday loans {-}
 
@@ -306,7 +392,7 @@ Margin of error of a confidence interval for a sample proportion:
 6. What is the sample statistic presented in this example?  What notation would be used to represent this value?
 \rgs
 
-7. Calculate the standardized sample proportion.
+7. Calculate the standardized sample proportion (standardized statistic).
 \rgs
 \rgs
 
@@ -317,53 +403,45 @@ Margin of error of a confidence interval for a sample proportion:
 9. What was the p-value of the test? 
 \rgs
 	
-10. At the 5\% significance level, what decision would you make?
-\rgs
 
-11. What conclusion should the researcher make?
+10. What conclusion should the researcher make?
 \rgs
 \rgs
 
-12. Are the results in this example statistically significant?  Justify your answer.
+11. Are the results in this example statistically significant?  Justify your answer.
 \rgs
 
-13. Calculate the standard error of the sample proportion when we do not assume the null hypothesis is true.
-\rgs
-\rgs
-
-14. Calculate the margin of error for a 95\% confidence interval for $\pi$ using 1.96 as the multiplier.
+12. Calculate the standard error of the sample proportion when we do not assume the null hypothesis is true.
 \rgs
 \rgs
 
-15. Calculate a 95\% confidence interval for $\pi$ using your margin of error calculated above.
+13. Calculate the margin of error for a 95\% confidence interval for $\pi$ using 1.96 as the multiplier.
 \rgs
 \rgs
 
-16. Interpret the 95\% confidence interval provided in the textbook.
+14. Calculate a 95\% confidence interval for $\pi$ using your margin of error calculated above.
 \rgs
 \rgs
 
-17. Are the results in this example statistically significant?  Justify your answer.
+15. Interpret the 95\% confidence interval provided in the textbook.
+\rgs
+\rgs
+
+16. Does the 95% confidence interval support the same conclusion as the p-value from the hypothesis test?  Justify your answer.
 \rgs
 
 
-### Section 5.4 (Errors, power, and practical importance) {-}
+### Chapter 12 (Errors, power, and practical importance) {-}
 
 \setstretch{1}
 
 **Videos**  
 
-* 5.4
+* Chapter12
 
 \setstretch{1.25}
 
 #### Reminders from previous sections {-}
-
-Decision: a determination of whether to reject or fail to reject a null hypothesis based on a p-value and a pre-set level of significance.
-
-* If p-value $\leq \alpha$, then reject $H_0$.
-
-* If p-value $> \alpha$, then fail to reject $H_0$.
 
 Significance level ($\alpha$): a threshold used to determine if a p-value provides enough evidence to reject the null hypothesis or not.
 
@@ -373,6 +451,13 @@ Statistically significant: results are considered statistically significant if t
 
 #### Vocabulary {-}
 
+Decision:
+
+\rgs
+* If the p-value is small (less than or equal to the significance level), the decision will be to __________ the null hypothesis.
+
+* If the p-value is large (greater than the significance level), the decision will be to __________ the null hypothesis.
+
 Type 1 error: 
 \rgs
 
@@ -380,6 +465,12 @@ Type 2 error:
 \rgs
 
 Confirmation bias: 
+\rgs
+
+One-sided hypothesis tests:
+\rgs
+
+Two-sided hypothesis tests:
 \rgs
 
 Power: 
@@ -413,6 +504,24 @@ How are the significance level and type I error rate related?
 How are the significance level and type II error rate related?
 \rgs
 
+Explain the differences between a one-sided and two-sided hypothesis test.
+\vspace{1mm}
+
+\rgi How will the research questions differ?
+\rgs
+
+\rgi How will the notation in the alternative hypothesis differ?
+\rgs
+
+\rgi How does the p-value calculation differ?
+\rgs
+
+How does the p-value in a two-sided test compare to the p-value in a one-sided test?
+\rgs
+
+Should the default in research be a one-sided or two-sided hypothesis test?  Explain why.
+\rgs
+\rgs
 
 After collecting data, a researcher decides to change from a two-sided test to a one-sided test.  Why is this a bad idea?
 
@@ -452,7 +561,7 @@ Results are unlikely to be statistically significant (but may be practically imp
 
 #### Examples: {-} 
 
-1. In the Martian Alphabet study in the textbook and presented as an example in Reading Guide 5.1,
+1. In the Martian Alphabet study section 9.1 of the textbook,
 
 \rgi a. What was the p-value of the test?
 \rgs
@@ -467,7 +576,7 @@ Results are unlikely to be statistically significant (but may be practically imp
 \rgs
 \rgs
 
-2. In the Medical Consultant study in the textbook and presented as an example in the reading guide for sections 5.3.1--5.3.3,
+2. In the Medical Consultant study in section 10.1 of the textbook,
 
 \rgi a. What was the p-value of the test?
 \rgs
@@ -482,7 +591,7 @@ Results are unlikely to be statistically significant (but may be practically imp
 \rgs
 \rgs
 
-3. In the Payday Loans study in the textbook and presented as an example in the reading guide for section 5.3.4,
+3. In the Payday Loans study section 14.3 of the textbook,
 
 \rgi a. What was the p-value of the test?
 \rgs

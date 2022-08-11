@@ -2,11 +2,14 @@
 
 ## Week 13 Reading Guide: Inference for Slope and Correlation
 
-### Sections 7.1 and 7.2 (Inference for regression and model conditions) {-}
+### Chapter 21 (Inference for regression and model conditions) {-}
 
 **Videos**  
 
-* 7.1and7.2
+* 21.2
+* 21.3
+* 21.4to21.5Tests
+* 21.4to21.5Intervals
 
 \setstretch{1.25}
 
@@ -120,24 +123,24 @@ T-score: the name for a standardized statistic which is compared to a $t$-distri
 
 To create a **simulated null distribution** of sample slopes or sample correlations, 
 
-1. How many cards will you need and how will the cards be labeled?
+\rgi How many cards will you need and how will the cards be labeled?
 \rgs
 
-2. What do you do with the cards after labeling them?
+\rgi What do you do with the cards after labeling them?
 \rgs
 
-3. After shuffling, what value will be plotted on the simulated null distribution?
+\rgi After shuffling, what value will be plotted on the simulated null distribution?
 \rgs
 
 To create a **bootstrap distribution** of sample slopes or sample correlations, 
 
-1. How many cards will you need and how will the cards be labeled?
+\rgi How many cards will you need and how will the cards be labeled?
 \rgs
 
-2. What do you do with the cards after labeling them?
+\rgi What do you do with the cards after labeling them?
 \rgs
 
-3. After shuffling, what value will be plotted on the bootstrap distribution?
+\rgi After shuffling, what value will be plotted on the bootstrap distribution?
 \rgs
 
 
@@ -185,7 +188,7 @@ Confidence interval:
 \rgs
 
 
-#### Example: Crop yields {-}
+#### Example from sections 21.2 and 21.3: Crop yields {-}
 
 1.	What are the observational units?
 \rgs
@@ -234,7 +237,7 @@ Confidence interval:
 \rgs
 \rgs
 
-#### Example: Midterm elections and unemployment {-}
+#### Example from section 21.4: Midterm elections and unemployment {-}
 
 1. What is the research question?
 \rgs
@@ -265,7 +268,7 @@ Confidence interval:
 9.	Write the least squares regression line for these data in appropriate notation.
 \rgs
 
-10. From the R output, what is the standard error of the slope estimate?
+10. From the R output provided in table 21.2, what is the standard error of the slope estimate?
 \rgs
 
 11. Calculate the T-score (the standardized statistic for the slope).
