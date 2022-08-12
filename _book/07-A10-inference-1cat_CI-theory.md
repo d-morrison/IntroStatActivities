@@ -1,4 +1,4 @@
-## Activity 7B:  Handedness of Male Boxers --- Theory CI
+## Activity 7B:  Handedness of Male Boxers --- Theory-based Confidence Interval
 
 \setstretch{1}
 
@@ -131,6 +131,7 @@ For this part of the activity we will assume that the the true proportion of mal
 11.  **Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?**
 
 \vspace{0.8in}
+\newpage
 
 ### Take-home messages
 

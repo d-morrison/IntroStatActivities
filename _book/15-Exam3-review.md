@@ -96,7 +96,7 @@ i.  Interpret the p-value in the context of the problem.
 j.  Write a conclusion to the research question based on the p-value.
 \vspace{0.8in}
         
-k. Write a decision based on the p-value.
+k. Using a significance level of $\alpha = 0.1$, what statistical decision will you make about the null hypothesis?
 \vspace{0.3in}
     
 l. Use the provided R script file to find a 90\% confidence interval.
@@ -187,7 +187,7 @@ i.  Interpret the p-value in the context of the problem.
 j.  Write a conclusion to the research question based on the p-value.
 \vspace{0.8in}
         
-k. Write a decision based on the p-value.
+k. Using a significance level of $\alpha = 0.05$, what statistical decision will you make about the null hypothesis?
 \vspace{0.3in}
     
 l. Use the provided R script file to find a 95\% confidence interval.
@@ -277,7 +277,7 @@ h.  Interpret the p-value in the context of the problem.
 i.  Write a conclusion to the research question based on the p-value.
 \vspace{0.8in}
         
-j. Write a decision based on the p-value.
+k. Using a significance level of $\alpha = 0.01$, what statistical decision will you make about the null hypothesis?
 \vspace{0.3in}
     
 k. Use the provided R script file to find a 99\% confidence interval.

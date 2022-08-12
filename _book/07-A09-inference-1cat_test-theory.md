@@ -1,4 +1,4 @@
-## Activity 7A:  Handedness of Male Boxers --- Theory-based Methods
+## Activity 7A:  Handedness of Male Boxers --- Theory-based Hypothesis Test
 
 \setstretch{1}
 
@@ -77,7 +77,7 @@ Conditions for the sampling distribution of $\hat{p}$ to follow an approximate n
 
 5. Verify that the independence condition is satisfied.
 
-\vspace{0.5in}
+\vspace{0.8in}
 
 6. Is the success-failure condition met to model the data with the normal distribution?  Show your work to support your answer.
 
@@ -110,6 +110,8 @@ $$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{500}} = 0.013$$.
 
 \vspace{0.6in}
 
+\newpage
+
 The standardized statistic is used as a ruler to measure how far the sample statistic is from the null value.  Essentially, we are converting the sample proportion into a measure of standard errors to compare to the standard normal distribution.  
 
 9.  Using the 68-95-99.7 rule in Section 5.2.5 to guide you, fill in the percentages on the standard normal distribution displayed in Figure \@ref(fig:simpleNormalcurve), and also mark the value of the standardized statistic calculated in question 8.
@@ -122,8 +124,6 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 
 \caption{A standard normal curve.}(\#fig:simpleNormalcurve)
 \end{figure}
-
-\newpage
 
 The standardized statistic measures the *number of standard errors the sample statistic is from the null value*.
 
@@ -150,8 +150,11 @@ pnorm(xx, # Enter value of standardized statistic
 11.  Report the p-value obtained from the R output.
 \vspace{0.3in}
 
-12.  Write a conclusion based on the value of the p-value.
 \newpage
+
+12.  Write a conclusion based on the value of the p-value.
+
+\vspace{0.8in}
 
 ### Impacts on the P-value {-}
 
@@ -171,7 +174,7 @@ Suppose that we want to show that the true proportion of male boxers **differs**
 
 16. Suppose instead of 500 male boxers the researchers only took a sample of 300 male boxers and found the same proportion ($\hat{p}=0.182$) of male boxers that are left-handed.  Since we are still assuming the same null value, 0.1, the standard error would be calculated as below:
 
-$$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{300}} = 0.017$$.
+$$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{300}} = 0.017$$
 
 Calculate the standardized statistic for this new sample.
 
@@ -192,7 +195,9 @@ pnorm(xx, # Enter value of standardized statistic
 
 18. Suppose another sample of 500 male boxers was taken and 68 were found to be left-handed.  Since we are still assuming the same null value, 0.1, the standard error would be calculated as before:
 
-$$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{500}} = 0.013$$.Calculate the standardized statistic for this new sample.
+$$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{500}} = 0.013$$
+
+Calculate the standardized statistic for this new sample.
 
 \vspace{0.8in}
 
@@ -222,6 +227,7 @@ b) Using a smaller sample size.
 c) Using a sample statistic closer to the null value.
 
 \vspace{0.4in}
+\newpage
 
 ### Take-home messages
 
@@ -234,8 +240,6 @@ c) Using a sample statistic closer to the null value.
 4.  The larger the sample size, the smaller the sample to sample variability.  This will result in a larger standardized statistic and more evidence against the null hypothesis.
 
 5.  The farther the statistic is from the null value, the larger the standardized statistic.  This will result in a smaller p-value and more evidence against the null hypothesis.
-
-\newpage
 
 ### Additional notes
 

@@ -95,7 +95,7 @@ hist(bigmacLM$resid, xlab="Residuals", ylab="Frequency",
 
 |    $H_0:$
 
-|    $H_a:$
+|    $H_A:$
 
 #### Use statistical inferential methods to draw inferences from the data {-}
 

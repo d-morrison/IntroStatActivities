@@ -31,8 +31,7 @@ For today's activity we will begin to use the statistical package R to analyze d
 
 * Download the Myopia Activity R script file from D2L.
 * Click "Upload" in the "Files" tab in the bottom right window of RStudio. In the pop-up window, click "Choose File", and navigate to the folder where the Myopia Activity R script file is saved (most likely in your downloads folder). Click "Open"; then click "Ok". 
-* You should see the uploaded file appear in the list of files in the bottom right window.
-* Click on the file name to open the file in the Editor window (upper left window).
+* You should see the uploaded file appear in the list of files in the bottom right window. Click on the file name to open the file in the Editor window (upper left window).
 
 Notice that the first three lines of code contain a prompt called, `library`.  Packages needed to run functions in R are stored in directories called libraries.  When using the MSU RStudio server, all the packages needed for the class are already installed.  We simply must tell R which packages we need for each R script file.  We use the prompt `library` to load each **package** (or library) needed for each activity. Note, these `library` lines MUST be run each time you open a R script file in order for the functions in R to work. Before class today you should have worked through an R tutorial to prepare for class and to make sure you can login to the RStudio server.  This tutorial will be a great resource as you begin to use R.
 
@@ -41,7 +40,7 @@ R will ignore everything after a \# sign when executing the code. Refer to the i
 
 ### Nightlight use and myopia {-}
 
-In a study reported in Nature [@quinn1999], a survey of 479 children found that those who had slept with a nightlight or in a fully lit room before the age of 2 had a higher incidence of nearsightedness (myopia) later in childhood.
+In a study reported in Nature [@quinn1999], a survey of 479 children found that those who had slept with a nightlight or in a fully lit room before the age of two had a higher incidence of nearsightedness (myopia) later in childhood.
 
 In this study, there are two variables studied: `Light`: level of light in room at night (no light, nightlight, full light) and `Sight`: level of myopia developed later in childhood (high myopia, myopia, no myopia).  
 
@@ -53,7 +52,7 @@ An important part of understanding data is to create visual pictures of what the
 
 #### R code {-}
 
-Throughout these activities, we will often include the R code you would use in order to produce output or plots. These "code chunks" appear in gray. In the code chunk below, we demonstrate how to read the data set into R using the `read.csv()` function.  The line of code shown below (line 6 in the R script file) reads in the data set and names the data set (object) `myopia`.  Highlight and run line 6 in the R script file to load the data from the Stat 216 webpage.
+Throughout these activities, we will often include the R code you would use in order to produce output or plots. These "code chunks" appear in gray. In the code chunk below, we demonstrate how to read the data set into R using the `read.csv()` function.  The line of code shown below (line 6 in the R script file) reads in the data set and names the data set `myopia`.  Highlight and run line 6 in the R script file to load the data from the Stat 216 webpage.
 
 
 ```r

@@ -68,7 +68,7 @@ Observation & Number & Word & Length  \\ \hline
 10 & & & \\ 
 & & & \\ \hline
 \end{tabular}
-\end{center}``
+\end{center}
 
 2. Calculate the mean word length in your selected sample in question 1. Is this value a parameter or a statistic?
 \vspace{0.3in}

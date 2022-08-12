@@ -117,13 +117,13 @@ two_proportion_bootstrap_CI(formula = response~explanatory,
          confidence_level = xx) # Enter the level of confidence as a decimal
 ```
 
-10.  Report and interpret the 90\% confidence interval.
+10. Report and interpret the 90\% confidence interval.
 
 \vspace{0.8in}
 
 11.  Write a conclusion to the research question in context of the study.
 
-\vspace{0.8in}
+\newpage
 
 12.  Write a paragraph summarizing the results of the study as if writing a press release.  Be sure to describe:
 

@@ -39,7 +39,7 @@ Let $A$ = the event the US adult is vaccinated, and $B$ = the event the US adult
 
 \newpage
 
-4.  **Give the probability notation for the calculation $\frac{27.7302}{30.0392} = 0.923$.  Write out what this probability measures in words.**
+4.  **Give the probability notation for the calculation $\frac{27.7302}{30.0351} = 0.923$.  Write out what this probability measures in words.**
 
 \vspace{0.8in}
 

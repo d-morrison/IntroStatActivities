@@ -215,7 +215,7 @@ Each of the activities in this workbook is designed to target specific learning 
 
 The activities and labs in this coursepack will be completed during class time. Parts of each lab will be turned in on Gradescope. To aid in your understanding, read through the introduction for each activity before attending class each day.
 
-STAT 216 is a 3-credit in-person course. In our experience, it takes six to nine hours per week outside of class to achieve a good grade in this class. By ``good'' we mean at least a C because a grade of D or below does not count toward fulfilling degree requirements. Many of you set your goals higher than just getting a C, and we fully support that. You need roughly nine hours per week to review past activities, read feedback on previous assignments, complete current assignments, and prepare for the next day's class. A typical week in the life of a STAT 216 student looks like:
+STAT 216 is a 3-credit in-person course. In our experience, it takes six to nine hours per week outside of class to achieve a good grade in this class. By ``good'' we mean at least a C because a grade of D or below does not count toward fulfilling degree requirements. Many of you set your goals higher than just getting a C, and we fully support that. You need roughly nine hours per week to review past activities, read feedback on previous assignments, complete current assignments, and prepare for the next day's class. The following will give you an idea of what a typical week in the life of a STAT 216 student looks like.
 
 \begin{itemize}
 \tightlist
@@ -229,7 +229,7 @@ STAT 216 is a 3-credit in-person course. In our experience, it takes six to nine
   \item
     Watch assigned videos on that week's content, pausing to take notes and answer video quiz questions.
   \item
-    Read through the introduction to the day's in-class activity
+    Read through the introduction to the day's in-class activity.
   \item
     Read through the week's homework assignment and note any questions you may have on the content.
   \end{itemize}
@@ -316,7 +316,7 @@ Holiday& M--F& 11/21--11/25& \textbf{No Class --- Fall Break} \\ \hline
 15& M& 12/5& Final Exam Review \\*
 15& W& 12/7& Final Group Exam Part 1 \\*
 15& F& 12/9& Final Group Exam Part 2 \\ \hline
-Finals& Tuesday & 12/13 6 - 7:50 pm & Common Final Exam \\
+Finals& T & 12/13 6 - 7:50 pm & Common Final Exam \\
 &  &  & See \url{www.montana.edu/registrar/Schedules.html} \\ \hline
 
 \end{longtable}
@@ -641,6 +641,11 @@ Statistics is the study of how best to collect, analyze, and draw conclusions fr
 
 For more on these concepts, read Chapter 1 and Section 2.1 in the textbook.
 
+\hypertarget{general-information-on-the-coursepack}{%
+\subsection{General information on the Coursepack}\label{general-information-on-the-coursepack}}
+
+Information is provided throughout each activity and lab to guide students through that day's activity or lab. Be sure to read ALL the material provided at the beginning of the activity and between each question. At the end of each activity is a section called \emph{Take-home messages} that contain key points from the day's activity. Use these to review the day's activity and make sure you have a full understanding of that material.
+
 \hypertarget{general-information-on-labs}{%
 \subsection{General information on labs}\label{general-information-on-labs}}
 
@@ -695,21 +700,7 @@ Today we will focus on the first two steps.
 
 \vspace{0.2in}
 
-A \textbf{variable} is information collected or measured on each observational unit or case. Each column in a data set will represent a different variable.
-
-One person from each group at each table, open the Google sheet linked in D2L and fill in the responses for the following questions for each group member. When creating a data set for use in R it is important to use single words or an underscore between words. Each outcome must be written the same way each time. Make sure to use all lowercase letters to create this data set to have consistency between responses. Do not give units of measure with the numerical values for the length of forearm. For \texttt{Residency} use in\_state or out\_state as the two outcomes.
-
-\begin{itemize}
-\tightlist
-\item
-  Major: what is your declared major?
-\item
-  Residency: do you have in-state or out-of-state residency?
-\item
-  Forearm\_Length: what is the length of your forearm in inches from the end of your elbow to the end of your index finger?
-\item
-  Num\_Credits: how many credits are you taking this semester?
-\end{itemize}
+A \textbf{variable} is information collected or measured on each observational unit or case. Each column in a data set will represent a different variable. The rows in a data set represent the observational units.
 
 We will look at two types of variables: \textbf{quantitative} and \textbf{categorical} (see Figure \ref{fig:types-of-variables}).
 
@@ -733,11 +724,31 @@ The outcome of a categorical variable is a group or category such as eye color, 
 \setcounter{enumi}{2}
 \tightlist
 \item
+  One person from each group open the Google sheet linked in D2L and fill in the responses for the following questions for each group member. When creating a data set for use in R it is important to use single words or an underscore between words. Each outcome must be written the same way each time. Make sure to use all lowercase letters to create this data set to have consistency between responses. Do not give units of measure with the numerical values for the length of forearm. For \texttt{Residency} use in\_state or out\_state as the two outcomes.
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Major: what is your declared major?
+\item
+  Residency: do you have in-state or out-of-state residency?
+\item
+  Forearm\_Length: what is the length of your forearm in inches from the end of your elbow to the end of your index finger?
+\item
+  Num\_Credits: how many credits are you taking this semester?
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
   For each column of data, fill in the following table to write out the variable we are collecting on each observational unit in this study and the type of each variable.
 \end{enumerate}
 
 \begin{center}
-\begin{tabular}{|l|p{2in}|p{2in}|} \hline
+\begin{tabular}{|l|p{2.5in}|p{1.5in}|} \hline
 Column & Variable & Type of Variable  \\ \hline
 Major & & \\ 
 & & \\ \hline
@@ -761,11 +772,13 @@ In the next few weeks we will look at how to summarize data both numerically and
   Response bias: survey participant gives an untruthful or misleading response
 \end{itemize}
 
-To help determine the type of bias present, it is helpful to think about the observational units, the sample and the target population represented by the problem. The \textbf{target population} is the group of cases that makes up the population the researcher is interested in. If sampling bias is present, than the sample taken will not be representative of the actual target population. In these next questions, identify the target population, the sample selected, the variable collected and its type (categorical or quantitative), and the type of bias present.
+To help determine the type of bias present, it is helpful to think about the observational units, the sample, and the target population represented by the problem. The \textbf{target population} is the group of cases that makes up the population the researcher is interested in. If sampling bias is present, than the sample taken will not be representative of the actual target population. In these next questions, identify the target population, the sample selected, the variable collected and its type (categorical or quantitative), and the type of bias present.
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\setcounter{enumi}{4}
 \item
   \textbf{To determine if the proportion of out-of-state undergraduate students at Montana State University has increased in the last 10 years, a statistics instructor sent an email survey to 500 randomly selected current undergraduate students. One of the questions on the survey asked whether they had in-state or out-of-state residency. She only received 378 responses.}
   \vspace{0.25in}
@@ -814,6 +827,7 @@ To help determine the type of bias present, it is helpful to think about the obs
 
   Type(s) of bias:
   \vspace{0.3in}
+  \newpage
 \item
   To gauge the interest in a new swimming pool, a local organization stood outside of the Bogart Pool in Bozeman, MT, during open hours. One of the questions they asked was, ``Since the Bogart Pool is in such bad repair, don't you agree that the city should fund a new pool?''
   \vspace{0.1in}
@@ -838,18 +852,12 @@ To help determine the type of bias present, it is helpful to think about the obs
 
   Type(s) of bias:
   \vspace{0.3in}
-\end{enumerate}
-
-\newpage
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
-\tightlist
 \item
   \textbf{The Bozeman school district was interested in surveying parents of students about their opinions on returning to in-person classes following the COVID-19 pandemic. They divided the school district into 10 divisions based on location and randomly surveyed 20 households within each division. Explain why selection bias would be present in this study design.}
   \vspace{1in}
 \end{enumerate}
+
+\newpage
 
 \hypertarget{take-home-messages}{%
 \subsection{Take-home messages}\label{take-home-messages}}
@@ -1225,8 +1233,6 @@ Observation & Number & Word & Length  \\ \hline
 & & & \\ \hline
 \end{tabular}
 \end{center}
-
-``
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1624,7 +1630,7 @@ The diagram below summarizes these ideas about confounding variables and random 
 \setcounter{enumi}{16}
 \tightlist
 \item
-  \textbf{Both the sampling method (which we covered earlier this week) and the study design will help to determine the \emph{scope of inference} for a study: To \emph{whom} can we generalize, and can we conclude \emph{causation or only association}? Use the table below to determine the scope of inference of this trial study described in question 16.}
+  \textbf{Both the sampling method (which we covered last week) and the study design will help to determine the \emph{scope of inference} for a study: To \emph{whom} can we generalize, and can we conclude \emph{causation or only association}? Use the table below to determine the scope of inference of this trial study described in question 16.}
   \vspace{0.3in}
 \end{enumerate}
 
@@ -2109,9 +2115,7 @@ For today's activity we will begin to use the statistical package R to analyze d
 \item
   Click ``Upload'' in the ``Files'' tab in the bottom right window of RStudio. In the pop-up window, click ``Choose File'', and navigate to the folder where the Myopia Activity R script file is saved (most likely in your downloads folder). Click ``Open''; then click ``Ok''.
 \item
-  You should see the uploaded file appear in the list of files in the bottom right window.
-\item
-  Click on the file name to open the file in the Editor window (upper left window).
+  You should see the uploaded file appear in the list of files in the bottom right window. Click on the file name to open the file in the Editor window (upper left window).
 \end{itemize}
 
 Notice that the first three lines of code contain a prompt called, \texttt{library}. Packages needed to run functions in R are stored in directories called libraries. When using the MSU RStudio server, all the packages needed for the class are already installed. We simply must tell R which packages we need for each R script file. We use the prompt \texttt{library} to load each \textbf{package} (or library) needed for each activity. Note, these \texttt{library} lines MUST be run each time you open a R script file in order for the functions in R to work. Before class today you should have worked through an R tutorial to prepare for class and to make sure you can login to the RStudio server. This tutorial will be a great resource as you begin to use R.
@@ -2123,7 +2127,7 @@ R will ignore everything after a \# sign when executing the code. Refer to the i
 \subsection*{Nightlight use and myopia}\label{nightlight-use-and-myopia}}
 \addcontentsline{toc}{subsection}{Nightlight use and myopia}
 
-In a study reported in Nature (Quinn et al. 1999), a survey of 479 children found that those who had slept with a nightlight or in a fully lit room before the age of 2 had a higher incidence of nearsightedness (myopia) later in childhood.
+In a study reported in Nature (Quinn et al. 1999), a survey of 479 children found that those who had slept with a nightlight or in a fully lit room before the age of two had a higher incidence of nearsightedness (myopia) later in childhood.
 
 In this study, there are two variables studied: \texttt{Light}: level of light in room at night (no light, nightlight, full light) and \texttt{Sight}: level of myopia developed later in childhood (high myopia, myopia, no myopia).
 
@@ -2142,7 +2146,7 @@ An important part of understanding data is to create visual pictures of what the
 \subsubsection*{R code}\label{r-code}}
 \addcontentsline{toc}{subsubsection}{R code}
 
-Throughout these activities, we will often include the R code you would use in order to produce output or plots. These ``code chunks'' appear in gray. In the code chunk below, we demonstrate how to read the data set into R using the \texttt{read.csv()} function. The line of code shown below (line 6 in the R script file) reads in the data set and names the data set (object) \texttt{myopia}. Highlight and run line 6 in the R script file to load the data from the Stat 216 webpage.
+Throughout these activities, we will often include the R code you would use in order to produce output or plots. These ``code chunks'' appear in gray. In the code chunk below, we demonstrate how to read the data set into R using the \texttt{read.csv()} function. The line of code shown below (line 6 in the R script file) reads in the data set and names the data set \texttt{myopia}. Highlight and run line 6 in the R script file to load the data from the Stat 216 webpage.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5321,21 +5325,11 @@ Let's think about how to use a coin to create one simulation of 16 infants under
   How many times would you flip a coin to simulate the sample of infants?
 \end{enumerate}
 
-\vspace{0.2in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{11}
-\tightlist
-\item
-  Flip a coin 16 times recording the number of times the coin lands on heads. This represents one simulated sample of 16 infants randomly choosing the toy.
-\end{enumerate}
-
-\vspace{0.3in}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
 \tightlist
 \item
   Once we have one simulated sample, what would we calculate and plot on the null distribution? \emph{Hint}: What statistic are we calculating from the data?
@@ -5345,17 +5339,17 @@ Let's think about how to use a coin to create one simulation of 16 infants under
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{13}
+\setcounter{enumi}{12}
 \tightlist
 \item
-  Each group create one simulation using the coin provided. Write down your simulated sample proportion. This is one simulation created under the assumption the null hypothesis is true. Is this value closer to 0.5, the null value, or closer to the sample proportion, 0.875? Compare your simulated value to the other groups at your table.
+  Create one simulation using the coin provided. Write down your simulated sample proportion. This is one simulation created under the assumption the null hypothesis is true. Is this value closer to 0.5, the null value, or closer to the sample proportion, 0.875? Compare your simulated value to the other groups at your table.
 \end{enumerate}
 
 \vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{14}
+\setcounter{enumi}{13}
 \tightlist
 \item
   Report your simulated sample proportion to your instructor. Sketch the distribution created by your class below.
@@ -5365,17 +5359,17 @@ Let's think about how to use a coin to create one simulation of 16 infants under
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{15}
+\setcounter{enumi}{14}
 \tightlist
 \item
-  Circle the observed statistic (value from question 3) on the distribution you drew in question 15. Where does this statistic fall in this distribution: Is it near the center of the distribution (near 0.5) or in one of the tails of the distribution?
+  Circle the observed statistic (value from question 3) on the distribution you drew in question 14. Where does this statistic fall in this distribution: Is it near the center of the distribution (near 0.5) or in one of the tails of the distribution?
 \end{enumerate}
 
 \vspace{1in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{16}
+\setcounter{enumi}{15}
 \tightlist
 \item
   Is the observed statistic likely to happen or unlikely to happen if the true proportion of infants who choose the helper is 0.5? Explain your answer using the plot.
@@ -6707,8 +6701,8 @@ Results are unlikely to be statistically significant (but may be practically imp
 
 \newpage
 
-\hypertarget{activity-7a-handedness-of-male-boxers-theory-based-methods}{%
-\section{Activity 7A: Handedness of Male Boxers --- Theory-based Methods}\label{activity-7a-handedness-of-male-boxers-theory-based-methods}}
+\hypertarget{activity-7a-handedness-of-male-boxers-theory-based-hypothesis-test}{%
+\section{Activity 7A: Handedness of Male Boxers --- Theory-based Hypothesis Test}\label{activity-7a-handedness-of-male-boxers-theory-based-hypothesis-test}}
 
 \setstretch{1}
 
@@ -6818,7 +6812,7 @@ Conditions for the sampling distribution of \(\hat{p}\) to follow an approximate
   Verify that the independence condition is satisfied.
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6869,6 +6863,8 @@ The standard error of the sample proportion measures the variability of possible
 
 \vspace{0.6in}
 
+\newpage
+
 The standardized statistic is used as a ruler to measure how far the sample statistic is from the null value. Essentially, we are converting the sample proportion into a measure of standard errors to compare to the standard normal distribution.
 
 \begin{enumerate}
@@ -6887,8 +6883,6 @@ The standardized statistic is used as a ruler to measure how far the sample stat
 
 \caption{A standard normal curve.}\label{fig:simpleNormalcurve}
 \end{figure}
-
-\newpage
 
 The standardized statistic measures the \emph{number of standard errors the sample statistic is from the null value}.
 
@@ -6927,13 +6921,23 @@ Notes:
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{10}
+\tightlist
 \item
   Report the p-value obtained from the R output.
   \vspace{0.3in}
+\end{enumerate}
+
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\tightlist
 \item
   Write a conclusion based on the value of the p-value.
-  \newpage
 \end{enumerate}
+
+\vspace{0.8in}
 
 \hypertarget{impacts-on-the-p-value}{%
 \subsection*{Impacts on the P-value}\label{impacts-on-the-p-value}}
@@ -6979,7 +6983,7 @@ Suppose that we want to show that the true proportion of male boxers \textbf{dif
   Suppose instead of 500 male boxers the researchers only took a sample of 300 male boxers and found the same proportion (\(\hat{p}=0.182\)) of male boxers that are left-handed. Since we are still assuming the same null value, 0.1, the standard error would be calculated as below:
 \end{enumerate}
 
-\[SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{300}} = 0.017\].
+\[SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{300}} = 0.017\]
 
 Calculate the standardized statistic for this new sample.
 
@@ -7013,7 +7017,9 @@ Use Rstudio to find the p-value for this new sample. Enter the value of the stan
   Suppose another sample of 500 male boxers was taken and 68 were found to be left-handed. Since we are still assuming the same null value, 0.1, the standard error would be calculated as before:
 \end{enumerate}
 
-\[SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{500}} = 0.013\].Calculate the standardized statistic for this new sample.
+\[SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{500}} = 0.013\]
+
+Calculate the standardized statistic for this new sample.
 
 \vspace{0.8in}
 
@@ -7073,6 +7079,7 @@ Use Rstudio to find the p-value for this new sample.
 \end{enumerate}
 
 \vspace{0.4in}
+\newpage
 
 \hypertarget{take-home-messages-11}{%
 \subsection{Take-home messages}\label{take-home-messages-11}}
@@ -7091,8 +7098,6 @@ Use Rstudio to find the p-value for this new sample.
   The farther the statistic is from the null value, the larger the standardized statistic. This will result in a smaller p-value and more evidence against the null hypothesis.
 \end{enumerate}
 
-\newpage
-
 \hypertarget{additional-notes-10}{%
 \subsection{Additional notes}\label{additional-notes-10}}
 
@@ -7100,8 +7105,8 @@ Use this space to summarize your thoughts and take additional notes on today's a
 
 \newpage
 
-\hypertarget{activity-7b-handedness-of-male-boxers-theory-ci}{%
-\section{Activity 7B: Handedness of Male Boxers --- Theory CI}\label{activity-7b-handedness-of-male-boxers-theory-ci}}
+\hypertarget{activity-7b-handedness-of-male-boxers-theory-based-confidence-interval}{%
+\section{Activity 7B: Handedness of Male Boxers --- Theory-based Confidence Interval}\label{activity-7b-handedness-of-male-boxers-theory-based-confidence-interval}}
 
 \setstretch{1}
 
@@ -7286,6 +7291,7 @@ For this part of the activity we will assume that the the true proportion of mal
 \end{enumerate}
 
 \vspace{0.8in}
+\newpage
 
 \hypertarget{take-home-messages-12}{%
 \subsection{Take-home messages}\label{take-home-messages-12}}
@@ -8831,7 +8837,7 @@ Fill in the missing values/names in the R script file in the two\_proportion\_bo
   Write a conclusion to the research question in context of the study.
 \end{enumerate}
 
-\vspace{0.8in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9161,16 +9167,19 @@ For this study the observational units are skiers and snowboarders involved in a
 \begin{Highlighting}[]
 \NormalTok{injury }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"https://math.montana.edu/courses/s216/data/HeadInjuries.csv"}\NormalTok{) }
 \NormalTok{injury }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{group\_by}\NormalTok{(Helmet) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{count}\NormalTok{(Outcome)}
-\CommentTok{\#\textgreater{} \# A tibble: 4 x 3}
-\CommentTok{\#\textgreater{} \# Groups:   Helmet [2]}
-\CommentTok{\#\textgreater{}   Helmet Outcome            n}
-\CommentTok{\#\textgreater{}   \textless{}chr\textgreater{}  \textless{}chr\textgreater{}          \textless{}int\textgreater{}}
-\CommentTok{\#\textgreater{} 1 No     Head Injury      480}
-\CommentTok{\#\textgreater{} 2 No     No Head Injury  2330}
-\CommentTok{\#\textgreater{} 3 Yes    Head Injury       96}
-\CommentTok{\#\textgreater{} 4 Yes    No Head Injury   656}
 \end{Highlighting}
 \end{Shaded}
+
+\begin{verbatim}
+#> # A tibble: 4 x 3
+#> # Groups:   Helmet [2]
+#>   Helmet Outcome            n
+#>   <chr>  <chr>          <int>
+#> 1 No     Head Injury      480
+#> 2 No     No Head Injury  2330
+#> 3 Yes    Head Injury       96
+#> 4 Yes    No Head Injury   656
+\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9200,11 +9209,11 @@ No Head Injury & & & \\
   Write the null and alternative hypotheses in notation.
 \end{enumerate}
 
-~~~Ho:
+~~~\(H_0\):
 
 \vspace{0.2in}
 
-~~~Ha:
+~~~\(H_A\):
 
 \vspace{0.2in}
 
@@ -9216,7 +9225,7 @@ No Head Injury & & & \\
   Calculate the summary statistic (difference in proportions) for this study. Use appropriate notation with clear subscripts.
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9224,8 +9233,10 @@ No Head Injury & & & \\
 \tightlist
 \item
   Interpret the difference in sample proportions in context of the study.
-  \vspace{0.8in}
+  \vspace{1in}
 \end{enumerate}
+
+\newpage
 
 \hypertarget{use-statistical-analysis-methods-to-draw-inferences-from-the-data-3}{%
 \subsubsection*{Use statistical analysis methods to draw inferences from the data}\label{use-statistical-analysis-methods-to-draw-inferences-from-the-data-3}}
@@ -9292,6 +9303,7 @@ SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{0.162(1-0.162)\left(\frac{1}{752}+\frac{1}{2810}
 \end{enumerate}
 
 \vspace{1in}
+\newpage
 
 \begin{figure}
 
@@ -9311,7 +9323,6 @@ SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{0.162(1-0.162)\left(\frac{1}{752}+\frac{1}{2810}
 \end{enumerate}
 
 \vspace{0.1in}
-\newpage
 
 We will use the \texttt{pnorm()} function in R to find the p-value. Use the provided R script file and enter the value of the standardized statistic found in question 7 at \texttt{xx} in line 9; highlight and run lines 9--11.
 
@@ -9354,6 +9365,7 @@ We will use the \texttt{pnorm()} function in R to find the p-value. Use the prov
 \end{enumerate}
 
 \vspace{0.8in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9363,9 +9375,7 @@ We will use the \texttt{pnorm()} function in R to find the p-value. Use the prov
   What is the scope of inference for this study?
 \end{enumerate}
 
-\newpage
-
-\newpage
+\vspace{0.8in}
 
 \hypertarget{take-home-messages-15}{%
 \subsection{Take-home messages}\label{take-home-messages-15}}
@@ -9494,7 +9504,7 @@ Recall that the \(z^*\) multiplier is the percentile of a standard normal distri
 \setcounter{enumi}{2}
 \tightlist
 \item
-  Sketch a graph of the standard normal distribution and use the graph to explain how the R code above is used to find the \(z^*\) multiplier.
+  Sketch a graph of the standard normal distribution and use the graph to explain how the R code is used to find the \(z^*\) multiplier.
 \end{enumerate}
 
 \vspace{1.5in}
@@ -9508,7 +9518,7 @@ Remember that the margin of error is the value added and subtracted to the sampl
 \setcounter{enumi}{3}
 \tightlist
 \item
-  Using the multiplier of \(z^*\) = 1.645 and the standard error calculated above, calculate the margin of error for a 90\% confidence interval.
+  Using the multiplier of \(z^*\) = 1.645 and the calculated standard error, calculate the margin of error for a 90\% confidence interval.
 \end{enumerate}
 
 \vspace{0.5in}
@@ -9878,7 +9888,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the appropri
   Write a conclusion to the research question based on the p-value.
   \vspace{0.8in}
 \item
-  Write a decision based on the p-value.
+  Using a significance level of \(\alpha = 0.1\), what statistical decision will you make about the null hypothesis?
   \vspace{0.3in}
 \item
   Use the provided R script file to find a 90\% confidence interval.
@@ -10000,7 +10010,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the appropri
   Write a conclusion to the research question based on the p-value.
   \vspace{0.8in}
 \item
-  Write a decision based on the p-value.
+  Using a significance level of \(\alpha = 0.05\), what statistical decision will you make about the null hypothesis?
   \vspace{0.3in}
 \item
   Use the provided R script file to find a 95\% confidence interval.
@@ -11125,7 +11135,7 @@ Conditions for the sampling distribution of \(\bar{x}\) to follow an approximate
 \caption{Comparison of the standard Normal vs t-distribution with various degrees of freedom}\label{fig:tdist}
 \end{figure}
 
-Like we saw in Chapter 5, we will not know the values of the parameters and must use the sample data to estimate them. Unlike with proportions, in which we only needed to estimate the population proportion, \(\pi\), quantitative sample data must be used to estimate both a population mean \(\mu\) and a population standard deviation \(\sigma\). This additional uncertainty will require us to use a theoretical distribution that is just a bit wider than the Normal distribution. Enter the \textbf{\(t\)-distribution}!
+Like we saw in Chapter 11, we will not know the values of the parameters and must use the sample data to estimate them. Unlike with proportions, in which we only needed to estimate the population proportion, \(\pi\), quantitative sample data must be used to estimate both a population mean \(\mu\) and a population standard deviation \(\sigma\). This additional uncertainty will require us to use a theoretical distribution that is just a bit wider than the Normal distribution. Enter the \textbf{\(t\)-distribution}!
 
 As you can seen from Figure \ref{fig:tdist}, the \(t\)-distributions (dashed and dotted lines) are centered at 0 just like a standard Normal distribution (solid line), but are slightly wider. The variability of a \(t\)-distribution depends on its degrees of freedom, which is calculated from the sample size of a study. (For a single sample of \(n\) observations or paired differences, the degrees of freedom is equal to \(n-1\).) Recall from previous classes that larger sample sizes tend to result in narrower sampling distributions. We see that here as well. The larger the sample size, the larger the degrees of freedom, the narrower the \(t\)-distribution. (In fact, a \(t\)-distribution with infinite degrees of freedom actually IS the standard Normal distribution!)
 
@@ -13832,7 +13842,7 @@ Highlight and run lines 22--35 to produce the diagnostic plots needed to assess 
 
 ~~~\(H_0:\)
 
-~~~\(H_a:\)
+~~~\(H_A:\)
 
 \hypertarget{use-statistical-inferential-methods-to-draw-inferences-from-the-data-7}{%
 \subsubsection*{Use statistical inferential methods to draw inferences from the data}\label{use-statistical-inferential-methods-to-draw-inferences-from-the-data-7}}
@@ -14844,7 +14854,7 @@ Total & 59,100 & 40,900 & 100,000 \\
 \setcounter{enumi}{3}
 \tightlist
 \item
-  \textbf{Give the probability notation for the calculation \(\frac{27.7302}{30.0392} = 0.923\). Write out what this probability measures in words.}
+  \textbf{Give the probability notation for the calculation \(\frac{27.7302}{30.0351} = 0.923\). Write out what this probability measures in words.}
 \end{enumerate}
 
 \vspace{0.8in}
@@ -15048,7 +15058,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the appropri
   Write a conclusion to the research question based on the p-value.
   \vspace{0.8in}
 \item
-  Write a decision based on the p-value.
+  Using a significance level of \(\alpha = 0.1\), what statistical decision will you make about the null hypothesis?
   \vspace{0.3in}
 \item
   Use the provided R script file to find a 90\% confidence interval.
@@ -15159,7 +15169,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the appropri
   Write a conclusion to the research question based on the p-value.
   \vspace{0.8in}
 \item
-  Write a decision based on the p-value.
+  Using a significance level of \(\alpha = 0.05\), what statistical decision will you make about the null hypothesis?
   \vspace{0.3in}
 \item
   Use the provided R script file to find a 95\% confidence interval.
@@ -15269,7 +15279,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the appropri
   Write a conclusion to the research question based on the p-value.
   \vspace{0.8in}
 \item
-  Write a decision based on the p-value.
+  Using a significance level of \(\alpha = 0.01\), what statistical decision will you make about the null hypothesis?
   \vspace{0.3in}
 \item
   Use the provided R script file to find a 99\% confidence interval.

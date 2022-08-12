@@ -134,29 +134,25 @@ Let's think about how to use a coin to create one simulation of 16 infants under
 
 11. How many times would you flip a coin to simulate the sample of infants?
 
-\vspace{0.2in}
+\newpage
 
-12. Flip a coin 16 times recording the number of times the coin lands on heads.  This represents one simulated sample of 16 infants randomly choosing the toy.
-
-\vspace{0.3in}
-
-13.  Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
+12.  Once we have one simulated sample, what would we calculate and plot on the null distribution?  *Hint*: What statistic are we calculating from the data?
 
 \vspace{0.5in}
 
-14.  Each group create one simulation using the coin provided.  Write down your simulated sample proportion.  This is one simulation created under the assumption the null hypothesis is true.  Is this value closer to 0.5, the null value, or closer to the sample proportion, 0.875?  Compare your simulated value to the other groups at your table.
+13. Create one simulation using the coin provided.  Write down your simulated sample proportion.  This is one simulation created under the assumption the null hypothesis is true.  Is this value closer to 0.5, the null value, or closer to the sample proportion, 0.875?  Compare your simulated value to the other groups at your table.
 
 \vspace{0.8in}
 
-15.  Report your simulated sample proportion to your instructor.  Sketch the distribution created by your class below.
+14.  Report your simulated sample proportion to your instructor.  Sketch the distribution created by your class below.
 
 \vspace{1.5in}
 
-16. Circle the observed statistic (value from question 3) on the distribution you drew in question 15.  Where does this statistic fall in this distribution: Is it near the center of the distribution (near 0.5) or in one of the tails of the distribution?  
+15. Circle the observed statistic (value from question 3) on the distribution you drew in question 14.  Where does this statistic fall in this distribution: Is it near the center of the distribution (near 0.5) or in one of the tails of the distribution?  
 
 \vspace{1in}
 
-17. Is the observed statistic likely to happen or unlikely to happen if the true proportion of infants who choose the helper is 0.5?  Explain your answer using the plot.
+16. Is the observed statistic likely to happen or unlikely to happen if the true proportion of infants who choose the helper is 0.5?  Explain your answer using the plot.
 
 \vspace{0.8in}
 

@@ -51,6 +51,9 @@ For this study the observational units are skiers and snowboarders involved in a
 ```r
 injury <- read.csv("https://math.montana.edu/courses/s216/data/HeadInjuries.csv") 
 injury %>% group_by(Helmet) %>% count(Outcome)
+```
+
+```
 #> # A tibble: 4 x 3
 #> # Groups:   Helmet [2]
 #>   Helmet Outcome            n
@@ -78,18 +81,20 @@ No Head Injury & & & \\
 
 2. Write the null and alternative hypotheses in notation. 
 
-|    Ho: 
+|    $H_0$: 
 \vspace{0.2in}
 
-|    Ha:
+|    $H_A$:
 \vspace{0.2in}
 
 3. Calculate the summary statistic (difference in proportions) for this study.  Use appropriate notation with clear subscripts.
 
-\vspace{0.5in}
+\vspace{0.8in}
 
 4. Interpret the difference in sample proportions in context of the study.
-\vspace{0.8in}
+\vspace{1in}
+
+\newpage
 
 #### Use statistical analysis methods to draw inferences from the data {-}
 
@@ -134,6 +139,7 @@ $$
 7. Use the value of the null standard error to calculate the standardized statistic (standardized difference in proportion).
 
 \vspace{1in}
+\newpage
 
 \begin{figure}
 
@@ -147,7 +153,6 @@ $$
 8. Mark the value of the standardized statistic on the standard normal distribution above and shade the area to find the p-value.
 
 \vspace{0.1in}
-\newpage
 
 We will use the `pnorm()` function in R to find the p-value. Use the provided R script file and enter the value of the standardized statistic found in question 7 at `xx` in line 9; highlight and run lines 9--11.
 
@@ -174,10 +179,11 @@ pnorm(xx, # Enter value of standardized statistic
 12. Would a 90\% confidence interval contain the null value of zero?  Explain your answer.
 
 \vspace{0.8in}
+\newpage
 
 13. What is the scope of inference for this study?
 
-\newpage
+\vspace{0.8in}
 
 
 <!-- ### Impacts on the P-value {-} -->
@@ -246,8 +252,6 @@ pnorm(xx, # Enter value of standardized statistic
 
 <!-- \vspace{0.4in} -->
 
-
-\newpage
 
 ### Take-home messages
 

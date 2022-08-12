@@ -165,7 +165,7 @@ The diagram below summarizes these ideas about confounding variables and random 
 
 \newpage
 
-17. **Both the sampling method (which we covered earlier this week) and the study design will help to determine the *scope of inference* for a study: To *whom* can we generalize, and can we conclude *causation or only association*? Use the table below to determine the scope of inference of this trial study described in question 16.**
+17. **Both the sampling method (which we covered last week) and the study design will help to determine the *scope of inference* for a study: To *whom* can we generalize, and can we conclude *causation or only association*? Use the table below to determine the scope of inference of this trial study described in question 16.**
 \vspace{0.3in}
 
 

@@ -71,7 +71,7 @@ qnorm(0.95) # Multiplier for 90% confidence interval
 
 \newpage
 
-3. Sketch a graph of the standard normal distribution and use the graph to explain how the R code above is used to find the $z^*$ multiplier.  
+3. Sketch a graph of the standard normal distribution and use the graph to explain how the R code is used to find the $z^*$ multiplier.  
 
 \vspace{1.5in}
 
@@ -80,7 +80,7 @@ Remember that the margin of error is the value added and subtracted to the sampl
 
 $$ME = z^*SE(\hat{p}_1 - \hat{p}_2)$$
 
-4. Using the multiplier of $z^*$ = 1.645 and the standard error calculated above, calculate the margin of error for a 90\% confidence interval.
+4. Using the multiplier of $z^*$ = 1.645 and the calculated standard error, calculate the margin of error for a 90\% confidence interval.
 
 \vspace{0.5in}
 
