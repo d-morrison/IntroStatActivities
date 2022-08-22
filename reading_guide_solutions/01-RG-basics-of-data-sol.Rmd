@@ -1,3 +1,40 @@
+---
+title: "Week 1 Reading Guide Solutions"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  collapse = TRUE,
+  message = FALSE,
+  #cache = TRUE,
+  echo = FALSE, # hide code unless otherwise noted in chunk options
+  out.width = "70%",
+  fig.align = 'center',
+  fig.width = 6,
+  fig.asp = 0.618,  # 1 / phi
+  fig.show = "hold",
+  message = FALSE
+  )
+options(show.signif.stars = FALSE)
+suppressMessages(library(knitr))
+suppressMessages(library(tidyverse))
+suppressMessages(library(catstats))
+
+colorize <- function(x, color="red") {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color,
+            x)
+  } else x
+}
+
+```
+
 # Basics of Data
 
 ## Week 1 Reading Guide: Basics of Data
