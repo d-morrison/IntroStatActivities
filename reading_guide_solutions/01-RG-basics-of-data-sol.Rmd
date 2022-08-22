@@ -287,4 +287,4 @@ True or False: Volunteer sampling tends to result in response bias.
 
 True or False: Random sampling helps to resolve selection bias, but has no impact on non-response or response bias.
 
-\newpage
+
