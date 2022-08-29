@@ -175,9 +175,9 @@ IPEDS %>% # Data set piped into...
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
 IPEDS %>% # Data set piped into...
   ggplot(aes(x = Retention_Inc)) +   # Name variable to plot
-  geom_boxplot() +  # Create boxplot
-  labs(title = "Boxplot of Adjusted Revenue of Movies in 2016", # Title for plot
-       x = "Revenue (in Millions)", # Label for x axis
+  geom_boxplot() +  # Create histogram with specified binwidth
+  labs(title = "Boxplot of Retention Rates for US Higher Education Institutions", # Title for plot
+       x = "Retention Rate", # Label for x axis
        y = "Frequency") # Label for y axis
 ```
 
