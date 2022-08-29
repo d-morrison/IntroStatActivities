@@ -102,7 +102,7 @@ Observation & Word & Length  \\ \hline
 
 <!-- 1.  There are three types of bias to be aware of when designing a sampling method: selection bias, non-response bias, and response bias. -->
 
-1.	When we use a biased method of selection, we will over or underestimate the parameter.
+1.	When we use a biased method of sample selection, the method will tend to overestimate or underestimate the parameter.
 
 2. To see if a method is biased, we compare the distribution of the estimates to the true value. We want our estimate to be on target or unbiased.  When using unbiased methods of selection, the mean of the distribution matches or is very similar to our true parameter.
 

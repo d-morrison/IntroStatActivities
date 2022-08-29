@@ -98,9 +98,9 @@ Num Credits & & \\
 
 In the next few weeks we will look at how to summarize data both numerically and graphically.  For now we will focus on sampling methods and the type of sampling bias that may be present.  
 
-* Sampling bias: a part of the target population is not included or underrepresented in the sample
+* Selection bias: a part of the target population is not included or underrepresented in the sample
 
-* Non-response or non-participation bias: part of the already selected population does not respond or chooses not to participate
+* Non-response or non-participation bias: part of the already selected sample does not respond or chooses not to participate
 
 * Response bias: survey participant gives an untruthful or misleading response
 
