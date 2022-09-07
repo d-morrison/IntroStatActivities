@@ -59,7 +59,7 @@ Throughout these activities, we will often include the R code you would use in o
 myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv") 
 ```
 
-2.  Click on the data set name (`Myopia`) in the Environment tab (upper right window).  This will open the data set in a 2nd tab in the Editor window (upper left window).  R is case sensitive, which means that you must always type the name of a variable EXACTLY as it is written in the data set including upper and lower case letters and without misspellings!  Write down the name of each variable (column names) as it is written in the data set.  
+2.  Click on the data set name (`myopia`) in the Environment tab (upper right window).  This will open the data set in a 2nd tab in the Editor window (upper left window).  R is case sensitive, which means that you must always type the name of a variable EXACTLY as it is written in the data set including upper and lower case letters and without misspellings!  Write down the name of each variable (column names) as it is written in the data set.  
 
 \vspace{0.3in}
 
@@ -69,13 +69,13 @@ If we wanted to know how many children in our data set were in each level of myo
 
 ```{r, out.width="50%", echo=TRUE, eval = FALSE}
 myopia %>% # Data set piped into...
-ggplot(aes(y = variable)) +   # This specifies the variable
+ggplot(aes(x = variable)) +   # This specifies the variable
   geom_bar(stat = "count") +  # Tell it to make a bar plot
   labs(title = "Frequency Bar Plot of Level of Myopia",  # Give your plot a title
-       x = "Frequency",   # Label the x axis
-       y = "Level of Myopia")  + # Label the y axis
-  coord_flip()  # Turn the bars so they are vertical
+       x = "Level of Myopia",   # Label the x axis
+       y = "Frequency")  # Label the y axis
 ```
+
 3. Sketch the bar chart created below.  Be sure to label the axes.
 
 \vspace{2in}

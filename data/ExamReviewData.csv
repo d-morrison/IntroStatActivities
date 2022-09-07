@@ -1,4 +1,4 @@
-Case,Island,City,Population,Name,Consent,Gender,Age,Married,Smoking_Status,Children,weight _kg,height_cm,respitory_rate,Type_of_Music,Before_PuzzleCube,After_PuzzleCube,Education_Level,Balance_Test,Blood_Glucose_before,Heart_Rate_before,Blood_Glucose_after,Heart_Rate_after,Diff_Heart_Rate,Diff_Blood_Glucose
+Case,Island,City,Population,Name,Consent,Gender,Age,Married,Smoking_Status,Children,weight_kg,height_cm,respiratory_rate,Type_of_Music,Before_PuzzleCube,After_PuzzleCube,Education_Level,Balance_Test,Blood_Glucose_before,Heart_Rate_before,Blood_Glucose_after,Heart_Rate_after,Diff_Heart_Rate,Diff_Blood_Glucose
 1,Tropical,Nidoma,1045,Sinead Regan,Declined,F,90,,,,,,,,,,,,,,,,,
 2,Temperate,Reading,2479,Allison Macleod,Declined,F,31,,,,,,,,,,,,,,,,,
 3,Tropical,Colmar,5382,Kamal Achari,Consented,M,30,yes,nonsmoker,yes,52.7,172,15,Classical,9.2,9.8,highschool,48,90,88,102,89,-1,-12
