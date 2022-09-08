@@ -75,9 +75,9 @@ movies %>%  # Data set pipes into
 
 #### Coefficient of determination (squared correlation) {-}
 
-Another summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. The value of $r^2$ (a value between 0 and 1) represents the **proportion of variation in the response that is explained by the least squares line with the explanatory variable**.  There are two ways to calculate the coefficient of determination: 
+Another summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination ($R^2$). The coefficient of determination, $R^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. The value of $R^2$ (a value between 0 and 1) represents the **proportion of variation in the response that is explained by the least squares line with the explanatory variable**.  There are two ways to calculate the coefficient of determination: 
 
-|    Square the correlation coefficient:  $R^2 = (R)^2$
+|    Square the correlation coefficient:  $R^2 = (r)^2$
 
 |    Use the variances of the response and the residuals:  $R^2 = \dfrac{s_y^2 - s_{RES}^2}{s_y^2} = \dfrac{SST - SSE}{SST}$
 
