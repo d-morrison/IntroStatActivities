@@ -68,7 +68,7 @@ Look through the provided chart above showing the description of variables measu
 
 In Wednesday's activity, the code was provided to import the data set needed directly from the Stat 216 website.  Follow these steps to upload and import the data set for today's lab.
 
-* Download the provided data set `IPED_Data_2018` from D2L
+* Download the provided data set `IPEDS_Data_2018` from D2L
 
 * Upload the data set `IPEDS_Data_2018` to the RStudio server using the same steps to upload the R script file.  
 
