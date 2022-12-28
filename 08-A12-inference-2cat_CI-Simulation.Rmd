@@ -124,15 +124,9 @@ two_proportion_bootstrap_CI(formula = Behavior ~ Condition,
 
 \vspace{1in}
 
-12.  What conclusion to the research question can be made based on the 99\% confidence interval?
+12.  Explain why the 
 
 \vspace{0.8in}
-
-13.  Is the null value in the 99\% confidence interval? 
-
-\vspace{0.8in}
-
-\newpage
 
 #### Types of errors {-}
 
@@ -162,15 +156,15 @@ Recall from a previous activity, hypothesis tests are not flawless. In a hypothe
 
 Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the null hypothesis when $H_0$ is actually true. A **Type 2 Error** happens when we fail to reject the null hypothesis when the alternative is actually true.
 
-14.  Using a significance level of 0.01 and your answer to question 13, what decision do you make in regards to the null hypothesis?
+13.  Using a significance level of 0.01 and your answer to question 13, what decision do you make in regards to the null hypothesis?
 
 \vspace{0.3in}
 
-15. What type of error could we have made?
+14. What type of error could we have made?
 
 \vspace{0.3in}
 
-16.  Write this error in context of the problem.
+15.  Write this error in context of the problem.
 
 \vspace{0.5in}
 
