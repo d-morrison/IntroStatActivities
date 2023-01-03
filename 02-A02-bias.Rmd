@@ -42,7 +42,7 @@ For this activity, you will read a speech given by Jim Becenti, a member of the 
 \vspace{1mm}
 
 \begin{center}
-\begin{tabular}{|l|p{3in}|p{1in}|} \hline
+\begin{tabular}{|l|p{1in}|} \hline
 Observation & Length  \\ \hline
 1 &  \\ 
 &  \\ \hline

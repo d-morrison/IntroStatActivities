@@ -71,17 +71,21 @@ movies %>% # Data set piped into...
 
 \vspace{0.5in}
 
-2. Calculate the interquartile range (IQR = Q3 - Q1).
+2. Report the value for quartile 1 and interpret this value in context of the problem.
 
 \vspace{0.5in}
 
-3. Report the value of the standard deviation and interpret this value in context of the problem.
+3. Calculate the interquartile range (IQR = Q3 - Q1).
+
+\vspace{0.5in}
+
+4. Report the value of the standard deviation and interpret this value in context of the problem.
 \vspace{0.8in}
 
 #### Displaying a single quantitative variable {-}
 
 
-4. What are the three types of plots used to plot a single quantitative variable?
+5. What are the three types of plots used to plot a single quantitative variable?
 
 \newpage
 
@@ -101,7 +105,7 @@ ggplot(aes(x = imdb_score)) +   # Name variable to plot
 
 \begin{center}\includegraphics[width=0.6\linewidth]{03-A05-EDA-quantitative_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
-5. What is the shape of the distribution of IMDb scores?
+6. What is the shape of the distribution of IMDb scores?
 
 \vspace{0.2in}
 
@@ -119,51 +123,33 @@ ggplot(aes(x = variable)) +   # Name variable to plot
        y = "Frequency") # Label for y axis
 ```
 
-6. Sketch the histogram created here.
+7. Sketch the histogram created here.
 
 \vspace{1.4in}
 
-7. Which range of IMDb scores have the highest frequency?
+8. Which range of IMDb scores have the highest frequency?
 
 \vspace{0.2in}
 
-8. Which five summary statistics are used in creating a box plot? *Hint*: Together they are called the **five-number summary** of the variable.
+To create a boxplot of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for `variable` at line 28, highlight and run lines 27--32.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
-\vspace{0.4in}
 
-9. Using the code below we see that the three smallest IMDb scores in the data set are 3.4, 3.5, and 3.7 and the three largest IMDb scores are 8.0, 8.1, and 8.2:  
+```r
+movieS %>% # Data set piped into...
+ggplot(aes(x = variable)) +   # Name variable to plot
+  geom_boxplot() +  # Create boxplot 
+  labs(title = "Boxplot of IMDb Score of Movies in 2016", # Title for plot
+       x = "IMDb Score", # Label for x axis
+       y = "Frequency") # Label for y axis
+```
 
-    
-    ```r
-    movies %>% # Data set pipes into...
-      select(imdb_score) %>% # Select imdb_score variable
-      slice_min(imdb_score, n = 3)  # Show 3 smallest values
-    ```
-    
-    ```
-    #>   imdb_score
-    #> 1        3.4
-    #> 2        3.5
-    #> 3        3.7
-    ```
 
-    
-    ```r
-    movies %>% # Data set pipes into...
-      select(imdb_score) %>% # Select imdb_score variable
-      slice_max(imdb_score, n = 3)  # Show 3 largest values
-    ```
-    
-    ```
-    #>   imdb_score
-    #> 1        8.2
-    #> 2        8.1
-    #> 3        8.0
-    ```
+9. Sketch the boxplot created and identify the values of the 5-number summary (minimum value, first quartile ($Q_1$), median, third quartile ($Q_3$), maximum value) on the plot.  Use the following formulas to find the invisible fence on both ends of the distribution.  Draw a dotted line at the invisible fence to show how the outliers were found.
 
-    Using the summary statistics given in the `R` output before question 1, and the smallest and largest values of the variable to check for outliers, sketch a box plot of IMDb Score.  Be sure to label the axes.
+$$\text{Lower Fence: values} \le Q_1 - 1.5\times IQR$$
 
-\vspace{1.5in}
+$$\text{Upper Fence: values} \ge Q_3 + 1.5\times IQR$$
+\vspace{2in}
 
 10. Compare the three graphs of IMDb scores created above.
 
@@ -177,7 +163,7 @@ ggplot(aes(x = variable)) +   # Name variable to plot
     
 #### Summary statistics for a single categorical and single quantitative Variable{-}
 
-Is there an association between content rating and budget for movies in 2016?  To use the `favstats()` function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.  This function will give the summary statistics for budget for each content rating.  Highlight and run lines 37--39 in the provided `R` script file and check that the summary statistics match those provided in the coursepack.
+Is there an association between content rating and budget for movies in 2016?  To use the `favstats()` function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.  This function will give the summary statistics for budget for each content rating.  Highlight and run lines 35--37 in the provided `R` script file and check that the summary statistics match those provided in the coursepack.
 
 
 ```r
@@ -213,7 +199,7 @@ movies %>% # Data set piped into...
 
 #### Displaying a single categorical and single quantitative variable {-}
 
-The boxplot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for `response` and the variable `content_rating` for explanatory at line 44, highlight and run code lines 42--48. This plot compares the budget for different levels of content rating.
+The boxplot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for `response` and the variable `content_rating` for explanatory at line 42, highlight and run code lines 40--46. This plot compares the budget for different levels of content rating.
 
 
 ```r
@@ -245,9 +231,6 @@ movies %>%  # Data set piped into...
    d. Fifty percent of movies in 2016 with a PG-13 content rating fall below what value?  What is the name of this value?
 \vspace{0.4in}
 
-   e.  What is the value for the third quartile (Q3) for the PG-13 rating?  Interpret this value in context.
-\vspace{.8in}
-
 
 17. Which variable is the explanatory variable? Response variable?
 
@@ -259,12 +242,11 @@ movies %>%  # Data set piped into...
 
 1.	Histograms, box plots, and dot plots can all be used to graphically display a single quantitative variable.  
 
-2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5*IQR$ and greater than $Q_3 + 1.5*IQR$ are considered outliers and are graphically represented by a dot outside of the whiskers on the box plot.
+2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5\times IQR$ and greater than $Q_3 + 1.5\times IQR$ are considered outliers and are graphically represented by a dot outside of the whiskers on the box plot.
 
 3.  Data should be summarized numerically and displayed graphically to give us information about the study.
 
-4.  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers.  There are two measures of center: mean and the median and two measures of spread: standard deviation and the interquartile range, IQR = Q3 - Q1. 
-
+4.  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers.  There are two measures of center: mean and the median and two measures of spread: standard deviation and the interquartile range, $IQR = Q_3 - Q_1$. 
 
 ### Additional notes
 

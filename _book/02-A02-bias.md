@@ -38,32 +38,32 @@ For this activity, you will read a speech given by Jim Becenti, a member of the 
 
 \vspace{0.3in}
 
-2. Fill in the table below with your selected words from the previous question and the length of each word (number of letters/digits in the word):
+2. Fill in the table below with the length of each word (number of letters/digits in the word) selected in question 1:
 \vspace{1mm}
 
 \begin{center}
-\begin{tabular}{|l|p{3in}|p{1in}|} \hline
-Observation & Word & Length  \\ \hline
-1 & & \\ 
-& & \\ \hline
-2 & & \\ 
-& & \\ \hline
-3 & & \\ 
-& & \\ \hline
-4 & & \\ 
-& & \\ \hline
-5 & & \\ 
-& & \\ \hline
-6 & & \\ 
-& & \\ \hline
-7 & & \\
-& & \\ \hline
-8 & & \\ 
-& & \\ \hline
-9 & & \\ 
-& & \\ \hline
-10 & & \\ 
-& & \\ \hline
+\begin{tabular}{|l|p{1in}|} \hline
+Observation & Length  \\ \hline
+1 &  \\ 
+&  \\ \hline
+2 &  \\ 
+&  \\ \hline
+3 & \\ 
+&  \\ \hline
+4 & \\ 
+& \\ \hline
+5 & \\ 
+& \\ \hline
+6 & \\ 
+& \\ \hline
+7 & \\
+& \\ \hline
+8 & \\ 
+& \\ \hline
+9 & \\ 
+& \\ \hline
+10 & \\ 
+& \\ \hline
 \end{tabular}
 \end{center}
 
@@ -102,7 +102,7 @@ Observation & Word & Length  \\ \hline
 
 <!-- 1.  There are three types of bias to be aware of when designing a sampling method: selection bias, non-response bias, and response bias. -->
 
-1.	When we use a biased method of selection, we will over or underestimate the parameter.
+1.	When we use a biased method of sample selection, the method will tend to overestimate or underestimate the parameter.
 
 2. To see if a method is biased, we compare the distribution of the estimates to the true value. We want our estimate to be on target or unbiased.  When using unbiased methods of selection, the mean of the distribution matches or is very similar to our true parameter.
 

@@ -1,4 +1,4 @@
-## Activity 3:  Graphing Categorical Variables
+## Activity 3A:  Graphing Categorical Variables
 
 \setstretch{1}
 
@@ -60,24 +60,24 @@ Throughout these activities, we will often include the R code you would use in o
 myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSight.csv") 
 ```
 
-2.  Click on the data set name (`Myopia`) in the Environment tab (upper right window).  This will open the data set in a 2nd tab in the Editor window (upper left window).  R is case sensitive, which means that you must always type the name of a variable EXACTLY as it is written in the data set including upper and lower case letters and without misspellings!  Write down the name of each variable (column names) as it is written in the data set.  
+2.  Click on the data set name (`myopia`) in the Environment tab (upper right window).  This will open the data set in a 2nd tab in the Editor window (upper left window).  R is case sensitive, which means that you must always type the name of a variable EXACTLY as it is written in the data set including upper and lower case letters and without misspellings!  Write down the name of each variable (column names) as it is written in the data set.  
 
 \vspace{0.3in}
 
 #### Displaying a single categorical variable {-}
 
-If we wanted to know how many children in our data set were in each level of myopia, we could create a frequency bar plot of the variable `Sight`.  Enter the variable name, `Sight` (*note the capital S*), for `variable` into the `ggplot` code at line 10 in the R script file.  Highlight and run lines 9--15 to create the plot.   Note: this is a **frequency** bar plot plotting counts (the number of children in each level of sight is displayed on the $y$-axis).  
+If we wanted to know how many children in our data set were in each level of myopia, we could create a frequency bar plot of the variable `Sight`.  In the R script file, enter the variable name, `Sight` (*note the capital S*), for `variable` into the `ggplot` code at line 10.  Highlight and run lines 9--15 to create the plot.   Note: this is a **frequency** bar plot plotting counts (the number of children in each level of sight is displayed on the $y$-axis).  
 
 
 ```r
 myopia %>% # Data set piped into...
-ggplot(aes(y = variable)) +   # This specifies the variable
+ggplot(aes(x = variable)) +   # This specifies the variable
   geom_bar(stat = "count") +  # Tell it to make a bar plot
   labs(title = "Frequency Bar Plot of Level of Myopia",  # Give your plot a title
-       x = "Frequency",   # Label the x axis
-       y = "Level of Myopia")  + # Label the y axis
-  coord_flip()  # Turn the bars so they are vertical
+       x = "Level of Myopia",   # Label the x axis
+       y = "Frequency")  # Label the y axis
 ```
+
 3. Sketch the bar chart created below.  Be sure to label the axes.
 
 \vspace{2in}
@@ -181,23 +181,19 @@ myopia %>% group_by(explanatory) %>% count(response)
 \endgroup
 \end{center}
 
+In the following questions, use the table to calculate the described proportions.  Notation is important for each calculation. Since this is sample data it is appropriate to use statistic notation for the proportion, $\hat{p}$. When calculating a proportion dependent on a single level of a variable subscripts are needed when reporting the notation.
 
 12.  Calculate the proportion of children with high myopia.  Use appropriate notation.
-
-
 \vspace{0.3in}
 
 13.  Calculate the proportion of children with high myopia among those that slept with full light. Use appropriate notation.
-
 \vspace{0.3in}
 
 14.  Calculate the proportion of children with high myopia among those that slept with no light.  Use appropriate notation.
-
 \vspace{0.3in}
 
 
 15.  Calculate the difference in proportion of children with high myopia for those that slept with full light minus those who slept with no light.  Give the appropriate notation.  Use full light minus no light as the order of subtraction.
-
 \vspace{0.3in}
 
 ### Take-home messages

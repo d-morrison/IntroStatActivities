@@ -54,9 +54,8 @@ These data are on a subset of institutions that met the following selection crit
 
 * Note that several variables have missing values for some institutions (denoted by “NA”).
 
-```{r, fig.align = "center", out.width="75%"}
-include_graphics("images/IPEDS_Description.png")
-```
+
+\begin{center}\includegraphics[width=0.75\linewidth]{images/IPEDS_Description} \end{center}
 
 #### Summary statistics for a single quantitative variable {-}
 
@@ -82,7 +81,8 @@ In Wednesday's activity, the code was provided to import the data set needed dir
 
 Enter the name of the data set (see the environment tab) for `datasetname` in the R script file in line 6.  We will look at the retention rates for the 4-year institutions only.  Enter the variable name `Retention` for `variable` in line 12.  Highlight and run lines 1 -- 12.  **Note that the two lines of code (lines 8 and 10) are filtering to remove the 2-year institutions so we are only assessing Public 4-year and Private 4-year institutions.**  The `favstats()` function from the `mosaic` package gives the summary statistics for a quantitative variable. The summary statistics give the two measures of center and two measures of spread for retention rate.
 
-```{r, echo=TRUE, collapse = FALSE, eval=FALSE}
+
+```r
 IPEDS <- datasetname #Creates the object IPEDS 
 IPEDS <- IPEDS %>%
   filter(Sector != "Public 2-year") #Filters the data set to remove Public 2-year
@@ -122,7 +122,8 @@ We will create both a histogram and a boxplot of the variable `Retention`.  Ente
 
 * In the Files tab, click on the box next to your saved image file, click `More` and choose `Export`.  This will save your file to your downloads folder on your computer.
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 IPEDS %>% # Data set piped into...
 ggplot(aes(x = variable)) +   # Name variable to plot
   geom_histogram(binwidth = 10) +  # Create histogram with specified binwidth 
@@ -131,7 +132,8 @@ ggplot(aes(x = variable)) +   # Name variable to plot
        y = "Frequency") # Label for y axis
 ```
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 IPEDS %>% # Data set piped into...
 ggplot(aes(x = variable)) +   # Name variable to plot
   geom_boxplot() +  # Create boxplot 
@@ -142,14 +144,11 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 
 6.  What is the shape of the distribution of retention rates?  
 
-\newpage
+\vspace{0.2in}
 
-7.  Sketch the boxplot created and identify the values of the 5-number summary (minimum value, first quartile ($Q_1$), median, third quartile ($Q_3$), maximum value) on the plot.  Use the following formulas to find the invisible fence on both ends of the distribution.  Draw a dotted line at the invisible fence to show how the outliers were found.
+7.  Identify any outliers in the data set.
 
-$$\text{Lower Fence: values} \le Q_1 - 1.5\times IQR$$
-
-$$\text{Upper Fence: values} \ge Q_3 + 1.5\times IQR$$
-\vspace{1.5in}
+\vspace{0.3in}
 
 #### Robust Statistics {-}
 
@@ -157,22 +156,22 @@ Let's examine how the presence of outliers affect the values of center and sprea
 
 8.  Report the two measures of center (mean and median) for retention given in the R output.
 
-\vspace{0.8in}
+\vspace{0.4in}
 
 9.  Report the two measures of spread (standard deviation and $IQR$) for retention given in the R output.
 
-\vspace{0.8in}
-
-\newpage
+\vspace{0.4in}
 
 To show the effect of outliers on the measures of center and spread, the smallest values of retention rate in the data set were increased by 30%. Highlight and run lines 30--38.  
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 IPEDS %>% # Data set piped into...
   summarise(favstats(Retention_Inc))
 ```
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 IPEDS %>% # Data set piped into...
   ggplot(aes(x = Retention_Inc)) +   # Name variable to plot
   geom_boxplot() +  # Create histogram with specified binwidth
@@ -207,12 +206,14 @@ Is there a difference in retention rates for public and private 4-year instituti
 
 Enter the name of the explanatory variable and the name of the response variable in lines 42 and 45 of the R script file.  Remember that the variable name must be typed in EXACTLY as it is written in the data set. Highlight and run lines 41 -- 49 to find the summary statistics and create side by side boxplots of the data.
 
-```{r, echo=TRUE, eval=FALSE}
+
+```r
 IPEDS %>%  # Data set piped into...
   summarise(favstats(response~explanatory)) # Summary statistics for retention rates by sector
 ```
 
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
+
+```r
 IPEDS %>%  # Data set piped into...
   ggplot(aes(y = response, x = explanatory))+  # Identify variables
   geom_boxplot()+  # Create box plot
@@ -241,18 +242,23 @@ IPEDS %>%  # Data set piped into...
 
 17.  Does there appear to be an association between retention rates and type of university?  Explain your answer.
 
-\newpage
+\vspace{0.3in}
 
-### Take-home messages
+#### Summarizing two categorical variables {-}
 
-1.	Histograms, box plots, and dot plots can all be used to graphically display a single quantitative variable.  
+Are private 4-year institutions smaller than public one? The following set of code will create a segmented bar plot of size of the institution by sector. Enter the variable `Sector` for explanatory and `Size` for response in line 64. Highlight and run lines 63–69 in the R script file.
 
-2.  The box plot is created using the five number summary: minimum value, quartile 1, median, quartile 3, and maximum value.  Values in the data set that are less than $Q_1 - 1.5\times IQR$ and greater than $Q_3 + 1.5\times IQR$ are considered outliers and are graphically represented by a dot outside of the whiskers on the box plot.
 
-3.  Data should be summarized numerically and displayed graphically to give us information about the study.
+```r
+IPEDS %>%
+  ggplot(aes(x=explanatory, fill = response)) + # Enter the explanatory and response variables
+  geom_bar(stat = "count", position = "fill") + # Create a segmented bar plot
+  labs(title = "Segmented Bar Plot of Sector by Size", # Title
+       x = "Sector", # x-axis label
+       y = "") # remove y-axis label
+```
 
-4.  When comparing distributions of quantitative variables we look at the shape, center, spread, and for outliers.  There are two measures of center: mean and the median and two measures of spread: standard deviation and the interquartile range, $IQR = Q_3 - Q_1$. 
-
-5. The median and the interquartile range are robust statistics, meaning that they are not affected by very large or very small values.  When we have a skewed distribution the best measure of center is the median and the best measure of spread is the $IQR$.
+18. Does there appear to be an association between sector and size of 4-year institutions? Explain
+your answer using the plot.
 
 \newpage

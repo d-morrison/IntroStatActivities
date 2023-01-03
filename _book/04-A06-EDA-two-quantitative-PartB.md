@@ -7,17 +7,17 @@
 * Identify and create appropriate summary statistics and plots
   given a data set with two quantitative variables.
   
-* Calculate and interpret $R^2$, the coefficient of determination, in context of the problem.
+* Calculate and interpret $r^2$, the coefficient of determination, in context of the problem.
 
-* Find the correlation coefficient from R output or from $R^2$ and the sign of the slope.
+* Find the correlation coefficient from R output or from $r^2$ and the sign of the slope.
 
 ### Terminology review
 
 In today's activity, we will review summary measures and plots for two quantitative variables.  Some terms covered in this activity are:
 
-* Correlation ($r$ or $R$)
+* Correlation ($r$)
 
-* Coefficient of determination ($r$-squared or $R^2$)
+* Coefficient of determination ($r$-squared or $r^2$)
 
 To review these concepts, see Chapter 6 in the textbook.  
 
@@ -85,14 +85,14 @@ movies %>%  # Data set pipes into
 
 #### Coefficient of determination (squared correlation) {-}
 
-Another summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. The value of $r^2$ (a value between 0 and 1) represents the **proportion of variation in the response that is explained by the least squares line with the explanatory variable**.  There are two ways to calculate the coefficient of determination: 
+Another summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. The value of $R^2$ (a value between 0 and 1) represents the **proportion of variation in the response that is explained by the least squares line with the explanatory variable**.  There are two ways to calculate the coefficient of determination: 
 
-|    Square the correlation coefficient:  $R^2 = (R)^2$
+|    Square the correlation coefficient:  $r^2 = (r)^2$
 
-|    Use the variances of the response and the residuals:  $R^2 = \dfrac{s_y^2 - s_{RES}^2}{s_y^2} = \dfrac{SST - SSE}{SST}$
+|    Use the variances of the response and the residuals:  $r^2 = \dfrac{s_y^2 - s_{RES}^2}{s_y^2} = \dfrac{SST - SSE}{SST}$
 
 
-6.  Use the correlation, $R$, found in question 2 of the activity, to calculate the coefficient of determination between budget and revenue, $R^2$.
+6.  Use the correlation, $r$, found in question 2 of the activity, to calculate the coefficient of determination between budget and revenue, $r^2$.
 
 \vspace{.4in}
 
@@ -126,7 +126,7 @@ In the next part of the activity we will explore what the coefficient of determi
 
 \vspace{0.5in}
 
-12.  Calculate the value for $R^2$ using the values found for SST and SSE.  
+12.  Calculate the value for $r^2$ using the values found for SST and SSE.  
 
 \vspace{1in}
 
@@ -139,7 +139,7 @@ In the next part of the activity we will explore what the coefficient of determi
 
 1. The sign of correlation and the sign of the slope will always be the same.  The closer the value of correlation is to $-1$ or $+1$, the stronger the relationship between the explanatory and the response variable.  
 
-2.  The coefficient of determination multiplied by 100 ($R^2 \times 100$) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100%, the stronger the relationship.
+2.  The coefficient of determination multiplied by 100 ($r^2 \times 100$) measures the percent of variation in the response variable that is explained by the relationship with the explanatory variable.  The closer the value of the coefficient of determination is to 100%, the stronger the relationship.
 
 ### Additional notes
 

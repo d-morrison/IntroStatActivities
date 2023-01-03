@@ -1,4 +1,4 @@
-# Exam 1 Review
+# Group Exam 1 Review
 
 Use the provided data set from the Islands (ExamReviewData.csv) and the appropriate Exam 1 Review R script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
 
@@ -41,7 +41,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the appropri
 
 \vspace{0.5in}
 
-4.  Use the appropriate Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question, "Is there a difference in proportion of Islanders who have children for those who completed high school and those that completed university?" Use high school - university as the order of subtraction.
+4.  Use the appropriate Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question, "Is there a difference in proportion of Islanders who have children for those who completed high school and those that completed university?" Use high school $-$ university as the order of subtraction.
 
 a. What is the name of the explanatory variable to be assessed in this research question?
 \vspace{0.3in}
@@ -106,7 +106,7 @@ j. What is the scope of inference for this study?
 \newpage
 
 
-5. Use the appropriate Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: "Do Islanders who listen to classical music take less time to complete the puzzle cube after listening to the music than for Islanders that listen to heavy metal music?" Use classical - heavy metal as the order of subtraction.
+5. Use the appropriate Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question: "Do Islanders who listen to classical music take less time to complete the puzzle cube after listening to the music than for Islanders that listen to heavy metal music?" Use classical $-$ heavy metal as the order of subtraction.
 
 a. What is the name of the explanatory variable to be assessed in this research question?
 \vspace{0.3in}
@@ -263,52 +263,4 @@ l. Is this an observational study or a randomized experiment? Explain your answe
 m. What is the scope of inference for this study?
 
 \newpage
-
-7. Use the appropriate Exam 1 Review R script file to find the appropriate summary statistic and graphical display of the data to assess the following research question, "Is the proportion of married Islanders greater than 50\%?"
-
-a. What is the name of the variable to be assessed in this research question? 
-
-\vspace{0.1in}
-b. What type of variable (categorical or quantitative) is the variable you identified?
-
-\vspace{0.1in}
-c. Use the R script file to get the counts for each level of the variable. Fill in the following table with the success, failure, variable name, and counts using the values from the R output.
-
-\begingroup
-\begin{center}
-\setlength{\tabcolsep}{14pt} 
-\renewcommand{\arraystretch}{2} 
-\begin{tabular}{|p{2in}|p{2in}|}
-\hline
- {\textbf{Variable}} & {\textbf{Counts}} \\ 
- & \\ \hline
- Success & \\ 
- &  \\ \hline
- Failure & \\ 
- &  \\ \hline
- Total &  \\ 
- & \\ \hline  
-\end{tabular}
-\end{center}
-\endgroup
-
-d. Calculate the value of summary statistic to answer the research question. Give appropriate notation.
-
-\vspace{0.3in}
-
-e. Interpret the value of the summary statistic in context of the problem:
-
-\vspace{0.3in}
-
-f. What type of graph(s) would be appropriate for this research question?
-
-\vspace{0.1in}
-
-g. Using the provided R file create a graph of the data. Sketch the graph below:
-
-\vspace{1.8in}
-
-h. To what group could the results of this study be applied to?
-
-\vspace{0.2in}
 
