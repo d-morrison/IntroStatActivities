@@ -98,7 +98,7 @@ Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an a
 
 \vspace{0.4in}
 
-6. Is the success-failure condition met for each group?  Show your work to verify your answer.
+6. Is the success-failure condition met for each group?  Explain in context of the study.
 
 \vspace{0.8in}
 

@@ -1,4 +1,4 @@
-## Activity 1:  Intro to Data
+## Week 1 Lab:  Intro to Data
 
 \setstretch{1}
 
@@ -25,7 +25,7 @@ Information is provided throughout each activity and lab to guide students throu
 
 ### General information on labs
 
-On Friday of each week you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.  Today's activity is Lab 0 in Gradescope for practice submitting as a group.
+On Friday of each week you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.  Today's activity is Lab 1 in Gradescope for practice submitting as a group.
 
 #### Steps of the statistical investigation process {-}
 
