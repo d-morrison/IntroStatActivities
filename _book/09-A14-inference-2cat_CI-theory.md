@@ -31,7 +31,7 @@ Conditions for the sampling distribution of $\hat{p}_1-\hat{p}_2$ to follow an a
 
 \vspace{1in}
 
-For this activity we will again use the Helmet Use and Head Injury data set. In Activity 9A we saw that there was evidence that helmet use is assoicated with a reduced risk of head injury.  Today we will estimate the difference in proportion of head injuries for those who wore helmets and those who did not.
+For this activity we will again use the Helmet Use and Head Injury data set. In Activity 9A we saw that there was evidence that helmet use is associated with a reduced risk of head injury.  Today we will estimate the difference in proportion of head injuries for those who wore helmets and those who did not.
 
 In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by Sullheim et. al., [@sulheim2017], we can see the summary results from a random sample of 3562 skiers and snowboarders involved in accidents in the two-way table below. 
 
@@ -47,12 +47,12 @@ In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by S
 
 To find a confidence interval for the difference in proportions we will add and subtract the margin of error from the point estimate to find the two endpoints.
 
- $$\hat{p}_1-\hat{p}_2\pm z^*SE(\hat{p}_1-\hat{p}_2), \hspace{.2cm} \text{where}$$
+ $$\hat{p}_1-\hat{p}_2\pm z^*\times SE(\hat{p}_1-\hat{p}_2), \hspace{.2cm} \text{where}$$
  $$SE(\hat{p}_1-\hat{p}_2) = \sqrt{\frac{\hat{p}_1 (1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2 (1-\hat{p}_2)}{n_2}}$$
  
 Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in Activity 9A!  Here, we use the sample proportions for each group to calculate the standard error for the difference in proportions since we are not assuming that the true difference is zero.
 
-to calculate the standard error for a difference in proportions to create a 90\% confidence interval we substitute in the two sample proportions and the sample size for each group into the equation above.
+To calculate the standard error for a difference in proportions to create a 90\% confidence interval we substitute in the two sample proportions and the sample size for each group into the equation above.
 
 $$n_1 = 752, n_2 = 2810, \hat{p}_1 = \frac{96}{752} = 0.128, \hat{p}_2 = \frac{480}{2810} = 0.171$$
  
@@ -78,7 +78,7 @@ qnorm(0.95) # Multiplier for 90% confidence interval
 
 Remember that the margin of error is the value added and subtracted to the sample difference in proportions to find the endpoints for the confidence interval.
 
-$$ME = z^*SE(\hat{p}_1 - \hat{p}_2)$$
+$$ME = z^*\times SE(\hat{p}_1 - \hat{p}_2)$$
 
 4. Using the multiplier of $z^*$ = 1.645 and the calculated standard error, calculate the margin of error for a 90\% confidence interval.
 
@@ -96,7 +96,7 @@ $$ME = z^*SE(\hat{p}_1 - \hat{p}_2)$$
 
 \vspace{0.8in}
 
-8.  What decision would you make based on your confidence interval?  Explain your answer.
+8.  What decision (reject of fail to reject the null hypothesis) would you make based on your confidence interval?  Explain your answer.
 \vspace{0.5in}
 \newpage
 
@@ -110,7 +110,7 @@ Suppose in another sample of skiers and snowboards involved in accidents we saw 
 | No Head Injury |     921    |      3270     |  4191 |
 | Total          |     1056   |      3944     |  5000 |
 
-Notice that the sample proprotions for each group are the same as the smaller sample size.
+Notice that the sample proportions for each group are the same as the smaller sample size.
 
 $$\hat{p}_1 = \frac{135}{1056}=0.127, \hat{p}_2 = \frac{674}{3944}=0.171$$
 
@@ -124,7 +124,7 @@ $$\hat{p}_1 = \frac{135}{1056}=0.127, \hat{p}_2 = \frac{674}{3944}=0.171$$
 11.  Calculate the 90\% confidence interval for this new study using the margin of error from question 10.  
 \vspace{.8in}
 
-12.  Is the confidence interval calculated in question 11 with the smaller sample size wider or narrower than the confidence interval in question 7? Why?
+12.  Is the confidence interval calculated in question 11 with the larger sample size wider or narrower than the confidence interval in question 7? Why?
 \vspace{.8in}
 
 \newpage

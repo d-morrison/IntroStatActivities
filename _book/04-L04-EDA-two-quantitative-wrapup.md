@@ -17,7 +17,7 @@
 
 * Find the correlation coefficient from R output or from $R^2$ and the sign of the slope.
 
-### Penguins
+### Penguins {-}
 
 The Palmer Station Long Term Ecological Research Program sampled three penguin species on islands in the Palmer Archipelago in Antarctica. Researchers took various body measurements on the penguins, including flipper length and body mass. The researchers were interested in the relationship between flipper length and body mass and wondered if flipper length could be used to accurately predict the body mass of these three penguin species. 
 

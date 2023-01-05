@@ -23,7 +23,7 @@ To review these concepts, see Chapter 6 in the textbook.
 
 ### Movies released in 2016
 
-We will revisit the movie data set collected on Movies released in 2016 [@imdb] to further explore the relationship between budget and revenue. Here is a reminder of the variables collected on these movies.
+We will continue to assess the movie data set collected on Movies released in 2016 [@imdb] to further explore the relationship between budget and revenue. Here is a reminder of the variables collected on these movies.
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
@@ -39,7 +39,7 @@ We will revisit the movie data set collected on Movies released in 2016 [@imdb] 
 
 #### Correlation  {-}
 
-Correlation measures the strength and the direction of the linear relationship between two quantitative variables.  The closer the value of correlation to $+1$ or $-1$, the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  Upload and open the Movie Profits Activity 4B F22 Code R script file. Highlight and run lines 1--12 to produce the same table as below.
+Correlation measures the strength and the direction of the linear relationship between two quantitative variables.  The closer the value of correlation to $+1$ or $-1$, the stronger the linear relationship.  Values close to zero indicate a very weak linear relationship between the two variables.  The following output shows a correlation matrix between several pairs of quantitative variables.  Upload and open the provided R script file. Highlight and run lines 1--12 to produce the same table as below.
 
 
 

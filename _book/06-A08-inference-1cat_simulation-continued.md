@@ -104,7 +104,7 @@ one_proportion_test(probability_success = xx, # Null hypothesis value
 The value in question 8 is the **p-value**.  The smaller the p-value, the more evidence we have against the null hypothesis. 
 
 
-9. **Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one of the five descriptions.)**
+9. Using the following guidelines for the strength of evidence, how much evidence do the data provide against the null hypothesis? (Circle one of the five descriptions.)
 
 
 \begin{center}\includegraphics[width=0.9\linewidth]{images/soe_gradient_grayscale} \end{center}

@@ -27,7 +27,7 @@ Information is provided throughout each activity and lab to guide students throu
 
 <!-- On Friday of each week you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.  Today's activity is Lab 1 in Gradescope for practice submitting as a group. -->
 
-#### Steps of the statistical investigation process {-}
+### Steps of the statistical investigation process 
 
 As we move through the semester we will work through the six steps of the statistical investigation process.  
 
@@ -51,7 +51,7 @@ Today we will focus on the first two steps.
 
 **Observational units** or **cases** are the subjects data are collected on. In a spreadsheet of the data set, each row will represent a single observational unit.  
 
-1. **What are the observational units or cases for today's study? ** 
+1. What are the observational units or cases for today's study? 
 
 \vspace{0.2in}
 

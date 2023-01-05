@@ -1,4 +1,4 @@
-## Activity 13A:  Diving Penguins
+## Activity 13A:  Prediction of Crocodylian Body Size
 
 \setstretch{1}
 
@@ -27,14 +27,17 @@ In today's activity, we will use simulation-based methods for hypothesis tests a
 To review these concepts, see Chapter 21 in the textbook.
 
 
-### Diving Penguins
+### Crocodylian Body Size
 
-Emperor penguins are the most accomplished divers among birds, making routine dives of 5–12 minutes, with the longest recorded dive over 27 minutes. These birds can also dive to depths of over 500 meters! Since air-breathing animals like penguins must hold their breath while submerged, the duration of any given dive depends on how much oxygen is in the bird’s body at the beginning of the dive, how quickly that oxygen gets used, and the lowest level of oxygen the bird can tolerate. The rate of oxygen depletion is primarily determined by the penguin’s heart rate. Consequently, studies of heart rates during dives can help us understand how these animals regulate their oxygen consumption in order to make such impressive dives. The researchers equipped emperor penguins with devices that record their heart rates during dives. The data set reports Dive Heart Rate (beats per minute), the Duration (minutes) of dives, and other related variables.  Can the dive heart rate be used to predict the duration of the dive for Emperor Penguins?
+Much research surrounds using measurements of animals to estimate body-size of extinct animals.  Many challenges exist in making accurate estimates for extinct crocodylians.  The researchers in this study [@obrien2019] tested using head width to estimate body size. Is head width a good estimator of body size for crocodylians? 
+
 
 
 ```r
 # Read in data set
-diving <- read.csv("https://math.montana.edu/courses/s216/data/Diving_Penguins.csv")
+croc <- read.csv("https://math.montana.edu/courses/s216/data/Crocodylian_headwidth.csv")
+croc <- croc %>%
+    na.omit()
 ```
 
 #### Vocabulary review {-}
@@ -44,22 +47,22 @@ diving <- read.csv("https://math.montana.edu/courses/s216/data/Diving_Penguins.c
 \vspace{.5in}
 
 
-Use the provided R script file to create a scatterplot to examine the relationship between the diving heart rate and duration of the dive by filling in the variable names (`Dive_HeartRate` and `Duration`) for `explanatory` and `response` in line 9.  Highlight and run lines 1--15. 
+Use the provided R script file to create a scatterplot to examine the relationship between head width and total body length by filling in the variable names (`HW_cm` and `TL_cm`) for `explanatory` and `response` in line 12.  Highlight and run lines 1--18. 
  
 
 ```r
-diving %>% # Pipe data set into...
+croc %>% # Pipe data set into...
 ggplot(aes(x = explanatory, y = response))+  # Specify variables
   geom_point() +  # Add scatterplot of points
-  labs(x = "Heart Rate (bpm)",  # Label x-axis
-       y = "Dive Duration (min)",  # Label y-axis
-       title = "Scatterplot of Emperor Penguins Diving Heart Rate vs. Dive Duration") + 
+  labs(x = "head width (cm)",  # Label x-axis
+       y = "total length (cm)",  # Label y-axis
+       title = "Scatterplot of Crocodylian Head Width vs. Total Length") + 
                # Be sure to title your plots
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
 
 ```
 
-2. Sketch the plot created below. Based on your plot, does it appear that there is a relationship between dive heart rate and duration of the dive? Note: `Dive_HeartRate` should be on the $x$-axis.
+2. Sketch the plot created below. Based on your plot, does it appear that there is a relationship between head width and total length? Note: `head width` should be on the $x$-axis.
 
 \vspace{2in}
 
@@ -75,7 +78,7 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 4. Write out the null hypothesis in words to test slope.
 
-\vspace{1in}
+\vspace{0.8in}
 
 5. Using the research question, write the alternative hypothesis in notation using slope as the summary measure.
 
@@ -83,13 +86,13 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 #### Summarize and visualize the data {-}
 
-Using the provided R script file, enter the response variable name, `Duration`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Dive_HeartRate`, for `explanatory` in line 18 to get the linear model output and value for the correlation coefficient.  Highlight and run lines 18--20.
+Using the provided R script file, enter the response variable name, `TL_cm`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `BW_cm`, for `explanatory` in line 21 to get the linear model output and value for the correlation coefficient.  Highlight and run lines 21--23.
 
 
 ```r
-lm.diving <- lm(response~explanatory, data=diving) # lm(response~explanatory)
-round(summary(lm.diving)$coefficients, 5)
-cor(diving$Duration, diving$Dive_HeartRate)
+lm.croc <- lm(response~explanatory, data=croc) # lm(response~explanatory)
+round(summary(lm.croc)$coefficients, 5)
+cor(croc$HW_cm, croc$TL_cm)
 ```
 
 6.  Using the output from the evaluated R code above, write the equation of the regression line in the context of the problem using appropriate statistical notation.
@@ -99,7 +102,7 @@ cor(diving$Duration, diving$Dive_HeartRate)
 
 \vspace{1in}
 
-8.  Report the value of correlation between the diving heart rate and the duration of the dive. 
+8.  Report the value of correlation between head width and total body length. 
 
 \vspace{0.3in}
 
@@ -109,11 +112,13 @@ In this activity, we will focus on using simulation-based methods for inference 
 
 #### Simulation-based hypothesis test {-}
 
-Let's start by thinking about how one simulation would be created on the null distribution using cards.  First, we would write the values for the response variable, Duration, on each card.  Next, we would shuffle these $y$ values while keeping the $x$ values (explanatory variable) in the same order.  Then, find the line of regression for the shuffled $(x, y)$ pairs and calculate either the slope or correlation of the shuffled sample.  
+Let's start by thinking about how one simulation would be created on the null distribution using cards.  First, we would write the values for the response variable, total length, on each card.  Next, we would shuffle these $y$ values while keeping the $x$ values (explanatory variable) in the same order.  Then, find the line of regression for the shuffled $(x, y)$ pairs and calculate either the slope or correlation of the shuffled sample.  
 
 We will use the `regression_test()` function in R (in the `catstats` package) to simulate the null distribution of shuffled slopes (or shuffled correlations) and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `diving`), the summary measure for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
 
-The response variable name is `Duration` and the explanatory variable name is `Dive_HeartRate` for these data.
+The response variable name is `TL_cm` and the explanatory variable name is `BW_cm` for these data.
+
+\newpage
 
 9. What inputs should be entered for each of the following to create the simulation to test regression slope?
 
@@ -134,12 +139,12 @@ The response variable name is `Duration` and the explanatory variable name is `D
     
 \vspace{.2in}
 
-Using the R script file for this activity, enter your answers for question 9 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 23--28.
+Using the R script file for this activity, enter your answers for question 9 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 26--31.
 
 
 ```r
-regression_test(Duration ~ Dive_Heartrate, # response ~ explanatory
-               data = diving, # Name of data set
+regression_test(TL_cm~BW_cm, # response ~ explanatory
+               data = croc, # Name of data set
                direction = "xx", # Sign in alternative ("greater", "less", "two-sided")
                summary_measure = "xx", # "slope" or "correlation"
                as_extreme_as = x, # Observed slope or correlation
@@ -152,7 +157,7 @@ regression_test(Duration ~ Dive_Heartrate, # response ~ explanatory
 11.  Suppose we wanted to complete the simulation test using correlation as the summary measure, instead of slope.  Which two inputs in #9 would need to be changed to test for correlation?  What inputs should you use instead?
 \vspace{0.75in}
 
-12.  Change the inputs in lines 23--28 to test for correlation instead of slope.  Highlight and run those lines, then report the new p-value of the test.
+12.  Change the inputs in lines 26--31 to test for correlation instead of slope.  Highlight and run those lines, then report the new p-value of the test.
 \vspace{0.5in}
 
 13.  The p-values from the test of slope (#10) and the test of correlation (#12) should be similar.  Explain why the two p-values should match. *Hint: think about the relationship between slope and correlation!*
@@ -160,16 +165,17 @@ regression_test(Duration ~ Dive_Heartrate, # response ~ explanatory
 
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 95\% confidence interval for slope. Highlight and run lines 31--35. 
+We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 95\% confidence interval for slope. Highlight and run lines 34--38. 
 
 
 ```r
-regression_bootstrap_CI(Duration ~ Dive_Heartrate, # response ~ explanatory
+regression_bootstrap_CI(TL_cm~BW_cm, # response ~ explanatory
    data = diving, # Name of data set
    confidence_level = xx, # Confidence level as decimal
    summary_measure = "xx", # Slope or correlation
    number_repetitions = 1000) # Number of simulated samples for bootstrap distribution
 ```
+
 14.  Report the bootstrap 95\% confidence interval in interval notation.  
 \vspace{0.5in}
 

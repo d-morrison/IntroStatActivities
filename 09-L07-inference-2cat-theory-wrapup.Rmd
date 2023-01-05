@@ -24,8 +24,8 @@ Researchers compared the efficacy of two treatment regimens to achieve durable g
 Upload and open the R script file for Week 9 lab. Upload and import the csv file, `diabetes`. Enter the name of the data set (see the environment tab) for `datasetname` in the R script file in line 5. Highlight and run lines 1--6 to get the counts for each combination of categories.
 
 ```{r, out.width="60%", echo=TRUE, eval=FALSE}
-rosi <- datasetname
-rosi %>% group_by(treatment) %>% count(outcome)
+glycemic <- datasetname
+glycemic %>% group_by(treatment) %>% count(outcome)
 ```
 
 1. Is this an experiment or an observational study?
@@ -62,7 +62,7 @@ Fill in the missing values/names in the R script file in the two-proportion_test
 
 ```{r, echo=TRUE, eval=FALSE}
 two_proportion_test(formula = outcome~treatment, # response ~ explanatory
-         data= rosi, # Name of data set
+         data= glycemic, # Name of data set
          first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
          number_repetitions = 1000, # Always use a minimum of 1000 repetitions
          response_value_numerator = "xx", # Define which outcome is a success 

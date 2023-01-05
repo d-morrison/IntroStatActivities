@@ -100,17 +100,11 @@ IPEDS %>%
 
 \vspace{0.5in}
 
-4. Report and interpret the value of the standard deviation.
-
-\vspace{1in}
-
-5.  How many missing values are there?  What does this indicate?
+4.  How many missing values are there?  What does this indicate?
 
 \vspace{0.8in}
 
 #### Displaying a single quantitative variable {-}
-
-There are three type of plots used to plot a single quantitative variable: a dotplot, a histogram or a boxplot.  A dotplot of retention rates would plot a dot for the retention rate for each 4-year institution.
 
 We will create both a histogram and a boxplot of the variable `Retention`.  Enter the name of the variable in both line 16 and line 23 for `variable` in the R script file.  **Give each plot a descriptive title.**  Highlight and run lines 15 -- 27 to give the histogram and boxplot. Notice that the **bin width** for the histogram is 10.  For example, the first bin consists of the number of 4-year institutions in the data set with a retention rate of 0 to 10\%.  It is important to note that a 4-year institution with a retention rate on the boundary of a bin will fall into the bin above it; for example, 10 would be counted in the bin 10--20. 
 
@@ -142,11 +136,11 @@ ggplot(aes(x = variable)) +   # Name variable to plot
        y = "Frequency") # Label for y axis
 ```
 
-6.  What is the shape of the distribution of retention rates?  
+5.  What is the shape of the distribution of retention rates?  
 
 \vspace{0.2in}
 
-7.  Identify any outliers in the data set.
+6.  Identify any outliers in the data set.
 
 \vspace{0.3in}
 
@@ -154,11 +148,11 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 
 Let's examine how the presence of outliers affect the values of center and spread. 
 
-8.  Report the two measures of center (mean and median) for retention given in the R output.
+7.  Report the two measures of center (mean and median) for retention given in the R output.
 
 \vspace{0.4in}
 
-9.  Report the two measures of spread (standard deviation and $IQR$) for retention given in the R output.
+8.  Report the two measures of spread (standard deviation and $IQR$) for retention given in the R output.
 
 \vspace{0.4in}
 
@@ -180,19 +174,19 @@ IPEDS %>% # Data set piped into...
        y = "Frequency") # Label for y axis
 ```
 
-10. Report the two measures of center for this new data set.
+9. Report the two measures of center for this new data set.
 
 \vspace{0.8in}
 
-11. Report the two measures of spread for this new data set.
+10. Report the two measures of spread for this new data set.
 
 \vspace{0.8in}
 
-12. **Which measure of center is robust to (not affected by) outliers? Explain your answer.**
+11. **Which measure of center is robust to (not affected by) outliers? Explain your answer.**
 
 \vspace{0.5in}
 
-13.  Which measure of spread is robust to outliers?  Explain your answer.
+12.  Which measure of spread is robust to outliers?  Explain your answer.
 
 \vspace{0.5in}
 
@@ -200,7 +194,7 @@ IPEDS %>% # Data set piped into...
 
 Is there a difference in retention rates for public and private 4-year institutions? In the next part of the activity we will compare retention rates for public and private 4-year institutions.  Note that this variable (public or private) is labelled `Control` in the data set.
 
-14.  **Based on the research question, which variable will we treat as the explanatory variable?  Response variable?**
+13.  **Based on the research question, which variable will we treat as the explanatory variable?  Response variable?**
 
 \vspace{0.8in}
 
@@ -222,7 +216,7 @@ IPEDS %>%  # Data set piped into...
        y = "Retention Rates")  # y-axis label
 ```
 
-15.  **Compare the two boxplots.**
+14.  **Compare the two boxplots.**
     
      Which type of university has the highest center?
      \vspace{0.3in}
@@ -236,17 +230,17 @@ IPEDS %>%  # Data set piped into...
      Does either distribution have outliers?
      \vspace{0.3in}
      
-16. Report the difference in mean retention rates for private and public universities.  Use private minus public as the order of subtraction.  Use the appropriate notation.
+15. Report the difference in mean retention rates for private and public universities.  Use private minus public as the order of subtraction.  Use the appropriate notation.
 
 \vspace{0.8in}
 
-17.  Does there appear to be an association between retention rates and type of university?  Explain your answer.
+16.  Does there appear to be an association between retention rates and type of university?  Explain your answer.
 
 \vspace{0.3in}
 
 #### Summarizing two categorical variables {-}
 
-Are private 4-year institutions smaller than public one? The following set of code will create a segmented bar plot of size of the institution by sector. Enter the variable `Sector` for explanatory and `Size` for response in line 64. Highlight and run lines 63–69 in the R script file.
+Are private 4-year institutions smaller than public one? The following set of code will create a segmented bar plot of size of the institution by sector. Enter the variable `Sector` for explanatory and `Size` for response in line 53. Highlight and run lines 52 - 57 in the R script file.
 
 
 ```r
@@ -258,7 +252,7 @@ IPEDS %>%
        y = "") # remove y-axis label
 ```
 
-18. Does there appear to be an association between sector and size of 4-year institutions? Explain
+17. Does there appear to be an association between sector and size of 4-year institutions? Explain
 your answer using the plot.
 
 \newpage

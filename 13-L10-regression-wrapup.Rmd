@@ -120,7 +120,7 @@ The response variable name is `GDP_dollar` and the explanatory variable name is 
     
 \vspace{.2in}
 
-Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 38--43. **Upload a copy of your plot showing the p-value to Gradescope for your group.**
+Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 38--44. **Upload a copy of your plot showing the p-value to Gradescope for your group.**
 
 ```{r, echo=TRUE, eval=FALSE}
 regression_test(GDP_dollar~dollar_price, # response ~ explanatory
@@ -136,7 +136,7 @@ regression_test(GDP_dollar~dollar_price, # response ~ explanatory
 
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 90\% confidence interval. Highlight and run lines 46--50. 
+We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 90\% confidence interval. Highlight and run lines 47--51. 
 
 ```{r, echo=TRUE, eval=FALSE}
 regression_bootstrap_CI(GDP_dollar~dollar_price, # response ~ explanatory

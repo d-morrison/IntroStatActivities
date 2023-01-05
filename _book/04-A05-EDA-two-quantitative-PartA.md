@@ -31,7 +31,7 @@ To review these concepts, see Chapter 6 & 7 in the textbook.
 
 ### Movies released in 2016
 
-A data set was collected on movies released in 2016 [@imdb].  Here is a list of some of the variables collected on the observational units, movies released in 2016.  
+We will revisit the data set used last week collected on Movies released in 2016 [@imdb]. Here is a reminder of the variables collected on these movies.
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
@@ -53,7 +53,7 @@ movies <- read.csv("https://math.montana.edu/courses/s216/data/Movies2016.csv") 
 
 To look at the relationship between two quantitative variables we will create a scatterplot with the explanatory variable on the x-axis and the response variable on the y-axis.  We can also find three summary measures for the linear relationship between the two variables: regression slope, correlation and the coefficient of determination. 
 
-We will look at the relationship between budget and revenue for movies released in 2016. Upload and open the Movie Profits Activity 4A F22 Code R script file. Enter the explanatory variable name, `budget_mil`, for `explanatory` and the response variable name, `revenue_mil`, for `response` at line 7 in the R script file to create the scatterplot. (Note: both variables are measured in "millions of dollars" ($MM).)  Highlight and run lines 1--12.
+We will look at the relationship between budget and revenue for movies released in 2016. Upload and open the provided R script file. Enter the explanatory variable name, `budget_mil`, for `explanatory` and the response variable name, `revenue_mil`, for `response` at line 7 in the R script file to create the scatterplot. (Note: both variables are measured in "millions of dollars" ($MM).)  Highlight and run lines 1--12.
 
 
 ```r

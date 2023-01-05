@@ -37,7 +37,7 @@ poisonous <- datasetname # Read data set in
 
 Enter the name of the data set for datasetname in the R script file in line 6. Highlight and run lines 1--7 to get the counts for each combination of categories.
 
-```{r}
+```{r, echo=TRUE, warning=FALSE, message=FALSE, collapse=FALSE, eval=FALSE}
 poisonous %>% group_by(gill.size) %>% count(class) #finds the counts in each group
 ```
 

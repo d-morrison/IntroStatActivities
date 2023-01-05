@@ -1,0 +1,187 @@
+## Activity 11A:  Swearing
+
+\setstretch{1}
+
+### Learning outcomes
+
+* Given a research question involving paired differences, construct the null and alternative hypotheses
+  in words and using appropriate statistical symbols.
+  
+* Describe and perform a simulation-based hypothesis test for a paired mean difference.
+
+* Interpret and evaluate a p-value for a simulation-based hypothesis test for a paired mean difference.
+
+* Use bootstrapping to find a confidence interval for a paired mean difference.
+
+* Interpret a confidence interval for a paired mean difference.
+
+* Use a confidence interval to determine the conclusion of a hypothesis test.
+
+### Terminology review
+
+In today's activity, we will analyze paired quantitative data using simulation-based methods. Some terms covered in this activity are:
+
+* Mean difference
+
+* Paired data
+
+* Independent groups
+
+* Shifted bootstrap (null) distribution
+
+To review these concepts, see Section 18 in the textbook.
+
+### Swearing
+
+Profanity (language considered obscene or taboo) and society's attitude about its acceptableness is a highly debated topic, but does swearing serve a physiological purpose or function? Previous research has shown that swearing produces increased heart rates and higher levels of skin conductivity. It is theorized that since swearing provokes intense emotional responses, it acts as a distracter, allowing a person to withstand higher levels of pain. To explore the relationship between swearing and increased pain tolerance, researchers from Keele University (Staffordshire, UK) recruited 83 native English-speaking participants [@stephens2020]. Each volunteer performed two trials holding a hand in an ice-water bath, once while repeating the “f-word” every three seconds, and once while repeating a neutral word (“table”). The order of the word to repeat was randomly assigned. Researchers recorded the length of time, in seconds, from the moment the participant indicated they were in pain until they removed their hand from the ice water for each trial. They hope to find evidence that pain tolerance is greater (longer times) when a person swears compared to when they say a neutral word, on average. Use Swear – Neutral as the order of subtraction.
+
+Upload and open the R script file for Activity 11A. Highlight and run lines 1--7 to load the data and create a paired plot of the data. 
+
+
+
+Enter the outcome for group 1 (`Swear`) for `measurement_1` and the outcome for group 2 (`Neutral`) for `measurement_2` in line 10.  Highlight and run lines 9--13 to get the summary statistics for the data.
+
+
+```r
+swearing_diff <- swearing %>% 
+  mutate(differences = measurement_1 - measurement_2)
+swearing_diff %>% 
+    summarise(favstats(differences))
+```
+
+    
+Table: Summary statistics for time to hold hand in ice water while swearing and time to hold hand in ice water while saying a neutral word.  Fill in the table below with the summary statistics for the differences in time.
+
+|               |         Mean         | Standard deviation | Sample size |
+|:-------------:|:--------------------:|--------------------|-------------|
+| Swear       | $\bar{x}_1$ = 36.165 | $s_1$ = 24.178    | $n_1$ = 83  |
+| Neutral | $\bar{x}_2$ = 28.491 | $s_2$ = 18.895       | $n_2$ = 83  |
+| Differences   | $\bar{x}_d$ =        | $s_d$ =      | $n_d$ = 83  |
+
+#### Vocabulary review.  {-}
+
+1.  Why is this treated as a paired study design and not two independent samples?
+
+\vspace{.5in}
+
+2. Are the differences in time to hold their hand in ice water independent for each case (participant)?  Explain.
+
+\vspace{0.5in}
+
+#### Ask a research question {-}
+
+3. Write the null hypothesis in words.
+
+\vspace{0.8in}
+
+4. What is the research question?
+
+\vspace{0.8in}
+
+5. Write the alternative hypothesis in notation.
+
+\vspace{0.3in}
+
+#### Summarize and visualize the data  {-}
+
+6. Report the summary statistic of interest (mean difference) for the data.  
+
+\vspace{0.3in}
+
+7. What notation is used for the value in question 6? 
+
+\vspace{0.3in}
+
+
+#### Use statistical inferential methods to draw inferences from the data {-}
+
+##### Hypothesis test {-}
+To simulate the null distribution of paired sample mean differences we will use a bootstrapping method.  Recall that the null distribution must be created under the assumption that the null hypothesis is true.  Therefore, before bootstrapping, we will need to *shift* each data point by the difference $\mu_0 - \bar{x}_d$.  This will ensure that the mean of the shifted data is $\mu_0$ (rather than the mean of the original data, $\bar{x}_d$), and that the simulated null distribution will be centered at the null value.  
+
+8. Calculate the difference $\mu_0 - \bar{x}_d$.  Will we need to shift the data up or down?
+
+\vspace{.7in}
+
+We will use the `paired_test()` function in R (in the `catstats` package) to simulate the shifted bootstrap (null) distribution of sample mean differences and compute a p-value. Use the provided R script file and enter the calculated value from question 8 for `xx` to simulate the null distribution and enter the summary statistic from question 8 for `yy` to find the p-value.  Highlight and run lines 16--21.
+
+
+```r
+paired_test(data = swearing_diff$differences,   # Vector of differences 
+            # or data set with column for each group
+            shift = xx,   # Shift needed for bootstrap hypothesis test
+            as_extreme_as = yy,  # Observed statistic
+            direction = "greater",  # Direction of alternative
+            number_repetitions = 1000,  # Number of simulated samples for null distribution
+            which_first = 1)  # Not needed when using calculated differences
+```
+    
+9. Sketch the null distribution created using the R output here.
+
+\vspace{1.8in}
+
+10. Explain why the null distribution is centered at zero. 
+\vspace{.5in}
+
+
+11. What proportion of samples are at or greater than the observed sample mean difference in time holding their hands in ice water while swearing minus saying a neutral word? What is the statistical term for this proportion?
+\vspace{.3in}
+
+12. Interpret the p-value in the context of the problem.
+\vspace{.8in}
+
+13. How much evidence does this provide for higher pain tolerance while swearing?
+\vspace{.3in}
+
+14. If evidence was found for higher pain tolerance while swearing, could we conclude that the swearing *caused* higher pain tolerance? Explain.
+\vspace{.5in}
+
+##### Confidence interval {-}
+We will use the `paired_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample mean differences and calculate a confidence interval. 
+
+15. Write out the parameter of interest in context of the study.
+
+\vspace{0.8in}
+
+
+16. Using the provided R script file, fill in the missing value at `xx` to find a 99\% bootstrap confidence interval; highlight and run lines 25--28.  Report the confidence interval in interval notation.
+
+
+```r
+paired_bootstrap_CI(data = swearing$swearing_diffences, # Enter vector of differences
+                    number_repetitions = 1000, # Number of bootstrap samples for CI
+                    confidence_level = xx,  # Confidence level in decimal form
+                    which_first = 1)  # Not needed when entering vector of differences
+```
+
+\vspace{.5in}
+
+
+#### Communicate the results and answer the research question {-}
+
+17. Interpret the 99\% confidence interval in the context of the problem.
+
+\vspace{0.7in}
+
+
+18. Do the results of your confidence interval and hypothesis test agree?  What does each tell you about the null hypothesis?
+
+\vspace{.7in}
+
+
+### Take-home messages
+
+1.	The differences in a paired data set are treated like a single quantitative variable when performing a statistical analysis.  Paired data (or paired samples) occur when pairs of measurements are collected. We are only interested in the population (and sample) of differences, and not in the original data. 
+
+2.  When using bootstrapping to create a null distribution centered at the null value for both paired data and a single quantitative variable, we first need to shift the data by the difference $\mu_0 - \bar{x}_d$, and then sample with replacement from the shifted data. 
+
+3. When analyzing paired data, the summary statistic is the 'mean difference' NOT the 'difference in means'^[Technically, if we calculate the differences and then take the mean (mean difference), and we calculate the two means and then take the difference (difference in means), the value will be the same. However, the *sampling variability* of the two statistics will differ, as we will see in Week 12.].  This terminology will be *very* important in interpretations.
+
+4. To create one simulated sample on the null distribution for a sample mean or mean difference, shift the original data by adding $(\mu_0 - \bar{x})$ or $(0 - \bar{x}_d)$. Sample with replacement from the shifted data $n$ times. Calculate and plot the sample mean or the sample mean difference.
+
+5. To create one simulated sample on the bootstrap distribution for a sample mean or mean difference, label $n$ cards with the original response values.  Randomly draw with replacement $n$ times.  Calculate and plot the resampled mean or the resampled mean difference.
+
+### Additional notes
+
+Use this space to summarize your thoughts and take additional notes on today's activity and material covered.
+
+\newpage

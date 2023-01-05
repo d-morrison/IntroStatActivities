@@ -32,7 +32,7 @@ To review these concepts, see Sections 2.2 through 2.5 in the textbook.
 
 Remember that each Friday you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.
 
-### Atrial fibrillation {-}
+### Atrial fibrillation 
 
 Atrial fibrillation is an irregular and often elevated heart rate. In some people, atrial fibrillation will come and go on its own, but others will experience this condition on a permanent basis.  When atrial fibrillation is constant, medications are required to stabilize the patient's heart rate and to help prevent blood clots from forming.  Pharmaceutical scientists at a large pharmaceutical company believe they have developed a new medication that effectively stabilizes heart rates in people with permanent atrial fibrillation.  They set out to conduct a trial study to investigate the new drug.  The scientists will need to compare the proportion of patients whose heart rate is stabilized between two groups of subjects, one of whom is given a placebo and the other given the new medication. 
 
@@ -125,16 +125,16 @@ The diagram below summarizes these ideas about confounding variables and random 
 
 \vspace{0.2in}
 
-14. **Both the sampling method (which we covered last week) and the study design will help to determine the *scope of inference* for a study: To *whom* can we generalize, and can we conclude *causation or only association*? Use the table below to determine the scope of inference of this trial study described in question 12.**
+14. **Both the sampling method (which we covered last week) and the study design will help to determine the *scope of inference* for a study: To *whom* can we generalize, and can we conclude *causation or only association*? Use the table on the next page to determine the scope of inference of this trial study described in question 12.**
 \vspace{0.3in}
 
 
 \begin{center}\includegraphics[width=0.75\linewidth]{images/ScopeOfInferenceGreyscale} \end{center}
 
 
-### Study design {-}
+### Study design
 
-The two main study designs we will cover are **observational studies** and **experiments**.  In observational studies, researchers have no influence over which subjects are in each group being compared (though they can control other variables in the study).  An experiment is defined by assignment of the treatment groups of the *explanatory variable*, typically via random assignment. In today's activity we will discover the purpose behind random assignment.
+The two main study designs we will cover are **observational studies** and **experiments**.  In observational studies, researchers have no influence over which subjects are in each group being compared (though they can control other variables in the study).  An experiment is defined by assignment of the treatment groups of the *explanatory variable*, typically via random assignment. 
 
 For the next exercises identify the study design (observational study or experiment), the sampling method, and the scope of inference.
 
@@ -142,25 +142,25 @@ For the next exercises identify the study design (observational study or experim
 \vspace{0.1in}
 
     Study design:
-\vspace{0.25in}
+\vspace{0.3in}
 
     Sampling method:
-\vspace{0.25in}
+\vspace{0.3in}
 
     Scope of inference:
-\vspace{0.25in}
+\newpage
 
 16. **In another study, a local health department randomly selected 1000 US adults without COVID-19 to participate in a health survey.  Each participant was assessed at the beginning of the study and then followed for one year.  They were interested to see which participants elected to receive a vaccination for COVID-19 and whether any participants developed COVID-19.**
 \vspace{0.1in}
 
     Study design:
-\vspace{0.25in}
+\vspace{0.3in}
 
     Sampling method:
-\vspace{0.25in}
+\vspace{0.3in}
 
     Scope of inference:
-\vspace{0.25in}
+\vspace{0.3in}
 
 ### Take-home messages
 
@@ -171,8 +171,6 @@ For the next exercises identify the study design (observational study or experim
 3.  Random assignment balances confounding variables across treatment groups.  This eliminates any possible confounding variables by breaking the connections between the explanatory variable and the potential confounding variables.
 
 4.  Observational studies will always carry the possibility of confounding variables.  Randomized experiments, which use random assignment, will have no confounding variables.
-
-\newpage
 
 ### Additional notes
 

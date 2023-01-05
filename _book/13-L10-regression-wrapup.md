@@ -124,7 +124,7 @@ The response variable name is `GDP_dollar` and the explanatory variable name is 
     
 \vspace{.2in}
 
-Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 38--43. **Upload a copy of your plot showing the p-value to Gradescope for your group.**
+Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 38--44. **Upload a copy of your plot showing the p-value to Gradescope for your group.**
 
 
 ```r
@@ -139,12 +139,9 @@ regression_test(GDP_dollar~dollar_price, # response ~ explanatory
 8.  Report the p-value from the R output. 
 \vspace{0.3in}
 
-9. Interpret the p-value in context of the problem.
-\vspace{0.8in}
-
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 90\% confidence interval. Highlight and run lines 46--50. 
+We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 90\% confidence interval. Highlight and run lines 47--51. 
 
 
 ```r
@@ -154,36 +151,54 @@ regression_bootstrap_CI(GDP_dollar~dollar_price, # response ~ explanatory
    summary_measure = "xx", # Slope or correlation
    number_repetitions = 1000) # Number of simulated samples for bootstrap distribution
 ```
-10.  Report the bootstrap 90\% confidence interval in interval notation.  
+9.  Report the bootstrap 90\% confidence interval in interval notation.  
 \vspace{0.5in}
 
-11. Interpret the 90\% confidence interval in context of the problem.
-\vspace{0.8in}
-   
 #### Communicate the results and answer the research question {-}
 
-12. Based on the p-value, write a conclusion in context of the problem.
-
-\vspace{.8in}
-
-13. Using a significance level of 0.1, what decision would you make?
+10. Using a significance level of 0.1, what decision would you make?
 \vspace{0.2in}
 
-14. What type of error is possible?
+11. What type of error is possible?
 \vspace{0.3in}
 
-15. Interpret this error in context of the problem.
+12. Interpret this error in context of the problem.
 \vspace{0.8in}
 
-16. Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper.  **Upload a copy of your paragraph to Gradescope for your group.**  Be sure to describe:
+13. Write a paragraph summarizing the results of the study as if you are reporting these results in your local newspaper.  **Upload a copy of your paragraph to Gradescope for your group.**  Be sure to describe:
 
-* Summary statistic
+* Summary statistic and interpretation
 
 * P-value and interpretation
 
+    * Statement about probability or proportion of samples
+    
+    * Statistic (summary measure and value)
+    
+    * Direction of the alternative 
+    
+    * Null hypothesis (in context) 
+
+
 * Confidence interval and interpretation
 
+    * How confident you are (e.g., 90%, 95%, 98%, 99%)
+    
+    * Parameter of interest
+    
+    * Calculated interval
+    
+    * Order of subtraction when comparing two groups
+
+
 * Conclusion (written to answer the research question)
+
+    * Amount of evidence
+    
+    * Parameter of interest 
+    
+    * Direction of the alternative hypothesis
+
 
 * Scope of inference
 

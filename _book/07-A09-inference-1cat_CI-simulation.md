@@ -18,7 +18,7 @@ In today's activity, we will introduce simulation-based confidence intervals for
 
 * Confidence interval
 
-To review these concepts, see Chapter 5 in your textbook, focusing on Sections 5.1 through 5.3.
+To review these concepts, see Chapters 10 & 14 in your textbook.
 
 ### Helper-Hinderer
 
@@ -32,22 +32,15 @@ A **point estimate** (our observed statistic) provides a single plausible value 
 
 1.  What is the value of the point estimate?
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 2.  If we took another random sample of 16 infants, would we get the exact same point estimate?  Explain why or why not.
 
 \vspace{0.5in}
 
-In today's activity, we will use bootstrapping to find a 95\% confidence interval for $\pi$, the parameter of interest.  See Section 5.3.3 in your textbook to review bootstrapping.
-
-3.  In your own words, explain the bootstrapping process.
-\vspace{0.5in}
+In today's activity, we will use bootstrapping, sampling with replacement from the original sample, to find a 95\% confidence interval for $\pi$, the parameter of interest.  
 
 #### Use statistical analysis methods to draw inferences from the data {-}
-
-4.  Write out the parameter of interest for this study in words.  *Hint: this is the same as question 5 in Activity 6.*
-
-\vspace{0.5in}
 
 To use the computer simulation to create a bootstrap distribution, we will need to enter the 
 
@@ -56,7 +49,7 @@ To use the computer simulation to create a bootstrap distribution, we will need 
 * "number of repetitions" (the number of samples to be generated), and 
 * the "confidence level" (which level of confidence are we using to create the confidence interval).
 
-5.  What values should be entered for each of the following into the simulation to create the bootstrap distribution of sample proportions to find a 95\% confidence interval?
+3.  What values should be entered for each of the following into the simulation to create the bootstrap distribution of sample proportions to find a 95\% confidence interval?
 \vspace{1mm}
 
 * Sample size:
@@ -73,7 +66,7 @@ To use the computer simulation to create a bootstrap distribution, we will need 
     
 \vspace{.1in}
 
-We will use the `one_proportion_bootstrap_CI()` function in `R` (in the `catstats` package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided `R` script file, fill in the values/words for each `xx` with your answers from question 5 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 1--7.
+We will use the `one_proportion_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided R script file, fill in the values/words for each `xx` with your answers from question 3 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 1--7.
 
 
 ```r
@@ -82,42 +75,45 @@ one_proportion_bootstrap_CI(sample_size = xx, # Sample size
                     number_repetitions = 1000, # Number of bootstrap samples to use
                     confidence_level = 0.95) # Confidence level as a decimal
 ```
-6.  Sketch the bootstrap distribution created below.
+
+4.  Sketch the bootstrap distribution created below.
 
 \vspace{1.8in}
 
-7. What is the value at the center of this bootstrap distribution?  Why does this make sense?
+5. What is the value at the center of this bootstrap distribution?  Why does this make sense?
 \vspace{.8in}
 
-8. Explain why the two vertical lines are at the 2.5th percentile and the 97.5th percentile.
+6. Explain why the two vertical lines are at the 2.5th percentile and the 97.5th percentile.
 
 \vspace{.7in}
 
-9. Report the 95\% bootstrapped confidence interval for $\pi$.  Use interval notation: (lower value, upper value).
+7. Report the 95\% bootstrapped confidence interval for $\pi$.  Use interval notation: (lower value, upper value).
 
 \vspace{0.2in}
 
-10.  Interpret the 95\% confidence interval in context.
+8.  Interpret the 95\% confidence interval in context.
 
 \vspace{.7in}
 
 #### Communicate the results and answer the research question {-}
 
-11.  Is the value 0.5 (the null value) in the 95\% confidence interval?  
+9.  Is the value 0.5 (the null value) in the 95\% confidence interval?
 
 \vspace{.2in}
 
 |    Explain how this indicates that the p-value provides strong evidence against the null.
 
-\newpage
+\vspace{0.3in}
 
 #### Effect of confidence level {-}
 
-12.  Suppose instead of finding a 95\% confidence interval, we found a 90\% confidence interval.  Would you expect the 90\% confidence interval to be narrower or wider?  Explain your answer.
+10.  Suppose instead of finding a 95\% confidence interval, we found a 90\% confidence interval.  Would you expect the 90\% confidence interval to be narrower or wider?  Explain your answer.
 
 \vspace{0.4in}
 
-13.  The following `R` code produced the bootstrap distribution with 1000 simulations that follows.  Circle the value that changed in the code. 
+\newpage
+
+11.  The following R code produced the bootstrap distribution with 1000 simulations that follows.  Circle the value that changed in the code. 
 
 
 ```r
@@ -132,43 +128,36 @@ one_proportion_bootstrap_CI(sample_size = 16, # Sample size
 \begin{center}\includegraphics[width=0.7\linewidth]{07-A09-inference-1cat_CI-simulation_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 
-14.  Report both the 95\% confidence interval (question 9) and the 90\% confidence interval (question 13).  Is the 90\% confidence interval narrower or wider than the 95\% confidence interval?
+12.  Report both the 95\% confidence interval (question 9) and the 90\% confidence interval (question 13).  Is the 90\% confidence interval narrower or wider than the 95\% confidence interval?
 
 \vspace{0.5in}
-
-15.  Explain why the upper value of the confidence interval is truncated at 1.
-
-\vspace{0.5in}
-
-\newpage
 
 ### What does *confidence* mean? {-}
 
 In the interpretation of a 95\% confidence interval, we say that we are 95\% confident that the parameter is within the confidence interval.  Why are we able to make that claim?  What does it mean to say "we are 95\% confident"?
 
-For this part of the activity we will assume that the the true proportion of infants that choose the helper toy is 0.75. *Note: we are making assumptions about the population here. This is not based on our calculated data, but we will use this applet to better understand what happens when we take many, many samples from this believed population.* 
+For this part of the activity we will assume that the the true proportion of infants who choose the helper is 0.7. *Note: we are making assumptions about the population here. This is not based on our calculated data, but we will use this applet to better understand what happens when we take many, many samples from this believed population.*
 
-16.  Go to this website, [http://www.rossmanchance.com/ISIapplets.html](http://www.rossmanchance.com/ISIapplets.html) and choose 'Simulating Confidence Intervals'.  In the input on the left-hand side of the screen enter 0.75 for $\pi$ (the true value), 16 for $n$, and 100 for 'Number of intervals'.  Click 'sample'.
+13.  Go to this website, [http://www.rossmanchance.com/ISIapplets.html](http://www.rossmanchance.com/ISIapplets.html) and choose 'Simulating Confidence Intervals'.  In the input on the left-hand side of the screen enter 0.7 for $\pi$ (the true value), 16 for $n$, and 100 for 'Number of intervals'.  Click 'sample'.
 \vspace{1mm}
 
-a. In the graph on the bottom right, click on a green dot.  Write down the confidence interval for this sample given on the graph on the left.  Does this confidence interval contain the true value of 0.75?
+   a. In the graph on the bottom right, click on a green dot.  Write down the confidence interval for this sample given on the graph on the left.  Does this confidence interval contain the true value of 0.7?
 \vspace{0.5in}
 
 
-b. Now click on a red dot.  Write down the confidence interval for this sample.  Does this confidence interval contain the true value of 0.75?
+   b. Now click on a red dot.  Write down the confidence interval for this sample.  Does this confidence interval contain the true value of 0.7?
 \vspace{0.5in}
 
-c. How many intervals out of 100 contain $\pi$, the true value of 0.75? *Hint*:  This is given to the left of the graph of green and red intervals.
+   c. How many intervals out of 100 contain $\pi$, the true value of 0.7? *Hint*:  This is given to the left of the graph of green and red intervals.
 \vspace{0.5in}
 
-17.  Click on 'sample' nine more times.  Write down the 'Running Total' for the proportion of intervals that contain $\pi$.  
+14.  Click on 'sample' nine more times.  Write down the 'Running Total' for the proportion of intervals that contain $\pi$.
 
 \vspace{0.5in}
 
-18.  **Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?**
+15.  Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?
 
-
-\newpage
+\vspace{0.8in}
 
 ### Take-home messages
 

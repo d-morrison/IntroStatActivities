@@ -177,7 +177,7 @@ pt(xx, df=69, lower.tail=FALSE)
 
 To calculate a theory-based confidence interval for the paired mean difference, use the following formula:
 
-$$\bar{x}_d\pm t^* SE(\bar{x}_d).$$
+$$\bar{x}_d\pm t^* \times SE(\bar{x}_d).$$
 We will need to find the $t^*$ multiplier using the function `qt()`. The code below will return the 95th percentile of the $t$ distribution with `df` = $n_d - 1 = 70 - 1 = 69$. 
 
 

@@ -20,7 +20,7 @@ For more on these concepts, read Chapter 1 and Section 2.1 in the textbook.
 
 On Friday of each week you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.  
 
-### Types of bias {-}
+### Types of bias 
 
 In the next few weeks we will look at how to summarize data both numerically and graphically.  For now we will focus on sampling methods and the type of sampling bias that may be present.
 
@@ -107,7 +107,7 @@ To help determine the type of bias present, it is helpful to think about the obs
 
 \newpage
 
-### Gas prices {-}
+### Gas prices 
 
 In this part of the lab we will explore two different websites to explore the cost of gas.  Open both the Gas Buddy Website (www.gasbuddy.com) and a government website (https://www.eia.gov/petroleum/).  Spend some time exploring each site.
 

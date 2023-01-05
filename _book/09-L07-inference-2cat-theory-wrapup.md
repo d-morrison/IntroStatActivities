@@ -25,8 +25,8 @@ Upload and open the R script file for Week 9 lab. Upload and import the csv file
 
 
 ```r
-rosi <- datasetname
-rosi %>% group_by(treatment) %>% count(outcome)
+glycemic <- datasetname
+glycemic %>% group_by(treatment) %>% count(outcome)
 ```
 
 1. Is this an experiment or an observational study?
@@ -64,7 +64,7 @@ Fill in the missing values/names in the R script file in the two-proportion_test
 
 ```r
 two_proportion_test(formula = outcome~treatment, # response ~ explanatory
-         data= rosi, # Name of data set
+         data= glycemic, # Name of data set
          first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
          number_repetitions = 1000, # Always use a minimum of 1000 repetitions
          response_value_numerator = "xx", # Define which outcome is a success 
@@ -90,22 +90,40 @@ two_proportion_test(formula = outcome~treatment, # response ~ explanatory
 12.  Use the multiplier of $z^*$ = 1.96 and the standard error found in question 11 to calculate a 95\% confidence interval for the parameter of interest.
 \vspace{1in}
 
-13. Interpret the confidence interval found in question 12 in context of the problem.
-
-\vspace{0.8in}
-
-14. Write a conclusion to the research question. 
-\vspace{0.8in}
-
-15. Write a paragraph summarizing the results of the study.  Be sure to describe:
+13. Write a paragraph summarizing the results of the study.  Be sure to describe:
 
 * Summary statistic and interpretation
 
 * P-value and interpretation
 
+    * Statement about probability or proportion of samples
+    
+    * Statistic (summary measure and value)
+    
+    * Direction of the alternative 
+    
+    * Null hypothesis (in context) 
+
+
 * Confidence interval and interpretation
 
+    * How confident you are (e.g., 90%, 95%, 98%, 99%)
+    
+    * Parameter of interest
+    
+    * Calculated interval
+    
+    * Order of subtraction when comparing two groups
+
+
 * Conclusion (written to answer the research question)
+
+    * Amount of evidence
+    
+    * Parameter of interest 
+    
+    * Direction of the alternative hypothesis
+
 
 * Scope of inference
 

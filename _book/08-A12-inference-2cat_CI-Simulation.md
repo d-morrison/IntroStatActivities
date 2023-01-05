@@ -41,7 +41,7 @@ Researchers at the Princeton University wanted to investigate influences on beha
 \vspace{0.4in}
 
 
-Use the provided R script file to create a segmented bar plot of those who helped others for those in the hurry condition and those in the no hurry condition. Enter the name of the explanatory variable for `explanatory` and the name of the response variable for `response`.  **Make sure to title your plot**.  Highlight and run lines 1--13.
+Use the provided R script file to create a segmented bar plot of those who helped others for those in the hurry condition and those in the no hurry condition. Enter the name of the explanatory variable for `explanatory` and the name of the response variable for `response` in line 8.  **Make sure to title your plot**.  Highlight and run lines 1--12.
 
 
 ```r
@@ -97,7 +97,7 @@ The response variable name is `Behavior` and the explanatory variable name is `C
 
 \vspace{.15in}
 
-Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 16--21.
+Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 15--20.
 
 
 ```r
@@ -126,15 +126,9 @@ two_proportion_bootstrap_CI(formula = Behavior ~ Condition,
 
 \vspace{1in}
 
-12.  What conclusion to the research question can be made based on the 99\% confidence interval?
+12. Based on your conclusion in Activity 8A, explain why you would not expect the null value of zero to be in the inteval.
 
-\vspace{0.8in}
-
-13.  Is the null value in the 99\% confidence interval? 
-
-\vspace{0.8in}
-
-\newpage
+\vspace{0.5in}
 
 #### Types of errors {-}
 
@@ -164,15 +158,15 @@ Recall from a previous activity, hypothesis tests are not flawless. In a hypothe
 
 Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the null hypothesis when $H_0$ is actually true. A **Type 2 Error** happens when we fail to reject the null hypothesis when the alternative is actually true.
 
-14.  Using a significance level of 0.01 and your answer to question 13, what decision do you make in regards to the null hypothesis?
+13.  Using a significance level of 0.01 and your answer to question 13, what decision do you make in regards to the null hypothesis?
 
 \vspace{0.3in}
 
-15. What type of error could we have made?
+14. What type of error could we have made?
 
 \vspace{0.3in}
 
-16.  Write this error in context of the problem.
+15.  Write this error in context of the problem.
 
 \vspace{0.5in}
 

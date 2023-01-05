@@ -23,7 +23,7 @@ To review these concepts, see Chapter 15 in your textbook.
 
 \vspace{0.5in}
 
-2.  What about a pair of skis that were originally \$593 at REI?
+2.  What about a pair of skis that were originally \$593 at REI?  How much will you pay if the skis are 30\% off?
 
 \vspace{0.5in}
 
@@ -87,7 +87,7 @@ survive %>% group_by(Class_Dept) %>% count(Survived)
 
 \vspace{0.8in}
 
-8. Calculate the difference in conditional proportions of death for 3rd and 1st class passengers.  Use 3rd $-$ 1st as the order of subtraction.
+8. Calculate the difference in conditional proportion of death for 3rd and 1st class passengers.  Use 3rd $-$ 1st as the order of subtraction.
 
 \vspace{0.8in}
 
@@ -111,22 +111,30 @@ $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 
 \vspace{0.8in}
 
-12. Calculate the percent increase or percent decrease in death.
+12. Calculate the increase or decrease in risk of death for 3rd class passengers compared to 1st class passengers.
 
 \vspace{0.5in}
 
-13. Interpret the value of relative risk as a percent increase or percent decrease in death.
+13. Interpret the increase or decrease in risk of death in context of the problem. 
+
+\vspace{0.5in}
+
+14. Calculate the percent increase or percent decrease in death.
+
+\vspace{0.5in}
+
+15. Interpret the value of relative risk as a percent increase or percent decrease in death.
 
 \vspace{0.8in}
 
-14. Based on the summary statistic, was the risk of death higher among 3rd class passengers compared to 1st class passengers? By what percent?
+16. Based on the summary statistic, was the risk of death higher among 3rd class passengers compared to 1st class passengers? By what percent?
 
-\vspace{0.8in}
+\vspace{0.5in}
 
 
 ### Risk in the News
 
-15.  Find a recent news article discussing 'risk'.  Summarize the article below by answering the following questions.
+17.  Find a recent news article discussing 'risk'.  Summarize the article below by answering the following questions.
 
 * What is the article discussing the risk of?  (This is the a *success* for the study.)
 

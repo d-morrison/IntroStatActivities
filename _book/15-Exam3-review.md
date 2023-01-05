@@ -1,6 +1,6 @@
 # Semester Review
 
-## Final Exam Review
+## Group Final Exam Review
 
 \setstretch{1}
 
@@ -34,7 +34,7 @@ Use the provided data set from the Islands (ExamReviewData.csv) and the appropri
 
 \newpage
 
-1. Use the appropriate Final Exam Review R script file and analyze the following research question, "Does drinking a caffeinated drink increase blood glucose levels, on average?" Use before – after as the order of subtraction.
+1. Use the appropriate Final Exam Review R script file and analyze the following research question, "Does drinking a caffeinated drink increase blood glucose levels, on average?" Use before $-$ after as the order of subtraction.
 
 a. Parameter of Interest:
 \vspace{0.3in}
@@ -55,7 +55,7 @@ c. Alternative Hypothesis:
     Words:
 \vspace{0.5in}
     
-d. Use the R script file to get the summary statistics for each level of the explanatory variable. Fill in the following table with the variable names, levels of each variable, and values from the R output.
+d. Use the R script file to get the summary statistics. Fill in the following table with the variable names, levels of each variable, and values from the R output.
 
 \begingroup
 \setlength{\tabcolsep}{14pt}
@@ -72,7 +72,7 @@ d. Use the R script file to get the summary statistics for each level of the exp
 \end{center}
 \endgroup
 
-e. Calculate the value of summary statistic to answer the research question. Give appropriate notation.
+e. Write the summary statistic to answer the research question with appropriate notation.
 \vspace{0.3in}
 
 f. Interpret the value of the summary statistic in context of the problem:
@@ -114,7 +114,7 @@ o. Interpret the value of the standardized statistic in context of the problem.
 p. Use the provided R script file to find the theory-based p-value. 
 \vspace{0.3in}
 
-q. Use the provided R script file to find the appropriate z* multiplier and calculate the theory-based confidence interval. 
+q. Use the provided R script file to find the appropriate t* multiplier and calculate the theory-based confidence interval. 
 \vspace{0.5in}
 
 r. Does the theory-based p-value and CI match those found using simulation methods?  Explain why or why not.
@@ -205,7 +205,7 @@ o. Interpret the value of the standardized statistic in context of the problem.
 p. Use the provided R script file to find the theory-based p-value. 
 \vspace{0.3in}
 
-q. Use the provided R script file to find the appropriate z* multiplier and calculate the theory-based confidence interval. 
+q. Use the provided R script file to find the appropriate t* multiplier and calculate the theory-based confidence interval. 
 \vspace{0.5in}
 
 r. Does the theory-based p-value and CI match those found using simulation methods?  Explain why or why not.
@@ -295,7 +295,7 @@ n. Interpret the value of the standardized statistic in context of the problem.
 o. Use the provided R script file to find the theory-based p-value. 
 \vspace{0.3in}
 
-p. Use the provided R script file to find the appropriate z* multiplier and calculate the theory-based confidence interval. 
+p. Use the provided R script file to find the appropriate t* multiplier and calculate the theory-based confidence interval. 
 \vspace{0.5in}
 
 q. Does the theory-based p-value and CI match those found using simulation methods?  Explain why or why not.
