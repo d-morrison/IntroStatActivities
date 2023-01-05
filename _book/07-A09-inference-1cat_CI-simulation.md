@@ -136,19 +136,19 @@ one_proportion_bootstrap_CI(sample_size = 16, # Sample size
 
 In the interpretation of a 95\% confidence interval, we say that we are 95\% confident that the parameter is within the confidence interval.  Why are we able to make that claim?  What does it mean to say "we are 95\% confident"?
 
-For this part of the activity we will assume that the the true proportion of infants who choose the helper is 0.7. *Note: we are making assumptions about the population here. This is not based on our calculated data, but we will use this applet to better understand what happens when we take many, many samples from this believed population.*
+For this part of the activity we will assume that the the true proportion of infants who choose the helper is 0.65. *Note: we are making assumptions about the population here. This is not based on our calculated data, but we will use this applet to better understand what happens when we take many, many samples from this believed population.*
 
-13.  Go to this website, [http://www.rossmanchance.com/ISIapplets.html](http://www.rossmanchance.com/ISIapplets.html) and choose 'Simulating Confidence Intervals'.  In the input on the left-hand side of the screen enter 0.7 for $\pi$ (the true value), 16 for $n$, and 100 for 'Number of intervals'.  Click 'sample'.
+13.  Go to this website, [http://www.rossmanchance.com/ISIapplets.html](http://www.rossmanchance.com/ISIapplets.html) and choose 'Simulating Confidence Intervals'.  In the input on the left-hand side of the screen enter 0.65 for $\pi$ (the true value), 16 for $n$, and 100 for 'Number of intervals'.  Click 'sample'.
 \vspace{1mm}
 
-   a. In the graph on the bottom right, click on a green dot.  Write down the confidence interval for this sample given on the graph on the left.  Does this confidence interval contain the true value of 0.7?
+   a. In the graph on the bottom right, click on a green dot.  Write down the confidence interval for this sample given on the graph on the left.  Does this confidence interval contain the true value of 0.65?
 \vspace{0.5in}
 
 
-   b. Now click on a red dot.  Write down the confidence interval for this sample.  Does this confidence interval contain the true value of 0.7?
+   b. Now click on a red dot.  Write down the confidence interval for this sample.  Does this confidence interval contain the true value of 0.65?
 \vspace{0.5in}
 
-   c. How many intervals out of 100 contain $\pi$, the true value of 0.7? *Hint*:  This is given to the left of the graph of green and red intervals.
+   c. How many intervals out of 100 contain $\pi$, the true value of 0.65? *Hint*:  This is given to the left of the graph of green and red intervals.
 \vspace{0.5in}
 
 14.  Click on 'sample' nine more times.  Write down the 'Running Total' for the proportion of intervals that contain $\pi$.
@@ -170,6 +170,7 @@ For this part of the activity we will assume that the the true proportion of inf
 4.  When the null value is within the confidence interval, it is a plausible value for the parameter of interest; thus, we would find a larger p-value for a hypothesis test of that null value.  Conversely, if the null value is NOT within the confidence interval, we would find a small p-value for the hypothesis test and strong evidence against this null hypothesis. 
 
 5. To create one simulated sample on the bootstrap distribution for a sample proportion, label $n$ cards with the original responses.  Draw with replacement $n$ times.  Calculate and plot the resampled proportion of successes.
+\newpage
 
 ### Additional notes
 

@@ -233,7 +233,7 @@ b) Using a larger sample size.
 c) Using a sample statistic closer to the null value.
 
 \vspace{0.4in}
-
+\newpage
 
 ### Take-home messages
 

@@ -98,7 +98,7 @@ IPEDS %>%
 
 3.  Calculate the interquartile range ($IQR = Q_3 - Q_1$) for this study.
 
-\vspace{0.5in}
+\vspace{0.8in}
 
 4.  How many missing values are there?  What does this indicate?
 
@@ -138,7 +138,7 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 
 5.  What is the shape of the distribution of retention rates?  
 
-\vspace{0.2in}
+\vspace{0.3in}
 
 6.  Identify any outliers in the data set.
 
@@ -151,6 +151,7 @@ Let's examine how the presence of outliers affect the values of center and sprea
 7.  Report the two measures of center (mean and median) for retention given in the R output.
 
 \vspace{0.4in}
+\newpage
 
 8.  Report the two measures of spread (standard deviation and $IQR$) for retention given in the R output.
 
@@ -186,9 +187,11 @@ IPEDS %>% # Data set piped into...
 
 \vspace{0.5in}
 
+
 12.  Which measure of spread is robust to outliers?  Explain your answer.
 
 \vspace{0.5in}
+\newpage
 
 #### Summarizing a single categorical and single quantitative variable {-}
 
@@ -237,6 +240,7 @@ IPEDS %>%  # Data set piped into...
 16.  Does there appear to be an association between retention rates and type of university?  Explain your answer.
 
 \vspace{0.3in}
+\newpage
 
 #### Summarizing two categorical variables {-}
 

@@ -77,7 +77,7 @@ penguins %>%  # Data set pipes into
 
 \vspace{1in}
 
-Enter the variable `body_mass_g` for `response` and the variable name `flipper_length_mm` for `explanatory` in line 23 in the R script file.  Highlight and run lines 23--24 to get the linear model output.
+Enter the variable name `body_mass_g` for `response` and the variable name `flipper_length_mm` for `explanatory` in line 23 in the R script file.  Highlight and run lines 23--24 to get the linear model output.
 
 ```{r, echo=TRUE, collapse = FALSE, eval=FALSE}
 # Fit linear model: y ~ x

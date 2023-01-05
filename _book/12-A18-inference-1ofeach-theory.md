@@ -150,7 +150,7 @@ qt(xx, df = yy, lower.tail=FALSE)
 
 14.  Calculate the 95\% confidence interval using theory-based methods.
 
-\newpage
+\vspace{1in}
 
 15.  Do the results of the CI agree with the p-value?  Explain your answer.
 

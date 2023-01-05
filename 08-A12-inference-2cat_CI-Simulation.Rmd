@@ -64,7 +64,7 @@ good %>%
 
 4.  Write out the conclusion you made in Activity 8A.
 
-\vspace{0.8in}
+\newpage
 
 5.  Do you expect the null value to be in a 99\% confidence interval?  Explain your answer.
 
@@ -96,6 +96,8 @@ The response variable name is `Behavior` and the explanatory variable name is `C
 
 \vspace{.15in}
 
+\newpage 
+
 Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 15--20.
 
 ```{r, echo=TRUE, eval=FALSE}
@@ -106,7 +108,7 @@ two_proportion_bootstrap_CI(formula = Behavior ~ Condition,
         number_repetitions = 1000, # Always use a minimum of 1000 repetitions
         confidence_level = xx) # Enter the level of confidence as a decimal
 ```
-\newpage 
+
 
 8.  Where is the bootstrap distribution centered?  Explain why.
 

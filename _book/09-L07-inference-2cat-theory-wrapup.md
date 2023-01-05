@@ -130,3 +130,5 @@ two_proportion_test(formula = outcome~treatment, # response ~ explanatory
 **Upload a copy of your group's p-value interpretation and scope of inference to Gradescope.** 
 
 \newpage
+
+\newpage

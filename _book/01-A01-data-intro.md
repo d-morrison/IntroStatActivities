@@ -15,9 +15,7 @@ Statistics is the study of how best to collect, analyze, and draw conclusions fr
 
 * Variables: categorical or quantitative 
 
-* Types of sampling bias 
-
-For more on these concepts, read Chapter 1 and Section 2.1 in the textbook.
+For more on these concepts, read Chapter 1 in the textbook.
 
 ### General information on the Coursepack
 

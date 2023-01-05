@@ -635,11 +635,9 @@ Statistics is the study of how best to collect, analyze, and draw conclusions fr
   Observational units or cases
 \item
   Variables: categorical or quantitative
-\item
-  Types of sampling bias
 \end{itemize}
 
-For more on these concepts, read Chapter 1 and Section 2.1 in the textbook.
+For more on these concepts, read Chapter 1 in the textbook.
 
 \hypertarget{general-information-on-the-coursepack}{%
 \subsection{General information on the Coursepack}\label{general-information-on-the-coursepack}}
@@ -2991,7 +2989,7 @@ Enter the name of the data set (see the environment tab) for \texttt{datasetname
   Calculate the interquartile range (\(IQR = Q_3 - Q_1\)) for this study.
 \end{enumerate}
 
-\vspace{0.5in}
+\vspace{0.8in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3050,7 +3048,7 @@ We will create both a histogram and a boxplot of the variable \texttt{Retention}
   What is the shape of the distribution of retention rates?
 \end{enumerate}
 
-\vspace{0.2in}
+\vspace{0.3in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3077,6 +3075,7 @@ Let's examine how the presence of outliers affect the values of center and sprea
 \end{enumerate}
 
 \vspace{0.4in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3147,6 +3146,7 @@ To show the effect of outliers on the measures of center and spread, the smalles
 \end{enumerate}
 
 \vspace{0.5in}
+\newpage
 
 \hypertarget{summarizing-a-single-categorical-and-single-quantitative-variable}{%
 \subsubsection*{Summarizing a single categorical and single quantitative variable}\label{summarizing-a-single-categorical-and-single-quantitative-variable}}
@@ -3216,6 +3216,7 @@ Enter the name of the explanatory variable and the name of the response variable
 \end{enumerate}
 
 \vspace{0.3in}
+\newpage
 
 \hypertarget{summarizing-two-categorical-variables}{%
 \subsubsection*{Summarizing two categorical variables}\label{summarizing-two-categorical-variables}}
@@ -4457,7 +4458,7 @@ Highlight and run lines 16--20 to get the correlation matrix in the R script fil
 
 \vspace{1in}
 
-Enter the variable \texttt{body\_mass\_g} for \texttt{response} and the variable name \texttt{flipper\_length\_mm} for \texttt{explanatory} in line 23 in the R script file. Highlight and run lines 23--24 to get the linear model output.
+Enter the variable name \texttt{body\_mass\_g} for \texttt{response} and the variable name \texttt{flipper\_length\_mm} for \texttt{explanatory} in line 23 in the R script file. Highlight and run lines 23--24 to get the linear model output.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6990,27 +6991,27 @@ We will use the \texttt{one\_proportion\_bootstrap\_CI()} function in R (in the 
 
 In the interpretation of a 95\% confidence interval, we say that we are 95\% confident that the parameter is within the confidence interval. Why are we able to make that claim? What does it mean to say ``we are 95\% confident''?
 
-For this part of the activity we will assume that the the true proportion of infants who choose the helper is 0.7. \emph{Note: we are making assumptions about the population here. This is not based on our calculated data, but we will use this applet to better understand what happens when we take many, many samples from this believed population.}
+For this part of the activity we will assume that the the true proportion of infants who choose the helper is 0.65. \emph{Note: we are making assumptions about the population here. This is not based on our calculated data, but we will use this applet to better understand what happens when we take many, many samples from this believed population.}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{12}
 \tightlist
 \item
-  Go to this website, \url{http://www.rossmanchance.com/ISIapplets.html} and choose `Simulating Confidence Intervals'. In the input on the left-hand side of the screen enter 0.7 for \(\pi\) (the true value), 16 for \(n\), and 100 for `Number of intervals'. Click `sample'.
+  Go to this website, \url{http://www.rossmanchance.com/ISIapplets.html} and choose `Simulating Confidence Intervals'. In the input on the left-hand side of the screen enter 0.65 for \(\pi\) (the true value), 16 for \(n\), and 100 for `Number of intervals'. Click `sample'.
   \vspace{1mm}
 \end{enumerate}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \item
-  In the graph on the bottom right, click on a green dot. Write down the confidence interval for this sample given on the graph on the left. Does this confidence interval contain the true value of 0.7?
+  In the graph on the bottom right, click on a green dot. Write down the confidence interval for this sample given on the graph on the left. Does this confidence interval contain the true value of 0.65?
   \vspace{0.5in}
 \item
-  Now click on a red dot. Write down the confidence interval for this sample. Does this confidence interval contain the true value of 0.7?
+  Now click on a red dot. Write down the confidence interval for this sample. Does this confidence interval contain the true value of 0.65?
   \vspace{0.5in}
 \item
-  How many intervals out of 100 contain \(\pi\), the true value of 0.7? \emph{Hint}: This is given to the left of the graph of green and red intervals.
+  How many intervals out of 100 contain \(\pi\), the true value of 0.65? \emph{Hint}: This is given to the left of the graph of green and red intervals.
   \vspace{0.5in}
 \end{enumerate}
 
@@ -7049,6 +7050,7 @@ For this part of the activity we will assume that the the true proportion of inf
   When the null value is within the confidence interval, it is a plausible value for the parameter of interest; thus, we would find a larger p-value for a hypothesis test of that null value. Conversely, if the null value is NOT within the confidence interval, we would find a small p-value for the hypothesis test and strong evidence against this null hypothesis.
 \item
   To create one simulated sample on the bootstrap distribution for a sample proportion, label \(n\) cards with the original responses. Draw with replacement \(n\) times. Calculate and plot the resampled proportion of successes.
+  \newpage
 \end{enumerate}
 
 \hypertarget{additional-notes-11}{%
@@ -8520,7 +8522,7 @@ Use the provided R script file to create a segmented bar plot of those who helpe
   Write out the conclusion you made in Activity 8A.
 \end{enumerate}
 
-\vspace{0.8in}
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8591,6 +8593,8 @@ The response variable name is \texttt{Behavior} and the explanatory variable nam
 
 \vspace{.15in}
 
+\newpage
+
 Using the R script file for this activity, enter your answers for question 7 in place of the \texttt{xx}'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 15--20.
 
 \begin{Shaded}
@@ -8603,8 +8607,6 @@ Using the R script file for this activity, enter your answers for question 7 in 
         \AttributeTok{confidence\_level =}\NormalTok{ xx) }\CommentTok{\# Enter the level of confidence as a decimal}
 \end{Highlighting}
 \end{Shaded}
-
-\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9619,6 +9621,7 @@ Use Rstudio find the p-value for this new sample. Enter the value of the standar
 \end{enumerate}
 
 \vspace{0.4in}
+\newpage
 
 \hypertarget{take-home-messages-15}{%
 \subsection{Take-home messages}\label{take-home-messages-15}}
@@ -10032,6 +10035,8 @@ Fill in the missing values/names in the R script file in the two-proportion\_tes
 \end{itemize}
 
 \textbf{Upload a copy of your group's p-value interpretation and scope of inference to Gradescope.}
+
+\newpage
 
 \newpage
 
@@ -12480,7 +12485,7 @@ Enter the appropriate percentile value (as a decimal) for \texttt{xx} and degree
   Calculate the 95\% confidence interval using theory-based methods.
 \end{enumerate}
 
-\newpage
+\vspace{1in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -14899,7 +14904,6 @@ Another summary statistic that can be calculated for two categorical variables i
 \end{itemize}
 
 \vspace{1in}
-\newpage
 
 \hypertarget{take-home-messages-24}{%
 \subsection{Take-home messages}\label{take-home-messages-24}}
@@ -15538,9 +15542,6 @@ Hamblin, J. K., K. Wynn, and P. Bloom. 2007. {``Social Evaluation by Preverbal I
 \leavevmode\vadjust pre{\hypertarget{ref-hirschfelder2018}{}}%
 Hirschfelder, A., and P. F. Molin. 2018. {``I Is for Ignoble: Stereotyping Native Americans.''} \href{Retrieved\%20from\%20https://www.ferris.edu/HTMLS/news/jimcrow/native/homepage.htm.}{Retrieved from https://www.ferris.edu/HTMLS/news/jimcrow/native/homepage.htm.}
 
-\leavevmode\vadjust pre{\hypertarget{ref-hutchison2013}{}}%
-Hutchison, R. L., and M. A. Hirthler. 2013. {``\href{https://www.ncbi.nlm.nih.gov/pubmed/23932117}{Upper Extremity Injuies in Homer's Iliad}.''} \emph{Journal of Hand Surgery (American Volume)} 38: 1790--93.
-
 \leavevmode\vadjust pre{\hypertarget{ref-imdb}{}}%
 {``{IMDb} Movies Extensive Dataset.''} 2016. \url{https://kaggle.com/stefanoleone992/imdb-extensive-dataset}.
 
@@ -15550,9 +15551,6 @@ Keating, D., N. Ahmed, F. Nirappil, Stanley-Becker I., and L. Bernstein. 2021. {
 \leavevmode\vadjust pre{\hypertarget{ref-becentispeech}{}}%
 Moquin, W., and C. Van Doren. 1973. {``Great Documents in American Indian History.''} Praeger.
 
-\leavevmode\vadjust pre{\hypertarget{ref-weather}{}}%
-National Weather Service Corporate Image Web Team. n.d. {``National Weather Service -- {NWS} Billings.''} \url{https://w2.weather.gov/climate/xmacis.php?wfo=byz}.
-
 \leavevmode\vadjust pre{\hypertarget{ref-obrien2019}{}}%
 O'Brien, Lynch, H. D. 2019. {``Crocodylian Head Width Allometry and Phylogenetic Prediction of Body Size in Extinct Crocodyliforms.''} \emph{Integrative Organismal Biology} 1.
 
@@ -15561,9 +15559,6 @@ Porath, Erez, C. 2017. {``Does Rudeness Really Matter? The Effects of Rudeness o
 
 \leavevmode\vadjust pre{\hypertarget{ref-quinn1999}{}}%
 Quinn, G. E., C. H. Shin, M. G. Maguire, and R. A. Stone. 1999. {``Myopia and Ambient Lighting at Night.''} \emph{Nature} 399 (6732): 113--14. \url{https://doi.org/10.1038/20094}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-ramachandran2007}{}}%
-Ramachandran, V. 2007. {``3 Clues to Understanding Your Brain.''} \url{https://www.ted.com/talks/vs_ramachandran_3_clues_to_understanding_your_brain}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-cdchospitalization}{}}%
 {``Rates of Laboratory-Confimed COVID-19 Hospitalizations by Vaccination Status.''} 2021. CDC. \url{https://covid.cdc.gov/covid-data-tracker/\#covidnet-hospitalizations-vaccination}.
@@ -15588,9 +15583,6 @@ Sulheim, S., A. Ekeland, I. Holme, and R. Bahr. 2017. {``Helmet Use and Risk of 
 
 \leavevmode\vadjust pre{\hypertarget{ref-covidvaccinetracker}{}}%
 {``US COVID-19 Vaccine Tracker: See Your State's Progress.''} 2021. Mayo Clinic. \url{https://www.mayoclinic.org/coronavirus-covid-19/vaccine-tracker}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-usepa2020}{}}%
-US Environmental Protection Agency. n.d. {``Air Data -- Daily Air Quality Tracker.''} \url{https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-navajo2011}{}}%
 {``Welcome to the Navajo Nation Government: Official Site of the Navajo Nation.''} 2011.\href{\%20Retrieved\%20from\%20https://www.navajo-nsn.gov/.}{Retrieved from https://www.navajo-nsn.gov/.}

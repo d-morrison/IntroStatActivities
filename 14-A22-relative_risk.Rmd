@@ -143,7 +143,6 @@ $$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
 * Does the news report appear to indicate a causal relationship exists based on the reported relative risk?  Do you agree with the report?  Justify your answer.
 
 \vspace{1in}
-\newpage
 
 
 ### Take-home messages
