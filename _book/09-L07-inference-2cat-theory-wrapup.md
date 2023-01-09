@@ -127,6 +127,10 @@ two_proportion_test(formula = outcome~treatment, # response ~ explanatory
 
 * Scope of inference
 
+    * To what group of observational units do the results apply?
+	
+    * What type of inference is appropriate (causal or non-causal)?
+
 **Upload a copy of your group's p-value interpretation and scope of inference to Gradescope.** 
 
 \newpage

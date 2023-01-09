@@ -167,6 +167,10 @@ two_proportion_bootstrap_CI(formula = response~explanatory,
 
 * Scope of inference
 
+    * To what group of observational units do the results apply?
+	
+    * What type of inference is appropriate (causal or non-causal)?
+
 **Upload your group's confidence interval interpretation and conclusion to Gradescope.** 
 
 \newpage

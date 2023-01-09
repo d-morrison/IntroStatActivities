@@ -147,7 +147,7 @@ We will use the `paired_bootstrap_CI()` function in R (in the `catstats` package
 
 
 ```r
-paired_bootstrap_CI(data = swearing$swearing_diffences, # Enter vector of differences
+paired_bootstrap_CI(data = swearing_diff$differences, # Enter vector of differences
                     number_repetitions = 1000, # Number of bootstrap samples for CI
                     confidence_level = xx,  # Confidence level in decimal form
                     which_first = 1)  # Not needed when entering vector of differences

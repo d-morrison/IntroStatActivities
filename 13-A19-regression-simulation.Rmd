@@ -29,7 +29,7 @@ To review these concepts, see Chapter 21 in the textbook.
 
 ### Crocodylian Body Size
 
-Much research surrounds using measurements of animals to estimate body-size of extinct animals.  Many challenges exist in making accurate estimates for extinct crocodylians.  The researchers in this study [@obrien2019] tested using head width to estimate body size. Is head width a good estimator of body size for crocodylians? 
+Much research surrounds using measurements of animals to estimate body-size of extinct animals.  Many challenges exist in making accurate estimates for extinct crocodylians.  The term crocodylians refers to all members of the family Crocodylidae (“true” crocodiles), family Alligatoridae (alligators and caimans) and family Gavialidae (gharial, Tomistoma). The researchers in this study [@obrien2019] state, "Among extinct crocodylians and their precursors (e.g., suchians), several methods have been developed to predict body size from suites of hard-tissue proxies. Nevertheless, many have limited applications due to the disparity of some major suchian groups and biases in the fossil record. Here, we test the utility of head width (HW) as a broadly applicable body-size estimator in living and fossil suchians."  Is there evidence that head width is a good estimator of body size for crocodylians? 
 
 
 ```{r, echo = TRUE, fig.width=7,fig.height=6, collapse=FALSE}
@@ -60,7 +60,7 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 ```
 
-2. Sketch the plot created below. Based on your plot, does it appear that there is a relationship between head width and total length? Note: `head width` should be on the $x$-axis.
+2. Sketch the plot created below. Based on your plot, does it appear that there is a relationship between head width and total length? Note: head width should be on the $x$-axis.
 
 \vspace{2in}
 
@@ -111,11 +111,9 @@ In this activity, we will focus on using simulation-based methods for inference 
 
 Let's start by thinking about how one simulation would be created on the null distribution using cards.  First, we would write the values for the response variable, total length, on each card.  Next, we would shuffle these $y$ values while keeping the $x$ values (explanatory variable) in the same order.  Then, find the line of regression for the shuffled $(x, y)$ pairs and calculate either the slope or correlation of the shuffled sample.  
 
-We will use the `regression_test()` function in R (in the `catstats` package) to simulate the null distribution of shuffled slopes (or shuffled correlations) and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `diving`), the summary measure for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
+We will use the `regression_test()` function in R (in the `catstats` package) to simulate the null distribution of shuffled slopes (or shuffled correlations) and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `croc`), the summary measure for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
 
 The response variable name is `TL_cm` and the explanatory variable name is `BW_cm` for these data.
-
-\newpage
 
 9. What inputs should be entered for each of the following to create the simulation to test regression slope?
 
@@ -161,11 +159,11 @@ regression_test(TL_cm~BW_cm, # response ~ explanatory
 
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 95\% confidence interval for slope. Highlight and run lines 34--38. 
+We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the missing values in the provided R script file to find a 95\% confidence interval for slope. Highlight and run lines 34--38. 
 
 ```{r, echo=TRUE, eval=FALSE}
-regression_bootstrap_CI(TL_cm~BW_cm, # response ~ explanatory
-   data = diving, # Name of data set
+regression_bootstrap_CI(response~explanatory, # response ~ explanatory
+   data = croc, # Name of data set
    confidence_level = xx, # Confidence level as decimal
    summary_measure = "xx", # Slope or correlation
    number_repetitions = 1000) # Number of simulated samples for bootstrap distribution

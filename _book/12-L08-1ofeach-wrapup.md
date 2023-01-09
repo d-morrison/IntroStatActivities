@@ -72,7 +72,7 @@ dinos %>%
 7.  Calculate the summary statistic for the research question. Use proper notation.
 \vspace{0.25in}
 
-8. **How far, on average, is each difference in femur length from the difference in mean femur length?  What is the appropriate notation for this value?**
+8. **How far, on average, is each difference in mean femur length from the difference in true mean femur length?  What is the appropriate notation for this value?**
 
 \vspace{0.4in}
 
@@ -84,7 +84,7 @@ dinos %>%
 
 ### Hypothesis test {-}
 
-Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that there is no difference in mean femur length for dinosaurs with protusions and dinosaurs without protusions.
+Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that there is no difference in mean femur length for dinosaurs with protrusions and dinosaurs without protrusions.
 
 We will use the `two_mean_test()` function in R (in the `catstats` package) to simulate the null distribution of differences in sample means and compute a p-value. 
 
@@ -115,7 +115,7 @@ two_mean_test(response~explanatory, #Enter the names of the variables
 
 ### Confidence interval {-}
 
-We will use the `paired_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample mean differences and calculate a confidence interval. 
+We will use the `two_mean_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample differences in means and calculate a confidence interval. 
 
 13. Using bootstrapping and the provided R script file, find a 98\% confidence interval. Fill in the missing values/numbers in the `two_mean_bootstrap_CI()` function to create the 98\% confidence interval.  Highlight and run lines 28--32. **Upload a copy of the bootstrap distribution created to Gradescope for your group.** 
 
@@ -172,6 +172,10 @@ two_mean_bootstrap_CI(response ~ explanatory, #Enter the name of the variables
 
 
 * Scope of inference
+
+    * To what group of observational units do the results apply?
+	
+    * What type of inference is appropriate (causal or non-causal)?
 
 \vspace{2.6in}
 

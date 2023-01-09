@@ -97,15 +97,16 @@ Num Credits & & \\
 \end{tabular}
 \end{center}
 
-5. Write down some issues found with the created class data set.
+5. Review the completed data set with your table.  Remember that when creating a data set for use in R it is important to use single words or an underscore between words.  Each outcome must be written the same way each time to have consistency between responses.  Do not give units of measure for numerical values.  Write down some issues found with the created class data set.
 
 \vspace{1in}
 
 ### Take-home messages
 
-1. When creating a data set, each row will represent a single observational unit or case. Each column represents a variable collected. It is important to write each variable as a single word or use an underscore between words.
+1. There are two types of variables: categorical (groups) and quantitative (numerical measures).
 
-2. There are two types of variables: categorical (groups) and quantitative (numerical measures).
+
+2. When creating a data set, each row will represent a single observational unit or case. Each column represents a variable collected. It is important to write each variable as a single word or use an underscore between words.
 
 3. Make sure to be consistent with writing each outcome in the data set.
 

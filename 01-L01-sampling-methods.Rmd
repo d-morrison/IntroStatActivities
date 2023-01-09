@@ -24,7 +24,7 @@ On Friday of each week you will complete a lab. Questions are selected from each
 
 In the next few weeks we will look at how to summarize data both numerically and graphically.  For now we will focus on sampling methods and the type of sampling bias that may be present.
 
-* Selection bias: a part of the target population is not included or underrepresented in the sample
+* Selection bias: a part of the target population is not included or is underrepresented in the sample
 
 * Non-response or non-participation bias: part of the already selected sample does not respond or chooses not to participate
 
@@ -117,23 +117,23 @@ In this part of the lab we will explore two different websites to explore the co
 
 6. Compare the two websites.  
 
-* Why are gas stations selected to appear in each data set?
+* How are gas stations selected to appear in each data set?
 
-\vspace{0.3in}
+\vspace{0.5in}
 
 * Do we know if gas stations were left out for any given time period?
 
-\vspace{0.3in}
+\vspace{0.5in}
 
-* Can we make claims about what the mean price is for all gas stations in a region?
+* Can we make claims about what the mean price is for all gas stations in a region?  Explain.
 
-\vspace{0.3in}
+\vspace{0.5in}
 
 7. **Which of the following questions are best answered with the government data, and which with Gas Buddy?**
 
 * How do average gas prices compare across regions of the country?
 
-\vspace{0.3in}
+\vspace{0.4in}
 
 * Where should I go to buy gas right now?
 
@@ -143,11 +143,19 @@ In this part of the lab we will explore two different websites to explore the co
 
 \vspace{0.3in}
 
+8. What type(s) of sampling bias may be present?  Explain.
+
+\vspace{0.5in}
+
 
 
 ### Take-home messages
 
 1. There are three types of bias to be aware of when designing a sampling method: selection bias, non-response bias, and response bias.
+
+2. Think about how the sample was selected and the target population when determining if sampling bias exists. 
+
+3. It is always important to look at how a sample was selected to determine which group of observational units the results of a study can be generalized to (the target population or observational units similar to the sample).
 
 ### Additional notes
 

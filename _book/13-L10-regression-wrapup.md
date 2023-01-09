@@ -202,6 +202,10 @@ regression_bootstrap_CI(GDP_dollar~dollar_price, # response ~ explanatory
 
 * Scope of inference
 
+    * To what group of observational units do the results apply?
+	
+    * What type of inference is appropriate (causal or non-causal)?
+    
 \vspace{3in}
 
 \newpage

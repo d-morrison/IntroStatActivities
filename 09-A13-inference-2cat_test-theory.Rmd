@@ -174,7 +174,7 @@ Suppose that we want to show that there is a **difference** in true proportion o
 
 14.  Write out the alternative hypothesis in notation for this new research question.
 
-\vspace{0.5in}
+\vspace{0.3in}
 
 15.  How would this impact the p-value?
 
@@ -192,7 +192,7 @@ Suppose in another sample of skiers and snowboarders involved in accidents we sa
 
 \vspace{0.8in}
 
-Use Rstudio find the p-value for this new sample.  Enter the value of the standardized statistic found in question 16 for xx in line 14.  Highlight and run lines 14--16.
+Use Rstudio to find the p-value for this new sample.  Enter the value of the standardized statistic found in question 16 for xx in line 14.  Highlight and run lines 14--16.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
@@ -208,7 +208,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 \newpage
 
-Use Rstudio find the p-value for this new sample.  Enter the value of the standardized statistic found in question 18 for xx in line 19.  Highlight and run lines 19--21.
+Use Rstudio to find the p-value for this new sample.  Enter the value of the standardized statistic found in question 18 for xx in line 19.  Highlight and run lines 19--21.
 
 ```{r, echo=TRUE, eval=FALSE}
 pnorm(xx, # Enter value of standardized statistic
