@@ -56,7 +56,7 @@ Table: Summary statistics for time to hold hand in ice water while swearing and 
 |:-------------:|:--------------------:|--------------------|-------------|
 | Swear       | $\bar{x}_1$ = 36.165 | $s_1$ = 24.178    | $n_1$ = 83  |
 | Neutral | $\bar{x}_2$ = 28.491 | $s_2$ = 18.895       | $n_2$ = 83  |
-| Differences   | $\bar{x}_d$ =        | $s_d$ =      | $n_d$ = 83  |
+| Differences   |$\bar{x}_d$ =        | $s_d$ =      | $n_d$ = 83  |
 
 #### Vocabulary review.  {-}
 

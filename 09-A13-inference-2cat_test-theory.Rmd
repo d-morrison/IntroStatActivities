@@ -168,7 +168,7 @@ pnorm(xx, # Enter value of standardized statistic
 \vspace{0.8in}
 
 
-### Impacts on the P-value {-}
+### Impacts on the p-value {-}
 
 Suppose that we want to show that there is a **difference** in true proportion of head injuries for those that wear helmets and those that do not.
 

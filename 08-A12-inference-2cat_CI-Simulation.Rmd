@@ -129,6 +129,7 @@ two_proportion_bootstrap_CI(formula = Behavior ~ Condition,
 12. Based on your conclusion in Activity 8A, explain why you would not expect the null value of zero to be in the inteval.
 
 \vspace{0.5in}
+\newpage
 
 #### Types of errors {-}
 

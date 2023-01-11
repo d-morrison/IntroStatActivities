@@ -131,11 +131,11 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 
 \vspace{0.2in}
 
-To create a boxplot of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for `variable` at line 28, highlight and run lines 27--32.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a boxplot of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for `variable` at line 28, highlight and run lines 27--32.  
 
 
 ```r
-movieS %>% # Data set piped into...
+movies %>% # Data set piped into...
 ggplot(aes(x = variable)) +   # Name variable to plot
   geom_boxplot() +  # Create boxplot 
   labs(title = "Boxplot of IMDb Score of Movies in 2016", # Title for plot
@@ -160,6 +160,8 @@ $$\text{Upper Fence: values} \ge Q_3 + 1.5\times IQR$$
     Which graph is best used to show the outliers of the distribution?
     
     \vspace{0.5in}
+    
+\newpage
     
 #### Summary statistics for a single categorical and single quantitative Variable{-}
 

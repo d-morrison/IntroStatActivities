@@ -135,10 +135,12 @@ The plot labeled “Statistics” displays the 1,000 randomly generated sample m
 
 \vspace{0.3in}
 
-\newpage
 
 12. Compare the spreads of the plots in question 10 and in question 5. You should see that in one plot all sample means are closer to the population mean than in the other. Which plot shows this?
 \vspace{0.4in}
+
+
+\newpage
 
 13. Using the evidence from your simulations, answer the following questions:
 

@@ -110,7 +110,7 @@ $$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}.$$
 
 \vspace{0.5in}
 
-9.  When we are comparing two quantitative variables to find the degrees of freedom to use for the t-distribution, we need to use the group with the smallest sample size and subtract 1.  (`df` = minimum of $n_1 - 1$ or  $n_2 - 1$).  Calculate the `df` for this study.
+9.  To find the degrees of freedom to use for the t-distribution for two independent samples, we need to use the group with the smallest sample size and subtract 1.  (`df` = minimum of $n_1 - 1$ or  $n_2 - 1$).  Calculate the `df` for this study.
 
 \vspace{0.2in}
 \newpage

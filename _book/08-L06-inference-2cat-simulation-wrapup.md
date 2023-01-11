@@ -167,7 +167,7 @@ two_proportion_bootstrap_CI(formula = response~explanatory,
 
 * Scope of inference
 
-    * To what group of observational units do the results apply?
+    * To what group of observational units do the results apply (target population or observational units similar to the sample)?
 	
     * What type of inference is appropriate (causal or non-causal)?
 
@@ -175,3 +175,6 @@ two_proportion_bootstrap_CI(formula = response~explanatory,
 
 \newpage
 
+Paragraph (continued):
+
+\newpage

@@ -148,12 +148,12 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 
 Let's examine how the presence of outliers affect the values of center and spread. 
 
-7.  Report the two measures of center (mean and median) for retention given in the R output.
+7.  Report the two measures of center (mean and median) for retention rates given in the R output.
 
 \vspace{0.4in}
 \newpage
 
-8.  Report the two measures of spread (standard deviation and $IQR$) for retention given in the R output.
+8.  Report the two measures of spread (standard deviation and $IQR$) for retention rates given in the R output.
 
 \vspace{0.4in}
 

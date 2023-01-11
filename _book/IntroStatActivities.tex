@@ -192,7 +192,7 @@ Stacey Hancock}
 \newpage
 \thispagestyle{empty}
 
-This resource was developed by Melinda Yager, Jade Schmidt, and Stacey Hancock in 2021 to accompany the online textbook: Carnegie, N., Hancock, S., Meyer, E., Schmidt, J., and Yager, M. (2021). \emph{Montana State Introductory Statistics with R}. Montana State University. \url{https://mtstateintrostats.github.io/IntroStatTextbook/}.
+This resource was developed by Melinda Yager, Jade Schmidt, and Stacey Hancock in 2021 to accompany the online textbook: Hancock, S., Carnegie, N., Meyer, E., Schmidt, J., and Yager, M. (2021). \emph{Montana State Introductory Statistics with R}. Montana State University. \url{https://mtstateintrostats.github.io/IntroStatTextbook/}.
 
 This resource is released under a \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons BY-NC-SA 4.0} license unless otherwise noted.
 
@@ -208,7 +208,7 @@ This resource is released under a \href{https://creativecommons.org/licenses/by-
 \chapter*{Preface}\label{preface}}
 \addcontentsline{toc}{chapter}{Preface}
 
-This coursepack accompanies the textbook for STAT 216: Introduction to Statistics at Montana State University, which can be found at \url{https://mtstateintrostats.github.io/IntroStatTextbook/}. The syllabus for the course (including the course calendar), data sets, and links to D2L Brightspace, Gradescope, and the MSU RStudio server can be found on the course webpage: \url{https://math.montana.edu/courses/s216/}.
+This coursepack accompanies the textbook for STAT 216: Montana State Introductory Statistics with R, which can be found at \url{https://mtstateintrostats.github.io/IntroStatTextbook/}. The syllabus for the course (including the course calendar), data sets, and links to D2L Brightspace, Gradescope, and the MSU RStudio server can be found on the course webpage: \url{https://math.montana.edu/courses/s216/}.
 Videos assigned in the course calendar and other notes and review materials are linked in D2L.
 
 Each of the activities in this workbook is designed to target specific learning outcomes of the course, giving you practice with important statistical concepts in a group setting with instructor guidance. In addition to the in-class activities for the course, the coursepack includes reading guides to aid in taking notes while you complete the required readings and videos. Bring this workbook with you to class each class period, and take notes in the workbook as you would your own notes. A well-written completed workbook will provide an optimal study guide for exams!
@@ -326,6 +326,11 @@ Finals& T & 5/9 6 - 7:50 pm & Common Final Exam \\
 \hypertarget{basics-of-data}{%
 \chapter{Basics of Data}\label{basics-of-data}}
 
+\hypertarget{reading-guides}{%
+\section{Reading Guides}\label{reading-guides}}
+
+Reading guides are designed to be completed while reading the required sections in the course textbook to aid students in taking notes. These reading guides are not turned in in class but will be useful in understanding key concepts each week. Solutions to the reading guides will be posted on D2L.
+
 \hypertarget{week-1-reading-guide-basics-of-data}{%
 \section{Week 1 Reading Guide: Basics of Data}\label{week-1-reading-guide-basics-of-data}}
 
@@ -382,8 +387,6 @@ Variable:
 
 Example of a number which is NOT a numerical (quantitative) variable:
 \rgs
-
-\newpage
 
 Categorical variable:
 \rgs
@@ -721,20 +724,40 @@ The outcome of a categorical variable is a group or category such as eye color, 
 \tightlist
 \item
   Major: what is your declared major?
+\end{itemize}
+
+\vspace{0.2in}
+
+\begin{itemize}
+\tightlist
 \item
   Residency: do you have in-state or out-of-state residency?
+\end{itemize}
+
+\vspace{0.2in}
+
+\begin{itemize}
+\tightlist
 \item
-  Forearm\_Length: what is the length of your forearm in inches from the end of your elbow to the end of your index finger?
+  Forearm\_Length: what is the length of your arm in inches from the end of your elbow to the end of your index finger?
+\end{itemize}
+
+\vspace{0.2in}
+
+\begin{itemize}
+\tightlist
 \item
   Num\_Credits: how many credits are you taking this semester?
 \end{itemize}
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{3}
 \tightlist
 \item
-  For each column of data, fill in the following table to write out the variable we are collecting on each observational unit in this study and the type of each variable.
+  The header for each column describes each variable measured on the observational unit. When writing a variable we need to specify what we are measuring. For example, the column header \texttt{Residency} in our data set represents the variable \emph{whether a student has in-state or out-of-state residency} not \emph{what state a student is from}. For each column of data, fill in the following table to write out the variable we are collecting on each observational unit in this study and the type of each variable.
 \end{enumerate}
 
 \begin{center}
@@ -771,7 +794,7 @@ Num Credits & & \\
 \item
   When creating a data set, each row will represent a single observational unit or case. Each column represents a variable collected. It is important to write each variable as a single word or use an underscore between words.
 \item
-  Make sure to be consistent with writing each outcome in the data set.
+  Make sure to be consistent with writing each outcome in the data set as R is case sensitive. All outcomes must be written exactly the same way.
 \end{enumerate}
 
 \hypertarget{additional-notes}{%
@@ -1474,14 +1497,21 @@ The plot labeled ``Statistics'' displays the 1,000 randomly generated sample mea
 
 \vspace{0.3in}
 
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\tightlist
+\item
+  Compare the spreads of the plots in question 10 and in question 5. You should see that in one plot all sample means are closer to the population mean than in the other. Which plot shows this?
+  \vspace{0.4in}
+\end{enumerate}
+
 \newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{11}
-\item
-  Compare the spreads of the plots in question 10 and in question 5. You should see that in one plot all sample means are closer to the population mean than in the other. Which plot shows this?
-  \vspace{0.4in}
+\setcounter{enumi}{12}
+\tightlist
 \item
   Using the evidence from your simulations, answer the following questions:
 \end{enumerate}
@@ -1641,7 +1671,7 @@ When both these conditions are met, if we observe an association between the exp
 
 \begin{itemize}
 \item
-  Navigate to the ``Randomizing Subjects'' applet under the ``Other Applets'' heading at: \url{http://www.rossmanchance.com/ISIapplets.html}. This applet lists the sex and height of each of the 24 subjects. Click ``Show Graphs'' to see a bar chart showing the sex of each subject. Currently, the applet is showing the strategy outlined in question 7.
+  Navigate to the ``Randomizing Subjects'' applet under the ``Other Applets'' heading at: \url{http://www.rossmanchance.com/ISIapplets.html}. This applet lists the sex and height of each of the 24 subjects. Click ``Show Graphs'' to see a bar chart showing the sex of each subject. Currently, the applet is showing the strategy outlined in question 3.
 \item
   Click ``Randomize''.
 \end{itemize}
@@ -1689,19 +1719,19 @@ The diagram below summarizes these ideas about confounding variables and random 
   \vspace{0.8in}
 \item
   Suppose in this study on atrial fibrillation, the scientists did randomly assign groups and found that the drug group has a higher proportion of subjects whose heart rates stabilized than the placebo group. Can the scientists conclude the new drug \emph{caused} the increased chance of stabilization? Explain your answer.
-  \vspace{0.5in}
+  \vspace{0.8in}
 \item
   Is the sample of subjects a simple random sample or a convenience sample?
 \end{enumerate}
 
-\vspace{0.2in}
+\vspace{0.3in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{13}
 \tightlist
 \item
-  \textbf{Both the sampling method (which we covered last week) and the study design will help to determine the \emph{scope of inference} for a study: To \emph{whom} can we generalize, and can we conclude \emph{causation or only association}? Use the table on the next page to determine the scope of inference of this trial study described in question 12.}
+  \textbf{Both the sampling method (which we covered last week) and the study design will help to determine the \emph{scope of inference} for a study: To \emph{whom} can we generalize, and can we conclude \emph{causation or only association}? Use your answers to question 12 and 13 and the table on the next page to determine the scope of inference of this trial study described in question 12.}
   \vspace{0.3in}
 \end{enumerate}
 
@@ -2435,7 +2465,7 @@ Fill in the name of the explanatory variable and the response variable in line 4
 \endgroup
 \end{center}
 
-In the following questions, use the table to calculate the described proportions. Notation is important for each calculation. Since this is sample data it is appropriate to use statistic notation for the proportion, \(\hat{p}\). When calculating a proportion dependent on a single level of a variable subscripts are needed when reporting the notation.
+In the following questions, use the table to calculate the described proportions. Notation is important for each calculation. Since this is sample data, it is appropriate to use statistic notation for the proportion, \(\hat{p}\). When calculating a proportion dependent on a single level of a variable, subscripts are needed when reporting the notation.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2678,11 +2708,11 @@ Notice that the \textbf{bin width} is 0.5. For example the first bin consists of
 
 \vspace{0.2in}
 
-To create a boxplot of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{R} script file for \texttt{variable} at line 28, highlight and run lines 27--32. Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a boxplot of the IMDb scores, enter the variable name, \texttt{imdb\_score} in the provided \texttt{R} script file for \texttt{variable} at line 28, highlight and run lines 27--32.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{movieS }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
+\NormalTok{movies }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Data set piped into...}
 \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ variable)) }\SpecialCharTok{+}   \CommentTok{\# Name variable to plot}
   \FunctionTok{geom\_boxplot}\NormalTok{() }\SpecialCharTok{+}  \CommentTok{\# Create boxplot }
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Boxplot of IMDb Score of Movies in 2016"}\NormalTok{, }\CommentTok{\# Title for plot}
@@ -2718,6 +2748,8 @@ To create a boxplot of the IMDb scores, enter the variable name, \texttt{imdb\_s
 
   \vspace{0.5in}
 \end{enumerate}
+
+\newpage
 
 \hypertarget{summary-statistics-for-a-single-categorical-and-single-quantitative-variable}{%
 \subsubsection*{Summary statistics for a single categorical and single quantitative Variable}\label{summary-statistics-for-a-single-categorical-and-single-quantitative-variable}}
@@ -3084,7 +3116,7 @@ Let's examine how the presence of outliers affect the values of center and sprea
 \setcounter{enumi}{6}
 \tightlist
 \item
-  Report the two measures of center (mean and median) for retention given in the R output.
+  Report the two measures of center (mean and median) for retention rates given in the R output.
 \end{enumerate}
 
 \vspace{0.4in}
@@ -3095,7 +3127,7 @@ Let's examine how the presence of outliers affect the values of center and sprea
 \setcounter{enumi}{7}
 \tightlist
 \item
-  Report the two measures of spread (standard deviation and \(IQR\)) for retention given in the R output.
+  Report the two measures of spread (standard deviation and \(IQR\)) for retention rates given in the R output.
 \end{enumerate}
 
 \vspace{0.4in}
@@ -8669,6 +8701,7 @@ Using the R script file for this activity, enter your answers for question 7 in 
 \end{enumerate}
 
 \vspace{0.5in}
+\newpage
 
 \hypertarget{types-of-errors}{%
 \subsubsection*{Types of errors}\label{types-of-errors}}
@@ -8982,13 +9015,17 @@ Fill in the missing values/names in the R script file in the two\_proportion\_bo
 
   \begin{itemize}
   \item
-    To what group of observational units do the results apply?
+    To what group of observational units do the results apply (target population or observational units similar to the sample)?
   \item
     What type of inference is appropriate (causal or non-causal)?
   \end{itemize}
 \end{itemize}
 
 \textbf{Upload your group's confidence interval interpretation and conclusion to Gradescope.}
+
+\newpage
+
+Paragraph (continued):
 
 \newpage
 
@@ -9506,8 +9543,8 @@ We will use the \texttt{pnorm()} function in R to find the p-value. Use the prov
 \vspace{0.8in}
 
 \hypertarget{impacts-on-the-p-value}{%
-\subsection*{Impacts on the P-value}\label{impacts-on-the-p-value}}
-\addcontentsline{toc}{subsection}{Impacts on the P-value}
+\subsection*{Impacts on the p-value}\label{impacts-on-the-p-value}}
+\addcontentsline{toc}{subsection}{Impacts on the p-value}
 
 Suppose that we want to show that there is a \textbf{difference} in true proportion of head injuries for those that wear helmets and those that do not.
 
@@ -10054,7 +10091,7 @@ Fill in the missing values/names in the R script file in the two-proportion\_tes
 
   \begin{itemize}
   \item
-    To what group of observational units do the results apply?
+    To what group of observational units do the results apply (target population or observational units similar to the sample)?
   \item
     What type of inference is appropriate (causal or non-causal)?
   \end{itemize}
@@ -10063,6 +10100,8 @@ Fill in the missing values/names in the R script file in the two-proportion\_tes
 \textbf{Upload a copy of your group's p-value interpretation and scope of inference to Gradescope.}
 
 \newpage
+
+Paragraph (continued):
 
 \newpage
 
@@ -11875,8 +11914,8 @@ Confidence interval for a difference in independent sample means:
 
 \newpage
 
-\hypertarget{activity-12-does-behavior-impact-performance}{%
-\section{Activity 12: Does behavior impact performance?}\label{activity-12-does-behavior-impact-performance}}
+\hypertarget{activity-12a-does-behavior-impact-performance}{%
+\section{Activity 12A: Does behavior impact performance?}\label{activity-12a-does-behavior-impact-performance}}
 
 \setstretch{1}
 
@@ -12446,7 +12485,7 @@ where the standard error of the difference in means is calculated using:
 \setcounter{enumi}{8}
 \tightlist
 \item
-  When we are comparing two quantitative variables to find the degrees of freedom to use for the t-distribution, we need to use the group with the smallest sample size and subtract 1. (\texttt{df} = minimum of \(n_1 - 1\) or \(n_2 - 1\)). Calculate the \texttt{df} for this study.
+  To find the degrees of freedom to use for the t-distribution for two independent samples, we need to use the group with the smallest sample size and subtract 1. (\texttt{df} = minimum of \(n_1 - 1\) or \(n_2 - 1\)). Calculate the \texttt{df} for this study.
 \end{enumerate}
 
 \vspace{0.2in}
@@ -12598,7 +12637,7 @@ For each of the following scenarios, determine whether the samples are paired or
 \hypertarget{dinosaurs}{%
 \subsection{Dinosaurs}\label{dinosaurs}}
 
-The backbone of heavy, two-legged, carnivorous dinosaurs, such as the T. rex, is subject to stress. Intriguingly, these dinosaurs have protrusions (rugosity) at the top and sides of their spinal vertebrae, potentially for extra support. These protrusions do not seem to be present in smaller carnivorous dinosaurs. MSU paleontologists hypothesize that the presence of the protrusions is associated with the size of the two-legged carnivorous dinosaurs, potentially allowing them to grow big (Wilson 2016). To test this hypothesis, the researchers collected multiple scientific papers describing the fossil bones of 57 two-legged carnivorous dinosaur species. Then, they checked for the presence or absence of these rugose protrusions from photographs published in the papers and collected measurements of the length in centimeters of the femur (or thigh) bone. Femur length is a proxy for dinosaur size. Is there evidence that the presence of the protusions result in larger dinosaurs? Use present \(-\) absent as the order of subtraction.
+The backbone of heavy, two-legged, carnivorous dinosaurs, such as the \emph{T. rex}, is subject to stress. Intriguingly, these dinosaurs have protrusions (rugosity) at the top and sides of their spinal vertebrae, potentially for extra support. These protrusions do not seem to be present in smaller carnivorous dinosaurs. MSU paleontologists hypothesize that the presence of the protrusions is associated with the size of the two-legged carnivorous dinosaurs, potentially allowing them to grow big (Wilson 2016). To test this hypothesis, the researchers collected multiple scientific papers describing the fossil bones of 57 two-legged carnivorous dinosaur species. Then, they checked for the presence or absence of these rugose protrusions from photographs published in the papers and collected measurements of the length in centimeters of the femur (or thigh) bone. Femur length is a proxy for dinosaur size. Is there evidence that the presence of the protusions result in larger dinosaurs? Use present \(-\) absent as the order of subtraction.
 
 \newpage
 
@@ -12627,7 +12666,7 @@ Upload and open the R script file for Week 12 lab. Upload and import the csv fil
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{dinos }\OtherTok{\textless{}{-}}\NormalTok{ datasetname}
-\NormalTok{dino }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{dinos }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ response, }\AttributeTok{x =}\NormalTok{ explanatory)) }\SpecialCharTok{+}
   \FunctionTok{geom\_boxplot}\NormalTok{() }\SpecialCharTok{+}
   \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Side{-}by{-}side box plots of femur length by rugosity"}\NormalTok{,}
@@ -12684,7 +12723,7 @@ Enter the name of the explanatory variable for \texttt{explanatory} and the resp
 \subsection*{Hypothesis test}\label{hypothesis-test-2}}
 \addcontentsline{toc}{subsection}{Hypothesis test}
 
-Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that there is no difference in mean femur length for dinosaurs with protrusions and dinosaurs without protrusions.
+Remember that the null distribution is created based on the assumption the null hypothesis is true. In this study, the null hypothesis states that there is no difference in true mean femur length for dinosaurs with protrusions and dinosaurs without protrusions.
 
 We will use the \texttt{two\_mean\_test()} function in R (in the \texttt{catstats} package) to simulate the null distribution of differences in sample means and compute a p-value.
 
@@ -12826,7 +12865,7 @@ We will use the \texttt{two\_mean\_bootstrap\_CI()} function in R (in the \textt
 
   \begin{itemize}
   \item
-    To what group of observational units do the results apply?
+    To what group of observational units do the results apply (target population or observational units similar to the sample)?
   \item
     What type of inference is appropriate (causal or non-causal)?
   \end{itemize}
@@ -14158,7 +14197,7 @@ We will use the \texttt{regression\_bootstrap\_CI()} function in R (in the \text
 
   \begin{itemize}
   \item
-    To what group of observational units do the results apply?
+    To what group of observational units do the results apply (target population or observational units similar to the sample)?
   \item
     What type of inference is appropriate (causal or non-causal)?
   \end{itemize}

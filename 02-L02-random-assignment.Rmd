@@ -79,7 +79,7 @@ When both these conditions are met, if we observe an association between the exp
 
 6. You will now investigate how randomly assigning subjects impacts a study's scope of inference.  
 
-*  Navigate to the "Randomizing Subjects" applet under the "Other Applets" heading at: http://www.rossmanchance.com/ISIapplets.html.  This applet lists the sex and height of each of the 24 subjects.  Click "Show Graphs" to see a bar chart showing the sex of each subject.  Currently, the applet is showing the strategy outlined in question 7.  
+*  Navigate to the "Randomizing Subjects" applet under the "Other Applets" heading at: http://www.rossmanchance.com/ISIapplets.html.  This applet lists the sex and height of each of the 24 subjects.  Click "Show Graphs" to see a bar chart showing the sex of each subject.  Currently, the applet is showing the strategy outlined in question 3.  
 
 * Click "Randomize".  
 
@@ -142,13 +142,13 @@ par(par_og) # restore original par
 \vspace{0.8in}
 
 12. Suppose in this study on atrial fibrillation, the scientists did randomly assign groups and found that the drug group has a higher proportion of subjects whose heart rates stabilized than the placebo group.  Can the scientists conclude the new drug *caused* the increased chance of stabilization?  Explain your answer.
-\vspace{0.5in}
+\vspace{0.8in}
 
 13. Is the sample of subjects a simple random sample or a convenience sample?
 
-\vspace{0.2in}
+\vspace{0.3in}
 
-14. **Both the sampling method (which we covered last week) and the study design will help to determine the *scope of inference* for a study: To *whom* can we generalize, and can we conclude *causation or only association*? Use the table on the next page to determine the scope of inference of this trial study described in question 12.**
+14. **Both the sampling method (which we covered last week) and the study design will help to determine the *scope of inference* for a study: To *whom* can we generalize, and can we conclude *causation or only association*? Use your answers to question 12 and 13 and the table on the next page to determine the scope of inference of this trial study described in question 12.**
 \vspace{0.3in}
 
 ```{r, fig.align = "center", out.width="75%"}

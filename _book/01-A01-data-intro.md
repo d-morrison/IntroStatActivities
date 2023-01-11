@@ -77,11 +77,22 @@ The outcome of a categorical variable is a group or category such as eye color, 
 3. One person from each group open the Google sheet linked in D2L and fill in the responses for the following questions for each group member.  When creating a data set for use in R it is important to use single words or an underscore between words.  Each outcome must be written the same way each time.  Make sure to use all lowercase letters to create this data set to have consistency between responses.  Do not give units of measure with the numerical values for the length of forearm.  For `Residency` use in_state or out_state as the two outcomes.
 
 * Major: what is your declared major?
+
+\vspace{0.2in}
+
 * Residency: do you have in-state or out-of-state residency?
-* Forearm_Length:  what is the length of your forearm in inches from the end of your elbow to the end of your index finger?
+
+\vspace{0.2in}
+
+* Forearm_Length:  what is the length of your arm in inches from the end of your elbow to the end of your index finger?
+
+\vspace{0.2in}
+
 * Num_Credits: how many credits are you taking this semester?
 
-4. For each column of data, fill in the following table to write out the variable we are collecting on each observational unit in this study and the type of each variable.
+\newpage
+
+4. The header for each column describes each variable measured on the observational unit. When writing a variable we need to specify what we are measuring.  For example, the column header `Residency` in our data set represents the variable *whether a student has in-state or out-of-state residency* not *what state a student is from*.  For each column of data, fill in the following table to write out the variable we are collecting on each observational unit in this study and the type of each variable.
 
 \begin{center}
 \begin{tabular}{|l|p{2.5in}|p{1.5in}|} \hline
@@ -108,7 +119,7 @@ Num Credits & & \\
 
 2. When creating a data set, each row will represent a single observational unit or case. Each column represents a variable collected. It is important to write each variable as a single word or use an underscore between words.
 
-3. Make sure to be consistent with writing each outcome in the data set.
+3. Make sure to be consistent with writing each outcome in the data set as R is case sensitive.  All outcomes must be written exactly the same way.
 
 ### Additional notes
 

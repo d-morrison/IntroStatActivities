@@ -33,7 +33,7 @@ For each of the following scenarios, determine whether the samples are paired or
 
 ### Dinosaurs
 
-The backbone of heavy, two-legged, carnivorous dinosaurs, such as the T. rex, is subject to stress. Intriguingly, these dinosaurs have protrusions (rugosity) at the top and sides of their spinal vertebrae, potentially for extra support. These protrusions do not seem to be present in smaller carnivorous dinosaurs. MSU paleontologists hypothesize that the presence of the protrusions is associated with the size of the two-legged carnivorous dinosaurs, potentially allowing them to grow big [@wilson2016]. To test this hypothesis, the researchers collected multiple scientific papers describing the fossil bones of 57 two-legged carnivorous dinosaur species. Then, they checked for the presence or absence of these rugose protrusions from photographs published in the papers and collected measurements of the length in centimeters of the femur (or thigh) bone. Femur length is a proxy for dinosaur size. Is there evidence that the presence of the protusions result in larger dinosaurs?  Use present $-$ absent as the order of subtraction.
+The backbone of heavy, two-legged, carnivorous dinosaurs, such as the *T. rex*, is subject to stress. Intriguingly, these dinosaurs have protrusions (rugosity) at the top and sides of their spinal vertebrae, potentially for extra support. These protrusions do not seem to be present in smaller carnivorous dinosaurs. MSU paleontologists hypothesize that the presence of the protrusions is associated with the size of the two-legged carnivorous dinosaurs, potentially allowing them to grow big [@wilson2016]. To test this hypothesis, the researchers collected multiple scientific papers describing the fossil bones of 57 two-legged carnivorous dinosaur species. Then, they checked for the presence or absence of these rugose protrusions from photographs published in the papers and collected measurements of the length in centimeters of the femur (or thigh) bone. Femur length is a proxy for dinosaur size. Is there evidence that the presence of the protusions result in larger dinosaurs?  Use present $-$ absent as the order of subtraction.
 
 \newpage
 
@@ -49,7 +49,7 @@ Upload and open the R script file for Week 12 lab. Upload and import the csv fil
 
 ```r
 dinos <- datasetname
-dino %>%
+dinos %>%
   ggplot(aes(y = response, x = explanatory)) +
   geom_boxplot() +
   labs(title = "Side-by-side box plots of femur length by rugosity",
@@ -84,7 +84,7 @@ dinos %>%
 
 ### Hypothesis test {-}
 
-Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that there is no difference in mean femur length for dinosaurs with protrusions and dinosaurs without protrusions.
+Remember that the null distribution is created based on the assumption the null hypothesis is true.  In this study, the null hypothesis states that there is no difference in true mean femur length for dinosaurs with protrusions and dinosaurs without protrusions.
 
 We will use the `two_mean_test()` function in R (in the `catstats` package) to simulate the null distribution of differences in sample means and compute a p-value. 
 
@@ -173,7 +173,7 @@ two_mean_bootstrap_CI(response ~ explanatory, #Enter the name of the variables
 
 * Scope of inference
 
-    * To what group of observational units do the results apply?
+    * To what group of observational units do the results apply (target population or observational units similar to the sample)?
 	
     * What type of inference is appropriate (causal or non-causal)?
 
