@@ -66,7 +66,7 @@ qnorm(0.95) # Multiplier for 90% confidence interval
 
 \newpage
 
-3. Sketch a graph of the standard normal distribution and use the graph to explain how the R code is used to find the $z^*$ multiplier.  
+3. Draw and label a standard normal distribution. Mark the value of the $z^*$ multiplier adn the percentages used to find this muliplier.  
 
 \vspace{1.5in}
 
@@ -91,7 +91,7 @@ $$ME = z^*\times SE(\hat{p}_1 - \hat{p}_2)$$
 
 \vspace{0.8in}
 
-8.  What decision (reject of fail to reject the null hypothesis) would you make based on your confidence interval?  Explain your answer.
+8.  What decision (reject or fail to reject the null hypothesis) would you make based on your confidence interval?  Explain your answer.
 \vspace{0.5in}
 \newpage
 
@@ -105,7 +105,7 @@ Suppose in another sample of skiers and snowboards involved in accidents we saw 
 | No Head Injury |     921    |      3270     |  4191 |
 | Total          |     1056   |      3944     |  5000 |
 
-Notice that the sample proportions for each group are the same as the smaller sample size.
+Note that the sample proportions for each group are the same as the smaller sample size.
 
 $$\hat{p}_1 = \frac{135}{1056}=0.127, \hat{p}_2 = \frac{674}{3944}=0.171$$
 
@@ -119,7 +119,7 @@ $$\hat{p}_1 = \frac{135}{1056}=0.127, \hat{p}_2 = \frac{674}{3944}=0.171$$
 11.  Calculate the 90\% confidence interval for this new study using the margin of error from question 10.  
 \vspace{.8in}
 
-12.  Is the confidence interval calculated in question 11 with the larger sample size wider or narrower than the confidence interval in question 7? Why?
+12.  Is the confidence interval calculated in question 11 with the larger sample size wider or narrower than the confidence interval in question 5? Why?
 \vspace{.8in}
 
 \newpage

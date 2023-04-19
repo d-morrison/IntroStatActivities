@@ -1,6 +1,6 @@
 # Group Exam 2 Review
 
-Use the provided data set from the Islands (ExamReviewData.csv) and the appropriate Exam 2 Review R script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
+Use the provided data set from the Islands (ExamReviewData.csv) and the appropriate Exam 1 Review R script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Note that some islanders choose not to participate in the study.  These islanders that did not consent to be in the study are removed from the dataset before analysis.  Variables and their descriptions are listed below. 
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
@@ -73,11 +73,11 @@ d. Use the R script file to get the counts for each level and combination of var
 \end{center}
 \endgroup
 
-d. Calculate the value of summary statistic to answer the research question. Give appropriate notation.
+e. Calculate the value of the summary statistic to answer the research question. Give appropriate notation.
 
 \vspace{0.4in}
 
-e. Interpret the value of the summary statistic in context of the problem:
+f. Interpret the value of the summary statistic in context of the problem:
     
 \vspace{0.4in}
     
