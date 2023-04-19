@@ -43,7 +43,7 @@ We will work through a five-step process to complete a hypothesis test for a sin
 
 ### Helper-Hinderer
 
-Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature [@hamblin2007] was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. As a class we will watch this short video to see how the experiment was run: https://youtu.be/anCaGBsBOxM. Researchers were hoping to assess: Are infants more likely to preferentially choose the helper toy over the hinderer toy?  In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.
+A study by Hamblin, Wynn, and Bloom reported in Nature [@hamblin2007] was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. As a class we will watch this short video to see how the experiment was run: https://youtu.be/anCaGBsBOxM. Researchers were hoping to assess: Are infants more likely to preferentially choose the helper toy over the hinderer toy?  In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.
 
 
 In this study, the observational units are the infants ages 6 to 10 months.  The variable measured on each observational unit (infant) is whether they chose the helper or the hinderer toy.  This is a categorical variable so we will be assessing the proportion of infants ages 6 to 10 months that choose the helper toy.  Choosing the helper toy in this study will be considered a success.
@@ -83,7 +83,7 @@ $$\hat{p} = \frac{\mbox{number of successes}}{\mbox{total number of observationa
 
 \vspace{1.5in}
 
-We cannot assess whether infants are more likely to choose the helper toy based on the statistic and plot alone.  The next step is to analyze the data by using a hypothesis test to discover if there is evidence against the null hypothesis.
+The next step in our study is to analyze the data by using a hypothesis test to discover if there is evidence against the null hypothesis or if the statistic occurs by chance alone
 
 #### Use statistical analysis methods to draw inferences from the data {-}
 

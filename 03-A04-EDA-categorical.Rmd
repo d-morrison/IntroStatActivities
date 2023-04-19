@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 ## Activity 3A:  Graphing Categorical Variables
 
 \setstretch{1}
@@ -65,7 +70,7 @@ myopia <- read.csv("https://math.montana.edu/courses/s216/data/ChildrenLightSigh
 
 #### Displaying a single categorical variable {-}
 
-If we wanted to know how many children in our data set were in each level of myopia, we could create a frequency bar plot of the variable `Sight`.  In the R script file, enter the variable name, `Sight` (*note the capital S*), for `variable` into the `ggplot` code at line 10.  Highlight and run lines 9--15 to create the plot.   Note: this is a **frequency** bar plot plotting counts (the number of children in each level of sight is displayed on the $y$-axis).  
+If we wanted to know how many children in our data set were in each level of myopia, we could create a frequency bar plot of the variable `Sight`.  In the R script file, enter the variable name, `Sight` (*note the capital S*), for `variable` into the `ggplot` code at line 12.  Highlight and run lines 11--16 to create the plot.   Note: this is a **frequency** bar plot plotting counts (the number of children in each level of sight is displayed on the $y$-axis).  
 
 ```{r, out.width="50%", echo=TRUE, eval = FALSE}
 myopia %>% # Data set piped into...
@@ -102,57 +107,13 @@ ggplot(aes(x = Sight)) +   # This specifies the variable
 
 #### Displaying two categorical variables {-}
 
-Is there an association between the level of light in a room and the development of myopia?  To examine the differences in level of myopia for the level of light, we would create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` for `explanatory` and the variable name, `Sight` for `response` in the R script file in line 26. Highlight and run lines 25--31.
-
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
-myopia %>% # Data set piped into...
-ggplot(aes(x = explanatory, fill = response)) +   # This specifies the variables
-  geom_bar(stat = "count", position = "fill") +  # Tell it to make a stacked bar plot
-  labs(title = "Segmented Bar Plot of Night Light Use by Level of Myopia",  
-       # Make sure to title your plot 
-       x = "Level of Light",   # Label the x axis
-       y = "")  # Remove y axis label
-```
-
-6. Sketch the segmented bar plot created here. Be sure to label the axes.  
-
-\vspace{2in}
-
-7. From the segmented bar plot, estimate the proportion of no myopia for those that used a nightlight.
-
-\vspace{0.5in}
-
-8. Which level of light has the highest proportion of `No Myopia`?
-
-\vspace{0.5in}
-
-We could also plot the data using a mosaic plot.  Fill in the variable name, `Light` for `explanatory` and the variable name, `Sight` for `response` in line 36 in the R script file. Highlight and run lines 34--40.
-
-```{r, out.width="60%", echo=TRUE, eval=FALSE}
-myopia %>% # Data set piped into...
-  ggplot() +   # This specifies the variables
-  geom_mosaic(aes(x=product(explanatory), fill = response)) +  # Tell it to make a mosaic plot
-  labs(title = "Mosaic Plot of Night Light Use by Level of Myopia",  
-       # Make sure to title your plot 
-       x = "Level of Light",   # Label the x axis
-       y = "")  # Remove y axis label
-```
-
-9.  What is similar and what is different between the segmented bar chart and the mosaic bar chart?
-
-\vspace{1in}
-
-10.  Explain why the bar for `Nightlight` is the widest in the mosaic plot.
-
-\vspace{0.8in}
-
-Fill in the name of the explanatory variable and the response variable in line 43 in the R script file, highlight and run line 43 to get the counts for each combination of levels of variables. 
+Is there an association between the level of light in a room and the development of myopia?  Fill in the name of the explanatory variable, `Light` for explanatory and name of the response variable, `Sight` in line 29 in the R script file, highlight and run line 29 to get the counts for each combination of levels of variables. 
 
 ```{r, echo=TRUE, eval=FALSE}
 myopia %>% group_by(explanatory) %>% count(response)
 ```
 
-11.  Fill in the following table with the values from the R output.
+6.  Fill in the following table with the values from the R output.
 
 \begin{center}
 \begingroup
@@ -172,18 +133,60 @@ myopia %>% group_by(explanatory) %>% count(response)
 
 In the following questions, use the table to calculate the described proportions.  Notation is important for each calculation. Since this is sample data, it is appropriate to use statistic notation for the proportion, $\hat{p}$. When calculating a proportion dependent on a single level of a variable, subscripts are needed when reporting the notation.
 
-12.  Calculate the proportion of children with high myopia. Use appropriate notation.
+7.  Calculate the proportion of children with no myopia. Use appropriate notation.
 \vspace{0.3in}
 
-13.  Calculate the proportion of children with high myopia among those that slept with full light. Use appropriate notation.
+8.  Calculate the proportion of children with no myopia among those that slept with full light. Use appropriate notation.
 \vspace{0.3in}
 
-14.  Calculate the proportion of children with high myopia among those that slept with no light. Use appropriate notation.
+9.  Calculate the proportion of children with no myopia among those that slept with no light. Use appropriate notation.
 \vspace{0.3in}
 
-
-15.  Calculate the difference in proportion of children with high myopia for those that slept with full light minus those who slept with no light. Give the appropriate notation. Use full light minus no light as the order of subtraction.
+10.  Calculate the difference in proportion of children with no myopia for those that slept with full light minus those who slept with no light. Give the appropriate notation. Use full light minus no light as the order of subtraction.
 \vspace{0.3in}
+
+Two types of plots can be created to display two categorical variables.  To examine the differences in level of myopia for the level of light, we will first create a segmented bar plot of `Light` segmented by `Sight`.  To create the segmented bar plot enter the variable name, `Light` for `explanatory` and the variable name, `Sight` for `response` in the R script file in line 35. Highlight and run lines 34--40.
+
+```{r, out.width="60%", echo=TRUE, eval=FALSE}
+myopia %>% # Data set piped into...
+ggplot(aes(x = explanatory, fill = response)) +   # This specifies the variables
+  geom_bar(stat = "count", position = "fill") +  # Tell it to make a stacked bar plot
+  labs(title = "Segmented Bar Plot of Night Light Use by Level of Myopia",  
+       # Make sure to title your plot 
+       x = "Level of Light",   # Label the x axis
+       y = "")  + # Remove y axis label
+  scale_fill_viridis_d()  # Make figure color
+```
+
+11. Sketch the segmented bar plot created here. Be sure to label the axes.  
+
+\vspace{2in}
+
+12. From the segmented bar plot, which level of light has the highest proportion of `No Myopia`?
+
+\vspace{0.5in}
+
+We could also plot the data using a mosaic plot which is shown below.  
+
+```{r, out.width="60%", echo=TRUE, eval=TRUE}
+myopia$Sight <- factor(myopia$Sight, levels = c("No Myopia", "Myopia", "High Myopia"))
+myopia %>% # Data set piped into...
+  ggplot() +   # This specifies the variables
+  geom_mosaic(aes(x=product(Light), fill = Sight)) +  # Tell it to make a mosaic plot
+  labs(title = "Mosaic Plot of Night Light Use by Level of Myopia",  # Make sure to title your plot 
+       x = "Level of Light",   # Label the x axis
+       y = "") +  # Remove y axis label
+  scale_fill_grey(guide = guide_legend(reverse = TRUE))  # Make figure color
+```
+
+13.  What is similar and what is different between the segmented bar chart and the mosaic bar chart?
+
+\vspace{1in}
+
+14.  Explain why the bar for `Nightlight` is the widest in the mosaic plot.
+
+\vspace{0.8in}
+
 
 ### Take-home messages
 

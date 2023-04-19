@@ -19,10 +19,6 @@ Wild mushrooms, such as chanterelles or morels, are delicious, but eating wild m
 
 Upload and open the R script file for Week 8 lab. Upload and import the csv file, `mushrooms`.  Click on the data set name to find the name of each variable and the level of each variable in the data set.
 
-```{r, echo=TRUE, warning=FALSE, message=FALSE, collapse=FALSE, eval=FALSE}
-poisonous <- datasetname # Read data set in
-```
-
 1. What is the explanatory variable?  How are the two levels of the explanatory variable written in the data set?
 
 \vspace{0.5in}
@@ -35,9 +31,10 @@ poisonous <- datasetname # Read data set in
 
 \newpage
 
-Enter the name of the data set for datasetname in the R script file in line 6. Highlight and run lines 1--7 to get the counts for each combination of categories.
+Enter the name of the data set for datasetname in the R script file in line 8. Highlight and run lines 1--9 to get the counts for each combination of categories.
 
 ```{r, echo=TRUE, warning=FALSE, message=FALSE, collapse=FALSE, eval=FALSE}
+poisonous <- datasetname # Read data set in
 poisonous %>% group_by(gill.size) %>% count(class) #finds the counts in each group
 ```
 

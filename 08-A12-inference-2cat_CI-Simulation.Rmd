@@ -41,7 +41,7 @@ Researchers at the Princeton University wanted to investigate influences on beha
 \vspace{0.4in}
 
 
-Use the provided R script file to create a segmented bar plot of those who helped others for those in the hurry condition and those in the no hurry condition. Enter the name of the explanatory variable for `explanatory` and the name of the response variable for `response` in line 8.  **Make sure to title your plot**.  Highlight and run lines 1--12.
+Use the provided R script file to create a segmented bar plot of those who helped others for those in the hurry condition and those in the no hurry condition. Enter the name of the explanatory variable for `explanatory` and the name of the response variable for `response` in line 10.  **Make sure to title your plot**.  Highlight and run lines 1--15.
 
 ```{r, echo=TRUE, eval=FALSE}
 good <- read.csv("https://math.montana.edu/courses/s216/data/goodsam.csv")
@@ -66,13 +66,9 @@ good %>%
 
 \newpage
 
-5.  Do you expect the null value to be in a 99\% confidence interval?  Explain your answer.
-
-\vspace{0.8in}
-
 #### Use statistical analysis methods to draw inferences from the data {-}
 
-6.  Write the parameter of interest in context of the study. Use proper notation. 
+5.  Write the parameter of interest in words, in the context of this study. What notation should be used to represent this parameter?
 
 \vspace{1in}
 
@@ -80,7 +76,7 @@ We will use the `two_proportion_bootstrap_CI()` function in R (in the `catstats`
 
 The response variable name is `Behavior` and the explanatory variable name is `Condition`.
 
-7. What values should be entered for each of the following into the simulation to create a 99\% confidence interval?
+6. What values should be entered for each of the following into the simulation to create a 99\% confidence interval?
 \vspace{.5mm}
 
 * First in subtraction (What is the outcome for the explanatory variable that is used as first in the order of subtraction? `"Hurry"` or `"No hurry"`):
@@ -98,7 +94,7 @@ The response variable name is `Behavior` and the explanatory variable name is `C
 
 \newpage 
 
-Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 15--20.
+Using the R script file for this activity, enter your answers for question 6 in place of the `xx`'s to produce the bootstrap distribution with 1000 simulations; highlight and run lines 20--25.
 
 ```{r, echo=TRUE, eval=FALSE}
 two_proportion_bootstrap_CI(formula = Behavior ~ Condition, 
@@ -110,25 +106,22 @@ two_proportion_bootstrap_CI(formula = Behavior ~ Condition,
 ```
 
 
-8.  Where is the bootstrap distribution centered?  Explain why.
+7.  Where is the bootstrap distribution centered?  Explain why.
 
 \vspace{0.8in}
 
-9. Report the bootstrap 99\% confidence interval. 
+8. Report the bootstrap 99\% confidence interval. 
 
 \vspace{0.4in}
 
-10. What percentile of the bootstrap distribution does the upper value of the confidence interval represent?
+9. What percentile of the bootstrap distribution does the upper value of the confidence interval represent?
 
 \vspace{0.3in}
 
-11. Interpret the 99\% confidence interval in context of the problem.
+10. Interpret the 99\% confidence interval in context of the problem.
 
 \vspace{1in}
 
-12. Based on your conclusion in Activity 8A, explain why you would not expect the null value of zero to be in the inteval.
-
-\vspace{0.5in}
 \newpage
 
 #### Types of errors {-}
@@ -159,15 +152,15 @@ Recall from a previous activity, hypothesis tests are not flawless. In a hypothe
 
 Shown in Table \@ref(tab:errors), a **Type 1 Error** happens when we reject the null hypothesis when $H_0$ is actually true. A **Type 2 Error** happens when we fail to reject the null hypothesis when the alternative is actually true.
 
-13.  Using a significance level of 0.01 and your answer to question 13, what decision do you make in regards to the null hypothesis?
+11.  Using a significance level of 0.01 and the simulation p-value found, what statistical decision would be made in regards to the null hypothesis?
 
 \vspace{0.3in}
 
-14. What type of error could we have made?
+12. What potential type of error could have been made?
 
 \vspace{0.3in}
 
-15.  Write this error in context of the problem.
+13.  Write this error in context of the problem.
 
 \vspace{0.5in}
 

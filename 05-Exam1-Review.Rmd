@@ -1,6 +1,6 @@
 # Group Exam 1 Review
 
-Use the provided data set from the Islands (ExamReviewData.csv) and the appropriate Exam 1 Review R script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
+Use the provided data set from the Islands (ExamReviewData.csv) and the appropriate Exam 1 Review R script file to answer the following questions. Each adult (>21) islander was selected at random from all adult islanders. Note that some islanders choose not to participate in the study.  These islanders that did not consent to be in the study are removed from the dataset before analysis.  Variables and their descriptions are listed below. Music type (classical or heavy metal) was randomly assigned to the Islanders. Time to complete the puzzle cube was measured after listening to music for each Islander. Heart rate and blood glucose levels were both measured before and then after drinking a caffeinated beverage.
 
 | **Variable** 	| **Description** |
 |----	|-------------	|
@@ -77,7 +77,7 @@ c. Use the R script file to get the counts for each level and combination of var
 \end{center}
 \endgroup
 
-d. Calculate the value of summary statistic to answer the research question. Give appropriate notation.
+d. Calculate the value of the summary statistic to answer the research question. Give appropriate notation.
 
 \newpage
 
@@ -217,31 +217,27 @@ d. Interpret the value of slope in context of the problem.
 
 \vspace{0.3in}
 
-e. Interpret the value of correlation in context of the problem.
+e. Calculate the value of the coefficient of determination.
 
 \vspace{0.2in}
 
-f. Calculate the value of the coefficient of determination.
-
-\vspace{0.2in}
-
-g. Interpret the coefficient of determination in context of the problem.
+f. Interpret the coefficient of determination in context of the problem.
 
 \vspace{0.3in}
 
-h. What type of graph(s) would be appropriate for this research question?
+g. What type of graph(s) would be appropriate for this research question?
 
 \newpage
 
-i. Using the provided R file create a graph of the data. Sketch the graph below:
+h. Using the provided R file create a graph of the data. Sketch the graph below:
 
 \vspace{2in}
 
-j. Based on the graph, does there appear to be an association between the two variables? Explain your answer.
+i Based on the graph, does there appear to be an association between the two variables? Explain your answer.
 
 \vspace{0.8in}
 
-k. Describe the plot using the four characteristics to describe scatterplots.
+j. Describe the plot using the four characteristics to describe scatterplots.
 \vspace{0.1in}
 
     Form:
@@ -256,11 +252,11 @@ k. Describe the plot using the four characteristics to describe scatterplots.
     Outliers:
 \vspace{0.2in}
 
-l. Is this an observational study or a randomized experiment? Explain your answer.
+k. Is this an observational study or a randomized experiment? Explain your answer.
 
 \vspace{0.5in}
 
-m. What is the scope of inference for this study?
+l. What is the scope of inference for this study?
 
 \newpage
 

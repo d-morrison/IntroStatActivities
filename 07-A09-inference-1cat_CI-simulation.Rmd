@@ -24,7 +24,7 @@ To review these concepts, see Chapters 10 & 14 in your textbook.
 
 In the last class, we found very strong evidence that the true proportion of infants who will choose the helper character is greater than 0.5. But what *is* the true proportion of infants who will choose the helper character? We will use this same study to estimate this parameter of interest by creating a confidence interval. 
 
-As a reminder: Do young children know the difference between helpful and unhelpful behavior? A study by Hamblin, Wynn, and Bloom reported in Nature [@hamblin2007] was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Researchers were hoping to assess: Are infants more likely to preferentially choose the helper toy over the hinderer toy? In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.
+As a reminder: A study by Hamblin, Wynn, and Bloom reported in Nature [@hamblin2007] was intended to check young kids' feelings about helpful and non-helpful behavior. Non-verbal infants ages 6 to 10 months were shown short videos with different shapes either helping or hindering the climber. Researchers were hoping to assess: Are infants more likely to preferentially choose the helper toy over the hinderer toy? In the study, of the 16 infants age 6 to 10 months, 14 chose the *helper* toy and 2 chose the *hinderer* toy.
 
 A **point estimate** (our observed statistic) provides a single plausible value for a parameter. However, a point estimate is rarely perfect; usually there is some error in the estimate. In addition to supplying a point estimate of a parameter, a next logical step would be to provide a plausible *range* of values for the parameter. This plausible range of values for the population parameter is called an **interval estimate** or **confidence interval**. 
 
@@ -66,7 +66,7 @@ To use the computer simulation to create a bootstrap distribution, we will need 
     
 \vspace{.1in}
 
-We will use the `one_proportion_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided R script file, fill in the values/words for each `xx` with your answers from question 3 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 1--7.
+We will use the `one_proportion_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample proportions and calculate a confidence interval. Using the provided R script file, fill in the values/words for each `xx` with your answers from question 3 in the one proportion bootstrap confidence interval (CI) code to create a bootstrap distribution with 1000 simulations. Then highlight and run lines 1--9.
 
 ```{r, echo=TRUE, eval=FALSE}
 one_proportion_bootstrap_CI(sample_size = xx, # Sample size
@@ -100,9 +100,9 @@ one_proportion_bootstrap_CI(sample_size = xx, # Sample size
 
 \vspace{.2in}
 
-|    Explain how this indicates that the p-value provides strong evidence against the null.
+\rgi Explain how this indicates that the p-value will provide similar evidence against the null hypothesis.
 
-\vspace{0.3in}
+\vspace{0.5in}
 
 #### Effect of confidence level {-}
 
@@ -122,7 +122,7 @@ one_proportion_bootstrap_CI(sample_size = 16, # Sample size
 ```
 
 
-12.  Report both the 95\% confidence interval (question 9) and the 90\% confidence interval (question 13).  Is the 90\% confidence interval narrower or wider than the 95\% confidence interval?
+12.  Report both the 95\% confidence interval (question 7) and the 90\% confidence interval (question 11).  Is the 90\% confidence interval narrower or wider than the 95\% confidence interval?
 
 \vspace{0.5in}
 
@@ -149,7 +149,7 @@ For this part of the activity we will assume that the the true proportion of inf
 
 \vspace{0.5in}
 
-15.  Interpret the level of confidence.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?
+15.  Interpret the level of confidence in context of the problem.  *Hint*: What proportion of samples would we expect to give a confidence interval that contains the parameter of interest?
 
 \vspace{0.8in}
 

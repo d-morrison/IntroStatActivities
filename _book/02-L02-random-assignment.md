@@ -57,7 +57,7 @@ Suppose 24 subjects with permanent atrial fibrillation have volunteered to parti
 4. A third strategy would be to **block** on sex.  In this type of study, the scientists would assign 4 females and 8 males to each group.   Using this strategy, what **proportion** of males out of the 12 individuals would be in each group?
 \vspace{0.3in}
 
-5. **Assume the scientists used the strategy in question 4, but they put the four tallest females and eight tallest males into the placebo group and the remaining subjects into the control group. They found that the proportion of patients whose heart rate stabilized is higher in the drug group than the placebo group.**  
+5. **Assume the scientists used the strategy in question 4, but they put the four tallest females and eight tallest males into the drug group and the remaining subjects into the placebo group. They found that the proportion of patients whose heart rate stabilized is higher in the drug group than the placebo group.**  
 \vspace{0.1in}
 
     Could that difference be due to the sex of the subjects?  Explain your answer.

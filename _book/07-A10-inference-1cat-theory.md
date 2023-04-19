@@ -113,30 +113,32 @@ $$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{500}} = 0.013$$.
 
 7.  Interpret the null standard error of the sample proportion in context of the problem.
 
-\vspace{0.6in}
+\vspace{0.5in}
 
-8.  Using the null standard error of the sample proportion, calculate the standardized sample proportion.  
+8. Label the standard normal distribution (figure 7.1) with the null value as the center value (below the value of zero).  Label the tick marks to the right of the null value by adding 1 standard error to the null value to represent 1 standard error, 2 standard errors, and 3 standard errors from the null.  Repeat this process to the left of the null value by subtracting 1 standard error for each tick mark.
 
-\vspace{0.6in}
-
-\newpage
-
-The standardized statistic is used as a ruler to measure how far the sample statistic is from the null value.  Essentially, we are converting the sample proportion into a measure of standard errors to compare to the standard normal distribution.  
-
-9.  Using the 68-95-99.7 rule in Section 11.2.5 to guide you, fill in the percentages on the standard normal distribution displayed in Figure \@ref(fig:simpleNormalcurve), and also mark the value of the standardized statistic calculated in question 8.
+\vspace{2mm}
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{07-A10-inference-1cat-theory_files/figure-latex/simpleNormalcurve-1} 
+{\centering \includegraphics[width=0.5\linewidth]{07-A10-inference-1cat-theory_files/figure-latex/Normalcurve-1} 
 
 }
 
-\caption{A standard normal curve.}(\#fig:simpleNormalcurve)
+\caption{Standard Normal Distribution}(\#fig:Normalcurve)
 \end{figure}
+
+\newpage
+
+9.  Using the null standard error of the sample proportion, calculate the standardized sample proportion (Z). Mark this value on the standard normal distribution above.
+
+\vspace{0.6in}
+
+The standardized statistic is used as a ruler to measure how far the sample statistic is from the null value.  Essentially, we are converting the sample proportion into a measure of standard errors to compare to the standard normal distribution.  
 
 The standardized statistic measures the *number of standard errors the sample statistic is from the null value*.
 
-10.  Interpret the standardized sample proportion from question 8 in context of the problem.
+10.  Interpret the standardized sample proportion from question 9 in context of the problem.
 
 \vspace{.8in}
 
@@ -161,11 +163,6 @@ pnorm(xx, # Enter value of standardized statistic
 
 \newpage
 
-12.  Write a conclusion based on the value of the p-value.
-
-\vspace{0.5in}
-
-
 #### Theory-based confidence interval {-}
 
 To calculate a theory-based 95\% confidence interval for $\pi$, we will first find the **standard error** of $\hat{p}$ by plugging in the value of $\hat{p}$ for $\pi$ in $SD(\hat{p})$:
@@ -173,7 +170,7 @@ To calculate a theory-based 95\% confidence interval for $\pi$, we will first fi
 $$SE(\hat{p}) = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}.$$
 Note that we do not include a "0" subscript, since we are not assuming a null hypothesis. 
 
-13.  Calculate the standard error of the sample proportion to find a 95\% confidence interval.
+12.  Calculate the standard error of the sample proportion to find a 95\% confidence interval.
 
 \vspace{0.5in}
 
@@ -186,15 +183,15 @@ $$ME = z^* \times SE(\hat{p})$$
 The $z^*$ multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 95\%, we find the Z values that encompass the middle 95\% of the standard normal distribution.  If 95\% of the standard normal distribution should be in the middle, that leaves 5\% in the tails, or 2.5\% in each tail.  
  
 
-14. Fill in the normal distribution shown in figure 7.2 to show how R found the $z^*$ multiplier.
+13. Fill in the normal distribution shown in figure 7.2 to show how R found the $z^*$ multiplier.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{07-A10-inference-1cat-theory_files/figure-latex/simpleNormaldist-1} 
+{\centering \includegraphics[width=0.5\linewidth]{07-A10-inference-1cat-theory_files/figure-latex/StandardNormal-1} 
 
 }
 
-\caption{A standard normal curve.}(\#fig:simpleNormaldist)
+\caption{Standard Normal Distribution}(\#fig:StandardNormal)
 \end{figure}
 
 \newpage 
@@ -206,19 +203,22 @@ The `qnorm()` function in R will tell us the $z^*$ value for the desired percent
 qnorm(xx) # Multiplier for 95% confidence interval
 ```
 
-15. Report the value of the multiplier needed to calculate the 95\% confidence interval for the true proportion of male boxers that are left-handed?
+14. Report the value of the multiplier ($z^*$) found from the R code needed to calculate the 95\% confidence interval for the true proportion of male boxers that are left-handed?
 \vspace{0.3in}
 
-16.  Calculate the margin of error for the 95\% confidence interval.
+15.  Calculate the margin of error for the 95\% confidence interval.
 \vspace{0.8in}
 
-17.  Calculate the 95\% confidence interval for the parameter of interest.
+16.  Calculate the 95\% confidence interval for the parameter of interest.
 \vspace{0.5in}
 
-19.  Interpret the 95\% confidence interval in the context of the problem.
-\vspace{0.8in}
+17.  Interpret the 95\% confidence interval in the context of the problem.
+\vspace{0.5in}
 
-20. Is the null value, 0.1, contained in the 95\% confidence interval?  Explain, based on the p-value from the earlier in activity, why you expected this to be true.
+18.  Write a conclusion to the study in context of the problem.
+\vspace{0.5in}
+
+19. Is the null value, 0.1, contained in the 95\% confidence interval?  Explain, based on the p-value from the earlier in activity, why you expected this to be true.
 \vspace{0.5in}
 
 

@@ -84,7 +84,7 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 #### Summarize and visualize the data {-}
 
-Using the provided R script file, enter the response variable name, `TL_cm`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `BW_cm`, for `explanatory` in line 21 to get the linear model output and value for the correlation coefficient.  Highlight and run lines 21--23.
+Using the provided R script file, enter the response variable name, `TL_cm`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `HW_cm`, for `explanatory` in line 21 to get the linear model output and value for the correlation coefficient.  Highlight and run lines 21--23.
 
 ```{r, echo=TRUE, eval =FALSE}
 lm.croc <- lm(response~explanatory, data=croc) # lm(response~explanatory)
@@ -113,7 +113,7 @@ Let's start by thinking about how one simulation would be created on the null di
 
 We will use the `regression_test()` function in R (in the `catstats` package) to simulate the null distribution of shuffled slopes (or shuffled correlations) and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `croc`), the summary measure for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
 
-The response variable name is `TL_cm` and the explanatory variable name is `BW_cm` for these data.
+The response variable name is `TL_cm` and the explanatory variable name is `HW_cm` for these data.
 
 9. What inputs should be entered for each of the following to create the simulation to test regression slope?
 
@@ -137,11 +137,11 @@ The response variable name is `TL_cm` and the explanatory variable name is `BW_c
 Using the R script file for this activity, enter your answers for question 9 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 26--31.
 
 ```{r, echo=TRUE, eval=FALSE}
-regression_test(TL_cm~BW_cm, # response ~ explanatory
+regression_test(TL_cm~HW_cm, # response ~ explanatory
                data = croc, # Name of data set
                direction = "xx", # Sign in alternative ("greater", "less", "two-sided")
                summary_measure = "xx", # "slope" or "correlation"
-               as_extreme_as = x, # Observed slope or correlation
+               as_extreme_as = xx, # Observed slope or correlation
                number_repetitions = 1000) # Number of simulated samples for null distribution
 ```
 

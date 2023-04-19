@@ -53,7 +53,7 @@ movies <- read.csv("https://math.montana.edu/courses/s216/data/Movies2016.csv") 
 
 To look at the relationship between two quantitative variables we will create a scatterplot with the explanatory variable on the x-axis and the response variable on the y-axis.  We can also find three summary measures for the linear relationship between the two variables: regression slope, correlation and the coefficient of determination. 
 
-We will look at the relationship between budget and revenue for movies released in 2016. Upload and open the provided R script file. Enter the explanatory variable name, `budget_mil`, for `explanatory` and the response variable name, `revenue_mil`, for `response` at line 7 in the R script file to create the scatterplot. (Note: both variables are measured in "millions of dollars" ($MM).)  Highlight and run lines 1--12.
+We will look at the relationship between budget and revenue for movies released in 2016. Upload and open the provided R script file. Enter the explanatory variable name, `budget_mil`, for `explanatory` and the response variable name, `revenue_mil`, for `response` at line 9 in the R script file to create the scatterplot. (Note: both variables are measured in "millions of dollars" ($MM).)  Highlight and run lines 1--14.
 
 
 ```r
@@ -95,7 +95,7 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 #### Slope {-}
 
-The linear model function in R (`lm()`) gives us the summary for the least squares regression line.  The estimate for `(Intercept)` is the $y$-intercept for the line of least squares, and the estimate for `budget_mil` (the $x$-variable name) is the value of $b_1$, the slope.  Run lines 16 -- 17 in the R script file to reproduce the linear model output found in the coursepack.
+The linear model function in R (`lm()`) gives us the summary for the least squares regression line.  The estimate for `(Intercept)` is the $y$-intercept for the line of least squares, and the estimate for `budget_mil` (the $x$-variable name) is the value of $b_1$, the slope.  Run lines 18--19 in the R script file to reproduce the linear model output found in the coursepack.
 
 
 ```r

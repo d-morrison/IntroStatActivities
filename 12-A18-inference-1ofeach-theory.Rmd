@@ -118,7 +118,7 @@ $$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}.$$
 10. Using the provided R script file, enter the T-score (for `xx`) and the `df` calculated in question 9 for `yy` into the `pt()` function to find the p-value.  Highlight and run line 20.  Report the p-value calculated. 
 
 ```{r, echo=TRUE, eval=FALSE}
-2*pt(xx, df=yy, lower.tail=FALSE)
+2*pt(xx, df=yy, lower.tail=TRUE)
 ```
 \vspace{0.2in}
 
@@ -138,7 +138,7 @@ We will need to find the $t^*$ multiplier using the function `qt()`.  For a 95\%
 Enter the appropriate percentile value (as a decimal) for `xx` and degrees of freedom for `yy` into the `qt()` function at line 23 to find the appropriate $t^*$ multiplier
 
 ```{r, echo=TRUE, eval=FALSE}
-qt(xx, df = yy, lower.tail=FALSE)
+qt(xx, df = yy, lower.tail=TRUE)
 ```
 13. Report the $t^*$ multiplier for the 95\% confidence interval.
 

@@ -62,41 +62,37 @@ movies %>%  # Data set pipes into
 #> facebook_likes      0.678       0.723    0.438      0.309          1.000
 ```
 
-1.  Using the output above, which two variables have the *strongest* correlation? What is the value of this correlation?
-
-\vspace{0.5in}
-
-2.  What is the value of correlation between budget and revenue?
-
-\vspace{0.3in}
-
-3.  Based on the value of correlation found in question 2, what would the sign of the slope be? Positive or negative?  Explain.
-
-\vspace{0.5in}
-
-4.  Does your answer to question 3 match the direction you choose in question 2 in Activity 4A?
-
-\vspace{0.3in}
-
-5.  Explain why the correlation values on the diagonal are equal to 1.
-
+1.  Explain why the correlation values on the diagonal are equal to 1.
 \vspace{0.8in}
+
+2.  Using the output above, ignoring the values of 1, which pair of variables have the *strongest* correlation? What is the value of this correlation?
+
+\vspace{0.5in}
+
+3.  What is the value of correlation between budget and revenue?
+
+\vspace{0.3in}
+
+4.  Explain why the value of correlation between budget and revenue is the same sign as the value of slope for the regression line in Activity 4A. 
+
+\vspace{0.6in}
+
 \newpage
 
 #### Coefficient of determination (squared correlation) {-}
 
-Another summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. The value of $R^2$ (a value between 0 and 1) represents the **proportion of variation in the response that is explained by the least squares line with the explanatory variable**.  There are two ways to calculate the coefficient of determination: 
+Another summary measure used to explain the linear relationship between two quantitative variables is the coefficient of determination ($r^2$). The coefficient of determination, $r^2$, can also be used to describe the strength of the linear relationship between two quantitative variables. The value of $r^2$ (a value between 0 and 1) represents the **proportion of variation in the response that is explained by the least squares line with the explanatory variable**.  There are two ways to calculate the coefficient of determination: 
 
 |    Square the correlation coefficient:  $r^2 = (r)^2$
 
 |    Use the variances of the response and the residuals:  $r^2 = \dfrac{s_y^2 - s_{RES}^2}{s_y^2} = \dfrac{SST - SSE}{SST}$
 
 
-6.  Use the correlation, $r$, found in question 2 of the activity, to calculate the coefficient of determination between budget and revenue, $r^2$.
+5.  Use the correlation, $r$, found in question 3 of the activity, to calculate the coefficient of determination between budget and revenue, $r^2$.
 
 \vspace{.4in}
 
-7.  The variance of the response variable, revenue in \$MM, is about $s_{revenue}^2 = 8024.261$ \$MM$^2$  and the variability in the residuals is about $s_{RES}^2 = 4244.832$ \$MM$^2$.  Use these values to calculate the coefficient of determination.  Verify that your answers to 6 and 7 are the same.
+6.  The variance of the response variable, revenue in \$MM, is about $s_{revenue}^2 = 8024.261$ \$MM$^2$  and the variability in the residuals is about $s_{RES}^2 = 4244.832$ \$MM$^2$.  Use these values to calculate the coefficient of determination.  Verify that your answers to 5 and 6 are the same.
 
 \vspace{1in}
 
@@ -106,31 +102,37 @@ In the next part of the activity we will explore what the coefficient of determi
 
 * Click `Clear` below the box containing the sample data. 
 
-* Download and open the csv file "Movie2016" from D2L.  Copy the two columns containing `budget_mil` and `revenue_mil` including the headers and paste into the sample data box.  
+* Download and open the csv file "Movie2016" from D2L.  Copy the two columns containing `budget_mil` and `revenue_mil` **including the headers and paste into the sample data box**.  
 
 * Click 'Use Data`.
 
-8.  Click on `Show Moveable Line`.  Write down the equation of the line given.  Why is the slope zero for this line?
+7.  Click on `Show Moveable Line`.  Note that this is a horizontal line with a slope of zero.  This line indicates there is no association between budget and revenue.  **Write down the equation of the line given.**  
 
 \vspace{0.8in}
 
-9.  Click on `Show Squared Residuals`.  Write down the value for SSE.  Since this is the sum of squared errors (SSE) for the horizontal line we call this the total sum of squares (SST).
+8.  Click on `Show Squared Residuals`.  Write down the value for SSE.  Since this is the sum of squared errors (SSE) for the horizontal line we call this the total sum of squares (SST).
+\vspace{3mm}
+
+    SST = 
 
 \newpage
 
-10. Click on `Show Regression Line`.  Write down the equation of the line given.  Does this match the least squares line found in Activity 4A question 4?
+9. Click on `Show Regression Line`.  Write down the equation of the line given.  Does this match the least squares line found in Activity 4A question 4?
 
 \vspace{1in}
 
-11. Click on `Show Squared Residuals`.  Write down the value for SSE.
+10. Click on `Show Squared Residuals`.  Write down the value for SSE.
+\vspace{3mm}
+
+    SSE = 
 
 \vspace{0.5in}
 
-12.  Calculate the value for $r^2$ using the values found for SST and SSE.  
+11.  Calculate the value for $r^2$ using the values found for SST (Q8) and SSE (Q10).  
 
 \vspace{1in}
 
-13.  Write a sentence interpreting the coefficient of determination in context of the problem.
+12.  Write a sentence interpreting the coefficient of determination in context of the problem.
 
 \newpage
 

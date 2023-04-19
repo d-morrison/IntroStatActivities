@@ -62,12 +62,12 @@ The red distribution you see is the scaled-Normal distribution representing the 
 4. Check the box for "Show Critical Value(s) and Rejection Region(s)".  You will now see a vertical line on the plot indicating the *minimum* sample proportion which would lead to reject the null hypothesis.  What is this value?  
 \vspace{0.25in}
 
-5. Notice that there are some sample proportions under the red line (when the null hypothesis is true) which would lead us to reject the null hypothesis.  Give the range of sample proportions which would lead to rejecting the null hypothesis when the null hypothesis is true?  What is the statistical name for this mistake?
+5. Notice that there are some sample proportions under the red line (when the null hypothesis is true) which would lead us to reject the null hypothesis.  Give the range of sample proportions which would lead to rejecting the null hypothesis when the null hypothesis is true.  What is the statistical name for this mistake?
 \vspace{0.4in}
 
 Check the "Type I Error" box under **Display**.  This should verify (or correct) your answer to question 5!  The area shaded in red represents the probability of making a **type 1 error** in our hypothesis test.  Recall that a type 1 error is when we reject the null hypothesis even though the null hypothesis is true.  To reject the null hypothesis, the p-value, which was found assuming the null hypothesis is true, must be less than or equal to the significance level.  Therefore the significance level is the maximum probability of rejecting the null hypothesis when the null hypothesis is true, so the significance level IS the probability of making a type 1 error in a hypothesis test!
 
-6.  **Based on the current applet settings, What percent of the null distribution is shaded red (what is the probability of making a type 1 error)?**
+6.  **Based on the current applet settings, what percent of the null distribution is shaded red (what is the probability of making a type 1 error)?**
 \vspace{0.25in}
 
 Let's say this physical therapist company believes their program can get 70% of athletes back to their sport within 8 months of an ACL surgery.  In the applet, set the scale under "True value of $p$" to 0.7.

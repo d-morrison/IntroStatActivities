@@ -95,13 +95,14 @@ Remember, we define the parameter for a single categorical variable as the true 
 
 \newpage
 
-5. Write the two parameters of interest for this study.  Let 1 = hurry condition, 2 = no hurry condition. 
+5. Write the two parameters of interest for this study.  
+
 \vspace{1mm}
 
-   $\pi_1$ --- 
+\rgi $\pi_{\text{hurry}}$ --- 
 \vspace{0.5in}
 
-   $\pi_2$ ---
+\rgi $\pi_{\text{no hurry}}$ ---
 \vspace{0.5in}
 
 When comparing two groups, we assume the two parameters are equal in the null hypothesis---there is no association between the variables.
@@ -114,7 +115,7 @@ When comparing two groups, we assume the two parameters are equal in the null hy
 7. Based on the research question, fill in the appropriate sign for the alternative hypothesis ($<$, $>$, or $\neq$):
 \vspace{0.1in}
 
-|           $H_A: \pi_1 -\pi_2$ __________ 0
+|           $H_A: \pi_{\text{hurry}} -\pi_{\text{no hurry}}$ __________ 0
 
 
  
@@ -189,7 +190,7 @@ The response variable name is `Behavior` and the explanatory variable name is `C
 
 \vspace{.15in}
 
-Using the R script file for this activity, enter your answers for question 16 in place of the `xx`'s to produce the null distribution with 1000 simulations; highlight and run lines 1--16.
+Using the R script file for this activity, enter your answers for question 16 in place of the `xx`'s to produce the null distribution with 1000 simulations; highlight and run lines 1--18.
 
 
 ```r
@@ -226,8 +227,10 @@ two_proportion_test(formula = Behavior~Condition, # response ~ explanatory
 
 22.  Write a conclusion to the test. 
 
-\vspace{1in}
+\vspace{0.8in}
 
+23. In the next activity we will find a 99\% confidence interval.  Based on the conclusion, do you expect the confidence interval to contain the null value of zero?  Explain your answer.
+\vspace{0.8in}
 
 ### Take-home messages
 

@@ -98,6 +98,9 @@ Table: Summary statistics for time to hold hand in ice water while swearing and 
 #### Use statistical inferential methods to draw inferences from the data {-}
 
 ##### Hypothesis test {-}
+
+\textcolor{blue}{\textit{Teaching tips: It is always good to illustrate how the simulation is created.  We will create a shifted bootstrap null distribution.  One idea to show this is to open the dataset in excel, show how the value 4.152 must be added to each difference and then we sample with replacement from the shifted data. Explain that the reason for the shift is to center the distribution at the null value of zero.  Students will need to enter the shifted value (from Q10) and the observed statistic into the paired test function in R to find the p-value.  Have students complete Q9 - 15.  Review 12, 13, and 15.}}
+
 To simulate the null distribution of paired sample mean differences we will use a bootstrapping method.  Recall that the null distribution must be created under the assumption that the null hypothesis is true.  Therefore, before bootstrapping, we will need to *shift* each data point by the difference $\mu_0 - \bar{x}_d$.  This will ensure that the mean of the shifted data is $\mu_0$ (rather than the mean of the original data, $\bar{x}_d$), and that the simulated null distribution will be centered at the null value.  
 
 8. Calculate the difference $\mu_0 - \bar{x}_d$.  Will we need to shift the data up or down?
@@ -121,8 +124,8 @@ paired_test(data = swearing_diff$differences,   # Vector of differences
 \vspace{1.8in}
 
 10. Explain why the null distribution is centered at zero. 
-\vspace{.5in}
 
+\vspace{0.8in}
 
 11. What proportion of samples are at or greater than the observed sample mean difference in time holding their hands in ice water while swearing minus saying a neutral word? What is the statistical term for this proportion?
 \vspace{.3in}

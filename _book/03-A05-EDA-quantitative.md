@@ -75,7 +75,7 @@ movies %>% # Data set piped into...
 
 \vspace{0.5in}
 
-3. Calculate the interquartile range (IQR = Q3 - Q1).
+3. Calculate the interquartile range ($IQR = Q_3 - Q_1$).
 
 \vspace{0.5in}
 
@@ -109,7 +109,7 @@ ggplot(aes(x = imdb_score)) +   # Name variable to plot
 
 \vspace{0.2in}
 
-To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for `variable` at line 20, highlight and run lines 19--24.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
+To create a histogram of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for `variable` at line 22, highlight and run lines 21--26.  Visually, this shows us the range of IMDb scores for Movies released in 2016.
 
 Notice that the **bin width** is 0.5.  For example the first bin consists of the number of movies in the data set with an IMDb score of 3.25 to 3.75.  It is important to note that a movie with a IMDb score on the boundary of a bin will fall into the bin above it; for example, 4.75 would be counted in the bin 4.75--5.25.  
 
@@ -131,7 +131,7 @@ ggplot(aes(x = variable)) +   # Name variable to plot
 
 \vspace{0.2in}
 
-To create a boxplot of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for `variable` at line 28, highlight and run lines 27--32.  
+To create a boxplot of the IMDb scores, enter the variable name, `imdb_score` in the provided `R` script file for `variable` at line 32, highlight and run lines 31--36.  
 
 
 ```r
@@ -165,7 +165,7 @@ $$\text{Upper Fence: values} \ge Q_3 + 1.5\times IQR$$
     
 #### Summary statistics for a single categorical and single quantitative Variable{-}
 
-Is there an association between content rating and budget for movies in 2016?  To use the `favstats()` function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.  This function will give the summary statistics for budget for each content rating.  Highlight and run lines 35--37 in the provided `R` script file and check that the summary statistics match those provided in the coursepack.
+Is there an association between content rating and budget for movies in 2016?  To use the `favstats()` function in the mosaic package with two variables, we will enter the variables as a formula, response~explanatory.  This function will give the summary statistics for budget for each content rating.  Highlight and run lines 39--41 in the provided `R` script file and check that the summary statistics match those provided in the coursepack.
 
 
 ```r
@@ -201,7 +201,7 @@ movies %>% # Data set piped into...
 
 #### Displaying a single categorical and single quantitative variable {-}
 
-The boxplot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for `response` and the variable `content_rating` for explanatory at line 42, highlight and run code lines 40--46. This plot compares the budget for different levels of content rating.
+The boxplot of movie budgets (in millions) by content rating is plotted using the code below.  Enter the variable `budget_mil` for `response` and the variable `content_rating` for explanatory at line 47, highlight and run code lines 46--52. This plot compares the budget for different levels of content rating.
 
 
 ```r
