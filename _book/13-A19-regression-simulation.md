@@ -29,7 +29,7 @@ To review these concepts, see Chapter 21 in the textbook.
 
 ### Crocodylian Body Size
 
-Much research surrounds using measurements of animals to estimate body-size of extinct animals.  Many challenges exist in making accurate estimates for extinct crocodylians.  The term crocodylians refers to all members of the family Crocodylidae (“true” crocodiles), family Alligatoridae (alligators and caimans) and family Gavialidae (gharial, Tomistoma). The researchers in this study [@obrien2019] state, "Among extinct crocodylians and their precursors (e.g., suchians), several methods have been developed to predict body size from suites of hard-tissue proxies. Nevertheless, many have limited applications due to the disparity of some major suchian groups and biases in the fossil record. Here, we test the utility of head width (HW) as a broadly applicable body-size estimator in living and fossil suchians."  Is there evidence that head width is a good estimator of body size for crocodylians? 
+Much research surrounds using measurements of animals to estimate body-size of extinct animals.  Many challenges exist in making accurate estimates for extinct crocodylians.  The term crocodylians refers to all members of the family Crocodylidae (“true” crocodiles), family Alligatoridae (alligators and caimans) and family Gavialidae (gharial, Tomistoma). The researchers in this study [@obrien2019] state, "Among extinct crocodylians and their precursors (e.g., suchians), several methods have been developed to predict body size from suites of hard-tissue proxies. Nevertheless, many have limited applications due to the disparity of some major suchian groups and biases in the fossil record. Here, we test the utility of head width (HW) as a broadly applicable body-size estimator in living and fossil suchians."  Is there evidence that head width is a good predictor of body size for crocodylians? 
 
 
 
@@ -47,7 +47,7 @@ croc <- croc %>%
 \vspace{.5in}
 
 
-Use the provided R script file to create a scatterplot to examine the relationship between head width and total body length by filling in the variable names (`HW_cm` and `TL_cm`) for `explanatory` and `response` in line 12.  Highlight and run lines 1--18. 
+Use the provided R script file to create a scatterplot to examine the relationship between head width and total body length by filling in the variable names (`HW_cm` and `TL_cm`) for `explanatory` and `response` in line 14.  Highlight and run lines 1--20. 
  
 
 ```r
@@ -86,7 +86,7 @@ ggplot(aes(x = explanatory, y = response))+  # Specify variables
 
 #### Summarize and visualize the data {-}
 
-Using the provided R script file, enter the response variable name, `TL_cm`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `BW_cm`, for `explanatory` in line 21 to get the linear model output and value for the correlation coefficient.  Highlight and run lines 21--23.
+Using the provided R script file, enter the response variable name, `TL_cm`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `HW_cm`, for `explanatory` in line 21 to get the linear model output and value for the correlation coefficient.  Highlight and run lines 25--27.
 
 
 ```r
@@ -116,7 +116,7 @@ Let's start by thinking about how one simulation would be created on the null di
 
 We will use the `regression_test()` function in R (in the `catstats` package) to simulate the null distribution of shuffled slopes (or shuffled correlations) and compute a p-value.  We will need to enter the response variable name and the explanatory variable name for the formula, the data set name (identified above as `croc`), the summary measure for the test (either slope or correlation), number of repetitions, the sample statistic (value of slope or correlation), and the direction of the alternative hypothesis.
 
-The response variable name is `TL_cm` and the explanatory variable name is `BW_cm` for these data.
+The response variable name is `TL_cm` and the explanatory variable name is `HW_cm` for these data.
 
 9. What inputs should be entered for each of the following to create the simulation to test regression slope?
 
@@ -137,15 +137,15 @@ The response variable name is `TL_cm` and the explanatory variable name is `BW_c
     
 \vspace{.2in}
 
-Using the R script file for this activity, enter your answers for question 9 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 26--31.
+Using the R script file for this activity, enter your answers for question 9 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 32--37.
 
 
 ```r
-regression_test(TL_cm~BW_cm, # response ~ explanatory
+regression_test(TL_cm~HW_cm, # response ~ explanatory
                data = croc, # Name of data set
                direction = "xx", # Sign in alternative ("greater", "less", "two-sided")
                summary_measure = "xx", # "slope" or "correlation"
-               as_extreme_as = x, # Observed slope or correlation
+               as_extreme_as = xx, # Observed slope or correlation
                number_repetitions = 1000) # Number of simulated samples for null distribution
 ```
 
@@ -155,7 +155,7 @@ regression_test(TL_cm~BW_cm, # response ~ explanatory
 11.  Suppose we wanted to complete the simulation test using correlation as the summary measure, instead of slope.  Which two inputs in #9 would need to be changed to test for correlation?  What inputs should you use instead?
 \vspace{0.75in}
 
-12.  Change the inputs in lines 26--31 to test for correlation instead of slope.  Highlight and run those lines, then report the new p-value of the test.
+12.  Change the inputs in lines 32--37 to test for correlation instead of slope.  Highlight and run those lines, then report the new p-value of the test.
 \vspace{0.5in}
 
 13.  The p-values from the test of slope (#10) and the test of correlation (#12) should be similar.  Explain why the two p-values should match. *Hint: think about the relationship between slope and correlation!*
@@ -163,7 +163,7 @@ regression_test(TL_cm~BW_cm, # response ~ explanatory
 
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the missing values in the provided R script file to find a 95\% confidence interval for slope. Highlight and run lines 34--38. 
+We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample slopes (or sample correlations) and calculate a confidence interval. Fill in the missing values in the provided R script file to find a 95\% confidence interval for slope. Highlight and run lines 42--46. 
 
 
 ```r

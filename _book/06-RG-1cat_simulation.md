@@ -1,6 +1,6 @@
 # Inference for a Single Categorical Variable: Simulation-based Methods
 
-## Week 6 Reading Guide: Categorical Inference
+## Module 6 Reading Guide: Categorical Inference
 
 ### Chapter 9 (Hypothesis testing with randomization) {-}
 

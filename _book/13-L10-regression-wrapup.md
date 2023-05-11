@@ -1,4 +1,4 @@
-## Week 13 Lab: Big Mac Index
+## Module 13 Lab: Big Mac Index
 
 \setstretch{1}
 
@@ -18,7 +18,7 @@
 
 Can the relative cost of a Big Mac across different countries be used to predict the Gross Domestic Product (GDP) per person for that country?  The GDP per person and the adjusted dollar equivalent to purchase a Big Mac was found on a random sample of 55 countries in January of 2022.  The cost of a Big Mac in each country was adjusted to US dollars based on current exchange rates.  Is there evidence of a positive relationship between Big Mac cost and the GDP per person?
 
-Upload and open the R script file for Week 13 lab. Upload and import the csv file, `big_mac_adjusted_index_S22.csv`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 7. Highlight and run lines 1--7 to load the data.
+Upload and open the R script file for Week 13 lab. Upload and import the csv file, `big_mac_adjusted_index_S22.csv`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 9. Highlight and run lines 1--9 to load the data.
 
 
 ```r
@@ -28,7 +28,7 @@ mac <- datasetname
 
 #### Summarize and visualize the data {-} 
 
-To find the correlation between the variables, `GDP_dollar` and `dollar_price` highlight and run lines 10--13 in the R script file.
+To find the correlation between the variables, `GDP_dollar` and `dollar_price` highlight and run lines 13--16 in the R script file.
 
 
 ```r
@@ -47,7 +47,7 @@ mac %>%
 3. Interpret the value of the coefficient of determination in context of the problem.
 \vspace{0.6in}
 
-In the next part of the activity we will assess the linear model between Big Mac cost and GDP.  Enter the variable `GDP_dollar` for `response` and the variable `dollar_price` for `explanatory` in line 17.  Highlight and run lines 17--18 to get the linear model output. 
+In the next part of the activity we will assess the linear model between Big Mac cost and GDP.  Enter the variable `GDP_dollar` for `response` and the variable `dollar_price` for `explanatory` in line 22.  Highlight and run lines 22--23 to get the linear model output. 
 
 
 ```r
@@ -61,7 +61,7 @@ summary(bigmacLM)$coefficients # Display coefficient summary
 
 #### Conditions for the least squares line {-}
 
-Highlight and run lines 22--35 to produce the diagnostic plots needed to assess conditions to use theory-based methods.  Use the scatterplot and the residual plots to assess the validity conditions for approximating the data with the $t$-distribution.
+Highlight and run lines 27--40 to produce the diagnostic plots needed to assess conditions to use theory-based methods.  Use the scatterplot and the residual plots to assess the validity conditions for approximating the data with the $t$-distribution.
 
 
 ```r
@@ -124,7 +124,7 @@ The response variable name is `GDP_dollar` and the explanatory variable name is 
     
 \vspace{.2in}
 
-Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 38--44. **Upload a copy of your plot showing the p-value to Gradescope for your group.**
+Using the R script file for this activity, enter your answers for question 7 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 45--51. **Upload a copy of your plot showing the p-value to Gradescope for your group.**
 
 
 ```r
@@ -141,7 +141,7 @@ regression_test(GDP_dollar~dollar_price, # response ~ explanatory
 
 #### Simulation-based confidence interval {-}
 
-We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 90\% confidence interval. Highlight and run lines 47--51. 
+We will use the `regression_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample **correlations** and calculate a confidence interval. Fill in the `xx`'s in the the provided R script file to find a 90\% confidence interval. Highlight and run lines 56--60. 
 
 
 ```r

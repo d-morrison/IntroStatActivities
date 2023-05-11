@@ -1,6 +1,6 @@
 # Exploring Multivariable Data
 
-## Week 4 Reading Guide: Two Quantitative Variables and Multivariable Concepts
+## Module 4 Reading Guide: Two Quantitative Variables and Multivariable Concepts
 
 ### Section 6.1 (Fitting a line, residuals, and correlation) {-}
 

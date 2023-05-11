@@ -88,7 +88,7 @@ survive %>% group_by(Class_Dept) %>% count(Survived)
 Another summary statistic that can be calculated for two categorical variables is the relative risk.  The relative risk is calculated as the ratio of the conditional proportions:
 
 
-$$\text{relative risk} = \frac{\hat{p}_1}{\hat{p}_2}.$$
+$$\text{relative risk} = \frac{\text{risk in group 1}}{\text{risk in group 2}}=\frac{\hat{p}_1}{\hat{p}_2}.$$
 
 
 10.  Calculate the relative risk of death for 3rd class passengers compared to 1st class passengers.

@@ -56,11 +56,11 @@ Conditions for the sampling distribution of $\bar{x}_1-\bar{x}_2$ to follow an a
 
     - $n < 30$: If the sample size $n$ is less than 30 and there are no clear outliers in the data, then we typically assume the data come from a nearly normal distribution to satisfy the condition.
 
-    - $n \ge 30$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
+    - $30 \le n < 100$: If the sample size $n$ is at least 30 and there are no particularly extreme outliers, then we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
     
      - $n \geq 100$: If the sample size $n$ is at least 100 (regardless of the presence of skew or outliers), we typically assume the sampling distribution of $\bar{x}$ is nearly normal, even if the underlying distribution of individual observations is not.
     
-Upload and open the R script file for Week 12 lab. Upload and import the csv file, `Trail_Weight`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 7. Write a title for the boxplots in line 11. Highlight and run lines 1--13 to load the data and create plots of the data.
+Upload and open the R script file for Activity 12B. Upload and import the csv file, `Trail_Weight`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 10. Write a title for the boxplots in line 14. Highlight and run lines 1--16 to load the data and create plots of the data.
 
 
 ```r
@@ -82,7 +82,7 @@ hikes %>%  # Data set piped into...
 
 \newpage
 
-Enter the name of the explanatory variable for `explanatory` and the name of the response variable for `response` in line 17.  Highlight and run lines 16--17 to get the summary statistics for the data.
+Enter the name of the explanatory variable for `explanatory` and the name of the response variable for `response` in line 22.  Highlight and run lines 21--22 to get the summary statistics for the data.
 
 
 ```r
@@ -98,11 +98,11 @@ hikes %>%
 
 To find the standardized statistic for the difference in means we will calculate:
 
-$$T = \frac{\bar{x}_1-\bar{x}_2}{SE(\bar{x}_1-\bar{x}_2)},$$
+$$T = \frac{(\bar{x}_1-\bar{x}_2) - \text{null value}}{SE(\bar{x}_1-\bar{x}_2)}$$
 
 where the standard error of the difference in means is calculated using:
 
-$$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}.$$
+$$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}$$
 
 7.  Calculate the standard error for the difference in sample means.
 
@@ -117,11 +117,11 @@ $$SE(\bar{x}_1 -\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}.$$
 \vspace{0.2in}
 \newpage
 
-10. Using the provided R script file, enter the T-score (for `xx`) and the `df` calculated in question 9 for `yy` into the `pt()` function to find the p-value.  Highlight and run line 20.  Report the p-value calculated. 
+10. Using the provided R script file, enter the T-score (for `xx`) and the `df` calculated in question 9 for `yy` into the `pt()` function to find the p-value.  Highlight and run line 28.  Report the p-value calculated. 
 
 
 ```r
-2*pt(xx, df=yy, lower.tail=FALSE)
+2*pt(xx, df=yy, lower.tail=TRUE)
 ```
 \vspace{0.2in}
 
@@ -138,11 +138,11 @@ $$\bar{x}_1- \bar{x}_2\pm t^* \times SE(\bar{x}_1- \bar{x}_2).$$
 
 We will need to find the $t^*$ multiplier using the function `qt()`.  For a 95\% confidence level, we are finding the $t^*$ value at the 97.5th percentile with (`df` = minimum of $n_1 - 1$ or  $n_2 - 1$).
 
-Enter the appropriate percentile value (as a decimal) for `xx` and degrees of freedom for `yy` into the `qt()` function at line 23 to find the appropriate $t^*$ multiplier
+Enter the appropriate percentile value (as a decimal) for `xx` and degrees of freedom for `yy` into the `qt()` function at line 34 to find the appropriate $t^*$ multiplier
 
 
 ```r
-qt(xx, df = yy, lower.tail=FALSE)
+qt(xx, df = yy, lower.tail=TRUE)
 ```
 13. Report the $t^*$ multiplier for the 95\% confidence interval.
 

@@ -1,4 +1,4 @@
-## Week 2 Lab: Study Design
+## Module 2 Lab: Study Design
 
 \setstretch{1}
 
@@ -30,7 +30,7 @@ To review these concepts, see Sections 2.2 through 2.5 in the textbook.
 
 ### General information labs
 
-Remember that each Friday you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.
+Remember at the end of each module you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.
 
 ### Atrial fibrillation 
 

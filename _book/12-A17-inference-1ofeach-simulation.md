@@ -160,7 +160,7 @@ We will use the `two_mean_test()` function in R (in the `catstats` package) to s
 
 \vspace{.2in}
 
-16.  Simulate a null distribution and compute the p-value. Using the R script file for this activity, enter your answers for question 15 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 1--25.
+16.  Simulate a null distribution and compute the p-value. Using the R script file for this activity, enter your answers for question 15 in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 1--27.
 
 
 ```r
@@ -186,7 +186,7 @@ two_mean_test(response~explanatory, #Enter the names of the variables
 
 We will use the `two_mean_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of differences in sample means and calculate a confidence interval. 
 
-18. Using bootstrapping find a 95\% confidence interval. Using the provided R script file, enter the variable names as in the `two_mean_test()` function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 28--32. Report the 95\% confidence interval in interval notation.
+18. Using bootstrapping find a 95\% confidence interval. Using the provided R script file, enter the variable names as in the `two_mean_test()` function, outcome name for the first in subtraction, number of repetitions, and the confidence level as a decimal.  Highlight and run lines 32--36. Report the 95\% confidence interval in interval notation.
 
 ```r
 two_mean_bootstrap_CI(response ~ explanatory, #Enter the name of the variables

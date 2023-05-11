@@ -1,4 +1,4 @@
-## Week 1 Lab - Sampling Methods
+## Module 1 Lab - Sampling Methods
 
 \setstretch{1}
 
@@ -18,7 +18,7 @@ For more on these concepts, read Chapter 1 and Section 2.1 in the textbook.
 
 ### General information on labs
 
-On Friday of each week you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.  
+At the end of each module you will complete a lab. Questions are selected from each lab to be turned in on Gradescope.  The questions to be submitted on Gradescope are bolded in the lab.  As you work through the lab have the Gradescope lab assignment open so that you can answer those questions as you go.  
 
 ### Types of bias 
 

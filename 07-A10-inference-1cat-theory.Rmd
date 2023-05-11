@@ -98,11 +98,11 @@ Z = \frac{\hat{p} - \pi_0}{SE_0(\hat{p})},
 $$
 where the standard error is calculated using the null value:
 
-$$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$.
+$$SE_0(\hat{p})=\sqrt{\frac{\pi_0 \times (1-\pi_0)}{n}}$$.
 
 The standard error of the sample proportion measures the variability of possible sample proportions from the actual proportion.  In other words, how far each possible sample proportion is from the actual proportion on average.  For this study, the null standard error of the sample proportion is calculated using the null value, 0.1.
 
-$$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{500}} = 0.013$$.
+$$SE_0(\hat{p})=\sqrt{\frac{0.1 \times (1-0.1)}{500}} = 0.013$$.
 
 7.  Interpret the null standard error of the sample proportion in context of the problem.
 
@@ -154,7 +154,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 To calculate a theory-based 95\% confidence interval for $\pi$, we will first find the **standard error** of $\hat{p}$ by plugging in the value of $\hat{p}$ for $\pi$ in $SD(\hat{p})$:
 
-$$SE(\hat{p}) = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}.$$
+$$SE(\hat{p}) = \sqrt{\frac{\hat{p} \times (1-\hat{p})}{n}}.$$
 Note that we do not include a "0" subscript, since we are not assuming a null hypothesis. 
 
 12.  Calculate the standard error of the sample proportion to find a 95\% confidence interval.

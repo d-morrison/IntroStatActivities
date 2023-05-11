@@ -89,11 +89,11 @@ Z = \frac{\hat{p} - \pi_0}{SE_0(\hat{p})},
 $$
 where the standard error is calculated using the null value:
 
-$$SE_0(\hat{p})=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}$$.
+$$SE_0(\hat{p})=\sqrt{\frac{\pi_0 \times (1-\pi_0)}{n}}$$.
 
 The standard error of the sample proportion measures the variability of possible sample proportions from the actual proportion.  In other words, how far each possible sample proportion is from the actual proportion on average.  For this study, the null standard error of the sample proportion is calculated using the null value, 0.1.
 
-$$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{500}} = 0.013$$.
+$$SE_0(\hat{p})=\sqrt{\frac{0.1 \times (1-0.1)}{500}} = 0.013$$.
 
 7.  Interpret the null standard error of the sample proportion in context of the problem.
 
@@ -161,7 +161,7 @@ Suppose that we want to show that the true proportion of male boxers **differs**
 
 16. Suppose instead of 500 male boxers the researchers only took a sample of 300 male boxers and found the same proportion ($\hat{p}=0.162$) of male boxers that are left-handed.  Since we are still assuming the same null value, 0.1, the standard error would be calculated as below:
 
-$$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{300}} = 0.017$$
+$$SE_0(\hat{p})=\sqrt{\frac{0.1 \times (1-0.1)}{300}} = 0.017$$
 
 Calculate the standardized statistic for this new sample.
 
@@ -181,7 +181,7 @@ pnorm(xx, # Enter value of standardized statistic
 
 18. Suppose another sample of 500 male boxers was taken and 68 were found to be left-handed.  Since we are still assuming the same null value, 0.1, the standard error would be calculated as before:
 
-$$SE_0(\hat{p})=\sqrt{\frac{0.1(1-0.1)}{500}} = 0.013$$
+$$SE_0(\hat{p})=\sqrt{\frac{0.1 \times (1-0.1)}{500}} = 0.013$$
 
 Calculate the standardized statistic for this new sample.
 

@@ -1,4 +1,4 @@
-## Week 4 Lab:  Penguins
+## Module 4 Lab:  Penguins
 
 \setstretch{1}
 
@@ -19,20 +19,20 @@
 
 ### Penguins {-}
 
-The Palmer Station Long Term Ecological Research Program sampled three penguin species on islands in the Palmer Archipelago in Antarctica. Researchers took various body measurements on the penguins, including bill depth and flipper length. The researchers were interested in the relationship between bill depth and flipper length and wondered if bill depth could be used to accurately predict the flipper length of these three penguin species. 
+The Palmer Station Long Term Ecological Research Program sampled three penguin species on islands in the Palmer Archipelago in Antarctica. Researchers took various body measurements on the penguins, including bill depth and body mass. The researchers were interested in the relationship between bill depth and body mass and wondered if bill depth could be used to accurately predict the body mass of these three penguin species. 
 
 Upload and import the `Antarctica_Penguins` csv file and the provided R script file for week 4 lab. Enter the name of the data set (see the environment tab) for `datasetname` in the R script file in line 5.
 
-First we will create a scatterplot of the bill depth and flipper lenth.  Notice that we are using bill depth (mm) to predict flipper length (mm).  This makes bill depth the explanatory variable. **Make sure to give your plot a descriptive title between the quotations in line 16.** Highlight and run lines 1--17 in the R script file.  **Upload a copy of your scatterplot to Gradescope.**
+First we will create a scatterplot of the bill depth and body mass.  Notice that we are using bill depth (mm) to predict body mass (g).  This makes bill depth the explanatory variable. **Make sure to give your plot a descriptive title between the quotations in line 16.** Highlight and run lines 1--17 in the R script file.  **Upload a copy of your scatterplot to Gradescope.**
 
 
 ```r
-penguins <- Antarctica_Penguins %>% #Creates the object penguins
+penguins <- datasetname %>% #Creates the object penguins
     na.omit() #Removes data points without values
 penguins %>%
-  ggplot(aes(x = bill_depth_mm, y = flipper_length_mm))+  # Specify variables
+  ggplot(aes(x = bill_depth_mm, y = body_mass_g))+  # Specify variables
   geom_point() +  # Add scatterplot of points
-  labs(x = "flipper length (mm)",  # Label x-axis
+  labs(x = "bill depth (mm)",  # Label x-axis
        y = "body mass (g)",  # Label y-axis
        title = "Title") + # Be sure to title your plots
   geom_smooth(method = "lm", se = FALSE)  # Add regression line
@@ -68,7 +68,7 @@ penguins %>%  # Data set pipes into
   round(3)
 ```
 
-2.  Using the R output, report the value of correlation between bill depth and flipper length.
+2.  Using the R output, report the value of correlation between bill depth and body mass.
 
 \vspace{0.5in}
 
@@ -80,7 +80,7 @@ penguins %>%  # Data set pipes into
 
 \vspace{1in}
 
-Enter the variable name `flipper_length_mm` for `response` and the variable name `bill_depth_mm` for `explanatory` in line 29 in the R script file.  Highlight and run lines 29--30 to get the linear model output.
+Enter the variable name `body_mass_g` for `response` and the variable name `bill_depth_mm` for `explanatory` in line 29 in the R script file.  Highlight and run lines 29--30 to get the linear model output.
 
 
 ```r
@@ -97,30 +97,30 @@ summary(penguinsLM)$coefficients # Display coefficient summary
 
 \vspace{.8in}
 
-7. **Using the least squares regression line from question 5, predict the flipper length for a penguin with a bill depth of 19.6 mm.**
+7. **Using the least squares regression line from question 5, predict the body mass for a penguin with a bill depth of 19.6 mm.**
 
 \vspace{.6in}
 
-8. One penguin had a bill depth of 19.6 mm and a flipper length of 195 mm. Find the residual for this penguin.
+8. One penguin had a bill depth of 19.6 mm and a body mass of 4675 g. Find the residual for this penguin.
 
 \vspace{.8in}
 
-9.  Did the line of regression overestimate or underestimate the flipper length for this penguin?
+9.  Did the line of regression overestimate or underestimate the body mass for this penguin?
 
 \vspace{0.5in}
 
-Does species change the relationship between bill depth and flipper length? Highlight and run lines 27--34 to get the multivariable plot.
+Does species change the relationship between bill depth and body mass? Highlight and run lines 27--34 to get the multivariable plot.
 
 
 ```r
 penguins %>%
-  ggplot(aes(x = bill_depth_mm, y = flipper_length_mm, color=species))+  # Specify variables
+  ggplot(aes(x = bill_depth_mm, y = body_mass_g, color=species))+  # Specify variables
   geom_point(aes(shape = species), size = 3) +  # Add scatterplot of points
   labs(x = "bill depth (mm)",  # Label x-axis
-       y = "flipper length (mm)",  # Label y-axis
+       y = "body mass (g)",  # Label y-axis
        color = "species",
        shape = "species",
-       title = "Scatterplot of Bill Depth and Flipper Length by Penguin Species") + # Enter the title for the plot between the quotations
+       title = "Scatterplot of Bill Depth and Body Mass by Penguin Species") + # Enter the title for the plot between the quotations
   geom_smooth(method = "lm", se = FALSE) +  # Add regression line
   scale_color_viridis_d(end=0.8)
 ```
@@ -130,7 +130,7 @@ penguins %>%
 \vspace{0.3in}
 
 
-11. **Does adding the variable species change the relationship between bill depth and flipper length? Explain your answer.**
+11. **Does adding the variable species change the relationship between bill depth and body mass? Explain your answer.**
 
 \vspace{0.5in}
 
@@ -138,7 +138,7 @@ penguins %>%
 
 \vspace{0.5in}
 
-13. Notice that the slope of the line between bill depth and flipper length for each species is positive while the slope for the line not accounting for species is negative.  What phenomena does this show?
+13. Notice that the slope of the line between bill depth and body mass for each species is positive while the slope for the line not accounting for species is negative.  What phenomena is this an example of?
 
 \vspace{0.2in}
 

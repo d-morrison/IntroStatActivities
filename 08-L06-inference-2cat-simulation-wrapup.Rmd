@@ -1,4 +1,4 @@
-## Week 8 Lab:  Poisonous Mushrooms 
+## Module 8 Lab:  Poisonous Mushrooms 
 
 \setstretch{1}
 

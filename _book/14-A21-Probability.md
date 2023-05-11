@@ -25,7 +25,7 @@ To review these concepts, see Chapter 23 in the textbook.
 
 ### Probability 
 
-1. In a large general education class, 60\% of students are science majors and 40\% are liberal arts majors.  Twenty percent of the science majors are seniors, while 30\% of the liberal arts majors are seniors. Given the following two-way table answer the following questions.
+1. In a large general education class, 60\% of students are science majors and 40\% are liberal arts majors.  Twenty percent of the science majors are seniors, while 30\% of the liberal arts majors are seniors. Given the following two-way table answer the following questions.  Let $A$ = the event the student is a science major, and $B$ = the event the student is a senior. 
 
 |              | Senior | Not a Senior |    Total   |
 |--------------|--------|--------------|------------|

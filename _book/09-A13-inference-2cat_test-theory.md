@@ -123,7 +123,7 @@ $$
 where the null standard error is calculated using the pooled proportion of successes:
 
 $$
-SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}(1-\hat{p}_{pool})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}.
+SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{\hat{p}_{pool}\times (1-\hat{p}_{pool})\times \left(\frac{1}{n_1}+\frac{1}{n_2}\right)}.
 $$
 
 For this study we would first calculate the pooled proportion of successes.
@@ -133,7 +133,7 @@ We use the value for the pooled proportion of successes to calculate the $SE_0(\
 
 
 $$
-SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{0.162(1-0.162)\left(\frac{1}{752}+\frac{1}{2810}\right)} = 0.015
+SE_0(\hat{p}_1-\hat{p}_2)=\sqrt{0.162 \times (1-0.162)\times \left(\frac{1}{752}+\frac{1}{2810}\right)} = 0.015
 $$
 
 7. Use the value of the null standard error to calculate the standardized statistic (standardized difference in proportion).
@@ -208,7 +208,7 @@ Suppose in a larger sample of skiers and snowboarders involved in accidents we s
 
 Note that the sample proportions for each group are the same as the smaller sample size.
 
-$$\hat{p}_1 = \frac{135}{1056}=0.127, \hat{p}_2 = \frac{674}{3944}=0.171$$
+$$\hat{p}_h = \frac{135}{1056}=0.127, \hat{p}_n = \frac{674}{3944}=0.171$$
 
 16. The standard error for the difference in proportions for this new sample is 0.013 ($SE(\hat{p}_h - \hat{p}_n) = 0.013$).  Calculate the standardized statistic for this new sample.
 

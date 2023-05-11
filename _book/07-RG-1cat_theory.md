@@ -1,6 +1,6 @@
 # Inference for a Single Categorical Variable: Theory-based Methods + Errors and Power
 
-## Week 7 Reading Guide: Categorical Inference
+## Module 7 Reading Guide: Categorical Inference
 
 ### Chapter 11 (Inference with mathematical models) {-}
 

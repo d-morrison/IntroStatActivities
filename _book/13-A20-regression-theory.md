@@ -39,12 +39,12 @@ golf <- read.csv("https://math.montana.edu/courses/s216/data/golf.csv")
 
 #### Plot review. {-}
 
-Use the provided R script file to create a scatterplot to examine the relationship between the driving distance and percent accuracy by filling in the variable names (`Driving_Distance` and `Percent_Accuracy`) for `xx` and `yy` in line 9.  Highlight and run lines 1--15. 
+Use the provided R script file to create a scatterplot to examine the relationship between the driving distance and percent accuracy by filling in the variable names (`Driving_Distance` and `Percent_Accuracy`) for `xx` and `yy` in line 11.  Highlight and run lines 1--17. 
  
 
 ```r
 golf %>% # Pipe data set into...
-ggplot(aes(x = xx, y = yy))+  # Specify variables
+ggplot(aes(x = explanatory, y = response))+  # Specify variables
   geom_point() +  # Add scatterplot of points
   labs(x = "Driving Distance",  # Label x-axis
        y = "Percent Accuracy",  # Label y-axis
@@ -96,7 +96,7 @@ The scatterplot generated in question 1 and the residual plots shown below will 
 
 #### Summarize and visualize the data {-}
 
-Using the provided R script file, enter the response variable name, `Percent_Accuracy`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Driving_Distance`, for `explanatory` in line 25 to get the linear model output.  Highlight and run lines 25--26.
+Using the provided R script file, enter the response variable name, `Percent_Accuracy`, into the `lm()` (linear model) function for `response` and the explanatory variable name, `Driving_Distance`, for `explanatory` in line 30 to get the linear model output.  Highlight and run lines 30--31.
 
 
 ```r
@@ -118,7 +118,7 @@ round(summary(lm.golf)$coefficients, 5)
 To find the value of the standardized statistic to test the slope we will use, 
 
 $$
-T = \frac{\mbox{slope estimate}}{SE} = \frac{b_1}{SE(b_1)}.
+T = \frac{b_1 - \text{null value}}{SE(b_1)}.
 $$
  
 We will use the linear model R output above to get the estimate for slope and the standard error of the slope.
@@ -174,7 +174,7 @@ qt(0.975, 352) # 95% t* multiplier
 
 ### Multivariate plots {-}
 
-Another variable that may affect the percent accuracy is the which league the golfer is part of. We will look at how this variable may change the relationship between driving distance and percent accuracy. Highlight and run lines 32--39 to produce the multivariate plot. 
+Another variable that may affect the percent accuracy is the which league the golfer is part of. We will look at how this variable may change the relationship between driving distance and percent accuracy. Highlight and run lines 37--44 to produce the multivariate plot. 
 
 
 ```r

@@ -1,4 +1,4 @@
-## Week 12 Lab: Dinosaurs
+## Module 12 Lab: Dinosaurs
 
 \setstretch{1}
 
@@ -45,7 +45,7 @@ The backbone of heavy, two-legged, carnivorous dinosaurs, such as the *T. rex*, 
 
 \vspace{0.4in}
 
-Upload and open the R script file for Week 12 lab. Upload and import the csv file, `dinosaur`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 6 and the name of the explanatory and response variable in line 8. Highlight and run lines 1--13 to load the data and create a plot of the data. 
+Upload and open the R script file for Week 12 lab. Upload and import the csv file, `dinosaur`. Enter the name of the data set (see the environment tab) for datasetname in the R script file in line 10 and the name of the explanatory and response variable in line 12. Highlight and run lines 1--16 to load the data and create a plot of the data. 
 
 ```r
 dinos <- datasetname
@@ -60,7 +60,7 @@ dinos %>%
 6. Based on the plots, does there appear to be some evidence in favor of the alternative hypothesis?  How do you know?
 \vspace{0.4in}
 
-Enter the name of the explanatory variable for `explanatory` and the response variable for `response` in line 17.  Run lines 16--17 to find the summary statistics.
+Enter the name of the explanatory variable for `explanatory` and the response variable for `response` in line 21.  Run lines 21--22 to find the summary statistics.
 
 
 ```r
@@ -70,7 +70,7 @@ dinos %>%
 
 
 7.  Calculate the summary statistic for the research question. Use proper notation.
-\vspace{0.25in}
+\vspace{0.3in}
 
 8. **How far, on average, is each difference in mean femur length from the difference in true mean femur length?  What is the appropriate notation for this value?**
 
@@ -88,7 +88,7 @@ Remember that the null distribution is created based on the assumption the null 
 
 We will use the `two_mean_test()` function in R (in the `catstats` package) to simulate the null distribution of differences in sample means and compute a p-value. 
 
-10.  Simulate a null distribution and compute the p-value. Using the R script file for this lab, enter the correct values in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 20--25.  
+10.  Simulate a null distribution and compute the p-value. Using the R script file for this lab, enter the correct values in place of the `xx`'s to produce the null distribution with 1000 simulations.  Highlight and run lines 27--32.  
 
 
 ```r
@@ -117,7 +117,7 @@ two_mean_test(response~explanatory, #Enter the names of the variables
 
 We will use the `two_mean_bootstrap_CI()` function in R (in the `catstats` package) to simulate the bootstrap distribution of sample differences in means and calculate a confidence interval. 
 
-13. Using bootstrapping and the provided R script file, find a 98\% confidence interval. Fill in the missing values/numbers in the `two_mean_bootstrap_CI()` function to create the 98\% confidence interval.  Highlight and run lines 28--32. **Upload a copy of the bootstrap distribution created to Gradescope for your group.** 
+13. Using bootstrapping and the provided R script file, find a 98\% confidence interval. Fill in the missing values/numbers in the `two_mean_bootstrap_CI()` function to create the 98\% confidence interval.  Highlight and run lines 37--41. **Upload a copy of the bootstrap distribution created to Gradescope for your group.** 
 
 
 ```r

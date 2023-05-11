@@ -48,15 +48,15 @@ In "Helmet Use and Risk of Head Injuries in Alpine Skiers and Snowboarders" by S
 To find a confidence interval for the difference in proportions we will add and subtract the margin of error from the point estimate to find the two endpoints.
 
  $$\hat{p}_1-\hat{p}_2\pm z^*\times SE(\hat{p}_1-\hat{p}_2), \hspace{.2cm} \text{where}$$
- $$SE(\hat{p}_1-\hat{p}_2) = \sqrt{\frac{\hat{p}_1 (1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2 (1-\hat{p}_2)}{n_2}}$$
+ $$SE(\hat{p}_1-\hat{p}_2) = \sqrt{\frac{\hat{p}_1 \times  (1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2 \times  (1-\hat{p}_2)}{n_2}}$$
  
 Note that the formula changes when calculating the variability around the statistic in order to calculate a confidence interval from the formula used in Activity 9A!  Here, we use the sample proportions for each group to calculate the standard error for the difference in proportions since we are not assuming that the true difference is zero.
 
 To calculate the standard error for a difference in proportions to create a 90\% confidence interval we substitute in the two sample proportions and the sample size for each group into the equation above.
 
-$$n_1 = 752, n_2 = 2810, \hat{p}_1 = \frac{96}{752} = 0.128, \hat{p}_2 = \frac{480}{2810} = 0.171$$
+$$n_1 = 752, n_2 = 2810, \hat{p}_h = \frac{96}{752} = 0.128, \hat{p}_n = \frac{480}{2810} = 0.171$$
  
- $$SE(\hat{p}_1-\hat{p}_2) = \sqrt{\frac{0.128 (1-0.128)}{752}+\frac{0.171 (1-0.171)}{2810}} = 0.014$$
+ $$SE(\hat{p}_1-\hat{p}_2) = \sqrt{\frac{0.128\times (1-0.128)}{752}+\frac{0.171\times (1-0.171)}{2810}} = 0.014$$
 
 Recall that the $z^*$ multiplier is the percentile of a standard normal distribution that corresponds to our confidence level. If our confidence level is 90\%, we find the Z values that encompass the middle 90\% of the standard normal distribution. If 90\% of the standard normal distribution should be in the middle, that leaves 10\% in the tails, or 5\% in each tail.  The `qnorm()` function in R will tell us the $z^*$ value for the desired percentile (in this case, 90\% + 5\% = 95\% percentile). 
 
@@ -112,7 +112,7 @@ Suppose in another sample of skiers and snowboards involved in accidents we saw 
 
 Note that the sample proportions for each group are the same as the smaller sample size.
 
-$$\hat{p}_1 = \frac{135}{1056}=0.127, \hat{p}_2 = \frac{674}{3944}=0.171$$
+$$\hat{p}_h = \frac{135}{1056}=0.127, \hat{p}_n = \frac{674}{3944}=0.171$$
 
 9. Calculate the standard error for the difference in sample proportions for this new sample.
 \vspace{0.8in}

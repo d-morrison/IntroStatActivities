@@ -1,6 +1,6 @@
 # Inference for Two Quantitative Variables
 
-## Week 13 Reading Guide: Inference for Slope and Correlation
+## Module 13 Reading Guide: Inference for Slope and Correlation
 
 ### Chapter 21 (Inference for regression and model conditions) {-}
 
