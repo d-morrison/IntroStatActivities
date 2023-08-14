@@ -1,9 +1,5 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-## Activity 3A:  Graphing Categorical Variables
+## Out of Class Activity Week 3:  Summarizing Variables
+
 
 \setstretch{1}
 
@@ -15,6 +11,8 @@ output:
 
 * Plots for association between two categorical variables:
   segmented bar plot, mosaic plot.
+  
+
 
 ### Terminology review
 

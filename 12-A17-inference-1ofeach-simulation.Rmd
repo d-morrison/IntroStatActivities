@@ -1,4 +1,4 @@
-## Activity 12A:  Does behavior impact performance?
+## Out of class activity:  Does behavior impact performance?
 
 \setstretch{1}
 

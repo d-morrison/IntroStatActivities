@@ -100,7 +100,7 @@ two_proportion_test(formula = response~explanatory, # response ~ explanatory
 
 8.  Report the p-value for the study.
 
-\vspace{0.8in}
+\vspace{0.2in}
 
 9.  **Do you expect that a 90\% confidence interval would contain the null value of zero?  Explain your answer.**
 
@@ -119,7 +119,7 @@ two_proportion_bootstrap_CI(formula = response~explanatory,
 
 10. Report the 90\% confidence interval.
 
-\vspace{0.8in}
+\vspace{0.2in}
 
 \newpage
 
