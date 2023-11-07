@@ -201,7 +201,7 @@ If we want to find a 90% confidence interval, what percentiles of the bootstrap 
 \rgs
 
 
-### Section 14.1 (Simulation-based test for $H_0:\pi = \pi_0$) {-}
+### Section 14.1 (Simulation-based test for $H_0: \pi = \pi_0$) {-}
 
 \setstretch{1}
 
